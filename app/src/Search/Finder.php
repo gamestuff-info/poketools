@@ -105,7 +105,7 @@ class Finder
                      WHERE (:versionGroup IS NULL OR "version_group_id" = :versionGroup)
                        AND "name" LIKE (:term || '%')
                      UNION
-                     SELECT '${classes['ability']}__' || "id" AS "id", "name"
+                     SELECT '${classes['location']}__' || "id" AS "id", "name"
                      FROM "location_in_version_group"
                      WHERE (:versionGroup IS NULL OR "version_group_id" = :versionGroup)
                        AND "name" LIKE (:term || '%')
