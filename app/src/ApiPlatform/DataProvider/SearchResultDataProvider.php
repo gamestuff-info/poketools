@@ -27,6 +27,14 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
  */
 class SearchResultDataProvider implements ContextAwareCollectionDataProviderInterface, ItemDataProviderInterface, RestrictedDataProviderInterface
 {
+    // TODO: Enum
+    private const METHOD_SEARCH = 'search';
+    private const METHOD_AUTOCOMPLETE = 'autocomplete';
+    private const METHODS = [
+        self::METHOD_SEARCH,
+        self::METHOD_AUTOCOMPLETE,
+    ];
+
     public function __construct(
         private Finder $finder,
         private EntityHydrator $entityHydrator,
@@ -35,9 +43,15 @@ class SearchResultDataProvider implements ContextAwareCollectionDataProviderInte
 
     public function getCollection(string $resourceClass, string $operationName = null, array $context = [])
     {
+        // Request info
         $filters = $context['filters'] ?? [];
         if (!isset($filters['q'])) {
             throw new BadRequestHttpException('q required');
+        }
+        /** @var 'search'|'autocomplete' $method */
+        $method = $filters['method'] ?? self::METHOD_SEARCH;
+        if (!in_array($method, self::METHODS)) {
+            throw new BadRequestHttpException('Bad method.  Allowed methods are '.implode(', ', self::METHODS));
         }
         $q = $filters['q'];
         if (isset($filters['version'])) {
@@ -50,7 +64,12 @@ class SearchResultDataProvider implements ContextAwareCollectionDataProviderInte
         }
         $page = $filters['page'] ?? 1;
         $itemsPerPage = $filters['itemsPerPage'] ?? 10;
-        $resultEntities = $this->finder->search($q, $version);
+
+        // Get results
+        $resultEntities = match ($method) {
+            self::METHOD_SEARCH => $this->finder->search($q, $version),
+            self::METHOD_AUTOCOMPLETE => $this->finder->autocomplete($q, $version),
+        };
         $results = [];
         foreach ($resultEntities as $resultEntity) {
             $results[] = (new SearchResult())

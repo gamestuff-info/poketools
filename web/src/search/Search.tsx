@@ -72,6 +72,7 @@ function Results(props: { query: string }) {
         setState({loading: true});
         pktQuery<ApiRecord.HydraCollection<ApiRecord.Search.SearchResult>>('search_results', {
             q: query,
+            method: 'search',
             version: useVersion.id,
             groups: ['search_result'],
         }, useVersion).then(response => {

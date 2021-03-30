@@ -33,6 +33,7 @@ export default function QuickSearch(props: {}) {
         setState({loading: true});
         pktQuery<ApiRecord.HydraCollection<ApiRecord.Search.SearchResult>>('search_results', {
             q: query,
+            method: 'autocomplete',
             version: currentVersion.id,
         }, currentVersion).then(response => {
             setState({
