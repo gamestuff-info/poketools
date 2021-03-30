@@ -291,7 +291,7 @@ export default function CaptureRateCalc(props: {}) {
                 Capture Rate
             </h1>
             {(state.loadingBalls || state.loadingPokemon || state.loadingMethods || state.loadingTimesOfDay) && (
-                <Loading/>
+                <Loading label="Loading a lot of data..."/>
             )}
             {balls && allPokemon && methods && genders && timesOfDay && (
                 <>
