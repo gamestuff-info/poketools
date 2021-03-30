@@ -1,0 +1,72 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name HM07
+  pocket: &gold-silver.pocket machines
+  short_description: &gold-silver.short_description 'Teaches []{move:waterfall} to a compatible Pokémon.'
+  description: &gold-silver.description |
+    Teaches []{move:waterfall} to a compatible Pokémon.
+
+    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm07"})}}
+  machine: &gold-silver.machine
+    type: &gold-silver.machine.type HM
+    number: &gold-silver.machine.number 7
+    move: waterfall
+  category: &gold-silver.category hm
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: &ruby-sapphire.flags
+    {  }
+  icon: &ruby-sapphire.icon hm-water.png
+  flavor_text: |
+    Attacks the foe
+    with enough power
+    to climb waterfalls.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  machine: *gold-silver.machine
+emerald: *ruby-sapphire
+firered-leafgreen:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  flavor_text: |
+    A powerful charge
+    attack. It can also
+    be used to climb
+    a waterfall.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  machine: *gold-silver.machine
+diamond-pearl: &diamond-pearl
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  machine: *gold-silver.machine
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+omega-ruby-alpha-sapphire:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  flavor_text: |
+    Diving on the first turn, the user floats up
+    and attacks on the next turn.
+    It can be used to dive deep in the ocean.
+  short_description: 'Teaches []{move:dive} to a compatible Pokémon.'
+  description: |
+    Teaches []{move:dive} to a compatible Pokémon.
+
+    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm07"})}}
+  machine:
+    type: *gold-silver.machine.type
+    number: *gold-silver.machine.number
+    move: dive

@@ -1,0 +1,928 @@
+red-blue:
+  name: &red-blue.name ZUBAT
+  position: &red-blue.position 41
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 41
+    kanto: 41
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: &red-blue.pokemon.zubat.default true
+      capture_rate: &red-blue.pokemon.zubat.capture_rate 255
+      experience: &red-blue.pokemon.zubat.experience 54
+      types: &red-blue.pokemon.zubat.types
+        - poison
+        - flying
+      stats: &red-blue.pokemon.zubat.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 35
+          effort_change: 35
+        speed:
+          base_value: 55
+          effort_change: 55
+        special:
+          base_value: 40
+          effort_change: 40
+      growth_rate: &red-blue.pokemon.zubat.growth_rate medium
+      genus: &red-blue.pokemon.zubat.genus 'BAT Pokémon'
+      height: &red-blue.pokemon.zubat.height 7
+      weight: &red-blue.pokemon.zubat.weight 771
+      flavor_text:
+        red: |
+          Forms colonies in
+          perpetually dark
+          places. Uses
+          ultrasonic waves
+           to identify and
+          approach targets.
+        blue: |
+          Forms colonies in
+          perpetually dark
+          places. Uses
+          ultrasonic waves
+           to identify and
+          approach targets.
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: &red-blue.pokemon.zubat.forms.zubat.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.zubat.forms.zubat.battle_only false
+          sprites:
+            - red-blue/zubat-default.png
+            - red-blue/gray/zubat-default.png
+            - red-blue/back/zubat-default.png
+          art: &red-blue.pokemon.zubat.forms.zubat.art
+            - zubat-default.png
+          cry: &red-blue.pokemon.zubat.forms.zubat.cry gen5/zubat-default.webm
+          icon: &red-blue.pokemon.zubat.forms.zubat.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: *red-blue.pokemon.zubat.default
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      experience: *red-blue.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      stats: *red-blue.pokemon.zubat.stats
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      genus: *red-blue.pokemon.zubat.genus
+      height: *red-blue.pokemon.zubat.height
+      weight: *red-blue.pokemon.zubat.weight
+      flavor_text:
+        yellow: |
+          Emits ultrasonic
+          cries while it
+          flies. They act
+          as a sonar used
+           to check for ob-
+          jects in its way.
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          sprites:
+            - yellow/zubat-default.png
+            - yellow/gray/zubat-default.png
+            - yellow/back/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+          icon: *red-blue.pokemon.zubat.forms.zubat.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 40
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 36
+    original-johto-abc: 239
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: *red-blue.pokemon.zubat.default
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      experience: *red-blue.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      stats: &gold-silver.pokemon.zubat.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 35
+          effort_change: 35
+        speed:
+          base_value: 55
+          effort_change: 55
+        special-attack:
+          base_value: 30
+          effort_change: 30
+        special-defense:
+          base_value: 40
+          effort_change: 30
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      female_rate: &gold-silver.pokemon.zubat.female_rate 50
+      hatch_steps: &gold-silver.pokemon.zubat.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.zubat.egg_groups
+        - flying
+      genus: *red-blue.pokemon.zubat.genus
+      height: *red-blue.pokemon.zubat.height
+      weight: &gold-silver.pokemon.zubat.weight 77
+      flavor_text:
+        gold: |
+          While flying, it
+          constantly emits
+          ultrasonic waves
+          from its mouth to
+          check its sur-
+          roundings.
+        silver: |
+          Capable of flying
+          safely in dark
+          places, it emits
+          ultrasonic cries
+          to check for any
+          obstacles.
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          sprites:
+            - gold-silver/zubat-default.png
+            - gold-silver/back/zubat-default.png
+            - gold-silver/shiny/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+          icon: &gold-silver.pokemon.zubat.forms.zubat.icon gen2/bat.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: *red-blue.pokemon.zubat.default
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      experience: *red-blue.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      stats: *gold-silver.pokemon.zubat.stats
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      genus: *red-blue.pokemon.zubat.genus
+      height: *red-blue.pokemon.zubat.height
+      weight: *gold-silver.pokemon.zubat.weight
+      flavor_text:
+        crystal: |
+          During the day, it
+          gathers with
+          others and hangs
+          from the ceilings
+          of old buildings
+          and caves.
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          sprites:
+            - crystal/zubat-default.png
+            - crystal/back/zubat-default.png
+            - crystal/shiny/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+          icon: *gold-silver.pokemon.zubat.forms.zubat.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 63
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: *red-blue.pokemon.zubat.default
+      forms_switchable: &ruby-sapphire.pokemon.zubat.forms_switchable false
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      experience: *red-blue.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      stats: &ruby-sapphire.pokemon.zubat.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 1
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      happiness: &ruby-sapphire.pokemon.zubat.happiness 70
+      abilities: &ruby-sapphire.pokemon.zubat.abilities
+        inner-focus: &ruby-sapphire.pokemon.zubat.abilities.inner-focus
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.zubat.genus
+      height: &ruby-sapphire.pokemon.zubat.height 8
+      weight: &ruby-sapphire.pokemon.zubat.weight 75
+      flavor_text:
+        ruby: |
+          ZUBAT remains quietly unmoving in a
+          dark spot during the bright daylight
+           hours. It does so because prolonged
+          exposure to the sun causes its body to
+          become slightly burned.
+        sapphire: |
+          ZUBAT avoids sunlight because exposure
+          causes it to become unhealthy.
+           During the daytime, it stays in caves or
+          under the eaves of old houses,  sleeping
+          while hanging upside down.
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: &ruby-sapphire.pokemon.zubat.forms.zubat.icon gen5/zubat-default.png
+          sprites:
+            - ruby-sapphire/zubat-default.png
+            - ruby-sapphire/back/zubat-default.png
+            - ruby-sapphire/shiny/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: &ruby-sapphire.pokemon.zubat.forms.zubat.footprint zubat.png
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: *red-blue.pokemon.zubat.default
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      experience: *red-blue.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      abilities: *ruby-sapphire.pokemon.zubat.abilities
+      genus: *red-blue.pokemon.zubat.genus
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      flavor_text:
+        emerald: |
+          While living in pitch-black caverns, their
+          eyes gradually grew shut and deprived
+          them of vision. They use ultrasonic waves
+          to detect obstacles.
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *ruby-sapphire.pokemon.zubat.forms.zubat.icon
+          sprites:
+            - emerald/zubat-default.png
+            - emerald/shiny/zubat-default.png
+            - emerald/animated/zubat-default.webm
+            - emerald/animated/shiny/zubat-default.webm
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 386
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: *red-blue.pokemon.zubat.default
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      experience: *red-blue.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      abilities: *ruby-sapphire.pokemon.zubat.abilities
+      genus: *red-blue.pokemon.zubat.genus
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          sprites:
+            - colosseum/zubat-default.png
+            - colosseum/shiny/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: *red-blue.pokemon.zubat.default
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      experience: *red-blue.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      abilities: *ruby-sapphire.pokemon.zubat.abilities
+      genus: *red-blue.pokemon.zubat.genus
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          sprites:
+            - xd/zubat-default.png
+            - xd/shiny/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    zubat:
+      name: ZUBAT
+      default: *red-blue.pokemon.zubat.default
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      experience: *red-blue.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      abilities: *ruby-sapphire.pokemon.zubat.abilities
+      genus: *red-blue.pokemon.zubat.genus
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      flavor_text:
+        firered: |
+          It has no eyes. Instead, it relies on
+          its ultrasonic cries for echo location to
+          flit about in darkness.
+        leafgreen: |
+          It forms colonies in perpetually dark
+          places and uses ultrasonic waves to
+          identify and approach targets.
+      forms:
+        zubat:
+          name: ZUBAT
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *ruby-sapphire.pokemon.zubat.forms.zubat.icon
+          sprites:
+            - firered-leafgreen/zubat-default.png
+            - firered-leafgreen/back/zubat-default.png
+            - firered-leafgreen/shiny/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+diamond-pearl:
+  name: &diamond-pearl.name Zubat
+  position: &diamond-pearl.position 44
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 28
+  pokemon:
+    zubat:
+      genus: &diamond-pearl.pokemon.zubat.genus 'Bat Pokémon'
+      shape: &diamond-pearl.pokemon.zubat.shape wings
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: &diamond-pearl.pokemon.zubat.baby false
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      pal_park: &diamond-pearl.pokemon.zubat.pal_park
+        area: mountain
+        rate: 50
+        score: 30
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: &diamond-pearl.pokemon.zubat.experience 49
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: *ruby-sapphire.pokemon.zubat.abilities
+      flavor_text:
+        diamond: |
+          Even though it has no eyes, it can
+          sense obstacles using ultrasonic
+          waves it emits from its mouth.
+        pearl: |
+          Disliking sunlight, it sleeps
+          deep in forests and caves
+          until sundown.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *ruby-sapphire.pokemon.zubat.forms.zubat.icon
+          sprites:
+            - diamond-pearl/zubat-default.png
+            - diamond-pearl/back/zubat-default.png
+            - diamond-pearl/back/female/zubat-default.png
+            - diamond-pearl/back/shiny/zubat-default.png
+            - diamond-pearl/female/zubat-default.png
+            - diamond-pearl/shiny/zubat-default.png
+            - diamond-pearl/shiny/female/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 28
+  pokemon:
+    zubat:
+      genus: *diamond-pearl.pokemon.zubat.genus
+      shape: *diamond-pearl.pokemon.zubat.shape
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: *diamond-pearl.pokemon.zubat.baby
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      pal_park: *diamond-pearl.pokemon.zubat.pal_park
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: *diamond-pearl.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: *ruby-sapphire.pokemon.zubat.abilities
+      flavor_text:
+        platinum: |
+          It checks its surroundings and
+          location using reflections of the
+          ultrasonic waves from its mouth.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *ruby-sapphire.pokemon.zubat.forms.zubat.icon
+          sprites:
+            - platinum/zubat-default.png
+            - platinum/back/zubat-default.png
+            - platinum/back/female/zubat-default.png
+            - platinum/back/shiny/zubat-default.png
+            - platinum/female/zubat-default.png
+            - platinum/shiny/zubat-default.png
+            - platinum/shiny/female/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 37
+  pokemon:
+    zubat:
+      genus: *diamond-pearl.pokemon.zubat.genus
+      shape: *diamond-pearl.pokemon.zubat.shape
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: *diamond-pearl.pokemon.zubat.baby
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      pal_park: *diamond-pearl.pokemon.zubat.pal_park
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: *diamond-pearl.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: *ruby-sapphire.pokemon.zubat.abilities
+      flavor_text:
+        heartgold: |
+          While flying, it constantly emits
+          ultrasonic waves from its mouth to
+          check its surroundings.
+        soulsilver: |
+          Capable of flying safely in dark
+          places, it emits ultrasonic cries
+          to check for any obstacles.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 4-5
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 1
+              range: 1-4
+            stamina:
+              base_value: 1
+              range: 1-3
+            jump:
+              base_value: 5
+              range: 5
+          icon: *ruby-sapphire.pokemon.zubat.forms.zubat.icon
+          sprites:
+            - heartgold-soulsilver/zubat-default.png
+            - heartgold-soulsilver/back/zubat-default.png
+            - heartgold-soulsilver/back/female/zubat-default.png
+            - heartgold-soulsilver/back/shiny/zubat-default.png
+            - heartgold-soulsilver/female/zubat-default.png
+            - heartgold-soulsilver/shiny/zubat-default.png
+            - heartgold-soulsilver/shiny/female/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+  pokemon:
+    zubat:
+      genus: *diamond-pearl.pokemon.zubat.genus
+      color: &black-white.pokemon.zubat.color purple
+      shape: *diamond-pearl.pokemon.zubat.shape
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: *diamond-pearl.pokemon.zubat.baby
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: *diamond-pearl.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: &black-white.pokemon.zubat.abilities
+        inner-focus: *ruby-sapphire.pokemon.zubat.abilities.inner-focus
+        infiltrator:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It checks its surroundings and
+          location using reflections of the
+          ultrasonic waves from its mouth.
+        white: |
+          It checks its surroundings and
+          location using reflections of the
+          ultrasonic waves from its mouth.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *ruby-sapphire.pokemon.zubat.forms.zubat.icon
+          sprites:
+            - black-white/zubat-default.png
+            - black-white/back/zubat-default.png
+            - black-white/back/female/zubat-default.png
+            - black-white/back/shiny/zubat-default.png
+            - black-white/female/zubat-default.png
+            - black-white/shiny/zubat-default.png
+            - black-white/shiny/female/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 61
+  pokemon:
+    zubat:
+      genus: *diamond-pearl.pokemon.zubat.genus
+      color: *black-white.pokemon.zubat.color
+      shape: *diamond-pearl.pokemon.zubat.shape
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: *diamond-pearl.pokemon.zubat.baby
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: *diamond-pearl.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: *black-white.pokemon.zubat.abilities
+      flavor_text:
+        black-2: |
+          It does not need eyes, because it
+          emits ultrasonic waves to check
+          its surroundings while it flies.
+        white-2: |
+          It does not need eyes, because it
+          emits ultrasonic waves to check
+          its surroundings while it flies.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *ruby-sapphire.pokemon.zubat.forms.zubat.icon
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *red-blue.pokemon.zubat.forms.zubat.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 145
+  pokemon:
+    zubat:
+      genus: *diamond-pearl.pokemon.zubat.genus
+      color: *black-white.pokemon.zubat.color
+      shape: *diamond-pearl.pokemon.zubat.shape
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: *diamond-pearl.pokemon.zubat.baby
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: *diamond-pearl.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      mega: &x-y.pokemon.zubat.mega false
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: *black-white.pokemon.zubat.abilities
+      flavor_text:
+        x: |
+          Even though it has no eyes, it can sense obstacles
+          using ultrasonic waves it emits from its mouth.
+        'y': |
+          It has no eyes. Instead, it relies on its ultrasonic
+          cries for echolocation to flit about in darkness.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: &x-y.pokemon.zubat.forms.zubat.icon zubat-default.png
+          sprites:
+            - x-y/zubat-default.png
+            - x-y/female/zubat-default.png
+            - x-y/shiny/zubat-default.png
+            - x-y/shiny/female/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: &x-y.pokemon.zubat.forms.zubat.cry zubat-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 65
+  pokemon:
+    zubat:
+      genus: *diamond-pearl.pokemon.zubat.genus
+      color: *black-white.pokemon.zubat.color
+      shape: *diamond-pearl.pokemon.zubat.shape
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: *diamond-pearl.pokemon.zubat.baby
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: *diamond-pearl.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      mega: *x-y.pokemon.zubat.mega
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: *black-white.pokemon.zubat.abilities
+      flavor_text:
+        omega-ruby: |
+          Zubat remains quietly unmoving in a dark spot during the bright
+          daylight hours. It does so because prolonged exposure to the
+          sun causes its body to become slightly burned.
+        alpha-sapphire: |
+          Zubat avoids sunlight because exposure causes it to become
+          unhealthy. During the daytime, it stays in caves or under
+          the eaves of old houses, sleeping while hanging upside down.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *x-y.pokemon.zubat.forms.zubat.icon
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *x-y.pokemon.zubat.forms.zubat.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/zubat-default.png
+            - omega-ruby-alpha-sapphire/shiny/zubat-default.png
+            - omega-ruby-alpha-sapphire/female/zubat-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/zubat-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 68
+    original-melemele: 68
+    original-akala: 26
+    original-ulaula: 35
+    original-poni: 19
+  pokemon:
+    zubat:
+      genus: *diamond-pearl.pokemon.zubat.genus
+      color: *black-white.pokemon.zubat.color
+      shape: *diamond-pearl.pokemon.zubat.shape
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: *diamond-pearl.pokemon.zubat.baby
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: *diamond-pearl.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      mega: *x-y.pokemon.zubat.mega
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: *black-white.pokemon.zubat.abilities
+      flavor_text:
+        sun: |-
+          It sleeps in caves during the day. It has no eyes,
+          so to check its surroundings while flying, it
+          emits ultrasonic waves.
+        moon: |-
+          When exposed to sunlight, they suffer burns.
+          The frequency of their ultrasonic waves can
+          differ slightly from colony to colony.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *x-y.pokemon.zubat.forms.zubat.icon
+          sprites:
+            - sun-moon/zubat-default.png
+            - sun-moon/female/zubat-default.png
+            - sun-moon/shiny/zubat-default.png
+            - sun-moon/shiny/female/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *x-y.pokemon.zubat.forms.zubat.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 80
+    updated-melemele: 80
+    updated-akala: 26
+    updated-ulaula: 35
+    updated-poni: 26
+  pokemon:
+    zubat:
+      genus: *diamond-pearl.pokemon.zubat.genus
+      color: *black-white.pokemon.zubat.color
+      shape: *diamond-pearl.pokemon.zubat.shape
+      female_rate: *gold-silver.pokemon.zubat.female_rate
+      capture_rate: *red-blue.pokemon.zubat.capture_rate
+      happiness: *ruby-sapphire.pokemon.zubat.happiness
+      baby: *diamond-pearl.pokemon.zubat.baby
+      hatch_steps: *gold-silver.pokemon.zubat.hatch_steps
+      growth_rate: *red-blue.pokemon.zubat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.zubat.forms_switchable
+      name: Zubat
+      default: *red-blue.pokemon.zubat.default
+      height: *ruby-sapphire.pokemon.zubat.height
+      weight: *ruby-sapphire.pokemon.zubat.weight
+      experience: *diamond-pearl.pokemon.zubat.experience
+      types: *red-blue.pokemon.zubat.types
+      egg_groups: *gold-silver.pokemon.zubat.egg_groups
+      mega: *x-y.pokemon.zubat.mega
+      stats: *ruby-sapphire.pokemon.zubat.stats
+      abilities: *black-white.pokemon.zubat.abilities
+      flavor_text:
+        ultra-sun: |-
+          It has no eyeballs, so it can’t see. It checks its
+          surroundings via the ultrasonic waves it emits
+          from its mouth.
+        ultra-moon: |-
+          Their skin is so thin that they’ll be burned if
+          sunlight hits them. When it gets cold out, they
+          gather together to warm one another’s bodies.
+      forms:
+        zubat:
+          name: Zubat
+          form_name: *red-blue.pokemon.zubat.forms.zubat.form_name
+          default: true
+          battle_only: *red-blue.pokemon.zubat.forms.zubat.battle_only
+          icon: *x-y.pokemon.zubat.forms.zubat.icon
+          sprites:
+            - ultra-sun-ultra-moon/zubat-default.png
+            - ultra-sun-ultra-moon/female/zubat-default.png
+            - ultra-sun-ultra-moon/shiny/zubat-default.png
+            - ultra-sun-ultra-moon/shiny/female/zubat-default.png
+          art: *red-blue.pokemon.zubat.forms.zubat.art
+          footprint: *ruby-sapphire.pokemon.zubat.forms.zubat.footprint
+          cry: *x-y.pokemon.zubat.forms.zubat.cry

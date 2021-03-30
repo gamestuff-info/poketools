@@ -1,0 +1,34 @@
+x-y: &x-y
+  name: &x-y.name 'Roseli Berry'
+  category: &x-y.category type-protection
+  pocket: &x-y.pocket berries
+  buy: &x-y.buy 20
+  sell: &x-y.sell 10
+  fling_effect: damage
+  fling_power: 10
+  short_description: &x-y.short_description 'Held: Consumed when struck by a [super-effective]{mechanic:super-effective} []{type:fairy} attack to halve the damage.'
+  description: &x-y.description |
+    Held in battle
+    :   When the holder would take [super-effective]{mechanic:super-effective} []{type:fairy} damage, it consumes this item to halve the amount of damage taken.
+  flavor_text: |
+    If held by a Pokémon, this Berry will
+    lessen the damage taken from one
+    supereffective Fairy-type attack.
+  icon: &x-y.icon roseli-berry.png
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *x-y.name
+  category: *x-y.category
+  pocket: *x-y.pocket
+  buy: *x-y.buy
+  sell: *x-y.sell
+  fling_effect: damage
+  fling_power: 10
+  short_description: *x-y.short_description
+  description: *x-y.description
+  flavor_text: |
+    If held by a Pokémon, this Berry will lessen the
+    damage taken from one supereffective
+    Fairy-type attack.
+  icon: *x-y.icon
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,798 @@
+gold-silver:
+  name: &gold-silver.name TOGEPI
+  position: &gold-silver.position 174
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 175
+    original-johto: 251
+    original-johto-abc: 212
+  pokemon:
+    togepi:
+      name: TOGEPI
+      default: &gold-silver.pokemon.togepi.default true
+      capture_rate: &gold-silver.pokemon.togepi.capture_rate 190
+      experience: &gold-silver.pokemon.togepi.experience 74
+      types: &gold-silver.pokemon.togepi.types
+        - normal
+      stats: &gold-silver.pokemon.togepi.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 20
+          effort_change: 20
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 20
+          effort_change: 20
+        special-attack:
+          base_value: 40
+          effort_change: 40
+        special-defense:
+          base_value: 65
+          effort_change: 40
+      growth_rate: &gold-silver.pokemon.togepi.growth_rate fast
+      female_rate: &gold-silver.pokemon.togepi.female_rate 12
+      hatch_steps: &gold-silver.pokemon.togepi.hatch_steps 10
+      egg_groups: &gold-silver.pokemon.togepi.egg_groups
+        - no-eggs
+      genus: &gold-silver.pokemon.togepi.genus 'SPIKE BALL Pokémon'
+      height: &gold-silver.pokemon.togepi.height 3
+      weight: &gold-silver.pokemon.togepi.weight 13
+      flavor_text:
+        gold: |
+          The shell seems to
+          be filled with
+          joy. It is said
+          that it will share
+          good luck when
+          treated kindly.
+        silver: |
+          A proverb claims
+          that happiness
+          will come to any-
+          one who can make a
+          sleeping TOGEPI
+          stand up.
+      forms:
+        togepi:
+          name: TOGEPI
+          form_name: &gold-silver.pokemon.togepi.forms.togepi.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.togepi.forms.togepi.battle_only false
+          sprites:
+            - gold-silver/togepi-default.png
+            - gold-silver/back/togepi-default.png
+            - gold-silver/shiny/togepi-default.png
+          art: &gold-silver.pokemon.togepi.forms.togepi.art
+            - togepi-default.png
+          cry: &gold-silver.pokemon.togepi.forms.togepi.cry gen5/togepi-default.webm
+          icon: &gold-silver.pokemon.togepi.forms.togepi.icon gen2/clefairy.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    togepi:
+      name: TOGEPI
+      default: *gold-silver.pokemon.togepi.default
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      experience: *gold-silver.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      stats: *gold-silver.pokemon.togepi.stats
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      genus: *gold-silver.pokemon.togepi.genus
+      height: *gold-silver.pokemon.togepi.height
+      weight: *gold-silver.pokemon.togepi.weight
+      flavor_text:
+        crystal: |
+          It is considered
+          to be a symbol of
+          good luck. Its
+          shell is said to
+          be filled with
+          happiness.
+      forms:
+        togepi:
+          name: TOGEPI
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          sprites:
+            - crystal/togepi-default.png
+            - crystal/back/togepi-default.png
+            - crystal/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+          icon: *gold-silver.pokemon.togepi.forms.togepi.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 175
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 325
+  pokemon:
+    togepi:
+      name: TOGEPI
+      default: *gold-silver.pokemon.togepi.default
+      forms_switchable: &ruby-sapphire.pokemon.togepi.forms_switchable false
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      experience: *gold-silver.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      stats: &ruby-sapphire.pokemon.togepi.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 20
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 1
+        special-defense:
+          base_value: 35
+          effort_change: 1
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      happiness: &ruby-sapphire.pokemon.togepi.happiness 70
+      abilities: &ruby-sapphire.pokemon.togepi.abilities
+        hustle: &ruby-sapphire.pokemon.togepi.abilities.hustle
+          hidden: &ruby-sapphire.pokemon.togepi.abilities.hustle.hidden false
+          position: 1
+        serene-grace: &ruby-sapphire.pokemon.togepi.abilities.serene-grace
+          hidden: *ruby-sapphire.pokemon.togepi.abilities.hustle.hidden
+          position: 2
+      genus: *gold-silver.pokemon.togepi.genus
+      height: *gold-silver.pokemon.togepi.height
+      weight: &ruby-sapphire.pokemon.togepi.weight 15
+      flavor_text:
+        ruby: |
+          As its energy, TOGEPI uses the positive
+          emotions of compassion and pleasure
+          exuded by people and POKéMON.
+          This POKéMON stores up feelings of
+          happiness inside its shell, then shares
+          them with others.
+        sapphire: |
+          As its energy, TOGEPI uses the positive
+          emotions of compassion and pleasure
+          exuded by people and POKéMON.
+          This POKéMON stores up feelings of
+          happiness inside its shell, then shares
+          them with others.
+      forms:
+        togepi:
+          name: TOGEPI
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: &ruby-sapphire.pokemon.togepi.forms.togepi.icon gen5/togepi-default.png
+          sprites:
+            - ruby-sapphire/togepi-default.png
+            - ruby-sapphire/back/togepi-default.png
+            - ruby-sapphire/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: &ruby-sapphire.pokemon.togepi.forms.togepi.footprint togepi.png
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    togepi:
+      name: TOGEPI
+      default: *gold-silver.pokemon.togepi.default
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      experience: *gold-silver.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      stats: *ruby-sapphire.pokemon.togepi.stats
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      abilities: *ruby-sapphire.pokemon.togepi.abilities
+      genus: *gold-silver.pokemon.togepi.genus
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      flavor_text:
+        emerald: |
+          As its energy, it uses the feelings of
+          compassion and pleasure exuded by
+          people and POKéMON. It stores up happy
+          feelings in its shell,  then shares them out.
+      forms:
+        togepi:
+          name: TOGEPI
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *ruby-sapphire.pokemon.togepi.forms.togepi.icon
+          sprites:
+            - emerald/togepi-default.png
+            - emerald/shiny/togepi-default.png
+            - emerald/animated/togepi-default.webm
+            - emerald/animated/shiny/togepi-default.webm
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 341
+  pokemon:
+    togepi:
+      name: TOGEPI
+      default: *gold-silver.pokemon.togepi.default
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      experience: *gold-silver.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      stats: *ruby-sapphire.pokemon.togepi.stats
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      abilities: *ruby-sapphire.pokemon.togepi.abilities
+      genus: *gold-silver.pokemon.togepi.genus
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      forms:
+        togepi:
+          name: TOGEPI
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          sprites:
+            - colosseum/togepi-default.png
+            - colosseum/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    togepi:
+      name: TOGEPI
+      default: *gold-silver.pokemon.togepi.default
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      experience: *gold-silver.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      stats: *ruby-sapphire.pokemon.togepi.stats
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      abilities: *ruby-sapphire.pokemon.togepi.abilities
+      genus: *gold-silver.pokemon.togepi.genus
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      forms:
+        togepi:
+          name: TOGEPI
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          sprites:
+            - xd/togepi-default.png
+            - xd/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    togepi:
+      name: TOGEPI
+      default: *gold-silver.pokemon.togepi.default
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      experience: *gold-silver.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      stats: *ruby-sapphire.pokemon.togepi.stats
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      abilities: *ruby-sapphire.pokemon.togepi.abilities
+      genus: *gold-silver.pokemon.togepi.genus
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      flavor_text:
+        firered: |
+          A proverb claims that happiness will come
+          to anyone who can make a sleeping TOGEPI
+          stand up.
+        leafgreen: |
+          The shell seems to be filled with joy.
+          It is said that it will share good luck
+          when treated kindly.
+      forms:
+        togepi:
+          name: TOGEPI
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *ruby-sapphire.pokemon.togepi.forms.togepi.icon
+          sprites:
+            - firered-leafgreen/togepi-default.png
+            - firered-leafgreen/back/togepi-default.png
+            - firered-leafgreen/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+diamond-pearl:
+  name: &diamond-pearl.name Togepi
+  position: &diamond-pearl.position 203
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togepi:
+      genus: &diamond-pearl.pokemon.togepi.genus 'Spike Ball Pokémon'
+      shape: &diamond-pearl.pokemon.togepi.shape humanoid
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: &diamond-pearl.pokemon.togepi.baby true
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      pal_park: &diamond-pearl.pokemon.togepi.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: &diamond-pearl.pokemon.togepi.experience 49
+      types: *gold-silver.pokemon.togepi.types
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      stats: &diamond-pearl.pokemon.togepi.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 20
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.togepi.abilities
+        hustle: *ruby-sapphire.pokemon.togepi.abilities.hustle
+        serene-grace: *ruby-sapphire.pokemon.togepi.abilities.serene-grace
+        super-luck:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          Its shell is said to be stuffed
+          with happiness that it shares with
+          kindhearted people.
+        pearl: |
+          Its shell is said to be stuffed
+          with happiness that it shares with
+          kindhearted people.
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *ruby-sapphire.pokemon.togepi.forms.togepi.icon
+          sprites:
+            - diamond-pearl/togepi-default.png
+            - diamond-pearl/back/togepi-default.png
+            - diamond-pearl/back/shiny/togepi-default.png
+            - diamond-pearl/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 173
+  pokemon:
+    togepi:
+      genus: *diamond-pearl.pokemon.togepi.genus
+      shape: *diamond-pearl.pokemon.togepi.shape
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: *diamond-pearl.pokemon.togepi.baby
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      pal_park: *diamond-pearl.pokemon.togepi.pal_park
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: *diamond-pearl.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      stats: *diamond-pearl.pokemon.togepi.stats
+      abilities: *diamond-pearl.pokemon.togepi.abilities
+      flavor_text:
+        platinum: |
+          It transforms the kindness and joy
+          of others into happiness, which it
+          stores in its shell.
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *ruby-sapphire.pokemon.togepi.forms.togepi.icon
+          sprites:
+            - platinum/togepi-default.png
+            - platinum/back/togepi-default.png
+            - platinum/back/shiny/togepi-default.png
+            - platinum/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 46
+  pokemon:
+    togepi:
+      genus: *diamond-pearl.pokemon.togepi.genus
+      shape: *diamond-pearl.pokemon.togepi.shape
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: *diamond-pearl.pokemon.togepi.baby
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      pal_park: *diamond-pearl.pokemon.togepi.pal_park
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: *diamond-pearl.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      stats: *diamond-pearl.pokemon.togepi.stats
+      abilities: *diamond-pearl.pokemon.togepi.abilities
+      flavor_text:
+        heartgold: |
+          The shell seems to be filled with
+          joy. It is said that it will share
+          good luck when treated kindly.
+        soulsilver: |
+          A proverb claims that happiness
+          will come to anyone who can make a
+          sleeping TOGEPI stand up.
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-5
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.togepi.forms.togepi.icon
+          sprites:
+            - heartgold-soulsilver/togepi-default.png
+            - heartgold-soulsilver/back/togepi-default.png
+            - heartgold-soulsilver/back/shiny/togepi-default.png
+            - heartgold-soulsilver/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togepi:
+      genus: *diamond-pearl.pokemon.togepi.genus
+      color: &black-white.pokemon.togepi.color white
+      shape: *diamond-pearl.pokemon.togepi.shape
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: *diamond-pearl.pokemon.togepi.baby
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: *diamond-pearl.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      stats: *diamond-pearl.pokemon.togepi.stats
+      abilities: *diamond-pearl.pokemon.togepi.abilities
+      flavor_text:
+        black: |
+          It transforms the kindness and joy
+          of others into happiness, which it
+          stores in its shell.
+        white: |
+          It transforms the kindness and joy
+          of others into happiness, which it
+          stores in its shell.
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *ruby-sapphire.pokemon.togepi.forms.togepi.icon
+          sprites:
+            - black-white/togepi-default.png
+            - black-white/back/togepi-default.png
+            - black-white/back/shiny/togepi-default.png
+            - black-white/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togepi:
+      genus: *diamond-pearl.pokemon.togepi.genus
+      color: *black-white.pokemon.togepi.color
+      shape: *diamond-pearl.pokemon.togepi.shape
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: *diamond-pearl.pokemon.togepi.baby
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: *diamond-pearl.pokemon.togepi.experience
+      types: *gold-silver.pokemon.togepi.types
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      stats: *diamond-pearl.pokemon.togepi.stats
+      abilities: *diamond-pearl.pokemon.togepi.abilities
+      flavor_text:
+        black-2: |
+          It transforms the kindness and joy
+          of others into happiness, which it
+          stores in its shell.
+        white-2: |
+          It transforms the kindness and joy
+          of others into happiness, which it
+          stores in its shell.
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *ruby-sapphire.pokemon.togepi.forms.togepi.icon
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *gold-silver.pokemon.togepi.forms.togepi.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togepi:
+      genus: *diamond-pearl.pokemon.togepi.genus
+      color: *black-white.pokemon.togepi.color
+      shape: *diamond-pearl.pokemon.togepi.shape
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: *diamond-pearl.pokemon.togepi.baby
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: *diamond-pearl.pokemon.togepi.experience
+      types: &x-y.pokemon.togepi.types
+        - fairy
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      mega: &x-y.pokemon.togepi.mega false
+      stats: *diamond-pearl.pokemon.togepi.stats
+      abilities: *diamond-pearl.pokemon.togepi.abilities
+      flavor_text:
+        x: |
+          The shell seems to be filled with joy. It is said that
+          it will share good luck when treated kindly.
+        'y': |
+          A proverb claims that happiness will come to
+          anyone who can make a sleeping Togepi stand up.
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: &x-y.pokemon.togepi.forms.togepi.icon togepi-default.png
+          sprites:
+            - x-y/togepi-default.png
+            - x-y/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: &x-y.pokemon.togepi.forms.togepi.cry togepi-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togepi:
+      genus: *diamond-pearl.pokemon.togepi.genus
+      color: *black-white.pokemon.togepi.color
+      shape: *diamond-pearl.pokemon.togepi.shape
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: *diamond-pearl.pokemon.togepi.baby
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: *diamond-pearl.pokemon.togepi.experience
+      types: *x-y.pokemon.togepi.types
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      mega: *x-y.pokemon.togepi.mega
+      stats: *diamond-pearl.pokemon.togepi.stats
+      abilities: *diamond-pearl.pokemon.togepi.abilities
+      flavor_text:
+        omega-ruby: |
+          As its energy, Togepi uses the positive emotions of
+          compassion and pleasure exuded by people and Pokémon.
+          This Pokémon stores up feelings of happiness inside its shell,
+          then shares them with others.
+        alpha-sapphire: |
+          As its energy, Togepi uses the positive emotions of
+          compassion and pleasure exuded by people and Pokémon.
+          This Pokémon stores up feelings of happiness inside its shell,
+          then shares them with others.
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *x-y.pokemon.togepi.forms.togepi.icon
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *x-y.pokemon.togepi.forms.togepi.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/togepi-default.png
+            - omega-ruby-alpha-sapphire/shiny/togepi-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togepi:
+      genus: *diamond-pearl.pokemon.togepi.genus
+      color: *black-white.pokemon.togepi.color
+      shape: *diamond-pearl.pokemon.togepi.shape
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: *diamond-pearl.pokemon.togepi.baby
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: *diamond-pearl.pokemon.togepi.experience
+      types: *x-y.pokemon.togepi.types
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      mega: *x-y.pokemon.togepi.mega
+      stats: *diamond-pearl.pokemon.togepi.stats
+      abilities: *diamond-pearl.pokemon.togepi.abilities
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *x-y.pokemon.togepi.forms.togepi.icon
+          sprites:
+            - sun-moon/togepi-default.png
+            - sun-moon/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *x-y.pokemon.togepi.forms.togepi.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togepi:
+      genus: *diamond-pearl.pokemon.togepi.genus
+      color: *black-white.pokemon.togepi.color
+      shape: *diamond-pearl.pokemon.togepi.shape
+      female_rate: *gold-silver.pokemon.togepi.female_rate
+      capture_rate: *gold-silver.pokemon.togepi.capture_rate
+      happiness: *ruby-sapphire.pokemon.togepi.happiness
+      baby: *diamond-pearl.pokemon.togepi.baby
+      hatch_steps: *gold-silver.pokemon.togepi.hatch_steps
+      growth_rate: *gold-silver.pokemon.togepi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togepi.forms_switchable
+      name: Togepi
+      default: *gold-silver.pokemon.togepi.default
+      height: *gold-silver.pokemon.togepi.height
+      weight: *ruby-sapphire.pokemon.togepi.weight
+      experience: *diamond-pearl.pokemon.togepi.experience
+      types: *x-y.pokemon.togepi.types
+      egg_groups: *gold-silver.pokemon.togepi.egg_groups
+      mega: *x-y.pokemon.togepi.mega
+      stats: *diamond-pearl.pokemon.togepi.stats
+      abilities: *diamond-pearl.pokemon.togepi.abilities
+      forms:
+        togepi:
+          name: Togepi
+          form_name: *gold-silver.pokemon.togepi.forms.togepi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togepi.forms.togepi.battle_only
+          icon: *x-y.pokemon.togepi.forms.togepi.icon
+          sprites:
+            - ultra-sun-ultra-moon/togepi-default.png
+            - ultra-sun-ultra-moon/shiny/togepi-default.png
+          art: *gold-silver.pokemon.togepi.forms.togepi.art
+          footprint: *ruby-sapphire.pokemon.togepi.forms.togepi.footprint
+          cry: *x-y.pokemon.togepi.forms.togepi.cry

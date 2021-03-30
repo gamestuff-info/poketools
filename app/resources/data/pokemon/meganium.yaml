@@ -1,0 +1,842 @@
+gold-silver:
+  name: &gold-silver.name MEGANIUM
+  position: &gold-silver.position 153
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 154
+    original-johto: 2
+    original-johto-abc: 242
+  pokemon:
+    meganium:
+      name: MEGANIUM
+      default: &gold-silver.pokemon.meganium.default true
+      capture_rate: &gold-silver.pokemon.meganium.capture_rate 45
+      experience: &gold-silver.pokemon.meganium.experience 208
+      types: &gold-silver.pokemon.meganium.types
+        - grass
+      stats: &gold-silver.pokemon.meganium.stats
+        hp:
+          base_value: 80
+          effort_change: 80
+        attack:
+          base_value: 82
+          effort_change: 82
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 80
+          effort_change: 80
+        special-attack:
+          base_value: 83
+          effort_change: 83
+        special-defense:
+          base_value: 100
+          effort_change: 83
+      growth_rate: &gold-silver.pokemon.meganium.growth_rate medium-slow
+      female_rate: &gold-silver.pokemon.meganium.female_rate 12
+      hatch_steps: &gold-silver.pokemon.meganium.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.meganium.egg_groups
+        - monster
+        - plant
+      genus: &gold-silver.pokemon.meganium.genus 'HERB Pokémon'
+      height: &gold-silver.pokemon.meganium.height 18
+      weight: &gold-silver.pokemon.meganium.weight 1006
+      flavor_text:
+        gold: |
+          The aroma that
+          rises from its
+          petals contains a
+          substance that
+          calms aggressive
+          feelings.
+        silver: |
+          MEGANIUM's breath
+          has the power to
+          revive dead grass
+          and plants. It can
+          make them healthy
+          again.
+      evolution_parent: &gold-silver.pokemon.meganium.evolution_parent bayleef/bayleef
+      evolution_conditions: &gold-silver.pokemon.meganium.evolution_conditions
+        level-up:
+          minimum_level: 32
+      forms:
+        meganium:
+          name: MEGANIUM
+          form_name: &gold-silver.pokemon.meganium.forms.meganium.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.meganium.forms.meganium.battle_only false
+          sprites:
+            - gold-silver/meganium-default.png
+            - gold-silver/back/meganium-default.png
+            - gold-silver/shiny/meganium-default.png
+          art: &gold-silver.pokemon.meganium.forms.meganium.art
+            - meganium-default.png
+          cry: &gold-silver.pokemon.meganium.forms.meganium.cry gen5/meganium-default.webm
+          icon: &gold-silver.pokemon.meganium.forms.meganium.icon gen2/oddish.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    meganium:
+      name: MEGANIUM
+      default: *gold-silver.pokemon.meganium.default
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      experience: *gold-silver.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      stats: *gold-silver.pokemon.meganium.stats
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      genus: *gold-silver.pokemon.meganium.genus
+      height: *gold-silver.pokemon.meganium.height
+      weight: *gold-silver.pokemon.meganium.weight
+      flavor_text:
+        crystal: |
+          Anyone who stands
+          beside it becomes
+          refreshed, just as
+          if they were
+          relaxing in a
+          sunny forest.
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      forms:
+        meganium:
+          name: MEGANIUM
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          sprites:
+            - crystal/meganium-default.png
+            - crystal/back/meganium-default.png
+            - crystal/shiny/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+          icon: *gold-silver.pokemon.meganium.forms.meganium.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 154
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 309
+  pokemon:
+    meganium:
+      name: MEGANIUM
+      default: *gold-silver.pokemon.meganium.default
+      forms_switchable: &ruby-sapphire.pokemon.meganium.forms_switchable false
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      experience: *gold-silver.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      stats: &ruby-sapphire.pokemon.meganium.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 82
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 1
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 83
+          effort_change: 2
+        special-defense:
+          base_value: 80
+          effort_change: 2
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      happiness: &ruby-sapphire.pokemon.meganium.happiness 70
+      abilities: &ruby-sapphire.pokemon.meganium.abilities
+        overgrow: &ruby-sapphire.pokemon.meganium.abilities.overgrow
+          hidden: false
+          position: 1
+      genus: *gold-silver.pokemon.meganium.genus
+      height: *gold-silver.pokemon.meganium.height
+      weight: &ruby-sapphire.pokemon.meganium.weight 1005
+      flavor_text:
+        ruby: |
+          The fragrance of MEGANIUM's flower
+          soothes and calms emotions.
+          In battle, this POKéMON gives off more
+          of its becalming scent to blunt the
+           foe's fighting spirit.
+        sapphire: |
+          The fragrance of MEGANIUM's flower
+          soothes and calms emotions.
+           In battle, this POKéMON gives off more
+          of its becalming scent to blunt the
+          foe's fighting spirit.
+      forms:
+        meganium:
+          name: MEGANIUM
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: &ruby-sapphire.pokemon.meganium.forms.meganium.icon gen5/meganium-default.png
+          sprites:
+            - ruby-sapphire/meganium-default.png
+            - ruby-sapphire/back/meganium-default.png
+            - ruby-sapphire/shiny/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: &ruby-sapphire.pokemon.meganium.forms.meganium.footprint meganium.png
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    meganium:
+      name: MEGANIUM
+      default: *gold-silver.pokemon.meganium.default
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      experience: *gold-silver.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      stats: *ruby-sapphire.pokemon.meganium.stats
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      abilities: *ruby-sapphire.pokemon.meganium.abilities
+      genus: *gold-silver.pokemon.meganium.genus
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      flavor_text:
+        emerald: |
+          The fragrance of a MEGANIUM's flower
+          soothes and calms emotions.  In battle,
+          it gives off more of its becalming scent
+          to blunt the foe's fighting spirit.
+      forms:
+        meganium:
+          name: MEGANIUM
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *ruby-sapphire.pokemon.meganium.forms.meganium.icon
+          sprites:
+            - emerald/meganium-default.png
+            - emerald/shiny/meganium-default.png
+            - emerald/animated/meganium-default.webm
+            - emerald/animated/shiny/meganium-default.webm
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 197
+  pokemon:
+    meganium:
+      name: MEGANIUM
+      default: *gold-silver.pokemon.meganium.default
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      experience: *gold-silver.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      stats: *ruby-sapphire.pokemon.meganium.stats
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      abilities: *ruby-sapphire.pokemon.meganium.abilities
+      genus: *gold-silver.pokemon.meganium.genus
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      forms:
+        meganium:
+          name: MEGANIUM
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          sprites:
+            - colosseum/meganium-default.png
+            - colosseum/shiny/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    meganium:
+      name: MEGANIUM
+      default: *gold-silver.pokemon.meganium.default
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      experience: *gold-silver.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      stats: *ruby-sapphire.pokemon.meganium.stats
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      abilities: *ruby-sapphire.pokemon.meganium.abilities
+      genus: *gold-silver.pokemon.meganium.genus
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      forms:
+        meganium:
+          name: MEGANIUM
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          sprites:
+            - xd/meganium-default.png
+            - xd/shiny/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    meganium:
+      name: MEGANIUM
+      default: *gold-silver.pokemon.meganium.default
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      experience: *gold-silver.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      stats: *ruby-sapphire.pokemon.meganium.stats
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      abilities: *ruby-sapphire.pokemon.meganium.abilities
+      genus: *gold-silver.pokemon.meganium.genus
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      flavor_text:
+        firered: |
+          MEGANIUM's breath has the power to revive
+          dead grass and plants.  It can make them
+          healthy again.
+        leafgreen: |
+          The aroma that rises from its petals
+          contains a substance that calms aggressive
+          feelings.
+      forms:
+        meganium:
+          name: MEGANIUM
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *ruby-sapphire.pokemon.meganium.forms.meganium.icon
+          sprites:
+            - firered-leafgreen/meganium-default.png
+            - firered-leafgreen/back/meganium-default.png
+            - firered-leafgreen/shiny/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Meganium
+  position: &diamond-pearl.position 186
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    meganium:
+      genus: &diamond-pearl.pokemon.meganium.genus 'Herb Pokémon'
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      shape: &diamond-pearl.pokemon.meganium.shape quadruped
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: &diamond-pearl.pokemon.meganium.baby false
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      pal_park: &diamond-pearl.pokemon.meganium.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: &diamond-pearl.pokemon.meganium.experience 236
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      stats: &diamond-pearl.pokemon.meganium.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 82
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 1
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 83
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 2
+      abilities: &diamond-pearl.pokemon.meganium.abilities
+        overgrow: *ruby-sapphire.pokemon.meganium.abilities.overgrow
+        leaf-guard:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its breath has the fantastic
+          ability to revive dead plants and
+          flowers.
+        pearl: |
+          Its breath has the fantastic
+          ability to revive dead plants and
+          flowers.
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *ruby-sapphire.pokemon.meganium.forms.meganium.icon
+          sprites:
+            - diamond-pearl/meganium-default.png
+            - diamond-pearl/back/meganium-default.png
+            - diamond-pearl/back/female/meganium-default.png
+            - diamond-pearl/back/shiny/meganium-default.png
+            - diamond-pearl/female/meganium-default.png
+            - diamond-pearl/shiny/meganium-default.png
+            - diamond-pearl/shiny/female/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    meganium:
+      genus: *diamond-pearl.pokemon.meganium.genus
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      shape: *diamond-pearl.pokemon.meganium.shape
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: *diamond-pearl.pokemon.meganium.baby
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      pal_park: *diamond-pearl.pokemon.meganium.pal_park
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: *diamond-pearl.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      stats: *diamond-pearl.pokemon.meganium.stats
+      abilities: *diamond-pearl.pokemon.meganium.abilities
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      flavor_text:
+        platinum: |
+          Its breath has the fantastic
+          ability to revive dead plants and
+          flowers.
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *ruby-sapphire.pokemon.meganium.forms.meganium.icon
+          sprites:
+            - platinum/meganium-default.png
+            - platinum/back/meganium-default.png
+            - platinum/back/female/meganium-default.png
+            - platinum/back/shiny/meganium-default.png
+            - platinum/female/meganium-default.png
+            - platinum/shiny/meganium-default.png
+            - platinum/shiny/female/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 3
+  pokemon:
+    meganium:
+      genus: *diamond-pearl.pokemon.meganium.genus
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      shape: *diamond-pearl.pokemon.meganium.shape
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: *diamond-pearl.pokemon.meganium.baby
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      pal_park: *diamond-pearl.pokemon.meganium.pal_park
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: *diamond-pearl.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      stats: *diamond-pearl.pokemon.meganium.stats
+      abilities: *diamond-pearl.pokemon.meganium.abilities
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      flavor_text:
+        heartgold: |
+          The aroma that rises from its
+          petals contains a substance that
+          calms aggressive feelings.
+        soulsilver: |
+          MEGANIUM’s breath has the power to
+          revive dead grass and plants. It can
+          make them healthy again.
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 3
+              range: 1-5
+            skill:
+              base_value: 5
+              range: 1-5
+            stamina:
+              base_value: 5
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.meganium.forms.meganium.icon
+          sprites:
+            - heartgold-soulsilver/meganium-default.png
+            - heartgold-soulsilver/back/meganium-default.png
+            - heartgold-soulsilver/back/female/meganium-default.png
+            - heartgold-soulsilver/back/shiny/meganium-default.png
+            - heartgold-soulsilver/female/meganium-default.png
+            - heartgold-soulsilver/shiny/meganium-default.png
+            - heartgold-soulsilver/shiny/female/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    meganium:
+      genus: *diamond-pearl.pokemon.meganium.genus
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      color: &black-white.pokemon.meganium.color green
+      shape: *diamond-pearl.pokemon.meganium.shape
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: *diamond-pearl.pokemon.meganium.baby
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: *diamond-pearl.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      stats: *diamond-pearl.pokemon.meganium.stats
+      abilities: *diamond-pearl.pokemon.meganium.abilities
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      flavor_text:
+        black: |
+          Its breath has the fantastic
+          ability to revive dead plants and
+          flowers.
+        white: |
+          Its breath has the fantastic
+          ability to revive dead plants and
+          flowers.
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *ruby-sapphire.pokemon.meganium.forms.meganium.icon
+          sprites:
+            - black-white/meganium-default.png
+            - black-white/back/meganium-default.png
+            - black-white/back/female/meganium-default.png
+            - black-white/back/shiny/meganium-default.png
+            - black-white/female/meganium-default.png
+            - black-white/shiny/meganium-default.png
+            - black-white/shiny/female/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    meganium:
+      genus: *diamond-pearl.pokemon.meganium.genus
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      color: *black-white.pokemon.meganium.color
+      shape: *diamond-pearl.pokemon.meganium.shape
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: *diamond-pearl.pokemon.meganium.baby
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: *diamond-pearl.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      stats: *diamond-pearl.pokemon.meganium.stats
+      abilities: *diamond-pearl.pokemon.meganium.abilities
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      flavor_text:
+        black-2: |
+          Its breath has the fantastic
+          ability to revive dead plants and
+          flowers.
+        white-2: |
+          Its breath has the fantastic
+          ability to revive dead plants and
+          flowers.
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *ruby-sapphire.pokemon.meganium.forms.meganium.icon
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *gold-silver.pokemon.meganium.forms.meganium.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    meganium:
+      genus: *diamond-pearl.pokemon.meganium.genus
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      color: *black-white.pokemon.meganium.color
+      shape: *diamond-pearl.pokemon.meganium.shape
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: *diamond-pearl.pokemon.meganium.baby
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: *diamond-pearl.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      mega: &x-y.pokemon.meganium.mega false
+      stats: *diamond-pearl.pokemon.meganium.stats
+      abilities: *diamond-pearl.pokemon.meganium.abilities
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      flavor_text:
+        x: |
+          The aroma that rises from its petals contains a
+          substance that calms aggressive feelings.
+        'y': |
+          Meganium’s breath has the power to revive dead
+          grass and plants. It can make them healthy again.
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: &x-y.pokemon.meganium.forms.meganium.icon meganium-default.png
+          sprites:
+            - x-y/meganium-default.png
+            - x-y/female/meganium-default.png
+            - x-y/shiny/meganium-default.png
+            - x-y/shiny/female/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: &x-y.pokemon.meganium.forms.meganium.cry meganium-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    meganium:
+      genus: *diamond-pearl.pokemon.meganium.genus
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      color: *black-white.pokemon.meganium.color
+      shape: *diamond-pearl.pokemon.meganium.shape
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: *diamond-pearl.pokemon.meganium.baby
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: *diamond-pearl.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      mega: *x-y.pokemon.meganium.mega
+      stats: *diamond-pearl.pokemon.meganium.stats
+      abilities: *diamond-pearl.pokemon.meganium.abilities
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          The fragrance of Meganium’s flower soothes and calms
+          emotions. In battle, this Pokémon gives off more of its
+          becalming scent to blunt the foe’s fighting spirit.
+        alpha-sapphire: |
+          The fragrance of Meganium’s flower soothes and calms
+          emotions. In battle, this Pokémon gives off more of its
+          becalming scent to blunt the foe’s fighting spirit.
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *x-y.pokemon.meganium.forms.meganium.icon
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *x-y.pokemon.meganium.forms.meganium.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/meganium-default.png
+            - omega-ruby-alpha-sapphire/shiny/meganium-default.png
+            - omega-ruby-alpha-sapphire/female/meganium-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/meganium-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    meganium:
+      genus: *diamond-pearl.pokemon.meganium.genus
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      color: *black-white.pokemon.meganium.color
+      shape: *diamond-pearl.pokemon.meganium.shape
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: *diamond-pearl.pokemon.meganium.baby
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: *diamond-pearl.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      mega: *x-y.pokemon.meganium.mega
+      stats: *diamond-pearl.pokemon.meganium.stats
+      abilities: *diamond-pearl.pokemon.meganium.abilities
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *x-y.pokemon.meganium.forms.meganium.icon
+          sprites:
+            - sun-moon/meganium-default.png
+            - sun-moon/female/meganium-default.png
+            - sun-moon/shiny/meganium-default.png
+            - sun-moon/shiny/female/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *x-y.pokemon.meganium.forms.meganium.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    meganium:
+      genus: *diamond-pearl.pokemon.meganium.genus
+      evolution_parent: *gold-silver.pokemon.meganium.evolution_parent
+      color: *black-white.pokemon.meganium.color
+      shape: *diamond-pearl.pokemon.meganium.shape
+      female_rate: *gold-silver.pokemon.meganium.female_rate
+      capture_rate: *gold-silver.pokemon.meganium.capture_rate
+      happiness: *ruby-sapphire.pokemon.meganium.happiness
+      baby: *diamond-pearl.pokemon.meganium.baby
+      hatch_steps: *gold-silver.pokemon.meganium.hatch_steps
+      growth_rate: *gold-silver.pokemon.meganium.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.meganium.forms_switchable
+      name: Meganium
+      default: *gold-silver.pokemon.meganium.default
+      height: *gold-silver.pokemon.meganium.height
+      weight: *ruby-sapphire.pokemon.meganium.weight
+      experience: *diamond-pearl.pokemon.meganium.experience
+      types: *gold-silver.pokemon.meganium.types
+      egg_groups: *gold-silver.pokemon.meganium.egg_groups
+      mega: *x-y.pokemon.meganium.mega
+      stats: *diamond-pearl.pokemon.meganium.stats
+      abilities: *diamond-pearl.pokemon.meganium.abilities
+      evolution_conditions: *gold-silver.pokemon.meganium.evolution_conditions
+      forms:
+        meganium:
+          name: Meganium
+          form_name: *gold-silver.pokemon.meganium.forms.meganium.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.meganium.forms.meganium.battle_only
+          icon: *x-y.pokemon.meganium.forms.meganium.icon
+          sprites:
+            - ultra-sun-ultra-moon/meganium-default.png
+            - ultra-sun-ultra-moon/female/meganium-default.png
+            - ultra-sun-ultra-moon/shiny/meganium-default.png
+            - ultra-sun-ultra-moon/shiny/female/meganium-default.png
+          art: *gold-silver.pokemon.meganium.forms.meganium.art
+          footprint: *ruby-sapphire.pokemon.meganium.forms.meganium.footprint
+          cry: *x-y.pokemon.meganium.forms.meganium.cry

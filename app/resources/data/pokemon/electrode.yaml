@@ -1,0 +1,920 @@
+red-blue:
+  name: &red-blue.name ELECTRODE
+  position: &red-blue.position 101
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 101
+    kanto: 101
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: &red-blue.pokemon.electrode.default true
+      capture_rate: &red-blue.pokemon.electrode.capture_rate 60
+      experience: &red-blue.pokemon.electrode.experience 150
+      types: &red-blue.pokemon.electrode.types
+        - electric
+      stats: &red-blue.pokemon.electrode.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 50
+          effort_change: 50
+        defense:
+          base_value: 70
+          effort_change: 70
+        speed:
+          base_value: 140
+          effort_change: 140
+        special:
+          base_value: 80
+          effort_change: 80
+      growth_rate: &red-blue.pokemon.electrode.growth_rate medium
+      genus: &red-blue.pokemon.electrode.genus 'BALL Pokémon'
+      height: &red-blue.pokemon.electrode.height 11
+      weight: &red-blue.pokemon.electrode.weight 6667
+      flavor_text:
+        red: |
+          It stores electric
+          energy under very
+          high pressure.
+          It often explodes
+           with little or no
+          provocation.
+        blue: |
+          It stores electric
+          energy under very
+          high pressure.
+          It often explodes
+           with little or no
+          provocation.
+      evolution_parent: &red-blue.pokemon.electrode.evolution_parent voltorb/voltorb
+      evolution_conditions: &red-blue.pokemon.electrode.evolution_conditions
+        level-up:
+          minimum_level: 30
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: &red-blue.pokemon.electrode.forms.electrode.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.electrode.forms.electrode.battle_only false
+          sprites:
+            - red-blue/electrode-default.png
+            - red-blue/gray/electrode-default.png
+            - red-blue/back/electrode-default.png
+          art: &red-blue.pokemon.electrode.forms.electrode.art
+            - electrode-default.png
+          cry: &red-blue.pokemon.electrode.forms.electrode.cry gen5/electrode-default.webm
+          icon: &red-blue.pokemon.electrode.forms.electrode.icon gen1/ball_m.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: *red-blue.pokemon.electrode.default
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      experience: *red-blue.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      stats: *red-blue.pokemon.electrode.stats
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      genus: *red-blue.pokemon.electrode.genus
+      height: *red-blue.pokemon.electrode.height
+      weight: *red-blue.pokemon.electrode.weight
+      flavor_text:
+        yellow: |
+          Stores electrical
+          energy inside its
+          body. Even the
+          slightest shock
+           could trigger a
+          huge explosion.
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          sprites:
+            - yellow/electrode-default.png
+            - yellow/gray/electrode-default.png
+            - yellow/back/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+          icon: *red-blue.pokemon.electrode.forms.electrode.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 100
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 120
+    original-johto-abc: 40
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: *red-blue.pokemon.electrode.default
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      experience: *red-blue.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      stats: &gold-silver.pokemon.electrode.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 50
+          effort_change: 50
+        defense:
+          base_value: 70
+          effort_change: 70
+        speed:
+          base_value: 140
+          effort_change: 140
+        special-attack:
+          base_value: 80
+          effort_change: 80
+        special-defense:
+          base_value: 80
+          effort_change: 80
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      female_rate: &gold-silver.pokemon.electrode.female_rate 100
+      hatch_steps: &gold-silver.pokemon.electrode.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.electrode.egg_groups
+        - mineral
+      genus: *red-blue.pokemon.electrode.genus
+      height: *red-blue.pokemon.electrode.height
+      weight: &gold-silver.pokemon.electrode.weight 666
+      flavor_text:
+        gold: |
+          It is dangerous.
+          If it has too much
+          electricity and
+          has nothing to do,
+          it amuses itself
+          by exploding.
+        silver: |
+          It stores an over-
+          flowing amount of
+          electric energy
+          inside its body.
+          Even a small shock
+          makes it explode.
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          sprites:
+            - gold-silver/electrode-default.png
+            - gold-silver/back/electrode-default.png
+            - gold-silver/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+          icon: &gold-silver.pokemon.electrode.forms.electrode.icon gen2/voltorb.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: *red-blue.pokemon.electrode.default
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      experience: *red-blue.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      stats: *gold-silver.pokemon.electrode.stats
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      female_rate: *gold-silver.pokemon.electrode.female_rate
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      genus: *red-blue.pokemon.electrode.genus
+      height: *red-blue.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      flavor_text:
+        crystal: |
+          The more energy it
+          charges up, the
+          faster it gets.
+          But this also
+          makes it more
+          likely to explode.
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          sprites:
+            - crystal/electrode-default.png
+            - crystal/back/electrode-default.png
+            - crystal/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+          icon: *gold-silver.pokemon.electrode.forms.electrode.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 85
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: *red-blue.pokemon.electrode.default
+      forms_switchable: &ruby-sapphire.pokemon.electrode.forms_switchable false
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      experience: *red-blue.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      stats: &ruby-sapphire.pokemon.electrode.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 140
+          effort_change: 2
+        special-attack:
+          base_value: 80
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      happiness: &ruby-sapphire.pokemon.electrode.happiness 70
+      abilities: &ruby-sapphire.pokemon.electrode.abilities
+        soundproof: &ruby-sapphire.pokemon.electrode.abilities.soundproof
+          hidden: &ruby-sapphire.pokemon.electrode.abilities.soundproof.hidden false
+          position: 1
+        static: &ruby-sapphire.pokemon.electrode.abilities.static
+          hidden: *ruby-sapphire.pokemon.electrode.abilities.soundproof.hidden
+          position: 2
+      genus: *red-blue.pokemon.electrode.genus
+      height: &ruby-sapphire.pokemon.electrode.height 12
+      weight: *gold-silver.pokemon.electrode.weight
+      flavor_text:
+        ruby: |
+          ELECTRODE eats electricity in the
+          atmosphere. On days when lightning
+           strikes, you can see this POKéMON
+          exploding all over the place from
+          eating too much electricity.
+        sapphire: |
+          One of ELECTRODE's characteristics is
+          its attraction to electricity.
+           It is a problematical POKéMON that
+          congregates mostly at electrical
+          power plants to feed on electricity
+          that has just been generated.
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: &ruby-sapphire.pokemon.electrode.forms.electrode.icon gen5/electrode-default.png
+          sprites:
+            - ruby-sapphire/electrode-default.png
+            - ruby-sapphire/back/electrode-default.png
+            - ruby-sapphire/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: &ruby-sapphire.pokemon.electrode.forms.electrode.footprint electrode.png
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: *red-blue.pokemon.electrode.default
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      experience: *red-blue.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      stats: *ruby-sapphire.pokemon.electrode.stats
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      abilities: *ruby-sapphire.pokemon.electrode.abilities
+      genus: *red-blue.pokemon.electrode.genus
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      flavor_text:
+        emerald: |
+          They appear in great numbers at electric
+          power plants. Because they feed on
+          electricity, they cause massive and
+          chaotic blackouts in nearby cities.
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *ruby-sapphire.pokemon.electrode.forms.electrode.icon
+          sprites:
+            - emerald/electrode-default.png
+            - emerald/shiny/electrode-default.png
+            - emerald/animated/electrode-default.webm
+            - emerald/animated/shiny/electrode-default.webm
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 86
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: *red-blue.pokemon.electrode.default
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      experience: *red-blue.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      stats: *ruby-sapphire.pokemon.electrode.stats
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      abilities: *ruby-sapphire.pokemon.electrode.abilities
+      genus: *red-blue.pokemon.electrode.genus
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          sprites:
+            - colosseum/electrode-default.png
+            - colosseum/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: *red-blue.pokemon.electrode.default
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      experience: *red-blue.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      stats: *ruby-sapphire.pokemon.electrode.stats
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      abilities: *ruby-sapphire.pokemon.electrode.abilities
+      genus: *red-blue.pokemon.electrode.genus
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          sprites:
+            - xd/electrode-default.png
+            - xd/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    electrode:
+      name: ELECTRODE
+      default: *red-blue.pokemon.electrode.default
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      experience: *red-blue.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      stats: *ruby-sapphire.pokemon.electrode.stats
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      abilities: *ruby-sapphire.pokemon.electrode.abilities
+      genus: *red-blue.pokemon.electrode.genus
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      flavor_text:
+        firered: |
+          It explodes in response to even minor
+          stimuli. It is feared, with the nickname
+          of “The Bomb Ball.”
+        leafgreen: |
+          It stores electric energy under very high
+          pressure. It often explodes with little or
+          no provocation.
+      forms:
+        electrode:
+          name: ELECTRODE
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *ruby-sapphire.pokemon.electrode.forms.electrode.icon
+          sprites:
+            - firered-leafgreen/electrode-default.png
+            - firered-leafgreen/back/electrode-default.png
+            - firered-leafgreen/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Electrode
+  position: &diamond-pearl.position 110
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    electrode:
+      genus: &diamond-pearl.pokemon.electrode.genus 'Ball Pokémon'
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      shape: &diamond-pearl.pokemon.electrode.shape ball
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: &diamond-pearl.pokemon.electrode.baby false
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      pal_park: &diamond-pearl.pokemon.electrode.pal_park
+        area: field
+        rate: 20
+        score: 70
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: &diamond-pearl.pokemon.electrode.experience 172
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      stats: &diamond-pearl.pokemon.electrode.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 150
+          effort_change: 2
+        special-attack:
+          base_value: 80
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.electrode.abilities
+        soundproof: *ruby-sapphire.pokemon.electrode.abilities.soundproof
+        static: *ruby-sapphire.pokemon.electrode.abilities.static
+        aftermath:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is known to drift on winds if it
+          is bloated to bursting with stored
+          electricity.
+        pearl: |
+          It is known to drift on winds if it
+          is bloated to bursting with stored
+          electricity.
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *ruby-sapphire.pokemon.electrode.forms.electrode.icon
+          sprites:
+            - diamond-pearl/back/electrode-default.png
+            - diamond-pearl/back/shiny/electrode-default.png
+            - diamond-pearl/electrode-default.png
+            - diamond-pearl/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    electrode:
+      genus: *diamond-pearl.pokemon.electrode.genus
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      shape: *diamond-pearl.pokemon.electrode.shape
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: *diamond-pearl.pokemon.electrode.baby
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      pal_park: *diamond-pearl.pokemon.electrode.pal_park
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: *diamond-pearl.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      stats: *diamond-pearl.pokemon.electrode.stats
+      abilities: *diamond-pearl.pokemon.electrode.abilities
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is known to drift on winds if it
+          is bloated to bursting with stored
+          electricity.
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *ruby-sapphire.pokemon.electrode.forms.electrode.icon
+          sprites:
+            - platinum/back/electrode-default.png
+            - platinum/back/shiny/electrode-default.png
+            - platinum/electrode-default.png
+            - platinum/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 122
+  pokemon:
+    electrode:
+      genus: *diamond-pearl.pokemon.electrode.genus
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      shape: *diamond-pearl.pokemon.electrode.shape
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: *diamond-pearl.pokemon.electrode.baby
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      pal_park: *diamond-pearl.pokemon.electrode.pal_park
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: *diamond-pearl.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      stats: *diamond-pearl.pokemon.electrode.stats
+      abilities: *diamond-pearl.pokemon.electrode.abilities
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It is dangerous. If it has too much
+          electricity and has nothing to do,
+          it amuses itself by exploding.
+        soulsilver: |
+          It stores an overflowing amount of
+          electric energy inside its body.
+          Even a small shock makes it explode.
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 5
+              range: 5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.electrode.forms.electrode.icon
+          sprites:
+            - heartgold-soulsilver/back/electrode-default.png
+            - heartgold-soulsilver/back/shiny/electrode-default.png
+            - heartgold-soulsilver/electrode-default.png
+            - heartgold-soulsilver/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    electrode:
+      genus: *diamond-pearl.pokemon.electrode.genus
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      color: &black-white.pokemon.electrode.color red
+      shape: *diamond-pearl.pokemon.electrode.shape
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: *diamond-pearl.pokemon.electrode.baby
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: *diamond-pearl.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      stats: *diamond-pearl.pokemon.electrode.stats
+      abilities: *diamond-pearl.pokemon.electrode.abilities
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      flavor_text:
+        black: |
+          It is known to drift on winds if it
+          is bloated to bursting with stored
+          electricity.
+        white: |
+          It is known to drift on winds if it
+          is bloated to bursting with stored
+          electricity.
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *ruby-sapphire.pokemon.electrode.forms.electrode.icon
+          sprites:
+            - black-white/back/electrode-default.png
+            - black-white/back/shiny/electrode-default.png
+            - black-white/electrode-default.png
+            - black-white/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    electrode:
+      genus: *diamond-pearl.pokemon.electrode.genus
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      color: *black-white.pokemon.electrode.color
+      shape: *diamond-pearl.pokemon.electrode.shape
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: *diamond-pearl.pokemon.electrode.baby
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: *diamond-pearl.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      stats: *diamond-pearl.pokemon.electrode.stats
+      abilities: *diamond-pearl.pokemon.electrode.abilities
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      flavor_text:
+        black-2: |
+          It is known to drift on winds if it
+          is bloated to bursting with stored
+          electricity.
+        white-2: |
+          It is known to drift on winds if it
+          is bloated to bursting with stored
+          electricity.
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *ruby-sapphire.pokemon.electrode.forms.electrode.icon
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *red-blue.pokemon.electrode.forms.electrode.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 73
+  pokemon:
+    electrode:
+      genus: *diamond-pearl.pokemon.electrode.genus
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      color: *black-white.pokemon.electrode.color
+      shape: *diamond-pearl.pokemon.electrode.shape
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: *diamond-pearl.pokemon.electrode.baby
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: *diamond-pearl.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      mega: &x-y.pokemon.electrode.mega false
+      stats: *diamond-pearl.pokemon.electrode.stats
+      abilities: *diamond-pearl.pokemon.electrode.abilities
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      flavor_text:
+        x: |
+          It explodes in response to even minor stimuli. It is
+          feared, with the nickname of “The Bomb Ball.”
+        'y': |
+          It stores an overflowing amount of electric energy
+          inside its body. Even a small shock makes
+          it explode.
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: &x-y.pokemon.electrode.forms.electrode.icon electrode-default.png
+          sprites:
+            - x-y/electrode-default.png
+            - x-y/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: &x-y.pokemon.electrode.forms.electrode.cry electrode-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 88
+  pokemon:
+    electrode:
+      genus: *diamond-pearl.pokemon.electrode.genus
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      color: *black-white.pokemon.electrode.color
+      shape: *diamond-pearl.pokemon.electrode.shape
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: *diamond-pearl.pokemon.electrode.baby
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: *diamond-pearl.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      mega: *x-y.pokemon.electrode.mega
+      stats: *diamond-pearl.pokemon.electrode.stats
+      abilities: *diamond-pearl.pokemon.electrode.abilities
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Electrode eats electricity in the atmosphere. On days when
+          lightning strikes, you can see this Pokémon exploding all over
+          the place from eating too much electricity.
+        alpha-sapphire: |
+          One of Electrode’s characteristics is its attraction to electricity.
+          It is a problematical Pokémon that congregates mostly at
+          electrical power plants to feed on electricity that has just
+          been generated.
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *x-y.pokemon.electrode.forms.electrode.icon
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *x-y.pokemon.electrode.forms.electrode.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/electrode-default.png
+            - omega-ruby-alpha-sapphire/shiny/electrode-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    electrode:
+      genus: *diamond-pearl.pokemon.electrode.genus
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      color: *black-white.pokemon.electrode.color
+      shape: *diamond-pearl.pokemon.electrode.shape
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: *diamond-pearl.pokemon.electrode.baby
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: *diamond-pearl.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      mega: *x-y.pokemon.electrode.mega
+      stats: *diamond-pearl.pokemon.electrode.stats
+      abilities: *diamond-pearl.pokemon.electrode.abilities
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *x-y.pokemon.electrode.forms.electrode.icon
+          sprites:
+            - sun-moon/electrode-default.png
+            - sun-moon/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *x-y.pokemon.electrode.forms.electrode.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    electrode:
+      genus: *diamond-pearl.pokemon.electrode.genus
+      evolution_parent: *red-blue.pokemon.electrode.evolution_parent
+      color: *black-white.pokemon.electrode.color
+      shape: *diamond-pearl.pokemon.electrode.shape
+      capture_rate: *red-blue.pokemon.electrode.capture_rate
+      happiness: *ruby-sapphire.pokemon.electrode.happiness
+      baby: *diamond-pearl.pokemon.electrode.baby
+      hatch_steps: *gold-silver.pokemon.electrode.hatch_steps
+      growth_rate: *red-blue.pokemon.electrode.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electrode.forms_switchable
+      name: Electrode
+      default: *red-blue.pokemon.electrode.default
+      height: *ruby-sapphire.pokemon.electrode.height
+      weight: *gold-silver.pokemon.electrode.weight
+      experience: *diamond-pearl.pokemon.electrode.experience
+      types: *red-blue.pokemon.electrode.types
+      egg_groups: *gold-silver.pokemon.electrode.egg_groups
+      mega: *x-y.pokemon.electrode.mega
+      stats: *diamond-pearl.pokemon.electrode.stats
+      abilities: *diamond-pearl.pokemon.electrode.abilities
+      evolution_conditions: *red-blue.pokemon.electrode.evolution_conditions
+      forms:
+        electrode:
+          name: Electrode
+          form_name: *red-blue.pokemon.electrode.forms.electrode.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electrode.forms.electrode.battle_only
+          icon: *x-y.pokemon.electrode.forms.electrode.icon
+          sprites:
+            - ultra-sun-ultra-moon/electrode-default.png
+            - ultra-sun-ultra-moon/shiny/electrode-default.png
+          art: *red-blue.pokemon.electrode.forms.electrode.art
+          footprint: *ruby-sapphire.pokemon.electrode.forms.electrode.footprint
+          cry: *x-y.pokemon.electrode.forms.electrode.cry

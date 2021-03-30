@@ -1,0 +1,1187 @@
+red-blue:
+  name: &red-blue.name ALAKAZAM
+  position: &red-blue.position 65
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 65
+    kanto: 65
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: &red-blue.pokemon.alakazam.default true
+      capture_rate: &red-blue.pokemon.alakazam.capture_rate 50
+      experience: &red-blue.pokemon.alakazam.experience 186
+      types: &red-blue.pokemon.alakazam.types
+        - psychic
+      stats: &red-blue.pokemon.alakazam.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 50
+          effort_change: 50
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 120
+          effort_change: 120
+        special:
+          base_value: 135
+          effort_change: 135
+      growth_rate: &red-blue.pokemon.alakazam.growth_rate medium-slow
+      genus: &red-blue.pokemon.alakazam.genus 'PSI Pokémon'
+      height: &red-blue.pokemon.alakazam.height 14
+      weight: &red-blue.pokemon.alakazam.weight 4808
+      flavor_text:
+        red: |
+          Its brain can out-
+          perform a super-
+          computer.
+          Its intelligence
+           quotient is said
+          to be 5,000.
+        blue: |
+          Its brain can out-
+          perform a super-
+          computer.
+          Its intelligence
+           quotient is said
+          to be 5,000.
+      evolution_parent: &red-blue.pokemon.alakazam.evolution_parent kadabra/kadabra
+      evolution_conditions: &red-blue.pokemon.alakazam.evolution_conditions
+        trade: {  }
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: &red-blue.pokemon.alakazam.forms.alakazam.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.alakazam.forms.alakazam.battle_only false
+          sprites:
+            - red-blue/alakazam-default.png
+            - red-blue/gray/alakazam-default.png
+            - red-blue/back/alakazam-default.png
+          art: &red-blue.pokemon.alakazam.forms.alakazam.art
+            - alakazam-default.png
+          cry: &red-blue.pokemon.alakazam.forms.alakazam.cry gen5/alakazam-default.webm
+          icon: &red-blue.pokemon.alakazam.forms.alakazam.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: *red-blue.pokemon.alakazam.default
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      experience: *red-blue.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      stats: *red-blue.pokemon.alakazam.stats
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      genus: *red-blue.pokemon.alakazam.genus
+      height: *red-blue.pokemon.alakazam.height
+      weight: *red-blue.pokemon.alakazam.weight
+      flavor_text:
+        yellow: |
+          A POKéMON that can
+          memorize anything.
+          It never forgets
+          what it learns--
+          that's why this
+          POKéMON is smart.
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          sprites:
+            - yellow/alakazam-default.png
+            - yellow/gray/alakazam-default.png
+            - yellow/back/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+          icon: *red-blue.pokemon.alakazam.forms.alakazam.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 64
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 90
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: *red-blue.pokemon.alakazam.default
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      experience: *red-blue.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      stats: &gold-silver.pokemon.alakazam.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 50
+          effort_change: 50
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 120
+          effort_change: 120
+        special-attack:
+          base_value: 135
+          effort_change: 135
+        special-defense:
+          base_value: 85
+          effort_change: 135
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      female_rate: &gold-silver.pokemon.alakazam.female_rate 25
+      hatch_steps: &gold-silver.pokemon.alakazam.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.alakazam.egg_groups
+        - humanshape
+      genus: *red-blue.pokemon.alakazam.genus
+      height: *red-blue.pokemon.alakazam.height
+      weight: &gold-silver.pokemon.alakazam.weight 480
+      flavor_text:
+        gold: |
+          Closing both its
+          eyes heightens all
+          its other senses.
+          This enables it to
+          use its abilities
+          to their extremes.
+        silver: |
+          Its brain cells
+          multiply continu-
+          ally until it
+          dies. As a result,
+          it remembers
+          everything.
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          sprites:
+            - gold-silver/alakazam-default.png
+            - gold-silver/back/alakazam-default.png
+            - gold-silver/shiny/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+          icon: &gold-silver.pokemon.alakazam.forms.alakazam.icon gen2/humanshape.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: *red-blue.pokemon.alakazam.default
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      experience: *red-blue.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      stats: *gold-silver.pokemon.alakazam.stats
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      genus: *red-blue.pokemon.alakazam.genus
+      height: *red-blue.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      flavor_text:
+        crystal: |
+          It has an IQ of
+          5000. It calcu-
+          lates many things
+          in order to gain
+          the edge in every
+          battle.
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          sprites:
+            - crystal/alakazam-default.png
+            - crystal/back/alakazam-default.png
+            - crystal/shiny/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+          icon: *gold-silver.pokemon.alakazam.forms.alakazam.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 41
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: *red-blue.pokemon.alakazam.default
+      forms_switchable: &ruby-sapphire.pokemon.alakazam.forms_switchable false
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      experience: *red-blue.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      stats: &ruby-sapphire.pokemon.alakazam.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 120
+          effort_change: 0
+        special-attack:
+          base_value: 135
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.alakazam.wild_held_items.ruby
+          twistedspoon: 5
+        sapphire: *ruby-sapphire.pokemon.alakazam.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.alakazam.happiness 70
+      abilities: &ruby-sapphire.pokemon.alakazam.abilities
+        synchronize: &ruby-sapphire.pokemon.alakazam.abilities.synchronize
+          hidden: &ruby-sapphire.pokemon.alakazam.abilities.synchronize.hidden false
+          position: 1
+        inner-focus: &ruby-sapphire.pokemon.alakazam.abilities.inner-focus
+          hidden: *ruby-sapphire.pokemon.alakazam.abilities.synchronize.hidden
+          position: 2
+      genus: *red-blue.pokemon.alakazam.genus
+      height: &ruby-sapphire.pokemon.alakazam.height 15
+      weight: *gold-silver.pokemon.alakazam.weight
+      flavor_text:
+        ruby: |
+          ALAKAZAM's brain continually grows,
+          making its head far too heavy to
+          support with its neck.
+          This POKéMON holds its head up using
+          its psychokinetic power instead.
+        sapphire: |
+          ALAKAZAM's brain continually grows,
+          infinitely multiplying brain cells.
+          This amazing brain gives this POKéMON
+          an astoundingly high IQ of 5,000.
+          It has a thorough memory of everything
+          that has occurred in the world.
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: &ruby-sapphire.pokemon.alakazam.forms.alakazam.icon gen5/alakazam-default.png
+          sprites:
+            - ruby-sapphire/alakazam-default.png
+            - ruby-sapphire/back/alakazam-default.png
+            - ruby-sapphire/shiny/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: &ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint alakazam.png
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: *red-blue.pokemon.alakazam.default
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      experience: *red-blue.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      stats: *ruby-sapphire.pokemon.alakazam.stats
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.alakazam.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      abilities: *ruby-sapphire.pokemon.alakazam.abilities
+      genus: *red-blue.pokemon.alakazam.genus
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      flavor_text:
+        emerald: |
+          While it has strong psychic abilities and
+          high intelligence, an ALAKAZAM's muscles
+          are very weak. It uses psychic power to
+          move its body.
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *ruby-sapphire.pokemon.alakazam.forms.alakazam.icon
+          sprites:
+            - emerald/alakazam-default.png
+            - emerald/shiny/alakazam-default.png
+            - emerald/animated/alakazam-default.webm
+            - emerald/animated/shiny/alakazam-default.webm
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 6
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: *red-blue.pokemon.alakazam.default
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      experience: *red-blue.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      stats: *ruby-sapphire.pokemon.alakazam.stats
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      abilities: *ruby-sapphire.pokemon.alakazam.abilities
+      genus: *red-blue.pokemon.alakazam.genus
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          sprites:
+            - colosseum/alakazam-default.png
+            - colosseum/shiny/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: *red-blue.pokemon.alakazam.default
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      experience: *red-blue.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      stats: *ruby-sapphire.pokemon.alakazam.stats
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      abilities: *ruby-sapphire.pokemon.alakazam.abilities
+      genus: *red-blue.pokemon.alakazam.genus
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          sprites:
+            - xd/alakazam-default.png
+            - xd/shiny/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    alakazam:
+      name: ALAKAZAM
+      default: *red-blue.pokemon.alakazam.default
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      experience: *red-blue.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      stats: *ruby-sapphire.pokemon.alakazam.stats
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.alakazam.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.alakazam.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      abilities: *ruby-sapphire.pokemon.alakazam.abilities
+      genus: *red-blue.pokemon.alakazam.genus
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      flavor_text:
+        firered: |
+          It does not like physical attacks very
+          much. Instead, it freely uses extra-
+          sensory powers to defeat foes.
+        leafgreen: |
+          Its brain can outperform a supercomputer.
+          Its IQ (intelligence quotient) is said to
+          be around 5,000.
+      forms:
+        alakazam:
+          name: ALAKAZAM
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *ruby-sapphire.pokemon.alakazam.forms.alakazam.icon
+          sprites:
+            - firered-leafgreen/alakazam-default.png
+            - firered-leafgreen/back/alakazam-default.png
+            - firered-leafgreen/shiny/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Alakazam
+  position: &diamond-pearl.position 71
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 22
+  pokemon:
+    alakazam:
+      genus: &diamond-pearl.pokemon.alakazam.genus 'Psi Pokémon'
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      shape: &diamond-pearl.pokemon.alakazam.shape humanoid
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: &diamond-pearl.pokemon.alakazam.baby false
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      pal_park: &diamond-pearl.pokemon.alakazam.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: &diamond-pearl.pokemon.alakazam.experience 225
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      stats: &diamond-pearl.pokemon.alakazam.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 120
+          effort_change: 0
+        special-attack:
+          base_value: 135
+          effort_change: 3
+        special-defense:
+          base_value: 95
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.alakazam.abilities
+        synchronize: *ruby-sapphire.pokemon.alakazam.abilities.synchronize
+        inner-focus: *ruby-sapphire.pokemon.alakazam.abilities.inner-focus
+        magic-guard:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+          twisted-spoon: 5
+        pearl: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its superb memory lets it recall
+          everything it has experienced from
+          birth. Its IQ exceeds 5,000.
+        pearl: |
+          Its highly developed brain is on
+          par with a supercomputer. It can
+          use all forms of psychic abilities.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *ruby-sapphire.pokemon.alakazam.forms.alakazam.icon
+          sprites:
+            - diamond-pearl/back/female/alakazam-default.png
+            - diamond-pearl/back/shiny/alakazam-default.png
+            - diamond-pearl/back/alakazam-default.png
+            - diamond-pearl/female/alakazam-default.png
+            - diamond-pearl/shiny/female/alakazam-default.png
+            - diamond-pearl/shiny/alakazam-default.png
+            - diamond-pearl/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 22
+  pokemon:
+    alakazam:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      pal_park: *diamond-pearl.pokemon.alakazam.pal_park
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *diamond-pearl.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      stats: *diamond-pearl.pokemon.alakazam.stats
+      abilities: *diamond-pearl.pokemon.alakazam.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text:
+        platinum: |
+          The spoons clutched in its hands
+          are said to have been created by
+          its psychic powers.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *ruby-sapphire.pokemon.alakazam.forms.alakazam.icon
+          sprites:
+            - platinum/back/female/alakazam-default.png
+            - platinum/back/shiny/alakazam-default.png
+            - platinum/back/alakazam-default.png
+            - platinum/female/alakazam-default.png
+            - platinum/shiny/female/alakazam-default.png
+            - platinum/shiny/alakazam-default.png
+            - platinum/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 91
+  pokemon:
+    alakazam:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      pal_park: *diamond-pearl.pokemon.alakazam.pal_park
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *diamond-pearl.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      stats: *diamond-pearl.pokemon.alakazam.stats
+      abilities: *diamond-pearl.pokemon.alakazam.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Closing both its eyes heightens all
+          its other senses. This enables it to
+          use its abilities to their extremes.
+        soulsilver: |
+          Its brain cells multiply continually
+          until it dies. As a result,
+          it remembers everything.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 1
+              range: 1
+            skill:
+              base_value: 5
+              range: 5
+            stamina:
+              base_value: 1
+              range: 1
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.alakazam.forms.alakazam.icon
+          sprites:
+            - heartgold-soulsilver/back/female/alakazam-default.png
+            - heartgold-soulsilver/back/shiny/alakazam-default.png
+            - heartgold-soulsilver/back/alakazam-default.png
+            - heartgold-soulsilver/female/alakazam-default.png
+            - heartgold-soulsilver/shiny/female/alakazam-default.png
+            - heartgold-soulsilver/shiny/alakazam-default.png
+            - heartgold-soulsilver/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    alakazam:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: &black-white.pokemon.alakazam.color brown
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *diamond-pearl.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      stats: *diamond-pearl.pokemon.alakazam.stats
+      abilities: *diamond-pearl.pokemon.alakazam.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text:
+        black: |
+          The spoons clutched in its hands
+          are said to have been created by
+          its psychic powers.
+        white: |
+          The spoons clutched in its hands
+          are said to have been created by
+          its psychic powers.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *ruby-sapphire.pokemon.alakazam.forms.alakazam.icon
+          sprites:
+            - black-white/back/female/alakazam-default.png
+            - black-white/back/shiny/alakazam-default.png
+            - black-white/back/alakazam-default.png
+            - black-white/female/alakazam-default.png
+            - black-white/shiny/female/alakazam-default.png
+            - black-white/shiny/alakazam-default.png
+            - black-white/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    alakazam:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.alakazam.forms_switchable
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *diamond-pearl.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      stats: *diamond-pearl.pokemon.alakazam.stats
+      abilities: *diamond-pearl.pokemon.alakazam.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text:
+        black-2: |
+          The spoons clutched in its hands
+          are said to have been created by
+          its psychic powers.
+        white-2: |
+          The spoons clutched in its hands
+          are said to have been created by
+          its psychic powers.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *ruby-sapphire.pokemon.alakazam.forms.alakazam.icon
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *red-blue.pokemon.alakazam.forms.alakazam.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 104
+  pokemon:
+    alakazam:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: &x-y.pokemon.alakazam.forms_switchable true
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *diamond-pearl.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      mega: &x-y.pokemon.alakazam.mega false
+      stats: *diamond-pearl.pokemon.alakazam.stats
+      abilities: *diamond-pearl.pokemon.alakazam.abilities
+      wild_held_items: &x-y.pokemon.alakazam.wild_held_items
+        x: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text: &x-y.pokemon.alakazam.flavor_text
+        x: |
+          Its brain cells multiply continually until it dies.
+          As a result, it remembers everything.
+        'y': |
+          Its brain can outperform a supercomputer. Its IQ
+          (intelligence quotient) is said to be around 5,000.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: &x-y.pokemon.alakazam.forms.alakazam.icon alakazam-default.png
+          sprites:
+            - x-y/female/alakazam-default.png
+            - x-y/shiny/female/alakazam-default.png
+            - x-y/shiny/alakazam-default.png
+            - x-y/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: &x-y.pokemon.alakazam.forms.alakazam.cry alakazam-default.webm
+    alakazam-mega:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *x-y.pokemon.alakazam.forms_switchable
+      name: &x-y.pokemon.alakazam-mega.name 'Mega Alakazam'
+      default: &x-y.pokemon.alakazam-mega.default false
+      height: &x-y.pokemon.alakazam-mega.height 12
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: &x-y.pokemon.alakazam-mega.experience 270
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      mega: &x-y.pokemon.alakazam-mega.mega true
+      stats: &x-y.pokemon.alakazam-mega.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 150
+          effort_change: 0
+        special-attack:
+          base_value: 175
+          effort_change: 3
+        special-defense:
+          base_value: 105
+          effort_change: 0
+      abilities: &x-y.pokemon.alakazam-mega.abilities
+        trace: *ruby-sapphire.pokemon.alakazam.abilities.synchronize
+      wild_held_items: *x-y.pokemon.alakazam.wild_held_items
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text: *x-y.pokemon.alakazam.flavor_text
+      forms:
+        alakazam-mega:
+          name: 'Mega Alakazam'
+          form_name: &x-y.pokemon.alakazam-mega.forms.alakazam-mega.form_name 'Mega Alakazam'
+          default: true
+          battle_only: &x-y.pokemon.alakazam-mega.forms.alakazam-mega.battle_only true
+          icon: &x-y.pokemon.alakazam-mega.forms.alakazam-mega.icon alakazam-mega.png
+          sprites:
+            - x-y/alakazam-mega.png
+            - x-y/shiny/alakazam-mega.png
+          art: &x-y.pokemon.alakazam-mega.forms.alakazam-mega.art
+            - alakazam-mega.png
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: &x-y.pokemon.alakazam-mega.forms.alakazam-mega.cry alakazam-mega.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 42
+  pokemon:
+    alakazam:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *x-y.pokemon.alakazam.forms_switchable
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *diamond-pearl.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      mega: *x-y.pokemon.alakazam.mega
+      stats: *diamond-pearl.pokemon.alakazam.stats
+      abilities: *diamond-pearl.pokemon.alakazam.abilities
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.alakazam.flavor_text
+        omega-ruby: |
+          Alakazam’s brain continually grows, making its head far too
+          heavy to support with its neck. This Pokémon holds its head up
+          using its psychokinetic power instead.
+        alpha-sapphire: |
+          Alakazam’s brain continually grows, infinitely multiplying
+          brain cells. This amazing brain gives this Pokémon an
+          astoundingly high IQ of 5,000. It has a thorough memory
+          of everything that has occurred in the world.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *x-y.pokemon.alakazam.forms.alakazam.icon
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *x-y.pokemon.alakazam.forms.alakazam.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/alakazam-default.png
+            - omega-ruby-alpha-sapphire/shiny/alakazam-default.png
+            - omega-ruby-alpha-sapphire/female/alakazam-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/alakazam-default.png
+      wild_held_items: &omega-ruby-alpha-sapphire.pokemon.alakazam.wild_held_items
+        omega-ruby: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+    alakazam-mega:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *x-y.pokemon.alakazam.forms_switchable
+      name: *x-y.pokemon.alakazam-mega.name
+      default: *x-y.pokemon.alakazam-mega.default
+      height: *x-y.pokemon.alakazam-mega.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *x-y.pokemon.alakazam-mega.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      mega: *x-y.pokemon.alakazam-mega.mega
+      stats: *x-y.pokemon.alakazam-mega.stats
+      abilities: *x-y.pokemon.alakazam-mega.abilities
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.alakazam.flavor_text
+      forms:
+        alakazam-mega:
+          name: 'Mega Alakazam'
+          form_name: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.battle_only
+          icon: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.icon
+          art: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/alakazam-mega.png
+            - omega-ruby-alpha-sapphire/shiny/alakazam-mega.png
+      wild_held_items: *omega-ruby-alpha-sapphire.pokemon.alakazam.wild_held_items
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 44
+    original-melemele: 44
+  pokemon:
+    alakazam:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *x-y.pokemon.alakazam.forms_switchable
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *diamond-pearl.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      mega: *x-y.pokemon.alakazam.mega
+      stats: *diamond-pearl.pokemon.alakazam.stats
+      abilities: *diamond-pearl.pokemon.alakazam.abilities
+      wild_held_items: &sun-moon.pokemon.alakazam.wild_held_items
+        sun: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text: &sun-moon.pokemon.alakazam.flavor_text
+        sun: |-
+          It is said to have an IQ of approximately 5,000.
+          Its overflowing psychokinetic powers
+          cause headaches to anyone nearby.
+        moon: |-
+          Its brain cells continue to increase in number
+          until its death. The older the Alakazam, the
+          larger its head.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *x-y.pokemon.alakazam.forms.alakazam.icon
+          sprites:
+            - sun-moon/female/alakazam-default.png
+            - sun-moon/shiny/female/alakazam-default.png
+            - sun-moon/shiny/alakazam-default.png
+            - sun-moon/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *x-y.pokemon.alakazam.forms.alakazam.cry
+    alakazam-mega:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *x-y.pokemon.alakazam.forms_switchable
+      name: *x-y.pokemon.alakazam-mega.name
+      default: *x-y.pokemon.alakazam-mega.default
+      height: *x-y.pokemon.alakazam-mega.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *x-y.pokemon.alakazam-mega.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      mega: *x-y.pokemon.alakazam-mega.mega
+      stats: *x-y.pokemon.alakazam-mega.stats
+      abilities: *x-y.pokemon.alakazam-mega.abilities
+      wild_held_items: *sun-moon.pokemon.alakazam.wild_held_items
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text: *sun-moon.pokemon.alakazam.flavor_text
+      forms:
+        alakazam-mega:
+          name: 'Mega Alakazam'
+          form_name: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.battle_only
+          icon: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.icon
+          sprites:
+            - sun-moon/alakazam-mega.png
+            - sun-moon/shiny/alakazam-mega.png
+          art: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 51
+    updated-melemele: 51
+  pokemon:
+    alakazam:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *x-y.pokemon.alakazam.forms_switchable
+      name: Alakazam
+      default: *red-blue.pokemon.alakazam.default
+      height: *ruby-sapphire.pokemon.alakazam.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *diamond-pearl.pokemon.alakazam.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      mega: *x-y.pokemon.alakazam.mega
+      stats: *diamond-pearl.pokemon.alakazam.stats
+      abilities: *diamond-pearl.pokemon.alakazam.abilities
+      wild_held_items: &ultra-sun-ultra-moon.pokemon.alakazam.wild_held_items
+        ultra-sun: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.alakazam.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.alakazam.flavor_text
+        ultra-sun: |-
+          Alakazam uses its psychic powers to make the
+          spoons it carries. Each spoon is an original that
+          there’s only one of in the whole world.
+        ultra-moon: |-
+          If it trusts someone deeply, it will let them have
+          one of its spoons. Anything you eat with that
+          spoon is apparently delicious.
+      forms:
+        alakazam:
+          name: Alakazam
+          form_name: *red-blue.pokemon.alakazam.forms.alakazam.form_name
+          default: true
+          battle_only: *red-blue.pokemon.alakazam.forms.alakazam.battle_only
+          icon: *x-y.pokemon.alakazam.forms.alakazam.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/alakazam-default.png
+            - ultra-sun-ultra-moon/shiny/female/alakazam-default.png
+            - ultra-sun-ultra-moon/shiny/alakazam-default.png
+            - ultra-sun-ultra-moon/alakazam-default.png
+          art: *red-blue.pokemon.alakazam.forms.alakazam.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *x-y.pokemon.alakazam.forms.alakazam.cry
+    alakazam-mega:
+      genus: *diamond-pearl.pokemon.alakazam.genus
+      evolution_parent: *red-blue.pokemon.alakazam.evolution_parent
+      color: *black-white.pokemon.alakazam.color
+      shape: *diamond-pearl.pokemon.alakazam.shape
+      female_rate: *gold-silver.pokemon.alakazam.female_rate
+      capture_rate: *red-blue.pokemon.alakazam.capture_rate
+      happiness: *ruby-sapphire.pokemon.alakazam.happiness
+      baby: *diamond-pearl.pokemon.alakazam.baby
+      hatch_steps: *gold-silver.pokemon.alakazam.hatch_steps
+      growth_rate: *red-blue.pokemon.alakazam.growth_rate
+      forms_switchable: *x-y.pokemon.alakazam.forms_switchable
+      name: *x-y.pokemon.alakazam-mega.name
+      default: *x-y.pokemon.alakazam-mega.default
+      height: *x-y.pokemon.alakazam-mega.height
+      weight: *gold-silver.pokemon.alakazam.weight
+      experience: *x-y.pokemon.alakazam-mega.experience
+      types: *red-blue.pokemon.alakazam.types
+      egg_groups: *gold-silver.pokemon.alakazam.egg_groups
+      mega: *x-y.pokemon.alakazam-mega.mega
+      stats: *x-y.pokemon.alakazam-mega.stats
+      abilities: *x-y.pokemon.alakazam-mega.abilities
+      wild_held_items: *ultra-sun-ultra-moon.pokemon.alakazam.wild_held_items
+      evolution_conditions: *red-blue.pokemon.alakazam.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.alakazam.flavor_text
+      forms:
+        alakazam-mega:
+          name: 'Mega Alakazam'
+          form_name: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.battle_only
+          icon: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/alakazam-mega.png
+            - ultra-sun-ultra-moon/shiny/alakazam-mega.png
+          art: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.art
+          footprint: *ruby-sapphire.pokemon.alakazam.forms.alakazam.footprint
+          cry: *x-y.pokemon.alakazam-mega.forms.alakazam-mega.cry

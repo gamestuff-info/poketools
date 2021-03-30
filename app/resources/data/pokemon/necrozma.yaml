@@ -1,0 +1,274 @@
+sun-moon:
+  name: &sun-moon.name Necrozma
+  position: &sun-moon.position 800
+  numbers:
+    national: &sun-moon.numbers.national 800
+    original-alola: 300
+  pokemon:
+    necrozma:
+      genus: &sun-moon.pokemon.necrozma.genus 'Prism Pokémon'
+      color: &sun-moon.pokemon.necrozma.color black
+      shape: &sun-moon.pokemon.necrozma.shape arms
+      capture_rate: &sun-moon.pokemon.necrozma.capture_rate 255
+      happiness: &sun-moon.pokemon.necrozma.happiness 0
+      baby: &sun-moon.pokemon.necrozma.baby false
+      hatch_steps: &sun-moon.pokemon.necrozma.hatch_steps 120
+      growth_rate: &sun-moon.pokemon.necrozma.growth_rate slow
+      forms_switchable: &sun-moon.pokemon.necrozma.forms_switchable false
+      name: Necrozma
+      default: &sun-moon.pokemon.necrozma.default true
+      height: &sun-moon.pokemon.necrozma.height 24
+      weight: &sun-moon.pokemon.necrozma.weight 2300
+      experience: &sun-moon.pokemon.necrozma.experience 270
+      types: &sun-moon.pokemon.necrozma.types
+        - psychic
+      egg_groups: &sun-moon.pokemon.necrozma.egg_groups
+        - no-eggs
+      mega: &sun-moon.pokemon.necrozma.mega false
+      stats: &sun-moon.pokemon.necrozma.stats
+        hp:
+          base_value: 97
+          effort_change: 0
+        attack:
+          base_value: 107
+          effort_change: 1
+        defense:
+          base_value: 101
+          effort_change: 0
+        speed:
+          base_value: 79
+          effort_change: 0
+        special-attack:
+          base_value: 127
+          effort_change: 2
+        special-defense:
+          base_value: 89
+          effort_change: 0
+      abilities: &sun-moon.pokemon.necrozma.abilities
+        prism-armor: &sun-moon.pokemon.necrozma.abilities.prism-armor
+          hidden: false
+          position: 1
+      flavor_text:
+        sun: |-
+          Reminiscent of the Ultra Beasts, this life-form,
+          apparently asleep underground, is thought to
+          have come from another world in ancient times.
+        moon: |-
+          Light is apparently the source of its energy.
+          It has an extraordinarily vicious disposition
+          and is constantly firing off laser beams.
+      forms:
+        necrozma:
+          name: Necrozma
+          form_name: &sun-moon.pokemon.necrozma.forms.necrozma.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.necrozma.forms.necrozma.battle_only false
+          icon: &sun-moon.pokemon.necrozma.forms.necrozma.icon necrozma-default.png
+          sprites:
+            - sun-moon/necrozma-default.png
+            - sun-moon/shiny/necrozma-default.png
+          footprint: &sun-moon.pokemon.necrozma.forms.necrozma.footprint necrozma.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 400
+  pokemon:
+    necrozma:
+      genus: *sun-moon.pokemon.necrozma.genus
+      color: *sun-moon.pokemon.necrozma.color
+      shape: *sun-moon.pokemon.necrozma.shape
+      capture_rate: *sun-moon.pokemon.necrozma.capture_rate
+      happiness: *sun-moon.pokemon.necrozma.happiness
+      baby: *sun-moon.pokemon.necrozma.baby
+      hatch_steps: *sun-moon.pokemon.necrozma.hatch_steps
+      growth_rate: *sun-moon.pokemon.necrozma.growth_rate
+      forms_switchable: *sun-moon.pokemon.necrozma.forms_switchable
+      name: Necrozma
+      default: *sun-moon.pokemon.necrozma.default
+      height: *sun-moon.pokemon.necrozma.height
+      weight: *sun-moon.pokemon.necrozma.weight
+      experience: *sun-moon.pokemon.necrozma.experience
+      types: *sun-moon.pokemon.necrozma.types
+      egg_groups: *sun-moon.pokemon.necrozma.egg_groups
+      mega: *sun-moon.pokemon.necrozma.mega
+      stats: *sun-moon.pokemon.necrozma.stats
+      abilities: *sun-moon.pokemon.necrozma.abilities
+      flavor_text: &ultra-sun-ultra-moon.pokemon.necrozma.flavor_text
+        ultra-sun: |-
+          It looks somehow pained as it rages around in
+          search of light, which serves as its energy.
+          It’s apparently from another world.
+        ultra-moon: |-
+          Light is the source of its energy. If it isn’t
+          devouring light, impurities build up in it and on it,
+          and Necrozma darkens and stops moving.
+      forms:
+        necrozma:
+          name: Necrozma
+          form_name: *sun-moon.pokemon.necrozma.forms.necrozma.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.necrozma.forms.necrozma.battle_only
+          icon: *sun-moon.pokemon.necrozma.forms.necrozma.icon
+          sprites:
+            - ultra-sun-ultra-moon/necrozma-default.png
+            - ultra-sun-ultra-moon/shiny/necrozma-default.png
+          footprint: *sun-moon.pokemon.necrozma.forms.necrozma.footprint
+    necrozma-dusk:
+      genus: *sun-moon.pokemon.necrozma.genus
+      color: *sun-moon.pokemon.necrozma.color
+      shape: *sun-moon.pokemon.necrozma.shape
+      capture_rate: *sun-moon.pokemon.necrozma.capture_rate
+      happiness: *sun-moon.pokemon.necrozma.happiness
+      baby: *sun-moon.pokemon.necrozma.baby
+      hatch_steps: *sun-moon.pokemon.necrozma.hatch_steps
+      growth_rate: *sun-moon.pokemon.necrozma.growth_rate
+      forms_switchable: *sun-moon.pokemon.necrozma.forms_switchable
+      name: &ultra-sun-ultra-moon.pokemon.necrozma-dusk.name 'Dusk Necrozma'
+      default: &ultra-sun-ultra-moon.pokemon.necrozma-dusk.default false
+      height: 38
+      weight: 4600
+      experience: &ultra-sun-ultra-moon.pokemon.necrozma-dusk.experience 306
+      types:
+        - psychic
+        - steel
+      egg_groups: *sun-moon.pokemon.necrozma.egg_groups
+      mega: *sun-moon.pokemon.necrozma.mega
+      stats:
+        hp:
+          base_value: 97
+          effort_change: 0
+        attack:
+          base_value: 157
+          effort_change: 3
+        defense:
+          base_value: 127
+          effort_change: 0
+        speed:
+          base_value: 77
+          effort_change: 0
+        special-attack:
+          base_value: 113
+          effort_change: 0
+        special-defense:
+          base_value: 109
+          effort_change: 0
+      abilities: *sun-moon.pokemon.necrozma.abilities
+      flavor_text: *ultra-sun-ultra-moon.pokemon.necrozma.flavor_text
+      forms:
+        necrozma-dusk:
+          name: 'Dusk Necrozma'
+          form_name: 'Dusk Mane'
+          default: true
+          battle_only: *sun-moon.pokemon.necrozma.forms.necrozma.battle_only
+          icon: necrozma-dusk.png
+          sprites:
+            - ultra-sun-ultra-moon/shiny/necrozma-dusk.png
+            - ultra-sun-ultra-moon/necrozma-dusk.png
+          footprint: *sun-moon.pokemon.necrozma.forms.necrozma.footprint
+    necrozma-dawn:
+      genus: *sun-moon.pokemon.necrozma.genus
+      color: *sun-moon.pokemon.necrozma.color
+      shape: *sun-moon.pokemon.necrozma.shape
+      capture_rate: *sun-moon.pokemon.necrozma.capture_rate
+      happiness: *sun-moon.pokemon.necrozma.happiness
+      baby: *sun-moon.pokemon.necrozma.baby
+      hatch_steps: *sun-moon.pokemon.necrozma.hatch_steps
+      growth_rate: *sun-moon.pokemon.necrozma.growth_rate
+      forms_switchable: *sun-moon.pokemon.necrozma.forms_switchable
+      name: &ultra-sun-ultra-moon.pokemon.necrozma-dawn.name 'Dawn Necrozma'
+      default: *ultra-sun-ultra-moon.pokemon.necrozma-dusk.default
+      height: 42
+      weight: 3500
+      experience: *ultra-sun-ultra-moon.pokemon.necrozma-dusk.experience
+      types:
+        - psychic
+        - ghost
+      egg_groups: *sun-moon.pokemon.necrozma.egg_groups
+      mega: *sun-moon.pokemon.necrozma.mega
+      stats:
+        hp:
+          base_value: 97
+          effort_change: 0
+        attack:
+          base_value: 113
+          effort_change: 0
+        defense:
+          base_value: 109
+          effort_change: 0
+        speed:
+          base_value: 77
+          effort_change: 0
+        special-attack:
+          base_value: 157
+          effort_change: 3
+        special-defense:
+          base_value: 127
+          effort_change: 0
+      abilities: *sun-moon.pokemon.necrozma.abilities
+      flavor_text: *ultra-sun-ultra-moon.pokemon.necrozma.flavor_text
+      forms:
+        necrozma-dawn:
+          name: 'Dawn Necrozma'
+          form_name: 'Dawn Wings'
+          default: true
+          battle_only: *sun-moon.pokemon.necrozma.forms.necrozma.battle_only
+          icon: necrozma-dawn.png
+          sprites:
+            - ultra-sun-ultra-moon/shiny/necrozma-dawn.png
+            - ultra-sun-ultra-moon/necrozma-dawn.png
+          footprint: *sun-moon.pokemon.necrozma.forms.necrozma.footprint
+    necrozma-ultra:
+      genus: *sun-moon.pokemon.necrozma.genus
+      color: *sun-moon.pokemon.necrozma.color
+      shape: *sun-moon.pokemon.necrozma.shape
+      capture_rate: *sun-moon.pokemon.necrozma.capture_rate
+      happiness: *sun-moon.pokemon.necrozma.happiness
+      baby: *sun-moon.pokemon.necrozma.baby
+      hatch_steps: *sun-moon.pokemon.necrozma.hatch_steps
+      growth_rate: *sun-moon.pokemon.necrozma.growth_rate
+      forms_switchable: *sun-moon.pokemon.necrozma.forms_switchable
+      name: &ultra-sun-ultra-moon.pokemon.necrozma-ultra.name 'Ultra Necrozma'
+      default: *ultra-sun-ultra-moon.pokemon.necrozma-dusk.default
+      height: 75
+      weight: *sun-moon.pokemon.necrozma.weight
+      experience: 339
+      types:
+        - psychic
+        - dragon
+      egg_groups: *sun-moon.pokemon.necrozma.egg_groups
+      mega: *sun-moon.pokemon.necrozma.mega
+      stats:
+        hp:
+          base_value: 97
+          effort_change: 0
+        attack:
+          base_value: 167
+          effort_change: 1
+        defense:
+          base_value: 97
+          effort_change: 0
+        speed:
+          base_value: 129
+          effort_change: 1
+        special-attack:
+          base_value: 167
+          effort_change: 1
+        special-defense:
+          base_value: 97
+          effort_change: 0
+      abilities:
+        neuroforce: *sun-moon.pokemon.necrozma.abilities.prism-armor
+      flavor_text: *ultra-sun-ultra-moon.pokemon.necrozma.flavor_text
+      forms:
+        necrozma-ultra:
+          name: 'Ultra Necrozma'
+          form_name: 'Ultra Necrozma'
+          default: true
+          battle_only: *sun-moon.pokemon.necrozma.forms.necrozma.battle_only
+          icon: necrozma-ultra.png
+          sprites:
+            - ultra-sun-ultra-moon/necrozma-ultra.png
+            - ultra-sun-ultra-moon/shiny/necrozma-ultra.png
+          footprint: *sun-moon.pokemon.necrozma.forms.necrozma.footprint

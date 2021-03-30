@@ -1,0 +1,494 @@
+diamond-pearl:
+  name: &diamond-pearl.name Budew
+  position: &diamond-pearl.position 341
+  numbers:
+    national: &diamond-pearl.numbers.national 406
+    original-sinnoh: 25
+  pokemon:
+    budew:
+      genus: &diamond-pearl.pokemon.budew.genus 'Bud Pokémon'
+      shape: &diamond-pearl.pokemon.budew.shape humanoid
+      female_rate: &diamond-pearl.pokemon.budew.female_rate 50
+      capture_rate: &diamond-pearl.pokemon.budew.capture_rate 255
+      happiness: &diamond-pearl.pokemon.budew.happiness 70
+      baby: &diamond-pearl.pokemon.budew.baby true
+      hatch_steps: &diamond-pearl.pokemon.budew.hatch_steps 20
+      growth_rate: &diamond-pearl.pokemon.budew.growth_rate medium-slow
+      forms_switchable: &diamond-pearl.pokemon.budew.forms_switchable false
+      pal_park: &diamond-pearl.pokemon.budew.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Budew
+      default: &diamond-pearl.pokemon.budew.default true
+      height: &diamond-pearl.pokemon.budew.height 2
+      weight: &diamond-pearl.pokemon.budew.weight 12
+      experience: &diamond-pearl.pokemon.budew.experience 56
+      types: &diamond-pearl.pokemon.budew.types
+        - grass
+        - poison
+      egg_groups: &diamond-pearl.pokemon.budew.egg_groups
+        - no-eggs
+      stats: &diamond-pearl.pokemon.budew.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 30
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 50
+          effort_change: 1
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.budew.abilities
+        natural-cure:
+          hidden: &diamond-pearl.pokemon.budew.abilities.natural-cure.hidden false
+          position: 1
+        poison-point:
+          hidden: *diamond-pearl.pokemon.budew.abilities.natural-cure.hidden
+          position: 2
+        leaf-guard:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.budew.wild_held_items.diamond
+          poison-barb: 5
+        pearl: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Over the winter, it closes its bud
+          and endures the cold. In spring,
+          the bud opens and releases pollen.
+        pearl: |
+          It lives alongside clear ponds.
+          It scatters pollen that induces
+          harsh sneezing and runny noses.
+      forms:
+        budew:
+          name: Budew
+          form_name: &diamond-pearl.pokemon.budew.forms.budew.form_name 'Default Form'
+          default: true
+          battle_only: &diamond-pearl.pokemon.budew.forms.budew.battle_only false
+          icon: &diamond-pearl.pokemon.budew.forms.budew.icon gen5/budew-default.png
+          sprites:
+            - diamond-pearl/budew-default.png
+            - diamond-pearl/back/budew-default.png
+            - diamond-pearl/back/shiny/budew-default.png
+            - diamond-pearl/shiny/budew-default.png
+          art: &diamond-pearl.pokemon.budew.forms.budew.art
+            - budew-default.png
+          footprint: &diamond-pearl.pokemon.budew.forms.budew.footprint budew.png
+          cry: &diamond-pearl.pokemon.budew.forms.budew.cry gen5/budew-default.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 25
+  pokemon:
+    budew:
+      genus: *diamond-pearl.pokemon.budew.genus
+      shape: *diamond-pearl.pokemon.budew.shape
+      female_rate: *diamond-pearl.pokemon.budew.female_rate
+      capture_rate: *diamond-pearl.pokemon.budew.capture_rate
+      happiness: *diamond-pearl.pokemon.budew.happiness
+      baby: *diamond-pearl.pokemon.budew.baby
+      hatch_steps: *diamond-pearl.pokemon.budew.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.budew.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.budew.forms_switchable
+      pal_park: *diamond-pearl.pokemon.budew.pal_park
+      name: Budew
+      default: *diamond-pearl.pokemon.budew.default
+      height: *diamond-pearl.pokemon.budew.height
+      weight: *diamond-pearl.pokemon.budew.weight
+      experience: *diamond-pearl.pokemon.budew.experience
+      types: *diamond-pearl.pokemon.budew.types
+      egg_groups: *diamond-pearl.pokemon.budew.egg_groups
+      stats: *diamond-pearl.pokemon.budew.stats
+      abilities: *diamond-pearl.pokemon.budew.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          Sensitive to changing temperature,
+          the bud is said to bloom when it
+          feels the sun’s warm touch.
+      forms:
+        budew:
+          name: Budew
+          form_name: *diamond-pearl.pokemon.budew.forms.budew.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.budew.forms.budew.battle_only
+          icon: *diamond-pearl.pokemon.budew.forms.budew.icon
+          sprites:
+            - platinum/budew-default.png
+            - platinum/back/budew-default.png
+            - platinum/back/shiny/budew-default.png
+            - platinum/shiny/budew-default.png
+          art: *diamond-pearl.pokemon.budew.forms.budew.art
+          footprint: *diamond-pearl.pokemon.budew.forms.budew.footprint
+          cry: *diamond-pearl.pokemon.budew.forms.budew.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &heartgold-soulsilver.numbers
+    national: *diamond-pearl.numbers.national
+  pokemon:
+    budew:
+      genus: *diamond-pearl.pokemon.budew.genus
+      shape: *diamond-pearl.pokemon.budew.shape
+      female_rate: *diamond-pearl.pokemon.budew.female_rate
+      capture_rate: *diamond-pearl.pokemon.budew.capture_rate
+      happiness: *diamond-pearl.pokemon.budew.happiness
+      baby: *diamond-pearl.pokemon.budew.baby
+      hatch_steps: *diamond-pearl.pokemon.budew.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.budew.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.budew.forms_switchable
+      pal_park: *diamond-pearl.pokemon.budew.pal_park
+      name: Budew
+      default: *diamond-pearl.pokemon.budew.default
+      height: *diamond-pearl.pokemon.budew.height
+      weight: *diamond-pearl.pokemon.budew.weight
+      experience: *diamond-pearl.pokemon.budew.experience
+      types: *diamond-pearl.pokemon.budew.types
+      egg_groups: *diamond-pearl.pokemon.budew.egg_groups
+      stats: *diamond-pearl.pokemon.budew.stats
+      abilities: *diamond-pearl.pokemon.budew.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          When it feels the sun’s warm touch,
+          it opens its bud to release pollen.
+          It lives alongside clear pools.
+        soulsilver: |
+          When it feels the sun’s warm touch,
+          it opens its bud to release pollen.
+          It lives alongside clear pools.
+      forms:
+        budew:
+          name: Budew
+          form_name: *diamond-pearl.pokemon.budew.forms.budew.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.budew.forms.budew.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-5
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *diamond-pearl.pokemon.budew.forms.budew.icon
+          sprites:
+            - heartgold-soulsilver/budew-default.png
+            - heartgold-soulsilver/back/budew-default.png
+            - heartgold-soulsilver/back/shiny/budew-default.png
+            - heartgold-soulsilver/shiny/budew-default.png
+          art: *diamond-pearl.pokemon.budew.forms.budew.art
+          footprint: *diamond-pearl.pokemon.budew.forms.budew.footprint
+          cry: *diamond-pearl.pokemon.budew.forms.budew.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    budew:
+      genus: *diamond-pearl.pokemon.budew.genus
+      color: &black-white.pokemon.budew.color green
+      shape: *diamond-pearl.pokemon.budew.shape
+      female_rate: *diamond-pearl.pokemon.budew.female_rate
+      capture_rate: *diamond-pearl.pokemon.budew.capture_rate
+      happiness: *diamond-pearl.pokemon.budew.happiness
+      baby: *diamond-pearl.pokemon.budew.baby
+      hatch_steps: *diamond-pearl.pokemon.budew.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.budew.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.budew.forms_switchable
+      name: Budew
+      default: *diamond-pearl.pokemon.budew.default
+      height: *diamond-pearl.pokemon.budew.height
+      weight: *diamond-pearl.pokemon.budew.weight
+      experience: *diamond-pearl.pokemon.budew.experience
+      types: *diamond-pearl.pokemon.budew.types
+      egg_groups: *diamond-pearl.pokemon.budew.egg_groups
+      stats: *diamond-pearl.pokemon.budew.stats
+      abilities: *diamond-pearl.pokemon.budew.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+      flavor_text:
+        black: |
+          Sensitive to changing temperature,
+          the bud is said to bloom when it
+          feels the sun’s warm touch.
+        white: |
+          Sensitive to changing temperature,
+          the bud is said to bloom when it
+          feels the sun’s warm touch.
+      forms:
+        budew:
+          name: Budew
+          form_name: *diamond-pearl.pokemon.budew.forms.budew.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.budew.forms.budew.battle_only
+          icon: *diamond-pearl.pokemon.budew.forms.budew.icon
+          sprites:
+            - black-white/budew-default.png
+            - black-white/back/budew-default.png
+            - black-white/back/shiny/budew-default.png
+            - black-white/shiny/budew-default.png
+          art: *diamond-pearl.pokemon.budew.forms.budew.art
+          footprint: *diamond-pearl.pokemon.budew.forms.budew.footprint
+          cry: *diamond-pearl.pokemon.budew.forms.budew.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-unova: 133
+  pokemon:
+    budew:
+      genus: *diamond-pearl.pokemon.budew.genus
+      color: *black-white.pokemon.budew.color
+      shape: *diamond-pearl.pokemon.budew.shape
+      female_rate: *diamond-pearl.pokemon.budew.female_rate
+      capture_rate: *diamond-pearl.pokemon.budew.capture_rate
+      happiness: *diamond-pearl.pokemon.budew.happiness
+      baby: *diamond-pearl.pokemon.budew.baby
+      hatch_steps: *diamond-pearl.pokemon.budew.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.budew.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.budew.forms_switchable
+      name: Budew
+      default: *diamond-pearl.pokemon.budew.default
+      height: *diamond-pearl.pokemon.budew.height
+      weight: *diamond-pearl.pokemon.budew.weight
+      experience: *diamond-pearl.pokemon.budew.experience
+      types: *diamond-pearl.pokemon.budew.types
+      egg_groups: *diamond-pearl.pokemon.budew.egg_groups
+      stats: *diamond-pearl.pokemon.budew.stats
+      abilities: *diamond-pearl.pokemon.budew.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          Sensitive to changing temperatures,
+          the bud blooms when it’s warm,
+          releasing toxic pollen.
+        white-2: |
+          Sensitive to changing temperatures,
+          the bud blooms when it’s warm,
+          releasing toxic pollen.
+      forms:
+        budew:
+          name: Budew
+          form_name: *diamond-pearl.pokemon.budew.forms.budew.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.budew.forms.budew.battle_only
+          icon: *diamond-pearl.pokemon.budew.forms.budew.icon
+          art: *diamond-pearl.pokemon.budew.forms.budew.art
+          footprint: *diamond-pearl.pokemon.budew.forms.budew.footprint
+          cry: *diamond-pearl.pokemon.budew.forms.budew.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    kalos-central: 71
+  pokemon:
+    budew:
+      genus: *diamond-pearl.pokemon.budew.genus
+      color: *black-white.pokemon.budew.color
+      shape: *diamond-pearl.pokemon.budew.shape
+      female_rate: *diamond-pearl.pokemon.budew.female_rate
+      capture_rate: *diamond-pearl.pokemon.budew.capture_rate
+      happiness: *diamond-pearl.pokemon.budew.happiness
+      baby: *diamond-pearl.pokemon.budew.baby
+      hatch_steps: *diamond-pearl.pokemon.budew.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.budew.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.budew.forms_switchable
+      name: Budew
+      default: *diamond-pearl.pokemon.budew.default
+      height: *diamond-pearl.pokemon.budew.height
+      weight: *diamond-pearl.pokemon.budew.weight
+      experience: *diamond-pearl.pokemon.budew.experience
+      types: *diamond-pearl.pokemon.budew.types
+      egg_groups: *diamond-pearl.pokemon.budew.egg_groups
+      mega: &x-y.pokemon.budew.mega false
+      stats: *diamond-pearl.pokemon.budew.stats
+      abilities: *diamond-pearl.pokemon.budew.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.budew.wild_held_items.diamond
+      flavor_text:
+        x: |
+          When it feels the sun’s warm touch, it opens its bud
+          to release pollen. It lives alongside clear pools.
+        'y': |
+          Over the winter, it closes its bud and endures the
+          cold. In spring, the bud opens and releases pollen.
+      forms:
+        budew:
+          name: Budew
+          form_name: *diamond-pearl.pokemon.budew.forms.budew.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.budew.forms.budew.battle_only
+          icon: &x-y.pokemon.budew.forms.budew.icon budew-default.png
+          sprites:
+            - x-y/budew-default.png
+            - x-y/shiny/budew-default.png
+          art: *diamond-pearl.pokemon.budew.forms.budew.art
+          footprint: *diamond-pearl.pokemon.budew.forms.budew.footprint
+          cry: &x-y.pokemon.budew.forms.budew.cry budew-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-hoenn: 97
+  pokemon:
+    budew:
+      genus: *diamond-pearl.pokemon.budew.genus
+      color: *black-white.pokemon.budew.color
+      shape: *diamond-pearl.pokemon.budew.shape
+      female_rate: *diamond-pearl.pokemon.budew.female_rate
+      capture_rate: *diamond-pearl.pokemon.budew.capture_rate
+      happiness: *diamond-pearl.pokemon.budew.happiness
+      baby: *diamond-pearl.pokemon.budew.baby
+      hatch_steps: *diamond-pearl.pokemon.budew.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.budew.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.budew.forms_switchable
+      name: Budew
+      default: *diamond-pearl.pokemon.budew.default
+      height: *diamond-pearl.pokemon.budew.height
+      weight: *diamond-pearl.pokemon.budew.weight
+      experience: *diamond-pearl.pokemon.budew.experience
+      types: *diamond-pearl.pokemon.budew.types
+      egg_groups: *diamond-pearl.pokemon.budew.egg_groups
+      mega: *x-y.pokemon.budew.mega
+      stats: *diamond-pearl.pokemon.budew.stats
+      abilities: *diamond-pearl.pokemon.budew.abilities
+      flavor_text:
+        omega-ruby: |
+          When it feels the sun’s warm touch, it opens its bud
+          to release pollen. It lives alongside clear pools.
+        alpha-sapphire: |
+          Over the winter, it closes its bud and endures the
+          cold. In spring, the bud opens and releases pollen.
+      forms:
+        budew:
+          name: Budew
+          form_name: *diamond-pearl.pokemon.budew.forms.budew.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.budew.forms.budew.battle_only
+          icon: *x-y.pokemon.budew.forms.budew.icon
+          art: *diamond-pearl.pokemon.budew.forms.budew.art
+          footprint: *diamond-pearl.pokemon.budew.forms.budew.footprint
+          cry: *x-y.pokemon.budew.forms.budew.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/budew-default.png
+            - omega-ruby-alpha-sapphire/shiny/budew-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    budew:
+      genus: *diamond-pearl.pokemon.budew.genus
+      color: *black-white.pokemon.budew.color
+      shape: *diamond-pearl.pokemon.budew.shape
+      female_rate: *diamond-pearl.pokemon.budew.female_rate
+      capture_rate: *diamond-pearl.pokemon.budew.capture_rate
+      happiness: *diamond-pearl.pokemon.budew.happiness
+      baby: *diamond-pearl.pokemon.budew.baby
+      hatch_steps: *diamond-pearl.pokemon.budew.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.budew.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.budew.forms_switchable
+      name: Budew
+      default: *diamond-pearl.pokemon.budew.default
+      height: *diamond-pearl.pokemon.budew.height
+      weight: *diamond-pearl.pokemon.budew.weight
+      experience: *diamond-pearl.pokemon.budew.experience
+      types: *diamond-pearl.pokemon.budew.types
+      egg_groups: *diamond-pearl.pokemon.budew.egg_groups
+      mega: *x-y.pokemon.budew.mega
+      stats: *diamond-pearl.pokemon.budew.stats
+      abilities: *diamond-pearl.pokemon.budew.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+      forms:
+        budew:
+          name: Budew
+          form_name: *diamond-pearl.pokemon.budew.forms.budew.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.budew.forms.budew.battle_only
+          icon: *x-y.pokemon.budew.forms.budew.icon
+          sprites:
+            - sun-moon/budew-default.png
+            - sun-moon/shiny/budew-default.png
+          art: *diamond-pearl.pokemon.budew.forms.budew.art
+          footprint: *diamond-pearl.pokemon.budew.forms.budew.footprint
+          cry: *x-y.pokemon.budew.forms.budew.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    budew:
+      genus: *diamond-pearl.pokemon.budew.genus
+      color: *black-white.pokemon.budew.color
+      shape: *diamond-pearl.pokemon.budew.shape
+      female_rate: *diamond-pearl.pokemon.budew.female_rate
+      capture_rate: *diamond-pearl.pokemon.budew.capture_rate
+      happiness: *diamond-pearl.pokemon.budew.happiness
+      baby: *diamond-pearl.pokemon.budew.baby
+      hatch_steps: *diamond-pearl.pokemon.budew.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.budew.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.budew.forms_switchable
+      name: Budew
+      default: *diamond-pearl.pokemon.budew.default
+      height: *diamond-pearl.pokemon.budew.height
+      weight: *diamond-pearl.pokemon.budew.weight
+      experience: *diamond-pearl.pokemon.budew.experience
+      types: *diamond-pearl.pokemon.budew.types
+      egg_groups: *diamond-pearl.pokemon.budew.egg_groups
+      mega: *x-y.pokemon.budew.mega
+      stats: *diamond-pearl.pokemon.budew.stats
+      abilities: *diamond-pearl.pokemon.budew.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.budew.wild_held_items.diamond
+      forms:
+        budew:
+          name: Budew
+          form_name: *diamond-pearl.pokemon.budew.forms.budew.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.budew.forms.budew.battle_only
+          icon: *x-y.pokemon.budew.forms.budew.icon
+          sprites:
+            - ultra-sun-ultra-moon/budew-default.png
+            - ultra-sun-ultra-moon/shiny/budew-default.png
+          art: *diamond-pearl.pokemon.budew.forms.budew.art
+          footprint: *diamond-pearl.pokemon.budew.forms.budew.footprint
+          cry: *x-y.pokemon.budew.forms.budew.cry

@@ -1,0 +1,889 @@
+red-blue:
+  name: &red-blue.name MEW
+  position: &red-blue.position 151
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 151
+    kanto: 151
+  pokemon:
+    mew:
+      name: MEW
+      default: &red-blue.pokemon.mew.default true
+      capture_rate: &red-blue.pokemon.mew.capture_rate 45
+      experience: &red-blue.pokemon.mew.experience 64
+      types: &red-blue.pokemon.mew.types
+        - psychic
+      stats: &red-blue.pokemon.mew.stats
+        hp:
+          base_value: 100
+          effort_change: 100
+        attack:
+          base_value: 100
+          effort_change: 100
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 100
+          effort_change: 100
+        special:
+          base_value: 100
+          effort_change: 100
+      growth_rate: &red-blue.pokemon.mew.growth_rate medium-slow
+      genus: &red-blue.pokemon.mew.genus 'NEW SPECIE Pokémon'
+      height: &red-blue.pokemon.mew.height 4
+      weight: &red-blue.pokemon.mew.weight 408
+      flavor_text:
+        red: |
+          So rare that it
+          is still said to
+          be a mirage by
+          many experts. Only
+           a few people have
+          seen it worldwide.
+        blue: |
+          So rare that it
+          is still said to
+          be a mirage by
+          many experts. Only
+           a few people have
+          seen it worldwide.
+      forms:
+        mew:
+          name: MEW
+          form_name: &red-blue.pokemon.mew.forms.mew.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.mew.forms.mew.battle_only false
+          sprites:
+            - red-blue/mew-default.png
+            - red-blue/gray/mew-default.png
+            - red-blue/back/mew-default.png
+          art: &red-blue.pokemon.mew.forms.mew.art
+            - mew-default.png
+          cry: &red-blue.pokemon.mew.forms.mew.cry gen5/mew-default.webm
+          icon: &red-blue.pokemon.mew.forms.mew.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    mew:
+      name: MEW
+      default: *red-blue.pokemon.mew.default
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      experience: *red-blue.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      stats: *red-blue.pokemon.mew.stats
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      genus: *red-blue.pokemon.mew.genus
+      height: *red-blue.pokemon.mew.height
+      weight: *red-blue.pokemon.mew.weight
+      flavor_text:
+        yellow: |
+          When viewed
+          through a micro-
+          scope, this
+          POKéMON's short,
+          fine,  delicate
+          hair can be seen.
+      forms:
+        mew:
+          name: MEW
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          sprites:
+            - yellow/mew-default.png
+            - yellow/gray/mew-default.png
+            - yellow/back/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+          icon: *red-blue.pokemon.mew.forms.mew.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 150
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 249
+    original-johto-abc: 119
+  pokemon:
+    mew:
+      name: MEW
+      default: *red-blue.pokemon.mew.default
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      experience: *red-blue.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      stats: &gold-silver.pokemon.mew.stats
+        hp:
+          base_value: 100
+          effort_change: 100
+        attack:
+          base_value: 100
+          effort_change: 100
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 100
+          effort_change: 100
+        special-attack:
+          base_value: 100
+          effort_change: 100
+        special-defense:
+          base_value: 100
+          effort_change: 100
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      female_rate: &gold-silver.pokemon.mew.female_rate 100
+      hatch_steps: &gold-silver.pokemon.mew.hatch_steps 120
+      egg_groups: &gold-silver.pokemon.mew.egg_groups
+        - no-eggs
+      wild_held_items:
+        gold: &gold-silver.pokemon.mew.wild_held_items.gold
+          miracleberry: 2
+        silver: *gold-silver.pokemon.mew.wild_held_items.gold
+      genus: *red-blue.pokemon.mew.genus
+      height: *red-blue.pokemon.mew.height
+      weight: &gold-silver.pokemon.mew.weight 40
+      flavor_text:
+        gold: |
+          Apparently, it
+          appears only to
+          those people who
+          are pure of heart
+          and have a strong
+          desire to see it.
+        silver: |
+          Its DNA is said to
+          contain the genet-
+          ic codes of all
+          #MON, so it can
+          use all kinds of
+          techniques.
+      forms:
+        mew:
+          name: MEW
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          sprites:
+            - gold-silver/mew-default.png
+            - gold-silver/back/mew-default.png
+            - gold-silver/shiny/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+          icon: &gold-silver.pokemon.mew.forms.mew.icon gen2/humanshape.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    mew:
+      name: MEW
+      default: *red-blue.pokemon.mew.default
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      experience: *red-blue.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      stats: *gold-silver.pokemon.mew.stats
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      female_rate: *gold-silver.pokemon.mew.female_rate
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.mew.wild_held_items.gold
+      genus: *red-blue.pokemon.mew.genus
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      flavor_text:
+        crystal: |
+          Because it can
+          learn any move,
+          some people began
+          research to see if
+          it is the ancestor
+          of all #MON.
+      forms:
+        mew:
+          name: MEW
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          sprites:
+            - crystal/mew-default.png
+            - crystal/back/mew-default.png
+            - crystal/shiny/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+          icon: *gold-silver.pokemon.mew.forms.mew.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 306
+  pokemon:
+    mew:
+      name: MEW
+      default: *red-blue.pokemon.mew.default
+      forms_switchable: &ruby-sapphire.pokemon.mew.forms_switchable false
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      experience: *red-blue.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      stats: &ruby-sapphire.pokemon.mew.stats
+        hp:
+          base_value: 100
+          effort_change: 3
+        attack:
+          base_value: 100
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 0
+        speed:
+          base_value: 100
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.mew.wild_held_items.ruby
+          lum-berry: 100
+        sapphire: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.mew.happiness 100
+      abilities: &ruby-sapphire.pokemon.mew.abilities
+        synchronize:
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.mew.genus 'NEW SPECIES Pokémon'
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      flavor_text:
+        ruby: |
+          MEW is said to possess the genetic
+          composition of all POKéMON.
+          It is capable of making itself invisible
+          at will, so it entirely avoids notice even
+          if it approaches people.
+        sapphire: |
+          MEW is said to possess the genetic
+          composition of all POKéMON.
+           It is capable of making itself invisible
+          at will, so it entirely avoids notice even
+          if it approaches people.
+      forms:
+        mew:
+          name: MEW
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: &ruby-sapphire.pokemon.mew.forms.mew.icon gen5/mew-default.png
+          sprites:
+            - ruby-sapphire/mew-default.png
+            - ruby-sapphire/back/mew-default.png
+            - ruby-sapphire/shiny/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: &ruby-sapphire.pokemon.mew.forms.mew.footprint mew.png
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    mew:
+      name: MEW
+      default: *red-blue.pokemon.mew.default
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      experience: *red-blue.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      stats: *ruby-sapphire.pokemon.mew.stats
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      genus: *ruby-sapphire.pokemon.mew.genus
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      flavor_text:
+        emerald: |
+          A MEW is said to possess the genes of all
+          POKéMON. It is capable of making itself
+          invisible at will, so it entirely avoids
+          notice even if it approaches people.
+      forms:
+        mew:
+          name: MEW
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *ruby-sapphire.pokemon.mew.forms.mew.icon
+          sprites:
+            - emerald/mew-default.png
+            - emerald/shiny/mew-default.png
+            - emerald/animated/mew-default.webm
+            - emerald/animated/shiny/mew-default.webm
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 202
+  pokemon:
+    mew:
+      name: MEW
+      default: *red-blue.pokemon.mew.default
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      experience: *red-blue.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      stats: *ruby-sapphire.pokemon.mew.stats
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      genus: *ruby-sapphire.pokemon.mew.genus
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      forms:
+        mew:
+          name: MEW
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          sprites:
+            - colosseum/mew-default.png
+            - colosseum/shiny/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    mew:
+      name: MEW
+      default: *red-blue.pokemon.mew.default
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      experience: *red-blue.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      stats: *ruby-sapphire.pokemon.mew.stats
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      genus: *ruby-sapphire.pokemon.mew.genus
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      forms:
+        mew:
+          name: MEW
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          sprites:
+            - xd/mew-default.png
+            - xd/shiny/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    mew:
+      name: MEW
+      default: *red-blue.pokemon.mew.default
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      experience: *red-blue.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      stats: *ruby-sapphire.pokemon.mew.stats
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      genus: *ruby-sapphire.pokemon.mew.genus
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      flavor_text:
+        firered: |
+          A POKéMON of South America that was
+          thought to have been extinct.  It is very
+          intelligent and learns any move.
+        leafgreen: |
+          So rare that it is still said to be a
+          mirage by many experts.  Only a few people
+          have seen it worldwide.
+      forms:
+        mew:
+          name: MEW
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *ruby-sapphire.pokemon.mew.forms.mew.icon
+          sprites:
+            - firered-leafgreen/mew-default.png
+            - firered-leafgreen/back/mew-default.png
+            - firered-leafgreen/shiny/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+diamond-pearl:
+  name: &diamond-pearl.name Mew
+  position: &diamond-pearl.position 183
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    mew:
+      genus: &diamond-pearl.pokemon.mew.genus 'New Species Pokémon'
+      shape: &diamond-pearl.pokemon.mew.shape upright
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: &diamond-pearl.pokemon.mew.baby false
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      pal_park: &diamond-pearl.pokemon.mew.pal_park
+        area: forest
+        rate: 1
+        score: 100
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: &diamond-pearl.pokemon.mew.experience 270
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          Because it can use all kinds of
+          moves, many scientists believe MEW
+          to be the ancestor of Pokémon.
+        pearl: |
+          Because it can use all kinds of
+          moves, many scientists believe MEW
+          to be the ancestor of Pokémon.
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *ruby-sapphire.pokemon.mew.forms.mew.icon
+          sprites:
+            - diamond-pearl/back/shiny/mew-default.png
+            - diamond-pearl/back/mew-default.png
+            - diamond-pearl/shiny/mew-default.png
+            - diamond-pearl/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    mew:
+      genus: *diamond-pearl.pokemon.mew.genus
+      shape: *diamond-pearl.pokemon.mew.shape
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: *diamond-pearl.pokemon.mew.baby
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      pal_park: *diamond-pearl.pokemon.mew.pal_park
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: *diamond-pearl.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          Because it can use all kinds of
+          moves, many scientists believe MEW
+          to be the ancestor of Pokémon.
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *ruby-sapphire.pokemon.mew.forms.mew.icon
+          sprites:
+            - platinum/back/shiny/mew-default.png
+            - platinum/back/mew-default.png
+            - platinum/shiny/mew-default.png
+            - platinum/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 255
+  pokemon:
+    mew:
+      genus: *diamond-pearl.pokemon.mew.genus
+      shape: *diamond-pearl.pokemon.mew.shape
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: *diamond-pearl.pokemon.mew.baby
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      pal_park: *diamond-pearl.pokemon.mew.pal_park
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: *diamond-pearl.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          Apparently, it appears only to
+          those people who are pure of heart
+          and have a strong desire to see it.
+        soulsilver: |
+          Its DNA is said to contain the genetic
+          codes of all Pokémon, so it can
+          use all kinds of techniques.
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-5
+            power:
+              base_value: 2
+              range: 1-5
+            skill:
+              base_value: 5
+              range: 1-5
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 3
+              range: 2-5
+          icon: *ruby-sapphire.pokemon.mew.forms.mew.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/mew-default.png
+            - heartgold-soulsilver/back/mew-default.png
+            - heartgold-soulsilver/shiny/mew-default.png
+            - heartgold-soulsilver/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    mew:
+      genus: *diamond-pearl.pokemon.mew.genus
+      color: &black-white.pokemon.mew.color pink
+      shape: *diamond-pearl.pokemon.mew.shape
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: *diamond-pearl.pokemon.mew.baby
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: *diamond-pearl.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+      flavor_text:
+        black: |
+          Because it can use all kinds of
+          moves, many scientists believe Mew
+          to be the ancestor of Pokémon.
+        white: |
+          Because it can use all kinds of
+          moves, many scientists believe Mew
+          to be the ancestor of Pokémon.
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *ruby-sapphire.pokemon.mew.forms.mew.icon
+          sprites:
+            - black-white/back/shiny/mew-default.png
+            - black-white/back/mew-default.png
+            - black-white/shiny/mew-default.png
+            - black-white/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    mew:
+      genus: *diamond-pearl.pokemon.mew.genus
+      color: *black-white.pokemon.mew.color
+      shape: *diamond-pearl.pokemon.mew.shape
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: *diamond-pearl.pokemon.mew.baby
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: *diamond-pearl.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          Because it can use all kinds of
+          moves, many scientists believe Mew
+          to be the ancestor of Pokémon.
+        white-2: |
+          Because it can use all kinds of
+          moves, many scientists believe Mew
+          to be the ancestor of Pokémon.
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *ruby-sapphire.pokemon.mew.forms.mew.icon
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *red-blue.pokemon.mew.forms.mew.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    mew:
+      genus: *diamond-pearl.pokemon.mew.genus
+      color: *black-white.pokemon.mew.color
+      shape: *diamond-pearl.pokemon.mew.shape
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: *diamond-pearl.pokemon.mew.baby
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: *diamond-pearl.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      mega: &x-y.pokemon.mew.mega false
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+      flavor_text:
+        x: |
+          Because it can use all kinds of moves, many
+          scientists believe Mew to be the ancestor
+          of Pokémon.
+        'y': |
+          Its DNA is said to contain the genetic codes of all
+          Pokémon, so it can use all kinds of techniques.
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: &x-y.pokemon.mew.forms.mew.icon mew-default.png
+          sprites:
+            - x-y/shiny/mew-default.png
+            - x-y/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: &x-y.pokemon.mew.forms.mew.cry mew-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    mew:
+      genus: *diamond-pearl.pokemon.mew.genus
+      color: *black-white.pokemon.mew.color
+      shape: *diamond-pearl.pokemon.mew.shape
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: *diamond-pearl.pokemon.mew.baby
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: *diamond-pearl.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      mega: *x-y.pokemon.mew.mega
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      flavor_text:
+        omega-ruby: |
+          Mew is said to possess the genetic composition of all
+          Pokémon. It is capable of making itself invisible at will,
+          so it entirely avoids notice even if it approaches people.
+        alpha-sapphire: |
+          Mew is said to possess the genetic composition of all
+          Pokémon. It is capable of making itself invisible at will,
+          so it entirely avoids notice even if it approaches people.
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *x-y.pokemon.mew.forms.mew.icon
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *x-y.pokemon.mew.forms.mew.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/mew-default.png
+            - omega-ruby-alpha-sapphire/shiny/mew-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.mew.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    mew:
+      genus: *diamond-pearl.pokemon.mew.genus
+      color: *black-white.pokemon.mew.color
+      shape: *diamond-pearl.pokemon.mew.shape
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: *diamond-pearl.pokemon.mew.baby
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: *diamond-pearl.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      mega: *x-y.pokemon.mew.mega
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.mew.wild_held_items.sun
+          lum-berry: 5
+        moon: *sun-moon.pokemon.mew.wild_held_items.sun
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *x-y.pokemon.mew.forms.mew.icon
+          sprites:
+            - sun-moon/shiny/mew-default.png
+            - sun-moon/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *x-y.pokemon.mew.forms.mew.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    mew:
+      genus: *diamond-pearl.pokemon.mew.genus
+      color: *black-white.pokemon.mew.color
+      shape: *diamond-pearl.pokemon.mew.shape
+      capture_rate: *red-blue.pokemon.mew.capture_rate
+      happiness: *ruby-sapphire.pokemon.mew.happiness
+      baby: *diamond-pearl.pokemon.mew.baby
+      hatch_steps: *gold-silver.pokemon.mew.hatch_steps
+      growth_rate: *red-blue.pokemon.mew.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mew.forms_switchable
+      name: Mew
+      default: *red-blue.pokemon.mew.default
+      height: *red-blue.pokemon.mew.height
+      weight: *gold-silver.pokemon.mew.weight
+      experience: *diamond-pearl.pokemon.mew.experience
+      types: *red-blue.pokemon.mew.types
+      egg_groups: *gold-silver.pokemon.mew.egg_groups
+      mega: *x-y.pokemon.mew.mega
+      stats: *ruby-sapphire.pokemon.mew.stats
+      abilities: *ruby-sapphire.pokemon.mew.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.mew.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.mew.wild_held_items.sun
+      forms:
+        mew:
+          name: Mew
+          form_name: *red-blue.pokemon.mew.forms.mew.form_name
+          default: true
+          battle_only: *red-blue.pokemon.mew.forms.mew.battle_only
+          icon: *x-y.pokemon.mew.forms.mew.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/mew-default.png
+            - ultra-sun-ultra-moon/mew-default.png
+          art: *red-blue.pokemon.mew.forms.mew.art
+          footprint: *ruby-sapphire.pokemon.mew.forms.mew.footprint
+          cry: *x-y.pokemon.mew.forms.mew.cry

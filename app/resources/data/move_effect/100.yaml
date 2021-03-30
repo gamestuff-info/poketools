@@ -1,0 +1,29 @@
+gold-silver: &gold-silver
+  short_description: 'Inflicts more damage when the user has less HP remaining, with a maximum of 200 power.'
+  description: |
+    Inflicts [regular damage]{mechanic:regular-damage}.  Power varies inversely with the user's proportional remaining,
+    [HP]{mechanic:hp}, based on the formula <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>n</mi> <mo>=</mo> <mn>64</mn> <mo>&times;</mo> <mfrac> <mrow> <mi>current HP</mi> </mrow> <mrow> <mi>max HP</mi> </mrow> </mfrac> </math>
+
+    n      | Power
+    -----: | -----:
+     0– 1  |  200
+     2– 5  |  150
+     6–12  |  100
+    13–21  |   80
+    22–42  |   40
+    43–64  |   20
+crystal: *gold-silver
+ruby-sapphire: *gold-silver
+emerald: *gold-silver
+colosseum: *gold-silver
+xd: *gold-silver
+firered-leafgreen: *gold-silver
+diamond-pearl: *gold-silver
+platinum: *gold-silver
+heartgold-soulsilver: *gold-silver
+black-white: *gold-silver
+black-2-white-2: *gold-silver
+x-y: *gold-silver
+omega-ruby-alpha-sapphire: *gold-silver
+sun-moon: *gold-silver
+ultra-sun-ultra-moon: *gold-silver

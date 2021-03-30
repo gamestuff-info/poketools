@@ -1,0 +1,829 @@
+diamond-pearl:
+  name: &diamond-pearl.name Shaymin
+  position: &diamond-pearl.position 493
+  numbers: &diamond-pearl.numbers
+    national: 492
+  pokemon:
+    shaymin-land:
+      genus: &diamond-pearl.pokemon.shaymin-land.genus 'Gratitude Pokémon'
+      shape: &diamond-pearl.pokemon.shaymin-land.shape quadruped
+      capture_rate: &diamond-pearl.pokemon.shaymin-land.capture_rate 45
+      happiness: &diamond-pearl.pokemon.shaymin-land.happiness 100
+      baby: &diamond-pearl.pokemon.shaymin-land.baby false
+      hatch_steps: &diamond-pearl.pokemon.shaymin-land.hatch_steps 120
+      growth_rate: &diamond-pearl.pokemon.shaymin-land.growth_rate medium-slow
+      forms_switchable: false
+      pal_park: &diamond-pearl.pokemon.shaymin-land.pal_park
+        area: field
+        rate: 1
+        score: 100
+      name: Shaymin
+      default: &diamond-pearl.pokemon.shaymin-land.default true
+      height: &diamond-pearl.pokemon.shaymin-land.height 2
+      weight: &diamond-pearl.pokemon.shaymin-land.weight 21
+      experience: &diamond-pearl.pokemon.shaymin-land.experience 270
+      types: &diamond-pearl.pokemon.shaymin-land.types
+        - grass
+      egg_groups: &diamond-pearl.pokemon.shaymin-land.egg_groups
+        - no-eggs
+      stats: &diamond-pearl.pokemon.shaymin-land.stats
+        hp:
+          base_value: 100
+          effort_change: 3
+        attack:
+          base_value: 100
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 0
+        speed:
+          base_value: 100
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.shaymin-land.abilities
+        natural-cure: &diamond-pearl.pokemon.shaymin-land.abilities.natural-cure
+          hidden: false
+          position: 1
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+          lum-berry: 100
+        pearl: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          It lives in flower patches and
+          avoids detection by curling up
+          to look like a flowering plant.
+        pearl: |
+          It can dissolve toxins in the air
+          to instantly transform ruined land
+          into a lush field of flowers.
+      forms:
+        shaymin-land:
+          name: &diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name 'Land Shaymin'
+          form_name: &diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name 'Land Forme'
+          default: true
+          battle_only: &diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only false
+          icon: &diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.icon gen5/shaymin-land.png
+          sprites:
+            - diamond-pearl/shaymin-land.png
+            - diamond-pearl/back/shaymin-land.png
+            - diamond-pearl/back/shiny/shaymin-land.png
+            - diamond-pearl/shiny/shaymin-land.png
+          art: &diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+            - shaymin-land.png
+          footprint: &diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint shaymin.png
+          cry: &diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.cry gen5/shaymin-land.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shaymin-land:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: &platinum.pokemon.shaymin-land.forms_switchable true
+      forms_note: &platinum.pokemon.shaymin-land.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.  Shaymin transforms into Sky Forme with the use of a []{item:gracidea}.  It is limited to Land Forme at night, when [frozen]{mechanic:frozen}, and in the storage system boxes; under these conditions, Sky Shaymin reverts to Land Forme, and the Gracidea has no effect.  The Gracidea must be used again to return to Sky Forme.
+
+        Shaymin is also limited to Land Forme in the Wi-Fi Club and the Union Room.
+
+        A Gracidea may be received by showing a Shaymin met in a fateful encounter to the woman in southwest []{location:floaroma-town}.
+      pal_park: *diamond-pearl.pokemon.shaymin-land.pal_park
+      name: Shaymin
+      default: *diamond-pearl.pokemon.shaymin-land.default
+      height: *diamond-pearl.pokemon.shaymin-land.height
+      weight: *diamond-pearl.pokemon.shaymin-land.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *diamond-pearl.pokemon.shaymin-land.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      stats: *diamond-pearl.pokemon.shaymin-land.stats
+      abilities: *diamond-pearl.pokemon.shaymin-land.abilities
+      wild_held_items: &platinum.pokemon.shaymin-land.wild_held_items
+        platinum: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+      flavor_text: &platinum.pokemon.shaymin-land.flavor_text
+        platinum: |
+          The flowers all over its body burst
+          into bloom if it is lovingly hugged
+          and senses gratitude.
+      forms:
+        shaymin-land:
+          name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name
+          form_name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.icon
+          sprites:
+            - platinum/shaymin-land.png
+            - platinum/back/shaymin-land.png
+            - platinum/back/shiny/shaymin-land.png
+            - platinum/shiny/shaymin-land.png
+          art: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.cry
+    shaymin-sky:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *platinum.pokemon.shaymin-land.forms_note
+      pal_park: *diamond-pearl.pokemon.shaymin-land.pal_park
+      name: &platinum.pokemon.shaymin-sky.name 'Sky Shaymin'
+      default: &platinum.pokemon.shaymin-sky.default false
+      height: &platinum.pokemon.shaymin-sky.height 4
+      weight: &platinum.pokemon.shaymin-sky.weight 52
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: &platinum.pokemon.shaymin-sky.types
+        - grass
+        - flying
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      stats: &platinum.pokemon.shaymin-sky.stats
+        hp:
+          base_value: 100
+          effort_change: 0
+        attack:
+          base_value: 103
+          effort_change: 0
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 127
+          effort_change: 3
+        special-attack:
+          base_value: 120
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: &platinum.pokemon.shaymin-sky.abilities
+        serene-grace: *diamond-pearl.pokemon.shaymin-land.abilities.natural-cure
+      wild_held_items: *platinum.pokemon.shaymin-land.wild_held_items
+      flavor_text: *platinum.pokemon.shaymin-land.flavor_text
+      forms:
+        shaymin-sky:
+          name: 'Sky Shaymin'
+          form_name: &platinum.pokemon.shaymin-sky.forms.shaymin-sky.form_name 'Sky Forme'
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: &platinum.pokemon.shaymin-sky.forms.shaymin-sky.icon gen5/shaymin-sky.png
+          sprites:
+            - platinum/back/shaymin-sky.png
+            - platinum/back/shiny/shaymin-sky.png
+            - platinum/shaymin-sky.png
+            - platinum/shiny/shaymin-sky.png
+          art: &platinum.pokemon.shaymin-sky.forms.shaymin-sky.art
+            - shaymin-sky.png
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: &platinum.pokemon.shaymin-sky.forms.shaymin-sky.cry gen5/shaymin-sky.webm
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shaymin-land:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: &heartgold-soulsilver.pokemon.shaymin-land.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.  Shaymin transforms into Sky Forme with the use of a []{item:gracidea}.  It is limited to Land Forme at night, when [frozen]{mechanic:frozen}, and in the storage system boxes; under these conditions, Sky Shaymin reverts to Land Forme, and the Gracidea has no effect.  The Gracidea must be used again to return to Sky Forme.
+
+        Shaymin is also limited to Land Forme in the Wi-Fi Club and the Union Room.
+
+        A Gracidea may be received by showing a Shaymin met in a fateful encounter to the owner of the []{location:goldenrod-city} flower shop.
+      pal_park: *diamond-pearl.pokemon.shaymin-land.pal_park
+      name: Shaymin
+      default: *diamond-pearl.pokemon.shaymin-land.default
+      height: *diamond-pearl.pokemon.shaymin-land.height
+      weight: *diamond-pearl.pokemon.shaymin-land.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *diamond-pearl.pokemon.shaymin-land.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      stats: *diamond-pearl.pokemon.shaymin-land.stats
+      abilities: *diamond-pearl.pokemon.shaymin-land.abilities
+      wild_held_items: &heartgold-soulsilver.pokemon.shaymin-land.wild_held_items
+        heartgold: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+      flavor_text: &heartgold-soulsilver.pokemon.shaymin-land.flavor_text
+        heartgold: |
+          The blooming of Gracidea flowers confers
+          the power of flight upon it. Feelings
+          of gratitude are the message it delivers.
+        soulsilver: |
+          The blooming of Gracidea flowers confers
+          the power of flight upon it. Feelings
+          of gratitude are the message it delivers.
+      forms:
+        shaymin-land:
+          name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name
+          form_name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 3-5
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.icon
+          sprites:
+            - heartgold-soulsilver/shaymin-land.png
+            - heartgold-soulsilver/back/shaymin-land.png
+            - heartgold-soulsilver/back/shiny/shaymin-land.png
+            - heartgold-soulsilver/shiny/shaymin-land.png
+          art: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.cry
+    shaymin-sky:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.shaymin-land.forms_note
+      pal_park: *diamond-pearl.pokemon.shaymin-land.pal_park
+      name: *platinum.pokemon.shaymin-sky.name
+      default: *platinum.pokemon.shaymin-sky.default
+      height: *platinum.pokemon.shaymin-sky.height
+      weight: *platinum.pokemon.shaymin-sky.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *platinum.pokemon.shaymin-sky.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      stats: *platinum.pokemon.shaymin-sky.stats
+      abilities: *platinum.pokemon.shaymin-sky.abilities
+      wild_held_items: *heartgold-soulsilver.pokemon.shaymin-land.wild_held_items
+      flavor_text: *heartgold-soulsilver.pokemon.shaymin-land.flavor_text
+      forms:
+        shaymin-sky:
+          name: 'Sky Shaymin'
+          form_name: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 3-5
+            power:
+              base_value: 4
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 5
+              range: 3-5
+          icon: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.icon
+          sprites:
+            - heartgold-soulsilver/back/shaymin-sky.png
+            - heartgold-soulsilver/back/shiny/shaymin-sky.png
+            - heartgold-soulsilver/shaymin-sky.png
+            - heartgold-soulsilver/shiny/shaymin-sky.png
+          art: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shaymin-land:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: &black-white.pokemon.shaymin-land.color green
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: &black-white.pokemon.shaymin-land.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.  Shaymin transforms into Sky Forme with the use of a []{item:gracidea}.  It is limited to Land Forme at night, when [frozen]{mechanic:frozen}, and in the storage system boxes; under these conditions, Sky Shaymin reverts to Land Forme, and the Gracidea has no effect.  The Gracidea must be used again to return to Sky Forme.
+
+        A Gracidea may be received by showing a Shaymin met in a fateful encounter to the woman in the []{location:lacunosa-town} Pokémon Center.
+      name: Shaymin
+      default: *diamond-pearl.pokemon.shaymin-land.default
+      height: *diamond-pearl.pokemon.shaymin-land.height
+      weight: *diamond-pearl.pokemon.shaymin-land.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *diamond-pearl.pokemon.shaymin-land.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      stats: *diamond-pearl.pokemon.shaymin-land.stats
+      abilities: *diamond-pearl.pokemon.shaymin-land.abilities
+      wild_held_items: &black-white.pokemon.shaymin-land.wild_held_items
+        black: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+      flavor_text: &black-white.pokemon.shaymin-land.flavor_text
+        black: |
+          The flowers all over its body burst
+          into bloom if it is lovingly hugged
+          and senses gratitude.
+        white: |
+          The flowers all over its body burst
+          into bloom if it is lovingly hugged
+          and senses gratitude.
+      forms:
+        shaymin-land:
+          name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name
+          form_name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.icon
+          sprites:
+            - black-white/shaymin-land.png
+            - black-white/back/shaymin-land.png
+            - black-white/back/shiny/shaymin-land.png
+            - black-white/shiny/shaymin-land.png
+          art: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.cry
+    shaymin-sky:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *black-white.pokemon.shaymin-land.forms_note
+      name: *platinum.pokemon.shaymin-sky.name
+      default: *platinum.pokemon.shaymin-sky.default
+      height: *platinum.pokemon.shaymin-sky.height
+      weight: *platinum.pokemon.shaymin-sky.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *platinum.pokemon.shaymin-sky.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      stats: *platinum.pokemon.shaymin-sky.stats
+      abilities: *platinum.pokemon.shaymin-sky.abilities
+      wild_held_items: *black-white.pokemon.shaymin-land.wild_held_items
+      flavor_text: *black-white.pokemon.shaymin-land.flavor_text
+      forms:
+        shaymin-sky:
+          name: 'Sky Shaymin'
+          form_name: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.icon
+          sprites:
+            - black-white/back/shaymin-sky.png
+            - black-white/back/shiny/shaymin-sky.png
+            - black-white/shaymin-sky.png
+            - black-white/shiny/shaymin-sky.png
+          art: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shaymin-land:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: &black-2-white-2.pokemon.shaymin-land.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.  Shaymin transforms into Sky Forme with the use of a []{item:gracidea}.  It is limited to Land Forme at night, when [frozen]{mechanic:frozen}, and in the storage system boxes; under these conditions, Sky Shaymin reverts to Land Forme, and the Gracidea has no effect.  The Gracidea must be used again to return to Sky Forme.
+
+        A Gracidea may be received by showing a Shaymin met in a fateful encounter to the woman in the []{location:striaton-city} Pokémon Center.
+      name: Shaymin
+      default: *diamond-pearl.pokemon.shaymin-land.default
+      height: *diamond-pearl.pokemon.shaymin-land.height
+      weight: *diamond-pearl.pokemon.shaymin-land.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *diamond-pearl.pokemon.shaymin-land.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      stats: *diamond-pearl.pokemon.shaymin-land.stats
+      abilities: *diamond-pearl.pokemon.shaymin-land.abilities
+      wild_held_items: &black-2-white-2.pokemon.shaymin-land.wild_held_items
+        black-2: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+      flavor_text: &black-2-white-2.pokemon.shaymin-land.flavor_text
+        black-2: |
+          The flowers all over its body burst
+          into bloom if it is lovingly hugged
+          and senses gratitude.
+        white-2: |
+          The flowers all over its body burst
+          into bloom if it is lovingly hugged
+          and senses gratitude.
+      forms:
+        shaymin-land:
+          name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name
+          form_name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.icon
+          art: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.cry
+    shaymin-sky:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *black-2-white-2.pokemon.shaymin-land.forms_note
+      name: *platinum.pokemon.shaymin-sky.name
+      default: *platinum.pokemon.shaymin-sky.default
+      height: *platinum.pokemon.shaymin-sky.height
+      weight: *platinum.pokemon.shaymin-sky.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *platinum.pokemon.shaymin-sky.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      stats: *platinum.pokemon.shaymin-sky.stats
+      abilities: *platinum.pokemon.shaymin-sky.abilities
+      wild_held_items: *black-2-white-2.pokemon.shaymin-land.wild_held_items
+      flavor_text: *black-2-white-2.pokemon.shaymin-land.flavor_text
+      forms:
+        shaymin-sky:
+          name: 'Sky Shaymin'
+          form_name: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.icon
+          art: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shaymin-land:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: &x-y.pokemon.shaymin-land.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.  Shaymin transforms into Sky Forme with the use of a []{item:gracidea}.  It is limited to Land Forme at night, when [frozen]{mechanic:frozen}, and in the storage system boxes; under these conditions, Sky Shaymin reverts to Land Forme, and the Gracidea has no effect.  The Gracidea must be used again to return to Sky Forme.
+
+        A Gracidea may be received by showing a Shaymin to the woman in the []{location:snowbelle-city} Pokémon Center.
+      name: Shaymin
+      default: *diamond-pearl.pokemon.shaymin-land.default
+      height: *diamond-pearl.pokemon.shaymin-land.height
+      weight: *diamond-pearl.pokemon.shaymin-land.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *diamond-pearl.pokemon.shaymin-land.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      mega: &x-y.pokemon.shaymin-land.mega false
+      stats: *diamond-pearl.pokemon.shaymin-land.stats
+      abilities: *diamond-pearl.pokemon.shaymin-land.abilities
+      wild_held_items: &x-y.pokemon.shaymin-land.wild_held_items
+        x: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+      flavor_text: &x-y.pokemon.shaymin-land.flavor_text
+        x: |
+          It can dissolve toxins in the air to instantly
+          transform ruined land into a lush field of flowers.
+        'y': |
+          The blooming of Gracidea flowers confers the
+          power of flight upon it. Feelings of gratitude are
+          the message it delivers.
+      forms:
+        shaymin-land:
+          name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name
+          form_name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: &x-y.pokemon.shaymin-land.forms.shaymin-land.icon shaymin-land.png
+          sprites:
+            - x-y/shaymin-land.png
+            - x-y/shiny/shaymin-land.png
+          art: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: &x-y.pokemon.shaymin-land.forms.shaymin-land.cry shaymin-land.webm
+    shaymin-sky:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *x-y.pokemon.shaymin-land.forms_note
+      name: *platinum.pokemon.shaymin-sky.name
+      default: *platinum.pokemon.shaymin-sky.default
+      height: *platinum.pokemon.shaymin-sky.height
+      weight: *platinum.pokemon.shaymin-sky.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *platinum.pokemon.shaymin-sky.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      mega: *x-y.pokemon.shaymin-land.mega
+      stats: *platinum.pokemon.shaymin-sky.stats
+      abilities: *platinum.pokemon.shaymin-sky.abilities
+      wild_held_items: *x-y.pokemon.shaymin-land.wild_held_items
+      flavor_text: *x-y.pokemon.shaymin-land.flavor_text
+      forms:
+        shaymin-sky:
+          name: 'Sky Shaymin'
+          form_name: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: &x-y.pokemon.shaymin-sky.forms.shaymin-sky.icon shaymin-sky.png
+          sprites:
+            - x-y/shaymin-sky.png
+            - x-y/shiny/shaymin-sky.png
+          art: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: &x-y.pokemon.shaymin-sky.forms.shaymin-sky.cry shaymin-sky.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shaymin-land:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: &omega-ruby-alpha-sapphire.pokemon.shaymin-land.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.  Shaymin transforms into Sky Forme with the use of a []{item:gracidea}.  It is limited to Land Forme at night, when [frozen]{mechanic:frozen}, and in the storage system boxes; under these conditions, Sky Shaymin reverts to Land Forme, and the Gracidea has no effect.  The Gracidea must be used again to return to Sky Forme.
+
+        A Gracidea may be received by showing a Shaymin to the man near the Berry Master on []{location:hoenn-route-123}.
+      name: Shaymin
+      default: *diamond-pearl.pokemon.shaymin-land.default
+      height: *diamond-pearl.pokemon.shaymin-land.height
+      weight: *diamond-pearl.pokemon.shaymin-land.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *diamond-pearl.pokemon.shaymin-land.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      mega: *x-y.pokemon.shaymin-land.mega
+      stats: *diamond-pearl.pokemon.shaymin-land.stats
+      abilities: *diamond-pearl.pokemon.shaymin-land.abilities
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.shaymin-land.flavor_text
+        omega-ruby: |
+          It can dissolve toxins in the air to instantly
+          transform ruined land into a lush field of flowers.
+        alpha-sapphire: |
+          The blooming of Gracidea flowers confers the
+          power of flight upon it. Feelings of gratitude are
+          the message it delivers.
+      forms:
+        shaymin-land:
+          name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name
+          form_name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *x-y.pokemon.shaymin-land.forms.shaymin-land.icon
+          art: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *x-y.pokemon.shaymin-land.forms.shaymin-land.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shaymin-land.png
+            - omega-ruby-alpha-sapphire/shiny/shaymin-land.png
+      wild_held_items: &omega-ruby-alpha-sapphire.pokemon.shaymin-land.wild_held_items
+        omega-ruby: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.shaymin-land.wild_held_items.diamond
+    shaymin-sky:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.shaymin-land.forms_note
+      name: *platinum.pokemon.shaymin-sky.name
+      default: *platinum.pokemon.shaymin-sky.default
+      height: *platinum.pokemon.shaymin-sky.height
+      weight: *platinum.pokemon.shaymin-sky.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *platinum.pokemon.shaymin-sky.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      mega: *x-y.pokemon.shaymin-land.mega
+      stats: *platinum.pokemon.shaymin-sky.stats
+      abilities: *platinum.pokemon.shaymin-sky.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.shaymin-land.flavor_text
+      forms:
+        shaymin-sky:
+          name: 'Sky Shaymin'
+          form_name: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *x-y.pokemon.shaymin-sky.forms.shaymin-sky.icon
+          art: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *x-y.pokemon.shaymin-sky.forms.shaymin-sky.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shaymin-sky.png
+            - omega-ruby-alpha-sapphire/shiny/shaymin-sky.png
+      wild_held_items: *omega-ruby-alpha-sapphire.pokemon.shaymin-land.wild_held_items
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shaymin-land:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: &sun-moon.pokemon.shaymin-land.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.  Shaymin transforms into Sky Forme with the use of a []{item:gracidea}.  It is limited to Land Forme at night, when [frozen]{mechanic:frozen}, and in the storage system boxes; under these conditions, Sky Shaymin reverts to Land Forme, and the Gracidea has no effect.  The Gracidea must be used again to return to Sky Forme.
+
+        In Generation IV, Shaymin is also limited to Land Forme in the Wi-Fi Club and the Union Room.
+
+        A Gracidea may be received by visiting the Gracidea store in the [Hau'oli City Mall]{location:hauoli-city}.
+      name: Shaymin
+      default: *diamond-pearl.pokemon.shaymin-land.default
+      height: *diamond-pearl.pokemon.shaymin-land.height
+      weight: *diamond-pearl.pokemon.shaymin-land.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *diamond-pearl.pokemon.shaymin-land.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      mega: *x-y.pokemon.shaymin-land.mega
+      stats: *diamond-pearl.pokemon.shaymin-land.stats
+      abilities: *diamond-pearl.pokemon.shaymin-land.abilities
+      wild_held_items: &sun-moon.pokemon.shaymin-land.wild_held_items
+        sun: &sun-moon.pokemon.shaymin-land.wild_held_items.sun
+          lum-berry: 5
+        moon: *sun-moon.pokemon.shaymin-land.wild_held_items.sun
+      forms:
+        shaymin-land:
+          name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name
+          form_name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *x-y.pokemon.shaymin-land.forms.shaymin-land.icon
+          sprites:
+            - sun-moon/shaymin-land.png
+            - sun-moon/shiny/shaymin-land.png
+          art: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *x-y.pokemon.shaymin-land.forms.shaymin-land.cry
+    shaymin-sky:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *sun-moon.pokemon.shaymin-land.forms_note
+      name: *platinum.pokemon.shaymin-sky.name
+      default: *platinum.pokemon.shaymin-sky.default
+      height: *platinum.pokemon.shaymin-sky.height
+      weight: *platinum.pokemon.shaymin-sky.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *platinum.pokemon.shaymin-sky.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      mega: *x-y.pokemon.shaymin-land.mega
+      stats: *platinum.pokemon.shaymin-sky.stats
+      abilities: *platinum.pokemon.shaymin-sky.abilities
+      wild_held_items: *sun-moon.pokemon.shaymin-land.wild_held_items
+      forms:
+        shaymin-sky:
+          name: 'Sky Shaymin'
+          form_name: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *x-y.pokemon.shaymin-sky.forms.shaymin-sky.icon
+          sprites:
+            - sun-moon/shaymin-sky.png
+            - sun-moon/shiny/shaymin-sky.png
+          art: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *x-y.pokemon.shaymin-sky.forms.shaymin-sky.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shaymin-land:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *sun-moon.pokemon.shaymin-land.forms_note
+      name: Shaymin
+      default: *diamond-pearl.pokemon.shaymin-land.default
+      height: *diamond-pearl.pokemon.shaymin-land.height
+      weight: *diamond-pearl.pokemon.shaymin-land.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *diamond-pearl.pokemon.shaymin-land.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      mega: *x-y.pokemon.shaymin-land.mega
+      stats: *diamond-pearl.pokemon.shaymin-land.stats
+      abilities: *diamond-pearl.pokemon.shaymin-land.abilities
+      wild_held_items: &ultra-sun-ultra-moon.pokemon.shaymin-land.wild_held_items
+        ultra-sun: *sun-moon.pokemon.shaymin-land.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.shaymin-land.wild_held_items.sun
+      forms:
+        shaymin-land:
+          name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.name
+          form_name: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *x-y.pokemon.shaymin-land.forms.shaymin-land.icon
+          sprites:
+            - ultra-sun-ultra-moon/shaymin-land.png
+            - ultra-sun-ultra-moon/shiny/shaymin-land.png
+          art: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *x-y.pokemon.shaymin-land.forms.shaymin-land.cry
+    shaymin-sky:
+      genus: *diamond-pearl.pokemon.shaymin-land.genus
+      color: *black-white.pokemon.shaymin-land.color
+      shape: *diamond-pearl.pokemon.shaymin-land.shape
+      capture_rate: *diamond-pearl.pokemon.shaymin-land.capture_rate
+      happiness: *diamond-pearl.pokemon.shaymin-land.happiness
+      baby: *diamond-pearl.pokemon.shaymin-land.baby
+      hatch_steps: *diamond-pearl.pokemon.shaymin-land.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.shaymin-land.growth_rate
+      forms_switchable: *platinum.pokemon.shaymin-land.forms_switchable
+      forms_note: *sun-moon.pokemon.shaymin-land.forms_note
+      name: *platinum.pokemon.shaymin-sky.name
+      default: *platinum.pokemon.shaymin-sky.default
+      height: *platinum.pokemon.shaymin-sky.height
+      weight: *platinum.pokemon.shaymin-sky.weight
+      experience: *diamond-pearl.pokemon.shaymin-land.experience
+      types: *platinum.pokemon.shaymin-sky.types
+      egg_groups: *diamond-pearl.pokemon.shaymin-land.egg_groups
+      mega: *x-y.pokemon.shaymin-land.mega
+      stats: *platinum.pokemon.shaymin-sky.stats
+      abilities: *platinum.pokemon.shaymin-sky.abilities
+      wild_held_items: *ultra-sun-ultra-moon.pokemon.shaymin-land.wild_held_items
+      forms:
+        shaymin-sky:
+          name: 'Sky Shaymin'
+          form_name: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.battle_only
+          icon: *x-y.pokemon.shaymin-sky.forms.shaymin-sky.icon
+          sprites:
+            - ultra-sun-ultra-moon/shaymin-sky.png
+            - ultra-sun-ultra-moon/shiny/shaymin-sky.png
+          art: *platinum.pokemon.shaymin-sky.forms.shaymin-sky.art
+          footprint: *diamond-pearl.pokemon.shaymin-land.forms.shaymin-land.footprint
+          cry: *x-y.pokemon.shaymin-sky.forms.shaymin-sky.cry

@@ -1,0 +1,110 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'DIVE BALL'
+  category: &ruby-sapphire.category special-balls
+  pocket: &ruby-sapphire.pocket pokeballs
+  flags: &ruby-sapphire.flags
+    - countable
+    - consumable
+    - usable-in-battle
+    - holdable
+  icon: &ruby-sapphire.icon dive-ball.png
+  buy: &ruby-sapphire.buy 1000
+  sell: &ruby-sapphire.sell 500
+  flavor_text: |
+    A BALL that works
+    better on POKéMON
+    on the ocean floor.
+  short_description: 'Tries to [catch]{mechanic:catch} a wild Pokémon. Success rate is 3.5× while underwater.'
+  description: |
+    Used in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If the wild Pokémon was encountered underwater, this ball has a catch rate of 3.5×.  Otherwise, it has a catch rate of 1×.  If used in a trainer battle, nothing happens and the ball is lost.
+emerald: *ruby-sapphire
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: |
+    A somewhat different BALL that
+    works especially well on POKéMON
+     deep in the sea.
+  short_description: &firered-leafgreen.short_description 'Tries to [catch]{mechanic:catch} a wild Pokémon. Success rate is 3.5× when surfing or fishing.'
+  description: &firered-leafgreen.description |
+    Used in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If the wild Pokémon was encountered while surfing or fishing, this ball has a catch rate of 3.5×.  Otherwise, it has a catch rate of 1×.  If used in a trainer battle, nothing happens and the ball is lost.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Dive Ball'
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flags: *ruby-sapphire.flags
+  short_description: *firered-leafgreen.short_description
+  description: *firered-leafgreen.description
+  flavor_text: |
+    A somewhat different Poké Ball that
+    works especially well on Pokémon that
+    live in the sea.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: &black-white
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flags: *ruby-sapphire.flags
+  short_description: *firered-leafgreen.short_description
+  description: *firered-leafgreen.description
+  flavor_text: |
+    A somewhat different Poké Ball that
+    works especially well on Pokémon that
+    live underwater.
+  icon: *ruby-sapphire.icon
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flags: *ruby-sapphire.flags
+  short_description: *firered-leafgreen.short_description
+  description: *firered-leafgreen.description
+  flavor_text: &x-y.flavor_text |
+    A somewhat different Poké Ball that
+    works especially well when catching
+    Pokémon that live underwater.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flags: *ruby-sapphire.flags
+  short_description: 'Tries to [catch]{mechanic:catch} a wild Pokémon. Success rate is 3.5× while underwater, or when surfing or fishing.'
+  description: |
+    Used in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If the wild Pokémon was encountered underwater, or while surfing or fishing, this ball has a catch rate of 3.5×.  Otherwise, it has a catch rate of 1×.  If used in a trainer battle, nothing happens and the ball is lost.
+  flavor_text: *x-y.flavor_text
+  icon: *ruby-sapphire.icon
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flags: *ruby-sapphire.flags
+  short_description: *firered-leafgreen.short_description
+  description: *firered-leafgreen.description
+  flavor_text: |
+    A somewhat different Poké Ball that works
+    especially well when catching Pokémon that
+    live underwater.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

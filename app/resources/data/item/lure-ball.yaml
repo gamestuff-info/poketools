@@ -1,0 +1,58 @@
+gold-silver: &gold-silver
+  name: 'LURE BALL'
+  pocket: &gold-silver.pocket pokeballs
+  buy: 150
+  sell: 75
+  flavor_text: |
+    A BALL for POKéMON
+    hooked by a ROD.
+  category: &gold-silver.category apricorn-balls
+  short_description: '3× effectiveness while fishing. Made from []{item:blu-apricorn}.'
+  description: |
+    Made from []{item:blu-apricorn}.
+
+    Used by trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    If the wild Pokémon was encountered by fishing, the wild Pokémon's catch rate is 3× normal.
+crystal: *gold-silver
+heartgold-soulsilver:
+  name: &heartgold-soulsilver.name 'Lure Ball'
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: '3× effectiveness while fishing. Made from []{item:blue-apricorn}.'
+  description: |
+    Made from []{item:blue-apricorn}.
+
+    Used by trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    If the wild Pokémon was encountered by fishing, the wild Pokémon's catch rate is 3× normal.
+  flavor_text: |
+    A Poké Ball for catching Pokémon hooked
+    by a Rod when fishing.
+  icon: &heartgold-soulsilver.icon lure-ball.png
+sun-moon:
+  name: *heartgold-soulsilver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: &sun-moon.short_description '3× effectiveness while fishing.'
+  description: &sun-moon.description |
+    Used by trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    If the wild Pokémon was encountered by fishing, the wild Pokémon's catch rate is 3× normal.
+  flavor_text: |
+    A Poké Ball that is good for catching Pokémon that
+    you reel in with a Rod while out fishing.
+  icon: *heartgold-soulsilver.icon
+ultra-sun-ultra-moon:
+  name: *heartgold-soulsilver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: *sun-moon.short_description
+  description: *sun-moon.description
+  flavor_text: |
+    A Poké Ball that is good for catching Pokémon that
+    you reel in with a rod while out fishing.
+  icon: *heartgold-soulsilver.icon

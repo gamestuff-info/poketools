@@ -1,0 +1,222 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name SNORE
+  power: &gold-silver.power 40
+  type: &gold-silver.type normal
+  accuracy: &gold-silver.accuracy 100
+  pp: &gold-silver.pp 15
+  effect: &gold-silver.effect 93
+  effect_chance: &gold-silver.effect_chance 30
+  flinch_chance: &gold-silver.flinch_chance 30
+  flags: &gold-silver.flags
+    - protect
+    - mirror
+    - sound
+    - authentic
+  categories: &gold-silver.categories
+    - damage
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    An attack useable
+    only while asleep.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  effect_chance: *gold-silver.effect_chance
+  flags: &ruby-sapphire.flags
+    - protect
+    - mirror
+    - kings-rock
+  flinch_chance: *gold-silver.flinch_chance
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type cute
+  contest_effect: 1
+  contest_use_after:
+    - rest
+  flavor_text: &ruby-sapphire.flavor_text |
+    A loud attack that can be
+    used only while asleep.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  effect_chance: *gold-silver.effect_chance
+  flags: *ruby-sapphire.flags
+  flinch_chance: *gold-silver.flinch_chance
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  effect_chance: *gold-silver.effect_chance
+  flags: *ruby-sapphire.flags
+  flinch_chance: *gold-silver.flinch_chance
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  effect_chance: *gold-silver.effect_chance
+  flags: *ruby-sapphire.flags
+  flinch_chance: *gold-silver.flinch_chance
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    An attack that can
+    be used only while
+    asleep. It may
+    cause flinching.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Snore
+  flinch_chance: *gold-silver.flinch_chance
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class special
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 5
+  flavor_text: &diamond-pearl.flavor_text |
+    An attack that can
+    be used only if the
+    user is asleep. The
+    harsh noise may also
+    make the foe flinch.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flinch_chance: *gold-silver.flinch_chance
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flinch_chance: *gold-silver.flinch_chance
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: &black-white.flavor_text |
+    An attack that can be used only if the
+    user is asleep. The harsh noise may also
+    make the target flinch.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flinch_chance: *gold-silver.flinch_chance
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: &x-y.power 50
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: *black-white.flavor_text
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flinch_chance: *gold-silver.flinch_chance
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *x-y.power
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 35
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flinch_chance: *gold-silver.flinch_chance
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *x-y.power
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: |
+    This attack can be used only if the user is asleep.
+    The harsh noise may also make the target flinch.
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,163 @@
+sun-moon:
+  name: &sun-moon.name Rockruff
+  position: &sun-moon.position 744
+  numbers:
+    national: &sun-moon.numbers.national 744
+    original-alola: 103
+    original-melemele: 103
+    original-poni: 53
+  pokemon:
+    rockruff:
+      genus: &sun-moon.pokemon.rockruff.genus 'Puppy Pokémon'
+      color: &sun-moon.pokemon.rockruff.color brown
+      shape: &sun-moon.pokemon.rockruff.shape quadruped
+      female_rate: &sun-moon.pokemon.rockruff.female_rate 50
+      capture_rate: &sun-moon.pokemon.rockruff.capture_rate 190
+      happiness: &sun-moon.pokemon.rockruff.happiness 70
+      baby: &sun-moon.pokemon.rockruff.baby false
+      hatch_steps: &sun-moon.pokemon.rockruff.hatch_steps 15
+      growth_rate: &sun-moon.pokemon.rockruff.growth_rate medium
+      forms_switchable: &sun-moon.pokemon.rockruff.forms_switchable false
+      name: Rockruff
+      default: &sun-moon.pokemon.rockruff.default true
+      height: &sun-moon.pokemon.rockruff.height 5
+      weight: &sun-moon.pokemon.rockruff.weight 92
+      experience: &sun-moon.pokemon.rockruff.experience 56
+      types: &sun-moon.pokemon.rockruff.types
+        - rock
+      egg_groups: &sun-moon.pokemon.rockruff.egg_groups
+        - ground
+      mega: &sun-moon.pokemon.rockruff.mega false
+      stats: &sun-moon.pokemon.rockruff.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 1
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      abilities: &sun-moon.pokemon.rockruff.abilities
+        keen-eye: &sun-moon.pokemon.rockruff.abilities.keen-eye
+          hidden: &sun-moon.pokemon.rockruff.abilities.keen-eye.hidden false
+          position: 1
+        vital-spirit:
+          hidden: *sun-moon.pokemon.rockruff.abilities.keen-eye.hidden
+          position: 2
+        steadfast:
+          hidden: true
+          position: 3
+      flavor_text:
+        sun: |-
+          It’s considered to be a good Pokémon for
+          beginners because of its friendliness, but its
+          disposition grows rougher as it grows up.
+        moon: |-
+          This Pokémon has lived with people since times
+          long ago. It can sense when its Trainer is in the
+          dumps and will stick close by its Trainer’s side.
+      forms:
+        rockruff:
+          name: Rockruff
+          form_name: &sun-moon.pokemon.rockruff.forms.rockruff.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.rockruff.forms.rockruff.battle_only false
+          icon: &sun-moon.pokemon.rockruff.forms.rockruff.icon rockruff-default.png
+          sprites:
+            - sun-moon/shiny/rockruff-default.png
+            - sun-moon/rockruff-default.png
+          footprint: &sun-moon.pokemon.rockruff.forms.rockruff.footprint rockruff.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 126
+    updated-melemele: 126
+    updated-poni: 65
+  pokemon:
+    rockruff:
+      genus: *sun-moon.pokemon.rockruff.genus
+      color: *sun-moon.pokemon.rockruff.color
+      shape: *sun-moon.pokemon.rockruff.shape
+      female_rate: *sun-moon.pokemon.rockruff.female_rate
+      capture_rate: *sun-moon.pokemon.rockruff.capture_rate
+      happiness: *sun-moon.pokemon.rockruff.happiness
+      baby: *sun-moon.pokemon.rockruff.baby
+      hatch_steps: *sun-moon.pokemon.rockruff.hatch_steps
+      growth_rate: *sun-moon.pokemon.rockruff.growth_rate
+      forms_switchable: *sun-moon.pokemon.rockruff.forms_switchable
+      name: Rockruff
+      default: *sun-moon.pokemon.rockruff.default
+      height: *sun-moon.pokemon.rockruff.height
+      weight: *sun-moon.pokemon.rockruff.weight
+      experience: *sun-moon.pokemon.rockruff.experience
+      types: *sun-moon.pokemon.rockruff.types
+      egg_groups: *sun-moon.pokemon.rockruff.egg_groups
+      mega: *sun-moon.pokemon.rockruff.mega
+      stats: *sun-moon.pokemon.rockruff.stats
+      abilities: *sun-moon.pokemon.rockruff.abilities
+      flavor_text: &ultra-sun-ultra-moon.pokemon.rockruff.flavor_text
+        ultra-sun: |-
+          As they develop, their disposition grows more
+          violent and aggressive. Many Trainers find them
+          too much to handle and abandon them.
+        ultra-moon: |-
+          When it rubs the rocks on its neck against you,
+          that’s proof of its love for you. However, the
+          rocks are sharp, so the gesture is quite painful!
+      forms:
+        rockruff:
+          name: Rockruff
+          form_name: *sun-moon.pokemon.rockruff.forms.rockruff.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.rockruff.forms.rockruff.battle_only
+          icon: *sun-moon.pokemon.rockruff.forms.rockruff.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/rockruff-default.png
+            - ultra-sun-ultra-moon/rockruff-default.png
+          footprint: *sun-moon.pokemon.rockruff.forms.rockruff.footprint
+    rockruff-own-tempo:
+      genus: *sun-moon.pokemon.rockruff.genus
+      color: *sun-moon.pokemon.rockruff.color
+      shape: *sun-moon.pokemon.rockruff.shape
+      female_rate: *sun-moon.pokemon.rockruff.female_rate
+      capture_rate: *sun-moon.pokemon.rockruff.capture_rate
+      happiness: *sun-moon.pokemon.rockruff.happiness
+      baby: *sun-moon.pokemon.rockruff.baby
+      hatch_steps: *sun-moon.pokemon.rockruff.hatch_steps
+      growth_rate: *sun-moon.pokemon.rockruff.growth_rate
+      forms_switchable: *sun-moon.pokemon.rockruff.forms_switchable
+      name: &ultra-sun-ultra-moon.pokemon.rockruff-own-tempo.name 'Own Tempo Rockruff'
+      default: false
+      height: *sun-moon.pokemon.rockruff.height
+      weight: *sun-moon.pokemon.rockruff.weight
+      experience: *sun-moon.pokemon.rockruff.experience
+      types: *sun-moon.pokemon.rockruff.types
+      egg_groups: *sun-moon.pokemon.rockruff.egg_groups
+      mega: *sun-moon.pokemon.rockruff.mega
+      stats: *sun-moon.pokemon.rockruff.stats
+      abilities:
+        own-tempo: *sun-moon.pokemon.rockruff.abilities.keen-eye
+      flavor_text: *ultra-sun-ultra-moon.pokemon.rockruff.flavor_text
+      forms:
+        rockruff-own-tempo:
+          name: 'Own Tempo Rockruff'
+          form_name: *sun-moon.pokemon.rockruff.forms.rockruff.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.rockruff.forms.rockruff.battle_only
+          icon: rockruff-own-tempo.png
+          sprites:
+            - ultra-sun-ultra-moon/rockruff-own-tempo.png
+            - ultra-sun-ultra-moon/shiny/rockruff-own-tempo.png
+          footprint: *sun-moon.pokemon.rockruff.forms.rockruff.footprint

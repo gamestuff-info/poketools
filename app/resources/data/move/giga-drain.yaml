@@ -1,0 +1,197 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'GIGA DRAIN'
+  power: &gold-silver.power 60
+  type: &gold-silver.type grass
+  accuracy: &gold-silver.accuracy 100
+  pp: &gold-silver.pp 5
+  effect: &gold-silver.effect 4
+  drain: &gold-silver.drain 50
+  flags: &gold-silver.flags
+    - protect
+    - mirror
+    - heal
+  categories: &gold-silver.categories
+    - damage
+    - heal
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    Steals 1/2 of the
+    damage inflicted.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: &ruby-sapphire.flags
+    - protect
+    - mirror
+  drain: *gold-silver.drain
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 18
+  contest_use_after:
+    - growth
+  flavor_text: |
+    An attack that steals half
+    the damage inflicted.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: &colosseum.flavor_text |
+    An attack that absorbs
+    half the damage inflicted.
+  flags: *ruby-sapphire.flags
+  drain: *gold-silver.drain
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: &xd.damage_class special
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  drain: *gold-silver.drain
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *ruby-sapphire.flags
+  drain: *gold-silver.drain
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    A harsh attack that
+    absorbs half the
+    damage it inflicted
+    to restore HP.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Giga Drain'
+  drain: *gold-silver.drain
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: &diamond-pearl.pp 10
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 20
+  flavor_text: &diamond-pearl.flavor_text |
+    A nutrient-draining
+    attack. The user’s
+    HP is restored by
+    half the damage taken
+    by the target.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *diamond-pearl.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: &black-white.power 75
+  pp: *diamond-pearl.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &black-white.flavor_text |
+    A nutrient-draining attack. The user’s
+    HP is restored by half the damage
+    taken by the target.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *black-white.power
+  pp: *diamond-pearl.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 4
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *black-white.power
+  pp: *diamond-pearl.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    A nutrient-draining attack. The user’s HP is restored
+    by half the damage taken by the target.
+ultra-sun-ultra-moon: *sun-moon

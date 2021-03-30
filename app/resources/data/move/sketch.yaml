@@ -1,0 +1,163 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name SKETCH
+  type: &gold-silver.type normal
+  accuracy: 100
+  pp: &gold-silver.pp 1
+  effect: &gold-silver.effect 96
+  flags: &gold-silver.flags
+    - authentic
+  categories: &gold-silver.categories
+    - unique
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    Copies the foe's
+    move permanently.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 33
+  flavor_text: |
+    Copies the foe's last move
+    permanently.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: &colosseum.flavor_text |
+    Copies the target's last
+    move permanently.
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: physical
+  flavor_text: *colosseum.flavor_text
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    This move copies
+    the move last used
+    by the foe, then
+    disappears.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Sketch
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 23
+  flavor_text: |
+    It enables the user
+    to learn a move used
+    by the foe.
+    Once used, the move
+    Sketch disappears.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    It enables the user
+    to permanently learn
+    the move last used by
+    the foe. Once used,
+    Sketch disappears.
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &black-white.flavor_text |
+    It enables the user to permanently learn
+    the move last used by the target.
+    Once used, Sketch disappears.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 19
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    It enables the user to permanently learn the move
+    last used by the target. Once used,
+    Sketch disappears.
+ultra-sun-ultra-moon: *sun-moon

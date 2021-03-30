@@ -1,0 +1,136 @@
+sun-moon:
+  name: &sun-moon.name Drampa
+  position: &sun-moon.position 780
+  numbers:
+    national: &sun-moon.numbers.national 780
+    original-alola: 244
+    original-ulaula: 116
+  pokemon:
+    drampa:
+      genus: &sun-moon.pokemon.drampa.genus 'Placid Pokémon'
+      color: &sun-moon.pokemon.drampa.color white
+      shape: &sun-moon.pokemon.drampa.shape squiggle
+      female_rate: &sun-moon.pokemon.drampa.female_rate 50
+      capture_rate: &sun-moon.pokemon.drampa.capture_rate 70
+      happiness: &sun-moon.pokemon.drampa.happiness 70
+      baby: &sun-moon.pokemon.drampa.baby false
+      hatch_steps: &sun-moon.pokemon.drampa.hatch_steps 20
+      growth_rate: &sun-moon.pokemon.drampa.growth_rate medium
+      forms_switchable: &sun-moon.pokemon.drampa.forms_switchable false
+      name: Drampa
+      default: &sun-moon.pokemon.drampa.default true
+      height: &sun-moon.pokemon.drampa.height 30
+      weight: &sun-moon.pokemon.drampa.weight 1850
+      experience: &sun-moon.pokemon.drampa.experience 170
+      types: &sun-moon.pokemon.drampa.types
+        - normal
+        - dragon
+      egg_groups: &sun-moon.pokemon.drampa.egg_groups
+        - monster
+        - dragon
+      mega: &sun-moon.pokemon.drampa.mega false
+      stats: &sun-moon.pokemon.drampa.stats
+        hp:
+          base_value: 78
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 36
+          effort_change: 0
+        special-attack:
+          base_value: 135
+          effort_change: 2
+        special-defense:
+          base_value: 91
+          effort_change: 0
+      abilities: &sun-moon.pokemon.drampa.abilities
+        berserk:
+          hidden: &sun-moon.pokemon.drampa.abilities.berserk.hidden false
+          position: 1
+        sap-sipper:
+          hidden: *sun-moon.pokemon.drampa.abilities.berserk.hidden
+          position: 2
+        cloud-nine:
+          hidden: true
+          position: 3
+      wild_held_items:
+        sun: &sun-moon.pokemon.drampa.wild_held_items.sun
+          persim-berry: 5
+        moon: *sun-moon.pokemon.drampa.wild_held_items.sun
+      flavor_text:
+        sun: |-
+          It has a compassionate personality, but if it is
+          angered, it completely destroys its surroundings
+          with its intense breath.
+        moon: |-
+          This Pokémon is friendly to people and loves
+          children most of all. It comes from deep in the
+          mountains to play with children it likes in town.
+      forms:
+        drampa:
+          name: Drampa
+          form_name: &sun-moon.pokemon.drampa.forms.drampa.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.drampa.forms.drampa.battle_only false
+          icon: &sun-moon.pokemon.drampa.forms.drampa.icon drampa-default.png
+          sprites:
+            - sun-moon/drampa-default.png
+            - sun-moon/shiny/drampa-default.png
+          footprint: &sun-moon.pokemon.drampa.forms.drampa.footprint drampa.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 321
+    updated-ulaula: 142
+  pokemon:
+    drampa:
+      genus: *sun-moon.pokemon.drampa.genus
+      color: *sun-moon.pokemon.drampa.color
+      shape: *sun-moon.pokemon.drampa.shape
+      female_rate: *sun-moon.pokemon.drampa.female_rate
+      capture_rate: *sun-moon.pokemon.drampa.capture_rate
+      happiness: *sun-moon.pokemon.drampa.happiness
+      baby: *sun-moon.pokemon.drampa.baby
+      hatch_steps: *sun-moon.pokemon.drampa.hatch_steps
+      growth_rate: *sun-moon.pokemon.drampa.growth_rate
+      forms_switchable: *sun-moon.pokemon.drampa.forms_switchable
+      name: Drampa
+      default: *sun-moon.pokemon.drampa.default
+      height: *sun-moon.pokemon.drampa.height
+      weight: *sun-moon.pokemon.drampa.weight
+      experience: *sun-moon.pokemon.drampa.experience
+      types: *sun-moon.pokemon.drampa.types
+      egg_groups: *sun-moon.pokemon.drampa.egg_groups
+      mega: *sun-moon.pokemon.drampa.mega
+      stats: *sun-moon.pokemon.drampa.stats
+      abilities: *sun-moon.pokemon.drampa.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.drampa.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.drampa.wild_held_items.sun
+      flavor_text:
+        ultra-sun: |-
+          If a child it has made friends with is bullied,
+          Drampa will find the bully’s house and burn it to
+          the ground.
+        ultra-moon: |-
+          It appears in towns and plays with the children.
+          Drampa will protect kids when they’re in danger,
+          so their moms don’t have to worry.
+      forms:
+        drampa:
+          name: Drampa
+          form_name: *sun-moon.pokemon.drampa.forms.drampa.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.drampa.forms.drampa.battle_only
+          icon: *sun-moon.pokemon.drampa.forms.drampa.icon
+          sprites:
+            - ultra-sun-ultra-moon/drampa-default.png
+            - ultra-sun-ultra-moon/shiny/drampa-default.png
+          footprint: *sun-moon.pokemon.drampa.forms.drampa.footprint

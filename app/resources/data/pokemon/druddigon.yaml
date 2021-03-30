@@ -1,0 +1,336 @@
+black-white:
+  name: &black-white.name Druddigon
+  position: &black-white.position 622
+  numbers:
+    national: &black-white.numbers.national 621
+    original-unova: 127
+  pokemon:
+    druddigon:
+      genus: &black-white.pokemon.druddigon.genus 'Cave Pokémon'
+      color: &black-white.pokemon.druddigon.color red
+      shape: &black-white.pokemon.druddigon.shape upright
+      female_rate: &black-white.pokemon.druddigon.female_rate 50
+      capture_rate: &black-white.pokemon.druddigon.capture_rate 45
+      happiness: &black-white.pokemon.druddigon.happiness 70
+      baby: &black-white.pokemon.druddigon.baby false
+      hatch_steps: &black-white.pokemon.druddigon.hatch_steps 30
+      growth_rate: &black-white.pokemon.druddigon.growth_rate medium
+      forms_switchable: &black-white.pokemon.druddigon.forms_switchable false
+      name: Druddigon
+      default: &black-white.pokemon.druddigon.default true
+      height: &black-white.pokemon.druddigon.height 16
+      weight: &black-white.pokemon.druddigon.weight 1390
+      experience: &black-white.pokemon.druddigon.experience 170
+      types: &black-white.pokemon.druddigon.types
+        - dragon
+      egg_groups: &black-white.pokemon.druddigon.egg_groups
+        - monster
+        - dragon
+      stats: &black-white.pokemon.druddigon.stats
+        hp:
+          base_value: 77
+          effort_change: 0
+        attack:
+          base_value: 120
+          effort_change: 2
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 48
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      abilities: &black-white.pokemon.druddigon.abilities
+        rough-skin:
+          hidden: &black-white.pokemon.druddigon.abilities.rough-skin.hidden false
+          position: 1
+        sheer-force:
+          hidden: *black-white.pokemon.druddigon.abilities.rough-skin.hidden
+          position: 2
+        mold-breaker:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.druddigon.wild_held_items.black
+          dragon-fang: 5
+        white: *black-white.pokemon.druddigon.wild_held_items.black
+      flavor_text:
+        black: |
+          It warms its body by absorbing sunlight
+          with its wings. When its body temperature
+          falls, it can no longer move.
+        white: |
+          It races through narrow caves, using
+          its sharp claws to catch prey. The skin
+          on its face is harder than a rock.
+      forms:
+        druddigon:
+          name: Druddigon
+          form_name: &black-white.pokemon.druddigon.forms.druddigon.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.druddigon.forms.druddigon.battle_only false
+          icon: &black-white.pokemon.druddigon.forms.druddigon.icon gen5/druddigon-default.png
+          sprites:
+            - black-white/druddigon-default.png
+            - black-white/back/druddigon-default.png
+            - black-white/back/shiny/druddigon-default.png
+            - black-white/shiny/druddigon-default.png
+          art: &black-white.pokemon.druddigon.forms.druddigon.art
+            - druddigon-default.png
+          footprint: &black-white.pokemon.druddigon.forms.druddigon.footprint druddigon.png
+          cry: &black-white.pokemon.druddigon.forms.druddigon.cry gen5/druddigon-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 270
+  pokemon:
+    druddigon:
+      genus: *black-white.pokemon.druddigon.genus
+      color: *black-white.pokemon.druddigon.color
+      shape: *black-white.pokemon.druddigon.shape
+      female_rate: *black-white.pokemon.druddigon.female_rate
+      capture_rate: *black-white.pokemon.druddigon.capture_rate
+      happiness: *black-white.pokemon.druddigon.happiness
+      baby: *black-white.pokemon.druddigon.baby
+      hatch_steps: *black-white.pokemon.druddigon.hatch_steps
+      growth_rate: *black-white.pokemon.druddigon.growth_rate
+      forms_switchable: *black-white.pokemon.druddigon.forms_switchable
+      name: Druddigon
+      default: *black-white.pokemon.druddigon.default
+      height: *black-white.pokemon.druddigon.height
+      weight: *black-white.pokemon.druddigon.weight
+      experience: *black-white.pokemon.druddigon.experience
+      types: *black-white.pokemon.druddigon.types
+      egg_groups: *black-white.pokemon.druddigon.egg_groups
+      stats: *black-white.pokemon.druddigon.stats
+      abilities: *black-white.pokemon.druddigon.abilities
+      wild_held_items:
+        black-2: *black-white.pokemon.druddigon.wild_held_items.black
+        white-2: *black-white.pokemon.druddigon.wild_held_items.black
+      flavor_text:
+        black-2: |
+          It runs through the narrow tunnels
+          formed by Excadrill and Onix.
+          It uses its sharp claws to catch prey.
+        white-2: |
+          It runs through the narrow tunnels
+          formed by Excadrill and Onix.
+          It uses its sharp claws to catch prey.
+      forms:
+        druddigon:
+          name: Druddigon
+          form_name: *black-white.pokemon.druddigon.forms.druddigon.form_name
+          default: true
+          battle_only: *black-white.pokemon.druddigon.forms.druddigon.battle_only
+          icon: *black-white.pokemon.druddigon.forms.druddigon.icon
+          art: *black-white.pokemon.druddigon.forms.druddigon.art
+          footprint: *black-white.pokemon.druddigon.forms.druddigon.footprint
+          cry: *black-white.pokemon.druddigon.forms.druddigon.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    kalos-mountain: 141
+  pokemon:
+    druddigon:
+      genus: *black-white.pokemon.druddigon.genus
+      color: *black-white.pokemon.druddigon.color
+      shape: *black-white.pokemon.druddigon.shape
+      female_rate: *black-white.pokemon.druddigon.female_rate
+      capture_rate: *black-white.pokemon.druddigon.capture_rate
+      happiness: *black-white.pokemon.druddigon.happiness
+      baby: *black-white.pokemon.druddigon.baby
+      hatch_steps: *black-white.pokemon.druddigon.hatch_steps
+      growth_rate: *black-white.pokemon.druddigon.growth_rate
+      forms_switchable: *black-white.pokemon.druddigon.forms_switchable
+      name: Druddigon
+      default: *black-white.pokemon.druddigon.default
+      height: *black-white.pokemon.druddigon.height
+      weight: *black-white.pokemon.druddigon.weight
+      experience: *black-white.pokemon.druddigon.experience
+      types: *black-white.pokemon.druddigon.types
+      egg_groups: *black-white.pokemon.druddigon.egg_groups
+      mega: &x-y.pokemon.druddigon.mega false
+      stats: *black-white.pokemon.druddigon.stats
+      abilities: *black-white.pokemon.druddigon.abilities
+      wild_held_items:
+        x: *black-white.pokemon.druddigon.wild_held_items.black
+        'y': *black-white.pokemon.druddigon.wild_held_items.black
+      flavor_text:
+        x: |
+          It races through narrow caves, using its sharp claws
+          to catch prey. The skin on its face is harder than
+          a rock.
+        'y': |
+          It warms its body by absorbing sunlight with its
+          wings. When its body temperature falls, it can no
+          longer move.
+      forms:
+        druddigon:
+          name: Druddigon
+          form_name: *black-white.pokemon.druddigon.forms.druddigon.form_name
+          default: true
+          battle_only: *black-white.pokemon.druddigon.forms.druddigon.battle_only
+          icon: &x-y.pokemon.druddigon.forms.druddigon.icon druddigon-default.png
+          sprites:
+            - x-y/druddigon-default.png
+            - x-y/shiny/druddigon-default.png
+          art: *black-white.pokemon.druddigon.forms.druddigon.art
+          footprint: *black-white.pokemon.druddigon.forms.druddigon.footprint
+          cry: &x-y.pokemon.druddigon.forms.druddigon.cry druddigon-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *black-white.numbers.national
+  pokemon:
+    druddigon:
+      genus: *black-white.pokemon.druddigon.genus
+      color: *black-white.pokemon.druddigon.color
+      shape: *black-white.pokemon.druddigon.shape
+      female_rate: *black-white.pokemon.druddigon.female_rate
+      capture_rate: *black-white.pokemon.druddigon.capture_rate
+      happiness: *black-white.pokemon.druddigon.happiness
+      baby: *black-white.pokemon.druddigon.baby
+      hatch_steps: *black-white.pokemon.druddigon.hatch_steps
+      growth_rate: *black-white.pokemon.druddigon.growth_rate
+      forms_switchable: *black-white.pokemon.druddigon.forms_switchable
+      name: Druddigon
+      default: *black-white.pokemon.druddigon.default
+      height: *black-white.pokemon.druddigon.height
+      weight: *black-white.pokemon.druddigon.weight
+      experience: *black-white.pokemon.druddigon.experience
+      types: *black-white.pokemon.druddigon.types
+      egg_groups: *black-white.pokemon.druddigon.egg_groups
+      mega: *x-y.pokemon.druddigon.mega
+      stats: *black-white.pokemon.druddigon.stats
+      abilities: *black-white.pokemon.druddigon.abilities
+      flavor_text:
+        omega-ruby: |
+          It races through narrow caves, using its sharp claws
+          to catch prey. The skin on its face is harder than
+          a rock.
+        alpha-sapphire: |
+          It warms its body by absorbing sunlight with its
+          wings. When its body temperature falls, it can no
+          longer move.
+      forms:
+        druddigon:
+          name: Druddigon
+          form_name: *black-white.pokemon.druddigon.forms.druddigon.form_name
+          default: true
+          battle_only: *black-white.pokemon.druddigon.forms.druddigon.battle_only
+          icon: *x-y.pokemon.druddigon.forms.druddigon.icon
+          art: *black-white.pokemon.druddigon.forms.druddigon.art
+          footprint: *black-white.pokemon.druddigon.forms.druddigon.footprint
+          cry: *x-y.pokemon.druddigon.forms.druddigon.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/druddigon-default.png
+            - omega-ruby-alpha-sapphire/shiny/druddigon-default.png
+      wild_held_items:
+        omega-ruby: *black-white.pokemon.druddigon.wild_held_items.black
+        alpha-sapphire: *black-white.pokemon.druddigon.wild_held_items.black
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    druddigon:
+      genus: *black-white.pokemon.druddigon.genus
+      color: *black-white.pokemon.druddigon.color
+      shape: *black-white.pokemon.druddigon.shape
+      female_rate: *black-white.pokemon.druddigon.female_rate
+      capture_rate: *black-white.pokemon.druddigon.capture_rate
+      happiness: *black-white.pokemon.druddigon.happiness
+      baby: *black-white.pokemon.druddigon.baby
+      hatch_steps: *black-white.pokemon.druddigon.hatch_steps
+      growth_rate: *black-white.pokemon.druddigon.growth_rate
+      forms_switchable: *black-white.pokemon.druddigon.forms_switchable
+      name: Druddigon
+      default: *black-white.pokemon.druddigon.default
+      height: *black-white.pokemon.druddigon.height
+      weight: *black-white.pokemon.druddigon.weight
+      experience: *black-white.pokemon.druddigon.experience
+      types: *black-white.pokemon.druddigon.types
+      egg_groups: *black-white.pokemon.druddigon.egg_groups
+      mega: *x-y.pokemon.druddigon.mega
+      stats: *black-white.pokemon.druddigon.stats
+      abilities: *black-white.pokemon.druddigon.abilities
+      wild_held_items:
+        sun: *black-white.pokemon.druddigon.wild_held_items.black
+        moon: *black-white.pokemon.druddigon.wild_held_items.black
+      forms:
+        druddigon:
+          name: Druddigon
+          form_name: *black-white.pokemon.druddigon.forms.druddigon.form_name
+          default: true
+          battle_only: *black-white.pokemon.druddigon.forms.druddigon.battle_only
+          icon: *x-y.pokemon.druddigon.forms.druddigon.icon
+          sprites:
+            - sun-moon/druddigon-default.png
+            - sun-moon/shiny/druddigon-default.png
+          art: *black-white.pokemon.druddigon.forms.druddigon.art
+          footprint: *black-white.pokemon.druddigon.forms.druddigon.footprint
+          cry: *x-y.pokemon.druddigon.forms.druddigon.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 374
+    updated-poni: 121
+  pokemon:
+    druddigon:
+      genus: *black-white.pokemon.druddigon.genus
+      color: *black-white.pokemon.druddigon.color
+      shape: *black-white.pokemon.druddigon.shape
+      female_rate: *black-white.pokemon.druddigon.female_rate
+      capture_rate: *black-white.pokemon.druddigon.capture_rate
+      happiness: *black-white.pokemon.druddigon.happiness
+      baby: *black-white.pokemon.druddigon.baby
+      hatch_steps: *black-white.pokemon.druddigon.hatch_steps
+      growth_rate: *black-white.pokemon.druddigon.growth_rate
+      forms_switchable: *black-white.pokemon.druddigon.forms_switchable
+      name: Druddigon
+      default: *black-white.pokemon.druddigon.default
+      height: *black-white.pokemon.druddigon.height
+      weight: *black-white.pokemon.druddigon.weight
+      experience: *black-white.pokemon.druddigon.experience
+      types: *black-white.pokemon.druddigon.types
+      egg_groups: *black-white.pokemon.druddigon.egg_groups
+      mega: *x-y.pokemon.druddigon.mega
+      stats: *black-white.pokemon.druddigon.stats
+      abilities: *black-white.pokemon.druddigon.abilities
+      wild_held_items:
+        ultra-sun: *black-white.pokemon.druddigon.wild_held_items.black
+        ultra-moon: *black-white.pokemon.druddigon.wild_held_items.black
+      flavor_text:
+        ultra-sun: |-
+          The red skin on its face is harder than rock.
+          In narrow caves, it squares off against its
+          enemies and charges face-first right into them.
+        ultra-moon: |-
+          It infiltrates tunnels that Pokémon like Diglett
+          and Dugtrio have dug and quietly waits for prey
+          to pass through.
+      forms:
+        druddigon:
+          name: Druddigon
+          form_name: *black-white.pokemon.druddigon.forms.druddigon.form_name
+          default: true
+          battle_only: *black-white.pokemon.druddigon.forms.druddigon.battle_only
+          icon: *x-y.pokemon.druddigon.forms.druddigon.icon
+          sprites:
+            - ultra-sun-ultra-moon/druddigon-default.png
+            - ultra-sun-ultra-moon/shiny/druddigon-default.png
+          art: *black-white.pokemon.druddigon.forms.druddigon.art
+          footprint: *black-white.pokemon.druddigon.forms.druddigon.footprint
+          cry: *x-y.pokemon.druddigon.forms.druddigon.cry

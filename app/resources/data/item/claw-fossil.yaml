@@ -1,0 +1,98 @@
+ruby-sapphire: &ruby-sapphire
+  name: 'CLAW FOSSIL'
+  category: &ruby-sapphire.category dex-completion
+  pocket: key
+  flags: {  }
+  icon: &ruby-sapphire.icon claw-fossil.png
+  flavor_text: |
+    A fossil of an
+    ancient, seafloor-
+    dwelling POKéMON.
+  short_description: &ruby-sapphire.short_description 'Can be revived into an []{pokemon:anorith}.'
+  description: &ruby-sapphire.description 'Give to a scientist in the Devon HQ in []{location:rustboro-city} to receive an []{pokemon:anorith}.'
+emerald: *ruby-sapphire
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Claw Fossil'
+  category: *ruby-sapphire.category
+  pocket: &diamond-pearl.pocket misc
+  buy: &diamond-pearl.buy 7000
+  sell: &diamond-pearl.sell 3500
+  fling_effect: damage
+  fling_power: 100
+  flags:
+    - underground
+  short_description: *ruby-sapphire.short_description
+  description: 'Give to a scientist in the Mining Museum in []{location:oreburgh-city} to receive an []{pokemon:anorith}.'
+  flavor_text: &diamond-pearl.flavor_text |
+    A fossil of an ancient Pokémon that
+    lived in the sea. It appears to be
+    part of a claw.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 100
+  short_description: *ruby-sapphire.short_description
+  description: 'Give to a scientist in the Museum of Science in []{location:pewter-city} to receive an []{pokemon:anorith}.'
+  flavor_text: *diamond-pearl.flavor_text
+  icon: *ruby-sapphire.icon
+black-white: &black-white
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 100
+  short_description: *ruby-sapphire.short_description
+  description: 'Give to a scientist in the Nacrene Museum in []{location:nacrene-city} to receive an []{pokemon:anorith}.'
+  flavor_text: *diamond-pearl.flavor_text
+  icon: *ruby-sapphire.icon
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 100
+  short_description: *ruby-sapphire.short_description
+  description: 'Give to a scientist in the Fossil Lab in []{location:ambrette-town} to receive an []{pokemon:anorith}.'
+  flavor_text: &x-y.flavor_text |
+    A fossil from a prehistoric Pokémon
+    that once lived in the sea. It appears
+    to be a fragment of a claw.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 100
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: *x-y.flavor_text
+  icon: *ruby-sapphire.icon
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 100
+  short_description: *ruby-sapphire.short_description
+  description: 'Give to a scientist in the Fossil Restoration Center on []{location:alola-route-8} to receive an []{pokemon:anorith}.'
+  flavor_text: |
+    A fossil from a prehistoric Pokémon that once lived
+    in the sea. It appears to be a fragment of a claw.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,309 @@
+black-white:
+  name: &black-white.name Emboar
+  position: &black-white.position 501
+  numbers:
+    national: &black-white.numbers.national 500
+    original-unova: 6
+  pokemon:
+    emboar:
+      genus: &black-white.pokemon.emboar.genus 'Mega Fire Pig Pokémon'
+      evolution_parent: &black-white.pokemon.emboar.evolution_parent pignite/pignite
+      color: &black-white.pokemon.emboar.color red
+      shape: &black-white.pokemon.emboar.shape upright
+      female_rate: &black-white.pokemon.emboar.female_rate 12
+      capture_rate: &black-white.pokemon.emboar.capture_rate 45
+      happiness: &black-white.pokemon.emboar.happiness 70
+      baby: &black-white.pokemon.emboar.baby false
+      hatch_steps: &black-white.pokemon.emboar.hatch_steps 20
+      growth_rate: &black-white.pokemon.emboar.growth_rate medium-slow
+      forms_switchable: &black-white.pokemon.emboar.forms_switchable false
+      name: Emboar
+      default: &black-white.pokemon.emboar.default true
+      height: &black-white.pokemon.emboar.height 16
+      weight: &black-white.pokemon.emboar.weight 1500
+      experience: &black-white.pokemon.emboar.experience 238
+      types: &black-white.pokemon.emboar.types
+        - fire
+        - fighting
+      egg_groups: &black-white.pokemon.emboar.egg_groups
+        - ground
+      stats: &black-white.pokemon.emboar.stats
+        hp:
+          base_value: 110
+          effort_change: 0
+        attack:
+          base_value: 123
+          effort_change: 3
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      abilities: &black-white.pokemon.emboar.abilities
+        blaze:
+          hidden: false
+          position: 1
+        reckless:
+          hidden: true
+          position: 3
+      evolution_conditions: &black-white.pokemon.emboar.evolution_conditions
+        level-up:
+          minimum_level: 36
+      flavor_text:
+        black: |
+          It can throw a fire punch by setting its
+          fists on fire with its fiery chin. It cares
+          deeply about its friends.
+        white: |
+          It has mastered fast and powerful
+          fighting moves. It grows a beard of fire.
+      forms:
+        emboar:
+          name: Emboar
+          form_name: &black-white.pokemon.emboar.forms.emboar.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.emboar.forms.emboar.battle_only false
+          icon: &black-white.pokemon.emboar.forms.emboar.icon gen5/emboar-default.png
+          sprites:
+            - black-white/emboar-default.png
+            - black-white/back/emboar-default.png
+            - black-white/back/shiny/emboar-default.png
+            - black-white/shiny/emboar-default.png
+          art: &black-white.pokemon.emboar.forms.emboar.art
+            - emboar-default.png
+          footprint: &black-white.pokemon.emboar.forms.emboar.footprint emboar.png
+          cry: &black-white.pokemon.emboar.forms.emboar.cry gen5/emboar-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 6
+  pokemon:
+    emboar:
+      genus: *black-white.pokemon.emboar.genus
+      evolution_parent: *black-white.pokemon.emboar.evolution_parent
+      color: *black-white.pokemon.emboar.color
+      shape: *black-white.pokemon.emboar.shape
+      female_rate: *black-white.pokemon.emboar.female_rate
+      capture_rate: *black-white.pokemon.emboar.capture_rate
+      happiness: *black-white.pokemon.emboar.happiness
+      baby: *black-white.pokemon.emboar.baby
+      hatch_steps: *black-white.pokemon.emboar.hatch_steps
+      growth_rate: *black-white.pokemon.emboar.growth_rate
+      forms_switchable: *black-white.pokemon.emboar.forms_switchable
+      name: Emboar
+      default: *black-white.pokemon.emboar.default
+      height: *black-white.pokemon.emboar.height
+      weight: *black-white.pokemon.emboar.weight
+      experience: *black-white.pokemon.emboar.experience
+      types: *black-white.pokemon.emboar.types
+      egg_groups: *black-white.pokemon.emboar.egg_groups
+      stats: *black-white.pokemon.emboar.stats
+      abilities: *black-white.pokemon.emboar.abilities
+      evolution_conditions: *black-white.pokemon.emboar.evolution_conditions
+      flavor_text:
+        black-2: |
+          A flaring beard of fire is proof
+          that it is fired up. It is adept at
+          using many different moves.
+        white-2: |
+          A flaring beard of fire is proof
+          that it is fired up. It is adept at
+          using many different moves.
+      forms:
+        emboar:
+          name: Emboar
+          form_name: *black-white.pokemon.emboar.forms.emboar.form_name
+          default: true
+          battle_only: *black-white.pokemon.emboar.forms.emboar.battle_only
+          icon: *black-white.pokemon.emboar.forms.emboar.icon
+          art: *black-white.pokemon.emboar.forms.emboar.art
+          footprint: *black-white.pokemon.emboar.forms.emboar.footprint
+          cry: *black-white.pokemon.emboar.forms.emboar.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: &x-y.numbers
+    national: *black-white.numbers.national
+  pokemon:
+    emboar:
+      genus: *black-white.pokemon.emboar.genus
+      evolution_parent: *black-white.pokemon.emboar.evolution_parent
+      color: *black-white.pokemon.emboar.color
+      shape: *black-white.pokemon.emboar.shape
+      female_rate: *black-white.pokemon.emboar.female_rate
+      capture_rate: *black-white.pokemon.emboar.capture_rate
+      happiness: *black-white.pokemon.emboar.happiness
+      baby: *black-white.pokemon.emboar.baby
+      hatch_steps: *black-white.pokemon.emboar.hatch_steps
+      growth_rate: *black-white.pokemon.emboar.growth_rate
+      forms_switchable: *black-white.pokemon.emboar.forms_switchable
+      name: Emboar
+      default: *black-white.pokemon.emboar.default
+      height: *black-white.pokemon.emboar.height
+      weight: *black-white.pokemon.emboar.weight
+      experience: *black-white.pokemon.emboar.experience
+      types: *black-white.pokemon.emboar.types
+      egg_groups: *black-white.pokemon.emboar.egg_groups
+      mega: &x-y.pokemon.emboar.mega false
+      stats: *black-white.pokemon.emboar.stats
+      abilities: *black-white.pokemon.emboar.abilities
+      evolution_conditions: *black-white.pokemon.emboar.evolution_conditions
+      flavor_text:
+        x: |
+          It can throw a fire punch by setting its fists on fire
+          with its fiery chin. It cares deeply about its friends.
+        'y': |
+          It has mastered fast and powerful fighting moves.
+          It grows a beard of fire.
+      forms:
+        emboar:
+          name: Emboar
+          form_name: *black-white.pokemon.emboar.forms.emboar.form_name
+          default: true
+          battle_only: *black-white.pokemon.emboar.forms.emboar.battle_only
+          icon: &x-y.pokemon.emboar.forms.emboar.icon emboar-default.png
+          sprites:
+            - x-y/emboar-default.png
+            - x-y/shiny/emboar-default.png
+          art: *black-white.pokemon.emboar.forms.emboar.art
+          footprint: *black-white.pokemon.emboar.forms.emboar.footprint
+          cry: &x-y.pokemon.emboar.forms.emboar.cry emboar-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *x-y.numbers
+  pokemon:
+    emboar:
+      genus: *black-white.pokemon.emboar.genus
+      evolution_parent: *black-white.pokemon.emboar.evolution_parent
+      color: *black-white.pokemon.emboar.color
+      shape: *black-white.pokemon.emboar.shape
+      female_rate: *black-white.pokemon.emboar.female_rate
+      capture_rate: *black-white.pokemon.emboar.capture_rate
+      happiness: *black-white.pokemon.emboar.happiness
+      baby: *black-white.pokemon.emboar.baby
+      hatch_steps: *black-white.pokemon.emboar.hatch_steps
+      growth_rate: *black-white.pokemon.emboar.growth_rate
+      forms_switchable: *black-white.pokemon.emboar.forms_switchable
+      name: Emboar
+      default: *black-white.pokemon.emboar.default
+      height: *black-white.pokemon.emboar.height
+      weight: *black-white.pokemon.emboar.weight
+      experience: *black-white.pokemon.emboar.experience
+      types: *black-white.pokemon.emboar.types
+      egg_groups: *black-white.pokemon.emboar.egg_groups
+      mega: *x-y.pokemon.emboar.mega
+      stats: *black-white.pokemon.emboar.stats
+      abilities: *black-white.pokemon.emboar.abilities
+      evolution_conditions: *black-white.pokemon.emboar.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It can throw a fire punch by setting its fists on fire
+          with its fiery chin. It cares deeply about its friends.
+        alpha-sapphire: |
+          It has mastered fast and powerful fighting moves.
+          It grows a beard of fire.
+      forms:
+        emboar:
+          name: Emboar
+          form_name: *black-white.pokemon.emboar.forms.emboar.form_name
+          default: true
+          battle_only: *black-white.pokemon.emboar.forms.emboar.battle_only
+          icon: *x-y.pokemon.emboar.forms.emboar.icon
+          art: *black-white.pokemon.emboar.forms.emboar.art
+          footprint: *black-white.pokemon.emboar.forms.emboar.footprint
+          cry: *x-y.pokemon.emboar.forms.emboar.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/emboar-default.png
+            - omega-ruby-alpha-sapphire/shiny/emboar-default.png
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *x-y.numbers
+  pokemon:
+    emboar:
+      genus: *black-white.pokemon.emboar.genus
+      evolution_parent: *black-white.pokemon.emboar.evolution_parent
+      color: *black-white.pokemon.emboar.color
+      shape: *black-white.pokemon.emboar.shape
+      female_rate: *black-white.pokemon.emboar.female_rate
+      capture_rate: *black-white.pokemon.emboar.capture_rate
+      happiness: *black-white.pokemon.emboar.happiness
+      baby: *black-white.pokemon.emboar.baby
+      hatch_steps: *black-white.pokemon.emboar.hatch_steps
+      growth_rate: *black-white.pokemon.emboar.growth_rate
+      forms_switchable: *black-white.pokemon.emboar.forms_switchable
+      name: Emboar
+      default: *black-white.pokemon.emboar.default
+      height: *black-white.pokemon.emboar.height
+      weight: *black-white.pokemon.emboar.weight
+      experience: *black-white.pokemon.emboar.experience
+      types: *black-white.pokemon.emboar.types
+      egg_groups: *black-white.pokemon.emboar.egg_groups
+      mega: *x-y.pokemon.emboar.mega
+      stats: *black-white.pokemon.emboar.stats
+      abilities: *black-white.pokemon.emboar.abilities
+      evolution_conditions: *black-white.pokemon.emboar.evolution_conditions
+      forms:
+        emboar:
+          name: Emboar
+          form_name: *black-white.pokemon.emboar.forms.emboar.form_name
+          default: true
+          battle_only: *black-white.pokemon.emboar.forms.emboar.battle_only
+          icon: *x-y.pokemon.emboar.forms.emboar.icon
+          sprites:
+            - sun-moon/emboar-default.png
+            - sun-moon/shiny/emboar-default.png
+          art: *black-white.pokemon.emboar.forms.emboar.art
+          footprint: *black-white.pokemon.emboar.forms.emboar.footprint
+          cry: *x-y.pokemon.emboar.forms.emboar.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *x-y.numbers
+  pokemon:
+    emboar:
+      genus: *black-white.pokemon.emboar.genus
+      evolution_parent: *black-white.pokemon.emboar.evolution_parent
+      color: *black-white.pokemon.emboar.color
+      shape: *black-white.pokemon.emboar.shape
+      female_rate: *black-white.pokemon.emboar.female_rate
+      capture_rate: *black-white.pokemon.emboar.capture_rate
+      happiness: *black-white.pokemon.emboar.happiness
+      baby: *black-white.pokemon.emboar.baby
+      hatch_steps: *black-white.pokemon.emboar.hatch_steps
+      growth_rate: *black-white.pokemon.emboar.growth_rate
+      forms_switchable: *black-white.pokemon.emboar.forms_switchable
+      name: Emboar
+      default: *black-white.pokemon.emboar.default
+      height: *black-white.pokemon.emboar.height
+      weight: *black-white.pokemon.emboar.weight
+      experience: *black-white.pokemon.emboar.experience
+      types: *black-white.pokemon.emboar.types
+      egg_groups: *black-white.pokemon.emboar.egg_groups
+      mega: *x-y.pokemon.emboar.mega
+      stats: *black-white.pokemon.emboar.stats
+      abilities: *black-white.pokemon.emboar.abilities
+      evolution_conditions: *black-white.pokemon.emboar.evolution_conditions
+      forms:
+        emboar:
+          name: Emboar
+          form_name: *black-white.pokemon.emboar.forms.emboar.form_name
+          default: true
+          battle_only: *black-white.pokemon.emboar.forms.emboar.battle_only
+          icon: *x-y.pokemon.emboar.forms.emboar.icon
+          sprites:
+            - ultra-sun-ultra-moon/emboar-default.png
+            - ultra-sun-ultra-moon/shiny/emboar-default.png
+          art: *black-white.pokemon.emboar.forms.emboar.art
+          footprint: *black-white.pokemon.emboar.forms.emboar.footprint
+          cry: *x-y.pokemon.emboar.forms.emboar.cry

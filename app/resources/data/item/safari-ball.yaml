@@ -1,0 +1,88 @@
+red-blue: &red-blue
+  name: &red-blue.name 'SAFARI BALL'
+  pocket: misc
+  buy: 1000
+  sell: 500
+  category: &red-blue.category standard-balls
+  flags: &red-blue.flags
+    - countable
+    - consumable
+    - usable-in-battle
+  short_description: &red-blue.short_description 'Tries to [catch]{mechanic:catch} a wild Pokémon in the []{location:kanto-safari-zone}.  Success rate is 1.5×.'
+  description: &red-blue.description |
+    Used in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon, using a catch rate of 1.5×.
+
+    This item can only be used in the []{location:kanto-safari-zone}.
+yellow: *red-blue
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: &ruby-sapphire.pocket pokeballs
+  flags: *red-blue.flags
+  icon: &ruby-sapphire.icon safari-ball.png
+  flavor_text: |
+    A special BALL that
+    is used only in the
+    SAFARI ZONE.
+  short_description: &ruby-sapphire.short_description 'Tries to [catch]{mechanic:catch} a wild Pokémon in the []{location:hoenn-safari-zone}.  Success rate is 1.5×.'
+  description: &ruby-sapphire.description |
+    Used in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon, using a catch rate of 1.5×.
+
+    This item can only be used in the []{location:hoenn-safari-zone}.
+emerald: *ruby-sapphire
+firered-leafgreen:
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *ruby-sapphire.pocket
+  flags: *red-blue.flags
+  icon: *ruby-sapphire.icon
+  flavor_text: |
+    A special BALL that is used only in
+    the SAFARI ZONE. It is finished in
+    a camouflage pattern.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Safari Ball'
+  category: *red-blue.category
+  pocket: *ruby-sapphire.pocket
+  flags: *red-blue.flags
+  short_description: 'Tries to [catch]{mechanic:catch} a wild Pokémon in the []{location:great-marsh}.  Success rate is 1.5×.'
+  description: |
+    Used in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon, using a catch rate of 1.5×.
+
+    This item can only be used in the []{location:great-marsh}.
+  flavor_text: &diamond-pearl.flavor_text |
+    A special Poké Ball that is used only in
+    the Great Marsh. It is decorated in a
+    camouflage pattern.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  category: *red-blue.category
+  pocket: *ruby-sapphire.pocket
+  flags: *red-blue.flags
+  short_description: 'Tries to [catch]{mechanic:catch} a wild Pokémon in the []{location:johto-safari-zone}.  Success rate is 1.5×.'
+  description: |
+    Used in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon, using a catch rate of 1.5×.
+
+    This item can only be used in the []{location:johto-safari-zone}.
+  flavor_text: *diamond-pearl.flavor_text
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  category: *red-blue.category
+  pocket: *ruby-sapphire.pocket
+  flags: *red-blue.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A special Poké Ball that is used only in
+    the Great Marsh. It is recognizable by
+    the camouflage pattern decorating it.
+  icon: *ruby-sapphire.icon

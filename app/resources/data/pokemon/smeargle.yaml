@@ -1,0 +1,819 @@
+gold-silver:
+  name: &gold-silver.name SMEARGLE
+  position: &gold-silver.position 234
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 235
+    original-johto: 156
+    original-johto-abc: 190
+  pokemon:
+    smeargle:
+      name: SMEARGLE
+      default: &gold-silver.pokemon.smeargle.default true
+      capture_rate: &gold-silver.pokemon.smeargle.capture_rate 45
+      experience: &gold-silver.pokemon.smeargle.experience 106
+      types: &gold-silver.pokemon.smeargle.types
+        - normal
+      stats: &gold-silver.pokemon.smeargle.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 20
+          effort_change: 20
+        defense:
+          base_value: 35
+          effort_change: 35
+        speed:
+          base_value: 75
+          effort_change: 75
+        special-attack:
+          base_value: 20
+          effort_change: 20
+        special-defense:
+          base_value: 45
+          effort_change: 20
+      growth_rate: &gold-silver.pokemon.smeargle.growth_rate fast
+      female_rate: &gold-silver.pokemon.smeargle.female_rate 50
+      hatch_steps: &gold-silver.pokemon.smeargle.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.smeargle.egg_groups
+        - ground
+      genus: &gold-silver.pokemon.smeargle.genus 'PAINTER Pokémon'
+      height: &gold-silver.pokemon.smeargle.height 11
+      weight: &gold-silver.pokemon.smeargle.weight 580
+      flavor_text:
+        gold: |
+          A special fluid
+          oozes from the tip
+          of its tail. It
+          paints the fluid
+          everywhere to mark
+          its territory.
+        silver: |
+          Once it becomes an
+          adult, it has a
+          tendency to let
+          its comrades plant
+          footprints on its
+          back.
+      forms:
+        smeargle:
+          name: SMEARGLE
+          form_name: &gold-silver.pokemon.smeargle.forms.smeargle.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.smeargle.forms.smeargle.battle_only false
+          sprites:
+            - gold-silver/smeargle-default.png
+            - gold-silver/back/smeargle-default.png
+            - gold-silver/shiny/smeargle-default.png
+          art: &gold-silver.pokemon.smeargle.forms.smeargle.art
+            - smeargle-default.png
+          cry: &gold-silver.pokemon.smeargle.forms.smeargle.cry gen5/smeargle-default.webm
+          icon: &gold-silver.pokemon.smeargle.forms.smeargle.icon gen2/monster.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    smeargle:
+      name: SMEARGLE
+      default: *gold-silver.pokemon.smeargle.default
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      experience: *gold-silver.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      stats: *gold-silver.pokemon.smeargle.stats
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      genus: *gold-silver.pokemon.smeargle.genus
+      height: *gold-silver.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      flavor_text:
+        crystal: |
+          The color of the
+          mysterious fluid
+          secreted from its
+          tail is predeter-
+          mined for each
+          SMEARGLE.
+      forms:
+        smeargle:
+          name: SMEARGLE
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          sprites:
+            - crystal/smeargle-default.png
+            - crystal/back/smeargle-default.png
+            - crystal/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+          icon: *gold-silver.pokemon.smeargle.forms.smeargle.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 235
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 370
+  pokemon:
+    smeargle:
+      name: SMEARGLE
+      default: *gold-silver.pokemon.smeargle.default
+      forms_switchable: &ruby-sapphire.pokemon.smeargle.forms_switchable false
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      experience: *gold-silver.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      stats: &ruby-sapphire.pokemon.smeargle.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 75
+          effort_change: 1
+        special-attack:
+          base_value: 20
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      happiness: &ruby-sapphire.pokemon.smeargle.happiness 70
+      abilities: &ruby-sapphire.pokemon.smeargle.abilities
+        own-tempo: &ruby-sapphire.pokemon.smeargle.abilities.own-tempo
+          hidden: &ruby-sapphire.pokemon.smeargle.abilities.own-tempo.hidden false
+          position: 1
+      genus: *gold-silver.pokemon.smeargle.genus
+      height: &ruby-sapphire.pokemon.smeargle.height 12
+      weight: *gold-silver.pokemon.smeargle.weight
+      flavor_text:
+        ruby: |
+          SMEARGLE marks the boundaries of its
+          territory using a body fluid that leaks
+          out from the tip of its tail.
+          Over 5,000 different marks left by this
+          POKéMON have been found.
+        sapphire: |
+          SMEARGLE marks the boundaries of its
+          territory using a body fluid that leaks
+          out from the tip of its tail.
+          Over 5,000 different marks left by this
+          POKéMON have been found.
+      forms:
+        smeargle:
+          name: SMEARGLE
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: &ruby-sapphire.pokemon.smeargle.forms.smeargle.icon gen5/smeargle-default.png
+          sprites:
+            - ruby-sapphire/smeargle-default.png
+            - ruby-sapphire/back/smeargle-default.png
+            - ruby-sapphire/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: &ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint smeargle.png
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    smeargle:
+      name: SMEARGLE
+      default: *gold-silver.pokemon.smeargle.default
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      experience: *gold-silver.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      stats: *ruby-sapphire.pokemon.smeargle.stats
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      abilities: *ruby-sapphire.pokemon.smeargle.abilities
+      genus: *gold-silver.pokemon.smeargle.genus
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      flavor_text:
+        emerald: |
+          A SMEARGLE marks its territory using a
+          fluid that leaks out from the tip of its
+          tail. About 5,000 different marks left by
+          this POKéMON have been found.
+      forms:
+        smeargle:
+          name: SMEARGLE
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *ruby-sapphire.pokemon.smeargle.forms.smeargle.icon
+          sprites:
+            - emerald/smeargle-default.png
+            - emerald/shiny/smeargle-default.png
+            - emerald/animated/smeargle-default.webm
+            - emerald/animated/shiny/smeargle-default.webm
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 308
+  pokemon:
+    smeargle:
+      name: SMEARGLE
+      default: *gold-silver.pokemon.smeargle.default
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      experience: *gold-silver.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      stats: *ruby-sapphire.pokemon.smeargle.stats
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      abilities: *ruby-sapphire.pokemon.smeargle.abilities
+      genus: *gold-silver.pokemon.smeargle.genus
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      forms:
+        smeargle:
+          name: SMEARGLE
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          sprites:
+            - colosseum/smeargle-default.png
+            - colosseum/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    smeargle:
+      name: SMEARGLE
+      default: *gold-silver.pokemon.smeargle.default
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      experience: *gold-silver.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      stats: *ruby-sapphire.pokemon.smeargle.stats
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      abilities: *ruby-sapphire.pokemon.smeargle.abilities
+      genus: *gold-silver.pokemon.smeargle.genus
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      forms:
+        smeargle:
+          name: SMEARGLE
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          sprites:
+            - xd/smeargle-default.png
+            - xd/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    smeargle:
+      name: SMEARGLE
+      default: *gold-silver.pokemon.smeargle.default
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      experience: *gold-silver.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      stats: *ruby-sapphire.pokemon.smeargle.stats
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      abilities: *ruby-sapphire.pokemon.smeargle.abilities
+      genus: *gold-silver.pokemon.smeargle.genus
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      flavor_text:
+        firered: |
+          Once it becomes an adult, it has a
+          tendency to let its comrades plant
+          footprints on its back.
+        leafgreen: |
+          A special fluid oozes from the tip of its
+          tail. It paints the fluid everywhere to
+          mark its territory.
+      forms:
+        smeargle:
+          name: SMEARGLE
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *ruby-sapphire.pokemon.smeargle.forms.smeargle.icon
+          sprites:
+            - firered-leafgreen/smeargle-default.png
+            - firered-leafgreen/back/smeargle-default.png
+            - firered-leafgreen/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+diamond-pearl:
+  name: &diamond-pearl.name Smeargle
+  position: &diamond-pearl.position 266
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    smeargle:
+      genus: &diamond-pearl.pokemon.smeargle.genus 'Painter Pokémon'
+      shape: &diamond-pearl.pokemon.smeargle.shape upright
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: &diamond-pearl.pokemon.smeargle.baby false
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      pal_park: &diamond-pearl.pokemon.smeargle.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: &diamond-pearl.pokemon.smeargle.experience 88
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      stats: &diamond-pearl.pokemon.smeargle.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 75
+          effort_change: 1
+        special-attack:
+          base_value: 20
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.smeargle.abilities
+        own-tempo: *ruby-sapphire.pokemon.smeargle.abilities.own-tempo
+        technician: &diamond-pearl.pokemon.smeargle.abilities.technician
+          hidden: *ruby-sapphire.pokemon.smeargle.abilities.own-tempo.hidden
+          position: 2
+      flavor_text:
+        diamond: |
+          It marks its territory by using its
+          tail like a paintbrush. There are
+          more than 5,000 different marks.
+        pearl: |
+          It marks its territory by using its
+          tail like a paintbrush. There are
+          more than 5,000 different marks.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *ruby-sapphire.pokemon.smeargle.forms.smeargle.icon
+          sprites:
+            - diamond-pearl/back/smeargle-default.png
+            - diamond-pearl/back/shiny/smeargle-default.png
+            - diamond-pearl/smeargle-default.png
+            - diamond-pearl/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    smeargle:
+      genus: *diamond-pearl.pokemon.smeargle.genus
+      shape: *diamond-pearl.pokemon.smeargle.shape
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: *diamond-pearl.pokemon.smeargle.baby
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      pal_park: *diamond-pearl.pokemon.smeargle.pal_park
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: *diamond-pearl.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      stats: *diamond-pearl.pokemon.smeargle.stats
+      abilities: *diamond-pearl.pokemon.smeargle.abilities
+      flavor_text:
+        platinum: |
+          It marks its territory by using its
+          tail like a paintbrush. There are
+          more than 5,000 different marks.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *ruby-sapphire.pokemon.smeargle.forms.smeargle.icon
+          sprites:
+            - platinum/back/smeargle-default.png
+            - platinum/back/shiny/smeargle-default.png
+            - platinum/smeargle-default.png
+            - platinum/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 159
+  pokemon:
+    smeargle:
+      genus: *diamond-pearl.pokemon.smeargle.genus
+      shape: *diamond-pearl.pokemon.smeargle.shape
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: *diamond-pearl.pokemon.smeargle.baby
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      pal_park: *diamond-pearl.pokemon.smeargle.pal_park
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: *diamond-pearl.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      stats: *diamond-pearl.pokemon.smeargle.stats
+      abilities: *diamond-pearl.pokemon.smeargle.abilities
+      flavor_text:
+        heartgold: |
+          A special fluid oozes from the tip
+          of its tail. It paints the fluid
+          everywhere to mark its territory.
+        soulsilver: |
+          Once it becomes an adult, it has a
+          tendency to let its comrades plant
+          footprints on its back.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 5
+              range: 4-5
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.smeargle.forms.smeargle.icon
+          sprites:
+            - heartgold-soulsilver/back/smeargle-default.png
+            - heartgold-soulsilver/back/shiny/smeargle-default.png
+            - heartgold-soulsilver/smeargle-default.png
+            - heartgold-soulsilver/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    smeargle:
+      genus: *diamond-pearl.pokemon.smeargle.genus
+      color: &black-white.pokemon.smeargle.color white
+      shape: *diamond-pearl.pokemon.smeargle.shape
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: *diamond-pearl.pokemon.smeargle.baby
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: *diamond-pearl.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      stats: *diamond-pearl.pokemon.smeargle.stats
+      abilities: &black-white.pokemon.smeargle.abilities
+        own-tempo: *ruby-sapphire.pokemon.smeargle.abilities.own-tempo
+        technician: *diamond-pearl.pokemon.smeargle.abilities.technician
+        moody:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It marks its territory by using its
+          tail like a paintbrush. There are
+          more than 5,000 different marks.
+        white: |
+          It marks its territory by using its
+          tail like a paintbrush. There are
+          more than 5,000 different marks.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *ruby-sapphire.pokemon.smeargle.forms.smeargle.icon
+          sprites:
+            - black-white/back/smeargle-default.png
+            - black-white/back/shiny/smeargle-default.png
+            - black-white/smeargle-default.png
+            - black-white/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    smeargle:
+      genus: *diamond-pearl.pokemon.smeargle.genus
+      color: *black-white.pokemon.smeargle.color
+      shape: *diamond-pearl.pokemon.smeargle.shape
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: *diamond-pearl.pokemon.smeargle.baby
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: *diamond-pearl.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      stats: *diamond-pearl.pokemon.smeargle.stats
+      abilities: *black-white.pokemon.smeargle.abilities
+      flavor_text:
+        black-2: |
+          It marks its territory by using its
+          tail like a paintbrush. There are
+          more than 5,000 different marks.
+        white-2: |
+          It marks its territory by using its
+          tail like a paintbrush. There are
+          more than 5,000 different marks.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *ruby-sapphire.pokemon.smeargle.forms.smeargle.icon
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *gold-silver.pokemon.smeargle.forms.smeargle.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-central: 124
+  pokemon:
+    smeargle:
+      genus: *diamond-pearl.pokemon.smeargle.genus
+      color: *black-white.pokemon.smeargle.color
+      shape: *diamond-pearl.pokemon.smeargle.shape
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: *diamond-pearl.pokemon.smeargle.baby
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: *diamond-pearl.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      mega: &x-y.pokemon.smeargle.mega false
+      stats: *diamond-pearl.pokemon.smeargle.stats
+      abilities: *black-white.pokemon.smeargle.abilities
+      flavor_text:
+        x: |
+          It marks its territory by using its tail like a
+          paintbrush. There are more than 5,000
+          different marks.
+        'y': |
+          Once it becomes an adult, it has a tendency to let
+          its comrades plant footprints on its back.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: &x-y.pokemon.smeargle.forms.smeargle.icon smeargle-default.png
+          sprites:
+            - x-y/smeargle-default.png
+            - x-y/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: &x-y.pokemon.smeargle.forms.smeargle.cry smeargle-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    smeargle:
+      genus: *diamond-pearl.pokemon.smeargle.genus
+      color: *black-white.pokemon.smeargle.color
+      shape: *diamond-pearl.pokemon.smeargle.shape
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: *diamond-pearl.pokemon.smeargle.baby
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: *diamond-pearl.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      mega: *x-y.pokemon.smeargle.mega
+      stats: *diamond-pearl.pokemon.smeargle.stats
+      abilities: *black-white.pokemon.smeargle.abilities
+      flavor_text:
+        omega-ruby: |
+          Smeargle marks the boundaries of its territory using a body
+          fluid that leaks out from the tip of its tail. Over 5,000 different
+          marks left by this Pokémon have been found.
+        alpha-sapphire: |
+          Smeargle marks the boundaries of its territory using a body
+          fluid that leaks out from the tip of its tail. Over 5,000 different
+          marks left by this Pokémon have been found.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *x-y.pokemon.smeargle.forms.smeargle.icon
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *x-y.pokemon.smeargle.forms.smeargle.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/smeargle-default.png
+            - omega-ruby-alpha-sapphire/shiny/smeargle-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 58
+    original-melemele: 58
+  pokemon:
+    smeargle:
+      genus: *diamond-pearl.pokemon.smeargle.genus
+      color: *black-white.pokemon.smeargle.color
+      shape: *diamond-pearl.pokemon.smeargle.shape
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: *diamond-pearl.pokemon.smeargle.baby
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: *diamond-pearl.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      mega: *x-y.pokemon.smeargle.mega
+      stats: *diamond-pearl.pokemon.smeargle.stats
+      abilities: *black-white.pokemon.smeargle.abilities
+      flavor_text:
+        sun: |-
+          The unique creations produced by each
+          Smeargle are painted using the fluid that oozes
+          from its tail. This is how it marks its territory.
+        moon: |-
+          It draws symbols all over the place to mark its
+          territory. In towns with many Smeargle, the walls
+          are covered in graffiti.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *x-y.pokemon.smeargle.forms.smeargle.icon
+          sprites:
+            - sun-moon/smeargle-default.png
+            - sun-moon/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *x-y.pokemon.smeargle.forms.smeargle.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 70
+    updated-melemele: 70
+  pokemon:
+    smeargle:
+      genus: *diamond-pearl.pokemon.smeargle.genus
+      color: *black-white.pokemon.smeargle.color
+      shape: *diamond-pearl.pokemon.smeargle.shape
+      female_rate: *gold-silver.pokemon.smeargle.female_rate
+      capture_rate: *gold-silver.pokemon.smeargle.capture_rate
+      happiness: *ruby-sapphire.pokemon.smeargle.happiness
+      baby: *diamond-pearl.pokemon.smeargle.baby
+      hatch_steps: *gold-silver.pokemon.smeargle.hatch_steps
+      growth_rate: *gold-silver.pokemon.smeargle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.smeargle.forms_switchable
+      name: Smeargle
+      default: *gold-silver.pokemon.smeargle.default
+      height: *ruby-sapphire.pokemon.smeargle.height
+      weight: *gold-silver.pokemon.smeargle.weight
+      experience: *diamond-pearl.pokemon.smeargle.experience
+      types: *gold-silver.pokemon.smeargle.types
+      egg_groups: *gold-silver.pokemon.smeargle.egg_groups
+      mega: *x-y.pokemon.smeargle.mega
+      stats: *diamond-pearl.pokemon.smeargle.stats
+      abilities: *black-white.pokemon.smeargle.abilities
+      flavor_text:
+        ultra-sun: |-
+          The fluid of Smeargle’s tail secretions changes
+          in the intensity of its hue as the Pokémon’s
+          emotions change.
+        ultra-moon: |-
+          It draws symbols with the fluid that oozes from
+          the tip of its tail. Depending on the symbol,
+          Smeargle fanatics will pay big money for them.
+      forms:
+        smeargle:
+          name: Smeargle
+          form_name: *gold-silver.pokemon.smeargle.forms.smeargle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.smeargle.forms.smeargle.battle_only
+          icon: *x-y.pokemon.smeargle.forms.smeargle.icon
+          sprites:
+            - ultra-sun-ultra-moon/smeargle-default.png
+            - ultra-sun-ultra-moon/shiny/smeargle-default.png
+          art: *gold-silver.pokemon.smeargle.forms.smeargle.art
+          footprint: *ruby-sapphire.pokemon.smeargle.forms.smeargle.footprint
+          cry: *x-y.pokemon.smeargle.forms.smeargle.cry

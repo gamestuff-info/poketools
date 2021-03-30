@@ -1,0 +1,731 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name LOMBRE
+  position: &ruby-sapphire.position 271
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 271
+    hoenn: 20
+  pokemon:
+    lombre:
+      name: LOMBRE
+      default: &ruby-sapphire.pokemon.lombre.default true
+      forms_switchable: &ruby-sapphire.pokemon.lombre.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.lombre.capture_rate 120
+      experience: &ruby-sapphire.pokemon.lombre.experience 141
+      types: &ruby-sapphire.pokemon.lombre.types
+        - water
+        - grass
+      stats: &ruby-sapphire.pokemon.lombre.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 2
+        special-defense:
+          base_value: 60
+          effort_change: 2
+      growth_rate: &ruby-sapphire.pokemon.lombre.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.lombre.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.lombre.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.lombre.egg_groups
+        - water1
+        - plant
+      happiness: &ruby-sapphire.pokemon.lombre.happiness 70
+      abilities: &ruby-sapphire.pokemon.lombre.abilities
+        swift-swim: &ruby-sapphire.pokemon.lombre.abilities.swift-swim
+          hidden: &ruby-sapphire.pokemon.lombre.abilities.swift-swim.hidden false
+          position: 1
+        rain-dish: &ruby-sapphire.pokemon.lombre.abilities.rain-dish
+          hidden: *ruby-sapphire.pokemon.lombre.abilities.swift-swim.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.lombre.genus 'JOLLY Pokémon'
+      height: &ruby-sapphire.pokemon.lombre.height 12
+      weight: &ruby-sapphire.pokemon.lombre.weight 325
+      flavor_text:
+        ruby: |
+          LOMBRE is nocturnal - it will get active
+          after dusk. It is also a mischief-maker.
+          When this POKéMON spots anglers,
+          it tugs on their fishing lines from
+          beneath the surface and enjoys their
+          consternation.
+        sapphire: |
+          LOMBRE's entire body is covered by a
+          slippery, slimy film. It feels horribly
+          unpleasant to be touched by this
+          POKéMON's hands.
+          LOMBRE is often mistaken for a human
+          child.
+      forms:
+        lombre:
+          name: LOMBRE
+          form_name: &ruby-sapphire.pokemon.lombre.forms.lombre.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.lombre.forms.lombre.battle_only false
+          icon: &ruby-sapphire.pokemon.lombre.forms.lombre.icon gen5/lombre-default.png
+          sprites:
+            - ruby-sapphire/lombre-default.png
+            - ruby-sapphire/back/lombre-default.png
+            - ruby-sapphire/shiny/lombre-default.png
+          art: &ruby-sapphire.pokemon.lombre.forms.lombre.art
+            - lombre-default.png
+          footprint: &ruby-sapphire.pokemon.lombre.forms.lombre.footprint lombre.png
+          cry: &ruby-sapphire.pokemon.lombre.forms.lombre.cry gen5/lombre-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.lombre.evolution_parent lotad/lotad
+      evolution_conditions: &ruby-sapphire.pokemon.lombre.evolution_conditions
+        level-up:
+          minimum_level: 14
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    lombre:
+      name: LOMBRE
+      default: *ruby-sapphire.pokemon.lombre.default
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      experience: *ruby-sapphire.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      stats: *ruby-sapphire.pokemon.lombre.stats
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      abilities: *ruby-sapphire.pokemon.lombre.abilities
+      genus: *ruby-sapphire.pokemon.lombre.genus
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      flavor_text:
+        emerald: |
+          In the evening, it takes great delight in
+          popping out of rivers and startling people.
+          It feeds on aquatic moss that grows on
+          rocks in the riverbed.
+      forms:
+        lombre:
+          name: LOMBRE
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *ruby-sapphire.pokemon.lombre.forms.lombre.icon
+          sprites:
+            - emerald/lombre-default.png
+            - emerald/shiny/lombre-default.png
+            - emerald/animated/lombre-default.webm
+            - emerald/animated/shiny/lombre-default.webm
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 169
+  pokemon:
+    lombre:
+      name: LOMBRE
+      default: *ruby-sapphire.pokemon.lombre.default
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      experience: *ruby-sapphire.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      stats: *ruby-sapphire.pokemon.lombre.stats
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      abilities: *ruby-sapphire.pokemon.lombre.abilities
+      genus: *ruby-sapphire.pokemon.lombre.genus
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      forms:
+        lombre:
+          name: LOMBRE
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          sprites:
+            - colosseum/lombre-default.png
+            - colosseum/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    lombre:
+      name: LOMBRE
+      default: *ruby-sapphire.pokemon.lombre.default
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      experience: *ruby-sapphire.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      stats: *ruby-sapphire.pokemon.lombre.stats
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      abilities: *ruby-sapphire.pokemon.lombre.abilities
+      genus: *ruby-sapphire.pokemon.lombre.genus
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      forms:
+        lombre:
+          name: LOMBRE
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          sprites:
+            - xd/lombre-default.png
+            - xd/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    lombre:
+      name: LOMBRE
+      default: *ruby-sapphire.pokemon.lombre.default
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      experience: *ruby-sapphire.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      stats: *ruby-sapphire.pokemon.lombre.stats
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      abilities: *ruby-sapphire.pokemon.lombre.abilities
+      genus: *ruby-sapphire.pokemon.lombre.genus
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      flavor_text:
+        firered: |
+          It lives at the water's edge where it is
+          sunny. It sleeps on a bed of water grass
+          by day and becomes active at night.
+        leafgreen: |
+          It lives at the water's edge where it is
+          sunny. It sleeps on a bed of water grass
+          by day and becomes active at night.
+      forms:
+        lombre:
+          name: LOMBRE
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *ruby-sapphire.pokemon.lombre.forms.lombre.icon
+          sprites:
+            - firered-leafgreen/lombre-default.png
+            - firered-leafgreen/back/lombre-default.png
+            - firered-leafgreen/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Lombre
+  position: &diamond-pearl.position 296
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lombre:
+      genus: &diamond-pearl.pokemon.lombre.genus 'Jolly Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      shape: &diamond-pearl.pokemon.lombre.shape humanoid
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: &diamond-pearl.pokemon.lombre.baby false
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      pal_park: &diamond-pearl.pokemon.lombre.pal_park
+        area: pond
+        rate: 30
+        score: 50
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: &diamond-pearl.pokemon.lombre.experience 119
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      stats: &diamond-pearl.pokemon.lombre.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 2
+      abilities: &diamond-pearl.pokemon.lombre.abilities
+        swift-swim: *ruby-sapphire.pokemon.lombre.abilities.swift-swim
+        rain-dish: *ruby-sapphire.pokemon.lombre.abilities.rain-dish
+        own-tempo:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      flavor_text:
+        diamond: |
+          It has a mischievous spirit. If it
+          spots an angler, it will tug on the
+          fishing line to interfere.
+        pearl: |
+          It has a mischievous spirit. If it
+          spots an angler, it will tug on the
+          fishing line to interfere.
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *ruby-sapphire.pokemon.lombre.forms.lombre.icon
+          sprites:
+            - diamond-pearl/back/lombre-default.png
+            - diamond-pearl/back/shiny/lombre-default.png
+            - diamond-pearl/lombre-default.png
+            - diamond-pearl/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lombre:
+      genus: *diamond-pearl.pokemon.lombre.genus
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      shape: *diamond-pearl.pokemon.lombre.shape
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: *diamond-pearl.pokemon.lombre.baby
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lombre.pal_park
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: *diamond-pearl.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      stats: *diamond-pearl.pokemon.lombre.stats
+      abilities: *diamond-pearl.pokemon.lombre.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      flavor_text:
+        platinum: |
+          It has a mischievous spirit. If it
+          spots an angler, it will tug on the
+          fishing line to interfere.
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *ruby-sapphire.pokemon.lombre.forms.lombre.icon
+          sprites:
+            - platinum/back/lombre-default.png
+            - platinum/back/shiny/lombre-default.png
+            - platinum/lombre-default.png
+            - platinum/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lombre:
+      genus: *diamond-pearl.pokemon.lombre.genus
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      shape: *diamond-pearl.pokemon.lombre.shape
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: *diamond-pearl.pokemon.lombre.baby
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lombre.pal_park
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: *diamond-pearl.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      stats: *diamond-pearl.pokemon.lombre.stats
+      abilities: *diamond-pearl.pokemon.lombre.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It is nocturnal and becomes active
+          at nightfall. It feeds on aquatic
+          mosses that grow in the riverbed.
+        soulsilver: |
+          It is nocturnal and becomes active
+          at nightfall. It feeds on aquatic
+          mosses that grow in the riverbed.
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 1-5
+            stamina:
+              base_value: 2
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.lombre.forms.lombre.icon
+          sprites:
+            - heartgold-soulsilver/back/lombre-default.png
+            - heartgold-soulsilver/back/shiny/lombre-default.png
+            - heartgold-soulsilver/lombre-default.png
+            - heartgold-soulsilver/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lombre:
+      genus: *diamond-pearl.pokemon.lombre.genus
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      color: &black-white.pokemon.lombre.color green
+      shape: *diamond-pearl.pokemon.lombre.shape
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: *diamond-pearl.pokemon.lombre.baby
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: *diamond-pearl.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      stats: *diamond-pearl.pokemon.lombre.stats
+      abilities: *diamond-pearl.pokemon.lombre.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      flavor_text:
+        black: |
+          It has a mischievous spirit. If it
+          spots an angler, it will tug on the
+          fishing line to interfere.
+        white: |
+          It has a mischievous spirit. If it
+          spots an angler, it will tug on the
+          fishing line to interfere.
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *ruby-sapphire.pokemon.lombre.forms.lombre.icon
+          sprites:
+            - black-white/back/lombre-default.png
+            - black-white/back/shiny/lombre-default.png
+            - black-white/lombre-default.png
+            - black-white/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lombre:
+      genus: *diamond-pearl.pokemon.lombre.genus
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      color: *black-white.pokemon.lombre.color
+      shape: *diamond-pearl.pokemon.lombre.shape
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: *diamond-pearl.pokemon.lombre.baby
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: *diamond-pearl.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      stats: *diamond-pearl.pokemon.lombre.stats
+      abilities: *diamond-pearl.pokemon.lombre.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      flavor_text:
+        black-2: |
+          It has a mischievous spirit. If it
+          spots an angler, it will tug on the
+          fishing line to interfere.
+        white-2: |
+          It has a mischievous spirit. If it
+          spots an angler, it will tug on the
+          fishing line to interfere.
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *ruby-sapphire.pokemon.lombre.forms.lombre.icon
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *ruby-sapphire.pokemon.lombre.forms.lombre.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-mountain: 56
+  pokemon:
+    lombre:
+      genus: *diamond-pearl.pokemon.lombre.genus
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      color: *black-white.pokemon.lombre.color
+      shape: *diamond-pearl.pokemon.lombre.shape
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: *diamond-pearl.pokemon.lombre.baby
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: *diamond-pearl.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      mega: &x-y.pokemon.lombre.mega false
+      stats: *diamond-pearl.pokemon.lombre.stats
+      abilities: *diamond-pearl.pokemon.lombre.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      flavor_text:
+        x: |
+          It lives at the water’s edge where it is sunny.
+          It sleeps on a bed of water-grass by day and
+          becomes active at night.
+        'y': |
+          It has a mischievous spirit. If it spots an angler,
+          it will tug on the fishing line to interfere.
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: &x-y.pokemon.lombre.forms.lombre.icon lombre-default.png
+          sprites:
+            - x-y/lombre-default.png
+            - x-y/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: &x-y.pokemon.lombre.forms.lombre.cry lombre-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 20
+  pokemon:
+    lombre:
+      genus: *diamond-pearl.pokemon.lombre.genus
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      color: *black-white.pokemon.lombre.color
+      shape: *diamond-pearl.pokemon.lombre.shape
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: *diamond-pearl.pokemon.lombre.baby
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: *diamond-pearl.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      mega: *x-y.pokemon.lombre.mega
+      stats: *diamond-pearl.pokemon.lombre.stats
+      abilities: *diamond-pearl.pokemon.lombre.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Lombre is nocturnal—it will get active after dusk.
+          It is also a mischief maker. When this Pokémon
+          spots anglers, it tugs on their fishing lines from
+          beneath the surface and enjoys their consternation.
+        alpha-sapphire: |
+          Lombre’s entire body is covered by a slippery, slimy film.
+          It feels horribly unpleasant to be touched by this Pokémon’s
+          hands. Lombre is often mistaken for a human child.
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *x-y.pokemon.lombre.forms.lombre.icon
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *x-y.pokemon.lombre.forms.lombre.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/lombre-default.png
+            - omega-ruby-alpha-sapphire/shiny/lombre-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.lombre.wild_held_items.omega-ruby
+          mental-herb: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.lombre.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lombre:
+      genus: *diamond-pearl.pokemon.lombre.genus
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      color: *black-white.pokemon.lombre.color
+      shape: *diamond-pearl.pokemon.lombre.shape
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: *diamond-pearl.pokemon.lombre.baby
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: *diamond-pearl.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      mega: *x-y.pokemon.lombre.mega
+      stats: *diamond-pearl.pokemon.lombre.stats
+      abilities: *diamond-pearl.pokemon.lombre.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.lombre.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.lombre.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *x-y.pokemon.lombre.forms.lombre.icon
+          sprites:
+            - sun-moon/lombre-default.png
+            - sun-moon/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *x-y.pokemon.lombre.forms.lombre.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lombre:
+      genus: *diamond-pearl.pokemon.lombre.genus
+      evolution_parent: *ruby-sapphire.pokemon.lombre.evolution_parent
+      color: *black-white.pokemon.lombre.color
+      shape: *diamond-pearl.pokemon.lombre.shape
+      female_rate: *ruby-sapphire.pokemon.lombre.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lombre.capture_rate
+      happiness: *ruby-sapphire.pokemon.lombre.happiness
+      baby: *diamond-pearl.pokemon.lombre.baby
+      hatch_steps: *ruby-sapphire.pokemon.lombre.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lombre.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lombre.forms_switchable
+      name: Lombre
+      default: *ruby-sapphire.pokemon.lombre.default
+      height: *ruby-sapphire.pokemon.lombre.height
+      weight: *ruby-sapphire.pokemon.lombre.weight
+      experience: *diamond-pearl.pokemon.lombre.experience
+      types: *ruby-sapphire.pokemon.lombre.types
+      egg_groups: *ruby-sapphire.pokemon.lombre.egg_groups
+      mega: *x-y.pokemon.lombre.mega
+      stats: *diamond-pearl.pokemon.lombre.stats
+      abilities: *diamond-pearl.pokemon.lombre.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.lombre.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.lombre.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.lombre.evolution_conditions
+      forms:
+        lombre:
+          name: Lombre
+          form_name: *ruby-sapphire.pokemon.lombre.forms.lombre.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lombre.forms.lombre.battle_only
+          icon: *x-y.pokemon.lombre.forms.lombre.icon
+          sprites:
+            - ultra-sun-ultra-moon/lombre-default.png
+            - ultra-sun-ultra-moon/shiny/lombre-default.png
+          art: *ruby-sapphire.pokemon.lombre.forms.lombre.art
+          footprint: *ruby-sapphire.pokemon.lombre.forms.lombre.footprint
+          cry: *x-y.pokemon.lombre.forms.lombre.cry

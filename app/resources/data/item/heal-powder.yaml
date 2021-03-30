@@ -1,0 +1,113 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'HEAL POWDER'
+  pocket: &gold-silver.pocket misc
+  buy: &gold-silver.buy 450
+  sell: &gold-silver.sell 225
+  flavor_text: |
+    Cures all status
+    problems. Bitter.
+  category: &gold-silver.category status-cures
+  flags: &gold-silver.flags
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  short_description: &gold-silver.short_description 'Cures any status ailment, but lowers happiness.'
+  description: &gold-silver.description |
+    Used on a party Pokémon
+    :   Cures any [status ailment]{mechanic:status-ailment}.  Decreases [happiness]{mechanic:happiness} by 5/5/10.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: &ruby-sapphire.icon heal-powder.png
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    A bitter powder
+    that heals all
+    status problems.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *gold-silver.name
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *gold-silver.category
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+xd: *colosseum
+firered-leafgreen:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: |
+    A very bitter medicine powder.
+    It heals all the status problems of
+     one POKéMON.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Heal Powder'
+  category: *gold-silver.category
+  pocket: &diamond-pearl.pocket medicine
+  buy: &diamond-pearl.buy 300
+  sell: &diamond-pearl.sell 150
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A very bitter medicine powder.
+    It heals all the status problems of a
+    single Pokémon.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A very bitter medicine powder.
+    When consumed, it heals all of
+    a Pokémon’s status conditions.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A very bitter medicinal powder. It can be used once
+    to heal all the status conditions of a Pokémon.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

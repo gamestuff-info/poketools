@@ -1,0 +1,160 @@
+red-blue: &red-blue
+  name: &red-blue.name METRONOME
+  type: &red-blue.type normal
+  accuracy: &red-blue.accuracy 100
+  pp: &red-blue.pp 10
+  effect: &red-blue.effect 84
+  categories: &red-blue.categories
+    - unique
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target user
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Randomly uses any
+    POKéMON move.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  type: *red-blue.type
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: &ruby-sapphire.target specific-move
+  priority: *red-blue.priority
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  contest_type: &ruby-sapphire.contest_type cute
+  contest_effect: 4
+  flavor_text: &ruby-sapphire.flavor_text |
+    Waggles a finger to use any
+    POKéMON move at random.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  type: *red-blue.type
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *ruby-sapphire.target
+  priority: *red-blue.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+xd:
+  name: *red-blue.name
+  type: *red-blue.type
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *ruby-sapphire.target
+  priority: *red-blue.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+firered-leafgreen:
+  name: *red-blue.name
+  type: *red-blue.type
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *ruby-sapphire.target
+  priority: *red-blue.priority
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  flavor_text: |
+    Waggles a finger
+    and stimulates the
+    brain into using any
+    move at random.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Metronome
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 14
+  flavor_text: &diamond-pearl.flavor_text |
+    The user waggles a
+    finger and stimulates
+    the brain into
+    randomly using nearly
+    any move.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: &black-white.flavor_text |
+    The user waggles a finger and stimulates
+    its brain into randomly using nearly
+    any move.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 25
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user waggles a finger and stimulates its brain
+    into randomly using nearly any move.
+ultra-sun-ultra-moon: *sun-moon

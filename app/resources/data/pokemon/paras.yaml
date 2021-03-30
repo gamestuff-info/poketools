@@ -1,0 +1,970 @@
+red-blue:
+  name: &red-blue.name PARAS
+  position: &red-blue.position 46
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 46
+    kanto: 46
+  pokemon:
+    paras:
+      name: PARAS
+      default: &red-blue.pokemon.paras.default true
+      capture_rate: &red-blue.pokemon.paras.capture_rate 190
+      experience: &red-blue.pokemon.paras.experience 70
+      types: &red-blue.pokemon.paras.types
+        - bug
+        - grass
+      stats: &red-blue.pokemon.paras.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 70
+          effort_change: 70
+        defense:
+          base_value: 55
+          effort_change: 55
+        speed:
+          base_value: 25
+          effort_change: 25
+        special:
+          base_value: 55
+          effort_change: 55
+      growth_rate: &red-blue.pokemon.paras.growth_rate medium
+      genus: &red-blue.pokemon.paras.genus 'MUSHROOM Pokémon'
+      height: &red-blue.pokemon.paras.height 3
+      weight: &red-blue.pokemon.paras.weight 544
+      flavor_text:
+        red: |
+          Burrows to suck
+          tree roots. The
+          mushrooms on its
+          back grow by draw-
+           ing nutrients from
+          the bug host.
+        blue: |
+          Burrows to suck
+          tree roots. The
+          mushrooms on its
+          back grow by draw-
+           ing nutrients from
+          the bug host.
+      forms:
+        paras:
+          name: PARAS
+          form_name: &red-blue.pokemon.paras.forms.paras.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.paras.forms.paras.battle_only false
+          sprites:
+            - red-blue/paras-default.png
+            - red-blue/gray/paras-default.png
+            - red-blue/back/paras-default.png
+          art: &red-blue.pokemon.paras.forms.paras.art
+            - paras-default.png
+          cry: &red-blue.pokemon.paras.forms.paras.cry gen5/paras-default.webm
+          icon: &red-blue.pokemon.paras.forms.paras.icon gen1/bug.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    paras:
+      name: PARAS
+      default: *red-blue.pokemon.paras.default
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      experience: *red-blue.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      stats: *red-blue.pokemon.paras.stats
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      genus: *red-blue.pokemon.paras.genus
+      height: *red-blue.pokemon.paras.height
+      weight: *red-blue.pokemon.paras.weight
+      flavor_text:
+        yellow: |
+          Burrows under the
+          ground to gnaw on
+          tree roots. The
+          mushrooms on its
+          back absorb most
+          of the nutrition.
+      forms:
+        paras:
+          name: PARAS
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          sprites:
+            - yellow/paras-default.png
+            - yellow/gray/paras-default.png
+            - yellow/back/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+          icon: *red-blue.pokemon.paras.forms.paras.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 45
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 69
+    original-johto-abc: 141
+  pokemon:
+    paras:
+      name: PARAS
+      default: *red-blue.pokemon.paras.default
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      experience: *red-blue.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      stats: &gold-silver.pokemon.paras.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 70
+          effort_change: 70
+        defense:
+          base_value: 55
+          effort_change: 55
+        speed:
+          base_value: 25
+          effort_change: 25
+        special-attack:
+          base_value: 45
+          effort_change: 45
+        special-defense:
+          base_value: 55
+          effort_change: 45
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      female_rate: &gold-silver.pokemon.paras.female_rate 50
+      hatch_steps: &gold-silver.pokemon.paras.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.paras.egg_groups
+        - bug
+        - plant
+      wild_held_items:
+        gold: &gold-silver.pokemon.paras.wild_held_items.gold
+          tinymushroom: 23
+          big-mushroom: 2
+        silver: *gold-silver.pokemon.paras.wild_held_items.gold
+      genus: *red-blue.pokemon.paras.genus
+      height: *red-blue.pokemon.paras.height
+      weight: &gold-silver.pokemon.paras.weight 54
+      flavor_text:
+        gold: |
+          It is doused with
+          mushroom spores
+          when it is born.
+          As its body grows,
+          mushrooms sprout
+          from its back.
+        silver: |
+          As its body grows
+          large, oriental
+          mushrooms named
+          tochukaso start
+          sprouting out of
+          its back.
+      forms:
+        paras:
+          name: PARAS
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          sprites:
+            - gold-silver/paras-default.png
+            - gold-silver/back/paras-default.png
+            - gold-silver/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+          icon: &gold-silver.pokemon.paras.forms.paras.icon gen2/bug.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    paras:
+      name: PARAS
+      default: *red-blue.pokemon.paras.default
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      experience: *red-blue.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      stats: *gold-silver.pokemon.paras.stats
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.paras.wild_held_items.gold
+      genus: *red-blue.pokemon.paras.genus
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      flavor_text:
+        crystal: |
+          The tochukaso
+          growing on this
+          #MON's back
+          orders it to
+          extract juice from
+          tree trunks.
+      forms:
+        paras:
+          name: PARAS
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          sprites:
+            - crystal/paras-default.png
+            - crystal/back/paras-default.png
+            - crystal/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+          icon: *gold-silver.pokemon.paras.forms.paras.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 235
+  pokemon:
+    paras:
+      name: PARAS
+      default: *red-blue.pokemon.paras.default
+      forms_switchable: &ruby-sapphire.pokemon.paras.forms_switchable false
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      experience: *red-blue.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      stats: &ruby-sapphire.pokemon.paras.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 1
+        defense:
+          base_value: 55
+          effort_change: 0
+        speed:
+          base_value: 25
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.paras.wild_held_items.ruby
+          tinymushroom: 50
+          big-mushroom: &ruby-sapphire.pokemon.paras.wild_held_items.ruby.big-mushroom 5
+        sapphire: *ruby-sapphire.pokemon.paras.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.paras.happiness 70
+      abilities: &ruby-sapphire.pokemon.paras.abilities
+        effect-spore: &ruby-sapphire.pokemon.paras.abilities.effect-spore
+          hidden: &ruby-sapphire.pokemon.paras.abilities.effect-spore.hidden false
+          position: 1
+      genus: *red-blue.pokemon.paras.genus
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      flavor_text:
+        ruby: |
+          PARAS has parasitic mushrooms growing
+          on its back called tochukaso.  They grow
+          large by drawing nutrients from this
+          BUG/GRASS POKéMON host.  They are
+          highly valued as a medicine for
+          extending life.
+        sapphire: |
+          PARAS has parasitic mushrooms growing
+          on its back called tochukaso.  They grow
+          large by drawing nutrients from this
+          BUG/GRASS POKéMON host.  They are
+          highly valued as a medicine for
+          extending life.
+      forms:
+        paras:
+          name: PARAS
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: &ruby-sapphire.pokemon.paras.forms.paras.icon gen5/paras-default.png
+          sprites:
+            - ruby-sapphire/paras-default.png
+            - ruby-sapphire/back/paras-default.png
+            - ruby-sapphire/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: &ruby-sapphire.pokemon.paras.forms.paras.footprint paras.png
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    paras:
+      name: PARAS
+      default: *red-blue.pokemon.paras.default
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      experience: *red-blue.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      stats: *ruby-sapphire.pokemon.paras.stats
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.paras.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      abilities: *ruby-sapphire.pokemon.paras.abilities
+      genus: *red-blue.pokemon.paras.genus
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      flavor_text:
+        emerald: |
+          A PARAS has parasitic tochukaso
+          mushrooms growing on its back.  They grow
+          by drawing nutrients from the host. They
+          are valued as a medicine for long life.
+      forms:
+        paras:
+          name: PARAS
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *ruby-sapphire.pokemon.paras.forms.paras.icon
+          sprites:
+            - emerald/paras-default.png
+            - emerald/shiny/paras-default.png
+            - emerald/animated/paras-default.webm
+            - emerald/animated/shiny/paras-default.webm
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 233
+  pokemon:
+    paras:
+      name: PARAS
+      default: *red-blue.pokemon.paras.default
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      experience: *red-blue.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      stats: *ruby-sapphire.pokemon.paras.stats
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      abilities: *ruby-sapphire.pokemon.paras.abilities
+      genus: *red-blue.pokemon.paras.genus
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      forms:
+        paras:
+          name: PARAS
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          sprites:
+            - colosseum/paras-default.png
+            - colosseum/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    paras:
+      name: PARAS
+      default: *red-blue.pokemon.paras.default
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      experience: *red-blue.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      stats: *ruby-sapphire.pokemon.paras.stats
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      abilities: *ruby-sapphire.pokemon.paras.abilities
+      genus: *red-blue.pokemon.paras.genus
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      forms:
+        paras:
+          name: PARAS
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          sprites:
+            - xd/paras-default.png
+            - xd/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    paras:
+      name: PARAS
+      default: *red-blue.pokemon.paras.default
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      experience: *red-blue.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      stats: *ruby-sapphire.pokemon.paras.stats
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.paras.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.paras.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      abilities: *ruby-sapphire.pokemon.paras.abilities
+      genus: *red-blue.pokemon.paras.genus
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      flavor_text:
+        firered: |
+          Growing out of the bug's back are
+          mushrooms called tochukaso. The mushrooms
+          grow with the bug host.
+        leafgreen: |
+          Burrows to suck tree roots. The mushrooms
+          on its back grow by drawing nutrients from
+          the bug host.
+      forms:
+        paras:
+          name: PARAS
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *ruby-sapphire.pokemon.paras.forms.paras.icon
+          sprites:
+            - firered-leafgreen/paras-default.png
+            - firered-leafgreen/back/paras-default.png
+            - firered-leafgreen/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+diamond-pearl:
+  name: &diamond-pearl.name Paras
+  position: &diamond-pearl.position 51
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    paras:
+      genus: &diamond-pearl.pokemon.paras.genus 'Mushroom Pokémon'
+      shape: &diamond-pearl.pokemon.paras.shape armor
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: &diamond-pearl.pokemon.paras.baby false
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      pal_park: &diamond-pearl.pokemon.paras.pal_park
+        area: forest
+        rate: 50
+        score: 30
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: &diamond-pearl.pokemon.paras.experience 57
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      stats: &diamond-pearl.pokemon.paras.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 1
+        defense:
+          base_value: 55
+          effort_change: 0
+        speed:
+          base_value: 25
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.paras.abilities
+        effect-spore: *ruby-sapphire.pokemon.paras.abilities.effect-spore
+        dry-skin:
+          hidden: *ruby-sapphire.pokemon.paras.abilities.effect-spore.hidden
+          position: 2
+        damp:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.paras.wild_held_items.diamond
+          tiny-mushroom: &diamond-pearl.pokemon.paras.wild_held_items.diamond.tiny-mushroom 50
+          big-mushroom: *ruby-sapphire.pokemon.paras.wild_held_items.ruby.big-mushroom
+        pearl: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Mushrooms named tochukaso grow
+          on its back. They grow along
+          with the host PARAS.
+        pearl: |
+          Mushrooms named tochukaso grow
+          on its back. They grow along
+          with the host PARAS.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *ruby-sapphire.pokemon.paras.forms.paras.icon
+          sprites:
+            - diamond-pearl/paras-default.png
+            - diamond-pearl/back/paras-default.png
+            - diamond-pearl/back/shiny/paras-default.png
+            - diamond-pearl/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    paras:
+      genus: *diamond-pearl.pokemon.paras.genus
+      shape: *diamond-pearl.pokemon.paras.shape
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: *diamond-pearl.pokemon.paras.baby
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      pal_park: *diamond-pearl.pokemon.paras.pal_park
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: *diamond-pearl.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      stats: *diamond-pearl.pokemon.paras.stats
+      abilities: *diamond-pearl.pokemon.paras.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          Mushrooms named tochukaso grow
+          on its back. They grow along
+          with the host PARAS.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *ruby-sapphire.pokemon.paras.forms.paras.icon
+          sprites:
+            - platinum/paras-default.png
+            - platinum/back/paras-default.png
+            - platinum/back/shiny/paras-default.png
+            - platinum/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 70
+  pokemon:
+    paras:
+      genus: *diamond-pearl.pokemon.paras.genus
+      shape: *diamond-pearl.pokemon.paras.shape
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: *diamond-pearl.pokemon.paras.baby
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      pal_park: *diamond-pearl.pokemon.paras.pal_park
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: *diamond-pearl.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      stats: *diamond-pearl.pokemon.paras.stats
+      abilities: *diamond-pearl.pokemon.paras.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          It is doused with mushroom spores
+          when it is born. As its body grows,
+          mushrooms sprout from its back.
+        soulsilver: |
+          As its body grows, large mushrooms
+          named tochukaso start sprouting
+          out of its back.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-5
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.paras.forms.paras.icon
+          sprites:
+            - heartgold-soulsilver/paras-default.png
+            - heartgold-soulsilver/back/paras-default.png
+            - heartgold-soulsilver/back/shiny/paras-default.png
+            - heartgold-soulsilver/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    paras:
+      genus: *diamond-pearl.pokemon.paras.genus
+      color: &black-white.pokemon.paras.color red
+      shape: *diamond-pearl.pokemon.paras.shape
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: *diamond-pearl.pokemon.paras.baby
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: *diamond-pearl.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      stats: *diamond-pearl.pokemon.paras.stats
+      abilities: *diamond-pearl.pokemon.paras.abilities
+      wild_held_items:
+        black: &black-white.pokemon.paras.wild_held_items.black
+          tiny-mushroom: *diamond-pearl.pokemon.paras.wild_held_items.diamond.tiny-mushroom
+          big-mushroom: *ruby-sapphire.pokemon.paras.wild_held_items.ruby.big-mushroom
+          balmmushroom: 1
+        white: *black-white.pokemon.paras.wild_held_items.black
+      flavor_text:
+        black: |
+          Mushrooms named tochukaso grow
+          on its back. They grow along
+          with the host Paras.
+        white: |
+          Mushrooms named tochukaso grow
+          on its back. They grow along
+          with the host Paras.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *ruby-sapphire.pokemon.paras.forms.paras.icon
+          sprites:
+            - black-white/paras-default.png
+            - black-white/back/paras-default.png
+            - black-white/back/shiny/paras-default.png
+            - black-white/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    paras:
+      genus: *diamond-pearl.pokemon.paras.genus
+      color: *black-white.pokemon.paras.color
+      shape: *diamond-pearl.pokemon.paras.shape
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: *diamond-pearl.pokemon.paras.baby
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: *diamond-pearl.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      stats: *diamond-pearl.pokemon.paras.stats
+      abilities: *diamond-pearl.pokemon.paras.abilities
+      wild_held_items:
+        black-2: *black-white.pokemon.paras.wild_held_items.black
+        white-2: *black-white.pokemon.paras.wild_held_items.black
+      flavor_text:
+        black-2: |
+          Mushrooms named tochukaso grow
+          on its back. They grow along
+          with the host Paras.
+        white-2: |
+          Mushrooms named tochukaso grow
+          on its back. They grow along
+          with the host Paras.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *ruby-sapphire.pokemon.paras.forms.paras.icon
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *red-blue.pokemon.paras.forms.paras.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    paras:
+      genus: *diamond-pearl.pokemon.paras.genus
+      color: *black-white.pokemon.paras.color
+      shape: *diamond-pearl.pokemon.paras.shape
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: *diamond-pearl.pokemon.paras.baby
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: *diamond-pearl.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      mega: &x-y.pokemon.paras.mega false
+      stats: *diamond-pearl.pokemon.paras.stats
+      abilities: *diamond-pearl.pokemon.paras.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.paras.wild_held_items.diamond
+      flavor_text:
+        x: |
+          Growing out of the bug’s back are mushrooms
+          called tochukaso. The mushrooms grow
+          with the bug host.
+        'y': |
+          Burrows under the ground to gnaw on tree roots.
+          The mushrooms on its back absorb most of
+          the nutrition.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: &x-y.pokemon.paras.forms.paras.icon paras-default.png
+          sprites:
+            - x-y/paras-default.png
+            - x-y/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: &x-y.pokemon.paras.forms.paras.cry paras-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    paras:
+      genus: *diamond-pearl.pokemon.paras.genus
+      color: *black-white.pokemon.paras.color
+      shape: *diamond-pearl.pokemon.paras.shape
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: *diamond-pearl.pokemon.paras.baby
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: *diamond-pearl.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      mega: *x-y.pokemon.paras.mega
+      stats: *diamond-pearl.pokemon.paras.stats
+      abilities: *diamond-pearl.pokemon.paras.abilities
+      flavor_text:
+        omega-ruby: |
+          Paras has parasitic mushrooms growing on its back called
+          tochukaso. They grow large by drawing nutrients from this
+          Bug Pokémon host. They are highly valued as a medicine
+          for extending life.
+        alpha-sapphire: |
+          Paras has parasitic mushrooms growing on its back called
+          tochukaso. They grow large by drawing nutrients from this
+          Bug Pokémon host. They are highly valued as a medicine
+          for extending life.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *x-y.pokemon.paras.forms.paras.icon
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *x-y.pokemon.paras.forms.paras.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/paras-default.png
+            - omega-ruby-alpha-sapphire/shiny/paras-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 147
+    original-akala: 74
+    original-ulaula: 66
+  pokemon:
+    paras:
+      genus: *diamond-pearl.pokemon.paras.genus
+      color: *black-white.pokemon.paras.color
+      shape: *diamond-pearl.pokemon.paras.shape
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: *diamond-pearl.pokemon.paras.baby
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: *diamond-pearl.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      mega: *x-y.pokemon.paras.mega
+      stats: *diamond-pearl.pokemon.paras.stats
+      abilities: *diamond-pearl.pokemon.paras.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+      flavor_text:
+        sun: |-
+          No matter how much it eats, the mushrooms
+          growing on its back steal away most of
+          the nutrients it consumes.
+        moon: |-
+          Mushrooms called tochukaso sprout from its
+          back. They can be dried and powdered to make
+          a medicine used to extend life.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *x-y.pokemon.paras.forms.paras.icon
+          sprites:
+            - sun-moon/paras-default.png
+            - sun-moon/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *x-y.pokemon.paras.forms.paras.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 180
+    updated-akala: 81
+    updated-ulaula: 72
+  pokemon:
+    paras:
+      genus: *diamond-pearl.pokemon.paras.genus
+      color: *black-white.pokemon.paras.color
+      shape: *diamond-pearl.pokemon.paras.shape
+      female_rate: *gold-silver.pokemon.paras.female_rate
+      capture_rate: *red-blue.pokemon.paras.capture_rate
+      happiness: *ruby-sapphire.pokemon.paras.happiness
+      baby: *diamond-pearl.pokemon.paras.baby
+      hatch_steps: *gold-silver.pokemon.paras.hatch_steps
+      growth_rate: *red-blue.pokemon.paras.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.paras.forms_switchable
+      name: Paras
+      default: *red-blue.pokemon.paras.default
+      height: *red-blue.pokemon.paras.height
+      weight: *gold-silver.pokemon.paras.weight
+      experience: *diamond-pearl.pokemon.paras.experience
+      types: *red-blue.pokemon.paras.types
+      egg_groups: *gold-silver.pokemon.paras.egg_groups
+      mega: *x-y.pokemon.paras.mega
+      stats: *diamond-pearl.pokemon.paras.stats
+      abilities: *diamond-pearl.pokemon.paras.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.paras.wild_held_items.diamond
+      flavor_text:
+        ultra-sun: |-
+          Whether it’s due to a lack of moisture or a lack
+          of nutrients, in Alola the mushrooms on Paras
+          don’t grow up quite right.
+        ultra-moon: |-
+          The mushrooms, known as tochukaso, are
+          controlling the bug. Even if the bug bugs the
+          mushrooms, they tell it to bug off.
+      forms:
+        paras:
+          name: Paras
+          form_name: *red-blue.pokemon.paras.forms.paras.form_name
+          default: true
+          battle_only: *red-blue.pokemon.paras.forms.paras.battle_only
+          icon: *x-y.pokemon.paras.forms.paras.icon
+          sprites:
+            - ultra-sun-ultra-moon/paras-default.png
+            - ultra-sun-ultra-moon/shiny/paras-default.png
+          art: *red-blue.pokemon.paras.forms.paras.art
+          footprint: *ruby-sapphire.pokemon.paras.forms.paras.footprint
+          cry: *x-y.pokemon.paras.forms.paras.cry

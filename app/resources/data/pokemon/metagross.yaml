@@ -1,0 +1,890 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name METAGROSS
+  position: &ruby-sapphire.position 376
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 376
+    hoenn: 192
+  pokemon:
+    metagross:
+      name: METAGROSS
+      default: &ruby-sapphire.pokemon.metagross.default true
+      forms_switchable: &ruby-sapphire.pokemon.metagross.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.metagross.capture_rate 3
+      experience: &ruby-sapphire.pokemon.metagross.experience 210
+      types: &ruby-sapphire.pokemon.metagross.types
+        - steel
+        - psychic
+      stats: &ruby-sapphire.pokemon.metagross.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 135
+          effort_change: 0
+        defense:
+          base_value: 130
+          effort_change: 3
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.metagross.growth_rate slow
+      hatch_steps: &ruby-sapphire.pokemon.metagross.hatch_steps 40
+      egg_groups: &ruby-sapphire.pokemon.metagross.egg_groups
+        - mineral
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+          metal-coat: 5
+        sapphire: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.metagross.happiness 35
+      abilities: &ruby-sapphire.pokemon.metagross.abilities
+        clear-body: &ruby-sapphire.pokemon.metagross.abilities.clear-body
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.metagross.genus 'IRON LEG Pokémon'
+      height: &ruby-sapphire.pokemon.metagross.height 16
+      weight: &ruby-sapphire.pokemon.metagross.weight 5500
+      flavor_text:
+        ruby: |
+          METAGROSS has four brains in total.
+          Combined, the four brains can breeze
+          through difficult calculations faster
+          than a supercomputer.
+           This POKéMON can float in the air by
+          tucking in its four legs.
+        sapphire: |
+          METAGROSS is the result of two METANG
+          achieving fusion. When hunting,  this
+          POKéMON pins the prey to the ground
+          under its massive body. It then eats
+          the helpless victim using the large
+          mouth on its stomach.
+      forms:
+        metagross:
+          name: METAGROSS
+          form_name: &ruby-sapphire.pokemon.metagross.forms.metagross.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.metagross.forms.metagross.battle_only false
+          icon: &ruby-sapphire.pokemon.metagross.forms.metagross.icon gen5/metagross-default.png
+          sprites:
+            - ruby-sapphire/metagross-default.png
+            - ruby-sapphire/back/metagross-default.png
+            - ruby-sapphire/shiny/metagross-default.png
+          art: &ruby-sapphire.pokemon.metagross.forms.metagross.art
+            - metagross-default.png
+          footprint: &ruby-sapphire.pokemon.metagross.forms.metagross.footprint metagross.png
+          cry: &ruby-sapphire.pokemon.metagross.forms.metagross.cry gen5/metagross-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.metagross.evolution_parent metang/metang
+      evolution_conditions: &ruby-sapphire.pokemon.metagross.evolution_conditions
+        level-up:
+          minimum_level: 45
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    metagross:
+      name: METAGROSS
+      default: *ruby-sapphire.pokemon.metagross.default
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      experience: *ruby-sapphire.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      stats: *ruby-sapphire.pokemon.metagross.stats
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      abilities: *ruby-sapphire.pokemon.metagross.abilities
+      genus: *ruby-sapphire.pokemon.metagross.genus
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      flavor_text:
+        emerald: |
+          METAGROSS has four brains that are joined
+          by a complex neural network.  As a result of
+          integration, this POKéMON is smarter than
+          a supercomputer.
+      forms:
+        metagross:
+          name: METAGROSS
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *ruby-sapphire.pokemon.metagross.forms.metagross.icon
+          sprites:
+            - emerald/metagross-default.png
+            - emerald/shiny/metagross-default.png
+            - emerald/animated/metagross-default.webm
+            - emerald/animated/shiny/metagross-default.webm
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 199
+  pokemon:
+    metagross:
+      name: METAGROSS
+      default: *ruby-sapphire.pokemon.metagross.default
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      experience: *ruby-sapphire.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      stats: *ruby-sapphire.pokemon.metagross.stats
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      abilities: *ruby-sapphire.pokemon.metagross.abilities
+      genus: *ruby-sapphire.pokemon.metagross.genus
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      forms:
+        metagross:
+          name: METAGROSS
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          sprites:
+            - colosseum/metagross-default.png
+            - colosseum/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    metagross:
+      name: METAGROSS
+      default: *ruby-sapphire.pokemon.metagross.default
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      experience: *ruby-sapphire.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      stats: *ruby-sapphire.pokemon.metagross.stats
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      abilities: *ruby-sapphire.pokemon.metagross.abilities
+      genus: *ruby-sapphire.pokemon.metagross.genus
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      forms:
+        metagross:
+          name: METAGROSS
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          sprites:
+            - xd/metagross-default.png
+            - xd/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    metagross:
+      name: METAGROSS
+      default: *ruby-sapphire.pokemon.metagross.default
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      experience: *ruby-sapphire.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      stats: *ruby-sapphire.pokemon.metagross.stats
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      abilities: *ruby-sapphire.pokemon.metagross.abilities
+      genus: *ruby-sapphire.pokemon.metagross.genus
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      flavor_text:
+        firered: |
+          It is formed by two METANG fusing.
+          Its four brains are said to be superior
+          to a supercomputer.
+        leafgreen: |
+          It is formed by two METANG fusing.
+          Its four brains are said to be superior
+          to a supercomputer.
+      forms:
+        metagross:
+          name: METAGROSS
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *ruby-sapphire.pokemon.metagross.forms.metagross.icon
+          sprites:
+            - firered-leafgreen/metagross-default.png
+            - firered-leafgreen/back/metagross-default.png
+            - firered-leafgreen/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Metagross
+  position: &diamond-pearl.position 406
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    metagross:
+      genus: &diamond-pearl.pokemon.metagross.genus 'Iron Leg Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      shape: &diamond-pearl.pokemon.metagross.shape heads
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: &diamond-pearl.pokemon.metagross.baby false
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      pal_park: &diamond-pearl.pokemon.metagross.pal_park
+        area: mountain
+        rate: 3
+        score: 90
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: &diamond-pearl.pokemon.metagross.experience 270
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      stats: &diamond-pearl.pokemon.metagross.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 135
+          effort_change: 0
+        defense:
+          base_value: 130
+          effort_change: 3
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.metagross.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text:
+        diamond: |
+          METANG combined to form it.
+          With four brains, it has the
+          intelligence of a supercomputer.
+        pearl: |
+          METANG combined to form it.
+          With four brains, it has the
+          intelligence of a supercomputer.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *ruby-sapphire.pokemon.metagross.forms.metagross.icon
+          sprites:
+            - diamond-pearl/back/metagross-default.png
+            - diamond-pearl/back/shiny/metagross-default.png
+            - diamond-pearl/metagross-default.png
+            - diamond-pearl/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    metagross:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      pal_park: *diamond-pearl.pokemon.metagross.pal_park
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: *diamond-pearl.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      stats: *diamond-pearl.pokemon.metagross.stats
+      abilities: *ruby-sapphire.pokemon.metagross.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text:
+        platinum: |
+          METANG combined to form it.
+          With four brains, it has the
+          intelligence of a supercomputer.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *ruby-sapphire.pokemon.metagross.forms.metagross.icon
+          sprites:
+            - platinum/back/metagross-default.png
+            - platinum/back/shiny/metagross-default.png
+            - platinum/metagross-default.png
+            - platinum/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    metagross:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      pal_park: *diamond-pearl.pokemon.metagross.pal_park
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: *diamond-pearl.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      stats: *diamond-pearl.pokemon.metagross.stats
+      abilities: *ruby-sapphire.pokemon.metagross.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It folds its four legs when flying.
+          Its four brains are said to be
+          superior to a supercomputer.
+        soulsilver: |
+          It folds its four legs when flying.
+          Its four brains are said to be
+          superior to a supercomputer.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-2
+            power:
+              base_value: 4
+              range: 3-5
+            skill:
+              base_value: 4
+              range: 3-4
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.metagross.forms.metagross.icon
+          sprites:
+            - heartgold-soulsilver/back/metagross-default.png
+            - heartgold-soulsilver/back/shiny/metagross-default.png
+            - heartgold-soulsilver/metagross-default.png
+            - heartgold-soulsilver/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    metagross:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: &black-white.pokemon.metagross.color blue
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: *diamond-pearl.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      stats: *diamond-pearl.pokemon.metagross.stats
+      abilities: &black-white.pokemon.metagross.abilities
+        clear-body: *ruby-sapphire.pokemon.metagross.abilities.clear-body
+        light-metal:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text:
+        black: |
+          Metang combined to form it.
+          With four brains, it has the
+          intelligence of a supercomputer.
+        white: |
+          Metang combined to form it.
+          With four brains, it has the
+          intelligence of a supercomputer.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *ruby-sapphire.pokemon.metagross.forms.metagross.icon
+          sprites:
+            - black-white/back/metagross-default.png
+            - black-white/back/shiny/metagross-default.png
+            - black-white/metagross-default.png
+            - black-white/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 264
+  pokemon:
+    metagross:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: *black-white.pokemon.metagross.color
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: *diamond-pearl.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      stats: *diamond-pearl.pokemon.metagross.stats
+      abilities: *black-white.pokemon.metagross.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text:
+        black-2: |
+          With four linked brains, it’s more
+          intelligent than a supercomputer, and
+          it uses calculations to analyze foes.
+        white-2: |
+          With four linked brains, it’s more
+          intelligent than a supercomputer, and
+          it uses calculations to analyze foes.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *ruby-sapphire.pokemon.metagross.forms.metagross.icon
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *ruby-sapphire.pokemon.metagross.forms.metagross.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    metagross:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: *black-white.pokemon.metagross.color
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metagross.forms_switchable
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: *diamond-pearl.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      mega: &x-y.pokemon.metagross.mega false
+      stats: *diamond-pearl.pokemon.metagross.stats
+      abilities: *black-white.pokemon.metagross.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text:
+        x: |
+          With four linked brains, it’s more intelligent than a
+          supercomputer, and it uses calculations to
+          analyze foes.
+        'y': |
+          Metang combined to form it. With four brains, it has
+          the intelligence of a supercomputer.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: &x-y.pokemon.metagross.forms.metagross.icon metagross-default.png
+          sprites:
+            - x-y/metagross-default.png
+            - x-y/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: &x-y.pokemon.metagross.forms.metagross.cry metagross-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 201
+  pokemon:
+    metagross:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: *black-white.pokemon.metagross.color
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: &omega-ruby-alpha-sapphire.pokemon.metagross.forms_switchable true
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: *diamond-pearl.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      mega: *x-y.pokemon.metagross.mega
+      stats: *diamond-pearl.pokemon.metagross.stats
+      abilities: *black-white.pokemon.metagross.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.metagross.flavor_text
+        omega-ruby: |
+          Metagross has four brains in total. Combined, the four brains
+          can breeze through difficult calculations faster than a
+          supercomputer. This Pokémon can float in the air by tucking in
+          its four legs.
+        alpha-sapphire: |
+          Metagross is the result of two Metang achieving fusion.
+          When hunting, this Pokémon pins the prey to the ground under
+          its massive body. It then eats the helpless victim using the
+          large mouth on its stomach.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *x-y.pokemon.metagross.forms.metagross.icon
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *x-y.pokemon.metagross.forms.metagross.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/metagross-default.png
+            - omega-ruby-alpha-sapphire/shiny/metagross-default.png
+      wild_held_items: &omega-ruby-alpha-sapphire.pokemon.metagross.wild_held_items
+        omega-ruby: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+    metagross-mega:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: *black-white.pokemon.metagross.color
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.metagross.forms_switchable
+      name: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.name 'Mega Metagross'
+      default: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.default false
+      height: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.height 25
+      weight: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.weight 9429
+      experience: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.experience 315
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      mega: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.mega true
+      stats: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 145
+          effort_change: 0
+        defense:
+          base_value: 150
+          effort_change: 3
+        speed:
+          base_value: 110
+          effort_change: 0
+        special-attack:
+          base_value: 105
+          effort_change: 0
+        special-defense:
+          base_value: 110
+          effort_change: 0
+      abilities: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.abilities
+        tough-claws: *ruby-sapphire.pokemon.metagross.abilities.clear-body
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.metagross.flavor_text
+      forms:
+        metagross-mega:
+          name: 'Mega Metagross'
+          form_name: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.form_name 'Mega Metagross'
+          default: true
+          battle_only: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.battle_only true
+          icon: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.icon metagross-mega.png
+          art: &omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.art
+            - metagross-mega.png
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *x-y.pokemon.metagross.forms.metagross.cry
+      wild_held_items: *omega-ruby-alpha-sapphire.pokemon.metagross.wild_held_items
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-alola: 216
+    original-ulaula: 88
+  pokemon:
+    metagross:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: *black-white.pokemon.metagross.color
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.metagross.forms_switchable
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: *diamond-pearl.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      mega: *x-y.pokemon.metagross.mega
+      stats: *diamond-pearl.pokemon.metagross.stats
+      abilities: *black-white.pokemon.metagross.abilities
+      wild_held_items: &sun-moon.pokemon.metagross.wild_held_items
+        sun: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text: &sun-moon.pokemon.metagross.flavor_text
+        sun: |-
+          It firmly pins its prey using its four claws and
+          large body. Then the teeth in the mouth on its
+          stomach chew the prey to bits.
+        moon: |-
+          A linkage of two Metang, this Pokémon can
+          perform any calculation in a flash by utilizing
+          parallel processing in its four brains.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *x-y.pokemon.metagross.forms.metagross.icon
+          sprites:
+            - sun-moon/metagross-default.png
+            - sun-moon/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *x-y.pokemon.metagross.forms.metagross.cry
+    metagross-mega:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: *black-white.pokemon.metagross.color
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.metagross.forms_switchable
+      name: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.name
+      default: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.default
+      height: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.height
+      weight: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.weight
+      experience: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      mega: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.mega
+      stats: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.stats
+      abilities: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.abilities
+      wild_held_items: *sun-moon.pokemon.metagross.wild_held_items
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text: *sun-moon.pokemon.metagross.flavor_text
+      forms:
+        metagross-mega:
+          name: 'Mega Metagross'
+          form_name: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.form_name
+          default: true
+          battle_only: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.battle_only
+          icon: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.icon
+          sprites:
+            - sun-moon/shiny/metagross-mega.png
+            - sun-moon/metagross-mega.png
+          art: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *x-y.pokemon.metagross.forms.metagross.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 280
+    updated-ulaula: 101
+  pokemon:
+    metagross:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: *black-white.pokemon.metagross.color
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.metagross.forms_switchable
+      name: Metagross
+      default: *ruby-sapphire.pokemon.metagross.default
+      height: *ruby-sapphire.pokemon.metagross.height
+      weight: *ruby-sapphire.pokemon.metagross.weight
+      experience: *diamond-pearl.pokemon.metagross.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      mega: *x-y.pokemon.metagross.mega
+      stats: *diamond-pearl.pokemon.metagross.stats
+      abilities: *black-white.pokemon.metagross.abilities
+      wild_held_items: &ultra-sun-ultra-moon.pokemon.metagross.wild_held_items
+        ultra-sun: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.metagross.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.metagross.flavor_text
+        ultra-sun: |-
+          It boasts not only psychic powers but also
+          fantastic strength. It grabs its prey with its four
+          legs and holds them in place with its claws.
+        ultra-moon: |-
+          It analyzes its opponents with more accuracy
+          than a supercomputer, which enables it to
+          calmly back them into a corner.
+      forms:
+        metagross:
+          name: Metagross
+          form_name: *ruby-sapphire.pokemon.metagross.forms.metagross.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.metagross.forms.metagross.battle_only
+          icon: *x-y.pokemon.metagross.forms.metagross.icon
+          sprites:
+            - ultra-sun-ultra-moon/metagross-default.png
+            - ultra-sun-ultra-moon/shiny/metagross-default.png
+          art: *ruby-sapphire.pokemon.metagross.forms.metagross.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *x-y.pokemon.metagross.forms.metagross.cry
+    metagross-mega:
+      genus: *diamond-pearl.pokemon.metagross.genus
+      evolution_parent: *ruby-sapphire.pokemon.metagross.evolution_parent
+      color: *black-white.pokemon.metagross.color
+      shape: *diamond-pearl.pokemon.metagross.shape
+      capture_rate: *ruby-sapphire.pokemon.metagross.capture_rate
+      happiness: *ruby-sapphire.pokemon.metagross.happiness
+      baby: *diamond-pearl.pokemon.metagross.baby
+      hatch_steps: *ruby-sapphire.pokemon.metagross.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.metagross.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.metagross.forms_switchable
+      name: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.name
+      default: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.default
+      height: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.height
+      weight: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.weight
+      experience: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.experience
+      types: *ruby-sapphire.pokemon.metagross.types
+      egg_groups: *ruby-sapphire.pokemon.metagross.egg_groups
+      mega: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.mega
+      stats: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.stats
+      abilities: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.abilities
+      wild_held_items: *ultra-sun-ultra-moon.pokemon.metagross.wild_held_items
+      evolution_conditions: *ruby-sapphire.pokemon.metagross.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.metagross.flavor_text
+      forms:
+        metagross-mega:
+          name: 'Mega Metagross'
+          form_name: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.form_name
+          default: true
+          battle_only: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.battle_only
+          icon: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/metagross-mega.png
+            - ultra-sun-ultra-moon/metagross-mega.png
+          art: *omega-ruby-alpha-sapphire.pokemon.metagross-mega.forms.metagross-mega.art
+          footprint: *ruby-sapphire.pokemon.metagross.forms.metagross.footprint
+          cry: *x-y.pokemon.metagross.forms.metagross.cry

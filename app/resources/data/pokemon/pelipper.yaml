@@ -1,0 +1,763 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name PELIPPER
+  position: &ruby-sapphire.position 279
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 279
+    hoenn: 28
+  pokemon:
+    pelipper:
+      name: PELIPPER
+      default: &ruby-sapphire.pokemon.pelipper.default true
+      forms_switchable: &ruby-sapphire.pokemon.pelipper.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.pelipper.capture_rate 45
+      experience: &ruby-sapphire.pokemon.pelipper.experience 164
+      types: &ruby-sapphire.pokemon.pelipper.types
+        - water
+        - flying
+      stats: &ruby-sapphire.pokemon.pelipper.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 2
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.pelipper.growth_rate medium
+      female_rate: &ruby-sapphire.pokemon.pelipper.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.pelipper.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.pelipper.egg_groups
+        - water1
+        - flying
+      happiness: &ruby-sapphire.pokemon.pelipper.happiness 70
+      abilities: &ruby-sapphire.pokemon.pelipper.abilities
+        keen-eye: &ruby-sapphire.pokemon.pelipper.abilities.keen-eye
+          hidden: &ruby-sapphire.pokemon.pelipper.abilities.keen-eye.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.pelipper.genus 'WATER BIRD Pokémon'
+      height: &ruby-sapphire.pokemon.pelipper.height 12
+      weight: &ruby-sapphire.pokemon.pelipper.weight 280
+      flavor_text:
+        ruby: |
+          PELIPPER is a flying transporter that
+          carries small POKéMON and eggs inside
+          its massive bill.
+          This POKéMON builds its nest on steep
+          cliffs facing the sea.
+        sapphire: |
+          PELIPPER searches for food while in
+          flight by skimming the wave tops.
+          This POKéMON dips its large bill in the
+          sea to scoop up food,  then swallows
+          everything in one big gulp.
+      forms:
+        pelipper:
+          name: PELIPPER
+          form_name: &ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only false
+          icon: &ruby-sapphire.pokemon.pelipper.forms.pelipper.icon gen5/pelipper-default.png
+          sprites:
+            - ruby-sapphire/pelipper-default.png
+            - ruby-sapphire/back/pelipper-default.png
+            - ruby-sapphire/shiny/pelipper-default.png
+          art: &ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+            - pelipper-default.png
+          footprint: &ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint pelipper.png
+          cry: &ruby-sapphire.pokemon.pelipper.forms.pelipper.cry gen5/pelipper-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.pelipper.evolution_parent wingull/wingull
+      evolution_conditions: &ruby-sapphire.pokemon.pelipper.evolution_conditions
+        level-up:
+          minimum_level: 25
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    pelipper:
+      name: PELIPPER
+      default: *ruby-sapphire.pokemon.pelipper.default
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      experience: *ruby-sapphire.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      stats: *ruby-sapphire.pokemon.pelipper.stats
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      abilities: *ruby-sapphire.pokemon.pelipper.abilities
+      genus: *ruby-sapphire.pokemon.pelipper.genus
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      flavor_text:
+        emerald: |
+          It skims the tops of waves as it flies.
+          When it spots prey, it uses its large beak
+          to scoop up the victim with water.
+          It protects its eggs in its beak.
+      forms:
+        pelipper:
+          name: PELIPPER
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *ruby-sapphire.pokemon.pelipper.forms.pelipper.icon
+          sprites:
+            - emerald/pelipper-default.png
+            - emerald/shiny/pelipper-default.png
+            - emerald/animated/pelipper-default.webm
+            - emerald/animated/shiny/pelipper-default.webm
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 235
+  pokemon:
+    pelipper:
+      name: PELIPPER
+      default: *ruby-sapphire.pokemon.pelipper.default
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      experience: *ruby-sapphire.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      stats: *ruby-sapphire.pokemon.pelipper.stats
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      abilities: *ruby-sapphire.pokemon.pelipper.abilities
+      genus: *ruby-sapphire.pokemon.pelipper.genus
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      forms:
+        pelipper:
+          name: PELIPPER
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          sprites:
+            - colosseum/pelipper-default.png
+            - colosseum/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    pelipper:
+      name: PELIPPER
+      default: *ruby-sapphire.pokemon.pelipper.default
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      experience: *ruby-sapphire.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      stats: *ruby-sapphire.pokemon.pelipper.stats
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      abilities: *ruby-sapphire.pokemon.pelipper.abilities
+      genus: *ruby-sapphire.pokemon.pelipper.genus
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      forms:
+        pelipper:
+          name: PELIPPER
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          sprites:
+            - xd/pelipper-default.png
+            - xd/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    pelipper:
+      name: PELIPPER
+      default: *ruby-sapphire.pokemon.pelipper.default
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      experience: *ruby-sapphire.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      stats: *ruby-sapphire.pokemon.pelipper.stats
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      abilities: *ruby-sapphire.pokemon.pelipper.abilities
+      genus: *ruby-sapphire.pokemon.pelipper.genus
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      flavor_text:
+        firered: |
+          It is a flying transporter that carries
+          small POKéMON in its beak.  It bobs on the
+          waves to rest its wings.
+        leafgreen: |
+          It is a flying transporter that carries
+          small POKéMON in its beak. It bobs on the
+          waves to rest its wings.
+      forms:
+        pelipper:
+          name: PELIPPER
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *ruby-sapphire.pokemon.pelipper.forms.pelipper.icon
+          sprites:
+            - firered-leafgreen/pelipper-default.png
+            - firered-leafgreen/back/pelipper-default.png
+            - firered-leafgreen/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Pelipper
+  position: &diamond-pearl.position 304
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-sinnoh: 120
+  pokemon:
+    pelipper:
+      genus: &diamond-pearl.pokemon.pelipper.genus 'Water Bird Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      shape: &diamond-pearl.pokemon.pelipper.shape wings
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: &diamond-pearl.pokemon.pelipper.baby false
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      pal_park: &diamond-pearl.pokemon.pelipper.pal_park
+        area: sea
+        rate: 30
+        score: 50
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: &diamond-pearl.pokemon.pelipper.experience 154
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      stats: &diamond-pearl.pokemon.pelipper.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 2
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.pelipper.abilities
+        keen-eye: *ruby-sapphire.pokemon.pelipper.abilities.keen-eye
+        drizzle:
+          hidden: *ruby-sapphire.pokemon.pelipper.abilities.keen-eye.hidden
+          position: 2
+        rain-dish:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        diamond: |
+          It dips its large bill in the sea,
+          then scoops up numerous prey
+          along with water.
+        pearl: |
+          It acts as a delivery service by
+          carrying small Pokémon in its bill.
+          It bobs on the waves to rest.
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *ruby-sapphire.pokemon.pelipper.forms.pelipper.icon
+          sprites:
+            - diamond-pearl/pelipper-default.png
+            - diamond-pearl/back/pelipper-default.png
+            - diamond-pearl/back/shiny/pelipper-default.png
+            - diamond-pearl/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    extended-sinnoh: 120
+  pokemon:
+    pelipper:
+      genus: *diamond-pearl.pokemon.pelipper.genus
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      shape: *diamond-pearl.pokemon.pelipper.shape
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: *diamond-pearl.pokemon.pelipper.baby
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      pal_park: *diamond-pearl.pokemon.pelipper.pal_park
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: *diamond-pearl.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      stats: *diamond-pearl.pokemon.pelipper.stats
+      abilities: *diamond-pearl.pokemon.pelipper.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is a messenger of the skies,
+          carrying small Pokémon and
+          eggs to safety in its bill.
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *ruby-sapphire.pokemon.pelipper.forms.pelipper.icon
+          sprites:
+            - platinum/pelipper-default.png
+            - platinum/back/pelipper-default.png
+            - platinum/back/shiny/pelipper-default.png
+            - platinum/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pelipper:
+      genus: *diamond-pearl.pokemon.pelipper.genus
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      shape: *diamond-pearl.pokemon.pelipper.shape
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: *diamond-pearl.pokemon.pelipper.baby
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      pal_park: *diamond-pearl.pokemon.pelipper.pal_park
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: *diamond-pearl.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      stats: *diamond-pearl.pokemon.pelipper.stats
+      abilities: *diamond-pearl.pokemon.pelipper.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It protects its young in its beak.
+          It bobs on waves, resting on them
+          on days when the waters are calm.
+        soulsilver: |
+          It protects its young in its beak.
+          It bobs on waves, resting on them
+          on days when the waters are calm.
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 5
+              range: 5
+          icon: *ruby-sapphire.pokemon.pelipper.forms.pelipper.icon
+          sprites:
+            - heartgold-soulsilver/pelipper-default.png
+            - heartgold-soulsilver/back/pelipper-default.png
+            - heartgold-soulsilver/back/shiny/pelipper-default.png
+            - heartgold-soulsilver/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pelipper:
+      genus: *diamond-pearl.pokemon.pelipper.genus
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      color: &black-white.pokemon.pelipper.color yellow
+      shape: *diamond-pearl.pokemon.pelipper.shape
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: *diamond-pearl.pokemon.pelipper.baby
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: *diamond-pearl.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      stats: *diamond-pearl.pokemon.pelipper.stats
+      abilities: *diamond-pearl.pokemon.pelipper.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        black: |
+          It is a messenger of the skies,
+          carrying small Pokémon and
+          eggs to safety in its bill.
+        white: |
+          It is a messenger of the skies,
+          carrying small Pokémon and
+          eggs to safety in its bill.
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *ruby-sapphire.pokemon.pelipper.forms.pelipper.icon
+          sprites:
+            - black-white/pelipper-default.png
+            - black-white/back/pelipper-default.png
+            - black-white/back/shiny/pelipper-default.png
+            - black-white/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 213
+  pokemon:
+    pelipper:
+      genus: *diamond-pearl.pokemon.pelipper.genus
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      color: *black-white.pokemon.pelipper.color
+      shape: *diamond-pearl.pokemon.pelipper.shape
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: *diamond-pearl.pokemon.pelipper.baby
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: *diamond-pearl.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      stats: *diamond-pearl.pokemon.pelipper.stats
+      abilities: *diamond-pearl.pokemon.pelipper.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        black-2: |
+          Skimming the water’s surface, it dips
+          its large bill in the sea, scoops up food
+          and water, and carries it.
+        white-2: |
+          Skimming the water’s surface, it dips
+          its large bill in the sea, scoops up food
+          and water, and carries it.
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *ruby-sapphire.pokemon.pelipper.forms.pelipper.icon
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *ruby-sapphire.pokemon.pelipper.forms.pelipper.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-coastal: 18
+  pokemon:
+    pelipper:
+      genus: *diamond-pearl.pokemon.pelipper.genus
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      color: *black-white.pokemon.pelipper.color
+      shape: *diamond-pearl.pokemon.pelipper.shape
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: *diamond-pearl.pokemon.pelipper.baby
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: *diamond-pearl.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      mega: &x-y.pokemon.pelipper.mega false
+      stats: *diamond-pearl.pokemon.pelipper.stats
+      abilities: *diamond-pearl.pokemon.pelipper.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        x: |
+          It dips its large bill in the sea, then scoops up
+          numerous prey along with water.
+        'y': |
+          It is a messenger of the skies, carrying small
+          Pokémon and eggs to safety in its bill.
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: &x-y.pokemon.pelipper.forms.pelipper.icon pelipper-default.png
+          sprites:
+            - x-y/pelipper-default.png
+            - x-y/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: &x-y.pokemon.pelipper.forms.pelipper.cry pelipper-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 28
+  pokemon:
+    pelipper:
+      genus: *diamond-pearl.pokemon.pelipper.genus
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      color: *black-white.pokemon.pelipper.color
+      shape: *diamond-pearl.pokemon.pelipper.shape
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: *diamond-pearl.pokemon.pelipper.baby
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: *diamond-pearl.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      mega: *x-y.pokemon.pelipper.mega
+      stats: *diamond-pearl.pokemon.pelipper.stats
+      abilities: *diamond-pearl.pokemon.pelipper.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Pelipper is a flying transporter that carries small Pokémon and
+          eggs inside its massive bill. This Pokémon builds its nest on
+          steep cliffs facing the sea.
+        alpha-sapphire: |
+          Pelipper searches for food while in flight by skimming the wave
+          tops. This Pokémon dips its large bill in the sea to scoop up
+          food, then swallows everything in one big gulp.
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *x-y.pokemon.pelipper.forms.pelipper.icon
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *x-y.pokemon.pelipper.forms.pelipper.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/pelipper-default.png
+            - omega-ruby-alpha-sapphire/shiny/pelipper-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.pelipper.wild_held_items.omega-ruby
+          lucky-egg: 5
+          pretty-wing: &omega-ruby-alpha-sapphire.pokemon.pelipper.wild_held_items.omega-ruby.pretty-wing 50
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.pelipper.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-alola: 41
+    original-melemele: 41
+    original-akala: 20
+    original-ulaula: 22
+    original-poni: 12
+  pokemon:
+    pelipper:
+      genus: *diamond-pearl.pokemon.pelipper.genus
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      color: *black-white.pokemon.pelipper.color
+      shape: *diamond-pearl.pokemon.pelipper.shape
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: *diamond-pearl.pokemon.pelipper.baby
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: *diamond-pearl.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      mega: *x-y.pokemon.pelipper.mega
+      stats: *diamond-pearl.pokemon.pelipper.stats
+      abilities: *diamond-pearl.pokemon.pelipper.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.pelipper.wild_held_items.sun
+          pretty-wing: *omega-ruby-alpha-sapphire.pokemon.pelipper.wild_held_items.omega-ruby.pretty-wing
+        moon: *sun-moon.pokemon.pelipper.wild_held_items.sun
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        sun: |-
+          Its spacious beak is large enough for a
+          small child to fit right inside.
+        moon: |-
+          Gathering food is the work of young males.
+          They store food in their capacious beaks and
+          carry it back to others waiting in the nest.
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *x-y.pokemon.pelipper.forms.pelipper.icon
+          sprites:
+            - sun-moon/pelipper-default.png
+            - sun-moon/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *x-y.pokemon.pelipper.forms.pelipper.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 48
+    updated-melemele: 48
+    updated-akala: 20
+    updated-ulaula: 22
+    updated-poni: 19
+  pokemon:
+    pelipper:
+      genus: *diamond-pearl.pokemon.pelipper.genus
+      evolution_parent: *ruby-sapphire.pokemon.pelipper.evolution_parent
+      color: *black-white.pokemon.pelipper.color
+      shape: *diamond-pearl.pokemon.pelipper.shape
+      female_rate: *ruby-sapphire.pokemon.pelipper.female_rate
+      capture_rate: *ruby-sapphire.pokemon.pelipper.capture_rate
+      happiness: *ruby-sapphire.pokemon.pelipper.happiness
+      baby: *diamond-pearl.pokemon.pelipper.baby
+      hatch_steps: *ruby-sapphire.pokemon.pelipper.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.pelipper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pelipper.forms_switchable
+      name: Pelipper
+      default: *ruby-sapphire.pokemon.pelipper.default
+      height: *ruby-sapphire.pokemon.pelipper.height
+      weight: *ruby-sapphire.pokemon.pelipper.weight
+      experience: *diamond-pearl.pokemon.pelipper.experience
+      types: *ruby-sapphire.pokemon.pelipper.types
+      egg_groups: *ruby-sapphire.pokemon.pelipper.egg_groups
+      mega: *x-y.pokemon.pelipper.mega
+      stats: *diamond-pearl.pokemon.pelipper.stats
+      abilities: *diamond-pearl.pokemon.pelipper.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.pelipper.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.pelipper.wild_held_items.sun
+      evolution_conditions: *ruby-sapphire.pokemon.pelipper.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It places small Pokémon into its spacious beak
+          and carries them around. No one knows where
+          it’s taking them.
+        ultra-moon: |-
+          It scoops up Wishiwashi in its huge beak and
+          swallows them whole. It can devour more than
+          30 at one go!
+      forms:
+        pelipper:
+          name: Pelipper
+          form_name: *ruby-sapphire.pokemon.pelipper.forms.pelipper.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.pelipper.forms.pelipper.battle_only
+          icon: *x-y.pokemon.pelipper.forms.pelipper.icon
+          sprites:
+            - ultra-sun-ultra-moon/pelipper-default.png
+            - ultra-sun-ultra-moon/shiny/pelipper-default.png
+          art: *ruby-sapphire.pokemon.pelipper.forms.pelipper.art
+          footprint: *ruby-sapphire.pokemon.pelipper.forms.pelipper.footprint
+          cry: *x-y.pokemon.pelipper.forms.pelipper.cry

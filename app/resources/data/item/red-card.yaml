@@ -1,0 +1,51 @@
+black-white: &black-white
+  name: &black-white.name 'Red Card'
+  category: &black-white.category held-items
+  pocket: &black-white.pocket misc
+  buy: &black-white.buy 4000
+  sell: &black-white.sell 2000
+  fling_effect: damage
+  fling_power: 10
+  short_description: &black-white.short_description 'Held: When the holder takes damage from a move, the opponent switches out for another random party Pokémon. Consumed after use.'
+  description: &black-white.description |
+    Held
+    :   When the holder takes damage directly from a move and does not faint, it [switches out]{mechanic:switching-out} for another random, non-fainted Pokémon in its party.
+    This effect does not activate if another effect prevents the holder from switching out.
+  flavor_text: |
+    A card with a mysterious power. When
+    the holder is struck by a foe, the
+    attacker is removed from battle.
+  icon: &black-white.icon red-card.png
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *black-white.name
+  category: *black-white.category
+  pocket: *black-white.pocket
+  buy: *black-white.buy
+  sell: *black-white.sell
+  fling_effect: damage
+  fling_power: 10
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    An item to be held by a Pokémon.
+    When the holder is hit by an attack,
+    the attacker is removed from battle.
+  icon: *black-white.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *black-white.name
+  category: *black-white.category
+  pocket: *black-white.pocket
+  buy: *black-white.buy
+  sell: *black-white.sell
+  fling_effect: damage
+  fling_power: 10
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    An item to be held by a Pokémon. When the holder
+    is hit by an attack, the attacker is removed
+    from battle.
+  icon: *black-white.icon
+ultra-sun-ultra-moon: *sun-moon

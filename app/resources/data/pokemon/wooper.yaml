@@ -1,0 +1,820 @@
+gold-silver:
+  name: &gold-silver.name WOOPER
+  position: &gold-silver.position 193
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 194
+    original-johto: 55
+    original-johto-abc: 235
+  pokemon:
+    wooper:
+      name: WOOPER
+      default: &gold-silver.pokemon.wooper.default true
+      capture_rate: &gold-silver.pokemon.wooper.capture_rate 255
+      experience: &gold-silver.pokemon.wooper.experience 52
+      types: &gold-silver.pokemon.wooper.types
+        - water
+        - ground
+      stats: &gold-silver.pokemon.wooper.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 15
+          effort_change: 15
+        special-attack:
+          base_value: 25
+          effort_change: 25
+        special-defense:
+          base_value: 25
+          effort_change: 25
+      growth_rate: &gold-silver.pokemon.wooper.growth_rate medium
+      female_rate: &gold-silver.pokemon.wooper.female_rate 50
+      hatch_steps: &gold-silver.pokemon.wooper.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.wooper.egg_groups
+        - water1
+        - ground
+      genus: &gold-silver.pokemon.wooper.genus 'WATER FISH Pokémon'
+      height: &gold-silver.pokemon.wooper.height 4
+      weight: &gold-silver.pokemon.wooper.weight 86
+      flavor_text:
+        gold: |
+          This #MON lives
+          in cold water. It
+          will leave the
+          water to search
+          for food when it
+          gets cold outside.
+        silver: |
+          When it walks a-
+          round on the
+          ground, it coats
+          its body with a
+          slimy, poisonous
+          film.
+      forms:
+        wooper:
+          name: WOOPER
+          form_name: &gold-silver.pokemon.wooper.forms.wooper.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.wooper.forms.wooper.battle_only false
+          sprites:
+            - gold-silver/wooper-default.png
+            - gold-silver/back/wooper-default.png
+            - gold-silver/shiny/wooper-default.png
+          art: &gold-silver.pokemon.wooper.forms.wooper.art
+            - wooper-default.png
+          cry: &gold-silver.pokemon.wooper.forms.wooper.cry gen5/wooper-default.webm
+          icon: &gold-silver.pokemon.wooper.forms.wooper.icon gen2/monster.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    wooper:
+      name: WOOPER
+      default: *gold-silver.pokemon.wooper.default
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      experience: *gold-silver.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      stats: *gold-silver.pokemon.wooper.stats
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      genus: *gold-silver.pokemon.wooper.genus
+      height: *gold-silver.pokemon.wooper.height
+      weight: *gold-silver.pokemon.wooper.weight
+      flavor_text:
+        crystal: |
+          A mucous
+          membrane covers
+          its body. Touching
+          it barehanded will
+          cause a shooting
+          pain.
+      forms:
+        wooper:
+          name: WOOPER
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          sprites:
+            - crystal/wooper-default.png
+            - crystal/back/wooper-default.png
+            - crystal/shiny/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+          icon: *gold-silver.pokemon.wooper.forms.wooper.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 194
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 339
+  pokemon:
+    wooper:
+      name: WOOPER
+      default: *gold-silver.pokemon.wooper.default
+      forms_switchable: &ruby-sapphire.pokemon.wooper.forms_switchable false
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      experience: *gold-silver.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      stats: &ruby-sapphire.pokemon.wooper.stats
+        hp:
+          base_value: 55
+          effort_change: 1
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      happiness: &ruby-sapphire.pokemon.wooper.happiness 70
+      abilities: &ruby-sapphire.pokemon.wooper.abilities
+        damp: &ruby-sapphire.pokemon.wooper.abilities.damp
+          hidden: &ruby-sapphire.pokemon.wooper.abilities.damp.hidden false
+          position: 1
+        water-absorb: &ruby-sapphire.pokemon.wooper.abilities.water-absorb
+          hidden: *ruby-sapphire.pokemon.wooper.abilities.damp.hidden
+          position: 2
+      genus: *gold-silver.pokemon.wooper.genus
+      height: *gold-silver.pokemon.wooper.height
+      weight: &ruby-sapphire.pokemon.wooper.weight 85
+      flavor_text:
+        ruby: |
+          WOOPER usually lives in water.
+          However, it occasionally comes out onto
+          land in search of food.
+          On land, it coats its body with a gooey,
+           toxic film.
+        sapphire: |
+          WOOPER usually lives in water.
+          However, it occasionally comes out onto
+          land in search of food.
+          On land, it coats its body with a gooey,
+           toxic film.
+      forms:
+        wooper:
+          name: WOOPER
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: &ruby-sapphire.pokemon.wooper.forms.wooper.icon gen5/wooper-default.png
+          sprites:
+            - ruby-sapphire/wooper-default.png
+            - ruby-sapphire/back/wooper-default.png
+            - ruby-sapphire/shiny/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: &ruby-sapphire.pokemon.wooper.forms.wooper.footprint wooper.png
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    wooper:
+      name: WOOPER
+      default: *gold-silver.pokemon.wooper.default
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      experience: *gold-silver.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      stats: *ruby-sapphire.pokemon.wooper.stats
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      abilities: *ruby-sapphire.pokemon.wooper.abilities
+      genus: *gold-silver.pokemon.wooper.genus
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      flavor_text:
+        emerald: |
+          WOOPER usually live in water but come
+          out onto land seeking food occasionally.
+          On land, they coat their bodies with a
+          gooey, toxic film.
+      forms:
+        wooper:
+          name: WOOPER
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *ruby-sapphire.pokemon.wooper.forms.wooper.icon
+          sprites:
+            - emerald/wooper-default.png
+            - emerald/shiny/wooper-default.png
+            - emerald/animated/wooper-default.webm
+            - emerald/animated/shiny/wooper-default.webm
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 378
+  pokemon:
+    wooper:
+      name: WOOPER
+      default: *gold-silver.pokemon.wooper.default
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      experience: *gold-silver.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      stats: *ruby-sapphire.pokemon.wooper.stats
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      abilities: *ruby-sapphire.pokemon.wooper.abilities
+      genus: *gold-silver.pokemon.wooper.genus
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      forms:
+        wooper:
+          name: WOOPER
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          sprites:
+            - colosseum/wooper-default.png
+            - colosseum/shiny/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    wooper:
+      name: WOOPER
+      default: *gold-silver.pokemon.wooper.default
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      experience: *gold-silver.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      stats: *ruby-sapphire.pokemon.wooper.stats
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      abilities: *ruby-sapphire.pokemon.wooper.abilities
+      genus: *gold-silver.pokemon.wooper.genus
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      forms:
+        wooper:
+          name: WOOPER
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          sprites:
+            - xd/wooper-default.png
+            - xd/shiny/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    wooper:
+      name: WOOPER
+      default: *gold-silver.pokemon.wooper.default
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      experience: *gold-silver.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      stats: *ruby-sapphire.pokemon.wooper.stats
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      abilities: *ruby-sapphire.pokemon.wooper.abilities
+      genus: *gold-silver.pokemon.wooper.genus
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      flavor_text:
+        firered: |
+          When it walks around on the ground,
+          it coats its body with a slimy,  poisonous
+          film.
+        leafgreen: |
+          This POKéMON lives in cold water. It will
+          leave the water to search for food when
+          it gets cold outside.
+      forms:
+        wooper:
+          name: WOOPER
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *ruby-sapphire.pokemon.wooper.forms.wooper.icon
+          sprites:
+            - firered-leafgreen/wooper-default.png
+            - firered-leafgreen/back/wooper-default.png
+            - firered-leafgreen/shiny/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+diamond-pearl:
+  name: &diamond-pearl.name Wooper
+  position: &diamond-pearl.position 225
+  numbers:
+    national: *gold-silver.numbers.national
+    original-sinnoh: 117
+  pokemon:
+    wooper:
+      genus: &diamond-pearl.pokemon.wooper.genus 'Water Fish Pokémon'
+      shape: &diamond-pearl.pokemon.wooper.shape legs
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: &diamond-pearl.pokemon.wooper.baby false
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      pal_park: &diamond-pearl.pokemon.wooper.pal_park
+        area: pond
+        rate: 30
+        score: 50
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: &diamond-pearl.pokemon.wooper.experience 42
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      stats: &diamond-pearl.pokemon.wooper.stats
+        hp:
+          base_value: 55
+          effort_change: 1
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 25
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.wooper.abilities
+        damp: *ruby-sapphire.pokemon.wooper.abilities.damp
+        water-absorb: *ruby-sapphire.pokemon.wooper.abilities.water-absorb
+        unaware:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          It lives in cold water, half
+          burying itself in mud at the
+          bottom to sleep.
+        pearl: |
+          When the temperature cools in the
+          evening, they emerge from water
+          to seek food along the shore.
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *ruby-sapphire.pokemon.wooper.forms.wooper.icon
+          sprites:
+            - diamond-pearl/back/wooper-default.png
+            - diamond-pearl/back/female/wooper-default.png
+            - diamond-pearl/back/shiny/wooper-default.png
+            - diamond-pearl/wooper-default.png
+            - diamond-pearl/female/wooper-default.png
+            - diamond-pearl/shiny/wooper-default.png
+            - diamond-pearl/shiny/female/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 117
+  pokemon:
+    wooper:
+      genus: *diamond-pearl.pokemon.wooper.genus
+      shape: *diamond-pearl.pokemon.wooper.shape
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: *diamond-pearl.pokemon.wooper.baby
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      pal_park: *diamond-pearl.pokemon.wooper.pal_park
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: *diamond-pearl.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      stats: *diamond-pearl.pokemon.wooper.stats
+      abilities: *diamond-pearl.pokemon.wooper.abilities
+      flavor_text:
+        platinum: |
+          When walking on land, it covers its
+          body with a poisonous film that
+          keeps its skin from dehydrating.
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *ruby-sapphire.pokemon.wooper.forms.wooper.icon
+          sprites:
+            - platinum/back/wooper-default.png
+            - platinum/back/female/wooper-default.png
+            - platinum/back/shiny/wooper-default.png
+            - platinum/wooper-default.png
+            - platinum/female/wooper-default.png
+            - platinum/shiny/wooper-default.png
+            - platinum/shiny/female/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 56
+  pokemon:
+    wooper:
+      genus: *diamond-pearl.pokemon.wooper.genus
+      shape: *diamond-pearl.pokemon.wooper.shape
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: *diamond-pearl.pokemon.wooper.baby
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      pal_park: *diamond-pearl.pokemon.wooper.pal_park
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: *diamond-pearl.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      stats: *diamond-pearl.pokemon.wooper.stats
+      abilities: *diamond-pearl.pokemon.wooper.abilities
+      flavor_text:
+        heartgold: |
+          This Pokémon lives in cold water.
+          It will leave the water to search
+          for food when it gets cold outside.
+        soulsilver: |
+          When it walks around on the
+          ground, it coats its body with a
+          slimy, poisonous film.
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.wooper.forms.wooper.icon
+          sprites:
+            - heartgold-soulsilver/back/wooper-default.png
+            - heartgold-soulsilver/back/female/wooper-default.png
+            - heartgold-soulsilver/back/shiny/wooper-default.png
+            - heartgold-soulsilver/wooper-default.png
+            - heartgold-soulsilver/female/wooper-default.png
+            - heartgold-soulsilver/shiny/wooper-default.png
+            - heartgold-soulsilver/shiny/female/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wooper:
+      genus: *diamond-pearl.pokemon.wooper.genus
+      color: &black-white.pokemon.wooper.color blue
+      shape: *diamond-pearl.pokemon.wooper.shape
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: *diamond-pearl.pokemon.wooper.baby
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: *diamond-pearl.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      stats: *diamond-pearl.pokemon.wooper.stats
+      abilities: *diamond-pearl.pokemon.wooper.abilities
+      flavor_text:
+        black: |
+          When walking on land, it covers its
+          body with a poisonous film that
+          keeps its skin from dehydrating.
+        white: |
+          When walking on land, it covers its
+          body with a poisonous film that
+          keeps its skin from dehydrating.
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *ruby-sapphire.pokemon.wooper.forms.wooper.icon
+          sprites:
+            - black-white/back/wooper-default.png
+            - black-white/back/female/wooper-default.png
+            - black-white/back/shiny/wooper-default.png
+            - black-white/wooper-default.png
+            - black-white/female/wooper-default.png
+            - black-white/shiny/wooper-default.png
+            - black-white/shiny/female/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wooper:
+      genus: *diamond-pearl.pokemon.wooper.genus
+      color: *black-white.pokemon.wooper.color
+      shape: *diamond-pearl.pokemon.wooper.shape
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: *diamond-pearl.pokemon.wooper.baby
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: *diamond-pearl.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      stats: *diamond-pearl.pokemon.wooper.stats
+      abilities: *diamond-pearl.pokemon.wooper.abilities
+      flavor_text:
+        black-2: |
+          When walking on land, it covers its
+          body with a poisonous film that
+          keeps its skin from dehydrating.
+        white-2: |
+          When walking on land, it covers its
+          body with a poisonous film that
+          keeps its skin from dehydrating.
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *ruby-sapphire.pokemon.wooper.forms.wooper.icon
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *gold-silver.pokemon.wooper.forms.wooper.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 17
+  pokemon:
+    wooper:
+      genus: *diamond-pearl.pokemon.wooper.genus
+      color: *black-white.pokemon.wooper.color
+      shape: *diamond-pearl.pokemon.wooper.shape
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: *diamond-pearl.pokemon.wooper.baby
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: *diamond-pearl.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      mega: &x-y.pokemon.wooper.mega false
+      stats: *diamond-pearl.pokemon.wooper.stats
+      abilities: *diamond-pearl.pokemon.wooper.abilities
+      flavor_text:
+        x: |
+          This Pokémon lives in cold water. It will leave the
+          water to search for food when it gets cold outside.
+        'y': |
+          When the temperature cools in the evening,
+          they emerge from water to seek food along
+          the shore.
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: &x-y.pokemon.wooper.forms.wooper.icon wooper-default.png
+          sprites:
+            - x-y/wooper-default.png
+            - x-y/female/wooper-default.png
+            - x-y/shiny/wooper-default.png
+            - x-y/shiny/female/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: &x-y.pokemon.wooper.forms.wooper.cry wooper-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wooper:
+      genus: *diamond-pearl.pokemon.wooper.genus
+      color: *black-white.pokemon.wooper.color
+      shape: *diamond-pearl.pokemon.wooper.shape
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: *diamond-pearl.pokemon.wooper.baby
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: *diamond-pearl.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      mega: *x-y.pokemon.wooper.mega
+      stats: *diamond-pearl.pokemon.wooper.stats
+      abilities: *diamond-pearl.pokemon.wooper.abilities
+      flavor_text:
+        omega-ruby: |
+          Wooper usually lives in water. However, it occasionally comes
+          out onto land in search of food. On land, it coats its body with
+          a gooey, toxic film.
+        alpha-sapphire: |
+          Wooper usually lives in water. However, it occasionally comes
+          out onto land in search of food. On land, it coats its body with
+          a gooey, toxic film.
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *x-y.pokemon.wooper.forms.wooper.icon
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *x-y.pokemon.wooper.forms.wooper.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/wooper-default.png
+            - omega-ruby-alpha-sapphire/shiny/wooper-default.png
+            - omega-ruby-alpha-sapphire/female/wooper-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/wooper-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wooper:
+      genus: *diamond-pearl.pokemon.wooper.genus
+      color: *black-white.pokemon.wooper.color
+      shape: *diamond-pearl.pokemon.wooper.shape
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: *diamond-pearl.pokemon.wooper.baby
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: *diamond-pearl.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      mega: *x-y.pokemon.wooper.mega
+      stats: *diamond-pearl.pokemon.wooper.stats
+      abilities: *diamond-pearl.pokemon.wooper.abilities
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *x-y.pokemon.wooper.forms.wooper.icon
+          sprites:
+            - sun-moon/wooper-default.png
+            - sun-moon/female/wooper-default.png
+            - sun-moon/shiny/wooper-default.png
+            - sun-moon/shiny/female/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *x-y.pokemon.wooper.forms.wooper.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wooper:
+      genus: *diamond-pearl.pokemon.wooper.genus
+      color: *black-white.pokemon.wooper.color
+      shape: *diamond-pearl.pokemon.wooper.shape
+      female_rate: *gold-silver.pokemon.wooper.female_rate
+      capture_rate: *gold-silver.pokemon.wooper.capture_rate
+      happiness: *ruby-sapphire.pokemon.wooper.happiness
+      baby: *diamond-pearl.pokemon.wooper.baby
+      hatch_steps: *gold-silver.pokemon.wooper.hatch_steps
+      growth_rate: *gold-silver.pokemon.wooper.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wooper.forms_switchable
+      name: Wooper
+      default: *gold-silver.pokemon.wooper.default
+      height: *gold-silver.pokemon.wooper.height
+      weight: *ruby-sapphire.pokemon.wooper.weight
+      experience: *diamond-pearl.pokemon.wooper.experience
+      types: *gold-silver.pokemon.wooper.types
+      egg_groups: *gold-silver.pokemon.wooper.egg_groups
+      mega: *x-y.pokemon.wooper.mega
+      stats: *diamond-pearl.pokemon.wooper.stats
+      abilities: *diamond-pearl.pokemon.wooper.abilities
+      forms:
+        wooper:
+          name: Wooper
+          form_name: *gold-silver.pokemon.wooper.forms.wooper.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.wooper.forms.wooper.battle_only
+          icon: *x-y.pokemon.wooper.forms.wooper.icon
+          sprites:
+            - ultra-sun-ultra-moon/wooper-default.png
+            - ultra-sun-ultra-moon/female/wooper-default.png
+            - ultra-sun-ultra-moon/shiny/wooper-default.png
+            - ultra-sun-ultra-moon/shiny/female/wooper-default.png
+          art: *gold-silver.pokemon.wooper.forms.wooper.art
+          footprint: *ruby-sapphire.pokemon.wooper.forms.wooper.footprint
+          cry: *x-y.pokemon.wooper.forms.wooper.cry

@@ -1,0 +1,906 @@
+red-blue:
+  name: &red-blue.name ONIX
+  position: &red-blue.position 95
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 95
+    kanto: 95
+  pokemon:
+    onix:
+      name: ONIX
+      default: &red-blue.pokemon.onix.default true
+      capture_rate: &red-blue.pokemon.onix.capture_rate 45
+      experience: &red-blue.pokemon.onix.experience 108
+      types: &red-blue.pokemon.onix.types
+        - rock
+        - ground
+      stats: &red-blue.pokemon.onix.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 160
+          effort_change: 160
+        speed:
+          base_value: 70
+          effort_change: 70
+        special:
+          base_value: 30
+          effort_change: 30
+      growth_rate: &red-blue.pokemon.onix.growth_rate medium
+      genus: &red-blue.pokemon.onix.genus 'ROCK SNAKE Pokémon'
+      height: &red-blue.pokemon.onix.height 87
+      weight: &red-blue.pokemon.onix.weight 21001
+      flavor_text:
+        red: |
+          As it grows, the
+          stone portions of
+          its body harden
+          to become similar
+           to a diamond, but
+          colored black.
+        blue: |
+          As it grows, the
+          stone portions of
+          its body harden
+          to become similar
+           to a diamond, but
+          colored black.
+      forms:
+        onix:
+          name: ONIX
+          form_name: &red-blue.pokemon.onix.forms.onix.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.onix.forms.onix.battle_only false
+          sprites:
+            - red-blue/onix-default.png
+            - red-blue/gray/onix-default.png
+            - red-blue/back/onix-default.png
+          art: &red-blue.pokemon.onix.forms.onix.art
+            - onix-default.png
+          cry: &red-blue.pokemon.onix.forms.onix.cry gen5/onix-default.webm
+          icon: &red-blue.pokemon.onix.forms.onix.icon gen1/snake.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    onix:
+      name: ONIX
+      default: *red-blue.pokemon.onix.default
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      experience: *red-blue.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      stats: *red-blue.pokemon.onix.stats
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      genus: *red-blue.pokemon.onix.genus
+      height: *red-blue.pokemon.onix.height
+      weight: *red-blue.pokemon.onix.weight
+      flavor_text:
+        yellow: |
+          Burrows at high
+          speed in search
+          of food. The
+          tunnels it leaves
+           are used as homes
+          by DIGLETTs.
+      forms:
+        onix:
+          name: ONIX
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          sprites:
+            - yellow/onix-default.png
+            - yellow/gray/onix-default.png
+            - yellow/back/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+          icon: *red-blue.pokemon.onix.forms.onix.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 94
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 61
+    original-johto-abc: 140
+  pokemon:
+    onix:
+      name: ONIX
+      default: *red-blue.pokemon.onix.default
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      experience: *red-blue.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      stats: &gold-silver.pokemon.onix.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 160
+          effort_change: 160
+        speed:
+          base_value: 70
+          effort_change: 70
+        special-attack:
+          base_value: 30
+          effort_change: 30
+        special-defense:
+          base_value: 45
+          effort_change: 30
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      female_rate: &gold-silver.pokemon.onix.female_rate 50
+      hatch_steps: &gold-silver.pokemon.onix.hatch_steps 25
+      egg_groups: &gold-silver.pokemon.onix.egg_groups
+        - mineral
+      genus: *red-blue.pokemon.onix.genus
+      height: &gold-silver.pokemon.onix.height 85
+      weight: &gold-silver.pokemon.onix.weight 2100
+      flavor_text:
+        gold: |
+          It twists and
+          squirms through
+          the ground. The
+          thunderous roar of
+          its tunneling
+          echoes a long way.
+        silver: |
+          It rapidly bores
+          through the ground
+          at 50 mph by
+          squirming and
+          twisting its mas-
+          sive, rugged body.
+      forms:
+        onix:
+          name: ONIX
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          sprites:
+            - gold-silver/onix-default.png
+            - gold-silver/back/onix-default.png
+            - gold-silver/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+          icon: &gold-silver.pokemon.onix.forms.onix.icon gen2/serpent.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    onix:
+      name: ONIX
+      default: *red-blue.pokemon.onix.default
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      experience: *red-blue.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      stats: *gold-silver.pokemon.onix.stats
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      genus: *red-blue.pokemon.onix.genus
+      height: *gold-silver.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      flavor_text:
+        crystal: |
+          As it digs through
+          the ground, it
+          absorbs many hard
+          objects. This is
+          what makes its
+          body so solid.
+      forms:
+        onix:
+          name: ONIX
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          sprites:
+            - crystal/onix-default.png
+            - crystal/back/onix-default.png
+            - crystal/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+          icon: *gold-silver.pokemon.onix.forms.onix.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 265
+  pokemon:
+    onix:
+      name: ONIX
+      default: *red-blue.pokemon.onix.default
+      forms_switchable: &ruby-sapphire.pokemon.onix.forms_switchable false
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      experience: *red-blue.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      stats: &ruby-sapphire.pokemon.onix.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 160
+          effort_change: 1
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      happiness: &ruby-sapphire.pokemon.onix.happiness 70
+      abilities: &ruby-sapphire.pokemon.onix.abilities
+        rock-head: &ruby-sapphire.pokemon.onix.abilities.rock-head
+          hidden: &ruby-sapphire.pokemon.onix.abilities.rock-head.hidden false
+          position: 1
+        sturdy: &ruby-sapphire.pokemon.onix.abilities.sturdy
+          hidden: *ruby-sapphire.pokemon.onix.abilities.rock-head.hidden
+          position: 2
+      genus: *red-blue.pokemon.onix.genus
+      height: &ruby-sapphire.pokemon.onix.height 88
+      weight: *gold-silver.pokemon.onix.weight
+      flavor_text:
+        ruby: |
+          ONIX has a magnet in its brain. It acts
+          as a compass so that this POKéMON does
+          not lose direction while it is tunneling.
+          As it grows older,  its body becomes
+          increasingly rounder and smoother.
+        sapphire: |
+          ONIX has a magnet in its brain. It acts
+          as a compass so that this POKéMON does
+          not lose direction while it is tunneling.
+          As it grows older,  its body becomes
+          increasingly rounder and smoother.
+      forms:
+        onix:
+          name: ONIX
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: &ruby-sapphire.pokemon.onix.forms.onix.icon gen5/onix-default.png
+          sprites:
+            - ruby-sapphire/onix-default.png
+            - ruby-sapphire/back/onix-default.png
+            - ruby-sapphire/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: &ruby-sapphire.pokemon.onix.forms.onix.footprint onix.png
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    onix:
+      name: ONIX
+      default: *red-blue.pokemon.onix.default
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      experience: *red-blue.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      stats: *ruby-sapphire.pokemon.onix.stats
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      abilities: *ruby-sapphire.pokemon.onix.abilities
+      genus: *red-blue.pokemon.onix.genus
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      flavor_text:
+        emerald: |
+          There is a magnet in its brain that
+          prevents an ONIX from losing direction
+          while tunneling. As it grows older, its body
+          becomes steadily rounder and smoother.
+      forms:
+        onix:
+          name: ONIX
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *ruby-sapphire.pokemon.onix.forms.onix.icon
+          sprites:
+            - emerald/onix-default.png
+            - emerald/shiny/onix-default.png
+            - emerald/animated/onix-default.webm
+            - emerald/animated/shiny/onix-default.webm
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 232
+  pokemon:
+    onix:
+      name: ONIX
+      default: *red-blue.pokemon.onix.default
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      experience: *red-blue.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      stats: *ruby-sapphire.pokemon.onix.stats
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      abilities: *ruby-sapphire.pokemon.onix.abilities
+      genus: *red-blue.pokemon.onix.genus
+      height: 86
+      weight: *gold-silver.pokemon.onix.weight
+      forms:
+        onix:
+          name: ONIX
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          sprites:
+            - colosseum/onix-default.png
+            - colosseum/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    onix:
+      name: ONIX
+      default: *red-blue.pokemon.onix.default
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      experience: *red-blue.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      stats: *ruby-sapphire.pokemon.onix.stats
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      abilities: *ruby-sapphire.pokemon.onix.abilities
+      genus: *red-blue.pokemon.onix.genus
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      forms:
+        onix:
+          name: ONIX
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          sprites:
+            - xd/onix-default.png
+            - xd/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    onix:
+      name: ONIX
+      default: *red-blue.pokemon.onix.default
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      experience: *red-blue.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      stats: *ruby-sapphire.pokemon.onix.stats
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.onix.wild_held_items.firered
+          hard-stone: 5
+        leafgreen: *firered-leafgreen.pokemon.onix.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      abilities: *ruby-sapphire.pokemon.onix.abilities
+      genus: *red-blue.pokemon.onix.genus
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      flavor_text:
+        firered: |
+          It usually lives underground. It searches
+          for food while boring its way through the
+          ground at 50 miles per hour.
+        leafgreen: |
+          As it grows, the stone portions of its
+          body harden to become similar to
+          black-colored diamonds.
+      forms:
+        onix:
+          name: ONIX
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *ruby-sapphire.pokemon.onix.forms.onix.icon
+          sprites:
+            - firered-leafgreen/onix-default.png
+            - firered-leafgreen/back/onix-default.png
+            - firered-leafgreen/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+diamond-pearl:
+  name: &diamond-pearl.name Onix
+  position: &diamond-pearl.position 103
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 34
+  pokemon:
+    onix:
+      genus: &diamond-pearl.pokemon.onix.genus 'Rock Snake Pokémon'
+      shape: &diamond-pearl.pokemon.onix.shape squiggle
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: &diamond-pearl.pokemon.onix.baby false
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      pal_park: &diamond-pearl.pokemon.onix.pal_park
+        area: mountain
+        rate: 10
+        score: 80
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: &diamond-pearl.pokemon.onix.experience 77
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      stats: &diamond-pearl.pokemon.onix.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 160
+          effort_change: 1
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.onix.abilities
+      flavor_text:
+        diamond: |
+          When it travels underground, it
+          causes rumbling and tremors.
+          It can move at 50 mph.
+        pearl: |
+          It squirms through the ground
+          using its long and rugged body.
+          It always eats while burrowing.
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *ruby-sapphire.pokemon.onix.forms.onix.icon
+          sprites:
+            - diamond-pearl/onix-default.png
+            - diamond-pearl/back/onix-default.png
+            - diamond-pearl/back/shiny/onix-default.png
+            - diamond-pearl/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 34
+  pokemon:
+    onix:
+      genus: *diamond-pearl.pokemon.onix.genus
+      shape: *diamond-pearl.pokemon.onix.shape
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: *diamond-pearl.pokemon.onix.baby
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      pal_park: *diamond-pearl.pokemon.onix.pal_park
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: *diamond-pearl.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      stats: *diamond-pearl.pokemon.onix.stats
+      abilities: *ruby-sapphire.pokemon.onix.abilities
+      flavor_text:
+        platinum: |
+          It burrows through the ground
+          at a speed of 50 mph while
+          feeding on large boulders.
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *ruby-sapphire.pokemon.onix.forms.onix.icon
+          sprites:
+            - platinum/onix-default.png
+            - platinum/back/onix-default.png
+            - platinum/back/shiny/onix-default.png
+            - platinum/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 62
+  pokemon:
+    onix:
+      genus: *diamond-pearl.pokemon.onix.genus
+      shape: *diamond-pearl.pokemon.onix.shape
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: *diamond-pearl.pokemon.onix.baby
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      pal_park: *diamond-pearl.pokemon.onix.pal_park
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: *diamond-pearl.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      stats: *diamond-pearl.pokemon.onix.stats
+      abilities: *ruby-sapphire.pokemon.onix.abilities
+      flavor_text:
+        heartgold: |
+          It twists and squirms through
+          the ground. The thunderous roar of
+          its tunneling echoes a long way.
+        soulsilver: |
+          It rapidly bores through the ground
+          at 50 mph by squirming and
+          twisting its massive, rugged body.
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-4
+            power:
+              base_value: 2
+              range: 1-2
+            skill:
+              base_value: 1
+              range: 1-2
+            stamina:
+              base_value: 4
+              range: 2-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.onix.forms.onix.icon
+          sprites:
+            - heartgold-soulsilver/onix-default.png
+            - heartgold-soulsilver/back/onix-default.png
+            - heartgold-soulsilver/back/shiny/onix-default.png
+            - heartgold-soulsilver/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    onix:
+      genus: *diamond-pearl.pokemon.onix.genus
+      color: &black-white.pokemon.onix.color gray
+      shape: *diamond-pearl.pokemon.onix.shape
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: *diamond-pearl.pokemon.onix.baby
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: *diamond-pearl.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      stats: *diamond-pearl.pokemon.onix.stats
+      abilities: &black-white.pokemon.onix.abilities
+        rock-head: *ruby-sapphire.pokemon.onix.abilities.rock-head
+        sturdy: *ruby-sapphire.pokemon.onix.abilities.sturdy
+        weak-armor:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It burrows through the ground
+          at a speed of 50 mph while
+          feeding on large boulders.
+        white: |
+          It burrows through the ground
+          at a speed of 50 mph while
+          feeding on large boulders.
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *ruby-sapphire.pokemon.onix.forms.onix.icon
+          sprites:
+            - black-white/onix-default.png
+            - black-white/back/onix-default.png
+            - black-white/back/shiny/onix-default.png
+            - black-white/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 71
+  pokemon:
+    onix:
+      genus: *diamond-pearl.pokemon.onix.genus
+      color: *black-white.pokemon.onix.color
+      shape: *diamond-pearl.pokemon.onix.shape
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: *diamond-pearl.pokemon.onix.baby
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: *diamond-pearl.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      stats: *diamond-pearl.pokemon.onix.stats
+      abilities: *black-white.pokemon.onix.abilities
+      flavor_text:
+        black-2: |
+          Opening its large mouth, it ingests
+          massive amounts of soil and creates
+          long tunnels.
+        white-2: |
+          Opening its large mouth, it ingests
+          massive amounts of soil and creates
+          long tunnels.
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *ruby-sapphire.pokemon.onix.forms.onix.icon
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *red-blue.pokemon.onix.forms.onix.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 53
+  pokemon:
+    onix:
+      genus: *diamond-pearl.pokemon.onix.genus
+      color: *black-white.pokemon.onix.color
+      shape: *diamond-pearl.pokemon.onix.shape
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: *diamond-pearl.pokemon.onix.baby
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: *diamond-pearl.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      mega: &x-y.pokemon.onix.mega false
+      stats: *diamond-pearl.pokemon.onix.stats
+      abilities: *black-white.pokemon.onix.abilities
+      flavor_text:
+        x: |
+          Burrows at high speed in search of food.
+          The tunnels it leaves are used as homes
+          by Diglett.
+        'y': |
+          It usually lives underground. It searches for food
+          while boring its way through the ground at 50 miles
+          per hour.
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: &x-y.pokemon.onix.forms.onix.icon onix-default.png
+          sprites:
+            - x-y/onix-default.png
+            - x-y/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: &x-y.pokemon.onix.forms.onix.cry onix-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    onix:
+      genus: *diamond-pearl.pokemon.onix.genus
+      color: *black-white.pokemon.onix.color
+      shape: *diamond-pearl.pokemon.onix.shape
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: *diamond-pearl.pokemon.onix.baby
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: *diamond-pearl.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      mega: *x-y.pokemon.onix.mega
+      stats: *diamond-pearl.pokemon.onix.stats
+      abilities: *black-white.pokemon.onix.abilities
+      flavor_text:
+        omega-ruby: |
+          Onix has a magnet in its brain. It acts as a compass so that this
+          Pokémon does not lose direction while it is tunneling.
+          As it grows older, its body becomes increasingly rounder
+          and smoother.
+        alpha-sapphire: |
+          Onix has a magnet in its brain. It acts as a compass so that
+          this Pokémon does not lose direction while it is tunneling.
+          As it grows older, its body becomes increasingly rounder
+          and smoother.
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *x-y.pokemon.onix.forms.onix.icon
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *x-y.pokemon.onix.forms.onix.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/onix-default.png
+            - omega-ruby-alpha-sapphire/shiny/onix-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    onix:
+      genus: *diamond-pearl.pokemon.onix.genus
+      color: *black-white.pokemon.onix.color
+      shape: *diamond-pearl.pokemon.onix.shape
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: *diamond-pearl.pokemon.onix.baby
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: *diamond-pearl.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      mega: *x-y.pokemon.onix.mega
+      stats: *diamond-pearl.pokemon.onix.stats
+      abilities: *black-white.pokemon.onix.abilities
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *x-y.pokemon.onix.forms.onix.icon
+          sprites:
+            - sun-moon/onix-default.png
+            - sun-moon/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *x-y.pokemon.onix.forms.onix.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    onix:
+      genus: *diamond-pearl.pokemon.onix.genus
+      color: *black-white.pokemon.onix.color
+      shape: *diamond-pearl.pokemon.onix.shape
+      female_rate: *gold-silver.pokemon.onix.female_rate
+      capture_rate: *red-blue.pokemon.onix.capture_rate
+      happiness: *ruby-sapphire.pokemon.onix.happiness
+      baby: *diamond-pearl.pokemon.onix.baby
+      hatch_steps: *gold-silver.pokemon.onix.hatch_steps
+      growth_rate: *red-blue.pokemon.onix.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.onix.forms_switchable
+      name: Onix
+      default: *red-blue.pokemon.onix.default
+      height: *ruby-sapphire.pokemon.onix.height
+      weight: *gold-silver.pokemon.onix.weight
+      experience: *diamond-pearl.pokemon.onix.experience
+      types: *red-blue.pokemon.onix.types
+      egg_groups: *gold-silver.pokemon.onix.egg_groups
+      mega: *x-y.pokemon.onix.mega
+      stats: *diamond-pearl.pokemon.onix.stats
+      abilities: *black-white.pokemon.onix.abilities
+      forms:
+        onix:
+          name: Onix
+          form_name: *red-blue.pokemon.onix.forms.onix.form_name
+          default: true
+          battle_only: *red-blue.pokemon.onix.forms.onix.battle_only
+          icon: *x-y.pokemon.onix.forms.onix.icon
+          sprites:
+            - ultra-sun-ultra-moon/onix-default.png
+            - ultra-sun-ultra-moon/shiny/onix-default.png
+          art: *red-blue.pokemon.onix.forms.onix.art
+          footprint: *ruby-sapphire.pokemon.onix.forms.onix.footprint
+          cry: *x-y.pokemon.onix.forms.onix.cry

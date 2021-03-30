@@ -1,0 +1,954 @@
+red-blue:
+  name: &red-blue.name TENTACOOL
+  position: &red-blue.position 72
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 72
+    kanto: 72
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: &red-blue.pokemon.tentacool.default true
+      capture_rate: &red-blue.pokemon.tentacool.capture_rate 190
+      experience: &red-blue.pokemon.tentacool.experience 105
+      types: &red-blue.pokemon.tentacool.types
+        - water
+        - poison
+      stats: &red-blue.pokemon.tentacool.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 40
+          effort_change: 40
+        defense:
+          base_value: 35
+          effort_change: 35
+        speed:
+          base_value: 70
+          effort_change: 70
+        special:
+          base_value: 100
+          effort_change: 100
+      growth_rate: &red-blue.pokemon.tentacool.growth_rate slow
+      genus: &red-blue.pokemon.tentacool.genus 'JELLYFISH Pokémon'
+      height: &red-blue.pokemon.tentacool.height 8
+      weight: &red-blue.pokemon.tentacool.weight 4536
+      flavor_text:
+        red: |
+          Drifts in shallow
+          seas. Anglers who
+          hook them by
+          accident are
+          often punished by
+          its stinging acid.
+        blue: |
+          Drifts in shallow
+          seas. Anglers who
+          hook them by
+          accident are
+           often punished by
+          its stinging acid.
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: &red-blue.pokemon.tentacool.forms.tentacool.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.tentacool.forms.tentacool.battle_only false
+          sprites:
+            - red-blue/tentacool-default.png
+            - red-blue/gray/tentacool-default.png
+            - red-blue/back/tentacool-default.png
+          art: &red-blue.pokemon.tentacool.forms.tentacool.art
+            - tentacool-default.png
+          cry: &red-blue.pokemon.tentacool.forms.tentacool.cry gen5/tentacool-default.webm
+          icon: &red-blue.pokemon.tentacool.forms.tentacool.icon gen1/water.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: *red-blue.pokemon.tentacool.default
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      experience: *red-blue.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      stats: *red-blue.pokemon.tentacool.stats
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      genus: *red-blue.pokemon.tentacool.genus
+      height: *red-blue.pokemon.tentacool.height
+      weight: *red-blue.pokemon.tentacool.weight
+      flavor_text:
+        yellow: |
+          It can sometimes
+          be found all dry
+          and shriveled up
+          on a beach.  Toss
+          it back into the
+          sea to revive it.
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          sprites:
+            - yellow/tentacool-default.png
+            - yellow/gray/tentacool-default.png
+            - yellow/back/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+          icon: *red-blue.pokemon.tentacool.forms.tentacool.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 71
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 161
+    original-johto-abc: 210
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: *red-blue.pokemon.tentacool.default
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      experience: *red-blue.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      stats: &gold-silver.pokemon.tentacool.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 40
+          effort_change: 40
+        defense:
+          base_value: 35
+          effort_change: 35
+        speed:
+          base_value: 70
+          effort_change: 70
+        special-attack:
+          base_value: 50
+          effort_change: 50
+        special-defense:
+          base_value: 100
+          effort_change: 50
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      female_rate: &gold-silver.pokemon.tentacool.female_rate 50
+      hatch_steps: &gold-silver.pokemon.tentacool.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.tentacool.egg_groups
+        - water3
+      genus: *red-blue.pokemon.tentacool.genus
+      height: *red-blue.pokemon.tentacool.height
+      weight: &gold-silver.pokemon.tentacool.weight 453
+      flavor_text:
+        gold: |
+          When the tide goes
+          out, dehydrated
+          TENTACOOL remains
+          can be found
+          washed up on the
+          shore.
+        silver: |
+          It drifts aimless-
+          ly in waves. Very
+          difficult to see
+          in water, it may
+          not be noticed
+          until it stings.
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          sprites:
+            - gold-silver/tentacool-default.png
+            - gold-silver/back/tentacool-default.png
+            - gold-silver/shiny/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+          icon: &gold-silver.pokemon.tentacool.forms.tentacool.icon gen2/jellyfish.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: *red-blue.pokemon.tentacool.default
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      experience: *red-blue.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      stats: *gold-silver.pokemon.tentacool.stats
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      genus: *red-blue.pokemon.tentacool.genus
+      height: *red-blue.pokemon.tentacool.height
+      weight: *gold-silver.pokemon.tentacool.weight
+      flavor_text:
+        crystal: |
+          As it floats along
+          on the waves, it
+          uses its toxic
+          feelers to stab
+          anything it
+          touches.
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          sprites:
+            - crystal/tentacool-default.png
+            - crystal/back/tentacool-default.png
+            - crystal/shiny/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+          icon: *gold-silver.pokemon.tentacool.forms.tentacool.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 66
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: *red-blue.pokemon.tentacool.default
+      forms_switchable: &ruby-sapphire.pokemon.tentacool.forms_switchable false
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      experience: *red-blue.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      stats: &ruby-sapphire.pokemon.tentacool.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 40
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 50
+          effort_change: 1
+        special-defense:
+          base_value: 40
+          effort_change: 1
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      happiness: &ruby-sapphire.pokemon.tentacool.happiness 70
+      abilities: &ruby-sapphire.pokemon.tentacool.abilities
+        clear-body: &ruby-sapphire.pokemon.tentacool.abilities.clear-body
+          hidden: &ruby-sapphire.pokemon.tentacool.abilities.clear-body.hidden false
+          position: 1
+        liquid-ooze: &ruby-sapphire.pokemon.tentacool.abilities.liquid-ooze
+          hidden: *ruby-sapphire.pokemon.tentacool.abilities.clear-body.hidden
+          position: 2
+      genus: *red-blue.pokemon.tentacool.genus
+      height: &ruby-sapphire.pokemon.tentacool.height 9
+      weight: &ruby-sapphire.pokemon.tentacool.weight 455
+      flavor_text:
+        ruby: |
+          TENTACOOL's body is largely composed
+          of water. If it is removed from the
+          sea, it dries up like parchment.
+          If this POKéMON happens to become
+           dehydrated, put it back into the sea.
+        sapphire: |
+          TENTACOOL absorbs sunlight and
+          refracts it using water inside its body
+          to convert it into beam energy.
+          This POKéMON shoots beams from its
+          crystal-like eyes.
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: &ruby-sapphire.pokemon.tentacool.forms.tentacool.icon gen5/tentacool-default.png
+          sprites:
+            - ruby-sapphire/tentacool-default.png
+            - ruby-sapphire/back/tentacool-default.png
+            - ruby-sapphire/shiny/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: &ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint tentacool.png
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: *red-blue.pokemon.tentacool.default
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      experience: *red-blue.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      stats: *ruby-sapphire.pokemon.tentacool.stats
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      abilities: *ruby-sapphire.pokemon.tentacool.abilities
+      genus: *red-blue.pokemon.tentacool.genus
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      flavor_text:
+        emerald: |
+          Its body is almost entirely composed of
+          water. It ensnares its foe with its two
+          long tentacles, then stabs with the poison
+          stingers at their tips.
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *ruby-sapphire.pokemon.tentacool.forms.tentacool.icon
+          sprites:
+            - emerald/tentacool-default.png
+            - emerald/shiny/tentacool-default.png
+            - emerald/animated/tentacool-default.webm
+            - emerald/animated/shiny/tentacool-default.webm
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 339
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: *red-blue.pokemon.tentacool.default
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      experience: *red-blue.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      stats: *ruby-sapphire.pokemon.tentacool.stats
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      abilities: *ruby-sapphire.pokemon.tentacool.abilities
+      genus: *red-blue.pokemon.tentacool.genus
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          sprites:
+            - colosseum/tentacool-default.png
+            - colosseum/shiny/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: *red-blue.pokemon.tentacool.default
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      experience: *red-blue.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      stats: *ruby-sapphire.pokemon.tentacool.stats
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      abilities: *ruby-sapphire.pokemon.tentacool.abilities
+      genus: *red-blue.pokemon.tentacool.genus
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          sprites:
+            - xd/tentacool-default.png
+            - xd/shiny/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    tentacool:
+      name: TENTACOOL
+      default: *red-blue.pokemon.tentacool.default
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      experience: *red-blue.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      stats: *ruby-sapphire.pokemon.tentacool.stats
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      abilities: *ruby-sapphire.pokemon.tentacool.abilities
+      genus: *red-blue.pokemon.tentacool.genus
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      flavor_text:
+        firered: |
+          Its eyes are as transparent as crystals.
+          From them, it shoots mysterious
+           beams of light.
+        leafgreen: |
+          Drifts in shallow seas. Anglers who hook
+          them by accident are often punished by
+          their stingers.
+      forms:
+        tentacool:
+          name: TENTACOOL
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *ruby-sapphire.pokemon.tentacool.forms.tentacool.icon
+          sprites:
+            - firered-leafgreen/tentacool-default.png
+            - firered-leafgreen/back/tentacool-default.png
+            - firered-leafgreen/shiny/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+diamond-pearl:
+  name: &diamond-pearl.name Tentacool
+  position: &diamond-pearl.position 78
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 136
+  pokemon:
+    tentacool:
+      genus: &diamond-pearl.pokemon.tentacool.genus 'Jellyfish Pokémon'
+      shape: &diamond-pearl.pokemon.tentacool.shape tentacles
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: &diamond-pearl.pokemon.tentacool.baby false
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      pal_park: &diamond-pearl.pokemon.tentacool.pal_park
+        area: sea
+        rate: 50
+        score: 30
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: &diamond-pearl.pokemon.tentacool.experience 67
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      stats: &diamond-pearl.pokemon.tentacool.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 40
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.tentacool.abilities
+        clear-body: *ruby-sapphire.pokemon.tentacool.abilities.clear-body
+        liquid-ooze: *ruby-sapphire.pokemon.tentacool.abilities.liquid-ooze
+        rain-dish:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+          poison-barb: 5
+        pearl: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Its body is virtually composed of
+          water. It shoots strange beams
+          from its crystal-like eyes.
+        pearl: |
+          It drifts in sea currents.
+          Countless fishermen are
+          hurt by its poison stingers.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *ruby-sapphire.pokemon.tentacool.forms.tentacool.icon
+          sprites:
+            - diamond-pearl/back/shiny/tentacool-default.png
+            - diamond-pearl/back/tentacool-default.png
+            - diamond-pearl/shiny/tentacool-default.png
+            - diamond-pearl/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 136
+  pokemon:
+    tentacool:
+      genus: *diamond-pearl.pokemon.tentacool.genus
+      shape: *diamond-pearl.pokemon.tentacool.shape
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: *diamond-pearl.pokemon.tentacool.baby
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      pal_park: *diamond-pearl.pokemon.tentacool.pal_park
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: *diamond-pearl.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      stats: *diamond-pearl.pokemon.tentacool.stats
+      abilities: *diamond-pearl.pokemon.tentacool.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          Because its body is almost entirely
+          composed of water, it shrivels up if
+          it is washed ashore.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *ruby-sapphire.pokemon.tentacool.forms.tentacool.icon
+          sprites:
+            - platinum/back/shiny/tentacool-default.png
+            - platinum/back/tentacool-default.png
+            - platinum/shiny/tentacool-default.png
+            - platinum/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 164
+  pokemon:
+    tentacool:
+      genus: *diamond-pearl.pokemon.tentacool.genus
+      shape: *diamond-pearl.pokemon.tentacool.shape
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: *diamond-pearl.pokemon.tentacool.baby
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      pal_park: *diamond-pearl.pokemon.tentacool.pal_park
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: *diamond-pearl.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      stats: *diamond-pearl.pokemon.tentacool.stats
+      abilities: *diamond-pearl.pokemon.tentacool.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          When the tide goes out, dehydrated
+          TENTACOOL remains can be found
+          washed up on the shore.
+        soulsilver: |
+          It drifts aimlessly in waves. Very
+          difficult to see in water, it may
+          not be noticed until it stings.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-5
+            stamina:
+              base_value: 3
+              range: 2-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.tentacool.forms.tentacool.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/tentacool-default.png
+            - heartgold-soulsilver/back/tentacool-default.png
+            - heartgold-soulsilver/shiny/tentacool-default.png
+            - heartgold-soulsilver/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    tentacool:
+      genus: *diamond-pearl.pokemon.tentacool.genus
+      color: &black-white.pokemon.tentacool.color blue
+      shape: *diamond-pearl.pokemon.tentacool.shape
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: *diamond-pearl.pokemon.tentacool.baby
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: *diamond-pearl.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      stats: *diamond-pearl.pokemon.tentacool.stats
+      abilities: *diamond-pearl.pokemon.tentacool.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+      flavor_text:
+        black: |
+          Because its body is almost entirely
+          composed of water, it shrivels up if
+          it is washed ashore.
+        white: |
+          Because its body is almost entirely
+          composed of water, it shrivels up if
+          it is washed ashore.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *ruby-sapphire.pokemon.tentacool.forms.tentacool.icon
+          sprites:
+            - black-white/back/shiny/tentacool-default.png
+            - black-white/back/tentacool-default.png
+            - black-white/shiny/tentacool-default.png
+            - black-white/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    tentacool:
+      genus: *diamond-pearl.pokemon.tentacool.genus
+      color: *black-white.pokemon.tentacool.color
+      shape: *diamond-pearl.pokemon.tentacool.shape
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: *diamond-pearl.pokemon.tentacool.baby
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: *diamond-pearl.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      stats: *diamond-pearl.pokemon.tentacool.stats
+      abilities: *diamond-pearl.pokemon.tentacool.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          Because its body is almost entirely
+          composed of water, it shrivels up if
+          it is washed ashore.
+        white-2: |
+          Because its body is almost entirely
+          composed of water, it shrivels up if
+          it is washed ashore.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *ruby-sapphire.pokemon.tentacool.forms.tentacool.icon
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *red-blue.pokemon.tentacool.forms.tentacool.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 25
+  pokemon:
+    tentacool:
+      genus: *diamond-pearl.pokemon.tentacool.genus
+      color: *black-white.pokemon.tentacool.color
+      shape: *diamond-pearl.pokemon.tentacool.shape
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: *diamond-pearl.pokemon.tentacool.baby
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: *diamond-pearl.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      mega: &x-y.pokemon.tentacool.mega false
+      stats: *diamond-pearl.pokemon.tentacool.stats
+      abilities: *diamond-pearl.pokemon.tentacool.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+      flavor_text:
+        x: |
+          Its body is virtually composed of water. It shoots
+          strange beams from its crystal-like eyes.
+        'y': |
+          Drifts in shallow seas. Anglers who hook them by
+          accident are often punished by their stingers.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: &x-y.pokemon.tentacool.forms.tentacool.icon tentacool-default.png
+          sprites:
+            - x-y/shiny/tentacool-default.png
+            - x-y/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: &x-y.pokemon.tentacool.forms.tentacool.cry tentacool-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 68
+  pokemon:
+    tentacool:
+      genus: *diamond-pearl.pokemon.tentacool.genus
+      color: *black-white.pokemon.tentacool.color
+      shape: *diamond-pearl.pokemon.tentacool.shape
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: *diamond-pearl.pokemon.tentacool.baby
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: *diamond-pearl.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      mega: *x-y.pokemon.tentacool.mega
+      stats: *diamond-pearl.pokemon.tentacool.stats
+      abilities: *diamond-pearl.pokemon.tentacool.abilities
+      flavor_text:
+        omega-ruby: |
+          Tentacool’s body is largely composed of water. If it is removed
+          from the sea, it dries up like parchment. If this Pokémon
+          happens to become dehydrated, put it back into the sea.
+        alpha-sapphire: |
+          Tentacool absorbs sunlight and refracts it using water inside
+          its body to convert it into beam energy. This Pokémon shoots
+          beams from the small round organ above its eyes.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *x-y.pokemon.tentacool.forms.tentacool.icon
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *x-y.pokemon.tentacool.forms.tentacool.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/tentacool-default.png
+            - omega-ruby-alpha-sapphire/shiny/tentacool-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 106
+    original-melemele: 106
+    original-akala: 38
+    original-ulaula: 53
+    original-poni: 55
+  pokemon:
+    tentacool:
+      genus: *diamond-pearl.pokemon.tentacool.genus
+      color: *black-white.pokemon.tentacool.color
+      shape: *diamond-pearl.pokemon.tentacool.shape
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: *diamond-pearl.pokemon.tentacool.baby
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: *diamond-pearl.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      mega: *x-y.pokemon.tentacool.mega
+      stats: *diamond-pearl.pokemon.tentacool.stats
+      abilities: *diamond-pearl.pokemon.tentacool.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+      flavor_text:
+        sun: |-
+          They can be found lying dehydrated on
+          beaches, but they are often still alive.
+          When soaked in water, they will revive.
+        moon: |-
+          It drifts in shallow seas, such as the areas near
+          beaches. If you get bitten or stabbed by its
+          toxic tentacles, rush to the hospital.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *x-y.pokemon.tentacool.forms.tentacool.icon
+          sprites:
+            - sun-moon/shiny/tentacool-default.png
+            - sun-moon/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *x-y.pokemon.tentacool.forms.tentacool.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 129
+    updated-melemele: 129
+    updated-akala: 38
+    updated-ulaula: 56
+    updated-poni: 67
+  pokemon:
+    tentacool:
+      genus: *diamond-pearl.pokemon.tentacool.genus
+      color: *black-white.pokemon.tentacool.color
+      shape: *diamond-pearl.pokemon.tentacool.shape
+      female_rate: *gold-silver.pokemon.tentacool.female_rate
+      capture_rate: *red-blue.pokemon.tentacool.capture_rate
+      happiness: *ruby-sapphire.pokemon.tentacool.happiness
+      baby: *diamond-pearl.pokemon.tentacool.baby
+      hatch_steps: *gold-silver.pokemon.tentacool.hatch_steps
+      growth_rate: *red-blue.pokemon.tentacool.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tentacool.forms_switchable
+      name: Tentacool
+      default: *red-blue.pokemon.tentacool.default
+      height: *ruby-sapphire.pokemon.tentacool.height
+      weight: *ruby-sapphire.pokemon.tentacool.weight
+      experience: *diamond-pearl.pokemon.tentacool.experience
+      types: *red-blue.pokemon.tentacool.types
+      egg_groups: *gold-silver.pokemon.tentacool.egg_groups
+      mega: *x-y.pokemon.tentacool.mega
+      stats: *diamond-pearl.pokemon.tentacool.stats
+      abilities: *diamond-pearl.pokemon.tentacool.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.tentacool.wild_held_items.diamond
+      flavor_text:
+        ultra-sun: |-
+          It drifts through the sea searching for prey.
+          Its poisonous tentacles break off sometimes,
+          but after a while, they grow back.
+        ultra-moon: |-
+          Its body is 99% water. The remaining 1%
+          contains the organ that makes its poison.
+      forms:
+        tentacool:
+          name: Tentacool
+          form_name: *red-blue.pokemon.tentacool.forms.tentacool.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tentacool.forms.tentacool.battle_only
+          icon: *x-y.pokemon.tentacool.forms.tentacool.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/tentacool-default.png
+            - ultra-sun-ultra-moon/tentacool-default.png
+          art: *red-blue.pokemon.tentacool.forms.tentacool.art
+          footprint: *ruby-sapphire.pokemon.tentacool.forms.tentacool.footprint
+          cry: *x-y.pokemon.tentacool.forms.tentacool.cry

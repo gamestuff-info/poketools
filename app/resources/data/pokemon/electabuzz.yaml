@@ -1,0 +1,966 @@
+red-blue:
+  name: &red-blue.name ELECTABUZZ
+  position: &red-blue.position 125
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 125
+    kanto: 125
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: &red-blue.pokemon.electabuzz.default true
+      capture_rate: &red-blue.pokemon.electabuzz.capture_rate 45
+      experience: &red-blue.pokemon.electabuzz.experience 156
+      types: &red-blue.pokemon.electabuzz.types
+        - electric
+      stats: &red-blue.pokemon.electabuzz.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 83
+          effort_change: 83
+        defense:
+          base_value: 57
+          effort_change: 57
+        speed:
+          base_value: 105
+          effort_change: 105
+        special:
+          base_value: 85
+          effort_change: 85
+      growth_rate: &red-blue.pokemon.electabuzz.growth_rate medium
+      genus: &red-blue.pokemon.electabuzz.genus 'ELECTRIC Pokémon'
+      height: &red-blue.pokemon.electabuzz.height 10
+      weight: &red-blue.pokemon.electabuzz.weight 2993
+      flavor_text:
+        red: |
+          Normally found
+          near power plants,
+          they can wander
+          away and cause
+           major blackouts
+          in cities.
+        blue: |
+          Normally found
+          near power plants,
+          they can wander
+          away and cause
+           major blackouts
+          in cities.
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: &red-blue.pokemon.electabuzz.forms.electabuzz.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.electabuzz.forms.electabuzz.battle_only false
+          sprites:
+            - red-blue/electabuzz-default.png
+            - red-blue/gray/electabuzz-default.png
+            - red-blue/back/electabuzz-default.png
+          art: &red-blue.pokemon.electabuzz.forms.electabuzz.art
+            - electabuzz-default.png
+          cry: &red-blue.pokemon.electabuzz.forms.electabuzz.cry gen5/electabuzz-default.webm
+          icon: &red-blue.pokemon.electabuzz.forms.electabuzz.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: *red-blue.pokemon.electabuzz.default
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      experience: *red-blue.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      stats: *red-blue.pokemon.electabuzz.stats
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      genus: *red-blue.pokemon.electabuzz.genus
+      height: *red-blue.pokemon.electabuzz.height
+      weight: *red-blue.pokemon.electabuzz.weight
+      flavor_text:
+        yellow: |
+          If a major power
+          outage occurs, it
+          is certain that
+          this POKéMON has
+          eaten electricity
+          at a power plant.
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          sprites:
+            - yellow/electabuzz-default.png
+            - yellow/gray/electabuzz-default.png
+            - yellow/back/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+          icon: *red-blue.pokemon.electabuzz.forms.electabuzz.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 124
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 154
+    original-johto-abc: 39
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: *red-blue.pokemon.electabuzz.default
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      experience: *red-blue.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      stats: &gold-silver.pokemon.electabuzz.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 83
+          effort_change: 83
+        defense:
+          base_value: 57
+          effort_change: 57
+        speed:
+          base_value: 105
+          effort_change: 105
+        special-attack:
+          base_value: 95
+          effort_change: 95
+        special-defense:
+          base_value: 85
+          effort_change: 95
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      female_rate: &gold-silver.pokemon.electabuzz.female_rate 25
+      hatch_steps: &gold-silver.pokemon.electabuzz.hatch_steps 25
+      egg_groups: &gold-silver.pokemon.electabuzz.egg_groups
+        - humanshape
+      genus: *red-blue.pokemon.electabuzz.genus
+      height: *red-blue.pokemon.electabuzz.height
+      weight: &gold-silver.pokemon.electabuzz.weight 299
+      flavor_text:
+        gold: |
+          Electricity runs
+          across the surface
+          of its body. In
+          darkness, its en-
+          tire body glows a
+          whitish-blue.
+        silver: |
+          Its body constant-
+          ly discharges
+          electricity. Get-
+          ting close to it
+          will make your
+          hair stand on end.
+      evolution_parent: &gold-silver.pokemon.electabuzz.evolution_parent elekid/elekid
+      evolution_conditions: &gold-silver.pokemon.electabuzz.evolution_conditions
+        level-up:
+          minimum_level: 30
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          sprites:
+            - gold-silver/electabuzz-default.png
+            - gold-silver/back/electabuzz-default.png
+            - gold-silver/shiny/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+          icon: &gold-silver.pokemon.electabuzz.forms.electabuzz.icon gen2/humanshape.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: *red-blue.pokemon.electabuzz.default
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      experience: *red-blue.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      stats: *gold-silver.pokemon.electabuzz.stats
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      genus: *red-blue.pokemon.electabuzz.genus
+      height: *red-blue.pokemon.electabuzz.height
+      weight: *gold-silver.pokemon.electabuzz.weight
+      flavor_text:
+        crystal: |
+          When two
+          ELECTABUZZ touch,
+          they control the
+          electric currents
+          to communicate
+          their feelings.
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          sprites:
+            - crystal/electabuzz-default.png
+            - crystal/back/electabuzz-default.png
+            - crystal/shiny/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+          icon: *gold-silver.pokemon.electabuzz.forms.electabuzz.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 283
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: *red-blue.pokemon.electabuzz.default
+      forms_switchable: &ruby-sapphire.pokemon.electabuzz.forms_switchable false
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      experience: *red-blue.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      stats: &ruby-sapphire.pokemon.electabuzz.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 83
+          effort_change: 0
+        defense:
+          base_value: 57
+          effort_change: 0
+        speed:
+          base_value: 105
+          effort_change: 2
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      happiness: &ruby-sapphire.pokemon.electabuzz.happiness 70
+      abilities: &ruby-sapphire.pokemon.electabuzz.abilities
+        static: &ruby-sapphire.pokemon.electabuzz.abilities.static
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.electabuzz.genus
+      height: &ruby-sapphire.pokemon.electabuzz.height 11
+      weight: &ruby-sapphire.pokemon.electabuzz.weight 300
+      flavor_text:
+        ruby: |
+          When a storm arrives, gangs of this
+          POKéMON compete with each other to
+          scale heights that are likely to be
+          stricken by lightning bolts.
+           Some towns use ELECTABUZZ in place of
+          lightning rods.
+        sapphire: |
+          When a storm arrives, gangs of this
+          POKéMON compete with each other to
+          scale heights that are likely to be
+          stricken by lightning bolts.
+           Some towns use ELECTABUZZ in place of
+          lightning rods.
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: &ruby-sapphire.pokemon.electabuzz.forms.electabuzz.icon gen5/electabuzz-default.png
+          sprites:
+            - ruby-sapphire/electabuzz-default.png
+            - ruby-sapphire/back/electabuzz-default.png
+            - ruby-sapphire/shiny/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: &ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint electabuzz.png
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: *red-blue.pokemon.electabuzz.default
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      experience: *red-blue.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      stats: *ruby-sapphire.pokemon.electabuzz.stats
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      abilities: *ruby-sapphire.pokemon.electabuzz.abilities
+      genus: *red-blue.pokemon.electabuzz.genus
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      flavor_text:
+        emerald: |
+          When a storm approaches, it competes with
+          others to scale heights that are likely to
+          be stricken by lightning. Some towns use
+          ELECTABUZZ in place of lightning rods.
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.icon
+          sprites:
+            - emerald/electabuzz-default.png
+            - emerald/shiny/electabuzz-default.png
+            - emerald/animated/electabuzz-default.webm
+            - emerald/animated/shiny/electabuzz-default.webm
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 84
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: *red-blue.pokemon.electabuzz.default
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      experience: *red-blue.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      stats: *ruby-sapphire.pokemon.electabuzz.stats
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      abilities: *ruby-sapphire.pokemon.electabuzz.abilities
+      genus: *red-blue.pokemon.electabuzz.genus
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          sprites:
+            - colosseum/electabuzz-default.png
+            - colosseum/shiny/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: *red-blue.pokemon.electabuzz.default
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      experience: *red-blue.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      stats: *ruby-sapphire.pokemon.electabuzz.stats
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      abilities: *ruby-sapphire.pokemon.electabuzz.abilities
+      genus: *red-blue.pokemon.electabuzz.genus
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          sprites:
+            - xd/electabuzz-default.png
+            - xd/shiny/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    electabuzz:
+      name: ELECTABUZZ
+      default: *red-blue.pokemon.electabuzz.default
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      experience: *red-blue.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      stats: *ruby-sapphire.pokemon.electabuzz.stats
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      abilities: *ruby-sapphire.pokemon.electabuzz.abilities
+      genus: *red-blue.pokemon.electabuzz.genus
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      flavor_text:
+        firered: |
+          It loves to feed on strong electricity.
+          It occasionally appears around large
+          power plants and so on.
+        leafgreen: |
+          Normally found near power plants, they
+          can wander away and cause major
+          blackouts in cities.
+      forms:
+        electabuzz:
+          name: ELECTABUZZ
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.icon
+          sprites:
+            - firered-leafgreen/electabuzz-default.png
+            - firered-leafgreen/back/electabuzz-default.png
+            - firered-leafgreen/shiny/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Electabuzz
+  position: &diamond-pearl.position 146
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    electabuzz:
+      genus: &diamond-pearl.pokemon.electabuzz.genus 'Electric Pokémon'
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      shape: &diamond-pearl.pokemon.electabuzz.shape upright
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: &diamond-pearl.pokemon.electabuzz.baby false
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      pal_park: &diamond-pearl.pokemon.electabuzz.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: &diamond-pearl.pokemon.electabuzz.experience 172
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      stats: &diamond-pearl.pokemon.electabuzz.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 83
+          effort_change: 0
+        defense:
+          base_value: 57
+          effort_change: 0
+        speed:
+          base_value: 105
+          effort_change: 2
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.electabuzz.abilities
+        static: *ruby-sapphire.pokemon.electabuzz.abilities.static
+        vital-spirit:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.electabuzz.wild_held_items.diamond
+          electirizer: 50
+        pearl: &diamond-pearl.pokemon.electabuzz.wild_held_items.pearl
+          electirizer: 5
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        diamond: |
+          Half of all blackouts occur when
+          this Pokémon appears at power
+          plants and eats electricity.
+        pearl: |
+          Half of all blackouts occur when
+          this Pokémon appears at power
+          plants and eats electricity.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.icon
+          sprites:
+            - diamond-pearl/back/shiny/electabuzz-default.png
+            - diamond-pearl/back/electabuzz-default.png
+            - diamond-pearl/shiny/electabuzz-default.png
+            - diamond-pearl/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 198
+  pokemon:
+    electabuzz:
+      genus: *diamond-pearl.pokemon.electabuzz.genus
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      shape: *diamond-pearl.pokemon.electabuzz.shape
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: *diamond-pearl.pokemon.electabuzz.baby
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      pal_park: *diamond-pearl.pokemon.electabuzz.pal_park
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: *diamond-pearl.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      stats: *diamond-pearl.pokemon.electabuzz.stats
+      abilities: *diamond-pearl.pokemon.electabuzz.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.electabuzz.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        platinum: |
+          It windmills its arms to slightly
+          boost its punches. Foes have been
+          known to escape in the meantime.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.icon
+          sprites:
+            - platinum/back/shiny/electabuzz-default.png
+            - platinum/back/electabuzz-default.png
+            - platinum/shiny/electabuzz-default.png
+            - platinum/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 157
+  pokemon:
+    electabuzz:
+      genus: *diamond-pearl.pokemon.electabuzz.genus
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      shape: *diamond-pearl.pokemon.electabuzz.shape
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: *diamond-pearl.pokemon.electabuzz.baby
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      pal_park: *diamond-pearl.pokemon.electabuzz.pal_park
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: *diamond-pearl.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      stats: *diamond-pearl.pokemon.electabuzz.stats
+      abilities: *diamond-pearl.pokemon.electabuzz.abilities
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Electricity runs across the surface
+          of its body. In darkness, its entire
+          body glows a whitish-blue.
+        soulsilver: |
+          Its body constantly discharges
+          electricity. Getting close to it
+          will make your hair stand on end.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 2-4
+            stamina:
+              base_value: 3
+              range: 2-4
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/electabuzz-default.png
+            - heartgold-soulsilver/back/electabuzz-default.png
+            - heartgold-soulsilver/shiny/electabuzz-default.png
+            - heartgold-soulsilver/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    electabuzz:
+      genus: *diamond-pearl.pokemon.electabuzz.genus
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      color: &black-white.pokemon.electabuzz.color yellow
+      shape: *diamond-pearl.pokemon.electabuzz.shape
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: *diamond-pearl.pokemon.electabuzz.baby
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: *diamond-pearl.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      stats: *diamond-pearl.pokemon.electabuzz.stats
+      abilities: *diamond-pearl.pokemon.electabuzz.abilities
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        black: |
+          It windmills its arms to slightly
+          boost its punches. Foes have been
+          known to escape in the meantime.
+        white: |
+          It windmills its arms to slightly
+          boost its punches. Foes have been
+          known to escape in the meantime.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.icon
+          sprites:
+            - black-white/back/shiny/electabuzz-default.png
+            - black-white/back/electabuzz-default.png
+            - black-white/shiny/electabuzz-default.png
+            - black-white/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 57
+  pokemon:
+    electabuzz:
+      genus: *diamond-pearl.pokemon.electabuzz.genus
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      color: *black-white.pokemon.electabuzz.color
+      shape: *diamond-pearl.pokemon.electabuzz.shape
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: *diamond-pearl.pokemon.electabuzz.baby
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: *diamond-pearl.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      stats: *diamond-pearl.pokemon.electabuzz.stats
+      abilities: *diamond-pearl.pokemon.electabuzz.abilities
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        black-2: |
+          Research is progressing on storing
+          lightning in Electabuzz so this
+          energy can be used at any time.
+        white-2: |
+          Research is progressing on storing
+          lightning in Electabuzz so this
+          energy can be used at any time.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.icon
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *red-blue.pokemon.electabuzz.forms.electabuzz.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    electabuzz:
+      genus: *diamond-pearl.pokemon.electabuzz.genus
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      color: *black-white.pokemon.electabuzz.color
+      shape: *diamond-pearl.pokemon.electabuzz.shape
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: *diamond-pearl.pokemon.electabuzz.baby
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: *diamond-pearl.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      mega: &x-y.pokemon.electabuzz.mega false
+      stats: *diamond-pearl.pokemon.electabuzz.stats
+      abilities: *diamond-pearl.pokemon.electabuzz.abilities
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        x: |
+          Electricity runs across the surface of its body.
+          In darkness, its entire body glows a whitish blue.
+        'y': |
+          It loves to feed on strong electricity. It occasionally
+          appears around large power plants and so on.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: &x-y.pokemon.electabuzz.forms.electabuzz.icon electabuzz-default.png
+          sprites:
+            - x-y/shiny/electabuzz-default.png
+            - x-y/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: &x-y.pokemon.electabuzz.forms.electabuzz.cry electabuzz-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    electabuzz:
+      genus: *diamond-pearl.pokemon.electabuzz.genus
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      color: *black-white.pokemon.electabuzz.color
+      shape: *diamond-pearl.pokemon.electabuzz.shape
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: *diamond-pearl.pokemon.electabuzz.baby
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: *diamond-pearl.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      mega: *x-y.pokemon.electabuzz.mega
+      stats: *diamond-pearl.pokemon.electabuzz.stats
+      abilities: *diamond-pearl.pokemon.electabuzz.abilities
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          When a storm arrives, gangs of this Pokémon compete with
+          each other to scale heights that are likely to be stricken by
+          lightning bolts. Some towns use Electabuzz in place of
+          lightning rods.
+        alpha-sapphire: |
+          When a storm arrives, gangs of this Pokémon compete with
+          each other to scale heights that are likely to be stricken by
+          lightning bolts. Some towns use Electabuzz in place of
+          lightning rods.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *x-y.pokemon.electabuzz.forms.electabuzz.icon
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *x-y.pokemon.electabuzz.forms.electabuzz.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/electabuzz-default.png
+            - omega-ruby-alpha-sapphire/shiny/electabuzz-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.electabuzz.wild_held_items.pearl
+        alpha-sapphire: *diamond-pearl.pokemon.electabuzz.wild_held_items.pearl
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 227
+    original-ulaula: 99
+  pokemon:
+    electabuzz:
+      genus: *diamond-pearl.pokemon.electabuzz.genus
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      color: *black-white.pokemon.electabuzz.color
+      shape: *diamond-pearl.pokemon.electabuzz.shape
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: *diamond-pearl.pokemon.electabuzz.baby
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: *diamond-pearl.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      mega: *x-y.pokemon.electabuzz.mega
+      stats: *diamond-pearl.pokemon.electabuzz.stats
+      abilities: *diamond-pearl.pokemon.electabuzz.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.electabuzz.wild_held_items.pearl
+        moon: *diamond-pearl.pokemon.electabuzz.wild_held_items.pearl
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        sun: |-
+          Half of all sudden blackouts are caused
+          by Electabuzz gathering at electric power
+          plants and gobbling up electricity.
+        moon: |-
+          Electricity leaks from it in amounts far greater
+          than the amount of electricity it eats.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *x-y.pokemon.electabuzz.forms.electabuzz.icon
+          sprites:
+            - sun-moon/shiny/electabuzz-default.png
+            - sun-moon/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *x-y.pokemon.electabuzz.forms.electabuzz.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 296
+    updated-ulaula: 117
+  pokemon:
+    electabuzz:
+      genus: *diamond-pearl.pokemon.electabuzz.genus
+      evolution_parent: *gold-silver.pokemon.electabuzz.evolution_parent
+      color: *black-white.pokemon.electabuzz.color
+      shape: *diamond-pearl.pokemon.electabuzz.shape
+      female_rate: *gold-silver.pokemon.electabuzz.female_rate
+      capture_rate: *red-blue.pokemon.electabuzz.capture_rate
+      happiness: *ruby-sapphire.pokemon.electabuzz.happiness
+      baby: *diamond-pearl.pokemon.electabuzz.baby
+      hatch_steps: *gold-silver.pokemon.electabuzz.hatch_steps
+      growth_rate: *red-blue.pokemon.electabuzz.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.electabuzz.forms_switchable
+      name: Electabuzz
+      default: *red-blue.pokemon.electabuzz.default
+      height: *ruby-sapphire.pokemon.electabuzz.height
+      weight: *ruby-sapphire.pokemon.electabuzz.weight
+      experience: *diamond-pearl.pokemon.electabuzz.experience
+      types: *red-blue.pokemon.electabuzz.types
+      egg_groups: *gold-silver.pokemon.electabuzz.egg_groups
+      mega: *x-y.pokemon.electabuzz.mega
+      stats: *diamond-pearl.pokemon.electabuzz.stats
+      abilities: *diamond-pearl.pokemon.electabuzz.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.electabuzz.wild_held_items.pearl
+        ultra-moon: *diamond-pearl.pokemon.electabuzz.wild_held_items.pearl
+      evolution_conditions: *gold-silver.pokemon.electabuzz.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Electricity permeates its body. It swings
+          its arms round and round to charge up
+          electricity before unleashing a punch.
+        ultra-moon: |-
+          While it’s often blamed for power outages, the
+          truth is the cause of outages is more often
+          an error on the part of the electric company.
+      forms:
+        electabuzz:
+          name: Electabuzz
+          form_name: *red-blue.pokemon.electabuzz.forms.electabuzz.form_name
+          default: true
+          battle_only: *red-blue.pokemon.electabuzz.forms.electabuzz.battle_only
+          icon: *x-y.pokemon.electabuzz.forms.electabuzz.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/electabuzz-default.png
+            - ultra-sun-ultra-moon/electabuzz-default.png
+          art: *red-blue.pokemon.electabuzz.forms.electabuzz.art
+          footprint: *ruby-sapphire.pokemon.electabuzz.forms.electabuzz.footprint
+          cry: *x-y.pokemon.electabuzz.forms.electabuzz.cry

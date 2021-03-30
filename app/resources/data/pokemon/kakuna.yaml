@@ -1,0 +1,927 @@
+red-blue:
+  name: &red-blue.name KAKUNA
+  position: &red-blue.position 14
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 14
+    kanto: 14
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: &red-blue.pokemon.kakuna.default true
+      capture_rate: &red-blue.pokemon.kakuna.capture_rate 120
+      experience: &red-blue.pokemon.kakuna.experience 71
+      types: &red-blue.pokemon.kakuna.types
+        - bug
+        - poison
+      stats: &red-blue.pokemon.kakuna.stats
+        hp:
+          base_value: 45
+          effort_change: 45
+        attack:
+          base_value: 25
+          effort_change: 25
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 35
+          effort_change: 35
+        special:
+          base_value: 25
+          effort_change: 25
+      growth_rate: &red-blue.pokemon.kakuna.growth_rate medium
+      genus: &red-blue.pokemon.kakuna.genus 'COCOON Pokémon'
+      height: &red-blue.pokemon.kakuna.height 6
+      weight: &red-blue.pokemon.kakuna.weight 997
+      flavor_text:
+        red: |
+          Almost incapable
+          of moving, this
+          POKéMON can only
+          harden its shell
+           to protect itself
+          from predators.
+        blue: |
+          Almost incapable
+          of moving, this
+          POKéMON can only
+          harden its shell
+           to protect itself
+          from predators.
+      evolution_parent: &red-blue.pokemon.kakuna.evolution_parent weedle/weedle
+      evolution_conditions: &red-blue.pokemon.kakuna.evolution_conditions
+        level-up:
+          minimum_level: 7
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: &red-blue.pokemon.kakuna.forms.kakuna.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.kakuna.forms.kakuna.battle_only false
+          sprites:
+            - red-blue/kakuna-default.png
+            - red-blue/gray/kakuna-default.png
+            - red-blue/back/kakuna-default.png
+          art: &red-blue.pokemon.kakuna.forms.kakuna.art
+            - kakuna-default.png
+          cry: &red-blue.pokemon.kakuna.forms.kakuna.cry gen5/kakuna-default.webm
+          icon: &red-blue.pokemon.kakuna.forms.kakuna.icon gen1/bug.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: *red-blue.pokemon.kakuna.default
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      experience: *red-blue.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      stats: *red-blue.pokemon.kakuna.stats
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      genus: *red-blue.pokemon.kakuna.genus
+      height: *red-blue.pokemon.kakuna.height
+      weight: *red-blue.pokemon.kakuna.weight
+      flavor_text:
+        yellow: |
+          Able to move only
+          slightly. When
+          endangered, it
+          may stick out its
+          stinger and poison
+          its enemy.
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          sprites:
+            - yellow/kakuna-default.png
+            - yellow/gray/kakuna-default.png
+            - yellow/back/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+          icon: *red-blue.pokemon.kakuna.forms.kakuna.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 13
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 27
+    original-johto-abc: 89
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: *red-blue.pokemon.kakuna.default
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      experience: *red-blue.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      stats: &gold-silver.pokemon.kakuna.stats
+        hp:
+          base_value: 45
+          effort_change: 45
+        attack:
+          base_value: 25
+          effort_change: 25
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 35
+          effort_change: 35
+        special-attack:
+          base_value: 25
+          effort_change: 25
+        special-defense:
+          base_value: 25
+          effort_change: 25
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      female_rate: &gold-silver.pokemon.kakuna.female_rate 50
+      hatch_steps: &gold-silver.pokemon.kakuna.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.kakuna.egg_groups
+        - bug
+      genus: *red-blue.pokemon.kakuna.genus
+      height: *red-blue.pokemon.kakuna.height
+      weight: &gold-silver.pokemon.kakuna.weight 99
+      flavor_text:
+        gold: |
+          Although it is a
+          cocoon, it can
+          move a little. It
+          can extend its
+          poison barb if it
+          is attacked.
+        silver: |
+          From this form,
+          it will grow into
+          an adult. As its
+          body becomes soft-
+          er, the external
+          shell hardens.
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          sprites:
+            - gold-silver/kakuna-default.png
+            - gold-silver/back/kakuna-default.png
+            - gold-silver/shiny/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+          icon: &gold-silver.pokemon.kakuna.forms.kakuna.icon gen2/caterpillar.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: *red-blue.pokemon.kakuna.default
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      experience: *red-blue.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      stats: *gold-silver.pokemon.kakuna.stats
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      genus: *red-blue.pokemon.kakuna.genus
+      height: *red-blue.pokemon.kakuna.height
+      weight: *gold-silver.pokemon.kakuna.weight
+      flavor_text:
+        crystal: |
+          Nearly incapable
+          of movement, it
+          leans against
+          stout trees while
+          waiting for its
+          evolution.
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          sprites:
+            - crystal/kakuna-default.png
+            - crystal/back/kakuna-default.png
+            - crystal/shiny/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+          icon: *gold-silver.pokemon.kakuna.forms.kakuna.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 216
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: *red-blue.pokemon.kakuna.default
+      forms_switchable: &ruby-sapphire.pokemon.kakuna.forms_switchable false
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      experience: *red-blue.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      stats: &ruby-sapphire.pokemon.kakuna.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 25
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 2
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      happiness: &ruby-sapphire.pokemon.kakuna.happiness 70
+      abilities: &ruby-sapphire.pokemon.kakuna.abilities
+        shed-skin:
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.kakuna.genus
+      height: *red-blue.pokemon.kakuna.height
+      weight: &ruby-sapphire.pokemon.kakuna.weight 100
+      flavor_text:
+        ruby: |
+          KAKUNA remains virtually immobile as it
+          clings to a tree. However,  on the
+          inside, it is extremely busy as it
+          prepares for its coming evolution.
+           This is evident from how hot the shell
+          becomes to the touch.
+        sapphire: |
+          KAKUNA remains virtually immobile as it
+          clings to a tree. However,  on the
+          inside, it is extremely busy as it
+          prepares for its coming evolution.
+           This is evident from how hot the shell
+          becomes to the touch.
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: &ruby-sapphire.pokemon.kakuna.forms.kakuna.icon gen5/kakuna-default.png
+          sprites:
+            - ruby-sapphire/kakuna-default.png
+            - ruby-sapphire/back/kakuna-default.png
+            - ruby-sapphire/shiny/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: &ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint kakuna.png
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: *red-blue.pokemon.kakuna.default
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      experience: *red-blue.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      stats: *ruby-sapphire.pokemon.kakuna.stats
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      genus: *red-blue.pokemon.kakuna.genus
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      flavor_text:
+        emerald: |
+          It remains virtually immobile while it
+          clings to a tree. However,  on the inside,
+          it busily prepares for evolution. This is
+          evident from how hot its shell becomes.
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *ruby-sapphire.pokemon.kakuna.forms.kakuna.icon
+          sprites:
+            - emerald/kakuna-default.png
+            - emerald/shiny/kakuna-default.png
+            - emerald/animated/kakuna-default.webm
+            - emerald/animated/shiny/kakuna-default.webm
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 149
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: *red-blue.pokemon.kakuna.default
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      experience: *red-blue.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      stats: *ruby-sapphire.pokemon.kakuna.stats
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      genus: *red-blue.pokemon.kakuna.genus
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          sprites:
+            - colosseum/kakuna-default.png
+            - colosseum/shiny/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: *red-blue.pokemon.kakuna.default
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      experience: *red-blue.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      stats: *ruby-sapphire.pokemon.kakuna.stats
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      genus: *red-blue.pokemon.kakuna.genus
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          sprites:
+            - xd/kakuna-default.png
+            - xd/shiny/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    kakuna:
+      name: KAKUNA
+      default: *red-blue.pokemon.kakuna.default
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      experience: *red-blue.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      stats: *ruby-sapphire.pokemon.kakuna.stats
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      genus: *red-blue.pokemon.kakuna.genus
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      flavor_text:
+        firered: |
+          This POKéMON is in a temporary stage
+          while making its body. It is almost
+          completely unable to move on its own.
+        leafgreen: |
+          Almost incapable of moving, this POKéMON
+          can only harden its shell to protect
+          itself when it is in danger.
+      forms:
+        kakuna:
+          name: KAKUNA
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *ruby-sapphire.pokemon.kakuna.forms.kakuna.icon
+          sprites:
+            - firered-leafgreen/kakuna-default.png
+            - firered-leafgreen/back/kakuna-default.png
+            - firered-leafgreen/shiny/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Kakuna
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    kakuna:
+      genus: &diamond-pearl.pokemon.kakuna.genus 'Cocoon Pokémon'
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      shape: &diamond-pearl.pokemon.kakuna.shape squiggle
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: &diamond-pearl.pokemon.kakuna.baby false
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      pal_park: &diamond-pearl.pokemon.kakuna.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: &diamond-pearl.pokemon.kakuna.experience 72
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      stats: &diamond-pearl.pokemon.kakuna.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 25
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 2
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 25
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      flavor_text:
+        diamond: |
+          While awaiting evolution, it
+          hides from predators under
+          leaves and in nooks of branches.
+        pearl: |
+          While awaiting evolution, it
+          hides from predators under
+          leaves and in nooks of branches.
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *ruby-sapphire.pokemon.kakuna.forms.kakuna.icon
+          sprites:
+            - diamond-pearl/back/shiny/kakuna-default.png
+            - diamond-pearl/back/kakuna-default.png
+            - diamond-pearl/shiny/kakuna-default.png
+            - diamond-pearl/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    kakuna:
+      genus: *diamond-pearl.pokemon.kakuna.genus
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      shape: *diamond-pearl.pokemon.kakuna.shape
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: *diamond-pearl.pokemon.kakuna.baby
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      pal_park: *diamond-pearl.pokemon.kakuna.pal_park
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: *diamond-pearl.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      stats: *diamond-pearl.pokemon.kakuna.stats
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      flavor_text:
+        platinum: |
+          While awaiting evolution, it
+          hides from predators under
+          leaves and in nooks of branches.
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *ruby-sapphire.pokemon.kakuna.forms.kakuna.icon
+          sprites:
+            - platinum/back/shiny/kakuna-default.png
+            - platinum/back/kakuna-default.png
+            - platinum/shiny/kakuna-default.png
+            - platinum/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 28
+  pokemon:
+    kakuna:
+      genus: *diamond-pearl.pokemon.kakuna.genus
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      shape: *diamond-pearl.pokemon.kakuna.shape
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: *diamond-pearl.pokemon.kakuna.baby
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      pal_park: *diamond-pearl.pokemon.kakuna.pal_park
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: *diamond-pearl.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      stats: *diamond-pearl.pokemon.kakuna.stats
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Although it is a cocoon, it can
+          move a little. It can extend its
+          poison barb if it is attacked.
+        soulsilver: |
+          From this form, it will grow into
+          an adult. As its body becomes softer,
+          the external shell hardens.
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-3
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 1
+              range: 1
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.kakuna.forms.kakuna.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/kakuna-default.png
+            - heartgold-soulsilver/back/kakuna-default.png
+            - heartgold-soulsilver/shiny/kakuna-default.png
+            - heartgold-soulsilver/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    kakuna:
+      genus: *diamond-pearl.pokemon.kakuna.genus
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      color: &black-white.pokemon.kakuna.color yellow
+      shape: *diamond-pearl.pokemon.kakuna.shape
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: *diamond-pearl.pokemon.kakuna.baby
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: *diamond-pearl.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      stats: *diamond-pearl.pokemon.kakuna.stats
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      flavor_text:
+        black: |
+          While awaiting evolution, it
+          hides from predators under
+          leaves and in nooks of branches.
+        white: |
+          While awaiting evolution, it
+          hides from predators under
+          leaves and in nooks of branches.
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *ruby-sapphire.pokemon.kakuna.forms.kakuna.icon
+          sprites:
+            - black-white/back/shiny/kakuna-default.png
+            - black-white/back/kakuna-default.png
+            - black-white/shiny/kakuna-default.png
+            - black-white/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    kakuna:
+      genus: *diamond-pearl.pokemon.kakuna.genus
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      color: *black-white.pokemon.kakuna.color
+      shape: *diamond-pearl.pokemon.kakuna.shape
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: *diamond-pearl.pokemon.kakuna.baby
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: *diamond-pearl.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      stats: *diamond-pearl.pokemon.kakuna.stats
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      flavor_text:
+        black-2: |
+          While awaiting evolution, it
+          hides from predators under
+          leaves and in nooks of branches.
+        white-2: |
+          While awaiting evolution, it
+          hides from predators under
+          leaves and in nooks of branches.
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *ruby-sapphire.pokemon.kakuna.forms.kakuna.icon
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *red-blue.pokemon.kakuna.forms.kakuna.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 27
+  pokemon:
+    kakuna:
+      genus: *diamond-pearl.pokemon.kakuna.genus
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      color: *black-white.pokemon.kakuna.color
+      shape: *diamond-pearl.pokemon.kakuna.shape
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: *diamond-pearl.pokemon.kakuna.baby
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: *diamond-pearl.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      mega: &x-y.pokemon.kakuna.mega false
+      stats: *diamond-pearl.pokemon.kakuna.stats
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      flavor_text:
+        x: |
+          Almost incapable of moving, this Pokémon can only
+          harden its shell to protect itself when it is
+          in danger.
+        'y': |
+          While awaiting evolution, it hides from predators
+          under leaves and in nooks of branches.
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: &x-y.pokemon.kakuna.forms.kakuna.icon kakuna-default.png
+          sprites:
+            - x-y/shiny/kakuna-default.png
+            - x-y/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: &x-y.pokemon.kakuna.forms.kakuna.cry kakuna-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    kakuna:
+      genus: *diamond-pearl.pokemon.kakuna.genus
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      color: *black-white.pokemon.kakuna.color
+      shape: *diamond-pearl.pokemon.kakuna.shape
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: *diamond-pearl.pokemon.kakuna.baby
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: *diamond-pearl.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      mega: *x-y.pokemon.kakuna.mega
+      stats: *diamond-pearl.pokemon.kakuna.stats
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Kakuna remains virtually immobile as it clings to a tree.
+          However, on the inside, it is extremely busy as it prepares for
+          its coming evolution. This is evident from how hot the shell
+          becomes to the touch.
+        alpha-sapphire: |
+          Kakuna remains virtually immobile as it clings to a tree.
+          However, on the inside, it is extremely busy as it prepares
+          for its coming evolution.
+          This is evident from how hot the shell becomes to the touch.
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *x-y.pokemon.kakuna.forms.kakuna.icon
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *x-y.pokemon.kakuna.forms.kakuna.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/kakuna-default.png
+            - omega-ruby-alpha-sapphire/shiny/kakuna-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    kakuna:
+      genus: *diamond-pearl.pokemon.kakuna.genus
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      color: *black-white.pokemon.kakuna.color
+      shape: *diamond-pearl.pokemon.kakuna.shape
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: *diamond-pearl.pokemon.kakuna.baby
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: *diamond-pearl.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      mega: *x-y.pokemon.kakuna.mega
+      stats: *diamond-pearl.pokemon.kakuna.stats
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *x-y.pokemon.kakuna.forms.kakuna.icon
+          sprites:
+            - sun-moon/shiny/kakuna-default.png
+            - sun-moon/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *x-y.pokemon.kakuna.forms.kakuna.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    kakuna:
+      genus: *diamond-pearl.pokemon.kakuna.genus
+      evolution_parent: *red-blue.pokemon.kakuna.evolution_parent
+      color: *black-white.pokemon.kakuna.color
+      shape: *diamond-pearl.pokemon.kakuna.shape
+      female_rate: *gold-silver.pokemon.kakuna.female_rate
+      capture_rate: *red-blue.pokemon.kakuna.capture_rate
+      happiness: *ruby-sapphire.pokemon.kakuna.happiness
+      baby: *diamond-pearl.pokemon.kakuna.baby
+      hatch_steps: *gold-silver.pokemon.kakuna.hatch_steps
+      growth_rate: *red-blue.pokemon.kakuna.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kakuna.forms_switchable
+      name: Kakuna
+      default: *red-blue.pokemon.kakuna.default
+      height: *red-blue.pokemon.kakuna.height
+      weight: *ruby-sapphire.pokemon.kakuna.weight
+      experience: *diamond-pearl.pokemon.kakuna.experience
+      types: *red-blue.pokemon.kakuna.types
+      egg_groups: *gold-silver.pokemon.kakuna.egg_groups
+      mega: *x-y.pokemon.kakuna.mega
+      stats: *diamond-pearl.pokemon.kakuna.stats
+      abilities: *ruby-sapphire.pokemon.kakuna.abilities
+      evolution_conditions: *red-blue.pokemon.kakuna.evolution_conditions
+      forms:
+        kakuna:
+          name: Kakuna
+          form_name: *red-blue.pokemon.kakuna.forms.kakuna.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kakuna.forms.kakuna.battle_only
+          icon: *x-y.pokemon.kakuna.forms.kakuna.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/kakuna-default.png
+            - ultra-sun-ultra-moon/kakuna-default.png
+          art: *red-blue.pokemon.kakuna.forms.kakuna.art
+          footprint: *ruby-sapphire.pokemon.kakuna.forms.kakuna.footprint
+          cry: *x-y.pokemon.kakuna.forms.kakuna.cry

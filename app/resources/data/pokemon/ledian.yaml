@@ -1,0 +1,878 @@
+gold-silver:
+  name: &gold-silver.name LEDIAN
+  position: &gold-silver.position 165
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 166
+    original-johto: 30
+    original-johto-abc: 98
+  pokemon:
+    ledian:
+      name: LEDIAN
+      default: &gold-silver.pokemon.ledian.default true
+      capture_rate: &gold-silver.pokemon.ledian.capture_rate 90
+      experience: &gold-silver.pokemon.ledian.experience 134
+      types: &gold-silver.pokemon.ledian.types
+        - bug
+        - flying
+      stats: &gold-silver.pokemon.ledian.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 35
+          effort_change: 35
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 85
+          effort_change: 85
+        special-attack:
+          base_value: 55
+          effort_change: 55
+        special-defense:
+          base_value: 110
+          effort_change: 55
+      growth_rate: &gold-silver.pokemon.ledian.growth_rate fast
+      female_rate: &gold-silver.pokemon.ledian.female_rate 50
+      hatch_steps: &gold-silver.pokemon.ledian.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.ledian.egg_groups
+        - bug
+      genus: &gold-silver.pokemon.ledian.genus 'FIVE STAR Pokémon'
+      height: &gold-silver.pokemon.ledian.height 13
+      weight: &gold-silver.pokemon.ledian.weight 353
+      flavor_text:
+        gold: |
+          When the stars
+          flicker in the
+          night sky, it
+          flutters about,
+          scattering a
+          glowing powder.
+        silver: |
+          The star patterns
+          on its back grow
+          larger or smaller
+          depending on the
+          number of stars in
+          the night sky.
+      evolution_parent: &gold-silver.pokemon.ledian.evolution_parent ledyba/ledyba
+      evolution_conditions: &gold-silver.pokemon.ledian.evolution_conditions
+        level-up:
+          minimum_level: 18
+      forms:
+        ledian:
+          name: LEDIAN
+          form_name: &gold-silver.pokemon.ledian.forms.ledian.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.ledian.forms.ledian.battle_only false
+          sprites:
+            - gold-silver/ledian-default.png
+            - gold-silver/back/ledian-default.png
+            - gold-silver/shiny/ledian-default.png
+          art: &gold-silver.pokemon.ledian.forms.ledian.art
+            - ledian-default.png
+          cry: &gold-silver.pokemon.ledian.forms.ledian.cry gen5/ledian-default.webm
+          icon: &gold-silver.pokemon.ledian.forms.ledian.icon gen2/bug.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    ledian:
+      name: LEDIAN
+      default: *gold-silver.pokemon.ledian.default
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      experience: *gold-silver.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      stats: *gold-silver.pokemon.ledian.stats
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      genus: *gold-silver.pokemon.ledian.genus
+      height: *gold-silver.pokemon.ledian.height
+      weight: *gold-silver.pokemon.ledian.weight
+      flavor_text:
+        crystal: |
+          In the daytime
+          when it gets warm,
+          it curls up inside
+          a big leaf and
+          drifts off into
+          a deep slumber.
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      forms:
+        ledian:
+          name: LEDIAN
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          sprites:
+            - crystal/ledian-default.png
+            - crystal/back/ledian-default.png
+            - crystal/shiny/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+          icon: *gold-silver.pokemon.ledian.forms.ledian.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 166
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 321
+  pokemon:
+    ledian:
+      name: LEDIAN
+      default: *gold-silver.pokemon.ledian.default
+      forms_switchable: &ruby-sapphire.pokemon.ledian.forms_switchable false
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      experience: *gold-silver.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      stats: &ruby-sapphire.pokemon.ledian.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 2
+        special-defense:
+          base_value: 55
+          effort_change: 2
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      happiness: &ruby-sapphire.pokemon.ledian.happiness 70
+      abilities: &ruby-sapphire.pokemon.ledian.abilities
+        swarm: &ruby-sapphire.pokemon.ledian.abilities.swarm
+          hidden: &ruby-sapphire.pokemon.ledian.abilities.swarm.hidden false
+          position: 1
+        early-bird: &ruby-sapphire.pokemon.ledian.abilities.early-bird
+          hidden: *ruby-sapphire.pokemon.ledian.abilities.swarm.hidden
+          position: 2
+      genus: *gold-silver.pokemon.ledian.genus
+      height: &ruby-sapphire.pokemon.ledian.height 14
+      weight: &ruby-sapphire.pokemon.ledian.weight 356
+      flavor_text:
+        ruby: |
+          It is said that in lands with clean air,
+          where the stars fill the sky, there live
+          LEDIAN in countless numbers.
+          There is a good reason for this - the
+          POKéMON uses the light of the stars
+          as its energy.
+        sapphire: |
+          It is said that in lands with clean air,
+          where the stars fill the sky, there live
+          LEDIAN in countless numbers.
+          There is a good reason for this - the
+          POKéMON uses the light of the stars
+          as its energy.
+      forms:
+        ledian:
+          name: LEDIAN
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: &ruby-sapphire.pokemon.ledian.forms.ledian.icon gen5/ledian-default.png
+          sprites:
+            - ruby-sapphire/ledian-default.png
+            - ruby-sapphire/back/ledian-default.png
+            - ruby-sapphire/shiny/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: &ruby-sapphire.pokemon.ledian.forms.ledian.footprint ledian.png
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    ledian:
+      name: LEDIAN
+      default: *gold-silver.pokemon.ledian.default
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      experience: *gold-silver.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      stats: *ruby-sapphire.pokemon.ledian.stats
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      abilities: *ruby-sapphire.pokemon.ledian.abilities
+      genus: *gold-silver.pokemon.ledian.genus
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      flavor_text:
+        emerald: |
+          It is said that in lands with clean air,
+          where the stars fill the sky, there live
+          many LEDIAN. For good reason, they use
+          the light of the stars as energy.
+      forms:
+        ledian:
+          name: LEDIAN
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *ruby-sapphire.pokemon.ledian.forms.ledian.icon
+          sprites:
+            - emerald/ledian-default.png
+            - emerald/shiny/ledian-default.png
+            - emerald/animated/ledian-default.webm
+            - emerald/animated/shiny/ledian-default.webm
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 164
+  pokemon:
+    ledian:
+      name: LEDIAN
+      default: *gold-silver.pokemon.ledian.default
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      experience: *gold-silver.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      stats: *ruby-sapphire.pokemon.ledian.stats
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      abilities: *ruby-sapphire.pokemon.ledian.abilities
+      genus: *gold-silver.pokemon.ledian.genus
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      forms:
+        ledian:
+          name: LEDIAN
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          sprites:
+            - colosseum/ledian-default.png
+            - colosseum/shiny/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    ledian:
+      name: LEDIAN
+      default: *gold-silver.pokemon.ledian.default
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      experience: *gold-silver.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      stats: *ruby-sapphire.pokemon.ledian.stats
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      abilities: *ruby-sapphire.pokemon.ledian.abilities
+      genus: *gold-silver.pokemon.ledian.genus
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      forms:
+        ledian:
+          name: LEDIAN
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          sprites:
+            - xd/ledian-default.png
+            - xd/shiny/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    ledian:
+      name: LEDIAN
+      default: *gold-silver.pokemon.ledian.default
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      experience: *gold-silver.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      stats: *ruby-sapphire.pokemon.ledian.stats
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      abilities: *ruby-sapphire.pokemon.ledian.abilities
+      genus: *gold-silver.pokemon.ledian.genus
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      flavor_text:
+        firered: |
+          The star patterns on its back grow larger
+          or smaller depending on the number of
+          stars in the night sky.
+        leafgreen: |
+          When the stars flicker in the night sky, it
+          flutters about, scattering a glowing
+          powder.
+      forms:
+        ledian:
+          name: LEDIAN
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *ruby-sapphire.pokemon.ledian.forms.ledian.icon
+          sprites:
+            - firered-leafgreen/ledian-default.png
+            - firered-leafgreen/back/ledian-default.png
+            - firered-leafgreen/shiny/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Ledian
+  position: &diamond-pearl.position 198
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledian:
+      genus: &diamond-pearl.pokemon.ledian.genus 'Five Star Pokémon'
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      shape: &diamond-pearl.pokemon.ledian.shape wings
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: &diamond-pearl.pokemon.ledian.baby false
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      pal_park: &diamond-pearl.pokemon.ledian.pal_park
+        area: field
+        rate: 30
+        score: 50
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: &diamond-pearl.pokemon.ledian.experience 137
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      stats: &diamond-pearl.pokemon.ledian.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 110
+          effort_change: 2
+      abilities: &diamond-pearl.pokemon.ledian.abilities
+        swarm: *ruby-sapphire.pokemon.ledian.abilities.swarm
+        early-bird: *ruby-sapphire.pokemon.ledian.abilities.early-bird
+        iron-fist:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        diamond: |
+          It uses starlight as energy. When
+          more stars appear at night, the
+          patterns on its back grow larger.
+        pearl: |
+          It uses starlight as energy. When
+          more stars appear at night, the
+          patterns on its back grow larger.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *ruby-sapphire.pokemon.ledian.forms.ledian.icon
+          sprites:
+            - diamond-pearl/ledian-default.png
+            - diamond-pearl/back/ledian-default.png
+            - diamond-pearl/back/female/ledian-default.png
+            - diamond-pearl/back/shiny/ledian-default.png
+            - diamond-pearl/female/ledian-default.png
+            - diamond-pearl/shiny/ledian-default.png
+            - diamond-pearl/shiny/female/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledian:
+      genus: *diamond-pearl.pokemon.ledian.genus
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      shape: *diamond-pearl.pokemon.ledian.shape
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: *diamond-pearl.pokemon.ledian.baby
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ledian.pal_park
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: *diamond-pearl.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      stats: *diamond-pearl.pokemon.ledian.stats
+      abilities: *diamond-pearl.pokemon.ledian.abilities
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        platinum: |
+          It uses starlight as energy. When
+          more stars appear at night, the
+          patterns on its back grow larger.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *ruby-sapphire.pokemon.ledian.forms.ledian.icon
+          sprites:
+            - platinum/ledian-default.png
+            - platinum/back/ledian-default.png
+            - platinum/back/female/ledian-default.png
+            - platinum/back/shiny/ledian-default.png
+            - platinum/female/ledian-default.png
+            - platinum/shiny/ledian-default.png
+            - platinum/shiny/female/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 31
+  pokemon:
+    ledian:
+      genus: *diamond-pearl.pokemon.ledian.genus
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      shape: *diamond-pearl.pokemon.ledian.shape
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: *diamond-pearl.pokemon.ledian.baby
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ledian.pal_park
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: *diamond-pearl.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      stats: *diamond-pearl.pokemon.ledian.stats
+      abilities: *diamond-pearl.pokemon.ledian.abilities
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        heartgold: |
+          When the stars flicker in the
+          night sky, it flutters about,
+          scattering a glowing powder.
+        soulsilver: |
+          The spot patterns on its back grow
+          larger or smaller depending on the
+          number of stars in the night sky.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 2-5
+            power:
+              base_value: 1
+              range: 1-2
+            skill:
+              base_value: 3
+              range: 1-5
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 5
+              range: 3-5
+          icon: *ruby-sapphire.pokemon.ledian.forms.ledian.icon
+          sprites:
+            - heartgold-soulsilver/ledian-default.png
+            - heartgold-soulsilver/back/ledian-default.png
+            - heartgold-soulsilver/back/female/ledian-default.png
+            - heartgold-soulsilver/back/shiny/ledian-default.png
+            - heartgold-soulsilver/female/ledian-default.png
+            - heartgold-soulsilver/shiny/ledian-default.png
+            - heartgold-soulsilver/shiny/female/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledian:
+      genus: *diamond-pearl.pokemon.ledian.genus
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      color: &black-white.pokemon.ledian.color red
+      shape: *diamond-pearl.pokemon.ledian.shape
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: *diamond-pearl.pokemon.ledian.baby
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: *diamond-pearl.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      stats: *diamond-pearl.pokemon.ledian.stats
+      abilities: *diamond-pearl.pokemon.ledian.abilities
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        black: |
+          It uses starlight as energy. When
+          more stars appear at night, the
+          patterns on its back grow larger.
+        white: |
+          It uses starlight as energy. When
+          more stars appear at night, the
+          patterns on its back grow larger.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *ruby-sapphire.pokemon.ledian.forms.ledian.icon
+          sprites:
+            - black-white/ledian-default.png
+            - black-white/back/ledian-default.png
+            - black-white/back/female/ledian-default.png
+            - black-white/back/shiny/ledian-default.png
+            - black-white/female/ledian-default.png
+            - black-white/shiny/ledian-default.png
+            - black-white/shiny/female/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledian:
+      genus: *diamond-pearl.pokemon.ledian.genus
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      color: *black-white.pokemon.ledian.color
+      shape: *diamond-pearl.pokemon.ledian.shape
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: *diamond-pearl.pokemon.ledian.baby
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: *diamond-pearl.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      stats: *diamond-pearl.pokemon.ledian.stats
+      abilities: *diamond-pearl.pokemon.ledian.abilities
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        black-2: |
+          It uses starlight as energy. When
+          more stars appear at night, the
+          patterns on its back grow larger.
+        white-2: |
+          It uses starlight as energy. When
+          more stars appear at night, the
+          patterns on its back grow larger.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *ruby-sapphire.pokemon.ledian.forms.ledian.icon
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *gold-silver.pokemon.ledian.forms.ledian.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-central: 75
+  pokemon:
+    ledian:
+      genus: *diamond-pearl.pokemon.ledian.genus
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      color: *black-white.pokemon.ledian.color
+      shape: *diamond-pearl.pokemon.ledian.shape
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: *diamond-pearl.pokemon.ledian.baby
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: *diamond-pearl.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      mega: &x-y.pokemon.ledian.mega false
+      stats: *diamond-pearl.pokemon.ledian.stats
+      abilities: *diamond-pearl.pokemon.ledian.abilities
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        x: |
+          When the stars flicker in the night sky, it flutters
+          about, scattering a glowing powder.
+        'y': |
+          The spot patterns on its back grow larger or smaller
+          depending on the number of stars in the night sky.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: &x-y.pokemon.ledian.forms.ledian.icon ledian-default.png
+          sprites:
+            - x-y/ledian-default.png
+            - x-y/female/ledian-default.png
+            - x-y/shiny/ledian-default.png
+            - x-y/shiny/female/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: &x-y.pokemon.ledian.forms.ledian.cry ledian-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledian:
+      genus: *diamond-pearl.pokemon.ledian.genus
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      color: *black-white.pokemon.ledian.color
+      shape: *diamond-pearl.pokemon.ledian.shape
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: *diamond-pearl.pokemon.ledian.baby
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: *diamond-pearl.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      mega: *x-y.pokemon.ledian.mega
+      stats: *diamond-pearl.pokemon.ledian.stats
+      abilities: *diamond-pearl.pokemon.ledian.abilities
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It is said that in lands with clean air, where the stars fill the
+          sky, there live Ledian in countless numbers. There is a good
+          reason for this—the Pokémon uses the light of the stars as
+          its energy.
+        alpha-sapphire: |
+          It is said that in lands with clean air, where the stars fill the
+          sky, there live Ledian in countless numbers. There is a good
+          reason for this—the Pokémon uses the light of the stars as
+          its energy.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *x-y.pokemon.ledian.forms.ledian.icon
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *x-y.pokemon.ledian.forms.ledian.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/ledian-default.png
+            - omega-ruby-alpha-sapphire/shiny/ledian-default.png
+            - omega-ruby-alpha-sapphire/female/ledian-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/ledian-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 21
+    original-melemele: 21
+    original-ulaula: 9
+  pokemon:
+    ledian:
+      genus: *diamond-pearl.pokemon.ledian.genus
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      color: *black-white.pokemon.ledian.color
+      shape: *diamond-pearl.pokemon.ledian.shape
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: *diamond-pearl.pokemon.ledian.baby
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: *diamond-pearl.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      mega: *x-y.pokemon.ledian.mega
+      stats: *diamond-pearl.pokemon.ledian.stats
+      abilities: *diamond-pearl.pokemon.ledian.abilities
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        sun: |-
+          While it’s believed that starlight provides it with
+          energy, this Pokémon also loves to eat berries.
+          In the daytime, it curls up in the grass to sleep.
+        moon: |-
+          In battle, it throws punches with all four arms.
+          The power of each individual blow is piddly,
+          so it aims to win by quantity rather than quality.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *x-y.pokemon.ledian.forms.ledian.icon
+          sprites:
+            - sun-moon/ledian-default.png
+            - sun-moon/female/ledian-default.png
+            - sun-moon/shiny/ledian-default.png
+            - sun-moon/shiny/female/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *x-y.pokemon.ledian.forms.ledian.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 21
+    updated-melemele: 21
+    updated-ulaula: 9
+  pokemon:
+    ledian:
+      genus: *diamond-pearl.pokemon.ledian.genus
+      evolution_parent: *gold-silver.pokemon.ledian.evolution_parent
+      color: *black-white.pokemon.ledian.color
+      shape: *diamond-pearl.pokemon.ledian.shape
+      female_rate: *gold-silver.pokemon.ledian.female_rate
+      capture_rate: *gold-silver.pokemon.ledian.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledian.happiness
+      baby: *diamond-pearl.pokemon.ledian.baby
+      hatch_steps: *gold-silver.pokemon.ledian.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledian.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledian.forms_switchable
+      name: Ledian
+      default: *gold-silver.pokemon.ledian.default
+      height: *ruby-sapphire.pokemon.ledian.height
+      weight: *ruby-sapphire.pokemon.ledian.weight
+      experience: *diamond-pearl.pokemon.ledian.experience
+      types: *gold-silver.pokemon.ledian.types
+      egg_groups: *gold-silver.pokemon.ledian.egg_groups
+      mega: *x-y.pokemon.ledian.mega
+      stats: *diamond-pearl.pokemon.ledian.stats
+      abilities: *diamond-pearl.pokemon.ledian.abilities
+      evolution_conditions: *gold-silver.pokemon.ledian.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It’s said that the patterns on its back are
+          related to the stars in the night sky, but the
+          details of that relationship remain unclear.
+        ultra-moon: |-
+          It flies through the night sky, sprinkling sparkly
+          dust. According to some, if that dust sticks to
+          you, good things will happen to you.
+      forms:
+        ledian:
+          name: Ledian
+          form_name: *gold-silver.pokemon.ledian.forms.ledian.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledian.forms.ledian.battle_only
+          icon: *x-y.pokemon.ledian.forms.ledian.icon
+          sprites:
+            - ultra-sun-ultra-moon/ledian-default.png
+            - ultra-sun-ultra-moon/female/ledian-default.png
+            - ultra-sun-ultra-moon/shiny/ledian-default.png
+            - ultra-sun-ultra-moon/shiny/female/ledian-default.png
+          art: *gold-silver.pokemon.ledian.forms.ledian.art
+          footprint: *ruby-sapphire.pokemon.ledian.forms.ledian.footprint
+          cry: *x-y.pokemon.ledian.forms.ledian.cry

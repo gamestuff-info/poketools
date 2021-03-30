@@ -1,0 +1,1084 @@
+red-blue:
+  name: &red-blue.name DUGTRIO
+  position: &red-blue.position 51
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 51
+    kanto: 51
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: &red-blue.pokemon.dugtrio.default true
+      capture_rate: &red-blue.pokemon.dugtrio.capture_rate 50
+      experience: &red-blue.pokemon.dugtrio.experience 153
+      types: &red-blue.pokemon.dugtrio.types
+        - ground
+      stats: &red-blue.pokemon.dugtrio.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 80
+          effort_change: 80
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 120
+          effort_change: 120
+        special:
+          base_value: 70
+          effort_change: 70
+      growth_rate: &red-blue.pokemon.dugtrio.growth_rate medium
+      genus: &red-blue.pokemon.dugtrio.genus 'MOLE Pokémon'
+      height: &red-blue.pokemon.dugtrio.height 7
+      weight: &red-blue.pokemon.dugtrio.weight 3311
+      flavor_text:
+        red: |
+          A team of DIGLETT
+          triplets.
+          It triggers huge
+          earthquakes by
+          burrowing 60 miles
+          underground.
+        blue: |
+          A team of DIGLETT
+          triplets.
+          It triggers huge
+          earthquakes by
+          burrowing 60 miles
+          underground.
+      evolution_parent: &red-blue.pokemon.dugtrio.evolution_parent diglett/diglett
+      evolution_conditions: &red-blue.pokemon.dugtrio.evolution_conditions
+        level-up:
+          minimum_level: 26
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: &red-blue.pokemon.dugtrio.forms.dugtrio.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.dugtrio.forms.dugtrio.battle_only false
+          sprites:
+            - red-blue/dugtrio-default.png
+            - red-blue/gray/dugtrio-default.png
+            - red-blue/back/dugtrio-default.png
+          art: &red-blue.pokemon.dugtrio.forms.dugtrio.art
+            - dugtrio-default.png
+          cry: &red-blue.pokemon.dugtrio.forms.dugtrio.cry gen5/dugtrio-default.webm
+          icon: &red-blue.pokemon.dugtrio.forms.dugtrio.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: *red-blue.pokemon.dugtrio.default
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      experience: *red-blue.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      stats: *red-blue.pokemon.dugtrio.stats
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      genus: *red-blue.pokemon.dugtrio.genus
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *red-blue.pokemon.dugtrio.weight
+      flavor_text:
+        yellow: |
+          A team of triplets
+          that can burrow
+          over 60 MPH.
+          Due to this, some
+           people think it's
+          an earthquake.
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          sprites:
+            - yellow/dugtrio-default.png
+            - yellow/gray/dugtrio-default.png
+            - yellow/back/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+          icon: *red-blue.pokemon.dugtrio.forms.dugtrio.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 50
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 132
+    original-johto-abc: 35
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: *red-blue.pokemon.dugtrio.default
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      experience: *red-blue.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      stats: &gold-silver.pokemon.dugtrio.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 80
+          effort_change: 80
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 120
+          effort_change: 120
+        special-attack:
+          base_value: 50
+          effort_change: 50
+        special-defense:
+          base_value: 70
+          effort_change: 50
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      female_rate: &gold-silver.pokemon.dugtrio.female_rate 50
+      hatch_steps: &gold-silver.pokemon.dugtrio.hatch_steps 20
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      genus: *red-blue.pokemon.dugtrio.genus
+      height: *red-blue.pokemon.dugtrio.height
+      weight: &gold-silver.pokemon.dugtrio.weight 331
+      flavor_text:
+        gold: |
+          Its three heads
+          bob separately up
+          and down to loosen
+          the soil nearby,
+          making it easier
+          for it to burrow.
+        silver: |
+          Extremely power-
+          ful, they can DIG
+          through even the
+          hardest ground to
+          a depth of over 60
+          miles.
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          sprites:
+            - gold-silver/dugtrio-default.png
+            - gold-silver/back/dugtrio-default.png
+            - gold-silver/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+          icon: &gold-silver.pokemon.dugtrio.forms.dugtrio.icon gen2/diglett.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: *red-blue.pokemon.dugtrio.default
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      experience: *red-blue.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      stats: *gold-silver.pokemon.dugtrio.stats
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      genus: *red-blue.pokemon.dugtrio.genus
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *gold-silver.pokemon.dugtrio.weight
+      flavor_text:
+        crystal: |
+          These DIGLETT
+          triplets dig over
+          60 miles below sea
+          level. No one
+          knows what it's
+          like underground.
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          sprites:
+            - crystal/dugtrio-default.png
+            - crystal/back/dugtrio-default.png
+            - crystal/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+          icon: *gold-silver.pokemon.dugtrio.forms.dugtrio.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 240
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: *red-blue.pokemon.dugtrio.default
+      forms_switchable: &ruby-sapphire.pokemon.dugtrio.forms_switchable false
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      experience: *red-blue.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      stats: &ruby-sapphire.pokemon.dugtrio.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 120
+          effort_change: 2
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      happiness: &ruby-sapphire.pokemon.dugtrio.happiness 70
+      abilities: &ruby-sapphire.pokemon.dugtrio.abilities
+        sand-veil: &ruby-sapphire.pokemon.dugtrio.abilities.sand-veil
+          hidden: &ruby-sapphire.pokemon.dugtrio.abilities.sand-veil.hidden false
+          position: 1
+        arena-trap: &ruby-sapphire.pokemon.dugtrio.abilities.arena-trap
+          hidden: *ruby-sapphire.pokemon.dugtrio.abilities.sand-veil.hidden
+          position: 2
+      genus: *red-blue.pokemon.dugtrio.genus
+      height: *red-blue.pokemon.dugtrio.height
+      weight: &ruby-sapphire.pokemon.dugtrio.weight 333
+      flavor_text:
+        ruby: |
+          DUGTRIO are actually triplets that
+          emerged from one body. As a result,
+           each triplet thinks exactly like the
+          other two triplets.
+          They work cooperatively to burrow
+          endlessly.
+        sapphire: |
+          DUGTRIO are actually triplets that
+          emerged from one body. As a result,
+          each triplet thinks exactly like the
+          other two triplets.
+          They work cooperatively to burrow
+          endlessly.
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: &ruby-sapphire.pokemon.dugtrio.forms.dugtrio.icon gen5/dugtrio-default.png
+          sprites:
+            - ruby-sapphire/dugtrio-default.png
+            - ruby-sapphire/back/dugtrio-default.png
+            - ruby-sapphire/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: &ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint dugtrio.png
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: *red-blue.pokemon.dugtrio.default
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      experience: *red-blue.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      stats: *ruby-sapphire.pokemon.dugtrio.stats
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      abilities: *ruby-sapphire.pokemon.dugtrio.abilities
+      genus: *red-blue.pokemon.dugtrio.genus
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      flavor_text:
+        emerald: |
+          Because the triplets originally split from
+          one body, they think exactly alike.
+          They work cooperatively to burrow
+          endlessly through the ground.
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.icon
+          sprites:
+            - emerald/dugtrio-default.png
+            - emerald/shiny/dugtrio-default.png
+            - emerald/animated/dugtrio-default.webm
+            - emerald/animated/shiny/dugtrio-default.webm
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 77
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: *red-blue.pokemon.dugtrio.default
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      experience: *red-blue.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      stats: *ruby-sapphire.pokemon.dugtrio.stats
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      abilities: *ruby-sapphire.pokemon.dugtrio.abilities
+      genus: *red-blue.pokemon.dugtrio.genus
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          sprites:
+            - colosseum/dugtrio-default.png
+            - colosseum/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: *red-blue.pokemon.dugtrio.default
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      experience: *red-blue.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      stats: *ruby-sapphire.pokemon.dugtrio.stats
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      abilities: *ruby-sapphire.pokemon.dugtrio.abilities
+      genus: *red-blue.pokemon.dugtrio.genus
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          sprites:
+            - xd/dugtrio-default.png
+            - xd/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    dugtrio:
+      name: DUGTRIO
+      default: *red-blue.pokemon.dugtrio.default
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      experience: *red-blue.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      stats: *ruby-sapphire.pokemon.dugtrio.stats
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      abilities: *ruby-sapphire.pokemon.dugtrio.abilities
+      genus: *red-blue.pokemon.dugtrio.genus
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      flavor_text:
+        firered: |
+          In battle, it digs through the ground and
+          strikes the unsuspecting foe from an
+          unexpected direction.
+        leafgreen: |
+          A team of DIGLETT triplets. It triggers
+          huge earthquakes by burrowing 60 miles
+          underground.
+      forms:
+        dugtrio:
+          name: DUGTRIO
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.icon
+          sprites:
+            - firered-leafgreen/dugtrio-default.png
+            - firered-leafgreen/back/dugtrio-default.png
+            - firered-leafgreen/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Dugtrio
+  position: &diamond-pearl.position 56
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    dugtrio:
+      genus: &diamond-pearl.pokemon.dugtrio.genus 'Mole Pokémon'
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      shape: &diamond-pearl.pokemon.dugtrio.shape heads
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: &diamond-pearl.pokemon.dugtrio.baby false
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      pal_park: &diamond-pearl.pokemon.dugtrio.pal_park
+        area: mountain
+        rate: 30
+        score: 50
+      name: Dugtrio
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: &diamond-pearl.pokemon.dugtrio.experience 149
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      stats: &diamond-pearl.pokemon.dugtrio.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 100
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 120
+          effort_change: 2
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.dugtrio.abilities
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+          soft-sand: 5
+        pearl: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its three heads move alternately,
+          driving it through tough soil to
+          depths of over 60 miles.
+        pearl: |
+          Its three heads move alternately,
+          driving it through tough soil to
+          depths of over 60 miles.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.icon
+          sprites:
+            - diamond-pearl/back/dugtrio-default.png
+            - diamond-pearl/back/shiny/dugtrio-default.png
+            - diamond-pearl/dugtrio-default.png
+            - diamond-pearl/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    dugtrio:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      pal_park: *diamond-pearl.pokemon.dugtrio.pal_park
+      name: Dugtrio
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      stats: *diamond-pearl.pokemon.dugtrio.stats
+      abilities: *ruby-sapphire.pokemon.dugtrio.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text:
+        platinum: |
+          Its three heads move alternately,
+          driving it through tough soil to
+          depths of over 60 miles.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.icon
+          sprites:
+            - platinum/back/dugtrio-default.png
+            - platinum/back/shiny/dugtrio-default.png
+            - platinum/dugtrio-default.png
+            - platinum/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 135
+  pokemon:
+    dugtrio:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      pal_park: *diamond-pearl.pokemon.dugtrio.pal_park
+      name: Dugtrio
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      stats: *diamond-pearl.pokemon.dugtrio.stats
+      abilities: *ruby-sapphire.pokemon.dugtrio.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Its three heads bob separately up
+          and down to loosen the soil nearby,
+          making it easier for it to burrow.
+        soulsilver: |
+          Extremely powerful, they can dig
+          through even the hardest ground to
+          a depth of over 60 miles.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 3-5
+            power:
+              base_value: 3
+              range: 3-4
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 3-4
+            jump:
+              base_value: 1
+              range: 1
+          icon: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.icon
+          sprites:
+            - heartgold-soulsilver/back/dugtrio-default.png
+            - heartgold-soulsilver/back/shiny/dugtrio-default.png
+            - heartgold-soulsilver/dugtrio-default.png
+            - heartgold-soulsilver/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    dugtrio:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      color: &black-white.pokemon.dugtrio.color brown
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      name: Dugtrio
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      stats: *diamond-pearl.pokemon.dugtrio.stats
+      abilities: &black-white.pokemon.dugtrio.abilities
+        sand-veil: *ruby-sapphire.pokemon.dugtrio.abilities.sand-veil
+        arena-trap: *ruby-sapphire.pokemon.dugtrio.abilities.arena-trap
+        sand-force: &black-white.pokemon.dugtrio.abilities.sand-force
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text:
+        black: |
+          Its three heads move alternately,
+          driving it through tough soil to
+          depths of over 60 miles.
+        white: |
+          Its three heads move alternately,
+          driving it through tough soil to
+          depths of over 60 miles.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.icon
+          sprites:
+            - black-white/back/dugtrio-default.png
+            - black-white/back/shiny/dugtrio-default.png
+            - black-white/dugtrio-default.png
+            - black-white/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    dugtrio:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      color: *black-white.pokemon.dugtrio.color
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      name: Dugtrio
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      stats: *diamond-pearl.pokemon.dugtrio.stats
+      abilities: *black-white.pokemon.dugtrio.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text:
+        black-2: |
+          Its three heads move alternately,
+          driving it through tough soil to
+          depths of over 60 miles.
+        white-2: |
+          Its three heads move alternately,
+          driving it through tough soil to
+          depths of over 60 miles.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.icon
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *red-blue.pokemon.dugtrio.forms.dugtrio.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 2
+  pokemon:
+    dugtrio:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      color: *black-white.pokemon.dugtrio.color
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      name: Dugtrio
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      mega: &x-y.pokemon.dugtrio.mega false
+      stats: *diamond-pearl.pokemon.dugtrio.stats
+      abilities: *black-white.pokemon.dugtrio.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text:
+        x: |
+          In battle, it digs through the ground and strikes
+          the unsuspecting foe from an unexpected direction.
+        'y': |
+          Extremely powerful, they can dig through even the
+          hardest ground to a depth of over 60 miles.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: &x-y.pokemon.dugtrio.forms.dugtrio.icon dugtrio-default.png
+          sprites:
+            - x-y/dugtrio-default.png
+            - x-y/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: &x-y.pokemon.dugtrio.forms.dugtrio.cry dugtrio-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    dugtrio:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      color: *black-white.pokemon.dugtrio.color
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      name: Dugtrio
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      mega: *x-y.pokemon.dugtrio.mega
+      stats: *diamond-pearl.pokemon.dugtrio.stats
+      abilities: *black-white.pokemon.dugtrio.abilities
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Dugtrio are actually triplets that emerged from one body.
+          As a result, each triplet thinks exactly like the other
+          two triplets. They work cooperatively to burrow endlessly.
+        alpha-sapphire: |
+          Dugtrio are actually triplets that emerged from one body.
+          As a result, each triplet thinks exactly like the other two
+          triplets. They work cooperatively to burrow endlessly.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *x-y.pokemon.dugtrio.forms.dugtrio.icon
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *x-y.pokemon.dugtrio.forms.dugtrio.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/dugtrio-default.png
+            - omega-ruby-alpha-sapphire/shiny/dugtrio-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 72
+    original-melemele: 72
+    original-akala: 30
+    original-ulaula: 39
+    original-poni: 23
+  pokemon:
+    dugtrio:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      color: *black-white.pokemon.dugtrio.color
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      name: Dugtrio
+      default: &sun-moon.pokemon.dugtrio.default false
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      mega: *x-y.pokemon.dugtrio.mega
+      stats: *diamond-pearl.pokemon.dugtrio.stats
+      abilities: *black-white.pokemon.dugtrio.abilities
+      wild_held_items: &sun-moon.pokemon.dugtrio.wild_held_items
+        sun: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text: &sun-moon.pokemon.dugtrio.flavor_text
+        sun: |-
+          This set of triplets moves cooperatively.
+          It’s the power of teamwork that enables
+          this Pokémon to dig to a depth of 60 miles.
+        moon: |-
+          Despite the closeness between this Pokémon
+          and farmers and other people, no one has ever
+          seen the parts of it concealed underground.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *x-y.pokemon.dugtrio.forms.dugtrio.icon
+          sprites:
+            - sun-moon/dugtrio-default.png
+            - sun-moon/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *x-y.pokemon.dugtrio.forms.dugtrio.cry
+    dugtrio-alola:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      color: *black-white.pokemon.dugtrio.color
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      name: &sun-moon.pokemon.dugtrio-alola.name 'Alolan Dugtrio'
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: &sun-moon.pokemon.dugtrio-alola.weight 666
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: &sun-moon.pokemon.dugtrio-alola.types
+        - ground
+        - steel
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      mega: *x-y.pokemon.dugtrio.mega
+      stats: &sun-moon.pokemon.dugtrio-alola.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 100
+          effort_change: 2
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 110
+          effort_change: 0
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: &sun-moon.pokemon.dugtrio-alola.abilities
+        sand-veil: *ruby-sapphire.pokemon.dugtrio.abilities.sand-veil
+        tangling-hair: *ruby-sapphire.pokemon.dugtrio.abilities.arena-trap
+        sand-force: *black-white.pokemon.dugtrio.abilities.sand-force
+      wild_held_items: *sun-moon.pokemon.dugtrio.wild_held_items
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text: *sun-moon.pokemon.dugtrio.flavor_text
+      forms:
+        dugtrio-alola:
+          name: 'Alolan Dugtrio'
+          form_name: &sun-moon.pokemon.dugtrio-alola.forms.dugtrio-alola.form_name 'Alola Form'
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: &sun-moon.pokemon.dugtrio-alola.forms.dugtrio-alola.icon dugtrio-alola.png
+          sprites:
+            - sun-moon/dugtrio-alola.png
+            - sun-moon/shiny/dugtrio-alola.png
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *x-y.pokemon.dugtrio.forms.dugtrio.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 86
+    updated-melemele: 86
+    updated-akala: 30
+    updated-ulaula: 39
+    updated-poni: 32
+  pokemon:
+    dugtrio:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      color: *black-white.pokemon.dugtrio.color
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      name: Dugtrio
+      default: *sun-moon.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *ruby-sapphire.pokemon.dugtrio.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *red-blue.pokemon.dugtrio.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      mega: *x-y.pokemon.dugtrio.mega
+      stats: *diamond-pearl.pokemon.dugtrio.stats
+      abilities: *black-white.pokemon.dugtrio.abilities
+      wild_held_items: &ultra-sun-ultra-moon.pokemon.dugtrio.wild_held_items
+        ultra-sun: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.dugtrio.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.dugtrio.flavor_text
+        ultra-sun: |-
+          While the three of them normally get along
+          splendidly, on rare occasions a huge fight will
+          break out over which head gets to eat first.
+        ultra-moon: |-
+          Dugtrio’s heads are sleek and smooth and
+          incredibly hard. It can dig through any soil with
+          its headbutts.
+      forms:
+        dugtrio:
+          name: Dugtrio
+          form_name: *red-blue.pokemon.dugtrio.forms.dugtrio.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *x-y.pokemon.dugtrio.forms.dugtrio.icon
+          sprites:
+            - ultra-sun-ultra-moon/dugtrio-default.png
+            - ultra-sun-ultra-moon/shiny/dugtrio-default.png
+          art: *red-blue.pokemon.dugtrio.forms.dugtrio.art
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *x-y.pokemon.dugtrio.forms.dugtrio.cry
+    dugtrio-alola:
+      genus: *diamond-pearl.pokemon.dugtrio.genus
+      evolution_parent: *red-blue.pokemon.dugtrio.evolution_parent
+      color: *black-white.pokemon.dugtrio.color
+      shape: *diamond-pearl.pokemon.dugtrio.shape
+      female_rate: *gold-silver.pokemon.dugtrio.female_rate
+      capture_rate: *red-blue.pokemon.dugtrio.capture_rate
+      happiness: *ruby-sapphire.pokemon.dugtrio.happiness
+      baby: *diamond-pearl.pokemon.dugtrio.baby
+      hatch_steps: *gold-silver.pokemon.dugtrio.hatch_steps
+      growth_rate: *red-blue.pokemon.dugtrio.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dugtrio.forms_switchable
+      name: *sun-moon.pokemon.dugtrio-alola.name
+      default: *red-blue.pokemon.dugtrio.default
+      height: *red-blue.pokemon.dugtrio.height
+      weight: *sun-moon.pokemon.dugtrio-alola.weight
+      experience: *diamond-pearl.pokemon.dugtrio.experience
+      types: *sun-moon.pokemon.dugtrio-alola.types
+      egg_groups: *red-blue.pokemon.dugtrio.types
+      mega: *x-y.pokemon.dugtrio.mega
+      stats: *sun-moon.pokemon.dugtrio-alola.stats
+      abilities: *sun-moon.pokemon.dugtrio-alola.abilities
+      wild_held_items: *ultra-sun-ultra-moon.pokemon.dugtrio.wild_held_items
+      evolution_conditions: *red-blue.pokemon.dugtrio.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.dugtrio.flavor_text
+      forms:
+        dugtrio-alola:
+          name: 'Alolan Dugtrio'
+          form_name: *sun-moon.pokemon.dugtrio-alola.forms.dugtrio-alola.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dugtrio.forms.dugtrio.battle_only
+          icon: *sun-moon.pokemon.dugtrio-alola.forms.dugtrio-alola.icon
+          sprites:
+            - ultra-sun-ultra-moon/dugtrio-alola.png
+            - ultra-sun-ultra-moon/shiny/dugtrio-alola.png
+          footprint: *ruby-sapphire.pokemon.dugtrio.forms.dugtrio.footprint
+          cry: *x-y.pokemon.dugtrio.forms.dugtrio.cry

@@ -1,0 +1,198 @@
+red-blue: &red-blue
+  name: &red-blue.name DISABLE
+  type: &red-blue.type normal
+  accuracy: &red-blue.accuracy 55
+  pp: &red-blue.pp 20
+  effect: &red-blue.effect 87
+  ailment: &red-blue.ailment disable
+  flags: &red-blue.flags
+    - protect
+    - reflectable
+    - mirror
+    - authentic
+  categories: &red-blue.categories
+    - unique
+  hits: &red-blue.hits 1
+  turns: 1-8
+  priority: &red-blue.priority 0
+  target: &red-blue.target selected-pokemon
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: &gold-silver.turns 4
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Disables the foe's
+    most recent move.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: &ruby-sapphire.flags
+    - protect
+    - mirror
+  ailment: *red-blue.ailment
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 27
+  flavor_text: |
+    Psychically disables one of
+    the foe's moves.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: &colosseum.flavor_text |
+    Psychically disables one of
+    the target's moves.
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+xd:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: physical
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    For a few turns,
+    it prevents the foe
+    from using the move
+    it last used.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Disable
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: &diamond-pearl.accuracy 80
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 19
+  flavor_text: &diamond-pearl.flavor_text |
+    For several turns,
+    this move prevents
+    the foe from using
+    the move it last
+    used.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: &black-white.accuracy 100
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: &black-white.flavor_text |
+    For four turns, this move prevents the
+    target from using the move it last used.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *black-white.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 18
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *black-white.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    For four turns, this move prevents the target from
+    using the move it last used.
+ultra-sun-ultra-moon: *sun-moon

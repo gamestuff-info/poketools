@@ -1,0 +1,834 @@
+gold-silver:
+  name: &gold-silver.name SKIPLOOM
+  position: &gold-silver.position 187
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 188
+    original-johto: 67
+    original-johto-abc: 185
+  pokemon:
+    skiploom:
+      name: SKIPLOOM
+      default: &gold-silver.pokemon.skiploom.default true
+      capture_rate: &gold-silver.pokemon.skiploom.capture_rate 120
+      experience: &gold-silver.pokemon.skiploom.experience 136
+      types: &gold-silver.pokemon.skiploom.types
+        - grass
+        - flying
+      stats: &gold-silver.pokemon.skiploom.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 80
+          effort_change: 80
+        special-attack:
+          base_value: 45
+          effort_change: 45
+        special-defense:
+          base_value: 65
+          effort_change: 45
+      growth_rate: &gold-silver.pokemon.skiploom.growth_rate medium-slow
+      female_rate: &gold-silver.pokemon.skiploom.female_rate 50
+      hatch_steps: &gold-silver.pokemon.skiploom.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.skiploom.egg_groups
+        - fairy
+        - plant
+      genus: &gold-silver.pokemon.skiploom.genus 'COTTONWEED Pokémon'
+      height: &gold-silver.pokemon.skiploom.height 6
+      weight: &gold-silver.pokemon.skiploom.weight 9
+      flavor_text:
+        gold: |
+          The bloom on top
+          of its head opens
+          and closes as the
+          temperature fluc-
+          tuates up and
+          down.
+        silver: |
+          It spreads its
+          petals to absorb
+          sunlight. It also
+          floats in the air
+          to get closer to
+          the sun.
+      evolution_parent: &gold-silver.pokemon.skiploom.evolution_parent hoppip/hoppip
+      evolution_conditions: &gold-silver.pokemon.skiploom.evolution_conditions
+        level-up:
+          minimum_level: 18
+      forms:
+        skiploom:
+          name: SKIPLOOM
+          form_name: &gold-silver.pokemon.skiploom.forms.skiploom.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.skiploom.forms.skiploom.battle_only false
+          sprites:
+            - gold-silver/skiploom-default.png
+            - gold-silver/back/skiploom-default.png
+            - gold-silver/shiny/skiploom-default.png
+          art: &gold-silver.pokemon.skiploom.forms.skiploom.art
+            - skiploom-default.png
+          cry: &gold-silver.pokemon.skiploom.forms.skiploom.cry gen5/skiploom-default.webm
+          icon: &gold-silver.pokemon.skiploom.forms.skiploom.icon gen2/oddish.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    skiploom:
+      name: SKIPLOOM
+      default: *gold-silver.pokemon.skiploom.default
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      experience: *gold-silver.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      stats: *gold-silver.pokemon.skiploom.stats
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      genus: *gold-silver.pokemon.skiploom.genus
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *gold-silver.pokemon.skiploom.weight
+      flavor_text:
+        crystal: |
+          As soon as it
+          rains, it closes
+          its flower and
+          hides in the shade
+          of a tree to avoid
+          getting wet.
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      forms:
+        skiploom:
+          name: SKIPLOOM
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          sprites:
+            - crystal/skiploom-default.png
+            - crystal/back/skiploom-default.png
+            - crystal/shiny/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+          icon: *gold-silver.pokemon.skiploom.forms.skiploom.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 188
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 333
+  pokemon:
+    skiploom:
+      name: SKIPLOOM
+      default: *gold-silver.pokemon.skiploom.default
+      forms_switchable: &ruby-sapphire.pokemon.skiploom.forms_switchable false
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      experience: *gold-silver.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      stats: &ruby-sapphire.pokemon.skiploom.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 2
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      happiness: &ruby-sapphire.pokemon.skiploom.happiness 70
+      abilities: &ruby-sapphire.pokemon.skiploom.abilities
+        chlorophyll: &ruby-sapphire.pokemon.skiploom.abilities.chlorophyll
+          hidden: &ruby-sapphire.pokemon.skiploom.abilities.chlorophyll.hidden false
+          position: 1
+      genus: *gold-silver.pokemon.skiploom.genus
+      height: *gold-silver.pokemon.skiploom.height
+      weight: &ruby-sapphire.pokemon.skiploom.weight 10
+      flavor_text:
+        ruby: |
+          SKIPLOOM's flower blossoms when the
+          temperature rises above 64 degrees F.
+          How much the flower opens depends on
+          the temperature. For that reason,  this
+          POKéMON is sometimes used as a
+          thermometer.
+        sapphire: |
+          SKIPLOOM's flower blossoms when the
+          temperature rises above 64 degrees F.
+          How much the flower opens depends on
+          the temperature. For that reason, this
+          POKéMON is sometimes used as a
+          thermometer.
+      forms:
+        skiploom:
+          name: SKIPLOOM
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: &ruby-sapphire.pokemon.skiploom.forms.skiploom.icon gen5/skiploom-default.png
+          sprites:
+            - ruby-sapphire/skiploom-default.png
+            - ruby-sapphire/back/skiploom-default.png
+            - ruby-sapphire/shiny/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: &ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint skiploom.png
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    skiploom:
+      name: SKIPLOOM
+      default: *gold-silver.pokemon.skiploom.default
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      experience: *gold-silver.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      stats: *ruby-sapphire.pokemon.skiploom.stats
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      abilities: *ruby-sapphire.pokemon.skiploom.abilities
+      genus: *gold-silver.pokemon.skiploom.genus
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      flavor_text:
+        emerald: |
+          It blossoms when the temperature rises
+          above 64 degrees F. Because its flower's
+          blooming changes with the temperature,
+          it is sometimes used as a thermometer.
+      forms:
+        skiploom:
+          name: SKIPLOOM
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *ruby-sapphire.pokemon.skiploom.forms.skiploom.icon
+          sprites:
+            - emerald/skiploom-default.png
+            - emerald/shiny/skiploom-default.png
+            - emerald/animated/skiploom-default.webm
+            - emerald/animated/shiny/skiploom-default.webm
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 300
+  pokemon:
+    skiploom:
+      name: SKIPLOOM
+      default: *gold-silver.pokemon.skiploom.default
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      experience: *gold-silver.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      stats: *ruby-sapphire.pokemon.skiploom.stats
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      abilities: *ruby-sapphire.pokemon.skiploom.abilities
+      genus: *gold-silver.pokemon.skiploom.genus
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      forms:
+        skiploom:
+          name: SKIPLOOM
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          sprites:
+            - colosseum/skiploom-default.png
+            - colosseum/shiny/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    skiploom:
+      name: SKIPLOOM
+      default: *gold-silver.pokemon.skiploom.default
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      experience: *gold-silver.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      stats: *ruby-sapphire.pokemon.skiploom.stats
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      abilities: *ruby-sapphire.pokemon.skiploom.abilities
+      genus: *gold-silver.pokemon.skiploom.genus
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      forms:
+        skiploom:
+          name: SKIPLOOM
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          sprites:
+            - xd/skiploom-default.png
+            - xd/shiny/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    skiploom:
+      name: SKIPLOOM
+      default: *gold-silver.pokemon.skiploom.default
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      experience: *gold-silver.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      stats: *ruby-sapphire.pokemon.skiploom.stats
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      abilities: *ruby-sapphire.pokemon.skiploom.abilities
+      genus: *gold-silver.pokemon.skiploom.genus
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      flavor_text:
+        firered: |
+          It spreads its petals to absorb sunlight.
+          It also floats in the air to get closer to
+          the sun.
+        leafgreen: |
+          The bloom on top of its head opens and
+          closes as the temperature fluctuates up
+          and down.
+      forms:
+        skiploom:
+          name: SKIPLOOM
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *ruby-sapphire.pokemon.skiploom.forms.skiploom.icon
+          sprites:
+            - firered-leafgreen/skiploom-default.png
+            - firered-leafgreen/back/skiploom-default.png
+            - firered-leafgreen/shiny/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Skiploom
+  position: &diamond-pearl.position 217
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    skiploom:
+      genus: &diamond-pearl.pokemon.skiploom.genus 'Cottonweed Pokémon'
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      shape: &diamond-pearl.pokemon.skiploom.shape upright
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: &diamond-pearl.pokemon.skiploom.baby false
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      pal_park: &diamond-pearl.pokemon.skiploom.pal_park
+        area: field
+        rate: 20
+        score: 70
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: &diamond-pearl.pokemon.skiploom.experience 119
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      stats: &diamond-pearl.pokemon.skiploom.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 2
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.skiploom.abilities
+        chlorophyll: *ruby-sapphire.pokemon.skiploom.abilities.chlorophyll
+        leaf-guard: &diamond-pearl.pokemon.skiploom.abilities.leaf-guard
+          hidden: *ruby-sapphire.pokemon.skiploom.abilities.chlorophyll.hidden
+          position: 2
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      flavor_text:
+        diamond: |
+          It blooms when the weather warms.
+          It floats in the sky to soak up as
+          much sunlight as possible.
+        pearl: |
+          It blooms when the weather warms.
+          It floats in the sky to soak up as
+          much sunlight as possible.
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *ruby-sapphire.pokemon.skiploom.forms.skiploom.icon
+          sprites:
+            - diamond-pearl/back/shiny/skiploom-default.png
+            - diamond-pearl/back/skiploom-default.png
+            - diamond-pearl/shiny/skiploom-default.png
+            - diamond-pearl/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    skiploom:
+      genus: *diamond-pearl.pokemon.skiploom.genus
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      shape: *diamond-pearl.pokemon.skiploom.shape
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: *diamond-pearl.pokemon.skiploom.baby
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      pal_park: *diamond-pearl.pokemon.skiploom.pal_park
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: *diamond-pearl.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      stats: *diamond-pearl.pokemon.skiploom.stats
+      abilities: *diamond-pearl.pokemon.skiploom.abilities
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      flavor_text:
+        platinum: |
+          It blooms when the weather warms.
+          It floats in the sky to soak up as
+          much sunlight as possible.
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *ruby-sapphire.pokemon.skiploom.forms.skiploom.icon
+          sprites:
+            - platinum/back/shiny/skiploom-default.png
+            - platinum/back/skiploom-default.png
+            - platinum/shiny/skiploom-default.png
+            - platinum/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 68
+  pokemon:
+    skiploom:
+      genus: *diamond-pearl.pokemon.skiploom.genus
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      shape: *diamond-pearl.pokemon.skiploom.shape
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: *diamond-pearl.pokemon.skiploom.baby
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      pal_park: *diamond-pearl.pokemon.skiploom.pal_park
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: *diamond-pearl.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      stats: *diamond-pearl.pokemon.skiploom.stats
+      abilities: *diamond-pearl.pokemon.skiploom.abilities
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      flavor_text:
+        heartgold: |
+          The bloom on top of its head opens
+          and closes as the temperature
+          fluctuates up and down.
+        soulsilver: |
+          It spreads its petals to absorb
+          sunlight. It also floats in the air
+          to get closer to the sun.
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 1
+              range: 1
+            stamina:
+              base_value: 2
+              range: 1-2
+            jump:
+              base_value: 5
+              range: 4-5
+          icon: *ruby-sapphire.pokemon.skiploom.forms.skiploom.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/skiploom-default.png
+            - heartgold-soulsilver/back/skiploom-default.png
+            - heartgold-soulsilver/shiny/skiploom-default.png
+            - heartgold-soulsilver/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    skiploom:
+      genus: *diamond-pearl.pokemon.skiploom.genus
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      color: &black-white.pokemon.skiploom.color green
+      shape: *diamond-pearl.pokemon.skiploom.shape
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: *diamond-pearl.pokemon.skiploom.baby
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: *diamond-pearl.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      stats: *diamond-pearl.pokemon.skiploom.stats
+      abilities: &black-white.pokemon.skiploom.abilities
+        chlorophyll: *ruby-sapphire.pokemon.skiploom.abilities.chlorophyll
+        leaf-guard: *diamond-pearl.pokemon.skiploom.abilities.leaf-guard
+        infiltrator:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      flavor_text:
+        black: |
+          It blooms when the weather warms.
+          It floats in the sky to soak up as
+          much sunlight as possible.
+        white: |
+          It blooms when the weather warms.
+          It floats in the sky to soak up as
+          much sunlight as possible.
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *ruby-sapphire.pokemon.skiploom.forms.skiploom.icon
+          sprites:
+            - black-white/back/shiny/skiploom-default.png
+            - black-white/back/skiploom-default.png
+            - black-white/shiny/skiploom-default.png
+            - black-white/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    skiploom:
+      genus: *diamond-pearl.pokemon.skiploom.genus
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      color: *black-white.pokemon.skiploom.color
+      shape: *diamond-pearl.pokemon.skiploom.shape
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: *diamond-pearl.pokemon.skiploom.baby
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: *diamond-pearl.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      stats: *diamond-pearl.pokemon.skiploom.stats
+      abilities: *black-white.pokemon.skiploom.abilities
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      flavor_text:
+        black-2: |
+          It blooms when the weather warms.
+          It floats in the sky to soak up as
+          much sunlight as possible.
+        white-2: |
+          It blooms when the weather warms.
+          It floats in the sky to soak up as
+          much sunlight as possible.
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *ruby-sapphire.pokemon.skiploom.forms.skiploom.icon
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *gold-silver.pokemon.skiploom.forms.skiploom.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-central: 136
+  pokemon:
+    skiploom:
+      genus: *diamond-pearl.pokemon.skiploom.genus
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      color: *black-white.pokemon.skiploom.color
+      shape: *diamond-pearl.pokemon.skiploom.shape
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: *diamond-pearl.pokemon.skiploom.baby
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: *diamond-pearl.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      mega: &x-y.pokemon.skiploom.mega false
+      stats: *diamond-pearl.pokemon.skiploom.stats
+      abilities: *black-white.pokemon.skiploom.abilities
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      flavor_text:
+        x: |
+          The bloom on top of its head opens and closes
+          as the temperature fluctuates up and down.
+        'y': |
+          It spreads its petals to absorb sunlight. It also floats
+          in the air to get closer to the sun.
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: &x-y.pokemon.skiploom.forms.skiploom.icon skiploom-default.png
+          sprites:
+            - x-y/shiny/skiploom-default.png
+            - x-y/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: &x-y.pokemon.skiploom.forms.skiploom.cry skiploom-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    skiploom:
+      genus: *diamond-pearl.pokemon.skiploom.genus
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      color: *black-white.pokemon.skiploom.color
+      shape: *diamond-pearl.pokemon.skiploom.shape
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: *diamond-pearl.pokemon.skiploom.baby
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: *diamond-pearl.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      mega: *x-y.pokemon.skiploom.mega
+      stats: *diamond-pearl.pokemon.skiploom.stats
+      abilities: *black-white.pokemon.skiploom.abilities
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Skiploom’s flower blossoms when the temperature rises
+          above 64 degrees Fahrenheit. How much the flower opens
+          depends on the temperature. For that reason, this Pokémon
+          is sometimes used as a thermometer.
+        alpha-sapphire: |
+          Skiploom’s flower blossoms when the temperature rises
+          above 64 degrees Fahrenheit. How much the flower opens
+          depends on the temperature. For that reason, this Pokémon
+          is sometimes used as a thermometer.
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *x-y.pokemon.skiploom.forms.skiploom.icon
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *x-y.pokemon.skiploom.forms.skiploom.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/skiploom-default.png
+            - omega-ruby-alpha-sapphire/shiny/skiploom-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    skiploom:
+      genus: *diamond-pearl.pokemon.skiploom.genus
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      color: *black-white.pokemon.skiploom.color
+      shape: *diamond-pearl.pokemon.skiploom.shape
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: *diamond-pearl.pokemon.skiploom.baby
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: *diamond-pearl.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      mega: *x-y.pokemon.skiploom.mega
+      stats: *diamond-pearl.pokemon.skiploom.stats
+      abilities: *black-white.pokemon.skiploom.abilities
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *x-y.pokemon.skiploom.forms.skiploom.icon
+          sprites:
+            - sun-moon/shiny/skiploom-default.png
+            - sun-moon/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *x-y.pokemon.skiploom.forms.skiploom.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    skiploom:
+      genus: *diamond-pearl.pokemon.skiploom.genus
+      evolution_parent: *gold-silver.pokemon.skiploom.evolution_parent
+      color: *black-white.pokemon.skiploom.color
+      shape: *diamond-pearl.pokemon.skiploom.shape
+      female_rate: *gold-silver.pokemon.skiploom.female_rate
+      capture_rate: *gold-silver.pokemon.skiploom.capture_rate
+      happiness: *ruby-sapphire.pokemon.skiploom.happiness
+      baby: *diamond-pearl.pokemon.skiploom.baby
+      hatch_steps: *gold-silver.pokemon.skiploom.hatch_steps
+      growth_rate: *gold-silver.pokemon.skiploom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.skiploom.forms_switchable
+      name: Skiploom
+      default: *gold-silver.pokemon.skiploom.default
+      height: *gold-silver.pokemon.skiploom.height
+      weight: *ruby-sapphire.pokemon.skiploom.weight
+      experience: *diamond-pearl.pokemon.skiploom.experience
+      types: *gold-silver.pokemon.skiploom.types
+      egg_groups: *gold-silver.pokemon.skiploom.egg_groups
+      mega: *x-y.pokemon.skiploom.mega
+      stats: *diamond-pearl.pokemon.skiploom.stats
+      abilities: *black-white.pokemon.skiploom.abilities
+      evolution_conditions: *gold-silver.pokemon.skiploom.evolution_conditions
+      forms:
+        skiploom:
+          name: Skiploom
+          form_name: *gold-silver.pokemon.skiploom.forms.skiploom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.skiploom.forms.skiploom.battle_only
+          icon: *x-y.pokemon.skiploom.forms.skiploom.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/skiploom-default.png
+            - ultra-sun-ultra-moon/skiploom-default.png
+          art: *gold-silver.pokemon.skiploom.forms.skiploom.art
+          footprint: *ruby-sapphire.pokemon.skiploom.forms.skiploom.footprint
+          cry: *x-y.pokemon.skiploom.forms.skiploom.cry

@@ -1,0 +1,26 @@
+gold-silver: &gold-silver
+  region: &gold-silver.region johto
+  name: &gold-silver.name 'Mt. Mortar'
+  areas: &gold-silver.areas
+    1f:
+      name: 1F
+      default: true
+    lower-cave:
+      name: 'Lower Cave'
+    upper-cave:
+      name: 'Upper Cave'
+    b1f:
+      name: B1F
+  map:
+    map: &gold-silver.map.map johto
+    z: &gold-silver.map.z 10
+    overlay: '<circle r="4" cy="28" cx="76" />'
+crystal: *gold-silver
+heartgold-soulsilver:
+  region: *gold-silver.region
+  name: *gold-silver.name
+  areas: *gold-silver.areas
+  map:
+    map: *gold-silver.map.map
+    z: *gold-silver.map.z
+    overlay: '<circle r="3" cy="53" cx="109" />'

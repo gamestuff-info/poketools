@@ -1,0 +1,196 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://poketools.gamestuff.info/data/schema/location.json",
+  "title": "Location",
+  "description": "A location in the Pokemon world.",
+  "type": "object",
+  "propertyNames": {
+    "title": "Version Group identifier",
+    "allOf": [
+      {
+        "$ref": "types/identifier.json"
+      },
+      {
+        "type": "string",
+        "$filters": "versionGroupIdentifier"
+      }
+    ]
+  },
+  "minProperties": 1,
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "region": {
+        "title": "Region identifier",
+        "allOf": [
+          {
+            "$ref": "types/identifier.json"
+          },
+          {
+            "type": "string",
+            "$filters": [
+              "regionIdentifier",
+              {
+                "$func": "regionInVersionGroup",
+                "$vars": {
+                  "versionGroup": {
+                    "$ref": "1#"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "name": {
+        "$ref": "types/name.json"
+      },
+      "description": {
+        "title": "Location description",
+        "description": "If special conditions are required for access, describe them here.",
+        "$ref": "types/markdown.json"
+      },
+      "areas": {
+        "title": "Location Areas",
+        "description": "Every location must have at least one area.  By convention, if a location has only one area that area's identifier is `whole-area` and name is `Whole area`.",
+        "type": "object",
+        "minProperties": 1,
+        "propertyNames": {
+          "title": "Area identifier",
+          "$ref": "types/identifier.json"
+        },
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Area name",
+              "$ref": "types/name.json"
+            },
+            "default": {
+              "title": "Is default area",
+              "description": "Every location must have exactly one default area.",
+              "type": "boolean",
+              "default": false
+            },
+            "shops": {
+              "title": "Shops",
+              "type": "object",
+              "propertyNames": {
+                "$ref": "types/identifier.json"
+              },
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "title": "Shop name",
+                    "$ref": "types/name.json"
+                  },
+                  "default": {
+                    "title": "Is default shop",
+                    "description": "If shops are defined, exactly one shop must be default.  By convention, this is the Poke Mart if one is present.",
+                    "type": "boolean",
+                    "default": false
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              }
+            },
+            "children": {
+              "title": "Sub areas",
+              "$ref": "#/additionalProperties/properties/areas",
+              "default": {}
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "name"
+          ]
+        },
+        "$filters": "singleDefault",
+        "default": {
+          "whole-area": {
+            "title": "Whole area",
+            "default": true
+          }
+        }
+      },
+      "super": {
+        "title": "Parent location",
+        "description": "A parent location is generally the location that contains this one entirely.  For example, the Kanto Safari Zone would list `fuchsia-city` as it's super.",
+        "allOf": [
+          {
+            "$ref": "types/identifier.json"
+          },
+          {
+            "type": "string",
+            "$filters": [
+              "locationIdentifier",
+              {
+                "$func": "locationInVersionGroup",
+                "$vars": {
+                  "versionGroup": {
+                    "$ref": "1#"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "map": {
+        "title": "Map data",
+        "type": "object",
+        "properties": {
+          "map": {
+            "title": "Map identifier",
+            "description": "This is the map the overlay will be drawn on.",
+            "allOf": [
+              {
+                "$ref": "types/identifier.json"
+              },
+              {
+                "type": "string",
+                "$filters": {
+                  "$func": "regionHasMap",
+                  "$vars": {
+                    "versionGroup": {
+                      "$ref": "2#"
+                    },
+                    "region": {
+                      "$ref": "2/region"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "z": {
+            "title": "Z-Index",
+            "description": "Items with a higher z-index will be drawn on top of items with a lower z-index.  This could be helpful for a location in the middle of a route, for example.",
+            "type": "integer",
+            "default": 0
+          },
+          "overlay": {
+            "title": "SVG Overlay",
+            "description": "The SVG data that makes up the overlay.  Do not enclose this in `<svg>` tags.",
+            "type": "string",
+            "contentMediaType": "image/svg+xml"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "map",
+          "overlay"
+        ]
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "region",
+      "name",
+      "areas"
+    ]
+  }
+}

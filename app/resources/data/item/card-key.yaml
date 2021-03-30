@@ -1,0 +1,54 @@
+red-blue: &red-blue
+  name: &red-blue.name 'CARD KEY'
+  pocket: misc
+  category: &red-blue.category plot-advancement
+  short_description: &red-blue.short_description 'Unlocks doors in []{location:silph-co}.'
+  description: &red-blue.description |
+    Used by trainer outside of battle
+    :   Opens doors in the []{location:silph-co} office building in []{location:saffron-city}.
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  pocket: &gold-silver.pocket key
+  flavor_text: |
+    Opens shutters in
+    the RADIO TOWER.
+  category: *red-blue.category
+  short_description: &gold-silver.short_description 'Opens doors in the []{location:goldenrod-radio-tower}.'
+  description: &gold-silver.description |
+    Used by trainer outside of battle
+    :   Opens doors in the []{location:goldenrod-radio-tower}.
+crystal: *gold-silver
+colosseum:
+  name: *red-blue.name
+  pocket: *gold-silver.pocket
+  flavor_text: |
+    The key for getting
+    into the LAB.
+  category: *red-blue.category
+  short_description: 'Unlocks the east wing of the Shadow PKMN Lab'
+  description: |
+    Used by trainer outside of battle
+    :   Unlocks the east wing of the Shadow PKMN Lab.
+firered-leafgreen:
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *gold-silver.pocket
+  flags: {  }
+  icon: &firered-leafgreen.icon card-key.png
+  flavor_text: |
+    A card-type key that unlocks doors
+    in SILPH CO.'s HEAD OFFICE in
+     SAFFRON CITY.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+heartgold-soulsilver:
+  name: 'Card Key'
+  category: *red-blue.category
+  pocket: *gold-silver.pocket
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A card key that opens a shutter in the
+    Radio Tower.
+  icon: *firered-leafgreen.icon

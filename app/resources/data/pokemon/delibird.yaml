@@ -1,0 +1,805 @@
+gold-silver:
+  name: &gold-silver.name DELIBIRD
+  position: &gold-silver.position 224
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 225
+    original-johto: 189
+    original-johto-abc: 24
+  pokemon:
+    delibird:
+      name: DELIBIRD
+      default: &gold-silver.pokemon.delibird.default true
+      capture_rate: &gold-silver.pokemon.delibird.capture_rate 45
+      experience: &gold-silver.pokemon.delibird.experience 183
+      types: &gold-silver.pokemon.delibird.types
+        - ice
+        - flying
+      stats: &gold-silver.pokemon.delibird.stats
+        hp:
+          base_value: 45
+          effort_change: 45
+        attack:
+          base_value: 55
+          effort_change: 55
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 75
+          effort_change: 75
+        special-attack:
+          base_value: 65
+          effort_change: 65
+        special-defense:
+          base_value: 45
+          effort_change: 65
+      growth_rate: &gold-silver.pokemon.delibird.growth_rate fast
+      female_rate: &gold-silver.pokemon.delibird.female_rate 50
+      hatch_steps: &gold-silver.pokemon.delibird.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.delibird.egg_groups
+        - water1
+        - ground
+      genus: &gold-silver.pokemon.delibird.genus 'DELIVERY Pokémon'
+      height: &gold-silver.pokemon.delibird.height 8
+      weight: &gold-silver.pokemon.delibird.weight 158
+      flavor_text:
+        gold: |
+          It carries food
+          all day long.
+          There are tales
+          about lost people
+          who were saved by
+          the food it had.
+        silver: |
+          It nests at the
+          edge of sharp
+          cliffs. It spends
+          all day carrying
+          food to its await-
+          ing chicks.
+      forms:
+        delibird:
+          name: DELIBIRD
+          form_name: &gold-silver.pokemon.delibird.forms.delibird.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.delibird.forms.delibird.battle_only false
+          sprites:
+            - gold-silver/delibird-default.png
+            - gold-silver/back/delibird-default.png
+            - gold-silver/shiny/delibird-default.png
+          art: &gold-silver.pokemon.delibird.forms.delibird.art
+            - delibird-default.png
+          cry: &gold-silver.pokemon.delibird.forms.delibird.cry gen5/delibird-default.webm
+          icon: &gold-silver.pokemon.delibird.forms.delibird.icon gen2/monster.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    delibird:
+      name: DELIBIRD
+      default: *gold-silver.pokemon.delibird.default
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      experience: *gold-silver.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      stats: *gold-silver.pokemon.delibird.stats
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      genus: *gold-silver.pokemon.delibird.genus
+      height: *gold-silver.pokemon.delibird.height
+      weight: *gold-silver.pokemon.delibird.weight
+      flavor_text:
+        crystal: |
+          It always carries
+          its food with it,
+          wherever it goes.
+          If attacked, it
+          throws its food at
+          the opponent.
+      forms:
+        delibird:
+          name: DELIBIRD
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          sprites:
+            - crystal/delibird-default.png
+            - crystal/back/delibird-default.png
+            - crystal/shiny/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+          icon: *gold-silver.pokemon.delibird.forms.delibird.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 225
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 364
+  pokemon:
+    delibird:
+      name: DELIBIRD
+      default: *gold-silver.pokemon.delibird.default
+      forms_switchable: &ruby-sapphire.pokemon.delibird.forms_switchable false
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      experience: *gold-silver.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      stats: &ruby-sapphire.pokemon.delibird.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 75
+          effort_change: 1
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      happiness: &ruby-sapphire.pokemon.delibird.happiness 70
+      abilities: &ruby-sapphire.pokemon.delibird.abilities
+        vital-spirit: &ruby-sapphire.pokemon.delibird.abilities.vital-spirit
+          hidden: &ruby-sapphire.pokemon.delibird.abilities.vital-spirit.hidden false
+          position: 1
+        hustle: &ruby-sapphire.pokemon.delibird.abilities.hustle
+          hidden: *ruby-sapphire.pokemon.delibird.abilities.vital-spirit.hidden
+          position: 2
+      genus: *gold-silver.pokemon.delibird.genus
+      height: &ruby-sapphire.pokemon.delibird.height 9
+      weight: &ruby-sapphire.pokemon.delibird.weight 160
+      flavor_text:
+        ruby: |
+          DELIBIRD carries its food bundled up
+          in its tail. There once was a famous
+          explorer who managed to reach the peak
+          of Mt. Everest thanks to one of these
+          POKéMON sharing its food.
+        sapphire: |
+          DELIBIRD carries its food bundled up
+          in its tail. There once was a famous
+          explorer who managed to reach the peak
+          of Mt. Everest thanks to one of these
+          POKéMON sharing its food.
+      forms:
+        delibird:
+          name: DELIBIRD
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: &ruby-sapphire.pokemon.delibird.forms.delibird.icon gen5/delibird-default.png
+          sprites:
+            - ruby-sapphire/delibird-default.png
+            - ruby-sapphire/back/delibird-default.png
+            - ruby-sapphire/shiny/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: &ruby-sapphire.pokemon.delibird.forms.delibird.footprint delibird.png
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    delibird:
+      name: DELIBIRD
+      default: *gold-silver.pokemon.delibird.default
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      experience: *gold-silver.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      abilities: *ruby-sapphire.pokemon.delibird.abilities
+      genus: *gold-silver.pokemon.delibird.genus
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      flavor_text:
+        emerald: |
+          It carries food bundled up in its tail.
+          There was a famous explorer who
+          managed to scale Mt. Everest thanks
+          to a DELIBIRD sharing its food.
+      forms:
+        delibird:
+          name: DELIBIRD
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *ruby-sapphire.pokemon.delibird.forms.delibird.icon
+          sprites:
+            - emerald/delibird-default.png
+            - emerald/shiny/delibird-default.png
+            - emerald/animated/delibird-default.webm
+            - emerald/animated/shiny/delibird-default.webm
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 65
+  pokemon:
+    delibird:
+      name: DELIBIRD
+      default: *gold-silver.pokemon.delibird.default
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      experience: *gold-silver.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      abilities: *ruby-sapphire.pokemon.delibird.abilities
+      genus: *gold-silver.pokemon.delibird.genus
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      forms:
+        delibird:
+          name: DELIBIRD
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          sprites:
+            - colosseum/delibird-default.png
+            - colosseum/shiny/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    delibird:
+      name: DELIBIRD
+      default: *gold-silver.pokemon.delibird.default
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      experience: *gold-silver.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      abilities: *ruby-sapphire.pokemon.delibird.abilities
+      genus: *gold-silver.pokemon.delibird.genus
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      forms:
+        delibird:
+          name: DELIBIRD
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          sprites:
+            - xd/delibird-default.png
+            - xd/shiny/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    delibird:
+      name: DELIBIRD
+      default: *gold-silver.pokemon.delibird.default
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      experience: *gold-silver.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      abilities: *ruby-sapphire.pokemon.delibird.abilities
+      genus: *gold-silver.pokemon.delibird.genus
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      flavor_text:
+        firered: |
+          It nests at the edge of sharp cliffs.
+          It spends all day carrying food to its
+          awaiting chicks.
+        leafgreen: |
+          It carries food all day long. There are
+          tales about lost people who were saved
+          by the food it had.
+      forms:
+        delibird:
+          name: DELIBIRD
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *ruby-sapphire.pokemon.delibird.forms.delibird.icon
+          sprites:
+            - firered-leafgreen/delibird-default.png
+            - firered-leafgreen/back/delibird-default.png
+            - firered-leafgreen/shiny/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+diamond-pearl:
+  name: &diamond-pearl.name Delibird
+  position: &diamond-pearl.position 257
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delibird:
+      genus: &diamond-pearl.pokemon.delibird.genus 'Delivery Pokémon'
+      shape: &diamond-pearl.pokemon.delibird.shape wings
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: &diamond-pearl.pokemon.delibird.baby false
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      pal_park: &diamond-pearl.pokemon.delibird.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: &diamond-pearl.pokemon.delibird.experience 116
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: &diamond-pearl.pokemon.delibird.abilities
+        vital-spirit: *ruby-sapphire.pokemon.delibird.abilities.vital-spirit
+        hustle: *ruby-sapphire.pokemon.delibird.abilities.hustle
+        insomnia:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          It carries food rolled up in its
+          tail. It has the habit of sharing
+          food with people lost in mountains.
+        pearl: |
+          It carries food rolled up in its
+          tail. It has the habit of sharing
+          food with people lost in mountains.
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *ruby-sapphire.pokemon.delibird.forms.delibird.icon
+          sprites:
+            - diamond-pearl/back/shiny/delibird-default.png
+            - diamond-pearl/back/delibird-default.png
+            - diamond-pearl/shiny/delibird-default.png
+            - diamond-pearl/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delibird:
+      genus: *diamond-pearl.pokemon.delibird.genus
+      shape: *diamond-pearl.pokemon.delibird.shape
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: *diamond-pearl.pokemon.delibird.baby
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      pal_park: *diamond-pearl.pokemon.delibird.pal_park
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: *diamond-pearl.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: *diamond-pearl.pokemon.delibird.abilities
+      flavor_text:
+        platinum: |
+          It carries food rolled up in its
+          tail. It has the habit of sharing
+          food with people lost in mountains.
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *ruby-sapphire.pokemon.delibird.forms.delibird.icon
+          sprites:
+            - platinum/back/shiny/delibird-default.png
+            - platinum/back/delibird-default.png
+            - platinum/shiny/delibird-default.png
+            - platinum/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 194
+  pokemon:
+    delibird:
+      genus: *diamond-pearl.pokemon.delibird.genus
+      shape: *diamond-pearl.pokemon.delibird.shape
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: *diamond-pearl.pokemon.delibird.baby
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      pal_park: *diamond-pearl.pokemon.delibird.pal_park
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: *diamond-pearl.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: *diamond-pearl.pokemon.delibird.abilities
+      flavor_text:
+        heartgold: |
+          It carries food all day long.
+          There are tales about lost people
+          who were saved by its stored food.
+        soulsilver: |
+          It nests at the edge of sharp
+          cliffs. It spends all day carrying
+          food to its awaiting chicks.
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.delibird.forms.delibird.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/delibird-default.png
+            - heartgold-soulsilver/back/delibird-default.png
+            - heartgold-soulsilver/shiny/delibird-default.png
+            - heartgold-soulsilver/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delibird:
+      genus: *diamond-pearl.pokemon.delibird.genus
+      color: &black-white.pokemon.delibird.color red
+      shape: *diamond-pearl.pokemon.delibird.shape
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: *diamond-pearl.pokemon.delibird.baby
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: *diamond-pearl.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: *diamond-pearl.pokemon.delibird.abilities
+      flavor_text:
+        black: |
+          It carries food rolled up in its
+          tail. It has the habit of sharing
+          food with people lost in mountains.
+        white: |
+          It carries food rolled up in its
+          tail. It has the habit of sharing
+          food with people lost in mountains.
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *ruby-sapphire.pokemon.delibird.forms.delibird.icon
+          sprites:
+            - black-white/back/shiny/delibird-default.png
+            - black-white/back/delibird-default.png
+            - black-white/shiny/delibird-default.png
+            - black-white/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 254
+  pokemon:
+    delibird:
+      genus: *diamond-pearl.pokemon.delibird.genus
+      color: *black-white.pokemon.delibird.color
+      shape: *diamond-pearl.pokemon.delibird.shape
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: *diamond-pearl.pokemon.delibird.baby
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: *diamond-pearl.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: *diamond-pearl.pokemon.delibird.abilities
+      flavor_text:
+        black-2: |
+          It carries food all day long.
+          When someone is lost in the
+          mountains, it shares that food.
+        white-2: |
+          It carries food all day long.
+          When someone is lost in the
+          mountains, it shares that food.
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *ruby-sapphire.pokemon.delibird.forms.delibird.icon
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *gold-silver.pokemon.delibird.forms.delibird.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 90
+  pokemon:
+    delibird:
+      genus: *diamond-pearl.pokemon.delibird.genus
+      color: *black-white.pokemon.delibird.color
+      shape: *diamond-pearl.pokemon.delibird.shape
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: *diamond-pearl.pokemon.delibird.baby
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: *diamond-pearl.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      mega: &x-y.pokemon.delibird.mega false
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: *diamond-pearl.pokemon.delibird.abilities
+      flavor_text:
+        x: |
+          It carries food rolled up in its tail. It has the habit of
+          sharing food with people lost in mountains.
+        'y': |
+          It carries food all day long. When someone is lost
+          in the mountains, it shares that food.
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: &x-y.pokemon.delibird.forms.delibird.icon delibird-default.png
+          sprites:
+            - x-y/shiny/delibird-default.png
+            - x-y/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: &x-y.pokemon.delibird.forms.delibird.cry delibird-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delibird:
+      genus: *diamond-pearl.pokemon.delibird.genus
+      color: *black-white.pokemon.delibird.color
+      shape: *diamond-pearl.pokemon.delibird.shape
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: *diamond-pearl.pokemon.delibird.baby
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: *diamond-pearl.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      mega: *x-y.pokemon.delibird.mega
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: *diamond-pearl.pokemon.delibird.abilities
+      flavor_text:
+        omega-ruby: |
+          Delibird carries its food bundled up in its tail. There once was
+          a famous explorer who managed to reach the peak of the
+          world’s highest mountain, thanks to one of these Pokémon
+          sharing its food.
+        alpha-sapphire: |
+          Delibird carries its food bundled up in its tail. There once was
+          a famous explorer who managed to reach the peak of the
+          world’s highest mountain, thanks to one of these Pokémon
+          sharing its food.
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *x-y.pokemon.delibird.forms.delibird.icon
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *x-y.pokemon.delibird.forms.delibird.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/delibird-default.png
+            - omega-ruby-alpha-sapphire/shiny/delibird-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 81
+    original-melemele: 81
+  pokemon:
+    delibird:
+      genus: *diamond-pearl.pokemon.delibird.genus
+      color: *black-white.pokemon.delibird.color
+      shape: *diamond-pearl.pokemon.delibird.shape
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: *diamond-pearl.pokemon.delibird.baby
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: *diamond-pearl.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      mega: *x-y.pokemon.delibird.mega
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: *diamond-pearl.pokemon.delibird.abilities
+      flavor_text:
+        sun: |-
+          Although it naturally prefers colder locales,
+          Delibird in Alola seem able to withstand the
+          heat to a certain extent.
+        moon: |-
+          It has a generous habit of sharing its food with
+          people and Pokémon, so it’s always scrounging
+          around for more food.
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *x-y.pokemon.delibird.forms.delibird.icon
+          sprites:
+            - sun-moon/shiny/delibird-default.png
+            - sun-moon/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *x-y.pokemon.delibird.forms.delibird.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 95
+    updated-melemele: 95
+  pokemon:
+    delibird:
+      genus: *diamond-pearl.pokemon.delibird.genus
+      color: *black-white.pokemon.delibird.color
+      shape: *diamond-pearl.pokemon.delibird.shape
+      female_rate: *gold-silver.pokemon.delibird.female_rate
+      capture_rate: *gold-silver.pokemon.delibird.capture_rate
+      happiness: *ruby-sapphire.pokemon.delibird.happiness
+      baby: *diamond-pearl.pokemon.delibird.baby
+      hatch_steps: *gold-silver.pokemon.delibird.hatch_steps
+      growth_rate: *gold-silver.pokemon.delibird.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delibird.forms_switchable
+      name: Delibird
+      default: *gold-silver.pokemon.delibird.default
+      height: *ruby-sapphire.pokemon.delibird.height
+      weight: *ruby-sapphire.pokemon.delibird.weight
+      experience: *diamond-pearl.pokemon.delibird.experience
+      types: *gold-silver.pokemon.delibird.types
+      egg_groups: *gold-silver.pokemon.delibird.egg_groups
+      mega: *x-y.pokemon.delibird.mega
+      stats: *ruby-sapphire.pokemon.delibird.stats
+      abilities: *diamond-pearl.pokemon.delibird.abilities
+      flavor_text:
+        ultra-sun: |-
+          It shares its food with people who are stranded.
+          Because Delibird is omnivorous, sometimes
+          it gives those people bug Pokémon.
+        ultra-moon: |-
+          It wraps food in its tail to carry it around.
+          The Delibird with the biggest tail is the boss
+          of the flock!
+      forms:
+        delibird:
+          name: Delibird
+          form_name: *gold-silver.pokemon.delibird.forms.delibird.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.delibird.forms.delibird.battle_only
+          icon: *x-y.pokemon.delibird.forms.delibird.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/delibird-default.png
+            - ultra-sun-ultra-moon/delibird-default.png
+          art: *gold-silver.pokemon.delibird.forms.delibird.art
+          footprint: *ruby-sapphire.pokemon.delibird.forms.delibird.footprint
+          cry: *x-y.pokemon.delibird.forms.delibird.cry

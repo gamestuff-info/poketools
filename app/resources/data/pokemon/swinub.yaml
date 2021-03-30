@@ -1,0 +1,803 @@
+gold-silver:
+  name: &gold-silver.name SWINUB
+  position: &gold-silver.position 219
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 220
+    original-johto: 190
+    original-johto-abc: 206
+  pokemon:
+    swinub:
+      name: SWINUB
+      default: &gold-silver.pokemon.swinub.default true
+      capture_rate: &gold-silver.pokemon.swinub.capture_rate 225
+      experience: &gold-silver.pokemon.swinub.experience 78
+      types: &gold-silver.pokemon.swinub.types
+        - ice
+        - ground
+      stats: &gold-silver.pokemon.swinub.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 50
+          effort_change: 50
+        defense:
+          base_value: 40
+          effort_change: 40
+        speed:
+          base_value: 50
+          effort_change: 50
+        special-attack:
+          base_value: 30
+          effort_change: 30
+        special-defense:
+          base_value: 30
+          effort_change: 30
+      growth_rate: &gold-silver.pokemon.swinub.growth_rate slow
+      female_rate: &gold-silver.pokemon.swinub.female_rate 50
+      hatch_steps: &gold-silver.pokemon.swinub.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.swinub.egg_groups
+        - ground
+      genus: &gold-silver.pokemon.swinub.genus 'PIG Pokémon'
+      height: &gold-silver.pokemon.swinub.height 4
+      weight: &gold-silver.pokemon.swinub.weight 63
+      flavor_text:
+        gold: |
+          It rubs its snout
+          on the ground to
+          find and dig up
+          food. It sometimes
+          discovers hot
+          springs.
+        silver: |
+          If it smells some-
+          thing enticing, it
+          dashes headlong
+          off to find the
+          source of the
+          aroma.
+      forms:
+        swinub:
+          name: SWINUB
+          form_name: &gold-silver.pokemon.swinub.forms.swinub.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.swinub.forms.swinub.battle_only false
+          sprites:
+            - gold-silver/swinub-default.png
+            - gold-silver/back/swinub-default.png
+            - gold-silver/shiny/swinub-default.png
+          art: &gold-silver.pokemon.swinub.forms.swinub.art
+            - swinub-default.png
+          cry: &gold-silver.pokemon.swinub.forms.swinub.cry gen5/swinub-default.webm
+          icon: &gold-silver.pokemon.swinub.forms.swinub.icon gen2/equine.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    swinub:
+      name: SWINUB
+      default: *gold-silver.pokemon.swinub.default
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      experience: *gold-silver.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      stats: *gold-silver.pokemon.swinub.stats
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      genus: *gold-silver.pokemon.swinub.genus
+      height: *gold-silver.pokemon.swinub.height
+      weight: *gold-silver.pokemon.swinub.weight
+      flavor_text:
+        crystal: |
+          It uses the tip of
+          its nose to dig
+          for food. Its nose
+          is so tough that
+          even frozen ground
+          poses no problem.
+      forms:
+        swinub:
+          name: SWINUB
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          sprites:
+            - crystal/swinub-default.png
+            - crystal/back/swinub-default.png
+            - crystal/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+          icon: *gold-silver.pokemon.swinub.forms.swinub.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 220
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 360
+  pokemon:
+    swinub:
+      name: SWINUB
+      default: *gold-silver.pokemon.swinub.default
+      forms_switchable: &ruby-sapphire.pokemon.swinub.forms_switchable false
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      experience: *gold-silver.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      stats: &ruby-sapphire.pokemon.swinub.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 1
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      happiness: &ruby-sapphire.pokemon.swinub.happiness 70
+      abilities: &ruby-sapphire.pokemon.swinub.abilities
+        oblivious: &ruby-sapphire.pokemon.swinub.abilities.oblivious
+          hidden: &ruby-sapphire.pokemon.swinub.abilities.oblivious.hidden false
+          position: 1
+      genus: *gold-silver.pokemon.swinub.genus
+      height: *gold-silver.pokemon.swinub.height
+      weight: &ruby-sapphire.pokemon.swinub.weight 65
+      flavor_text:
+        ruby: |
+          SWINUB roots for food by rubbing its
+          snout against the ground. Its favorite
+          food is a mushroom that grows under
+          the cover of dead grass.
+           This POKéMON occasionally roots out
+          hot springs.
+        sapphire: |
+          SWINUB roots for food by rubbing its
+          snout against the ground.  Its favorite
+          food is a mushroom that grows under
+          the cover of dead grass.
+           This POKéMON occasionally roots out
+          hot springs.
+      forms:
+        swinub:
+          name: SWINUB
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: &ruby-sapphire.pokemon.swinub.forms.swinub.icon gen5/swinub-default.png
+          sprites:
+            - ruby-sapphire/swinub-default.png
+            - ruby-sapphire/back/swinub-default.png
+            - ruby-sapphire/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: &ruby-sapphire.pokemon.swinub.forms.swinub.footprint swinub.png
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    swinub:
+      name: SWINUB
+      default: *gold-silver.pokemon.swinub.default
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      experience: *gold-silver.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      stats: *ruby-sapphire.pokemon.swinub.stats
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      abilities: *ruby-sapphire.pokemon.swinub.abilities
+      genus: *gold-silver.pokemon.swinub.genus
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      flavor_text:
+        emerald: |
+          It roots for food by rubbing its snout
+          against the ground. Its favorite food is a
+          mushroom that grows under dried grass.
+          It occasionally roots out hot springs.
+      forms:
+        swinub:
+          name: SWINUB
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *ruby-sapphire.pokemon.swinub.forms.swinub.icon
+          sprites:
+            - emerald/swinub-default.png
+            - emerald/shiny/swinub-default.png
+            - emerald/animated/swinub-default.webm
+            - emerald/animated/shiny/swinub-default.webm
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 334
+  pokemon:
+    swinub:
+      name: SWINUB
+      default: *gold-silver.pokemon.swinub.default
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      experience: *gold-silver.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      stats: *ruby-sapphire.pokemon.swinub.stats
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      abilities: *ruby-sapphire.pokemon.swinub.abilities
+      genus: *gold-silver.pokemon.swinub.genus
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      forms:
+        swinub:
+          name: SWINUB
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          sprites:
+            - colosseum/swinub-default.png
+            - colosseum/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    swinub:
+      name: SWINUB
+      default: *gold-silver.pokemon.swinub.default
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      experience: *gold-silver.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      stats: *ruby-sapphire.pokemon.swinub.stats
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      abilities: *ruby-sapphire.pokemon.swinub.abilities
+      genus: *gold-silver.pokemon.swinub.genus
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      forms:
+        swinub:
+          name: SWINUB
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          sprites:
+            - xd/swinub-default.png
+            - xd/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    swinub:
+      name: SWINUB
+      default: *gold-silver.pokemon.swinub.default
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      experience: *gold-silver.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      stats: *ruby-sapphire.pokemon.swinub.stats
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.swinub.wild_held_items.firered
+          aspear-berry: 50
+        leafgreen: *firered-leafgreen.pokemon.swinub.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      abilities: *ruby-sapphire.pokemon.swinub.abilities
+      genus: *gold-silver.pokemon.swinub.genus
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      flavor_text:
+        firered: |
+          If it smells something enticing, it dashes
+          off headlong to find the source of the
+          aroma.
+        leafgreen: |
+          It rubs its snout on the ground to find
+          and dig up food. It sometimes discovers
+          hot springs.
+      forms:
+        swinub:
+          name: SWINUB
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *ruby-sapphire.pokemon.swinub.forms.swinub.icon
+          sprites:
+            - firered-leafgreen/swinub-default.png
+            - firered-leafgreen/back/swinub-default.png
+            - firered-leafgreen/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+diamond-pearl:
+  name: &diamond-pearl.name Swinub
+  position: &diamond-pearl.position 251
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swinub:
+      genus: &diamond-pearl.pokemon.swinub.genus 'Pig Pokémon'
+      shape: &diamond-pearl.pokemon.swinub.shape quadruped
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: &diamond-pearl.pokemon.swinub.baby false
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      pal_park: &diamond-pearl.pokemon.swinub.pal_park
+        area: mountain
+        rate: 30
+        score: 50
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: &diamond-pearl.pokemon.swinub.experience 50
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      stats: &diamond-pearl.pokemon.swinub.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 1
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 30
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.swinub.abilities
+        oblivious: *ruby-sapphire.pokemon.swinub.abilities.oblivious
+        snow-cloak:
+          hidden: *ruby-sapphire.pokemon.swinub.abilities.oblivious.hidden
+          position: 2
+        thick-fat:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          It loves eating mushrooms that
+          grow under dead grass. It also
+          finds hot springs while foraging.
+        pearl: |
+          It loves eating mushrooms that
+          grow under dead grass. It also
+          finds hot springs while foraging.
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *ruby-sapphire.pokemon.swinub.forms.swinub.icon
+          sprites:
+            - diamond-pearl/back/swinub-default.png
+            - diamond-pearl/back/shiny/swinub-default.png
+            - diamond-pearl/swinub-default.png
+            - diamond-pearl/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 203
+  pokemon:
+    swinub:
+      genus: *diamond-pearl.pokemon.swinub.genus
+      shape: *diamond-pearl.pokemon.swinub.shape
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: *diamond-pearl.pokemon.swinub.baby
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      pal_park: *diamond-pearl.pokemon.swinub.pal_park
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: *diamond-pearl.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      stats: *diamond-pearl.pokemon.swinub.stats
+      abilities: *diamond-pearl.pokemon.swinub.abilities
+      flavor_text:
+        platinum: |
+          It has a very sensitive nose. It
+          can locate mushrooms, berries, and
+          even hot springs buried under ice.
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *ruby-sapphire.pokemon.swinub.forms.swinub.icon
+          sprites:
+            - platinum/back/swinub-default.png
+            - platinum/back/shiny/swinub-default.png
+            - platinum/swinub-default.png
+            - platinum/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 195
+  pokemon:
+    swinub:
+      genus: *diamond-pearl.pokemon.swinub.genus
+      shape: *diamond-pearl.pokemon.swinub.shape
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: *diamond-pearl.pokemon.swinub.baby
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      pal_park: *diamond-pearl.pokemon.swinub.pal_park
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: *diamond-pearl.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      stats: *diamond-pearl.pokemon.swinub.stats
+      abilities: *diamond-pearl.pokemon.swinub.abilities
+      flavor_text:
+        heartgold: |
+          It rubs its snout on the ground to
+          find and dig up food. It sometimes
+          discovers hot springs.
+        soulsilver: |
+          If it smells something enticing, it
+          dashes off headlong to find the
+          source of the aroma.
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 3
+              range: 2-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.swinub.forms.swinub.icon
+          sprites:
+            - heartgold-soulsilver/back/swinub-default.png
+            - heartgold-soulsilver/back/shiny/swinub-default.png
+            - heartgold-soulsilver/swinub-default.png
+            - heartgold-soulsilver/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swinub:
+      genus: *diamond-pearl.pokemon.swinub.genus
+      color: &black-white.pokemon.swinub.color brown
+      shape: *diamond-pearl.pokemon.swinub.shape
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: *diamond-pearl.pokemon.swinub.baby
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: *diamond-pearl.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      stats: *diamond-pearl.pokemon.swinub.stats
+      abilities: *diamond-pearl.pokemon.swinub.abilities
+      flavor_text:
+        black: |
+          It has a very sensitive nose. It
+          can locate mushrooms, berries, and
+          even hot springs buried under ice.
+        white: |
+          It has a very sensitive nose. It
+          can locate mushrooms, berries, and
+          even hot springs buried under ice.
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *ruby-sapphire.pokemon.swinub.forms.swinub.icon
+          sprites:
+            - black-white/back/swinub-default.png
+            - black-white/back/shiny/swinub-default.png
+            - black-white/swinub-default.png
+            - black-white/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 258
+  pokemon:
+    swinub:
+      genus: *diamond-pearl.pokemon.swinub.genus
+      color: *black-white.pokemon.swinub.color
+      shape: *diamond-pearl.pokemon.swinub.shape
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: *diamond-pearl.pokemon.swinub.baby
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: *diamond-pearl.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      stats: *diamond-pearl.pokemon.swinub.stats
+      abilities: *diamond-pearl.pokemon.swinub.abilities
+      flavor_text:
+        black-2: |
+          Rooting the tip of its snout
+          into the ground, it searches for food.
+          Sometimes it even digs up a hot spring.
+        white-2: |
+          Rooting the tip of its snout
+          into the ground, it searches for food.
+          Sometimes it even digs up a hot spring.
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *ruby-sapphire.pokemon.swinub.forms.swinub.icon
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *gold-silver.pokemon.swinub.forms.swinub.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 76
+  pokemon:
+    swinub:
+      genus: *diamond-pearl.pokemon.swinub.genus
+      color: *black-white.pokemon.swinub.color
+      shape: *diamond-pearl.pokemon.swinub.shape
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: *diamond-pearl.pokemon.swinub.baby
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: *diamond-pearl.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      mega: &x-y.pokemon.swinub.mega false
+      stats: *diamond-pearl.pokemon.swinub.stats
+      abilities: *diamond-pearl.pokemon.swinub.abilities
+      flavor_text:
+        x: |
+          It rubs its snout on the ground to find and dig up
+          food. It sometimes discovers hot springs.
+        'y': |
+          If it smells something enticing, it dashes off
+          headlong to find the source of the aroma.
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: &x-y.pokemon.swinub.forms.swinub.icon swinub-default.png
+          sprites:
+            - x-y/swinub-default.png
+            - x-y/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: &x-y.pokemon.swinub.forms.swinub.cry swinub-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swinub:
+      genus: *diamond-pearl.pokemon.swinub.genus
+      color: *black-white.pokemon.swinub.color
+      shape: *diamond-pearl.pokemon.swinub.shape
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: *diamond-pearl.pokemon.swinub.baby
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: *diamond-pearl.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      mega: *x-y.pokemon.swinub.mega
+      stats: *diamond-pearl.pokemon.swinub.stats
+      abilities: *diamond-pearl.pokemon.swinub.abilities
+      flavor_text:
+        omega-ruby: |
+          Swinub roots for food by rubbing its snout against the ground.
+          Its favorite food is a mushroom that grows under the cover of
+          dead grass. This Pokémon occasionally roots out hot springs.
+        alpha-sapphire: |
+          Swinub roots for food by rubbing its snout against the ground.
+          Its favorite food is a mushroom that grows under the cover of
+          dead grass. This Pokémon occasionally roots out hot springs.
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *x-y.pokemon.swinub.forms.swinub.icon
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *x-y.pokemon.swinub.forms.swinub.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/swinub-default.png
+            - omega-ruby-alpha-sapphire/shiny/swinub-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swinub:
+      genus: *diamond-pearl.pokemon.swinub.genus
+      color: *black-white.pokemon.swinub.color
+      shape: *diamond-pearl.pokemon.swinub.shape
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: *diamond-pearl.pokemon.swinub.baby
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: *diamond-pearl.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      mega: *x-y.pokemon.swinub.mega
+      stats: *diamond-pearl.pokemon.swinub.stats
+      abilities: *diamond-pearl.pokemon.swinub.abilities
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *x-y.pokemon.swinub.forms.swinub.icon
+          sprites:
+            - sun-moon/swinub-default.png
+            - sun-moon/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *x-y.pokemon.swinub.forms.swinub.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swinub:
+      genus: *diamond-pearl.pokemon.swinub.genus
+      color: *black-white.pokemon.swinub.color
+      shape: *diamond-pearl.pokemon.swinub.shape
+      female_rate: *gold-silver.pokemon.swinub.female_rate
+      capture_rate: *gold-silver.pokemon.swinub.capture_rate
+      happiness: *ruby-sapphire.pokemon.swinub.happiness
+      baby: *diamond-pearl.pokemon.swinub.baby
+      hatch_steps: *gold-silver.pokemon.swinub.hatch_steps
+      growth_rate: *gold-silver.pokemon.swinub.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swinub.forms_switchable
+      name: Swinub
+      default: *gold-silver.pokemon.swinub.default
+      height: *gold-silver.pokemon.swinub.height
+      weight: *ruby-sapphire.pokemon.swinub.weight
+      experience: *diamond-pearl.pokemon.swinub.experience
+      types: *gold-silver.pokemon.swinub.types
+      egg_groups: *gold-silver.pokemon.swinub.egg_groups
+      mega: *x-y.pokemon.swinub.mega
+      stats: *diamond-pearl.pokemon.swinub.stats
+      abilities: *diamond-pearl.pokemon.swinub.abilities
+      forms:
+        swinub:
+          name: Swinub
+          form_name: *gold-silver.pokemon.swinub.forms.swinub.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.swinub.forms.swinub.battle_only
+          icon: *x-y.pokemon.swinub.forms.swinub.icon
+          sprites:
+            - ultra-sun-ultra-moon/swinub-default.png
+            - ultra-sun-ultra-moon/shiny/swinub-default.png
+          art: *gold-silver.pokemon.swinub.forms.swinub.art
+          footprint: *ruby-sapphire.pokemon.swinub.forms.swinub.footprint
+          cry: *x-y.pokemon.swinub.forms.swinub.cry

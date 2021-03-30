@@ -1,0 +1,736 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name CRAWDAUNT
+  position: &ruby-sapphire.position 342
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 342
+    hoenn: 130
+  pokemon:
+    crawdaunt:
+      name: CRAWDAUNT
+      default: &ruby-sapphire.pokemon.crawdaunt.default true
+      forms_switchable: &ruby-sapphire.pokemon.crawdaunt.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.crawdaunt.capture_rate 155
+      experience: &ruby-sapphire.pokemon.crawdaunt.experience 161
+      types: &ruby-sapphire.pokemon.crawdaunt.types
+        - water
+        - dark
+      stats: &ruby-sapphire.pokemon.crawdaunt.stats
+        hp:
+          base_value: 63
+          effort_change: 0
+        attack:
+          base_value: 120
+          effort_change: 2
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 63
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.crawdaunt.growth_rate fast-then-very-slow
+      female_rate: &ruby-sapphire.pokemon.crawdaunt.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.crawdaunt.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.crawdaunt.egg_groups
+        - water1
+        - water3
+      happiness: &ruby-sapphire.pokemon.crawdaunt.happiness 70
+      abilities: &ruby-sapphire.pokemon.crawdaunt.abilities
+        hyper-cutter: &ruby-sapphire.pokemon.crawdaunt.abilities.hyper-cutter
+          hidden: &ruby-sapphire.pokemon.crawdaunt.abilities.hyper-cutter.hidden false
+          position: 1
+        shell-armor: &ruby-sapphire.pokemon.crawdaunt.abilities.shell-armor
+          hidden: *ruby-sapphire.pokemon.crawdaunt.abilities.hyper-cutter.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.crawdaunt.genus 'ROGUE Pokémon'
+      height: &ruby-sapphire.pokemon.crawdaunt.height 11
+      weight: &ruby-sapphire.pokemon.crawdaunt.weight 328
+      flavor_text:
+        ruby: |
+          CRAWDAUNT has an extremely violent
+          nature that compels it to challenge
+           other living things to battle.
+          Other life-forms refuse to live in
+          ponds inhabited by this POKéMON,
+          making them desolate places.
+        sapphire: |
+          CRAWDAUNT molts (sheds) its shell
+          regularly. Immediately after molting,
+          its shell is soft and tender.
+          Until the shell hardens, this POKéMON
+          hides in its streambed burrow to avoid
+          attack from its foes.
+      forms:
+        crawdaunt:
+          name: CRAWDAUNT
+          form_name: &ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only false
+          icon: &ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.icon gen5/crawdaunt-default.png
+          sprites:
+            - ruby-sapphire/crawdaunt-default.png
+            - ruby-sapphire/back/crawdaunt-default.png
+            - ruby-sapphire/shiny/crawdaunt-default.png
+          art: &ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+            - crawdaunt-default.png
+          footprint: &ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint crawdaunt.png
+          cry: &ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry gen5/crawdaunt-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.crawdaunt.evolution_parent corphish/corphish
+      evolution_conditions: &ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+        level-up:
+          minimum_level: 30
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    crawdaunt:
+      name: CRAWDAUNT
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      experience: *ruby-sapphire.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      stats: *ruby-sapphire.pokemon.crawdaunt.stats
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      abilities: *ruby-sapphire.pokemon.crawdaunt.abilities
+      genus: *ruby-sapphire.pokemon.crawdaunt.genus
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      flavor_text:
+        emerald: |
+          A brutish POKéMON that loves to battle.
+          A veteran CRAWDAUNT that has prevailed in
+          hundreds of battles has giant pincers
+          marked with countless scars.
+      forms:
+        crawdaunt:
+          name: CRAWDAUNT
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.icon
+          sprites:
+            - emerald/crawdaunt-default.png
+            - emerald/shiny/crawdaunt-default.png
+            - emerald/animated/crawdaunt-default.webm
+            - emerald/animated/shiny/crawdaunt-default.webm
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 59
+  pokemon:
+    crawdaunt:
+      name: CRAWDAUNT
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      experience: *ruby-sapphire.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      stats: *ruby-sapphire.pokemon.crawdaunt.stats
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      abilities: *ruby-sapphire.pokemon.crawdaunt.abilities
+      genus: *ruby-sapphire.pokemon.crawdaunt.genus
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      forms:
+        crawdaunt:
+          name: CRAWDAUNT
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          sprites:
+            - colosseum/crawdaunt-default.png
+            - colosseum/shiny/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    crawdaunt:
+      name: CRAWDAUNT
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      experience: *ruby-sapphire.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      stats: *ruby-sapphire.pokemon.crawdaunt.stats
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      abilities: *ruby-sapphire.pokemon.crawdaunt.abilities
+      genus: *ruby-sapphire.pokemon.crawdaunt.genus
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      forms:
+        crawdaunt:
+          name: CRAWDAUNT
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          sprites:
+            - xd/crawdaunt-default.png
+            - xd/shiny/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    crawdaunt:
+      name: CRAWDAUNT
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      experience: *ruby-sapphire.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      stats: *ruby-sapphire.pokemon.crawdaunt.stats
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      abilities: *ruby-sapphire.pokemon.crawdaunt.abilities
+      genus: *ruby-sapphire.pokemon.crawdaunt.genus
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      flavor_text:
+        firered: |
+          A rough customer that wildly flails its
+          giant claws. It is said to be extremely
+          hard to raise.
+        leafgreen: |
+          A rough customer that wildly flails its
+          giant claws. It is said to be extremely
+          hard to raise.
+      forms:
+        crawdaunt:
+          name: CRAWDAUNT
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.icon
+          sprites:
+            - firered-leafgreen/crawdaunt-default.png
+            - firered-leafgreen/back/crawdaunt-default.png
+            - firered-leafgreen/shiny/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Crawdaunt
+  position: &diamond-pearl.position 370
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    crawdaunt:
+      genus: &diamond-pearl.pokemon.crawdaunt.genus 'Rogue Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      shape: &diamond-pearl.pokemon.crawdaunt.shape armor
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: &diamond-pearl.pokemon.crawdaunt.baby false
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      pal_park: &diamond-pearl.pokemon.crawdaunt.pal_park
+        area: pond
+        rate: 20
+        score: 70
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: &diamond-pearl.pokemon.crawdaunt.experience 164
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      stats: &diamond-pearl.pokemon.crawdaunt.stats
+        hp:
+          base_value: 63
+          effort_change: 0
+        attack:
+          base_value: 120
+          effort_change: 2
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.crawdaunt.abilities
+        hyper-cutter: *ruby-sapphire.pokemon.crawdaunt.abilities.hyper-cutter
+        shell-armor: *ruby-sapphire.pokemon.crawdaunt.abilities.shell-armor
+        adaptability:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is a ruffian that uses its
+          pincers to pick up and toss out
+          other Pokémon from its pond.
+        pearl: |
+          It is a ruffian that uses its
+          pincers to pick up and toss out
+          other Pokémon from its pond.
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.icon
+          sprites:
+            - diamond-pearl/back/shiny/crawdaunt-default.png
+            - diamond-pearl/back/crawdaunt-default.png
+            - diamond-pearl/shiny/crawdaunt-default.png
+            - diamond-pearl/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    crawdaunt:
+      genus: *diamond-pearl.pokemon.crawdaunt.genus
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      shape: *diamond-pearl.pokemon.crawdaunt.shape
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: *diamond-pearl.pokemon.crawdaunt.baby
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      pal_park: *diamond-pearl.pokemon.crawdaunt.pal_park
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: *diamond-pearl.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      stats: *diamond-pearl.pokemon.crawdaunt.stats
+      abilities: *diamond-pearl.pokemon.crawdaunt.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is a ruffian that uses its
+          pincers to pick up and toss out
+          other Pokémon from its pond.
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.icon
+          sprites:
+            - platinum/back/shiny/crawdaunt-default.png
+            - platinum/back/crawdaunt-default.png
+            - platinum/shiny/crawdaunt-default.png
+            - platinum/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    crawdaunt:
+      genus: *diamond-pearl.pokemon.crawdaunt.genus
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      shape: *diamond-pearl.pokemon.crawdaunt.shape
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: *diamond-pearl.pokemon.crawdaunt.baby
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      pal_park: *diamond-pearl.pokemon.crawdaunt.pal_park
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: *diamond-pearl.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      stats: *diamond-pearl.pokemon.crawdaunt.stats
+      abilities: *diamond-pearl.pokemon.crawdaunt.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      flavor_text:
+        heartgold: |
+          A brutish Pokémon that loves to
+          battle. It will crash itself into any
+          foe that approaches its nest.
+        soulsilver: |
+          A brutish Pokémon that loves to
+          battle. It will crash itself into any
+          foe that approaches its nest.
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 4
+              range: 3-5
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/crawdaunt-default.png
+            - heartgold-soulsilver/back/crawdaunt-default.png
+            - heartgold-soulsilver/shiny/crawdaunt-default.png
+            - heartgold-soulsilver/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    crawdaunt:
+      genus: *diamond-pearl.pokemon.crawdaunt.genus
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      color: &black-white.pokemon.crawdaunt.color red
+      shape: *diamond-pearl.pokemon.crawdaunt.shape
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: *diamond-pearl.pokemon.crawdaunt.baby
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: *diamond-pearl.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      stats: *diamond-pearl.pokemon.crawdaunt.stats
+      abilities: *diamond-pearl.pokemon.crawdaunt.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      flavor_text:
+        black: |
+          It is a ruffian that uses its
+          pincers to pick up and toss out
+          other Pokémon from its pond.
+        white: |
+          It is a ruffian that uses its
+          pincers to pick up and toss out
+          other Pokémon from its pond.
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.icon
+          sprites:
+            - black-white/back/shiny/crawdaunt-default.png
+            - black-white/back/crawdaunt-default.png
+            - black-white/shiny/crawdaunt-default.png
+            - black-white/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 280
+  pokemon:
+    crawdaunt:
+      genus: *diamond-pearl.pokemon.crawdaunt.genus
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      color: *black-white.pokemon.crawdaunt.color
+      shape: *diamond-pearl.pokemon.crawdaunt.shape
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: *diamond-pearl.pokemon.crawdaunt.baby
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: *diamond-pearl.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      stats: *diamond-pearl.pokemon.crawdaunt.stats
+      abilities: *diamond-pearl.pokemon.crawdaunt.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      flavor_text:
+        black-2: |
+          Loving to battle, this Pokémon pinches
+          all Pokémon that enter its territory
+          with its pincers and throws them out.
+        white-2: |
+          Loving to battle, this Pokémon pinches
+          all Pokémon that enter its territory
+          with its pincers and throws them out.
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.icon
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-central: 52
+  pokemon:
+    crawdaunt:
+      genus: *diamond-pearl.pokemon.crawdaunt.genus
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      color: *black-white.pokemon.crawdaunt.color
+      shape: *diamond-pearl.pokemon.crawdaunt.shape
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: *diamond-pearl.pokemon.crawdaunt.baby
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: *diamond-pearl.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      mega: &x-y.pokemon.crawdaunt.mega false
+      stats: *diamond-pearl.pokemon.crawdaunt.stats
+      abilities: *diamond-pearl.pokemon.crawdaunt.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      flavor_text:
+        x: |
+          It is a ruffian that uses its pincers to pick up and
+          toss out other Pokémon from its pond.
+        'y': |
+          Loving to battle, this Pokémon pinches all Pokémon
+          that enter its territory with its pincers and throws
+          them out.
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: &x-y.pokemon.crawdaunt.forms.crawdaunt.icon crawdaunt-default.png
+          sprites:
+            - x-y/shiny/crawdaunt-default.png
+            - x-y/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: &x-y.pokemon.crawdaunt.forms.crawdaunt.cry crawdaunt-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 135
+  pokemon:
+    crawdaunt:
+      genus: *diamond-pearl.pokemon.crawdaunt.genus
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      color: *black-white.pokemon.crawdaunt.color
+      shape: *diamond-pearl.pokemon.crawdaunt.shape
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: *diamond-pearl.pokemon.crawdaunt.baby
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: *diamond-pearl.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      mega: *x-y.pokemon.crawdaunt.mega
+      stats: *diamond-pearl.pokemon.crawdaunt.stats
+      abilities: *diamond-pearl.pokemon.crawdaunt.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Crawdaunt has an extremely violent nature that compels it to
+          challenge other living things to battle. Other life-forms refuse
+          to live in ponds inhabited by this Pokémon, making them
+          desolate places.
+        alpha-sapphire: |
+          Crawdaunt molts (sheds) its shell regularly. Immediately after
+          molting, its shell is soft and tender. Until the shell hardens,
+          this Pokémon hides in its streambed burrow to avoid attack
+          from its foes.
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *x-y.pokemon.crawdaunt.forms.crawdaunt.icon
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *x-y.pokemon.crawdaunt.forms.crawdaunt.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/crawdaunt-default.png
+            - omega-ruby-alpha-sapphire/shiny/crawdaunt-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    crawdaunt:
+      genus: *diamond-pearl.pokemon.crawdaunt.genus
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      color: *black-white.pokemon.crawdaunt.color
+      shape: *diamond-pearl.pokemon.crawdaunt.shape
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: *diamond-pearl.pokemon.crawdaunt.baby
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: *diamond-pearl.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      mega: *x-y.pokemon.crawdaunt.mega
+      stats: *diamond-pearl.pokemon.crawdaunt.stats
+      abilities: *diamond-pearl.pokemon.crawdaunt.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *x-y.pokemon.crawdaunt.forms.crawdaunt.icon
+          sprites:
+            - sun-moon/shiny/crawdaunt-default.png
+            - sun-moon/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *x-y.pokemon.crawdaunt.forms.crawdaunt.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 358
+    updated-poni: 105
+  pokemon:
+    crawdaunt:
+      genus: *diamond-pearl.pokemon.crawdaunt.genus
+      evolution_parent: *ruby-sapphire.pokemon.crawdaunt.evolution_parent
+      color: *black-white.pokemon.crawdaunt.color
+      shape: *diamond-pearl.pokemon.crawdaunt.shape
+      female_rate: *ruby-sapphire.pokemon.crawdaunt.female_rate
+      capture_rate: *ruby-sapphire.pokemon.crawdaunt.capture_rate
+      happiness: *ruby-sapphire.pokemon.crawdaunt.happiness
+      baby: *diamond-pearl.pokemon.crawdaunt.baby
+      hatch_steps: *ruby-sapphire.pokemon.crawdaunt.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.crawdaunt.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crawdaunt.forms_switchable
+      name: Crawdaunt
+      default: *ruby-sapphire.pokemon.crawdaunt.default
+      height: *ruby-sapphire.pokemon.crawdaunt.height
+      weight: *ruby-sapphire.pokemon.crawdaunt.weight
+      experience: *diamond-pearl.pokemon.crawdaunt.experience
+      types: *ruby-sapphire.pokemon.crawdaunt.types
+      egg_groups: *ruby-sapphire.pokemon.crawdaunt.egg_groups
+      mega: *x-y.pokemon.crawdaunt.mega
+      stats: *diamond-pearl.pokemon.crawdaunt.stats
+      abilities: *diamond-pearl.pokemon.crawdaunt.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.crawdaunt.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Its temperament is rough and it loves to fight,
+          but as soon as its pincers break off, it turns
+          cowardly. It stays timid until they grow back.
+        ultra-moon: |-
+          Its pincers often fall off. Unlike with Crabrawler
+          or Clauncher, the meat in its claws is utterly
+          nasty and stinking.
+      forms:
+        crawdaunt:
+          name: Crawdaunt
+          form_name: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.battle_only
+          icon: *x-y.pokemon.crawdaunt.forms.crawdaunt.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/crawdaunt-default.png
+            - ultra-sun-ultra-moon/crawdaunt-default.png
+          art: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.art
+          footprint: *ruby-sapphire.pokemon.crawdaunt.forms.crawdaunt.footprint
+          cry: *x-y.pokemon.crawdaunt.forms.crawdaunt.cry

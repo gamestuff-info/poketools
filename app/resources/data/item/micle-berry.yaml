@@ -1,0 +1,104 @@
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Micle Berry'
+  category: &diamond-pearl.category in-a-pinch
+  pocket: &diamond-pearl.pocket berries
+  buy: &diamond-pearl.buy 20
+  sell: &diamond-pearl.sell 10
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: &diamond-pearl.flags
+    - holdable-active
+  short_description: 'Held: Consumed at 1/4 max HP causing the next move to always hit.'
+  description: |
+    Held in battle
+    :   When the holder has 1/4 its max [HP]{mechanic:hp} remaining or less, it consumes this item, and its next used move will always hit.
+  berry: &diamond-pearl.berry
+    firmness: soft
+    natural_gift_type: rock
+    natural_gift_power: 80
+    size: 41
+    growth_time: 24
+    water: 7
+    smoothness: 60
+    flavors:
+      spicy: 0
+      dry: 40
+      sweet: 10
+      bitter: 0
+      sour: 0
+    harvest: 1-5
+  flavor_text: |
+    A Poffin ingredient. If held by a
+    Pokémon, it raises the accuracy of a
+    move just once in a pinch.
+  icon: &diamond-pearl.icon micle-berry.png
+platinum: *diamond-pearl
+heartgold-soulsilver: &heartgold-soulsilver
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: *diamond-pearl.flags
+  short_description: &heartgold-soulsilver.short_description 'Held: Consumed at 1/4 max HP to boost accuracy of next move by 20%.'
+  description: &heartgold-soulsilver.description |
+    Held in battle
+    :   When the holder has 1/4 its max [HP]{mechanic:hp} remaining or less, it consumes this item, and its next used move has 1.2× its normal accuracy.
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    If held by a Pokémon, it raises the
+    accuracy of a move just once in a pinch.
+  icon: *diamond-pearl.icon
+black-white: *heartgold-soulsilver
+black-2-white-2: *heartgold-soulsilver
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: *diamond-pearl.flags
+  short_description: *heartgold-soulsilver.short_description
+  description: *heartgold-soulsilver.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    A Berry to be consumed by Pokémon.
+    If a Pokémon holds one, its accuracy will
+    increase just once when it’s in a pinch.
+  icon: *diamond-pearl.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: *diamond-pearl.flags
+  short_description: *heartgold-soulsilver.short_description
+  description: *heartgold-soulsilver.description
+  berry:
+    firmness: soft
+    natural_gift_type: rock
+    natural_gift_power: 80
+    size: 41
+    growth_time: 24
+    smoothness: 60
+    flavors:
+      spicy: 0
+      dry: 40
+      sweet: 10
+      bitter: 0
+      sour: 0
+    harvest: 1-5
+  flavor_text: |
+    A Berry to be consumed by Pokémon. If a Pokémon
+    holds one, its accuracy will increase just once when
+    it’s in a pinch.
+  icon: *diamond-pearl.icon
+ultra-sun-ultra-moon: *sun-moon

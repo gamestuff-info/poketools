@@ -1,0 +1,803 @@
+gold-silver:
+  name: &gold-silver.name GLIGAR
+  position: &gold-silver.position 206
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 207
+    original-johto: 188
+    original-johto-abc: 57
+  pokemon:
+    gligar:
+      name: GLIGAR
+      default: &gold-silver.pokemon.gligar.default true
+      capture_rate: &gold-silver.pokemon.gligar.capture_rate 60
+      experience: &gold-silver.pokemon.gligar.experience 108
+      types: &gold-silver.pokemon.gligar.types
+        - ground
+        - flying
+      stats: &gold-silver.pokemon.gligar.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 75
+          effort_change: 75
+        defense:
+          base_value: 105
+          effort_change: 105
+        speed:
+          base_value: 85
+          effort_change: 85
+        special-attack:
+          base_value: 35
+          effort_change: 35
+        special-defense:
+          base_value: 65
+          effort_change: 35
+      growth_rate: &gold-silver.pokemon.gligar.growth_rate medium-slow
+      female_rate: &gold-silver.pokemon.gligar.female_rate 50
+      hatch_steps: &gold-silver.pokemon.gligar.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.gligar.egg_groups
+        - bug
+      genus: &gold-silver.pokemon.gligar.genus 'FLYSCORPIO Pokémon'
+      height: &gold-silver.pokemon.gligar.height 10
+      weight: &gold-silver.pokemon.gligar.weight 648
+      flavor_text:
+        gold: |
+          It flies straight
+          at its target's
+          face then clamps
+          down on the star-
+          tled victim to
+          inject poison.
+        silver: |
+          It usually clings
+          to cliffs. When it
+          spots its prey, it
+          spreads its wings
+          and glides down to
+          attack.
+      forms:
+        gligar:
+          name: GLIGAR
+          form_name: &gold-silver.pokemon.gligar.forms.gligar.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.gligar.forms.gligar.battle_only false
+          sprites:
+            - gold-silver/gligar-default.png
+            - gold-silver/back/gligar-default.png
+            - gold-silver/shiny/gligar-default.png
+          art: &gold-silver.pokemon.gligar.forms.gligar.art
+            - gligar-default.png
+          cry: &gold-silver.pokemon.gligar.forms.gligar.cry gen5/gligar-default.webm
+          icon: &gold-silver.pokemon.gligar.forms.gligar.icon gen2/bug.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    gligar:
+      name: GLIGAR
+      default: *gold-silver.pokemon.gligar.default
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      experience: *gold-silver.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      stats: *gold-silver.pokemon.gligar.stats
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      genus: *gold-silver.pokemon.gligar.genus
+      height: *gold-silver.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      flavor_text:
+        crystal: |
+          It builds its nest
+          on a steep cliff.
+          When it is done
+          gliding, it hops
+          along the ground
+          back to its nest.
+      forms:
+        gligar:
+          name: GLIGAR
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          sprites:
+            - crystal/gligar-default.png
+            - crystal/back/gligar-default.png
+            - crystal/shiny/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+          icon: *gold-silver.pokemon.gligar.forms.gligar.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 207
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 350
+  pokemon:
+    gligar:
+      name: GLIGAR
+      default: *gold-silver.pokemon.gligar.default
+      forms_switchable: &ruby-sapphire.pokemon.gligar.forms_switchable false
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      experience: *gold-silver.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      stats: &ruby-sapphire.pokemon.gligar.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 75
+          effort_change: 0
+        defense:
+          base_value: 105
+          effort_change: 1
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      happiness: &ruby-sapphire.pokemon.gligar.happiness 70
+      abilities: &ruby-sapphire.pokemon.gligar.abilities
+        hyper-cutter: &ruby-sapphire.pokemon.gligar.abilities.hyper-cutter
+          hidden: &ruby-sapphire.pokemon.gligar.abilities.hyper-cutter.hidden false
+          position: 1
+        sand-veil: &ruby-sapphire.pokemon.gligar.abilities.sand-veil
+          hidden: *ruby-sapphire.pokemon.gligar.abilities.hyper-cutter.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.gligar.genus 'FLYSCORPION Pokémon'
+      height: &ruby-sapphire.pokemon.gligar.height 11
+      weight: *gold-silver.pokemon.gligar.weight
+      flavor_text:
+        ruby: |
+          GLIGAR glides through the air without
+          a sound as if it were sliding.
+           This POKéMON hangs on to the face of
+          its foe using its clawed hind legs and
+          the large pincers on its forelegs, then
+          injects the prey with its poison barb.
+        sapphire: |
+          GLIGAR glides through the air without
+          a sound as if it were sliding.
+           This POKéMON hangs on to the face of
+          its foe using its clawed hind legs and
+          the large pincers on its forelegs, then
+          injects the prey with its poison barb.
+      forms:
+        gligar:
+          name: GLIGAR
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: &ruby-sapphire.pokemon.gligar.forms.gligar.icon gen5/gligar-default.png
+          sprites:
+            - ruby-sapphire/gligar-default.png
+            - ruby-sapphire/back/gligar-default.png
+            - ruby-sapphire/shiny/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: &ruby-sapphire.pokemon.gligar.forms.gligar.footprint gligar.png
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    gligar:
+      name: GLIGAR
+      default: *gold-silver.pokemon.gligar.default
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      experience: *gold-silver.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      abilities: *ruby-sapphire.pokemon.gligar.abilities
+      genus: *ruby-sapphire.pokemon.gligar.genus
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      flavor_text:
+        emerald: |
+          It glides without making a single sound.
+          It grasps the face of its foe using its
+          hind and large front claws, then stabs
+          with its poison barb.
+      forms:
+        gligar:
+          name: GLIGAR
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *ruby-sapphire.pokemon.gligar.forms.gligar.icon
+          sprites:
+            - emerald/gligar-default.png
+            - emerald/shiny/gligar-default.png
+            - emerald/animated/gligar-default.webm
+            - emerald/animated/shiny/gligar-default.webm
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 108
+  pokemon:
+    gligar:
+      name: GLIGAR
+      default: *gold-silver.pokemon.gligar.default
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      experience: *gold-silver.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      abilities: *ruby-sapphire.pokemon.gligar.abilities
+      genus: *ruby-sapphire.pokemon.gligar.genus
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      forms:
+        gligar:
+          name: GLIGAR
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          sprites:
+            - colosseum/gligar-default.png
+            - colosseum/shiny/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    gligar:
+      name: GLIGAR
+      default: *gold-silver.pokemon.gligar.default
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      experience: *gold-silver.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      abilities: *ruby-sapphire.pokemon.gligar.abilities
+      genus: *ruby-sapphire.pokemon.gligar.genus
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      forms:
+        gligar:
+          name: GLIGAR
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          sprites:
+            - xd/gligar-default.png
+            - xd/shiny/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    gligar:
+      name: GLIGAR
+      default: *gold-silver.pokemon.gligar.default
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      experience: *gold-silver.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      abilities: *ruby-sapphire.pokemon.gligar.abilities
+      genus: *ruby-sapphire.pokemon.gligar.genus
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      flavor_text:
+        firered: |
+          It usually clings to cliffs. When it spots
+          its prey, it spreads its wings and glides
+          down to attack.
+        leafgreen: |
+          It flies straight at its target's face,
+          then clamps down on the startled
+          victim to inject poison.
+      forms:
+        gligar:
+          name: GLIGAR
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *ruby-sapphire.pokemon.gligar.forms.gligar.icon
+          sprites:
+            - firered-leafgreen/gligar-default.png
+            - firered-leafgreen/back/gligar-default.png
+            - firered-leafgreen/shiny/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+diamond-pearl:
+  name: &diamond-pearl.name Gligar
+  position: &diamond-pearl.position 238
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    gligar:
+      genus: &diamond-pearl.pokemon.gligar.genus 'Fly Scorpion Pokémon'
+      shape: &diamond-pearl.pokemon.gligar.shape wings
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: &diamond-pearl.pokemon.gligar.baby false
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      pal_park: &diamond-pearl.pokemon.gligar.pal_park
+        area: mountain
+        rate: 30
+        score: 50
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: &diamond-pearl.pokemon.gligar.experience 86
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: &diamond-pearl.pokemon.gligar.abilities
+        hyper-cutter: *ruby-sapphire.pokemon.gligar.abilities.hyper-cutter
+        sand-veil: *ruby-sapphire.pokemon.gligar.abilities.sand-veil
+        immunity:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          It sails on the winds with its
+          limbs extended to strike from the
+          sky. It aims for the prey’s face.
+        pearl: |
+          It sails on the winds with its
+          limbs extended to strike from the
+          sky. It aims for the prey’s face.
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *ruby-sapphire.pokemon.gligar.forms.gligar.icon
+          sprites:
+            - diamond-pearl/back/shiny/gligar-default.png
+            - diamond-pearl/back/gligar-default.png
+            - diamond-pearl/female/gligar-default.png
+            - diamond-pearl/shiny/female/gligar-default.png
+            - diamond-pearl/shiny/gligar-default.png
+            - diamond-pearl/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 153
+  pokemon:
+    gligar:
+      genus: *diamond-pearl.pokemon.gligar.genus
+      shape: *diamond-pearl.pokemon.gligar.shape
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: *diamond-pearl.pokemon.gligar.baby
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.gligar.pal_park
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: *diamond-pearl.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: *diamond-pearl.pokemon.gligar.abilities
+      flavor_text:
+        platinum: |
+          It glides as if sliding. It startles
+          foes by clamping on to their faces,
+          then jabs with its poison stinger.
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *ruby-sapphire.pokemon.gligar.forms.gligar.icon
+          sprites:
+            - platinum/back/female/gligar-default.png
+            - platinum/back/shiny/gligar-default.png
+            - platinum/back/gligar-default.png
+            - platinum/female/gligar-default.png
+            - platinum/shiny/female/gligar-default.png
+            - platinum/shiny/gligar-default.png
+            - platinum/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 193
+  pokemon:
+    gligar:
+      genus: *diamond-pearl.pokemon.gligar.genus
+      shape: *diamond-pearl.pokemon.gligar.shape
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: *diamond-pearl.pokemon.gligar.baby
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.gligar.pal_park
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: *diamond-pearl.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: *diamond-pearl.pokemon.gligar.abilities
+      flavor_text:
+        heartgold: |
+          It flies straight at its target’s
+          face, then clamps down on the
+          startled victim to inject poison.
+        soulsilver: |
+          It usually clings to cliffs. When it
+          spots its prey, it spreads its wings
+          and glides down to attack.
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-2
+            jump:
+              base_value: 5
+              range: 4-5
+          icon: *ruby-sapphire.pokemon.gligar.forms.gligar.icon
+          sprites:
+            - heartgold-soulsilver/back/female/gligar-default.png
+            - heartgold-soulsilver/back/shiny/gligar-default.png
+            - heartgold-soulsilver/back/gligar-default.png
+            - heartgold-soulsilver/female/gligar-default.png
+            - heartgold-soulsilver/shiny/female/gligar-default.png
+            - heartgold-soulsilver/shiny/gligar-default.png
+            - heartgold-soulsilver/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    gligar:
+      genus: *diamond-pearl.pokemon.gligar.genus
+      color: &black-white.pokemon.gligar.color purple
+      shape: *diamond-pearl.pokemon.gligar.shape
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: *diamond-pearl.pokemon.gligar.baby
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: *diamond-pearl.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: *diamond-pearl.pokemon.gligar.abilities
+      flavor_text:
+        black: |
+          It glides as if sliding. It startles
+          foes by clamping on to their faces,
+          then jabs with its poison stinger.
+        white: |
+          It glides as if sliding. It startles
+          foes by clamping on to their faces,
+          then jabs with its poison stinger.
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *ruby-sapphire.pokemon.gligar.forms.gligar.icon
+          sprites:
+            - black-white/back/female/gligar-default.png
+            - black-white/back/shiny/gligar-default.png
+            - black-white/back/gligar-default.png
+            - black-white/female/gligar-default.png
+            - black-white/shiny/female/gligar-default.png
+            - black-white/shiny/gligar-default.png
+            - black-white/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 221
+  pokemon:
+    gligar:
+      genus: *diamond-pearl.pokemon.gligar.genus
+      color: *black-white.pokemon.gligar.color
+      shape: *diamond-pearl.pokemon.gligar.shape
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: *diamond-pearl.pokemon.gligar.baby
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: *diamond-pearl.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: *diamond-pearl.pokemon.gligar.abilities
+      flavor_text:
+        black-2: |
+          It clamps on to its chosen prey then
+          jabs the stinger on its tail into the
+          prey while it’s stunned with surprise.
+        white-2: |
+          It clamps on to its chosen prey then
+          jabs the stinger on its tail into the
+          prey while it’s stunned with surprise.
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *ruby-sapphire.pokemon.gligar.forms.gligar.icon
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *gold-silver.pokemon.gligar.forms.gligar.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 115
+  pokemon:
+    gligar:
+      genus: *diamond-pearl.pokemon.gligar.genus
+      color: *black-white.pokemon.gligar.color
+      shape: *diamond-pearl.pokemon.gligar.shape
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: *diamond-pearl.pokemon.gligar.baby
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: *diamond-pearl.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      mega: &x-y.pokemon.gligar.mega false
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: *diamond-pearl.pokemon.gligar.abilities
+      flavor_text:
+        x: |
+          It usually clings to cliffs. When it spots its prey,
+          it spreads its wings and glides down to attack.
+        'y': |
+          It flies straight at its target’s face, then clamps
+          down on the startled victim to inject poison.
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: &x-y.pokemon.gligar.forms.gligar.icon gligar-default.png
+          sprites:
+            - x-y/female/gligar-default.png
+            - x-y/shiny/female/gligar-default.png
+            - x-y/shiny/gligar-default.png
+            - x-y/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: &x-y.pokemon.gligar.forms.gligar.cry gligar-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    gligar:
+      genus: *diamond-pearl.pokemon.gligar.genus
+      color: *black-white.pokemon.gligar.color
+      shape: *diamond-pearl.pokemon.gligar.shape
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: *diamond-pearl.pokemon.gligar.baby
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: *diamond-pearl.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      mega: *x-y.pokemon.gligar.mega
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: *diamond-pearl.pokemon.gligar.abilities
+      flavor_text:
+        omega-ruby: |
+          Gligar glides through the air without a sound as if it were
+          sliding. This Pokémon hangs on to the face of its foe using
+          its clawed hind legs and the large pincers on its forelegs, then
+          injects the prey with its poison barb.
+        alpha-sapphire: |
+          Gligar glides through the air without a sound as if it were
+          sliding. This Pokémon hangs on to the face of its foe using
+          its clawed hind legs and the large pincers on its forelegs, then
+          injects the prey with its poison barb.
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *x-y.pokemon.gligar.forms.gligar.icon
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *x-y.pokemon.gligar.forms.gligar.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/gligar-default.png
+            - omega-ruby-alpha-sapphire/shiny/gligar-default.png
+            - omega-ruby-alpha-sapphire/female/gligar-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/gligar-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    gligar:
+      genus: *diamond-pearl.pokemon.gligar.genus
+      color: *black-white.pokemon.gligar.color
+      shape: *diamond-pearl.pokemon.gligar.shape
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: *diamond-pearl.pokemon.gligar.baby
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: *diamond-pearl.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      mega: *x-y.pokemon.gligar.mega
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: *diamond-pearl.pokemon.gligar.abilities
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *x-y.pokemon.gligar.forms.gligar.icon
+          sprites:
+            - sun-moon/female/gligar-default.png
+            - sun-moon/shiny/female/gligar-default.png
+            - sun-moon/shiny/gligar-default.png
+            - sun-moon/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *x-y.pokemon.gligar.forms.gligar.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    gligar:
+      genus: *diamond-pearl.pokemon.gligar.genus
+      color: *black-white.pokemon.gligar.color
+      shape: *diamond-pearl.pokemon.gligar.shape
+      female_rate: *gold-silver.pokemon.gligar.female_rate
+      capture_rate: *gold-silver.pokemon.gligar.capture_rate
+      happiness: *ruby-sapphire.pokemon.gligar.happiness
+      baby: *diamond-pearl.pokemon.gligar.baby
+      hatch_steps: *gold-silver.pokemon.gligar.hatch_steps
+      growth_rate: *gold-silver.pokemon.gligar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gligar.forms_switchable
+      name: Gligar
+      default: *gold-silver.pokemon.gligar.default
+      height: *ruby-sapphire.pokemon.gligar.height
+      weight: *gold-silver.pokemon.gligar.weight
+      experience: *diamond-pearl.pokemon.gligar.experience
+      types: *gold-silver.pokemon.gligar.types
+      egg_groups: *gold-silver.pokemon.gligar.egg_groups
+      mega: *x-y.pokemon.gligar.mega
+      stats: *ruby-sapphire.pokemon.gligar.stats
+      abilities: *diamond-pearl.pokemon.gligar.abilities
+      forms:
+        gligar:
+          name: Gligar
+          form_name: *gold-silver.pokemon.gligar.forms.gligar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.gligar.forms.gligar.battle_only
+          icon: *x-y.pokemon.gligar.forms.gligar.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/gligar-default.png
+            - ultra-sun-ultra-moon/shiny/female/gligar-default.png
+            - ultra-sun-ultra-moon/shiny/gligar-default.png
+            - ultra-sun-ultra-moon/gligar-default.png
+          art: *gold-silver.pokemon.gligar.forms.gligar.art
+          footprint: *ruby-sapphire.pokemon.gligar.forms.gligar.footprint
+          cry: *x-y.pokemon.gligar.forms.gligar.cry

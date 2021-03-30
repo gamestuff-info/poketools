@@ -1,0 +1,197 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name FORESIGHT
+  type: &gold-silver.type normal
+  accuracy: &gold-silver.accuracy 100
+  pp: &gold-silver.pp 40
+  effect: &gold-silver.effect 114
+  ailment: &gold-silver.ailment no-type-immunity
+  flags: &gold-silver.flags
+    - protect
+    - reflectable
+    - mirror
+    - authentic
+  categories: &gold-silver.categories
+    - ailment
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    Negates accuracy
+    reduction moves.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: &ruby-sapphire.flags
+    - protect
+    - mirror
+  ailment: *gold-silver.ailment
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 28
+  flavor_text: |
+    Negates the foe's efforts
+    to heighten evasiveness.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: &colosseum.flavor_text |
+    Foils the target's efforts
+    to heighten evasiveness.
+  flags: *ruby-sapphire.flags
+  ailment: *gold-silver.ailment
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: physical
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  ailment: *gold-silver.ailment
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *ruby-sapphire.flags
+  ailment: *gold-silver.ailment
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    Completely negates
+    the foe's efforts to
+    heighten its ability
+    to evade.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Foresight
+  ailment: *gold-silver.ailment
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 20
+  flavor_text: &diamond-pearl.flavor_text |
+    Enables the user to
+    hit a Ghost type with
+    any type of move. It
+    also enables the user
+    to hit an evasive foe.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  ailment: *gold-silver.ailment
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  ailment: *gold-silver.ailment
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    Enables a Ghost-type target to be hit by
+    Normal- and Fighting-type attacks. It also
+    enables an evasive target to be hit.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  ailment: *gold-silver.ailment
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &x-y.flavor_text |
+    Enables a Ghost-type target to be hit by
+    Normal- and Fighting-type attacks. This also
+    enables an evasive target to be hit.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  ailment: *gold-silver.ailment
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 23
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  ailment: *gold-silver.ailment
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    Enables a Ghost-type target to be hit by Normal-
+    and Fighting-type attacks. This also enables an
+    evasive target to be hit.
+ultra-sun-ultra-moon: *sun-moon

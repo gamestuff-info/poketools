@@ -1,0 +1,113 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'REVIVAL HERB'
+  pocket: &gold-silver.pocket misc
+  buy: &gold-silver.buy 2800
+  sell: &gold-silver.sell 1400
+  flavor_text: |
+    Revives fainted
+    POKéMON. Bitter.
+  category: &gold-silver.category revival
+  flags: &gold-silver.flags
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  short_description: &gold-silver.short_description 'Revives with full HP, but lowers happiness.'
+  description: &gold-silver.description |
+    Used on a party Pokémon
+    :   Revives a [fainted]{mechanic:faint} Pokémon and restores its [HP]{mechanic:hp} to full.  Decreases [happiness]{mechanic:happiness} by 10/10/15.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: &ruby-sapphire.icon revival-herb.png
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    A very bitter herb
+    that revives a
+    fainted POKéMON.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *gold-silver.name
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *gold-silver.category
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+xd: *colosseum
+firered-leafgreen:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: |
+    A very bitter medicinal herb.
+    It revives a fainted POKéMON,
+    restoring HP fully.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Revival Herb'
+  category: *gold-silver.category
+  pocket: &diamond-pearl.pocket medicine
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A very bitter medicinal herb.
+    It revives a fainted Pokémon, fully
+    restoring its HP.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *diamond-pearl.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A terribly bitter medicinal herb.
+    It revives a fainted Pokémon and
+    fully restores its maximum HP.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *diamond-pearl.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A terribly bitter medicinal herb. It revives a fainted
+    Pokémon and fully restores its maximum HP.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

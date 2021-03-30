@@ -1,0 +1,31 @@
+x-y: &x-y
+  name: &x-y.name 'Balm Mushroom'
+  category: &x-y.category loot
+  pocket: &x-y.pocket misc
+  buy: &x-y.buy 15000
+  sell: &x-y.sell 7500
+  fling_effect: damage
+  fling_power: 30
+  short_description: &x-y.short_description 'No effect.  Sell to shops.'
+  description: &x-y.description 'No effect.  Sell to shops.'
+  flavor_text: |
+    A rare mushroom that gives off
+    a nice fragrance. It can be sold at
+    a high price to shops.
+  icon: &x-y.icon balm-mushroom.png
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *x-y.name
+  category: *x-y.category
+  pocket: *x-y.pocket
+  buy: *x-y.buy
+  sell: *x-y.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *x-y.short_description
+  description: *x-y.description
+  flavor_text: |
+    A rare mushroom that gives off a nice fragrance.
+    It can be sold at a high price to shops.
+  icon: *x-y.icon
+ultra-sun-ultra-moon: *sun-moon

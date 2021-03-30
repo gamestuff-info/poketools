@@ -1,0 +1,344 @@
+black-white:
+  name: &black-white.name Golurk
+  position: &black-white.position 624
+  numbers:
+    national: &black-white.numbers.national 623
+    original-unova: 129
+  pokemon:
+    golurk:
+      genus: &black-white.pokemon.golurk.genus 'Automaton Pokémon'
+      evolution_parent: &black-white.pokemon.golurk.evolution_parent golett/golett
+      color: &black-white.pokemon.golurk.color green
+      shape: &black-white.pokemon.golurk.shape humanoid
+      capture_rate: &black-white.pokemon.golurk.capture_rate 90
+      happiness: &black-white.pokemon.golurk.happiness 70
+      baby: &black-white.pokemon.golurk.baby false
+      hatch_steps: &black-white.pokemon.golurk.hatch_steps 25
+      growth_rate: &black-white.pokemon.golurk.growth_rate medium
+      forms_switchable: &black-white.pokemon.golurk.forms_switchable false
+      name: Golurk
+      default: &black-white.pokemon.golurk.default true
+      height: &black-white.pokemon.golurk.height 28
+      weight: &black-white.pokemon.golurk.weight 3300
+      experience: &black-white.pokemon.golurk.experience 169
+      types: &black-white.pokemon.golurk.types
+        - ground
+        - ghost
+      egg_groups: &black-white.pokemon.golurk.egg_groups
+        - mineral
+      stats: &black-white.pokemon.golurk.stats
+        hp:
+          base_value: 89
+          effort_change: 0
+        attack:
+          base_value: 124
+          effort_change: 2
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      abilities: &black-white.pokemon.golurk.abilities
+        iron-fist:
+          hidden: &black-white.pokemon.golurk.abilities.iron-fist.hidden false
+          position: 1
+        klutz:
+          hidden: *black-white.pokemon.golurk.abilities.iron-fist.hidden
+          position: 2
+        no-guard:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.golurk.wild_held_items.black
+          light-clay: 5
+        white: *black-white.pokemon.golurk.wild_held_items.black
+      evolution_conditions: &black-white.pokemon.golurk.evolution_conditions
+        level-up:
+          minimum_level: 43
+      flavor_text:
+        black: |
+          It flies across the sky at Mach speeds.
+          Removing the seal on its chest makes
+          its internal energy go out of control.
+        white: |
+          It is said that Golurk were ordered
+          to protect people and Pokémon
+          by the ancient people who made them.
+      forms:
+        golurk:
+          name: Golurk
+          form_name: &black-white.pokemon.golurk.forms.golurk.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.golurk.forms.golurk.battle_only false
+          icon: &black-white.pokemon.golurk.forms.golurk.icon gen5/golurk-default.png
+          sprites:
+            - black-white/golurk-default.png
+            - black-white/back/golurk-default.png
+            - black-white/back/shiny/golurk-default.png
+            - black-white/shiny/golurk-default.png
+          art: &black-white.pokemon.golurk.forms.golurk.art
+            - golurk-default.png
+          footprint: &black-white.pokemon.golurk.forms.golurk.footprint golurk.png
+          cry: &black-white.pokemon.golurk.forms.golurk.cry gen5/golurk-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 272
+  pokemon:
+    golurk:
+      genus: *black-white.pokemon.golurk.genus
+      evolution_parent: *black-white.pokemon.golurk.evolution_parent
+      color: *black-white.pokemon.golurk.color
+      shape: *black-white.pokemon.golurk.shape
+      capture_rate: *black-white.pokemon.golurk.capture_rate
+      happiness: *black-white.pokemon.golurk.happiness
+      baby: *black-white.pokemon.golurk.baby
+      hatch_steps: *black-white.pokemon.golurk.hatch_steps
+      growth_rate: *black-white.pokemon.golurk.growth_rate
+      forms_switchable: *black-white.pokemon.golurk.forms_switchable
+      name: Golurk
+      default: *black-white.pokemon.golurk.default
+      height: *black-white.pokemon.golurk.height
+      weight: *black-white.pokemon.golurk.weight
+      experience: *black-white.pokemon.golurk.experience
+      types: *black-white.pokemon.golurk.types
+      egg_groups: *black-white.pokemon.golurk.egg_groups
+      stats: *black-white.pokemon.golurk.stats
+      abilities: *black-white.pokemon.golurk.abilities
+      wild_held_items:
+        black-2: *black-white.pokemon.golurk.wild_held_items.black
+        white-2: *black-white.pokemon.golurk.wild_held_items.black
+      evolution_conditions: *black-white.pokemon.golurk.evolution_conditions
+      flavor_text:
+        black-2: |
+          Golurk were created to protect
+          people and Pokémon.
+          They run on a mysterious energy.
+        white-2: |
+          Golurk were created to protect
+          people and Pokémon.
+          They run on a mysterious energy.
+      forms:
+        golurk:
+          name: Golurk
+          form_name: *black-white.pokemon.golurk.forms.golurk.form_name
+          default: true
+          battle_only: *black-white.pokemon.golurk.forms.golurk.battle_only
+          icon: *black-white.pokemon.golurk.forms.golurk.icon
+          art: *black-white.pokemon.golurk.forms.golurk.art
+          footprint: *black-white.pokemon.golurk.forms.golurk.footprint
+          cry: *black-white.pokemon.golurk.forms.golurk.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    kalos-coastal: 92
+  pokemon:
+    golurk:
+      genus: *black-white.pokemon.golurk.genus
+      evolution_parent: *black-white.pokemon.golurk.evolution_parent
+      color: *black-white.pokemon.golurk.color
+      shape: *black-white.pokemon.golurk.shape
+      capture_rate: *black-white.pokemon.golurk.capture_rate
+      happiness: *black-white.pokemon.golurk.happiness
+      baby: *black-white.pokemon.golurk.baby
+      hatch_steps: *black-white.pokemon.golurk.hatch_steps
+      growth_rate: *black-white.pokemon.golurk.growth_rate
+      forms_switchable: *black-white.pokemon.golurk.forms_switchable
+      name: Golurk
+      default: *black-white.pokemon.golurk.default
+      height: *black-white.pokemon.golurk.height
+      weight: *black-white.pokemon.golurk.weight
+      experience: *black-white.pokemon.golurk.experience
+      types: *black-white.pokemon.golurk.types
+      egg_groups: *black-white.pokemon.golurk.egg_groups
+      mega: &x-y.pokemon.golurk.mega false
+      stats: *black-white.pokemon.golurk.stats
+      abilities: *black-white.pokemon.golurk.abilities
+      wild_held_items:
+        x: *black-white.pokemon.golurk.wild_held_items.black
+        'y': *black-white.pokemon.golurk.wild_held_items.black
+      evolution_conditions: *black-white.pokemon.golurk.evolution_conditions
+      flavor_text:
+        x: |
+          It is said that Golurk were ordered to protect
+          people and Pokémon by the ancient people who
+          made them.
+        'y': |
+          It flies across the sky at Mach speeds. Removing
+          the seal on its chest makes its internal energy go
+          out of control.
+      forms:
+        golurk:
+          name: Golurk
+          form_name: *black-white.pokemon.golurk.forms.golurk.form_name
+          default: true
+          battle_only: *black-white.pokemon.golurk.forms.golurk.battle_only
+          icon: &x-y.pokemon.golurk.forms.golurk.icon golurk-default.png
+          sprites:
+            - x-y/golurk-default.png
+            - x-y/shiny/golurk-default.png
+          art: *black-white.pokemon.golurk.forms.golurk.art
+          footprint: *black-white.pokemon.golurk.forms.golurk.footprint
+          cry: &x-y.pokemon.golurk.forms.golurk.cry golurk-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *black-white.numbers.national
+  pokemon:
+    golurk:
+      genus: *black-white.pokemon.golurk.genus
+      evolution_parent: *black-white.pokemon.golurk.evolution_parent
+      color: *black-white.pokemon.golurk.color
+      shape: *black-white.pokemon.golurk.shape
+      capture_rate: *black-white.pokemon.golurk.capture_rate
+      happiness: *black-white.pokemon.golurk.happiness
+      baby: *black-white.pokemon.golurk.baby
+      hatch_steps: *black-white.pokemon.golurk.hatch_steps
+      growth_rate: *black-white.pokemon.golurk.growth_rate
+      forms_switchable: *black-white.pokemon.golurk.forms_switchable
+      name: Golurk
+      default: *black-white.pokemon.golurk.default
+      height: *black-white.pokemon.golurk.height
+      weight: *black-white.pokemon.golurk.weight
+      experience: *black-white.pokemon.golurk.experience
+      types: *black-white.pokemon.golurk.types
+      egg_groups: *black-white.pokemon.golurk.egg_groups
+      mega: *x-y.pokemon.golurk.mega
+      stats: *black-white.pokemon.golurk.stats
+      abilities: *black-white.pokemon.golurk.abilities
+      evolution_conditions: *black-white.pokemon.golurk.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It is said that Golurk were ordered to protect
+          people and Pokémon by the ancient people who
+          made them.
+        alpha-sapphire: |
+          It flies across the sky at Mach speeds. Removing
+          the seal on its chest makes its internal energy go
+          out of control.
+      forms:
+        golurk:
+          name: Golurk
+          form_name: *black-white.pokemon.golurk.forms.golurk.form_name
+          default: true
+          battle_only: *black-white.pokemon.golurk.forms.golurk.battle_only
+          icon: *x-y.pokemon.golurk.forms.golurk.icon
+          art: *black-white.pokemon.golurk.forms.golurk.art
+          footprint: *black-white.pokemon.golurk.forms.golurk.footprint
+          cry: *x-y.pokemon.golurk.forms.golurk.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/golurk-default.png
+            - omega-ruby-alpha-sapphire/shiny/golurk-default.png
+      wild_held_items:
+        omega-ruby: *black-white.pokemon.golurk.wild_held_items.black
+        alpha-sapphire: *black-white.pokemon.golurk.wild_held_items.black
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    golurk:
+      genus: *black-white.pokemon.golurk.genus
+      evolution_parent: *black-white.pokemon.golurk.evolution_parent
+      color: *black-white.pokemon.golurk.color
+      shape: *black-white.pokemon.golurk.shape
+      capture_rate: *black-white.pokemon.golurk.capture_rate
+      happiness: *black-white.pokemon.golurk.happiness
+      baby: *black-white.pokemon.golurk.baby
+      hatch_steps: *black-white.pokemon.golurk.hatch_steps
+      growth_rate: *black-white.pokemon.golurk.growth_rate
+      forms_switchable: *black-white.pokemon.golurk.forms_switchable
+      name: Golurk
+      default: *black-white.pokemon.golurk.default
+      height: *black-white.pokemon.golurk.height
+      weight: *black-white.pokemon.golurk.weight
+      experience: *black-white.pokemon.golurk.experience
+      types: *black-white.pokemon.golurk.types
+      egg_groups: *black-white.pokemon.golurk.egg_groups
+      mega: *x-y.pokemon.golurk.mega
+      stats: *black-white.pokemon.golurk.stats
+      abilities: *black-white.pokemon.golurk.abilities
+      wild_held_items:
+        sun: *black-white.pokemon.golurk.wild_held_items.black
+        moon: *black-white.pokemon.golurk.wild_held_items.black
+      evolution_conditions: *black-white.pokemon.golurk.evolution_conditions
+      forms:
+        golurk:
+          name: Golurk
+          form_name: *black-white.pokemon.golurk.forms.golurk.form_name
+          default: true
+          battle_only: *black-white.pokemon.golurk.forms.golurk.battle_only
+          icon: *x-y.pokemon.golurk.forms.golurk.icon
+          sprites:
+            - sun-moon/golurk-default.png
+            - sun-moon/shiny/golurk-default.png
+          art: *black-white.pokemon.golurk.forms.golurk.art
+          footprint: *black-white.pokemon.golurk.forms.golurk.footprint
+          cry: *x-y.pokemon.golurk.forms.golurk.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 313
+    updated-ulaula: 134
+  pokemon:
+    golurk:
+      genus: *black-white.pokemon.golurk.genus
+      evolution_parent: *black-white.pokemon.golurk.evolution_parent
+      color: *black-white.pokemon.golurk.color
+      shape: *black-white.pokemon.golurk.shape
+      capture_rate: *black-white.pokemon.golurk.capture_rate
+      happiness: *black-white.pokemon.golurk.happiness
+      baby: *black-white.pokemon.golurk.baby
+      hatch_steps: *black-white.pokemon.golurk.hatch_steps
+      growth_rate: *black-white.pokemon.golurk.growth_rate
+      forms_switchable: *black-white.pokemon.golurk.forms_switchable
+      name: Golurk
+      default: *black-white.pokemon.golurk.default
+      height: *black-white.pokemon.golurk.height
+      weight: *black-white.pokemon.golurk.weight
+      experience: *black-white.pokemon.golurk.experience
+      types: *black-white.pokemon.golurk.types
+      egg_groups: *black-white.pokemon.golurk.egg_groups
+      mega: *x-y.pokemon.golurk.mega
+      stats: *black-white.pokemon.golurk.stats
+      abilities: *black-white.pokemon.golurk.abilities
+      wild_held_items:
+        ultra-sun: *black-white.pokemon.golurk.wild_held_items.black
+        ultra-moon: *black-white.pokemon.golurk.wild_held_items.black
+      evolution_conditions: *black-white.pokemon.golurk.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Some say that ancient people invented Golurk
+          to serve as a laborer. It follows its master’s
+          orders faithfully.
+        ultra-moon: |-
+          When the seal on its chest is removed, it rages
+          indiscriminately, turning the whole town around
+          it into a mountain of rubble.
+      forms:
+        golurk:
+          name: Golurk
+          form_name: *black-white.pokemon.golurk.forms.golurk.form_name
+          default: true
+          battle_only: *black-white.pokemon.golurk.forms.golurk.battle_only
+          icon: *x-y.pokemon.golurk.forms.golurk.icon
+          sprites:
+            - ultra-sun-ultra-moon/golurk-default.png
+            - ultra-sun-ultra-moon/shiny/golurk-default.png
+          art: *black-white.pokemon.golurk.forms.golurk.art
+          footprint: *black-white.pokemon.golurk.forms.golurk.footprint
+          cry: *x-y.pokemon.golurk.forms.golurk.cry

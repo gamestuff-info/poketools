@@ -1,0 +1,25 @@
+gold-silver: &gold-silver
+  region: &gold-silver.region johto
+  name: &gold-silver.name 'Slowpoke Well'
+  areas:
+    b1f:
+      name: &gold-silver.areas.b1f.name B1F
+      default: true
+    b2f:
+      name: B2F
+  super: &gold-silver.super mahogany-town
+crystal: *gold-silver
+heartgold-soulsilver:
+  region: *gold-silver.region
+  name: *gold-silver.name
+  areas:
+    1f:
+      name: 1F
+      default: true
+    b1f:
+      name: *gold-silver.areas.b1f.name
+  super: *gold-silver.super
+  map:
+    map: johto
+    z: 10
+    overlay: '<circle r="3" cy="125" cx="101" />'

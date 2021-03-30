@@ -1,0 +1,994 @@
+red-blue:
+  name: &red-blue.name MAGNETON
+  position: &red-blue.position 82
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 82
+    kanto: 82
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: &red-blue.pokemon.magneton.default true
+      capture_rate: &red-blue.pokemon.magneton.capture_rate 60
+      experience: &red-blue.pokemon.magneton.experience 161
+      types: &red-blue.pokemon.magneton.types
+        - electric
+      stats: &red-blue.pokemon.magneton.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 60
+          effort_change: 60
+        defense:
+          base_value: 95
+          effort_change: 95
+        speed:
+          base_value: 70
+          effort_change: 70
+        special:
+          base_value: 120
+          effort_change: 120
+      growth_rate: &red-blue.pokemon.magneton.growth_rate medium
+      genus: &red-blue.pokemon.magneton.genus 'MAGNET Pokémon'
+      height: &red-blue.pokemon.magneton.height 9
+      weight: &red-blue.pokemon.magneton.weight 5987
+      flavor_text:
+        red: |
+          Formed by several
+          MAGNEMITEs linked
+          together. They
+          frequently appear
+           when sunspots
+          flare up.
+        blue: |
+          Formed by several
+          MAGNEMITEs linked
+          together. They
+          frequently appear
+           when sunspots
+          flare up.
+      evolution_parent: &red-blue.pokemon.magneton.evolution_parent magnemite/magnemite
+      evolution_conditions: &red-blue.pokemon.magneton.evolution_conditions
+        level-up:
+          minimum_level: 30
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: &red-blue.pokemon.magneton.forms.magneton.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.magneton.forms.magneton.battle_only false
+          sprites:
+            - red-blue/magneton-default.png
+            - red-blue/gray/magneton-default.png
+            - red-blue/back/magneton-default.png
+          art: &red-blue.pokemon.magneton.forms.magneton.art
+            - magneton-default.png
+          cry: &red-blue.pokemon.magneton.forms.magneton.cry gen5/magneton-default.webm
+          icon: &red-blue.pokemon.magneton.forms.magneton.icon gen1/ball_m.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: *red-blue.pokemon.magneton.default
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      experience: *red-blue.pokemon.magneton.experience
+      types: *red-blue.pokemon.magneton.types
+      stats: *red-blue.pokemon.magneton.stats
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      genus: *red-blue.pokemon.magneton.genus
+      height: *red-blue.pokemon.magneton.height
+      weight: *red-blue.pokemon.magneton.weight
+      flavor_text:
+        yellow: |
+          Generates strange
+          radio signals. It
+          raises the tem-
+          perature by 3.6F
+          degrees within
+          3,300 feet.
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          sprites:
+            - yellow/magneton-default.png
+            - yellow/gray/magneton-default.png
+            - yellow/back/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+          icon: *red-blue.pokemon.magneton.forms.magneton.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 81
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 118
+    original-johto-abc: 110
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: *red-blue.pokemon.magneton.default
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      experience: *red-blue.pokemon.magneton.experience
+      types: &gold-silver.pokemon.magneton.types
+        - electric
+        - steel
+      stats: &gold-silver.pokemon.magneton.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 60
+          effort_change: 60
+        defense:
+          base_value: 95
+          effort_change: 95
+        speed:
+          base_value: 70
+          effort_change: 70
+        special-attack:
+          base_value: 120
+          effort_change: 120
+        special-defense:
+          base_value: 70
+          effort_change: 120
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      female_rate: &gold-silver.pokemon.magneton.female_rate 100
+      hatch_steps: &gold-silver.pokemon.magneton.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.magneton.egg_groups
+        - mineral
+      wild_held_items:
+        gold: &gold-silver.pokemon.magneton.wild_held_items.gold
+          metal-coat: 2
+        silver: *gold-silver.pokemon.magneton.wild_held_items.gold
+      genus: *red-blue.pokemon.magneton.genus
+      height: *red-blue.pokemon.magneton.height
+      weight: &gold-silver.pokemon.magneton.weight 598
+      flavor_text:
+        gold: |
+          Three MAGNEMITE
+          are linked by a
+          strong magnetic
+          force. Earaches
+          will occur if you
+          get too close.
+        silver: |
+          The MAGNEMITE are
+          united by a mag-
+          netism so power-
+          ful, it dries all
+          moisture in its
+          vicinities.
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          sprites:
+            - gold-silver/magneton-default.png
+            - gold-silver/back/magneton-default.png
+            - gold-silver/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+          icon: &gold-silver.pokemon.magneton.forms.magneton.icon gen2/voltorb.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: *red-blue.pokemon.magneton.default
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      experience: *red-blue.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      stats: *gold-silver.pokemon.magneton.stats
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      female_rate: *gold-silver.pokemon.magneton.female_rate
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.magneton.wild_held_items.gold
+      genus: *red-blue.pokemon.magneton.genus
+      height: *red-blue.pokemon.magneton.height
+      weight: *gold-silver.pokemon.magneton.weight
+      flavor_text:
+        crystal: |
+          When many
+          MAGNETON gather
+          together, the
+          resulting magnetic
+          storm disrupts
+          radio waves.
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          sprites:
+            - crystal/magneton-default.png
+            - crystal/back/magneton-default.png
+            - crystal/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+          icon: *gold-silver.pokemon.magneton.forms.magneton.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 83
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: *red-blue.pokemon.magneton.default
+      forms_switchable: &ruby-sapphire.pokemon.magneton.forms_switchable false
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      experience: *red-blue.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      stats: &ruby-sapphire.pokemon.magneton.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 95
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 120
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+          metal-coat: 5
+        sapphire: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.magneton.happiness 70
+      abilities: &ruby-sapphire.pokemon.magneton.abilities
+        magnet-pull: &ruby-sapphire.pokemon.magneton.abilities.magnet-pull
+          hidden: &ruby-sapphire.pokemon.magneton.abilities.magnet-pull.hidden false
+          position: 1
+        sturdy: &ruby-sapphire.pokemon.magneton.abilities.sturdy
+          hidden: *ruby-sapphire.pokemon.magneton.abilities.magnet-pull.hidden
+          position: 2
+      genus: *red-blue.pokemon.magneton.genus
+      height: &ruby-sapphire.pokemon.magneton.height 10
+      weight: &ruby-sapphire.pokemon.magneton.weight 600
+      flavor_text:
+        ruby: |
+          MAGNETON emits a powerful magnetic
+          force that is fatal to mechanical
+           devices. As a result, large cities sound
+          sirens to warn citizens of large-scale
+           outbreaks of this POKéMON.
+        sapphire: |
+          MAGNETON emits a powerful magnetic
+          force that is fatal to electronics and
+          precision instruments. Because of
+          this, it is said that some towns warn
+          people to keep this POKéMON inside
+          a POKé BALL.
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: &ruby-sapphire.pokemon.magneton.forms.magneton.icon gen5/magneton-default.png
+          sprites:
+            - ruby-sapphire/magneton-default.png
+            - ruby-sapphire/back/magneton-default.png
+            - ruby-sapphire/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: &ruby-sapphire.pokemon.magneton.forms.magneton.footprint magneton.png
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: *red-blue.pokemon.magneton.default
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      experience: *red-blue.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      stats: *ruby-sapphire.pokemon.magneton.stats
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      abilities: *ruby-sapphire.pokemon.magneton.abilities
+      genus: *red-blue.pokemon.magneton.genus
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      flavor_text:
+        emerald: |
+          It is actually three MAGNEMITE linked
+          by magnetism. It generates powerful radio
+          waves that raise temperatures by 3.6
+          degrees F within a 3,300-foot radius.
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *ruby-sapphire.pokemon.magneton.forms.magneton.icon
+          sprites:
+            - emerald/magneton-default.png
+            - emerald/shiny/magneton-default.png
+            - emerald/animated/magneton-default.webm
+            - emerald/animated/shiny/magneton-default.webm
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 184
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: *red-blue.pokemon.magneton.default
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      experience: *red-blue.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      stats: *ruby-sapphire.pokemon.magneton.stats
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      abilities: *ruby-sapphire.pokemon.magneton.abilities
+      genus: *red-blue.pokemon.magneton.genus
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          sprites:
+            - colosseum/magneton-default.png
+            - colosseum/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: *red-blue.pokemon.magneton.default
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      experience: *red-blue.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      stats: *ruby-sapphire.pokemon.magneton.stats
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      abilities: *ruby-sapphire.pokemon.magneton.abilities
+      genus: *red-blue.pokemon.magneton.genus
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          sprites:
+            - xd/magneton-default.png
+            - xd/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    magneton:
+      name: MAGNETON
+      default: *red-blue.pokemon.magneton.default
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      experience: *red-blue.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      stats: *ruby-sapphire.pokemon.magneton.stats
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.magneton.wild_held_items.firered
+          magnet: 5
+        leafgreen: *firered-leafgreen.pokemon.magneton.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      abilities: *ruby-sapphire.pokemon.magneton.abilities
+      genus: *red-blue.pokemon.magneton.genus
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      flavor_text:
+        firered: |
+          A linked cluster formed of several
+          MAGNEMITE. It discharges powerful
+           magnetic waves at high voltage.
+        leafgreen: |
+          Formed by several MAGNEMITE linked
+          together. They frequently appear when
+          sunspots flare up.
+      forms:
+        magneton:
+          name: MAGNETON
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *ruby-sapphire.pokemon.magneton.forms.magneton.icon
+          sprites:
+            - firered-leafgreen/magneton-default.png
+            - firered-leafgreen/back/magneton-default.png
+            - firered-leafgreen/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Magneton
+  position: &diamond-pearl.position 89
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    magneton:
+      genus: &diamond-pearl.pokemon.magneton.genus 'Magnet Pokémon'
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      shape: &diamond-pearl.pokemon.magneton.shape heads
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: &diamond-pearl.pokemon.magneton.baby false
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      pal_park: &diamond-pearl.pokemon.magneton.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: &diamond-pearl.pokemon.magneton.experience 163
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      stats: &diamond-pearl.pokemon.magneton.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 95
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 120
+          effort_change: 2
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.magneton.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is actually three MAGNEMITE
+          linked by magnetism. A group can
+          set off a magnetic storm.
+        pearl: |
+          It is actually three MAGNEMITE
+          linked by magnetism. A group can
+          set off a magnetic storm.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *ruby-sapphire.pokemon.magneton.forms.magneton.icon
+          sprites:
+            - diamond-pearl/magneton-default.png
+            - diamond-pearl/back/magneton-default.png
+            - diamond-pearl/back/shiny/magneton-default.png
+            - diamond-pearl/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 179
+  pokemon:
+    magneton:
+      genus: *diamond-pearl.pokemon.magneton.genus
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      shape: *diamond-pearl.pokemon.magneton.shape
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: *diamond-pearl.pokemon.magneton.baby
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      pal_park: *diamond-pearl.pokemon.magneton.pal_park
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: *diamond-pearl.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      stats: *diamond-pearl.pokemon.magneton.stats
+      abilities: *ruby-sapphire.pokemon.magneton.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        platinum: |
+          Many mysteriously appear when more
+          sunspots dot the sun. They stop
+          TV sets from displaying properly.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *ruby-sapphire.pokemon.magneton.forms.magneton.icon
+          sprites:
+            - platinum/magneton-default.png
+            - platinum/back/magneton-default.png
+            - platinum/back/shiny/magneton-default.png
+            - platinum/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 120
+  pokemon:
+    magneton:
+      genus: *diamond-pearl.pokemon.magneton.genus
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      shape: *diamond-pearl.pokemon.magneton.shape
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: *diamond-pearl.pokemon.magneton.baby
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      pal_park: *diamond-pearl.pokemon.magneton.pal_park
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: *diamond-pearl.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      stats: *diamond-pearl.pokemon.magneton.stats
+      abilities: *ruby-sapphire.pokemon.magneton.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Three MAGNEMITE are linked by a
+          strong magnetic force. Earaches
+          will occur if you get too close.
+        soulsilver: |
+          The MAGNEMITE are united by a
+          magnetism so powerful, it dries all
+          moisture in its vicinity.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 3-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.magneton.forms.magneton.icon
+          sprites:
+            - heartgold-soulsilver/magneton-default.png
+            - heartgold-soulsilver/back/magneton-default.png
+            - heartgold-soulsilver/back/shiny/magneton-default.png
+            - heartgold-soulsilver/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    magneton:
+      genus: *diamond-pearl.pokemon.magneton.genus
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      color: &black-white.pokemon.magneton.color gray
+      shape: *diamond-pearl.pokemon.magneton.shape
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: *diamond-pearl.pokemon.magneton.baby
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: *diamond-pearl.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      stats: *diamond-pearl.pokemon.magneton.stats
+      abilities: &black-white.pokemon.magneton.abilities
+        magnet-pull: *ruby-sapphire.pokemon.magneton.abilities.magnet-pull
+        sturdy: *ruby-sapphire.pokemon.magneton.abilities.sturdy
+        analytic:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        black: |
+          Many mysteriously appear when more
+          sunspots dot the sun. They stop
+          TV sets from displaying properly.
+        white: |
+          Many mysteriously appear when more
+          sunspots dot the sun. They stop
+          TV sets from displaying properly.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *ruby-sapphire.pokemon.magneton.forms.magneton.icon
+          sprites:
+            - black-white/magneton-default.png
+            - black-white/back/magneton-default.png
+            - black-white/back/shiny/magneton-default.png
+            - black-white/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 49
+  pokemon:
+    magneton:
+      genus: *diamond-pearl.pokemon.magneton.genus
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      color: *black-white.pokemon.magneton.color
+      shape: *diamond-pearl.pokemon.magneton.shape
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: *diamond-pearl.pokemon.magneton.baby
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: *diamond-pearl.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      stats: *diamond-pearl.pokemon.magneton.stats
+      abilities: *black-white.pokemon.magneton.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        black-2: |
+          The stronger electromagnetic waves
+          from the three linked Magnemite are
+          enough to dry out surrounding moisture.
+        white-2: |
+          The stronger electromagnetic waves
+          from the three linked Magnemite are
+          enough to dry out surrounding moisture.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *ruby-sapphire.pokemon.magneton.forms.magneton.icon
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *red-blue.pokemon.magneton.forms.magneton.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 70
+  pokemon:
+    magneton:
+      genus: *diamond-pearl.pokemon.magneton.genus
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      color: *black-white.pokemon.magneton.color
+      shape: *diamond-pearl.pokemon.magneton.shape
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: *diamond-pearl.pokemon.magneton.baby
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: *diamond-pearl.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      mega: &x-y.pokemon.magneton.mega false
+      stats: *diamond-pearl.pokemon.magneton.stats
+      abilities: *black-white.pokemon.magneton.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        x: |
+          A linked cluster formed of several Magnemite.
+          It discharges powerful magnetic waves at
+          high voltage.
+        'y': |
+          Generates strange radio signals. It raises the
+          temperature by 3.6 degrees Fahrenheit within
+          3,300 feet.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: &x-y.pokemon.magneton.forms.magneton.icon magneton-default.png
+          sprites:
+            - x-y/magneton-default.png
+            - x-y/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: &x-y.pokemon.magneton.forms.magneton.cry magneton-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 85
+  pokemon:
+    magneton:
+      genus: *diamond-pearl.pokemon.magneton.genus
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      color: *black-white.pokemon.magneton.color
+      shape: *diamond-pearl.pokemon.magneton.shape
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: *diamond-pearl.pokemon.magneton.baby
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: *diamond-pearl.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      mega: *x-y.pokemon.magneton.mega
+      stats: *diamond-pearl.pokemon.magneton.stats
+      abilities: *black-white.pokemon.magneton.abilities
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Magneton emits a powerful magnetic force that is fatal to
+          mechanical devices. As a result, large cities sound sirens
+          to warn citizens of large-scale outbreaks of this Pokémon.
+        alpha-sapphire: |
+          Magneton emits a powerful magnetic force that is fatal to
+          electronics and precision instruments. Because of this, it is
+          said that some towns warn people to keep this Pokémon
+          inside a Poké Ball.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *x-y.pokemon.magneton.forms.magneton.icon
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *x-y.pokemon.magneton.forms.magneton.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/magneton-default.png
+            - omega-ruby-alpha-sapphire/shiny/magneton-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 48
+    original-melemele: 48
+    original-ulaula: 26
+  pokemon:
+    magneton:
+      genus: *diamond-pearl.pokemon.magneton.genus
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      color: *black-white.pokemon.magneton.color
+      shape: *diamond-pearl.pokemon.magneton.shape
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: *diamond-pearl.pokemon.magneton.baby
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: *diamond-pearl.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      mega: *x-y.pokemon.magneton.mega
+      stats: *diamond-pearl.pokemon.magneton.stats
+      abilities: *black-white.pokemon.magneton.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        sun: |-
+          When three Magnemite link together, their brains
+          also become one. They do not become three
+          times more intelligent.
+        moon: |-
+          It has about three times the electrical power of
+          Magnemite. For some reason, outbreaks of this
+          Pokémon happen when lots of sunspots appear.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *x-y.pokemon.magneton.forms.magneton.icon
+          sprites:
+            - sun-moon/magneton-default.png
+            - sun-moon/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *x-y.pokemon.magneton.forms.magneton.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 55
+    updated-melemele: 55
+    updated-ulaula: 26
+  pokemon:
+    magneton:
+      genus: *diamond-pearl.pokemon.magneton.genus
+      evolution_parent: *red-blue.pokemon.magneton.evolution_parent
+      color: *black-white.pokemon.magneton.color
+      shape: *diamond-pearl.pokemon.magneton.shape
+      capture_rate: *red-blue.pokemon.magneton.capture_rate
+      happiness: *ruby-sapphire.pokemon.magneton.happiness
+      baby: *diamond-pearl.pokemon.magneton.baby
+      hatch_steps: *gold-silver.pokemon.magneton.hatch_steps
+      growth_rate: *red-blue.pokemon.magneton.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magneton.forms_switchable
+      name: Magneton
+      default: *red-blue.pokemon.magneton.default
+      height: *ruby-sapphire.pokemon.magneton.height
+      weight: *ruby-sapphire.pokemon.magneton.weight
+      experience: *diamond-pearl.pokemon.magneton.experience
+      types: *gold-silver.pokemon.magneton.types
+      egg_groups: *gold-silver.pokemon.magneton.egg_groups
+      mega: *x-y.pokemon.magneton.mega
+      stats: *diamond-pearl.pokemon.magneton.stats
+      abilities: *black-white.pokemon.magneton.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.magneton.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.magneton.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Delicate equipment can malfunction in areas
+          inhabited by Magneton, which send out
+          mysterious electrical signals.
+        ultra-moon: |-
+          When rain clouds form, many Magneton gather
+          in high places to wait for lightning to strike.
+      forms:
+        magneton:
+          name: Magneton
+          form_name: *red-blue.pokemon.magneton.forms.magneton.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magneton.forms.magneton.battle_only
+          icon: *x-y.pokemon.magneton.forms.magneton.icon
+          sprites:
+            - ultra-sun-ultra-moon/magneton-default.png
+            - ultra-sun-ultra-moon/shiny/magneton-default.png
+          art: *red-blue.pokemon.magneton.forms.magneton.art
+          footprint: *ruby-sapphire.pokemon.magneton.forms.magneton.footprint
+          cry: *x-y.pokemon.magneton.forms.magneton.cry

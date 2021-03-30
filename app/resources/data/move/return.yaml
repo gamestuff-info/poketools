@@ -1,0 +1,179 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name RETURN
+  power: &gold-silver.power 1
+  type: &gold-silver.type normal
+  accuracy: &gold-silver.accuracy 100
+  pp: &gold-silver.pp 20
+  effect: &gold-silver.effect 122
+  flags: &gold-silver.flags
+    - contact
+    - protect
+    - mirror
+  categories: &gold-silver.categories
+    - damage
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    An attack that is
+    based on loyalty.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+    - kings-rock
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type cute
+  contest_effect: 45
+  flavor_text: &ruby-sapphire.flavor_text |
+    An attack that increases
+    in power with friendship.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    This attack move
+    grows more powerful
+    the more the user
+    likes its TRAINER.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Return
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 17
+  flavor_text: &diamond-pearl.flavor_text |
+    A full-power attack
+    that grows more
+    powerful the more
+    the user likes its
+    Trainer.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &black-white.flavor_text |
+    A full-power attack that grows more
+    powerful the more the user likes
+    its Trainer.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 1
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    This full-power attack grows more powerful the
+    more the user likes its Trainer.
+ultra-sun-ultra-moon: *sun-moon

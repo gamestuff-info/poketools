@@ -1,0 +1,39 @@
+black-white:
+  region: &black-white.region unova
+  name: &black-white.name 'Relic Castle'
+  areas:
+    1f: &black-white.areas.1f
+      name: 1F
+      default: true
+    b1f: &black-white.areas.b1f
+      name: B1F
+    b2f:
+      name: B2F
+    b3f:
+      name: B3F
+    b4f:
+      name: B4F
+    b5f:
+      name: B5F
+    b6f:
+      name: B6F
+    maze: &black-white.areas.maze
+      name: 'Maze rooms'
+    volcaronas-room: &black-white.areas.volcaronas-room
+      name: 'Volcarona''s room'
+  super: &black-white.super desert-resort
+  map:
+    map: &black-white.map.map unova
+    overlay: '<circle cx="115" cy="104" r="3" />'
+black-2-white-2:
+  region: *black-white.region
+  name: *black-white.name
+  areas:
+    1f: *black-white.areas.1f
+    b1f: *black-white.areas.b1f
+    maze: *black-white.areas.maze
+    volcaronas-room: *black-white.areas.volcaronas-room
+  super: *black-white.super
+  map:
+    map: *black-white.map.map
+    overlay: '<rect x="112" y="101" width="6" height="6" />'

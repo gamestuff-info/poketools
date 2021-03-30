@@ -1,0 +1,166 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'WATER SPORT'
+  type: &ruby-sapphire.type water
+  accuracy: &ruby-sapphire.accuracy 100
+  pp: &ruby-sapphire.pp 15
+  effect: &ruby-sapphire.effect 211
+  target: &ruby-sapphire.target user
+  priority: &ruby-sapphire.priority 0
+  categories: &ruby-sapphire.categories
+    - whole-field-effect
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  contest_type: &ruby-sapphire.contest_type cute
+  contest_effect: 1
+  contest_use_before: &ruby-sapphire.contest_use_before
+    - water-gun
+    - refresh
+    - mud-sport
+  contest_use_after:
+    - rain-dance
+    - mud-sport
+  flavor_text: &ruby-sapphire.flavor_text |
+    The user becomes soaked to
+    raise resistance to fire.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: special
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    Weakens FIRE-type
+    attacks while the
+    user is in the
+    battle.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Water Sport'
+  flags: &diamond-pearl.flags
+    - non-sky-battle
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: &diamond-pearl.target entire-field
+  damage_class: &diamond-pearl.damage_class status
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 13
+  flavor_text: &diamond-pearl.flavor_text |
+    The user soaks itself
+    with water. The move
+    weakens Fire-type
+    moves while the user
+    is in the battle.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user soaks itself with water. The move
+    weakens Fire-type moves while the user
+    is in the battle.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &x-y.flavor_text |
+    The user soaks itself with water.
+    This weakens Fire-type moves
+    for five turns.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 13
+  contest_use_before: *ruby-sapphire.contest_use_before
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user soaks the battlefield with water. This
+    weakens Fire-type moves for five turns.
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,42 @@
+x-y: &x-y
+  name: &x-y.name 'Energy Powder'
+  category: &x-y.category healing
+  pocket: &x-y.pocket medicine
+  buy: &x-y.buy 500
+  sell: &x-y.sell 250
+  fling_effect: damage
+  fling_power: 30
+  flags: &x-y.flags
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  short_description: 'Restores 50 [HP]{mechanic:hp}, but lowers [happiness]{mechanic:happiness}.'
+  description: |
+    Used on a party Pokémon
+    :   Restores 50 [HP]{mechanic:hp}.  Decreases [happiness]{mechanic:happiness} by 5/5/10.
+  flavor_text: |
+    A bitter medicine powder.
+    When consumed, it restores
+    50 HP to an injured Pokémon.
+  icon: &x-y.icon energy-powder.png
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *x-y.name
+  category: *x-y.category
+  pocket: *x-y.pocket
+  buy: *x-y.buy
+  sell: *x-y.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *x-y.flags
+  short_description: 'Restores 60 [HP]{mechanic:hp}, but lowers [happiness]{mechanic:happiness}.'
+  description: |
+    Used on a party Pokémon
+    :   Restores 60 [HP]{mechanic:hp}.  Decreases [happiness]{mechanic:happiness} by 5/5/10.
+  flavor_text: |
+    A very bitter medicinal powder. When consumed,
+    it restores up to 60 HP to an injured Pokémon.
+  icon: *x-y.icon
+ultra-sun-ultra-moon: *sun-moon

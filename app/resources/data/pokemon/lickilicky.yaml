@@ -1,0 +1,525 @@
+diamond-pearl:
+  name: &diamond-pearl.name Lickilicky
+  position: &diamond-pearl.position 120
+  numbers: &diamond-pearl.numbers
+    national: &diamond-pearl.numbers.national 463
+  pokemon:
+    lickilicky:
+      genus: &diamond-pearl.pokemon.lickilicky.genus 'Licking Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.lickilicky.evolution_parent lickitung/lickitung
+      shape: &diamond-pearl.pokemon.lickilicky.shape humanoid
+      female_rate: &diamond-pearl.pokemon.lickilicky.female_rate 50
+      capture_rate: &diamond-pearl.pokemon.lickilicky.capture_rate 30
+      happiness: &diamond-pearl.pokemon.lickilicky.happiness 70
+      baby: &diamond-pearl.pokemon.lickilicky.baby false
+      hatch_steps: &diamond-pearl.pokemon.lickilicky.hatch_steps 20
+      growth_rate: &diamond-pearl.pokemon.lickilicky.growth_rate medium
+      forms_switchable: &diamond-pearl.pokemon.lickilicky.forms_switchable false
+      pal_park: &diamond-pearl.pokemon.lickilicky.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Lickilicky
+      default: &diamond-pearl.pokemon.lickilicky.default true
+      height: &diamond-pearl.pokemon.lickilicky.height 17
+      weight: &diamond-pearl.pokemon.lickilicky.weight 1400
+      experience: &diamond-pearl.pokemon.lickilicky.experience 180
+      types: &diamond-pearl.pokemon.lickilicky.types
+        - normal
+      egg_groups: &diamond-pearl.pokemon.lickilicky.egg_groups
+        - monster
+      stats: &diamond-pearl.pokemon.lickilicky.stats
+        hp:
+          base_value: 110
+          effort_change: 3
+        attack:
+          base_value: 85
+          effort_change: 0
+        defense:
+          base_value: 95
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 80
+          effort_change: 0
+        special-defense:
+          base_value: 95
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.lickilicky.abilities
+        own-tempo:
+          hidden: &diamond-pearl.pokemon.lickilicky.abilities.own-tempo.hidden false
+          position: 1
+        oblivious:
+          hidden: *diamond-pearl.pokemon.lickilicky.abilities.own-tempo.hidden
+          position: 2
+        cloud-nine:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+          lagging-tail: 5
+        pearl: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+      evolution_conditions: &diamond-pearl.pokemon.lickilicky.evolution_conditions
+        level-up:
+          known_move: rollout
+      flavor_text:
+        diamond: |
+          It wraps things with its extensible
+          tongue. Getting too close to it
+          will leave you soaked with drool.
+        pearl: |
+          It wraps things with its extensible
+          tongue. Getting too close to it
+          will leave you soaked with drool.
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: &diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name 'Default Form'
+          default: true
+          battle_only: &diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only false
+          icon: &diamond-pearl.pokemon.lickilicky.forms.lickilicky.icon gen5/lickilicky-default.png
+          sprites:
+            - diamond-pearl/lickilicky-default.png
+            - diamond-pearl/back/lickilicky-default.png
+            - diamond-pearl/back/shiny/lickilicky-default.png
+            - diamond-pearl/shiny/lickilicky-default.png
+          art: &diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+            - lickilicky-default.png
+          footprint: &diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint lickilicky.png
+          cry: &diamond-pearl.pokemon.lickilicky.forms.lickilicky.cry gen5/lickilicky-default.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 162
+  pokemon:
+    lickilicky:
+      genus: *diamond-pearl.pokemon.lickilicky.genus
+      evolution_parent: *diamond-pearl.pokemon.lickilicky.evolution_parent
+      shape: *diamond-pearl.pokemon.lickilicky.shape
+      female_rate: *diamond-pearl.pokemon.lickilicky.female_rate
+      capture_rate: *diamond-pearl.pokemon.lickilicky.capture_rate
+      happiness: *diamond-pearl.pokemon.lickilicky.happiness
+      baby: *diamond-pearl.pokemon.lickilicky.baby
+      hatch_steps: *diamond-pearl.pokemon.lickilicky.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.lickilicky.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.lickilicky.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lickilicky.pal_park
+      name: Lickilicky
+      default: *diamond-pearl.pokemon.lickilicky.default
+      height: *diamond-pearl.pokemon.lickilicky.height
+      weight: *diamond-pearl.pokemon.lickilicky.weight
+      experience: *diamond-pearl.pokemon.lickilicky.experience
+      types: *diamond-pearl.pokemon.lickilicky.types
+      egg_groups: *diamond-pearl.pokemon.lickilicky.egg_groups
+      stats: *diamond-pearl.pokemon.lickilicky.stats
+      abilities: *diamond-pearl.pokemon.lickilicky.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.lickilicky.evolution_conditions
+      flavor_text:
+        platinum: |
+          The long tongue is always soggy
+          with slobber. The saliva contains
+          a solvent that causes numbness.
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only
+          icon: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.icon
+          sprites:
+            - platinum/lickilicky-default.png
+            - platinum/back/lickilicky-default.png
+            - platinum/back/shiny/lickilicky-default.png
+            - platinum/shiny/lickilicky-default.png
+          art: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+          footprint: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint
+          cry: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-johto: 181
+  pokemon:
+    lickilicky:
+      genus: *diamond-pearl.pokemon.lickilicky.genus
+      evolution_parent: *diamond-pearl.pokemon.lickilicky.evolution_parent
+      shape: *diamond-pearl.pokemon.lickilicky.shape
+      female_rate: *diamond-pearl.pokemon.lickilicky.female_rate
+      capture_rate: *diamond-pearl.pokemon.lickilicky.capture_rate
+      happiness: *diamond-pearl.pokemon.lickilicky.happiness
+      baby: *diamond-pearl.pokemon.lickilicky.baby
+      hatch_steps: *diamond-pearl.pokemon.lickilicky.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.lickilicky.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.lickilicky.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lickilicky.pal_park
+      name: Lickilicky
+      default: *diamond-pearl.pokemon.lickilicky.default
+      height: *diamond-pearl.pokemon.lickilicky.height
+      weight: *diamond-pearl.pokemon.lickilicky.weight
+      experience: *diamond-pearl.pokemon.lickilicky.experience
+      types: *diamond-pearl.pokemon.lickilicky.types
+      egg_groups: *diamond-pearl.pokemon.lickilicky.egg_groups
+      stats: *diamond-pearl.pokemon.lickilicky.stats
+      abilities: *diamond-pearl.pokemon.lickilicky.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.lickilicky.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Its saliva can decompose anything.
+          It wraps its long tongue around things
+          to coat them with its sticky saliva.
+        soulsilver: |
+          It has space in its throat to store
+          saliva. It can also roll up its tongue
+          and store it in the same spot.
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 3-5
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.icon
+          sprites:
+            - heartgold-soulsilver/lickilicky-default.png
+            - heartgold-soulsilver/back/lickilicky-default.png
+            - heartgold-soulsilver/back/shiny/lickilicky-default.png
+            - heartgold-soulsilver/shiny/lickilicky-default.png
+          art: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+          footprint: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint
+          cry: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    lickilicky:
+      genus: *diamond-pearl.pokemon.lickilicky.genus
+      evolution_parent: *diamond-pearl.pokemon.lickilicky.evolution_parent
+      color: &black-white.pokemon.lickilicky.color pink
+      shape: *diamond-pearl.pokemon.lickilicky.shape
+      female_rate: *diamond-pearl.pokemon.lickilicky.female_rate
+      capture_rate: *diamond-pearl.pokemon.lickilicky.capture_rate
+      happiness: *diamond-pearl.pokemon.lickilicky.happiness
+      baby: *diamond-pearl.pokemon.lickilicky.baby
+      hatch_steps: *diamond-pearl.pokemon.lickilicky.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.lickilicky.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.lickilicky.forms_switchable
+      name: Lickilicky
+      default: *diamond-pearl.pokemon.lickilicky.default
+      height: *diamond-pearl.pokemon.lickilicky.height
+      weight: *diamond-pearl.pokemon.lickilicky.weight
+      experience: *diamond-pearl.pokemon.lickilicky.experience
+      types: *diamond-pearl.pokemon.lickilicky.types
+      egg_groups: *diamond-pearl.pokemon.lickilicky.egg_groups
+      stats: *diamond-pearl.pokemon.lickilicky.stats
+      abilities: *diamond-pearl.pokemon.lickilicky.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.lickilicky.evolution_conditions
+      flavor_text:
+        black: |
+          The long tongue is always soggy
+          with slobber. The saliva contains
+          a solvent that causes numbness.
+        white: |
+          The long tongue is always soggy
+          with slobber. The saliva contains
+          a solvent that causes numbness.
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only
+          icon: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.icon
+          sprites:
+            - black-white/lickilicky-default.png
+            - black-white/back/lickilicky-default.png
+            - black-white/back/shiny/lickilicky-default.png
+            - black-white/shiny/lickilicky-default.png
+          art: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+          footprint: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint
+          cry: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-unova: 285
+  pokemon:
+    lickilicky:
+      genus: *diamond-pearl.pokemon.lickilicky.genus
+      evolution_parent: *diamond-pearl.pokemon.lickilicky.evolution_parent
+      color: *black-white.pokemon.lickilicky.color
+      shape: *diamond-pearl.pokemon.lickilicky.shape
+      female_rate: *diamond-pearl.pokemon.lickilicky.female_rate
+      capture_rate: *diamond-pearl.pokemon.lickilicky.capture_rate
+      happiness: *diamond-pearl.pokemon.lickilicky.happiness
+      baby: *diamond-pearl.pokemon.lickilicky.baby
+      hatch_steps: *diamond-pearl.pokemon.lickilicky.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.lickilicky.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.lickilicky.forms_switchable
+      name: Lickilicky
+      default: *diamond-pearl.pokemon.lickilicky.default
+      height: *diamond-pearl.pokemon.lickilicky.height
+      weight: *diamond-pearl.pokemon.lickilicky.weight
+      experience: *diamond-pearl.pokemon.lickilicky.experience
+      types: *diamond-pearl.pokemon.lickilicky.types
+      egg_groups: *diamond-pearl.pokemon.lickilicky.egg_groups
+      stats: *diamond-pearl.pokemon.lickilicky.stats
+      abilities: *diamond-pearl.pokemon.lickilicky.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.lickilicky.evolution_conditions
+      flavor_text:
+        black-2: |
+          Their saliva contains lots of components
+          that can dissolve anything. The numbness
+          caused by their lick does not dissipate.
+        white-2: |
+          Their saliva contains lots of components
+          that can dissolve anything. The numbness
+          caused by their lick does not dissipate.
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only
+          icon: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.icon
+          art: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+          footprint: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint
+          cry: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    kalos-mountain: 135
+  pokemon:
+    lickilicky:
+      genus: *diamond-pearl.pokemon.lickilicky.genus
+      evolution_parent: *diamond-pearl.pokemon.lickilicky.evolution_parent
+      color: *black-white.pokemon.lickilicky.color
+      shape: *diamond-pearl.pokemon.lickilicky.shape
+      female_rate: *diamond-pearl.pokemon.lickilicky.female_rate
+      capture_rate: *diamond-pearl.pokemon.lickilicky.capture_rate
+      happiness: *diamond-pearl.pokemon.lickilicky.happiness
+      baby: *diamond-pearl.pokemon.lickilicky.baby
+      hatch_steps: *diamond-pearl.pokemon.lickilicky.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.lickilicky.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.lickilicky.forms_switchable
+      name: Lickilicky
+      default: *diamond-pearl.pokemon.lickilicky.default
+      height: *diamond-pearl.pokemon.lickilicky.height
+      weight: *diamond-pearl.pokemon.lickilicky.weight
+      experience: *diamond-pearl.pokemon.lickilicky.experience
+      types: *diamond-pearl.pokemon.lickilicky.types
+      egg_groups: *diamond-pearl.pokemon.lickilicky.egg_groups
+      mega: &x-y.pokemon.lickilicky.mega false
+      stats: *diamond-pearl.pokemon.lickilicky.stats
+      abilities: *diamond-pearl.pokemon.lickilicky.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.lickilicky.evolution_conditions
+      flavor_text:
+        x: |
+          It wraps things with its extensible tongue. Getting
+          too close to it will leave you soaked with drool.
+        'y': |
+          Their saliva contains lots of components that can
+          dissolve anything. The numbness caused by their
+          lick does not dissipate.
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only
+          icon: &x-y.pokemon.lickilicky.forms.lickilicky.icon lickilicky-default.png
+          sprites:
+            - x-y/lickilicky-default.png
+            - x-y/shiny/lickilicky-default.png
+          art: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+          footprint: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint
+          cry: &x-y.pokemon.lickilicky.forms.lickilicky.cry lickilicky-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    lickilicky:
+      genus: *diamond-pearl.pokemon.lickilicky.genus
+      evolution_parent: *diamond-pearl.pokemon.lickilicky.evolution_parent
+      color: *black-white.pokemon.lickilicky.color
+      shape: *diamond-pearl.pokemon.lickilicky.shape
+      female_rate: *diamond-pearl.pokemon.lickilicky.female_rate
+      capture_rate: *diamond-pearl.pokemon.lickilicky.capture_rate
+      happiness: *diamond-pearl.pokemon.lickilicky.happiness
+      baby: *diamond-pearl.pokemon.lickilicky.baby
+      hatch_steps: *diamond-pearl.pokemon.lickilicky.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.lickilicky.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.lickilicky.forms_switchable
+      name: Lickilicky
+      default: *diamond-pearl.pokemon.lickilicky.default
+      height: *diamond-pearl.pokemon.lickilicky.height
+      weight: *diamond-pearl.pokemon.lickilicky.weight
+      experience: *diamond-pearl.pokemon.lickilicky.experience
+      types: *diamond-pearl.pokemon.lickilicky.types
+      egg_groups: *diamond-pearl.pokemon.lickilicky.egg_groups
+      mega: *x-y.pokemon.lickilicky.mega
+      stats: *diamond-pearl.pokemon.lickilicky.stats
+      abilities: *diamond-pearl.pokemon.lickilicky.abilities
+      evolution_conditions: *diamond-pearl.pokemon.lickilicky.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It wraps things with its extensible tongue. Getting
+          too close to it will leave you soaked with drool.
+        alpha-sapphire: |
+          Their saliva contains lots of components that can
+          dissolve anything. The numbness caused by their
+          lick does not dissipate.
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only
+          icon: *x-y.pokemon.lickilicky.forms.lickilicky.icon
+          art: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+          footprint: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint
+          cry: *x-y.pokemon.lickilicky.forms.lickilicky.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/lickilicky-default.png
+            - omega-ruby-alpha-sapphire/shiny/lickilicky-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    lickilicky:
+      genus: *diamond-pearl.pokemon.lickilicky.genus
+      evolution_parent: *diamond-pearl.pokemon.lickilicky.evolution_parent
+      color: *black-white.pokemon.lickilicky.color
+      shape: *diamond-pearl.pokemon.lickilicky.shape
+      female_rate: *diamond-pearl.pokemon.lickilicky.female_rate
+      capture_rate: *diamond-pearl.pokemon.lickilicky.capture_rate
+      happiness: *diamond-pearl.pokemon.lickilicky.happiness
+      baby: *diamond-pearl.pokemon.lickilicky.baby
+      hatch_steps: *diamond-pearl.pokemon.lickilicky.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.lickilicky.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.lickilicky.forms_switchable
+      name: Lickilicky
+      default: *diamond-pearl.pokemon.lickilicky.default
+      height: *diamond-pearl.pokemon.lickilicky.height
+      weight: *diamond-pearl.pokemon.lickilicky.weight
+      experience: *diamond-pearl.pokemon.lickilicky.experience
+      types: *diamond-pearl.pokemon.lickilicky.types
+      egg_groups: *diamond-pearl.pokemon.lickilicky.egg_groups
+      mega: *x-y.pokemon.lickilicky.mega
+      stats: *diamond-pearl.pokemon.lickilicky.stats
+      abilities: *diamond-pearl.pokemon.lickilicky.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.lickilicky.evolution_conditions
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only
+          icon: *x-y.pokemon.lickilicky.forms.lickilicky.icon
+          sprites:
+            - sun-moon/lickilicky-default.png
+            - sun-moon/shiny/lickilicky-default.png
+          art: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+          footprint: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint
+          cry: *x-y.pokemon.lickilicky.forms.lickilicky.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-alola: 376
+    updated-poni: 123
+  pokemon:
+    lickilicky:
+      genus: *diamond-pearl.pokemon.lickilicky.genus
+      evolution_parent: *diamond-pearl.pokemon.lickilicky.evolution_parent
+      color: *black-white.pokemon.lickilicky.color
+      shape: *diamond-pearl.pokemon.lickilicky.shape
+      female_rate: *diamond-pearl.pokemon.lickilicky.female_rate
+      capture_rate: *diamond-pearl.pokemon.lickilicky.capture_rate
+      happiness: *diamond-pearl.pokemon.lickilicky.happiness
+      baby: *diamond-pearl.pokemon.lickilicky.baby
+      hatch_steps: *diamond-pearl.pokemon.lickilicky.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.lickilicky.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.lickilicky.forms_switchable
+      name: Lickilicky
+      default: *diamond-pearl.pokemon.lickilicky.default
+      height: *diamond-pearl.pokemon.lickilicky.height
+      weight: *diamond-pearl.pokemon.lickilicky.weight
+      experience: *diamond-pearl.pokemon.lickilicky.experience
+      types: *diamond-pearl.pokemon.lickilicky.types
+      egg_groups: *diamond-pearl.pokemon.lickilicky.egg_groups
+      mega: *x-y.pokemon.lickilicky.mega
+      stats: *diamond-pearl.pokemon.lickilicky.stats
+      abilities: *diamond-pearl.pokemon.lickilicky.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.lickilicky.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.lickilicky.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          A contest is under way to determine which one
+          can stick its tongue out the farthest. The
+          current record is...more than 82 feet.
+        ultra-moon: |-
+          It uses its tongue much more skillfully than its
+          hands or its feet. It can deftly pick up a
+          single small bean with its tongue.
+      forms:
+        lickilicky:
+          name: Lickilicky
+          form_name: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.battle_only
+          icon: *x-y.pokemon.lickilicky.forms.lickilicky.icon
+          sprites:
+            - ultra-sun-ultra-moon/lickilicky-default.png
+            - ultra-sun-ultra-moon/shiny/lickilicky-default.png
+          art: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.art
+          footprint: *diamond-pearl.pokemon.lickilicky.forms.lickilicky.footprint
+          cry: *x-y.pokemon.lickilicky.forms.lickilicky.cry

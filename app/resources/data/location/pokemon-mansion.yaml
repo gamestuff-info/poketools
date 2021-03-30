@@ -1,0 +1,41 @@
+red-blue: &red-blue
+  region: &red-blue.region kanto
+  name: &red-blue.name 'Pokémon Mansion'
+  areas: &red-blue.areas
+    1f:
+      name: 1F
+      default: true
+    2f:
+      name: 2F
+    3f:
+      name: 3F
+    b1f:
+      name: B1F
+  super: &red-blue.super cinnabar-island
+yellow: *red-blue
+firered-leafgreen:
+  region: *red-blue.region
+  name: *red-blue.name
+  areas: *red-blue.areas
+  super: *red-blue.super
+  map:
+    map: kanto
+    z: 10
+    overlay: '<circle cx="46" cy="134" r="4" />'
+diamond-pearl: &diamond-pearl
+  region: sinnoh
+  name: *red-blue.name
+  areas:
+    hallway:
+      name: Hallway
+      default: true
+    left-bedroom:
+      name: 'Left Bedroom'
+    middle-bedroom:
+      name: 'Middle Bedroom'
+    right-bedroom:
+      name: 'Right Bedroom'
+    office:
+      name: Office
+  super: sinnoh-route-212
+platinum: *diamond-pearl

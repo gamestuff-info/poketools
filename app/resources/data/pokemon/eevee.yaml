@@ -1,0 +1,916 @@
+red-blue:
+  name: &red-blue.name EEVEE
+  position: &red-blue.position 133
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 133
+    kanto: 133
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: &red-blue.pokemon.eevee.default true
+      capture_rate: &red-blue.pokemon.eevee.capture_rate 45
+      experience: &red-blue.pokemon.eevee.experience 92
+      types: &red-blue.pokemon.eevee.types
+        - normal
+      stats: &red-blue.pokemon.eevee.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 55
+          effort_change: 55
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 55
+          effort_change: 55
+        special:
+          base_value: 65
+          effort_change: 65
+      growth_rate: &red-blue.pokemon.eevee.growth_rate medium
+      genus: &red-blue.pokemon.eevee.genus 'EVOLUTION Pokémon'
+      height: &red-blue.pokemon.eevee.height 3
+      weight: &red-blue.pokemon.eevee.weight 635
+      flavor_text:
+        red: |
+          Its genetic code
+          is irregular.
+          It may mutate if
+          it is exposed to
+           radiation from
+          element STONEs.
+        blue: |
+          Its genetic code
+          is irregular.
+          It may mutate if
+          it is exposed to
+           radiation from
+          element STONEs.
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: &red-blue.pokemon.eevee.forms.eevee.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.eevee.forms.eevee.battle_only false
+          sprites:
+            - red-blue/eevee-default.png
+            - red-blue/gray/eevee-default.png
+            - red-blue/back/eevee-default.png
+          art: &red-blue.pokemon.eevee.forms.eevee.art
+            - eevee-default.png
+          cry: &red-blue.pokemon.eevee.forms.eevee.cry gen5/eevee-default.webm
+          icon: &red-blue.pokemon.eevee.forms.eevee.icon gen1/quadruped.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: *red-blue.pokemon.eevee.default
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      experience: *red-blue.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      stats: *red-blue.pokemon.eevee.stats
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      genus: *red-blue.pokemon.eevee.genus
+      height: *red-blue.pokemon.eevee.height
+      weight: *red-blue.pokemon.eevee.weight
+      flavor_text:
+        yellow: |
+          Its genetic code
+          is unstable, so it
+          could evolve in
+          a variety of ways.
+          There are only a
+          few alive.
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          sprites:
+            - yellow/eevee-default.png
+            - yellow/gray/eevee-default.png
+            - yellow/back/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+          icon: *red-blue.pokemon.eevee.forms.eevee.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 132
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 179
+    original-johto-abc: 37
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: *red-blue.pokemon.eevee.default
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      experience: *red-blue.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      stats: &gold-silver.pokemon.eevee.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 55
+          effort_change: 55
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 55
+          effort_change: 55
+        special-attack:
+          base_value: 45
+          effort_change: 45
+        special-defense:
+          base_value: 65
+          effort_change: 45
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      female_rate: &gold-silver.pokemon.eevee.female_rate 12
+      hatch_steps: &gold-silver.pokemon.eevee.hatch_steps 35
+      egg_groups: &gold-silver.pokemon.eevee.egg_groups
+        - ground
+      genus: *red-blue.pokemon.eevee.genus
+      height: *red-blue.pokemon.eevee.height
+      weight: &gold-silver.pokemon.eevee.weight 63
+      flavor_text:
+        gold: |
+          It has the ability
+          to alter the com-
+          position of its
+          body to suit its
+          surrounding envi-
+          ronment.
+        silver: |
+          Its irregularly
+          configured DNA is
+          affected by its
+          surroundings. It
+          evolves if its en-
+          vironment changes.
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          sprites:
+            - gold-silver/eevee-default.png
+            - gold-silver/back/eevee-default.png
+            - gold-silver/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+          icon: &gold-silver.pokemon.eevee.forms.eevee.icon gen2/fox.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: *red-blue.pokemon.eevee.default
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      experience: *red-blue.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      stats: *gold-silver.pokemon.eevee.stats
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      genus: *red-blue.pokemon.eevee.genus
+      height: *red-blue.pokemon.eevee.height
+      weight: *gold-silver.pokemon.eevee.weight
+      flavor_text:
+        crystal: |
+          Its ability to
+          evolve into many
+          forms allows it to
+          adapt smoothly
+          and perfectly to
+          any environment.
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          sprites:
+            - crystal/eevee-default.png
+            - crystal/back/eevee-default.png
+            - crystal/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+          icon: *gold-silver.pokemon.eevee.forms.eevee.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 288
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: *red-blue.pokemon.eevee.default
+      forms_switchable: &ruby-sapphire.pokemon.eevee.forms_switchable false
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      experience: *red-blue.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      stats: &ruby-sapphire.pokemon.eevee.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 1
+        special-defense:
+          base_value: 55
+          effort_change: 1
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      happiness: &ruby-sapphire.pokemon.eevee.happiness 70
+      abilities: &ruby-sapphire.pokemon.eevee.abilities
+        run-away: &ruby-sapphire.pokemon.eevee.abilities.run-away
+          hidden: &ruby-sapphire.pokemon.eevee.abilities.run-away.hidden false
+          position: 1
+      genus: *red-blue.pokemon.eevee.genus
+      height: *red-blue.pokemon.eevee.height
+      weight: &ruby-sapphire.pokemon.eevee.weight 65
+      flavor_text:
+        ruby: |
+          EEVEE has an unstable genetic makeup
+          that suddenly mutates due to the
+          environment in which it lives.
+          Radiation from various STONES causes
+           this POKéMON to evolve.
+        sapphire: |
+          EEVEE has an unstable genetic makeup
+          that suddenly mutates due to the
+          environment in which it lives.
+          Radiation from various STONES causes
+          this POKéMON to evolve.
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: &ruby-sapphire.pokemon.eevee.forms.eevee.icon gen5/eevee-default.png
+          sprites:
+            - ruby-sapphire/eevee-default.png
+            - ruby-sapphire/back/eevee-default.png
+            - ruby-sapphire/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: &ruby-sapphire.pokemon.eevee.forms.eevee.footprint eevee.png
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: *red-blue.pokemon.eevee.default
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      experience: *red-blue.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      stats: *ruby-sapphire.pokemon.eevee.stats
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      abilities: *ruby-sapphire.pokemon.eevee.abilities
+      genus: *red-blue.pokemon.eevee.genus
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      flavor_text:
+        emerald: |
+          An EEVEE has an unstable genetic makeup
+          that suddenly mutates due to its
+          environment. Radiation from various
+          STONES causes this POKéMON to evolve.
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *ruby-sapphire.pokemon.eevee.forms.eevee.icon
+          sprites:
+            - emerald/eevee-default.png
+            - emerald/shiny/eevee-default.png
+            - emerald/animated/eevee-default.webm
+            - emerald/animated/shiny/eevee-default.webm
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 82
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: *red-blue.pokemon.eevee.default
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      experience: *red-blue.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      stats: *ruby-sapphire.pokemon.eevee.stats
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      abilities: *ruby-sapphire.pokemon.eevee.abilities
+      genus: *red-blue.pokemon.eevee.genus
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          sprites:
+            - colosseum/eevee-default.png
+            - colosseum/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: *red-blue.pokemon.eevee.default
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      experience: *red-blue.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      stats: *ruby-sapphire.pokemon.eevee.stats
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      abilities: *ruby-sapphire.pokemon.eevee.abilities
+      genus: *red-blue.pokemon.eevee.genus
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          sprites:
+            - xd/eevee-default.png
+            - xd/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    eevee:
+      name: EEVEE
+      default: *red-blue.pokemon.eevee.default
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      experience: *red-blue.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      stats: *ruby-sapphire.pokemon.eevee.stats
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      abilities: *ruby-sapphire.pokemon.eevee.abilities
+      genus: *red-blue.pokemon.eevee.genus
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      flavor_text:
+        firered: |
+          An extremely rare POKéMON that may
+          evolve in a number of different ways
+          depending on stimuli.
+        leafgreen: |
+          Its genetic code is irregular. It may
+          mutate if it is exposed to radiation from
+          element STONES.
+      forms:
+        eevee:
+          name: EEVEE
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *ruby-sapphire.pokemon.eevee.forms.eevee.icon
+          sprites:
+            - firered-leafgreen/eevee-default.png
+            - firered-leafgreen/back/eevee-default.png
+            - firered-leafgreen/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+diamond-pearl:
+  name: &diamond-pearl.name Eevee
+  position: &diamond-pearl.position 157
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    eevee:
+      genus: &diamond-pearl.pokemon.eevee.genus 'Evolution Pokémon'
+      shape: &diamond-pearl.pokemon.eevee.shape quadruped
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: &diamond-pearl.pokemon.eevee.baby false
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      pal_park: &diamond-pearl.pokemon.eevee.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: &diamond-pearl.pokemon.eevee.experience 65
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      stats: &diamond-pearl.pokemon.eevee.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.eevee.abilities
+        run-away: *ruby-sapphire.pokemon.eevee.abilities.run-away
+        adaptability:
+          hidden: *ruby-sapphire.pokemon.eevee.abilities.run-away.hidden
+          position: 2
+        anticipation:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          A rare Pokémon that adapts to
+          harsh environments by taking on
+          different evolutionary forms.
+        pearl: |
+          A rare Pokémon that adapts to
+          harsh environments by taking on
+          different evolutionary forms.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *ruby-sapphire.pokemon.eevee.forms.eevee.icon
+          sprites:
+            - diamond-pearl/back/eevee-default.png
+            - diamond-pearl/back/shiny/eevee-default.png
+            - diamond-pearl/eevee-default.png
+            - diamond-pearl/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 163
+  pokemon:
+    eevee:
+      genus: *diamond-pearl.pokemon.eevee.genus
+      shape: *diamond-pearl.pokemon.eevee.shape
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: *diamond-pearl.pokemon.eevee.baby
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      pal_park: *diamond-pearl.pokemon.eevee.pal_park
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: *diamond-pearl.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      stats: *diamond-pearl.pokemon.eevee.stats
+      abilities: *diamond-pearl.pokemon.eevee.abilities
+      flavor_text:
+        platinum: |
+          Because its genetic makeup is
+          irregular, it quickly changes its
+          form due to a variety of causes.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *ruby-sapphire.pokemon.eevee.forms.eevee.icon
+          sprites:
+            - platinum/back/eevee-default.png
+            - platinum/back/shiny/eevee-default.png
+            - platinum/eevee-default.png
+            - platinum/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 184
+  pokemon:
+    eevee:
+      genus: *diamond-pearl.pokemon.eevee.genus
+      shape: *diamond-pearl.pokemon.eevee.shape
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: *diamond-pearl.pokemon.eevee.baby
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      pal_park: *diamond-pearl.pokemon.eevee.pal_park
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: *diamond-pearl.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      stats: *diamond-pearl.pokemon.eevee.stats
+      abilities: *diamond-pearl.pokemon.eevee.abilities
+      flavor_text:
+        heartgold: |
+          It has the ability to alter the
+          composition of its body to suit its
+          surrounding environment.
+        soulsilver: |
+          Its irregularly configured DNA is
+          affected by its surroundings. It
+          evolves if its environment changes.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 2
+              range: 1-4
+            stamina:
+              base_value: 2
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.eevee.forms.eevee.icon
+          sprites:
+            - heartgold-soulsilver/back/eevee-default.png
+            - heartgold-soulsilver/back/shiny/eevee-default.png
+            - heartgold-soulsilver/eevee-default.png
+            - heartgold-soulsilver/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    eevee:
+      genus: *diamond-pearl.pokemon.eevee.genus
+      color: &black-white.pokemon.eevee.color brown
+      shape: *diamond-pearl.pokemon.eevee.shape
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: *diamond-pearl.pokemon.eevee.baby
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: *diamond-pearl.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      stats: *diamond-pearl.pokemon.eevee.stats
+      abilities: *diamond-pearl.pokemon.eevee.abilities
+      flavor_text:
+        black: |
+          Because its genetic makeup is
+          irregular, it quickly changes its
+          form due to a variety of causes.
+        white: |
+          Because its genetic makeup is
+          irregular, it quickly changes its
+          form due to a variety of causes.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *ruby-sapphire.pokemon.eevee.forms.eevee.icon
+          sprites:
+            - black-white/back/eevee-default.png
+            - black-white/back/shiny/eevee-default.png
+            - black-white/eevee-default.png
+            - black-white/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 91
+  pokemon:
+    eevee:
+      genus: *diamond-pearl.pokemon.eevee.genus
+      color: *black-white.pokemon.eevee.color
+      shape: *diamond-pearl.pokemon.eevee.shape
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: *diamond-pearl.pokemon.eevee.baby
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: *diamond-pearl.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      stats: *diamond-pearl.pokemon.eevee.stats
+      abilities: *diamond-pearl.pokemon.eevee.abilities
+      flavor_text:
+        black-2: |
+          Thanks to its unstable genetic makeup,
+          this special Pokémon conceals many
+          different possible evolutions.
+        white-2: |
+          Thanks to its unstable genetic makeup,
+          this special Pokémon conceals many
+          different possible evolutions.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *ruby-sapphire.pokemon.eevee.forms.eevee.icon
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *red-blue.pokemon.eevee.forms.eevee.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 77
+  pokemon:
+    eevee:
+      genus: *diamond-pearl.pokemon.eevee.genus
+      color: *black-white.pokemon.eevee.color
+      shape: *diamond-pearl.pokemon.eevee.shape
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: *diamond-pearl.pokemon.eevee.baby
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: *diamond-pearl.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      mega: &x-y.pokemon.eevee.mega false
+      stats: *diamond-pearl.pokemon.eevee.stats
+      abilities: *diamond-pearl.pokemon.eevee.abilities
+      flavor_text:
+        x: |
+          A rare Pokémon that adapts to harsh environments
+          by taking on different evolutionary forms.
+        'y': |
+          Thanks to its unstable genetic makeup, this
+          special Pokémon conceals many different
+          possible evolutions.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: &x-y.pokemon.eevee.forms.eevee.icon eevee-default.png
+          sprites:
+            - x-y/eevee-default.png
+            - x-y/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: &x-y.pokemon.eevee.forms.eevee.cry eevee-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    eevee:
+      genus: *diamond-pearl.pokemon.eevee.genus
+      color: *black-white.pokemon.eevee.color
+      shape: *diamond-pearl.pokemon.eevee.shape
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: *diamond-pearl.pokemon.eevee.baby
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: *diamond-pearl.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      mega: *x-y.pokemon.eevee.mega
+      stats: *diamond-pearl.pokemon.eevee.stats
+      abilities: *diamond-pearl.pokemon.eevee.abilities
+      flavor_text:
+        omega-ruby: |
+          Eevee has an unstable genetic makeup that suddenly mutates
+          due to the environment in which it lives. Radiation from various
+          stones causes this Pokémon to evolve.
+        alpha-sapphire: |
+          Eevee has an unstable genetic makeup that suddenly mutates
+          due to the environment in which it lives. Radiation from various
+          stones causes this Pokémon to evolve.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *x-y.pokemon.eevee.forms.eevee.icon
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *x-y.pokemon.eevee.forms.eevee.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/eevee-default.png
+            - omega-ruby-alpha-sapphire/shiny/eevee-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 123
+    original-akala: 50
+  pokemon:
+    eevee:
+      genus: *diamond-pearl.pokemon.eevee.genus
+      color: *black-white.pokemon.eevee.color
+      shape: *diamond-pearl.pokemon.eevee.shape
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: *diamond-pearl.pokemon.eevee.baby
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: *diamond-pearl.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      mega: *x-y.pokemon.eevee.mega
+      stats: *diamond-pearl.pokemon.eevee.stats
+      abilities: *diamond-pearl.pokemon.eevee.abilities
+      flavor_text:
+        sun: |-
+          Possessing an unbalanced and unstable genetic
+          makeup, it conceals many possible evolutions.
+        moon: |-
+          Current studies show it can evolve into an
+          incredible eight different species of Pokémon.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *x-y.pokemon.eevee.forms.eevee.icon
+          sprites:
+            - sun-moon/eevee-default.png
+            - sun-moon/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *x-y.pokemon.eevee.forms.eevee.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 153
+    updated-akala: 54
+  pokemon:
+    eevee:
+      genus: *diamond-pearl.pokemon.eevee.genus
+      color: *black-white.pokemon.eevee.color
+      shape: *diamond-pearl.pokemon.eevee.shape
+      female_rate: *gold-silver.pokemon.eevee.female_rate
+      capture_rate: *red-blue.pokemon.eevee.capture_rate
+      happiness: *ruby-sapphire.pokemon.eevee.happiness
+      baby: *diamond-pearl.pokemon.eevee.baby
+      hatch_steps: *gold-silver.pokemon.eevee.hatch_steps
+      growth_rate: *red-blue.pokemon.eevee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.eevee.forms_switchable
+      name: Eevee
+      default: *red-blue.pokemon.eevee.default
+      height: *red-blue.pokemon.eevee.height
+      weight: *ruby-sapphire.pokemon.eevee.weight
+      experience: *diamond-pearl.pokemon.eevee.experience
+      types: *red-blue.pokemon.eevee.types
+      egg_groups: *gold-silver.pokemon.eevee.egg_groups
+      mega: *x-y.pokemon.eevee.mega
+      stats: *diamond-pearl.pokemon.eevee.stats
+      abilities: *diamond-pearl.pokemon.eevee.abilities
+      flavor_text:
+        ultra-sun: |-
+          The question of why only Eevee has such
+          unstable genes has still not been solved.
+        ultra-moon: |-
+          Its genes are easily influenced by its
+          surroundings. Even its face starts to look like
+          that of its Trainer.
+      forms:
+        eevee:
+          name: Eevee
+          form_name: *red-blue.pokemon.eevee.forms.eevee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.eevee.forms.eevee.battle_only
+          icon: *x-y.pokemon.eevee.forms.eevee.icon
+          sprites:
+            - ultra-sun-ultra-moon/eevee-default.png
+            - ultra-sun-ultra-moon/shiny/eevee-default.png
+          art: *red-blue.pokemon.eevee.forms.eevee.art
+          footprint: *ruby-sapphire.pokemon.eevee.forms.eevee.footprint
+          cry: *x-y.pokemon.eevee.forms.eevee.cry

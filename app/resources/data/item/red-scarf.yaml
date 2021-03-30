@@ -1,0 +1,49 @@
+ruby-sapphire: &ruby-sapphire
+  name: 'RED SCARF'
+  category: &ruby-sapphire.category scarves
+  pocket: &ruby-sapphire.pocket misc
+  flags: &ruby-sapphire.flags
+    - holdable-active
+  icon: &ruby-sapphire.icon red-scarf.png
+  buy: &ruby-sapphire.buy 100
+  sell: &ruby-sapphire.sell 50
+  flavor_text: |
+    A hold item that
+    raises COOL in
+    CONTESTS.
+  short_description: &ruby-sapphire.short_description 'Raises the holder''s [Coolness]{type:cool} while in a [contest]{mechanic:pokemon-contest}.'
+  description: &ruby-sapphire.description 'Held: Increases the holder''s [Coolness]{type:cool} during the primary round of a [Pokémon Contest]{mechanic:pokemon-contest}.'
+emerald: *ruby-sapphire
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Red Scarf'
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: 'Raises the holder''s [Coolness]{type:cool} while in a [contest]{mechanic:pokemon-super-contest}.'
+  description: 'Held: Increases the holder''s [Coolness]{type:cool} during a [Pokémon Super Contest''s]{mechanic:pokemon-super-contest} Visual Competition.'
+  flavor_text: |
+    An item to be held by a Pokémon.
+    It boosts the “Cool” aspect of the
+    holder in a Contest.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    An item to be held by a Pokémon.
+    During a Contest, it raises the Cool
+    aspect of the Pokémon holding it.
+  icon: *ruby-sapphire.icon

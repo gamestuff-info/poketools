@@ -1,0 +1,794 @@
+gold-silver:
+  name: &gold-silver.name CELEBI
+  position: &gold-silver.position 250
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 251
+    original-johto: 250
+    original-johto-abc: 8
+  pokemon:
+    celebi:
+      name: CELEBI
+      default: &gold-silver.pokemon.celebi.default true
+      capture_rate: &gold-silver.pokemon.celebi.capture_rate 45
+      experience: &gold-silver.pokemon.celebi.experience 64
+      types: &gold-silver.pokemon.celebi.types
+        - psychic
+        - grass
+      stats: &gold-silver.pokemon.celebi.stats
+        hp:
+          base_value: 100
+          effort_change: 100
+        attack:
+          base_value: 100
+          effort_change: 100
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 100
+          effort_change: 100
+        special-attack:
+          base_value: 100
+          effort_change: 100
+        special-defense:
+          base_value: 100
+          effort_change: 100
+      growth_rate: &gold-silver.pokemon.celebi.growth_rate medium-slow
+      female_rate: &gold-silver.pokemon.celebi.female_rate 100
+      hatch_steps: &gold-silver.pokemon.celebi.hatch_steps 120
+      egg_groups: &gold-silver.pokemon.celebi.egg_groups
+        - no-eggs
+      wild_held_items:
+        gold: &gold-silver.pokemon.celebi.wild_held_items.gold
+          miracleberry: 2
+        silver: *gold-silver.pokemon.celebi.wild_held_items.gold
+      genus: &gold-silver.pokemon.celebi.genus 'TIMETRAVEL Pokémon'
+      height: &gold-silver.pokemon.celebi.height 6
+      weight: &gold-silver.pokemon.celebi.weight 49
+      flavor_text:
+        gold: |
+          This #MON wan-
+          ders across time.
+          Grass and trees
+          flourish in the
+          forests in which
+          it has appeared.
+        silver: |
+          When CELEBI disap-
+          pears deep in a
+          forest, it is said
+          to leave behind an
+          egg it brought
+          from the future.
+      forms:
+        celebi:
+          name: CELEBI
+          form_name: &gold-silver.pokemon.celebi.forms.celebi.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.celebi.forms.celebi.battle_only false
+          sprites:
+            - gold-silver/celebi-default.png
+            - gold-silver/back/celebi-default.png
+            - gold-silver/shiny/celebi-default.png
+          art: &gold-silver.pokemon.celebi.forms.celebi.art
+            - celebi-default.png
+          cry: &gold-silver.pokemon.celebi.forms.celebi.cry gen5/celebi-default.webm
+          icon: &gold-silver.pokemon.celebi.forms.celebi.icon gen2/humanshape.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    celebi:
+      name: CELEBI
+      default: *gold-silver.pokemon.celebi.default
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      experience: *gold-silver.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      stats: *gold-silver.pokemon.celebi.stats
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      female_rate: *gold-silver.pokemon.celebi.female_rate
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.celebi.wild_held_items.gold
+      genus: *gold-silver.pokemon.celebi.genus
+      height: *gold-silver.pokemon.celebi.height
+      weight: *gold-silver.pokemon.celebi.weight
+      flavor_text:
+        crystal: |
+          Revered as a
+          guardian of the
+          forest, CELEBI
+          appears wherever
+          beautiful forests
+          exist.
+      forms:
+        celebi:
+          name: CELEBI
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          sprites:
+            - crystal/celebi-default.png
+            - crystal/back/celebi-default.png
+            - crystal/shiny/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+          icon: *gold-silver.pokemon.celebi.forms.celebi.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 251
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 386
+  pokemon:
+    celebi:
+      name: CELEBI
+      default: *gold-silver.pokemon.celebi.default
+      forms_switchable: &ruby-sapphire.pokemon.celebi.forms_switchable false
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      experience: *gold-silver.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      stats: &ruby-sapphire.pokemon.celebi.stats
+        hp:
+          base_value: 100
+          effort_change: 3
+        attack:
+          base_value: 100
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 0
+        speed:
+          base_value: 100
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+          lum-berry: 100
+        sapphire: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.celebi.happiness 100
+      abilities: &ruby-sapphire.pokemon.celebi.abilities
+        natural-cure:
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.celebi.genus 'TIME TRAVEL Pokémon'
+      height: *gold-silver.pokemon.celebi.height
+      weight: &ruby-sapphire.pokemon.celebi.weight 50
+      flavor_text:
+        ruby: |
+          This POKéMON came from the future by
+          crossing over time.
+          It is thought that so long as CELEBI
+          appears, a bright and shining future
+          awaits us.
+        sapphire: |
+          This POKéMON came from the future by
+          crossing over time.
+          It is thought that so long as CELEBI
+          appears, a bright and shining future
+           awaits us.
+      forms:
+        celebi:
+          name: CELEBI
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: &ruby-sapphire.pokemon.celebi.forms.celebi.icon gen5/celebi-default.png
+          sprites:
+            - ruby-sapphire/celebi-default.png
+            - ruby-sapphire/back/celebi-default.png
+            - ruby-sapphire/shiny/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: &ruby-sapphire.pokemon.celebi.forms.celebi.footprint celebi.png
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    celebi:
+      name: CELEBI
+      default: *gold-silver.pokemon.celebi.default
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      experience: *gold-silver.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      genus: *ruby-sapphire.pokemon.celebi.genus
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      flavor_text:
+        emerald: |
+          This POKéMON came from the future by
+          crossing over time. It is thought that so
+          long as CELEBI appears, a bright and
+          shining future awaits us.
+      forms:
+        celebi:
+          name: CELEBI
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *ruby-sapphire.pokemon.celebi.forms.celebi.icon
+          sprites:
+            - emerald/celebi-default.png
+            - emerald/shiny/celebi-default.png
+            - emerald/animated/celebi-default.webm
+            - emerald/animated/shiny/celebi-default.webm
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 41
+  pokemon:
+    celebi:
+      name: CELEBI
+      default: *gold-silver.pokemon.celebi.default
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      experience: *gold-silver.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      genus: *ruby-sapphire.pokemon.celebi.genus
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      forms:
+        celebi:
+          name: CELEBI
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          sprites:
+            - colosseum/celebi-default.png
+            - colosseum/shiny/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    celebi:
+      name: CELEBI
+      default: *gold-silver.pokemon.celebi.default
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      experience: *gold-silver.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      genus: *ruby-sapphire.pokemon.celebi.genus
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      forms:
+        celebi:
+          name: CELEBI
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          sprites:
+            - xd/celebi-default.png
+            - xd/shiny/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    celebi:
+      name: CELEBI
+      default: *gold-silver.pokemon.celebi.default
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      experience: *gold-silver.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      genus: *ruby-sapphire.pokemon.celebi.genus
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      flavor_text:
+        firered: |
+          When CELEBI disappears deep in a forest,
+          it is said to leave behind an egg it
+          brought from the future.
+        leafgreen: |
+          This POKéMON wanders across time.
+          Grass and trees flourish in the forests in
+          which it has appeared.
+      forms:
+        celebi:
+          name: CELEBI
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *ruby-sapphire.pokemon.celebi.forms.celebi.icon
+          sprites:
+            - firered-leafgreen/celebi-default.png
+            - firered-leafgreen/back/celebi-default.png
+            - firered-leafgreen/shiny/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+diamond-pearl:
+  name: &diamond-pearl.name Celebi
+  position: &diamond-pearl.position 276
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    celebi:
+      genus: &diamond-pearl.pokemon.celebi.genus 'Time Travel Pokémon'
+      shape: &diamond-pearl.pokemon.celebi.shape humanoid
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: &diamond-pearl.pokemon.celebi.baby false
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      pal_park: &diamond-pearl.pokemon.celebi.pal_park
+        area: forest
+        rate: 1
+        score: 100
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: &diamond-pearl.pokemon.celebi.experience 270
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          It has the power to travel across
+          time, but it is said to appear only
+          in peaceful times.
+        pearl: |
+          It has the power to travel across
+          time, but it is said to appear only
+          in peaceful times.
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *ruby-sapphire.pokemon.celebi.forms.celebi.icon
+          sprites:
+            - diamond-pearl/back/shiny/celebi-default.png
+            - diamond-pearl/back/celebi-default.png
+            - diamond-pearl/shiny/celebi-default.png
+            - diamond-pearl/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    celebi:
+      genus: *diamond-pearl.pokemon.celebi.genus
+      shape: *diamond-pearl.pokemon.celebi.shape
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: *diamond-pearl.pokemon.celebi.baby
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      pal_park: *diamond-pearl.pokemon.celebi.pal_park
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: *diamond-pearl.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          It has the power to travel across
+          time, but it is said to appear only
+          in peaceful times.
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *ruby-sapphire.pokemon.celebi.forms.celebi.icon
+          sprites:
+            - platinum/back/shiny/celebi-default.png
+            - platinum/back/celebi-default.png
+            - platinum/shiny/celebi-default.png
+            - platinum/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 256
+  pokemon:
+    celebi:
+      genus: *diamond-pearl.pokemon.celebi.genus
+      shape: *diamond-pearl.pokemon.celebi.shape
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: *diamond-pearl.pokemon.celebi.baby
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      pal_park: *diamond-pearl.pokemon.celebi.pal_park
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: *diamond-pearl.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          This Pokémon wanders across time.
+          Grass and trees flourish in the
+          forests in which it has appeared.
+        soulsilver: |
+          When CELEBI disappears deep in a
+          forest, it is said to leave behind an
+          egg it brought from the future.
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 5
+              range: 3-5
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 5
+              range: 1-5
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 5
+              range: 5
+          icon: *ruby-sapphire.pokemon.celebi.forms.celebi.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/celebi-default.png
+            - heartgold-soulsilver/back/celebi-default.png
+            - heartgold-soulsilver/shiny/celebi-default.png
+            - heartgold-soulsilver/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    celebi:
+      genus: *diamond-pearl.pokemon.celebi.genus
+      color: &black-white.pokemon.celebi.color green
+      shape: *diamond-pearl.pokemon.celebi.shape
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: *diamond-pearl.pokemon.celebi.baby
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: *diamond-pearl.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      flavor_text:
+        black: |
+          It has the power to travel across
+          time, but it is said to appear only
+          in peaceful times.
+        white: |
+          It has the power to travel across
+          time, but it is said to appear only
+          in peaceful times.
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *ruby-sapphire.pokemon.celebi.forms.celebi.icon
+          sprites:
+            - black-white/back/shiny/celebi-default.png
+            - black-white/back/celebi-default.png
+            - black-white/shiny/celebi-default.png
+            - black-white/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    celebi:
+      genus: *diamond-pearl.pokemon.celebi.genus
+      color: *black-white.pokemon.celebi.color
+      shape: *diamond-pearl.pokemon.celebi.shape
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: *diamond-pearl.pokemon.celebi.baby
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: *diamond-pearl.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          It has the power to travel across
+          time, but it is said to appear only
+          in peaceful times.
+        white-2: |
+          It has the power to travel across
+          time, but it is said to appear only
+          in peaceful times.
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *ruby-sapphire.pokemon.celebi.forms.celebi.icon
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *gold-silver.pokemon.celebi.forms.celebi.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    celebi:
+      genus: *diamond-pearl.pokemon.celebi.genus
+      color: *black-white.pokemon.celebi.color
+      shape: *diamond-pearl.pokemon.celebi.shape
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: *diamond-pearl.pokemon.celebi.baby
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: *diamond-pearl.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      mega: &x-y.pokemon.celebi.mega false
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+      flavor_text:
+        x: |
+          This Pokémon wanders across time. Grass and trees
+          flourish in the forests in which it has appeared.
+        'y': |
+          It has the power to travel across time, but it is said
+          to appear only in peaceful times.
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: &x-y.pokemon.celebi.forms.celebi.icon celebi-default.png
+          sprites:
+            - x-y/shiny/celebi-default.png
+            - x-y/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: &x-y.pokemon.celebi.forms.celebi.cry celebi-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    celebi:
+      genus: *diamond-pearl.pokemon.celebi.genus
+      color: *black-white.pokemon.celebi.color
+      shape: *diamond-pearl.pokemon.celebi.shape
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: *diamond-pearl.pokemon.celebi.baby
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: *diamond-pearl.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      mega: *x-y.pokemon.celebi.mega
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      flavor_text:
+        omega-ruby: |
+          This Pokémon came from the future by crossing over time.
+          It is thought that so long as Celebi appears, a bright and
+          shining future awaits us.
+        alpha-sapphire: |
+          This Pokémon came from the future by crossing over time.
+          It is thought that so long as Celebi appears, a bright and
+          shining future awaits us.
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *x-y.pokemon.celebi.forms.celebi.icon
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *x-y.pokemon.celebi.forms.celebi.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/celebi-default.png
+            - omega-ruby-alpha-sapphire/shiny/celebi-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.celebi.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    celebi:
+      genus: *diamond-pearl.pokemon.celebi.genus
+      color: *black-white.pokemon.celebi.color
+      shape: *diamond-pearl.pokemon.celebi.shape
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: *diamond-pearl.pokemon.celebi.baby
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: *diamond-pearl.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      mega: *x-y.pokemon.celebi.mega
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.celebi.wild_held_items.sun
+          lum-berry: 5
+        moon: *sun-moon.pokemon.celebi.wild_held_items.sun
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *x-y.pokemon.celebi.forms.celebi.icon
+          sprites:
+            - sun-moon/shiny/celebi-default.png
+            - sun-moon/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *x-y.pokemon.celebi.forms.celebi.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    celebi:
+      genus: *diamond-pearl.pokemon.celebi.genus
+      color: *black-white.pokemon.celebi.color
+      shape: *diamond-pearl.pokemon.celebi.shape
+      capture_rate: *gold-silver.pokemon.celebi.capture_rate
+      happiness: *ruby-sapphire.pokemon.celebi.happiness
+      baby: *diamond-pearl.pokemon.celebi.baby
+      hatch_steps: *gold-silver.pokemon.celebi.hatch_steps
+      growth_rate: *gold-silver.pokemon.celebi.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.celebi.forms_switchable
+      name: Celebi
+      default: *gold-silver.pokemon.celebi.default
+      height: *gold-silver.pokemon.celebi.height
+      weight: *ruby-sapphire.pokemon.celebi.weight
+      experience: *diamond-pearl.pokemon.celebi.experience
+      types: *gold-silver.pokemon.celebi.types
+      egg_groups: *gold-silver.pokemon.celebi.egg_groups
+      mega: *x-y.pokemon.celebi.mega
+      stats: *ruby-sapphire.pokemon.celebi.stats
+      abilities: *ruby-sapphire.pokemon.celebi.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.celebi.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.celebi.wild_held_items.sun
+      forms:
+        celebi:
+          name: Celebi
+          form_name: *gold-silver.pokemon.celebi.forms.celebi.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.celebi.forms.celebi.battle_only
+          icon: *x-y.pokemon.celebi.forms.celebi.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/celebi-default.png
+            - ultra-sun-ultra-moon/celebi-default.png
+          art: *gold-silver.pokemon.celebi.forms.celebi.art
+          footprint: *ruby-sapphire.pokemon.celebi.forms.celebi.footprint
+          cry: *x-y.pokemon.celebi.forms.celebi.cry

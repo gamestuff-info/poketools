@@ -1,0 +1,847 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name ALTARIA
+  position: &ruby-sapphire.position 334
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 334
+    hoenn: 122
+  pokemon:
+    altaria:
+      name: ALTARIA
+      default: &ruby-sapphire.pokemon.altaria.default true
+      forms_switchable: &ruby-sapphire.pokemon.altaria.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.altaria.capture_rate 45
+      experience: &ruby-sapphire.pokemon.altaria.experience 188
+      types: &ruby-sapphire.pokemon.altaria.types
+        - dragon
+        - flying
+      stats: &ruby-sapphire.pokemon.altaria.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 70
+          effort_change: 2
+        special-defense:
+          base_value: 75
+          effort_change: 2
+      growth_rate: &ruby-sapphire.pokemon.altaria.growth_rate slow-then-very-fast
+      female_rate: &ruby-sapphire.pokemon.altaria.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.altaria.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.altaria.egg_groups
+        - flying
+        - dragon
+      happiness: &ruby-sapphire.pokemon.altaria.happiness 70
+      abilities: &ruby-sapphire.pokemon.altaria.abilities
+        natural-cure: &ruby-sapphire.pokemon.altaria.abilities.natural-cure
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.altaria.genus 'HUMMING Pokémon'
+      height: &ruby-sapphire.pokemon.altaria.height 11
+      weight: &ruby-sapphire.pokemon.altaria.weight 206
+      flavor_text:
+        ruby: |
+          ALTARIA dances and wheels through the
+          sky among billowing, cotton-like clouds.
+          By singing melodies in its crystal-clear
+          voice, this POKéMON makes its listeners
+          experience dreamy wonderment.
+        sapphire: |
+          ALTARIA sings in a gorgeous soprano.
+          Its wings are like cotton clouds.
+          This POKéMON catches updrafts with its
+          buoyant wings and soars way up into
+          the wild blue yonder.
+      forms:
+        altaria:
+          name: ALTARIA
+          form_name: &ruby-sapphire.pokemon.altaria.forms.altaria.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.altaria.forms.altaria.battle_only false
+          icon: &ruby-sapphire.pokemon.altaria.forms.altaria.icon gen5/altaria-default.png
+          sprites:
+            - ruby-sapphire/altaria-default.png
+            - ruby-sapphire/back/altaria-default.png
+            - ruby-sapphire/shiny/altaria-default.png
+          art: &ruby-sapphire.pokemon.altaria.forms.altaria.art
+            - altaria-default.png
+          footprint: &ruby-sapphire.pokemon.altaria.forms.altaria.footprint altaria.png
+          cry: &ruby-sapphire.pokemon.altaria.forms.altaria.cry gen5/altaria-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.altaria.evolution_parent swablu/swablu
+      evolution_conditions: &ruby-sapphire.pokemon.altaria.evolution_conditions
+        level-up:
+          minimum_level: 35
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    altaria:
+      name: ALTARIA
+      default: *ruby-sapphire.pokemon.altaria.default
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      experience: *ruby-sapphire.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      stats: *ruby-sapphire.pokemon.altaria.stats
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      abilities: *ruby-sapphire.pokemon.altaria.abilities
+      genus: *ruby-sapphire.pokemon.altaria.genus
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      flavor_text:
+        emerald: |
+          It hums in a beautiful soprano voice.
+          It flies among white clouds in the blue
+          sky. It launches intensely hot fireballs
+          from its mouth.
+      forms:
+        altaria:
+          name: ALTARIA
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *ruby-sapphire.pokemon.altaria.forms.altaria.icon
+          sprites:
+            - emerald/altaria-default.png
+            - emerald/shiny/altaria-default.png
+            - emerald/animated/altaria-default.webm
+            - emerald/animated/shiny/altaria-default.webm
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 7
+  pokemon:
+    altaria:
+      name: ALTARIA
+      default: *ruby-sapphire.pokemon.altaria.default
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      experience: *ruby-sapphire.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      stats: *ruby-sapphire.pokemon.altaria.stats
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      abilities: *ruby-sapphire.pokemon.altaria.abilities
+      genus: *ruby-sapphire.pokemon.altaria.genus
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      forms:
+        altaria:
+          name: ALTARIA
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          sprites:
+            - colosseum/altaria-default.png
+            - colosseum/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    altaria:
+      name: ALTARIA
+      default: *ruby-sapphire.pokemon.altaria.default
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      experience: *ruby-sapphire.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      stats: *ruby-sapphire.pokemon.altaria.stats
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      abilities: *ruby-sapphire.pokemon.altaria.abilities
+      genus: *ruby-sapphire.pokemon.altaria.genus
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      forms:
+        altaria:
+          name: ALTARIA
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          sprites:
+            - xd/altaria-default.png
+            - xd/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    altaria:
+      name: ALTARIA
+      default: *ruby-sapphire.pokemon.altaria.default
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      experience: *ruby-sapphire.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      stats: *ruby-sapphire.pokemon.altaria.stats
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      abilities: *ruby-sapphire.pokemon.altaria.abilities
+      genus: *ruby-sapphire.pokemon.altaria.genus
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      flavor_text:
+        firered: |
+          If you hear a beautiful melody trilling
+          deep among mountains far from people,
+          it is ALTARIA's humming.
+        leafgreen: |
+          If you hear a beautiful melody trilling
+          deep among mountains far from people,
+          it is ALTARIA's humming.
+      forms:
+        altaria:
+          name: ALTARIA
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *ruby-sapphire.pokemon.altaria.forms.altaria.icon
+          sprites:
+            - firered-leafgreen/altaria-default.png
+            - firered-leafgreen/back/altaria-default.png
+            - firered-leafgreen/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Altaria
+  position: &diamond-pearl.position 362
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    altaria:
+      genus: &diamond-pearl.pokemon.altaria.genus 'Humming Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      shape: &diamond-pearl.pokemon.altaria.shape wings
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: &diamond-pearl.pokemon.altaria.baby false
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      pal_park: &diamond-pearl.pokemon.altaria.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: &diamond-pearl.pokemon.altaria.experience 172
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      stats: &diamond-pearl.pokemon.altaria.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 70
+          effort_change: 0
+        special-defense:
+          base_value: 105
+          effort_change: 2
+      abilities: &diamond-pearl.pokemon.altaria.abilities
+        natural-cure: *ruby-sapphire.pokemon.altaria.abilities.natural-cure
+        cloud-nine:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      flavor_text:
+        diamond: |
+          It looks like a fluffy cloud when
+          it is in flight. It hums with its
+          soprano voice.
+        pearl: |
+          It looks like a fluffy cloud when
+          it is in flight. It hums with its
+          soprano voice.
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *ruby-sapphire.pokemon.altaria.forms.altaria.icon
+          sprites:
+            - diamond-pearl/back/altaria-default.png
+            - diamond-pearl/back/shiny/altaria-default.png
+            - diamond-pearl/altaria-default.png
+            - diamond-pearl/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    extended-sinnoh: 172
+  pokemon:
+    altaria:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      pal_park: *diamond-pearl.pokemon.altaria.pal_park
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *diamond-pearl.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      stats: *diamond-pearl.pokemon.altaria.stats
+      abilities: *diamond-pearl.pokemon.altaria.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      flavor_text:
+        platinum: |
+          If it bonds with a person, it will
+          gently envelop the friend with its
+          soft wings, then hum.
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *ruby-sapphire.pokemon.altaria.forms.altaria.icon
+          sprites:
+            - platinum/back/altaria-default.png
+            - platinum/back/shiny/altaria-default.png
+            - platinum/altaria-default.png
+            - platinum/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    altaria:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      pal_park: *diamond-pearl.pokemon.altaria.pal_park
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *diamond-pearl.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      stats: *diamond-pearl.pokemon.altaria.stats
+      abilities: *diamond-pearl.pokemon.altaria.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It flies gracefully through the
+          sky. Its melodic humming makes
+          you feel like you’re in a dream.
+        soulsilver: |
+          It flies gracefully through the
+          sky. Its melodic humming makes
+          you feel like you’re in a dream.
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 5
+              range: 4-5
+          icon: *ruby-sapphire.pokemon.altaria.forms.altaria.icon
+          sprites:
+            - heartgold-soulsilver/back/altaria-default.png
+            - heartgold-soulsilver/back/shiny/altaria-default.png
+            - heartgold-soulsilver/altaria-default.png
+            - heartgold-soulsilver/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    altaria:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: &black-white.pokemon.altaria.color blue
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *diamond-pearl.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      stats: *diamond-pearl.pokemon.altaria.stats
+      abilities: *diamond-pearl.pokemon.altaria.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      flavor_text:
+        black: |
+          If it bonds with a person, it will
+          gently envelop the friend with its
+          soft wings, then hum.
+        white: |
+          If it bonds with a person, it will
+          gently envelop the friend with its
+          soft wings, then hum.
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *ruby-sapphire.pokemon.altaria.forms.altaria.icon
+          sprites:
+            - black-white/back/altaria-default.png
+            - black-white/back/shiny/altaria-default.png
+            - black-white/altaria-default.png
+            - black-white/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 247
+  pokemon:
+    altaria:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: *black-white.pokemon.altaria.color
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *diamond-pearl.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      stats: *diamond-pearl.pokemon.altaria.stats
+      abilities: *diamond-pearl.pokemon.altaria.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      flavor_text:
+        black-2: |
+          On sunny days, it flies freely through
+          the sky and blends into the clouds.
+          It sings in a beautiful soprano.
+        white-2: |
+          On sunny days, it flies freely through
+          the sky and blends into the clouds.
+          It sings in a beautiful soprano.
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *ruby-sapphire.pokemon.altaria.forms.altaria.icon
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *ruby-sapphire.pokemon.altaria.forms.altaria.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-mountain: 140
+  pokemon:
+    altaria:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: *black-white.pokemon.altaria.color
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.altaria.forms_switchable
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *diamond-pearl.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      mega: &x-y.pokemon.altaria.mega false
+      stats: *diamond-pearl.pokemon.altaria.stats
+      abilities: *diamond-pearl.pokemon.altaria.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      flavor_text:
+        x: |
+          It flies gracefully through the sky. Its melodic
+          humming makes you feel like you’re in a dream.
+        'y': |
+          On sunny days, it flies freely through the sky and
+          blends into the clouds. It sings in a
+          beautiful soprano.
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: &x-y.pokemon.altaria.forms.altaria.icon altaria-default.png
+          sprites:
+            - x-y/altaria-default.png
+            - x-y/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: &x-y.pokemon.altaria.forms.altaria.cry altaria-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 127
+  pokemon:
+    altaria:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: *black-white.pokemon.altaria.color
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: &omega-ruby-alpha-sapphire.pokemon.altaria.forms_switchable true
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *diamond-pearl.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      mega: *x-y.pokemon.altaria.mega
+      stats: *diamond-pearl.pokemon.altaria.stats
+      abilities: *diamond-pearl.pokemon.altaria.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.altaria.flavor_text
+        omega-ruby: |
+          Altaria dances and wheels through the sky among billowing,
+          cotton-like clouds. By singing melodies in its crystal-clear
+          voice, this Pokémon makes its listeners experience dreamy
+          wonderment.
+        alpha-sapphire: |
+          Altaria sings in a gorgeous soprano. Its wings are like cotton
+          clouds. This Pokémon catches updrafts with its buoyant wings
+          and soars way up into the wild blue yonder.
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *x-y.pokemon.altaria.forms.altaria.icon
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *x-y.pokemon.altaria.forms.altaria.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/altaria-default.png
+            - omega-ruby-alpha-sapphire/shiny/altaria-default.png
+    altaria-mega:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: *black-white.pokemon.altaria.color
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.altaria.forms_switchable
+      name: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.name 'Mega Altaria'
+      default: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.default false
+      height: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.height 15
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.experience 207
+      types: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.types
+        - dragon
+        - fairy
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      mega: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.mega true
+      stats: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 110
+          effort_change: 0
+        defense:
+          base_value: 110
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 110
+          effort_change: 0
+        special-defense:
+          base_value: 105
+          effort_change: 2
+      abilities: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.abilities
+        pixilate: *ruby-sapphire.pokemon.altaria.abilities.natural-cure
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.altaria.flavor_text
+      forms:
+        altaria-mega:
+          name: 'Mega Altaria'
+          form_name: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.form_name 'Mega Altaria'
+          default: true
+          battle_only: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.battle_only true
+          icon: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.icon altaria-mega.png
+          art: &omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.art
+            - altaria-mega.png
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *x-y.pokemon.altaria.forms.altaria.cry
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    altaria:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: *black-white.pokemon.altaria.color
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.altaria.forms_switchable
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *diamond-pearl.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      mega: *x-y.pokemon.altaria.mega
+      stats: *diamond-pearl.pokemon.altaria.stats
+      abilities: *diamond-pearl.pokemon.altaria.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *x-y.pokemon.altaria.forms.altaria.icon
+          sprites:
+            - sun-moon/altaria-default.png
+            - sun-moon/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *x-y.pokemon.altaria.forms.altaria.cry
+    altaria-mega:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: *black-white.pokemon.altaria.color
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.altaria.forms_switchable
+      name: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.name
+      default: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.default
+      height: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.experience
+      types: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      mega: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.mega
+      stats: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.stats
+      abilities: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      forms:
+        altaria-mega:
+          name: 'Mega Altaria'
+          form_name: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.form_name
+          default: true
+          battle_only: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.battle_only
+          icon: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.icon
+          sprites:
+            - sun-moon/altaria-mega.png
+            - sun-moon/shiny/altaria-mega.png
+          art: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *x-y.pokemon.altaria.forms.altaria.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    altaria:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: *black-white.pokemon.altaria.color
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.altaria.forms_switchable
+      name: Altaria
+      default: *ruby-sapphire.pokemon.altaria.default
+      height: *ruby-sapphire.pokemon.altaria.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *diamond-pearl.pokemon.altaria.experience
+      types: *ruby-sapphire.pokemon.altaria.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      mega: *x-y.pokemon.altaria.mega
+      stats: *diamond-pearl.pokemon.altaria.stats
+      abilities: *diamond-pearl.pokemon.altaria.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      forms:
+        altaria:
+          name: Altaria
+          form_name: *ruby-sapphire.pokemon.altaria.forms.altaria.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.altaria.forms.altaria.battle_only
+          icon: *x-y.pokemon.altaria.forms.altaria.icon
+          sprites:
+            - ultra-sun-ultra-moon/altaria-default.png
+            - ultra-sun-ultra-moon/shiny/altaria-default.png
+          art: *ruby-sapphire.pokemon.altaria.forms.altaria.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *x-y.pokemon.altaria.forms.altaria.cry
+    altaria-mega:
+      genus: *diamond-pearl.pokemon.altaria.genus
+      evolution_parent: *ruby-sapphire.pokemon.altaria.evolution_parent
+      color: *black-white.pokemon.altaria.color
+      shape: *diamond-pearl.pokemon.altaria.shape
+      female_rate: *ruby-sapphire.pokemon.altaria.female_rate
+      capture_rate: *ruby-sapphire.pokemon.altaria.capture_rate
+      happiness: *ruby-sapphire.pokemon.altaria.happiness
+      baby: *diamond-pearl.pokemon.altaria.baby
+      hatch_steps: *ruby-sapphire.pokemon.altaria.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.altaria.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.altaria.forms_switchable
+      name: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.name
+      default: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.default
+      height: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.height
+      weight: *ruby-sapphire.pokemon.altaria.weight
+      experience: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.experience
+      types: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.types
+      egg_groups: *ruby-sapphire.pokemon.altaria.egg_groups
+      mega: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.mega
+      stats: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.stats
+      abilities: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.altaria.evolution_conditions
+      forms:
+        altaria-mega:
+          name: 'Mega Altaria'
+          form_name: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.form_name
+          default: true
+          battle_only: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.battle_only
+          icon: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/altaria-mega.png
+            - ultra-sun-ultra-moon/shiny/altaria-mega.png
+          art: *omega-ruby-alpha-sapphire.pokemon.altaria-mega.forms.altaria-mega.art
+          footprint: *ruby-sapphire.pokemon.altaria.forms.altaria.footprint
+          cry: *x-y.pokemon.altaria.forms.altaria.cry

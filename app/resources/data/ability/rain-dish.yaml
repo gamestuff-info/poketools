@@ -1,0 +1,34 @@
+ruby-sapphire: &ruby-sapphire
+  name: 'RAIN DISH'
+  flavor_text: 'Slight HP recovery in rain.'
+  short_description: &ruby-sapphire.short_description 'Heals for 1/16 max [HP]{mechanic:hp} after each turn during [rain]{mechanic:rain}.'
+  description: &ruby-sapphire.description 'This Pokémon heals for 1/16 of its maximum [HP]{mechanic:hp} after each turn during [rain]{mechanic:rain}.'
+emerald: *ruby-sapphire
+colosseum: *ruby-sapphire
+xd: *ruby-sapphire
+firered-leafgreen: *ruby-sapphire
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Rain Dish'
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    The Pokémon gradually
+    recovers HP in rain.
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: &black-white
+  name: *diamond-pearl.name
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    The Pokémon gradually
+    regains HP in rain.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire: *black-white
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: 'The Pokémon gradually regains HP in rain.'
+ultra-sun-ultra-moon: *sun-moon

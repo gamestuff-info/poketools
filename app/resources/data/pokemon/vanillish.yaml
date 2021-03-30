@@ -1,0 +1,346 @@
+black-white:
+  name: &black-white.name Vanillish
+  position: &black-white.position 584
+  numbers:
+    national: &black-white.numbers.national 583
+    original-unova: 89
+  pokemon:
+    vanillish:
+      genus: &black-white.pokemon.vanillish.genus 'Icy Snow Pokémon'
+      evolution_parent: &black-white.pokemon.vanillish.evolution_parent vanillite/vanillite
+      color: &black-white.pokemon.vanillish.color white
+      shape: &black-white.pokemon.vanillish.shape blob
+      female_rate: &black-white.pokemon.vanillish.female_rate 50
+      capture_rate: &black-white.pokemon.vanillish.capture_rate 120
+      happiness: &black-white.pokemon.vanillish.happiness 70
+      baby: &black-white.pokemon.vanillish.baby false
+      hatch_steps: &black-white.pokemon.vanillish.hatch_steps 20
+      growth_rate: &black-white.pokemon.vanillish.growth_rate slow
+      forms_switchable: &black-white.pokemon.vanillish.forms_switchable false
+      name: Vanillish
+      default: &black-white.pokemon.vanillish.default true
+      height: &black-white.pokemon.vanillish.height 11
+      weight: &black-white.pokemon.vanillish.weight 410
+      experience: &black-white.pokemon.vanillish.experience 138
+      types: &black-white.pokemon.vanillish.types
+        - ice
+      egg_groups: &black-white.pokemon.vanillish.egg_groups
+        - mineral
+      stats: &black-white.pokemon.vanillish.stats
+        hp:
+          base_value: 51
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 59
+          effort_change: 0
+        special-attack:
+          base_value: 80
+          effort_change: 2
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: &black-white.pokemon.vanillish.abilities
+        ice-body:
+          hidden: &black-white.pokemon.vanillish.abilities.ice-body.hidden false
+          position: 1
+        snow-cloak:
+          hidden: *black-white.pokemon.vanillish.abilities.ice-body.hidden
+          position: 2
+        weak-armor:
+          hidden: true
+          position: 3
+      evolution_conditions: &black-white.pokemon.vanillish.evolution_conditions
+        level-up:
+          minimum_level: 35
+      flavor_text:
+        black: |
+          Snowy mountains are this Pokémon’s
+          habitat. During an ancient ice age, they
+          moved to southern areas.
+        white: |
+          It conceals itself from enemy eyes
+          by creating many small ice particles
+          and hiding among them.
+      forms:
+        vanillish:
+          name: Vanillish
+          form_name: &black-white.pokemon.vanillish.forms.vanillish.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.vanillish.forms.vanillish.battle_only false
+          icon: &black-white.pokemon.vanillish.forms.vanillish.icon gen5/vanillish-default.png
+          sprites:
+            - black-white/back/vanillish-default.png
+            - black-white/back/shiny/vanillish-default.png
+            - black-white/vanillish-default.png
+            - black-white/shiny/vanillish-default.png
+          art: &black-white.pokemon.vanillish.forms.vanillish.art
+            - vanillish-default.png
+          footprint: &black-white.pokemon.vanillish.forms.vanillish.footprint vanillish.png
+          cry: &black-white.pokemon.vanillish.forms.vanillish.cry gen5/vanillish-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 256
+  pokemon:
+    vanillish:
+      genus: *black-white.pokemon.vanillish.genus
+      evolution_parent: *black-white.pokemon.vanillish.evolution_parent
+      color: *black-white.pokemon.vanillish.color
+      shape: *black-white.pokemon.vanillish.shape
+      female_rate: *black-white.pokemon.vanillish.female_rate
+      capture_rate: *black-white.pokemon.vanillish.capture_rate
+      happiness: *black-white.pokemon.vanillish.happiness
+      baby: *black-white.pokemon.vanillish.baby
+      hatch_steps: *black-white.pokemon.vanillish.hatch_steps
+      growth_rate: *black-white.pokemon.vanillish.growth_rate
+      forms_switchable: *black-white.pokemon.vanillish.forms_switchable
+      name: Vanillish
+      default: *black-white.pokemon.vanillish.default
+      height: *black-white.pokemon.vanillish.height
+      weight: *black-white.pokemon.vanillish.weight
+      experience: *black-white.pokemon.vanillish.experience
+      types: *black-white.pokemon.vanillish.types
+      egg_groups: *black-white.pokemon.vanillish.egg_groups
+      stats: *black-white.pokemon.vanillish.stats
+      abilities: *black-white.pokemon.vanillish.abilities
+      evolution_conditions: *black-white.pokemon.vanillish.evolution_conditions
+      flavor_text:
+        black-2: |
+          They cool down the surrounding air
+          and create ice particles, which
+          they use to freeze their foes.
+        white-2: |
+          They cool down the surrounding air
+          and create ice particles, which
+          they use to freeze their foes.
+      forms:
+        vanillish:
+          name: Vanillish
+          form_name: *black-white.pokemon.vanillish.forms.vanillish.form_name
+          default: true
+          battle_only: *black-white.pokemon.vanillish.forms.vanillish.battle_only
+          icon: *black-white.pokemon.vanillish.forms.vanillish.icon
+          art: *black-white.pokemon.vanillish.forms.vanillish.art
+          footprint: *black-white.pokemon.vanillish.forms.vanillish.footprint
+          cry: *black-white.pokemon.vanillish.forms.vanillish.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    kalos-mountain: 86
+  pokemon:
+    vanillish:
+      genus: *black-white.pokemon.vanillish.genus
+      evolution_parent: *black-white.pokemon.vanillish.evolution_parent
+      color: *black-white.pokemon.vanillish.color
+      shape: *black-white.pokemon.vanillish.shape
+      female_rate: *black-white.pokemon.vanillish.female_rate
+      capture_rate: *black-white.pokemon.vanillish.capture_rate
+      happiness: *black-white.pokemon.vanillish.happiness
+      baby: *black-white.pokemon.vanillish.baby
+      hatch_steps: *black-white.pokemon.vanillish.hatch_steps
+      growth_rate: *black-white.pokemon.vanillish.growth_rate
+      forms_switchable: *black-white.pokemon.vanillish.forms_switchable
+      name: Vanillish
+      default: *black-white.pokemon.vanillish.default
+      height: *black-white.pokemon.vanillish.height
+      weight: *black-white.pokemon.vanillish.weight
+      experience: *black-white.pokemon.vanillish.experience
+      types: *black-white.pokemon.vanillish.types
+      egg_groups: *black-white.pokemon.vanillish.egg_groups
+      mega: &x-y.pokemon.vanillish.mega false
+      stats: *black-white.pokemon.vanillish.stats
+      abilities: *black-white.pokemon.vanillish.abilities
+      evolution_conditions: *black-white.pokemon.vanillish.evolution_conditions
+      flavor_text:
+        x: |
+          They cool down the surrounding air and create ice
+          particles, which they use to freeze their foes.
+        'y': |
+          Snowy mountains are this Pokémon’s habitat.
+          During an ancient ice age, they moved to
+          southern areas.
+      forms:
+        vanillish:
+          name: Vanillish
+          form_name: *black-white.pokemon.vanillish.forms.vanillish.form_name
+          default: true
+          battle_only: *black-white.pokemon.vanillish.forms.vanillish.battle_only
+          icon: &x-y.pokemon.vanillish.forms.vanillish.icon vanillish-default.png
+          sprites:
+            - x-y/vanillish-default.png
+            - x-y/shiny/vanillish-default.png
+          art: *black-white.pokemon.vanillish.forms.vanillish.art
+          footprint: *black-white.pokemon.vanillish.forms.vanillish.footprint
+          cry: &x-y.pokemon.vanillish.forms.vanillish.cry vanillish-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+  pokemon:
+    vanillish:
+      genus: *black-white.pokemon.vanillish.genus
+      evolution_parent: *black-white.pokemon.vanillish.evolution_parent
+      color: *black-white.pokemon.vanillish.color
+      shape: *black-white.pokemon.vanillish.shape
+      female_rate: *black-white.pokemon.vanillish.female_rate
+      capture_rate: *black-white.pokemon.vanillish.capture_rate
+      happiness: *black-white.pokemon.vanillish.happiness
+      baby: *black-white.pokemon.vanillish.baby
+      hatch_steps: *black-white.pokemon.vanillish.hatch_steps
+      growth_rate: *black-white.pokemon.vanillish.growth_rate
+      forms_switchable: *black-white.pokemon.vanillish.forms_switchable
+      name: Vanillish
+      default: *black-white.pokemon.vanillish.default
+      height: *black-white.pokemon.vanillish.height
+      weight: *black-white.pokemon.vanillish.weight
+      experience: *black-white.pokemon.vanillish.experience
+      types: *black-white.pokemon.vanillish.types
+      egg_groups: *black-white.pokemon.vanillish.egg_groups
+      mega: *x-y.pokemon.vanillish.mega
+      stats: *black-white.pokemon.vanillish.stats
+      abilities: *black-white.pokemon.vanillish.abilities
+      evolution_conditions: *black-white.pokemon.vanillish.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          They cool down the surrounding air and create ice
+          particles, which they use to freeze their foes.
+        alpha-sapphire: |
+          Snowy mountains are this Pokémon’s habitat.
+          During an ancient ice age, they moved to
+          southern areas.
+      forms:
+        vanillish:
+          name: Vanillish
+          form_name: *black-white.pokemon.vanillish.forms.vanillish.form_name
+          default: true
+          battle_only: *black-white.pokemon.vanillish.forms.vanillish.battle_only
+          icon: *x-y.pokemon.vanillish.forms.vanillish.icon
+          art: *black-white.pokemon.vanillish.forms.vanillish.art
+          footprint: *black-white.pokemon.vanillish.forms.vanillish.footprint
+          cry: *x-y.pokemon.vanillish.forms.vanillish.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/vanillish-default.png
+            - omega-ruby-alpha-sapphire/shiny/vanillish-default.png
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    original-alola: 256
+    original-ulaula: 128
+  pokemon:
+    vanillish:
+      genus: *black-white.pokemon.vanillish.genus
+      evolution_parent: *black-white.pokemon.vanillish.evolution_parent
+      color: *black-white.pokemon.vanillish.color
+      shape: *black-white.pokemon.vanillish.shape
+      female_rate: *black-white.pokemon.vanillish.female_rate
+      capture_rate: *black-white.pokemon.vanillish.capture_rate
+      happiness: *black-white.pokemon.vanillish.happiness
+      baby: *black-white.pokemon.vanillish.baby
+      hatch_steps: *black-white.pokemon.vanillish.hatch_steps
+      growth_rate: *black-white.pokemon.vanillish.growth_rate
+      forms_switchable: *black-white.pokemon.vanillish.forms_switchable
+      name: Vanillish
+      default: *black-white.pokemon.vanillish.default
+      height: *black-white.pokemon.vanillish.height
+      weight: *black-white.pokemon.vanillish.weight
+      experience: *black-white.pokemon.vanillish.experience
+      types: *black-white.pokemon.vanillish.types
+      egg_groups: *black-white.pokemon.vanillish.egg_groups
+      mega: *x-y.pokemon.vanillish.mega
+      stats: *black-white.pokemon.vanillish.stats
+      abilities: *black-white.pokemon.vanillish.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.vanillish.wild_held_items.sun
+          never-melt-ice: 5
+        moon: *sun-moon.pokemon.vanillish.wild_held_items.sun
+      evolution_conditions: *black-white.pokemon.vanillish.evolution_conditions
+      flavor_text:
+        sun: |-
+          Hot days cause its body to melt. It can be
+          restored by refreezing it, but the process
+          leaves its body slightly warped.
+        moon: |-
+          This Pokémon has existed since the Ice Age. It
+          controls particles of ice, freezes its opponents,
+          and then shatters them with a headbutt.
+      forms:
+        vanillish:
+          name: Vanillish
+          form_name: *black-white.pokemon.vanillish.forms.vanillish.form_name
+          default: true
+          battle_only: *black-white.pokemon.vanillish.forms.vanillish.battle_only
+          icon: *x-y.pokemon.vanillish.forms.vanillish.icon
+          sprites:
+            - sun-moon/vanillish-default.png
+            - sun-moon/shiny/vanillish-default.png
+          art: *black-white.pokemon.vanillish.forms.vanillish.art
+          footprint: *black-white.pokemon.vanillish.forms.vanillish.footprint
+          cry: *x-y.pokemon.vanillish.forms.vanillish.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 333
+    updated-ulaula: 154
+  pokemon:
+    vanillish:
+      genus: *black-white.pokemon.vanillish.genus
+      evolution_parent: *black-white.pokemon.vanillish.evolution_parent
+      color: *black-white.pokemon.vanillish.color
+      shape: *black-white.pokemon.vanillish.shape
+      female_rate: *black-white.pokemon.vanillish.female_rate
+      capture_rate: *black-white.pokemon.vanillish.capture_rate
+      happiness: *black-white.pokemon.vanillish.happiness
+      baby: *black-white.pokemon.vanillish.baby
+      hatch_steps: *black-white.pokemon.vanillish.hatch_steps
+      growth_rate: *black-white.pokemon.vanillish.growth_rate
+      forms_switchable: *black-white.pokemon.vanillish.forms_switchable
+      name: Vanillish
+      default: *black-white.pokemon.vanillish.default
+      height: *black-white.pokemon.vanillish.height
+      weight: *black-white.pokemon.vanillish.weight
+      experience: *black-white.pokemon.vanillish.experience
+      types: *black-white.pokemon.vanillish.types
+      egg_groups: *black-white.pokemon.vanillish.egg_groups
+      mega: *x-y.pokemon.vanillish.mega
+      stats: *black-white.pokemon.vanillish.stats
+      abilities: *black-white.pokemon.vanillish.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.vanillish.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.vanillish.wild_held_items.sun
+      evolution_conditions: *black-white.pokemon.vanillish.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It sprays its enemies with grains of ice to freeze
+          them. Most Vanillish in Alola are smaller
+          than average.
+        ultra-moon: |-
+          This hearty Pokémon survived the Ice Age.
+          It’s incredibly popular in very hot regions.
+      forms:
+        vanillish:
+          name: Vanillish
+          form_name: *black-white.pokemon.vanillish.forms.vanillish.form_name
+          default: true
+          battle_only: *black-white.pokemon.vanillish.forms.vanillish.battle_only
+          icon: *x-y.pokemon.vanillish.forms.vanillish.icon
+          sprites:
+            - ultra-sun-ultra-moon/vanillish-default.png
+            - ultra-sun-ultra-moon/shiny/vanillish-default.png
+          art: *black-white.pokemon.vanillish.forms.vanillish.art
+          footprint: *black-white.pokemon.vanillish.forms.vanillish.footprint
+          cry: *x-y.pokemon.vanillish.forms.vanillish.cry

@@ -1,0 +1,348 @@
+black-white:
+  name: &black-white.name Krokorok
+  position: &black-white.position 553
+  numbers:
+    national: &black-white.numbers.national 552
+    original-unova: 58
+  pokemon:
+    krokorok:
+      genus: &black-white.pokemon.krokorok.genus 'Desert Croc Pokémon'
+      evolution_parent: &black-white.pokemon.krokorok.evolution_parent sandile/sandile
+      color: &black-white.pokemon.krokorok.color brown
+      shape: &black-white.pokemon.krokorok.shape quadruped
+      female_rate: &black-white.pokemon.krokorok.female_rate 50
+      capture_rate: &black-white.pokemon.krokorok.capture_rate 90
+      happiness: &black-white.pokemon.krokorok.happiness 70
+      baby: &black-white.pokemon.krokorok.baby false
+      hatch_steps: &black-white.pokemon.krokorok.hatch_steps 20
+      growth_rate: &black-white.pokemon.krokorok.growth_rate medium-slow
+      forms_switchable: &black-white.pokemon.krokorok.forms_switchable false
+      name: Krokorok
+      default: &black-white.pokemon.krokorok.default true
+      height: &black-white.pokemon.krokorok.height 10
+      weight: &black-white.pokemon.krokorok.weight 334
+      experience: &black-white.pokemon.krokorok.experience 123
+      types: &black-white.pokemon.krokorok.types
+        - ground
+        - dark
+      egg_groups: &black-white.pokemon.krokorok.egg_groups
+        - ground
+      stats: &black-white.pokemon.krokorok.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 82
+          effort_change: 2
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 74
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: &black-white.pokemon.krokorok.abilities
+        intimidate:
+          hidden: &black-white.pokemon.krokorok.abilities.intimidate.hidden false
+          position: 1
+        moxie:
+          hidden: *black-white.pokemon.krokorok.abilities.intimidate.hidden
+          position: 2
+        anger-point:
+          hidden: true
+          position: 3
+      evolution_conditions: &black-white.pokemon.krokorok.evolution_conditions
+        level-up:
+          minimum_level: 29
+      flavor_text:
+        black: |
+          They live in groups of a few individuals.
+          Protective membranes shield their eyes
+          from sandstorms.
+        white: |
+          The special membrane covering its eyes
+          can sense the heat of objects, so it can
+          see its surroundings even in darkness.
+      forms:
+        krokorok:
+          name: Krokorok
+          form_name: &black-white.pokemon.krokorok.forms.krokorok.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.krokorok.forms.krokorok.battle_only false
+          icon: &black-white.pokemon.krokorok.forms.krokorok.icon gen5/krokorok-default.png
+          sprites:
+            - black-white/back/shiny/krokorok-default.png
+            - black-white/back/krokorok-default.png
+            - black-white/shiny/krokorok-default.png
+            - black-white/krokorok-default.png
+          art: &black-white.pokemon.krokorok.forms.krokorok.art
+            - krokorok-default.png
+          footprint: &black-white.pokemon.krokorok.forms.krokorok.footprint krokorok.png
+          cry: &black-white.pokemon.krokorok.forms.krokorok.cry gen5/krokorok-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 100
+  pokemon:
+    krokorok:
+      genus: *black-white.pokemon.krokorok.genus
+      evolution_parent: *black-white.pokemon.krokorok.evolution_parent
+      color: *black-white.pokemon.krokorok.color
+      shape: *black-white.pokemon.krokorok.shape
+      female_rate: *black-white.pokemon.krokorok.female_rate
+      capture_rate: *black-white.pokemon.krokorok.capture_rate
+      happiness: *black-white.pokemon.krokorok.happiness
+      baby: *black-white.pokemon.krokorok.baby
+      hatch_steps: *black-white.pokemon.krokorok.hatch_steps
+      growth_rate: *black-white.pokemon.krokorok.growth_rate
+      forms_switchable: *black-white.pokemon.krokorok.forms_switchable
+      name: Krokorok
+      default: *black-white.pokemon.krokorok.default
+      height: *black-white.pokemon.krokorok.height
+      weight: *black-white.pokemon.krokorok.weight
+      experience: *black-white.pokemon.krokorok.experience
+      types: *black-white.pokemon.krokorok.types
+      egg_groups: *black-white.pokemon.krokorok.egg_groups
+      stats: *black-white.pokemon.krokorok.stats
+      abilities: *black-white.pokemon.krokorok.abilities
+      evolution_conditions: *black-white.pokemon.krokorok.evolution_conditions
+      flavor_text:
+        black-2: |
+          Protected by thin membranes, their eyes
+          can see even in the dead of night.
+          They live in groups of a few individuals.
+        white-2: |
+          Protected by thin membranes, their eyes
+          can see even in the dead of night.
+          They live in groups of a few individuals.
+      forms:
+        krokorok:
+          name: Krokorok
+          form_name: *black-white.pokemon.krokorok.forms.krokorok.form_name
+          default: true
+          battle_only: *black-white.pokemon.krokorok.forms.krokorok.battle_only
+          icon: *black-white.pokemon.krokorok.forms.krokorok.icon
+          art: *black-white.pokemon.krokorok.forms.krokorok.art
+          footprint: *black-white.pokemon.krokorok.forms.krokorok.footprint
+          cry: *black-white.pokemon.krokorok.forms.krokorok.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    kalos-coastal: 44
+  pokemon:
+    krokorok:
+      genus: *black-white.pokemon.krokorok.genus
+      evolution_parent: *black-white.pokemon.krokorok.evolution_parent
+      color: *black-white.pokemon.krokorok.color
+      shape: *black-white.pokemon.krokorok.shape
+      female_rate: *black-white.pokemon.krokorok.female_rate
+      capture_rate: *black-white.pokemon.krokorok.capture_rate
+      happiness: *black-white.pokemon.krokorok.happiness
+      baby: *black-white.pokemon.krokorok.baby
+      hatch_steps: *black-white.pokemon.krokorok.hatch_steps
+      growth_rate: *black-white.pokemon.krokorok.growth_rate
+      forms_switchable: *black-white.pokemon.krokorok.forms_switchable
+      name: Krokorok
+      default: *black-white.pokemon.krokorok.default
+      height: *black-white.pokemon.krokorok.height
+      weight: *black-white.pokemon.krokorok.weight
+      experience: *black-white.pokemon.krokorok.experience
+      types: *black-white.pokemon.krokorok.types
+      egg_groups: *black-white.pokemon.krokorok.egg_groups
+      mega: &x-y.pokemon.krokorok.mega false
+      stats: *black-white.pokemon.krokorok.stats
+      abilities: *black-white.pokemon.krokorok.abilities
+      evolution_conditions: *black-white.pokemon.krokorok.evolution_conditions
+      flavor_text:
+        x: |
+          They live in groups of a few individuals. Protective
+          membranes shield their eyes from sandstorms.
+        'y': |
+          The special membrane covering its eyes can sense
+          the heat of objects, so it can see its surroundings
+          even in darkness.
+      forms:
+        krokorok:
+          name: Krokorok
+          form_name: *black-white.pokemon.krokorok.forms.krokorok.form_name
+          default: true
+          battle_only: *black-white.pokemon.krokorok.forms.krokorok.battle_only
+          icon: &x-y.pokemon.krokorok.forms.krokorok.icon krokorok-default.png
+          sprites:
+            - x-y/shiny/krokorok-default.png
+            - x-y/krokorok-default.png
+          art: *black-white.pokemon.krokorok.forms.krokorok.art
+          footprint: *black-white.pokemon.krokorok.forms.krokorok.footprint
+          cry: &x-y.pokemon.krokorok.forms.krokorok.cry krokorok-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+  pokemon:
+    krokorok:
+      genus: *black-white.pokemon.krokorok.genus
+      evolution_parent: *black-white.pokemon.krokorok.evolution_parent
+      color: *black-white.pokemon.krokorok.color
+      shape: *black-white.pokemon.krokorok.shape
+      female_rate: *black-white.pokemon.krokorok.female_rate
+      capture_rate: *black-white.pokemon.krokorok.capture_rate
+      happiness: *black-white.pokemon.krokorok.happiness
+      baby: *black-white.pokemon.krokorok.baby
+      hatch_steps: *black-white.pokemon.krokorok.hatch_steps
+      growth_rate: *black-white.pokemon.krokorok.growth_rate
+      forms_switchable: *black-white.pokemon.krokorok.forms_switchable
+      name: Krokorok
+      default: *black-white.pokemon.krokorok.default
+      height: *black-white.pokemon.krokorok.height
+      weight: *black-white.pokemon.krokorok.weight
+      experience: *black-white.pokemon.krokorok.experience
+      types: *black-white.pokemon.krokorok.types
+      egg_groups: *black-white.pokemon.krokorok.egg_groups
+      mega: *x-y.pokemon.krokorok.mega
+      stats: *black-white.pokemon.krokorok.stats
+      abilities: *black-white.pokemon.krokorok.abilities
+      evolution_conditions: *black-white.pokemon.krokorok.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          They live in groups of a few individuals. Protective
+          membranes shield their eyes from sandstorms.
+        alpha-sapphire: |
+          The special membrane covering its eyes can sense
+          the heat of objects, so it can see its surroundings
+          even in darkness.
+      forms:
+        krokorok:
+          name: Krokorok
+          form_name: *black-white.pokemon.krokorok.forms.krokorok.form_name
+          default: true
+          battle_only: *black-white.pokemon.krokorok.forms.krokorok.battle_only
+          icon: *x-y.pokemon.krokorok.forms.krokorok.icon
+          art: *black-white.pokemon.krokorok.forms.krokorok.art
+          footprint: *black-white.pokemon.krokorok.forms.krokorok.footprint
+          cry: *x-y.pokemon.krokorok.forms.krokorok.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/krokorok-default.png
+            - omega-ruby-alpha-sapphire/shiny/krokorok-default.png
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    original-alola: 233
+    original-ulaula: 105
+  pokemon:
+    krokorok:
+      genus: *black-white.pokemon.krokorok.genus
+      evolution_parent: *black-white.pokemon.krokorok.evolution_parent
+      color: *black-white.pokemon.krokorok.color
+      shape: *black-white.pokemon.krokorok.shape
+      female_rate: *black-white.pokemon.krokorok.female_rate
+      capture_rate: *black-white.pokemon.krokorok.capture_rate
+      happiness: *black-white.pokemon.krokorok.happiness
+      baby: *black-white.pokemon.krokorok.baby
+      hatch_steps: *black-white.pokemon.krokorok.hatch_steps
+      growth_rate: *black-white.pokemon.krokorok.growth_rate
+      forms_switchable: *black-white.pokemon.krokorok.forms_switchable
+      name: Krokorok
+      default: *black-white.pokemon.krokorok.default
+      height: *black-white.pokemon.krokorok.height
+      weight: *black-white.pokemon.krokorok.weight
+      experience: *black-white.pokemon.krokorok.experience
+      types: *black-white.pokemon.krokorok.types
+      egg_groups: *black-white.pokemon.krokorok.egg_groups
+      mega: *x-y.pokemon.krokorok.mega
+      stats: *black-white.pokemon.krokorok.stats
+      abilities: *black-white.pokemon.krokorok.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.krokorok.wild_held_items.sun
+          black-glasses: 5
+        moon: *sun-moon.pokemon.krokorok.wild_held_items.sun
+      evolution_conditions: *black-white.pokemon.krokorok.evolution_conditions
+      flavor_text:
+        sun: |-
+          They move in groups of a few individuals.
+          A female is often the leader of the group, and
+          the males will gather food.
+        moon: |-
+          Thanks to the special membrane covering its
+          eyes, it can see its surroundings clearly, even in
+          the middle of the night.
+      forms:
+        krokorok:
+          name: Krokorok
+          form_name: *black-white.pokemon.krokorok.forms.krokorok.form_name
+          default: true
+          battle_only: *black-white.pokemon.krokorok.forms.krokorok.battle_only
+          icon: *x-y.pokemon.krokorok.forms.krokorok.icon
+          sprites:
+            - sun-moon/shiny/krokorok-default.png
+            - sun-moon/krokorok-default.png
+          art: *black-white.pokemon.krokorok.forms.krokorok.art
+          footprint: *black-white.pokemon.krokorok.forms.krokorok.footprint
+          cry: *x-y.pokemon.krokorok.forms.krokorok.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 302
+    updated-ulaula: 123
+  pokemon:
+    krokorok:
+      genus: *black-white.pokemon.krokorok.genus
+      evolution_parent: *black-white.pokemon.krokorok.evolution_parent
+      color: *black-white.pokemon.krokorok.color
+      shape: *black-white.pokemon.krokorok.shape
+      female_rate: *black-white.pokemon.krokorok.female_rate
+      capture_rate: *black-white.pokemon.krokorok.capture_rate
+      happiness: *black-white.pokemon.krokorok.happiness
+      baby: *black-white.pokemon.krokorok.baby
+      hatch_steps: *black-white.pokemon.krokorok.hatch_steps
+      growth_rate: *black-white.pokemon.krokorok.growth_rate
+      forms_switchable: *black-white.pokemon.krokorok.forms_switchable
+      name: Krokorok
+      default: *black-white.pokemon.krokorok.default
+      height: *black-white.pokemon.krokorok.height
+      weight: *black-white.pokemon.krokorok.weight
+      experience: *black-white.pokemon.krokorok.experience
+      types: *black-white.pokemon.krokorok.types
+      egg_groups: *black-white.pokemon.krokorok.egg_groups
+      mega: *x-y.pokemon.krokorok.mega
+      stats: *black-white.pokemon.krokorok.stats
+      abilities: *black-white.pokemon.krokorok.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.krokorok.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.krokorok.wild_held_items.sun
+      evolution_conditions: *black-white.pokemon.krokorok.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Krokorok really hates it when its body gets
+          cold. On nights when the temperature drops,
+          it digs deep into the desert sands.
+        ultra-moon: |-
+          It buries some of its prey in the sand to use as
+          emergency meals when its hunts
+          are unsuccessful.
+      forms:
+        krokorok:
+          name: Krokorok
+          form_name: *black-white.pokemon.krokorok.forms.krokorok.form_name
+          default: true
+          battle_only: *black-white.pokemon.krokorok.forms.krokorok.battle_only
+          icon: *x-y.pokemon.krokorok.forms.krokorok.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/krokorok-default.png
+            - ultra-sun-ultra-moon/krokorok-default.png
+          art: *black-white.pokemon.krokorok.forms.krokorok.art
+          footprint: *black-white.pokemon.krokorok.forms.krokorok.footprint
+          cry: *x-y.pokemon.krokorok.forms.krokorok.cry

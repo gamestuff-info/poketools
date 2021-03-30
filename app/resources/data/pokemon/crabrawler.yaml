@@ -1,0 +1,140 @@
+sun-moon:
+  name: &sun-moon.name Crabrawler
+  position: &sun-moon.position 739
+  numbers:
+    national: &sun-moon.numbers.national 739
+    original-alola: 59
+    original-melemele: 59
+    original-akala: 21
+    original-ulaula: 30
+    original-poni: 17
+  pokemon:
+    crabrawler:
+      genus: &sun-moon.pokemon.crabrawler.genus 'Boxing Pokémon'
+      color: &sun-moon.pokemon.crabrawler.color purple
+      shape: &sun-moon.pokemon.crabrawler.shape armor
+      female_rate: &sun-moon.pokemon.crabrawler.female_rate 50
+      capture_rate: &sun-moon.pokemon.crabrawler.capture_rate 225
+      happiness: &sun-moon.pokemon.crabrawler.happiness 70
+      baby: &sun-moon.pokemon.crabrawler.baby false
+      hatch_steps: &sun-moon.pokemon.crabrawler.hatch_steps 20
+      growth_rate: &sun-moon.pokemon.crabrawler.growth_rate medium
+      forms_switchable: &sun-moon.pokemon.crabrawler.forms_switchable false
+      name: Crabrawler
+      default: &sun-moon.pokemon.crabrawler.default true
+      height: &sun-moon.pokemon.crabrawler.height 6
+      weight: &sun-moon.pokemon.crabrawler.weight 70
+      experience: &sun-moon.pokemon.crabrawler.experience 68
+      types: &sun-moon.pokemon.crabrawler.types
+        - fighting
+      egg_groups: &sun-moon.pokemon.crabrawler.egg_groups
+        - water3
+      mega: &sun-moon.pokemon.crabrawler.mega false
+      stats: &sun-moon.pokemon.crabrawler.stats
+        hp:
+          base_value: 47
+          effort_change: 0
+        attack:
+          base_value: 82
+          effort_change: 1
+        defense:
+          base_value: 57
+          effort_change: 0
+        speed:
+          base_value: 63
+          effort_change: 0
+        special-attack:
+          base_value: 42
+          effort_change: 0
+        special-defense:
+          base_value: 47
+          effort_change: 0
+      abilities: &sun-moon.pokemon.crabrawler.abilities
+        hyper-cutter:
+          hidden: &sun-moon.pokemon.crabrawler.abilities.hyper-cutter.hidden false
+          position: 1
+        iron-fist:
+          hidden: *sun-moon.pokemon.crabrawler.abilities.hyper-cutter.hidden
+          position: 2
+        anger-point:
+          hidden: true
+          position: 3
+      wild_held_items:
+        sun: &sun-moon.pokemon.crabrawler.wild_held_items.sun
+          aspear-berry: 5
+        moon: *sun-moon.pokemon.crabrawler.wild_held_items.sun
+      flavor_text:
+        sun: |-
+          While guarding its weak points with its pincers,
+          it looks for an opening and unleashes punches.
+          When it loses, it foams at the mouth and faints.
+        moon: |-
+          It punches so much, its pincers often come off
+          from overuse, but they grow back quickly. What
+          little meat they contain is rich and delicious.
+      forms:
+        crabrawler:
+          name: Crabrawler
+          form_name: &sun-moon.pokemon.crabrawler.forms.crabrawler.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.crabrawler.forms.crabrawler.battle_only false
+          icon: &sun-moon.pokemon.crabrawler.forms.crabrawler.icon crabrawler-default.png
+          sprites:
+            - sun-moon/crabrawler-default.png
+            - sun-moon/shiny/crabrawler-default.png
+          footprint: &sun-moon.pokemon.crabrawler.forms.crabrawler.footprint crabrawler.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 71
+    updated-melemele: 71
+    updated-akala: 21
+    updated-ulaula: 30
+    updated-poni: 24
+  pokemon:
+    crabrawler:
+      genus: *sun-moon.pokemon.crabrawler.genus
+      color: *sun-moon.pokemon.crabrawler.color
+      shape: *sun-moon.pokemon.crabrawler.shape
+      female_rate: *sun-moon.pokemon.crabrawler.female_rate
+      capture_rate: *sun-moon.pokemon.crabrawler.capture_rate
+      happiness: *sun-moon.pokemon.crabrawler.happiness
+      baby: *sun-moon.pokemon.crabrawler.baby
+      hatch_steps: *sun-moon.pokemon.crabrawler.hatch_steps
+      growth_rate: *sun-moon.pokemon.crabrawler.growth_rate
+      forms_switchable: *sun-moon.pokemon.crabrawler.forms_switchable
+      name: Crabrawler
+      default: *sun-moon.pokemon.crabrawler.default
+      height: *sun-moon.pokemon.crabrawler.height
+      weight: *sun-moon.pokemon.crabrawler.weight
+      experience: *sun-moon.pokemon.crabrawler.experience
+      types: *sun-moon.pokemon.crabrawler.types
+      egg_groups: *sun-moon.pokemon.crabrawler.egg_groups
+      mega: *sun-moon.pokemon.crabrawler.mega
+      stats: *sun-moon.pokemon.crabrawler.stats
+      abilities: *sun-moon.pokemon.crabrawler.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.crabrawler.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.crabrawler.wild_held_items.sun
+      flavor_text:
+        ultra-sun: |-
+          Its hard pincers are well suited to both offense
+          and defense. Fights between two Crabrawler
+          are like boxing matches.
+        ultra-moon: |-
+          Crabrawler has been known to mistake
+          Exeggutor for a coconut tree and climb it. The
+          enraged Exeggutor shakes it off and stomps it.
+      forms:
+        crabrawler:
+          name: Crabrawler
+          form_name: *sun-moon.pokemon.crabrawler.forms.crabrawler.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.crabrawler.forms.crabrawler.battle_only
+          icon: *sun-moon.pokemon.crabrawler.forms.crabrawler.icon
+          sprites:
+            - ultra-sun-ultra-moon/crabrawler-default.png
+            - ultra-sun-ultra-moon/shiny/crabrawler-default.png
+          footprint: *sun-moon.pokemon.crabrawler.forms.crabrawler.footprint

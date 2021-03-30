@@ -1,0 +1,230 @@
+red-blue: &red-blue
+  name: &red-blue.name 'DREAM EATER'
+  power: &red-blue.power 100
+  type: &red-blue.type psychic
+  accuracy: &red-blue.accuracy 100
+  pp: &red-blue.pp 15
+  effect: &red-blue.effect 9
+  flags: &red-blue.flags
+    - protect
+    - mirror
+    - heal
+  categories: &red-blue.categories
+    - damage
+    - heal
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target selected-pokemon
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  drain: &gold-silver.drain 50
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Steals HP from a
+    sleeping victim.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: &ruby-sapphire.flags
+    - protect
+    - mirror
+  drain: *gold-silver.drain
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: &ruby-sapphire.contest_effect 12
+  contest_use_after:
+    - hypnosis
+    - calm-mind
+  flavor_text: |
+    Takes one half the damage
+    inflicted on a sleeping foe.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: &colosseum.flavor_text |
+    Takes half the damage
+    dealt to a sleeping target.
+  flags: *ruby-sapphire.flags
+  drain: *gold-silver.drain
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+xd:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: &xd.damage_class special
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  drain: *gold-silver.drain
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+firered-leafgreen:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *ruby-sapphire.flags
+  drain: *gold-silver.drain
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  flavor_text: |
+    Absorbs half the
+    damage it inflicted
+    on a sleeping foe
+    to restore HP.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Dream Eater'
+  drain: *gold-silver.drain
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 20
+  flavor_text: &diamond-pearl.flavor_text |
+    An attack that works
+    only on a sleeping
+    foe. It absorbs half
+    the damage caused to
+    heal the user’s HP.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user eats the dreams of a sleeping
+    target. It absorbs half the damage
+    caused to heal the user’s HP.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: &x-y.flavor_text |
+    The user eats the dreams of a sleeping
+    target. It absorbs half the damage
+    caused to heal its own HP.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: *ruby-sapphire.contest_effect
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  drain: *gold-silver.drain
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user eats the dreams of a sleeping target. It
+    absorbs half the damage caused to heal its own HP.
+ultra-sun-ultra-moon: *sun-moon

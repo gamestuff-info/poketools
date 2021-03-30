@@ -1,0 +1,18 @@
+ruby-sapphire: &ruby-sapphire
+  region: &ruby-sapphire.region hoenn
+  name: &ruby-sapphire.name 'Route 114'
+  areas: &ruby-sapphire.areas
+    whole-area:
+      name: 'Whole area'
+      default: true
+  map:
+    map: &ruby-sapphire.map.map hoenn
+    overlay: '<path d="M 32,16 H 16 v 24 h 8 V 24 h 8 z" />'
+emerald: *ruby-sapphire
+omega-ruby-alpha-sapphire:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas: *ruby-sapphire.areas
+  map:
+    map: *ruby-sapphire.map.map
+    overlay: '<path d="M 36,19 H 21 V 52 H 32 V 30 h 4 z" />'

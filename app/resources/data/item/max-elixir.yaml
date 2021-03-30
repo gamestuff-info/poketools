@@ -1,0 +1,99 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'MAX ELIXIR'
+  category: &ruby-sapphire.category pp-recovery
+  pocket: &ruby-sapphire.pocket misc
+  flags: &ruby-sapphire.flags
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  icon: &ruby-sapphire.icon max-elixir.png
+  buy: &ruby-sapphire.buy 4500
+  sell: &ruby-sapphire.sell 2250
+  flavor_text: &ruby-sapphire.flavor_text |
+    Fully restores the
+    PP of a POKéMON's
+    moves.
+  short_description: &ruby-sapphire.short_description 'Restores [PP]{mechanic:pp} to full for each move.'
+  description: &ruby-sapphire.description |
+    Used on a party Pokémon
+    :   Restores [PP]{mechanic:pp} to full for each move.
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *ruby-sapphire.name
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *ruby-sapphire.category
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+xd: *colosseum
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: |
+    Fully restores the PP of all moves
+    for one POKéMON.
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Max Elixir'
+  category: *ruby-sapphire.category
+  pocket: &diamond-pearl.pocket medicine
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    It fully restores the PP of all the
+    moves learned by the targeted
+    Pokémon.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *diamond-pearl.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    This medicine can fully restore the
+    PP of all of the moves that have
+    been learned by a Pokémon.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *diamond-pearl.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    This medicine can fully restore the PP of all of the
+    moves that have been learned by a Pokémon.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

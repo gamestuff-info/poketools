@@ -1,0 +1,32 @@
+red-blue: &red-blue
+  name: &red-blue.name 'MAX ELIXER'
+  pocket: &red-blue.pocket misc
+  category: &red-blue.category pp-recovery
+  flags:
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+  short_description: &red-blue.short_description 'Restores [PP]{mechanic:pp} to full for each move.'
+  description: &red-blue.description |
+    Used on a party Pokémon
+    :   Restores [PP]{mechanic:pp} to full for each move.
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  pocket: *red-blue.pocket
+  buy: 4500
+  sell: 2250
+  flavor_text: |
+    Fully restores the
+    PP of one POKéMON.
+  category: *red-blue.category
+  flags:
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+crystal: *gold-silver

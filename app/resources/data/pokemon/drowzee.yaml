@@ -1,0 +1,914 @@
+red-blue:
+  name: &red-blue.name DROWZEE
+  position: &red-blue.position 96
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 96
+    kanto: 96
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: &red-blue.pokemon.drowzee.default true
+      capture_rate: &red-blue.pokemon.drowzee.capture_rate 190
+      experience: &red-blue.pokemon.drowzee.experience 102
+      types: &red-blue.pokemon.drowzee.types
+        - psychic
+      stats: &red-blue.pokemon.drowzee.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 48
+          effort_change: 48
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 42
+          effort_change: 42
+        special:
+          base_value: 90
+          effort_change: 90
+      growth_rate: &red-blue.pokemon.drowzee.growth_rate medium
+      genus: &red-blue.pokemon.drowzee.genus 'HYPNOSIS Pokémon'
+      height: &red-blue.pokemon.drowzee.height 9
+      weight: &red-blue.pokemon.drowzee.weight 3220
+      flavor_text:
+        red: |
+          Puts enemies to
+          sleep then eats
+          their dreams.
+          Occasionally gets
+           sick from eating
+          bad dreams.
+        blue: |
+          Puts enemies to
+          sleep then eats
+          their dreams.
+          Occasionally gets
+           sick from eating
+          bad dreams.
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: &red-blue.pokemon.drowzee.forms.drowzee.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.drowzee.forms.drowzee.battle_only false
+          sprites:
+            - red-blue/drowzee-default.png
+            - red-blue/gray/drowzee-default.png
+            - red-blue/back/drowzee-default.png
+          art: &red-blue.pokemon.drowzee.forms.drowzee.art
+            - drowzee-default.png
+          cry: &red-blue.pokemon.drowzee.forms.drowzee.cry gen5/drowzee-default.webm
+          icon: &red-blue.pokemon.drowzee.forms.drowzee.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: *red-blue.pokemon.drowzee.default
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      experience: *red-blue.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      stats: *red-blue.pokemon.drowzee.stats
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      genus: *red-blue.pokemon.drowzee.genus
+      height: *red-blue.pokemon.drowzee.height
+      weight: *red-blue.pokemon.drowzee.weight
+      flavor_text:
+        yellow: |
+          If you sleep by
+          it all the time,
+          it will sometimes
+          show you dreams
+           it has eaten in
+          the past.
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          sprites:
+            - yellow/drowzee-default.png
+            - yellow/gray/drowzee-default.png
+            - yellow/back/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+          icon: *red-blue.pokemon.drowzee.forms.drowzee.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 95
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 86
+    original-johto-abc: 34
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: *red-blue.pokemon.drowzee.default
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      experience: *red-blue.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      stats: &gold-silver.pokemon.drowzee.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 48
+          effort_change: 48
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 42
+          effort_change: 42
+        special-attack:
+          base_value: 43
+          effort_change: 43
+        special-defense:
+          base_value: 90
+          effort_change: 43
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      female_rate: &gold-silver.pokemon.drowzee.female_rate 50
+      hatch_steps: &gold-silver.pokemon.drowzee.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.drowzee.egg_groups
+        - humanshape
+      genus: *red-blue.pokemon.drowzee.genus
+      height: *red-blue.pokemon.drowzee.height
+      weight: &gold-silver.pokemon.drowzee.weight 322
+      flavor_text:
+        gold: |
+          If you think that
+          you had a good
+          dream, but you
+          can't remember it,
+          a DROWZEE has
+          probably eaten it.
+        silver: |
+          It remembers every
+          dream it eats. It
+          rarely eats the
+          dreams of adults
+          because children's
+          are much tastier.
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          sprites:
+            - gold-silver/drowzee-default.png
+            - gold-silver/back/drowzee-default.png
+            - gold-silver/shiny/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+          icon: &gold-silver.pokemon.drowzee.forms.drowzee.icon gen2/humanshape.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: *red-blue.pokemon.drowzee.default
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      experience: *red-blue.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      stats: *gold-silver.pokemon.drowzee.stats
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      genus: *red-blue.pokemon.drowzee.genus
+      height: *red-blue.pokemon.drowzee.height
+      weight: *gold-silver.pokemon.drowzee.weight
+      flavor_text:
+        crystal: |
+          When it twitches
+          its nose, it can
+          tell where someone
+          is sleeping and
+          what that person
+          is dreaming about.
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          sprites:
+            - crystal/drowzee-default.png
+            - crystal/back/drowzee-default.png
+            - crystal/shiny/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+          icon: *gold-silver.pokemon.drowzee.forms.drowzee.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 266
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: *red-blue.pokemon.drowzee.default
+      forms_switchable: &ruby-sapphire.pokemon.drowzee.forms_switchable false
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      experience: *red-blue.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      stats: &ruby-sapphire.pokemon.drowzee.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 48
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 42
+          effort_change: 0
+        special-attack:
+          base_value: 43
+          effort_change: 1
+        special-defense:
+          base_value: 60
+          effort_change: 1
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      happiness: &ruby-sapphire.pokemon.drowzee.happiness 70
+      abilities: &ruby-sapphire.pokemon.drowzee.abilities
+        insomnia: &ruby-sapphire.pokemon.drowzee.abilities.insomnia
+          hidden: &ruby-sapphire.pokemon.drowzee.abilities.insomnia.hidden false
+          position: 1
+      genus: *red-blue.pokemon.drowzee.genus
+      height: &ruby-sapphire.pokemon.drowzee.height 10
+      weight: &ruby-sapphire.pokemon.drowzee.weight 324
+      flavor_text:
+        ruby: |
+          If your nose becomes itchy while you
+          are sleeping, it's a sure sign that one
+          of these POKéMON is standing above
+          your pillow and trying to eat your dream
+          through your nostrils.
+        sapphire: |
+          If your nose becomes itchy while you
+          are sleeping, it's a sure sign that one
+          of these POKéMON is standing above
+          your pillow and trying to eat your dream
+          through your nostrils.
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: &ruby-sapphire.pokemon.drowzee.forms.drowzee.icon gen5/drowzee-default.png
+          sprites:
+            - ruby-sapphire/drowzee-default.png
+            - ruby-sapphire/back/drowzee-default.png
+            - ruby-sapphire/shiny/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: &ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint drowzee.png
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: *red-blue.pokemon.drowzee.default
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      experience: *red-blue.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      stats: *ruby-sapphire.pokemon.drowzee.stats
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      abilities: *ruby-sapphire.pokemon.drowzee.abilities
+      genus: *red-blue.pokemon.drowzee.genus
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      flavor_text:
+        emerald: |
+          If your nose becomes itchy while you are
+          sleeping, it's a sure sign that a DROWZEE is
+          standing above your pillow and trying to
+          eat your dream through your nostrils.
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *ruby-sapphire.pokemon.drowzee.forms.drowzee.icon
+          sprites:
+            - emerald/drowzee-default.png
+            - emerald/shiny/drowzee-default.png
+            - emerald/animated/drowzee-default.webm
+            - emerald/animated/shiny/drowzee-default.webm
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 76
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: *red-blue.pokemon.drowzee.default
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      experience: *red-blue.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      stats: *ruby-sapphire.pokemon.drowzee.stats
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      abilities: *ruby-sapphire.pokemon.drowzee.abilities
+      genus: *red-blue.pokemon.drowzee.genus
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          sprites:
+            - colosseum/drowzee-default.png
+            - colosseum/shiny/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: *red-blue.pokemon.drowzee.default
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      experience: *red-blue.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      stats: *ruby-sapphire.pokemon.drowzee.stats
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      abilities: *ruby-sapphire.pokemon.drowzee.abilities
+      genus: *red-blue.pokemon.drowzee.genus
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          sprites:
+            - xd/drowzee-default.png
+            - xd/shiny/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    drowzee:
+      name: DROWZEE
+      default: *red-blue.pokemon.drowzee.default
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      experience: *red-blue.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      stats: *ruby-sapphire.pokemon.drowzee.stats
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      abilities: *ruby-sapphire.pokemon.drowzee.abilities
+      genus: *red-blue.pokemon.drowzee.genus
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      flavor_text:
+        firered: |
+          A descendent of the legendary animal
+          baku, which is said to eat dreams. It is
+          skilled at hypnotism.
+        leafgreen: |
+          Puts enemies to sleep, then eats their
+          dreams. Occasionally gets sick from eating
+          only bad dreams.
+      forms:
+        drowzee:
+          name: DROWZEE
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *ruby-sapphire.pokemon.drowzee.forms.drowzee.icon
+          sprites:
+            - firered-leafgreen/drowzee-default.png
+            - firered-leafgreen/back/drowzee-default.png
+            - firered-leafgreen/shiny/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+diamond-pearl:
+  name: &diamond-pearl.name Drowzee
+  position: &diamond-pearl.position 105
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    drowzee:
+      genus: &diamond-pearl.pokemon.drowzee.genus 'Hypnosis Pokémon'
+      shape: &diamond-pearl.pokemon.drowzee.shape humanoid
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: &diamond-pearl.pokemon.drowzee.baby false
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      pal_park: &diamond-pearl.pokemon.drowzee.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: &diamond-pearl.pokemon.drowzee.experience 66
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      stats: &diamond-pearl.pokemon.drowzee.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 48
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 42
+          effort_change: 0
+        special-attack:
+          base_value: 43
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.drowzee.abilities
+        insomnia: *ruby-sapphire.pokemon.drowzee.abilities.insomnia
+        forewarn:
+          hidden: *ruby-sapphire.pokemon.drowzee.abilities.insomnia.hidden
+          position: 2
+        inner-focus:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          It can tell what people are
+          dreaming by sniffing with its big
+          nose. It loves fun dreams.
+        pearl: |
+          It can tell what people are
+          dreaming by sniffing with its big
+          nose. It loves fun dreams.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *ruby-sapphire.pokemon.drowzee.forms.drowzee.icon
+          sprites:
+            - diamond-pearl/back/shiny/drowzee-default.png
+            - diamond-pearl/back/drowzee-default.png
+            - diamond-pearl/shiny/drowzee-default.png
+            - diamond-pearl/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    drowzee:
+      genus: *diamond-pearl.pokemon.drowzee.genus
+      shape: *diamond-pearl.pokemon.drowzee.shape
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: *diamond-pearl.pokemon.drowzee.baby
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      pal_park: *diamond-pearl.pokemon.drowzee.pal_park
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: *diamond-pearl.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      stats: *diamond-pearl.pokemon.drowzee.stats
+      abilities: *diamond-pearl.pokemon.drowzee.abilities
+      flavor_text:
+        platinum: |
+          It can tell what people are
+          dreaming by sniffing with its big
+          nose. It loves fun dreams.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *ruby-sapphire.pokemon.drowzee.forms.drowzee.icon
+          sprites:
+            - platinum/back/shiny/drowzee-default.png
+            - platinum/back/drowzee-default.png
+            - platinum/shiny/drowzee-default.png
+            - platinum/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 87
+  pokemon:
+    drowzee:
+      genus: *diamond-pearl.pokemon.drowzee.genus
+      shape: *diamond-pearl.pokemon.drowzee.shape
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: *diamond-pearl.pokemon.drowzee.baby
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      pal_park: *diamond-pearl.pokemon.drowzee.pal_park
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: *diamond-pearl.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      stats: *diamond-pearl.pokemon.drowzee.stats
+      abilities: *diamond-pearl.pokemon.drowzee.abilities
+      flavor_text:
+        heartgold: |
+          If you think that you had a good dream
+          but you can’t remember it,
+          a DROWZEE has probably eaten it.
+        soulsilver: |
+          It remembers every dream it eats. It
+          rarely eats the dreams of adults
+          because children’s are much tastier.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-2
+            power:
+              base_value: 3
+              range: 2-4
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.drowzee.forms.drowzee.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/drowzee-default.png
+            - heartgold-soulsilver/back/drowzee-default.png
+            - heartgold-soulsilver/shiny/drowzee-default.png
+            - heartgold-soulsilver/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    drowzee:
+      genus: *diamond-pearl.pokemon.drowzee.genus
+      color: &black-white.pokemon.drowzee.color yellow
+      shape: *diamond-pearl.pokemon.drowzee.shape
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: *diamond-pearl.pokemon.drowzee.baby
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: *diamond-pearl.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      stats: *diamond-pearl.pokemon.drowzee.stats
+      abilities: *diamond-pearl.pokemon.drowzee.abilities
+      flavor_text:
+        black: |
+          It can tell what people are
+          dreaming by sniffing with its big
+          nose. It loves fun dreams.
+        white: |
+          It can tell what people are
+          dreaming by sniffing with its big
+          nose. It loves fun dreams.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *ruby-sapphire.pokemon.drowzee.forms.drowzee.icon
+          sprites:
+            - black-white/back/shiny/drowzee-default.png
+            - black-white/back/drowzee-default.png
+            - black-white/shiny/drowzee-default.png
+            - black-white/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    drowzee:
+      genus: *diamond-pearl.pokemon.drowzee.genus
+      color: *black-white.pokemon.drowzee.color
+      shape: *diamond-pearl.pokemon.drowzee.shape
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: *diamond-pearl.pokemon.drowzee.baby
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: *diamond-pearl.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      stats: *diamond-pearl.pokemon.drowzee.stats
+      abilities: *diamond-pearl.pokemon.drowzee.abilities
+      flavor_text:
+        black-2: |
+          It can tell what people are
+          dreaming by sniffing with its big
+          nose. It loves fun dreams.
+        white-2: |
+          It can tell what people are
+          dreaming by sniffing with its big
+          nose. It loves fun dreams.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *ruby-sapphire.pokemon.drowzee.forms.drowzee.icon
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *red-blue.pokemon.drowzee.forms.drowzee.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    drowzee:
+      genus: *diamond-pearl.pokemon.drowzee.genus
+      color: *black-white.pokemon.drowzee.color
+      shape: *diamond-pearl.pokemon.drowzee.shape
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: *diamond-pearl.pokemon.drowzee.baby
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: *diamond-pearl.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      mega: &x-y.pokemon.drowzee.mega false
+      stats: *diamond-pearl.pokemon.drowzee.stats
+      abilities: *diamond-pearl.pokemon.drowzee.abilities
+      flavor_text:
+        x: |
+          Puts enemies to sleep, then eats their dreams.
+          Occasionally gets sick from eating only bad dreams.
+        'y': |
+          If you think that you had a good dream but you
+          can’t remember it, a Drowzee has probably eaten it.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: &x-y.pokemon.drowzee.forms.drowzee.icon drowzee-default.png
+          sprites:
+            - x-y/shiny/drowzee-default.png
+            - x-y/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: &x-y.pokemon.drowzee.forms.drowzee.cry drowzee-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    drowzee:
+      genus: *diamond-pearl.pokemon.drowzee.genus
+      color: *black-white.pokemon.drowzee.color
+      shape: *diamond-pearl.pokemon.drowzee.shape
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: *diamond-pearl.pokemon.drowzee.baby
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: *diamond-pearl.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      mega: *x-y.pokemon.drowzee.mega
+      stats: *diamond-pearl.pokemon.drowzee.stats
+      abilities: *diamond-pearl.pokemon.drowzee.abilities
+      flavor_text:
+        omega-ruby: |
+          If your nose becomes itchy while you are sleeping, it’s a sure
+          sign that one of these Pokémon is standing above your pillow
+          and trying to eat your dream through your nostrils.
+        alpha-sapphire: |
+          If your nose becomes itchy while you are sleeping, it’s a sure
+          sign that one of these Pokémon is standing above your pillow
+          and trying to eat your dream through your nostrils.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *x-y.pokemon.drowzee.forms.drowzee.icon
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *x-y.pokemon.drowzee.forms.drowzee.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/drowzee-default.png
+            - omega-ruby-alpha-sapphire/shiny/drowzee-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 54
+    original-melemele: 54
+    original-poni: 13
+  pokemon:
+    drowzee:
+      genus: *diamond-pearl.pokemon.drowzee.genus
+      color: *black-white.pokemon.drowzee.color
+      shape: *diamond-pearl.pokemon.drowzee.shape
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: *diamond-pearl.pokemon.drowzee.baby
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: *diamond-pearl.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      mega: *x-y.pokemon.drowzee.mega
+      stats: *diamond-pearl.pokemon.drowzee.stats
+      abilities: *diamond-pearl.pokemon.drowzee.abilities
+      flavor_text:
+        sun: |-
+          A Pokémon that nourishes itself by eating
+          dreams, it is thought to share common ancestry
+          with Munna and Musharna.
+        moon: |-
+          It finds really fun dreams tasty. When it makes
+          friends with people, it may show them the most
+          delicious dreams it’s ever eaten.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *x-y.pokemon.drowzee.forms.drowzee.icon
+          sprites:
+            - sun-moon/shiny/drowzee-default.png
+            - sun-moon/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *x-y.pokemon.drowzee.forms.drowzee.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 66
+    updated-melemele: 66
+    updated-poni: 20
+  pokemon:
+    drowzee:
+      genus: *diamond-pearl.pokemon.drowzee.genus
+      color: *black-white.pokemon.drowzee.color
+      shape: *diamond-pearl.pokemon.drowzee.shape
+      female_rate: *gold-silver.pokemon.drowzee.female_rate
+      capture_rate: *red-blue.pokemon.drowzee.capture_rate
+      happiness: *ruby-sapphire.pokemon.drowzee.happiness
+      baby: *diamond-pearl.pokemon.drowzee.baby
+      hatch_steps: *gold-silver.pokemon.drowzee.hatch_steps
+      growth_rate: *red-blue.pokemon.drowzee.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.drowzee.forms_switchable
+      name: Drowzee
+      default: *red-blue.pokemon.drowzee.default
+      height: *ruby-sapphire.pokemon.drowzee.height
+      weight: *ruby-sapphire.pokemon.drowzee.weight
+      experience: *diamond-pearl.pokemon.drowzee.experience
+      types: *red-blue.pokemon.drowzee.types
+      egg_groups: *gold-silver.pokemon.drowzee.egg_groups
+      mega: *x-y.pokemon.drowzee.mega
+      stats: *diamond-pearl.pokemon.drowzee.stats
+      abilities: *diamond-pearl.pokemon.drowzee.abilities
+      flavor_text:
+        ultra-sun: |-
+          It can be spotted near recreational facilities,
+          intending to eat the pleasant dreams of children
+          who enjoyed themselves there that day.
+        ultra-moon: |-
+          It puts its prey to sleep and devours their
+          dreams. It seems that bad dreams taste sour,
+          so Drowzee doesn’t particularly like eating them.
+      forms:
+        drowzee:
+          name: Drowzee
+          form_name: *red-blue.pokemon.drowzee.forms.drowzee.form_name
+          default: true
+          battle_only: *red-blue.pokemon.drowzee.forms.drowzee.battle_only
+          icon: *x-y.pokemon.drowzee.forms.drowzee.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/drowzee-default.png
+            - ultra-sun-ultra-moon/drowzee-default.png
+          art: *red-blue.pokemon.drowzee.forms.drowzee.art
+          footprint: *ruby-sapphire.pokemon.drowzee.forms.drowzee.footprint
+          cry: *x-y.pokemon.drowzee.forms.drowzee.cry

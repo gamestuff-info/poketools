@@ -1,0 +1,829 @@
+gold-silver:
+  name: &gold-silver.name YANMA
+  position: &gold-silver.position 192
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 193
+    original-johto: 100
+    original-johto-abc: 237
+  pokemon:
+    yanma:
+      name: YANMA
+      default: &gold-silver.pokemon.yanma.default true
+      capture_rate: &gold-silver.pokemon.yanma.capture_rate 75
+      experience: &gold-silver.pokemon.yanma.experience 147
+      types: &gold-silver.pokemon.yanma.types
+        - bug
+        - flying
+      stats: &gold-silver.pokemon.yanma.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 95
+          effort_change: 95
+        special-attack:
+          base_value: 75
+          effort_change: 75
+        special-defense:
+          base_value: 45
+          effort_change: 75
+      growth_rate: &gold-silver.pokemon.yanma.growth_rate medium
+      female_rate: &gold-silver.pokemon.yanma.female_rate 50
+      hatch_steps: &gold-silver.pokemon.yanma.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.yanma.egg_groups
+        - bug
+      genus: &gold-silver.pokemon.yanma.genus 'CLEAR WING Pokémon'
+      height: &gold-silver.pokemon.yanma.height 11
+      weight: &gold-silver.pokemon.yanma.weight 381
+      flavor_text:
+        gold: |
+          If it flaps its
+          wings really fast,
+          it can generate
+          shock waves that
+          will shatter win-
+          dows in the area.
+        silver: |
+          Its large eyes can
+          scan 360 degrees.
+          It looks in all
+          directions to seek
+          out insects as its
+          prey.
+      forms:
+        yanma:
+          name: YANMA
+          form_name: &gold-silver.pokemon.yanma.forms.yanma.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.yanma.forms.yanma.battle_only false
+          sprites:
+            - gold-silver/yanma-default.png
+            - gold-silver/back/yanma-default.png
+            - gold-silver/shiny/yanma-default.png
+          art: &gold-silver.pokemon.yanma.forms.yanma.art
+            - yanma-default.png
+          cry: &gold-silver.pokemon.yanma.forms.yanma.cry gen5/yanma-default.webm
+          icon: &gold-silver.pokemon.yanma.forms.yanma.icon gen2/bug.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    yanma:
+      name: YANMA
+      default: *gold-silver.pokemon.yanma.default
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      experience: *gold-silver.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      stats: *gold-silver.pokemon.yanma.stats
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      genus: *gold-silver.pokemon.yanma.genus
+      height: *gold-silver.pokemon.yanma.height
+      weight: *gold-silver.pokemon.yanma.weight
+      flavor_text:
+        crystal: |
+          It can see in all
+          directions without
+          moving its big
+          eyes, helping it
+          spot attackers and
+          food right away.
+      forms:
+        yanma:
+          name: YANMA
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          sprites:
+            - crystal/yanma-default.png
+            - crystal/back/yanma-default.png
+            - crystal/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+          icon: *gold-silver.pokemon.yanma.forms.yanma.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 193
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 338
+  pokemon:
+    yanma:
+      name: YANMA
+      default: *gold-silver.pokemon.yanma.default
+      forms_switchable: &ruby-sapphire.pokemon.yanma.forms_switchable false
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      experience: *gold-silver.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      stats: &ruby-sapphire.pokemon.yanma.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 2
+        special-attack:
+          base_value: 75
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      happiness: &ruby-sapphire.pokemon.yanma.happiness 70
+      abilities: &ruby-sapphire.pokemon.yanma.abilities
+        speed-boost: &ruby-sapphire.pokemon.yanma.abilities.speed-boost
+          hidden: &ruby-sapphire.pokemon.yanma.abilities.speed-boost.hidden false
+          position: 1
+        compoundeyes: &ruby-sapphire.pokemon.yanma.abilities.compoundeyes
+          hidden: *ruby-sapphire.pokemon.yanma.abilities.speed-boost.hidden
+          position: 2
+      genus: *gold-silver.pokemon.yanma.genus
+      height: &ruby-sapphire.pokemon.yanma.height 12
+      weight: &ruby-sapphire.pokemon.yanma.weight 380
+      flavor_text:
+        ruby: |
+          YANMA is capable of seeing 360 degrees
+          without having to move its eyes.
+          It is a great flier that is adept at
+          making sudden stops and turning midair.
+          This POKéMON uses its flying ability to
+          quickly chase down targeted prey.
+        sapphire: |
+          YANMA is capable of seeing 360 degrees
+          without having to move its eyes.
+          It is a great flier that is adept at
+          making sudden stops and turning midair.
+          This POKéMON uses its flying ability to
+          quickly chase down targeted prey.
+      forms:
+        yanma:
+          name: YANMA
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: &ruby-sapphire.pokemon.yanma.forms.yanma.icon gen5/yanma-default.png
+          sprites:
+            - ruby-sapphire/yanma-default.png
+            - ruby-sapphire/back/yanma-default.png
+            - ruby-sapphire/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: &ruby-sapphire.pokemon.yanma.forms.yanma.footprint yanma.png
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    yanma:
+      name: YANMA
+      default: *gold-silver.pokemon.yanma.default
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      experience: *gold-silver.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      stats: *ruby-sapphire.pokemon.yanma.stats
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      abilities: *ruby-sapphire.pokemon.yanma.abilities
+      genus: *gold-silver.pokemon.yanma.genus
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      flavor_text:
+        emerald: |
+          It can see 360 degrees without moving
+          its eyes. It is a great flier capable of
+          making sudden stops and turning midair to
+          quickly chase down targeted prey.
+      forms:
+        yanma:
+          name: YANMA
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *ruby-sapphire.pokemon.yanma.forms.yanma.icon
+          sprites:
+            - emerald/yanma-default.png
+            - emerald/shiny/yanma-default.png
+            - emerald/animated/yanma-default.webm
+            - emerald/animated/shiny/yanma-default.webm
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 382
+  pokemon:
+    yanma:
+      name: YANMA
+      default: *gold-silver.pokemon.yanma.default
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      experience: *gold-silver.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      stats: *ruby-sapphire.pokemon.yanma.stats
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      abilities: *ruby-sapphire.pokemon.yanma.abilities
+      genus: *gold-silver.pokemon.yanma.genus
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      forms:
+        yanma:
+          name: YANMA
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          sprites:
+            - colosseum/yanma-default.png
+            - colosseum/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    yanma:
+      name: YANMA
+      default: *gold-silver.pokemon.yanma.default
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      experience: *gold-silver.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      stats: *ruby-sapphire.pokemon.yanma.stats
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      abilities: *ruby-sapphire.pokemon.yanma.abilities
+      genus: *gold-silver.pokemon.yanma.genus
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      forms:
+        yanma:
+          name: YANMA
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          sprites:
+            - xd/yanma-default.png
+            - xd/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    yanma:
+      name: YANMA
+      default: *gold-silver.pokemon.yanma.default
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      experience: *gold-silver.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      stats: *ruby-sapphire.pokemon.yanma.stats
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      abilities: *ruby-sapphire.pokemon.yanma.abilities
+      genus: *gold-silver.pokemon.yanma.genus
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      flavor_text:
+        firered: |
+          Its large eyes can scan 360 degrees.
+          It looks in all directions to seek out
+          insects as its prey.
+        leafgreen: |
+          If it flaps its wings really fast, it can
+          generate shock waves that will shatter
+          windows in the area.
+      forms:
+        yanma:
+          name: YANMA
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *ruby-sapphire.pokemon.yanma.forms.yanma.icon
+          sprites:
+            - firered-leafgreen/yanma-default.png
+            - firered-leafgreen/back/yanma-default.png
+            - firered-leafgreen/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+diamond-pearl:
+  name: &diamond-pearl.name Yanma
+  position: &diamond-pearl.position 223
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    yanma:
+      genus: &diamond-pearl.pokemon.yanma.genus 'Clear Wing Pokémon'
+      shape: &diamond-pearl.pokemon.yanma.shape bug-wings
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: &diamond-pearl.pokemon.yanma.baby false
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      pal_park: &diamond-pearl.pokemon.yanma.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: &diamond-pearl.pokemon.yanma.experience 78
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      stats: &diamond-pearl.pokemon.yanma.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 1
+        special-attack:
+          base_value: 75
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.yanma.abilities
+        speed-boost: *ruby-sapphire.pokemon.yanma.abilities.speed-boost
+        compound-eyes: *ruby-sapphire.pokemon.yanma.abilities.compoundeyes
+        frisk:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.yanma.wild_held_items.diamond
+          wide-lens: 5
+        pearl: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Its eyes can see 360 degrees
+          without moving its head. It won’t
+          miss prey--even those behind it.
+        pearl: |
+          Its eyes can see 360 degrees
+          without moving its head. It won’t
+          miss prey--even those behind it.
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *ruby-sapphire.pokemon.yanma.forms.yanma.icon
+          sprites:
+            - diamond-pearl/yanma-default.png
+            - diamond-pearl/back/yanma-default.png
+            - diamond-pearl/back/shiny/yanma-default.png
+            - diamond-pearl/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 183
+  pokemon:
+    yanma:
+      genus: *diamond-pearl.pokemon.yanma.genus
+      shape: *diamond-pearl.pokemon.yanma.shape
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: *diamond-pearl.pokemon.yanma.baby
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      pal_park: *diamond-pearl.pokemon.yanma.pal_park
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: *diamond-pearl.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      stats: *diamond-pearl.pokemon.yanma.stats
+      abilities: *diamond-pearl.pokemon.yanma.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          It can hover in one spot by
+          flapping its wings at high speed. It
+          flits about to guard its territory.
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *ruby-sapphire.pokemon.yanma.forms.yanma.icon
+          sprites:
+            - platinum/yanma-default.png
+            - platinum/back/yanma-default.png
+            - platinum/back/shiny/yanma-default.png
+            - platinum/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 101
+  pokemon:
+    yanma:
+      genus: *diamond-pearl.pokemon.yanma.genus
+      shape: *diamond-pearl.pokemon.yanma.shape
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: *diamond-pearl.pokemon.yanma.baby
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      pal_park: *diamond-pearl.pokemon.yanma.pal_park
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: *diamond-pearl.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      stats: *diamond-pearl.pokemon.yanma.stats
+      abilities: *diamond-pearl.pokemon.yanma.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          If it flaps its wings really fast,
+          it can generate shock waves that
+          will shatter windows in the area.
+        soulsilver: |
+          Its large eyes can scan 360 degrees.
+          It looks in all directions to seek
+          out insects as its prey.
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-5
+            power:
+              base_value: 2
+              range: 1-2
+            skill:
+              base_value: 1
+              range: 1
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 5
+              range: 5
+          icon: *ruby-sapphire.pokemon.yanma.forms.yanma.icon
+          sprites:
+            - heartgold-soulsilver/yanma-default.png
+            - heartgold-soulsilver/back/yanma-default.png
+            - heartgold-soulsilver/back/shiny/yanma-default.png
+            - heartgold-soulsilver/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    yanma:
+      genus: *diamond-pearl.pokemon.yanma.genus
+      color: &black-white.pokemon.yanma.color red
+      shape: *diamond-pearl.pokemon.yanma.shape
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: *diamond-pearl.pokemon.yanma.baby
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: *diamond-pearl.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      stats: *diamond-pearl.pokemon.yanma.stats
+      abilities: *diamond-pearl.pokemon.yanma.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+      flavor_text:
+        black: |
+          It can hover in one spot by
+          flapping its wings at high speed. It
+          flits about to guard its territory.
+        white: |
+          It can hover in one spot by
+          flapping its wings at high speed. It
+          flits about to guard its territory.
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *ruby-sapphire.pokemon.yanma.forms.yanma.icon
+          sprites:
+            - black-white/yanma-default.png
+            - black-white/back/yanma-default.png
+            - black-white/back/shiny/yanma-default.png
+            - black-white/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 286
+  pokemon:
+    yanma:
+      genus: *diamond-pearl.pokemon.yanma.genus
+      color: *black-white.pokemon.yanma.color
+      shape: *diamond-pearl.pokemon.yanma.shape
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: *diamond-pearl.pokemon.yanma.baby
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: *diamond-pearl.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      stats: *diamond-pearl.pokemon.yanma.stats
+      abilities: *diamond-pearl.pokemon.yanma.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          By flapping its wings at high speed,
+          it can fly freely through the air.
+          Even sudden stops are no problem.
+        white-2: |
+          By flapping its wings at high speed,
+          it can fly freely through the air.
+          Even sudden stops are no problem.
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *ruby-sapphire.pokemon.yanma.forms.yanma.icon
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *gold-silver.pokemon.yanma.forms.yanma.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-coastal: 87
+  pokemon:
+    yanma:
+      genus: *diamond-pearl.pokemon.yanma.genus
+      color: *black-white.pokemon.yanma.color
+      shape: *diamond-pearl.pokemon.yanma.shape
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: *diamond-pearl.pokemon.yanma.baby
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: *diamond-pearl.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      mega: &x-y.pokemon.yanma.mega false
+      stats: *diamond-pearl.pokemon.yanma.stats
+      abilities: *diamond-pearl.pokemon.yanma.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+      flavor_text:
+        x: |
+          Its eyes can see 360 degrees without moving its
+          head. It won’t miss prey--even those behind it.
+        'y': |
+          If it flaps its wings really fast, it can generate shock
+          waves that will shatter windows in the area.
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: &x-y.pokemon.yanma.forms.yanma.icon yanma-default.png
+          sprites:
+            - x-y/yanma-default.png
+            - x-y/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: &x-y.pokemon.yanma.forms.yanma.cry yanma-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    yanma:
+      genus: *diamond-pearl.pokemon.yanma.genus
+      color: *black-white.pokemon.yanma.color
+      shape: *diamond-pearl.pokemon.yanma.shape
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: *diamond-pearl.pokemon.yanma.baby
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: *diamond-pearl.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      mega: *x-y.pokemon.yanma.mega
+      stats: *diamond-pearl.pokemon.yanma.stats
+      abilities: *diamond-pearl.pokemon.yanma.abilities
+      flavor_text:
+        omega-ruby: |
+          Yanma is capable of seeing 360 degrees without having to
+          move its eyes. It is a great flier that is adept at making sudden
+          stops and turning midair. This Pokémon uses its flying ability to
+          quickly chase down targeted prey.
+        alpha-sapphire: |
+          Yanma is capable of seeing 360 degrees without having to
+          move its eyes. It is a great flier that is adept at making sudden
+          stops and turning midair. This Pokémon uses its flying ability
+          to quickly chase down targeted prey.
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *x-y.pokemon.yanma.forms.yanma.icon
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *x-y.pokemon.yanma.forms.yanma.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/yanma-default.png
+            - omega-ruby-alpha-sapphire/shiny/yanma-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    yanma:
+      genus: *diamond-pearl.pokemon.yanma.genus
+      color: *black-white.pokemon.yanma.color
+      shape: *diamond-pearl.pokemon.yanma.shape
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: *diamond-pearl.pokemon.yanma.baby
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: *diamond-pearl.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      mega: *x-y.pokemon.yanma.mega
+      stats: *diamond-pearl.pokemon.yanma.stats
+      abilities: *diamond-pearl.pokemon.yanma.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *x-y.pokemon.yanma.forms.yanma.icon
+          sprites:
+            - sun-moon/yanma-default.png
+            - sun-moon/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *x-y.pokemon.yanma.forms.yanma.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    yanma:
+      genus: *diamond-pearl.pokemon.yanma.genus
+      color: *black-white.pokemon.yanma.color
+      shape: *diamond-pearl.pokemon.yanma.shape
+      female_rate: *gold-silver.pokemon.yanma.female_rate
+      capture_rate: *gold-silver.pokemon.yanma.capture_rate
+      happiness: *ruby-sapphire.pokemon.yanma.happiness
+      baby: *diamond-pearl.pokemon.yanma.baby
+      hatch_steps: *gold-silver.pokemon.yanma.hatch_steps
+      growth_rate: *gold-silver.pokemon.yanma.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.yanma.forms_switchable
+      name: Yanma
+      default: *gold-silver.pokemon.yanma.default
+      height: *ruby-sapphire.pokemon.yanma.height
+      weight: *ruby-sapphire.pokemon.yanma.weight
+      experience: *diamond-pearl.pokemon.yanma.experience
+      types: *gold-silver.pokemon.yanma.types
+      egg_groups: *gold-silver.pokemon.yanma.egg_groups
+      mega: *x-y.pokemon.yanma.mega
+      stats: *diamond-pearl.pokemon.yanma.stats
+      abilities: *diamond-pearl.pokemon.yanma.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.yanma.wild_held_items.diamond
+      forms:
+        yanma:
+          name: Yanma
+          form_name: *gold-silver.pokemon.yanma.forms.yanma.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.yanma.forms.yanma.battle_only
+          icon: *x-y.pokemon.yanma.forms.yanma.icon
+          sprites:
+            - ultra-sun-ultra-moon/yanma-default.png
+            - ultra-sun-ultra-moon/shiny/yanma-default.png
+          art: *gold-silver.pokemon.yanma.forms.yanma.art
+          footprint: *ruby-sapphire.pokemon.yanma.forms.yanma.footprint
+          cry: *x-y.pokemon.yanma.forms.yanma.cry

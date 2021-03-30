@@ -1,0 +1,919 @@
+red-blue:
+  name: &red-blue.name KOFFING
+  position: &red-blue.position 109
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 109
+    kanto: 109
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: &red-blue.pokemon.koffing.default true
+      capture_rate: &red-blue.pokemon.koffing.capture_rate 190
+      experience: &red-blue.pokemon.koffing.experience 114
+      types: &red-blue.pokemon.koffing.types
+        - poison
+      stats: &red-blue.pokemon.koffing.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 95
+          effort_change: 95
+        speed:
+          base_value: 35
+          effort_change: 35
+        special:
+          base_value: 60
+          effort_change: 60
+      growth_rate: &red-blue.pokemon.koffing.growth_rate medium
+      genus: &red-blue.pokemon.koffing.genus 'POISON GAS Pokémon'
+      height: &red-blue.pokemon.koffing.height 6
+      weight: &red-blue.pokemon.koffing.weight 90
+      flavor_text:
+        red: |
+          Because it stores
+          several kinds of
+          toxic gases in
+          its body, it is
+           prone to exploding
+          without warning.
+        blue: |
+          Because it stores
+          several kinds of
+          toxic gases in
+          its body, it is
+           prone to exploding
+          without warning.
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: &red-blue.pokemon.koffing.forms.koffing.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.koffing.forms.koffing.battle_only false
+          sprites:
+            - red-blue/koffing-default.png
+            - red-blue/gray/koffing-default.png
+            - red-blue/back/koffing-default.png
+          art: &red-blue.pokemon.koffing.forms.koffing.art
+            - koffing-default.png
+          cry: &red-blue.pokemon.koffing.forms.koffing.cry gen5/koffing-default.webm
+          icon: &red-blue.pokemon.koffing.forms.koffing.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: *red-blue.pokemon.koffing.default
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      experience: *red-blue.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      stats: *red-blue.pokemon.koffing.stats
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      genus: *red-blue.pokemon.koffing.genus
+      height: *red-blue.pokemon.koffing.height
+      weight: *red-blue.pokemon.koffing.weight
+      flavor_text:
+        yellow: |
+          In hot places, its
+          internal gases
+          could expand and
+          explode without
+           any warning. Be
+          very careful!
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          sprites:
+            - yellow/koffing-default.png
+            - yellow/gray/koffing-default.png
+            - yellow/back/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+          icon: *red-blue.pokemon.koffing.forms.koffing.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 108
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 113
+    original-johto-abc: 93
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: *red-blue.pokemon.koffing.default
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      experience: *red-blue.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      stats: &gold-silver.pokemon.koffing.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 95
+          effort_change: 95
+        speed:
+          base_value: 35
+          effort_change: 35
+        special-attack:
+          base_value: 60
+          effort_change: 60
+        special-defense:
+          base_value: 45
+          effort_change: 60
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      female_rate: &gold-silver.pokemon.koffing.female_rate 50
+      hatch_steps: &gold-silver.pokemon.koffing.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.koffing.egg_groups
+        - indeterminate
+      genus: *red-blue.pokemon.koffing.genus
+      height: *red-blue.pokemon.koffing.height
+      weight: &gold-silver.pokemon.koffing.weight 9
+      flavor_text:
+        gold: |
+          Its thin, filmy
+          body is filled
+          with gases that
+          cause constant
+          sniffles, coughs
+          and teary eyes.
+        silver: |
+          The poisonous
+          gases it contains
+          are a little bit
+          lighter than air,
+          keeping it slight-
+          ly airborne.
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          sprites:
+            - gold-silver/koffing-default.png
+            - gold-silver/back/koffing-default.png
+            - gold-silver/shiny/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+          icon: &gold-silver.pokemon.koffing.forms.koffing.icon gen2/blob.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: *red-blue.pokemon.koffing.default
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      experience: *red-blue.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      stats: *gold-silver.pokemon.koffing.stats
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      genus: *red-blue.pokemon.koffing.genus
+      height: *red-blue.pokemon.koffing.height
+      weight: *gold-silver.pokemon.koffing.weight
+      flavor_text:
+        crystal: |
+          If one gets close
+          enough to it when
+          it expels poison-
+          ous gas, the gas
+          swirling inside it
+          can be seen.
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          sprites:
+            - crystal/koffing-default.png
+            - crystal/back/koffing-default.png
+            - crystal/shiny/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+          icon: *gold-silver.pokemon.koffing.forms.koffing.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 108
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: *red-blue.pokemon.koffing.default
+      forms_switchable: &ruby-sapphire.pokemon.koffing.forms_switchable false
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      experience: *red-blue.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      stats: &ruby-sapphire.pokemon.koffing.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 95
+          effort_change: 1
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+          smoke-ball: 5
+        sapphire: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.koffing.happiness 70
+      abilities: &ruby-sapphire.pokemon.koffing.abilities
+        levitate:
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.koffing.genus
+      height: *red-blue.pokemon.koffing.height
+      weight: &ruby-sapphire.pokemon.koffing.weight 10
+      flavor_text:
+        ruby: |
+          If KOFFING becomes agitated, it raises
+          the toxicity of its internal gases and
+          jets them out from all over its body.
+          This POKéMON may also overinflate its
+          round body, then explode.
+        sapphire: |
+          KOFFING embodies toxic substances.
+          It mixes the toxins with raw garbage to
+          set off a chemical reaction that
+          results in a terribly powerful poison
+          gas. The higher the temperature, the
+          more gas is concocted by this POKéMON.
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: &ruby-sapphire.pokemon.koffing.forms.koffing.icon gen5/koffing-default.png
+          sprites:
+            - ruby-sapphire/koffing-default.png
+            - ruby-sapphire/back/koffing-default.png
+            - ruby-sapphire/shiny/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: &ruby-sapphire.pokemon.koffing.forms.koffing.footprint koffing.png
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: *red-blue.pokemon.koffing.default
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      experience: *red-blue.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      stats: *ruby-sapphire.pokemon.koffing.stats
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      genus: *red-blue.pokemon.koffing.genus
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      flavor_text:
+        emerald: |
+          Getting up close to a KOFFING will give
+          you a chance to observe,  through its thin
+          skin, the toxic gases swirling inside. It
+          blows up at the slightest stimulation.
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *ruby-sapphire.pokemon.koffing.forms.koffing.icon
+          sprites:
+            - emerald/koffing-default.png
+            - emerald/shiny/koffing-default.png
+            - emerald/animated/koffing-default.webm
+            - emerald/animated/shiny/koffing-default.webm
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 155
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: *red-blue.pokemon.koffing.default
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      experience: *red-blue.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      stats: *ruby-sapphire.pokemon.koffing.stats
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      genus: *red-blue.pokemon.koffing.genus
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          sprites:
+            - colosseum/koffing-default.png
+            - colosseum/shiny/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: *red-blue.pokemon.koffing.default
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      experience: *red-blue.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      stats: *ruby-sapphire.pokemon.koffing.stats
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      genus: *red-blue.pokemon.koffing.genus
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          sprites:
+            - xd/koffing-default.png
+            - xd/shiny/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    koffing:
+      name: KOFFING
+      default: *red-blue.pokemon.koffing.default
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      experience: *red-blue.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      stats: *ruby-sapphire.pokemon.koffing.stats
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      genus: *red-blue.pokemon.koffing.genus
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      flavor_text:
+        firered: |
+          Its thin, balloon-like body is inflated by
+          horribly toxic gases.  It reeks when it is
+          nearby.
+        leafgreen: |
+          Because it stores several kinds of toxic
+          gases in its body, it is prone to
+          exploding without warning.
+      forms:
+        koffing:
+          name: KOFFING
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *ruby-sapphire.pokemon.koffing.forms.koffing.icon
+          sprites:
+            - firered-leafgreen/koffing-default.png
+            - firered-leafgreen/back/koffing-default.png
+            - firered-leafgreen/shiny/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+diamond-pearl:
+  name: &diamond-pearl.name Koffing
+  position: &diamond-pearl.position 121
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    koffing:
+      genus: &diamond-pearl.pokemon.koffing.genus 'Poison Gas Pokémon'
+      shape: &diamond-pearl.pokemon.koffing.shape ball
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: &diamond-pearl.pokemon.koffing.baby false
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      pal_park: &diamond-pearl.pokemon.koffing.pal_park
+        area: mountain
+        rate: 30
+        score: 50
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: &diamond-pearl.pokemon.koffing.experience 68
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      stats: &diamond-pearl.pokemon.koffing.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 95
+          effort_change: 1
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          Lighter-than-air gases in its body
+          keep it aloft. The gases not only
+          smell, they are also explosive.
+        pearl: |
+          Lighter-than-air gases in its body
+          keep it aloft. The gases not only
+          smell, they are also explosive.
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *ruby-sapphire.pokemon.koffing.forms.koffing.icon
+          sprites:
+            - diamond-pearl/back/shiny/koffing-default.png
+            - diamond-pearl/back/koffing-default.png
+            - diamond-pearl/shiny/koffing-default.png
+            - diamond-pearl/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    koffing:
+      genus: *diamond-pearl.pokemon.koffing.genus
+      shape: *diamond-pearl.pokemon.koffing.shape
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: *diamond-pearl.pokemon.koffing.baby
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      pal_park: *diamond-pearl.pokemon.koffing.pal_park
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: *diamond-pearl.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      stats: *diamond-pearl.pokemon.koffing.stats
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          Lighter-than-air gases in its body
+          keep it aloft. The gases not only
+          smell, they are also explosive.
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *ruby-sapphire.pokemon.koffing.forms.koffing.icon
+          sprites:
+            - platinum/back/shiny/koffing-default.png
+            - platinum/back/koffing-default.png
+            - platinum/shiny/koffing-default.png
+            - platinum/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 115
+  pokemon:
+    koffing:
+      genus: *diamond-pearl.pokemon.koffing.genus
+      shape: *diamond-pearl.pokemon.koffing.shape
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: *diamond-pearl.pokemon.koffing.baby
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      pal_park: *diamond-pearl.pokemon.koffing.pal_park
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: *diamond-pearl.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      stats: *diamond-pearl.pokemon.koffing.stats
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          Its thin, filmy body is filled
+          with gases that cause constant
+          sniffles, coughs and teary eyes.
+        soulsilver: |
+          The poisonous gases it contains
+          are a little bit lighter than air,
+          keeping it slightly airborne.
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 2-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.koffing.forms.koffing.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/koffing-default.png
+            - heartgold-soulsilver/back/koffing-default.png
+            - heartgold-soulsilver/shiny/koffing-default.png
+            - heartgold-soulsilver/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    koffing:
+      genus: *diamond-pearl.pokemon.koffing.genus
+      color: &black-white.pokemon.koffing.color purple
+      shape: *diamond-pearl.pokemon.koffing.shape
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: *diamond-pearl.pokemon.koffing.baby
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: *diamond-pearl.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      stats: *diamond-pearl.pokemon.koffing.stats
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      flavor_text:
+        black: |
+          Lighter-than-air gases in its body
+          keep it aloft. The gases not only
+          smell, they are also explosive.
+        white: |
+          Lighter-than-air gases in its body
+          keep it aloft. The gases not only
+          smell, they are also explosive.
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *ruby-sapphire.pokemon.koffing.forms.koffing.icon
+          sprites:
+            - black-white/back/shiny/koffing-default.png
+            - black-white/back/koffing-default.png
+            - black-white/shiny/koffing-default.png
+            - black-white/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 46
+  pokemon:
+    koffing:
+      genus: *diamond-pearl.pokemon.koffing.genus
+      color: *black-white.pokemon.koffing.color
+      shape: *diamond-pearl.pokemon.koffing.shape
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: *diamond-pearl.pokemon.koffing.baby
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: *diamond-pearl.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      stats: *diamond-pearl.pokemon.koffing.stats
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          Toxic gas is held within its thin,
+          balloon-shaped body, so it can
+          cause massive explosions.
+        white-2: |
+          Toxic gas is held within its thin,
+          balloon-shaped body, so it can
+          cause massive explosions.
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *ruby-sapphire.pokemon.koffing.forms.koffing.icon
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *red-blue.pokemon.koffing.forms.koffing.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    koffing:
+      genus: *diamond-pearl.pokemon.koffing.genus
+      color: *black-white.pokemon.koffing.color
+      shape: *diamond-pearl.pokemon.koffing.shape
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: *diamond-pearl.pokemon.koffing.baby
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: *diamond-pearl.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      mega: &x-y.pokemon.koffing.mega false
+      stats: *diamond-pearl.pokemon.koffing.stats
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      flavor_text:
+        x: |
+          Its thin, balloon-like body is inflated by horribly
+          toxic gases. It reeks when it is nearby.
+        'y': |
+          Lighter-than-air gases in its body keep it aloft.
+          The gases not only smell, they are also explosive.
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: &x-y.pokemon.koffing.forms.koffing.icon koffing-default.png
+          sprites:
+            - x-y/shiny/koffing-default.png
+            - x-y/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: &x-y.pokemon.koffing.forms.koffing.cry koffing-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 113
+  pokemon:
+    koffing:
+      genus: *diamond-pearl.pokemon.koffing.genus
+      color: *black-white.pokemon.koffing.color
+      shape: *diamond-pearl.pokemon.koffing.shape
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: *diamond-pearl.pokemon.koffing.baby
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: *diamond-pearl.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      mega: *x-y.pokemon.koffing.mega
+      stats: *diamond-pearl.pokemon.koffing.stats
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      flavor_text:
+        omega-ruby: |
+          If Koffing becomes agitated, it raises the toxicity of its internal
+          gases and jets them out from all over its body. This Pokémon
+          may also overinflate its round body, then explode.
+        alpha-sapphire: |
+          Koffing embodies toxic substances. It mixes the toxins with raw
+          garbage to set off a chemical reaction that results in a terribly
+          powerful poison gas. The higher the temperature, the more gas
+          is concocted by this Pokémon.
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *x-y.pokemon.koffing.forms.koffing.icon
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *x-y.pokemon.koffing.forms.koffing.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/koffing-default.png
+            - omega-ruby-alpha-sapphire/shiny/koffing-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    koffing:
+      genus: *diamond-pearl.pokemon.koffing.genus
+      color: *black-white.pokemon.koffing.color
+      shape: *diamond-pearl.pokemon.koffing.shape
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: *diamond-pearl.pokemon.koffing.baby
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: *diamond-pearl.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      mega: *x-y.pokemon.koffing.mega
+      stats: *diamond-pearl.pokemon.koffing.stats
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *x-y.pokemon.koffing.forms.koffing.icon
+          sprites:
+            - sun-moon/shiny/koffing-default.png
+            - sun-moon/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *x-y.pokemon.koffing.forms.koffing.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    koffing:
+      genus: *diamond-pearl.pokemon.koffing.genus
+      color: *black-white.pokemon.koffing.color
+      shape: *diamond-pearl.pokemon.koffing.shape
+      female_rate: *gold-silver.pokemon.koffing.female_rate
+      capture_rate: *red-blue.pokemon.koffing.capture_rate
+      happiness: *ruby-sapphire.pokemon.koffing.happiness
+      baby: *diamond-pearl.pokemon.koffing.baby
+      hatch_steps: *gold-silver.pokemon.koffing.hatch_steps
+      growth_rate: *red-blue.pokemon.koffing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.koffing.forms_switchable
+      name: Koffing
+      default: *red-blue.pokemon.koffing.default
+      height: *red-blue.pokemon.koffing.height
+      weight: *ruby-sapphire.pokemon.koffing.weight
+      experience: *diamond-pearl.pokemon.koffing.experience
+      types: *red-blue.pokemon.koffing.types
+      egg_groups: *gold-silver.pokemon.koffing.egg_groups
+      mega: *x-y.pokemon.koffing.mega
+      stats: *diamond-pearl.pokemon.koffing.stats
+      abilities: *ruby-sapphire.pokemon.koffing.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.koffing.wild_held_items.ruby
+      forms:
+        koffing:
+          name: Koffing
+          form_name: *red-blue.pokemon.koffing.forms.koffing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.koffing.forms.koffing.battle_only
+          icon: *x-y.pokemon.koffing.forms.koffing.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/koffing-default.png
+            - ultra-sun-ultra-moon/koffing-default.png
+          art: *red-blue.pokemon.koffing.forms.koffing.art
+          footprint: *ruby-sapphire.pokemon.koffing.forms.koffing.footprint
+          cry: *x-y.pokemon.koffing.forms.koffing.cry

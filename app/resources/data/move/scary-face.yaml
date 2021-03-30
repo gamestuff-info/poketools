@@ -1,0 +1,205 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'SCARY FACE'
+  type: &gold-silver.type normal
+  accuracy: &gold-silver.accuracy 90
+  pp: &gold-silver.pp 10
+  effect: &gold-silver.effect 61
+  flags: &gold-silver.flags
+    - protect
+    - reflectable
+    - mirror
+  categories: &gold-silver.categories
+    - net-good-stats
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  stat_changes: &gold-silver.stat_changes
+    speed: -2
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    Sharply reduces
+    the foe's SPEED.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  contest_type: &ruby-sapphire.contest_type tough
+  contest_effect: 18
+  contest_use_before: &ruby-sapphire.contest_use_before
+    - leer
+    - bite
+    - super-fang
+    - crunch
+  contest_use_after:
+    - rage
+    - leer
+  flavor_text: &ruby-sapphire.flavor_text |
+    Frightens with a scary face
+    to sharply reduce SPEED.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+xd:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+firered-leafgreen:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  flavor_text: |
+    Frightens the foe
+    with a scary face
+    to sharply reduce
+    its SPEED.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Scary Face'
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 2
+  flavor_text: &diamond-pearl.flavor_text |
+    The user frightens
+    the foe with a scary
+    face to sharply
+    reduce its Speed
+    stat.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: &black-white.accuracy 100
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user frightens the target with a scary
+    face to harshly reduce its Speed stat.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *black-white.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &x-y.flavor_text |
+    The user frightens the target with a scary
+    face to harshly lower its Speed stat.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *black-white.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 33
+  contest_use_before: *ruby-sapphire.contest_use_before
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *black-white.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user frightens the target with a scary face to
+    harshly lower its Speed stat.
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,183 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'DRAGON DANCE'
+  type: &ruby-sapphire.type dragon
+  pp: &ruby-sapphire.pp 20
+  effect: &ruby-sapphire.effect 213
+  target: &ruby-sapphire.target user
+  priority: &ruby-sapphire.priority 0
+  flags: &ruby-sapphire.flags
+    - snatch
+  categories: &ruby-sapphire.categories
+    - net-good-stats
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  stat_changes: &ruby-sapphire.stat_changes
+    attack: 1
+    speed: 1
+  contest_type: &ruby-sapphire.contest_type cool
+  contest_effect: 39
+  contest_use_before:
+    - dragon-rage
+    - dragonbreath
+    - dragon-claw
+  contest_use_after:
+    - dragon-rage
+    - dragonbreath
+  flavor_text: &ruby-sapphire.flavor_text |
+    A mystical dance that ups
+    ATTACK and SPEED.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+xd:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: special
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  flavor_text: |
+    A mystic, powerful
+    dance that boosts
+    the user's ATTACK
+    and SPEED stats.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Dragon Dance'
+  flags: &diamond-pearl.flags
+    - snatch
+    - dance
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 11
+  flavor_text: &diamond-pearl.flavor_text |
+    The user vigorously
+    performs a mystic,
+    powerful dance that
+    boosts its Attack and
+    Speed stats.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user vigorously performs a mystic,
+    powerful dance that boosts its Attack and
+    Speed stats.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &x-y.flavor_text |
+    The user vigorously performs a mystic,
+    powerful dance that raises its Attack and
+    Speed stats.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 32
+  contest_use_before:
+    - dragon-rage
+    - dragon-breath
+    - dragon-claw
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user vigorously performs a mystic, powerful
+    dance that raises its Attack and Speed stats.
+ultra-sun-ultra-moon: *sun-moon

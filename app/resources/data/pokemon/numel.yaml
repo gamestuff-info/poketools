@@ -1,0 +1,731 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name NUMEL
+  position: &ruby-sapphire.position 322
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 322
+    hoenn: 101
+  pokemon:
+    numel:
+      name: NUMEL
+      default: &ruby-sapphire.pokemon.numel.default true
+      forms_switchable: &ruby-sapphire.pokemon.numel.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.numel.capture_rate 255
+      experience: &ruby-sapphire.pokemon.numel.experience 88
+      types: &ruby-sapphire.pokemon.numel.types
+        - fire
+        - ground
+      stats: &ruby-sapphire.pokemon.numel.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.numel.growth_rate medium
+      female_rate: &ruby-sapphire.pokemon.numel.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.numel.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.numel.egg_groups
+        - ground
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.numel.wild_held_items.ruby
+          rawst-berry: 100
+        sapphire: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.numel.happiness 70
+      abilities: &ruby-sapphire.pokemon.numel.abilities
+        oblivious: &ruby-sapphire.pokemon.numel.abilities.oblivious
+          hidden: &ruby-sapphire.pokemon.numel.abilities.oblivious.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.numel.genus 'NUMB Pokémon'
+      height: &ruby-sapphire.pokemon.numel.height 7
+      weight: &ruby-sapphire.pokemon.numel.weight 240
+      flavor_text:
+        ruby: |
+          NUMEL is extremely dull witted - it
+          doesn't notice being hit. However,  it
+          can't stand hunger for even a second.
+          This POKéMON's body is a seething
+           cauldron of boiling magma.
+        sapphire: |
+          NUMEL stores magma of almost 2,200
+          degrees F within its body.  If it gets
+          wet, the magma cools and hardens.
+          In that event, the POKéMON's body
+          grows heavy and its movements become
+          sluggish.
+      forms:
+        numel:
+          name: NUMEL
+          form_name: &ruby-sapphire.pokemon.numel.forms.numel.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.numel.forms.numel.battle_only false
+          icon: &ruby-sapphire.pokemon.numel.forms.numel.icon gen5/numel-default.png
+          sprites:
+            - ruby-sapphire/numel-default.png
+            - ruby-sapphire/back/numel-default.png
+            - ruby-sapphire/shiny/numel-default.png
+          art: &ruby-sapphire.pokemon.numel.forms.numel.art
+            - numel-default.png
+          footprint: &ruby-sapphire.pokemon.numel.forms.numel.footprint numel.png
+          cry: &ruby-sapphire.pokemon.numel.forms.numel.cry gen5/numel-default.webm
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    numel:
+      name: NUMEL
+      default: *ruby-sapphire.pokemon.numel.default
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      experience: *ruby-sapphire.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      stats: *ruby-sapphire.pokemon.numel.stats
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      abilities: *ruby-sapphire.pokemon.numel.abilities
+      genus: *ruby-sapphire.pokemon.numel.genus
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      flavor_text:
+        emerald: |
+          A NUMEL stores boiling magma in the hump
+          on its back. It is a hardy POKéMON that can
+          transport a 220-pound load. It has served
+          humans at work since long ago.
+      forms:
+        numel:
+          name: NUMEL
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *ruby-sapphire.pokemon.numel.forms.numel.icon
+          sprites:
+            - emerald/numel-default.png
+            - emerald/shiny/numel-default.png
+            - emerald/animated/numel-default.webm
+            - emerald/animated/shiny/numel-default.webm
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 226
+  pokemon:
+    numel:
+      name: NUMEL
+      default: *ruby-sapphire.pokemon.numel.default
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      experience: *ruby-sapphire.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      stats: *ruby-sapphire.pokemon.numel.stats
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      abilities: *ruby-sapphire.pokemon.numel.abilities
+      genus: *ruby-sapphire.pokemon.numel.genus
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      forms:
+        numel:
+          name: NUMEL
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          sprites:
+            - colosseum/numel-default.png
+            - colosseum/shiny/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    numel:
+      name: NUMEL
+      default: *ruby-sapphire.pokemon.numel.default
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      experience: *ruby-sapphire.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      stats: *ruby-sapphire.pokemon.numel.stats
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      abilities: *ruby-sapphire.pokemon.numel.abilities
+      genus: *ruby-sapphire.pokemon.numel.genus
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      forms:
+        numel:
+          name: NUMEL
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          sprites:
+            - xd/numel-default.png
+            - xd/shiny/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    numel:
+      name: NUMEL
+      default: *ruby-sapphire.pokemon.numel.default
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      experience: *ruby-sapphire.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      stats: *ruby-sapphire.pokemon.numel.stats
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      abilities: *ruby-sapphire.pokemon.numel.abilities
+      genus: *ruby-sapphire.pokemon.numel.genus
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      flavor_text:
+        firered: |
+          Magma of almost 2,200 degrees Fahrenheit
+          courses through its body.  When it grows
+          cold, the magma hardens and slows it.
+        leafgreen: |
+          Magma of almost 2,200 degrees Fahrenheit
+          courses through its body. When it grows
+          cold, the magma hardens and slows it.
+      forms:
+        numel:
+          name: NUMEL
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *ruby-sapphire.pokemon.numel.forms.numel.icon
+          sprites:
+            - firered-leafgreen/numel-default.png
+            - firered-leafgreen/back/numel-default.png
+            - firered-leafgreen/shiny/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+diamond-pearl:
+  name: &diamond-pearl.name Numel
+  position: &diamond-pearl.position 350
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    numel:
+      genus: &diamond-pearl.pokemon.numel.genus 'Numb Pokémon'
+      shape: &diamond-pearl.pokemon.numel.shape quadruped
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: &diamond-pearl.pokemon.numel.baby false
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      pal_park: &diamond-pearl.pokemon.numel.pal_park
+        area: mountain
+        rate: 30
+        score: 50
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: &diamond-pearl.pokemon.numel.experience 61
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      stats: &diamond-pearl.pokemon.numel.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 1
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.numel.abilities
+        oblivious: *ruby-sapphire.pokemon.numel.abilities.oblivious
+        simple:
+          hidden: *ruby-sapphire.pokemon.numel.abilities.oblivious.hidden
+          position: 2
+        own-tempo:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          Its humped back stores intensely
+          hot magma. In rain, the magma
+          cools, slowing its movement.
+        pearl: |
+          Its humped back stores intensely
+          hot magma. In rain, the magma
+          cools, slowing its movement.
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *ruby-sapphire.pokemon.numel.forms.numel.icon
+          sprites:
+            - diamond-pearl/numel-default.png
+            - diamond-pearl/back/numel-default.png
+            - diamond-pearl/back/female/numel-default.png
+            - diamond-pearl/back/shiny/numel-default.png
+            - diamond-pearl/female/numel-default.png
+            - diamond-pearl/shiny/numel-default.png
+            - diamond-pearl/shiny/female/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    numel:
+      genus: *diamond-pearl.pokemon.numel.genus
+      shape: *diamond-pearl.pokemon.numel.shape
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: *diamond-pearl.pokemon.numel.baby
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      pal_park: *diamond-pearl.pokemon.numel.pal_park
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: *diamond-pearl.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      stats: *diamond-pearl.pokemon.numel.stats
+      abilities: *diamond-pearl.pokemon.numel.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          Its humped back stores intensely
+          hot magma. In rain, the magma
+          cools, slowing its movement.
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *ruby-sapphire.pokemon.numel.forms.numel.icon
+          sprites:
+            - platinum/numel-default.png
+            - platinum/back/numel-default.png
+            - platinum/back/female/numel-default.png
+            - platinum/back/shiny/numel-default.png
+            - platinum/female/numel-default.png
+            - platinum/shiny/numel-default.png
+            - platinum/shiny/female/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    numel:
+      genus: *diamond-pearl.pokemon.numel.genus
+      shape: *diamond-pearl.pokemon.numel.shape
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: *diamond-pearl.pokemon.numel.baby
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      pal_park: *diamond-pearl.pokemon.numel.pal_park
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: *diamond-pearl.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      stats: *diamond-pearl.pokemon.numel.stats
+      abilities: *diamond-pearl.pokemon.numel.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          The flaming magma it stores in the
+          hump on its back is the source of
+          its tremendous power.
+        soulsilver: |
+          The flaming magma it stores in the
+          hump on its back is the source of
+          its tremendous power.
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 4
+              range: 2-5
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 4
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.numel.forms.numel.icon
+          sprites:
+            - heartgold-soulsilver/numel-default.png
+            - heartgold-soulsilver/back/numel-default.png
+            - heartgold-soulsilver/back/female/numel-default.png
+            - heartgold-soulsilver/back/shiny/numel-default.png
+            - heartgold-soulsilver/female/numel-default.png
+            - heartgold-soulsilver/shiny/numel-default.png
+            - heartgold-soulsilver/shiny/female/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    numel:
+      genus: *diamond-pearl.pokemon.numel.genus
+      color: &black-white.pokemon.numel.color yellow
+      shape: *diamond-pearl.pokemon.numel.shape
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: *diamond-pearl.pokemon.numel.baby
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: *diamond-pearl.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      stats: *diamond-pearl.pokemon.numel.stats
+      abilities: *diamond-pearl.pokemon.numel.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+      flavor_text:
+        black: |
+          Its humped back stores intensely
+          hot magma. In rain, the magma
+          cools, slowing its movement.
+        white: |
+          Its humped back stores intensely
+          hot magma. In rain, the magma
+          cools, slowing its movement.
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *ruby-sapphire.pokemon.numel.forms.numel.icon
+          sprites:
+            - black-white/numel-default.png
+            - black-white/back/numel-default.png
+            - black-white/back/female/numel-default.png
+            - black-white/back/shiny/numel-default.png
+            - black-white/female/numel-default.png
+            - black-white/shiny/numel-default.png
+            - black-white/shiny/female/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 204
+  pokemon:
+    numel:
+      genus: *diamond-pearl.pokemon.numel.genus
+      color: *black-white.pokemon.numel.color
+      shape: *diamond-pearl.pokemon.numel.shape
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: *diamond-pearl.pokemon.numel.baby
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: *diamond-pearl.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      stats: *diamond-pearl.pokemon.numel.stats
+      abilities: *diamond-pearl.pokemon.numel.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.numel.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          The magma in its body reaches
+          2,200 degrees F. Its hump gets smaller
+          when it uses Fire-type moves.
+        white-2: |
+          The magma in its body reaches
+          2,200 degrees F. Its hump gets smaller
+          when it uses Fire-type moves.
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *ruby-sapphire.pokemon.numel.forms.numel.icon
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *ruby-sapphire.pokemon.numel.forms.numel.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    numel:
+      genus: *diamond-pearl.pokemon.numel.genus
+      color: *black-white.pokemon.numel.color
+      shape: *diamond-pearl.pokemon.numel.shape
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: *diamond-pearl.pokemon.numel.baby
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: *diamond-pearl.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      mega: &x-y.pokemon.numel.mega false
+      stats: *diamond-pearl.pokemon.numel.stats
+      abilities: *diamond-pearl.pokemon.numel.abilities
+      flavor_text:
+        x: |
+          Its humped back stores intensely hot magma.
+          In rain, the magma cools, slowing its movement.
+        'y': |
+          The magma in its body reaches 2,200 degrees
+          Fahrenheit. Its hump gets smaller when it uses
+          Fire-type moves.
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: &x-y.pokemon.numel.forms.numel.icon numel-default.png
+          sprites:
+            - x-y/numel-default.png
+            - x-y/female/numel-default.png
+            - x-y/shiny/numel-default.png
+            - x-y/shiny/female/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: &x-y.pokemon.numel.forms.numel.cry numel-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 106
+  pokemon:
+    numel:
+      genus: *diamond-pearl.pokemon.numel.genus
+      color: *black-white.pokemon.numel.color
+      shape: *diamond-pearl.pokemon.numel.shape
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: *diamond-pearl.pokemon.numel.baby
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: *diamond-pearl.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      mega: *x-y.pokemon.numel.mega
+      stats: *diamond-pearl.pokemon.numel.stats
+      abilities: *diamond-pearl.pokemon.numel.abilities
+      flavor_text:
+        omega-ruby: |
+          Numel is extremely dull witted—it doesn’t notice being hit.
+          However, it can’t stand hunger for even a second.
+          This Pokémon’s body is a seething cauldron of boiling magma.
+        alpha-sapphire: |
+          Numel stores magma of almost 2,200 degrees Fahrenheit
+          within its body. If it gets wet, the magma cools and hardens.
+          In that event, the Pokémon’s body grows heavy and its
+          movements become sluggish.
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *x-y.pokemon.numel.forms.numel.icon
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *x-y.pokemon.numel.forms.numel.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/numel-default.png
+            - omega-ruby-alpha-sapphire/shiny/numel-default.png
+            - omega-ruby-alpha-sapphire/female/numel-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/numel-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    numel:
+      genus: *diamond-pearl.pokemon.numel.genus
+      color: *black-white.pokemon.numel.color
+      shape: *diamond-pearl.pokemon.numel.shape
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: *diamond-pearl.pokemon.numel.baby
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: *diamond-pearl.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      mega: *x-y.pokemon.numel.mega
+      stats: *diamond-pearl.pokemon.numel.stats
+      abilities: *diamond-pearl.pokemon.numel.abilities
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *x-y.pokemon.numel.forms.numel.icon
+          sprites:
+            - sun-moon/numel-default.png
+            - sun-moon/female/numel-default.png
+            - sun-moon/shiny/numel-default.png
+            - sun-moon/shiny/female/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *x-y.pokemon.numel.forms.numel.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    numel:
+      genus: *diamond-pearl.pokemon.numel.genus
+      color: *black-white.pokemon.numel.color
+      shape: *diamond-pearl.pokemon.numel.shape
+      female_rate: *ruby-sapphire.pokemon.numel.female_rate
+      capture_rate: *ruby-sapphire.pokemon.numel.capture_rate
+      happiness: *ruby-sapphire.pokemon.numel.happiness
+      baby: *diamond-pearl.pokemon.numel.baby
+      hatch_steps: *ruby-sapphire.pokemon.numel.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.numel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.numel.forms_switchable
+      name: Numel
+      default: *ruby-sapphire.pokemon.numel.default
+      height: *ruby-sapphire.pokemon.numel.height
+      weight: *ruby-sapphire.pokemon.numel.weight
+      experience: *diamond-pearl.pokemon.numel.experience
+      types: *ruby-sapphire.pokemon.numel.types
+      egg_groups: *ruby-sapphire.pokemon.numel.egg_groups
+      mega: *x-y.pokemon.numel.mega
+      stats: *diamond-pearl.pokemon.numel.stats
+      abilities: *diamond-pearl.pokemon.numel.abilities
+      forms:
+        numel:
+          name: Numel
+          form_name: *ruby-sapphire.pokemon.numel.forms.numel.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.numel.forms.numel.battle_only
+          icon: *x-y.pokemon.numel.forms.numel.icon
+          sprites:
+            - ultra-sun-ultra-moon/numel-default.png
+            - ultra-sun-ultra-moon/female/numel-default.png
+            - ultra-sun-ultra-moon/shiny/numel-default.png
+            - ultra-sun-ultra-moon/shiny/female/numel-default.png
+          art: *ruby-sapphire.pokemon.numel.forms.numel.art
+          footprint: *ruby-sapphire.pokemon.numel.forms.numel.footprint
+          cry: *x-y.pokemon.numel.forms.numel.cry

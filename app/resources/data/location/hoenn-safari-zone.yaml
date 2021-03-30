@@ -1,0 +1,40 @@
+ruby-sapphire:
+  region: &ruby-sapphire.region hoenn
+  name: &ruby-sapphire.name 'Safari Zone'
+  areas: &ruby-sapphire.areas
+    nw: &ruby-sapphire.areas.nw
+      name: NW
+      default: true
+    ne: &ruby-sapphire.areas.ne
+      name: NE
+    sw: &ruby-sapphire.areas.sw
+      name: SW
+    se: &ruby-sapphire.areas.se
+      name: SE
+  super: &ruby-sapphire.super hoenn-route-121
+  map: &ruby-sapphire.map
+    map: &ruby-sapphire.map.map hoenn
+    z: 10
+    overlay: '<circle r="4" cy="40" cx="140" />'
+emerald:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas:
+    nw: *ruby-sapphire.areas.nw
+    ne: *ruby-sapphire.areas.ne
+    sw: *ruby-sapphire.areas.sw
+    se: *ruby-sapphire.areas.se
+    expansion-south:
+      name: 'expansion south'
+    expansion-north:
+      name: 'expansion north'
+  super: *ruby-sapphire.super
+  map: *ruby-sapphire.map
+omega-ruby-alpha-sapphire:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas: *ruby-sapphire.areas
+  super: *ruby-sapphire.super
+  map:
+    map: *ruby-sapphire.map.map
+    overlay: '<rect width="11" height="11" x="175" y="41" />'

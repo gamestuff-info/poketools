@@ -1,0 +1,39 @@
+ruby-sapphire: &ruby-sapphire
+  region: &ruby-sapphire.region hoenn
+  name: &ruby-sapphire.name 'Mt. Pyre'
+  areas:
+    1f: &ruby-sapphire.areas.1f
+      name: 1F
+      default: true
+    2f: &ruby-sapphire.areas.2f
+      name: 2F
+    3f: &ruby-sapphire.areas.3f
+      name: 3F
+    4f: &ruby-sapphire.areas.4f
+      name: 4F
+    5f:
+      name: 5F
+    6f:
+      name: 6F
+    outside: &ruby-sapphire.areas.outside
+      name: outside
+    summit: &ruby-sapphire.areas.summit
+      name: summit
+  map:
+    map: &ruby-sapphire.map.map hoenn
+    z: 10
+    overlay: '<circle cx="140" cy="57" r="4" />'
+emerald: *ruby-sapphire
+omega-ruby-alpha-sapphire:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas:
+    1f: *ruby-sapphire.areas.1f
+    2f: *ruby-sapphire.areas.2f
+    3f: *ruby-sapphire.areas.3f
+    4f: *ruby-sapphire.areas.4f
+    outside: *ruby-sapphire.areas.outside
+    summit: *ruby-sapphire.areas.summit
+  map:
+    map: *ruby-sapphire.map.map
+    overlay: '<rect width="11" height="11" x="188" y="71" />'

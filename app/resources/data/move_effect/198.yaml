@@ -1,0 +1,45 @@
+ruby-sapphire: &ruby-sapphire
+  short_description: 'Has a $effect_chance% chance to inflict a status effect which depends upon the terrain.'
+  description: |
+    Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to inflict an effect chosen according to the terrain.
+
+    Terrain        | Effect
+    -------------- | ------
+    Grass          | [Poisons]{mechanic:poision} the target
+    Tall grass     | Puts target to [sleep]{mechanic:sleep}
+    Sand           | Lowers target's [accuracy]{mechanic:accuracy} by one [stage]{mechanic:stage}
+    Underwater     | Lowers targets [defense]{mechanic:defense} by one [stage]{mechanic:stage}
+    Water          | Lowers target's [Attack]{mechanic:attack} by one [stage]{mechanic:stage}
+    Pond           | Lowers target's [Speed]{mechanic:speed} by one [stage]{mechanic:stage}
+    Mountain       | [Confuses]{mechanic:confusion} the target
+    Cave           | Makes target [flinch]{mechanic:flinch}
+    Other          | [Paralyzes]{mechanic:paralysis} the target
+emerald: *ruby-sapphire
+colosseum: *ruby-sapphire
+xd: *ruby-sapphire
+firered-leafgreen: *ruby-sapphire
+diamond-pearl: &diamond-pearl
+  short_description: 'Has a $effect_chance% chance to inflict a status effect which depends upon the terrain.'
+  description: |
+    Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to inflict an effect chosen according to the terrain.
+
+    Terrain        | Effect
+    -------------- | -------------------------------------------------------------
+    Building       | [Paralyze]{mechanic:paralyze}s target
+    Cave           | Makes target [flinch]{mechanic:flinch}
+    Deep water     | Lowers target's [Attack]{mechanic:attack} by one [stage]{mechanic:stage}
+    Desert         | Lowers target's [accuracy]{mechanic:accuracy} by one [stage]{mechanic:stage}
+    Grass          | Puts target to [sleep]{mechanic:sleep}
+    Mountain       | Makes target [flinch]{mechanic:flinch}
+    Road           | Lowers target's [accuracy]{mechanic:accuracy} by one [stage]{mechanic:stage}
+    Shallow water  | Lowers target's [Attack]{mechanic:attack} by one [stage]{mechanic:stage}
+    Snow           | [Freezes]{mechanic:freezes} target
+    Tall grass     | Puts target to [sleep]{mechanic:sleep}
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: *diamond-pearl
+omega-ruby-alpha-sapphire: *diamond-pearl
+sun-moon: *diamond-pearl
+ultra-sun-ultra-moon: *diamond-pearl

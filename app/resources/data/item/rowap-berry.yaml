@@ -1,0 +1,134 @@
+diamond-pearl:
+  name: &diamond-pearl.name 'Rowap Berry'
+  category: &diamond-pearl.category other
+  pocket: &diamond-pearl.pocket berries
+  buy: &diamond-pearl.buy 20
+  sell: &diamond-pearl.sell 10
+  fling_effect: damage
+  fling_power: 10
+  flags: &diamond-pearl.flags
+    - holdable-active
+  short_description: &diamond-pearl.short_description 'Held: Consumed to deal 1/8 attacker''s max HP when holder is struck by a [special]{mechanic:special-attack} attack.'
+  description: |
+    Held in battle
+    :   When the holder takes [special]{mechanic:special-attack} damage, it consumes this item to damage the attacking Pokémon for 1/8 its max [HP]{mechanic:hp}.
+  berry: &diamond-pearl.berry
+    firmness: very-soft
+    natural_gift_type: dark
+    natural_gift_power: 80
+    size: 52
+    growth_time: 24
+    water: 7
+    smoothness: 60
+    flavors:
+      spicy: 10
+      dry: 0
+      sweet: 0
+      bitter: 0
+      sour: 40
+    harvest: 1-5
+  flavor_text: &diamond-pearl.flavor_text |
+    A Poffin ingredient. If held by a
+    Pokémon, and if a foe’s special attack
+    lands, the foe also takes damage.
+  icon: &diamond-pearl.icon rowap-berry.png
+platinum:
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *diamond-pearl.flags
+  short_description: *diamond-pearl.short_description
+  description: &platinum.description |
+    Held in battle
+    :   When the holder takes [special]{mechanic:special} damage, it consumes this item to damage the attacking Pokémon for 1/8 its max [HP]{mechanic:hp}.
+  berry: *diamond-pearl.berry
+  flavor_text: *diamond-pearl.flavor_text
+  icon: *diamond-pearl.icon
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *diamond-pearl.flags
+  short_description: *diamond-pearl.short_description
+  description: *platinum.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    If held by a Pokémon and a foe’s
+    special attack lands, the foe also
+    takes damage.
+  icon: *diamond-pearl.icon
+black-white: &black-white
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *diamond-pearl.flags
+  short_description: *diamond-pearl.short_description
+  description: *platinum.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    If held by a Pokémon and a special
+    attack lands, the attacker also
+    takes damage.
+  icon: *diamond-pearl.icon
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *diamond-pearl.flags
+  short_description: *diamond-pearl.short_description
+  description: *platinum.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    A Berry to be consumed by Pokémon.
+    If a special attack hits the Pokémon
+    holding it, the attacker will also be hurt.
+  icon: *diamond-pearl.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *diamond-pearl.flags
+  short_description: *diamond-pearl.short_description
+  description: *platinum.description
+  berry:
+    firmness: very-soft
+    natural_gift_type: dark
+    natural_gift_power: 80
+    size: 52
+    growth_time: 24
+    smoothness: 60
+    flavors:
+      spicy: 10
+      dry: 0
+      sweet: 0
+      bitter: 0
+      sour: 40
+    harvest: 1-5
+  flavor_text: |
+    A Berry to be consumed by Pokémon. If a special
+    attack hits the Pokémon holding it, the attacker will
+    also be hurt.
+  icon: *diamond-pearl.icon
+ultra-sun-ultra-moon: *sun-moon

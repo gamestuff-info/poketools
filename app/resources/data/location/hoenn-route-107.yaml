@@ -1,0 +1,23 @@
+ruby-sapphire: &ruby-sapphire
+  region: &ruby-sapphire.region hoenn
+  name: &ruby-sapphire.name 'Route 107'
+  areas:
+    whole-area:
+      name: 'Whole area'
+      default: true
+  map:
+    map: &ruby-sapphire.map.map hoenn
+    overlay: '<rect width="26" height="8" x="32" y="128" />'
+emerald: *ruby-sapphire
+omega-ruby-alpha-sapphire:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas:
+    sea-level:
+      name: 'Sea Level'
+      default: true
+    underwater:
+      name: Underwater
+  map:
+    map: *ruby-sapphire.map.map
+    overlay: '<rect width="32" height="11" x="38" y="184" />'

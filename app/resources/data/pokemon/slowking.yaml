@@ -1,0 +1,901 @@
+gold-silver:
+  name: &gold-silver.name SLOWKING
+  position: &gold-silver.position 198
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 199
+    original-johto: 81
+    original-johto-abc: 187
+  pokemon:
+    slowking:
+      name: SLOWKING
+      default: &gold-silver.pokemon.slowking.default true
+      capture_rate: &gold-silver.pokemon.slowking.capture_rate 70
+      experience: &gold-silver.pokemon.slowking.experience 164
+      types: &gold-silver.pokemon.slowking.types
+        - water
+        - psychic
+      stats: &gold-silver.pokemon.slowking.stats
+        hp:
+          base_value: 95
+          effort_change: 95
+        attack:
+          base_value: 75
+          effort_change: 75
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 30
+          effort_change: 30
+        special-attack:
+          base_value: 100
+          effort_change: 100
+        special-defense:
+          base_value: 110
+          effort_change: 100
+      growth_rate: &gold-silver.pokemon.slowking.growth_rate medium
+      female_rate: &gold-silver.pokemon.slowking.female_rate 50
+      hatch_steps: &gold-silver.pokemon.slowking.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.slowking.egg_groups
+        - monster
+        - water1
+      wild_held_items:
+        gold: &gold-silver.pokemon.slowking.wild_held_items.gold
+          kings-rock: 2
+        silver: *gold-silver.pokemon.slowking.wild_held_items.gold
+      genus: &gold-silver.pokemon.slowking.genus 'ROYAL Pokémon'
+      height: &gold-silver.pokemon.slowking.height 20
+      weight: &gold-silver.pokemon.slowking.weight 793
+      flavor_text:
+        gold: |
+          It has incredible
+          intellect and in-
+          tuition. Whatever
+          the situation, it
+          remains calm and
+          collected.
+        silver: |
+          When its head was
+          bitten, toxins
+          entered SLOWPOKE's
+          head and unlocked
+          an extraordinary
+          power.
+      evolution_parent: &gold-silver.pokemon.slowking.evolution_parent slowpoke/slowpoke
+      evolution_conditions: &gold-silver.pokemon.slowking.evolution_conditions
+        trade:
+          held_item: kings-rock
+      forms:
+        slowking:
+          name: SLOWKING
+          form_name: &gold-silver.pokemon.slowking.forms.slowking.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.slowking.forms.slowking.battle_only false
+          sprites:
+            - gold-silver/slowking-default.png
+            - gold-silver/back/slowking-default.png
+            - gold-silver/shiny/slowking-default.png
+          art: &gold-silver.pokemon.slowking.forms.slowking.art
+            - slowking-default.png
+          cry: &gold-silver.pokemon.slowking.forms.slowking.cry gen5/slowking-default.webm
+          icon: &gold-silver.pokemon.slowking.forms.slowking.icon gen2/slowpoke.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    slowking:
+      name: SLOWKING
+      default: *gold-silver.pokemon.slowking.default
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      experience: *gold-silver.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      stats: *gold-silver.pokemon.slowking.stats
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.slowking.wild_held_items.gold
+      genus: *gold-silver.pokemon.slowking.genus
+      height: *gold-silver.pokemon.slowking.height
+      weight: *gold-silver.pokemon.slowking.weight
+      flavor_text:
+        crystal: |
+          Every time it ya-
+          wns, SHELLDER
+          injects more poi-
+          son into it. The
+          poison makes it
+          more intelligent.
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      forms:
+        slowking:
+          name: SLOWKING
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          sprites:
+            - crystal/slowking-default.png
+            - crystal/back/slowking-default.png
+            - crystal/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+          icon: *gold-silver.pokemon.slowking.forms.slowking.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 199
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 344
+  pokemon:
+    slowking:
+      name: SLOWKING
+      default: *gold-silver.pokemon.slowking.default
+      forms_switchable: &ruby-sapphire.pokemon.slowking.forms_switchable false
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      experience: *gold-silver.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      stats: &ruby-sapphire.pokemon.slowking.stats
+        hp:
+          base_value: 95
+          effort_change: 0
+        attack:
+          base_value: 75
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 3
+        special-defense:
+          base_value: 95
+          effort_change: 3
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+          kings-rock: 5
+        sapphire: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.slowking.happiness 70
+      abilities: &ruby-sapphire.pokemon.slowking.abilities
+        oblivious: &ruby-sapphire.pokemon.slowking.abilities.oblivious
+          hidden: &ruby-sapphire.pokemon.slowking.abilities.oblivious.hidden false
+          position: 1
+        own-tempo: &ruby-sapphire.pokemon.slowking.abilities.own-tempo
+          hidden: *ruby-sapphire.pokemon.slowking.abilities.oblivious.hidden
+          position: 2
+      genus: *gold-silver.pokemon.slowking.genus
+      height: *gold-silver.pokemon.slowking.height
+      weight: &ruby-sapphire.pokemon.slowking.weight 795
+      flavor_text:
+        ruby: |
+          SLOWKING undertakes research every
+          day in an effort to solve the mysteries
+           of the world.
+          However, this POKéMON apparently
+          forgets everything it has learned if
+          the SHELLDER on its head comes off.
+        sapphire: |
+          SLOWKING undertakes research every
+          day in an effort to solve the mysteries
+          of the world.
+          However, this POKéMON apparently
+          forgets everything it has learned if
+          the SHELLDER on its head comes off.
+      forms:
+        slowking:
+          name: SLOWKING
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: &ruby-sapphire.pokemon.slowking.forms.slowking.icon gen5/slowking-default.png
+          sprites:
+            - ruby-sapphire/slowking-default.png
+            - ruby-sapphire/back/slowking-default.png
+            - ruby-sapphire/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: &ruby-sapphire.pokemon.slowking.forms.slowking.footprint slowking.png
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    slowking:
+      name: SLOWKING
+      default: *gold-silver.pokemon.slowking.default
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      experience: *gold-silver.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      stats: *ruby-sapphire.pokemon.slowking.stats
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      abilities: *ruby-sapphire.pokemon.slowking.abilities
+      genus: *gold-silver.pokemon.slowking.genus
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      flavor_text:
+        emerald: |
+          It undertakes research every day to
+          solve the mysteries of the world.
+          However, it apparently forgets everything
+          if the SHELLDER on its head comes off.
+      forms:
+        slowking:
+          name: SLOWKING
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *ruby-sapphire.pokemon.slowking.forms.slowking.icon
+          sprites:
+            - emerald/slowking-default.png
+            - emerald/shiny/slowking-default.png
+            - emerald/animated/slowking-default.webm
+            - emerald/animated/shiny/slowking-default.webm
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 305
+  pokemon:
+    slowking:
+      name: SLOWKING
+      default: *gold-silver.pokemon.slowking.default
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      experience: *gold-silver.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      stats: *ruby-sapphire.pokemon.slowking.stats
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      abilities: *ruby-sapphire.pokemon.slowking.abilities
+      genus: *gold-silver.pokemon.slowking.genus
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      forms:
+        slowking:
+          name: SLOWKING
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          sprites:
+            - colosseum/slowking-default.png
+            - colosseum/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    slowking:
+      name: SLOWKING
+      default: *gold-silver.pokemon.slowking.default
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      experience: *gold-silver.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      stats: *ruby-sapphire.pokemon.slowking.stats
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      abilities: *ruby-sapphire.pokemon.slowking.abilities
+      genus: *gold-silver.pokemon.slowking.genus
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      forms:
+        slowking:
+          name: SLOWKING
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          sprites:
+            - xd/slowking-default.png
+            - xd/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    slowking:
+      name: SLOWKING
+      default: *gold-silver.pokemon.slowking.default
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      experience: *gold-silver.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      stats: *ruby-sapphire.pokemon.slowking.stats
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      abilities: *ruby-sapphire.pokemon.slowking.abilities
+      genus: *gold-silver.pokemon.slowking.genus
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      flavor_text:
+        firered: |
+          When its head was bitten, toxins entered
+          SLOWPOKE's head and unlocked an
+          extraordinary power.
+        leafgreen: |
+          It has incredible intellect and intuition.
+          Whatever the situation,  it remains calm
+          and collected.
+      forms:
+        slowking:
+          name: SLOWKING
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *ruby-sapphire.pokemon.slowking.forms.slowking.icon
+          sprites:
+            - firered-leafgreen/slowking-default.png
+            - firered-leafgreen/back/slowking-default.png
+            - firered-leafgreen/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Slowking
+  position: &diamond-pearl.position 87
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    slowking:
+      genus: &diamond-pearl.pokemon.slowking.genus 'Royal Pokémon'
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      shape: &diamond-pearl.pokemon.slowking.shape upright
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: &diamond-pearl.pokemon.slowking.baby false
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      pal_park: &diamond-pearl.pokemon.slowking.pal_park
+        area: pond
+        rate: 10
+        score: 80
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: &diamond-pearl.pokemon.slowking.experience 172
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      stats: &diamond-pearl.pokemon.slowking.stats
+        hp:
+          base_value: 95
+          effort_change: 0
+        attack:
+          base_value: 75
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 110
+          effort_change: 3
+      abilities: *ruby-sapphire.pokemon.slowking.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        diamond: |
+          Being bitten by SHELLDER gave it
+          intelligence comparable to that of
+          award-winning scientists.
+        pearl: |
+          Being bitten by SHELLDER gave it
+          intelligence comparable to that of
+          award-winning scientists.
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *ruby-sapphire.pokemon.slowking.forms.slowking.icon
+          sprites:
+            - diamond-pearl/slowking-default.png
+            - diamond-pearl/back/slowking-default.png
+            - diamond-pearl/back/shiny/slowking-default.png
+            - diamond-pearl/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    slowking:
+      genus: *diamond-pearl.pokemon.slowking.genus
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      shape: *diamond-pearl.pokemon.slowking.shape
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: *diamond-pearl.pokemon.slowking.baby
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      pal_park: *diamond-pearl.pokemon.slowking.pal_park
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: *diamond-pearl.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      stats: *diamond-pearl.pokemon.slowking.stats
+      abilities: *ruby-sapphire.pokemon.slowking.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        platinum: |
+          Being bitten by SHELLDER gave it
+          intelligence comparable to that of
+          award-winning scientists.
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *ruby-sapphire.pokemon.slowking.forms.slowking.icon
+          sprites:
+            - platinum/slowking-default.png
+            - platinum/back/slowking-default.png
+            - platinum/back/shiny/slowking-default.png
+            - platinum/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 82
+  pokemon:
+    slowking:
+      genus: *diamond-pearl.pokemon.slowking.genus
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      shape: *diamond-pearl.pokemon.slowking.shape
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: *diamond-pearl.pokemon.slowking.baby
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      pal_park: *diamond-pearl.pokemon.slowking.pal_park
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: *diamond-pearl.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      stats: *diamond-pearl.pokemon.slowking.stats
+      abilities: *ruby-sapphire.pokemon.slowking.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It has incredible intellect and
+          intuition. Whatever the situation,
+          it remains calm and collected.
+        soulsilver: |
+          When its head was bitten, toxins
+          entered SLOWPOKE’s head and unlocked
+          an extraordinary power.
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 5
+              range: 5
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.slowking.forms.slowking.icon
+          sprites:
+            - heartgold-soulsilver/slowking-default.png
+            - heartgold-soulsilver/back/slowking-default.png
+            - heartgold-soulsilver/back/shiny/slowking-default.png
+            - heartgold-soulsilver/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    slowking:
+      genus: *diamond-pearl.pokemon.slowking.genus
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      color: &black-white.pokemon.slowking.color pink
+      shape: *diamond-pearl.pokemon.slowking.shape
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: *diamond-pearl.pokemon.slowking.baby
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: *diamond-pearl.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      stats: *diamond-pearl.pokemon.slowking.stats
+      abilities: &black-white.pokemon.slowking.abilities
+        oblivious: *ruby-sapphire.pokemon.slowking.abilities.oblivious
+        own-tempo: *ruby-sapphire.pokemon.slowking.abilities.own-tempo
+        regenerator:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        black: |
+          Being bitten by Shellder gave it
+          intelligence comparable to that of
+          award-winning scientists.
+        white: |
+          Being bitten by Shellder gave it
+          intelligence comparable to that of
+          award-winning scientists.
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *ruby-sapphire.pokemon.slowking.forms.slowking.icon
+          sprites:
+            - black-white/slowking-default.png
+            - black-white/back/slowking-default.png
+            - black-white/back/shiny/slowking-default.png
+            - black-white/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    slowking:
+      genus: *diamond-pearl.pokemon.slowking.genus
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      color: *black-white.pokemon.slowking.color
+      shape: *diamond-pearl.pokemon.slowking.shape
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: *diamond-pearl.pokemon.slowking.baby
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: *diamond-pearl.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      stats: *diamond-pearl.pokemon.slowking.stats
+      abilities: *black-white.pokemon.slowking.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        black-2: |
+          Being bitten by Shellder gave it
+          intelligence comparable to that of
+          award-winning scientists.
+        white-2: |
+          Being bitten by Shellder gave it
+          intelligence comparable to that of
+          award-winning scientists.
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *ruby-sapphire.pokemon.slowking.forms.slowking.icon
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *gold-silver.pokemon.slowking.forms.slowking.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-coastal: 135
+  pokemon:
+    slowking:
+      genus: *diamond-pearl.pokemon.slowking.genus
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      color: *black-white.pokemon.slowking.color
+      shape: *diamond-pearl.pokemon.slowking.shape
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: *diamond-pearl.pokemon.slowking.baby
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: *diamond-pearl.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      mega: &x-y.pokemon.slowking.mega false
+      stats: *diamond-pearl.pokemon.slowking.stats
+      abilities: *black-white.pokemon.slowking.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        x: |
+          It has incredible intellect and intuition. Whatever
+          the situation, it remains calm and collected.
+        'y': |
+          When its head was bitten, toxins entered
+          Slowpoke’s head and unlocked an
+          extraordinary power.
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: &x-y.pokemon.slowking.forms.slowking.icon slowking-default.png
+          sprites:
+            - x-y/slowking-default.png
+            - x-y/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: &x-y.pokemon.slowking.forms.slowking.cry slowking-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    slowking:
+      genus: *diamond-pearl.pokemon.slowking.genus
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      color: *black-white.pokemon.slowking.color
+      shape: *diamond-pearl.pokemon.slowking.shape
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: *diamond-pearl.pokemon.slowking.baby
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: *diamond-pearl.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      mega: *x-y.pokemon.slowking.mega
+      stats: *diamond-pearl.pokemon.slowking.stats
+      abilities: *black-white.pokemon.slowking.abilities
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Slowking undertakes research every day in an effort to solve
+          the mysteries of the world. However, this Pokémon apparently
+          forgets everything it has learned if the Shellder on its head
+          comes off.
+        alpha-sapphire: |
+          Slowking undertakes research every day in an effort to solve
+          the mysteries of the world. However, this Pokémon apparently
+          forgets everything it has learned if the Shellder on its head
+          comes off.
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *x-y.pokemon.slowking.forms.slowking.icon
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *x-y.pokemon.slowking.forms.slowking.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/slowking-default.png
+            - omega-ruby-alpha-sapphire/shiny/slowking-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 39
+    original-melemele: 39
+    original-ulaula: 20
+  pokemon:
+    slowking:
+      genus: *diamond-pearl.pokemon.slowking.genus
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      color: *black-white.pokemon.slowking.color
+      shape: *diamond-pearl.pokemon.slowking.shape
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: *diamond-pearl.pokemon.slowking.baby
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: *diamond-pearl.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      mega: *x-y.pokemon.slowking.mega
+      stats: *diamond-pearl.pokemon.slowking.stats
+      abilities: *black-white.pokemon.slowking.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        sun: |-
+          A poisonous bite reacted with its system,
+          blessing it with the enhanced intellect of a
+          genius. It has full control of its psychic powers.
+        moon: |-
+          This Pokémon is so famed for its intellect that a
+          proverb still persists in some regions: “When in
+          doubt, ask Slowking.”
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *x-y.pokemon.slowking.forms.slowking.icon
+          sprites:
+            - sun-moon/slowking-default.png
+            - sun-moon/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *x-y.pokemon.slowking.forms.slowking.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 46
+    updated-melemele: 46
+    updated-ulaula: 20
+  pokemon:
+    slowking:
+      genus: *diamond-pearl.pokemon.slowking.genus
+      evolution_parent: *gold-silver.pokemon.slowking.evolution_parent
+      color: *black-white.pokemon.slowking.color
+      shape: *diamond-pearl.pokemon.slowking.shape
+      female_rate: *gold-silver.pokemon.slowking.female_rate
+      capture_rate: *gold-silver.pokemon.slowking.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowking.happiness
+      baby: *diamond-pearl.pokemon.slowking.baby
+      hatch_steps: *gold-silver.pokemon.slowking.hatch_steps
+      growth_rate: *gold-silver.pokemon.slowking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowking.forms_switchable
+      name: Slowking
+      default: *gold-silver.pokemon.slowking.default
+      height: *gold-silver.pokemon.slowking.height
+      weight: *ruby-sapphire.pokemon.slowking.weight
+      experience: *diamond-pearl.pokemon.slowking.experience
+      types: *gold-silver.pokemon.slowking.types
+      egg_groups: *gold-silver.pokemon.slowking.egg_groups
+      mega: *x-y.pokemon.slowking.mega
+      stats: *diamond-pearl.pokemon.slowking.stats
+      abilities: *black-white.pokemon.slowking.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.slowking.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.slowking.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It’s constantly coming up with new ideas that
+          would change the world, but as soon as it
+          hits upon a new idea, it forgets it.
+        ultra-moon: |-
+          It’s called “the sage of the sea.” It engages in
+          battles of wits with Oranguru, but the result is
+          usually a draw.
+      forms:
+        slowking:
+          name: Slowking
+          form_name: *gold-silver.pokemon.slowking.forms.slowking.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.slowking.forms.slowking.battle_only
+          icon: *x-y.pokemon.slowking.forms.slowking.icon
+          sprites:
+            - ultra-sun-ultra-moon/slowking-default.png
+            - ultra-sun-ultra-moon/shiny/slowking-default.png
+          art: *gold-silver.pokemon.slowking.forms.slowking.art
+          footprint: *ruby-sapphire.pokemon.slowking.forms.slowking.footprint
+          cry: *x-y.pokemon.slowking.forms.slowking.cry

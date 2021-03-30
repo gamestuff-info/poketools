@@ -1,0 +1,958 @@
+red-blue:
+  name: &red-blue.name FLAREON
+  position: &red-blue.position 136
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 136
+    kanto: 136
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: &red-blue.pokemon.flareon.default true
+      capture_rate: &red-blue.pokemon.flareon.capture_rate 45
+      experience: &red-blue.pokemon.flareon.experience 198
+      types: &red-blue.pokemon.flareon.types
+        - fire
+      stats: &red-blue.pokemon.flareon.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 130
+          effort_change: 130
+        defense:
+          base_value: 60
+          effort_change: 60
+        speed:
+          base_value: 65
+          effort_change: 65
+        special:
+          base_value: 110
+          effort_change: 110
+      growth_rate: &red-blue.pokemon.flareon.growth_rate medium
+      genus: &red-blue.pokemon.flareon.genus 'FLAME Pokémon'
+      height: &red-blue.pokemon.flareon.height 8
+      weight: &red-blue.pokemon.flareon.weight 2494
+      flavor_text:
+        red: |
+          When storing
+          thermal energy in
+          its body, its
+          temperature could
+           soar to over 1600
+          degrees.
+        blue: |
+          When storing
+          thermal energy in
+          its body, its
+          temperature could
+           soar to over 1600
+          degrees.
+      evolution_parent: &red-blue.pokemon.flareon.evolution_parent eevee/eevee
+      evolution_conditions: &red-blue.pokemon.flareon.evolution_conditions
+        use-item:
+          trigger_item: fire-stone
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: &red-blue.pokemon.flareon.forms.flareon.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.flareon.forms.flareon.battle_only false
+          sprites:
+            - red-blue/flareon-default.png
+            - red-blue/gray/flareon-default.png
+            - red-blue/back/flareon-default.png
+          art: &red-blue.pokemon.flareon.forms.flareon.art
+            - flareon-default.png
+          cry: &red-blue.pokemon.flareon.forms.flareon.cry gen5/flareon-default.webm
+          icon: &red-blue.pokemon.flareon.forms.flareon.icon gen1/quadruped.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: *red-blue.pokemon.flareon.default
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      experience: *red-blue.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      stats: *red-blue.pokemon.flareon.stats
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      genus: *red-blue.pokemon.flareon.genus
+      height: *red-blue.pokemon.flareon.height
+      weight: *red-blue.pokemon.flareon.weight
+      flavor_text:
+        yellow: |
+          It has a flame
+          chamber inside its
+          body. It inhales,
+          then blows out
+          fire that is over
+          3,000F degrees.
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          sprites:
+            - yellow/flareon-default.png
+            - yellow/gray/flareon-default.png
+            - yellow/back/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+          icon: *red-blue.pokemon.flareon.forms.flareon.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 135
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 182
+    original-johto-abc: 50
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: *red-blue.pokemon.flareon.default
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      experience: *red-blue.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      stats: &gold-silver.pokemon.flareon.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 130
+          effort_change: 130
+        defense:
+          base_value: 60
+          effort_change: 60
+        speed:
+          base_value: 65
+          effort_change: 65
+        special-attack:
+          base_value: 95
+          effort_change: 95
+        special-defense:
+          base_value: 110
+          effort_change: 95
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      female_rate: &gold-silver.pokemon.flareon.female_rate 12
+      hatch_steps: &gold-silver.pokemon.flareon.hatch_steps 35
+      egg_groups: &gold-silver.pokemon.flareon.egg_groups
+        - ground
+      genus: *red-blue.pokemon.flareon.genus
+      height: *red-blue.pokemon.flareon.height
+      weight: &gold-silver.pokemon.flareon.weight 249
+      flavor_text:
+        gold: |
+          It stores some of
+          the air it inhales
+          in its internal
+          flame pouch, which
+          heats it to over
+          3,000 degrees.
+        silver: |
+          It fluffs out its
+          fur collar to cool
+          down its body
+          temperature, which
+          can reach 1,650
+          degrees.
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          sprites:
+            - gold-silver/flareon-default.png
+            - gold-silver/back/flareon-default.png
+            - gold-silver/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+          icon: &gold-silver.pokemon.flareon.forms.flareon.icon gen2/fox.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: *red-blue.pokemon.flareon.default
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      experience: *red-blue.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      stats: *gold-silver.pokemon.flareon.stats
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      genus: *red-blue.pokemon.flareon.genus
+      height: *red-blue.pokemon.flareon.height
+      weight: *gold-silver.pokemon.flareon.weight
+      flavor_text:
+        crystal: |
+          Once it has stored
+          up enough heat,
+          this #MON's
+          body temperature
+          can reach up to
+          1700 degrees.
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          sprites:
+            - crystal/flareon-default.png
+            - crystal/back/flareon-default.png
+            - crystal/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+          icon: *gold-silver.pokemon.flareon.forms.flareon.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 291
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: *red-blue.pokemon.flareon.default
+      forms_switchable: &ruby-sapphire.pokemon.flareon.forms_switchable false
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      experience: *red-blue.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      stats: &ruby-sapphire.pokemon.flareon.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 130
+          effort_change: 2
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      happiness: &ruby-sapphire.pokemon.flareon.happiness 70
+      abilities: &ruby-sapphire.pokemon.flareon.abilities
+        flash-fire: &ruby-sapphire.pokemon.flareon.abilities.flash-fire
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.flareon.genus
+      height: &ruby-sapphire.pokemon.flareon.height 9
+      weight: &ruby-sapphire.pokemon.flareon.weight 250
+      flavor_text:
+        ruby: |
+          FLAREON's fluffy fur has a functional
+          purpose - it releases heat into the air
+          so that its body does not get
+          excessively hot.
+          This POKéMON's body temperature can
+          rise to a maximum of 1,650 degrees F.
+        sapphire: |
+          FLAREON's fluffy fur has a functional
+          purpose - it releases heat into the air
+          so that its body does not get
+          excessively hot.
+          This POKéMON's body temperature can
+          rise to a maximum of 1,650 degrees F.
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: &ruby-sapphire.pokemon.flareon.forms.flareon.icon gen5/flareon-default.png
+          sprites:
+            - ruby-sapphire/flareon-default.png
+            - ruby-sapphire/back/flareon-default.png
+            - ruby-sapphire/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: &ruby-sapphire.pokemon.flareon.forms.flareon.footprint flareon.png
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: *red-blue.pokemon.flareon.default
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      experience: *red-blue.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      stats: *ruby-sapphire.pokemon.flareon.stats
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      abilities: *ruby-sapphire.pokemon.flareon.abilities
+      genus: *red-blue.pokemon.flareon.genus
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      flavor_text:
+        emerald: |
+          FLAREON's fluffy fur releases heat into
+          the air so that its body does not get
+          excessively hot. Its body temperature can
+          rise to a maximum of 1,650 degrees F.
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *ruby-sapphire.pokemon.flareon.forms.flareon.icon
+          sprites:
+            - emerald/flareon-default.png
+            - emerald/shiny/flareon-default.png
+            - emerald/animated/flareon-default.webm
+            - emerald/animated/shiny/flareon-default.webm
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 98
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: *red-blue.pokemon.flareon.default
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      experience: *red-blue.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      stats: *ruby-sapphire.pokemon.flareon.stats
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      abilities: *ruby-sapphire.pokemon.flareon.abilities
+      genus: *red-blue.pokemon.flareon.genus
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          sprites:
+            - colosseum/flareon-default.png
+            - colosseum/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: *red-blue.pokemon.flareon.default
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      experience: *red-blue.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      stats: *ruby-sapphire.pokemon.flareon.stats
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      abilities: *ruby-sapphire.pokemon.flareon.abilities
+      genus: *red-blue.pokemon.flareon.genus
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          sprites:
+            - xd/flareon-default.png
+            - xd/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    flareon:
+      name: FLAREON
+      default: *red-blue.pokemon.flareon.default
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      experience: *red-blue.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      stats: *ruby-sapphire.pokemon.flareon.stats
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      abilities: *ruby-sapphire.pokemon.flareon.abilities
+      genus: *red-blue.pokemon.flareon.genus
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      flavor_text:
+        firered: |
+          It has a flame bag inside its body. After
+          inhaling deeply, it blows out flames of
+          nearly 3,100 degrees Fahrenheit.
+        leafgreen: |
+          When storing thermal energy in its body,
+          its temperature can soar to over 1,600
+          degrees Fahrenheit.
+      forms:
+        flareon:
+          name: FLAREON
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *ruby-sapphire.pokemon.flareon.forms.flareon.icon
+          sprites:
+            - firered-leafgreen/flareon-default.png
+            - firered-leafgreen/back/flareon-default.png
+            - firered-leafgreen/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Flareon
+  position: &diamond-pearl.position 160
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    flareon:
+      genus: &diamond-pearl.pokemon.flareon.genus 'Flame Pokémon'
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      shape: &diamond-pearl.pokemon.flareon.shape quadruped
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: &diamond-pearl.pokemon.flareon.baby false
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      pal_park: &diamond-pearl.pokemon.flareon.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: &diamond-pearl.pokemon.flareon.experience 184
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      stats: &diamond-pearl.pokemon.flareon.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 130
+          effort_change: 2
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 110
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.flareon.abilities
+        flash-fire: *ruby-sapphire.pokemon.flareon.abilities.flash-fire
+        guts:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        diamond: |
+          It has a flame sac in its body.
+          Its body temperature tops 1,650
+          degrees Fahrenheit before battle.
+        pearl: |
+          It has a flame sac in its body.
+          Its body temperature tops 1,650
+          degrees Fahrenheit before battle.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *ruby-sapphire.pokemon.flareon.forms.flareon.icon
+          sprites:
+            - diamond-pearl/flareon-default.png
+            - diamond-pearl/back/flareon-default.png
+            - diamond-pearl/back/shiny/flareon-default.png
+            - diamond-pearl/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 166
+  pokemon:
+    flareon:
+      genus: *diamond-pearl.pokemon.flareon.genus
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      shape: *diamond-pearl.pokemon.flareon.shape
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: *diamond-pearl.pokemon.flareon.baby
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      pal_park: *diamond-pearl.pokemon.flareon.pal_park
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: *diamond-pearl.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      stats: *diamond-pearl.pokemon.flareon.stats
+      abilities: *diamond-pearl.pokemon.flareon.abilities
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        platinum: |
+          Inhaled air is heated in the flame
+          sac in its body to an intense fire
+          over 3,000 degrees Fahrenheit.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *ruby-sapphire.pokemon.flareon.forms.flareon.icon
+          sprites:
+            - platinum/flareon-default.png
+            - platinum/back/flareon-default.png
+            - platinum/back/shiny/flareon-default.png
+            - platinum/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 187
+  pokemon:
+    flareon:
+      genus: *diamond-pearl.pokemon.flareon.genus
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      shape: *diamond-pearl.pokemon.flareon.shape
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: *diamond-pearl.pokemon.flareon.baby
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      pal_park: *diamond-pearl.pokemon.flareon.pal_park
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: *diamond-pearl.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      stats: *diamond-pearl.pokemon.flareon.stats
+      abilities: *diamond-pearl.pokemon.flareon.abilities
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It stores some of the air it inhales in
+          its internal flame pouch, which heats it
+          to over 3,000 degrees Fahrenheit.
+        soulsilver: |
+          It fluffs out its fur collar to cool down
+          its body temperature, which can reach
+          1,650 degrees Fahrenheit.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 4
+              range: 3-5
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.flareon.forms.flareon.icon
+          sprites:
+            - heartgold-soulsilver/flareon-default.png
+            - heartgold-soulsilver/back/flareon-default.png
+            - heartgold-soulsilver/back/shiny/flareon-default.png
+            - heartgold-soulsilver/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    flareon:
+      genus: *diamond-pearl.pokemon.flareon.genus
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      color: &black-white.pokemon.flareon.color red
+      shape: *diamond-pearl.pokemon.flareon.shape
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: *diamond-pearl.pokemon.flareon.baby
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: *diamond-pearl.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      stats: *diamond-pearl.pokemon.flareon.stats
+      abilities: *diamond-pearl.pokemon.flareon.abilities
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        black: |
+          Inhaled air is heated in the flame
+          sac in its body to an intense fire
+          over 3,000 degrees Fahrenheit.
+        white: |
+          Inhaled air is heated in the flame
+          sac in its body to an intense fire
+          over 3,000 degrees Fahrenheit.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *ruby-sapphire.pokemon.flareon.forms.flareon.icon
+          sprites:
+            - black-white/flareon-default.png
+            - black-white/back/flareon-default.png
+            - black-white/back/shiny/flareon-default.png
+            - black-white/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 94
+  pokemon:
+    flareon:
+      genus: *diamond-pearl.pokemon.flareon.genus
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      color: *black-white.pokemon.flareon.color
+      shape: *diamond-pearl.pokemon.flareon.shape
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: *diamond-pearl.pokemon.flareon.baby
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: *diamond-pearl.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      stats: *diamond-pearl.pokemon.flareon.stats
+      abilities: *diamond-pearl.pokemon.flareon.abilities
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        black-2: |
+          Inhaled air is carried to its flame sac,
+          heated, and exhaled as fire
+          that reaches over 3,000 degrees F.
+        white-2: |
+          Inhaled air is carried to its flame sac,
+          heated, and exhaled as fire
+          that reaches over 3,000 degrees F.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *ruby-sapphire.pokemon.flareon.forms.flareon.icon
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *red-blue.pokemon.flareon.forms.flareon.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 80
+  pokemon:
+    flareon:
+      genus: *diamond-pearl.pokemon.flareon.genus
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      color: *black-white.pokemon.flareon.color
+      shape: *diamond-pearl.pokemon.flareon.shape
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: *diamond-pearl.pokemon.flareon.baby
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: *diamond-pearl.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      mega: &x-y.pokemon.flareon.mega false
+      stats: *diamond-pearl.pokemon.flareon.stats
+      abilities: *diamond-pearl.pokemon.flareon.abilities
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        x: |
+          It has a flame sac in its body. Its body temperature
+          tops 1,650 degrees Fahrenheit before battle.
+        'y': |
+          It has a flame bag inside its body. After inhaling
+          deeply, it blows out flames of nearly
+          3,000 degrees Fahrenheit.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: &x-y.pokemon.flareon.forms.flareon.icon flareon-default.png
+          sprites:
+            - x-y/flareon-default.png
+            - x-y/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: &x-y.pokemon.flareon.forms.flareon.cry flareon-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    flareon:
+      genus: *diamond-pearl.pokemon.flareon.genus
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      color: *black-white.pokemon.flareon.color
+      shape: *diamond-pearl.pokemon.flareon.shape
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: *diamond-pearl.pokemon.flareon.baby
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: *diamond-pearl.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      mega: *x-y.pokemon.flareon.mega
+      stats: *diamond-pearl.pokemon.flareon.stats
+      abilities: *diamond-pearl.pokemon.flareon.abilities
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Flareon’s fluffy fur has a functional purpose—it releases heat
+          into the air so that its body does not get excessively hot.
+          This Pokémon’s body temperature can rise to a maximum of
+          1,650 degrees Fahrenheit.
+        alpha-sapphire: |
+          Flareon’s fluffy fur has a functional purpose—it releases heat
+          into the air so that its body does not get excessively hot.
+          This Pokémon’s body temperature can rise to a maximum of
+          1,650 degrees Fahrenheit.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *x-y.pokemon.flareon.forms.flareon.icon
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *x-y.pokemon.flareon.forms.flareon.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/flareon-default.png
+            - omega-ruby-alpha-sapphire/shiny/flareon-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 126
+    original-akala: 53
+  pokemon:
+    flareon:
+      genus: *diamond-pearl.pokemon.flareon.genus
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      color: *black-white.pokemon.flareon.color
+      shape: *diamond-pearl.pokemon.flareon.shape
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: *diamond-pearl.pokemon.flareon.baby
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: *diamond-pearl.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      mega: *x-y.pokemon.flareon.mega
+      stats: *diamond-pearl.pokemon.flareon.stats
+      abilities: *diamond-pearl.pokemon.flareon.abilities
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        sun: |-
+          When it catches prey or finds berries, it
+          breathes fire on them until they’re well done,
+          and then it gobbles them up.
+        moon: |-
+          Its average body temperature is between 1,300
+          and 1,500 degrees Fahrenheit. In its internal
+          flame sac, temperatures reach 3,000 degrees.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *x-y.pokemon.flareon.forms.flareon.icon
+          sprites:
+            - sun-moon/flareon-default.png
+            - sun-moon/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *x-y.pokemon.flareon.forms.flareon.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 156
+    updated-akala: 57
+  pokemon:
+    flareon:
+      genus: *diamond-pearl.pokemon.flareon.genus
+      evolution_parent: *red-blue.pokemon.flareon.evolution_parent
+      color: *black-white.pokemon.flareon.color
+      shape: *diamond-pearl.pokemon.flareon.shape
+      female_rate: *gold-silver.pokemon.flareon.female_rate
+      capture_rate: *red-blue.pokemon.flareon.capture_rate
+      happiness: *ruby-sapphire.pokemon.flareon.happiness
+      baby: *diamond-pearl.pokemon.flareon.baby
+      hatch_steps: *gold-silver.pokemon.flareon.hatch_steps
+      growth_rate: *red-blue.pokemon.flareon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.flareon.forms_switchable
+      name: Flareon
+      default: *red-blue.pokemon.flareon.default
+      height: *ruby-sapphire.pokemon.flareon.height
+      weight: *ruby-sapphire.pokemon.flareon.weight
+      experience: *diamond-pearl.pokemon.flareon.experience
+      types: *red-blue.pokemon.flareon.types
+      egg_groups: *gold-silver.pokemon.flareon.egg_groups
+      mega: *x-y.pokemon.flareon.mega
+      stats: *diamond-pearl.pokemon.flareon.stats
+      abilities: *diamond-pearl.pokemon.flareon.abilities
+      evolution_conditions: *red-blue.pokemon.flareon.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          If it inhales deeply, that’s a sign it’s about to
+          attack. Prepare to be hit by flames of over
+          3,000 degrees Fahrenheit!
+        ultra-moon: |-
+          The flame chamber inside its body ignites when
+          Flareon gets agitated, reaching temperatures of
+          up to 1,650 degrees Fahrenheit.
+      forms:
+        flareon:
+          name: Flareon
+          form_name: *red-blue.pokemon.flareon.forms.flareon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.flareon.forms.flareon.battle_only
+          icon: *x-y.pokemon.flareon.forms.flareon.icon
+          sprites:
+            - ultra-sun-ultra-moon/flareon-default.png
+            - ultra-sun-ultra-moon/shiny/flareon-default.png
+          art: *red-blue.pokemon.flareon.forms.flareon.art
+          footprint: *ruby-sapphire.pokemon.flareon.forms.flareon.footprint
+          cry: *x-y.pokemon.flareon.forms.flareon.cry

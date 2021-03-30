@@ -1,0 +1,830 @@
+gold-silver:
+  name: &gold-silver.name ELEKID
+  position: &gold-silver.position 238
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 239
+    original-johto: 153
+    original-johto-abc: 41
+  pokemon:
+    elekid:
+      name: ELEKID
+      default: &gold-silver.pokemon.elekid.default true
+      capture_rate: &gold-silver.pokemon.elekid.capture_rate 45
+      experience: &gold-silver.pokemon.elekid.experience 106
+      types: &gold-silver.pokemon.elekid.types
+        - electric
+      stats: &gold-silver.pokemon.elekid.stats
+        hp:
+          base_value: 45
+          effort_change: 45
+        attack:
+          base_value: 63
+          effort_change: 63
+        defense:
+          base_value: 37
+          effort_change: 37
+        speed:
+          base_value: 95
+          effort_change: 95
+        special-attack:
+          base_value: 65
+          effort_change: 65
+        special-defense:
+          base_value: 55
+          effort_change: 65
+      growth_rate: &gold-silver.pokemon.elekid.growth_rate medium
+      female_rate: &gold-silver.pokemon.elekid.female_rate 25
+      hatch_steps: &gold-silver.pokemon.elekid.hatch_steps 25
+      egg_groups: &gold-silver.pokemon.elekid.egg_groups
+        - no-eggs
+      genus: &gold-silver.pokemon.elekid.genus 'ELECTRIC Pokémon'
+      height: &gold-silver.pokemon.elekid.height 6
+      weight: &gold-silver.pokemon.elekid.weight 235
+      flavor_text:
+        gold: |
+          It rotates its
+          arms to generate
+          electricity, but
+          it tires easily,
+          so it charges up
+          only a little bit.
+        silver: |
+          Even in the most
+          vicious storm,
+          this #MON plays
+          happily if thunder
+          rumbles in the
+          sky.
+      forms:
+        elekid:
+          name: ELEKID
+          form_name: &gold-silver.pokemon.elekid.forms.elekid.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.elekid.forms.elekid.battle_only false
+          sprites:
+            - gold-silver/elekid-default.png
+            - gold-silver/back/elekid-default.png
+            - gold-silver/shiny/elekid-default.png
+          art: &gold-silver.pokemon.elekid.forms.elekid.art
+            - elekid-default.png
+          cry: &gold-silver.pokemon.elekid.forms.elekid.cry gen5/elekid-default.webm
+          icon: &gold-silver.pokemon.elekid.forms.elekid.icon gen2/humanshape.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    elekid:
+      name: ELEKID
+      default: *gold-silver.pokemon.elekid.default
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      experience: *gold-silver.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      stats: *gold-silver.pokemon.elekid.stats
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      genus: *gold-silver.pokemon.elekid.genus
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      flavor_text:
+        crystal: |
+          It loves violent
+          thunder. The space
+          between its horns
+          flickers bluish-
+          white when it is
+          charging energy.
+      forms:
+        elekid:
+          name: ELEKID
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          sprites:
+            - crystal/elekid-default.png
+            - crystal/back/elekid-default.png
+            - crystal/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+          icon: *gold-silver.pokemon.elekid.forms.elekid.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 239
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 374
+  pokemon:
+    elekid:
+      name: ELEKID
+      default: *gold-silver.pokemon.elekid.default
+      forms_switchable: &ruby-sapphire.pokemon.elekid.forms_switchable false
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      experience: *gold-silver.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      stats: &ruby-sapphire.pokemon.elekid.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 63
+          effort_change: 0
+        defense:
+          base_value: 37
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 1
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      happiness: &ruby-sapphire.pokemon.elekid.happiness 70
+      abilities: &ruby-sapphire.pokemon.elekid.abilities
+        static: &ruby-sapphire.pokemon.elekid.abilities.static
+          hidden: false
+          position: 1
+      genus: *gold-silver.pokemon.elekid.genus
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      flavor_text:
+        ruby: |
+          ELEKID stores electricity in its body.
+          If it touches metal and accidentally
+           discharges all its built-up electricity,
+          this POKéMON begins swinging its arms
+          in circles to recharge itself.
+        sapphire: |
+          ELEKID stores electricity in its body.
+          If it touches metal and accidentally
+          discharges all its built-up electricity,
+          this POKéMON begins swinging its arms
+          in circles to recharge itself.
+      forms:
+        elekid:
+          name: ELEKID
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: &ruby-sapphire.pokemon.elekid.forms.elekid.icon gen5/elekid-default.png
+          sprites:
+            - ruby-sapphire/elekid-default.png
+            - ruby-sapphire/back/elekid-default.png
+            - ruby-sapphire/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: &ruby-sapphire.pokemon.elekid.forms.elekid.footprint elekid.png
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    elekid:
+      name: ELEKID
+      default: *gold-silver.pokemon.elekid.default
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      experience: *gold-silver.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      stats: *ruby-sapphire.pokemon.elekid.stats
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      abilities: *ruby-sapphire.pokemon.elekid.abilities
+      genus: *gold-silver.pokemon.elekid.genus
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      flavor_text:
+        emerald: |
+          If it touches metal and discharges the
+          electricity it has stored in its body, an
+          ELEKID begins swinging its arms in circles
+          to recharge itself.
+      forms:
+        elekid:
+          name: ELEKID
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *ruby-sapphire.pokemon.elekid.forms.elekid.icon
+          sprites:
+            - emerald/elekid-default.png
+            - emerald/shiny/elekid-default.png
+            - emerald/animated/elekid-default.webm
+            - emerald/animated/shiny/elekid-default.webm
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 87
+  pokemon:
+    elekid:
+      name: ELEKID
+      default: *gold-silver.pokemon.elekid.default
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      experience: *gold-silver.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      stats: *ruby-sapphire.pokemon.elekid.stats
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      abilities: *ruby-sapphire.pokemon.elekid.abilities
+      genus: *gold-silver.pokemon.elekid.genus
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      forms:
+        elekid:
+          name: ELEKID
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          sprites:
+            - colosseum/elekid-default.png
+            - colosseum/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    elekid:
+      name: ELEKID
+      default: *gold-silver.pokemon.elekid.default
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      experience: *gold-silver.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      stats: *ruby-sapphire.pokemon.elekid.stats
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      abilities: *ruby-sapphire.pokemon.elekid.abilities
+      genus: *gold-silver.pokemon.elekid.genus
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      forms:
+        elekid:
+          name: ELEKID
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          sprites:
+            - xd/elekid-default.png
+            - xd/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    elekid:
+      name: ELEKID
+      default: *gold-silver.pokemon.elekid.default
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      experience: *gold-silver.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      stats: *ruby-sapphire.pokemon.elekid.stats
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      abilities: *ruby-sapphire.pokemon.elekid.abilities
+      genus: *gold-silver.pokemon.elekid.genus
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      flavor_text:
+        firered: |
+          Even in the most vicious storm, this
+          POKéMON plays happily if thunder rumbles
+          in the sky.
+        leafgreen: |
+          It rotates its arms to generate
+          electricity, but it tires easily,  so it
+          charges up only a little bit.
+      forms:
+        elekid:
+          name: ELEKID
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *ruby-sapphire.pokemon.elekid.forms.elekid.icon
+          sprites:
+            - firered-leafgreen/elekid-default.png
+            - firered-leafgreen/back/elekid-default.png
+            - firered-leafgreen/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+diamond-pearl:
+  name: &diamond-pearl.name Elekid
+  position: &diamond-pearl.position 145
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    elekid:
+      genus: &diamond-pearl.pokemon.elekid.genus 'Electric Pokémon'
+      shape: &diamond-pearl.pokemon.elekid.shape humanoid
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: &diamond-pearl.pokemon.elekid.baby true
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      pal_park: &diamond-pearl.pokemon.elekid.pal_park
+        area: mountain
+        rate: 10
+        score: 80
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: &diamond-pearl.pokemon.elekid.experience 72
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      stats: &diamond-pearl.pokemon.elekid.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 63
+          effort_change: 0
+        defense:
+          base_value: 37
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 1
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.elekid.abilities
+        static: *ruby-sapphire.pokemon.elekid.abilities.static
+        vital-spirit:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.elekid.wild_held_items.diamond
+          electirizer: 50
+        pearl: &diamond-pearl.pokemon.elekid.wild_held_items.pearl
+          electirizer: 5
+      flavor_text:
+        diamond: |
+          It generates electricity by
+          whirling its arms. However, it
+          can’t store the energy it makes.
+        pearl: |
+          It generates electricity by
+          whirling its arms. However, it
+          can’t store the energy it makes.
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *ruby-sapphire.pokemon.elekid.forms.elekid.icon
+          sprites:
+            - diamond-pearl/elekid-default.png
+            - diamond-pearl/back/elekid-default.png
+            - diamond-pearl/back/shiny/elekid-default.png
+            - diamond-pearl/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 197
+  pokemon:
+    elekid:
+      genus: *diamond-pearl.pokemon.elekid.genus
+      shape: *diamond-pearl.pokemon.elekid.shape
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: *diamond-pearl.pokemon.elekid.baby
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      pal_park: *diamond-pearl.pokemon.elekid.pal_park
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: *diamond-pearl.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      stats: *diamond-pearl.pokemon.elekid.stats
+      abilities: *diamond-pearl.pokemon.elekid.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.elekid.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          A weak electric current flows
+          between its horns. Sticking a hand
+          there shocks the unwary.
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *ruby-sapphire.pokemon.elekid.forms.elekid.icon
+          sprites:
+            - platinum/elekid-default.png
+            - platinum/back/elekid-default.png
+            - platinum/back/shiny/elekid-default.png
+            - platinum/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 156
+  pokemon:
+    elekid:
+      genus: *diamond-pearl.pokemon.elekid.genus
+      shape: *diamond-pearl.pokemon.elekid.shape
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: *diamond-pearl.pokemon.elekid.baby
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      pal_park: *diamond-pearl.pokemon.elekid.pal_park
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: *diamond-pearl.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      stats: *diamond-pearl.pokemon.elekid.stats
+      abilities: *diamond-pearl.pokemon.elekid.abilities
+      flavor_text:
+        heartgold: |
+          It rotates its arms to generate
+          electricity, but it tires easily,
+          so it only charges up a little bit.
+        soulsilver: |
+          Even in the most vicious storm,
+          this Pokémon plays happily if thunder
+          rumbles in the sky.
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 1
+              range: 1-2
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.elekid.forms.elekid.icon
+          sprites:
+            - heartgold-soulsilver/elekid-default.png
+            - heartgold-soulsilver/back/elekid-default.png
+            - heartgold-soulsilver/back/shiny/elekid-default.png
+            - heartgold-soulsilver/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    elekid:
+      genus: *diamond-pearl.pokemon.elekid.genus
+      color: &black-white.pokemon.elekid.color yellow
+      shape: *diamond-pearl.pokemon.elekid.shape
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: *diamond-pearl.pokemon.elekid.baby
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: *diamond-pearl.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      stats: *diamond-pearl.pokemon.elekid.stats
+      abilities: *diamond-pearl.pokemon.elekid.abilities
+      flavor_text:
+        black: |
+          A weak electric current flows
+          between its horns. Sticking a hand
+          there shocks the unwary.
+        white: |
+          A weak electric current flows
+          between its horns. Sticking a hand
+          there shocks the unwary.
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *ruby-sapphire.pokemon.elekid.forms.elekid.icon
+          sprites:
+            - black-white/elekid-default.png
+            - black-white/back/elekid-default.png
+            - black-white/back/shiny/elekid-default.png
+            - black-white/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 56
+  pokemon:
+    elekid:
+      genus: *diamond-pearl.pokemon.elekid.genus
+      color: *black-white.pokemon.elekid.color
+      shape: *diamond-pearl.pokemon.elekid.shape
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: *diamond-pearl.pokemon.elekid.baby
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: *diamond-pearl.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      stats: *diamond-pearl.pokemon.elekid.stats
+      abilities: *diamond-pearl.pokemon.elekid.abilities
+      flavor_text:
+        black-2: |
+          Spinning its arms around
+          to generate electricity makes the area
+          between its horns shine light blue.
+        white-2: |
+          Spinning its arms around
+          to generate electricity makes the area
+          between its horns shine light blue.
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *ruby-sapphire.pokemon.elekid.forms.elekid.icon
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *gold-silver.pokemon.elekid.forms.elekid.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    elekid:
+      genus: *diamond-pearl.pokemon.elekid.genus
+      color: *black-white.pokemon.elekid.color
+      shape: *diamond-pearl.pokemon.elekid.shape
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: *diamond-pearl.pokemon.elekid.baby
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: *diamond-pearl.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      mega: &x-y.pokemon.elekid.mega false
+      stats: *diamond-pearl.pokemon.elekid.stats
+      abilities: *diamond-pearl.pokemon.elekid.abilities
+      flavor_text:
+        x: |
+          It generates electricity by whirling its arms.
+          However, it can’t store the energy it makes.
+        'y': |
+          Spinning its arms around to generate electricity
+          makes the area between its horns shine light blue.
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: &x-y.pokemon.elekid.forms.elekid.icon elekid-default.png
+          sprites:
+            - x-y/elekid-default.png
+            - x-y/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: &x-y.pokemon.elekid.forms.elekid.cry elekid-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    elekid:
+      genus: *diamond-pearl.pokemon.elekid.genus
+      color: *black-white.pokemon.elekid.color
+      shape: *diamond-pearl.pokemon.elekid.shape
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: *diamond-pearl.pokemon.elekid.baby
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: *diamond-pearl.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      mega: *x-y.pokemon.elekid.mega
+      stats: *diamond-pearl.pokemon.elekid.stats
+      abilities: *diamond-pearl.pokemon.elekid.abilities
+      flavor_text:
+        omega-ruby: |
+          Elekid stores electricity in its body. If it touches metal and
+          accidentally discharges all its built-up electricity, this Pokémon
+          begins swinging its arms in circles to recharge itself.
+        alpha-sapphire: |
+          Elekid stores electricity in its body. If it touches metal and
+          accidentally discharges all its built-up electricity, this Pokémon
+          begins swinging its arms in circles to recharge itself.
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *x-y.pokemon.elekid.forms.elekid.icon
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *x-y.pokemon.elekid.forms.elekid.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/elekid-default.png
+            - omega-ruby-alpha-sapphire/shiny/elekid-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.elekid.wild_held_items.pearl
+        alpha-sapphire: *diamond-pearl.pokemon.elekid.wild_held_items.pearl
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 226
+    original-ulaula: 98
+  pokemon:
+    elekid:
+      genus: *diamond-pearl.pokemon.elekid.genus
+      color: *black-white.pokemon.elekid.color
+      shape: *diamond-pearl.pokemon.elekid.shape
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: *diamond-pearl.pokemon.elekid.baby
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: *diamond-pearl.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      mega: *x-y.pokemon.elekid.mega
+      stats: *diamond-pearl.pokemon.elekid.stats
+      abilities: *diamond-pearl.pokemon.elekid.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.elekid.wild_held_items.pearl
+        moon: *diamond-pearl.pokemon.elekid.wild_held_items.pearl
+      flavor_text:
+        sun: |-
+          When it’s in a house, electrical outlets serve as
+          its baby bottles. It sucks down electricity.
+        moon: |-
+          This Pokémon is constantly fighting with
+          Togedemaru that try to steal its electricity.
+          It’s a pretty even match.
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *x-y.pokemon.elekid.forms.elekid.icon
+          sprites:
+            - sun-moon/elekid-default.png
+            - sun-moon/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *x-y.pokemon.elekid.forms.elekid.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 295
+    updated-ulaula: 116
+  pokemon:
+    elekid:
+      genus: *diamond-pearl.pokemon.elekid.genus
+      color: *black-white.pokemon.elekid.color
+      shape: *diamond-pearl.pokemon.elekid.shape
+      female_rate: *gold-silver.pokemon.elekid.female_rate
+      capture_rate: *gold-silver.pokemon.elekid.capture_rate
+      happiness: *ruby-sapphire.pokemon.elekid.happiness
+      baby: *diamond-pearl.pokemon.elekid.baby
+      hatch_steps: *gold-silver.pokemon.elekid.hatch_steps
+      growth_rate: *gold-silver.pokemon.elekid.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.elekid.forms_switchable
+      name: Elekid
+      default: *gold-silver.pokemon.elekid.default
+      height: *gold-silver.pokemon.elekid.height
+      weight: *gold-silver.pokemon.elekid.weight
+      experience: *diamond-pearl.pokemon.elekid.experience
+      types: *gold-silver.pokemon.elekid.types
+      egg_groups: *gold-silver.pokemon.elekid.egg_groups
+      mega: *x-y.pokemon.elekid.mega
+      stats: *diamond-pearl.pokemon.elekid.stats
+      abilities: *diamond-pearl.pokemon.elekid.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.elekid.wild_held_items.pearl
+        ultra-moon: *diamond-pearl.pokemon.elekid.wild_held_items.pearl
+      flavor_text:
+        ultra-sun: |-
+          When it hears the crash of thunder, Elekid’s
+          mood improves. It can be useful to record that
+          sound and play it when Elekid’s feeling down.
+        ultra-moon: |-
+          When its horns shine a bluish white, that’s the
+          sign it’s fully charged. You’ll get a shocking
+          jolt if you touch it!
+      forms:
+        elekid:
+          name: Elekid
+          form_name: *gold-silver.pokemon.elekid.forms.elekid.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.elekid.forms.elekid.battle_only
+          icon: *x-y.pokemon.elekid.forms.elekid.icon
+          sprites:
+            - ultra-sun-ultra-moon/elekid-default.png
+            - ultra-sun-ultra-moon/shiny/elekid-default.png
+          art: *gold-silver.pokemon.elekid.forms.elekid.art
+          footprint: *ruby-sapphire.pokemon.elekid.forms.elekid.footprint
+          cry: *x-y.pokemon.elekid.forms.elekid.cry

@@ -1,0 +1,239 @@
+x-y:
+  name: &x-y.name Goomy
+  position: &x-y.position 704
+  numbers:
+    national: &x-y.numbers.national 704
+    kalos-mountain: 19
+  pokemon:
+    goomy:
+      genus: &x-y.pokemon.goomy.genus 'Soft Tissue Pokémon'
+      color: &x-y.pokemon.goomy.color purple
+      shape: &x-y.pokemon.goomy.shape squiggle
+      female_rate: &x-y.pokemon.goomy.female_rate 50
+      capture_rate: &x-y.pokemon.goomy.capture_rate 45
+      happiness: &x-y.pokemon.goomy.happiness 35
+      baby: &x-y.pokemon.goomy.baby false
+      hatch_steps: &x-y.pokemon.goomy.hatch_steps 40
+      growth_rate: &x-y.pokemon.goomy.growth_rate slow
+      forms_switchable: &x-y.pokemon.goomy.forms_switchable false
+      name: Goomy
+      default: &x-y.pokemon.goomy.default true
+      height: &x-y.pokemon.goomy.height 3
+      weight: &x-y.pokemon.goomy.weight 28
+      experience: &x-y.pokemon.goomy.experience 60
+      types: &x-y.pokemon.goomy.types
+        - dragon
+      egg_groups: *x-y.pokemon.goomy.types
+      mega: &x-y.pokemon.goomy.mega false
+      stats: &x-y.pokemon.goomy.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 1
+      abilities: &x-y.pokemon.goomy.abilities
+        sap-sipper:
+          hidden: &x-y.pokemon.goomy.abilities.sap-sipper.hidden false
+          position: 1
+        hydration:
+          hidden: *x-y.pokemon.goomy.abilities.sap-sipper.hidden
+          position: 2
+        gooey:
+          hidden: true
+          position: 3
+      flavor_text:
+        x: |
+          The weakest Dragon-type Pokémon,
+          it lives in damp, shady places, so its
+          body doesn’t dry out.
+        'y': |
+          It’s covered in a slimy membrane that makes
+          any punches or kicks slide off it harmlessly.
+      forms:
+        goomy:
+          name: Goomy
+          form_name: &x-y.pokemon.goomy.forms.goomy.form_name 'Default Form'
+          default: true
+          battle_only: &x-y.pokemon.goomy.forms.goomy.battle_only false
+          icon: &x-y.pokemon.goomy.forms.goomy.icon goomy-default.png
+          sprites:
+            - x-y/goomy-default.png
+            - x-y/shiny/goomy-default.png
+          art: &x-y.pokemon.goomy.forms.goomy.art
+            - goomy-default.png
+          footprint: &x-y.pokemon.goomy.forms.goomy.footprint goomy.png
+          cry: &x-y.pokemon.goomy.forms.goomy.cry goomy-default.webm
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+  pokemon:
+    goomy:
+      genus: *x-y.pokemon.goomy.genus
+      color: *x-y.pokemon.goomy.color
+      shape: *x-y.pokemon.goomy.shape
+      female_rate: *x-y.pokemon.goomy.female_rate
+      capture_rate: *x-y.pokemon.goomy.capture_rate
+      happiness: *x-y.pokemon.goomy.happiness
+      baby: *x-y.pokemon.goomy.baby
+      hatch_steps: *x-y.pokemon.goomy.hatch_steps
+      growth_rate: *x-y.pokemon.goomy.growth_rate
+      forms_switchable: *x-y.pokemon.goomy.forms_switchable
+      name: Goomy
+      default: *x-y.pokemon.goomy.default
+      height: *x-y.pokemon.goomy.height
+      weight: *x-y.pokemon.goomy.weight
+      experience: *x-y.pokemon.goomy.experience
+      types: *x-y.pokemon.goomy.types
+      egg_groups: *x-y.pokemon.goomy.types
+      mega: *x-y.pokemon.goomy.mega
+      stats: *x-y.pokemon.goomy.stats
+      abilities: *x-y.pokemon.goomy.abilities
+      flavor_text:
+        omega-ruby: |
+          The weakest Dragon-type Pokémon,
+          it lives in damp, shady places, so its
+          body doesn’t dry out.
+        alpha-sapphire: |
+          It’s covered in a slimy membrane that makes
+          any punches or kicks slide off it harmlessly.
+      forms:
+        goomy:
+          name: Goomy
+          form_name: *x-y.pokemon.goomy.forms.goomy.form_name
+          default: true
+          battle_only: *x-y.pokemon.goomy.forms.goomy.battle_only
+          icon: *x-y.pokemon.goomy.forms.goomy.icon
+          art: *x-y.pokemon.goomy.forms.goomy.art
+          footprint: *x-y.pokemon.goomy.forms.goomy.footprint
+          cry: *x-y.pokemon.goomy.forms.goomy.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/goomy-default.png
+            - omega-ruby-alpha-sapphire/shiny/goomy-default.png
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+    original-alola: 178
+    original-akala: 105
+    original-ulaula: 74
+    original-poni: 66
+  pokemon:
+    goomy:
+      genus: *x-y.pokemon.goomy.genus
+      color: *x-y.pokemon.goomy.color
+      shape: *x-y.pokemon.goomy.shape
+      female_rate: *x-y.pokemon.goomy.female_rate
+      capture_rate: *x-y.pokemon.goomy.capture_rate
+      happiness: *x-y.pokemon.goomy.happiness
+      baby: *x-y.pokemon.goomy.baby
+      hatch_steps: *x-y.pokemon.goomy.hatch_steps
+      growth_rate: *x-y.pokemon.goomy.growth_rate
+      forms_switchable: *x-y.pokemon.goomy.forms_switchable
+      name: Goomy
+      default: *x-y.pokemon.goomy.default
+      height: *x-y.pokemon.goomy.height
+      weight: *x-y.pokemon.goomy.weight
+      experience: *x-y.pokemon.goomy.experience
+      types: *x-y.pokemon.goomy.types
+      egg_groups: *x-y.pokemon.goomy.types
+      mega: *x-y.pokemon.goomy.mega
+      stats: *x-y.pokemon.goomy.stats
+      abilities: *x-y.pokemon.goomy.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.goomy.wild_held_items.sun
+          shed-shell: 5
+        moon: *sun-moon.pokemon.goomy.wild_held_items.sun
+      flavor_text:
+        sun: |-
+          The weakest of all Dragon-type Pokémon,
+          it’s unable to breathe if its skin dries out,
+          so it sticks to shady places.
+        moon: |-
+          Its source of protection is its slimy, germ-laden
+          mucous membrane. Anyone who touches it
+          needs some thorough hand-washing.
+      forms:
+        goomy:
+          name: Goomy
+          form_name: *x-y.pokemon.goomy.forms.goomy.form_name
+          default: true
+          battle_only: *x-y.pokemon.goomy.forms.goomy.battle_only
+          icon: *x-y.pokemon.goomy.forms.goomy.icon
+          sprites:
+            - sun-moon/goomy-default.png
+            - sun-moon/shiny/goomy-default.png
+          art: *x-y.pokemon.goomy.forms.goomy.art
+          footprint: *x-y.pokemon.goomy.forms.goomy.footprint
+          cry: *x-y.pokemon.goomy.forms.goomy.cry
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+    updated-alola: 217
+    updated-akala: 118
+    updated-ulaula: 81
+    updated-poni: 79
+  pokemon:
+    goomy:
+      genus: *x-y.pokemon.goomy.genus
+      color: *x-y.pokemon.goomy.color
+      shape: *x-y.pokemon.goomy.shape
+      female_rate: *x-y.pokemon.goomy.female_rate
+      capture_rate: *x-y.pokemon.goomy.capture_rate
+      happiness: *x-y.pokemon.goomy.happiness
+      baby: *x-y.pokemon.goomy.baby
+      hatch_steps: *x-y.pokemon.goomy.hatch_steps
+      growth_rate: *x-y.pokemon.goomy.growth_rate
+      forms_switchable: *x-y.pokemon.goomy.forms_switchable
+      name: Goomy
+      default: *x-y.pokemon.goomy.default
+      height: *x-y.pokemon.goomy.height
+      weight: *x-y.pokemon.goomy.weight
+      experience: *x-y.pokemon.goomy.experience
+      types: *x-y.pokemon.goomy.types
+      egg_groups: *x-y.pokemon.goomy.types
+      mega: *x-y.pokemon.goomy.mega
+      stats: *x-y.pokemon.goomy.stats
+      abilities: *x-y.pokemon.goomy.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.goomy.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.goomy.wild_held_items.sun
+      flavor_text:
+        ultra-sun: |-
+          It uses its horns to check out its surroundings.
+          They’re very sensitive, so if you grab them, it
+          will feel a strong shock and be unable to move.
+        ultra-moon: |-
+          Its body is mostly water. If it dries out, it will
+          die, so it’s always sitting with perfect stillness
+          in the shade.
+      forms:
+        goomy:
+          name: Goomy
+          form_name: *x-y.pokemon.goomy.forms.goomy.form_name
+          default: true
+          battle_only: *x-y.pokemon.goomy.forms.goomy.battle_only
+          icon: *x-y.pokemon.goomy.forms.goomy.icon
+          sprites:
+            - ultra-sun-ultra-moon/goomy-default.png
+            - ultra-sun-ultra-moon/shiny/goomy-default.png
+          art: *x-y.pokemon.goomy.forms.goomy.art
+          footprint: *x-y.pokemon.goomy.forms.goomy.footprint
+          cry: *x-y.pokemon.goomy.forms.goomy.cry

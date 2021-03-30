@@ -1,0 +1,219 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name BOUNCE
+  power: &ruby-sapphire.power 85
+  type: &ruby-sapphire.type flying
+  accuracy: &ruby-sapphire.accuracy 85
+  pp: &ruby-sapphire.pp 5
+  effect: &ruby-sapphire.effect 156
+  target: &ruby-sapphire.target selected-pokemon
+  priority: &ruby-sapphire.priority 0
+  effect_chance: &ruby-sapphire.effect_chance 30
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+    - kings-rock
+  ailment: &ruby-sapphire.ailment paralysis
+  ailment_chance: &ruby-sapphire.ailment_chance 30
+  categories: &ruby-sapphire.categories
+    - damage
+    - ailment
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  contest_type: &ruby-sapphire.contest_type cute
+  contest_effect: 6
+  flavor_text: &ruby-sapphire.flavor_text |
+    Bounces up, then down the
+    next turn. May paralyze.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *ruby-sapphire.flavor_text
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    The user bounces
+    on the foe on the
+    2nd turn. It may
+    paralyze the foe.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Bounce
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: &diamond-pearl.flags
+    - contact
+    - charge
+    - protect
+    - mirror
+    - gravity
+    - distance
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: &diamond-pearl.effect 264
+  effect_chance: *ruby-sapphire.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 6
+  flavor_text: &diamond-pearl.flavor_text |
+    The user bounces up
+    high, then drops on
+    the foe on the second
+    turn. It may also
+    paralyze the foe.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: |
+    The user bounces up high, then drops on
+    the target on the second turn. It may
+    also leave the target with paralysis.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: &x-y.flavor_text |
+    The user bounces up high, then drops on
+    the target on the second turn. This may
+    also leave the target with paralysis.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 15
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: |
+    The user bounces up high, then drops on the target
+    on the second turn. This may also leave the target
+    with paralysis.
+ultra-sun-ultra-moon: *sun-moon

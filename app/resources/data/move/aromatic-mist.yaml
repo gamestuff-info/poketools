@@ -1,0 +1,52 @@
+x-y:
+  name: &x-y.name 'Aromatic Mist'
+  flags: &x-y.flags
+    - authentic
+  categories: &x-y.categories
+    - net-good-stats
+  hits: &x-y.hits 1
+  turns: &x-y.turns 1
+  stat_changes: &x-y.stat_changes
+    special-defense: 1
+  type: &x-y.type fairy
+  pp: &x-y.pp 20
+  priority: &x-y.priority 0
+  target: &x-y.target ally
+  damage_class: &x-y.damage_class status
+  effect: &x-y.effect 363
+  flavor_text: &x-y.flavor_text |
+    The user raises the Sp. Def stat of an ally
+    Pokémon by using a mysterious aroma.
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  flags: *x-y.flags
+  categories: *x-y.categories
+  hits: *x-y.hits
+  turns: *x-y.turns
+  stat_changes: *x-y.stat_changes
+  type: *x-y.type
+  pp: *x-y.pp
+  priority: *x-y.priority
+  target: *x-y.target
+  damage_class: *x-y.damage_class
+  effect: *x-y.effect
+  contest_type: beauty
+  contest_effect: 32
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *x-y.name
+  flags: *x-y.flags
+  categories: *x-y.categories
+  hits: *x-y.hits
+  turns: *x-y.turns
+  stat_changes: *x-y.stat_changes
+  type: *x-y.type
+  pp: *x-y.pp
+  priority: *x-y.priority
+  target: *x-y.target
+  damage_class: *x-y.damage_class
+  effect: *x-y.effect
+  flavor_text: |
+    The user raises the Sp. Def stat of an ally Pokémon
+    by using a mysterious aroma.
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,35 @@
+doctrine:
+  dbal:
+    url: '%env(resolve:DATABASE_URL)%'
+    types:
+      chronos_time:
+        class: App\Doctrine\DBAL\Types\ChronosTimeType
+      safe_object:
+        class: App\Doctrine\DBAL\Types\SafeObjectType
+
+    # IMPORTANT: You MUST configure your server version,
+    # either here or in the DATABASE_URL env var (see .env file)
+    #server_version: '13'
+  orm:
+    auto_generate_proxy_classes: true
+    naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+    auto_mapping: true
+    mappings:
+      App:
+        is_bundle: false
+        type: annotation
+        dir: '%kernel.project_dir%/src/Entity'
+        prefix: 'App\Entity'
+        alias: App
+      tree:
+        type: annotation
+        alias: Gedmo
+        prefix: Gedmo\Tree\Entity
+        dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Tree/Entity"
+    dql:
+      numeric_functions:
+        # VALUEMAX, VALUEMIN, and VALUESUM become SQL MAX, MIN, and SUM, but have different names so as
+        # not to conflict with the aggregate functions.
+        VALUEMAX: App\Doctrine\ORM\Functions\ValueMax
+        VALUEMIN: App\Doctrine\ORM\Functions\ValueMin
+        VALUESUM: App\Doctrine\ORM\Functions\ValueSum

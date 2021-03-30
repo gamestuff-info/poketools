@@ -1,0 +1,875 @@
+gold-silver:
+  name: &gold-silver.name CLEFFA
+  position: &gold-silver.position 172
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 173
+    original-johto: 39
+    original-johto-abc: 17
+  pokemon:
+    cleffa:
+      name: CLEFFA
+      default: &gold-silver.pokemon.cleffa.default true
+      capture_rate: &gold-silver.pokemon.cleffa.capture_rate 150
+      experience: &gold-silver.pokemon.cleffa.experience 37
+      types: &gold-silver.pokemon.cleffa.types
+        - normal
+      stats: &gold-silver.pokemon.cleffa.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 25
+          effort_change: 25
+        defense:
+          base_value: 28
+          effort_change: 28
+        speed:
+          base_value: 15
+          effort_change: 15
+        special-attack:
+          base_value: 45
+          effort_change: 45
+        special-defense:
+          base_value: 55
+          effort_change: 45
+      growth_rate: &gold-silver.pokemon.cleffa.growth_rate fast
+      female_rate: &gold-silver.pokemon.cleffa.female_rate 75
+      hatch_steps: &gold-silver.pokemon.cleffa.hatch_steps 10
+      egg_groups: &gold-silver.pokemon.cleffa.egg_groups
+        - no-eggs
+      wild_held_items:
+        gold: &gold-silver.pokemon.cleffa.wild_held_items.gold
+          mysteryberry: 23
+          moon-stone: 2
+        silver: *gold-silver.pokemon.cleffa.wild_held_items.gold
+      genus: &gold-silver.pokemon.cleffa.genus 'STARSHAPE Pokémon'
+      height: &gold-silver.pokemon.cleffa.height 3
+      weight: &gold-silver.pokemon.cleffa.weight 31
+      flavor_text:
+        gold: |
+          Because of its
+          unusual, star-like
+          silhouette, people
+          believe that it
+          came here on
+          a meteor.
+        silver: |
+          When numerous me-
+          teors illuminate
+          the night sky,
+          sightings of
+          CLEFFA strangely
+          increase.
+      forms:
+        cleffa:
+          name: CLEFFA
+          form_name: &gold-silver.pokemon.cleffa.forms.cleffa.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.cleffa.forms.cleffa.battle_only false
+          sprites:
+            - gold-silver/cleffa-default.png
+            - gold-silver/back/cleffa-default.png
+            - gold-silver/shiny/cleffa-default.png
+          art: &gold-silver.pokemon.cleffa.forms.cleffa.art
+            - cleffa-default.png
+          cry: &gold-silver.pokemon.cleffa.forms.cleffa.cry gen5/cleffa-default.webm
+          icon: &gold-silver.pokemon.cleffa.forms.cleffa.icon gen2/clefairy.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    cleffa:
+      name: CLEFFA
+      default: *gold-silver.pokemon.cleffa.default
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      experience: *gold-silver.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      stats: *gold-silver.pokemon.cleffa.stats
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.cleffa.wild_held_items.gold
+      genus: *gold-silver.pokemon.cleffa.genus
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *gold-silver.pokemon.cleffa.weight
+      flavor_text:
+        crystal: |
+          If the impact site
+          of a meteorite is
+          found, this
+          #MON is certain
+          to be within the
+          immediate area.
+      forms:
+        cleffa:
+          name: CLEFFA
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          sprites:
+            - crystal/cleffa-default.png
+            - crystal/back/cleffa-default.png
+            - crystal/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+          icon: *gold-silver.pokemon.cleffa.forms.cleffa.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 173
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 324
+  pokemon:
+    cleffa:
+      name: CLEFFA
+      default: *gold-silver.pokemon.cleffa.default
+      forms_switchable: &ruby-sapphire.pokemon.cleffa.forms_switchable false
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      experience: *gold-silver.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      stats: &ruby-sapphire.pokemon.cleffa.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 25
+          effort_change: 0
+        defense:
+          base_value: 28
+          effort_change: 0
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 1
+        special-defense:
+          base_value: 50
+          effort_change: 1
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.cleffa.wild_held_items.ruby
+          leppa-berry: &ruby-sapphire.pokemon.cleffa.wild_held_items.ruby.leppa-berry 50
+          moon-stone: &ruby-sapphire.pokemon.cleffa.wild_held_items.ruby.moon-stone 5
+        sapphire: *ruby-sapphire.pokemon.cleffa.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.cleffa.happiness 140
+      abilities: &ruby-sapphire.pokemon.cleffa.abilities
+        cute-charm: &ruby-sapphire.pokemon.cleffa.abilities.cute-charm
+          hidden: &ruby-sapphire.pokemon.cleffa.abilities.cute-charm.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.cleffa.genus 'STAR SHAPE Pokémon'
+      height: *gold-silver.pokemon.cleffa.height
+      weight: &ruby-sapphire.pokemon.cleffa.weight 30
+      flavor_text:
+        ruby: |
+          On nights with many shooting stars,
+          CLEFFA can be seen dancing in a ring.
+          They dance through the night and stop
+          only at the break of day,  when these
+          POKéMON quench their thirst with the
+          morning dew.
+        sapphire: |
+          On nights with many shooting stars,
+          CLEFFA can be seen dancing in a ring.
+          They dance through the night and stop
+          only at the break of day, when these
+          POKéMON quench their thirst with the
+          morning dew.
+      forms:
+        cleffa:
+          name: CLEFFA
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: &ruby-sapphire.pokemon.cleffa.forms.cleffa.icon gen5/cleffa-default.png
+          sprites:
+            - ruby-sapphire/cleffa-default.png
+            - ruby-sapphire/back/cleffa-default.png
+            - ruby-sapphire/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: &ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint cleffa.png
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    cleffa:
+      name: CLEFFA
+      default: *gold-silver.pokemon.cleffa.default
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      experience: *gold-silver.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      stats: *ruby-sapphire.pokemon.cleffa.stats
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.cleffa.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      abilities: *ruby-sapphire.pokemon.cleffa.abilities
+      genus: *ruby-sapphire.pokemon.cleffa.genus
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      flavor_text:
+        emerald: |
+          On nights with many shooting stars,
+          CLEFFA can be seen dancing in a ring.
+          They dance until daybreak, when they
+          quench their thirst with the morning dew.
+      forms:
+        cleffa:
+          name: CLEFFA
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *ruby-sapphire.pokemon.cleffa.forms.cleffa.icon
+          sprites:
+            - emerald/cleffa-default.png
+            - emerald/shiny/cleffa-default.png
+            - emerald/animated/cleffa-default.webm
+            - emerald/animated/shiny/cleffa-default.webm
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 53
+  pokemon:
+    cleffa:
+      name: CLEFFA
+      default: *gold-silver.pokemon.cleffa.default
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      experience: *gold-silver.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      stats: *ruby-sapphire.pokemon.cleffa.stats
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      abilities: *ruby-sapphire.pokemon.cleffa.abilities
+      genus: *ruby-sapphire.pokemon.cleffa.genus
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      forms:
+        cleffa:
+          name: CLEFFA
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          sprites:
+            - colosseum/cleffa-default.png
+            - colosseum/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    cleffa:
+      name: CLEFFA
+      default: *gold-silver.pokemon.cleffa.default
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      experience: *gold-silver.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      stats: *ruby-sapphire.pokemon.cleffa.stats
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      abilities: *ruby-sapphire.pokemon.cleffa.abilities
+      genus: *ruby-sapphire.pokemon.cleffa.genus
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      forms:
+        cleffa:
+          name: CLEFFA
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          sprites:
+            - xd/cleffa-default.png
+            - xd/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    cleffa:
+      name: CLEFFA
+      default: *gold-silver.pokemon.cleffa.default
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      experience: *gold-silver.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      stats: *ruby-sapphire.pokemon.cleffa.stats
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+          moon-stone: *ruby-sapphire.pokemon.cleffa.wild_held_items.ruby.moon-stone
+        leafgreen: *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      abilities: *ruby-sapphire.pokemon.cleffa.abilities
+      genus: *ruby-sapphire.pokemon.cleffa.genus
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      flavor_text:
+        firered: |
+          When numerous meteors illuminate the
+          night sky, sightings of CLEFFA strangely
+          increase.
+        leafgreen: |
+          Because of its unusual, starlike
+          silhouette, people believe that it came
+          here on a meteor.
+      forms:
+        cleffa:
+          name: CLEFFA
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *ruby-sapphire.pokemon.cleffa.forms.cleffa.icon
+          sprites:
+            - firered-leafgreen/cleffa-default.png
+            - firered-leafgreen/back/cleffa-default.png
+            - firered-leafgreen/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+diamond-pearl:
+  name: &diamond-pearl.name Cleffa
+  position: &diamond-pearl.position 36
+  numbers:
+    national: *gold-silver.numbers.national
+    original-sinnoh: 99
+  pokemon:
+    cleffa:
+      genus: &diamond-pearl.pokemon.cleffa.genus 'Star Shape Pokémon'
+      shape: &diamond-pearl.pokemon.cleffa.shape upright
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: &diamond-pearl.pokemon.cleffa.baby true
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      pal_park: &diamond-pearl.pokemon.cleffa.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: &diamond-pearl.pokemon.cleffa.experience 44
+      types: *gold-silver.pokemon.cleffa.types
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      stats: &diamond-pearl.pokemon.cleffa.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 25
+          effort_change: 0
+        defense:
+          base_value: 28
+          effort_change: 0
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.cleffa.abilities
+        cute-charm: *ruby-sapphire.pokemon.cleffa.abilities.cute-charm
+        magic-guard: &diamond-pearl.pokemon.cleffa.abilities.magic-guard
+          hidden: *ruby-sapphire.pokemon.cleffa.abilities.cute-charm.hidden
+          position: 2
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.cleffa.wild_held_items.diamond
+          moon-stone: *ruby-sapphire.pokemon.cleffa.wild_held_items.ruby.moon-stone
+          leppa-berry: *ruby-sapphire.pokemon.cleffa.wild_held_items.ruby.leppa-berry
+        pearl: *diamond-pearl.pokemon.cleffa.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Its silhouette is like a star.
+          It is believed to arrive riding on
+          shooting stars.
+        pearl: |
+          Many appear when the night skies
+          are filled with shooting stars.
+          They disappear with sunrise.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *ruby-sapphire.pokemon.cleffa.forms.cleffa.icon
+          sprites:
+            - diamond-pearl/cleffa-default.png
+            - diamond-pearl/back/cleffa-default.png
+            - diamond-pearl/back/shiny/cleffa-default.png
+            - diamond-pearl/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 99
+  pokemon:
+    cleffa:
+      genus: *diamond-pearl.pokemon.cleffa.genus
+      shape: *diamond-pearl.pokemon.cleffa.shape
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: *diamond-pearl.pokemon.cleffa.baby
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      pal_park: *diamond-pearl.pokemon.cleffa.pal_park
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: *diamond-pearl.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      stats: *diamond-pearl.pokemon.cleffa.stats
+      abilities: *diamond-pearl.pokemon.cleffa.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.cleffa.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          It is often seen when shooting
+          stars fill the night skies. It’s said
+          to arrive riding on a shooting star.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *ruby-sapphire.pokemon.cleffa.forms.cleffa.icon
+          sprites:
+            - platinum/cleffa-default.png
+            - platinum/back/cleffa-default.png
+            - platinum/back/shiny/cleffa-default.png
+            - platinum/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 40
+  pokemon:
+    cleffa:
+      genus: *diamond-pearl.pokemon.cleffa.genus
+      shape: *diamond-pearl.pokemon.cleffa.shape
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: *diamond-pearl.pokemon.cleffa.baby
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      pal_park: *diamond-pearl.pokemon.cleffa.pal_park
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: *diamond-pearl.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      stats: *diamond-pearl.pokemon.cleffa.stats
+      abilities: *diamond-pearl.pokemon.cleffa.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.cleffa.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.cleffa.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          Because of its unusual, starlike
+          silhouette, people believe that
+          it came here on a meteor.
+        soulsilver: |
+          When numerous meteors illuminate
+          the night sky, sightings of
+          CLEFFA strangely increase.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 2-5
+            power:
+              base_value: 1
+              range: 1-2
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.cleffa.forms.cleffa.icon
+          sprites:
+            - heartgold-soulsilver/cleffa-default.png
+            - heartgold-soulsilver/back/cleffa-default.png
+            - heartgold-soulsilver/back/shiny/cleffa-default.png
+            - heartgold-soulsilver/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cleffa:
+      genus: *diamond-pearl.pokemon.cleffa.genus
+      color: &black-white.pokemon.cleffa.color pink
+      shape: *diamond-pearl.pokemon.cleffa.shape
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: *diamond-pearl.pokemon.cleffa.baby
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: *diamond-pearl.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      stats: *diamond-pearl.pokemon.cleffa.stats
+      abilities: &black-white.pokemon.cleffa.abilities
+        cute-charm: *ruby-sapphire.pokemon.cleffa.abilities.cute-charm
+        magic-guard: *diamond-pearl.pokemon.cleffa.abilities.magic-guard
+        friend-guard:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.cleffa.wild_held_items.black
+          moon-stone: *ruby-sapphire.pokemon.cleffa.wild_held_items.ruby.moon-stone
+          leppa-berry: *ruby-sapphire.pokemon.cleffa.wild_held_items.ruby.leppa-berry
+          comet-shard: 1
+        white: *black-white.pokemon.cleffa.wild_held_items.black
+      flavor_text:
+        black: |
+          It is often seen when shooting
+          stars fill the night skies. It’s said
+          to arrive riding on a shooting star.
+        white: |
+          It is often seen when shooting
+          stars fill the night skies. It’s said
+          to arrive riding on a shooting star.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *ruby-sapphire.pokemon.cleffa.forms.cleffa.icon
+          sprites:
+            - black-white/cleffa-default.png
+            - black-white/back/cleffa-default.png
+            - black-white/back/shiny/cleffa-default.png
+            - black-white/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 88
+  pokemon:
+    cleffa:
+      genus: *diamond-pearl.pokemon.cleffa.genus
+      color: *black-white.pokemon.cleffa.color
+      shape: *diamond-pearl.pokemon.cleffa.shape
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: *diamond-pearl.pokemon.cleffa.baby
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: *diamond-pearl.pokemon.cleffa.experience
+      types: *gold-silver.pokemon.cleffa.types
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      stats: *diamond-pearl.pokemon.cleffa.stats
+      abilities: *black-white.pokemon.cleffa.abilities
+      wild_held_items:
+        black-2: *black-white.pokemon.cleffa.wild_held_items.black
+        white-2: *black-white.pokemon.cleffa.wild_held_items.black
+      flavor_text:
+        black-2: |
+          According to local rumors, Cleffa
+          are often seen in places where
+          shooting stars have fallen.
+        white-2: |
+          According to local rumors, Cleffa
+          are often seen in places where
+          shooting stars have fallen.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *ruby-sapphire.pokemon.cleffa.forms.cleffa.icon
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *gold-silver.pokemon.cleffa.forms.cleffa.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cleffa:
+      genus: *diamond-pearl.pokemon.cleffa.genus
+      color: *black-white.pokemon.cleffa.color
+      shape: *diamond-pearl.pokemon.cleffa.shape
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: *diamond-pearl.pokemon.cleffa.baby
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: *diamond-pearl.pokemon.cleffa.experience
+      types: &x-y.pokemon.cleffa.types
+        - fairy
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      mega: &x-y.pokemon.cleffa.mega false
+      stats: *diamond-pearl.pokemon.cleffa.stats
+      abilities: *black-white.pokemon.cleffa.abilities
+      wild_held_items:
+        x: *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+        'y': *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+      flavor_text:
+        x: |
+          Because of its unusual, starlike silhouette, people
+          believe that it came here on a meteor.
+        'y': |
+          Many appear when the night skies are filled with
+          shooting stars. They disappear with sunrise.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: &x-y.pokemon.cleffa.forms.cleffa.icon cleffa-default.png
+          sprites:
+            - x-y/cleffa-default.png
+            - x-y/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: &x-y.pokemon.cleffa.forms.cleffa.cry cleffa-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cleffa:
+      genus: *diamond-pearl.pokemon.cleffa.genus
+      color: *black-white.pokemon.cleffa.color
+      shape: *diamond-pearl.pokemon.cleffa.shape
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: *diamond-pearl.pokemon.cleffa.baby
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: *diamond-pearl.pokemon.cleffa.experience
+      types: *x-y.pokemon.cleffa.types
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      mega: *x-y.pokemon.cleffa.mega
+      stats: *diamond-pearl.pokemon.cleffa.stats
+      abilities: *black-white.pokemon.cleffa.abilities
+      flavor_text:
+        omega-ruby: |
+          On nights with many shooting stars, Cleffa can be seen
+          dancing in a ring. They dance through the night and stop only
+          at the break of day, when these Pokémon quench their thirst
+          with the morning dew.
+        alpha-sapphire: |
+          On nights with many shooting stars, Cleffa can be seen
+          dancing in a ring. They dance through the night and stop only
+          at the break of day, when these Pokémon quench their thirst
+          with the morning dew.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *x-y.pokemon.cleffa.forms.cleffa.icon
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *x-y.pokemon.cleffa.forms.cleffa.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/cleffa-default.png
+            - omega-ruby-alpha-sapphire/shiny/cleffa-default.png
+      wild_held_items:
+        omega-ruby: *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+        alpha-sapphire: *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 210
+    original-ulaula: 82
+  pokemon:
+    cleffa:
+      genus: *diamond-pearl.pokemon.cleffa.genus
+      color: *black-white.pokemon.cleffa.color
+      shape: *diamond-pearl.pokemon.cleffa.shape
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: *diamond-pearl.pokemon.cleffa.baby
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: *diamond-pearl.pokemon.cleffa.experience
+      types: *x-y.pokemon.cleffa.types
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      mega: *x-y.pokemon.cleffa.mega
+      stats: *diamond-pearl.pokemon.cleffa.stats
+      abilities: *black-white.pokemon.cleffa.abilities
+      wild_held_items:
+        sun: *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+        moon: *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+      flavor_text:
+        sun: |-
+          On late nights illuminated by shooting stars,
+          it gazes intently skyward, as if thinking of
+          its home.
+        moon: |-
+          Because of its silhouette, it’s believed to be a
+          star reborn. For some reason, it loves Minior.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *x-y.pokemon.cleffa.forms.cleffa.icon
+          sprites:
+            - sun-moon/cleffa-default.png
+            - sun-moon/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *x-y.pokemon.cleffa.forms.cleffa.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 272
+    updated-ulaula: 93
+  pokemon:
+    cleffa:
+      genus: *diamond-pearl.pokemon.cleffa.genus
+      color: *black-white.pokemon.cleffa.color
+      shape: *diamond-pearl.pokemon.cleffa.shape
+      female_rate: *gold-silver.pokemon.cleffa.female_rate
+      capture_rate: *gold-silver.pokemon.cleffa.capture_rate
+      happiness: *ruby-sapphire.pokemon.cleffa.happiness
+      baby: *diamond-pearl.pokemon.cleffa.baby
+      hatch_steps: *gold-silver.pokemon.cleffa.hatch_steps
+      growth_rate: *gold-silver.pokemon.cleffa.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cleffa.forms_switchable
+      name: Cleffa
+      default: *gold-silver.pokemon.cleffa.default
+      height: *gold-silver.pokemon.cleffa.height
+      weight: *ruby-sapphire.pokemon.cleffa.weight
+      experience: *diamond-pearl.pokemon.cleffa.experience
+      types: *x-y.pokemon.cleffa.types
+      egg_groups: *gold-silver.pokemon.cleffa.egg_groups
+      mega: *x-y.pokemon.cleffa.mega
+      stats: *diamond-pearl.pokemon.cleffa.stats
+      abilities: *black-white.pokemon.cleffa.abilities
+      wild_held_items:
+        ultra-sun: *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+        ultra-moon: *firered-leafgreen.pokemon.cleffa.wild_held_items.firered
+      flavor_text:
+        ultra-sun: |-
+          On nights with many shooting stars,
+          they gather in packs and dance in circles. If you
+          should see them, something good will happen!
+        ultra-moon: |-
+          Said to have ridden here on a shooting star,
+          Cleffa seem to appear in places where
+          meteorites have struck in the past.
+      forms:
+        cleffa:
+          name: Cleffa
+          form_name: *gold-silver.pokemon.cleffa.forms.cleffa.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.cleffa.forms.cleffa.battle_only
+          icon: *x-y.pokemon.cleffa.forms.cleffa.icon
+          sprites:
+            - ultra-sun-ultra-moon/cleffa-default.png
+            - ultra-sun-ultra-moon/shiny/cleffa-default.png
+          art: *gold-silver.pokemon.cleffa.forms.cleffa.art
+          footprint: *ruby-sapphire.pokemon.cleffa.forms.cleffa.footprint
+          cry: *x-y.pokemon.cleffa.forms.cleffa.cry

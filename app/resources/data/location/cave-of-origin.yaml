@@ -1,0 +1,44 @@
+ruby-sapphire:
+  region: &ruby-sapphire.region hoenn
+  name: &ruby-sapphire.name 'Cave of Origin'
+  areas:
+    entrance: &ruby-sapphire.areas.entrance
+      name: entrance
+      default: true
+    1f: &ruby-sapphire.areas.1f
+      name: 1F
+    b1f: &ruby-sapphire.areas.b1f
+      name: B1F
+    b2f: &ruby-sapphire.areas.b2f
+      name: B2F
+    b3f: &ruby-sapphire.areas.b3f
+      name: B3F
+    deepest: &ruby-sapphire.areas.deepest
+      name: 'Deepest Cavern'
+  super: &ruby-sapphire.super sootopolis-city
+emerald:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas:
+    entrance: *ruby-sapphire.areas.entrance
+    1f: *ruby-sapphire.areas.1f
+    deepest: *ruby-sapphire.areas.deepest
+  super: *ruby-sapphire.super
+omega-ruby-alpha-sapphire:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas:
+    entrance: *ruby-sapphire.areas.entrance
+    1f: *ruby-sapphire.areas.1f
+    b1f: *ruby-sapphire.areas.b1f
+    b2f: *ruby-sapphire.areas.b2f
+    b3f: *ruby-sapphire.areas.b3f
+    b4f:
+      name: B4F
+    side-path:
+      name: 'Side Path'
+    deepest: *ruby-sapphire.areas.deepest
+  super: *ruby-sapphire.super
+  map:
+    map: hoenn
+    overlay: '<rect x="224" y="95" width="11" height="11" />'

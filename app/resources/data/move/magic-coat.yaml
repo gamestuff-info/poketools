@@ -1,0 +1,137 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'MAGIC COAT'
+  type: &ruby-sapphire.type psychic
+  accuracy: &ruby-sapphire.accuracy 100
+  pp: &ruby-sapphire.pp 15
+  effect: &ruby-sapphire.effect 184
+  target: &ruby-sapphire.target specific-move
+  priority: &ruby-sapphire.priority 4
+  categories: &ruby-sapphire.categories
+    - unique
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  contest_type: &ruby-sapphire.contest_type beauty
+  contest_effect: 6
+  flavor_text: &ruby-sapphire.flavor_text |
+    Reflects special effects
+    back to the attacker.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: special
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    Reflects back the
+    foe's LEECH SEED
+    and any status-
+    damaging move.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Magic Coat'
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: &diamond-pearl.target user
+  damage_class: &diamond-pearl.damage_class status
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 15
+  flavor_text: &diamond-pearl.flavor_text |
+    A barrier reflects
+    back to the foe
+    moves like Leech
+    Seed and moves
+    that damage status.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &black-white.flavor_text |
+    A barrier reflects back to the target
+    moves like Leech Seed and moves
+    that damage status.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 28
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *diamond-pearl.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    A barrier reflects back to the target moves like
+    Leech Seed and moves that damage status.
+ultra-sun-ultra-moon: *sun-moon

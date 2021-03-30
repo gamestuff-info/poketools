@@ -1,0 +1,951 @@
+red-blue:
+  name: &red-blue.name METAPOD
+  position: &red-blue.position 11
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 11
+    kanto: 11
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: &red-blue.pokemon.metapod.default true
+      capture_rate: &red-blue.pokemon.metapod.capture_rate 120
+      experience: &red-blue.pokemon.metapod.experience 72
+      types: &red-blue.pokemon.metapod.types
+        - bug
+      stats: &red-blue.pokemon.metapod.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 20
+          effort_change: 20
+        defense:
+          base_value: 55
+          effort_change: 55
+        speed:
+          base_value: 30
+          effort_change: 30
+        special:
+          base_value: 25
+          effort_change: 25
+      growth_rate: &red-blue.pokemon.metapod.growth_rate medium
+      genus: &red-blue.pokemon.metapod.genus 'COCOON Pokémon'
+      height: &red-blue.pokemon.metapod.height 7
+      weight: &red-blue.pokemon.metapod.weight 997
+      flavor_text:
+        red: |
+          This POKéMON is
+          vulnerable to
+          attack while its
+          shell is soft,
+          exposing its weak
+          and tender body.
+        blue: |
+          This POKéMON is
+          vulnerable to
+          attack while its
+          shell is soft,
+           exposing its weak
+          and tender body.
+      evolution_parent: &red-blue.pokemon.metapod.evolution_parent caterpie/caterpie
+      evolution_conditions: &red-blue.pokemon.metapod.evolution_conditions
+        level-up:
+          minimum_level: 7
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: &red-blue.pokemon.metapod.forms.metapod.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.metapod.forms.metapod.battle_only false
+          sprites:
+            - red-blue/metapod-default.png
+            - red-blue/gray/metapod-default.png
+            - red-blue/back/metapod-default.png
+          art: &red-blue.pokemon.metapod.forms.metapod.art
+            - metapod-default.png
+          cry: &red-blue.pokemon.metapod.forms.metapod.cry gen5/metapod-default.webm
+          icon: &red-blue.pokemon.metapod.forms.metapod.icon gen1/bug.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: *red-blue.pokemon.metapod.default
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      stats: *red-blue.pokemon.metapod.stats
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      genus: *red-blue.pokemon.metapod.genus
+      height: *red-blue.pokemon.metapod.height
+      weight: *red-blue.pokemon.metapod.weight
+      flavor_text:
+        yellow: |
+          Hardens its shell
+          to protect itself.
+          However, a large
+          impact may cause
+          it to pop out of
+          its shell.
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          sprites:
+            - yellow/metapod-default.png
+            - yellow/gray/metapod-default.png
+            - yellow/back/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+          icon: *red-blue.pokemon.metapod.forms.metapod.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 10
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 24
+    original-johto-abc: 118
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: *red-blue.pokemon.metapod.default
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      stats: &gold-silver.pokemon.metapod.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 20
+          effort_change: 20
+        defense:
+          base_value: 55
+          effort_change: 55
+        speed:
+          base_value: 30
+          effort_change: 30
+        special-attack:
+          base_value: 25
+          effort_change: 25
+        special-defense:
+          base_value: 25
+          effort_change: 25
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      female_rate: &gold-silver.pokemon.metapod.female_rate 50
+      hatch_steps: &gold-silver.pokemon.metapod.hatch_steps 15
+      egg_groups: *red-blue.pokemon.metapod.types
+      genus: *red-blue.pokemon.metapod.genus
+      height: *red-blue.pokemon.metapod.height
+      weight: &gold-silver.pokemon.metapod.weight 99
+      flavor_text:
+        gold: |
+          Inside the shell,
+          it is soft and
+          weak as it pre-
+          pares to evolve.
+          It stays motion-
+          less in the shell.
+        silver: |
+          It prepares for
+          evolution by har-
+          dening its shell
+          as much as possi-
+          ble to protect its
+          soft body.
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          sprites:
+            - gold-silver/metapod-default.png
+            - gold-silver/back/metapod-default.png
+            - gold-silver/shiny/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+          icon: &gold-silver.pokemon.metapod.forms.metapod.icon gen2/caterpillar.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: *red-blue.pokemon.metapod.default
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      stats: *gold-silver.pokemon.metapod.stats
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      egg_groups: *red-blue.pokemon.metapod.types
+      genus: *red-blue.pokemon.metapod.genus
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      flavor_text:
+        crystal: |
+          This is its pre-
+          evolved form. At
+          this stage, it can
+          only harden, so it
+          remains motionless
+          to avoid attack.
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          sprites:
+            - crystal/metapod-default.png
+            - crystal/back/metapod-default.png
+            - crystal/shiny/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+          icon: *gold-silver.pokemon.metapod.forms.metapod.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 213
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: *red-blue.pokemon.metapod.default
+      forms_switchable: &ruby-sapphire.pokemon.metapod.forms_switchable false
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      stats: &ruby-sapphire.pokemon.metapod.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 55
+          effort_change: 2
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      egg_groups: *red-blue.pokemon.metapod.types
+      happiness: &ruby-sapphire.pokemon.metapod.happiness 70
+      abilities: &ruby-sapphire.pokemon.metapod.abilities
+        shed-skin:
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.metapod.genus
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      flavor_text:
+        ruby: |
+          The shell covering this POKéMON's body
+          is as hard as an iron slab.
+           METAPOD does not move very much.
+          It stays still because it is preparing
+           its soft innards for evolution inside
+          the hard shell.
+        sapphire: |
+          The shell covering this POKéMON's body
+          is as hard as an iron slab.
+           METAPOD does not move very much.
+          It stays still because it is preparing
+           its soft innards for evolution inside
+          the hard shell.
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: &ruby-sapphire.pokemon.metapod.forms.metapod.icon gen5/metapod-default.png
+          sprites:
+            - ruby-sapphire/metapod-default.png
+            - ruby-sapphire/back/metapod-default.png
+            - ruby-sapphire/shiny/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: &ruby-sapphire.pokemon.metapod.forms.metapod.footprint metapod.png
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: *red-blue.pokemon.metapod.default
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      stats: *ruby-sapphire.pokemon.metapod.stats
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      egg_groups: *red-blue.pokemon.metapod.types
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      genus: *red-blue.pokemon.metapod.genus
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      flavor_text:
+        emerald: |
+          Its shell is as hard as an iron slab.
+          A METAPOD does not move very much
+          because it is preparing its soft innards
+          for evolution inside the shell.
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *ruby-sapphire.pokemon.metapod.forms.metapod.icon
+          sprites:
+            - emerald/metapod-default.png
+            - emerald/shiny/metapod-default.png
+            - emerald/animated/metapod-default.webm
+            - emerald/animated/shiny/metapod-default.webm
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 201
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: *red-blue.pokemon.metapod.default
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      stats: *ruby-sapphire.pokemon.metapod.stats
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      genus: *red-blue.pokemon.metapod.genus
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          sprites:
+            - colosseum/metapod-default.png
+            - colosseum/shiny/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: *red-blue.pokemon.metapod.default
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      stats: *ruby-sapphire.pokemon.metapod.stats
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      genus: *red-blue.pokemon.metapod.genus
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          sprites:
+            - xd/metapod-default.png
+            - xd/shiny/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    metapod:
+      name: METAPOD
+      default: *red-blue.pokemon.metapod.default
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      stats: *ruby-sapphire.pokemon.metapod.stats
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      egg_groups: *red-blue.pokemon.metapod.types
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      genus: *red-blue.pokemon.metapod.genus
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      flavor_text:
+        firered: |
+          Even though it is encased in a sturdy
+          shell, the body inside is tender.
+          It can't withstand a harsh attack.
+        leafgreen: |
+          This POKéMON is vulnerable to attack
+          while its shell is soft,  exposing its weak
+          and tender body.
+      forms:
+        metapod:
+          name: METAPOD
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *ruby-sapphire.pokemon.metapod.forms.metapod.icon
+          sprites:
+            - firered-leafgreen/metapod-default.png
+            - firered-leafgreen/back/metapod-default.png
+            - firered-leafgreen/shiny/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Metapod
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    metapod:
+      genus: &diamond-pearl.pokemon.metapod.genus 'Cocoon Pokémon'
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      shape: &diamond-pearl.pokemon.metapod.shape squiggle
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: &diamond-pearl.pokemon.metapod.baby false
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      pal_park: &diamond-pearl.pokemon.metapod.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      stats: &diamond-pearl.pokemon.metapod.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 55
+          effort_change: 2
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 25
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        diamond: |
+          A steel-hard shell protects its
+          tender body. It quietly endures
+          hardships while awaiting evolution.
+        pearl: |
+          A steel-hard shell protects its
+          tender body. It quietly endures
+          hardships while awaiting evolution.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *ruby-sapphire.pokemon.metapod.forms.metapod.icon
+          sprites:
+            - diamond-pearl/back/shiny/metapod-default.png
+            - diamond-pearl/back/metapod-default.png
+            - diamond-pearl/shiny/metapod-default.png
+            - diamond-pearl/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    metapod:
+      genus: *diamond-pearl.pokemon.metapod.genus
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      shape: *diamond-pearl.pokemon.metapod.shape
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: *diamond-pearl.pokemon.metapod.baby
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      pal_park: *diamond-pearl.pokemon.metapod.pal_park
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      stats: *diamond-pearl.pokemon.metapod.stats
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        platinum: |
+          A steel-hard shell protects its
+          tender body. It quietly endures
+          hardships while awaiting evolution.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *ruby-sapphire.pokemon.metapod.forms.metapod.icon
+          sprites:
+            - platinum/back/shiny/metapod-default.png
+            - platinum/back/metapod-default.png
+            - platinum/shiny/metapod-default.png
+            - platinum/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 25
+  pokemon:
+    metapod:
+      genus: *diamond-pearl.pokemon.metapod.genus
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      shape: *diamond-pearl.pokemon.metapod.shape
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: *diamond-pearl.pokemon.metapod.baby
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      pal_park: *diamond-pearl.pokemon.metapod.pal_park
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      stats: *diamond-pearl.pokemon.metapod.stats
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Inside the shell, it is soft and
+          weak as it prepares to evolve.
+          It stays motionless in the shell.
+        soulsilver: |
+          It prepares for evolution by hardening
+          its shell as much as possible
+          to protect its soft body.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-3
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 1
+              range: 1
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.metapod.forms.metapod.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/metapod-default.png
+            - heartgold-soulsilver/back/metapod-default.png
+            - heartgold-soulsilver/shiny/metapod-default.png
+            - heartgold-soulsilver/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    metapod:
+      genus: *diamond-pearl.pokemon.metapod.genus
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      color: &black-white.pokemon.metapod.color green
+      shape: *diamond-pearl.pokemon.metapod.shape
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: *diamond-pearl.pokemon.metapod.baby
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      stats: *diamond-pearl.pokemon.metapod.stats
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        black: |
+          A steel-hard shell protects its
+          tender body. It quietly endures
+          hardships while awaiting evolution.
+        white: |
+          A steel-hard shell protects its
+          tender body. It quietly endures
+          hardships while awaiting evolution.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *ruby-sapphire.pokemon.metapod.forms.metapod.icon
+          sprites:
+            - black-white/back/shiny/metapod-default.png
+            - black-white/back/metapod-default.png
+            - black-white/shiny/metapod-default.png
+            - black-white/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    metapod:
+      genus: *diamond-pearl.pokemon.metapod.genus
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      color: *black-white.pokemon.metapod.color
+      shape: *diamond-pearl.pokemon.metapod.shape
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: *diamond-pearl.pokemon.metapod.baby
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      stats: *diamond-pearl.pokemon.metapod.stats
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        black-2: |
+          A steel-hard shell protects its
+          tender body. It quietly endures
+          hardships while awaiting evolution.
+        white-2: |
+          A steel-hard shell protects its
+          tender body. It quietly endures
+          hardships while awaiting evolution.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *ruby-sapphire.pokemon.metapod.forms.metapod.icon
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *red-blue.pokemon.metapod.forms.metapod.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 24
+  pokemon:
+    metapod:
+      genus: *diamond-pearl.pokemon.metapod.genus
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      color: *black-white.pokemon.metapod.color
+      shape: *diamond-pearl.pokemon.metapod.shape
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: *diamond-pearl.pokemon.metapod.baby
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      mega: &x-y.pokemon.metapod.mega false
+      stats: *diamond-pearl.pokemon.metapod.stats
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        x: |
+          A steel-hard shell protects its tender body.
+          It quietly endures hardships while
+          awaiting evolution.
+        'y': |
+          This Pokémon is vulnerable to attack while its shell
+          is soft, exposing its weak and tender body.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: &x-y.pokemon.metapod.forms.metapod.icon metapod-default.png
+          sprites:
+            - x-y/shiny/metapod-default.png
+            - x-y/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: &x-y.pokemon.metapod.forms.metapod.cry metapod-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    metapod:
+      genus: *diamond-pearl.pokemon.metapod.genus
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      color: *black-white.pokemon.metapod.color
+      shape: *diamond-pearl.pokemon.metapod.shape
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: *diamond-pearl.pokemon.metapod.baby
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      mega: *x-y.pokemon.metapod.mega
+      stats: *diamond-pearl.pokemon.metapod.stats
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          The shell covering this Pokémon’s body is as hard as an
+          iron slab. Metapod does not move very much. It stays still
+          because it is preparing its soft innards for evolution inside
+          the hard shell.
+        alpha-sapphire: |
+          The shell covering this Pokémon’s body is as hard as an
+          iron slab. Metapod does not move very much.
+          It stays still because it is preparing its soft innards for
+          evolution inside the hard shell.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *x-y.pokemon.metapod.forms.metapod.icon
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *x-y.pokemon.metapod.forms.metapod.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/metapod-default.png
+            - omega-ruby-alpha-sapphire/shiny/metapod-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 18
+    original-melemele: 18
+    original-akala: 9
+  pokemon:
+    metapod:
+      genus: *diamond-pearl.pokemon.metapod.genus
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      color: *black-white.pokemon.metapod.color
+      shape: *diamond-pearl.pokemon.metapod.shape
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: *diamond-pearl.pokemon.metapod.baby
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      mega: *x-y.pokemon.metapod.mega
+      stats: *diamond-pearl.pokemon.metapod.stats
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        sun: |-
+          Its shell is filled with its soft innards. It doesn’t
+          move much because of the risk it might
+          carelessly spill its innards out.
+        moon: |-
+          Its shell is hard, but it’s still just a bug shell.
+          It’s been known to break, so intense battles
+          with it should be avoided.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *x-y.pokemon.metapod.forms.metapod.icon
+          sprites:
+            - sun-moon/shiny/metapod-default.png
+            - sun-moon/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *x-y.pokemon.metapod.forms.metapod.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 18
+    updated-melemele: 18
+    updated-akala: 9
+  pokemon:
+    metapod:
+      genus: *diamond-pearl.pokemon.metapod.genus
+      evolution_parent: *red-blue.pokemon.metapod.evolution_parent
+      color: *black-white.pokemon.metapod.color
+      shape: *diamond-pearl.pokemon.metapod.shape
+      female_rate: *gold-silver.pokemon.metapod.female_rate
+      capture_rate: *red-blue.pokemon.metapod.capture_rate
+      happiness: *ruby-sapphire.pokemon.metapod.happiness
+      baby: *diamond-pearl.pokemon.metapod.baby
+      hatch_steps: *gold-silver.pokemon.metapod.hatch_steps
+      growth_rate: *red-blue.pokemon.metapod.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.metapod.forms_switchable
+      name: Metapod
+      default: *red-blue.pokemon.metapod.default
+      height: *red-blue.pokemon.metapod.height
+      weight: *gold-silver.pokemon.metapod.weight
+      experience: *red-blue.pokemon.metapod.experience
+      types: *red-blue.pokemon.metapod.types
+      egg_groups: *red-blue.pokemon.metapod.types
+      mega: *x-y.pokemon.metapod.mega
+      stats: *diamond-pearl.pokemon.metapod.stats
+      abilities: *ruby-sapphire.pokemon.metapod.abilities
+      evolution_conditions: *red-blue.pokemon.metapod.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Its shell is filled with a thick liquid. All of the
+          cells throughout its body are being rebuilt in
+          preparation for evolution.
+        ultra-moon: |-
+          Its hard shell doesn’t crack a bit even if Pikipek
+          pecks at it, but it will tip over, spilling out
+          its insides.
+      forms:
+        metapod:
+          name: Metapod
+          form_name: *red-blue.pokemon.metapod.forms.metapod.form_name
+          default: true
+          battle_only: *red-blue.pokemon.metapod.forms.metapod.battle_only
+          icon: *x-y.pokemon.metapod.forms.metapod.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/metapod-default.png
+            - ultra-sun-ultra-moon/metapod-default.png
+          art: *red-blue.pokemon.metapod.forms.metapod.art
+          footprint: *ruby-sapphire.pokemon.metapod.forms.metapod.footprint
+          cry: *x-y.pokemon.metapod.forms.metapod.cry

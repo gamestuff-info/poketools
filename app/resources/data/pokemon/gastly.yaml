@@ -1,0 +1,919 @@
+red-blue:
+  name: &red-blue.name GASTLY
+  position: &red-blue.position 92
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 92
+    kanto: 92
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: &red-blue.pokemon.gastly.default true
+      capture_rate: &red-blue.pokemon.gastly.capture_rate 190
+      experience: &red-blue.pokemon.gastly.experience 95
+      types: &red-blue.pokemon.gastly.types
+        - ghost
+        - poison
+      stats: &red-blue.pokemon.gastly.stats
+        hp:
+          base_value: 30
+          effort_change: 30
+        attack:
+          base_value: 35
+          effort_change: 35
+        defense:
+          base_value: 30
+          effort_change: 30
+        speed:
+          base_value: 80
+          effort_change: 80
+        special:
+          base_value: 100
+          effort_change: 100
+      growth_rate: &red-blue.pokemon.gastly.growth_rate medium-slow
+      genus: &red-blue.pokemon.gastly.genus 'GAS Pokémon'
+      height: &red-blue.pokemon.gastly.height 12
+      weight: &red-blue.pokemon.gastly.weight 9
+      flavor_text:
+        red: |
+          Almost invisible,
+          this gaseous
+          POKéMON cloaks
+          the target and
+          puts it to sleep
+          without notice.
+        blue: |
+          Almost invisible,
+          this gaseous
+          POKéMON cloaks
+          the target and
+          puts it to sleep
+          without notice.
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: &red-blue.pokemon.gastly.forms.gastly.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.gastly.forms.gastly.battle_only false
+          sprites:
+            - red-blue/gastly-default.png
+            - red-blue/gray/gastly-default.png
+            - red-blue/back/gastly-default.png
+          art: &red-blue.pokemon.gastly.forms.gastly.art
+            - gastly-default.png
+          cry: &red-blue.pokemon.gastly.forms.gastly.cry gen5/gastly-default.webm
+          icon: &red-blue.pokemon.gastly.forms.gastly.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: *red-blue.pokemon.gastly.default
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      experience: *red-blue.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      stats: *red-blue.pokemon.gastly.stats
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      genus: *red-blue.pokemon.gastly.genus
+      height: *red-blue.pokemon.gastly.height
+      weight: *red-blue.pokemon.gastly.weight
+      flavor_text:
+        yellow: |
+          Said to appear in
+          decrepit, deserted
+          buildings. It has
+          no real shape as
+          it appears to be
+          made of a gas.
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          sprites:
+            - yellow/gastly-default.png
+            - yellow/gray/gastly-default.png
+            - yellow/back/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+          icon: *red-blue.pokemon.gastly.forms.gastly.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 91
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 57
+    original-johto-abc: 53
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: *red-blue.pokemon.gastly.default
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      experience: *red-blue.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      stats: &gold-silver.pokemon.gastly.stats
+        hp:
+          base_value: 30
+          effort_change: 30
+        attack:
+          base_value: 35
+          effort_change: 35
+        defense:
+          base_value: 30
+          effort_change: 30
+        speed:
+          base_value: 80
+          effort_change: 80
+        special-attack:
+          base_value: 100
+          effort_change: 100
+        special-defense:
+          base_value: 35
+          effort_change: 100
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      female_rate: &gold-silver.pokemon.gastly.female_rate 50
+      hatch_steps: &gold-silver.pokemon.gastly.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.gastly.egg_groups
+        - indeterminate
+      genus: *red-blue.pokemon.gastly.genus
+      height: *red-blue.pokemon.gastly.height
+      weight: &gold-silver.pokemon.gastly.weight 1
+      flavor_text:
+        gold: |
+          With its gas-like
+          body, it can sneak
+          into any place it
+          desires. However,
+          it can be blown
+          away by wind.
+        silver: |
+          Its thin body is
+          made of gas. It
+          can envelop an
+          opponent of any
+          size and cause
+          suffocation.
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          sprites:
+            - gold-silver/gastly-default.png
+            - gold-silver/back/gastly-default.png
+            - gold-silver/shiny/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+          icon: &gold-silver.pokemon.gastly.forms.gastly.icon gen2/ghost.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: *red-blue.pokemon.gastly.default
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      experience: *red-blue.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      stats: *gold-silver.pokemon.gastly.stats
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      genus: *red-blue.pokemon.gastly.genus
+      height: *red-blue.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      flavor_text:
+        crystal: |
+          It wraps its op-
+          ponent in its gas-
+          like body, slowly
+          weakening its prey
+          by poisoning it
+          through the skin.
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          sprites:
+            - crystal/gastly-default.png
+            - crystal/back/gastly-default.png
+            - crystal/shiny/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+          icon: *gold-silver.pokemon.gastly.forms.gastly.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 262
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: *red-blue.pokemon.gastly.default
+      forms_switchable: &ruby-sapphire.pokemon.gastly.forms_switchable false
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      experience: *red-blue.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      stats: &ruby-sapphire.pokemon.gastly.stats
+        hp:
+          base_value: 30
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 30
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      happiness: &ruby-sapphire.pokemon.gastly.happiness 70
+      abilities: &ruby-sapphire.pokemon.gastly.abilities
+        levitate:
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.gastly.genus
+      height: &ruby-sapphire.pokemon.gastly.height 13
+      weight: *gold-silver.pokemon.gastly.weight
+      flavor_text:
+        ruby: |
+          GASTLY is largely composed of gaseous
+          matter. When exposed to a strong wind,
+          the gaseous body quickly dwindles away.
+          Groups of this POKéMON cluster under
+          the eaves of houses to escape the
+          ravages of wind.
+        sapphire: |
+          GASTLY is largely composed of gaseous
+          matter. When exposed to a strong wind,
+          the gaseous body quickly dwindles away.
+          Groups of this POKéMON cluster under
+          the eaves of houses to escape the
+          ravages of wind.
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: &ruby-sapphire.pokemon.gastly.forms.gastly.icon gen5/gastly-default.png
+          sprites:
+            - ruby-sapphire/gastly-default.png
+            - ruby-sapphire/back/gastly-default.png
+            - ruby-sapphire/shiny/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: &ruby-sapphire.pokemon.gastly.forms.gastly.footprint gastly.png
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: *red-blue.pokemon.gastly.default
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      experience: *red-blue.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      stats: *ruby-sapphire.pokemon.gastly.stats
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      genus: *red-blue.pokemon.gastly.genus
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      flavor_text:
+        emerald: |
+          When exposed to a strong wind, a GASTLY's
+          gaseous body quickly dwindles away.
+          They cluster under the eaves of houses
+          to escape the ravages of wind.
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *ruby-sapphire.pokemon.gastly.forms.gastly.icon
+          sprites:
+            - emerald/gastly-default.png
+            - emerald/shiny/gastly-default.png
+            - emerald/animated/gastly-default.webm
+            - emerald/animated/shiny/gastly-default.webm
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 103
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: *red-blue.pokemon.gastly.default
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      experience: *red-blue.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      stats: *ruby-sapphire.pokemon.gastly.stats
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      genus: *red-blue.pokemon.gastly.genus
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          sprites:
+            - colosseum/gastly-default.png
+            - colosseum/shiny/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: *red-blue.pokemon.gastly.default
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      experience: *red-blue.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      stats: *ruby-sapphire.pokemon.gastly.stats
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      genus: *red-blue.pokemon.gastly.genus
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          sprites:
+            - xd/gastly-default.png
+            - xd/shiny/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    gastly:
+      name: GASTLY
+      default: *red-blue.pokemon.gastly.default
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      experience: *red-blue.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      stats: *ruby-sapphire.pokemon.gastly.stats
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      genus: *red-blue.pokemon.gastly.genus
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      flavor_text:
+        firered: |
+          A being that exists as a thin gas. It can
+          topple an Indian elephant by enveloping
+          the prey in two seconds.
+        leafgreen: |
+          Almost invisible, this gaseous POKéMON
+          cloaks the target and puts it to sleep
+          without notice.
+      forms:
+        gastly:
+          name: GASTLY
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *ruby-sapphire.pokemon.gastly.forms.gastly.icon
+          sprites:
+            - firered-leafgreen/gastly-default.png
+            - firered-leafgreen/back/gastly-default.png
+            - firered-leafgreen/shiny/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+diamond-pearl:
+  name: &diamond-pearl.name Gastly
+  position: &diamond-pearl.position 100
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 69
+  pokemon:
+    gastly:
+      genus: &diamond-pearl.pokemon.gastly.genus 'Gas Pokémon'
+      shape: &diamond-pearl.pokemon.gastly.shape ball
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: &diamond-pearl.pokemon.gastly.baby false
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      pal_park: &diamond-pearl.pokemon.gastly.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: &diamond-pearl.pokemon.gastly.experience 62
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      stats: &diamond-pearl.pokemon.gastly.stats
+        hp:
+          base_value: 30
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 1
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        diamond: |
+          This Pokémon’s body is 95% made up
+          of gases, which are blown away by
+          strong gusts of wind.
+        pearl: |
+          A Pokémon born from poison gases.
+          It defeats even the largest foes
+          by enveloping them in gas.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *ruby-sapphire.pokemon.gastly.forms.gastly.icon
+          sprites:
+            - diamond-pearl/back/shiny/gastly-default.png
+            - diamond-pearl/back/gastly-default.png
+            - diamond-pearl/shiny/gastly-default.png
+            - diamond-pearl/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 69
+  pokemon:
+    gastly:
+      genus: *diamond-pearl.pokemon.gastly.genus
+      shape: *diamond-pearl.pokemon.gastly.shape
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: *diamond-pearl.pokemon.gastly.baby
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      pal_park: *diamond-pearl.pokemon.gastly.pal_park
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: *diamond-pearl.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      stats: *diamond-pearl.pokemon.gastly.stats
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        platinum: |
+          Born from gases, anyone would
+          faint if engulfed by its gaseous
+          body, which contains poison.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *ruby-sapphire.pokemon.gastly.forms.gastly.icon
+          sprites:
+            - platinum/back/shiny/gastly-default.png
+            - platinum/back/gastly-default.png
+            - platinum/shiny/gastly-default.png
+            - platinum/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 58
+  pokemon:
+    gastly:
+      genus: *diamond-pearl.pokemon.gastly.genus
+      shape: *diamond-pearl.pokemon.gastly.shape
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: *diamond-pearl.pokemon.gastly.baby
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      pal_park: *diamond-pearl.pokemon.gastly.pal_park
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: *diamond-pearl.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      stats: *diamond-pearl.pokemon.gastly.stats
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        heartgold: |
+          With its gas-like body, it can sneak
+          into any place it desires. However,
+          it can be blown away by wind.
+        soulsilver: |
+          Its body is made of gas. Despite lacking
+          substance, it can envelop an opponent
+          of any size and cause suffocation.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 2-4
+            power:
+              base_value: 1
+              range: 1
+            skill:
+              base_value: 4
+              range: 2-4
+            stamina:
+              base_value: 1
+              range: 1-2
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.gastly.forms.gastly.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/gastly-default.png
+            - heartgold-soulsilver/back/gastly-default.png
+            - heartgold-soulsilver/shiny/gastly-default.png
+            - heartgold-soulsilver/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    gastly:
+      genus: *diamond-pearl.pokemon.gastly.genus
+      color: &black-white.pokemon.gastly.color purple
+      shape: *diamond-pearl.pokemon.gastly.shape
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: *diamond-pearl.pokemon.gastly.baby
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: *diamond-pearl.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      stats: *diamond-pearl.pokemon.gastly.stats
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        black: |
+          Born from gases, anyone would
+          faint if engulfed by its gaseous
+          body, which contains poison.
+        white: |
+          Born from gases, anyone would
+          faint if engulfed by its gaseous
+          body, which contains poison.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *ruby-sapphire.pokemon.gastly.forms.gastly.icon
+          sprites:
+            - black-white/back/shiny/gastly-default.png
+            - black-white/back/gastly-default.png
+            - black-white/shiny/gastly-default.png
+            - black-white/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    gastly:
+      genus: *diamond-pearl.pokemon.gastly.genus
+      color: *black-white.pokemon.gastly.color
+      shape: *diamond-pearl.pokemon.gastly.shape
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: *diamond-pearl.pokemon.gastly.baby
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: *diamond-pearl.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      stats: *diamond-pearl.pokemon.gastly.stats
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        black-2: |
+          Born from gases, anyone would
+          faint if engulfed by its gaseous
+          body, which contains poison.
+        white-2: |
+          Born from gases, anyone would
+          faint if engulfed by its gaseous
+          body, which contains poison.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *ruby-sapphire.pokemon.gastly.forms.gastly.icon
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *red-blue.pokemon.gastly.forms.gastly.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 30
+  pokemon:
+    gastly:
+      genus: *diamond-pearl.pokemon.gastly.genus
+      color: *black-white.pokemon.gastly.color
+      shape: *diamond-pearl.pokemon.gastly.shape
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: *diamond-pearl.pokemon.gastly.baby
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: *diamond-pearl.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      mega: &x-y.pokemon.gastly.mega false
+      stats: *diamond-pearl.pokemon.gastly.stats
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        x: |
+          Its body is made of gas. Despite lacking substance,
+          it can envelop an opponent of any size and
+          cause suffocation.
+        'y': |
+          Born from gases, anyone would faint if engulfed by
+          its gaseous body, which contains poison.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: &x-y.pokemon.gastly.forms.gastly.icon gastly-default.png
+          sprites:
+            - x-y/shiny/gastly-default.png
+            - x-y/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: &x-y.pokemon.gastly.forms.gastly.cry gastly-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    gastly:
+      genus: *diamond-pearl.pokemon.gastly.genus
+      color: *black-white.pokemon.gastly.color
+      shape: *diamond-pearl.pokemon.gastly.shape
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: *diamond-pearl.pokemon.gastly.baby
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: *diamond-pearl.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      mega: *x-y.pokemon.gastly.mega
+      stats: *diamond-pearl.pokemon.gastly.stats
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        omega-ruby: |
+          Gastly is largely composed of gaseous matter. When exposed
+          to a strong wind, the gaseous body quickly dwindles away.
+          Groups of this Pokémon cluster under the eaves of houses to
+          escape the ravages of wind.
+        alpha-sapphire: |
+          Gastly is largely composed of gaseous matter. When exposed
+          to a strong wind, the gaseous body quickly dwindles away.
+          Groups of this Pokémon cluster under the eaves of houses to
+          escape the ravages of wind.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *x-y.pokemon.gastly.forms.gastly.icon
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *x-y.pokemon.gastly.forms.gastly.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/gastly-default.png
+            - omega-ruby-alpha-sapphire/shiny/gastly-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 61
+    original-melemele: 61
+    original-akala: 23
+    original-ulaula: 32
+  pokemon:
+    gastly:
+      genus: *diamond-pearl.pokemon.gastly.genus
+      color: *black-white.pokemon.gastly.color
+      shape: *diamond-pearl.pokemon.gastly.shape
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: *diamond-pearl.pokemon.gastly.baby
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: *diamond-pearl.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      mega: *x-y.pokemon.gastly.mega
+      stats: *diamond-pearl.pokemon.gastly.stats
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        sun: |-
+          Should a strange light be seen flickering
+          in an abandoned building, Gastly is lurking there.
+        moon: |-
+          Although Gastly is barely visible, when it’s near,
+          a faint sweet smell lingers.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *x-y.pokemon.gastly.forms.gastly.icon
+          sprites:
+            - sun-moon/shiny/gastly-default.png
+            - sun-moon/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *x-y.pokemon.gastly.forms.gastly.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 73
+    updated-melemele: 73
+    updated-akala: 23
+    updated-ulaula: 32
+  pokemon:
+    gastly:
+      genus: *diamond-pearl.pokemon.gastly.genus
+      color: *black-white.pokemon.gastly.color
+      shape: *diamond-pearl.pokemon.gastly.shape
+      female_rate: *gold-silver.pokemon.gastly.female_rate
+      capture_rate: *red-blue.pokemon.gastly.capture_rate
+      happiness: *ruby-sapphire.pokemon.gastly.happiness
+      baby: *diamond-pearl.pokemon.gastly.baby
+      hatch_steps: *gold-silver.pokemon.gastly.hatch_steps
+      growth_rate: *red-blue.pokemon.gastly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.gastly.forms_switchable
+      name: Gastly
+      default: *red-blue.pokemon.gastly.default
+      height: *ruby-sapphire.pokemon.gastly.height
+      weight: *gold-silver.pokemon.gastly.weight
+      experience: *diamond-pearl.pokemon.gastly.experience
+      types: *red-blue.pokemon.gastly.types
+      egg_groups: *gold-silver.pokemon.gastly.egg_groups
+      mega: *x-y.pokemon.gastly.mega
+      stats: *diamond-pearl.pokemon.gastly.stats
+      abilities: *ruby-sapphire.pokemon.gastly.abilities
+      flavor_text:
+        ultra-sun: |-
+          It’s said that gas emanating from a graveyard
+          was possessed by the grievances of the
+          deceased and thus became a Pokémon.
+        ultra-moon: |-
+          Poisonous gas comprises 95% of its body. It’s
+          said that the remaining 5% is made up of the
+          souls of those who died from the gas.
+      forms:
+        gastly:
+          name: Gastly
+          form_name: *red-blue.pokemon.gastly.forms.gastly.form_name
+          default: true
+          battle_only: *red-blue.pokemon.gastly.forms.gastly.battle_only
+          icon: *x-y.pokemon.gastly.forms.gastly.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/gastly-default.png
+            - ultra-sun-ultra-moon/gastly-default.png
+          art: *red-blue.pokemon.gastly.forms.gastly.art
+          footprint: *ruby-sapphire.pokemon.gastly.forms.gastly.footprint
+          cry: *x-y.pokemon.gastly.forms.gastly.cry

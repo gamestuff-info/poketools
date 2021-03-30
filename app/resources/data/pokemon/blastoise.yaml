@@ -1,0 +1,1096 @@
+red-blue:
+  name: &red-blue.name BLASTOISE
+  position: &red-blue.position 9
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 9
+    kanto: 9
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: &red-blue.pokemon.blastoise.default true
+      capture_rate: &red-blue.pokemon.blastoise.capture_rate 45
+      experience: &red-blue.pokemon.blastoise.experience 210
+      types: &red-blue.pokemon.blastoise.types
+        - water
+      stats: &red-blue.pokemon.blastoise.stats
+        hp:
+          base_value: 79
+          effort_change: 79
+        attack:
+          base_value: 83
+          effort_change: 83
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 78
+          effort_change: 78
+        special:
+          base_value: 85
+          effort_change: 85
+      growth_rate: &red-blue.pokemon.blastoise.growth_rate medium-slow
+      genus: &red-blue.pokemon.blastoise.genus 'SHELLFISH Pokémon'
+      height: &red-blue.pokemon.blastoise.height 16
+      weight: &red-blue.pokemon.blastoise.weight 8573
+      flavor_text:
+        red: |
+          A brutal POKéMON
+          with pressurized
+          water jets on its
+          shell. They are
+           used for high
+          speed tackles.
+        blue: |
+          A brutal POKéMON
+          with pressurized
+          water jets on its
+          shell. They are
+          used for high
+          speed tackles.
+      evolution_parent: &red-blue.pokemon.blastoise.evolution_parent wartortle/wartortle
+      evolution_conditions: &red-blue.pokemon.blastoise.evolution_conditions
+        level-up:
+          minimum_level: 36
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: &red-blue.pokemon.blastoise.forms.blastoise.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.blastoise.forms.blastoise.battle_only false
+          sprites:
+            - red-blue/blastoise-default.png
+            - red-blue/gray/blastoise-default.png
+            - red-blue/back/blastoise-default.png
+          art: &red-blue.pokemon.blastoise.forms.blastoise.art
+            - blastoise-default.png
+          cry: &red-blue.pokemon.blastoise.forms.blastoise.cry gen5/blastoise-default.webm
+          icon: &red-blue.pokemon.blastoise.forms.blastoise.icon gen1/water.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: *red-blue.pokemon.blastoise.default
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      experience: *red-blue.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      stats: *red-blue.pokemon.blastoise.stats
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      genus: *red-blue.pokemon.blastoise.genus
+      height: *red-blue.pokemon.blastoise.height
+      weight: *red-blue.pokemon.blastoise.weight
+      flavor_text:
+        yellow: |
+          Once it takes aim
+          at its enemy, it
+          blasts out water
+          with even more
+          force than a fire
+          hose.
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          sprites:
+            - yellow/blastoise-default.png
+            - yellow/gray/blastoise-default.png
+            - yellow/back/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+          icon: *red-blue.pokemon.blastoise.forms.blastoise.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 8
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 233
+    original-johto-abc: 3
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: *red-blue.pokemon.blastoise.default
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      experience: *red-blue.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      stats: &gold-silver.pokemon.blastoise.stats
+        hp:
+          base_value: 79
+          effort_change: 79
+        attack:
+          base_value: 83
+          effort_change: 83
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 78
+          effort_change: 78
+        special-attack:
+          base_value: 85
+          effort_change: 85
+        special-defense:
+          base_value: 105
+          effort_change: 85
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      female_rate: &gold-silver.pokemon.blastoise.female_rate 12
+      hatch_steps: &gold-silver.pokemon.blastoise.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.blastoise.egg_groups
+        - monster
+        - water1
+      genus: *red-blue.pokemon.blastoise.genus
+      height: *red-blue.pokemon.blastoise.height
+      weight: &gold-silver.pokemon.blastoise.weight 857
+      flavor_text:
+        gold: |
+          It deliberately
+          makes itself heavy
+          so it can with-
+          stand the recoil
+          of the water jets
+          it fires.
+        silver: |
+          The rocket cannons
+          on its shell fire
+          jets of water
+          capable of punch-
+          ing holes through
+          thick steel.
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          sprites:
+            - gold-silver/blastoise-default.png
+            - gold-silver/back/blastoise-default.png
+            - gold-silver/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+          icon: &gold-silver.pokemon.blastoise.forms.blastoise.icon gen2/squirtle.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: *red-blue.pokemon.blastoise.default
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      experience: *red-blue.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      stats: *gold-silver.pokemon.blastoise.stats
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      genus: *red-blue.pokemon.blastoise.genus
+      height: *red-blue.pokemon.blastoise.height
+      weight: *gold-silver.pokemon.blastoise.weight
+      flavor_text:
+        crystal: |
+          It firmly plants
+          its feet on the
+          ground before
+          shooting water
+          from the jets on
+          its back.
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          sprites:
+            - crystal/blastoise-default.png
+            - crystal/back/blastoise-default.png
+            - crystal/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+          icon: *gold-silver.pokemon.blastoise.forms.blastoise.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 211
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: *red-blue.pokemon.blastoise.default
+      forms_switchable: &ruby-sapphire.pokemon.blastoise.forms_switchable false
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      experience: *red-blue.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      stats: &ruby-sapphire.pokemon.blastoise.stats
+        hp:
+          base_value: 79
+          effort_change: 0
+        attack:
+          base_value: 83
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 0
+        speed:
+          base_value: 78
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 3
+        special-defense:
+          base_value: 79
+          effort_change: 3
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      happiness: &ruby-sapphire.pokemon.blastoise.happiness 70
+      abilities: &ruby-sapphire.pokemon.blastoise.abilities
+        torrent: &ruby-sapphire.pokemon.blastoise.abilities.torrent
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.blastoise.genus
+      height: *red-blue.pokemon.blastoise.height
+      weight: &ruby-sapphire.pokemon.blastoise.weight 855
+      flavor_text:
+        ruby: |
+          BLASTOISE has water spouts that
+          protrude from its shell. The water
+           spouts are very accurate.
+          They can shoot bullets of water with
+          enough accuracy to strike empty cans
+          from a distance of over 160 feet.
+        sapphire: |
+          BLASTOISE has water spouts that
+          protrude from its shell. The water
+           spouts are very accurate.
+          They can shoot bullets of water with
+          enough accuracy to strike empty cans
+          from a distance of over 160 feet.
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: &ruby-sapphire.pokemon.blastoise.forms.blastoise.icon gen5/blastoise-default.png
+          sprites:
+            - ruby-sapphire/blastoise-default.png
+            - ruby-sapphire/back/blastoise-default.png
+            - ruby-sapphire/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: &ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint blastoise.png
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: *red-blue.pokemon.blastoise.default
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      experience: *red-blue.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      stats: *ruby-sapphire.pokemon.blastoise.stats
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      abilities: *ruby-sapphire.pokemon.blastoise.abilities
+      genus: *red-blue.pokemon.blastoise.genus
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      flavor_text:
+        emerald: |
+          The waterspouts that protrude from its
+          shell are highly accurate.  Their bullets of
+          water can precisely nail tin cans from
+          a distance of over 160 feet.
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *ruby-sapphire.pokemon.blastoise.forms.blastoise.icon
+          sprites:
+            - emerald/blastoise-default.png
+            - emerald/shiny/blastoise-default.png
+            - emerald/animated/blastoise-default.webm
+            - emerald/animated/shiny/blastoise-default.webm
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 28
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: *red-blue.pokemon.blastoise.default
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      experience: *red-blue.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      stats: *ruby-sapphire.pokemon.blastoise.stats
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      abilities: *ruby-sapphire.pokemon.blastoise.abilities
+      genus: *red-blue.pokemon.blastoise.genus
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          sprites:
+            - colosseum/blastoise-default.png
+            - colosseum/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: *red-blue.pokemon.blastoise.default
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      experience: *red-blue.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      stats: *ruby-sapphire.pokemon.blastoise.stats
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      abilities: *ruby-sapphire.pokemon.blastoise.abilities
+      genus: *red-blue.pokemon.blastoise.genus
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          sprites:
+            - xd/blastoise-default.png
+            - xd/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    blastoise:
+      name: BLASTOISE
+      default: *red-blue.pokemon.blastoise.default
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      experience: *red-blue.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      stats: *ruby-sapphire.pokemon.blastoise.stats
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      abilities: *ruby-sapphire.pokemon.blastoise.abilities
+      genus: *red-blue.pokemon.blastoise.genus
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      flavor_text:
+        firered: |
+          It crushes its foe under its heavy body
+          to cause fainting. In a pinch, it will
+          withdraw inside its shell.
+        leafgreen: |
+          The pressurized water jets on this brutal
+          POKéMON's shell are used for high-
+          speed tackles.
+      forms:
+        blastoise:
+          name: BLASTOISE
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *ruby-sapphire.pokemon.blastoise.forms.blastoise.icon
+          sprites:
+            - firered-leafgreen/blastoise-default.png
+            - firered-leafgreen/back/blastoise-default.png
+            - firered-leafgreen/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Blastoise
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    blastoise:
+      genus: &diamond-pearl.pokemon.blastoise.genus 'Shellfish Pokémon'
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      shape: &diamond-pearl.pokemon.blastoise.shape upright
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: &diamond-pearl.pokemon.blastoise.baby false
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      pal_park: &diamond-pearl.pokemon.blastoise.pal_park
+        area: pond
+        rate: 3
+        score: 90
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: &diamond-pearl.pokemon.blastoise.experience 239
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      stats: &diamond-pearl.pokemon.blastoise.stats
+        hp:
+          base_value: 79
+          effort_change: 0
+        attack:
+          base_value: 83
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 0
+        speed:
+          base_value: 78
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 105
+          effort_change: 3
+      abilities: &diamond-pearl.pokemon.blastoise.abilities
+        torrent: *ruby-sapphire.pokemon.blastoise.abilities.torrent
+        rain-dish:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text:
+        diamond: |
+          The jets of water it spouts from
+          the rocket cannons on its shell
+          can punch through thick steel.
+        pearl: |
+          The jets of water it spouts from
+          the rocket cannons on its shell
+          can punch through thick steel.
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *ruby-sapphire.pokemon.blastoise.forms.blastoise.icon
+          sprites:
+            - diamond-pearl/back/blastoise-default.png
+            - diamond-pearl/back/shiny/blastoise-default.png
+            - diamond-pearl/blastoise-default.png
+            - diamond-pearl/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    blastoise:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      pal_park: *diamond-pearl.pokemon.blastoise.pal_park
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: *diamond-pearl.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      stats: *diamond-pearl.pokemon.blastoise.stats
+      abilities: *diamond-pearl.pokemon.blastoise.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text:
+        platinum: |
+          The jets of water it spouts from
+          the rocket cannons on its shell
+          can punch through thick steel.
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *ruby-sapphire.pokemon.blastoise.forms.blastoise.icon
+          sprites:
+            - platinum/back/blastoise-default.png
+            - platinum/back/shiny/blastoise-default.png
+            - platinum/blastoise-default.png
+            - platinum/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 239
+  pokemon:
+    blastoise:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      pal_park: *diamond-pearl.pokemon.blastoise.pal_park
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: *diamond-pearl.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      stats: *diamond-pearl.pokemon.blastoise.stats
+      abilities: *diamond-pearl.pokemon.blastoise.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It deliberately makes itself heavy
+          so it can withstand the recoil
+          of the water jets it fires.
+        soulsilver: |
+          The rocket cannons on its shell fire
+          jets of water capable of punching
+          holes through thick steel.
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 3
+            power:
+              base_value: 4
+              range: 2-5
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.blastoise.forms.blastoise.icon
+          sprites:
+            - heartgold-soulsilver/back/blastoise-default.png
+            - heartgold-soulsilver/back/shiny/blastoise-default.png
+            - heartgold-soulsilver/blastoise-default.png
+            - heartgold-soulsilver/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    blastoise:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: &black-white.pokemon.blastoise.color blue
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: *diamond-pearl.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      stats: *diamond-pearl.pokemon.blastoise.stats
+      abilities: *diamond-pearl.pokemon.blastoise.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text:
+        black: |
+          The jets of water it spouts from
+          the rocket cannons on its shell
+          can punch through thick steel.
+        white: |
+          The jets of water it spouts from
+          the rocket cannons on its shell
+          can punch through thick steel.
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *ruby-sapphire.pokemon.blastoise.forms.blastoise.icon
+          sprites:
+            - black-white/back/blastoise-default.png
+            - black-white/back/shiny/blastoise-default.png
+            - black-white/blastoise-default.png
+            - black-white/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    blastoise:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.blastoise.forms_switchable
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: *diamond-pearl.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      stats: *diamond-pearl.pokemon.blastoise.stats
+      abilities: *diamond-pearl.pokemon.blastoise.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text:
+        black-2: |
+          The jets of water it spouts from
+          the rocket cannons on its shell
+          can punch through thick steel.
+        white-2: |
+          The jets of water it spouts from
+          the rocket cannons on its shell
+          can punch through thick steel.
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *ruby-sapphire.pokemon.blastoise.forms.blastoise.icon
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *red-blue.pokemon.blastoise.forms.blastoise.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 88
+  pokemon:
+    blastoise:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: &x-y.pokemon.blastoise.forms_switchable true
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: *diamond-pearl.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      mega: &x-y.pokemon.blastoise.mega false
+      stats: *diamond-pearl.pokemon.blastoise.stats
+      abilities: *diamond-pearl.pokemon.blastoise.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text: &x-y.pokemon.blastoise.flavor_text
+        x: |
+          It crushes its foe under its heavy body to cause
+          fainting. In a pinch, it will withdraw inside its shell.
+        'y': |
+          The pressurized water jets on this brutal Pokémon’s
+          shell are used for high-speed tackles.
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: &x-y.pokemon.blastoise.forms.blastoise.icon blastoise-default.png
+          sprites:
+            - x-y/blastoise-default.png
+            - x-y/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: &x-y.pokemon.blastoise.forms.blastoise.cry blastoise-default.webm
+    blastoise-mega:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *x-y.pokemon.blastoise.forms_switchable
+      name: &x-y.pokemon.blastoise-mega.name 'Mega Blastoise'
+      default: &x-y.pokemon.blastoise-mega.default false
+      height: *red-blue.pokemon.blastoise.height
+      weight: &x-y.pokemon.blastoise-mega.weight 1011
+      experience: &x-y.pokemon.blastoise-mega.experience 284
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      mega: &x-y.pokemon.blastoise-mega.mega true
+      stats: &x-y.pokemon.blastoise-mega.stats
+        hp:
+          base_value: 79
+          effort_change: 0
+        attack:
+          base_value: 103
+          effort_change: 0
+        defense:
+          base_value: 120
+          effort_change: 0
+        speed:
+          base_value: 78
+          effort_change: 0
+        special-attack:
+          base_value: 135
+          effort_change: 0
+        special-defense:
+          base_value: 115
+          effort_change: 3
+      abilities: &x-y.pokemon.blastoise-mega.abilities
+        mega-launcher: *ruby-sapphire.pokemon.blastoise.abilities.torrent
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text: *x-y.pokemon.blastoise.flavor_text
+      forms:
+        blastoise-mega:
+          name: 'Mega Blastoise'
+          form_name: &x-y.pokemon.blastoise-mega.forms.blastoise-mega.form_name 'Mega Blastoise'
+          default: true
+          battle_only: &x-y.pokemon.blastoise-mega.forms.blastoise-mega.battle_only true
+          icon: &x-y.pokemon.blastoise-mega.forms.blastoise-mega.icon blastoise-mega.png
+          sprites:
+            - x-y/blastoise-mega.png
+            - x-y/shiny/blastoise-mega.png
+          art: &x-y.pokemon.blastoise-mega.forms.blastoise-mega.art
+            - blastoise-mega.png
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: &x-y.pokemon.blastoise-mega.forms.blastoise-mega.cry blastoise-mega.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    blastoise:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *x-y.pokemon.blastoise.forms_switchable
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: *diamond-pearl.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      mega: *x-y.pokemon.blastoise.mega
+      stats: *diamond-pearl.pokemon.blastoise.stats
+      abilities: *diamond-pearl.pokemon.blastoise.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.blastoise.flavor_text
+        omega-ruby: |
+          Blastoise has water spouts that protrude from its shell.
+          The water spouts are very accurate. They can shoot bullets of
+          water with enough accuracy to strike empty cans from a
+          distance of over 160 feet.
+        alpha-sapphire: |
+          Blastoise has water spouts that protrude from its shell.
+          The water spouts are very accurate.
+          They can shoot bullets of water with enough accuracy
+          to strike empty cans from a distance of over 160 feet.
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *x-y.pokemon.blastoise.forms.blastoise.icon
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *x-y.pokemon.blastoise.forms.blastoise.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/blastoise-default.png
+            - omega-ruby-alpha-sapphire/shiny/blastoise-default.png
+    blastoise-mega:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *x-y.pokemon.blastoise.forms_switchable
+      name: *x-y.pokemon.blastoise-mega.name
+      default: *x-y.pokemon.blastoise-mega.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *x-y.pokemon.blastoise-mega.weight
+      experience: *x-y.pokemon.blastoise-mega.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      mega: *x-y.pokemon.blastoise-mega.mega
+      stats: *x-y.pokemon.blastoise-mega.stats
+      abilities: *x-y.pokemon.blastoise-mega.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.blastoise.flavor_text
+      forms:
+        blastoise-mega:
+          name: 'Mega Blastoise'
+          form_name: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.battle_only
+          icon: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.icon
+          art: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/blastoise-mega.png
+            - omega-ruby-alpha-sapphire/shiny/blastoise-mega.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    blastoise:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *x-y.pokemon.blastoise.forms_switchable
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: *diamond-pearl.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      mega: *x-y.pokemon.blastoise.mega
+      stats: *diamond-pearl.pokemon.blastoise.stats
+      abilities: *diamond-pearl.pokemon.blastoise.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *x-y.pokemon.blastoise.forms.blastoise.icon
+          sprites:
+            - sun-moon/blastoise-default.png
+            - sun-moon/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *x-y.pokemon.blastoise.forms.blastoise.cry
+    blastoise-mega:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *x-y.pokemon.blastoise.forms_switchable
+      name: *x-y.pokemon.blastoise-mega.name
+      default: *x-y.pokemon.blastoise-mega.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *x-y.pokemon.blastoise-mega.weight
+      experience: *x-y.pokemon.blastoise-mega.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      mega: *x-y.pokemon.blastoise-mega.mega
+      stats: *x-y.pokemon.blastoise-mega.stats
+      abilities: *x-y.pokemon.blastoise-mega.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      forms:
+        blastoise-mega:
+          name: 'Mega Blastoise'
+          form_name: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.battle_only
+          icon: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.icon
+          sprites:
+            - sun-moon/blastoise-mega.png
+            - sun-moon/shiny/blastoise-mega.png
+          art: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    blastoise:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *x-y.pokemon.blastoise.forms_switchable
+      name: Blastoise
+      default: *red-blue.pokemon.blastoise.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *ruby-sapphire.pokemon.blastoise.weight
+      experience: *diamond-pearl.pokemon.blastoise.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      mega: *x-y.pokemon.blastoise.mega
+      stats: *diamond-pearl.pokemon.blastoise.stats
+      abilities: *diamond-pearl.pokemon.blastoise.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      forms:
+        blastoise:
+          name: Blastoise
+          form_name: *red-blue.pokemon.blastoise.forms.blastoise.form_name
+          default: true
+          battle_only: *red-blue.pokemon.blastoise.forms.blastoise.battle_only
+          icon: *x-y.pokemon.blastoise.forms.blastoise.icon
+          sprites:
+            - ultra-sun-ultra-moon/blastoise-default.png
+            - ultra-sun-ultra-moon/shiny/blastoise-default.png
+          art: *red-blue.pokemon.blastoise.forms.blastoise.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *x-y.pokemon.blastoise.forms.blastoise.cry
+    blastoise-mega:
+      genus: *diamond-pearl.pokemon.blastoise.genus
+      evolution_parent: *red-blue.pokemon.blastoise.evolution_parent
+      color: *black-white.pokemon.blastoise.color
+      shape: *diamond-pearl.pokemon.blastoise.shape
+      female_rate: *gold-silver.pokemon.blastoise.female_rate
+      capture_rate: *red-blue.pokemon.blastoise.capture_rate
+      happiness: *ruby-sapphire.pokemon.blastoise.happiness
+      baby: *diamond-pearl.pokemon.blastoise.baby
+      hatch_steps: *gold-silver.pokemon.blastoise.hatch_steps
+      growth_rate: *red-blue.pokemon.blastoise.growth_rate
+      forms_switchable: *x-y.pokemon.blastoise.forms_switchable
+      name: *x-y.pokemon.blastoise-mega.name
+      default: *x-y.pokemon.blastoise-mega.default
+      height: *red-blue.pokemon.blastoise.height
+      weight: *x-y.pokemon.blastoise-mega.weight
+      experience: *x-y.pokemon.blastoise-mega.experience
+      types: *red-blue.pokemon.blastoise.types
+      egg_groups: *gold-silver.pokemon.blastoise.egg_groups
+      mega: *x-y.pokemon.blastoise-mega.mega
+      stats: *x-y.pokemon.blastoise-mega.stats
+      abilities: *x-y.pokemon.blastoise-mega.abilities
+      evolution_conditions: *red-blue.pokemon.blastoise.evolution_conditions
+      forms:
+        blastoise-mega:
+          name: 'Mega Blastoise'
+          form_name: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.battle_only
+          icon: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/blastoise-mega.png
+            - ultra-sun-ultra-moon/shiny/blastoise-mega.png
+          art: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.art
+          footprint: *ruby-sapphire.pokemon.blastoise.forms.blastoise.footprint
+          cry: *x-y.pokemon.blastoise-mega.forms.blastoise-mega.cry

@@ -1,0 +1,44 @@
+@import "bootstrap";
+
+.pkt-infolist {
+    @extend .table;
+    @extend .table-sm;
+    @extend .table-borderless;
+
+    width: auto;
+
+    th.pkt-infolist-name {
+        white-space: nowrap;
+        border: none;
+
+        &::after {
+            content: ":";
+        }
+    }
+
+    ul,ol {
+        margin-bottom: 0;
+    }
+
+    // Nested infolist needs help to not create extra space everywhere.
+    td.pkt-infolist-value .pkt-infolist {
+        margin: 0;
+        padding: 0;
+
+        th.pkt-infolist-name {
+            padding-left: 0;
+        }
+
+        tr:first-of-type {
+            th.pkt-infolist-name, td.pkt-infolist-value {
+                padding-top: 0;
+            }
+        }
+
+        tr:last-of-type {
+            th.pkt-infolist-name, td.pkt-infolist-value {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

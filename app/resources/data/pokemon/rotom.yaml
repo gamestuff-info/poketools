@@ -1,0 +1,1982 @@
+diamond-pearl:
+  name: &diamond-pearl.name Rotom
+  position: &diamond-pearl.position 480
+  numbers: &diamond-pearl.numbers
+    national: &diamond-pearl.numbers.national 479
+  pokemon:
+    rotom:
+      genus: &diamond-pearl.pokemon.rotom.genus 'Plasma Pokémon'
+      shape: &diamond-pearl.pokemon.rotom.shape ball
+      capture_rate: &diamond-pearl.pokemon.rotom.capture_rate 45
+      happiness: &diamond-pearl.pokemon.rotom.happiness 70
+      baby: &diamond-pearl.pokemon.rotom.baby false
+      hatch_steps: &diamond-pearl.pokemon.rotom.hatch_steps 20
+      growth_rate: &diamond-pearl.pokemon.rotom.growth_rate medium
+      forms_switchable: false
+      pal_park: &diamond-pearl.pokemon.rotom.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Rotom
+      default: &diamond-pearl.pokemon.rotom.default true
+      height: &diamond-pearl.pokemon.rotom.height 3
+      weight: &diamond-pearl.pokemon.rotom.weight 3
+      experience: &diamond-pearl.pokemon.rotom.experience 154
+      types: &diamond-pearl.pokemon.rotom.types
+        - electric
+        - ghost
+      egg_groups: &diamond-pearl.pokemon.rotom.egg_groups
+        - indeterminate
+      stats: &diamond-pearl.pokemon.rotom.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 77
+          effort_change: 0
+        speed:
+          base_value: 91
+          effort_change: 1
+        special-attack:
+          base_value: 95
+          effort_change: 1
+        special-defense:
+          base_value: 77
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.rotom.abilities
+        levitate:
+          hidden: false
+          position: 1
+      flavor_text:
+        diamond: |
+          Its body is composed of plasma. It
+          is known to infiltrate electronic
+          devices and wreak havoc.
+        pearl: |
+          Its body is composed of plasma. It
+          is known to infiltrate electronic
+          devices and wreak havoc.
+      forms:
+        rotom:
+          name: Rotom
+          form_name: &diamond-pearl.pokemon.rotom.forms.rotom.form_name Rotom
+          default: true
+          battle_only: &diamond-pearl.pokemon.rotom.forms.rotom.battle_only false
+          icon: &diamond-pearl.pokemon.rotom.forms.rotom.icon gen5/rotom-default.png
+          sprites:
+            - diamond-pearl/back/shiny/rotom-default.png
+            - diamond-pearl/back/rotom-default.png
+            - diamond-pearl/shiny/rotom-default.png
+            - diamond-pearl/rotom-default.png
+          art: &diamond-pearl.pokemon.rotom.forms.rotom.art
+            - rotom-default.png
+          footprint: &diamond-pearl.pokemon.rotom.forms.rotom.footprint rotom.png
+          cry: &diamond-pearl.pokemon.rotom.forms.rotom.cry gen5/rotom-default.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 152
+  pokemon:
+    rotom:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: &platinum.pokemon.rotom.forms_switchable true
+      forms_note: &platinum.pokemon.rotom.forms_note |
+        Forms have different signature moves and types, and the appliance forms' stats are different from the normal form's.
+
+        When switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns []{move:thunder-shock} to avoid having no moves.
+
+        Appliances for switching Rotom's form can be found in the []{location:tg-eterna-bldg}.  Requires a []{item:secret-key}.
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: Rotom
+      default: *diamond-pearl.pokemon.rotom.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *diamond-pearl.pokemon.rotom.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *diamond-pearl.pokemon.rotom.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: &platinum.pokemon.rotom.flavor_text
+        platinum: |
+          Its electric-like body can enter
+          some kinds of machines and take
+          control in order to make mischief.
+      forms:
+        rotom:
+          name: Rotom
+          form_name: *diamond-pearl.pokemon.rotom.forms.rotom.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *diamond-pearl.pokemon.rotom.forms.rotom.icon
+          sprites:
+            - platinum/back/shiny/rotom-default.png
+            - platinum/back/rotom-default.png
+            - platinum/shiny/rotom-default.png
+            - platinum/rotom-default.png
+          art: *diamond-pearl.pokemon.rotom.forms.rotom.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-heat:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *platinum.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: &platinum.pokemon.rotom-heat.name 'Heat Rotom'
+      default: &platinum.pokemon.rotom-heat.default false
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: &platinum.pokemon.rotom-heat.experience 182
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: &platinum.pokemon.rotom-heat.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 107
+          effort_change: 0
+        speed:
+          base_value: 86
+          effort_change: 1
+        special-attack:
+          base_value: 105
+          effort_change: 1
+        special-defense:
+          base_value: 107
+          effort_change: 0
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *platinum.pokemon.rotom.flavor_text
+      forms:
+        rotom-heat:
+          name: 'Heat Rotom'
+          form_name: &platinum.pokemon.rotom-heat.forms.rotom-heat.form_name 'Heat Rotom'
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &platinum.pokemon.rotom-heat.forms.rotom-heat.icon gen5/rotom-heat.png
+          sprites:
+            - platinum/back/shiny/rotom-heat.png
+            - platinum/back/rotom-heat.png
+            - platinum/shiny/rotom-heat.png
+            - platinum/rotom-heat.png
+          art: &platinum.pokemon.rotom-heat.forms.rotom-heat.art
+            - rotom-heat.png
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-wash:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *platinum.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: &platinum.pokemon.rotom-wash.name 'Wash Rotom'
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *platinum.pokemon.rotom.flavor_text
+      forms:
+        rotom-wash:
+          name: 'Wash Rotom'
+          form_name: &platinum.pokemon.rotom-wash.forms.rotom-wash.form_name 'Wash Rotom'
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &platinum.pokemon.rotom-wash.forms.rotom-wash.icon gen5/rotom-wash.png
+          sprites:
+            - platinum/back/shiny/rotom-wash.png
+            - platinum/back/rotom-wash.png
+            - platinum/shiny/rotom-wash.png
+            - platinum/rotom-wash.png
+          art: &platinum.pokemon.rotom-wash.forms.rotom-wash.art
+            - rotom-wash.png
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-frost:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *platinum.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: &platinum.pokemon.rotom-frost.name 'Frost Rotom'
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *platinum.pokemon.rotom.flavor_text
+      forms:
+        rotom-frost:
+          name: 'Frost Rotom'
+          form_name: &platinum.pokemon.rotom-frost.forms.rotom-frost.form_name 'Frost Rotom'
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &platinum.pokemon.rotom-frost.forms.rotom-frost.icon gen5/rotom-frost.png
+          sprites:
+            - platinum/rotom-frost.png
+            - platinum/back/rotom-frost.png
+            - platinum/back/shiny/rotom-frost.png
+            - platinum/shiny/rotom-frost.png
+          art: &platinum.pokemon.rotom-frost.forms.rotom-frost.art
+            - rotom-frost.png
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-fan:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *platinum.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: &platinum.pokemon.rotom-fan.name 'Fan Rotom'
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *platinum.pokemon.rotom.flavor_text
+      forms:
+        rotom-fan:
+          name: 'Fan Rotom'
+          form_name: &platinum.pokemon.rotom-fan.forms.rotom-fan.form_name 'Fan Rotom'
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &platinum.pokemon.rotom-fan.forms.rotom-fan.icon gen5/rotom-fan.png
+          sprites:
+            - platinum/back/shiny/rotom-fan.png
+            - platinum/back/rotom-fan.png
+            - platinum/shiny/rotom-fan.png
+            - platinum/rotom-fan.png
+          art: &platinum.pokemon.rotom-fan.forms.rotom-fan.art
+            - rotom-fan.png
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-mow:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *platinum.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: &platinum.pokemon.rotom-mow.name 'Mow Rotom'
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *platinum.pokemon.rotom.flavor_text
+      forms:
+        rotom-mow:
+          name: 'Mow Rotom'
+          form_name: &platinum.pokemon.rotom-mow.forms.rotom-mow.form_name 'Mow Rotom'
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &platinum.pokemon.rotom-mow.forms.rotom-mow.icon gen5/rotom-mow.png
+          sprites:
+            - platinum/back/shiny/rotom-mow.png
+            - platinum/back/rotom-mow.png
+            - platinum/shiny/rotom-mow.png
+            - platinum/rotom-mow.png
+          art: &platinum.pokemon.rotom-mow.forms.rotom-mow.art
+            - rotom-mow.png
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rotom:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: &heartgold-soulsilver.pokemon.rotom.forms_note |
+        Forms have different signature moves and the appliance forms' stats are different from the normal form's.
+
+        When switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns []{move:thunder-shock} to avoid having no moves.
+
+        Appliances for switching Rotom's form can be found in the []{location:silph-co} Office Building.  Enter the building when walking with Rotom and enter the broken elevator.
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: Rotom
+      default: *diamond-pearl.pokemon.rotom.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *diamond-pearl.pokemon.rotom.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *diamond-pearl.pokemon.rotom.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: &heartgold-soulsilver.pokemon.rotom.flavor_text
+        heartgold: |
+          Research continues on this Pokémon,
+          which could be the power source of a
+          unique motor.
+        soulsilver: |
+          Research continues on this Pokémon,
+          which could be the power source of a
+          unique motor.
+      forms:
+        rotom:
+          name: Rotom
+          form_name: *diamond-pearl.pokemon.rotom.forms.rotom.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-5
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 4
+              range: 3-5
+          icon: *diamond-pearl.pokemon.rotom.forms.rotom.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/rotom-default.png
+            - heartgold-soulsilver/back/rotom-default.png
+            - heartgold-soulsilver/shiny/rotom-default.png
+            - heartgold-soulsilver/rotom-default.png
+          art: *diamond-pearl.pokemon.rotom.forms.rotom.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-heat:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: *platinum.pokemon.rotom-heat.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.rotom.flavor_text
+      forms:
+        rotom-heat:
+          name: 'Heat Rotom'
+          form_name: *platinum.pokemon.rotom-heat.forms.rotom-heat.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-4
+            power:
+              base_value: 4
+              range: 2-4
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 4
+              range: 2-4
+          icon: *platinum.pokemon.rotom-heat.forms.rotom-heat.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/rotom-heat.png
+            - heartgold-soulsilver/back/rotom-heat.png
+            - heartgold-soulsilver/shiny/rotom-heat.png
+            - heartgold-soulsilver/rotom-heat.png
+          art: *platinum.pokemon.rotom-heat.forms.rotom-heat.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-wash:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: *platinum.pokemon.rotom-wash.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.rotom.flavor_text
+      forms:
+        rotom-wash:
+          name: 'Wash Rotom'
+          form_name: *platinum.pokemon.rotom-wash.forms.rotom-wash.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 4
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-4
+          icon: *platinum.pokemon.rotom-wash.forms.rotom-wash.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/rotom-wash.png
+            - heartgold-soulsilver/back/rotom-wash.png
+            - heartgold-soulsilver/shiny/rotom-wash.png
+            - heartgold-soulsilver/rotom-wash.png
+          art: *platinum.pokemon.rotom-wash.forms.rotom-wash.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-frost:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: *platinum.pokemon.rotom-frost.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.rotom.flavor_text
+      forms:
+        rotom-frost:
+          name: 'Frost Rotom'
+          form_name: *platinum.pokemon.rotom-frost.forms.rotom-frost.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 3-5
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 3-4
+          icon: *platinum.pokemon.rotom-frost.forms.rotom-frost.icon
+          sprites:
+            - heartgold-soulsilver/rotom-frost.png
+            - heartgold-soulsilver/back/rotom-frost.png
+            - heartgold-soulsilver/back/shiny/rotom-frost.png
+            - heartgold-soulsilver/shiny/rotom-frost.png
+          art: *platinum.pokemon.rotom-frost.forms.rotom-frost.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-fan:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: *platinum.pokemon.rotom-fan.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.rotom.flavor_text
+      forms:
+        rotom-fan:
+          name: 'Fan Rotom'
+          form_name: *platinum.pokemon.rotom-fan.forms.rotom-fan.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 3-5
+            power:
+              base_value: 3
+              range: 1-5
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 5
+              range: 4-5
+          icon: *platinum.pokemon.rotom-fan.forms.rotom-fan.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/rotom-fan.png
+            - heartgold-soulsilver/back/rotom-fan.png
+            - heartgold-soulsilver/shiny/rotom-fan.png
+            - heartgold-soulsilver/rotom-fan.png
+          art: *platinum.pokemon.rotom-fan.forms.rotom-fan.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-mow:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.rotom.forms_note
+      pal_park: *diamond-pearl.pokemon.rotom.pal_park
+      name: *platinum.pokemon.rotom-mow.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.rotom.flavor_text
+      forms:
+        rotom-mow:
+          name: 'Mow Rotom'
+          form_name: *platinum.pokemon.rotom-mow.forms.rotom-mow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 5
+              range: 3-5
+            stamina:
+              base_value: 3
+              range: 3-4
+            jump:
+              base_value: 2
+              range: 2-4
+          icon: *platinum.pokemon.rotom-mow.forms.rotom-mow.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/rotom-mow.png
+            - heartgold-soulsilver/back/rotom-mow.png
+            - heartgold-soulsilver/shiny/rotom-mow.png
+            - heartgold-soulsilver/rotom-mow.png
+          art: *platinum.pokemon.rotom-mow.forms.rotom-mow.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rotom:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: &black-white.pokemon.rotom.color red
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: &black-white.pokemon.rotom.forms_note |
+        Forms have different signature moves and types, and the appliance forms' stats are different from the normal form's.
+
+        When switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns []{move:thunder-shock} to avoid having no moves.
+
+        Appliances for switching Rotom's form can be found in Shopping Mall Nine on []{location:unova-route-9}.  Found in boxes in a storage room on the first floor on the far right.
+      name: Rotom
+      default: *diamond-pearl.pokemon.rotom.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *diamond-pearl.pokemon.rotom.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *diamond-pearl.pokemon.rotom.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: &black-white.pokemon.rotom.flavor_text
+        black: |
+          Its electric-like body can enter
+          some kinds of machines and take
+          control in order to make mischief.
+        white: |
+          Its electric-like body can enter
+          some kinds of machines and take
+          control in order to make mischief.
+      forms:
+        rotom:
+          name: Rotom
+          form_name: *diamond-pearl.pokemon.rotom.forms.rotom.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *diamond-pearl.pokemon.rotom.forms.rotom.icon
+          sprites:
+            - black-white/back/shiny/rotom-default.png
+            - black-white/back/rotom-default.png
+            - black-white/shiny/rotom-default.png
+            - black-white/rotom-default.png
+          art: *diamond-pearl.pokemon.rotom.forms.rotom.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-heat:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-heat.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: &black-white.pokemon.rotom-heat.types
+        - electric
+        - fire
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-white.pokemon.rotom.flavor_text
+      forms:
+        rotom-heat:
+          name: 'Heat Rotom'
+          form_name: *platinum.pokemon.rotom-heat.forms.rotom-heat.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-heat.forms.rotom-heat.icon
+          sprites:
+            - black-white/back/shiny/rotom-heat.png
+            - black-white/back/rotom-heat.png
+            - black-white/shiny/rotom-heat.png
+            - black-white/rotom-heat.png
+          art: *platinum.pokemon.rotom-heat.forms.rotom-heat.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-wash:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-wash.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: &black-white.pokemon.rotom-wash.types
+        - electric
+        - water
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-white.pokemon.rotom.flavor_text
+      forms:
+        rotom-wash:
+          name: 'Wash Rotom'
+          form_name: *platinum.pokemon.rotom-wash.forms.rotom-wash.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-wash.forms.rotom-wash.icon
+          sprites:
+            - black-white/back/shiny/rotom-wash.png
+            - black-white/back/rotom-wash.png
+            - black-white/shiny/rotom-wash.png
+            - black-white/rotom-wash.png
+          art: *platinum.pokemon.rotom-wash.forms.rotom-wash.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-frost:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-frost.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: &black-white.pokemon.rotom-frost.types
+        - electric
+        - ice
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-white.pokemon.rotom.flavor_text
+      forms:
+        rotom-frost:
+          name: 'Frost Rotom'
+          form_name: *platinum.pokemon.rotom-frost.forms.rotom-frost.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-frost.forms.rotom-frost.icon
+          sprites:
+            - black-white/rotom-frost.png
+            - black-white/back/rotom-frost.png
+            - black-white/back/shiny/rotom-frost.png
+            - black-white/shiny/rotom-frost.png
+          art: *platinum.pokemon.rotom-frost.forms.rotom-frost.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-fan:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-fan.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: &black-white.pokemon.rotom-fan.types
+        - electric
+        - flying
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-white.pokemon.rotom.flavor_text
+      forms:
+        rotom-fan:
+          name: 'Fan Rotom'
+          form_name: *platinum.pokemon.rotom-fan.forms.rotom-fan.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-fan.forms.rotom-fan.icon
+          sprites:
+            - black-white/back/shiny/rotom-fan.png
+            - black-white/back/rotom-fan.png
+            - black-white/shiny/rotom-fan.png
+            - black-white/rotom-fan.png
+          art: *platinum.pokemon.rotom-fan.forms.rotom-fan.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-mow:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-mow.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: &black-white.pokemon.rotom-mow.types
+        - electric
+        - grass
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-white.pokemon.rotom.flavor_text
+      forms:
+        rotom-mow:
+          name: 'Mow Rotom'
+          form_name: *platinum.pokemon.rotom-mow.forms.rotom-mow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-mow.forms.rotom-mow.icon
+          sprites:
+            - black-white/back/shiny/rotom-mow.png
+            - black-white/back/rotom-mow.png
+            - black-white/shiny/rotom-mow.png
+            - black-white/rotom-mow.png
+          art: *platinum.pokemon.rotom-mow.forms.rotom-mow.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rotom:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: Rotom
+      default: *diamond-pearl.pokemon.rotom.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *diamond-pearl.pokemon.rotom.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *diamond-pearl.pokemon.rotom.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: &black-2-white-2.pokemon.rotom.flavor_text
+        black-2: |
+          Its electric-like body can enter
+          some kinds of machines and take
+          control in order to make mischief.
+        white-2: |
+          Its electric-like body can enter
+          some kinds of machines and take
+          control in order to make mischief.
+      forms:
+        rotom:
+          name: Rotom
+          form_name: *diamond-pearl.pokemon.rotom.forms.rotom.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *diamond-pearl.pokemon.rotom.forms.rotom.icon
+          art: *diamond-pearl.pokemon.rotom.forms.rotom.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-heat:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-heat.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-heat.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-2-white-2.pokemon.rotom.flavor_text
+      forms:
+        rotom-heat:
+          name: 'Heat Rotom'
+          form_name: *platinum.pokemon.rotom-heat.forms.rotom-heat.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-heat.forms.rotom-heat.icon
+          art: *platinum.pokemon.rotom-heat.forms.rotom-heat.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-wash:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-wash.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-wash.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-2-white-2.pokemon.rotom.flavor_text
+      forms:
+        rotom-wash:
+          name: 'Wash Rotom'
+          form_name: *platinum.pokemon.rotom-wash.forms.rotom-wash.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-wash.forms.rotom-wash.icon
+          art: *platinum.pokemon.rotom-wash.forms.rotom-wash.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-frost:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-frost.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-frost.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-2-white-2.pokemon.rotom.flavor_text
+      forms:
+        rotom-frost:
+          name: 'Frost Rotom'
+          form_name: *platinum.pokemon.rotom-frost.forms.rotom-frost.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-frost.forms.rotom-frost.icon
+          art: *platinum.pokemon.rotom-frost.forms.rotom-frost.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-fan:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-fan.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-fan.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-2-white-2.pokemon.rotom.flavor_text
+      forms:
+        rotom-fan:
+          name: 'Fan Rotom'
+          form_name: *platinum.pokemon.rotom-fan.forms.rotom-fan.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-fan.forms.rotom-fan.icon
+          art: *platinum.pokemon.rotom-fan.forms.rotom-fan.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+    rotom-mow:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *black-white.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-mow.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-mow.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *black-2-white-2.pokemon.rotom.flavor_text
+      forms:
+        rotom-mow:
+          name: 'Mow Rotom'
+          form_name: *platinum.pokemon.rotom-mow.forms.rotom-mow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *platinum.pokemon.rotom-mow.forms.rotom-mow.icon
+          art: *platinum.pokemon.rotom-mow.forms.rotom-mow.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *diamond-pearl.pokemon.rotom.forms.rotom.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    kalos-mountain: 68
+  pokemon:
+    rotom:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: &x-y.pokemon.rotom.forms_note |
+        Forms have different signature moves and types, and the appliance forms' stats are different from the normal form's.
+
+        When switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns []{move:thunder-shock} to avoid having no moves.
+
+        Appliances for switching Rotom's form can be found on the second floor of Prof. Sycamore's Lab in []{location:lumiose-city}.
+      name: Rotom
+      default: *diamond-pearl.pokemon.rotom.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *diamond-pearl.pokemon.rotom.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: &x-y.pokemon.rotom.mega false
+      stats: *diamond-pearl.pokemon.rotom.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: &x-y.pokemon.rotom.flavor_text
+        x: |
+          Research continues on this Pokémon, which could
+          be the power source of a unique motor.
+        'y': |
+          Its body is composed of plasma. It is known to
+          infiltrate electronic devices and wreak havoc.
+      forms:
+        rotom:
+          name: Rotom
+          form_name: *diamond-pearl.pokemon.rotom.forms.rotom.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &x-y.pokemon.rotom.forms.rotom.icon rotom-default.png
+          sprites:
+            - x-y/shiny/rotom-default.png
+            - x-y/rotom-default.png
+          art: *diamond-pearl.pokemon.rotom.forms.rotom.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: &x-y.pokemon.rotom.forms.rotom.cry rotom-default.webm
+    rotom-heat:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *x-y.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-heat.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-heat.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *x-y.pokemon.rotom.flavor_text
+      forms:
+        rotom-heat:
+          name: 'Heat Rotom'
+          form_name: *platinum.pokemon.rotom-heat.forms.rotom-heat.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &x-y.pokemon.rotom-heat.forms.rotom-heat.icon rotom-heat.png
+          sprites:
+            - x-y/shiny/rotom-heat.png
+            - x-y/rotom-heat.png
+          art: *platinum.pokemon.rotom-heat.forms.rotom-heat.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-wash:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *x-y.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-wash.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-wash.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *x-y.pokemon.rotom.flavor_text
+      forms:
+        rotom-wash:
+          name: 'Wash Rotom'
+          form_name: *platinum.pokemon.rotom-wash.forms.rotom-wash.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &x-y.pokemon.rotom-wash.forms.rotom-wash.icon rotom-wash.png
+          sprites:
+            - x-y/shiny/rotom-wash.png
+            - x-y/rotom-wash.png
+          art: *platinum.pokemon.rotom-wash.forms.rotom-wash.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-frost:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *x-y.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-frost.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-frost.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *x-y.pokemon.rotom.flavor_text
+      forms:
+        rotom-frost:
+          name: 'Frost Rotom'
+          form_name: *platinum.pokemon.rotom-frost.forms.rotom-frost.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &x-y.pokemon.rotom-frost.forms.rotom-frost.icon rotom-frost.png
+          sprites:
+            - x-y/rotom-frost.png
+            - x-y/shiny/rotom-frost.png
+          art: *platinum.pokemon.rotom-frost.forms.rotom-frost.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-fan:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *x-y.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-fan.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-fan.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *x-y.pokemon.rotom.flavor_text
+      forms:
+        rotom-fan:
+          name: 'Fan Rotom'
+          form_name: *platinum.pokemon.rotom-fan.forms.rotom-fan.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &x-y.pokemon.rotom-fan.forms.rotom-fan.icon rotom-fan.png
+          sprites:
+            - x-y/shiny/rotom-fan.png
+            - x-y/rotom-fan.png
+          art: *platinum.pokemon.rotom-fan.forms.rotom-fan.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-mow:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *x-y.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-mow.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-mow.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *x-y.pokemon.rotom.flavor_text
+      forms:
+        rotom-mow:
+          name: 'Mow Rotom'
+          form_name: *platinum.pokemon.rotom-mow.forms.rotom-mow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: &x-y.pokemon.rotom-mow.forms.rotom-mow.icon rotom-mow.png
+          sprites:
+            - x-y/shiny/rotom-mow.png
+            - x-y/rotom-mow.png
+          art: *platinum.pokemon.rotom-mow.forms.rotom-mow.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rotom:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: &omega-ruby-alpha-sapphire.pokemon.rotom.forms_note |
+        Forms have different signature moves and types, and the appliance forms' stats are different from the normal form's.
+
+        When switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns []{move:thunder-shock} to avoid having no moves.
+
+        Appliances for switching Rotom's form can be found in boxes inside Prof. Birch's Lab in []{location:littleroot-town}.
+      name: Rotom
+      default: *diamond-pearl.pokemon.rotom.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *diamond-pearl.pokemon.rotom.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *diamond-pearl.pokemon.rotom.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.rotom.flavor_text
+        omega-ruby: |
+          Research continues on this Pokémon, which could
+          be the power source of a unique motor.
+        alpha-sapphire: |
+          Its body is composed of plasma. It is known to
+          infiltrate electronic devices and wreak havoc.
+      forms:
+        rotom:
+          name: Rotom
+          form_name: *diamond-pearl.pokemon.rotom.forms.rotom.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom.forms.rotom.icon
+          art: *diamond-pearl.pokemon.rotom.forms.rotom.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/rotom-default.png
+            - omega-ruby-alpha-sapphire/shiny/rotom-default.png
+    rotom-heat:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-heat.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-heat.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.rotom.flavor_text
+      forms:
+        rotom-heat:
+          name: 'Heat Rotom'
+          form_name: *platinum.pokemon.rotom-heat.forms.rotom-heat.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-heat.forms.rotom-heat.icon
+          art: *platinum.pokemon.rotom-heat.forms.rotom-heat.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/rotom-heat.png
+            - omega-ruby-alpha-sapphire/rotom-heat.png
+    rotom-wash:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-wash.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-wash.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.rotom.flavor_text
+      forms:
+        rotom-wash:
+          name: 'Wash Rotom'
+          form_name: *platinum.pokemon.rotom-wash.forms.rotom-wash.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-wash.forms.rotom-wash.icon
+          art: *platinum.pokemon.rotom-wash.forms.rotom-wash.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/rotom-wash.png
+            - omega-ruby-alpha-sapphire/rotom-wash.png
+    rotom-frost:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-frost.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-frost.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.rotom.flavor_text
+      forms:
+        rotom-frost:
+          name: 'Frost Rotom'
+          form_name: *platinum.pokemon.rotom-frost.forms.rotom-frost.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-frost.forms.rotom-frost.icon
+          art: *platinum.pokemon.rotom-frost.forms.rotom-frost.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/rotom-frost.png
+            - omega-ruby-alpha-sapphire/shiny/rotom-frost.png
+    rotom-fan:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-fan.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-fan.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.rotom.flavor_text
+      forms:
+        rotom-fan:
+          name: 'Fan Rotom'
+          form_name: *platinum.pokemon.rotom-fan.forms.rotom-fan.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-fan.forms.rotom-fan.icon
+          art: *platinum.pokemon.rotom-fan.forms.rotom-fan.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/rotom-fan.png
+            - omega-ruby-alpha-sapphire/rotom-fan.png
+    rotom-mow:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-mow.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-mow.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.rotom.flavor_text
+      forms:
+        rotom-mow:
+          name: 'Mow Rotom'
+          form_name: *platinum.pokemon.rotom-mow.forms.rotom-mow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-mow.forms.rotom-mow.icon
+          art: *platinum.pokemon.rotom-mow.forms.rotom-mow.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/rotom-mow.png
+            - omega-ruby-alpha-sapphire/rotom-mow.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rotom:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: &sun-moon.pokemon.rotom.forms_note |
+        Forms have different signature moves and types, and the appliance forms' stats are different from the normal form's.
+
+        When switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns []{move:thunder-shock} to avoid having no moves.
+
+        Appliances for switching Rotom's form can be found in boxes inside Prof. Kukui's Lab in []{location:alola-route-1-hauoli-outskirts}.
+      name: Rotom
+      default: *diamond-pearl.pokemon.rotom.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *diamond-pearl.pokemon.rotom.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *diamond-pearl.pokemon.rotom.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom:
+          name: Rotom
+          form_name: *diamond-pearl.pokemon.rotom.forms.rotom.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom.forms.rotom.icon
+          sprites:
+            - sun-moon/shiny/rotom-default.png
+            - sun-moon/rotom-default.png
+          art: *diamond-pearl.pokemon.rotom.forms.rotom.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-heat:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-heat.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-heat.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-heat:
+          name: 'Heat Rotom'
+          form_name: *platinum.pokemon.rotom-heat.forms.rotom-heat.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-heat.forms.rotom-heat.icon
+          sprites:
+            - sun-moon/shiny/rotom-heat.png
+            - sun-moon/rotom-heat.png
+          art: *platinum.pokemon.rotom-heat.forms.rotom-heat.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-wash:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-wash.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-wash.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-wash:
+          name: 'Wash Rotom'
+          form_name: *platinum.pokemon.rotom-wash.forms.rotom-wash.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-wash.forms.rotom-wash.icon
+          sprites:
+            - sun-moon/shiny/rotom-wash.png
+            - sun-moon/rotom-wash.png
+          art: *platinum.pokemon.rotom-wash.forms.rotom-wash.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-frost:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-frost.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-frost.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-frost:
+          name: 'Frost Rotom'
+          form_name: *platinum.pokemon.rotom-frost.forms.rotom-frost.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-frost.forms.rotom-frost.icon
+          sprites:
+            - sun-moon/rotom-frost.png
+            - sun-moon/shiny/rotom-frost.png
+          art: *platinum.pokemon.rotom-frost.forms.rotom-frost.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-fan:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-fan.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-fan.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-fan:
+          name: 'Fan Rotom'
+          form_name: *platinum.pokemon.rotom-fan.forms.rotom-fan.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-fan.forms.rotom-fan.icon
+          sprites:
+            - sun-moon/shiny/rotom-fan.png
+            - sun-moon/rotom-fan.png
+          art: *platinum.pokemon.rotom-fan.forms.rotom-fan.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-mow:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-mow.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-mow.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-mow:
+          name: 'Mow Rotom'
+          form_name: *platinum.pokemon.rotom-mow.forms.rotom-mow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-mow.forms.rotom-mow.icon
+          sprites:
+            - sun-moon/shiny/rotom-mow.png
+            - sun-moon/rotom-mow.png
+          art: *platinum.pokemon.rotom-mow.forms.rotom-mow.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rotom:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: Rotom
+      default: *diamond-pearl.pokemon.rotom.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *diamond-pearl.pokemon.rotom.experience
+      types: *diamond-pearl.pokemon.rotom.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *diamond-pearl.pokemon.rotom.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom:
+          name: Rotom
+          form_name: *diamond-pearl.pokemon.rotom.forms.rotom.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom.forms.rotom.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/rotom-default.png
+            - ultra-sun-ultra-moon/rotom-default.png
+          art: *diamond-pearl.pokemon.rotom.forms.rotom.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-heat:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-heat.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-heat.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-heat:
+          name: 'Heat Rotom'
+          form_name: *platinum.pokemon.rotom-heat.forms.rotom-heat.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-heat.forms.rotom-heat.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/rotom-heat.png
+            - ultra-sun-ultra-moon/rotom-heat.png
+          art: *platinum.pokemon.rotom-heat.forms.rotom-heat.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-wash:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-wash.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-wash.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-wash:
+          name: 'Wash Rotom'
+          form_name: *platinum.pokemon.rotom-wash.forms.rotom-wash.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-wash.forms.rotom-wash.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/rotom-wash.png
+            - ultra-sun-ultra-moon/rotom-wash.png
+          art: *platinum.pokemon.rotom-wash.forms.rotom-wash.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-frost:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-frost.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-frost.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-frost:
+          name: 'Frost Rotom'
+          form_name: *platinum.pokemon.rotom-frost.forms.rotom-frost.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-frost.forms.rotom-frost.icon
+          sprites:
+            - ultra-sun-ultra-moon/rotom-frost.png
+            - ultra-sun-ultra-moon/shiny/rotom-frost.png
+          art: *platinum.pokemon.rotom-frost.forms.rotom-frost.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-fan:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-fan.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-fan.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-fan:
+          name: 'Fan Rotom'
+          form_name: *platinum.pokemon.rotom-fan.forms.rotom-fan.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-fan.forms.rotom-fan.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/rotom-fan.png
+            - ultra-sun-ultra-moon/rotom-fan.png
+          art: *platinum.pokemon.rotom-fan.forms.rotom-fan.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry
+    rotom-mow:
+      genus: *diamond-pearl.pokemon.rotom.genus
+      color: *black-white.pokemon.rotom.color
+      shape: *diamond-pearl.pokemon.rotom.shape
+      capture_rate: *diamond-pearl.pokemon.rotom.capture_rate
+      happiness: *diamond-pearl.pokemon.rotom.happiness
+      baby: *diamond-pearl.pokemon.rotom.baby
+      hatch_steps: *diamond-pearl.pokemon.rotom.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.rotom.growth_rate
+      forms_switchable: *platinum.pokemon.rotom.forms_switchable
+      forms_note: *sun-moon.pokemon.rotom.forms_note
+      name: *platinum.pokemon.rotom-mow.name
+      default: *platinum.pokemon.rotom-heat.default
+      height: *diamond-pearl.pokemon.rotom.height
+      weight: *diamond-pearl.pokemon.rotom.weight
+      experience: *platinum.pokemon.rotom-heat.experience
+      types: *black-white.pokemon.rotom-mow.types
+      egg_groups: *diamond-pearl.pokemon.rotom.egg_groups
+      mega: *x-y.pokemon.rotom.mega
+      stats: *platinum.pokemon.rotom-heat.stats
+      abilities: *diamond-pearl.pokemon.rotom.abilities
+      forms:
+        rotom-mow:
+          name: 'Mow Rotom'
+          form_name: *platinum.pokemon.rotom-mow.forms.rotom-mow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.rotom.forms.rotom.battle_only
+          icon: *x-y.pokemon.rotom-mow.forms.rotom-mow.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/rotom-mow.png
+            - ultra-sun-ultra-moon/rotom-mow.png
+          art: *platinum.pokemon.rotom-mow.forms.rotom-mow.art
+          footprint: *diamond-pearl.pokemon.rotom.forms.rotom.footprint
+          cry: *x-y.pokemon.rotom.forms.rotom.cry

@@ -1,0 +1,745 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name DELCATTY
+  position: &ruby-sapphire.position 301
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 301
+    hoenn: 62
+  pokemon:
+    delcatty:
+      name: DELCATTY
+      default: &ruby-sapphire.pokemon.delcatty.default true
+      forms_switchable: &ruby-sapphire.pokemon.delcatty.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.delcatty.capture_rate 60
+      experience: &ruby-sapphire.pokemon.delcatty.experience 138
+      types: &ruby-sapphire.pokemon.delcatty.types
+        - normal
+      stats: &ruby-sapphire.pokemon.delcatty.stats
+        hp:
+          base_value: 70
+          effort_change: 1
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 1
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.delcatty.growth_rate fast
+      female_rate: &ruby-sapphire.pokemon.delcatty.female_rate 75
+      hatch_steps: &ruby-sapphire.pokemon.delcatty.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.delcatty.egg_groups
+        - ground
+        - fairy
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+          leppa-berry: 5
+        sapphire: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.delcatty.happiness 70
+      abilities: &ruby-sapphire.pokemon.delcatty.abilities
+        cute-charm: &ruby-sapphire.pokemon.delcatty.abilities.cute-charm
+          hidden: &ruby-sapphire.pokemon.delcatty.abilities.cute-charm.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.delcatty.genus 'PRIM Pokémon'
+      height: &ruby-sapphire.pokemon.delcatty.height 11
+      weight: &ruby-sapphire.pokemon.delcatty.weight 326
+      flavor_text:
+        ruby: |
+          DELCATTY prefers to live an unfettered
+          existence in which it can do as it
+          pleases at its own pace.
+          Because this POKéMON eats and sleeps
+           whenever it decides, its daily routines
+          are completely random.
+        sapphire: |
+          DELCATTY sleeps anywhere it wants
+          without keeping a permanent nest.
+          If other POKéMON approach it as it
+          sleeps, this POKéMON will never fight -
+          it will just move away somewhere else.
+      forms:
+        delcatty:
+          name: DELCATTY
+          form_name: &ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only false
+          icon: &ruby-sapphire.pokemon.delcatty.forms.delcatty.icon gen5/delcatty-default.png
+          sprites:
+            - ruby-sapphire/delcatty-default.png
+            - ruby-sapphire/back/delcatty-default.png
+            - ruby-sapphire/shiny/delcatty-default.png
+          art: &ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+            - delcatty-default.png
+          footprint: &ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint delcatty.png
+          cry: &ruby-sapphire.pokemon.delcatty.forms.delcatty.cry gen5/delcatty-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.delcatty.evolution_parent skitty/skitty
+      evolution_conditions: &ruby-sapphire.pokemon.delcatty.evolution_conditions
+        use-item:
+          trigger_item: moon-stone
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    delcatty:
+      name: DELCATTY
+      default: *ruby-sapphire.pokemon.delcatty.default
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      experience: *ruby-sapphire.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      stats: *ruby-sapphire.pokemon.delcatty.stats
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      abilities: *ruby-sapphire.pokemon.delcatty.abilities
+      genus: *ruby-sapphire.pokemon.delcatty.genus
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      flavor_text:
+        emerald: |
+          Rather than keeping a permanent lair,
+          it habitually seeks comfortable spots and
+          sleeps there. It is nocturnal and becomes
+          active at dusk.
+      forms:
+        delcatty:
+          name: DELCATTY
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *ruby-sapphire.pokemon.delcatty.forms.delcatty.icon
+          sprites:
+            - emerald/delcatty-default.png
+            - emerald/shiny/delcatty-default.png
+            - emerald/animated/delcatty-default.webm
+            - emerald/animated/shiny/delcatty-default.webm
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 64
+  pokemon:
+    delcatty:
+      name: DELCATTY
+      default: *ruby-sapphire.pokemon.delcatty.default
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      experience: *ruby-sapphire.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      stats: *ruby-sapphire.pokemon.delcatty.stats
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      abilities: *ruby-sapphire.pokemon.delcatty.abilities
+      genus: *ruby-sapphire.pokemon.delcatty.genus
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      forms:
+        delcatty:
+          name: DELCATTY
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          sprites:
+            - colosseum/delcatty-default.png
+            - colosseum/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    delcatty:
+      name: DELCATTY
+      default: *ruby-sapphire.pokemon.delcatty.default
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      experience: *ruby-sapphire.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      stats: *ruby-sapphire.pokemon.delcatty.stats
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      abilities: *ruby-sapphire.pokemon.delcatty.abilities
+      genus: *ruby-sapphire.pokemon.delcatty.genus
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      forms:
+        delcatty:
+          name: DELCATTY
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          sprites:
+            - xd/delcatty-default.png
+            - xd/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    delcatty:
+      name: DELCATTY
+      default: *ruby-sapphire.pokemon.delcatty.default
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      experience: *ruby-sapphire.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      stats: *ruby-sapphire.pokemon.delcatty.stats
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      abilities: *ruby-sapphire.pokemon.delcatty.abilities
+      genus: *ruby-sapphire.pokemon.delcatty.genus
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      flavor_text:
+        firered: |
+          The favorite of trend-conscious
+          female TRAINERS, they are used in
+          competition for their style and fur.
+        leafgreen: |
+          The favorite of trend-conscious
+          female TRAINERS, they are used in
+          competition for their style and fur.
+      forms:
+        delcatty:
+          name: DELCATTY
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *ruby-sapphire.pokemon.delcatty.forms.delcatty.icon
+          sprites:
+            - firered-leafgreen/delcatty-default.png
+            - firered-leafgreen/back/delcatty-default.png
+            - firered-leafgreen/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Delcatty
+  position: &diamond-pearl.position 327
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delcatty:
+      genus: &diamond-pearl.pokemon.delcatty.genus 'Prim Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      shape: &diamond-pearl.pokemon.delcatty.shape quadruped
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: &diamond-pearl.pokemon.delcatty.baby false
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      pal_park: &diamond-pearl.pokemon.delcatty.pal_park
+        area: field
+        rate: 20
+        score: 70
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: &diamond-pearl.pokemon.delcatty.experience 140
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      stats: &diamond-pearl.pokemon.delcatty.stats
+        hp:
+          base_value: 70
+          effort_change: 1
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 1
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.delcatty.abilities
+        cute-charm: *ruby-sapphire.pokemon.delcatty.abilities.cute-charm
+        normalize: &diamond-pearl.pokemon.delcatty.abilities.normalize
+          hidden: *ruby-sapphire.pokemon.delcatty.abilities.cute-charm.hidden
+          position: 2
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is highly popular among female
+          Trainers for its sublime fur.
+          It does not keep a nest.
+        pearl: |
+          It is highly popular among female
+          Trainers for its sublime fur.
+          It does not keep a nest.
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *ruby-sapphire.pokemon.delcatty.forms.delcatty.icon
+          sprites:
+            - diamond-pearl/delcatty-default.png
+            - diamond-pearl/back/delcatty-default.png
+            - diamond-pearl/back/shiny/delcatty-default.png
+            - diamond-pearl/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delcatty:
+      genus: *diamond-pearl.pokemon.delcatty.genus
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      shape: *diamond-pearl.pokemon.delcatty.shape
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: *diamond-pearl.pokemon.delcatty.baby
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      pal_park: *diamond-pearl.pokemon.delcatty.pal_park
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: *diamond-pearl.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      stats: *diamond-pearl.pokemon.delcatty.stats
+      abilities: *diamond-pearl.pokemon.delcatty.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is highly popular among female
+          Trainers for its sublime fur.
+          It does not keep a nest.
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *ruby-sapphire.pokemon.delcatty.forms.delcatty.icon
+          sprites:
+            - platinum/delcatty-default.png
+            - platinum/back/delcatty-default.png
+            - platinum/back/shiny/delcatty-default.png
+            - platinum/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delcatty:
+      genus: *diamond-pearl.pokemon.delcatty.genus
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      shape: *diamond-pearl.pokemon.delcatty.shape
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: *diamond-pearl.pokemon.delcatty.baby
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      pal_park: *diamond-pearl.pokemon.delcatty.pal_park
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: *diamond-pearl.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      stats: *diamond-pearl.pokemon.delcatty.stats
+      abilities: *diamond-pearl.pokemon.delcatty.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It dislikes dirty places. It often
+          searches for a comfortable place
+          in which to groom itself.
+        soulsilver: |
+          It dislikes dirty places. It often
+          searches for a comfortable place
+          in which to groom itself.
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 3-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.delcatty.forms.delcatty.icon
+          sprites:
+            - heartgold-soulsilver/delcatty-default.png
+            - heartgold-soulsilver/back/delcatty-default.png
+            - heartgold-soulsilver/back/shiny/delcatty-default.png
+            - heartgold-soulsilver/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delcatty:
+      genus: *diamond-pearl.pokemon.delcatty.genus
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      color: &black-white.pokemon.delcatty.color purple
+      shape: *diamond-pearl.pokemon.delcatty.shape
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: *diamond-pearl.pokemon.delcatty.baby
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: *diamond-pearl.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      stats: *diamond-pearl.pokemon.delcatty.stats
+      abilities: &black-white.pokemon.delcatty.abilities
+        cute-charm: *ruby-sapphire.pokemon.delcatty.abilities.cute-charm
+        normalize: *diamond-pearl.pokemon.delcatty.abilities.normalize
+        wonder-skin:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.delcatty.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      flavor_text:
+        black: |
+          It is highly popular among female
+          Trainers for its sublime fur.
+          It does not keep a nest.
+        white: |
+          It is highly popular among female
+          Trainers for its sublime fur.
+          It does not keep a nest.
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *ruby-sapphire.pokemon.delcatty.forms.delcatty.icon
+          sprites:
+            - black-white/delcatty-default.png
+            - black-white/back/delcatty-default.png
+            - black-white/back/shiny/delcatty-default.png
+            - black-white/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 79
+  pokemon:
+    delcatty:
+      genus: *diamond-pearl.pokemon.delcatty.genus
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      color: *black-white.pokemon.delcatty.color
+      shape: *diamond-pearl.pokemon.delcatty.shape
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: *diamond-pearl.pokemon.delcatty.baby
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: *diamond-pearl.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      stats: *diamond-pearl.pokemon.delcatty.stats
+      abilities: *black-white.pokemon.delcatty.abilities
+      wild_held_items:
+        black-2: &black-2-white-2.pokemon.delcatty.wild_held_items.black-2
+          pecha-berry: 50
+        white-2: *black-2-white-2.pokemon.delcatty.wild_held_items.black-2
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      flavor_text:
+        black-2: |
+          The reason it does not have a nest
+          is that it simply searches for a clean,
+          comfortable place then sleeps there.
+        white-2: |
+          The reason it does not have a nest
+          is that it simply searches for a clean,
+          comfortable place then sleeps there.
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *ruby-sapphire.pokemon.delcatty.forms.delcatty.icon
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *ruby-sapphire.pokemon.delcatty.forms.delcatty.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-central: 79
+  pokemon:
+    delcatty:
+      genus: *diamond-pearl.pokemon.delcatty.genus
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      color: *black-white.pokemon.delcatty.color
+      shape: *diamond-pearl.pokemon.delcatty.shape
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: *diamond-pearl.pokemon.delcatty.baby
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: *diamond-pearl.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      mega: &x-y.pokemon.delcatty.mega false
+      stats: *diamond-pearl.pokemon.delcatty.stats
+      abilities: *black-white.pokemon.delcatty.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      flavor_text:
+        x: |
+          It dislikes dirty places. It often searches for a
+          comfortable place in which to groom itself.
+        'y': |
+          It is highly popular among female Trainers for its
+          sublime fur. It does not keep a nest.
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: &x-y.pokemon.delcatty.forms.delcatty.icon delcatty-default.png
+          sprites:
+            - x-y/delcatty-default.png
+            - x-y/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: &x-y.pokemon.delcatty.forms.delcatty.cry delcatty-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 64
+  pokemon:
+    delcatty:
+      genus: *diamond-pearl.pokemon.delcatty.genus
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      color: *black-white.pokemon.delcatty.color
+      shape: *diamond-pearl.pokemon.delcatty.shape
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: *diamond-pearl.pokemon.delcatty.baby
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: *diamond-pearl.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      mega: *x-y.pokemon.delcatty.mega
+      stats: *diamond-pearl.pokemon.delcatty.stats
+      abilities: *black-white.pokemon.delcatty.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Delcatty prefers to live an unfettered existence in which it can
+          do as it pleases at its own pace. Because this Pokémon eats
+          and sleeps whenever it decides, its daily routines are
+          completely random.
+        alpha-sapphire: |
+          Delcatty sleeps anywhere it wants without keeping a permanent
+          nest. If other Pokémon approach it as it sleeps, this Pokémon
+          will never fight—it will just move away somewhere else.
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *x-y.pokemon.delcatty.forms.delcatty.icon
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *x-y.pokemon.delcatty.forms.delcatty.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/delcatty-default.png
+            - omega-ruby-alpha-sapphire/shiny/delcatty-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delcatty:
+      genus: *diamond-pearl.pokemon.delcatty.genus
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      color: *black-white.pokemon.delcatty.color
+      shape: *diamond-pearl.pokemon.delcatty.shape
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: *diamond-pearl.pokemon.delcatty.baby
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: *diamond-pearl.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      mega: *x-y.pokemon.delcatty.mega
+      stats: *diamond-pearl.pokemon.delcatty.stats
+      abilities: *black-white.pokemon.delcatty.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *x-y.pokemon.delcatty.forms.delcatty.icon
+          sprites:
+            - sun-moon/delcatty-default.png
+            - sun-moon/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *x-y.pokemon.delcatty.forms.delcatty.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    delcatty:
+      genus: *diamond-pearl.pokemon.delcatty.genus
+      evolution_parent: *ruby-sapphire.pokemon.delcatty.evolution_parent
+      color: *black-white.pokemon.delcatty.color
+      shape: *diamond-pearl.pokemon.delcatty.shape
+      female_rate: *ruby-sapphire.pokemon.delcatty.female_rate
+      capture_rate: *ruby-sapphire.pokemon.delcatty.capture_rate
+      happiness: *ruby-sapphire.pokemon.delcatty.happiness
+      baby: *diamond-pearl.pokemon.delcatty.baby
+      hatch_steps: *ruby-sapphire.pokemon.delcatty.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.delcatty.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.delcatty.forms_switchable
+      name: Delcatty
+      default: *ruby-sapphire.pokemon.delcatty.default
+      height: *ruby-sapphire.pokemon.delcatty.height
+      weight: *ruby-sapphire.pokemon.delcatty.weight
+      experience: *diamond-pearl.pokemon.delcatty.experience
+      types: *ruby-sapphire.pokemon.delcatty.types
+      egg_groups: *ruby-sapphire.pokemon.delcatty.egg_groups
+      mega: *x-y.pokemon.delcatty.mega
+      stats: *diamond-pearl.pokemon.delcatty.stats
+      abilities: *black-white.pokemon.delcatty.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.delcatty.evolution_conditions
+      forms:
+        delcatty:
+          name: Delcatty
+          form_name: *ruby-sapphire.pokemon.delcatty.forms.delcatty.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.delcatty.forms.delcatty.battle_only
+          icon: *x-y.pokemon.delcatty.forms.delcatty.icon
+          sprites:
+            - ultra-sun-ultra-moon/delcatty-default.png
+            - ultra-sun-ultra-moon/shiny/delcatty-default.png
+          art: *ruby-sapphire.pokemon.delcatty.forms.delcatty.art
+          footprint: *ruby-sapphire.pokemon.delcatty.forms.delcatty.footprint
+          cry: *x-y.pokemon.delcatty.forms.delcatty.cry

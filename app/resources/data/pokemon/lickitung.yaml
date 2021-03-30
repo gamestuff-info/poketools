@@ -1,0 +1,934 @@
+red-blue:
+  name: &red-blue.name LICKITUNG
+  position: &red-blue.position 108
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 108
+    kanto: 108
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: &red-blue.pokemon.lickitung.default true
+      capture_rate: &red-blue.pokemon.lickitung.capture_rate 45
+      experience: &red-blue.pokemon.lickitung.experience 127
+      types: &red-blue.pokemon.lickitung.types
+        - normal
+      stats: &red-blue.pokemon.lickitung.stats
+        hp:
+          base_value: 90
+          effort_change: 90
+        attack:
+          base_value: 55
+          effort_change: 55
+        defense:
+          base_value: 75
+          effort_change: 75
+        speed:
+          base_value: 30
+          effort_change: 30
+        special:
+          base_value: 60
+          effort_change: 60
+      growth_rate: &red-blue.pokemon.lickitung.growth_rate medium
+      genus: &red-blue.pokemon.lickitung.genus 'LICKING Pokémon'
+      height: &red-blue.pokemon.lickitung.height 11
+      weight: &red-blue.pokemon.lickitung.weight 6531
+      flavor_text:
+        red: |
+          Its tongue can be
+          extended like a
+          chameleon's. It
+          leaves a tingling
+           sensation when it
+          licks enemies.
+        blue: |
+          Its tongue can be
+          extended like a
+          chameleon's. It
+          leaves a tingling
+           sensation when it
+          licks enemies.
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: &red-blue.pokemon.lickitung.forms.lickitung.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.lickitung.forms.lickitung.battle_only false
+          sprites:
+            - red-blue/lickitung-default.png
+            - red-blue/gray/lickitung-default.png
+            - red-blue/back/lickitung-default.png
+          art: &red-blue.pokemon.lickitung.forms.lickitung.art
+            - lickitung-default.png
+          cry: &red-blue.pokemon.lickitung.forms.lickitung.cry gen5/lickitung-default.webm
+          icon: &red-blue.pokemon.lickitung.forms.lickitung.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: *red-blue.pokemon.lickitung.default
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      experience: *red-blue.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      stats: *red-blue.pokemon.lickitung.stats
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      genus: *red-blue.pokemon.lickitung.genus
+      height: *red-blue.pokemon.lickitung.height
+      weight: *red-blue.pokemon.lickitung.weight
+      flavor_text:
+        yellow: |
+          Its tongue spans
+          almost 7 feet and
+          moves more freely
+          than its forelegs.
+          Its licks can
+          cause paralysis.
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          sprites:
+            - yellow/lickitung-default.png
+            - yellow/gray/lickitung-default.png
+            - yellow/back/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+          icon: *red-blue.pokemon.lickitung.forms.lickitung.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 107
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 177
+    original-johto-abc: 100
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: *red-blue.pokemon.lickitung.default
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      experience: *red-blue.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      stats: &gold-silver.pokemon.lickitung.stats
+        hp:
+          base_value: 90
+          effort_change: 90
+        attack:
+          base_value: 55
+          effort_change: 55
+        defense:
+          base_value: 75
+          effort_change: 75
+        speed:
+          base_value: 30
+          effort_change: 30
+        special-attack:
+          base_value: 60
+          effort_change: 60
+        special-defense:
+          base_value: 75
+          effort_change: 60
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      female_rate: &gold-silver.pokemon.lickitung.female_rate 50
+      hatch_steps: &gold-silver.pokemon.lickitung.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.lickitung.egg_groups
+        - monster
+      genus: *red-blue.pokemon.lickitung.genus
+      height: *red-blue.pokemon.lickitung.height
+      weight: &gold-silver.pokemon.lickitung.weight 653
+      flavor_text:
+        gold: |
+          Its tongue has
+          well-developed
+          nerves that run
+          to the very tip,
+          so it can be deft-
+          ly manipulated.
+        silver: |
+          Its long tongue,
+          slathered with a
+          gooey saliva,
+          sticks to any-
+          thing, so it is
+          very useful.
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          sprites:
+            - gold-silver/lickitung-default.png
+            - gold-silver/back/lickitung-default.png
+            - gold-silver/shiny/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+          icon: &gold-silver.pokemon.lickitung.forms.lickitung.icon gen2/monster.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: *red-blue.pokemon.lickitung.default
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      experience: *red-blue.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      stats: *gold-silver.pokemon.lickitung.stats
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      genus: *red-blue.pokemon.lickitung.genus
+      height: *red-blue.pokemon.lickitung.height
+      weight: *gold-silver.pokemon.lickitung.weight
+      flavor_text:
+        crystal: |
+          It has a tongue
+          that is over 6'6'
+          long. It uses this
+          long tongue to
+          lick its body
+          clean.
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          sprites:
+            - crystal/lickitung-default.png
+            - crystal/back/lickitung-default.png
+            - crystal/shiny/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+          icon: *gold-silver.pokemon.lickitung.forms.lickitung.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 276
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: *red-blue.pokemon.lickitung.default
+      forms_switchable: &ruby-sapphire.pokemon.lickitung.forms_switchable false
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      experience: *red-blue.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      stats: &ruby-sapphire.pokemon.lickitung.stats
+        hp:
+          base_value: 90
+          effort_change: 2
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      happiness: &ruby-sapphire.pokemon.lickitung.happiness 70
+      abilities: &ruby-sapphire.pokemon.lickitung.abilities
+        own-tempo: &ruby-sapphire.pokemon.lickitung.abilities.own-tempo
+          hidden: &ruby-sapphire.pokemon.lickitung.abilities.own-tempo.hidden false
+          position: 1
+        oblivious: &ruby-sapphire.pokemon.lickitung.abilities.oblivious
+          hidden: *ruby-sapphire.pokemon.lickitung.abilities.own-tempo.hidden
+          position: 2
+      genus: *red-blue.pokemon.lickitung.genus
+      height: &ruby-sapphire.pokemon.lickitung.height 12
+      weight: &ruby-sapphire.pokemon.lickitung.weight 655
+      flavor_text:
+        ruby: |
+          Whenever LICKITUNG comes across
+          something new, it will unfailingly give it
+          a lick. It does so because it memorizes
+          things by texture and by taste.
+          It is somewhat put off by sour things.
+        sapphire: |
+          Whenever LICKITUNG comes across
+          something new, it will unfailingly give it
+          a lick. It does so because it memorizes
+          things by texture and by taste.
+          It is somewhat put off by sour things.
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: &ruby-sapphire.pokemon.lickitung.forms.lickitung.icon gen5/lickitung-default.png
+          sprites:
+            - ruby-sapphire/lickitung-default.png
+            - ruby-sapphire/back/lickitung-default.png
+            - ruby-sapphire/shiny/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: &ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint lickitung.png
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: *red-blue.pokemon.lickitung.default
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      experience: *red-blue.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      stats: *ruby-sapphire.pokemon.lickitung.stats
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      abilities: *ruby-sapphire.pokemon.lickitung.abilities
+      genus: *red-blue.pokemon.lickitung.genus
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      flavor_text:
+        emerald: |
+          Whenever it sees something unfamiliar,
+          it always licks the object because it
+          memorizes things by texture and taste.
+          It is somewhat put off by sour things.
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *ruby-sapphire.pokemon.lickitung.forms.lickitung.icon
+          sprites:
+            - emerald/lickitung-default.png
+            - emerald/shiny/lickitung-default.png
+            - emerald/animated/lickitung-default.webm
+            - emerald/animated/shiny/lickitung-default.webm
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 166
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: *red-blue.pokemon.lickitung.default
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      experience: *red-blue.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      stats: *ruby-sapphire.pokemon.lickitung.stats
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      abilities: *ruby-sapphire.pokemon.lickitung.abilities
+      genus: *red-blue.pokemon.lickitung.genus
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          sprites:
+            - colosseum/lickitung-default.png
+            - colosseum/shiny/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: *red-blue.pokemon.lickitung.default
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      experience: *red-blue.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      stats: *ruby-sapphire.pokemon.lickitung.stats
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      abilities: *ruby-sapphire.pokemon.lickitung.abilities
+      genus: *red-blue.pokemon.lickitung.genus
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          sprites:
+            - xd/lickitung-default.png
+            - xd/shiny/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    lickitung:
+      name: LICKITUNG
+      default: *red-blue.pokemon.lickitung.default
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      experience: *red-blue.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      stats: *ruby-sapphire.pokemon.lickitung.stats
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      abilities: *ruby-sapphire.pokemon.lickitung.abilities
+      genus: *red-blue.pokemon.lickitung.genus
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      flavor_text:
+        firered: |
+          Its tongue is twice the length of its
+          body. It can be moved like an arm for
+          grabbing food and attacking.
+        leafgreen: |
+          Its tongue can be extended like a
+          chameleon's. It leaves a tingling
+           sensation when it licks enemies.
+      forms:
+        lickitung:
+          name: LICKITUNG
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *ruby-sapphire.pokemon.lickitung.forms.lickitung.icon
+          sprites:
+            - firered-leafgreen/lickitung-default.png
+            - firered-leafgreen/back/lickitung-default.png
+            - firered-leafgreen/shiny/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+diamond-pearl:
+  name: &diamond-pearl.name Lickitung
+  position: &diamond-pearl.position 119
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    lickitung:
+      genus: &diamond-pearl.pokemon.lickitung.genus 'Licking Pokémon'
+      shape: &diamond-pearl.pokemon.lickitung.shape upright
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: &diamond-pearl.pokemon.lickitung.baby false
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      pal_park: &diamond-pearl.pokemon.lickitung.pal_park
+        area: field
+        rate: 20
+        score: 70
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: &diamond-pearl.pokemon.lickitung.experience 77
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      stats: &diamond-pearl.pokemon.lickitung.stats
+        hp:
+          base_value: 90
+          effort_change: 2
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.lickitung.abilities
+        own-tempo: *ruby-sapphire.pokemon.lickitung.abilities.own-tempo
+        oblivious: *ruby-sapphire.pokemon.lickitung.abilities.oblivious
+        cloud-nine:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+          lagging-tail: 5
+        pearl: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Instead of hands, it uses its
+          tongue, which is twice its height.
+          Its sticky saliva grips anything.
+        pearl: |
+          Instead of hands, it uses its
+          tongue, which is twice its height.
+          Its sticky saliva grips anything.
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *ruby-sapphire.pokemon.lickitung.forms.lickitung.icon
+          sprites:
+            - diamond-pearl/back/shiny/lickitung-default.png
+            - diamond-pearl/back/lickitung-default.png
+            - diamond-pearl/shiny/lickitung-default.png
+            - diamond-pearl/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 161
+  pokemon:
+    lickitung:
+      genus: *diamond-pearl.pokemon.lickitung.genus
+      shape: *diamond-pearl.pokemon.lickitung.shape
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: *diamond-pearl.pokemon.lickitung.baby
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lickitung.pal_park
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: *diamond-pearl.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      stats: *diamond-pearl.pokemon.lickitung.stats
+      abilities: *diamond-pearl.pokemon.lickitung.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          When it extends its over-six-foot-
+          long tongue, its tail quivers. There
+          is a possibility they are connected.
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *ruby-sapphire.pokemon.lickitung.forms.lickitung.icon
+          sprites:
+            - platinum/back/shiny/lickitung-default.png
+            - platinum/back/lickitung-default.png
+            - platinum/shiny/lickitung-default.png
+            - platinum/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 180
+  pokemon:
+    lickitung:
+      genus: *diamond-pearl.pokemon.lickitung.genus
+      shape: *diamond-pearl.pokemon.lickitung.shape
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: *diamond-pearl.pokemon.lickitung.baby
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lickitung.pal_park
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: *diamond-pearl.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      stats: *diamond-pearl.pokemon.lickitung.stats
+      abilities: *diamond-pearl.pokemon.lickitung.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          Its tongue has well-developed
+          nerves that run to the very tip,
+          so it can be deftly manipulated.
+        soulsilver: |
+          Its long tongue, slathered with a
+          gooey saliva, sticks to anything,
+          so it is very useful.
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.lickitung.forms.lickitung.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/lickitung-default.png
+            - heartgold-soulsilver/back/lickitung-default.png
+            - heartgold-soulsilver/shiny/lickitung-default.png
+            - heartgold-soulsilver/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    lickitung:
+      genus: *diamond-pearl.pokemon.lickitung.genus
+      color: &black-white.pokemon.lickitung.color pink
+      shape: *diamond-pearl.pokemon.lickitung.shape
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: *diamond-pearl.pokemon.lickitung.baby
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: *diamond-pearl.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      stats: *diamond-pearl.pokemon.lickitung.stats
+      abilities: *diamond-pearl.pokemon.lickitung.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+      flavor_text:
+        black: |
+          When it extends its over-six-foot-
+          long tongue, its tail quivers. There
+          is a possibility they are connected.
+        white: |
+          When it extends its over-six-foot-
+          long tongue, its tail quivers. There
+          is a possibility they are connected.
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *ruby-sapphire.pokemon.lickitung.forms.lickitung.icon
+          sprites:
+            - black-white/back/shiny/lickitung-default.png
+            - black-white/back/lickitung-default.png
+            - black-white/shiny/lickitung-default.png
+            - black-white/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 284
+  pokemon:
+    lickitung:
+      genus: *diamond-pearl.pokemon.lickitung.genus
+      color: *black-white.pokemon.lickitung.color
+      shape: *diamond-pearl.pokemon.lickitung.shape
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: *diamond-pearl.pokemon.lickitung.baby
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: *diamond-pearl.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      stats: *diamond-pearl.pokemon.lickitung.stats
+      abilities: *diamond-pearl.pokemon.lickitung.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          Being licked by its long, saliva-covered
+          tongue leaves a tingling sensation.
+          Extending its tongue retracts its tail.
+        white-2: |
+          Being licked by its long, saliva-covered
+          tongue leaves a tingling sensation.
+          Extending its tongue retracts its tail.
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *ruby-sapphire.pokemon.lickitung.forms.lickitung.icon
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *red-blue.pokemon.lickitung.forms.lickitung.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 134
+  pokemon:
+    lickitung:
+      genus: *diamond-pearl.pokemon.lickitung.genus
+      color: *black-white.pokemon.lickitung.color
+      shape: *diamond-pearl.pokemon.lickitung.shape
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: *diamond-pearl.pokemon.lickitung.baby
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: *diamond-pearl.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      mega: &x-y.pokemon.lickitung.mega false
+      stats: *diamond-pearl.pokemon.lickitung.stats
+      abilities: *diamond-pearl.pokemon.lickitung.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+      flavor_text:
+        x: |
+          Its long tongue, slathered with a gooey saliva,
+          sticks to anything, so it is very useful.
+        'y': |
+          Its tongue is twice the length of its body. It can be
+          moved like an arm for grabbing food and attacking.
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: &x-y.pokemon.lickitung.forms.lickitung.icon lickitung-default.png
+          sprites:
+            - x-y/shiny/lickitung-default.png
+            - x-y/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: &x-y.pokemon.lickitung.forms.lickitung.cry lickitung-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    lickitung:
+      genus: *diamond-pearl.pokemon.lickitung.genus
+      color: *black-white.pokemon.lickitung.color
+      shape: *diamond-pearl.pokemon.lickitung.shape
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: *diamond-pearl.pokemon.lickitung.baby
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: *diamond-pearl.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      mega: *x-y.pokemon.lickitung.mega
+      stats: *diamond-pearl.pokemon.lickitung.stats
+      abilities: *diamond-pearl.pokemon.lickitung.abilities
+      flavor_text:
+        omega-ruby: |
+          Whenever Lickitung comes across something new, it will
+          unfailingly give it a lick. It does so because it memorizes things
+          by texture and by taste. It is somewhat put off by sour things.
+        alpha-sapphire: |
+          Whenever Lickitung comes across something new, it will
+          unfailingly give it a lick. It does so because it memorizes things
+          by texture and by taste. It is somewhat put off by sour things.
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *x-y.pokemon.lickitung.forms.lickitung.icon
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *x-y.pokemon.lickitung.forms.lickitung.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/lickitung-default.png
+            - omega-ruby-alpha-sapphire/shiny/lickitung-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    lickitung:
+      genus: *diamond-pearl.pokemon.lickitung.genus
+      color: *black-white.pokemon.lickitung.color
+      shape: *diamond-pearl.pokemon.lickitung.shape
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: *diamond-pearl.pokemon.lickitung.baby
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: *diamond-pearl.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      mega: *x-y.pokemon.lickitung.mega
+      stats: *diamond-pearl.pokemon.lickitung.stats
+      abilities: *diamond-pearl.pokemon.lickitung.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *x-y.pokemon.lickitung.forms.lickitung.icon
+          sprites:
+            - sun-moon/shiny/lickitung-default.png
+            - sun-moon/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *x-y.pokemon.lickitung.forms.lickitung.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 375
+    updated-poni: 122
+  pokemon:
+    lickitung:
+      genus: *diamond-pearl.pokemon.lickitung.genus
+      color: *black-white.pokemon.lickitung.color
+      shape: *diamond-pearl.pokemon.lickitung.shape
+      female_rate: *gold-silver.pokemon.lickitung.female_rate
+      capture_rate: *red-blue.pokemon.lickitung.capture_rate
+      happiness: *ruby-sapphire.pokemon.lickitung.happiness
+      baby: *diamond-pearl.pokemon.lickitung.baby
+      hatch_steps: *gold-silver.pokemon.lickitung.hatch_steps
+      growth_rate: *red-blue.pokemon.lickitung.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lickitung.forms_switchable
+      name: Lickitung
+      default: *red-blue.pokemon.lickitung.default
+      height: *ruby-sapphire.pokemon.lickitung.height
+      weight: *ruby-sapphire.pokemon.lickitung.weight
+      experience: *diamond-pearl.pokemon.lickitung.experience
+      types: *red-blue.pokemon.lickitung.types
+      egg_groups: *gold-silver.pokemon.lickitung.egg_groups
+      mega: *x-y.pokemon.lickitung.mega
+      stats: *diamond-pearl.pokemon.lickitung.stats
+      abilities: *diamond-pearl.pokemon.lickitung.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.lickitung.wild_held_items.diamond
+      flavor_text:
+        ultra-sun: |-
+          It checks out whatever’s around it by licking
+          everything. If you don’t clean off a spot where
+          it’s licked you, you’ll break out in a rash!
+        ultra-moon: |-
+          It licks filth clean with its tongue. Whatever it
+          licks always stinks afterward, so whether it’s
+          really clean is...questionable.
+      forms:
+        lickitung:
+          name: Lickitung
+          form_name: *red-blue.pokemon.lickitung.forms.lickitung.form_name
+          default: true
+          battle_only: *red-blue.pokemon.lickitung.forms.lickitung.battle_only
+          icon: *x-y.pokemon.lickitung.forms.lickitung.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/lickitung-default.png
+            - ultra-sun-ultra-moon/lickitung-default.png
+          art: *red-blue.pokemon.lickitung.forms.lickitung.art
+          footprint: *ruby-sapphire.pokemon.lickitung.forms.lickitung.footprint
+          cry: *x-y.pokemon.lickitung.forms.lickitung.cry

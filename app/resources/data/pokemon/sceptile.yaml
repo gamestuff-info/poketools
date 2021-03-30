@@ -1,0 +1,838 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name SCEPTILE
+  position: &ruby-sapphire.position 254
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 254
+    hoenn: 3
+  pokemon:
+    sceptile:
+      name: SCEPTILE
+      default: &ruby-sapphire.pokemon.sceptile.default true
+      forms_switchable: &ruby-sapphire.pokemon.sceptile.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.sceptile.capture_rate 45
+      experience: &ruby-sapphire.pokemon.sceptile.experience 208
+      types: &ruby-sapphire.pokemon.sceptile.types
+        - grass
+      stats: &ruby-sapphire.pokemon.sceptile.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 120
+          effort_change: 3
+        special-attack:
+          base_value: 105
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.sceptile.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.sceptile.female_rate 12
+      hatch_steps: &ruby-sapphire.pokemon.sceptile.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.sceptile.egg_groups
+        - monster
+        - dragon
+      happiness: &ruby-sapphire.pokemon.sceptile.happiness 70
+      abilities: &ruby-sapphire.pokemon.sceptile.abilities
+        overgrow: &ruby-sapphire.pokemon.sceptile.abilities.overgrow
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.sceptile.genus 'FOREST Pokémon'
+      height: &ruby-sapphire.pokemon.sceptile.height 17
+      weight: &ruby-sapphire.pokemon.sceptile.weight 522
+      flavor_text:
+        ruby: |
+          The leaves growing on SCEPTILE's body
+          are very sharp edged. This POKéMON is
+          very agile - it leaps all over the
+          branches of trees and jumps on its foe
+          from above or behind.
+        sapphire: |
+          SCEPTILE has seeds growing on its back.
+          They are said to be bursting with
+          nutrients that revitalize trees.
+          This POKéMON raises the trees in a
+          forest with loving care.
+      forms:
+        sceptile:
+          name: SCEPTILE
+          form_name: &ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only false
+          icon: &ruby-sapphire.pokemon.sceptile.forms.sceptile.icon gen5/sceptile-default.png
+          sprites:
+            - ruby-sapphire/sceptile-default.png
+            - ruby-sapphire/back/sceptile-default.png
+            - ruby-sapphire/shiny/sceptile-default.png
+          art: &ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+            - sceptile-default.png
+          footprint: &ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint sceptile.png
+          cry: &ruby-sapphire.pokemon.sceptile.forms.sceptile.cry gen5/sceptile-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.sceptile.evolution_parent grovyle/grovyle
+      evolution_conditions: &ruby-sapphire.pokemon.sceptile.evolution_conditions
+        level-up:
+          minimum_level: 36
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    sceptile:
+      name: SCEPTILE
+      default: *ruby-sapphire.pokemon.sceptile.default
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      experience: *ruby-sapphire.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      stats: *ruby-sapphire.pokemon.sceptile.stats
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      abilities: *ruby-sapphire.pokemon.sceptile.abilities
+      genus: *ruby-sapphire.pokemon.sceptile.genus
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      flavor_text:
+        emerald: |
+          In the jungle, its power is without equal.
+          This POKéMON carefully grows trees and
+          plants. It regulates its body temperature
+          by basking in sunlight.
+      forms:
+        sceptile:
+          name: SCEPTILE
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *ruby-sapphire.pokemon.sceptile.forms.sceptile.icon
+          sprites:
+            - emerald/sceptile-default.png
+            - emerald/shiny/sceptile-default.png
+            - emerald/animated/sceptile-default.webm
+            - emerald/animated/shiny/sceptile-default.webm
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 280
+  pokemon:
+    sceptile:
+      name: SCEPTILE
+      default: *ruby-sapphire.pokemon.sceptile.default
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      experience: *ruby-sapphire.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      stats: *ruby-sapphire.pokemon.sceptile.stats
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      abilities: *ruby-sapphire.pokemon.sceptile.abilities
+      genus: *ruby-sapphire.pokemon.sceptile.genus
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      forms:
+        sceptile:
+          name: SCEPTILE
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          sprites:
+            - colosseum/sceptile-default.png
+            - colosseum/shiny/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    sceptile:
+      name: SCEPTILE
+      default: *ruby-sapphire.pokemon.sceptile.default
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      experience: *ruby-sapphire.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      stats: *ruby-sapphire.pokemon.sceptile.stats
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      abilities: *ruby-sapphire.pokemon.sceptile.abilities
+      genus: *ruby-sapphire.pokemon.sceptile.genus
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      forms:
+        sceptile:
+          name: SCEPTILE
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          sprites:
+            - xd/sceptile-default.png
+            - xd/shiny/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    sceptile:
+      name: SCEPTILE
+      default: *ruby-sapphire.pokemon.sceptile.default
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      experience: *ruby-sapphire.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      stats: *ruby-sapphire.pokemon.sceptile.stats
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      abilities: *ruby-sapphire.pokemon.sceptile.abilities
+      genus: *ruby-sapphire.pokemon.sceptile.genus
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      flavor_text:
+        firered: |
+          The leaves on its forelegs are as sharp
+          as swords. It agilely leaps about the
+          branches of trees to strike.
+        leafgreen: |
+          The leaves on its forelegs are as sharp
+          as swords. It agilely leaps about the
+          branches of trees to strike.
+      forms:
+        sceptile:
+          name: SCEPTILE
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *ruby-sapphire.pokemon.sceptile.forms.sceptile.icon
+          sprites:
+            - firered-leafgreen/sceptile-default.png
+            - firered-leafgreen/back/sceptile-default.png
+            - firered-leafgreen/shiny/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Sceptile
+  position: &diamond-pearl.position 279
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sceptile:
+      genus: &diamond-pearl.pokemon.sceptile.genus 'Forest Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      shape: &diamond-pearl.pokemon.sceptile.shape upright
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: &diamond-pearl.pokemon.sceptile.baby false
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      pal_park: &diamond-pearl.pokemon.sceptile.pal_park
+        area: forest
+        rate: 3
+        score: 90
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: &diamond-pearl.pokemon.sceptile.experience 239
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      stats: &diamond-pearl.pokemon.sceptile.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 120
+          effort_change: 3
+        special-attack:
+          base_value: 105
+          effort_change: 0
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.sceptile.abilities
+        overgrow: *ruby-sapphire.pokemon.sceptile.abilities.overgrow
+        unburden:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      flavor_text:
+        diamond: |
+          The leaves that grow on its arms
+          can slice down thick trees. It is
+          without peer in jungle combat.
+        pearl: |
+          The leaves that grow on its arms
+          can slice down thick trees. It is
+          without peer in jungle combat.
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *ruby-sapphire.pokemon.sceptile.forms.sceptile.icon
+          sprites:
+            - diamond-pearl/back/shiny/sceptile-default.png
+            - diamond-pearl/back/sceptile-default.png
+            - diamond-pearl/shiny/sceptile-default.png
+            - diamond-pearl/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sceptile:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      pal_park: *diamond-pearl.pokemon.sceptile.pal_park
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: *diamond-pearl.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      stats: *diamond-pearl.pokemon.sceptile.stats
+      abilities: *diamond-pearl.pokemon.sceptile.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      flavor_text:
+        platinum: |
+          The leaves that grow on its arms
+          can slice down thick trees. It is
+          without peer in jungle combat.
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *ruby-sapphire.pokemon.sceptile.forms.sceptile.icon
+          sprites:
+            - platinum/back/shiny/sceptile-default.png
+            - platinum/back/sceptile-default.png
+            - platinum/shiny/sceptile-default.png
+            - platinum/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sceptile:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      pal_park: *diamond-pearl.pokemon.sceptile.pal_park
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: *diamond-pearl.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      stats: *diamond-pearl.pokemon.sceptile.stats
+      abilities: *diamond-pearl.pokemon.sceptile.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It agilely leaps about the jungle
+          and uses the sharp leaves on its
+          arms to strike its prey.
+        soulsilver: |
+          It agilely leaps about the jungle
+          and uses the sharp leaves on its
+          arms to strike its prey.
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-4
+            power:
+              base_value: 4
+              range: 1-5
+            skill:
+              base_value: 4
+              range: 1-5
+            stamina:
+              base_value: 2
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.sceptile.forms.sceptile.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/sceptile-default.png
+            - heartgold-soulsilver/back/sceptile-default.png
+            - heartgold-soulsilver/shiny/sceptile-default.png
+            - heartgold-soulsilver/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sceptile:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: &black-white.pokemon.sceptile.color green
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: *diamond-pearl.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      stats: *diamond-pearl.pokemon.sceptile.stats
+      abilities: *diamond-pearl.pokemon.sceptile.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      flavor_text:
+        black: |
+          The leaves that grow on its arms
+          can slice down thick trees. It is
+          without peer in jungle combat.
+        white: |
+          The leaves that grow on its arms
+          can slice down thick trees. It is
+          without peer in jungle combat.
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *ruby-sapphire.pokemon.sceptile.forms.sceptile.icon
+          sprites:
+            - black-white/back/shiny/sceptile-default.png
+            - black-white/back/sceptile-default.png
+            - black-white/shiny/sceptile-default.png
+            - black-white/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sceptile:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: *black-white.pokemon.sceptile.color
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: *diamond-pearl.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      stats: *diamond-pearl.pokemon.sceptile.stats
+      abilities: *diamond-pearl.pokemon.sceptile.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      flavor_text:
+        black-2: |
+          The leaves that grow on its arms
+          can slice down thick trees. It is
+          without peer in jungle combat.
+        white-2: |
+          The leaves that grow on its arms
+          can slice down thick trees. It is
+          without peer in jungle combat.
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *ruby-sapphire.pokemon.sceptile.forms.sceptile.icon
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *ruby-sapphire.pokemon.sceptile.forms.sceptile.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sceptile:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: *black-white.pokemon.sceptile.color
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sceptile.forms_switchable
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: *diamond-pearl.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      mega: &x-y.pokemon.sceptile.mega false
+      stats: *diamond-pearl.pokemon.sceptile.stats
+      abilities: *diamond-pearl.pokemon.sceptile.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      flavor_text:
+        x: |
+          The leaves that grow on its arms can slice down
+          thick trees. It is without peer in jungle combat.
+        'y': |
+          It agilely leaps about the jungle and uses the sharp
+          leaves on its arms to strike its prey.
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: &x-y.pokemon.sceptile.forms.sceptile.icon sceptile-default.png
+          sprites:
+            - x-y/shiny/sceptile-default.png
+            - x-y/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: &x-y.pokemon.sceptile.forms.sceptile.cry sceptile-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 3
+  pokemon:
+    sceptile:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: *black-white.pokemon.sceptile.color
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: &omega-ruby-alpha-sapphire.pokemon.sceptile.forms_switchable true
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: *diamond-pearl.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      mega: *x-y.pokemon.sceptile.mega
+      stats: *diamond-pearl.pokemon.sceptile.stats
+      abilities: *diamond-pearl.pokemon.sceptile.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.sceptile.flavor_text
+        omega-ruby: |
+          The leaves growing on Sceptile’s body are very sharp edged.
+          This Pokémon is very agile—it leaps all over the branches of
+          trees and jumps on its foe from above or behind.
+        alpha-sapphire: |
+          Sceptile has seeds growing on its back. They are said to be
+          bursting with nutrients that revitalize trees. This Pokémon
+          raises the trees in a forest with loving care.
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *x-y.pokemon.sceptile.forms.sceptile.icon
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *x-y.pokemon.sceptile.forms.sceptile.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/sceptile-default.png
+            - omega-ruby-alpha-sapphire/shiny/sceptile-default.png
+    sceptile-mega:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: *black-white.pokemon.sceptile.color
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.sceptile.forms_switchable
+      name: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.name 'Mega Sceptile'
+      default: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.default false
+      height: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.height 19
+      weight: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.weight 552
+      experience: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.experience 284
+      types: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.types
+        - grass
+        - dragon
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      mega: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.mega true
+      stats: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 110
+          effort_change: 0
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 145
+          effort_change: 3
+        special-attack:
+          base_value: 145
+          effort_change: 0
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      abilities: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.abilities
+        lightning-rod: *ruby-sapphire.pokemon.sceptile.abilities.overgrow
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.sceptile.flavor_text
+      forms:
+        sceptile-mega:
+          name: 'Mega Sceptile'
+          form_name: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.form_name 'Mega Sceptile'
+          default: true
+          battle_only: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.battle_only true
+          icon: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.icon sceptile-mega.png
+          art: &omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.art
+            - sceptile-mega.png
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *x-y.pokemon.sceptile.forms.sceptile.cry
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sceptile:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: *black-white.pokemon.sceptile.color
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.sceptile.forms_switchable
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: *diamond-pearl.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      mega: *x-y.pokemon.sceptile.mega
+      stats: *diamond-pearl.pokemon.sceptile.stats
+      abilities: *diamond-pearl.pokemon.sceptile.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *x-y.pokemon.sceptile.forms.sceptile.icon
+          sprites:
+            - sun-moon/shiny/sceptile-default.png
+            - sun-moon/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *x-y.pokemon.sceptile.forms.sceptile.cry
+    sceptile-mega:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: *black-white.pokemon.sceptile.color
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.sceptile.forms_switchable
+      name: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.name
+      default: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.default
+      height: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.height
+      weight: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.weight
+      experience: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.experience
+      types: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      mega: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.mega
+      stats: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.stats
+      abilities: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      forms:
+        sceptile-mega:
+          name: 'Mega Sceptile'
+          form_name: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.form_name
+          default: true
+          battle_only: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.battle_only
+          icon: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.icon
+          sprites:
+            - sun-moon/sceptile-mega.png
+            - sun-moon/shiny/sceptile-mega.png
+          art: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *x-y.pokemon.sceptile.forms.sceptile.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sceptile:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: *black-white.pokemon.sceptile.color
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.sceptile.forms_switchable
+      name: Sceptile
+      default: *ruby-sapphire.pokemon.sceptile.default
+      height: *ruby-sapphire.pokemon.sceptile.height
+      weight: *ruby-sapphire.pokemon.sceptile.weight
+      experience: *diamond-pearl.pokemon.sceptile.experience
+      types: *ruby-sapphire.pokemon.sceptile.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      mega: *x-y.pokemon.sceptile.mega
+      stats: *diamond-pearl.pokemon.sceptile.stats
+      abilities: *diamond-pearl.pokemon.sceptile.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      forms:
+        sceptile:
+          name: Sceptile
+          form_name: *ruby-sapphire.pokemon.sceptile.forms.sceptile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.sceptile.forms.sceptile.battle_only
+          icon: *x-y.pokemon.sceptile.forms.sceptile.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/sceptile-default.png
+            - ultra-sun-ultra-moon/sceptile-default.png
+          art: *ruby-sapphire.pokemon.sceptile.forms.sceptile.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *x-y.pokemon.sceptile.forms.sceptile.cry
+    sceptile-mega:
+      genus: *diamond-pearl.pokemon.sceptile.genus
+      evolution_parent: *ruby-sapphire.pokemon.sceptile.evolution_parent
+      color: *black-white.pokemon.sceptile.color
+      shape: *diamond-pearl.pokemon.sceptile.shape
+      female_rate: *ruby-sapphire.pokemon.sceptile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.sceptile.capture_rate
+      happiness: *ruby-sapphire.pokemon.sceptile.happiness
+      baby: *diamond-pearl.pokemon.sceptile.baby
+      hatch_steps: *ruby-sapphire.pokemon.sceptile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.sceptile.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.sceptile.forms_switchable
+      name: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.name
+      default: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.default
+      height: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.height
+      weight: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.weight
+      experience: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.experience
+      types: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.types
+      egg_groups: *ruby-sapphire.pokemon.sceptile.egg_groups
+      mega: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.mega
+      stats: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.stats
+      abilities: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.sceptile.evolution_conditions
+      forms:
+        sceptile-mega:
+          name: 'Mega Sceptile'
+          form_name: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.form_name
+          default: true
+          battle_only: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.battle_only
+          icon: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/sceptile-mega.png
+            - ultra-sun-ultra-moon/shiny/sceptile-mega.png
+          art: *omega-ruby-alpha-sapphire.pokemon.sceptile-mega.forms.sceptile-mega.art
+          footprint: *ruby-sapphire.pokemon.sceptile.forms.sceptile.footprint
+          cry: *x-y.pokemon.sceptile.forms.sceptile.cry

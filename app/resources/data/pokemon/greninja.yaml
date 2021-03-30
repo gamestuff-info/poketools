@@ -1,0 +1,374 @@
+x-y:
+  name: &x-y.name Greninja
+  position: &x-y.position 659
+  numbers:
+    national: &x-y.numbers.national 658
+    kalos-central: 9
+  pokemon:
+    greninja:
+      genus: &x-y.pokemon.greninja.genus 'Ninja Pokémon'
+      evolution_parent: &x-y.pokemon.greninja.evolution_parent frogadier/frogadier
+      color: &x-y.pokemon.greninja.color blue
+      shape: &x-y.pokemon.greninja.shape humanoid
+      female_rate: &x-y.pokemon.greninja.female_rate 12
+      capture_rate: &x-y.pokemon.greninja.capture_rate 45
+      happiness: &x-y.pokemon.greninja.happiness 70
+      baby: &x-y.pokemon.greninja.baby false
+      hatch_steps: &x-y.pokemon.greninja.hatch_steps 20
+      growth_rate: &x-y.pokemon.greninja.growth_rate medium-slow
+      forms_switchable: &x-y.pokemon.greninja.forms_switchable false
+      name: Greninja
+      default: &x-y.pokemon.greninja.default true
+      height: &x-y.pokemon.greninja.height 15
+      weight: &x-y.pokemon.greninja.weight 400
+      experience: &x-y.pokemon.greninja.experience 239
+      types: &x-y.pokemon.greninja.types
+        - water
+        - dark
+      egg_groups: &x-y.pokemon.greninja.egg_groups
+        - water1
+      mega: &x-y.pokemon.greninja.mega false
+      stats: &x-y.pokemon.greninja.stats
+        hp:
+          base_value: 72
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 67
+          effort_change: 0
+        speed:
+          base_value: 122
+          effort_change: 3
+        special-attack:
+          base_value: 103
+          effort_change: 0
+        special-defense:
+          base_value: 71
+          effort_change: 0
+      abilities: &x-y.pokemon.greninja.abilities
+        torrent: &x-y.pokemon.greninja.abilities.torrent
+          hidden: false
+          position: 1
+        protean:
+          hidden: true
+          position: 3
+      evolution_conditions: &x-y.pokemon.greninja.evolution_conditions
+        level-up:
+          minimum_level: 36
+      flavor_text:
+        x: |
+          It creates throwing stars out of compressed water.
+          When it spins them and throws them at high speed,
+          these stars can split metal in two.
+        'y': |
+          It appears and vanishes with a ninja’s grace.
+          It toys with its enemies using swift movements, while
+          slicing them with throwing stars of sharpest water.
+      forms:
+        greninja:
+          name: Greninja
+          form_name: &x-y.pokemon.greninja.forms.greninja.form_name 'Default Form'
+          default: true
+          battle_only: &x-y.pokemon.greninja.forms.greninja.battle_only false
+          icon: &x-y.pokemon.greninja.forms.greninja.icon greninja-default.png
+          sprites:
+            - x-y/greninja-default.png
+            - x-y/shiny/greninja-default.png
+          art: &x-y.pokemon.greninja.forms.greninja.art
+            - greninja-default.png
+          footprint: &x-y.pokemon.greninja.forms.greninja.footprint greninja.png
+          cry: &x-y.pokemon.greninja.forms.greninja.cry greninja-default.webm
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *x-y.numbers.national
+  pokemon:
+    greninja:
+      genus: *x-y.pokemon.greninja.genus
+      evolution_parent: *x-y.pokemon.greninja.evolution_parent
+      color: *x-y.pokemon.greninja.color
+      shape: *x-y.pokemon.greninja.shape
+      female_rate: *x-y.pokemon.greninja.female_rate
+      capture_rate: *x-y.pokemon.greninja.capture_rate
+      happiness: *x-y.pokemon.greninja.happiness
+      baby: *x-y.pokemon.greninja.baby
+      hatch_steps: *x-y.pokemon.greninja.hatch_steps
+      growth_rate: *x-y.pokemon.greninja.growth_rate
+      forms_switchable: *x-y.pokemon.greninja.forms_switchable
+      name: Greninja
+      default: *x-y.pokemon.greninja.default
+      height: *x-y.pokemon.greninja.height
+      weight: *x-y.pokemon.greninja.weight
+      experience: *x-y.pokemon.greninja.experience
+      types: *x-y.pokemon.greninja.types
+      egg_groups: *x-y.pokemon.greninja.egg_groups
+      mega: *x-y.pokemon.greninja.mega
+      stats: *x-y.pokemon.greninja.stats
+      abilities: *x-y.pokemon.greninja.abilities
+      evolution_conditions: *x-y.pokemon.greninja.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It creates throwing stars out of compressed water.
+          When it spins them and throws them at high speed,
+          these stars can split metal in two.
+        alpha-sapphire: |
+          It appears and vanishes with a ninja’s grace.
+          It toys with its enemies using swift movements, while
+          slicing them with throwing stars of sharpest water.
+      forms:
+        greninja:
+          name: Greninja
+          form_name: *x-y.pokemon.greninja.forms.greninja.form_name
+          default: true
+          battle_only: *x-y.pokemon.greninja.forms.greninja.battle_only
+          icon: *x-y.pokemon.greninja.forms.greninja.icon
+          art: *x-y.pokemon.greninja.forms.greninja.art
+          footprint: *x-y.pokemon.greninja.forms.greninja.footprint
+          cry: *x-y.pokemon.greninja.forms.greninja.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/greninja-default.png
+            - omega-ruby-alpha-sapphire/shiny/greninja-default.png
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    greninja:
+      genus: *x-y.pokemon.greninja.genus
+      evolution_parent: *x-y.pokemon.greninja.evolution_parent
+      color: *x-y.pokemon.greninja.color
+      shape: *x-y.pokemon.greninja.shape
+      female_rate: *x-y.pokemon.greninja.female_rate
+      capture_rate: *x-y.pokemon.greninja.capture_rate
+      happiness: *x-y.pokemon.greninja.happiness
+      baby: *x-y.pokemon.greninja.baby
+      hatch_steps: *x-y.pokemon.greninja.hatch_steps
+      growth_rate: *x-y.pokemon.greninja.growth_rate
+      forms_switchable: *x-y.pokemon.greninja.forms_switchable
+      name: Greninja
+      default: *x-y.pokemon.greninja.default
+      height: *x-y.pokemon.greninja.height
+      weight: *x-y.pokemon.greninja.weight
+      experience: *x-y.pokemon.greninja.experience
+      types: *x-y.pokemon.greninja.types
+      egg_groups: *x-y.pokemon.greninja.egg_groups
+      mega: *x-y.pokemon.greninja.mega
+      stats: *x-y.pokemon.greninja.stats
+      abilities: *x-y.pokemon.greninja.abilities
+      evolution_conditions: *x-y.pokemon.greninja.evolution_conditions
+      forms:
+        greninja:
+          name: Greninja
+          form_name: *x-y.pokemon.greninja.forms.greninja.form_name
+          default: true
+          battle_only: *x-y.pokemon.greninja.forms.greninja.battle_only
+          icon: *x-y.pokemon.greninja.forms.greninja.icon
+          sprites:
+            - sun-moon/greninja-default.png
+            - sun-moon/shiny/greninja-default.png
+          art: *x-y.pokemon.greninja.forms.greninja.art
+          footprint: *x-y.pokemon.greninja.forms.greninja.footprint
+          cry: *x-y.pokemon.greninja.forms.greninja.cry
+    greninja-battle-bond:
+      genus: *x-y.pokemon.greninja.genus
+      evolution_parent: *x-y.pokemon.greninja.evolution_parent
+      color: *x-y.pokemon.greninja.color
+      shape: *x-y.pokemon.greninja.shape
+      female_rate: *x-y.pokemon.greninja.female_rate
+      capture_rate: *x-y.pokemon.greninja.capture_rate
+      happiness: *x-y.pokemon.greninja.happiness
+      baby: *x-y.pokemon.greninja.baby
+      hatch_steps: *x-y.pokemon.greninja.hatch_steps
+      growth_rate: *x-y.pokemon.greninja.growth_rate
+      forms_switchable: *x-y.pokemon.greninja.forms_switchable
+      name: &sun-moon.pokemon.greninja-battle-bond.name 'Battle Bond Greninja'
+      default: &sun-moon.pokemon.greninja-battle-bond.default false
+      height: *x-y.pokemon.greninja.height
+      weight: *x-y.pokemon.greninja.weight
+      experience: *x-y.pokemon.greninja.experience
+      types: *x-y.pokemon.greninja.types
+      egg_groups: *x-y.pokemon.greninja.egg_groups
+      mega: *x-y.pokemon.greninja.mega
+      stats: *x-y.pokemon.greninja.stats
+      abilities: &sun-moon.pokemon.greninja-battle-bond.abilities
+        battle-bond: *x-y.pokemon.greninja.abilities.torrent
+      evolution_conditions: *x-y.pokemon.greninja.evolution_conditions
+      forms:
+        greninja-battle-bond:
+          name: 'Battle Bond Greninja'
+          form_name: *x-y.pokemon.greninja.forms.greninja.form_name
+          default: true
+          battle_only: *x-y.pokemon.greninja.forms.greninja.battle_only
+          icon: &sun-moon.pokemon.greninja-battle-bond.forms.greninja-battle-bond.icon greninja-battle-bond.png
+          sprites:
+            - sun-moon/greninja-battle-bond.png
+            - sun-moon/shiny/greninja-battle-bond.png
+          footprint: *x-y.pokemon.greninja.forms.greninja.footprint
+          cry: *x-y.pokemon.greninja.forms.greninja.cry
+    greninja-ash:
+      genus: *x-y.pokemon.greninja.genus
+      evolution_parent: *x-y.pokemon.greninja.evolution_parent
+      color: *x-y.pokemon.greninja.color
+      shape: *x-y.pokemon.greninja.shape
+      female_rate: *x-y.pokemon.greninja.female_rate
+      capture_rate: *x-y.pokemon.greninja.capture_rate
+      happiness: *x-y.pokemon.greninja.happiness
+      baby: *x-y.pokemon.greninja.baby
+      hatch_steps: *x-y.pokemon.greninja.hatch_steps
+      growth_rate: *x-y.pokemon.greninja.growth_rate
+      forms_switchable: *x-y.pokemon.greninja.forms_switchable
+      name: &sun-moon.pokemon.greninja-ash.name 'Ash''s Greninja'
+      default: *sun-moon.pokemon.greninja-battle-bond.default
+      height: *x-y.pokemon.greninja.height
+      weight: *x-y.pokemon.greninja.weight
+      experience: &sun-moon.pokemon.greninja-ash.experience 288
+      types: *x-y.pokemon.greninja.types
+      egg_groups: *x-y.pokemon.greninja.egg_groups
+      mega: *x-y.pokemon.greninja.mega
+      stats: &sun-moon.pokemon.greninja-ash.stats
+        hp:
+          base_value: 72
+          effort_change: 0
+        attack:
+          base_value: 145
+          effort_change: 0
+        defense:
+          base_value: 67
+          effort_change: 0
+        speed:
+          base_value: 132
+          effort_change: 3
+        special-attack:
+          base_value: 153
+          effort_change: 0
+        special-defense:
+          base_value: 71
+          effort_change: 0
+      abilities: *sun-moon.pokemon.greninja-battle-bond.abilities
+      evolution_conditions: *x-y.pokemon.greninja.evolution_conditions
+      forms:
+        greninja-ash:
+          name: 'Ash''s Greninja'
+          form_name: &sun-moon.pokemon.greninja-ash.forms.greninja-ash.form_name Ash-Greninja
+          default: true
+          battle_only: &sun-moon.pokemon.greninja-ash.forms.greninja-ash.battle_only true
+          icon: &sun-moon.pokemon.greninja-ash.forms.greninja-ash.icon greninja-ash.png
+          sprites:
+            - sun-moon/greninja-ash.png
+            - sun-moon/shiny/greninja-ash.png
+          footprint: *x-y.pokemon.greninja.forms.greninja.footprint
+          cry: *x-y.pokemon.greninja.forms.greninja.cry
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    greninja:
+      genus: *x-y.pokemon.greninja.genus
+      evolution_parent: *x-y.pokemon.greninja.evolution_parent
+      color: *x-y.pokemon.greninja.color
+      shape: *x-y.pokemon.greninja.shape
+      female_rate: *x-y.pokemon.greninja.female_rate
+      capture_rate: *x-y.pokemon.greninja.capture_rate
+      happiness: *x-y.pokemon.greninja.happiness
+      baby: *x-y.pokemon.greninja.baby
+      hatch_steps: *x-y.pokemon.greninja.hatch_steps
+      growth_rate: *x-y.pokemon.greninja.growth_rate
+      forms_switchable: *x-y.pokemon.greninja.forms_switchable
+      name: Greninja
+      default: *x-y.pokemon.greninja.default
+      height: *x-y.pokemon.greninja.height
+      weight: *x-y.pokemon.greninja.weight
+      experience: *x-y.pokemon.greninja.experience
+      types: *x-y.pokemon.greninja.types
+      egg_groups: *x-y.pokemon.greninja.egg_groups
+      mega: *x-y.pokemon.greninja.mega
+      stats: *x-y.pokemon.greninja.stats
+      abilities: *x-y.pokemon.greninja.abilities
+      evolution_conditions: *x-y.pokemon.greninja.evolution_conditions
+      forms:
+        greninja:
+          name: Greninja
+          form_name: *x-y.pokemon.greninja.forms.greninja.form_name
+          default: true
+          battle_only: *x-y.pokemon.greninja.forms.greninja.battle_only
+          icon: *x-y.pokemon.greninja.forms.greninja.icon
+          sprites:
+            - ultra-sun-ultra-moon/greninja-default.png
+            - ultra-sun-ultra-moon/shiny/greninja-default.png
+          art: *x-y.pokemon.greninja.forms.greninja.art
+          footprint: *x-y.pokemon.greninja.forms.greninja.footprint
+          cry: *x-y.pokemon.greninja.forms.greninja.cry
+    greninja-battle-bond:
+      genus: *x-y.pokemon.greninja.genus
+      evolution_parent: *x-y.pokemon.greninja.evolution_parent
+      color: *x-y.pokemon.greninja.color
+      shape: *x-y.pokemon.greninja.shape
+      female_rate: *x-y.pokemon.greninja.female_rate
+      capture_rate: *x-y.pokemon.greninja.capture_rate
+      happiness: *x-y.pokemon.greninja.happiness
+      baby: *x-y.pokemon.greninja.baby
+      hatch_steps: *x-y.pokemon.greninja.hatch_steps
+      growth_rate: *x-y.pokemon.greninja.growth_rate
+      forms_switchable: *x-y.pokemon.greninja.forms_switchable
+      name: *sun-moon.pokemon.greninja-battle-bond.name
+      default: *sun-moon.pokemon.greninja-battle-bond.default
+      height: *x-y.pokemon.greninja.height
+      weight: *x-y.pokemon.greninja.weight
+      experience: *x-y.pokemon.greninja.experience
+      types: *x-y.pokemon.greninja.types
+      egg_groups: *x-y.pokemon.greninja.egg_groups
+      mega: *x-y.pokemon.greninja.mega
+      stats: *x-y.pokemon.greninja.stats
+      abilities: *sun-moon.pokemon.greninja-battle-bond.abilities
+      evolution_conditions: *x-y.pokemon.greninja.evolution_conditions
+      forms:
+        greninja-battle-bond:
+          name: 'Battle Bond Greninja'
+          form_name: *x-y.pokemon.greninja.forms.greninja.form_name
+          default: true
+          battle_only: *x-y.pokemon.greninja.forms.greninja.battle_only
+          icon: *sun-moon.pokemon.greninja-battle-bond.forms.greninja-battle-bond.icon
+          sprites:
+            - ultra-sun-ultra-moon/greninja-battle-bond.png
+            - ultra-sun-ultra-moon/shiny/greninja-battle-bond.png
+          footprint: *x-y.pokemon.greninja.forms.greninja.footprint
+          cry: *x-y.pokemon.greninja.forms.greninja.cry
+    greninja-ash:
+      genus: *x-y.pokemon.greninja.genus
+      evolution_parent: *x-y.pokemon.greninja.evolution_parent
+      color: *x-y.pokemon.greninja.color
+      shape: *x-y.pokemon.greninja.shape
+      female_rate: *x-y.pokemon.greninja.female_rate
+      capture_rate: *x-y.pokemon.greninja.capture_rate
+      happiness: *x-y.pokemon.greninja.happiness
+      baby: *x-y.pokemon.greninja.baby
+      hatch_steps: *x-y.pokemon.greninja.hatch_steps
+      growth_rate: *x-y.pokemon.greninja.growth_rate
+      forms_switchable: *x-y.pokemon.greninja.forms_switchable
+      name: *sun-moon.pokemon.greninja-ash.name
+      default: *sun-moon.pokemon.greninja-battle-bond.default
+      height: *x-y.pokemon.greninja.height
+      weight: *x-y.pokemon.greninja.weight
+      experience: *sun-moon.pokemon.greninja-ash.experience
+      types: *x-y.pokemon.greninja.types
+      egg_groups: *x-y.pokemon.greninja.egg_groups
+      mega: *x-y.pokemon.greninja.mega
+      stats: *sun-moon.pokemon.greninja-ash.stats
+      abilities: *sun-moon.pokemon.greninja-battle-bond.abilities
+      evolution_conditions: *x-y.pokemon.greninja.evolution_conditions
+      forms:
+        greninja-ash:
+          name: 'Ash''s Greninja'
+          form_name: *sun-moon.pokemon.greninja-ash.forms.greninja-ash.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.greninja-ash.forms.greninja-ash.battle_only
+          icon: *sun-moon.pokemon.greninja-ash.forms.greninja-ash.icon
+          sprites:
+            - ultra-sun-ultra-moon/greninja-ash.png
+            - ultra-sun-ultra-moon/shiny/greninja-ash.png
+          footprint: *x-y.pokemon.greninja.forms.greninja.footprint
+          cry: *x-y.pokemon.greninja.forms.greninja.cry

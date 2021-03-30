@@ -1,0 +1,216 @@
+red-blue: &red-blue
+  name: &red-blue.name SUPERSONIC
+  type: &red-blue.type normal
+  accuracy: &red-blue.accuracy 55
+  pp: &red-blue.pp 20
+  effect: &red-blue.effect 50
+  ailment: &red-blue.ailment confusion
+  flags: &red-blue.flags
+    - protect
+    - reflectable
+    - mirror
+    - sound
+    - authentic
+  categories: &red-blue.categories
+    - ailment
+  hits: &red-blue.hits 1
+  turns: 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target selected-pokemon
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: &gold-silver.turns 2-5
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Sound waves that
+    cause confusion.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: &ruby-sapphire.flags
+    - protect
+    - reflectable
+    - mirror
+  ailment: *red-blue.ailment
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 44
+  flavor_text: |
+    Emits bizarre sound waves
+    that may confuse the foe.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: &colosseum.flavor_text |
+    Emits bizarre sound waves
+    that may cause confusion.
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+xd:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: physical
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    The user generates
+    odd sound waves.
+    It may confuse the
+    foe.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Supersonic
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 19
+  flavor_text: &diamond-pearl.flavor_text |
+    The user generates
+    odd sound waves from
+    its body.
+    It may confuse the
+    target.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user generates odd sound waves from
+    its body. It may confuse the target.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: &x-y.flavor_text |
+    The user generates odd sound waves from
+    its body that confuse the target.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 22
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user generates odd sound waves from its body
+    that confuse the target.
+ultra-sun-ultra-moon: *sun-moon

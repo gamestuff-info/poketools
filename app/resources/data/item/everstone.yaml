@@ -1,0 +1,137 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name EVERSTONE
+  pocket: &gold-silver.pocket misc
+  buy: &gold-silver.buy 200
+  sell: &gold-silver.sell 100
+  flavor_text: |
+    Stops evolution.
+    (HOLD)
+  category: &gold-silver.category training
+  flags: &gold-silver.flags
+    - holdable
+    - holdable-active
+  short_description: &gold-silver.short_description 'Held: Prevents level-based evolution from occurring.'
+  description: &gold-silver.description 'Held: Prevents the holder from evolving naturally.  Evolution initiated by the trainer (Stones, etc) will still work.'
+crystal: *gold-silver
+ruby-sapphire:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: &ruby-sapphire.icon everstone.png
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    A wondrous stone
+    & a hold item that
+    prevents evolution.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+emerald:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: |
+    A wondrous hold
+    item that prevents
+    evolution.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+colosseum: &colosseum
+  name: *gold-silver.name
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *gold-silver.category
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+xd: *colosseum
+firered-leafgreen:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: |
+    An item to be held by a POKéMON.
+    The holding POKéMON is prevented
+     from evolving.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Everstone
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: &diamond-pearl.buy 3000
+  sell: &diamond-pearl.sell 1500
+  fling_effect: damage
+  fling_power: 30
+  flags:
+    - holdable
+    - holdable-active
+    - underground
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: &diamond-pearl.flavor_text |
+    An item to be held by a Pokémon.
+    The Pokémon holding this peculiar stone
+    is prevented from evolving.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: &heartgold-soulsilver
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: *diamond-pearl.flavor_text
+  icon: *ruby-sapphire.icon
+black-white: *heartgold-soulsilver
+black-2-white-2: *heartgold-soulsilver
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    An item to be held by a Pokémon.
+    A Pokémon holding this peculiar
+    stone is prevented from evolving.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    An item to be held by a Pokémon. A Pokémon
+    holding this peculiar stone is prevented
+    from evolving.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

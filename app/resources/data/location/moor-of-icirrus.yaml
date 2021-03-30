@@ -1,0 +1,19 @@
+black-white:
+  region: &black-white.region unova
+  name: &black-white.name 'Moor of Icirrus'
+  areas: &black-white.areas
+    whole-area:
+      name: 'Whole area'
+      default: true
+  super: &black-white.super unova-route-8
+  map:
+    map: &black-white.map.map unova
+    overlay: '<circle r="3" cy="36" cx="88" />'
+black-2-white-2:
+  region: *black-white.region
+  name: *black-white.name
+  areas: *black-white.areas
+  super: *black-white.super
+  map:
+    map: *black-white.map.map
+    overlay: '<rect height="6" width="6" y="33" x="85" />'

@@ -1,0 +1,974 @@
+red-blue:
+  name: &red-blue.name MACHOKE
+  position: &red-blue.position 67
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 67
+    kanto: 67
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: &red-blue.pokemon.machoke.default true
+      capture_rate: &red-blue.pokemon.machoke.capture_rate 90
+      experience: &red-blue.pokemon.machoke.experience 146
+      types: &red-blue.pokemon.machoke.types
+        - fighting
+      stats: &red-blue.pokemon.machoke.stats
+        hp:
+          base_value: 80
+          effort_change: 80
+        attack:
+          base_value: 100
+          effort_change: 100
+        defense:
+          base_value: 70
+          effort_change: 70
+        speed:
+          base_value: 45
+          effort_change: 45
+        special:
+          base_value: 50
+          effort_change: 50
+      growth_rate: &red-blue.pokemon.machoke.growth_rate medium-slow
+      genus: &red-blue.pokemon.machoke.genus 'SUPERPOWER Pokémon'
+      height: &red-blue.pokemon.machoke.height 14
+      weight: &red-blue.pokemon.machoke.weight 7030
+      flavor_text:
+        red: |
+          Its muscular body
+          is so powerful, it
+          must wear a power
+          save belt to be
+          able to regulate
+          its motions.
+        blue: |
+          Its muscular body
+          is so powerful, it
+          must wear a power
+          save belt to be
+          able to regulate
+          its motions.
+      evolution_parent: &red-blue.pokemon.machoke.evolution_parent machop/machop
+      evolution_conditions: &red-blue.pokemon.machoke.evolution_conditions
+        level-up:
+          minimum_level: 28
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: &red-blue.pokemon.machoke.forms.machoke.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.machoke.forms.machoke.battle_only false
+          sprites:
+            - red-blue/machoke-default.png
+            - red-blue/gray/machoke-default.png
+            - red-blue/back/machoke-default.png
+          art: &red-blue.pokemon.machoke.forms.machoke.art
+            - machoke-default.png
+          cry: &red-blue.pokemon.machoke.forms.machoke.cry gen5/machoke-default.webm
+          icon: &red-blue.pokemon.machoke.forms.machoke.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: *red-blue.pokemon.machoke.default
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      experience: *red-blue.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      stats: *red-blue.pokemon.machoke.stats
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      genus: *red-blue.pokemon.machoke.genus
+      height: *red-blue.pokemon.machoke.height
+      weight: *red-blue.pokemon.machoke.weight
+      flavor_text:
+        yellow: |
+          The belt around
+          its waist holds
+          back its energy.
+          Without it, this
+           POKéMON would be
+          unstoppable.
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          sprites:
+            - yellow/machoke-default.png
+            - yellow/gray/machoke-default.png
+            - yellow/back/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+          icon: *red-blue.pokemon.machoke.forms.machoke.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 66
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 140
+    original-johto-abc: 103
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: *red-blue.pokemon.machoke.default
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      experience: *red-blue.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      stats: &gold-silver.pokemon.machoke.stats
+        hp:
+          base_value: 80
+          effort_change: 80
+        attack:
+          base_value: 100
+          effort_change: 100
+        defense:
+          base_value: 70
+          effort_change: 70
+        speed:
+          base_value: 45
+          effort_change: 45
+        special-attack:
+          base_value: 50
+          effort_change: 50
+        special-defense:
+          base_value: 60
+          effort_change: 50
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      female_rate: &gold-silver.pokemon.machoke.female_rate 25
+      hatch_steps: &gold-silver.pokemon.machoke.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.machoke.egg_groups
+        - humanshape
+      genus: *red-blue.pokemon.machoke.genus
+      height: *red-blue.pokemon.machoke.height
+      weight: &gold-silver.pokemon.machoke.weight 703
+      flavor_text:
+        gold: |
+          It always goes at
+          its full power,
+          but this very
+          tough and durable
+          #MON never gets
+          tired.
+        silver: |
+          The muscles cover-
+          ing its body teem
+          with power. Even
+          when still, it
+          exudes an amazing
+          sense of strength.
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          sprites:
+            - gold-silver/machoke-default.png
+            - gold-silver/back/machoke-default.png
+            - gold-silver/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+          icon: &gold-silver.pokemon.machoke.forms.machoke.icon gen2/fighter.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: *red-blue.pokemon.machoke.default
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      experience: *red-blue.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      stats: *gold-silver.pokemon.machoke.stats
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      genus: *red-blue.pokemon.machoke.genus
+      height: *red-blue.pokemon.machoke.height
+      weight: *gold-silver.pokemon.machoke.weight
+      flavor_text:
+        crystal: |
+          This tough #MON
+          always stays in
+          the zone. Its
+          muscles become
+          thicker after
+          every battle.
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          sprites:
+            - crystal/machoke-default.png
+            - crystal/back/machoke-default.png
+            - crystal/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+          icon: *gold-silver.pokemon.machoke.forms.machoke.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 74
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: *red-blue.pokemon.machoke.default
+      forms_switchable: &ruby-sapphire.pokemon.machoke.forms_switchable false
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      experience: *red-blue.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      stats: &ruby-sapphire.pokemon.machoke.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 100
+          effort_change: 2
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 45
+          effort_change: 0
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      happiness: &ruby-sapphire.pokemon.machoke.happiness 70
+      abilities: &ruby-sapphire.pokemon.machoke.abilities
+        guts: &ruby-sapphire.pokemon.machoke.abilities.guts
+          hidden: &ruby-sapphire.pokemon.machoke.abilities.guts.hidden false
+          position: 1
+      genus: *red-blue.pokemon.machoke.genus
+      height: &ruby-sapphire.pokemon.machoke.height 15
+      weight: &ruby-sapphire.pokemon.machoke.weight 705
+      flavor_text:
+        ruby: |
+          MACHOKE's thoroughly toned muscles
+          possess the hardness of steel.
+           This POKéMON has so much strength,
+          it can easily hold aloft a sumo wrestler
+           on just one finger.
+        sapphire: |
+          MACHOKE undertakes bodybuilding every
+          day even as it helps people with tough,
+          physically demanding labor.
+          On its days off, this POKéMON heads to
+          the fields and mountains to exercise
+          and train.
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: &ruby-sapphire.pokemon.machoke.forms.machoke.icon gen5/machoke-default.png
+          sprites:
+            - ruby-sapphire/machoke-default.png
+            - ruby-sapphire/back/machoke-default.png
+            - ruby-sapphire/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: &ruby-sapphire.pokemon.machoke.forms.machoke.footprint machoke.png
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: *red-blue.pokemon.machoke.default
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      experience: *red-blue.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      stats: *ruby-sapphire.pokemon.machoke.stats
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      abilities: *ruby-sapphire.pokemon.machoke.abilities
+      genus: *red-blue.pokemon.machoke.genus
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      flavor_text:
+        emerald: |
+          A belt is worn by a MACHOKE to keep its
+          overwhelming power under control.
+          Because it is so dangerous, no one has
+          ever removed the belt.
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *ruby-sapphire.pokemon.machoke.forms.machoke.icon
+          sprites:
+            - emerald/machoke-default.png
+            - emerald/shiny/machoke-default.png
+            - emerald/animated/machoke-default.webm
+            - emerald/animated/shiny/machoke-default.webm
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 177
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: *red-blue.pokemon.machoke.default
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      experience: *red-blue.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      stats: *ruby-sapphire.pokemon.machoke.stats
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      abilities: *ruby-sapphire.pokemon.machoke.abilities
+      genus: *red-blue.pokemon.machoke.genus
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          sprites:
+            - colosseum/machoke-default.png
+            - colosseum/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: *red-blue.pokemon.machoke.default
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      experience: *red-blue.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      stats: *ruby-sapphire.pokemon.machoke.stats
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      abilities: *ruby-sapphire.pokemon.machoke.abilities
+      genus: *red-blue.pokemon.machoke.genus
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          sprites:
+            - xd/machoke-default.png
+            - xd/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    machoke:
+      name: MACHOKE
+      default: *red-blue.pokemon.machoke.default
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      experience: *red-blue.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      stats: *ruby-sapphire.pokemon.machoke.stats
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.machoke.wild_held_items.firered
+          focus-band: 5
+        leafgreen: *firered-leafgreen.pokemon.machoke.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      abilities: *ruby-sapphire.pokemon.machoke.abilities
+      genus: *red-blue.pokemon.machoke.genus
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      flavor_text:
+        firered: |
+          Its formidable body never gets tired.
+          It helps people by doing work such as
+          the moving of heavy goods.
+        leafgreen: |
+          Its muscular body is so powerful, it must
+          wear a power-save belt to be able to
+          regulate its motions.
+      forms:
+        machoke:
+          name: MACHOKE
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *ruby-sapphire.pokemon.machoke.forms.machoke.icon
+          sprites:
+            - firered-leafgreen/machoke-default.png
+            - firered-leafgreen/back/machoke-default.png
+            - firered-leafgreen/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Machoke
+  position: &diamond-pearl.position 73
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 41
+  pokemon:
+    machoke:
+      genus: &diamond-pearl.pokemon.machoke.genus 'Superpower Pokémon'
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      shape: &diamond-pearl.pokemon.machoke.shape humanoid
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: &diamond-pearl.pokemon.machoke.baby false
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      pal_park: &diamond-pearl.pokemon.machoke.pal_park
+        area: mountain
+        rate: 10
+        score: 80
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: &diamond-pearl.pokemon.machoke.experience 142
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      stats: &diamond-pearl.pokemon.machoke.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 100
+          effort_change: 2
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 45
+          effort_change: 0
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.machoke.abilities
+        guts: *ruby-sapphire.pokemon.machoke.abilities.guts
+        no-guard:
+          hidden: *ruby-sapphire.pokemon.machoke.abilities.guts.hidden
+          position: 2
+        steadfast:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        diamond: |
+          MACHOKE’s boundless power is very
+          dangerous, so it wears a belt that
+          suppresses its energy.
+        pearl: |
+          It can lift a dump truck with one
+          hand. Using that power, it helps
+          people with heavy jobs.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *ruby-sapphire.pokemon.machoke.forms.machoke.icon
+          sprites:
+            - diamond-pearl/machoke-default.png
+            - diamond-pearl/back/machoke-default.png
+            - diamond-pearl/back/shiny/machoke-default.png
+            - diamond-pearl/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 41
+  pokemon:
+    machoke:
+      genus: *diamond-pearl.pokemon.machoke.genus
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      shape: *diamond-pearl.pokemon.machoke.shape
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: *diamond-pearl.pokemon.machoke.baby
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      pal_park: *diamond-pearl.pokemon.machoke.pal_park
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: *diamond-pearl.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      stats: *diamond-pearl.pokemon.machoke.stats
+      abilities: *diamond-pearl.pokemon.machoke.abilities
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        platinum: |
+          It happily carries heavy cargo to
+          toughen up. It willingly does hard
+          work for people.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *ruby-sapphire.pokemon.machoke.forms.machoke.icon
+          sprites:
+            - platinum/machoke-default.png
+            - platinum/back/machoke-default.png
+            - platinum/back/shiny/machoke-default.png
+            - platinum/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 143
+  pokemon:
+    machoke:
+      genus: *diamond-pearl.pokemon.machoke.genus
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      shape: *diamond-pearl.pokemon.machoke.shape
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: *diamond-pearl.pokemon.machoke.baby
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      pal_park: *diamond-pearl.pokemon.machoke.pal_park
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: *diamond-pearl.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      stats: *diamond-pearl.pokemon.machoke.stats
+      abilities: *diamond-pearl.pokemon.machoke.abilities
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It always goes at its full power,
+          but this very tough and durable
+          Pokémon never gets tired.
+        soulsilver: |
+          The muscles covering its body teem
+          with power. Even when still, it
+          exudes an amazing sense of strength.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 2
+            power:
+              base_value: 4
+              range: 2-4
+            skill:
+              base_value: 2
+              range: 2-3
+            stamina:
+              base_value: 3
+              range: 3-4
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.machoke.forms.machoke.icon
+          sprites:
+            - heartgold-soulsilver/machoke-default.png
+            - heartgold-soulsilver/back/machoke-default.png
+            - heartgold-soulsilver/back/shiny/machoke-default.png
+            - heartgold-soulsilver/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    machoke:
+      genus: *diamond-pearl.pokemon.machoke.genus
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      color: &black-white.pokemon.machoke.color gray
+      shape: *diamond-pearl.pokemon.machoke.shape
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: *diamond-pearl.pokemon.machoke.baby
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: *diamond-pearl.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      stats: *diamond-pearl.pokemon.machoke.stats
+      abilities: *diamond-pearl.pokemon.machoke.abilities
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        black: |
+          It happily carries heavy cargo to
+          toughen up. It willingly does hard
+          work for people.
+        white: |
+          It happily carries heavy cargo to
+          toughen up. It willingly does hard
+          work for people.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *ruby-sapphire.pokemon.machoke.forms.machoke.icon
+          sprites:
+            - black-white/machoke-default.png
+            - black-white/back/machoke-default.png
+            - black-white/back/shiny/machoke-default.png
+            - black-white/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    machoke:
+      genus: *diamond-pearl.pokemon.machoke.genus
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      color: *black-white.pokemon.machoke.color
+      shape: *diamond-pearl.pokemon.machoke.shape
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: *diamond-pearl.pokemon.machoke.baby
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: *diamond-pearl.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      stats: *diamond-pearl.pokemon.machoke.stats
+      abilities: *diamond-pearl.pokemon.machoke.abilities
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        black-2: |
+          It happily carries heavy cargo to
+          toughen up. It willingly does hard
+          work for people.
+        white-2: |
+          It happily carries heavy cargo to
+          toughen up. It willingly does hard
+          work for people.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *ruby-sapphire.pokemon.machoke.forms.machoke.icon
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *red-blue.pokemon.machoke.forms.machoke.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 58
+  pokemon:
+    machoke:
+      genus: *diamond-pearl.pokemon.machoke.genus
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      color: *black-white.pokemon.machoke.color
+      shape: *diamond-pearl.pokemon.machoke.shape
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: *diamond-pearl.pokemon.machoke.baby
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: *diamond-pearl.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      mega: &x-y.pokemon.machoke.mega false
+      stats: *diamond-pearl.pokemon.machoke.stats
+      abilities: *diamond-pearl.pokemon.machoke.abilities
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        x: |
+          Its muscular body is so powerful, it must wear a
+          power-save belt to be able to regulate its motions.
+        'y': |
+          It can lift a dump truck with one hand. Using that
+          power, it helps people with heavy jobs.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: &x-y.pokemon.machoke.forms.machoke.icon machoke-default.png
+          sprites:
+            - x-y/machoke-default.png
+            - x-y/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: &x-y.pokemon.machoke.forms.machoke.cry machoke-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 76
+  pokemon:
+    machoke:
+      genus: *diamond-pearl.pokemon.machoke.genus
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      color: *black-white.pokemon.machoke.color
+      shape: *diamond-pearl.pokemon.machoke.shape
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: *diamond-pearl.pokemon.machoke.baby
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: *diamond-pearl.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      mega: *x-y.pokemon.machoke.mega
+      stats: *diamond-pearl.pokemon.machoke.stats
+      abilities: *diamond-pearl.pokemon.machoke.abilities
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Machoke’s thoroughly toned muscles possess the hardness
+          of steel. This Pokémon has so much strength, it can easily
+          hold aloft a sumo wrestler on just one finger.
+        alpha-sapphire: |
+          Machoke undertakes bodybuilding every day even as
+          it helps people with tough, physically demanding labor.
+          On its days off, this Pokémon heads to the fields and
+          mountains to exercise and train.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *x-y.pokemon.machoke.forms.machoke.icon
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *x-y.pokemon.machoke.forms.machoke.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/machoke-default.png
+            - omega-ruby-alpha-sapphire/shiny/machoke-default.png
+      wild_held_items:
+        omega-ruby: *firered-leafgreen.pokemon.machoke.wild_held_items.firered
+        alpha-sapphire: *firered-leafgreen.pokemon.machoke.wild_held_items.firered
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 96
+    original-melemele: 96
+    original-poni: 46
+  pokemon:
+    machoke:
+      genus: *diamond-pearl.pokemon.machoke.genus
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      color: *black-white.pokemon.machoke.color
+      shape: *diamond-pearl.pokemon.machoke.shape
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: *diamond-pearl.pokemon.machoke.baby
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: *diamond-pearl.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      mega: *x-y.pokemon.machoke.mega
+      stats: *diamond-pearl.pokemon.machoke.stats
+      abilities: *diamond-pearl.pokemon.machoke.abilities
+      wild_held_items:
+        sun: *firered-leafgreen.pokemon.machoke.wild_held_items.firered
+        moon: *firered-leafgreen.pokemon.machoke.wild_held_items.firered
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        sun: |-
+          As a result of its continual workouts, it has
+          developed tremendous power. It uses that
+          power to help people with their work.
+        moon: |-
+          It willingly assists with hard labor because it
+          knows the work is good training for its muscles.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *x-y.pokemon.machoke.forms.machoke.icon
+          sprites:
+            - sun-moon/machoke-default.png
+            - sun-moon/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *x-y.pokemon.machoke.forms.machoke.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 118
+    updated-melemele: 118
+    updated-poni: 58
+  pokemon:
+    machoke:
+      genus: *diamond-pearl.pokemon.machoke.genus
+      evolution_parent: *red-blue.pokemon.machoke.evolution_parent
+      color: *black-white.pokemon.machoke.color
+      shape: *diamond-pearl.pokemon.machoke.shape
+      female_rate: *gold-silver.pokemon.machoke.female_rate
+      capture_rate: *red-blue.pokemon.machoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.machoke.happiness
+      baby: *diamond-pearl.pokemon.machoke.baby
+      hatch_steps: *gold-silver.pokemon.machoke.hatch_steps
+      growth_rate: *red-blue.pokemon.machoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machoke.forms_switchable
+      name: Machoke
+      default: *red-blue.pokemon.machoke.default
+      height: *ruby-sapphire.pokemon.machoke.height
+      weight: *ruby-sapphire.pokemon.machoke.weight
+      experience: *diamond-pearl.pokemon.machoke.experience
+      types: *red-blue.pokemon.machoke.types
+      egg_groups: *gold-silver.pokemon.machoke.egg_groups
+      mega: *x-y.pokemon.machoke.mega
+      stats: *diamond-pearl.pokemon.machoke.stats
+      abilities: *diamond-pearl.pokemon.machoke.abilities
+      wild_held_items:
+        ultra-sun: *firered-leafgreen.pokemon.machoke.wild_held_items.firered
+        ultra-moon: *firered-leafgreen.pokemon.machoke.wild_held_items.firered
+      evolution_conditions: *red-blue.pokemon.machoke.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          When it encounters an enemy that’s truly
+          mighty, this Pokémon removes the power-save
+          belt from its waist and unleashes its full power.
+        ultra-moon: |-
+          A popular motif for sculptures, its incredibly
+          well-developed muscles have captured the
+          imagination of many an artist.
+      forms:
+        machoke:
+          name: Machoke
+          form_name: *red-blue.pokemon.machoke.forms.machoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machoke.forms.machoke.battle_only
+          icon: *x-y.pokemon.machoke.forms.machoke.icon
+          sprites:
+            - ultra-sun-ultra-moon/machoke-default.png
+            - ultra-sun-ultra-moon/shiny/machoke-default.png
+          art: *red-blue.pokemon.machoke.forms.machoke.art
+          footprint: *ruby-sapphire.pokemon.machoke.forms.machoke.footprint
+          cry: *x-y.pokemon.machoke.forms.machoke.cry

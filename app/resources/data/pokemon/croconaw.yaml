@@ -1,0 +1,826 @@
+gold-silver:
+  name: &gold-silver.name CROCONAW
+  position: &gold-silver.position 158
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 159
+    original-johto: 7
+    original-johto-abc: 247
+  pokemon:
+    croconaw:
+      name: CROCONAW
+      default: &gold-silver.pokemon.croconaw.default true
+      capture_rate: &gold-silver.pokemon.croconaw.capture_rate 45
+      experience: &gold-silver.pokemon.croconaw.experience 143
+      types: &gold-silver.pokemon.croconaw.types
+        - water
+      stats: &gold-silver.pokemon.croconaw.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 80
+          effort_change: 80
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 58
+          effort_change: 58
+        special-attack:
+          base_value: 59
+          effort_change: 59
+        special-defense:
+          base_value: 63
+          effort_change: 59
+      growth_rate: &gold-silver.pokemon.croconaw.growth_rate medium-slow
+      female_rate: &gold-silver.pokemon.croconaw.female_rate 12
+      hatch_steps: &gold-silver.pokemon.croconaw.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.croconaw.egg_groups
+        - monster
+        - water1
+      genus: &gold-silver.pokemon.croconaw.genus 'BIG JAW Pokémon'
+      height: &gold-silver.pokemon.croconaw.height 10
+      weight: &gold-silver.pokemon.croconaw.weight 249
+      flavor_text:
+        gold: |
+          If it loses a
+          fang, a new one
+          grows back in its
+          place. There are
+          always 48 fangs
+          lining its mouth.
+        silver: |
+          It opens its huge
+          jaws wide when
+          attacking. If it
+          loses any fangs
+          while biting, they
+          grow back in.
+      evolution_parent: &gold-silver.pokemon.croconaw.evolution_parent totodile/totodile
+      evolution_conditions: &gold-silver.pokemon.croconaw.evolution_conditions
+        level-up:
+          minimum_level: 18
+      forms:
+        croconaw:
+          name: CROCONAW
+          form_name: &gold-silver.pokemon.croconaw.forms.croconaw.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.croconaw.forms.croconaw.battle_only false
+          sprites:
+            - gold-silver/croconaw-default.png
+            - gold-silver/back/croconaw-default.png
+            - gold-silver/shiny/croconaw-default.png
+          art: &gold-silver.pokemon.croconaw.forms.croconaw.art
+            - croconaw-default.png
+          cry: &gold-silver.pokemon.croconaw.forms.croconaw.cry gen5/croconaw-default.webm
+          icon: &gold-silver.pokemon.croconaw.forms.croconaw.icon gen2/monster.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    croconaw:
+      name: CROCONAW
+      default: *gold-silver.pokemon.croconaw.default
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      experience: *gold-silver.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      stats: *gold-silver.pokemon.croconaw.stats
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      genus: *gold-silver.pokemon.croconaw.genus
+      height: *gold-silver.pokemon.croconaw.height
+      weight: *gold-silver.pokemon.croconaw.weight
+      flavor_text:
+        crystal: |
+          The tips of its
+          fangs are slanted
+          backward. Once
+          those fangs clamp
+          down, the prey has
+          no hope of escape.
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      forms:
+        croconaw:
+          name: CROCONAW
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          sprites:
+            - crystal/croconaw-default.png
+            - crystal/back/croconaw-default.png
+            - crystal/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+          icon: *gold-silver.pokemon.croconaw.forms.croconaw.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 159
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 314
+  pokemon:
+    croconaw:
+      name: CROCONAW
+      default: *gold-silver.pokemon.croconaw.default
+      forms_switchable: &ruby-sapphire.pokemon.croconaw.forms_switchable false
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      experience: *gold-silver.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      stats: &ruby-sapphire.pokemon.croconaw.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 1
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 58
+          effort_change: 0
+        special-attack:
+          base_value: 59
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      happiness: &ruby-sapphire.pokemon.croconaw.happiness 70
+      abilities: &ruby-sapphire.pokemon.croconaw.abilities
+        torrent: &ruby-sapphire.pokemon.croconaw.abilities.torrent
+          hidden: false
+          position: 1
+      genus: *gold-silver.pokemon.croconaw.genus
+      height: &ruby-sapphire.pokemon.croconaw.height 11
+      weight: &ruby-sapphire.pokemon.croconaw.weight 250
+      flavor_text:
+        ruby: |
+          Once CROCONAW has clamped its jaws on
+          its foe, it will absolutely not let go.
+          Because the tips of its fangs are
+          forked back like barbed fishhooks, they
+          become impossible to remove when
+          they have sunk in.
+        sapphire: |
+          Once CROCONAW has clamped its jaws on
+          its foe, it will absolutely not let go.
+          Because the tips of its fangs are
+          forked back like barbed fishhooks, they
+          become impossible to remove when
+          they have sunk in.
+      forms:
+        croconaw:
+          name: CROCONAW
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: &ruby-sapphire.pokemon.croconaw.forms.croconaw.icon gen5/croconaw-default.png
+          sprites:
+            - ruby-sapphire/croconaw-default.png
+            - ruby-sapphire/back/croconaw-default.png
+            - ruby-sapphire/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: &ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint croconaw.png
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    croconaw:
+      name: CROCONAW
+      default: *gold-silver.pokemon.croconaw.default
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      experience: *gold-silver.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      stats: *ruby-sapphire.pokemon.croconaw.stats
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      abilities: *ruby-sapphire.pokemon.croconaw.abilities
+      genus: *gold-silver.pokemon.croconaw.genus
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      flavor_text:
+        emerald: |
+          Once its jaws clamp down on its foe, it will
+          absolutely not let go. Because the tips of
+          its fangs are forked back like fishhooks,
+          they become irremovably embedded.
+      forms:
+        croconaw:
+          name: CROCONAW
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *ruby-sapphire.pokemon.croconaw.forms.croconaw.icon
+          sprites:
+            - emerald/croconaw-default.png
+            - emerald/shiny/croconaw-default.png
+            - emerald/animated/croconaw-default.webm
+            - emerald/animated/shiny/croconaw-default.webm
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 61
+  pokemon:
+    croconaw:
+      name: CROCONAW
+      default: *gold-silver.pokemon.croconaw.default
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      experience: *gold-silver.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      stats: *ruby-sapphire.pokemon.croconaw.stats
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      abilities: *ruby-sapphire.pokemon.croconaw.abilities
+      genus: *gold-silver.pokemon.croconaw.genus
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      forms:
+        croconaw:
+          name: CROCONAW
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          sprites:
+            - colosseum/croconaw-default.png
+            - colosseum/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    croconaw:
+      name: CROCONAW
+      default: *gold-silver.pokemon.croconaw.default
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      experience: *gold-silver.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      stats: *ruby-sapphire.pokemon.croconaw.stats
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      abilities: *ruby-sapphire.pokemon.croconaw.abilities
+      genus: *gold-silver.pokemon.croconaw.genus
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      forms:
+        croconaw:
+          name: CROCONAW
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          sprites:
+            - xd/croconaw-default.png
+            - xd/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    croconaw:
+      name: CROCONAW
+      default: *gold-silver.pokemon.croconaw.default
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      experience: *gold-silver.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      stats: *ruby-sapphire.pokemon.croconaw.stats
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      abilities: *ruby-sapphire.pokemon.croconaw.abilities
+      genus: *gold-silver.pokemon.croconaw.genus
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      flavor_text:
+        firered: |
+          It opens its huge jaws wide when
+          attacking. If it loses any fangs while
+          biting, they grow back in.
+        leafgreen: |
+          If it loses a fang, a new one grows back
+          in its place. There are always 48 fangs
+          lining its mouth.
+      forms:
+        croconaw:
+          name: CROCONAW
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *ruby-sapphire.pokemon.croconaw.forms.croconaw.icon
+          sprites:
+            - firered-leafgreen/croconaw-default.png
+            - firered-leafgreen/back/croconaw-default.png
+            - firered-leafgreen/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Croconaw
+  position: &diamond-pearl.position 191
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    croconaw:
+      genus: &diamond-pearl.pokemon.croconaw.genus 'Big Jaw Pokémon'
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      shape: &diamond-pearl.pokemon.croconaw.shape upright
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: &diamond-pearl.pokemon.croconaw.baby false
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      pal_park: &diamond-pearl.pokemon.croconaw.pal_park
+        area: pond
+        rate: 10
+        score: 80
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: &diamond-pearl.pokemon.croconaw.experience 142
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      stats: &diamond-pearl.pokemon.croconaw.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 1
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 58
+          effort_change: 0
+        special-attack:
+          base_value: 59
+          effort_change: 0
+        special-defense:
+          base_value: 63
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.croconaw.abilities
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      flavor_text:
+        diamond: |
+          Once it bites down, it won’t let go
+          until it loses its fangs. New fangs
+          quickly grow into place.
+        pearl: |
+          Once it bites down, it won’t let go
+          until it loses its fangs. New fangs
+          quickly grow into place.
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *ruby-sapphire.pokemon.croconaw.forms.croconaw.icon
+          sprites:
+            - diamond-pearl/back/croconaw-default.png
+            - diamond-pearl/back/shiny/croconaw-default.png
+            - diamond-pearl/croconaw-default.png
+            - diamond-pearl/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    croconaw:
+      genus: *diamond-pearl.pokemon.croconaw.genus
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      shape: *diamond-pearl.pokemon.croconaw.shape
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: *diamond-pearl.pokemon.croconaw.baby
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      pal_park: *diamond-pearl.pokemon.croconaw.pal_park
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: *diamond-pearl.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      stats: *diamond-pearl.pokemon.croconaw.stats
+      abilities: *ruby-sapphire.pokemon.croconaw.abilities
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      flavor_text:
+        platinum: |
+          Once it bites down, it won’t let go
+          until it loses its fangs. New fangs
+          quickly grow into place.
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *ruby-sapphire.pokemon.croconaw.forms.croconaw.icon
+          sprites:
+            - platinum/back/croconaw-default.png
+            - platinum/back/shiny/croconaw-default.png
+            - platinum/croconaw-default.png
+            - platinum/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 8
+  pokemon:
+    croconaw:
+      genus: *diamond-pearl.pokemon.croconaw.genus
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      shape: *diamond-pearl.pokemon.croconaw.shape
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: *diamond-pearl.pokemon.croconaw.baby
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      pal_park: *diamond-pearl.pokemon.croconaw.pal_park
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: *diamond-pearl.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      stats: *diamond-pearl.pokemon.croconaw.stats
+      abilities: *ruby-sapphire.pokemon.croconaw.abilities
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      flavor_text:
+        heartgold: |
+          If it loses a fang, a new one
+          grows back in its place. There are
+          always 48 fangs lining its mouth.
+        soulsilver: |
+          It opens its huge jaws wide when
+          attacking. If it loses any fangs
+          while biting, they grow back in.
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 4
+              range: 2-5
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.croconaw.forms.croconaw.icon
+          sprites:
+            - heartgold-soulsilver/back/croconaw-default.png
+            - heartgold-soulsilver/back/shiny/croconaw-default.png
+            - heartgold-soulsilver/croconaw-default.png
+            - heartgold-soulsilver/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    croconaw:
+      genus: *diamond-pearl.pokemon.croconaw.genus
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      color: &black-white.pokemon.croconaw.color blue
+      shape: *diamond-pearl.pokemon.croconaw.shape
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: *diamond-pearl.pokemon.croconaw.baby
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: *diamond-pearl.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      stats: *diamond-pearl.pokemon.croconaw.stats
+      abilities: &black-white.pokemon.croconaw.abilities
+        torrent: *ruby-sapphire.pokemon.croconaw.abilities.torrent
+        sheer-force:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      flavor_text:
+        black: |
+          Once it bites down, it won’t let go
+          until it loses its fangs. New fangs
+          quickly grow into place.
+        white: |
+          Once it bites down, it won’t let go
+          until it loses its fangs. New fangs
+          quickly grow into place.
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *ruby-sapphire.pokemon.croconaw.forms.croconaw.icon
+          sprites:
+            - black-white/back/croconaw-default.png
+            - black-white/back/shiny/croconaw-default.png
+            - black-white/croconaw-default.png
+            - black-white/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    croconaw:
+      genus: *diamond-pearl.pokemon.croconaw.genus
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      color: *black-white.pokemon.croconaw.color
+      shape: *diamond-pearl.pokemon.croconaw.shape
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: *diamond-pearl.pokemon.croconaw.baby
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: *diamond-pearl.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      stats: *diamond-pearl.pokemon.croconaw.stats
+      abilities: *black-white.pokemon.croconaw.abilities
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      flavor_text:
+        black-2: |
+          Once it bites down, it won’t let go
+          until it loses its fangs. New fangs
+          quickly grow into place.
+        white-2: |
+          Once it bites down, it won’t let go
+          until it loses its fangs. New fangs
+          quickly grow into place.
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *ruby-sapphire.pokemon.croconaw.forms.croconaw.icon
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *gold-silver.pokemon.croconaw.forms.croconaw.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    croconaw:
+      genus: *diamond-pearl.pokemon.croconaw.genus
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      color: *black-white.pokemon.croconaw.color
+      shape: *diamond-pearl.pokemon.croconaw.shape
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: *diamond-pearl.pokemon.croconaw.baby
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: *diamond-pearl.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      mega: &x-y.pokemon.croconaw.mega false
+      stats: *diamond-pearl.pokemon.croconaw.stats
+      abilities: *black-white.pokemon.croconaw.abilities
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      flavor_text:
+        x: |
+          If it loses a fang, a new one grows back in its
+          place. There are always 48 fangs lining its mouth.
+        'y': |
+          Once it bites down, it won’t let go until it loses its
+          fangs. New fangs quickly grow into place.
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: &x-y.pokemon.croconaw.forms.croconaw.icon croconaw-default.png
+          sprites:
+            - x-y/croconaw-default.png
+            - x-y/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: &x-y.pokemon.croconaw.forms.croconaw.cry croconaw-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    croconaw:
+      genus: *diamond-pearl.pokemon.croconaw.genus
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      color: *black-white.pokemon.croconaw.color
+      shape: *diamond-pearl.pokemon.croconaw.shape
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: *diamond-pearl.pokemon.croconaw.baby
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: *diamond-pearl.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      mega: *x-y.pokemon.croconaw.mega
+      stats: *diamond-pearl.pokemon.croconaw.stats
+      abilities: *black-white.pokemon.croconaw.abilities
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Once Croconaw has clamped its jaws on its foe, it will
+          absolutely not let go. Because the tips of its fangs are forked
+          back like barbed fishhooks, they become impossible to remove
+          when they have sunk in.
+        alpha-sapphire: |
+          Once Croconaw has clamped its jaws on its foe, it will
+          absolutely not let go. Because the tips of its fangs are
+          forked back like barbed fishhooks, they become impossible
+          to remove when they have sunk in.
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *x-y.pokemon.croconaw.forms.croconaw.icon
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *x-y.pokemon.croconaw.forms.croconaw.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/croconaw-default.png
+            - omega-ruby-alpha-sapphire/shiny/croconaw-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    croconaw:
+      genus: *diamond-pearl.pokemon.croconaw.genus
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      color: *black-white.pokemon.croconaw.color
+      shape: *diamond-pearl.pokemon.croconaw.shape
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: *diamond-pearl.pokemon.croconaw.baby
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: *diamond-pearl.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      mega: *x-y.pokemon.croconaw.mega
+      stats: *diamond-pearl.pokemon.croconaw.stats
+      abilities: *black-white.pokemon.croconaw.abilities
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *x-y.pokemon.croconaw.forms.croconaw.icon
+          sprites:
+            - sun-moon/croconaw-default.png
+            - sun-moon/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *x-y.pokemon.croconaw.forms.croconaw.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    croconaw:
+      genus: *diamond-pearl.pokemon.croconaw.genus
+      evolution_parent: *gold-silver.pokemon.croconaw.evolution_parent
+      color: *black-white.pokemon.croconaw.color
+      shape: *diamond-pearl.pokemon.croconaw.shape
+      female_rate: *gold-silver.pokemon.croconaw.female_rate
+      capture_rate: *gold-silver.pokemon.croconaw.capture_rate
+      happiness: *ruby-sapphire.pokemon.croconaw.happiness
+      baby: *diamond-pearl.pokemon.croconaw.baby
+      hatch_steps: *gold-silver.pokemon.croconaw.hatch_steps
+      growth_rate: *gold-silver.pokemon.croconaw.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.croconaw.forms_switchable
+      name: Croconaw
+      default: *gold-silver.pokemon.croconaw.default
+      height: *ruby-sapphire.pokemon.croconaw.height
+      weight: *ruby-sapphire.pokemon.croconaw.weight
+      experience: *diamond-pearl.pokemon.croconaw.experience
+      types: *gold-silver.pokemon.croconaw.types
+      egg_groups: *gold-silver.pokemon.croconaw.egg_groups
+      mega: *x-y.pokemon.croconaw.mega
+      stats: *diamond-pearl.pokemon.croconaw.stats
+      abilities: *black-white.pokemon.croconaw.abilities
+      evolution_conditions: *gold-silver.pokemon.croconaw.evolution_conditions
+      forms:
+        croconaw:
+          name: Croconaw
+          form_name: *gold-silver.pokemon.croconaw.forms.croconaw.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.croconaw.forms.croconaw.battle_only
+          icon: *x-y.pokemon.croconaw.forms.croconaw.icon
+          sprites:
+            - ultra-sun-ultra-moon/croconaw-default.png
+            - ultra-sun-ultra-moon/shiny/croconaw-default.png
+          art: *gold-silver.pokemon.croconaw.forms.croconaw.art
+          footprint: *ruby-sapphire.pokemon.croconaw.forms.croconaw.footprint
+          cry: *x-y.pokemon.croconaw.forms.croconaw.cry

@@ -1,0 +1,770 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name SHELGON
+  position: &ruby-sapphire.position 372
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 372
+    hoenn: 188
+  pokemon:
+    shelgon:
+      name: SHELGON
+      default: &ruby-sapphire.pokemon.shelgon.default true
+      forms_switchable: &ruby-sapphire.pokemon.shelgon.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.shelgon.capture_rate 45
+      experience: &ruby-sapphire.pokemon.shelgon.experience 144
+      types: &ruby-sapphire.pokemon.shelgon.types
+        - dragon
+      stats: &ruby-sapphire.pokemon.shelgon.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 2
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.shelgon.growth_rate slow
+      female_rate: &ruby-sapphire.pokemon.shelgon.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.shelgon.hatch_steps 40
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.shelgon.wild_held_items.ruby
+          dragon-scale: 5
+        sapphire: *ruby-sapphire.pokemon.shelgon.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.shelgon.happiness 35
+      abilities: &ruby-sapphire.pokemon.shelgon.abilities
+        rock-head: &ruby-sapphire.pokemon.shelgon.abilities.rock-head
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.shelgon.genus 'ENDURANCE Pokémon'
+      height: &ruby-sapphire.pokemon.shelgon.height 11
+      weight: &ruby-sapphire.pokemon.shelgon.weight 1105
+      flavor_text:
+        ruby: |
+          Inside SHELGON's armor-like shell, cells
+          are in the midst of transformation
+           to create an entirely new body.
+          This POKéMON's shell is extremely heavy,
+           making its movements sluggish.
+        sapphire: |
+          Covering SHELGON's body are outgrowths
+          much like bones. The shell is very hard
+          and bounces off enemy attacks.
+          When awaiting evolution,  this POKéMON
+          hides away in a cavern.
+      forms:
+        shelgon:
+          name: SHELGON
+          form_name: &ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only false
+          icon: &ruby-sapphire.pokemon.shelgon.forms.shelgon.icon gen5/shelgon-default.png
+          sprites:
+            - ruby-sapphire/shelgon-default.png
+            - ruby-sapphire/back/shelgon-default.png
+            - ruby-sapphire/shiny/shelgon-default.png
+          art: &ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+            - shelgon-default.png
+          footprint: &ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint shelgon.png
+          cry: &ruby-sapphire.pokemon.shelgon.forms.shelgon.cry gen5/shelgon-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.shelgon.evolution_parent bagon/bagon
+      evolution_conditions: &ruby-sapphire.pokemon.shelgon.evolution_conditions
+        level-up:
+          minimum_level: 30
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    shelgon:
+      name: SHELGON
+      default: *ruby-sapphire.pokemon.shelgon.default
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      experience: *ruby-sapphire.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      stats: *ruby-sapphire.pokemon.shelgon.stats
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.shelgon.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      abilities: *ruby-sapphire.pokemon.shelgon.abilities
+      genus: *ruby-sapphire.pokemon.shelgon.genus
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      flavor_text:
+        emerald: |
+          It hardly eats while it awaits evolution.
+          It becomes hardier by enduring hunger.
+          Its shell peels off the instant it begins
+          to evolve.
+      forms:
+        shelgon:
+          name: SHELGON
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *ruby-sapphire.pokemon.shelgon.forms.shelgon.icon
+          sprites:
+            - emerald/shelgon-default.png
+            - emerald/shiny/shelgon-default.png
+            - emerald/animated/shelgon-default.webm
+            - emerald/animated/shiny/shelgon-default.webm
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 292
+  pokemon:
+    shelgon:
+      name: SHELGON
+      default: *ruby-sapphire.pokemon.shelgon.default
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      experience: *ruby-sapphire.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      stats: *ruby-sapphire.pokemon.shelgon.stats
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      abilities: *ruby-sapphire.pokemon.shelgon.abilities
+      genus: *ruby-sapphire.pokemon.shelgon.genus
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      forms:
+        shelgon:
+          name: SHELGON
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          sprites:
+            - colosseum/shelgon-default.png
+            - colosseum/shiny/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    shelgon:
+      name: SHELGON
+      default: *ruby-sapphire.pokemon.shelgon.default
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      experience: *ruby-sapphire.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      stats: *ruby-sapphire.pokemon.shelgon.stats
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      abilities: *ruby-sapphire.pokemon.shelgon.abilities
+      genus: *ruby-sapphire.pokemon.shelgon.genus
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      forms:
+        shelgon:
+          name: SHELGON
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          sprites:
+            - xd/shelgon-default.png
+            - xd/shiny/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    shelgon:
+      name: SHELGON
+      default: *ruby-sapphire.pokemon.shelgon.default
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      experience: *ruby-sapphire.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      stats: *ruby-sapphire.pokemon.shelgon.stats
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.shelgon.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.shelgon.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      abilities: *ruby-sapphire.pokemon.shelgon.abilities
+      genus: *ruby-sapphire.pokemon.shelgon.genus
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      flavor_text:
+        firered: |
+          Its armored body makes all attacks bounce
+          off. The armor is too tough, however,
+          making it heavy and somewhat sluggish.
+        leafgreen: |
+          Its armored body makes all attacks bounce
+          off. The armor is too tough, however,
+          making it heavy and somewhat sluggish.
+      forms:
+        shelgon:
+          name: SHELGON
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *ruby-sapphire.pokemon.shelgon.forms.shelgon.icon
+          sprites:
+            - firered-leafgreen/shelgon-default.png
+            - firered-leafgreen/back/shelgon-default.png
+            - firered-leafgreen/shiny/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Shelgon
+  position: &diamond-pearl.position 402
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shelgon:
+      genus: &diamond-pearl.pokemon.shelgon.genus 'Endurance Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      shape: &diamond-pearl.pokemon.shelgon.shape quadruped
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: &diamond-pearl.pokemon.shelgon.baby false
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      pal_park: &diamond-pearl.pokemon.shelgon.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: &diamond-pearl.pokemon.shelgon.experience 147
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      stats: &diamond-pearl.pokemon.shelgon.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 2
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.shelgon.abilities
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+          dragon-fang: 5
+        pearl: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        diamond: |
+          Within its rugged shell, its cells
+          have begun changing. The shell
+          peels off the instant it evolves.
+        pearl: |
+          Within its rugged shell, its cells
+          have begun changing. The shell
+          peels off the instant it evolves.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *ruby-sapphire.pokemon.shelgon.forms.shelgon.icon
+          sprites:
+            - diamond-pearl/back/shiny/shelgon-default.png
+            - diamond-pearl/back/shelgon-default.png
+            - diamond-pearl/shiny/shelgon-default.png
+            - diamond-pearl/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shelgon:
+      genus: *diamond-pearl.pokemon.shelgon.genus
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      shape: *diamond-pearl.pokemon.shelgon.shape
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: *diamond-pearl.pokemon.shelgon.baby
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shelgon.pal_park
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: *diamond-pearl.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      stats: *diamond-pearl.pokemon.shelgon.stats
+      abilities: *ruby-sapphire.pokemon.shelgon.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        platinum: |
+          Within its rugged shell, its cells
+          have begun changing. The shell
+          peels off the instant it evolves.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *ruby-sapphire.pokemon.shelgon.forms.shelgon.icon
+          sprites:
+            - platinum/back/shiny/shelgon-default.png
+            - platinum/back/shelgon-default.png
+            - platinum/shiny/shelgon-default.png
+            - platinum/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shelgon:
+      genus: *diamond-pearl.pokemon.shelgon.genus
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      shape: *diamond-pearl.pokemon.shelgon.shape
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: *diamond-pearl.pokemon.shelgon.baby
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shelgon.pal_park
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: *diamond-pearl.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      stats: *diamond-pearl.pokemon.shelgon.stats
+      abilities: *ruby-sapphire.pokemon.shelgon.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It surrounds its body in an
+          iron-hard shell to accumulate
+          enough power to evolve.
+        soulsilver: |
+          It surrounds its body in an
+          iron-hard shell to accumulate
+          enough power to evolve.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 4
+              range: 2-5
+            skill:
+              base_value: 1
+              range: 1-2
+            stamina:
+              base_value: 4
+              range: 4-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.shelgon.forms.shelgon.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/shelgon-default.png
+            - heartgold-soulsilver/back/shelgon-default.png
+            - heartgold-soulsilver/shiny/shelgon-default.png
+            - heartgold-soulsilver/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shelgon:
+      genus: *diamond-pearl.pokemon.shelgon.genus
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      color: &black-white.pokemon.shelgon.color white
+      shape: *diamond-pearl.pokemon.shelgon.shape
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: *diamond-pearl.pokemon.shelgon.baby
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: *diamond-pearl.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      stats: *diamond-pearl.pokemon.shelgon.stats
+      abilities: &black-white.pokemon.shelgon.abilities
+        rock-head: *ruby-sapphire.pokemon.shelgon.abilities.rock-head
+        overcoat:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        black: |
+          Within its rugged shell, its cells
+          have begun changing. The shell
+          peels off the instant it evolves.
+        white: |
+          Within its rugged shell, its cells
+          have begun changing. The shell
+          peels off the instant it evolves.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *ruby-sapphire.pokemon.shelgon.forms.shelgon.icon
+          sprites:
+            - black-white/back/shiny/shelgon-default.png
+            - black-white/back/shelgon-default.png
+            - black-white/shiny/shelgon-default.png
+            - black-white/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shelgon:
+      genus: *diamond-pearl.pokemon.shelgon.genus
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      color: *black-white.pokemon.shelgon.color
+      shape: *diamond-pearl.pokemon.shelgon.shape
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: *diamond-pearl.pokemon.shelgon.baby
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: *diamond-pearl.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      stats: *diamond-pearl.pokemon.shelgon.stats
+      abilities: *black-white.pokemon.shelgon.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        black-2: |
+          Within its rugged shell, its cells
+          have begun changing. The shell
+          peels off the instant it evolves.
+        white-2: |
+          Within its rugged shell, its cells
+          have begun changing. The shell
+          peels off the instant it evolves.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *ruby-sapphire.pokemon.shelgon.forms.shelgon.icon
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *ruby-sapphire.pokemon.shelgon.forms.shelgon.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-coastal: 15
+  pokemon:
+    shelgon:
+      genus: *diamond-pearl.pokemon.shelgon.genus
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      color: *black-white.pokemon.shelgon.color
+      shape: *diamond-pearl.pokemon.shelgon.shape
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: *diamond-pearl.pokemon.shelgon.baby
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: *diamond-pearl.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      mega: &x-y.pokemon.shelgon.mega false
+      stats: *diamond-pearl.pokemon.shelgon.stats
+      abilities: *black-white.pokemon.shelgon.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        x: |
+          Within its rugged shell, its cells have begun
+          changing. The shell peels off the instant it evolves.
+        'y': |
+          Its armored body makes all attacks bounce off.
+          The armor is too tough, however, making it heavy
+          and somewhat sluggish.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: &x-y.pokemon.shelgon.forms.shelgon.icon shelgon-default.png
+          sprites:
+            - x-y/shiny/shelgon-default.png
+            - x-y/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: &x-y.pokemon.shelgon.forms.shelgon.cry shelgon-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 197
+  pokemon:
+    shelgon:
+      genus: *diamond-pearl.pokemon.shelgon.genus
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      color: *black-white.pokemon.shelgon.color
+      shape: *diamond-pearl.pokemon.shelgon.shape
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: *diamond-pearl.pokemon.shelgon.baby
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: *diamond-pearl.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      mega: *x-y.pokemon.shelgon.mega
+      stats: *diamond-pearl.pokemon.shelgon.stats
+      abilities: *black-white.pokemon.shelgon.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Inside Shelgon’s armor-like shell, cells are in the midst of
+          transformation to create an entirely new body. This Pokémon’s
+          shell is extremely heavy, making its movements sluggish.
+        alpha-sapphire: |
+          Covering Shelgon’s body are outgrowths much like bones.
+          The shell is very hard and bounces off enemy attacks.
+          When awaiting evolution, this Pokémon hides away in a cavern.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *x-y.pokemon.shelgon.forms.shelgon.icon
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *x-y.pokemon.shelgon.forms.shelgon.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shelgon-default.png
+            - omega-ruby-alpha-sapphire/shiny/shelgon-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-alola: 118
+    original-melemele: 118
+  pokemon:
+    shelgon:
+      genus: *diamond-pearl.pokemon.shelgon.genus
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      color: *black-white.pokemon.shelgon.color
+      shape: *diamond-pearl.pokemon.shelgon.shape
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: *diamond-pearl.pokemon.shelgon.baby
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: *diamond-pearl.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      mega: *x-y.pokemon.shelgon.mega
+      stats: *diamond-pearl.pokemon.shelgon.stats
+      abilities: *black-white.pokemon.shelgon.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        sun: |-
+          The cells within its shell transform with
+          explosive speed, preparing it for evolution.
+        moon: |-
+          They lurk deep within caves—motionless,
+          neither eating nor drinking. Why they don’t die is
+          not known.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *x-y.pokemon.shelgon.forms.shelgon.icon
+          sprites:
+            - sun-moon/shiny/shelgon-default.png
+            - sun-moon/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *x-y.pokemon.shelgon.forms.shelgon.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 148
+    updated-melemele: 148
+  pokemon:
+    shelgon:
+      genus: *diamond-pearl.pokemon.shelgon.genus
+      evolution_parent: *ruby-sapphire.pokemon.shelgon.evolution_parent
+      color: *black-white.pokemon.shelgon.color
+      shape: *diamond-pearl.pokemon.shelgon.shape
+      female_rate: *ruby-sapphire.pokemon.shelgon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shelgon.capture_rate
+      happiness: *ruby-sapphire.pokemon.shelgon.happiness
+      baby: *diamond-pearl.pokemon.shelgon.baby
+      hatch_steps: *ruby-sapphire.pokemon.shelgon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shelgon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shelgon.forms_switchable
+      name: Shelgon
+      default: *ruby-sapphire.pokemon.shelgon.default
+      height: *ruby-sapphire.pokemon.shelgon.height
+      weight: *ruby-sapphire.pokemon.shelgon.weight
+      experience: *diamond-pearl.pokemon.shelgon.experience
+      types: *ruby-sapphire.pokemon.shelgon.types
+      egg_groups: *ruby-sapphire.pokemon.shelgon.types
+      mega: *x-y.pokemon.shelgon.mega
+      stats: *diamond-pearl.pokemon.shelgon.stats
+      abilities: *black-white.pokemon.shelgon.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.shelgon.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.shelgon.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          The cells within its body are changing at a
+          bewildering pace. Its hard shell is made from
+          the same substance as bone.
+        ultra-moon: |-
+          Shelgon lives deep within caves. It stays shut
+          up in its hard shell, dreaming of the day it will
+          be able to fly.
+      forms:
+        shelgon:
+          name: Shelgon
+          form_name: *ruby-sapphire.pokemon.shelgon.forms.shelgon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shelgon.forms.shelgon.battle_only
+          icon: *x-y.pokemon.shelgon.forms.shelgon.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/shelgon-default.png
+            - ultra-sun-ultra-moon/shelgon-default.png
+          art: *ruby-sapphire.pokemon.shelgon.forms.shelgon.art
+          footprint: *ruby-sapphire.pokemon.shelgon.forms.shelgon.footprint
+          cry: *x-y.pokemon.shelgon.forms.shelgon.cry

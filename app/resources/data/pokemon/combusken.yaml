@@ -1,0 +1,732 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name COMBUSKEN
+  position: &ruby-sapphire.position 256
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 256
+    hoenn: 5
+  pokemon:
+    combusken:
+      name: COMBUSKEN
+      default: &ruby-sapphire.pokemon.combusken.default true
+      forms_switchable: &ruby-sapphire.pokemon.combusken.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.combusken.capture_rate 45
+      experience: &ruby-sapphire.pokemon.combusken.experience 142
+      types: &ruby-sapphire.pokemon.combusken.types
+        - fire
+        - fighting
+      stats: &ruby-sapphire.pokemon.combusken.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 1
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.combusken.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.combusken.female_rate 12
+      hatch_steps: &ruby-sapphire.pokemon.combusken.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.combusken.egg_groups
+        - ground
+      happiness: &ruby-sapphire.pokemon.combusken.happiness 70
+      abilities: &ruby-sapphire.pokemon.combusken.abilities
+        blaze: &ruby-sapphire.pokemon.combusken.abilities.blaze
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.combusken.genus 'YOUNG FOWL Pokémon'
+      height: &ruby-sapphire.pokemon.combusken.height 9
+      weight: &ruby-sapphire.pokemon.combusken.weight 195
+      flavor_text:
+        ruby: |
+          COMBUSKEN toughens up its legs and
+          thighs by running through fields and
+          mountains.
+          This POKéMON's legs possess both speed
+          and power, enabling it to dole out ten
+          kicks in one second.
+        sapphire: |
+          COMBUSKEN battles with the intensely
+          hot flames it spews from its beak and
+          with outstandingly destructive kicks.
+          This POKéMON's cry is very loud and
+          distracting.
+      forms:
+        combusken:
+          name: COMBUSKEN
+          form_name: &ruby-sapphire.pokemon.combusken.forms.combusken.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.combusken.forms.combusken.battle_only false
+          icon: &ruby-sapphire.pokemon.combusken.forms.combusken.icon gen5/combusken-default.png
+          sprites:
+            - ruby-sapphire/combusken-default.png
+            - ruby-sapphire/back/combusken-default.png
+            - ruby-sapphire/shiny/combusken-default.png
+          art: &ruby-sapphire.pokemon.combusken.forms.combusken.art
+            - combusken-default.png
+          footprint: &ruby-sapphire.pokemon.combusken.forms.combusken.footprint combusken.png
+          cry: &ruby-sapphire.pokemon.combusken.forms.combusken.cry gen5/combusken-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.combusken.evolution_parent torchic/torchic
+      evolution_conditions: &ruby-sapphire.pokemon.combusken.evolution_conditions
+        level-up:
+          minimum_level: 16
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    combusken:
+      name: COMBUSKEN
+      default: *ruby-sapphire.pokemon.combusken.default
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      stats: *ruby-sapphire.pokemon.combusken.stats
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      abilities: *ruby-sapphire.pokemon.combusken.abilities
+      genus: *ruby-sapphire.pokemon.combusken.genus
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      flavor_text:
+        emerald: |
+          It lashes out with 10 kicks per second.
+          Its strong fighting instinct compels it
+          to keep up its offensive until the
+          opponent gives up.
+      forms:
+        combusken:
+          name: COMBUSKEN
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *ruby-sapphire.pokemon.combusken.forms.combusken.icon
+          sprites:
+            - emerald/combusken-default.png
+            - emerald/shiny/combusken-default.png
+            - emerald/animated/combusken-default.webm
+            - emerald/animated/shiny/combusken-default.webm
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 55
+  pokemon:
+    combusken:
+      name: COMBUSKEN
+      default: *ruby-sapphire.pokemon.combusken.default
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      stats: *ruby-sapphire.pokemon.combusken.stats
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      abilities: *ruby-sapphire.pokemon.combusken.abilities
+      genus: *ruby-sapphire.pokemon.combusken.genus
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      forms:
+        combusken:
+          name: COMBUSKEN
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          sprites:
+            - colosseum/combusken-default.png
+            - colosseum/shiny/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    combusken:
+      name: COMBUSKEN
+      default: *ruby-sapphire.pokemon.combusken.default
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      stats: *ruby-sapphire.pokemon.combusken.stats
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      abilities: *ruby-sapphire.pokemon.combusken.abilities
+      genus: *ruby-sapphire.pokemon.combusken.genus
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      forms:
+        combusken:
+          name: COMBUSKEN
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          sprites:
+            - xd/combusken-default.png
+            - xd/shiny/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    combusken:
+      name: COMBUSKEN
+      default: *ruby-sapphire.pokemon.combusken.default
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      stats: *ruby-sapphire.pokemon.combusken.stats
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      abilities: *ruby-sapphire.pokemon.combusken.abilities
+      genus: *ruby-sapphire.pokemon.combusken.genus
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      flavor_text:
+        firered: |
+          It boosts its concentration by emitting
+          harsh cries. Its kicks have outstanding
+          destructive power.
+        leafgreen: |
+          It boosts its concentration by emitting
+          harsh cries. Its kicks have outstanding
+          destructive power.
+      forms:
+        combusken:
+          name: COMBUSKEN
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *ruby-sapphire.pokemon.combusken.forms.combusken.icon
+          sprites:
+            - firered-leafgreen/combusken-default.png
+            - firered-leafgreen/back/combusken-default.png
+            - firered-leafgreen/shiny/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Combusken
+  position: &diamond-pearl.position 281
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    combusken:
+      genus: &diamond-pearl.pokemon.combusken.genus 'Young Fowl Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      shape: &diamond-pearl.pokemon.combusken.shape upright
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: &diamond-pearl.pokemon.combusken.baby false
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      pal_park: &diamond-pearl.pokemon.combusken.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      stats: &diamond-pearl.pokemon.combusken.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 1
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 1
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.combusken.abilities
+        blaze: *ruby-sapphire.pokemon.combusken.abilities.blaze
+        speed-boost:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its kicking mastery lets it loose
+          10 kicks per second. It emits
+          sharp cries to intimidate foes.
+        pearl: |
+          Its kicking mastery lets it loose
+          10 kicks per second. It emits
+          sharp cries to intimidate foes.
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *ruby-sapphire.pokemon.combusken.forms.combusken.icon
+          sprites:
+            - diamond-pearl/combusken-default.png
+            - diamond-pearl/back/combusken-default.png
+            - diamond-pearl/back/female/combusken-default.png
+            - diamond-pearl/back/shiny/combusken-default.png
+            - diamond-pearl/female/combusken-default.png
+            - diamond-pearl/shiny/combusken-default.png
+            - diamond-pearl/shiny/female/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    combusken:
+      genus: *diamond-pearl.pokemon.combusken.genus
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      shape: *diamond-pearl.pokemon.combusken.shape
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: *diamond-pearl.pokemon.combusken.baby
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      pal_park: *diamond-pearl.pokemon.combusken.pal_park
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      stats: *diamond-pearl.pokemon.combusken.stats
+      abilities: *diamond-pearl.pokemon.combusken.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      flavor_text:
+        platinum: |
+          Its kicking mastery lets it loose
+          10 kicks per second. It emits
+          sharp cries to intimidate foes.
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *ruby-sapphire.pokemon.combusken.forms.combusken.icon
+          sprites:
+            - platinum/combusken-default.png
+            - platinum/back/combusken-default.png
+            - platinum/back/female/combusken-default.png
+            - platinum/back/shiny/combusken-default.png
+            - platinum/female/combusken-default.png
+            - platinum/shiny/combusken-default.png
+            - platinum/shiny/female/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    combusken:
+      genus: *diamond-pearl.pokemon.combusken.genus
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      shape: *diamond-pearl.pokemon.combusken.shape
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: *diamond-pearl.pokemon.combusken.baby
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      pal_park: *diamond-pearl.pokemon.combusken.pal_park
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      stats: *diamond-pearl.pokemon.combusken.stats
+      abilities: *diamond-pearl.pokemon.combusken.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      flavor_text:
+        heartgold: |
+          During a battle, the hot flame in
+          its body increases. Its kicks have
+          outstanding destructive power.
+        soulsilver: |
+          During a battle, the hot flame in
+          its body increases. Its kicks have
+          outstanding destructive power.
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 4
+              range: 1-5
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.combusken.forms.combusken.icon
+          sprites:
+            - heartgold-soulsilver/combusken-default.png
+            - heartgold-soulsilver/back/combusken-default.png
+            - heartgold-soulsilver/back/female/combusken-default.png
+            - heartgold-soulsilver/back/shiny/combusken-default.png
+            - heartgold-soulsilver/female/combusken-default.png
+            - heartgold-soulsilver/shiny/combusken-default.png
+            - heartgold-soulsilver/shiny/female/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    combusken:
+      genus: *diamond-pearl.pokemon.combusken.genus
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      color: &black-white.pokemon.combusken.color red
+      shape: *diamond-pearl.pokemon.combusken.shape
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: *diamond-pearl.pokemon.combusken.baby
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      stats: *diamond-pearl.pokemon.combusken.stats
+      abilities: *diamond-pearl.pokemon.combusken.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      flavor_text:
+        black: |
+          Its kicking mastery lets it loose
+          10 kicks per second. It emits
+          sharp cries to intimidate foes.
+        white: |
+          Its kicking mastery lets it loose
+          10 kicks per second. It emits
+          sharp cries to intimidate foes.
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *ruby-sapphire.pokemon.combusken.forms.combusken.icon
+          sprites:
+            - black-white/combusken-default.png
+            - black-white/back/combusken-default.png
+            - black-white/back/female/combusken-default.png
+            - black-white/back/shiny/combusken-default.png
+            - black-white/female/combusken-default.png
+            - black-white/shiny/combusken-default.png
+            - black-white/shiny/female/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    combusken:
+      genus: *diamond-pearl.pokemon.combusken.genus
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      color: *black-white.pokemon.combusken.color
+      shape: *diamond-pearl.pokemon.combusken.shape
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: *diamond-pearl.pokemon.combusken.baby
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      stats: *diamond-pearl.pokemon.combusken.stats
+      abilities: *diamond-pearl.pokemon.combusken.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      flavor_text:
+        black-2: |
+          Its kicking mastery lets it loose
+          10 kicks per second. It emits
+          sharp cries to intimidate foes.
+        white-2: |
+          Its kicking mastery lets it loose
+          10 kicks per second. It emits
+          sharp cries to intimidate foes.
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *ruby-sapphire.pokemon.combusken.forms.combusken.icon
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *ruby-sapphire.pokemon.combusken.forms.combusken.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    combusken:
+      genus: *diamond-pearl.pokemon.combusken.genus
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      color: *black-white.pokemon.combusken.color
+      shape: *diamond-pearl.pokemon.combusken.shape
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: *diamond-pearl.pokemon.combusken.baby
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      mega: &x-y.pokemon.combusken.mega false
+      stats: *diamond-pearl.pokemon.combusken.stats
+      abilities: *diamond-pearl.pokemon.combusken.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      flavor_text:
+        x: |
+          Its kicking mastery lets it loose 10 kicks per
+          second. It emits sharp cries to intimidate foes.
+        'y': |
+          During a battle, the hot flame in its body increases.
+          Its kicks have outstanding destructive power.
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: &x-y.pokemon.combusken.forms.combusken.icon combusken-default.png
+          sprites:
+            - x-y/combusken-default.png
+            - x-y/female/combusken-default.png
+            - x-y/shiny/combusken-default.png
+            - x-y/shiny/female/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: &x-y.pokemon.combusken.forms.combusken.cry combusken-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 5
+  pokemon:
+    combusken:
+      genus: *diamond-pearl.pokemon.combusken.genus
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      color: *black-white.pokemon.combusken.color
+      shape: *diamond-pearl.pokemon.combusken.shape
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: *diamond-pearl.pokemon.combusken.baby
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      mega: *x-y.pokemon.combusken.mega
+      stats: *diamond-pearl.pokemon.combusken.stats
+      abilities: *diamond-pearl.pokemon.combusken.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Combusken toughens up its legs and thighs by running
+          through fields and mountains. This Pokémon’s legs possess
+          both speed and power, enabling it to dole out 10 kicks in
+          one second.
+        alpha-sapphire: |
+          Combusken battles with the intensely hot flames it spews from
+          its beak and with outstandingly destructive kicks. This
+          Pokémon’s cry is very loud and distracting.
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *x-y.pokemon.combusken.forms.combusken.icon
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *x-y.pokemon.combusken.forms.combusken.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/combusken-default.png
+            - omega-ruby-alpha-sapphire/shiny/combusken-default.png
+            - omega-ruby-alpha-sapphire/female/combusken-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/combusken-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    combusken:
+      genus: *diamond-pearl.pokemon.combusken.genus
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      color: *black-white.pokemon.combusken.color
+      shape: *diamond-pearl.pokemon.combusken.shape
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: *diamond-pearl.pokemon.combusken.baby
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      mega: *x-y.pokemon.combusken.mega
+      stats: *diamond-pearl.pokemon.combusken.stats
+      abilities: *diamond-pearl.pokemon.combusken.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *x-y.pokemon.combusken.forms.combusken.icon
+          sprites:
+            - sun-moon/combusken-default.png
+            - sun-moon/female/combusken-default.png
+            - sun-moon/shiny/combusken-default.png
+            - sun-moon/shiny/female/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *x-y.pokemon.combusken.forms.combusken.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    combusken:
+      genus: *diamond-pearl.pokemon.combusken.genus
+      evolution_parent: *ruby-sapphire.pokemon.combusken.evolution_parent
+      color: *black-white.pokemon.combusken.color
+      shape: *diamond-pearl.pokemon.combusken.shape
+      female_rate: *ruby-sapphire.pokemon.combusken.female_rate
+      capture_rate: *ruby-sapphire.pokemon.combusken.capture_rate
+      happiness: *ruby-sapphire.pokemon.combusken.happiness
+      baby: *diamond-pearl.pokemon.combusken.baby
+      hatch_steps: *ruby-sapphire.pokemon.combusken.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.combusken.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.combusken.forms_switchable
+      name: Combusken
+      default: *ruby-sapphire.pokemon.combusken.default
+      height: *ruby-sapphire.pokemon.combusken.height
+      weight: *ruby-sapphire.pokemon.combusken.weight
+      experience: *ruby-sapphire.pokemon.combusken.experience
+      types: *ruby-sapphire.pokemon.combusken.types
+      egg_groups: *ruby-sapphire.pokemon.combusken.egg_groups
+      mega: *x-y.pokemon.combusken.mega
+      stats: *diamond-pearl.pokemon.combusken.stats
+      abilities: *diamond-pearl.pokemon.combusken.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.combusken.evolution_conditions
+      forms:
+        combusken:
+          name: Combusken
+          form_name: *ruby-sapphire.pokemon.combusken.forms.combusken.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.combusken.forms.combusken.battle_only
+          icon: *x-y.pokemon.combusken.forms.combusken.icon
+          sprites:
+            - ultra-sun-ultra-moon/combusken-default.png
+            - ultra-sun-ultra-moon/female/combusken-default.png
+            - ultra-sun-ultra-moon/shiny/combusken-default.png
+            - ultra-sun-ultra-moon/shiny/female/combusken-default.png
+          art: *ruby-sapphire.pokemon.combusken.forms.combusken.art
+          footprint: *ruby-sapphire.pokemon.combusken.forms.combusken.footprint
+          cry: *x-y.pokemon.combusken.forms.combusken.cry

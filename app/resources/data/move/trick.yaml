@@ -1,0 +1,153 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name TRICK
+  type: &ruby-sapphire.type psychic
+  accuracy: &ruby-sapphire.accuracy 100
+  pp: &ruby-sapphire.pp 10
+  effect: &ruby-sapphire.effect 178
+  target: &ruby-sapphire.target selected-pokemon
+  priority: &ruby-sapphire.priority 0
+  flags: &ruby-sapphire.flags
+    - protect
+    - mirror
+  categories: &ruby-sapphire.categories
+    - unique
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 36
+  flavor_text: |
+    Tricks the foe into trading
+    held items.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: &colosseum.flavor_text |
+    Tricks the target into
+    trading held items.
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: special
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    A move that tricks
+    the foe into
+    trading held items
+    with the user.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Trick
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 12
+  flavor_text: &diamond-pearl.flavor_text |
+    The user catches the
+    foe off guard and
+    swaps the foe’s held
+    item with its own.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &black-white.flavor_text |
+    The user catches the target off guard
+    and swaps its held item with its own.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 23
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user catches the target off guard and swaps its
+    held item with its own.
+ultra-sun-ultra-moon: *sun-moon

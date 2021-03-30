@@ -1,0 +1,144 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'ENIGMA BERRY'
+  category: &ruby-sapphire.category other
+  pocket: &ruby-sapphire.pocket berries
+  flags: &ruby-sapphire.flags
+    - holdable-active
+  icon: &ruby-sapphire.icon enigma-berry.png
+  buy: &ruby-sapphire.buy 20
+  sell: &ruby-sapphire.sell 10
+  flavor_text: POKéBLOCK
+  short_description: &ruby-sapphire.short_description 'Held: Consumed when struck by a [super-effective]{mechanic:super-effective} attack to restore 1/4 max [HP]{mechanic:hp}.'
+  description: &ruby-sapphire.description |
+    Held in battle
+    :   When the holder takes [super-effective]{mechanic:super-effective} damage, it consumes this item to restore 1/4 its max [HP]{mechanic:hp}.
+emerald: *ruby-sapphire
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: |
+    Can be ground up into a powder as
+    an ingredient for medicine.
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Enigma Berry'
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry: &diamond-pearl.berry
+    firmness: hard
+    natural_gift_type: bug
+    natural_gift_power: 80
+    size: 155
+    growth_time: 24
+    water: 7
+    smoothness: 60
+    flavors:
+      spicy: 40
+      dry: 10
+      sweet: 0
+      bitter: 0
+      sour: 0
+    harvest: 1-5
+  flavor_text: |
+    A Poffin ingredient. If held by a
+    Pokémon, it restores its HP if it is
+    hit by a foe’s supereffective attack.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    If held by a Pokémon, it restores
+    its HP if it is hit by a foe’s
+    supereffective attack.
+  icon: *ruby-sapphire.icon
+black-white: &black-white
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    If held by a Pokémon, it restores
+    its HP if it is hit by any
+    supereffective attack.
+  icon: *ruby-sapphire.icon
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    A Berry to be consumed by Pokémon.
+    If a Pokémon holds one, being hit by a
+    supereffective attack will restore its HP.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: damage
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry:
+    firmness: hard
+    natural_gift_type: bug
+    natural_gift_power: 80
+    size: 155
+    growth_time: 24
+    smoothness: 60
+    flavors:
+      spicy: 40
+      dry: 10
+      sweet: 0
+      bitter: 0
+      sour: 0
+    harvest: 1-5
+  flavor_text: |
+    A Berry to be consumed by Pokémon. If a Pokémon
+    holds one, being hit by a supereffective attack will
+    restore its HP.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

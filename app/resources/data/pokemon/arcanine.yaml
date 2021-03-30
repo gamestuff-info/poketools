@@ -1,0 +1,983 @@
+red-blue:
+  name: &red-blue.name ARCANINE
+  position: &red-blue.position 59
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 59
+    kanto: 59
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: &red-blue.pokemon.arcanine.default true
+      capture_rate: &red-blue.pokemon.arcanine.capture_rate 75
+      experience: &red-blue.pokemon.arcanine.experience 213
+      types: &red-blue.pokemon.arcanine.types
+        - fire
+      stats: &red-blue.pokemon.arcanine.stats
+        hp:
+          base_value: 90
+          effort_change: 90
+        attack:
+          base_value: 110
+          effort_change: 110
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 95
+          effort_change: 95
+        special:
+          base_value: 80
+          effort_change: 80
+      growth_rate: &red-blue.pokemon.arcanine.growth_rate slow
+      genus: &red-blue.pokemon.arcanine.genus 'LEGENDARY Pokémon'
+      height: &red-blue.pokemon.arcanine.height 19
+      weight: &red-blue.pokemon.arcanine.weight 15513
+      flavor_text:
+        red: |
+          A POKéMON that
+          has been admired
+          since the past
+          for its beauty.
+           It runs agilely
+          as if on wings.
+        blue: |
+          A POKéMON that
+          has been admired
+          since the past
+          for its beauty.
+           It runs agilely
+          as if on wings.
+      evolution_parent: &red-blue.pokemon.arcanine.evolution_parent growlithe/growlithe
+      evolution_conditions: &red-blue.pokemon.arcanine.evolution_conditions
+        use-item:
+          trigger_item: fire-stone
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: &red-blue.pokemon.arcanine.forms.arcanine.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.arcanine.forms.arcanine.battle_only false
+          sprites:
+            - red-blue/arcanine-default.png
+            - red-blue/gray/arcanine-default.png
+            - red-blue/back/arcanine-default.png
+          art: &red-blue.pokemon.arcanine.forms.arcanine.art
+            - arcanine-default.png
+          cry: &red-blue.pokemon.arcanine.forms.arcanine.cry gen5/arcanine-default.webm
+          icon: &red-blue.pokemon.arcanine.forms.arcanine.icon gen1/quadruped.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: *red-blue.pokemon.arcanine.default
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      experience: *red-blue.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      stats: *red-blue.pokemon.arcanine.stats
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      genus: *red-blue.pokemon.arcanine.genus
+      height: *red-blue.pokemon.arcanine.height
+      weight: *red-blue.pokemon.arcanine.weight
+      flavor_text:
+        yellow: |
+          A legendary POKé-
+          MON in China.
+          Many people are
+          charmed by its
+           grace and beauty
+          while running.
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          sprites:
+            - yellow/arcanine-default.png
+            - yellow/gray/arcanine-default.png
+            - yellow/back/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+          icon: *red-blue.pokemon.arcanine.forms.arcanine.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 58
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 127
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: *red-blue.pokemon.arcanine.default
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      experience: *red-blue.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      stats: &gold-silver.pokemon.arcanine.stats
+        hp:
+          base_value: 90
+          effort_change: 90
+        attack:
+          base_value: 110
+          effort_change: 110
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 95
+          effort_change: 95
+        special-attack:
+          base_value: 100
+          effort_change: 100
+        special-defense:
+          base_value: 80
+          effort_change: 100
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      female_rate: &gold-silver.pokemon.arcanine.female_rate 25
+      hatch_steps: &gold-silver.pokemon.arcanine.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.arcanine.egg_groups
+        - ground
+      wild_held_items:
+        gold: &gold-silver.pokemon.arcanine.wild_held_items.gold
+          burnt-berry: 2
+        silver: *gold-silver.pokemon.arcanine.wild_held_items.gold
+      genus: *red-blue.pokemon.arcanine.genus
+      height: *red-blue.pokemon.arcanine.height
+      weight: &gold-silver.pokemon.arcanine.weight 1551
+      flavor_text:
+        gold: |
+          This legendary
+          Chinese POKEMON is
+          considered magnif-
+          icent. Many people
+          are enchanted by
+          its grand mane.
+        silver: |
+          Its magnificent
+          bark conveys a
+          sense of majesty.
+          Anyone hearing it
+          can't help but
+          grovel before it.
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          sprites:
+            - gold-silver/arcanine-default.png
+            - gold-silver/back/arcanine-default.png
+            - gold-silver/shiny/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+          icon: &gold-silver.pokemon.arcanine.forms.arcanine.icon gen2/fox.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: *red-blue.pokemon.arcanine.default
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      experience: *red-blue.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      stats: *gold-silver.pokemon.arcanine.stats
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.arcanine.wild_held_items.gold
+      genus: *red-blue.pokemon.arcanine.genus
+      height: *red-blue.pokemon.arcanine.height
+      weight: *gold-silver.pokemon.arcanine.weight
+      flavor_text:
+        crystal: |
+          An ancient picture
+          scroll shows that
+          people were
+          attracted to its
+          movement as it ran
+          through prairies.
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          sprites:
+            - crystal/arcanine-default.png
+            - crystal/back/arcanine-default.png
+            - crystal/shiny/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+          icon: *gold-silver.pokemon.arcanine.forms.arcanine.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 246
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: *red-blue.pokemon.arcanine.default
+      forms_switchable: &ruby-sapphire.pokemon.arcanine.forms_switchable false
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      experience: *red-blue.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      stats: &ruby-sapphire.pokemon.arcanine.stats
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 110
+          effort_change: 2
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+          rawst-berry: 100
+        sapphire: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.arcanine.happiness 70
+      abilities: &ruby-sapphire.pokemon.arcanine.abilities
+        intimidate: &ruby-sapphire.pokemon.arcanine.abilities.intimidate
+          hidden: &ruby-sapphire.pokemon.arcanine.abilities.intimidate.hidden false
+          position: 1
+        flash-fire: &ruby-sapphire.pokemon.arcanine.abilities.flash-fire
+          hidden: *ruby-sapphire.pokemon.arcanine.abilities.intimidate.hidden
+          position: 2
+      genus: *red-blue.pokemon.arcanine.genus
+      height: *red-blue.pokemon.arcanine.height
+      weight: &ruby-sapphire.pokemon.arcanine.weight 1550
+      flavor_text:
+        ruby: |
+          ARCANINE is known for its high speed.
+          It is said to be capable of running over
+          6,200 miles in a single day and night.
+          The fire that blazes wildly within this
+          POKéMON's body is its source of power.
+        sapphire: |
+          ARCANINE is known for its high speed.
+          It is said to be capable of running over
+          6,200 miles in a single day and night.
+          The fire that blazes wildly within this
+          POKéMON's body is its source of power.
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: &ruby-sapphire.pokemon.arcanine.forms.arcanine.icon gen5/arcanine-default.png
+          sprites:
+            - ruby-sapphire/arcanine-default.png
+            - ruby-sapphire/back/arcanine-default.png
+            - ruby-sapphire/shiny/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: &ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint arcanine.png
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: *red-blue.pokemon.arcanine.default
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      experience: *red-blue.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      stats: *ruby-sapphire.pokemon.arcanine.stats
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      abilities: *ruby-sapphire.pokemon.arcanine.abilities
+      genus: *red-blue.pokemon.arcanine.genus
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      flavor_text:
+        emerald: |
+          This fleet-footed POKéMON is said to run
+          over 6,200 miles in a single day and night.
+          The fire that blazes wildly within its body
+          is its source of power.
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *ruby-sapphire.pokemon.arcanine.forms.arcanine.icon
+          sprites:
+            - emerald/arcanine-default.png
+            - emerald/shiny/arcanine-default.png
+            - emerald/animated/arcanine-default.webm
+            - emerald/animated/shiny/arcanine-default.webm
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 11
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: *red-blue.pokemon.arcanine.default
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      experience: *red-blue.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      stats: *ruby-sapphire.pokemon.arcanine.stats
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      abilities: *ruby-sapphire.pokemon.arcanine.abilities
+      genus: *red-blue.pokemon.arcanine.genus
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          sprites:
+            - colosseum/arcanine-default.png
+            - colosseum/shiny/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: *red-blue.pokemon.arcanine.default
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      experience: *red-blue.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      stats: *ruby-sapphire.pokemon.arcanine.stats
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      abilities: *ruby-sapphire.pokemon.arcanine.abilities
+      genus: *red-blue.pokemon.arcanine.genus
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          sprites:
+            - xd/arcanine-default.png
+            - xd/shiny/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    arcanine:
+      name: ARCANINE
+      default: *red-blue.pokemon.arcanine.default
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      experience: *red-blue.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      stats: *ruby-sapphire.pokemon.arcanine.stats
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.arcanine.wild_held_items.firered
+          rawst-berry: 50
+        leafgreen: *firered-leafgreen.pokemon.arcanine.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      abilities: *ruby-sapphire.pokemon.arcanine.abilities
+      genus: *red-blue.pokemon.arcanine.genus
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      flavor_text:
+        firered: |
+          A POKéMON that is described in Chinese
+          legends. It is said to race at an
+          unbelievable speed.
+        leafgreen: |
+          A POKéMON that has long been admired
+          for its beauty. It runs agilely as if
+          on wings.
+      forms:
+        arcanine:
+          name: ARCANINE
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *ruby-sapphire.pokemon.arcanine.forms.arcanine.icon
+          sprites:
+            - firered-leafgreen/arcanine-default.png
+            - firered-leafgreen/back/arcanine-default.png
+            - firered-leafgreen/shiny/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Arcanine
+  position: &diamond-pearl.position 64
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    arcanine:
+      genus: &diamond-pearl.pokemon.arcanine.genus 'Legendary Pokémon'
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      shape: &diamond-pearl.pokemon.arcanine.shape quadruped
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: &diamond-pearl.pokemon.arcanine.baby false
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      pal_park: &diamond-pearl.pokemon.arcanine.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: &diamond-pearl.pokemon.arcanine.experience 194
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      stats: &diamond-pearl.pokemon.arcanine.stats
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 110
+          effort_change: 2
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.arcanine.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its proud and regal appearance
+          has captured the hearts of
+          people since long ago.
+        pearl: |
+          Its proud and regal appearance
+          has captured the hearts of
+          people since long ago.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *ruby-sapphire.pokemon.arcanine.forms.arcanine.icon
+          sprites:
+            - diamond-pearl/back/shiny/arcanine-default.png
+            - diamond-pearl/back/arcanine-default.png
+            - diamond-pearl/shiny/arcanine-default.png
+            - diamond-pearl/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arcanine:
+      genus: *diamond-pearl.pokemon.arcanine.genus
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      shape: *diamond-pearl.pokemon.arcanine.shape
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: *diamond-pearl.pokemon.arcanine.baby
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      pal_park: *diamond-pearl.pokemon.arcanine.pal_park
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: *diamond-pearl.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      stats: *diamond-pearl.pokemon.arcanine.stats
+      abilities: *ruby-sapphire.pokemon.arcanine.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        platinum: |
+          Its proud and regal appearance
+          has captured the hearts of
+          people since long ago.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *ruby-sapphire.pokemon.arcanine.forms.arcanine.icon
+          sprites:
+            - platinum/back/shiny/arcanine-default.png
+            - platinum/back/arcanine-default.png
+            - platinum/shiny/arcanine-default.png
+            - platinum/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 130
+  pokemon:
+    arcanine:
+      genus: *diamond-pearl.pokemon.arcanine.genus
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      shape: *diamond-pearl.pokemon.arcanine.shape
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: *diamond-pearl.pokemon.arcanine.baby
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      pal_park: *diamond-pearl.pokemon.arcanine.pal_park
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: *diamond-pearl.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      stats: *diamond-pearl.pokemon.arcanine.stats
+      abilities: *ruby-sapphire.pokemon.arcanine.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        heartgold: |
+          This legendary Chinese Pokémon is
+          considered magnificent. Many people
+          are enchanted by its grand mane.
+        soulsilver: |
+          Its magnificent bark conveys a
+          sense of majesty. Anyone hearing it
+          can’t help but grovel before it.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 3-5
+            power:
+              base_value: 4
+              range: 3-5
+            skill:
+              base_value: 1
+              range: 1-2
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.arcanine.forms.arcanine.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/arcanine-default.png
+            - heartgold-soulsilver/back/arcanine-default.png
+            - heartgold-soulsilver/shiny/arcanine-default.png
+            - heartgold-soulsilver/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arcanine:
+      genus: *diamond-pearl.pokemon.arcanine.genus
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      color: &black-white.pokemon.arcanine.color brown
+      shape: *diamond-pearl.pokemon.arcanine.shape
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: *diamond-pearl.pokemon.arcanine.baby
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: *diamond-pearl.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      stats: *diamond-pearl.pokemon.arcanine.stats
+      abilities: &black-white.pokemon.arcanine.abilities
+        intimidate: *ruby-sapphire.pokemon.arcanine.abilities.intimidate
+        flash-fire: *ruby-sapphire.pokemon.arcanine.abilities.flash-fire
+        justified:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.arcanine.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        black: |
+          Its proud and regal appearance
+          has captured the hearts of
+          people since long ago.
+        white: |
+          Its proud and regal appearance
+          has captured the hearts of
+          people since long ago.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *ruby-sapphire.pokemon.arcanine.forms.arcanine.icon
+          sprites:
+            - black-white/back/shiny/arcanine-default.png
+            - black-white/back/arcanine-default.png
+            - black-white/shiny/arcanine-default.png
+            - black-white/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 52
+  pokemon:
+    arcanine:
+      genus: *diamond-pearl.pokemon.arcanine.genus
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      color: *black-white.pokemon.arcanine.color
+      shape: *diamond-pearl.pokemon.arcanine.shape
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: *diamond-pearl.pokemon.arcanine.baby
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: *diamond-pearl.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      stats: *diamond-pearl.pokemon.arcanine.stats
+      abilities: *black-white.pokemon.arcanine.abilities
+      wild_held_items:
+        black-2: *firered-leafgreen.pokemon.arcanine.wild_held_items.firered
+        white-2: *firered-leafgreen.pokemon.arcanine.wild_held_items.firered
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        black-2: |
+          The sight of it running over 6,200 miles
+          in a single day and night has captivated
+          many people.
+        white-2: |
+          The sight of it running over 6,200 miles
+          in a single day and night has captivated
+          many people.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *ruby-sapphire.pokemon.arcanine.forms.arcanine.icon
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *red-blue.pokemon.arcanine.forms.arcanine.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arcanine:
+      genus: *diamond-pearl.pokemon.arcanine.genus
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      color: *black-white.pokemon.arcanine.color
+      shape: *diamond-pearl.pokemon.arcanine.shape
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: *diamond-pearl.pokemon.arcanine.baby
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: *diamond-pearl.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      mega: &x-y.pokemon.arcanine.mega false
+      stats: *diamond-pearl.pokemon.arcanine.stats
+      abilities: *black-white.pokemon.arcanine.abilities
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        x: |
+          A Pokémon that has long been admired for its
+          beauty. It runs agilely as if on wings.
+        'y': |
+          Its magnificent bark conveys a sense of majesty.
+          Anyone hearing it can’t help but grovel before it.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: &x-y.pokemon.arcanine.forms.arcanine.icon arcanine-default.png
+          sprites:
+            - x-y/shiny/arcanine-default.png
+            - x-y/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: &x-y.pokemon.arcanine.forms.arcanine.cry arcanine-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arcanine:
+      genus: *diamond-pearl.pokemon.arcanine.genus
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      color: *black-white.pokemon.arcanine.color
+      shape: *diamond-pearl.pokemon.arcanine.shape
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: *diamond-pearl.pokemon.arcanine.baby
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: *diamond-pearl.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      mega: *x-y.pokemon.arcanine.mega
+      stats: *diamond-pearl.pokemon.arcanine.stats
+      abilities: *black-white.pokemon.arcanine.abilities
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Arcanine is known for its high speed. It is said to be capable of
+          running over 6,200 miles in a single day and night.
+          The fire that blazes wildly within this Pokémon’s body is its
+          source of power.
+        alpha-sapphire: |
+          Arcanine is known for its high speed. It is said to be capable
+          of running over 6,200 miles in a single day and night. The
+          fire that blazes wildly within this Pokémon’s body is its source
+          of power.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *x-y.pokemon.arcanine.forms.arcanine.icon
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *x-y.pokemon.arcanine.forms.arcanine.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/arcanine-default.png
+            - omega-ruby-alpha-sapphire/shiny/arcanine-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 53
+    original-melemele: 53
+  pokemon:
+    arcanine:
+      genus: *diamond-pearl.pokemon.arcanine.genus
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      color: *black-white.pokemon.arcanine.color
+      shape: *diamond-pearl.pokemon.arcanine.shape
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: *diamond-pearl.pokemon.arcanine.baby
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: *diamond-pearl.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      mega: *x-y.pokemon.arcanine.mega
+      stats: *diamond-pearl.pokemon.arcanine.stats
+      abilities: *black-white.pokemon.arcanine.abilities
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        sun: |-
+          Overflowing with beauty and majesty,
+          this strong Pokémon appears in ancient
+          Eastern folklore.
+        moon: |-
+          The fire burning inside its body serves as the
+          energy to fuel it as it runs great distances.
+          It appears in many legends.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *x-y.pokemon.arcanine.forms.arcanine.icon
+          sprites:
+            - sun-moon/shiny/arcanine-default.png
+            - sun-moon/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *x-y.pokemon.arcanine.forms.arcanine.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 65
+    updated-melemele: 65
+  pokemon:
+    arcanine:
+      genus: *diamond-pearl.pokemon.arcanine.genus
+      evolution_parent: *red-blue.pokemon.arcanine.evolution_parent
+      color: *black-white.pokemon.arcanine.color
+      shape: *diamond-pearl.pokemon.arcanine.shape
+      female_rate: *gold-silver.pokemon.arcanine.female_rate
+      capture_rate: *red-blue.pokemon.arcanine.capture_rate
+      happiness: *ruby-sapphire.pokemon.arcanine.happiness
+      baby: *diamond-pearl.pokemon.arcanine.baby
+      hatch_steps: *gold-silver.pokemon.arcanine.hatch_steps
+      growth_rate: *red-blue.pokemon.arcanine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arcanine.forms_switchable
+      name: Arcanine
+      default: *red-blue.pokemon.arcanine.default
+      height: *red-blue.pokemon.arcanine.height
+      weight: *ruby-sapphire.pokemon.arcanine.weight
+      experience: *diamond-pearl.pokemon.arcanine.experience
+      types: *red-blue.pokemon.arcanine.types
+      egg_groups: *gold-silver.pokemon.arcanine.egg_groups
+      mega: *x-y.pokemon.arcanine.mega
+      stats: *diamond-pearl.pokemon.arcanine.stats
+      abilities: *black-white.pokemon.arcanine.abilities
+      evolution_conditions: *red-blue.pokemon.arcanine.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Legends tell of its fighting alongside a general
+          and conquering a whole country.
+        ultra-moon: |-
+          There are so many old tales about them that
+          they’re called legendary Pokémon, but there are
+          way more of them around than you’d expect.
+      forms:
+        arcanine:
+          name: Arcanine
+          form_name: *red-blue.pokemon.arcanine.forms.arcanine.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arcanine.forms.arcanine.battle_only
+          icon: *x-y.pokemon.arcanine.forms.arcanine.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/arcanine-default.png
+            - ultra-sun-ultra-moon/arcanine-default.png
+          art: *red-blue.pokemon.arcanine.forms.arcanine.art
+          footprint: *ruby-sapphire.pokemon.arcanine.forms.arcanine.footprint
+          cry: *x-y.pokemon.arcanine.forms.arcanine.cry

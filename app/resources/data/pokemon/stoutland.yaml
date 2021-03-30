@@ -1,0 +1,336 @@
+black-white:
+  name: &black-white.name Stoutland
+  position: &black-white.position 509
+  numbers:
+    national: &black-white.numbers.national 508
+    original-unova: 14
+  pokemon:
+    stoutland:
+      genus: &black-white.pokemon.stoutland.genus 'Big-Hearted Pokémon'
+      evolution_parent: &black-white.pokemon.stoutland.evolution_parent herdier/herdier
+      color: &black-white.pokemon.stoutland.color gray
+      shape: &black-white.pokemon.stoutland.shape quadruped
+      female_rate: &black-white.pokemon.stoutland.female_rate 50
+      capture_rate: &black-white.pokemon.stoutland.capture_rate 45
+      happiness: &black-white.pokemon.stoutland.happiness 70
+      baby: &black-white.pokemon.stoutland.baby false
+      hatch_steps: &black-white.pokemon.stoutland.hatch_steps 15
+      growth_rate: &black-white.pokemon.stoutland.growth_rate medium-slow
+      forms_switchable: &black-white.pokemon.stoutland.forms_switchable false
+      name: Stoutland
+      default: &black-white.pokemon.stoutland.default true
+      height: &black-white.pokemon.stoutland.height 12
+      weight: &black-white.pokemon.stoutland.weight 610
+      experience: &black-white.pokemon.stoutland.experience 225
+      types: &black-white.pokemon.stoutland.types
+        - normal
+      egg_groups: &black-white.pokemon.stoutland.egg_groups
+        - ground
+      stats: &black-white.pokemon.stoutland.stats
+        hp:
+          base_value: 85
+          effort_change: 0
+        attack:
+          base_value: 110
+          effort_change: 3
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      abilities: &black-white.pokemon.stoutland.abilities
+        intimidate:
+          hidden: &black-white.pokemon.stoutland.abilities.intimidate.hidden false
+          position: 1
+        sand-rush:
+          hidden: *black-white.pokemon.stoutland.abilities.intimidate.hidden
+          position: 2
+        scrappy:
+          hidden: true
+          position: 3
+      evolution_conditions: &black-white.pokemon.stoutland.evolution_conditions
+        level-up:
+          minimum_level: 32
+      flavor_text:
+        black: |
+          It rescues people stranded by
+          blizzards in the mountains. Its
+          shaggy fur shields it from the cold.
+        white: |
+          This extremely wise Pokémon excels
+          at rescuing people stranded at sea or
+          in the mountains.
+      forms:
+        stoutland:
+          name: Stoutland
+          form_name: &black-white.pokemon.stoutland.forms.stoutland.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.stoutland.forms.stoutland.battle_only false
+          icon: &black-white.pokemon.stoutland.forms.stoutland.icon gen5/stoutland-default.png
+          sprites:
+            - black-white/back/shiny/stoutland-default.png
+            - black-white/back/stoutland-default.png
+            - black-white/shiny/stoutland-default.png
+            - black-white/stoutland-default.png
+          art: &black-white.pokemon.stoutland.forms.stoutland.art
+            - stoutland-default.png
+          footprint: &black-white.pokemon.stoutland.forms.stoutland.footprint stoutland.png
+          cry: &black-white.pokemon.stoutland.forms.stoutland.cry gen5/stoutland-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 24
+  pokemon:
+    stoutland:
+      genus: *black-white.pokemon.stoutland.genus
+      evolution_parent: *black-white.pokemon.stoutland.evolution_parent
+      color: *black-white.pokemon.stoutland.color
+      shape: *black-white.pokemon.stoutland.shape
+      female_rate: *black-white.pokemon.stoutland.female_rate
+      capture_rate: *black-white.pokemon.stoutland.capture_rate
+      happiness: *black-white.pokemon.stoutland.happiness
+      baby: *black-white.pokemon.stoutland.baby
+      hatch_steps: *black-white.pokemon.stoutland.hatch_steps
+      growth_rate: *black-white.pokemon.stoutland.growth_rate
+      forms_switchable: *black-white.pokemon.stoutland.forms_switchable
+      name: Stoutland
+      default: *black-white.pokemon.stoutland.default
+      height: *black-white.pokemon.stoutland.height
+      weight: *black-white.pokemon.stoutland.weight
+      experience: *black-white.pokemon.stoutland.experience
+      types: *black-white.pokemon.stoutland.types
+      egg_groups: *black-white.pokemon.stoutland.egg_groups
+      stats: *black-white.pokemon.stoutland.stats
+      abilities: *black-white.pokemon.stoutland.abilities
+      evolution_conditions: *black-white.pokemon.stoutland.evolution_conditions
+      flavor_text:
+        black-2: |
+          Being wrapped in its long fur is so
+          comfortable that a person would be fine
+          even overnight on a wintry mountain.
+        white-2: |
+          Being wrapped in its long fur is so
+          comfortable that a person would be fine
+          even overnight on a wintry mountain.
+      forms:
+        stoutland:
+          name: Stoutland
+          form_name: *black-white.pokemon.stoutland.forms.stoutland.form_name
+          default: true
+          battle_only: *black-white.pokemon.stoutland.forms.stoutland.battle_only
+          icon: *black-white.pokemon.stoutland.forms.stoutland.icon
+          art: *black-white.pokemon.stoutland.forms.stoutland.art
+          footprint: *black-white.pokemon.stoutland.forms.stoutland.footprint
+          cry: *black-white.pokemon.stoutland.forms.stoutland.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: &x-y.numbers
+    national: *black-white.numbers.national
+  pokemon:
+    stoutland:
+      genus: *black-white.pokemon.stoutland.genus
+      evolution_parent: *black-white.pokemon.stoutland.evolution_parent
+      color: *black-white.pokemon.stoutland.color
+      shape: *black-white.pokemon.stoutland.shape
+      female_rate: *black-white.pokemon.stoutland.female_rate
+      capture_rate: *black-white.pokemon.stoutland.capture_rate
+      happiness: *black-white.pokemon.stoutland.happiness
+      baby: *black-white.pokemon.stoutland.baby
+      hatch_steps: *black-white.pokemon.stoutland.hatch_steps
+      growth_rate: *black-white.pokemon.stoutland.growth_rate
+      forms_switchable: *black-white.pokemon.stoutland.forms_switchable
+      name: Stoutland
+      default: *black-white.pokemon.stoutland.default
+      height: *black-white.pokemon.stoutland.height
+      weight: *black-white.pokemon.stoutland.weight
+      experience: *black-white.pokemon.stoutland.experience
+      types: *black-white.pokemon.stoutland.types
+      egg_groups: *black-white.pokemon.stoutland.egg_groups
+      mega: &x-y.pokemon.stoutland.mega false
+      stats: *black-white.pokemon.stoutland.stats
+      abilities: *black-white.pokemon.stoutland.abilities
+      evolution_conditions: *black-white.pokemon.stoutland.evolution_conditions
+      flavor_text:
+        x: |
+          It rescues people stranded by blizzards in the
+          mountains. Its shaggy fur shields it from the cold.
+        'y': |
+          Being wrapped in its long fur is so comfortable
+          that a person would be fine even overnight on a
+          wintry mountain.
+      forms:
+        stoutland:
+          name: Stoutland
+          form_name: *black-white.pokemon.stoutland.forms.stoutland.form_name
+          default: true
+          battle_only: *black-white.pokemon.stoutland.forms.stoutland.battle_only
+          icon: &x-y.pokemon.stoutland.forms.stoutland.icon stoutland-default.png
+          sprites:
+            - x-y/shiny/stoutland-default.png
+            - x-y/stoutland-default.png
+          art: *black-white.pokemon.stoutland.forms.stoutland.art
+          footprint: *black-white.pokemon.stoutland.forms.stoutland.footprint
+          cry: &x-y.pokemon.stoutland.forms.stoutland.cry stoutland-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *x-y.numbers
+  pokemon:
+    stoutland:
+      genus: *black-white.pokemon.stoutland.genus
+      evolution_parent: *black-white.pokemon.stoutland.evolution_parent
+      color: *black-white.pokemon.stoutland.color
+      shape: *black-white.pokemon.stoutland.shape
+      female_rate: *black-white.pokemon.stoutland.female_rate
+      capture_rate: *black-white.pokemon.stoutland.capture_rate
+      happiness: *black-white.pokemon.stoutland.happiness
+      baby: *black-white.pokemon.stoutland.baby
+      hatch_steps: *black-white.pokemon.stoutland.hatch_steps
+      growth_rate: *black-white.pokemon.stoutland.growth_rate
+      forms_switchable: *black-white.pokemon.stoutland.forms_switchable
+      name: Stoutland
+      default: *black-white.pokemon.stoutland.default
+      height: *black-white.pokemon.stoutland.height
+      weight: *black-white.pokemon.stoutland.weight
+      experience: *black-white.pokemon.stoutland.experience
+      types: *black-white.pokemon.stoutland.types
+      egg_groups: *black-white.pokemon.stoutland.egg_groups
+      mega: *x-y.pokemon.stoutland.mega
+      stats: *black-white.pokemon.stoutland.stats
+      abilities: *black-white.pokemon.stoutland.abilities
+      evolution_conditions: *black-white.pokemon.stoutland.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It rescues people stranded by blizzards in the
+          mountains. Its shaggy fur shields it from the cold.
+        alpha-sapphire: |
+          Being wrapped in its long fur is so comfortable
+          that a person would be fine even overnight on a
+          wintry mountain.
+      forms:
+        stoutland:
+          name: Stoutland
+          form_name: *black-white.pokemon.stoutland.forms.stoutland.form_name
+          default: true
+          battle_only: *black-white.pokemon.stoutland.forms.stoutland.battle_only
+          icon: *x-y.pokemon.stoutland.forms.stoutland.icon
+          art: *black-white.pokemon.stoutland.forms.stoutland.art
+          footprint: *black-white.pokemon.stoutland.forms.stoutland.footprint
+          cry: *x-y.pokemon.stoutland.forms.stoutland.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/stoutland-default.png
+            - omega-ruby-alpha-sapphire/shiny/stoutland-default.png
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    original-alola: 122
+    original-akala: 49
+  pokemon:
+    stoutland:
+      genus: *black-white.pokemon.stoutland.genus
+      evolution_parent: *black-white.pokemon.stoutland.evolution_parent
+      color: *black-white.pokemon.stoutland.color
+      shape: *black-white.pokemon.stoutland.shape
+      female_rate: *black-white.pokemon.stoutland.female_rate
+      capture_rate: *black-white.pokemon.stoutland.capture_rate
+      happiness: *black-white.pokemon.stoutland.happiness
+      baby: *black-white.pokemon.stoutland.baby
+      hatch_steps: *black-white.pokemon.stoutland.hatch_steps
+      growth_rate: *black-white.pokemon.stoutland.growth_rate
+      forms_switchable: *black-white.pokemon.stoutland.forms_switchable
+      name: Stoutland
+      default: *black-white.pokemon.stoutland.default
+      height: *black-white.pokemon.stoutland.height
+      weight: *black-white.pokemon.stoutland.weight
+      experience: *black-white.pokemon.stoutland.experience
+      types: *black-white.pokemon.stoutland.types
+      egg_groups: *black-white.pokemon.stoutland.egg_groups
+      mega: *x-y.pokemon.stoutland.mega
+      stats: *black-white.pokemon.stoutland.stats
+      abilities: *black-white.pokemon.stoutland.abilities
+      evolution_conditions: *black-white.pokemon.stoutland.evolution_conditions
+      flavor_text:
+        sun: |-
+          Intelligent, good-natured, and valiant,
+          it’s a trustworthy partner on rescue teams.
+        moon: |-
+          With this wise Pokémon, there could be no
+          concern that it would ever attack people. Some
+          parents even trust it to babysit.
+      forms:
+        stoutland:
+          name: Stoutland
+          form_name: *black-white.pokemon.stoutland.forms.stoutland.form_name
+          default: true
+          battle_only: *black-white.pokemon.stoutland.forms.stoutland.battle_only
+          icon: *x-y.pokemon.stoutland.forms.stoutland.icon
+          sprites:
+            - sun-moon/shiny/stoutland-default.png
+            - sun-moon/stoutland-default.png
+          art: *black-white.pokemon.stoutland.forms.stoutland.art
+          footprint: *black-white.pokemon.stoutland.forms.stoutland.footprint
+          cry: *x-y.pokemon.stoutland.forms.stoutland.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 152
+    updated-akala: 53
+  pokemon:
+    stoutland:
+      genus: *black-white.pokemon.stoutland.genus
+      evolution_parent: *black-white.pokemon.stoutland.evolution_parent
+      color: *black-white.pokemon.stoutland.color
+      shape: *black-white.pokemon.stoutland.shape
+      female_rate: *black-white.pokemon.stoutland.female_rate
+      capture_rate: *black-white.pokemon.stoutland.capture_rate
+      happiness: *black-white.pokemon.stoutland.happiness
+      baby: *black-white.pokemon.stoutland.baby
+      hatch_steps: *black-white.pokemon.stoutland.hatch_steps
+      growth_rate: *black-white.pokemon.stoutland.growth_rate
+      forms_switchable: *black-white.pokemon.stoutland.forms_switchable
+      name: Stoutland
+      default: *black-white.pokemon.stoutland.default
+      height: *black-white.pokemon.stoutland.height
+      weight: *black-white.pokemon.stoutland.weight
+      experience: *black-white.pokemon.stoutland.experience
+      types: *black-white.pokemon.stoutland.types
+      egg_groups: *black-white.pokemon.stoutland.egg_groups
+      mega: *x-y.pokemon.stoutland.mega
+      stats: *black-white.pokemon.stoutland.stats
+      abilities: *black-white.pokemon.stoutland.abilities
+      evolution_conditions: *black-white.pokemon.stoutland.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It pays no mind to the cold, thanks to its long
+          warm coat. Stoutland in Alola look a
+          little uncomfortable.
+        ultra-moon: |-
+          Its fur is long and thick. A long time ago in cold
+          regions, every household kept a Stoutland.
+      forms:
+        stoutland:
+          name: Stoutland
+          form_name: *black-white.pokemon.stoutland.forms.stoutland.form_name
+          default: true
+          battle_only: *black-white.pokemon.stoutland.forms.stoutland.battle_only
+          icon: *x-y.pokemon.stoutland.forms.stoutland.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/stoutland-default.png
+            - ultra-sun-ultra-moon/stoutland-default.png
+          art: *black-white.pokemon.stoutland.forms.stoutland.art
+          footprint: *black-white.pokemon.stoutland.forms.stoutland.footprint
+          cry: *x-y.pokemon.stoutland.forms.stoutland.cry

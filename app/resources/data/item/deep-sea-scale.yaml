@@ -1,0 +1,41 @@
+x-y: &x-y
+  name: &x-y.name 'Deep Sea Scale'
+  category: &x-y.category species-specific
+  pocket: &x-y.pocket misc
+  buy: &x-y.buy 2000
+  sell: &x-y.sell 1000
+  fling_effect: damage
+  fling_power: 30
+  flags: &x-y.flags
+    - holdable
+  short_description: &x-y.short_description 'Doubles [Clamperl''s]{pokemon:clamperl} [Special Defense]{mechanic:special-defense};  Traded: Some Pokémon will evolve.'
+  description: &x-y.description |
+    Held by []{pokemon:clamperl}: Doubles the holder's [Special Defense]{mechanic:special-defense}.
+
+    When some Pokémon are traded holding this item, they will evolve.  Below is a list
+    of compatible Pokémon.
+
+    {{App\Controller\ItemController::evolutionPokemon({"itemSlug": "deep-sea-scale"})}}
+  flavor_text: |
+    An item to be held by Clamperl.
+    This scale shines with a faint pink and
+    raises the holder’s Sp. Def stat.
+  icon: &x-y.icon deep-sea-scale.png
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *x-y.name
+  category: *x-y.category
+  pocket: *x-y.pocket
+  buy: *x-y.buy
+  sell: *x-y.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *x-y.flags
+  short_description: *x-y.short_description
+  description: *x-y.description
+  flavor_text: |
+    An item to be held by Clamperl. This scale shines
+    with a faint pink and raises the holder’s
+    Sp. Def stat.
+  icon: *x-y.icon
+ultra-sun-ultra-moon: *sun-moon

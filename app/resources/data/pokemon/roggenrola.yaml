@@ -1,0 +1,348 @@
+black-white:
+  name: &black-white.name Roggenrola
+  position: &black-white.position 525
+  numbers:
+    national: &black-white.numbers.national 524
+    original-unova: 30
+  pokemon:
+    roggenrola:
+      genus: &black-white.pokemon.roggenrola.genus 'Mantle Pokémon'
+      color: &black-white.pokemon.roggenrola.color blue
+      shape: &black-white.pokemon.roggenrola.shape legs
+      female_rate: &black-white.pokemon.roggenrola.female_rate 50
+      capture_rate: &black-white.pokemon.roggenrola.capture_rate 255
+      happiness: &black-white.pokemon.roggenrola.happiness 70
+      baby: &black-white.pokemon.roggenrola.baby false
+      hatch_steps: &black-white.pokemon.roggenrola.hatch_steps 15
+      growth_rate: &black-white.pokemon.roggenrola.growth_rate medium-slow
+      forms_switchable: &black-white.pokemon.roggenrola.forms_switchable false
+      name: Roggenrola
+      default: &black-white.pokemon.roggenrola.default true
+      height: &black-white.pokemon.roggenrola.height 4
+      weight: &black-white.pokemon.roggenrola.weight 180
+      experience: &black-white.pokemon.roggenrola.experience 56
+      types: &black-white.pokemon.roggenrola.types
+        - rock
+      egg_groups: &black-white.pokemon.roggenrola.egg_groups
+        - mineral
+      stats: &black-white.pokemon.roggenrola.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 75
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 1
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 25
+          effort_change: 0
+      abilities: &black-white.pokemon.roggenrola.abilities
+        sturdy:
+          hidden: &black-white.pokemon.roggenrola.abilities.sturdy.hidden false
+          position: 1
+        weak-armor:
+          hidden: *black-white.pokemon.roggenrola.abilities.sturdy.hidden
+          position: 2
+        sand-force:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.roggenrola.wild_held_items.black
+          everstone: 50
+          hard-stone: 5
+        white: *black-white.pokemon.roggenrola.wild_held_items.black
+      flavor_text:
+        black: |
+          Its ear is hexagonal in shape.
+          Compressed underground,
+          its body is as hard as steel.
+        white: |
+          They were discovered a hundred years
+          ago in an earthquake fissure. Inside
+          each one is an energy core.
+      forms:
+        roggenrola:
+          name: Roggenrola
+          form_name: &black-white.pokemon.roggenrola.forms.roggenrola.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.roggenrola.forms.roggenrola.battle_only false
+          icon: &black-white.pokemon.roggenrola.forms.roggenrola.icon gen5/roggenrola-default.png
+          sprites:
+            - black-white/back/shiny/roggenrola-default.png
+            - black-white/back/roggenrola-default.png
+            - black-white/shiny/roggenrola-default.png
+            - black-white/roggenrola-default.png
+          art: &black-white.pokemon.roggenrola.forms.roggenrola.art
+            - roggenrola-default.png
+          footprint: &black-white.pokemon.roggenrola.forms.roggenrola.footprint roggenrola.png
+          cry: &black-white.pokemon.roggenrola.forms.roggenrola.cry gen5/roggenrola-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 68
+  pokemon:
+    roggenrola:
+      genus: *black-white.pokemon.roggenrola.genus
+      color: *black-white.pokemon.roggenrola.color
+      shape: *black-white.pokemon.roggenrola.shape
+      female_rate: *black-white.pokemon.roggenrola.female_rate
+      capture_rate: *black-white.pokemon.roggenrola.capture_rate
+      happiness: *black-white.pokemon.roggenrola.happiness
+      baby: *black-white.pokemon.roggenrola.baby
+      hatch_steps: *black-white.pokemon.roggenrola.hatch_steps
+      growth_rate: *black-white.pokemon.roggenrola.growth_rate
+      forms_switchable: *black-white.pokemon.roggenrola.forms_switchable
+      name: Roggenrola
+      default: *black-white.pokemon.roggenrola.default
+      height: *black-white.pokemon.roggenrola.height
+      weight: *black-white.pokemon.roggenrola.weight
+      experience: *black-white.pokemon.roggenrola.experience
+      types: *black-white.pokemon.roggenrola.types
+      egg_groups: *black-white.pokemon.roggenrola.egg_groups
+      stats: *black-white.pokemon.roggenrola.stats
+      abilities: *black-white.pokemon.roggenrola.abilities
+      wild_held_items:
+        black-2: *black-white.pokemon.roggenrola.wild_held_items.black
+        white-2: *black-white.pokemon.roggenrola.wild_held_items.black
+      flavor_text:
+        black-2: |
+          The hexagonal-shaped hole is its ear.
+          It has a tendency to walk in the
+          direction the sound is coming from.
+        white-2: |
+          The hexagonal-shaped hole is its ear.
+          It has a tendency to walk in the
+          direction the sound is coming from.
+      forms:
+        roggenrola:
+          name: Roggenrola
+          form_name: *black-white.pokemon.roggenrola.forms.roggenrola.form_name
+          default: true
+          battle_only: *black-white.pokemon.roggenrola.forms.roggenrola.battle_only
+          icon: *black-white.pokemon.roggenrola.forms.roggenrola.icon
+          art: *black-white.pokemon.roggenrola.forms.roggenrola.art
+          footprint: *black-white.pokemon.roggenrola.forms.roggenrola.footprint
+          cry: *black-white.pokemon.roggenrola.forms.roggenrola.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    kalos-coastal: 120
+  pokemon:
+    roggenrola:
+      genus: *black-white.pokemon.roggenrola.genus
+      color: *black-white.pokemon.roggenrola.color
+      shape: *black-white.pokemon.roggenrola.shape
+      female_rate: *black-white.pokemon.roggenrola.female_rate
+      capture_rate: *black-white.pokemon.roggenrola.capture_rate
+      happiness: *black-white.pokemon.roggenrola.happiness
+      baby: *black-white.pokemon.roggenrola.baby
+      hatch_steps: *black-white.pokemon.roggenrola.hatch_steps
+      growth_rate: *black-white.pokemon.roggenrola.growth_rate
+      forms_switchable: *black-white.pokemon.roggenrola.forms_switchable
+      name: Roggenrola
+      default: *black-white.pokemon.roggenrola.default
+      height: *black-white.pokemon.roggenrola.height
+      weight: *black-white.pokemon.roggenrola.weight
+      experience: *black-white.pokemon.roggenrola.experience
+      types: *black-white.pokemon.roggenrola.types
+      egg_groups: *black-white.pokemon.roggenrola.egg_groups
+      mega: &x-y.pokemon.roggenrola.mega false
+      stats: *black-white.pokemon.roggenrola.stats
+      abilities: *black-white.pokemon.roggenrola.abilities
+      wild_held_items:
+        x: *black-white.pokemon.roggenrola.wild_held_items.black
+        'y': *black-white.pokemon.roggenrola.wild_held_items.black
+      flavor_text:
+        x: |
+          Its ear is hexagonal in shape. Compressed
+          underground, its body is as hard as steel.
+        'y': |
+          They were discovered a hundred years ago in an
+          earthquake fissure. Inside each one is an
+          energy core.
+      forms:
+        roggenrola:
+          name: Roggenrola
+          form_name: *black-white.pokemon.roggenrola.forms.roggenrola.form_name
+          default: true
+          battle_only: *black-white.pokemon.roggenrola.forms.roggenrola.battle_only
+          icon: &x-y.pokemon.roggenrola.forms.roggenrola.icon roggenrola-default.png
+          sprites:
+            - x-y/shiny/roggenrola-default.png
+            - x-y/roggenrola-default.png
+          art: *black-white.pokemon.roggenrola.forms.roggenrola.art
+          footprint: *black-white.pokemon.roggenrola.forms.roggenrola.footprint
+          cry: &x-y.pokemon.roggenrola.forms.roggenrola.cry roggenrola-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+  pokemon:
+    roggenrola:
+      genus: *black-white.pokemon.roggenrola.genus
+      color: *black-white.pokemon.roggenrola.color
+      shape: *black-white.pokemon.roggenrola.shape
+      female_rate: *black-white.pokemon.roggenrola.female_rate
+      capture_rate: *black-white.pokemon.roggenrola.capture_rate
+      happiness: *black-white.pokemon.roggenrola.happiness
+      baby: *black-white.pokemon.roggenrola.baby
+      hatch_steps: *black-white.pokemon.roggenrola.hatch_steps
+      growth_rate: *black-white.pokemon.roggenrola.growth_rate
+      forms_switchable: *black-white.pokemon.roggenrola.forms_switchable
+      name: Roggenrola
+      default: *black-white.pokemon.roggenrola.default
+      height: *black-white.pokemon.roggenrola.height
+      weight: *black-white.pokemon.roggenrola.weight
+      experience: *black-white.pokemon.roggenrola.experience
+      types: *black-white.pokemon.roggenrola.types
+      egg_groups: *black-white.pokemon.roggenrola.egg_groups
+      mega: *x-y.pokemon.roggenrola.mega
+      stats: *black-white.pokemon.roggenrola.stats
+      abilities: *black-white.pokemon.roggenrola.abilities
+      flavor_text:
+        omega-ruby: |
+          Its ear is hexagonal in shape. Compressed
+          underground, its body is as hard as steel.
+        alpha-sapphire: |
+          They were discovered a hundred years ago in an
+          earthquake fissure. Inside each one is an
+          energy core.
+      forms:
+        roggenrola:
+          name: Roggenrola
+          form_name: *black-white.pokemon.roggenrola.forms.roggenrola.form_name
+          default: true
+          battle_only: *black-white.pokemon.roggenrola.forms.roggenrola.battle_only
+          icon: *x-y.pokemon.roggenrola.forms.roggenrola.icon
+          art: *black-white.pokemon.roggenrola.forms.roggenrola.art
+          footprint: *black-white.pokemon.roggenrola.forms.roggenrola.footprint
+          cry: *x-y.pokemon.roggenrola.forms.roggenrola.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/roggenrola-default.png
+            - omega-ruby-alpha-sapphire/shiny/roggenrola-default.png
+      wild_held_items:
+        omega-ruby: *black-white.pokemon.roggenrola.wild_held_items.black
+        alpha-sapphire: *black-white.pokemon.roggenrola.wild_held_items.black
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    original-alola: 98
+    original-melemele: 98
+    original-poni: 48
+  pokemon:
+    roggenrola:
+      genus: *black-white.pokemon.roggenrola.genus
+      color: *black-white.pokemon.roggenrola.color
+      shape: *black-white.pokemon.roggenrola.shape
+      female_rate: *black-white.pokemon.roggenrola.female_rate
+      capture_rate: *black-white.pokemon.roggenrola.capture_rate
+      happiness: *black-white.pokemon.roggenrola.happiness
+      baby: *black-white.pokemon.roggenrola.baby
+      hatch_steps: *black-white.pokemon.roggenrola.hatch_steps
+      growth_rate: *black-white.pokemon.roggenrola.growth_rate
+      forms_switchable: *black-white.pokemon.roggenrola.forms_switchable
+      name: Roggenrola
+      default: *black-white.pokemon.roggenrola.default
+      height: *black-white.pokemon.roggenrola.height
+      weight: *black-white.pokemon.roggenrola.weight
+      experience: *black-white.pokemon.roggenrola.experience
+      types: *black-white.pokemon.roggenrola.types
+      egg_groups: *black-white.pokemon.roggenrola.egg_groups
+      mega: *x-y.pokemon.roggenrola.mega
+      stats: *black-white.pokemon.roggenrola.stats
+      abilities: *black-white.pokemon.roggenrola.abilities
+      wild_held_items:
+        sun: *black-white.pokemon.roggenrola.wild_held_items.black
+        moon: *black-white.pokemon.roggenrola.wild_held_items.black
+      flavor_text:
+        sun: |-
+          Born deep within the ground, it compares itself
+          with similar species, such as Geodude and
+          Carbink, to settle which has the hardest body.
+        moon: |-
+          The hexagonal cavity is its ear. It walks in the
+          direction of sounds it hears, but if the sounds
+          cease, it panics and topples over.
+      forms:
+        roggenrola:
+          name: Roggenrola
+          form_name: *black-white.pokemon.roggenrola.forms.roggenrola.form_name
+          default: true
+          battle_only: *black-white.pokemon.roggenrola.forms.roggenrola.battle_only
+          icon: *x-y.pokemon.roggenrola.forms.roggenrola.icon
+          sprites:
+            - sun-moon/shiny/roggenrola-default.png
+            - sun-moon/roggenrola-default.png
+          art: *black-white.pokemon.roggenrola.forms.roggenrola.art
+          footprint: *black-white.pokemon.roggenrola.forms.roggenrola.footprint
+          cry: *x-y.pokemon.roggenrola.forms.roggenrola.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 120
+    updated-melemele: 120
+    updated-poni: 60
+  pokemon:
+    roggenrola:
+      genus: *black-white.pokemon.roggenrola.genus
+      color: *black-white.pokemon.roggenrola.color
+      shape: *black-white.pokemon.roggenrola.shape
+      female_rate: *black-white.pokemon.roggenrola.female_rate
+      capture_rate: *black-white.pokemon.roggenrola.capture_rate
+      happiness: *black-white.pokemon.roggenrola.happiness
+      baby: *black-white.pokemon.roggenrola.baby
+      hatch_steps: *black-white.pokemon.roggenrola.hatch_steps
+      growth_rate: *black-white.pokemon.roggenrola.growth_rate
+      forms_switchable: *black-white.pokemon.roggenrola.forms_switchable
+      name: Roggenrola
+      default: *black-white.pokemon.roggenrola.default
+      height: *black-white.pokemon.roggenrola.height
+      weight: *black-white.pokemon.roggenrola.weight
+      experience: *black-white.pokemon.roggenrola.experience
+      types: *black-white.pokemon.roggenrola.types
+      egg_groups: *black-white.pokemon.roggenrola.egg_groups
+      mega: *x-y.pokemon.roggenrola.mega
+      stats: *black-white.pokemon.roggenrola.stats
+      abilities: *black-white.pokemon.roggenrola.abilities
+      wild_held_items:
+        ultra-sun: *black-white.pokemon.roggenrola.wild_held_items.black
+        ultra-moon: *black-white.pokemon.roggenrola.wild_held_items.black
+      flavor_text:
+        ultra-sun: |-
+          The hexagonal hole is its ear. Deep in that ear is
+          an energy core, so if you stick your hand in
+          there, Roggenrola will be very angry!
+        ultra-moon: |-
+          It was found in a fissure in a layer of exposed
+          rock. The material that makes up its body is
+          dirt from several hundred years ago.
+      forms:
+        roggenrola:
+          name: Roggenrola
+          form_name: *black-white.pokemon.roggenrola.forms.roggenrola.form_name
+          default: true
+          battle_only: *black-white.pokemon.roggenrola.forms.roggenrola.battle_only
+          icon: *x-y.pokemon.roggenrola.forms.roggenrola.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/roggenrola-default.png
+            - ultra-sun-ultra-moon/roggenrola-default.png
+          art: *black-white.pokemon.roggenrola.forms.roggenrola.art
+          footprint: *black-white.pokemon.roggenrola.forms.roggenrola.footprint
+          cry: *x-y.pokemon.roggenrola.forms.roggenrola.cry

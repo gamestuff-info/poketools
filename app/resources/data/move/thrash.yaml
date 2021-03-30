@@ -1,0 +1,217 @@
+red-blue: &red-blue
+  name: &red-blue.name THRASH
+  power: &red-blue.power 90
+  type: &red-blue.type normal
+  accuracy: &red-blue.accuracy 100
+  pp: &red-blue.pp 20
+  effect: &red-blue.effect 28
+  flags: &red-blue.flags
+    - contact
+    - protect
+    - mirror
+  categories: &red-blue.categories
+    - damage
+  hits: &red-blue.hits 1
+  turns: 3-4
+  priority: &red-blue.priority 0
+  target: &red-blue.target random-opponent
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: &gold-silver.turns 2-3
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Works 2-3 turns
+    and confuses user.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+    - kings-rock
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type tough
+  contest_effect: 19
+  contest_use_after:
+    - rage
+  flavor_text: &ruby-sapphire.flavor_text |
+    A rampage of 2 to 3 turns
+    that confuses the user.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+xd:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    The user rampages
+    about for two to
+    three turns, then
+    becomes confused.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Thrash
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 7
+  flavor_text: &diamond-pearl.flavor_text |
+    The user rampages
+    and attacks for two
+    to three turns.
+    It then becomes
+    confused, however.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  power: &black-white.power 120
+  pp: &black-white.pp 10
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user rampages and attacks for two
+    to three turns. It then becomes
+    confused, however.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  power: *black-white.power
+  pp: *black-white.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: &x-y.flavor_text |
+    The user rampages and attacks
+    for two to three turns.
+    The user then becomes confused.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  power: *black-white.power
+  pp: *black-white.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 3
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *gold-silver.turns
+  type: *red-blue.type
+  power: *black-white.power
+  pp: *black-white.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user rampages and attacks for two to three
+    turns. The user then becomes confused.
+ultra-sun-ultra-moon: *sun-moon

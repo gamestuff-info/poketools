@@ -1,0 +1,22 @@
+x-y:
+  name: &x-y.name 'Gale Wings'
+  short_description: &x-y.short_description 'Raises []{type:flying} moves'' priority by one stage.'
+  description: &x-y.description 'Raises []{type:flying} moves'' priority by one stage.'
+  flavor_text: |
+    Gives priority to Flying-type
+    moves.
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  short_description: *x-y.short_description
+  description: *x-y.description
+  flavor_text: |
+    Gives priority to
+    Flying-type moves.
+sun-moon: &sun-moon
+  name: *x-y.name
+  short_description: *x-y.short_description
+  description: *x-y.description
+  flavor_text: |
+    Gives priority to Flying-type moves when the 
+    Pokémon’s HP is full.
+ultra-sun-ultra-moon: *sun-moon

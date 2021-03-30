@@ -1,0 +1,248 @@
+red-blue: &red-blue
+  name: &red-blue.name ACID
+  power: &red-blue.power 40
+  type: &red-blue.type poison
+  accuracy: &red-blue.accuracy 100
+  pp: &red-blue.pp 30
+  effect: &red-blue.effect 70
+  flags: &red-blue.flags
+    - protect
+    - mirror
+  categories: &red-blue.categories
+    - damage
+    - lower
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  stat_changes:
+    defense: -1
+  stat_change_chance: 33
+  priority: &red-blue.priority 0
+  target: &red-blue.target all-opponents
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  effect_chance: &gold-silver.effect_chance 10
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: &gold-silver.stat_changes
+    special-defense: -1
+  stat_change_chance: &gold-silver.stat_change_chance 10
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    An attack that may
+    lower DEFENSE.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  effect_chance: *gold-silver.effect_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  stat_change_chance: *gold-silver.stat_change_chance
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 13
+  flavor_text: &ruby-sapphire.flavor_text |
+    Sprays a hide-melting acid.
+    May lower DEFENSE.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  effect_chance: *gold-silver.effect_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  stat_change_chance: *gold-silver.stat_change_chance
+xd:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  effect_chance: *gold-silver.effect_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  stat_change_chance: *gold-silver.stat_change_chance
+firered-leafgreen:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  effect_chance: *gold-silver.effect_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  stat_change_chance: *gold-silver.stat_change_chance
+  flavor_text: |
+    The foe is sprayed
+    with a harsh, hide-
+    melting acid that
+    may lower DEFENSE.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Acid
+  stat_change_chance: *gold-silver.stat_change_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: &diamond-pearl.damage_class special
+  effect: &diamond-pearl.effect 73
+  effect_chance: *gold-silver.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 5
+  flavor_text: &diamond-pearl.flavor_text |
+    The foe is attacked
+    with a spray of harsh
+    acid. It may also
+    lower the target’s
+    Sp. Def stat.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  stat_change_chance: *gold-silver.stat_change_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  stat_change_chance: *gold-silver.stat_change_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: |
+    The opposing team is attacked with a spray
+    of harsh acid. The acid may also lower
+    the targets’ Sp. Def stats.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  stat_change_chance: *gold-silver.stat_change_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: &x-y.flavor_text |
+    The opposing Pokémon are attacked
+    with a spray of harsh acid. This may
+    also lower their Sp. Def stats.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  stat_change_chance: *gold-silver.stat_change_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *gold-silver.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 33
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  stat_change_chance: *gold-silver.stat_change_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *diamond-pearl.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: |
+    The opposing Pokémon are attacked with a spray of
+    harsh acid. This may also lower their Sp. Def stat.
+ultra-sun-ultra-moon: *sun-moon

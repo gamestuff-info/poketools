@@ -1,0 +1,30 @@
+red-blue: &red-blue
+  name: &red-blue.name Kanto
+  position: &red-blue.position 1
+  maps:
+    kanto:
+      name: *red-blue.name
+      url: kanto/red-blue-yellow.png
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  position: &gold-silver.position 2
+  maps:
+    kanto:
+      name: *red-blue.name
+      url: kanto/gold-silver-crystal.png
+crystal: *gold-silver
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  maps:
+    kanto:
+      name: *red-blue.name
+      url: kanto/firered-leafgreen.png
+heartgold-soulsilver:
+  name: *red-blue.name
+  position: *gold-silver.position
+  maps:
+    kanto:
+      name: *red-blue.name
+      url: kanto/heartgold-soulsilver.png

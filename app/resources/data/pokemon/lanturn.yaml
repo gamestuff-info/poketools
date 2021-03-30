@@ -1,0 +1,895 @@
+gold-silver:
+  name: &gold-silver.name LANTURN
+  position: &gold-silver.position 170
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 171
+    original-johto: 174
+    original-johto-abc: 95
+  pokemon:
+    lanturn:
+      name: LANTURN
+      default: &gold-silver.pokemon.lanturn.default true
+      capture_rate: &gold-silver.pokemon.lanturn.capture_rate 75
+      experience: &gold-silver.pokemon.lanturn.experience 156
+      types: &gold-silver.pokemon.lanturn.types
+        - water
+        - electric
+      stats: &gold-silver.pokemon.lanturn.stats
+        hp:
+          base_value: 125
+          effort_change: 125
+        attack:
+          base_value: 58
+          effort_change: 58
+        defense:
+          base_value: 58
+          effort_change: 58
+        speed:
+          base_value: 67
+          effort_change: 67
+        special-attack:
+          base_value: 76
+          effort_change: 76
+        special-defense:
+          base_value: 76
+          effort_change: 76
+      growth_rate: &gold-silver.pokemon.lanturn.growth_rate slow
+      female_rate: &gold-silver.pokemon.lanturn.female_rate 50
+      hatch_steps: &gold-silver.pokemon.lanturn.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.lanturn.egg_groups
+        - water2
+      genus: &gold-silver.pokemon.lanturn.genus 'LIGHT Pokémon'
+      height: &gold-silver.pokemon.lanturn.height 11
+      weight: &gold-silver.pokemon.lanturn.weight 226
+      flavor_text:
+        gold: |
+          The light it emits
+          is so bright that
+          it can illuminate
+          the sea's surface
+          from a depth of
+          over three miles.
+        silver: |
+          It blinds prey
+          with an intense
+          burst of light,
+          then swallows the
+          immobilized prey
+          in a single gulp.
+      evolution_parent: &gold-silver.pokemon.lanturn.evolution_parent chinchou/chinchou
+      evolution_conditions: &gold-silver.pokemon.lanturn.evolution_conditions
+        level-up:
+          minimum_level: 27
+      forms:
+        lanturn:
+          name: LANTURN
+          form_name: &gold-silver.pokemon.lanturn.forms.lanturn.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.lanturn.forms.lanturn.battle_only false
+          sprites:
+            - gold-silver/lanturn-default.png
+            - gold-silver/back/lanturn-default.png
+            - gold-silver/shiny/lanturn-default.png
+          art: &gold-silver.pokemon.lanturn.forms.lanturn.art
+            - lanturn-default.png
+          cry: &gold-silver.pokemon.lanturn.forms.lanturn.cry gen5/lanturn-default.webm
+          icon: &gold-silver.pokemon.lanturn.forms.lanturn.icon gen2/fish.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    lanturn:
+      name: LANTURN
+      default: *gold-silver.pokemon.lanturn.default
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      experience: *gold-silver.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      stats: *gold-silver.pokemon.lanturn.stats
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      genus: *gold-silver.pokemon.lanturn.genus
+      height: *gold-silver.pokemon.lanturn.height
+      weight: *gold-silver.pokemon.lanturn.weight
+      flavor_text:
+        crystal: |
+          This #MON uses
+          the bright part of
+          its body, which
+          changed from a
+          dorsal fin, to
+          lure prey.
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      forms:
+        lanturn:
+          name: LANTURN
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          sprites:
+            - crystal/lanturn-default.png
+            - crystal/back/lanturn-default.png
+            - crystal/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+          icon: *gold-silver.pokemon.lanturn.forms.lanturn.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 171
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 182
+  pokemon:
+    lanturn:
+      name: LANTURN
+      default: *gold-silver.pokemon.lanturn.default
+      forms_switchable: &ruby-sapphire.pokemon.lanturn.forms_switchable false
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      experience: *gold-silver.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      stats: &ruby-sapphire.pokemon.lanturn.stats
+        hp:
+          base_value: 125
+          effort_change: 2
+        attack:
+          base_value: 58
+          effort_change: 0
+        defense:
+          base_value: 58
+          effort_change: 0
+        speed:
+          base_value: 67
+          effort_change: 0
+        special-attack:
+          base_value: 76
+          effort_change: 0
+        special-defense:
+          base_value: 125
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.lanturn.wild_held_items.ruby
+          yellow-shard: 5
+        sapphire: *ruby-sapphire.pokemon.lanturn.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.lanturn.happiness 70
+      abilities: &ruby-sapphire.pokemon.lanturn.abilities
+        volt-absorb: &ruby-sapphire.pokemon.lanturn.abilities.volt-absorb
+          hidden: &ruby-sapphire.pokemon.lanturn.abilities.volt-absorb.hidden false
+          position: 1
+        illuminate: &ruby-sapphire.pokemon.lanturn.abilities.illuminate
+          hidden: *ruby-sapphire.pokemon.lanturn.abilities.volt-absorb.hidden
+          position: 2
+      genus: *gold-silver.pokemon.lanturn.genus
+      height: &ruby-sapphire.pokemon.lanturn.height 12
+      weight: &ruby-sapphire.pokemon.lanturn.weight 225
+      flavor_text:
+        ruby: |
+          LANTURN is nicknamed “the deep-sea
+          star” for its illuminated antenna.
+           This POKéMON produces light by
+          causing a chemical reaction between
+          bacteria and its bodily fluids inside
+          the antenna.
+        sapphire: |
+          LANTURN is known to emit light.
+          If you peer down into the dark sea from
+          a ship at night, you can sometimes see
+          this POKéMON's light rising from the
+          depths where it swims. It gives the sea
+          an appearance of a starlit night.
+      forms:
+        lanturn:
+          name: LANTURN
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: &ruby-sapphire.pokemon.lanturn.forms.lanturn.icon gen5/lanturn-default.png
+          sprites:
+            - ruby-sapphire/lanturn-default.png
+            - ruby-sapphire/back/lanturn-default.png
+            - ruby-sapphire/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: &ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint lanturn.png
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    lanturn:
+      name: LANTURN
+      default: *gold-silver.pokemon.lanturn.default
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      experience: *gold-silver.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      stats: *ruby-sapphire.pokemon.lanturn.stats
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.lanturn.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      abilities: *ruby-sapphire.pokemon.lanturn.abilities
+      genus: *gold-silver.pokemon.lanturn.genus
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      flavor_text:
+        emerald: |
+          The light-emitting orbs on its back are
+          very bright. They are formed from a part of
+          its dorsal fin. This POKéMON illuminates
+          the inky darkness of deep seas.
+      forms:
+        lanturn:
+          name: LANTURN
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *ruby-sapphire.pokemon.lanturn.forms.lanturn.icon
+          sprites:
+            - emerald/lanturn-default.png
+            - emerald/shiny/lanturn-default.png
+            - emerald/animated/lanturn-default.webm
+            - emerald/animated/shiny/lanturn-default.webm
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 159
+  pokemon:
+    lanturn:
+      name: LANTURN
+      default: *gold-silver.pokemon.lanturn.default
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      experience: *gold-silver.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      stats: *ruby-sapphire.pokemon.lanturn.stats
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      abilities: *ruby-sapphire.pokemon.lanturn.abilities
+      genus: *gold-silver.pokemon.lanturn.genus
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      forms:
+        lanturn:
+          name: LANTURN
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          sprites:
+            - colosseum/lanturn-default.png
+            - colosseum/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    lanturn:
+      name: LANTURN
+      default: *gold-silver.pokemon.lanturn.default
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      experience: *gold-silver.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      stats: *ruby-sapphire.pokemon.lanturn.stats
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      abilities: *ruby-sapphire.pokemon.lanturn.abilities
+      genus: *gold-silver.pokemon.lanturn.genus
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      forms:
+        lanturn:
+          name: LANTURN
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          sprites:
+            - xd/lanturn-default.png
+            - xd/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    lanturn:
+      name: LANTURN
+      default: *gold-silver.pokemon.lanturn.default
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      experience: *gold-silver.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      stats: *ruby-sapphire.pokemon.lanturn.stats
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.lanturn.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.lanturn.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      abilities: *ruby-sapphire.pokemon.lanturn.abilities
+      genus: *gold-silver.pokemon.lanturn.genus
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      flavor_text:
+        firered: |
+          It blinds prey with an intense burst of
+          light, then swallows the immobilized prey
+          in a single gulp.
+        leafgreen: |
+          The light it emits is so bright that it can
+          illuminate the sea's surface from a depth
+          of over three miles.
+      forms:
+        lanturn:
+          name: LANTURN
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *ruby-sapphire.pokemon.lanturn.forms.lanturn.icon
+          sprites:
+            - firered-leafgreen/lanturn-default.png
+            - firered-leafgreen/back/lanturn-default.png
+            - firered-leafgreen/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Lanturn
+  position: &diamond-pearl.position 202
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lanturn:
+      genus: &diamond-pearl.pokemon.lanturn.genus 'Light Pokémon'
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      shape: &diamond-pearl.pokemon.lanturn.shape fish
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: &diamond-pearl.pokemon.lanturn.baby false
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      pal_park: &diamond-pearl.pokemon.lanturn.pal_park
+        area: sea
+        rate: 20
+        score: 70
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: &diamond-pearl.pokemon.lanturn.experience 161
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      stats: &diamond-pearl.pokemon.lanturn.stats
+        hp:
+          base_value: 125
+          effort_change: 2
+        attack:
+          base_value: 58
+          effort_change: 0
+        defense:
+          base_value: 58
+          effort_change: 0
+        speed:
+          base_value: 67
+          effort_change: 0
+        special-attack:
+          base_value: 76
+          effort_change: 0
+        special-defense:
+          base_value: 76
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.lanturn.abilities
+        volt-absorb: *ruby-sapphire.pokemon.lanturn.abilities.volt-absorb
+        illuminate: *ruby-sapphire.pokemon.lanturn.abilities.illuminate
+        water-absorb:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+          deepseascale: 5
+        pearl: *diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        diamond: |
+          LANTURN’s light can shine up from
+          great depths. It is nicknamed
+          “The Deep-Sea Star.”
+        pearl: |
+          LANTURN’s light can shine up from
+          great depths. It is nicknamed
+          “The Deep-Sea Star.”
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *ruby-sapphire.pokemon.lanturn.forms.lanturn.icon
+          sprites:
+            - diamond-pearl/lanturn-default.png
+            - diamond-pearl/back/lanturn-default.png
+            - diamond-pearl/back/shiny/lanturn-default.png
+            - diamond-pearl/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lanturn:
+      genus: *diamond-pearl.pokemon.lanturn.genus
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      shape: *diamond-pearl.pokemon.lanturn.shape
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: *diamond-pearl.pokemon.lanturn.baby
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lanturn.pal_park
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: *diamond-pearl.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      stats: *diamond-pearl.pokemon.lanturn.stats
+      abilities: *diamond-pearl.pokemon.lanturn.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        platinum: |
+          LANTURN’s light can shine up from
+          great depths. It is nicknamed
+          “The Deep-Sea Star.”
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *ruby-sapphire.pokemon.lanturn.forms.lanturn.icon
+          sprites:
+            - platinum/lanturn-default.png
+            - platinum/back/lanturn-default.png
+            - platinum/back/shiny/lanturn-default.png
+            - platinum/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 177
+  pokemon:
+    lanturn:
+      genus: *diamond-pearl.pokemon.lanturn.genus
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      shape: *diamond-pearl.pokemon.lanturn.shape
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: *diamond-pearl.pokemon.lanturn.baby
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lanturn.pal_park
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: *diamond-pearl.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      stats: *diamond-pearl.pokemon.lanturn.stats
+      abilities: *diamond-pearl.pokemon.lanturn.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        heartgold: |
+          The light it emits is so bright that
+          it can illuminate the sea’s surface
+          from a depth of over three miles.
+        soulsilver: |
+          It blinds prey with an intense burst of
+          light. With the prey incapacitated, the
+          Pokémon swallows it in a single gulp.
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 2-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.lanturn.forms.lanturn.icon
+          sprites:
+            - heartgold-soulsilver/lanturn-default.png
+            - heartgold-soulsilver/back/lanturn-default.png
+            - heartgold-soulsilver/back/shiny/lanturn-default.png
+            - heartgold-soulsilver/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lanturn:
+      genus: *diamond-pearl.pokemon.lanturn.genus
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      color: &black-white.pokemon.lanturn.color blue
+      shape: *diamond-pearl.pokemon.lanturn.shape
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: *diamond-pearl.pokemon.lanturn.baby
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: *diamond-pearl.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      stats: *diamond-pearl.pokemon.lanturn.stats
+      abilities: *diamond-pearl.pokemon.lanturn.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        black: |
+          Lanturn’s light can shine up from
+          great depths. It is nicknamed
+          “The Deep-Sea Star.”
+        white: |
+          Lanturn’s light can shine up from
+          great depths. It is nicknamed
+          “The Deep-Sea Star.”
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *ruby-sapphire.pokemon.lanturn.forms.lanturn.icon
+          sprites:
+            - black-white/lanturn-default.png
+            - black-white/back/lanturn-default.png
+            - black-white/back/shiny/lanturn-default.png
+            - black-white/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lanturn:
+      genus: *diamond-pearl.pokemon.lanturn.genus
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      color: *black-white.pokemon.lanturn.color
+      shape: *diamond-pearl.pokemon.lanturn.shape
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: *diamond-pearl.pokemon.lanturn.baby
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: *diamond-pearl.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      stats: *diamond-pearl.pokemon.lanturn.stats
+      abilities: *diamond-pearl.pokemon.lanturn.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.lanturn.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        black-2: |
+          Lanturn’s light can shine up from
+          great depths. It is nicknamed
+          “The Deep-Sea Star.”
+        white-2: |
+          Lanturn’s light can shine up from
+          great depths. It is nicknamed
+          “The Deep-Sea Star.”
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *ruby-sapphire.pokemon.lanturn.forms.lanturn.icon
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *gold-silver.pokemon.lanturn.forms.lanturn.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-coastal: 148
+  pokemon:
+    lanturn:
+      genus: *diamond-pearl.pokemon.lanturn.genus
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      color: *black-white.pokemon.lanturn.color
+      shape: *diamond-pearl.pokemon.lanturn.shape
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: *diamond-pearl.pokemon.lanturn.baby
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: *diamond-pearl.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      mega: &x-y.pokemon.lanturn.mega false
+      stats: *diamond-pearl.pokemon.lanturn.stats
+      abilities: *diamond-pearl.pokemon.lanturn.abilities
+      wild_held_items:
+        x: &x-y.pokemon.lanturn.wild_held_items.x
+          deep-sea-scale: 5
+        'y': *x-y.pokemon.lanturn.wild_held_items.x
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        x: |
+          Lanturn’s light can shine up from great depths.
+          It is nicknamed “The Deep-Sea Star.”
+        'y': |
+          It blinds prey with an intense burst of light.
+          With the prey incapacitated, the Pokémon
+          swallows it in a single gulp.
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: &x-y.pokemon.lanturn.forms.lanturn.icon lanturn-default.png
+          sprites:
+            - x-y/lanturn-default.png
+            - x-y/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: &x-y.pokemon.lanturn.forms.lanturn.cry lanturn-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-hoenn: 191
+  pokemon:
+    lanturn:
+      genus: *diamond-pearl.pokemon.lanturn.genus
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      color: *black-white.pokemon.lanturn.color
+      shape: *diamond-pearl.pokemon.lanturn.shape
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: *diamond-pearl.pokemon.lanturn.baby
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: *diamond-pearl.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      mega: *x-y.pokemon.lanturn.mega
+      stats: *diamond-pearl.pokemon.lanturn.stats
+      abilities: *diamond-pearl.pokemon.lanturn.abilities
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Lanturn is nicknamed “the deep-sea star” for its illuminated
+          antenna. This Pokémon produces light by causing a chemical
+          reaction between bacteria and its bodily fluids inside
+          the antenna.
+        alpha-sapphire: |
+          Lanturn is known to emit light. If you peer down into the dark
+          sea from a ship at night, you can sometimes see this
+          Pokémon’s light rising from the depths where it swims. It gives
+          the sea an appearance of a starlit night.
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *x-y.pokemon.lanturn.forms.lanturn.icon
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *x-y.pokemon.lanturn.forms.lanturn.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/lanturn-default.png
+            - omega-ruby-alpha-sapphire/shiny/lanturn-default.png
+      wild_held_items:
+        omega-ruby: *x-y.pokemon.lanturn.wild_held_items.x
+        alpha-sapphire: *x-y.pokemon.lanturn.wild_held_items.x
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 202
+    original-akala: 129
+  pokemon:
+    lanturn:
+      genus: *diamond-pearl.pokemon.lanturn.genus
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      color: *black-white.pokemon.lanturn.color
+      shape: *diamond-pearl.pokemon.lanturn.shape
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: *diamond-pearl.pokemon.lanturn.baby
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: *diamond-pearl.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      mega: *x-y.pokemon.lanturn.mega
+      stats: *diamond-pearl.pokemon.lanturn.stats
+      abilities: *diamond-pearl.pokemon.lanturn.abilities
+      wild_held_items:
+        sun: *x-y.pokemon.lanturn.wild_held_items.x
+        moon: *x-y.pokemon.lanturn.wild_held_items.x
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        sun: |-
+          Should you peer into the ocean at night and see
+          a light shining like the stars, that is Lanturn.
+        moon: |-
+          This Pokémon flashes a bright light that blinds
+          its prey. This creates an opening for it to deliver
+          an electrical attack.
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *x-y.pokemon.lanturn.forms.lanturn.icon
+          sprites:
+            - sun-moon/lanturn-default.png
+            - sun-moon/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *x-y.pokemon.lanturn.forms.lanturn.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 258
+    updated-akala: 159
+  pokemon:
+    lanturn:
+      genus: *diamond-pearl.pokemon.lanturn.genus
+      evolution_parent: *gold-silver.pokemon.lanturn.evolution_parent
+      color: *black-white.pokemon.lanturn.color
+      shape: *diamond-pearl.pokemon.lanturn.shape
+      female_rate: *gold-silver.pokemon.lanturn.female_rate
+      capture_rate: *gold-silver.pokemon.lanturn.capture_rate
+      happiness: *ruby-sapphire.pokemon.lanturn.happiness
+      baby: *diamond-pearl.pokemon.lanturn.baby
+      hatch_steps: *gold-silver.pokemon.lanturn.hatch_steps
+      growth_rate: *gold-silver.pokemon.lanturn.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lanturn.forms_switchable
+      name: Lanturn
+      default: *gold-silver.pokemon.lanturn.default
+      height: *ruby-sapphire.pokemon.lanturn.height
+      weight: *ruby-sapphire.pokemon.lanturn.weight
+      experience: *diamond-pearl.pokemon.lanturn.experience
+      types: *gold-silver.pokemon.lanturn.types
+      egg_groups: *gold-silver.pokemon.lanturn.egg_groups
+      mega: *x-y.pokemon.lanturn.mega
+      stats: *diamond-pearl.pokemon.lanturn.stats
+      abilities: *diamond-pearl.pokemon.lanturn.abilities
+      wild_held_items:
+        ultra-sun: *x-y.pokemon.lanturn.wild_held_items.x
+        ultra-moon: *x-y.pokemon.lanturn.wild_held_items.x
+      evolution_conditions: *gold-silver.pokemon.lanturn.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          When the bacteria living inside its antennae
+          absorb Lanturn’s bodily fluids, a strong
+          luminescent effect is produced.
+        ultra-moon: |-
+          It lives far down in the depths of the ocean. It
+          blinds its prey with light, using the moment
+          they’re dazzled to swallow them whole.
+      forms:
+        lanturn:
+          name: Lanturn
+          form_name: *gold-silver.pokemon.lanturn.forms.lanturn.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.lanturn.forms.lanturn.battle_only
+          icon: *x-y.pokemon.lanturn.forms.lanturn.icon
+          sprites:
+            - ultra-sun-ultra-moon/lanturn-default.png
+            - ultra-sun-ultra-moon/shiny/lanturn-default.png
+          art: *gold-silver.pokemon.lanturn.forms.lanturn.art
+          footprint: *ruby-sapphire.pokemon.lanturn.forms.lanturn.footprint
+          cry: *x-y.pokemon.lanturn.forms.lanturn.cry

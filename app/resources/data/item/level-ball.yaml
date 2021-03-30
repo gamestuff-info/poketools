@@ -1,0 +1,57 @@
+gold-silver: &gold-silver
+  name: 'LEVEL BALL'
+  pocket: &gold-silver.pocket pokeballs
+  buy: 150
+  sell: 75
+  flavor_text: |
+    A BALL for lower-
+    level POKéMON.
+  category: &gold-silver.category apricorn-balls
+  short_description: &gold-silver.short_description 'Success rate based off of fraction target Pokémon is of user''s Pokémon. Made from []{item:red-apricorn}.'
+  description: &gold-silver.description |
+    Made from []{item:red-apricorn}.
+
+    Used by trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    Below are the catch rate modifiers depending on the relationship between the user's Pokémon and the wild Pokémon:
+
+    | Catch Rate | Level         |
+    | ---------- | ------------- |
+    | 8&times;   | &ge; 4&times; |
+    | 4&times;   | &gt; 2&times; |
+    | 2&times;   | &gt; 1&times; |
+    | 1&times;   | &le; 1&times; |
+crystal: *gold-silver
+heartgold-soulsilver:
+  name: &heartgold-soulsilver.name 'Level Ball'
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A Poké Ball for catching Pokémon that
+    are a lower level than your own.
+  icon: &heartgold-soulsilver.icon level-ball.png
+sun-moon: &sun-moon
+  name: *heartgold-soulsilver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: 'Success rate based off of fraction target Pokémon is of user''s Pokémon.'
+  description: |
+    Used by trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    Below are the catch rate modifiers depending on the relationship between the user's Pokémon and the wild Pokémon:
+
+    | Catch Rate | Level         |
+    | ---------- | ------------- |
+    | 8&times;   | &ge; 4&times; |
+    | 4&times;   | &gt; 2&times; |
+    | 2&times;   | &gt; 1&times; |
+    | 1&times;   | &le; 1&times; |
+  flavor_text: |
+    A Poké Ball that makes it easier to catch Pokémon
+    that are at a lower level than your own Pokémon.
+  icon: *heartgold-soulsilver.icon
+ultra-sun-ultra-moon: *sun-moon

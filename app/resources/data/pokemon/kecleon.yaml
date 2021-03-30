@@ -1,0 +1,720 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name KECLEON
+  position: &ruby-sapphire.position 352
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 352
+    hoenn: 145
+  pokemon:
+    kecleon:
+      name: KECLEON
+      default: &ruby-sapphire.pokemon.kecleon.default true
+      forms_switchable: &ruby-sapphire.pokemon.kecleon.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.kecleon.capture_rate 200
+      experience: &ruby-sapphire.pokemon.kecleon.experience 132
+      types: &ruby-sapphire.pokemon.kecleon.types
+        - normal
+      stats: &ruby-sapphire.pokemon.kecleon.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 1
+        special-defense:
+          base_value: 60
+          effort_change: 1
+      growth_rate: &ruby-sapphire.pokemon.kecleon.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.kecleon.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.kecleon.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.kecleon.egg_groups
+        - ground
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+          persim-berry: 5
+        sapphire: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.kecleon.happiness 70
+      abilities: &ruby-sapphire.pokemon.kecleon.abilities
+        color-change: &ruby-sapphire.pokemon.kecleon.abilities.color-change
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.kecleon.genus 'COLOR SWAP Pokémon'
+      height: &ruby-sapphire.pokemon.kecleon.height 10
+      weight: &ruby-sapphire.pokemon.kecleon.weight 220
+      flavor_text:
+        ruby: |
+          KECLEON is capable of changing its body
+          colors at will to blend in with its
+          surroundings.
+          There is one exception - this POKéMON
+          can't change the zigzag pattern on its
+          belly.
+        sapphire: |
+          KECLEON alters its body coloration to
+          blend in with its surroundings,  allowing
+          it to sneak up on its prey unnoticed.
+          Then it lashes out with its long,
+          stretchy tongue to instantly ensnare
+          the unsuspecting target.
+      forms:
+        kecleon:
+          name: KECLEON
+          form_name: &ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only false
+          icon: &ruby-sapphire.pokemon.kecleon.forms.kecleon.icon gen5/kecleon-default.png
+          sprites:
+            - ruby-sapphire/kecleon-default.png
+            - ruby-sapphire/back/kecleon-default.png
+            - ruby-sapphire/shiny/kecleon-default.png
+          art: &ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+            - kecleon-default.png
+          footprint: &ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint kecleon.png
+          cry: &ruby-sapphire.pokemon.kecleon.forms.kecleon.cry gen5/kecleon-default.webm
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    kecleon:
+      name: KECLEON
+      default: *ruby-sapphire.pokemon.kecleon.default
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      experience: *ruby-sapphire.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      stats: *ruby-sapphire.pokemon.kecleon.stats
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      genus: *ruby-sapphire.pokemon.kecleon.genus
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      flavor_text:
+        emerald: |
+          A POKéMON that has the ability to alter its
+          body colors to match its surroundings.
+          A KECLEON reverts to its original colors if
+          it is startled.
+      forms:
+        kecleon:
+          name: KECLEON
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *ruby-sapphire.pokemon.kecleon.forms.kecleon.icon
+          sprites:
+            - emerald/kecleon-default.png
+            - emerald/shiny/kecleon-default.png
+            - emerald/animated/kecleon-default.webm
+            - emerald/animated/shiny/kecleon-default.webm
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 151
+  pokemon:
+    kecleon:
+      name: KECLEON
+      default: *ruby-sapphire.pokemon.kecleon.default
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      experience: *ruby-sapphire.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      stats: *ruby-sapphire.pokemon.kecleon.stats
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      genus: *ruby-sapphire.pokemon.kecleon.genus
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      forms:
+        kecleon:
+          name: KECLEON
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          sprites:
+            - colosseum/kecleon-default.png
+            - colosseum/shiny/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    kecleon:
+      name: KECLEON
+      default: *ruby-sapphire.pokemon.kecleon.default
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      experience: *ruby-sapphire.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      stats: *ruby-sapphire.pokemon.kecleon.stats
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      genus: *ruby-sapphire.pokemon.kecleon.genus
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      forms:
+        kecleon:
+          name: KECLEON
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          sprites:
+            - xd/kecleon-default.png
+            - xd/shiny/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    kecleon:
+      name: KECLEON
+      default: *ruby-sapphire.pokemon.kecleon.default
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      experience: *ruby-sapphire.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      stats: *ruby-sapphire.pokemon.kecleon.stats
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      genus: *ruby-sapphire.pokemon.kecleon.genus
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      flavor_text:
+        firered: |
+          It changes body color to blend in with
+          its surroundings. It also changes color if
+          it is happy or sad.
+        leafgreen: |
+          It changes body color to blend in with
+          its surroundings. It also changes color if
+          it is happy or sad.
+      forms:
+        kecleon:
+          name: KECLEON
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *ruby-sapphire.pokemon.kecleon.forms.kecleon.icon
+          sprites:
+            - firered-leafgreen/kecleon-default.png
+            - firered-leafgreen/back/kecleon-default.png
+            - firered-leafgreen/shiny/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+diamond-pearl:
+  name: &diamond-pearl.name Kecleon
+  position: &diamond-pearl.position 380
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    kecleon:
+      genus: &diamond-pearl.pokemon.kecleon.genus 'Color Swap Pokémon'
+      shape: &diamond-pearl.pokemon.kecleon.shape upright
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: &diamond-pearl.pokemon.kecleon.baby false
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      pal_park: &diamond-pearl.pokemon.kecleon.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: &diamond-pearl.pokemon.kecleon.experience 154
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      stats: &diamond-pearl.pokemon.kecleon.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 120
+          effort_change: 1
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          It can freely change its body’s
+          color. The zigzag pattern on its
+          belly doesn’t change, however.
+        pearl: |
+          It can freely change its body’s
+          color. The zigzag pattern on its
+          belly doesn’t change, however.
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *ruby-sapphire.pokemon.kecleon.forms.kecleon.icon
+          sprites:
+            - diamond-pearl/back/shiny/kecleon-default.png
+            - diamond-pearl/back/kecleon-default.png
+            - diamond-pearl/shiny/kecleon-default.png
+            - diamond-pearl/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    kecleon:
+      genus: *diamond-pearl.pokemon.kecleon.genus
+      shape: *diamond-pearl.pokemon.kecleon.shape
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: *diamond-pearl.pokemon.kecleon.baby
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      pal_park: *diamond-pearl.pokemon.kecleon.pal_park
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: *diamond-pearl.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      stats: *diamond-pearl.pokemon.kecleon.stats
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          It can freely change its body’s
+          color. The zigzag pattern on its
+          belly doesn’t change, however.
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *ruby-sapphire.pokemon.kecleon.forms.kecleon.icon
+          sprites:
+            - platinum/back/shiny/kecleon-default.png
+            - platinum/back/kecleon-default.png
+            - platinum/shiny/kecleon-default.png
+            - platinum/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    kecleon:
+      genus: *diamond-pearl.pokemon.kecleon.genus
+      shape: *diamond-pearl.pokemon.kecleon.shape
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: *diamond-pearl.pokemon.kecleon.baby
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      pal_park: *diamond-pearl.pokemon.kecleon.pal_park
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: *diamond-pearl.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      stats: *diamond-pearl.pokemon.kecleon.stats
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          It changes its shading to match its
+          surroundings so it can sneak up on prey.
+          Only its belly patterns stay fixed.
+        soulsilver: |
+          It changes its shading to match its
+          surroundings so it can sneak up on prey.
+          Only its belly patterns stay fixed.
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 1-5
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.kecleon.forms.kecleon.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/kecleon-default.png
+            - heartgold-soulsilver/back/kecleon-default.png
+            - heartgold-soulsilver/shiny/kecleon-default.png
+            - heartgold-soulsilver/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    kecleon:
+      genus: *diamond-pearl.pokemon.kecleon.genus
+      color: &black-white.pokemon.kecleon.color green
+      shape: *diamond-pearl.pokemon.kecleon.shape
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: *diamond-pearl.pokemon.kecleon.baby
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: *diamond-pearl.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      stats: *diamond-pearl.pokemon.kecleon.stats
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+      flavor_text:
+        black: |
+          It can freely change its body’s
+          color. The zigzag pattern on its
+          belly doesn’t change, however.
+        white: |
+          It can freely change its body’s
+          color. The zigzag pattern on its
+          belly doesn’t change, however.
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *ruby-sapphire.pokemon.kecleon.forms.kecleon.icon
+          sprites:
+            - black-white/back/shiny/kecleon-default.png
+            - black-white/back/kecleon-default.png
+            - black-white/shiny/kecleon-default.png
+            - black-white/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    kecleon:
+      genus: *diamond-pearl.pokemon.kecleon.genus
+      color: *black-white.pokemon.kecleon.color
+      shape: *diamond-pearl.pokemon.kecleon.shape
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: *diamond-pearl.pokemon.kecleon.baby
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: *diamond-pearl.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      stats: *diamond-pearl.pokemon.kecleon.stats
+      abilities: *ruby-sapphire.pokemon.kecleon.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.kecleon.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          It can freely change its body’s
+          color. The zigzag pattern on its
+          belly doesn’t change, however.
+        white-2: |
+          It can freely change its body’s
+          color. The zigzag pattern on its
+          belly doesn’t change, however.
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *ruby-sapphire.pokemon.kecleon.forms.kecleon.icon
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *ruby-sapphire.pokemon.kecleon.forms.kecleon.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-central: 116
+  pokemon:
+    kecleon:
+      genus: *diamond-pearl.pokemon.kecleon.genus
+      color: *black-white.pokemon.kecleon.color
+      shape: *diamond-pearl.pokemon.kecleon.shape
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: *diamond-pearl.pokemon.kecleon.baby
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: *diamond-pearl.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      mega: &x-y.pokemon.kecleon.mega false
+      stats: *diamond-pearl.pokemon.kecleon.stats
+      abilities: &x-y.pokemon.kecleon.abilities
+        color-change: *ruby-sapphire.pokemon.kecleon.abilities.color-change
+        protean:
+          hidden: true
+          position: 3
+      flavor_text:
+        x: |
+          It can freely change its body’s color. The zigzag
+          pattern on its belly doesn’t change, however.
+        'y': |
+          It changes its shading to match its surroundings
+          so it can sneak up on prey. Only its belly patterns
+          stay fixed.
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: &x-y.pokemon.kecleon.forms.kecleon.icon kecleon-default.png
+          sprites:
+            - x-y/shiny/kecleon-default.png
+            - x-y/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: &x-y.pokemon.kecleon.forms.kecleon.cry kecleon-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 150
+  pokemon:
+    kecleon:
+      genus: *diamond-pearl.pokemon.kecleon.genus
+      color: *black-white.pokemon.kecleon.color
+      shape: *diamond-pearl.pokemon.kecleon.shape
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: *diamond-pearl.pokemon.kecleon.baby
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: *diamond-pearl.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      mega: *x-y.pokemon.kecleon.mega
+      stats: *diamond-pearl.pokemon.kecleon.stats
+      abilities: *x-y.pokemon.kecleon.abilities
+      flavor_text:
+        omega-ruby: |
+          Kecleon is capable of changing its body colors at will to blend
+          in with its surroundings. There is one exception—this Pokémon
+          can’t change the zigzag pattern on its belly.
+        alpha-sapphire: |
+          Kecleon alters its body coloration to blend in with its
+          surroundings, allowing it to sneak up on its prey unnoticed.
+          Then it lashes out with its long, stretchy tongue to instantly
+          ensnare the unsuspecting target.
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *x-y.pokemon.kecleon.forms.kecleon.icon
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *x-y.pokemon.kecleon.forms.kecleon.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/kecleon-default.png
+            - omega-ruby-alpha-sapphire/shiny/kecleon-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    kecleon:
+      genus: *diamond-pearl.pokemon.kecleon.genus
+      color: *black-white.pokemon.kecleon.color
+      shape: *diamond-pearl.pokemon.kecleon.shape
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: *diamond-pearl.pokemon.kecleon.baby
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: *diamond-pearl.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      mega: *x-y.pokemon.kecleon.mega
+      stats: *diamond-pearl.pokemon.kecleon.stats
+      abilities: *x-y.pokemon.kecleon.abilities
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *x-y.pokemon.kecleon.forms.kecleon.icon
+          sprites:
+            - sun-moon/shiny/kecleon-default.png
+            - sun-moon/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *x-y.pokemon.kecleon.forms.kecleon.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 214
+    updated-akala: 115
+  pokemon:
+    kecleon:
+      genus: *diamond-pearl.pokemon.kecleon.genus
+      color: *black-white.pokemon.kecleon.color
+      shape: *diamond-pearl.pokemon.kecleon.shape
+      female_rate: *ruby-sapphire.pokemon.kecleon.female_rate
+      capture_rate: *ruby-sapphire.pokemon.kecleon.capture_rate
+      happiness: *ruby-sapphire.pokemon.kecleon.happiness
+      baby: *diamond-pearl.pokemon.kecleon.baby
+      hatch_steps: *ruby-sapphire.pokemon.kecleon.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.kecleon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kecleon.forms_switchable
+      name: Kecleon
+      default: *ruby-sapphire.pokemon.kecleon.default
+      height: *ruby-sapphire.pokemon.kecleon.height
+      weight: *ruby-sapphire.pokemon.kecleon.weight
+      experience: *diamond-pearl.pokemon.kecleon.experience
+      types: *ruby-sapphire.pokemon.kecleon.types
+      egg_groups: *ruby-sapphire.pokemon.kecleon.egg_groups
+      mega: *x-y.pokemon.kecleon.mega
+      stats: *diamond-pearl.pokemon.kecleon.stats
+      abilities: *x-y.pokemon.kecleon.abilities
+      flavor_text:
+        ultra-sun: |-
+          It changes its hue to blend into its surroundings.
+          If no one takes notice of it for too long, it will
+          pout and never reveal itself.
+        ultra-moon: |-
+          Its color changes for concealment and also
+          when its mood or health changes. The darker
+          the color, the healthier it is.
+      forms:
+        kecleon:
+          name: Kecleon
+          form_name: *ruby-sapphire.pokemon.kecleon.forms.kecleon.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.kecleon.forms.kecleon.battle_only
+          icon: *x-y.pokemon.kecleon.forms.kecleon.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/kecleon-default.png
+            - ultra-sun-ultra-moon/kecleon-default.png
+          art: *ruby-sapphire.pokemon.kecleon.forms.kecleon.art
+          footprint: *ruby-sapphire.pokemon.kecleon.forms.kecleon.footprint
+          cry: *x-y.pokemon.kecleon.forms.kecleon.cry

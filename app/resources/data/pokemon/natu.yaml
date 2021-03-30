@@ -1,0 +1,809 @@
+gold-silver:
+  name: &gold-silver.name NATU
+  position: &gold-silver.position 176
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 177
+    original-johto: 158
+    original-johto-abc: 127
+  pokemon:
+    natu:
+      name: NATU
+      default: &gold-silver.pokemon.natu.default true
+      capture_rate: &gold-silver.pokemon.natu.capture_rate 190
+      experience: &gold-silver.pokemon.natu.experience 73
+      types: &gold-silver.pokemon.natu.types
+        - psychic
+        - flying
+      stats: &gold-silver.pokemon.natu.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 50
+          effort_change: 50
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 70
+          effort_change: 70
+        special-attack:
+          base_value: 70
+          effort_change: 70
+        special-defense:
+          base_value: 45
+          effort_change: 70
+      growth_rate: &gold-silver.pokemon.natu.growth_rate medium
+      female_rate: &gold-silver.pokemon.natu.female_rate 50
+      hatch_steps: &gold-silver.pokemon.natu.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.natu.egg_groups
+        - flying
+      genus: 'LITTLEBIRD Pokémon'
+      height: &gold-silver.pokemon.natu.height 2
+      weight: &gold-silver.pokemon.natu.weight 18
+      flavor_text:
+        gold: |
+          Because its wings
+          aren't yet fully
+          grown, it has to
+          hop to get around.
+          It is always star-
+          ing at something.
+        silver: |
+          It usually forages
+          for food on the
+          ground but may, on
+          rare occasions,
+          hop onto branches
+          to peck at shoots.
+      forms:
+        natu:
+          name: NATU
+          form_name: &gold-silver.pokemon.natu.forms.natu.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.natu.forms.natu.battle_only false
+          sprites:
+            - gold-silver/natu-default.png
+            - gold-silver/back/natu-default.png
+            - gold-silver/shiny/natu-default.png
+          art: &gold-silver.pokemon.natu.forms.natu.art
+            - natu-default.png
+          cry: &gold-silver.pokemon.natu.forms.natu.cry gen5/natu-default.webm
+          icon: &gold-silver.pokemon.natu.forms.natu.icon gen2/bird.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    natu:
+      name: NATU
+      default: *gold-silver.pokemon.natu.default
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      experience: *gold-silver.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      stats: *gold-silver.pokemon.natu.stats
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      genus: 'LITTLE BIRD Pokémon'
+      height: *gold-silver.pokemon.natu.height
+      weight: *gold-silver.pokemon.natu.weight
+      flavor_text:
+        crystal: |
+          It is extremely
+          good at climbing
+          tree trunks and
+          likes to eat the
+          new sprouts on
+          the trees.
+      forms:
+        natu:
+          name: NATU
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          sprites:
+            - crystal/natu-default.png
+            - crystal/back/natu-default.png
+            - crystal/shiny/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+          icon: *gold-silver.pokemon.natu.forms.natu.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 177
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 162
+  pokemon:
+    natu:
+      name: NATU
+      default: *gold-silver.pokemon.natu.default
+      forms_switchable: &ruby-sapphire.pokemon.natu.forms_switchable false
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      experience: *gold-silver.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      stats: &ruby-sapphire.pokemon.natu.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 70
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      happiness: &ruby-sapphire.pokemon.natu.happiness 70
+      abilities: &ruby-sapphire.pokemon.natu.abilities
+        synchronize: &ruby-sapphire.pokemon.natu.abilities.synchronize
+          hidden: &ruby-sapphire.pokemon.natu.abilities.synchronize.hidden false
+          position: 1
+        early-bird: &ruby-sapphire.pokemon.natu.abilities.early-bird
+          hidden: *ruby-sapphire.pokemon.natu.abilities.synchronize.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.natu.genus 'TINY BIRD Pokémon'
+      height: *gold-silver.pokemon.natu.height
+      weight: &ruby-sapphire.pokemon.natu.weight 20
+      flavor_text:
+        ruby: |
+          NATU cannot fly because its wings are
+          not yet fully grown. If your eyes meet
+          with this POKéMON's eyes, it will stare
+          back intently at you.  But if you move
+          even slightly, it will hop away to safety.
+        sapphire: |
+          NATU has a highly developed jumping
+          ability. The POKéMON flaps and leaps
+          onto tree branches that are taller than
+          grown-up people to pick at the tree's
+          new shoots.
+      forms:
+        natu:
+          name: NATU
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: &ruby-sapphire.pokemon.natu.forms.natu.icon gen5/natu-default.png
+          sprites:
+            - ruby-sapphire/natu-default.png
+            - ruby-sapphire/back/natu-default.png
+            - ruby-sapphire/shiny/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: &ruby-sapphire.pokemon.natu.forms.natu.footprint natu.png
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    natu:
+      name: NATU
+      default: *gold-silver.pokemon.natu.default
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      experience: *gold-silver.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      stats: *ruby-sapphire.pokemon.natu.stats
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      abilities: *ruby-sapphire.pokemon.natu.abilities
+      genus: *ruby-sapphire.pokemon.natu.genus
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      flavor_text:
+        emerald: |
+          It runs up short trees that grow on the
+          savanna to peck at new shoots.
+          A NATU's eyes look as if they are
+          always observing something.
+      forms:
+        natu:
+          name: NATU
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *ruby-sapphire.pokemon.natu.forms.natu.icon
+          sprites:
+            - emerald/natu-default.png
+            - emerald/shiny/natu-default.png
+            - emerald/animated/natu-default.webm
+            - emerald/animated/shiny/natu-default.webm
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 214
+  pokemon:
+    natu:
+      name: NATU
+      default: *gold-silver.pokemon.natu.default
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      experience: 100663369
+      types: *gold-silver.pokemon.natu.types
+      stats: *ruby-sapphire.pokemon.natu.stats
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      abilities: *ruby-sapphire.pokemon.natu.abilities
+      genus: *ruby-sapphire.pokemon.natu.genus
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      forms:
+        natu:
+          name: NATU
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          sprites:
+            - colosseum/natu-default.png
+            - colosseum/shiny/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    natu:
+      name: NATU
+      default: *gold-silver.pokemon.natu.default
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      experience: *gold-silver.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      stats: *ruby-sapphire.pokemon.natu.stats
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      abilities: *ruby-sapphire.pokemon.natu.abilities
+      genus: *ruby-sapphire.pokemon.natu.genus
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      forms:
+        natu:
+          name: NATU
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          sprites:
+            - xd/natu-default.png
+            - xd/shiny/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    natu:
+      name: NATU
+      default: *gold-silver.pokemon.natu.default
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      experience: *gold-silver.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      stats: *ruby-sapphire.pokemon.natu.stats
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      abilities: *ruby-sapphire.pokemon.natu.abilities
+      genus: *ruby-sapphire.pokemon.natu.genus
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      flavor_text:
+        firered: |
+          It usually forages for food on the ground
+          but may, on rare occasions,  hop onto
+          branches to peck at shoots.
+        leafgreen: |
+          Because its wings aren't yet fully grown,
+          it has to hop to get around. It is always
+          staring at something.
+      forms:
+        natu:
+          name: NATU
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *ruby-sapphire.pokemon.natu.forms.natu.icon
+          sprites:
+            - firered-leafgreen/natu-default.png
+            - firered-leafgreen/back/natu-default.png
+            - firered-leafgreen/shiny/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+diamond-pearl:
+  name: &diamond-pearl.name Natu
+  position: &diamond-pearl.position 206
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    natu:
+      genus: &diamond-pearl.pokemon.natu.genus 'Tiny Bird Pokémon'
+      shape: &diamond-pearl.pokemon.natu.shape wings
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: &diamond-pearl.pokemon.natu.baby false
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      pal_park: &diamond-pearl.pokemon.natu.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: &diamond-pearl.pokemon.natu.experience 64
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      stats: &diamond-pearl.pokemon.natu.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 70
+          effort_change: 1
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.natu.abilities
+      flavor_text:
+        diamond: |
+          It picks food from cactus plants,
+          deftly avoiding buds and spines.
+          It seems to skip about to move.
+        pearl: |
+          It picks food from cactus plants,
+          deftly avoiding buds and spines.
+          It seems to skip about to move.
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *ruby-sapphire.pokemon.natu.forms.natu.icon
+          sprites:
+            - diamond-pearl/back/shiny/natu-default.png
+            - diamond-pearl/back/natu-default.png
+            - diamond-pearl/shiny/natu-default.png
+            - diamond-pearl/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    natu:
+      genus: *diamond-pearl.pokemon.natu.genus
+      shape: *diamond-pearl.pokemon.natu.shape
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: *diamond-pearl.pokemon.natu.baby
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      pal_park: *diamond-pearl.pokemon.natu.pal_park
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: *diamond-pearl.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      stats: *diamond-pearl.pokemon.natu.stats
+      abilities: *ruby-sapphire.pokemon.natu.abilities
+      flavor_text:
+        platinum: |
+          It picks food from cactus plants,
+          deftly avoiding buds and spines.
+          It seems to skip about to move.
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *ruby-sapphire.pokemon.natu.forms.natu.icon
+          sprites:
+            - platinum/back/shiny/natu-default.png
+            - platinum/back/natu-default.png
+            - platinum/shiny/natu-default.png
+            - platinum/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 161
+  pokemon:
+    natu:
+      genus: *diamond-pearl.pokemon.natu.genus
+      shape: *diamond-pearl.pokemon.natu.shape
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: *diamond-pearl.pokemon.natu.baby
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      pal_park: *diamond-pearl.pokemon.natu.pal_park
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: *diamond-pearl.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      stats: *diamond-pearl.pokemon.natu.stats
+      abilities: *ruby-sapphire.pokemon.natu.abilities
+      flavor_text:
+        heartgold: |
+          Because its wings aren’t yet fully
+          grown, it has to hop to get around.
+          It is always staring at something.
+        soulsilver: |
+          It usually forages for food on the
+          ground but may, on rare occasions,
+          hop onto branches to peck at shoots.
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-4
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.natu.forms.natu.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/natu-default.png
+            - heartgold-soulsilver/back/natu-default.png
+            - heartgold-soulsilver/shiny/natu-default.png
+            - heartgold-soulsilver/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    natu:
+      genus: *diamond-pearl.pokemon.natu.genus
+      color: &black-white.pokemon.natu.color green
+      shape: *diamond-pearl.pokemon.natu.shape
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: *diamond-pearl.pokemon.natu.baby
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: *diamond-pearl.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      stats: *diamond-pearl.pokemon.natu.stats
+      abilities: &black-white.pokemon.natu.abilities
+        synchronize: *ruby-sapphire.pokemon.natu.abilities.synchronize
+        early-bird: *ruby-sapphire.pokemon.natu.abilities.early-bird
+        magic-bounce:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It picks food from cactus plants,
+          deftly avoiding buds and spines.
+          It seems to skip about to move.
+        white: |
+          It picks food from cactus plants,
+          deftly avoiding buds and spines.
+          It seems to skip about to move.
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *ruby-sapphire.pokemon.natu.forms.natu.icon
+          sprites:
+            - black-white/back/shiny/natu-default.png
+            - black-white/back/natu-default.png
+            - black-white/shiny/natu-default.png
+            - black-white/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    natu:
+      genus: *diamond-pearl.pokemon.natu.genus
+      color: *black-white.pokemon.natu.color
+      shape: *diamond-pearl.pokemon.natu.shape
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: *diamond-pearl.pokemon.natu.baby
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: *diamond-pearl.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      stats: *diamond-pearl.pokemon.natu.stats
+      abilities: *black-white.pokemon.natu.abilities
+      flavor_text:
+        black-2: |
+          It picks food from cactus plants,
+          deftly avoiding buds and spines.
+          It seems to skip about to move.
+        white-2: |
+          It picks food from cactus plants,
+          deftly avoiding buds and spines.
+          It seems to skip about to move.
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *ruby-sapphire.pokemon.natu.forms.natu.icon
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *gold-silver.pokemon.natu.forms.natu.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    natu:
+      genus: *diamond-pearl.pokemon.natu.genus
+      color: *black-white.pokemon.natu.color
+      shape: *diamond-pearl.pokemon.natu.shape
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: *diamond-pearl.pokemon.natu.baby
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: *diamond-pearl.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      mega: &x-y.pokemon.natu.mega false
+      stats: *diamond-pearl.pokemon.natu.stats
+      abilities: *black-white.pokemon.natu.abilities
+      flavor_text:
+        x: |
+          Because its wings aren’t yet fully grown, it has
+          to hop to get around. It is always staring
+          at something.
+        'y': |
+          It usually forages for food on the ground but may,
+          on rare occasions, hop onto branches to peck
+          at shoots.
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: &x-y.pokemon.natu.forms.natu.icon natu-default.png
+          sprites:
+            - x-y/shiny/natu-default.png
+            - x-y/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: &x-y.pokemon.natu.forms.natu.cry natu-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-hoenn: 169
+  pokemon:
+    natu:
+      genus: *diamond-pearl.pokemon.natu.genus
+      color: *black-white.pokemon.natu.color
+      shape: *diamond-pearl.pokemon.natu.shape
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: *diamond-pearl.pokemon.natu.baby
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: *diamond-pearl.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      mega: *x-y.pokemon.natu.mega
+      stats: *diamond-pearl.pokemon.natu.stats
+      abilities: *black-white.pokemon.natu.abilities
+      flavor_text:
+        omega-ruby: |
+          Natu cannot fly because its wings are not yet fully grown.
+          If your eyes meet with this Pokémon’s eyes, it will stare back
+          intently at you. But if you move even slightly, it will hop away
+          to safety.
+        alpha-sapphire: |
+          Natu has a highly developed jumping ability. The Pokémon
+          flaps and leaps onto tree branches that are taller than
+          grown-up people to pick at the tree’s new shoots.
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *x-y.pokemon.natu.forms.natu.icon
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *x-y.pokemon.natu.forms.natu.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/natu-default.png
+            - omega-ruby-alpha-sapphire/shiny/natu-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    natu:
+      genus: *diamond-pearl.pokemon.natu.genus
+      color: *black-white.pokemon.natu.color
+      shape: *diamond-pearl.pokemon.natu.shape
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: *diamond-pearl.pokemon.natu.baby
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: *diamond-pearl.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      mega: *x-y.pokemon.natu.mega
+      stats: *diamond-pearl.pokemon.natu.stats
+      abilities: *black-white.pokemon.natu.abilities
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *x-y.pokemon.natu.forms.natu.icon
+          sprites:
+            - sun-moon/shiny/natu-default.png
+            - sun-moon/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *x-y.pokemon.natu.forms.natu.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 252
+    updated-akala: 153
+  pokemon:
+    natu:
+      genus: *diamond-pearl.pokemon.natu.genus
+      color: *black-white.pokemon.natu.color
+      shape: *diamond-pearl.pokemon.natu.shape
+      female_rate: *gold-silver.pokemon.natu.female_rate
+      capture_rate: *gold-silver.pokemon.natu.capture_rate
+      happiness: *ruby-sapphire.pokemon.natu.happiness
+      baby: *diamond-pearl.pokemon.natu.baby
+      hatch_steps: *gold-silver.pokemon.natu.hatch_steps
+      growth_rate: *gold-silver.pokemon.natu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.natu.forms_switchable
+      name: Natu
+      default: *gold-silver.pokemon.natu.default
+      height: *gold-silver.pokemon.natu.height
+      weight: *ruby-sapphire.pokemon.natu.weight
+      experience: *diamond-pearl.pokemon.natu.experience
+      types: *gold-silver.pokemon.natu.types
+      egg_groups: *gold-silver.pokemon.natu.egg_groups
+      mega: *x-y.pokemon.natu.mega
+      stats: *diamond-pearl.pokemon.natu.stats
+      abilities: *black-white.pokemon.natu.abilities
+      flavor_text:
+        ultra-sun: |-
+          Although it still can’t fly, its jumping power is
+          outstanding. It jumps way up into trees and
+          plucks the buds from the branches.
+        ultra-moon: |-
+          The look in its eyes gives the impression that
+          it’s carefully observing you. If you approach it,
+          Natu will hop away.
+      forms:
+        natu:
+          name: Natu
+          form_name: *gold-silver.pokemon.natu.forms.natu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.natu.forms.natu.battle_only
+          icon: *x-y.pokemon.natu.forms.natu.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/natu-default.png
+            - ultra-sun-ultra-moon/natu-default.png
+          art: *gold-silver.pokemon.natu.forms.natu.art
+          footprint: *ruby-sapphire.pokemon.natu.forms.natu.footprint
+          cry: *x-y.pokemon.natu.forms.natu.cry

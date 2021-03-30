@@ -1,0 +1,748 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name SHIFTRY
+  position: &ruby-sapphire.position 275
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 275
+    hoenn: 24
+  pokemon:
+    shiftry:
+      name: SHIFTRY
+      default: &ruby-sapphire.pokemon.shiftry.default true
+      forms_switchable: &ruby-sapphire.pokemon.shiftry.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.shiftry.capture_rate 45
+      experience: &ruby-sapphire.pokemon.shiftry.experience 181
+      types: &ruby-sapphire.pokemon.shiftry.types
+        - grass
+        - dark
+      stats: &ruby-sapphire.pokemon.shiftry.stats
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 100
+          effort_change: 3
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.shiftry.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.shiftry.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.shiftry.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.shiftry.egg_groups
+        - ground
+        - plant
+      happiness: &ruby-sapphire.pokemon.shiftry.happiness 70
+      abilities: &ruby-sapphire.pokemon.shiftry.abilities
+        chlorophyll: &ruby-sapphire.pokemon.shiftry.abilities.chlorophyll
+          hidden: &ruby-sapphire.pokemon.shiftry.abilities.chlorophyll.hidden false
+          position: 1
+        early-bird: &ruby-sapphire.pokemon.shiftry.abilities.early-bird
+          hidden: *ruby-sapphire.pokemon.shiftry.abilities.chlorophyll.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.shiftry.genus 'WICKED Pokémon'
+      height: &ruby-sapphire.pokemon.shiftry.height 13
+      weight: &ruby-sapphire.pokemon.shiftry.weight 596
+      flavor_text:
+        ruby: |
+          SHIFTRY is a mysterious POKéMON that
+          is said to live atop towering trees
+          dating back over a thousand years.
+          It creates terrific windstorms with
+          the fans it holds.
+        sapphire: |
+          SHIFTRY's large fans generate awesome
+          gusts of wind at a speed close to 100
+          feet per second. The whipped-up wind
+          blows anything away.
+           This POKéMON chooses to live quietly
+          deep in forests.
+      forms:
+        shiftry:
+          name: SHIFTRY
+          form_name: &ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only false
+          icon: &ruby-sapphire.pokemon.shiftry.forms.shiftry.icon gen5/shiftry-default.png
+          sprites:
+            - ruby-sapphire/shiftry-default.png
+            - ruby-sapphire/back/shiftry-default.png
+            - ruby-sapphire/shiny/shiftry-default.png
+          art: &ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+            - shiftry-default.png
+          footprint: &ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint shiftry.png
+          cry: &ruby-sapphire.pokemon.shiftry.forms.shiftry.cry gen5/shiftry-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.shiftry.evolution_parent nuzleaf/nuzleaf
+      evolution_conditions: &ruby-sapphire.pokemon.shiftry.evolution_conditions
+        use-item:
+          trigger_item: leaf-stone
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    shiftry:
+      name: SHIFTRY
+      default: *ruby-sapphire.pokemon.shiftry.default
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      experience: *ruby-sapphire.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      stats: *ruby-sapphire.pokemon.shiftry.stats
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      abilities: *ruby-sapphire.pokemon.shiftry.abilities
+      genus: *ruby-sapphire.pokemon.shiftry.genus
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      flavor_text:
+        emerald: |
+          It is said to arrive on chilly, wintry winds.
+          Feared from long ago as the guardian of
+          forests, this POKéMON lives in a deep
+          forest where people do not venture.
+      forms:
+        shiftry:
+          name: SHIFTRY
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *ruby-sapphire.pokemon.shiftry.forms.shiftry.icon
+          sprites:
+            - emerald/shiftry-default.png
+            - emerald/shiny/shiftry-default.png
+            - emerald/animated/shiftry-default.webm
+            - emerald/animated/shiny/shiftry-default.webm
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 294
+  pokemon:
+    shiftry:
+      name: SHIFTRY
+      default: *ruby-sapphire.pokemon.shiftry.default
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      experience: *ruby-sapphire.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      stats: *ruby-sapphire.pokemon.shiftry.stats
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      abilities: *ruby-sapphire.pokemon.shiftry.abilities
+      genus: *ruby-sapphire.pokemon.shiftry.genus
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      forms:
+        shiftry:
+          name: SHIFTRY
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          sprites:
+            - colosseum/shiftry-default.png
+            - colosseum/shiny/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    shiftry:
+      name: SHIFTRY
+      default: *ruby-sapphire.pokemon.shiftry.default
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      experience: *ruby-sapphire.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      stats: *ruby-sapphire.pokemon.shiftry.stats
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      abilities: *ruby-sapphire.pokemon.shiftry.abilities
+      genus: *ruby-sapphire.pokemon.shiftry.genus
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      forms:
+        shiftry:
+          name: SHIFTRY
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          sprites:
+            - xd/shiftry-default.png
+            - xd/shiny/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    shiftry:
+      name: SHIFTRY
+      default: *ruby-sapphire.pokemon.shiftry.default
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      experience: *ruby-sapphire.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      stats: *ruby-sapphire.pokemon.shiftry.stats
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      abilities: *ruby-sapphire.pokemon.shiftry.abilities
+      genus: *ruby-sapphire.pokemon.shiftry.genus
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      flavor_text:
+        firered: |
+          A POKéMON that was feared as a forest
+          guardian. It can read the foe's mind and
+          take preemptive action.
+        leafgreen: |
+          A POKéMON that was feared as a forest
+          guardian. It can read the foe's mind and
+          take preemptive action.
+      forms:
+        shiftry:
+          name: SHIFTRY
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *ruby-sapphire.pokemon.shiftry.forms.shiftry.icon
+          sprites:
+            - firered-leafgreen/shiftry-default.png
+            - firered-leafgreen/back/shiftry-default.png
+            - firered-leafgreen/shiny/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Shiftry
+  position: &diamond-pearl.position 300
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shiftry:
+      genus: &diamond-pearl.pokemon.shiftry.genus 'Wicked Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      shape: &diamond-pearl.pokemon.shiftry.shape humanoid
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: &diamond-pearl.pokemon.shiftry.baby false
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      pal_park: &diamond-pearl.pokemon.shiftry.pal_park
+        area: forest
+        rate: 10
+        score: 80
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: &diamond-pearl.pokemon.shiftry.experience 216
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      stats: &diamond-pearl.pokemon.shiftry.stats
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 100
+          effort_change: 3
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.shiftry.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      flavor_text:
+        diamond: |
+          By flapping its leafy fan, it can
+          whip up gusts of 100 ft/second
+          that can level houses.
+        pearl: |
+          By flapping its leafy fan, it can
+          whip up gusts of 100 ft/second
+          that can level houses.
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *ruby-sapphire.pokemon.shiftry.forms.shiftry.icon
+          sprites:
+            - diamond-pearl/shiftry-default.png
+            - diamond-pearl/back/shiftry-default.png
+            - diamond-pearl/back/female/shiftry-default.png
+            - diamond-pearl/back/shiny/shiftry-default.png
+            - diamond-pearl/female/shiftry-default.png
+            - diamond-pearl/shiny/shiftry-default.png
+            - diamond-pearl/shiny/female/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shiftry:
+      genus: *diamond-pearl.pokemon.shiftry.genus
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      shape: *diamond-pearl.pokemon.shiftry.shape
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: *diamond-pearl.pokemon.shiftry.baby
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shiftry.pal_park
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: *diamond-pearl.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      stats: *diamond-pearl.pokemon.shiftry.stats
+      abilities: *ruby-sapphire.pokemon.shiftry.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      flavor_text:
+        platinum: |
+          By flapping its leafy fan, it can
+          whip up gusts of 100 ft/second
+          that can level houses.
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *ruby-sapphire.pokemon.shiftry.forms.shiftry.icon
+          sprites:
+            - platinum/shiftry-default.png
+            - platinum/back/shiftry-default.png
+            - platinum/back/female/shiftry-default.png
+            - platinum/back/shiny/shiftry-default.png
+            - platinum/female/shiftry-default.png
+            - platinum/shiny/shiftry-default.png
+            - platinum/shiny/female/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shiftry:
+      genus: *diamond-pearl.pokemon.shiftry.genus
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      shape: *diamond-pearl.pokemon.shiftry.shape
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: *diamond-pearl.pokemon.shiftry.baby
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shiftry.pal_park
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: *diamond-pearl.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      stats: *diamond-pearl.pokemon.shiftry.stats
+      abilities: *ruby-sapphire.pokemon.shiftry.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It lives quietly in the deep forest.
+          It is said to create chilly winter
+          winds with the fans it holds.
+        soulsilver: |
+          It lives quietly in the deep forest.
+          It is said to create chilly winter
+          winds with the fans it holds.
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.shiftry.forms.shiftry.icon
+          sprites:
+            - heartgold-soulsilver/shiftry-default.png
+            - heartgold-soulsilver/back/shiftry-default.png
+            - heartgold-soulsilver/back/female/shiftry-default.png
+            - heartgold-soulsilver/back/shiny/shiftry-default.png
+            - heartgold-soulsilver/female/shiftry-default.png
+            - heartgold-soulsilver/shiny/shiftry-default.png
+            - heartgold-soulsilver/shiny/female/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shiftry:
+      genus: *diamond-pearl.pokemon.shiftry.genus
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      color: &black-white.pokemon.shiftry.color brown
+      shape: *diamond-pearl.pokemon.shiftry.shape
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: *diamond-pearl.pokemon.shiftry.baby
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: *diamond-pearl.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      stats: *diamond-pearl.pokemon.shiftry.stats
+      abilities: &black-white.pokemon.shiftry.abilities
+        chlorophyll: *ruby-sapphire.pokemon.shiftry.abilities.chlorophyll
+        early-bird: *ruby-sapphire.pokemon.shiftry.abilities.early-bird
+        pickpocket:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      flavor_text:
+        black: |
+          By flapping its leafy fan, it can
+          whip up gusts of 100 ft/second
+          that can level houses.
+        white: |
+          By flapping its leafy fan, it can
+          whip up gusts of 100 ft/second
+          that can level houses.
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *ruby-sapphire.pokemon.shiftry.forms.shiftry.icon
+          sprites:
+            - black-white/shiftry-default.png
+            - black-white/back/shiftry-default.png
+            - black-white/back/female/shiftry-default.png
+            - black-white/back/shiny/shiftry-default.png
+            - black-white/female/shiftry-default.png
+            - black-white/shiny/shiftry-default.png
+            - black-white/shiny/female/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shiftry:
+      genus: *diamond-pearl.pokemon.shiftry.genus
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      color: *black-white.pokemon.shiftry.color
+      shape: *diamond-pearl.pokemon.shiftry.shape
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: *diamond-pearl.pokemon.shiftry.baby
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: *diamond-pearl.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      stats: *diamond-pearl.pokemon.shiftry.stats
+      abilities: *black-white.pokemon.shiftry.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      flavor_text:
+        black-2: |
+          By flapping its leafy fan, it can
+          whip up gusts of 100 ft/second
+          that can level houses.
+        white-2: |
+          By flapping its leafy fan, it can
+          whip up gusts of 100 ft/second
+          that can level houses.
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *ruby-sapphire.pokemon.shiftry.forms.shiftry.icon
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *ruby-sapphire.pokemon.shiftry.forms.shiftry.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shiftry:
+      genus: *diamond-pearl.pokemon.shiftry.genus
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      color: *black-white.pokemon.shiftry.color
+      shape: *diamond-pearl.pokemon.shiftry.shape
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: *diamond-pearl.pokemon.shiftry.baby
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: *diamond-pearl.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      mega: &x-y.pokemon.shiftry.mega false
+      stats: *diamond-pearl.pokemon.shiftry.stats
+      abilities: *black-white.pokemon.shiftry.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      flavor_text:
+        x: |
+          A Pokémon that was feared as a forest guardian.
+          It can read the foe’s mind and take
+          preemptive action.
+        'y': |
+          By flapping its leafy fan, it can whip up gusts of
+          100 feet per second that can level houses.
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: &x-y.pokemon.shiftry.forms.shiftry.icon shiftry-default.png
+          sprites:
+            - x-y/shiftry-default.png
+            - x-y/female/shiftry-default.png
+            - x-y/shiny/shiftry-default.png
+            - x-y/shiny/female/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: &x-y.pokemon.shiftry.forms.shiftry.cry shiftry-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 24
+  pokemon:
+    shiftry:
+      genus: *diamond-pearl.pokemon.shiftry.genus
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      color: *black-white.pokemon.shiftry.color
+      shape: *diamond-pearl.pokemon.shiftry.shape
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: *diamond-pearl.pokemon.shiftry.baby
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: *diamond-pearl.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      mega: *x-y.pokemon.shiftry.mega
+      stats: *diamond-pearl.pokemon.shiftry.stats
+      abilities: *black-white.pokemon.shiftry.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Shiftry is a mysterious Pokémon that is said to live atop
+          towering trees dating back over a thousand years. It creates
+          terrific windstorms with the fans it holds.
+        alpha-sapphire: |
+          Shiftry’s large fans generate awesome gusts of wind at a
+          speed close to 100 feet per second. The whipped-up wind
+          blows anything away. This Pokémon chooses to live quietly
+          deep in forests.
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *x-y.pokemon.shiftry.forms.shiftry.icon
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *x-y.pokemon.shiftry.forms.shiftry.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiftry-default.png
+            - omega-ruby-alpha-sapphire/shiny/shiftry-default.png
+            - omega-ruby-alpha-sapphire/female/shiftry-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/shiftry-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.shiftry.wild_held_items.omega-ruby
+          power-herb: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.shiftry.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shiftry:
+      genus: *diamond-pearl.pokemon.shiftry.genus
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      color: *black-white.pokemon.shiftry.color
+      shape: *diamond-pearl.pokemon.shiftry.shape
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: *diamond-pearl.pokemon.shiftry.baby
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: *diamond-pearl.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      mega: *x-y.pokemon.shiftry.mega
+      stats: *diamond-pearl.pokemon.shiftry.stats
+      abilities: *black-white.pokemon.shiftry.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.shiftry.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.shiftry.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *x-y.pokemon.shiftry.forms.shiftry.icon
+          sprites:
+            - sun-moon/shiftry-default.png
+            - sun-moon/female/shiftry-default.png
+            - sun-moon/shiny/shiftry-default.png
+            - sun-moon/shiny/female/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *x-y.pokemon.shiftry.forms.shiftry.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shiftry:
+      genus: *diamond-pearl.pokemon.shiftry.genus
+      evolution_parent: *ruby-sapphire.pokemon.shiftry.evolution_parent
+      color: *black-white.pokemon.shiftry.color
+      shape: *diamond-pearl.pokemon.shiftry.shape
+      female_rate: *ruby-sapphire.pokemon.shiftry.female_rate
+      capture_rate: *ruby-sapphire.pokemon.shiftry.capture_rate
+      happiness: *ruby-sapphire.pokemon.shiftry.happiness
+      baby: *diamond-pearl.pokemon.shiftry.baby
+      hatch_steps: *ruby-sapphire.pokemon.shiftry.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shiftry.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shiftry.forms_switchable
+      name: Shiftry
+      default: *ruby-sapphire.pokemon.shiftry.default
+      height: *ruby-sapphire.pokemon.shiftry.height
+      weight: *ruby-sapphire.pokemon.shiftry.weight
+      experience: *diamond-pearl.pokemon.shiftry.experience
+      types: *ruby-sapphire.pokemon.shiftry.types
+      egg_groups: *ruby-sapphire.pokemon.shiftry.egg_groups
+      mega: *x-y.pokemon.shiftry.mega
+      stats: *diamond-pearl.pokemon.shiftry.stats
+      abilities: *black-white.pokemon.shiftry.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.shiftry.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.shiftry.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.shiftry.evolution_conditions
+      forms:
+        shiftry:
+          name: Shiftry
+          form_name: *ruby-sapphire.pokemon.shiftry.forms.shiftry.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shiftry.forms.shiftry.battle_only
+          icon: *x-y.pokemon.shiftry.forms.shiftry.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiftry-default.png
+            - ultra-sun-ultra-moon/female/shiftry-default.png
+            - ultra-sun-ultra-moon/shiny/shiftry-default.png
+            - ultra-sun-ultra-moon/shiny/female/shiftry-default.png
+          art: *ruby-sapphire.pokemon.shiftry.forms.shiftry.art
+          footprint: *ruby-sapphire.pokemon.shiftry.forms.shiftry.footprint
+          cry: *x-y.pokemon.shiftry.forms.shiftry.cry

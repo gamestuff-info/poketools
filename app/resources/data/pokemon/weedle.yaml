@@ -1,0 +1,892 @@
+red-blue:
+  name: &red-blue.name WEEDLE
+  position: &red-blue.position 13
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 13
+    kanto: 13
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: &red-blue.pokemon.weedle.default true
+      capture_rate: &red-blue.pokemon.weedle.capture_rate 255
+      experience: &red-blue.pokemon.weedle.experience 52
+      types: &red-blue.pokemon.weedle.types
+        - bug
+        - poison
+      stats: &red-blue.pokemon.weedle.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 35
+          effort_change: 35
+        defense:
+          base_value: 30
+          effort_change: 30
+        speed:
+          base_value: 50
+          effort_change: 50
+        special:
+          base_value: 20
+          effort_change: 20
+      growth_rate: &red-blue.pokemon.weedle.growth_rate medium
+      genus: &red-blue.pokemon.weedle.genus 'HAIRY BUG Pokémon'
+      height: &red-blue.pokemon.weedle.height 3
+      weight: &red-blue.pokemon.weedle.weight 317
+      flavor_text:
+        red: |
+          Often found in
+          forests, eating
+          leaves.
+          It has a sharp
+          venomous stinger
+           on its head.
+        blue: |
+          Often found in
+          forests, eating
+          leaves.
+          It has a sharp
+          venomous stinger
+          on its head.
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: &red-blue.pokemon.weedle.forms.weedle.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.weedle.forms.weedle.battle_only false
+          sprites:
+            - red-blue/weedle-default.png
+            - red-blue/gray/weedle-default.png
+            - red-blue/back/weedle-default.png
+          art: &red-blue.pokemon.weedle.forms.weedle.art
+            - weedle-default.png
+          cry: &red-blue.pokemon.weedle.forms.weedle.cry gen5/weedle-default.webm
+          icon: &red-blue.pokemon.weedle.forms.weedle.icon gen1/bug.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: *red-blue.pokemon.weedle.default
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      experience: *red-blue.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      stats: *red-blue.pokemon.weedle.stats
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      genus: *red-blue.pokemon.weedle.genus
+      height: *red-blue.pokemon.weedle.height
+      weight: *red-blue.pokemon.weedle.weight
+      flavor_text:
+        yellow: |
+          Beware of the
+          sharp stinger on
+          its head. It
+          hides in grass
+          and bushes where
+          it eats leaves.
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          sprites:
+            - yellow/weedle-default.png
+            - yellow/gray/weedle-default.png
+            - yellow/back/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+          icon: *red-blue.pokemon.weedle.forms.weedle.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 12
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 26
+    original-johto-abc: 230
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: *red-blue.pokemon.weedle.default
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      experience: *red-blue.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      stats: &gold-silver.pokemon.weedle.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 35
+          effort_change: 35
+        defense:
+          base_value: 30
+          effort_change: 30
+        speed:
+          base_value: 50
+          effort_change: 50
+        special-attack:
+          base_value: 20
+          effort_change: 20
+        special-defense:
+          base_value: 20
+          effort_change: 20
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      female_rate: &gold-silver.pokemon.weedle.female_rate 50
+      hatch_steps: &gold-silver.pokemon.weedle.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.weedle.egg_groups
+        - bug
+      genus: *red-blue.pokemon.weedle.genus
+      height: *red-blue.pokemon.weedle.height
+      weight: &gold-silver.pokemon.weedle.weight 31
+      flavor_text:
+        gold: |
+          Its poison stinger
+          is very powerful.
+          Its bright-colored
+          body is intended
+          to warn off its
+          enemies.
+        silver: |
+          It attacks using a
+          two-inch poison
+          barb on its head.
+          It can usually be
+          found under the
+          leaves it eats.
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          sprites:
+            - gold-silver/weedle-default.png
+            - gold-silver/back/weedle-default.png
+            - gold-silver/shiny/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+          icon: &gold-silver.pokemon.weedle.forms.weedle.icon gen2/caterpillar.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: *red-blue.pokemon.weedle.default
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      experience: *red-blue.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      stats: *gold-silver.pokemon.weedle.stats
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      genus: *red-blue.pokemon.weedle.genus
+      height: *red-blue.pokemon.weedle.height
+      weight: *gold-silver.pokemon.weedle.weight
+      flavor_text:
+        crystal: |
+          The barb on top of
+          its head secretes
+          a strong poison.
+          It uses this toxic
+          barb to protect
+          itself.
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          sprites:
+            - crystal/weedle-default.png
+            - crystal/back/weedle-default.png
+            - crystal/shiny/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+          icon: *gold-silver.pokemon.weedle.forms.weedle.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 215
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: *red-blue.pokemon.weedle.default
+      forms_switchable: &ruby-sapphire.pokemon.weedle.forms_switchable false
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      experience: *red-blue.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      stats: &ruby-sapphire.pokemon.weedle.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 1
+        special-attack:
+          base_value: 20
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      happiness: &ruby-sapphire.pokemon.weedle.happiness 70
+      abilities: &ruby-sapphire.pokemon.weedle.abilities
+        shield-dust: &ruby-sapphire.pokemon.weedle.abilities.shield-dust
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.weedle.genus
+      height: *red-blue.pokemon.weedle.height
+      weight: &ruby-sapphire.pokemon.weedle.weight 32
+      flavor_text:
+        ruby: |
+          WEEDLE has an extremely acute sense
+          of smell.
+          It is capable of distinguishing its
+          favorite kinds of leaves from those it
+          dislikes just by sniffing with its big
+          red proboscis (nose).
+        sapphire: |
+          WEEDLE has an extremely acute sense
+          of smell.
+          It is capable of distinguishing its
+          favorite kinds of leaves from those it
+          dislikes just by sniffing with its big
+          red proboscis (nose).
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: &ruby-sapphire.pokemon.weedle.forms.weedle.icon gen5/weedle-default.png
+          sprites:
+            - ruby-sapphire/weedle-default.png
+            - ruby-sapphire/back/weedle-default.png
+            - ruby-sapphire/shiny/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: &ruby-sapphire.pokemon.weedle.forms.weedle.footprint weedle.png
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: *red-blue.pokemon.weedle.default
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      experience: *red-blue.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      stats: *ruby-sapphire.pokemon.weedle.stats
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      abilities: *ruby-sapphire.pokemon.weedle.abilities
+      genus: *red-blue.pokemon.weedle.genus
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      flavor_text:
+        emerald: |
+          A WEEDLE has an extremely acute sense
+          of smell. It distinguishes its favorite
+          kinds of leaves from those it dislikes by
+          sniffing with its big red proboscis (nose).
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *ruby-sapphire.pokemon.weedle.forms.weedle.icon
+          sprites:
+            - emerald/weedle-default.png
+            - emerald/shiny/weedle-default.png
+            - emerald/animated/weedle-default.webm
+            - emerald/animated/shiny/weedle-default.webm
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 370
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: *red-blue.pokemon.weedle.default
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      experience: *red-blue.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      stats: *ruby-sapphire.pokemon.weedle.stats
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      abilities: *ruby-sapphire.pokemon.weedle.abilities
+      genus: *red-blue.pokemon.weedle.genus
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          sprites:
+            - colosseum/weedle-default.png
+            - colosseum/shiny/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: *red-blue.pokemon.weedle.default
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      experience: *red-blue.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      stats: *ruby-sapphire.pokemon.weedle.stats
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      abilities: *ruby-sapphire.pokemon.weedle.abilities
+      genus: *red-blue.pokemon.weedle.genus
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          sprites:
+            - xd/weedle-default.png
+            - xd/shiny/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    weedle:
+      name: WEEDLE
+      default: *red-blue.pokemon.weedle.default
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      experience: *red-blue.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      stats: *ruby-sapphire.pokemon.weedle.stats
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      abilities: *ruby-sapphire.pokemon.weedle.abilities
+      genus: *red-blue.pokemon.weedle.genus
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      flavor_text:
+        firered: |
+          Often found in forests and grasslands.
+          It has a sharp, toxic barb of around two
+          inches on top of its head.
+        leafgreen: |
+          Often found in forests, eating leaves.
+          It has a sharp stinger on its head that
+          injects poison.
+      forms:
+        weedle:
+          name: WEEDLE
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *ruby-sapphire.pokemon.weedle.forms.weedle.icon
+          sprites:
+            - firered-leafgreen/weedle-default.png
+            - firered-leafgreen/back/weedle-default.png
+            - firered-leafgreen/shiny/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+diamond-pearl:
+  name: &diamond-pearl.name Weedle
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    weedle:
+      genus: &diamond-pearl.pokemon.weedle.genus 'Hairy Bug Pokémon'
+      shape: &diamond-pearl.pokemon.weedle.shape armor
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: &diamond-pearl.pokemon.weedle.baby false
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      pal_park: &diamond-pearl.pokemon.weedle.pal_park
+        area: forest
+        rate: 50
+        score: 30
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: &diamond-pearl.pokemon.weedle.experience 39
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      stats: &diamond-pearl.pokemon.weedle.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 1
+        special-attack:
+          base_value: 20
+          effort_change: 0
+        special-defense:
+          base_value: 20
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.weedle.abilities
+        shield-dust: *ruby-sapphire.pokemon.weedle.abilities.shield-dust
+        run-away:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          It eats its weight in leaves every
+          day. It fends off attackers with
+          the needle on its head.
+        pearl: |
+          It eats its weight in leaves every
+          day. It fends off attackers with
+          the needle on its head.
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *ruby-sapphire.pokemon.weedle.forms.weedle.icon
+          sprites:
+            - diamond-pearl/back/shiny/weedle-default.png
+            - diamond-pearl/back/weedle-default.png
+            - diamond-pearl/shiny/weedle-default.png
+            - diamond-pearl/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weedle:
+      genus: *diamond-pearl.pokemon.weedle.genus
+      shape: *diamond-pearl.pokemon.weedle.shape
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: *diamond-pearl.pokemon.weedle.baby
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      pal_park: *diamond-pearl.pokemon.weedle.pal_park
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: *diamond-pearl.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      stats: *diamond-pearl.pokemon.weedle.stats
+      abilities: *diamond-pearl.pokemon.weedle.abilities
+      flavor_text:
+        platinum: |
+          It eats its weight in leaves every
+          day. It fends off attackers with
+          the needle on its head.
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *ruby-sapphire.pokemon.weedle.forms.weedle.icon
+          sprites:
+            - platinum/back/shiny/weedle-default.png
+            - platinum/back/weedle-default.png
+            - platinum/shiny/weedle-default.png
+            - platinum/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 27
+  pokemon:
+    weedle:
+      genus: *diamond-pearl.pokemon.weedle.genus
+      shape: *diamond-pearl.pokemon.weedle.shape
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: *diamond-pearl.pokemon.weedle.baby
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      pal_park: *diamond-pearl.pokemon.weedle.pal_park
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: *diamond-pearl.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      stats: *diamond-pearl.pokemon.weedle.stats
+      abilities: *diamond-pearl.pokemon.weedle.abilities
+      flavor_text:
+        heartgold: |
+          Its poison stinger is very powerful.
+          Its bright-colored body is intended
+          to warn off its enemies.
+        soulsilver: |
+          It attacks using a two-inch poison
+          barb on its head. It can usually be
+          found under the leaves it eats.
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 1
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.weedle.forms.weedle.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/weedle-default.png
+            - heartgold-soulsilver/back/weedle-default.png
+            - heartgold-soulsilver/shiny/weedle-default.png
+            - heartgold-soulsilver/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weedle:
+      genus: *diamond-pearl.pokemon.weedle.genus
+      color: &black-white.pokemon.weedle.color brown
+      shape: *diamond-pearl.pokemon.weedle.shape
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: *diamond-pearl.pokemon.weedle.baby
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: *diamond-pearl.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      stats: *diamond-pearl.pokemon.weedle.stats
+      abilities: *diamond-pearl.pokemon.weedle.abilities
+      flavor_text:
+        black: |
+          It eats its weight in leaves every
+          day. It fends off attackers with
+          the needle on its head.
+        white: |
+          It eats its weight in leaves every
+          day. It fends off attackers with
+          the needle on its head.
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *ruby-sapphire.pokemon.weedle.forms.weedle.icon
+          sprites:
+            - black-white/back/shiny/weedle-default.png
+            - black-white/back/weedle-default.png
+            - black-white/shiny/weedle-default.png
+            - black-white/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weedle:
+      genus: *diamond-pearl.pokemon.weedle.genus
+      color: *black-white.pokemon.weedle.color
+      shape: *diamond-pearl.pokemon.weedle.shape
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: *diamond-pearl.pokemon.weedle.baby
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: *diamond-pearl.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      stats: *diamond-pearl.pokemon.weedle.stats
+      abilities: *diamond-pearl.pokemon.weedle.abilities
+      flavor_text:
+        black-2: |
+          It eats its weight in leaves every
+          day. It fends off attackers with
+          the needle on its head.
+        white-2: |
+          It eats its weight in leaves every
+          day. It fends off attackers with
+          the needle on its head.
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *ruby-sapphire.pokemon.weedle.forms.weedle.icon
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *red-blue.pokemon.weedle.forms.weedle.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 26
+  pokemon:
+    weedle:
+      genus: *diamond-pearl.pokemon.weedle.genus
+      color: *black-white.pokemon.weedle.color
+      shape: *diamond-pearl.pokemon.weedle.shape
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: *diamond-pearl.pokemon.weedle.baby
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: *diamond-pearl.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      mega: &x-y.pokemon.weedle.mega false
+      stats: *diamond-pearl.pokemon.weedle.stats
+      abilities: *diamond-pearl.pokemon.weedle.abilities
+      flavor_text:
+        x: |
+          Often found in forests and grasslands.
+          It has a sharp, toxic barb of around two inches
+          on top of its head.
+        'y': |
+          Its poison stinger is very powerful.
+          Its bright-colored body is intended to
+          warn off its enemies.
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: &x-y.pokemon.weedle.forms.weedle.icon weedle-default.png
+          sprites:
+            - x-y/shiny/weedle-default.png
+            - x-y/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: &x-y.pokemon.weedle.forms.weedle.cry weedle-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weedle:
+      genus: *diamond-pearl.pokemon.weedle.genus
+      color: *black-white.pokemon.weedle.color
+      shape: *diamond-pearl.pokemon.weedle.shape
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: *diamond-pearl.pokemon.weedle.baby
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: *diamond-pearl.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      mega: *x-y.pokemon.weedle.mega
+      stats: *diamond-pearl.pokemon.weedle.stats
+      abilities: *diamond-pearl.pokemon.weedle.abilities
+      flavor_text:
+        omega-ruby: |
+          Weedle has an extremely acute sense of smell. It is capable of
+          distinguishing its favorite kinds of leaves from those it dislikes
+          just by sniffing with its big red proboscis (nose).
+        alpha-sapphire: |
+          Weedle has an extremely acute sense of smell. It is capable
+          of distinguishing its favorite kinds of leaves from those it
+          dislikes just by sniffing with its big red proboscis (nose).
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *x-y.pokemon.weedle.forms.weedle.icon
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *x-y.pokemon.weedle.forms.weedle.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/weedle-default.png
+            - omega-ruby-alpha-sapphire/shiny/weedle-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weedle:
+      genus: *diamond-pearl.pokemon.weedle.genus
+      color: *black-white.pokemon.weedle.color
+      shape: *diamond-pearl.pokemon.weedle.shape
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: *diamond-pearl.pokemon.weedle.baby
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: *diamond-pearl.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      mega: *x-y.pokemon.weedle.mega
+      stats: *diamond-pearl.pokemon.weedle.stats
+      abilities: *diamond-pearl.pokemon.weedle.abilities
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *x-y.pokemon.weedle.forms.weedle.icon
+          sprites:
+            - sun-moon/shiny/weedle-default.png
+            - sun-moon/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *x-y.pokemon.weedle.forms.weedle.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weedle:
+      genus: *diamond-pearl.pokemon.weedle.genus
+      color: *black-white.pokemon.weedle.color
+      shape: *diamond-pearl.pokemon.weedle.shape
+      female_rate: *gold-silver.pokemon.weedle.female_rate
+      capture_rate: *red-blue.pokemon.weedle.capture_rate
+      happiness: *ruby-sapphire.pokemon.weedle.happiness
+      baby: *diamond-pearl.pokemon.weedle.baby
+      hatch_steps: *gold-silver.pokemon.weedle.hatch_steps
+      growth_rate: *red-blue.pokemon.weedle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weedle.forms_switchable
+      name: Weedle
+      default: *red-blue.pokemon.weedle.default
+      height: *red-blue.pokemon.weedle.height
+      weight: *ruby-sapphire.pokemon.weedle.weight
+      experience: *diamond-pearl.pokemon.weedle.experience
+      types: *red-blue.pokemon.weedle.types
+      egg_groups: *gold-silver.pokemon.weedle.egg_groups
+      mega: *x-y.pokemon.weedle.mega
+      stats: *diamond-pearl.pokemon.weedle.stats
+      abilities: *diamond-pearl.pokemon.weedle.abilities
+      forms:
+        weedle:
+          name: Weedle
+          form_name: *red-blue.pokemon.weedle.forms.weedle.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weedle.forms.weedle.battle_only
+          icon: *x-y.pokemon.weedle.forms.weedle.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/weedle-default.png
+            - ultra-sun-ultra-moon/weedle-default.png
+          art: *red-blue.pokemon.weedle.forms.weedle.art
+          footprint: *ruby-sapphire.pokemon.weedle.forms.weedle.footprint
+          cry: *x-y.pokemon.weedle.forms.weedle.cry

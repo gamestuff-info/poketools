@@ -1,0 +1,136 @@
+red-blue: &red-blue
+  name: &red-blue.name 'BURN HEAL'
+  pocket: &red-blue.pocket misc
+  buy: &red-blue.buy 250
+  sell: &red-blue.sell 125
+  category: &red-blue.category status-cures
+  flags:
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+  short_description: &red-blue.short_description 'Cures a [burn]{mechanic:burn}.'
+  description: &red-blue.description |
+    Used on a party Pokémon
+    :   Cures a [burn]{mechanic:burn}.
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  pocket: *red-blue.pocket
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    Heals burned
+    POKéMON.
+  category: *red-blue.category
+  flags: &gold-silver.flags
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  flags: *gold-silver.flags
+  icon: &ruby-sapphire.icon burn-heal.png
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    Heals POKéMON
+    of a burn.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  pocket: *red-blue.pocket
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *red-blue.category
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+xd:
+  name: *red-blue.name
+  pocket: *red-blue.pocket
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    Heals a burned
+    POKéMON.
+  category: *red-blue.category
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+firered-leafgreen:
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    A spray-type medicine.
+    It heals one POKéMON of a burn.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Burn Heal'
+  category: *red-blue.category
+  pocket: &diamond-pearl.pocket medicine
+  buy: &diamond-pearl.buy 300
+  sell: &diamond-pearl.sell 150
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    A spray-type medicine.
+    It heals a single Pokémon that is
+    suffering from a burn.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *red-blue.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    A spray-type medicine for treating
+    burns. It can be used once to heal
+    a Pokémon suffering from a burn.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *red-blue.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    A spray-type medicine for treating burns. It can be
+    used once to heal a Pokémon suffering from a burn.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

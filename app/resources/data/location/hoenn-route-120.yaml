@@ -1,0 +1,23 @@
+ruby-sapphire: &ruby-sapphire
+  region: &ruby-sapphire.region hoenn
+  name: &ruby-sapphire.name 'Route 120'
+  areas:
+    whole-area:
+      name: 'Whole area'
+      default: true
+  map:
+    map: &ruby-sapphire.map.map hoenn
+    overlay: '<rect width="8" height="32" x="112" y="16" />'
+emerald: *ruby-sapphire
+omega-ruby-alpha-sapphire:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas:
+    main-area:
+      name: 'Main area'
+      default: true
+    ancient-tomb-area:
+      name: 'Ancient Tomb Surroundings'
+  map:
+    map: *ruby-sapphire.map.map
+    overlay: '<path d="m 148,19 h 10 V 63 H 147 V 31 h 1 z" />'

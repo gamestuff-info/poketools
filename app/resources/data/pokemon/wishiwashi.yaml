@@ -1,0 +1,209 @@
+sun-moon:
+  name: &sun-moon.name Wishiwashi
+  position: &sun-moon.position 746
+  numbers:
+    national: &sun-moon.numbers.national 746
+    original-alola: 110
+    original-melemele: 110
+    original-akala: 42
+    original-ulaula: 57
+  pokemon:
+    wishiwashi-solo:
+      genus: &sun-moon.pokemon.wishiwashi-solo.genus 'Small Fry Pokémon'
+      color: &sun-moon.pokemon.wishiwashi-solo.color blue
+      shape: &sun-moon.pokemon.wishiwashi-solo.shape fish
+      female_rate: &sun-moon.pokemon.wishiwashi-solo.female_rate 50
+      capture_rate: &sun-moon.pokemon.wishiwashi-solo.capture_rate 60
+      happiness: &sun-moon.pokemon.wishiwashi-solo.happiness 70
+      baby: &sun-moon.pokemon.wishiwashi-solo.baby false
+      hatch_steps: &sun-moon.pokemon.wishiwashi-solo.hatch_steps 15
+      growth_rate: &sun-moon.pokemon.wishiwashi-solo.growth_rate fast
+      forms_switchable: &sun-moon.pokemon.wishiwashi-solo.forms_switchable false
+      name: Wishiwashi
+      default: &sun-moon.pokemon.wishiwashi-solo.default true
+      height: &sun-moon.pokemon.wishiwashi-solo.height 2
+      weight: &sun-moon.pokemon.wishiwashi-solo.weight 3
+      experience: &sun-moon.pokemon.wishiwashi-solo.experience 61
+      types: &sun-moon.pokemon.wishiwashi-solo.types
+        - water
+      egg_groups: &sun-moon.pokemon.wishiwashi-solo.egg_groups
+        - water2
+      mega: &sun-moon.pokemon.wishiwashi-solo.mega false
+      stats: &sun-moon.pokemon.wishiwashi-solo.stats
+        hp:
+          base_value: 45
+          effort_change: 1
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 20
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 25
+          effort_change: 0
+      abilities: &sun-moon.pokemon.wishiwashi-solo.abilities
+        schooling:
+          hidden: false
+          position: 1
+      flavor_text: &sun-moon.pokemon.wishiwashi-solo.flavor_text
+        sun: |-
+          When it’s in trouble, its eyes moisten and begin
+          to shine. The shining light attracts its comrades,
+          and they stand together against their enemies.
+        moon: |-
+          It’s awfully weak and notably tasty, so everyone
+          is always out to get it. As it happens, anyone
+          trying to bully it receives a painful lesson.
+      forms:
+        wishiwashi-solo:
+          name: &sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.name 'Solo Wishiwashi'
+          form_name: &sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.form_name 'Solo Form'
+          default: true
+          battle_only: &sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.battle_only false
+          icon: &sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.icon wishiwashi-solo.png
+          sprites:
+            - sun-moon/shiny/wishiwashi-solo.png
+            - sun-moon/wishiwashi-solo.png
+          footprint: &sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.footprint wishiwashi.png
+    wishiwashi-school:
+      genus: *sun-moon.pokemon.wishiwashi-solo.genus
+      color: *sun-moon.pokemon.wishiwashi-solo.color
+      shape: *sun-moon.pokemon.wishiwashi-solo.shape
+      female_rate: *sun-moon.pokemon.wishiwashi-solo.female_rate
+      capture_rate: *sun-moon.pokemon.wishiwashi-solo.capture_rate
+      happiness: *sun-moon.pokemon.wishiwashi-solo.happiness
+      baby: *sun-moon.pokemon.wishiwashi-solo.baby
+      hatch_steps: *sun-moon.pokemon.wishiwashi-solo.hatch_steps
+      growth_rate: *sun-moon.pokemon.wishiwashi-solo.growth_rate
+      forms_switchable: *sun-moon.pokemon.wishiwashi-solo.forms_switchable
+      name: &sun-moon.pokemon.wishiwashi-school.name 'School Wishiwashi'
+      default: &sun-moon.pokemon.wishiwashi-school.default false
+      height: &sun-moon.pokemon.wishiwashi-school.height 82
+      weight: &sun-moon.pokemon.wishiwashi-school.weight 786
+      experience: &sun-moon.pokemon.wishiwashi-school.experience 217
+      types: *sun-moon.pokemon.wishiwashi-solo.types
+      egg_groups: *sun-moon.pokemon.wishiwashi-solo.egg_groups
+      mega: *sun-moon.pokemon.wishiwashi-solo.mega
+      stats: &sun-moon.pokemon.wishiwashi-school.stats
+        hp:
+          base_value: 45
+          effort_change: 1
+        attack:
+          base_value: 140
+          effort_change: 0
+        defense:
+          base_value: 130
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 140
+          effort_change: 0
+        special-defense:
+          base_value: 135
+          effort_change: 0
+      abilities: *sun-moon.pokemon.wishiwashi-solo.abilities
+      flavor_text: *sun-moon.pokemon.wishiwashi-solo.flavor_text
+      forms:
+        wishiwashi-school:
+          name: 'School Wishiwashi'
+          form_name: &sun-moon.pokemon.wishiwashi-school.forms.wishiwashi-school.form_name 'School Form'
+          default: true
+          battle_only: &sun-moon.pokemon.wishiwashi-school.forms.wishiwashi-school.battle_only true
+          icon: &sun-moon.pokemon.wishiwashi-school.forms.wishiwashi-school.icon wishiwashi-school.png
+          sprites:
+            - sun-moon/shiny/wishiwashi-school.png
+            - sun-moon/wishiwashi-school.png
+          footprint: *sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.footprint
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 133
+    updated-melemele: 133
+    updated-akala: 42
+    updated-ulaula: 60
+  pokemon:
+    wishiwashi-solo:
+      genus: *sun-moon.pokemon.wishiwashi-solo.genus
+      color: *sun-moon.pokemon.wishiwashi-solo.color
+      shape: *sun-moon.pokemon.wishiwashi-solo.shape
+      female_rate: *sun-moon.pokemon.wishiwashi-solo.female_rate
+      capture_rate: *sun-moon.pokemon.wishiwashi-solo.capture_rate
+      happiness: *sun-moon.pokemon.wishiwashi-solo.happiness
+      baby: *sun-moon.pokemon.wishiwashi-solo.baby
+      hatch_steps: *sun-moon.pokemon.wishiwashi-solo.hatch_steps
+      growth_rate: *sun-moon.pokemon.wishiwashi-solo.growth_rate
+      forms_switchable: *sun-moon.pokemon.wishiwashi-solo.forms_switchable
+      name: Wishiwashi
+      default: *sun-moon.pokemon.wishiwashi-solo.default
+      height: *sun-moon.pokemon.wishiwashi-solo.height
+      weight: *sun-moon.pokemon.wishiwashi-solo.weight
+      experience: *sun-moon.pokemon.wishiwashi-solo.experience
+      types: *sun-moon.pokemon.wishiwashi-solo.types
+      egg_groups: *sun-moon.pokemon.wishiwashi-solo.egg_groups
+      mega: *sun-moon.pokemon.wishiwashi-solo.mega
+      stats: *sun-moon.pokemon.wishiwashi-solo.stats
+      abilities: *sun-moon.pokemon.wishiwashi-solo.abilities
+      flavor_text: &ultra-sun-ultra-moon.pokemon.wishiwashi-solo.flavor_text
+        ultra-sun: |-
+          They’re weak, so they move in schools.
+          However, they can also often be seen all alone,
+          having strayed from the school.
+        ultra-moon: |-
+          When it’s in a jam, its shining eyes attract
+          others of its kind. The light from its eyes is
+          visible almost 25 miles away.
+      forms:
+        wishiwashi-solo:
+          name: *sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.name
+          form_name: *sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.battle_only
+          icon: *sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/wishiwashi-solo.png
+            - ultra-sun-ultra-moon/wishiwashi-solo.png
+          footprint: *sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.footprint
+    wishiwashi-school:
+      genus: *sun-moon.pokemon.wishiwashi-solo.genus
+      color: *sun-moon.pokemon.wishiwashi-solo.color
+      shape: *sun-moon.pokemon.wishiwashi-solo.shape
+      female_rate: *sun-moon.pokemon.wishiwashi-solo.female_rate
+      capture_rate: *sun-moon.pokemon.wishiwashi-solo.capture_rate
+      happiness: *sun-moon.pokemon.wishiwashi-solo.happiness
+      baby: *sun-moon.pokemon.wishiwashi-solo.baby
+      hatch_steps: *sun-moon.pokemon.wishiwashi-solo.hatch_steps
+      growth_rate: *sun-moon.pokemon.wishiwashi-solo.growth_rate
+      forms_switchable: *sun-moon.pokemon.wishiwashi-solo.forms_switchable
+      name: *sun-moon.pokemon.wishiwashi-school.name
+      default: *sun-moon.pokemon.wishiwashi-school.default
+      height: *sun-moon.pokemon.wishiwashi-school.height
+      weight: *sun-moon.pokemon.wishiwashi-school.weight
+      experience: *sun-moon.pokemon.wishiwashi-school.experience
+      types: *sun-moon.pokemon.wishiwashi-solo.types
+      egg_groups: *sun-moon.pokemon.wishiwashi-solo.egg_groups
+      mega: *sun-moon.pokemon.wishiwashi-solo.mega
+      stats: *sun-moon.pokemon.wishiwashi-school.stats
+      abilities: *sun-moon.pokemon.wishiwashi-solo.abilities
+      flavor_text: *ultra-sun-ultra-moon.pokemon.wishiwashi-solo.flavor_text
+      forms:
+        wishiwashi-school:
+          name: 'School Wishiwashi'
+          form_name: *sun-moon.pokemon.wishiwashi-school.forms.wishiwashi-school.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.wishiwashi-school.forms.wishiwashi-school.battle_only
+          icon: *sun-moon.pokemon.wishiwashi-school.forms.wishiwashi-school.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/wishiwashi-school.png
+            - ultra-sun-ultra-moon/wishiwashi-school.png
+          footprint: *sun-moon.pokemon.wishiwashi-solo.forms.wishiwashi-solo.footprint

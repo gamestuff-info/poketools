@@ -1,0 +1,365 @@
+black-white:
+  name: &black-white.name Garbodor
+  position: &black-white.position 570
+  numbers:
+    national: &black-white.numbers.national 569
+    original-unova: 75
+  pokemon:
+    garbodor:
+      genus: &black-white.pokemon.garbodor.genus 'Trash Heap Pokémon'
+      evolution_parent: &black-white.pokemon.garbodor.evolution_parent trubbish/trubbish
+      color: &black-white.pokemon.garbodor.color green
+      shape: &black-white.pokemon.garbodor.shape humanoid
+      female_rate: &black-white.pokemon.garbodor.female_rate 50
+      capture_rate: &black-white.pokemon.garbodor.capture_rate 60
+      happiness: &black-white.pokemon.garbodor.happiness 70
+      baby: &black-white.pokemon.garbodor.baby false
+      hatch_steps: &black-white.pokemon.garbodor.hatch_steps 20
+      growth_rate: &black-white.pokemon.garbodor.growth_rate medium
+      forms_switchable: &black-white.pokemon.garbodor.forms_switchable false
+      name: Garbodor
+      default: &black-white.pokemon.garbodor.default true
+      height: &black-white.pokemon.garbodor.height 19
+      weight: &black-white.pokemon.garbodor.weight 1073
+      experience: &black-white.pokemon.garbodor.experience 166
+      types: &black-white.pokemon.garbodor.types
+        - poison
+      egg_groups: &black-white.pokemon.garbodor.egg_groups
+        - mineral
+      stats: &black-white.pokemon.garbodor.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 2
+        defense:
+          base_value: 82
+          effort_change: 0
+        speed:
+          base_value: 75
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 82
+          effort_change: 0
+      abilities: &black-white.pokemon.garbodor.abilities
+        stench:
+          hidden: &black-white.pokemon.garbodor.abilities.stench.hidden false
+          position: 1
+        weak-armor:
+          hidden: *black-white.pokemon.garbodor.abilities.stench.hidden
+          position: 2
+        aftermath:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.garbodor.wild_held_items.black
+          nugget: &black-white.pokemon.garbodor.wild_held_items.black.nugget 5
+          black-sludge: &black-white.pokemon.garbodor.wild_held_items.black.black-sludge 50
+          big-nugget: 1
+        white: *black-white.pokemon.garbodor.wild_held_items.black
+      evolution_conditions: &black-white.pokemon.garbodor.evolution_conditions
+        level-up:
+          minimum_level: 36
+      flavor_text:
+        black: |
+          It clenches opponents with its left arm
+          and finishes them off with foul-smelling
+          poison gas belched from its mouth.
+        white: |
+          They absorb garbage and make it part
+          of their bodies. They shoot a poisonous
+          liquid from their right-hand fingertips.
+      forms:
+        garbodor:
+          name: Garbodor
+          form_name: &black-white.pokemon.garbodor.forms.garbodor.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.garbodor.forms.garbodor.battle_only false
+          icon: &black-white.pokemon.garbodor.forms.garbodor.icon gen5/garbodor-default.png
+          sprites:
+            - black-white/garbodor-default.png
+            - black-white/back/garbodor-default.png
+            - black-white/back/shiny/garbodor-default.png
+            - black-white/shiny/garbodor-default.png
+          art: &black-white.pokemon.garbodor.forms.garbodor.art
+            - garbodor-default.png
+          footprint: &black-white.pokemon.garbodor.forms.garbodor.footprint garbodor.png
+          cry: &black-white.pokemon.garbodor.forms.garbodor.cry gen5/garbodor-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 106
+  pokemon:
+    garbodor:
+      genus: *black-white.pokemon.garbodor.genus
+      evolution_parent: *black-white.pokemon.garbodor.evolution_parent
+      color: *black-white.pokemon.garbodor.color
+      shape: *black-white.pokemon.garbodor.shape
+      female_rate: *black-white.pokemon.garbodor.female_rate
+      capture_rate: *black-white.pokemon.garbodor.capture_rate
+      happiness: *black-white.pokemon.garbodor.happiness
+      baby: *black-white.pokemon.garbodor.baby
+      hatch_steps: *black-white.pokemon.garbodor.hatch_steps
+      growth_rate: *black-white.pokemon.garbodor.growth_rate
+      forms_switchable: *black-white.pokemon.garbodor.forms_switchable
+      name: Garbodor
+      default: *black-white.pokemon.garbodor.default
+      height: *black-white.pokemon.garbodor.height
+      weight: *black-white.pokemon.garbodor.weight
+      experience: *black-white.pokemon.garbodor.experience
+      types: *black-white.pokemon.garbodor.types
+      egg_groups: *black-white.pokemon.garbodor.egg_groups
+      stats: *black-white.pokemon.garbodor.stats
+      abilities: *black-white.pokemon.garbodor.abilities
+      wild_held_items:
+        black-2: *black-white.pokemon.garbodor.wild_held_items.black
+        white-2: *black-white.pokemon.garbodor.wild_held_items.black
+      evolution_conditions: *black-white.pokemon.garbodor.evolution_conditions
+      flavor_text:
+        black-2: |
+          Consuming garbage makes
+          new kinds of poison gases
+          and liquids inside their bodies.
+        white-2: |
+          Consuming garbage makes
+          new kinds of poison gases
+          and liquids inside their bodies.
+      forms:
+        garbodor:
+          name: Garbodor
+          form_name: *black-white.pokemon.garbodor.forms.garbodor.form_name
+          default: true
+          battle_only: *black-white.pokemon.garbodor.forms.garbodor.battle_only
+          icon: *black-white.pokemon.garbodor.forms.garbodor.icon
+          art: *black-white.pokemon.garbodor.forms.garbodor.art
+          footprint: *black-white.pokemon.garbodor.forms.garbodor.footprint
+          cry: *black-white.pokemon.garbodor.forms.garbodor.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    kalos-mountain: 75
+  pokemon:
+    garbodor:
+      genus: *black-white.pokemon.garbodor.genus
+      evolution_parent: *black-white.pokemon.garbodor.evolution_parent
+      color: *black-white.pokemon.garbodor.color
+      shape: *black-white.pokemon.garbodor.shape
+      female_rate: *black-white.pokemon.garbodor.female_rate
+      capture_rate: *black-white.pokemon.garbodor.capture_rate
+      happiness: *black-white.pokemon.garbodor.happiness
+      baby: *black-white.pokemon.garbodor.baby
+      hatch_steps: *black-white.pokemon.garbodor.hatch_steps
+      growth_rate: *black-white.pokemon.garbodor.growth_rate
+      forms_switchable: *black-white.pokemon.garbodor.forms_switchable
+      name: Garbodor
+      default: *black-white.pokemon.garbodor.default
+      height: *black-white.pokemon.garbodor.height
+      weight: *black-white.pokemon.garbodor.weight
+      experience: *black-white.pokemon.garbodor.experience
+      types: *black-white.pokemon.garbodor.types
+      egg_groups: *black-white.pokemon.garbodor.egg_groups
+      mega: &x-y.pokemon.garbodor.mega false
+      stats: *black-white.pokemon.garbodor.stats
+      abilities: *black-white.pokemon.garbodor.abilities
+      wild_held_items:
+        x: &x-y.pokemon.garbodor.wild_held_items.x
+          nugget: *black-white.pokemon.garbodor.wild_held_items.black.nugget
+          black-sludge: *black-white.pokemon.garbodor.wild_held_items.black.black-sludge
+        'y': *x-y.pokemon.garbodor.wild_held_items.x
+      evolution_conditions: *black-white.pokemon.garbodor.evolution_conditions
+      flavor_text:
+        x: |
+          It clenches opponents with its left arm and finishes
+          them off with foul-smelling poison gas belched from
+          its mouth.
+        'y': |
+          Consuming garbage makes new kinds of poison
+          gases and liquids inside their bodies.
+      forms:
+        garbodor:
+          name: Garbodor
+          form_name: *black-white.pokemon.garbodor.forms.garbodor.form_name
+          default: true
+          battle_only: *black-white.pokemon.garbodor.forms.garbodor.battle_only
+          icon: &x-y.pokemon.garbodor.forms.garbodor.icon garbodor-default.png
+          sprites:
+            - x-y/garbodor-default.png
+            - x-y/shiny/garbodor-default.png
+          art: *black-white.pokemon.garbodor.forms.garbodor.art
+          footprint: *black-white.pokemon.garbodor.forms.garbodor.footprint
+          cry: &x-y.pokemon.garbodor.forms.garbodor.cry garbodor-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+  pokemon:
+    garbodor:
+      genus: *black-white.pokemon.garbodor.genus
+      evolution_parent: *black-white.pokemon.garbodor.evolution_parent
+      color: *black-white.pokemon.garbodor.color
+      shape: *black-white.pokemon.garbodor.shape
+      female_rate: *black-white.pokemon.garbodor.female_rate
+      capture_rate: *black-white.pokemon.garbodor.capture_rate
+      happiness: *black-white.pokemon.garbodor.happiness
+      baby: *black-white.pokemon.garbodor.baby
+      hatch_steps: *black-white.pokemon.garbodor.hatch_steps
+      growth_rate: *black-white.pokemon.garbodor.growth_rate
+      forms_switchable: *black-white.pokemon.garbodor.forms_switchable
+      name: Garbodor
+      default: *black-white.pokemon.garbodor.default
+      height: *black-white.pokemon.garbodor.height
+      weight: *black-white.pokemon.garbodor.weight
+      experience: *black-white.pokemon.garbodor.experience
+      types: *black-white.pokemon.garbodor.types
+      egg_groups: *black-white.pokemon.garbodor.egg_groups
+      mega: *x-y.pokemon.garbodor.mega
+      stats: *black-white.pokemon.garbodor.stats
+      abilities: *black-white.pokemon.garbodor.abilities
+      evolution_conditions: *black-white.pokemon.garbodor.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It clenches opponents with its left arm and finishes
+          them off with foul-smelling poison gas belched from
+          its mouth.
+        alpha-sapphire: |
+          Consuming garbage makes new kinds of poison
+          gases and liquids inside their bodies.
+      forms:
+        garbodor:
+          name: Garbodor
+          form_name: *black-white.pokemon.garbodor.forms.garbodor.form_name
+          default: true
+          battle_only: *black-white.pokemon.garbodor.forms.garbodor.battle_only
+          icon: *x-y.pokemon.garbodor.forms.garbodor.icon
+          art: *black-white.pokemon.garbodor.forms.garbodor.art
+          footprint: *black-white.pokemon.garbodor.forms.garbodor.footprint
+          cry: *x-y.pokemon.garbodor.forms.garbodor.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/garbodor-default.png
+            - omega-ruby-alpha-sapphire/shiny/garbodor-default.png
+      wild_held_items:
+        omega-ruby: *x-y.pokemon.garbodor.wild_held_items.x
+        alpha-sapphire: *x-y.pokemon.garbodor.wild_held_items.x
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    original-alola: 207
+    original-ulaula: 79
+  pokemon:
+    garbodor:
+      genus: *black-white.pokemon.garbodor.genus
+      evolution_parent: *black-white.pokemon.garbodor.evolution_parent
+      color: *black-white.pokemon.garbodor.color
+      shape: *black-white.pokemon.garbodor.shape
+      female_rate: *black-white.pokemon.garbodor.female_rate
+      capture_rate: *black-white.pokemon.garbodor.capture_rate
+      happiness: *black-white.pokemon.garbodor.happiness
+      baby: *black-white.pokemon.garbodor.baby
+      hatch_steps: *black-white.pokemon.garbodor.hatch_steps
+      growth_rate: *black-white.pokemon.garbodor.growth_rate
+      forms_switchable: *black-white.pokemon.garbodor.forms_switchable
+      name: Garbodor
+      default: *black-white.pokemon.garbodor.default
+      height: *black-white.pokemon.garbodor.height
+      weight: *black-white.pokemon.garbodor.weight
+      experience: *black-white.pokemon.garbodor.experience
+      types: *black-white.pokemon.garbodor.types
+      egg_groups: *black-white.pokemon.garbodor.egg_groups
+      mega: *x-y.pokemon.garbodor.mega
+      stats: *black-white.pokemon.garbodor.stats
+      abilities: *black-white.pokemon.garbodor.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.garbodor.wild_held_items.sun
+          silk-scarf: 50
+          black-sludge: 5
+        moon: *sun-moon.pokemon.garbodor.wild_held_items.sun
+      evolution_conditions: *black-white.pokemon.garbodor.evolution_conditions
+      flavor_text:
+        sun: |-
+          Beware the poisonous liquid it shoots from its
+          right arm. If even a little of it gets on you, you’ll
+          experience the effects of the unidentified toxin.
+        moon: |-
+          For a time, their numbers increased explosively
+          in Alola. Since the arrival of Grimer, their
+          population has decreased dramatically.
+      forms:
+        garbodor:
+          name: Garbodor
+          form_name: *black-white.pokemon.garbodor.forms.garbodor.form_name
+          default: true
+          battle_only: *black-white.pokemon.garbodor.forms.garbodor.battle_only
+          icon: *x-y.pokemon.garbodor.forms.garbodor.icon
+          sprites:
+            - sun-moon/garbodor-default.png
+            - sun-moon/shiny/garbodor-default.png
+          art: *black-white.pokemon.garbodor.forms.garbodor.art
+          footprint: *black-white.pokemon.garbodor.forms.garbodor.footprint
+          cry: *x-y.pokemon.garbodor.forms.garbodor.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 265
+    updated-ulaula: 86
+  pokemon:
+    garbodor:
+      genus: *black-white.pokemon.garbodor.genus
+      evolution_parent: *black-white.pokemon.garbodor.evolution_parent
+      color: *black-white.pokemon.garbodor.color
+      shape: *black-white.pokemon.garbodor.shape
+      female_rate: *black-white.pokemon.garbodor.female_rate
+      capture_rate: *black-white.pokemon.garbodor.capture_rate
+      happiness: *black-white.pokemon.garbodor.happiness
+      baby: *black-white.pokemon.garbodor.baby
+      hatch_steps: *black-white.pokemon.garbodor.hatch_steps
+      growth_rate: *black-white.pokemon.garbodor.growth_rate
+      forms_switchable: *black-white.pokemon.garbodor.forms_switchable
+      name: Garbodor
+      default: *black-white.pokemon.garbodor.default
+      height: *black-white.pokemon.garbodor.height
+      weight: *black-white.pokemon.garbodor.weight
+      experience: *black-white.pokemon.garbodor.experience
+      types: *black-white.pokemon.garbodor.types
+      egg_groups: *black-white.pokemon.garbodor.egg_groups
+      mega: *x-y.pokemon.garbodor.mega
+      stats: *black-white.pokemon.garbodor.stats
+      abilities: *black-white.pokemon.garbodor.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.garbodor.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.garbodor.wild_held_items.sun
+      evolution_conditions: *black-white.pokemon.garbodor.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It locks opponents in place with its left hand,
+          immobilizing them by entirely dousing their
+          bodies with poisonous liquid.
+        ultra-moon: |-
+          Some say the reason Garbodor in Alola are a
+          little stronger than their counterparts elsewhere
+          is the presence of Muk, their natural enemy.
+      forms:
+        garbodor:
+          name: Garbodor
+          form_name: *black-white.pokemon.garbodor.forms.garbodor.form_name
+          default: true
+          battle_only: *black-white.pokemon.garbodor.forms.garbodor.battle_only
+          icon: *x-y.pokemon.garbodor.forms.garbodor.icon
+          sprites:
+            - ultra-sun-ultra-moon/garbodor-default.png
+            - ultra-sun-ultra-moon/shiny/garbodor-default.png
+          art: *black-white.pokemon.garbodor.forms.garbodor.art
+          footprint: *black-white.pokemon.garbodor.forms.garbodor.footprint
+          cry: *x-y.pokemon.garbodor.forms.garbodor.cry

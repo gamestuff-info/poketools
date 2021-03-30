@@ -1,0 +1,960 @@
+red-blue:
+  name: &red-blue.name WEEZING
+  position: &red-blue.position 110
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 110
+    kanto: 110
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: &red-blue.pokemon.weezing.default true
+      capture_rate: &red-blue.pokemon.weezing.capture_rate 60
+      experience: &red-blue.pokemon.weezing.experience 173
+      types: &red-blue.pokemon.weezing.types
+        - poison
+      stats: &red-blue.pokemon.weezing.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 90
+          effort_change: 90
+        defense:
+          base_value: 120
+          effort_change: 120
+        speed:
+          base_value: 60
+          effort_change: 60
+        special:
+          base_value: 85
+          effort_change: 85
+      growth_rate: &red-blue.pokemon.weezing.growth_rate medium
+      genus: &red-blue.pokemon.weezing.genus 'POISON GAS Pokémon'
+      height: &red-blue.pokemon.weezing.height 11
+      weight: &red-blue.pokemon.weezing.weight 952
+      flavor_text:
+        red: |
+          Where two kinds
+          of poison gases
+          meet, 2 KOFFINGs
+          can fuse into a
+           WEEZING over many
+          years.
+        blue: |
+          Where two kinds
+          of poison gases
+          meet, 2 KOFFINGs
+          can fuse into a
+           WEEZING over many
+          years.
+      evolution_parent: &red-blue.pokemon.weezing.evolution_parent koffing/koffing
+      evolution_conditions: &red-blue.pokemon.weezing.evolution_conditions
+        level-up:
+          minimum_level: 35
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: &red-blue.pokemon.weezing.forms.weezing.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.weezing.forms.weezing.battle_only false
+          sprites:
+            - red-blue/weezing-default.png
+            - red-blue/gray/weezing-default.png
+            - red-blue/back/weezing-default.png
+          art: &red-blue.pokemon.weezing.forms.weezing.art
+            - weezing-default.png
+          cry: &red-blue.pokemon.weezing.forms.weezing.cry gen5/weezing-default.webm
+          icon: &red-blue.pokemon.weezing.forms.weezing.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: *red-blue.pokemon.weezing.default
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      experience: *red-blue.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      stats: *red-blue.pokemon.weezing.stats
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      genus: *red-blue.pokemon.weezing.genus
+      height: *red-blue.pokemon.weezing.height
+      weight: *red-blue.pokemon.weezing.weight
+      flavor_text:
+        yellow: |
+          It lives and grows
+          by absorbing dust,
+          germs and poison
+          gases that are
+          contained in toxic
+          waste and garbage.
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          sprites:
+            - yellow/weezing-default.png
+            - yellow/gray/weezing-default.png
+            - yellow/back/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+          icon: *red-blue.pokemon.weezing.forms.weezing.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 109
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 114
+    original-johto-abc: 232
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: *red-blue.pokemon.weezing.default
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      experience: *red-blue.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      stats: &gold-silver.pokemon.weezing.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 90
+          effort_change: 90
+        defense:
+          base_value: 120
+          effort_change: 120
+        speed:
+          base_value: 60
+          effort_change: 60
+        special-attack:
+          base_value: 85
+          effort_change: 85
+        special-defense:
+          base_value: 70
+          effort_change: 85
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      female_rate: &gold-silver.pokemon.weezing.female_rate 50
+      hatch_steps: &gold-silver.pokemon.weezing.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.weezing.egg_groups
+        - indeterminate
+      genus: *red-blue.pokemon.weezing.genus
+      height: *red-blue.pokemon.weezing.height
+      weight: &gold-silver.pokemon.weezing.weight 95
+      flavor_text:
+        gold: |
+          If one of the twin
+          KOFFING inflates,
+          the other one
+          deflates. It con-
+          stantly mixes its
+          poisonous gases.
+        silver: |
+          Top-grade perfume
+          is made using its
+          internal poison
+          gases by diluting
+          them to the high-
+          est level.
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          sprites:
+            - gold-silver/weezing-default.png
+            - gold-silver/back/weezing-default.png
+            - gold-silver/shiny/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+          icon: &gold-silver.pokemon.weezing.forms.weezing.icon gen2/blob.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: *red-blue.pokemon.weezing.default
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      experience: *red-blue.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      stats: *gold-silver.pokemon.weezing.stats
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      genus: *red-blue.pokemon.weezing.genus
+      height: *red-blue.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      flavor_text:
+        crystal: |
+          When it inhales
+          poisonous gases
+          from garbage, its
+          body expands, and
+          its insides smell
+          much worse.
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          sprites:
+            - crystal/weezing-default.png
+            - crystal/back/weezing-default.png
+            - crystal/shiny/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+          icon: *gold-silver.pokemon.weezing.forms.weezing.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 109
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: *red-blue.pokemon.weezing.default
+      forms_switchable: &ruby-sapphire.pokemon.weezing.forms_switchable false
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      experience: *red-blue.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      stats: &ruby-sapphire.pokemon.weezing.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 120
+          effort_change: 2
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+          smoke-ball: 5
+        sapphire: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.weezing.happiness 70
+      abilities: &ruby-sapphire.pokemon.weezing.abilities
+        levitate:
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.weezing.genus
+      height: &ruby-sapphire.pokemon.weezing.height 12
+      weight: *gold-silver.pokemon.weezing.weight
+      flavor_text:
+        ruby: |
+          WEEZING loves the gases given off by
+          rotted kitchen garbage. This POKéMON
+          will find a dirty, unkempt house and
+          make it its home. At night,  when the
+          people in the house are asleep, it will
+          go through the trash.
+        sapphire: |
+          WEEZING alternately shrinks and
+          inflates its twin bodies to mix together
+          toxic gases inside.
+          The more the gases are mixed, the more
+           powerful the toxins become. The
+          POKéMON also becomes more putrid.
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: &ruby-sapphire.pokemon.weezing.forms.weezing.icon gen5/weezing-default.png
+          sprites:
+            - ruby-sapphire/weezing-default.png
+            - ruby-sapphire/back/weezing-default.png
+            - ruby-sapphire/shiny/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: &ruby-sapphire.pokemon.weezing.forms.weezing.footprint weezing.png
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: *red-blue.pokemon.weezing.default
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      experience: *red-blue.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      stats: *ruby-sapphire.pokemon.weezing.stats
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      genus: *red-blue.pokemon.weezing.genus
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      flavor_text:
+        emerald: |
+          By diluting its toxic gases with a special
+          process, the highest grade of perfume can
+          be extracted. To WEEZING, gases emanating
+          from garbage are the ultimate feast.
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *ruby-sapphire.pokemon.weezing.forms.weezing.icon
+          sprites:
+            - emerald/weezing-default.png
+            - emerald/shiny/weezing-default.png
+            - emerald/animated/weezing-default.webm
+            - emerald/animated/shiny/weezing-default.webm
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 372
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: *red-blue.pokemon.weezing.default
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      experience: *red-blue.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      stats: *ruby-sapphire.pokemon.weezing.stats
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      genus: *red-blue.pokemon.weezing.genus
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          sprites:
+            - colosseum/weezing-default.png
+            - colosseum/shiny/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: *red-blue.pokemon.weezing.default
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      experience: *red-blue.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      stats: *ruby-sapphire.pokemon.weezing.stats
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      genus: *red-blue.pokemon.weezing.genus
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          sprites:
+            - xd/weezing-default.png
+            - xd/shiny/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    weezing:
+      name: WEEZING
+      default: *red-blue.pokemon.weezing.default
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      experience: *red-blue.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      stats: *ruby-sapphire.pokemon.weezing.stats
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      genus: *red-blue.pokemon.weezing.genus
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      flavor_text:
+        firered: |
+          Very rarely, a sudden mutation can result
+          in two small KOFFING twins becoming
+          conjoined as a WEEZING.
+        leafgreen: |
+          Where two kinds of poison gases meet, two
+          KOFFING can fuse into a WEEZING over
+          many years.
+      forms:
+        weezing:
+          name: WEEZING
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *ruby-sapphire.pokemon.weezing.forms.weezing.icon
+          sprites:
+            - firered-leafgreen/weezing-default.png
+            - firered-leafgreen/back/weezing-default.png
+            - firered-leafgreen/shiny/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Weezing
+  position: &diamond-pearl.position 122
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    weezing:
+      genus: &diamond-pearl.pokemon.weezing.genus 'Poison Gas Pokémon'
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      shape: &diamond-pearl.pokemon.weezing.shape heads
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: &diamond-pearl.pokemon.weezing.baby false
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      pal_park: &diamond-pearl.pokemon.weezing.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: &diamond-pearl.pokemon.weezing.experience 172
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      stats: &diamond-pearl.pokemon.weezing.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 120
+          effort_change: 2
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      flavor_text:
+        diamond: |
+          It grows by feeding on gases
+          released by garbage. Though very
+          rare, triplets have been found.
+        pearl: |
+          It grows by feeding on gases
+          released by garbage. Though very
+          rare, triplets have been found.
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *ruby-sapphire.pokemon.weezing.forms.weezing.icon
+          sprites:
+            - diamond-pearl/back/shiny/weezing-default.png
+            - diamond-pearl/back/weezing-default.png
+            - diamond-pearl/shiny/weezing-default.png
+            - diamond-pearl/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weezing:
+      genus: *diamond-pearl.pokemon.weezing.genus
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      shape: *diamond-pearl.pokemon.weezing.shape
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: *diamond-pearl.pokemon.weezing.baby
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      pal_park: *diamond-pearl.pokemon.weezing.pal_park
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: *diamond-pearl.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      stats: *diamond-pearl.pokemon.weezing.stats
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      flavor_text:
+        platinum: |
+          It grows by feeding on gases
+          released by garbage. Though very
+          rare, triplets have been found.
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *ruby-sapphire.pokemon.weezing.forms.weezing.icon
+          sprites:
+            - platinum/back/shiny/weezing-default.png
+            - platinum/back/weezing-default.png
+            - platinum/shiny/weezing-default.png
+            - platinum/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 116
+  pokemon:
+    weezing:
+      genus: *diamond-pearl.pokemon.weezing.genus
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      shape: *diamond-pearl.pokemon.weezing.shape
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: *diamond-pearl.pokemon.weezing.baby
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      pal_park: *diamond-pearl.pokemon.weezing.pal_park
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: *diamond-pearl.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      stats: *diamond-pearl.pokemon.weezing.stats
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      flavor_text:
+        heartgold: |
+          If one of the twin KOFFING inflates,
+          the other one deflates. It constantly
+          mixes its poisonous gases.
+        soulsilver: |
+          Top-grade perfume is made using its
+          internal poison gases by diluting
+          them to the highest level.
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 2-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.weezing.forms.weezing.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/weezing-default.png
+            - heartgold-soulsilver/back/weezing-default.png
+            - heartgold-soulsilver/shiny/weezing-default.png
+            - heartgold-soulsilver/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weezing:
+      genus: *diamond-pearl.pokemon.weezing.genus
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      color: &black-white.pokemon.weezing.color purple
+      shape: *diamond-pearl.pokemon.weezing.shape
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: *diamond-pearl.pokemon.weezing.baby
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: *diamond-pearl.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      stats: *diamond-pearl.pokemon.weezing.stats
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      flavor_text:
+        black: |
+          It grows by feeding on gases
+          released by garbage. Though very
+          rare, triplets have been found.
+        white: |
+          It grows by feeding on gases
+          released by garbage. Though very
+          rare, triplets have been found.
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *ruby-sapphire.pokemon.weezing.forms.weezing.icon
+          sprites:
+            - black-white/back/shiny/weezing-default.png
+            - black-white/back/weezing-default.png
+            - black-white/shiny/weezing-default.png
+            - black-white/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 47
+  pokemon:
+    weezing:
+      genus: *diamond-pearl.pokemon.weezing.genus
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      color: *black-white.pokemon.weezing.color
+      shape: *diamond-pearl.pokemon.weezing.shape
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: *diamond-pearl.pokemon.weezing.baby
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: *diamond-pearl.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      stats: *diamond-pearl.pokemon.weezing.stats
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      flavor_text:
+        black-2: |
+          Inhaling toxic fumes from trash
+          and mixing them inside its body
+          lets it spread an even fouler stench.
+        white-2: |
+          Inhaling toxic fumes from trash
+          and mixing them inside its body
+          lets it spread an even fouler stench.
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *ruby-sapphire.pokemon.weezing.forms.weezing.icon
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *red-blue.pokemon.weezing.forms.weezing.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weezing:
+      genus: *diamond-pearl.pokemon.weezing.genus
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      color: *black-white.pokemon.weezing.color
+      shape: *diamond-pearl.pokemon.weezing.shape
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: *diamond-pearl.pokemon.weezing.baby
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: *diamond-pearl.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      mega: &x-y.pokemon.weezing.mega false
+      stats: *diamond-pearl.pokemon.weezing.stats
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      flavor_text:
+        x: |
+          If one of the twin Koffing inflates, the other one
+          deflates. It constantly mixes its poisonous gases.
+        'y': |
+          Very rarely, a sudden mutation can result in two
+          small Koffing twins becoming conjoined as
+          a Weezing.
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: &x-y.pokemon.weezing.forms.weezing.icon weezing-default.png
+          sprites:
+            - x-y/shiny/weezing-default.png
+            - x-y/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: &x-y.pokemon.weezing.forms.weezing.cry weezing-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 114
+  pokemon:
+    weezing:
+      genus: *diamond-pearl.pokemon.weezing.genus
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      color: *black-white.pokemon.weezing.color
+      shape: *diamond-pearl.pokemon.weezing.shape
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: *diamond-pearl.pokemon.weezing.baby
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: *diamond-pearl.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      mega: *x-y.pokemon.weezing.mega
+      stats: *diamond-pearl.pokemon.weezing.stats
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Weezing loves the gases given off by rotted kitchen garbage.
+          This Pokémon will find a dirty, unkempt house and make it its
+          home. At night, when the people in the house are asleep, it will
+          go through the trash.
+        alpha-sapphire: |
+          Weezing alternately shrinks and inflates its twin bodies to mix
+          together toxic gases inside. The more the gases are mixed,
+          the more powerful the toxins become. The Pokémon also
+          becomes more putrid.
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *x-y.pokemon.weezing.forms.weezing.icon
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *x-y.pokemon.weezing.forms.weezing.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/weezing-default.png
+            - omega-ruby-alpha-sapphire/shiny/weezing-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weezing:
+      genus: *diamond-pearl.pokemon.weezing.genus
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      color: *black-white.pokemon.weezing.color
+      shape: *diamond-pearl.pokemon.weezing.shape
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: *diamond-pearl.pokemon.weezing.baby
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: *diamond-pearl.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      mega: *x-y.pokemon.weezing.mega
+      stats: *diamond-pearl.pokemon.weezing.stats
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *x-y.pokemon.weezing.forms.weezing.icon
+          sprites:
+            - sun-moon/shiny/weezing-default.png
+            - sun-moon/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *x-y.pokemon.weezing.forms.weezing.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    weezing:
+      genus: *diamond-pearl.pokemon.weezing.genus
+      evolution_parent: *red-blue.pokemon.weezing.evolution_parent
+      color: *black-white.pokemon.weezing.color
+      shape: *diamond-pearl.pokemon.weezing.shape
+      female_rate: *gold-silver.pokemon.weezing.female_rate
+      capture_rate: *red-blue.pokemon.weezing.capture_rate
+      happiness: *ruby-sapphire.pokemon.weezing.happiness
+      baby: *diamond-pearl.pokemon.weezing.baby
+      hatch_steps: *gold-silver.pokemon.weezing.hatch_steps
+      growth_rate: *red-blue.pokemon.weezing.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.weezing.forms_switchable
+      name: Weezing
+      default: *red-blue.pokemon.weezing.default
+      height: *ruby-sapphire.pokemon.weezing.height
+      weight: *gold-silver.pokemon.weezing.weight
+      experience: *diamond-pearl.pokemon.weezing.experience
+      types: *red-blue.pokemon.weezing.types
+      egg_groups: *gold-silver.pokemon.weezing.egg_groups
+      mega: *x-y.pokemon.weezing.mega
+      stats: *diamond-pearl.pokemon.weezing.stats
+      abilities: *ruby-sapphire.pokemon.weezing.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.weezing.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.weezing.evolution_conditions
+      forms:
+        weezing:
+          name: Weezing
+          form_name: *red-blue.pokemon.weezing.forms.weezing.form_name
+          default: true
+          battle_only: *red-blue.pokemon.weezing.forms.weezing.battle_only
+          icon: *x-y.pokemon.weezing.forms.weezing.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/weezing-default.png
+            - ultra-sun-ultra-moon/weezing-default.png
+          art: *red-blue.pokemon.weezing.forms.weezing.art
+          footprint: *ruby-sapphire.pokemon.weezing.forms.weezing.footprint
+          cry: *x-y.pokemon.weezing.forms.weezing.cry

@@ -1,0 +1,775 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name SWALOT
+  position: &ruby-sapphire.position 317
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 317
+    hoenn: 96
+  pokemon:
+    swalot:
+      name: SWALOT
+      default: &ruby-sapphire.pokemon.swalot.default true
+      forms_switchable: &ruby-sapphire.pokemon.swalot.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.swalot.capture_rate 75
+      experience: &ruby-sapphire.pokemon.swalot.experience 168
+      types: &ruby-sapphire.pokemon.swalot.types
+        - poison
+      stats: &ruby-sapphire.pokemon.swalot.stats
+        hp:
+          base_value: 100
+          effort_change: 2
+        attack:
+          base_value: 73
+          effort_change: 0
+        defense:
+          base_value: 83
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 73
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.swalot.growth_rate fast-then-very-slow
+      female_rate: &ruby-sapphire.pokemon.swalot.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.swalot.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.swalot.egg_groups
+        - indeterminate
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+          big-pearl: 5
+        sapphire: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.swalot.happiness 70
+      abilities: &ruby-sapphire.pokemon.swalot.abilities
+        liquid-ooze: &ruby-sapphire.pokemon.swalot.abilities.liquid-ooze
+          hidden: &ruby-sapphire.pokemon.swalot.abilities.liquid-ooze.hidden false
+          position: 1
+        sticky-hold: &ruby-sapphire.pokemon.swalot.abilities.sticky-hold
+          hidden: *ruby-sapphire.pokemon.swalot.abilities.liquid-ooze.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.swalot.genus 'POISON BAG Pokémon'
+      height: &ruby-sapphire.pokemon.swalot.height 17
+      weight: &ruby-sapphire.pokemon.swalot.weight 800
+      flavor_text:
+        ruby: |
+          When SWALOT spots prey, it spurts out
+          a hideously toxic fluid from its pores
+          and sprays the target.
+          Once the prey has weakened, this
+           POKéMON gulps it down whole with its
+          cavernous mouth.
+        sapphire: |
+          SWALOT has no teeth, so what it
+          eats, it swallows whole, no matter what.
+          Its cavernous mouth yawns widely.
+          An automobile tire could easily fit
+          inside this POKéMON's mouth.
+      forms:
+        swalot:
+          name: SWALOT
+          form_name: &ruby-sapphire.pokemon.swalot.forms.swalot.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.swalot.forms.swalot.battle_only false
+          icon: &ruby-sapphire.pokemon.swalot.forms.swalot.icon gen5/swalot-default.png
+          sprites:
+            - ruby-sapphire/swalot-default.png
+            - ruby-sapphire/back/swalot-default.png
+            - ruby-sapphire/shiny/swalot-default.png
+          art: &ruby-sapphire.pokemon.swalot.forms.swalot.art
+            - swalot-default.png
+          footprint: &ruby-sapphire.pokemon.swalot.forms.swalot.footprint swalot.png
+          cry: &ruby-sapphire.pokemon.swalot.forms.swalot.cry gen5/swalot-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.swalot.evolution_parent gulpin/gulpin
+      evolution_conditions: &ruby-sapphire.pokemon.swalot.evolution_conditions
+        level-up:
+          minimum_level: 26
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    swalot:
+      name: SWALOT
+      default: *ruby-sapphire.pokemon.swalot.default
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      experience: *ruby-sapphire.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      stats: *ruby-sapphire.pokemon.swalot.stats
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      abilities: *ruby-sapphire.pokemon.swalot.abilities
+      genus: *ruby-sapphire.pokemon.swalot.genus
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      flavor_text:
+        emerald: |
+          Its powerful stomach acid is capable of
+          digesting almost anything.  The one thing
+          in the whole world a SWALOT can't digest is
+          its own stomach.
+      forms:
+        swalot:
+          name: SWALOT
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *ruby-sapphire.pokemon.swalot.forms.swalot.icon
+          sprites:
+            - emerald/swalot-default.png
+            - emerald/shiny/swalot-default.png
+            - emerald/animated/swalot-default.webm
+            - emerald/animated/shiny/swalot-default.webm
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 331
+  pokemon:
+    swalot:
+      name: SWALOT
+      default: *ruby-sapphire.pokemon.swalot.default
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      experience: *ruby-sapphire.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      stats: *ruby-sapphire.pokemon.swalot.stats
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      abilities: *ruby-sapphire.pokemon.swalot.abilities
+      genus: *ruby-sapphire.pokemon.swalot.genus
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      forms:
+        swalot:
+          name: SWALOT
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          sprites:
+            - colosseum/swalot-default.png
+            - colosseum/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    swalot:
+      name: SWALOT
+      default: *ruby-sapphire.pokemon.swalot.default
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      experience: *ruby-sapphire.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      stats: *ruby-sapphire.pokemon.swalot.stats
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      abilities: *ruby-sapphire.pokemon.swalot.abilities
+      genus: *ruby-sapphire.pokemon.swalot.genus
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      forms:
+        swalot:
+          name: SWALOT
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          sprites:
+            - xd/swalot-default.png
+            - xd/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    swalot:
+      name: SWALOT
+      default: *ruby-sapphire.pokemon.swalot.default
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      experience: *ruby-sapphire.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      stats: *ruby-sapphire.pokemon.swalot.stats
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      abilities: *ruby-sapphire.pokemon.swalot.abilities
+      genus: *ruby-sapphire.pokemon.swalot.genus
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      flavor_text:
+        firered: |
+          It can swallow a tire whole in one gulp.
+          It secretes a horribly toxic fluid from
+          the pores on its body.
+        leafgreen: |
+          It can swallow a tire whole in one gulp.
+          It secretes a horribly toxic fluid from
+          the pores on its body.
+      forms:
+        swalot:
+          name: SWALOT
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *ruby-sapphire.pokemon.swalot.forms.swalot.icon
+          sprites:
+            - firered-leafgreen/swalot-default.png
+            - firered-leafgreen/back/swalot-default.png
+            - firered-leafgreen/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Swalot
+  position: &diamond-pearl.position 345
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swalot:
+      genus: &diamond-pearl.pokemon.swalot.genus 'Poison Bag Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      shape: &diamond-pearl.pokemon.swalot.shape arms
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: &diamond-pearl.pokemon.swalot.baby false
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      pal_park: &diamond-pearl.pokemon.swalot.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: &diamond-pearl.pokemon.swalot.experience 163
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      stats: &diamond-pearl.pokemon.swalot.stats
+        hp:
+          base_value: 100
+          effort_change: 2
+        attack:
+          base_value: 73
+          effort_change: 0
+        defense:
+          base_value: 83
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 73
+          effort_change: 0
+        special-defense:
+          base_value: 83
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.swalot.abilities
+        liquid-ooze: *ruby-sapphire.pokemon.swalot.abilities.liquid-ooze
+        sticky-hold: *ruby-sapphire.pokemon.swalot.abilities.sticky-hold
+        gluttony:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      flavor_text:
+        diamond: |
+          It swallows anything whole.
+          It sweats toxic fluids from its
+          follicles to douse foes.
+        pearl: |
+          It swallows anything whole.
+          It sweats toxic fluids from its
+          follicles to douse foes.
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *ruby-sapphire.pokemon.swalot.forms.swalot.icon
+          sprites:
+            - diamond-pearl/back/female/swalot-default.png
+            - diamond-pearl/back/swalot-default.png
+            - diamond-pearl/back/shiny/swalot-default.png
+            - diamond-pearl/female/swalot-default.png
+            - diamond-pearl/swalot-default.png
+            - diamond-pearl/shiny/female/swalot-default.png
+            - diamond-pearl/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swalot:
+      genus: *diamond-pearl.pokemon.swalot.genus
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      shape: *diamond-pearl.pokemon.swalot.shape
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: *diamond-pearl.pokemon.swalot.baby
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      pal_park: *diamond-pearl.pokemon.swalot.pal_park
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: *diamond-pearl.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      stats: *diamond-pearl.pokemon.swalot.stats
+      abilities: *diamond-pearl.pokemon.swalot.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      flavor_text:
+        platinum: |
+          It swallows anything whole.
+          It sweats toxic fluids from its
+          follicles to douse foes.
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *ruby-sapphire.pokemon.swalot.forms.swalot.icon
+          sprites:
+            - platinum/back/female/swalot-default.png
+            - platinum/back/swalot-default.png
+            - platinum/back/shiny/swalot-default.png
+            - platinum/female/swalot-default.png
+            - platinum/swalot-default.png
+            - platinum/shiny/female/swalot-default.png
+            - platinum/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swalot:
+      genus: *diamond-pearl.pokemon.swalot.genus
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      shape: *diamond-pearl.pokemon.swalot.shape
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: *diamond-pearl.pokemon.swalot.baby
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      pal_park: *diamond-pearl.pokemon.swalot.pal_park
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: *diamond-pearl.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      stats: *diamond-pearl.pokemon.swalot.stats
+      abilities: *diamond-pearl.pokemon.swalot.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It gulps anything that fits in its
+          mouth. Its special enzymes can
+          dissolve anything.
+        soulsilver: |
+          It gulps anything that fits in its
+          mouth. Its special enzymes can
+          dissolve anything.
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-2
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.swalot.forms.swalot.icon
+          sprites:
+            - heartgold-soulsilver/back/female/swalot-default.png
+            - heartgold-soulsilver/back/swalot-default.png
+            - heartgold-soulsilver/back/shiny/swalot-default.png
+            - heartgold-soulsilver/female/swalot-default.png
+            - heartgold-soulsilver/swalot-default.png
+            - heartgold-soulsilver/shiny/female/swalot-default.png
+            - heartgold-soulsilver/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swalot:
+      genus: *diamond-pearl.pokemon.swalot.genus
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      color: &black-white.pokemon.swalot.color purple
+      shape: *diamond-pearl.pokemon.swalot.shape
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: *diamond-pearl.pokemon.swalot.baby
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: *diamond-pearl.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      stats: *diamond-pearl.pokemon.swalot.stats
+      abilities: *diamond-pearl.pokemon.swalot.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      flavor_text:
+        black: |
+          It swallows anything whole.
+          It sweats toxic fluids from its
+          follicles to douse foes.
+        white: |
+          It swallows anything whole.
+          It sweats toxic fluids from its
+          follicles to douse foes.
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *ruby-sapphire.pokemon.swalot.forms.swalot.icon
+          sprites:
+            - black-white/back/female/swalot-default.png
+            - black-white/back/swalot-default.png
+            - black-white/back/shiny/swalot-default.png
+            - black-white/female/swalot-default.png
+            - black-white/swalot-default.png
+            - black-white/shiny/female/swalot-default.png
+            - black-white/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swalot:
+      genus: *diamond-pearl.pokemon.swalot.genus
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      color: *black-white.pokemon.swalot.color
+      shape: *diamond-pearl.pokemon.swalot.shape
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: *diamond-pearl.pokemon.swalot.baby
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: *diamond-pearl.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      stats: *diamond-pearl.pokemon.swalot.stats
+      abilities: *diamond-pearl.pokemon.swalot.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.swalot.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      flavor_text:
+        black-2: |
+          It swallows anything whole.
+          It sweats toxic fluids from its
+          follicles to douse foes.
+        white-2: |
+          It swallows anything whole.
+          It sweats toxic fluids from its
+          follicles to douse foes.
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *ruby-sapphire.pokemon.swalot.forms.swalot.icon
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *ruby-sapphire.pokemon.swalot.forms.swalot.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-central: 99
+  pokemon:
+    swalot:
+      genus: *diamond-pearl.pokemon.swalot.genus
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      color: *black-white.pokemon.swalot.color
+      shape: *diamond-pearl.pokemon.swalot.shape
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: *diamond-pearl.pokemon.swalot.baby
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: *diamond-pearl.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      mega: &x-y.pokemon.swalot.mega false
+      stats: *diamond-pearl.pokemon.swalot.stats
+      abilities: *diamond-pearl.pokemon.swalot.abilities
+      wild_held_items:
+        x: &x-y.pokemon.swalot.wild_held_items.x
+          oran-berry: 5
+        'y': *x-y.pokemon.swalot.wild_held_items.x
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      flavor_text:
+        x: |
+          It swallows anything whole. It sweats toxic fluids
+          from its follicles to douse foes.
+        'y': |
+          It gulps anything that fits in its mouth. Its special
+          enzymes can dissolve anything.
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: &x-y.pokemon.swalot.forms.swalot.icon swalot-default.png
+          sprites:
+            - x-y/female/swalot-default.png
+            - x-y/swalot-default.png
+            - x-y/shiny/female/swalot-default.png
+            - x-y/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: &x-y.pokemon.swalot.forms.swalot.cry swalot-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 101
+  pokemon:
+    swalot:
+      genus: *diamond-pearl.pokemon.swalot.genus
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      color: *black-white.pokemon.swalot.color
+      shape: *diamond-pearl.pokemon.swalot.shape
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: *diamond-pearl.pokemon.swalot.baby
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: *diamond-pearl.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      mega: *x-y.pokemon.swalot.mega
+      stats: *diamond-pearl.pokemon.swalot.stats
+      abilities: *diamond-pearl.pokemon.swalot.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          When Swalot spots prey, it spurts out a hideously toxic fluid
+          from its pores and sprays the target. Once the prey has
+          weakened, this Pokémon gulps it down whole with its
+          cavernous mouth.
+        alpha-sapphire: |
+          Swalot has no teeth, so what it eats, it swallows whole, no
+          matter what. Its cavernous mouth yawns widely. An automobile
+          tire could easily fit inside this Pokémon’s mouth.
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *x-y.pokemon.swalot.forms.swalot.icon
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *x-y.pokemon.swalot.forms.swalot.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/swalot-default.png
+            - omega-ruby-alpha-sapphire/shiny/swalot-default.png
+            - omega-ruby-alpha-sapphire/female/swalot-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/swalot-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.swalot.wild_held_items.omega-ruby
+          oran-berry: 50
+          sitrus-berry: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.swalot.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swalot:
+      genus: *diamond-pearl.pokemon.swalot.genus
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      color: *black-white.pokemon.swalot.color
+      shape: *diamond-pearl.pokemon.swalot.shape
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: *diamond-pearl.pokemon.swalot.baby
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: *diamond-pearl.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      mega: *x-y.pokemon.swalot.mega
+      stats: *diamond-pearl.pokemon.swalot.stats
+      abilities: *diamond-pearl.pokemon.swalot.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.swalot.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.swalot.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *x-y.pokemon.swalot.forms.swalot.icon
+          sprites:
+            - sun-moon/female/swalot-default.png
+            - sun-moon/swalot-default.png
+            - sun-moon/shiny/female/swalot-default.png
+            - sun-moon/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *x-y.pokemon.swalot.forms.swalot.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    swalot:
+      genus: *diamond-pearl.pokemon.swalot.genus
+      evolution_parent: *ruby-sapphire.pokemon.swalot.evolution_parent
+      color: *black-white.pokemon.swalot.color
+      shape: *diamond-pearl.pokemon.swalot.shape
+      female_rate: *ruby-sapphire.pokemon.swalot.female_rate
+      capture_rate: *ruby-sapphire.pokemon.swalot.capture_rate
+      happiness: *ruby-sapphire.pokemon.swalot.happiness
+      baby: *diamond-pearl.pokemon.swalot.baby
+      hatch_steps: *ruby-sapphire.pokemon.swalot.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.swalot.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.swalot.forms_switchable
+      name: Swalot
+      default: *ruby-sapphire.pokemon.swalot.default
+      height: *ruby-sapphire.pokemon.swalot.height
+      weight: *ruby-sapphire.pokemon.swalot.weight
+      experience: *diamond-pearl.pokemon.swalot.experience
+      types: *ruby-sapphire.pokemon.swalot.types
+      egg_groups: *ruby-sapphire.pokemon.swalot.egg_groups
+      mega: *x-y.pokemon.swalot.mega
+      stats: *diamond-pearl.pokemon.swalot.stats
+      abilities: *diamond-pearl.pokemon.swalot.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.swalot.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.swalot.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.swalot.evolution_conditions
+      forms:
+        swalot:
+          name: Swalot
+          form_name: *ruby-sapphire.pokemon.swalot.forms.swalot.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.swalot.forms.swalot.battle_only
+          icon: *x-y.pokemon.swalot.forms.swalot.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/swalot-default.png
+            - ultra-sun-ultra-moon/swalot-default.png
+            - ultra-sun-ultra-moon/shiny/female/swalot-default.png
+            - ultra-sun-ultra-moon/shiny/swalot-default.png
+          art: *ruby-sapphire.pokemon.swalot.forms.swalot.art
+          footprint: *ruby-sapphire.pokemon.swalot.forms.swalot.footprint
+          cry: *x-y.pokemon.swalot.forms.swalot.cry

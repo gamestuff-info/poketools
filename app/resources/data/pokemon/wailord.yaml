@@ -1,0 +1,746 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name WAILORD
+  position: &ruby-sapphire.position 321
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 321
+    hoenn: 100
+  pokemon:
+    wailord:
+      name: WAILORD
+      default: &ruby-sapphire.pokemon.wailord.default true
+      forms_switchable: &ruby-sapphire.pokemon.wailord.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.wailord.capture_rate 60
+      experience: &ruby-sapphire.pokemon.wailord.experience 206
+      types: &ruby-sapphire.pokemon.wailord.types
+        - water
+      stats: &ruby-sapphire.pokemon.wailord.stats
+        hp:
+          base_value: 170
+          effort_change: 2
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 170
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.wailord.growth_rate fast-then-very-slow
+      female_rate: &ruby-sapphire.pokemon.wailord.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.wailord.hatch_steps 40
+      egg_groups: &ruby-sapphire.pokemon.wailord.egg_groups
+        - ground
+        - water2
+      happiness: &ruby-sapphire.pokemon.wailord.happiness 70
+      abilities: &ruby-sapphire.pokemon.wailord.abilities
+        water-veil: &ruby-sapphire.pokemon.wailord.abilities.water-veil
+          hidden: &ruby-sapphire.pokemon.wailord.abilities.water-veil.hidden false
+          position: 1
+        oblivious: &ruby-sapphire.pokemon.wailord.abilities.oblivious
+          hidden: *ruby-sapphire.pokemon.wailord.abilities.water-veil.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.wailord.genus 'FLOAT WHALE Pokémon'
+      height: &ruby-sapphire.pokemon.wailord.height 145
+      weight: &ruby-sapphire.pokemon.wailord.weight 3980
+      flavor_text:
+        ruby: |
+          WAILORD is the largest of all identified
+          POKéMON up to now.
+          This giant POKéMON swims languorously
+          in the vast open sea, eating massive
+           amounts of food at once with its
+          enormous mouth.
+        sapphire: |
+          When chasing prey, WAILORD herds them
+          by leaping out of the water and making
+          a humongous splash.
+          It is breathtaking to see this POKéMON
+           leaping out of the sea with others in
+          its pod.
+      forms:
+        wailord:
+          name: WAILORD
+          form_name: &ruby-sapphire.pokemon.wailord.forms.wailord.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.wailord.forms.wailord.battle_only false
+          icon: &ruby-sapphire.pokemon.wailord.forms.wailord.icon gen5/wailord-default.png
+          sprites:
+            - ruby-sapphire/wailord-default.png
+            - ruby-sapphire/back/wailord-default.png
+            - ruby-sapphire/shiny/wailord-default.png
+          art: &ruby-sapphire.pokemon.wailord.forms.wailord.art
+            - wailord-default.png
+          footprint: &ruby-sapphire.pokemon.wailord.forms.wailord.footprint wailord.png
+          cry: &ruby-sapphire.pokemon.wailord.forms.wailord.cry gen5/wailord-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.wailord.evolution_parent wailmer/wailmer
+      evolution_conditions: &ruby-sapphire.pokemon.wailord.evolution_conditions
+        level-up:
+          minimum_level: 40
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    wailord:
+      name: WAILORD
+      default: *ruby-sapphire.pokemon.wailord.default
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      experience: *ruby-sapphire.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      stats: *ruby-sapphire.pokemon.wailord.stats
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      abilities: *ruby-sapphire.pokemon.wailord.abilities
+      genus: *ruby-sapphire.pokemon.wailord.genus
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      flavor_text:
+        emerald: |
+          It breathes through nostrils that it
+          raises above the sea. By inhaling to its
+          maximum capacity, a WAILORD can dive close
+          to 10,000 feet beneath the waves.
+      forms:
+        wailord:
+          name: WAILORD
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *ruby-sapphire.pokemon.wailord.forms.wailord.icon
+          sprites:
+            - emerald/wailord-default.png
+            - emerald/shiny/wailord-default.png
+            - emerald/animated/wailord-default.webm
+            - emerald/animated/shiny/wailord-default.webm
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 367
+  pokemon:
+    wailord:
+      name: WAILORD
+      default: *ruby-sapphire.pokemon.wailord.default
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      experience: *ruby-sapphire.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      stats: *ruby-sapphire.pokemon.wailord.stats
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      abilities: *ruby-sapphire.pokemon.wailord.abilities
+      genus: *ruby-sapphire.pokemon.wailord.genus
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      forms:
+        wailord:
+          name: WAILORD
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          sprites:
+            - colosseum/wailord-default.png
+            - colosseum/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    wailord:
+      name: WAILORD
+      default: *ruby-sapphire.pokemon.wailord.default
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      experience: *ruby-sapphire.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      stats: *ruby-sapphire.pokemon.wailord.stats
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      abilities: *ruby-sapphire.pokemon.wailord.abilities
+      genus: *ruby-sapphire.pokemon.wailord.genus
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      forms:
+        wailord:
+          name: WAILORD
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          sprites:
+            - xd/wailord-default.png
+            - xd/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    wailord:
+      name: WAILORD
+      default: *ruby-sapphire.pokemon.wailord.default
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      experience: *ruby-sapphire.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      stats: *ruby-sapphire.pokemon.wailord.stats
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      abilities: *ruby-sapphire.pokemon.wailord.abilities
+      genus: *ruby-sapphire.pokemon.wailord.genus
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      flavor_text:
+        firered: |
+          It is among the largest of all POKéMON.
+          It herds prey in a pack then swallows the
+          massed prey in one gulp.
+        leafgreen: |
+          It is among the largest of all POKéMON.
+          It herds prey in a pack then swallows the
+          massed prey in one gulp.
+      forms:
+        wailord:
+          name: WAILORD
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *ruby-sapphire.pokemon.wailord.forms.wailord.icon
+          sprites:
+            - firered-leafgreen/wailord-default.png
+            - firered-leafgreen/back/wailord-default.png
+            - firered-leafgreen/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Wailord
+  position: &diamond-pearl.position 349
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wailord:
+      genus: &diamond-pearl.pokemon.wailord.genus 'Float Whale Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      shape: &diamond-pearl.pokemon.wailord.shape fish
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: &diamond-pearl.pokemon.wailord.baby false
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      pal_park: &diamond-pearl.pokemon.wailord.pal_park
+        area: sea
+        rate: 10
+        score: 80
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: &diamond-pearl.pokemon.wailord.experience 175
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      stats: &diamond-pearl.pokemon.wailord.stats
+        hp:
+          base_value: 170
+          effort_change: 2
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.wailord.abilities
+        water-veil: *ruby-sapphire.pokemon.wailord.abilities.water-veil
+        oblivious: *ruby-sapphire.pokemon.wailord.abilities.oblivious
+        pressure:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        diamond: |
+          The biggest of all Pokémon.
+          It can dive to a depth of almost
+          10,000 feet on only one breath.
+        pearl: |
+          The biggest of all Pokémon.
+          It can dive to a depth of almost
+          10,000 feet on only one breath.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *ruby-sapphire.pokemon.wailord.forms.wailord.icon
+          sprites:
+            - diamond-pearl/wailord-default.png
+            - diamond-pearl/back/wailord-default.png
+            - diamond-pearl/back/shiny/wailord-default.png
+            - diamond-pearl/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wailord:
+      genus: *diamond-pearl.pokemon.wailord.genus
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      shape: *diamond-pearl.pokemon.wailord.shape
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: *diamond-pearl.pokemon.wailord.baby
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      pal_park: *diamond-pearl.pokemon.wailord.pal_park
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: *diamond-pearl.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      stats: *diamond-pearl.pokemon.wailord.stats
+      abilities: *diamond-pearl.pokemon.wailord.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        platinum: |
+          The biggest of all Pokémon.
+          It can dive to a depth of almost
+          10,000 feet on only one breath.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *ruby-sapphire.pokemon.wailord.forms.wailord.icon
+          sprites:
+            - platinum/wailord-default.png
+            - platinum/back/wailord-default.png
+            - platinum/back/shiny/wailord-default.png
+            - platinum/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wailord:
+      genus: *diamond-pearl.pokemon.wailord.genus
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      shape: *diamond-pearl.pokemon.wailord.shape
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: *diamond-pearl.pokemon.wailord.baby
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      pal_park: *diamond-pearl.pokemon.wailord.pal_park
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: *diamond-pearl.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      stats: *diamond-pearl.pokemon.wailord.stats
+      abilities: *diamond-pearl.pokemon.wailord.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It is the largest of all identified
+          Pokémon. They jump as a pack
+          to herd their prey.
+        soulsilver: |
+          It is the largest of all identified
+          Pokémon. They jump as a pack
+          to herd their prey.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 4
+              range: 2-5
+            skill:
+              base_value: 1
+              range: 1
+            stamina:
+              base_value: 5
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.wailord.forms.wailord.icon
+          sprites:
+            - heartgold-soulsilver/wailord-default.png
+            - heartgold-soulsilver/back/wailord-default.png
+            - heartgold-soulsilver/back/shiny/wailord-default.png
+            - heartgold-soulsilver/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    wailord:
+      genus: *diamond-pearl.pokemon.wailord.genus
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      color: &black-white.pokemon.wailord.color blue
+      shape: *diamond-pearl.pokemon.wailord.shape
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: *diamond-pearl.pokemon.wailord.baby
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: *diamond-pearl.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      stats: *diamond-pearl.pokemon.wailord.stats
+      abilities: *diamond-pearl.pokemon.wailord.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        black: |
+          The biggest of all Pokémon.
+          It can dive to a depth of almost
+          10,000 feet on only one breath.
+        white: |
+          The biggest of all Pokémon.
+          It can dive to a depth of almost
+          10,000 feet on only one breath.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *ruby-sapphire.pokemon.wailord.forms.wailord.icon
+          sprites:
+            - black-white/wailord-default.png
+            - black-white/back/wailord-default.png
+            - black-white/back/shiny/wailord-default.png
+            - black-white/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 241
+  pokemon:
+    wailord:
+      genus: *diamond-pearl.pokemon.wailord.genus
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      color: *black-white.pokemon.wailord.color
+      shape: *diamond-pearl.pokemon.wailord.shape
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: *diamond-pearl.pokemon.wailord.baby
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: *diamond-pearl.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      stats: *diamond-pearl.pokemon.wailord.stats
+      abilities: *diamond-pearl.pokemon.wailord.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        black-2: |
+          It can sometimes knock out opponents
+          with the shock created by breaching and
+          crashing its big body onto the water.
+        white-2: |
+          It can sometimes knock out opponents
+          with the shock created by breaching and
+          crashing its big body onto the water.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *ruby-sapphire.pokemon.wailord.forms.wailord.icon
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *ruby-sapphire.pokemon.wailord.forms.wailord.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-coastal: 28
+  pokemon:
+    wailord:
+      genus: *diamond-pearl.pokemon.wailord.genus
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      color: *black-white.pokemon.wailord.color
+      shape: *diamond-pearl.pokemon.wailord.shape
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: *diamond-pearl.pokemon.wailord.baby
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: *diamond-pearl.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      mega: &x-y.pokemon.wailord.mega false
+      stats: *diamond-pearl.pokemon.wailord.stats
+      abilities: *diamond-pearl.pokemon.wailord.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        x: |
+          It can sometimes knock out opponents with the
+          shock created by breaching and crashing its big
+          body onto the water.
+        'y': |
+          The biggest of all Pokémon. It can dive to a depth
+          of almost 10,000 feet on only one breath.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: &x-y.pokemon.wailord.forms.wailord.icon wailord-default.png
+          sprites:
+            - x-y/wailord-default.png
+            - x-y/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: &x-y.pokemon.wailord.forms.wailord.cry wailord-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 105
+  pokemon:
+    wailord:
+      genus: *diamond-pearl.pokemon.wailord.genus
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      color: *black-white.pokemon.wailord.color
+      shape: *diamond-pearl.pokemon.wailord.shape
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: *diamond-pearl.pokemon.wailord.baby
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: *diamond-pearl.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      mega: *x-y.pokemon.wailord.mega
+      stats: *diamond-pearl.pokemon.wailord.stats
+      abilities: *diamond-pearl.pokemon.wailord.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Wailord is the largest of all identified Pokémon up to now.
+          This giant Pokémon swims languorously in the vast open sea,
+          eating massive amounts of food at once with its enormous
+          mouth.
+        alpha-sapphire: |
+          When chasing prey, Wailord herds them by leaping out of the
+          water and making a humongous splash. It is breathtaking to
+          see this Pokémon leaping out of the sea with others in its pod.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *x-y.pokemon.wailord.forms.wailord.icon
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *x-y.pokemon.wailord.forms.wailord.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/wailord-default.png
+            - omega-ruby-alpha-sapphire/shiny/wailord-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-alola: 267
+    original-poni: 82
+  pokemon:
+    wailord:
+      genus: *diamond-pearl.pokemon.wailord.genus
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      color: *black-white.pokemon.wailord.color
+      shape: *diamond-pearl.pokemon.wailord.shape
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: *diamond-pearl.pokemon.wailord.baby
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: *diamond-pearl.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      mega: *x-y.pokemon.wailord.mega
+      stats: *diamond-pearl.pokemon.wailord.stats
+      abilities: *diamond-pearl.pokemon.wailord.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        sun: |-
+          Wailord pursue their prey in pods. With their
+          large mouths, they can swallow entire schools
+          of Wishiwashi whole.
+        moon: |-
+          Its immense size is the reason for its popularity.
+          Wailord watching is a favorite sightseeing
+          activity in various parts of the world.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *x-y.pokemon.wailord.forms.wailord.icon
+          sprites:
+            - sun-moon/wailord-default.png
+            - sun-moon/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *x-y.pokemon.wailord.forms.wailord.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 352
+    updated-poni: 99
+  pokemon:
+    wailord:
+      genus: *diamond-pearl.pokemon.wailord.genus
+      evolution_parent: *ruby-sapphire.pokemon.wailord.evolution_parent
+      color: *black-white.pokemon.wailord.color
+      shape: *diamond-pearl.pokemon.wailord.shape
+      female_rate: *ruby-sapphire.pokemon.wailord.female_rate
+      capture_rate: *ruby-sapphire.pokemon.wailord.capture_rate
+      happiness: *ruby-sapphire.pokemon.wailord.happiness
+      baby: *diamond-pearl.pokemon.wailord.baby
+      hatch_steps: *ruby-sapphire.pokemon.wailord.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.wailord.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.wailord.forms_switchable
+      name: Wailord
+      default: *ruby-sapphire.pokemon.wailord.default
+      height: *ruby-sapphire.pokemon.wailord.height
+      weight: *ruby-sapphire.pokemon.wailord.weight
+      experience: *diamond-pearl.pokemon.wailord.experience
+      types: *ruby-sapphire.pokemon.wailord.types
+      egg_groups: *ruby-sapphire.pokemon.wailord.egg_groups
+      mega: *x-y.pokemon.wailord.mega
+      stats: *diamond-pearl.pokemon.wailord.stats
+      abilities: *diamond-pearl.pokemon.wailord.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.wailord.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          They eat so many fish Pokémon that when
+          Wailord become too numerous, fishermen have
+          to chase them off.
+        ultra-moon: |-
+          When a small Wailmer is attacked by Sharpedo
+          or Dhelmise, its whole pod works together to
+          protect it.
+      forms:
+        wailord:
+          name: Wailord
+          form_name: *ruby-sapphire.pokemon.wailord.forms.wailord.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.wailord.forms.wailord.battle_only
+          icon: *x-y.pokemon.wailord.forms.wailord.icon
+          sprites:
+            - ultra-sun-ultra-moon/wailord-default.png
+            - ultra-sun-ultra-moon/shiny/wailord-default.png
+          art: *ruby-sapphire.pokemon.wailord.forms.wailord.art
+          footprint: *ruby-sapphire.pokemon.wailord.forms.wailord.footprint
+          cry: *x-y.pokemon.wailord.forms.wailord.cry

@@ -1,0 +1,338 @@
+black-white:
+  name: &black-white.name Whirlipede
+  position: &black-white.position 545
+  numbers:
+    national: &black-white.numbers.national 544
+    original-unova: 50
+  pokemon:
+    whirlipede:
+      genus: &black-white.pokemon.whirlipede.genus 'Curlipede Pokémon'
+      evolution_parent: &black-white.pokemon.whirlipede.evolution_parent venipede/venipede
+      color: &black-white.pokemon.whirlipede.color gray
+      shape: &black-white.pokemon.whirlipede.shape ball
+      female_rate: &black-white.pokemon.whirlipede.female_rate 50
+      capture_rate: &black-white.pokemon.whirlipede.capture_rate 120
+      happiness: &black-white.pokemon.whirlipede.happiness 70
+      baby: &black-white.pokemon.whirlipede.baby false
+      hatch_steps: &black-white.pokemon.whirlipede.hatch_steps 15
+      growth_rate: &black-white.pokemon.whirlipede.growth_rate medium-slow
+      forms_switchable: &black-white.pokemon.whirlipede.forms_switchable false
+      name: Whirlipede
+      default: &black-white.pokemon.whirlipede.default true
+      height: &black-white.pokemon.whirlipede.height 12
+      weight: &black-white.pokemon.whirlipede.weight 585
+      experience: &black-white.pokemon.whirlipede.experience 126
+      types: &black-white.pokemon.whirlipede.types
+        - bug
+        - poison
+      egg_groups: &black-white.pokemon.whirlipede.egg_groups
+        - bug
+      stats: &black-white.pokemon.whirlipede.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 99
+          effort_change: 2
+        speed:
+          base_value: 47
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 0
+        special-defense:
+          base_value: 79
+          effort_change: 0
+      abilities: &black-white.pokemon.whirlipede.abilities
+        poison-point:
+          hidden: &black-white.pokemon.whirlipede.abilities.poison-point.hidden false
+          position: 1
+        swarm:
+          hidden: *black-white.pokemon.whirlipede.abilities.poison-point.hidden
+          position: 2
+        speed-boost:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.whirlipede.wild_held_items.black
+          pecha-berry: 50
+          poison-barb: &black-white.pokemon.whirlipede.wild_held_items.black.poison-barb 5
+        white: *black-white.pokemon.whirlipede.wild_held_items.black
+      evolution_conditions: &black-white.pokemon.whirlipede.evolution_conditions
+        level-up:
+          minimum_level: 22
+      flavor_text:
+        black: |
+          Protected by a hard shell, it spins
+          its body like a wheel and crashes
+          furiously into its enemies.
+        white: |
+          It is usually motionless, but when
+          attacked, it rotates at high speed and
+          then crashes into its opponent.
+      forms:
+        whirlipede:
+          name: Whirlipede
+          form_name: &black-white.pokemon.whirlipede.forms.whirlipede.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.whirlipede.forms.whirlipede.battle_only false
+          icon: &black-white.pokemon.whirlipede.forms.whirlipede.icon gen5/whirlipede-default.png
+          sprites:
+            - black-white/back/shiny/whirlipede-default.png
+            - black-white/back/whirlipede-default.png
+            - black-white/shiny/whirlipede-default.png
+            - black-white/whirlipede-default.png
+          art: &black-white.pokemon.whirlipede.forms.whirlipede.art
+            - whirlipede-default.png
+          footprint: &black-white.pokemon.whirlipede.forms.whirlipede.footprint whirlipede.png
+          cry: &black-white.pokemon.whirlipede.forms.whirlipede.cry gen5/whirlipede-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 44
+  pokemon:
+    whirlipede:
+      genus: *black-white.pokemon.whirlipede.genus
+      evolution_parent: *black-white.pokemon.whirlipede.evolution_parent
+      color: *black-white.pokemon.whirlipede.color
+      shape: *black-white.pokemon.whirlipede.shape
+      female_rate: *black-white.pokemon.whirlipede.female_rate
+      capture_rate: *black-white.pokemon.whirlipede.capture_rate
+      happiness: *black-white.pokemon.whirlipede.happiness
+      baby: *black-white.pokemon.whirlipede.baby
+      hatch_steps: *black-white.pokemon.whirlipede.hatch_steps
+      growth_rate: *black-white.pokemon.whirlipede.growth_rate
+      forms_switchable: *black-white.pokemon.whirlipede.forms_switchable
+      name: Whirlipede
+      default: *black-white.pokemon.whirlipede.default
+      height: *black-white.pokemon.whirlipede.height
+      weight: *black-white.pokemon.whirlipede.weight
+      experience: *black-white.pokemon.whirlipede.experience
+      types: *black-white.pokemon.whirlipede.types
+      egg_groups: *black-white.pokemon.whirlipede.egg_groups
+      stats: *black-white.pokemon.whirlipede.stats
+      abilities: *black-white.pokemon.whirlipede.abilities
+      wild_held_items:
+        black-2: &black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+          poison-barb: *black-white.pokemon.whirlipede.wild_held_items.black.poison-barb
+        white-2: *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+      evolution_conditions: *black-white.pokemon.whirlipede.evolution_conditions
+      flavor_text:
+        black-2: |
+          Storing energy for evolution, it sits.
+          But, when predators approach, it
+          moves to stab them with poison spikes.
+        white-2: |
+          Storing energy for evolution, it sits.
+          But, when predators approach, it
+          moves to stab them with poison spikes.
+      forms:
+        whirlipede:
+          name: Whirlipede
+          form_name: *black-white.pokemon.whirlipede.forms.whirlipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.whirlipede.forms.whirlipede.battle_only
+          icon: *black-white.pokemon.whirlipede.forms.whirlipede.icon
+          art: *black-white.pokemon.whirlipede.forms.whirlipede.art
+          footprint: *black-white.pokemon.whirlipede.forms.whirlipede.footprint
+          cry: *black-white.pokemon.whirlipede.forms.whirlipede.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    kalos-central: 121
+  pokemon:
+    whirlipede:
+      genus: *black-white.pokemon.whirlipede.genus
+      evolution_parent: *black-white.pokemon.whirlipede.evolution_parent
+      color: *black-white.pokemon.whirlipede.color
+      shape: *black-white.pokemon.whirlipede.shape
+      female_rate: *black-white.pokemon.whirlipede.female_rate
+      capture_rate: *black-white.pokemon.whirlipede.capture_rate
+      happiness: *black-white.pokemon.whirlipede.happiness
+      baby: *black-white.pokemon.whirlipede.baby
+      hatch_steps: *black-white.pokemon.whirlipede.hatch_steps
+      growth_rate: *black-white.pokemon.whirlipede.growth_rate
+      forms_switchable: *black-white.pokemon.whirlipede.forms_switchable
+      name: Whirlipede
+      default: *black-white.pokemon.whirlipede.default
+      height: *black-white.pokemon.whirlipede.height
+      weight: *black-white.pokemon.whirlipede.weight
+      experience: *black-white.pokemon.whirlipede.experience
+      types: *black-white.pokemon.whirlipede.types
+      egg_groups: *black-white.pokemon.whirlipede.egg_groups
+      mega: &x-y.pokemon.whirlipede.mega false
+      stats: *black-white.pokemon.whirlipede.stats
+      abilities: *black-white.pokemon.whirlipede.abilities
+      wild_held_items:
+        x: *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+        'y': *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+      evolution_conditions: *black-white.pokemon.whirlipede.evolution_conditions
+      flavor_text:
+        x: |
+          Protected by a hard shell, it spins its body like a
+          wheel and crashes furiously into its enemies.
+        'y': |
+          It is usually motionless, but when attacked,
+          it rotates at high speed and then crashes into
+          its opponent.
+      forms:
+        whirlipede:
+          name: Whirlipede
+          form_name: *black-white.pokemon.whirlipede.forms.whirlipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.whirlipede.forms.whirlipede.battle_only
+          icon: &x-y.pokemon.whirlipede.forms.whirlipede.icon whirlipede-default.png
+          sprites:
+            - x-y/shiny/whirlipede-default.png
+            - x-y/whirlipede-default.png
+          art: *black-white.pokemon.whirlipede.forms.whirlipede.art
+          footprint: *black-white.pokemon.whirlipede.forms.whirlipede.footprint
+          cry: &x-y.pokemon.whirlipede.forms.whirlipede.cry whirlipede-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *black-white.numbers.national
+  pokemon:
+    whirlipede:
+      genus: *black-white.pokemon.whirlipede.genus
+      evolution_parent: *black-white.pokemon.whirlipede.evolution_parent
+      color: *black-white.pokemon.whirlipede.color
+      shape: *black-white.pokemon.whirlipede.shape
+      female_rate: *black-white.pokemon.whirlipede.female_rate
+      capture_rate: *black-white.pokemon.whirlipede.capture_rate
+      happiness: *black-white.pokemon.whirlipede.happiness
+      baby: *black-white.pokemon.whirlipede.baby
+      hatch_steps: *black-white.pokemon.whirlipede.hatch_steps
+      growth_rate: *black-white.pokemon.whirlipede.growth_rate
+      forms_switchable: *black-white.pokemon.whirlipede.forms_switchable
+      name: Whirlipede
+      default: *black-white.pokemon.whirlipede.default
+      height: *black-white.pokemon.whirlipede.height
+      weight: *black-white.pokemon.whirlipede.weight
+      experience: *black-white.pokemon.whirlipede.experience
+      types: *black-white.pokemon.whirlipede.types
+      egg_groups: *black-white.pokemon.whirlipede.egg_groups
+      mega: *x-y.pokemon.whirlipede.mega
+      stats: *black-white.pokemon.whirlipede.stats
+      abilities: *black-white.pokemon.whirlipede.abilities
+      evolution_conditions: *black-white.pokemon.whirlipede.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Protected by a hard shell, it spins its body like a
+          wheel and crashes furiously into its enemies.
+        alpha-sapphire: |
+          It is usually motionless, but when attacked,
+          it rotates at high speed and then crashes into
+          its opponent.
+      forms:
+        whirlipede:
+          name: Whirlipede
+          form_name: *black-white.pokemon.whirlipede.forms.whirlipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.whirlipede.forms.whirlipede.battle_only
+          icon: *x-y.pokemon.whirlipede.forms.whirlipede.icon
+          art: *black-white.pokemon.whirlipede.forms.whirlipede.art
+          footprint: *black-white.pokemon.whirlipede.forms.whirlipede.footprint
+          cry: *x-y.pokemon.whirlipede.forms.whirlipede.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/whirlipede-default.png
+            - omega-ruby-alpha-sapphire/shiny/whirlipede-default.png
+      wild_held_items:
+        omega-ruby: *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+        alpha-sapphire: *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    whirlipede:
+      genus: *black-white.pokemon.whirlipede.genus
+      evolution_parent: *black-white.pokemon.whirlipede.evolution_parent
+      color: *black-white.pokemon.whirlipede.color
+      shape: *black-white.pokemon.whirlipede.shape
+      female_rate: *black-white.pokemon.whirlipede.female_rate
+      capture_rate: *black-white.pokemon.whirlipede.capture_rate
+      happiness: *black-white.pokemon.whirlipede.happiness
+      baby: *black-white.pokemon.whirlipede.baby
+      hatch_steps: *black-white.pokemon.whirlipede.hatch_steps
+      growth_rate: *black-white.pokemon.whirlipede.growth_rate
+      forms_switchable: *black-white.pokemon.whirlipede.forms_switchable
+      name: Whirlipede
+      default: *black-white.pokemon.whirlipede.default
+      height: *black-white.pokemon.whirlipede.height
+      weight: *black-white.pokemon.whirlipede.weight
+      experience: *black-white.pokemon.whirlipede.experience
+      types: *black-white.pokemon.whirlipede.types
+      egg_groups: *black-white.pokemon.whirlipede.egg_groups
+      mega: *x-y.pokemon.whirlipede.mega
+      stats: *black-white.pokemon.whirlipede.stats
+      abilities: *black-white.pokemon.whirlipede.abilities
+      wild_held_items:
+        sun: *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+        moon: *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+      evolution_conditions: *black-white.pokemon.whirlipede.evolution_conditions
+      forms:
+        whirlipede:
+          name: Whirlipede
+          form_name: *black-white.pokemon.whirlipede.forms.whirlipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.whirlipede.forms.whirlipede.battle_only
+          icon: *x-y.pokemon.whirlipede.forms.whirlipede.icon
+          sprites:
+            - sun-moon/shiny/whirlipede-default.png
+            - sun-moon/whirlipede-default.png
+          art: *black-white.pokemon.whirlipede.forms.whirlipede.art
+          footprint: *black-white.pokemon.whirlipede.forms.whirlipede.footprint
+          cry: *x-y.pokemon.whirlipede.forms.whirlipede.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    whirlipede:
+      genus: *black-white.pokemon.whirlipede.genus
+      evolution_parent: *black-white.pokemon.whirlipede.evolution_parent
+      color: *black-white.pokemon.whirlipede.color
+      shape: *black-white.pokemon.whirlipede.shape
+      female_rate: *black-white.pokemon.whirlipede.female_rate
+      capture_rate: *black-white.pokemon.whirlipede.capture_rate
+      happiness: *black-white.pokemon.whirlipede.happiness
+      baby: *black-white.pokemon.whirlipede.baby
+      hatch_steps: *black-white.pokemon.whirlipede.hatch_steps
+      growth_rate: *black-white.pokemon.whirlipede.growth_rate
+      forms_switchable: *black-white.pokemon.whirlipede.forms_switchable
+      name: Whirlipede
+      default: *black-white.pokemon.whirlipede.default
+      height: *black-white.pokemon.whirlipede.height
+      weight: *black-white.pokemon.whirlipede.weight
+      experience: *black-white.pokemon.whirlipede.experience
+      types: *black-white.pokemon.whirlipede.types
+      egg_groups: *black-white.pokemon.whirlipede.egg_groups
+      mega: *x-y.pokemon.whirlipede.mega
+      stats: *black-white.pokemon.whirlipede.stats
+      abilities: *black-white.pokemon.whirlipede.abilities
+      wild_held_items:
+        ultra-sun: *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+        ultra-moon: *black-2-white-2.pokemon.whirlipede.wild_held_items.black-2
+      evolution_conditions: *black-white.pokemon.whirlipede.evolution_conditions
+      forms:
+        whirlipede:
+          name: Whirlipede
+          form_name: *black-white.pokemon.whirlipede.forms.whirlipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.whirlipede.forms.whirlipede.battle_only
+          icon: *x-y.pokemon.whirlipede.forms.whirlipede.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/whirlipede-default.png
+            - ultra-sun-ultra-moon/whirlipede-default.png
+          art: *black-white.pokemon.whirlipede.forms.whirlipede.art
+          footprint: *black-white.pokemon.whirlipede.forms.whirlipede.footprint
+          cry: *x-y.pokemon.whirlipede.forms.whirlipede.cry

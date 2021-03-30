@@ -1,0 +1,115 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'BIG MUSHROOM'
+  pocket: &gold-silver.pocket misc
+  buy: &gold-silver.buy 5000
+  sell: &gold-silver.sell 2500
+  flavor_text: |
+    A rare mushroom.
+    Sell high.
+  category: &gold-silver.category loot
+  short_description: &gold-silver.short_description 'No effect.  Sell to shops.'
+  description: &gold-silver.description 'No effect.  Sell to shops.'
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: &ruby-sapphire.flags
+    {  }
+  icon: &ruby-sapphire.icon big-mushroom.png
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    A rare mushroom
+    that would sell at a
+    high price.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *gold-silver.name
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *gold-silver.category
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+xd: *colosseum
+firered-leafgreen:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: |
+    A large and rare mushroom.
+    It is very popular among certain
+    people.
+  short_description: 'Trade to the Move Reminder for moves.'
+  description: 'Trade one to the Move Reminder on []{location:two-island-town} to have a Pokémon recall one of its previous moves.'
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Big Mushroom'
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A large and rare mushroom.
+    It is very popular among certain
+    maniacal fan segments.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: &black-white
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: 'No effect.  Sell to shops for $2500 or to the Hungry Maid for $5000.'
+  description: 'No effect.  Sell to shops for $2500, or the Hungry Maid in a trailer on []{location:unova-route-5} for $5000.'
+  flavor_text: |
+    A large and rare mushroom.
+    It is sought after by collectors.
+  icon: *ruby-sapphire.icon
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A very large and rare mushroom.
+    It’s popular with a certain class of
+    collectors and sought out by them.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A very large and rare mushroom. It’s popular with a
+    certain class of collectors and sought out by them.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,188 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'PECHA BERRY'
+  category: &ruby-sapphire.category medicine
+  pocket: &ruby-sapphire.pocket berries
+  flags: &ruby-sapphire.flags
+    - holdable-active
+  icon: &ruby-sapphire.icon pecha-berry.png
+  buy: &ruby-sapphire.buy 20
+  sell: &ruby-sapphire.sell 10
+  flavor_text: &ruby-sapphire.flavor_text |
+    A hold item that
+    heals poisoning
+    in battle.
+  short_description: &ruby-sapphire.short_description 'Held: Consumed when [poisoned]{mechanic:poison} to cure poison.'
+  description: &ruby-sapphire.description |
+    Held in battle
+    :   When the holder is [poisoned]{mechanic:poison}, it consumes this item to cure the poison.
+
+    Used on a party Pokémon
+    :   Cures [poison]{mechanic:poison}.
+  berry:
+    number: 3
+    firmness: very-soft
+    size: 40
+    growth_time: 3
+    smoothness: 25
+    flavors:
+      spicy: 0
+      dry: 0
+      sweet: 10
+      bitter: 0
+      sour: 0
+    harvest: 2-3
+    flavor_text: |
+      Very sweet and delicious.
+      Also very tender - handle with care.
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *ruby-sapphire.name
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *ruby-sapphire.category
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+xd: *colosseum
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: |
+    When held by a POKéMON, it will be
+    used in battle to cure poison.
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry:
+    number: 3
+    firmness: very-soft
+    size: 40
+    growth_time: 3
+    smoothness: 25
+    flavors:
+      spicy: 0
+      dry: 0
+      sweet: 10
+      bitter: 0
+      sour: 0
+    harvest: 2-3
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Pecha Berry'
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry: &diamond-pearl.berry
+    firmness: very-soft
+    natural_gift_type: electric
+    natural_gift_power: 60
+    size: 40
+    growth_time: 3
+    water: 15
+    smoothness: 25
+    flavors:
+      spicy: 0
+      dry: 0
+      sweet: 10
+      bitter: 0
+      sour: 0
+    harvest: 1-5
+  flavor_text: |
+    A Poffin ingredient. It may be used
+    or held by a Pokémon to recover from
+    poison.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    It may be used or held by a Pokémon to
+    recover from poison.
+  icon: *ruby-sapphire.icon
+black-white: &black-white
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    If held by a Pokémon,
+    it recovers from poison.
+  icon: *ruby-sapphire.icon
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry: *diamond-pearl.berry
+  flavor_text: |
+    A Berry to be consumed by Pokémon.
+    If a Pokémon holds one, it can recover
+    from poisoning on its own in battle.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  fling_effect: berry-effect
+  fling_power: 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  berry:
+    firmness: very-soft
+    natural_gift_type: electric
+    natural_gift_power: 60
+    size: 40
+    growth_time: 3
+    smoothness: 25
+    flavors:
+      spicy: 0
+      dry: 0
+      sweet: 10
+      bitter: 0
+      sour: 0
+    harvest: 1-5
+  flavor_text: |
+    A Berry to be consumed by Pokémon. If a Pokémon
+    holds one, it can recover from poisoning on its own
+    in battle.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,864 @@
+gold-silver:
+  name: &gold-silver.name CROBAT
+  position: &gold-silver.position 168
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 169
+    original-johto: 38
+    original-johto-abc: 20
+  pokemon:
+    crobat:
+      name: CROBAT
+      default: &gold-silver.pokemon.crobat.default true
+      capture_rate: &gold-silver.pokemon.crobat.capture_rate 90
+      experience: &gold-silver.pokemon.crobat.experience 204
+      types: &gold-silver.pokemon.crobat.types
+        - poison
+        - flying
+      stats: &gold-silver.pokemon.crobat.stats
+        hp:
+          base_value: 85
+          effort_change: 85
+        attack:
+          base_value: 90
+          effort_change: 90
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 130
+          effort_change: 130
+        special-attack:
+          base_value: 70
+          effort_change: 70
+        special-defense:
+          base_value: 80
+          effort_change: 70
+      growth_rate: &gold-silver.pokemon.crobat.growth_rate medium
+      female_rate: &gold-silver.pokemon.crobat.female_rate 50
+      hatch_steps: &gold-silver.pokemon.crobat.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.crobat.egg_groups
+        - flying
+      genus: &gold-silver.pokemon.crobat.genus 'BAT Pokémon'
+      height: &gold-silver.pokemon.crobat.height 18
+      weight: &gold-silver.pokemon.crobat.weight 748
+      flavor_text:
+        gold: |
+          It flies so si-
+          lently through the
+          dark on its four
+          wings that it may
+          not be noticed
+          even when nearby.
+        silver: |
+          The development of
+          wings on its legs
+          enables it to fly
+          fast but also
+          makes it tough to
+          stop and rest.
+      evolution_parent: &gold-silver.pokemon.crobat.evolution_parent golbat/golbat
+      evolution_conditions: &gold-silver.pokemon.crobat.evolution_conditions
+        level-up:
+          minimum_happiness: 220
+      forms:
+        crobat:
+          name: CROBAT
+          form_name: &gold-silver.pokemon.crobat.forms.crobat.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.crobat.forms.crobat.battle_only false
+          sprites:
+            - gold-silver/crobat-default.png
+            - gold-silver/back/crobat-default.png
+            - gold-silver/shiny/crobat-default.png
+          art: &gold-silver.pokemon.crobat.forms.crobat.art
+            - crobat-default.png
+          cry: &gold-silver.pokemon.crobat.forms.crobat.cry gen5/crobat-default.webm
+          icon: &gold-silver.pokemon.crobat.forms.crobat.icon gen2/bat.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    crobat:
+      name: CROBAT
+      default: *gold-silver.pokemon.crobat.default
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      experience: *gold-silver.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      stats: *gold-silver.pokemon.crobat.stats
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      genus: *gold-silver.pokemon.crobat.genus
+      height: *gold-silver.pokemon.crobat.height
+      weight: *gold-silver.pokemon.crobat.weight
+      flavor_text:
+        crystal: |
+          As a result of its
+          pursuit of faster,
+          yet more silent
+          flight, a new set
+          of wings grew on
+          its hind legs.
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      forms:
+        crobat:
+          name: CROBAT
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          sprites:
+            - crystal/crobat-default.png
+            - crystal/back/crobat-default.png
+            - crystal/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+          icon: *gold-silver.pokemon.crobat.forms.crobat.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 169
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 65
+  pokemon:
+    crobat:
+      name: CROBAT
+      default: *gold-silver.pokemon.crobat.default
+      forms_switchable: &ruby-sapphire.pokemon.crobat.forms_switchable false
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      experience: *gold-silver.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      stats: &ruby-sapphire.pokemon.crobat.stats
+        hp:
+          base_value: 85
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 130
+          effort_change: 3
+        special-attack:
+          base_value: 70
+          effort_change: 0
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      happiness: &ruby-sapphire.pokemon.crobat.happiness 70
+      abilities: &ruby-sapphire.pokemon.crobat.abilities
+        inner-focus: &ruby-sapphire.pokemon.crobat.abilities.inner-focus
+          hidden: false
+          position: 1
+      genus: *gold-silver.pokemon.crobat.genus
+      height: *gold-silver.pokemon.crobat.height
+      weight: &ruby-sapphire.pokemon.crobat.weight 750
+      flavor_text:
+        ruby: |
+          If this POKéMON is flying by fluttering
+          only a pair of wings on either the
+          forelegs or hind legs, it's proof that
+          CROBAT has been flying a long distance.
+          It switches the wings it uses if it is
+          tired.
+        sapphire: |
+          CROBAT sneaks up on its intended prey
+          using wings that barely make a sound.
+          This POKéMON rests by hanging on a
+          tree branch with its rear legs that
+          serve as wings.
+      forms:
+        crobat:
+          name: CROBAT
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: &ruby-sapphire.pokemon.crobat.forms.crobat.icon gen5/crobat-default.png
+          sprites:
+            - ruby-sapphire/crobat-default.png
+            - ruby-sapphire/back/crobat-default.png
+            - ruby-sapphire/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: &ruby-sapphire.pokemon.crobat.forms.crobat.footprint crobat.png
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    crobat:
+      name: CROBAT
+      default: *gold-silver.pokemon.crobat.default
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      experience: *gold-silver.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      stats: *ruby-sapphire.pokemon.crobat.stats
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      abilities: *ruby-sapphire.pokemon.crobat.abilities
+      genus: *gold-silver.pokemon.crobat.genus
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      flavor_text:
+        emerald: |
+          Over the course of evolution, its hind legs
+          turned into wings.  By alternately resting
+          its front and rear wings, it can fly all day
+           without having to stop.
+      forms:
+        crobat:
+          name: CROBAT
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *ruby-sapphire.pokemon.crobat.forms.crobat.icon
+          sprites:
+            - emerald/crobat-default.png
+            - emerald/shiny/crobat-default.png
+            - emerald/animated/crobat-default.webm
+            - emerald/animated/shiny/crobat-default.webm
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 60
+  pokemon:
+    crobat:
+      name: CROBAT
+      default: *gold-silver.pokemon.crobat.default
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      experience: *gold-silver.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      stats: *ruby-sapphire.pokemon.crobat.stats
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      abilities: *ruby-sapphire.pokemon.crobat.abilities
+      genus: *gold-silver.pokemon.crobat.genus
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      forms:
+        crobat:
+          name: CROBAT
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          sprites:
+            - colosseum/crobat-default.png
+            - colosseum/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    crobat:
+      name: CROBAT
+      default: *gold-silver.pokemon.crobat.default
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      experience: *gold-silver.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      stats: *ruby-sapphire.pokemon.crobat.stats
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      abilities: *ruby-sapphire.pokemon.crobat.abilities
+      genus: *gold-silver.pokemon.crobat.genus
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      forms:
+        crobat:
+          name: CROBAT
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          sprites:
+            - xd/crobat-default.png
+            - xd/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    crobat:
+      name: CROBAT
+      default: *gold-silver.pokemon.crobat.default
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      experience: *gold-silver.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      stats: *ruby-sapphire.pokemon.crobat.stats
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      abilities: *ruby-sapphire.pokemon.crobat.abilities
+      genus: *gold-silver.pokemon.crobat.genus
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      flavor_text:
+        firered: |
+          The development of wings on its legs
+          enables it to fly fast but also makes it
+          tough to stop and rest.
+        leafgreen: |
+          It flies so silently through the dark on
+          its four wings that it may not be noticed
+          even when nearby.
+      forms:
+        crobat:
+          name: CROBAT
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *ruby-sapphire.pokemon.crobat.forms.crobat.icon
+          sprites:
+            - firered-leafgreen/crobat-default.png
+            - firered-leafgreen/back/crobat-default.png
+            - firered-leafgreen/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Crobat
+  position: &diamond-pearl.position 46
+  numbers:
+    national: *gold-silver.numbers.national
+    original-sinnoh: 30
+  pokemon:
+    crobat:
+      genus: &diamond-pearl.pokemon.crobat.genus 'Bat Pokémon'
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      shape: &diamond-pearl.pokemon.crobat.shape bug-wings
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: &diamond-pearl.pokemon.crobat.baby false
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      pal_park: &diamond-pearl.pokemon.crobat.pal_park
+        area: mountain
+        rate: 3
+        score: 90
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: &diamond-pearl.pokemon.crobat.experience 241
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      stats: &diamond-pearl.pokemon.crobat.stats
+        hp:
+          base_value: 85
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 130
+          effort_change: 3
+        special-attack:
+          base_value: 70
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.crobat.abilities
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        diamond: |
+          Having four wings enables it to fly
+          faster and more quietly. It turns
+          active when the night comes.
+        pearl: |
+          A Pokémon that gained vastly
+          enhanced flying performance by
+          having its legs turn into wings.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *ruby-sapphire.pokemon.crobat.forms.crobat.icon
+          sprites:
+            - diamond-pearl/crobat-default.png
+            - diamond-pearl/back/crobat-default.png
+            - diamond-pearl/back/shiny/crobat-default.png
+            - diamond-pearl/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 30
+  pokemon:
+    crobat:
+      genus: *diamond-pearl.pokemon.crobat.genus
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      shape: *diamond-pearl.pokemon.crobat.shape
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: *diamond-pearl.pokemon.crobat.baby
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      pal_park: *diamond-pearl.pokemon.crobat.pal_park
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: *diamond-pearl.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      stats: *diamond-pearl.pokemon.crobat.stats
+      abilities: *ruby-sapphire.pokemon.crobat.abilities
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        platinum: |
+          The transformation of its legs into
+          wings made it better at flying, but
+          more clumsy at walking.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *ruby-sapphire.pokemon.crobat.forms.crobat.icon
+          sprites:
+            - platinum/crobat-default.png
+            - platinum/back/crobat-default.png
+            - platinum/back/shiny/crobat-default.png
+            - platinum/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 39
+  pokemon:
+    crobat:
+      genus: *diamond-pearl.pokemon.crobat.genus
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      shape: *diamond-pearl.pokemon.crobat.shape
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: *diamond-pearl.pokemon.crobat.baby
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      pal_park: *diamond-pearl.pokemon.crobat.pal_park
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: *diamond-pearl.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      stats: *diamond-pearl.pokemon.crobat.stats
+      abilities: *ruby-sapphire.pokemon.crobat.abilities
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It flies so silently through the
+          dark on its four wings that it may
+          not be noticed even when nearby.
+        soulsilver: |
+          The development of wings on its legs
+          enables it to fly fast but also
+          makes it tough to stop and rest.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 5
+              range: 3-5
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-2
+            jump:
+              base_value: 5
+              range: 5
+          icon: *ruby-sapphire.pokemon.crobat.forms.crobat.icon
+          sprites:
+            - heartgold-soulsilver/crobat-default.png
+            - heartgold-soulsilver/back/crobat-default.png
+            - heartgold-soulsilver/back/shiny/crobat-default.png
+            - heartgold-soulsilver/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    crobat:
+      genus: *diamond-pearl.pokemon.crobat.genus
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      color: &black-white.pokemon.crobat.color purple
+      shape: *diamond-pearl.pokemon.crobat.shape
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: *diamond-pearl.pokemon.crobat.baby
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: *diamond-pearl.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      stats: *diamond-pearl.pokemon.crobat.stats
+      abilities: &black-white.pokemon.crobat.abilities
+        inner-focus: *ruby-sapphire.pokemon.crobat.abilities.inner-focus
+        infiltrator:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        black: |
+          The transformation of its legs into
+          wings made it better at flying, but
+          more clumsy at walking.
+        white: |
+          The transformation of its legs into
+          wings made it better at flying, but
+          more clumsy at walking.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *ruby-sapphire.pokemon.crobat.forms.crobat.icon
+          sprites:
+            - black-white/crobat-default.png
+            - black-white/back/crobat-default.png
+            - black-white/back/shiny/crobat-default.png
+            - black-white/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 63
+  pokemon:
+    crobat:
+      genus: *diamond-pearl.pokemon.crobat.genus
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      color: *black-white.pokemon.crobat.color
+      shape: *diamond-pearl.pokemon.crobat.shape
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: *diamond-pearl.pokemon.crobat.baby
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: *diamond-pearl.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      stats: *diamond-pearl.pokemon.crobat.stats
+      abilities: *black-white.pokemon.crobat.abilities
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        black-2: |
+          Having four wings allows it to fly more
+          quickly and quietly so it can sneak up
+          on prey without its noticing.
+        white-2: |
+          Having four wings allows it to fly more
+          quickly and quietly so it can sneak up
+          on prey without its noticing.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *ruby-sapphire.pokemon.crobat.forms.crobat.icon
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *gold-silver.pokemon.crobat.forms.crobat.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-central: 147
+  pokemon:
+    crobat:
+      genus: *diamond-pearl.pokemon.crobat.genus
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      color: *black-white.pokemon.crobat.color
+      shape: *diamond-pearl.pokemon.crobat.shape
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: *diamond-pearl.pokemon.crobat.baby
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: *diamond-pearl.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      mega: &x-y.pokemon.crobat.mega false
+      stats: *diamond-pearl.pokemon.crobat.stats
+      abilities: *black-white.pokemon.crobat.abilities
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        x: |
+          It flies so silently through the dark on its four wings
+          that it may not be noticed even when nearby.
+        'y': |
+          Having four wings allows it to fly more quickly and
+          quietly so it can sneak up on prey without
+          its noticing.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: &x-y.pokemon.crobat.forms.crobat.icon crobat-default.png
+          sprites:
+            - x-y/crobat-default.png
+            - x-y/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: &x-y.pokemon.crobat.forms.crobat.cry crobat-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-hoenn: 67
+  pokemon:
+    crobat:
+      genus: *diamond-pearl.pokemon.crobat.genus
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      color: *black-white.pokemon.crobat.color
+      shape: *diamond-pearl.pokemon.crobat.shape
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: *diamond-pearl.pokemon.crobat.baby
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: *diamond-pearl.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      mega: *x-y.pokemon.crobat.mega
+      stats: *diamond-pearl.pokemon.crobat.stats
+      abilities: *black-white.pokemon.crobat.abilities
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          If this Pokémon is flying by fluttering only a pair of wings on
+          either the forelegs or hind legs, it’s proof that Crobat has been
+          flying a long distance. It switches the wings it uses if it is tired.
+        alpha-sapphire: |
+          Crobat sneaks up on its intended prey using wings that barely
+          make a sound. This Pokémon rests by hanging on a tree
+          branch with its rear legs that serve as wings.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *x-y.pokemon.crobat.forms.crobat.icon
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *x-y.pokemon.crobat.forms.crobat.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/crobat-default.png
+            - omega-ruby-alpha-sapphire/shiny/crobat-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 70
+    original-melemele: 70
+    original-akala: 28
+    original-ulaula: 37
+    original-poni: 21
+  pokemon:
+    crobat:
+      genus: *diamond-pearl.pokemon.crobat.genus
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      color: *black-white.pokemon.crobat.color
+      shape: *diamond-pearl.pokemon.crobat.shape
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: *diamond-pearl.pokemon.crobat.baby
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: *diamond-pearl.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      mega: *x-y.pokemon.crobat.mega
+      stats: *diamond-pearl.pokemon.crobat.stats
+      abilities: *black-white.pokemon.crobat.abilities
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        sun: |-
+          Both its legs became wings, and as a result,
+          it can’t move well on the ground. All it can do
+          is crawl around.
+        moon: |-
+          Silent and swift in its four-winged flight, it bites
+          down on its prey before they realize what’s
+          happening. In a heartbeat, it drains their blood.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *x-y.pokemon.crobat.forms.crobat.icon
+          sprites:
+            - sun-moon/crobat-default.png
+            - sun-moon/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *x-y.pokemon.crobat.forms.crobat.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 82
+    updated-melemele: 82
+    updated-akala: 28
+    updated-ulaula: 37
+    updated-poni: 28
+  pokemon:
+    crobat:
+      genus: *diamond-pearl.pokemon.crobat.genus
+      evolution_parent: *gold-silver.pokemon.crobat.evolution_parent
+      color: *black-white.pokemon.crobat.color
+      shape: *diamond-pearl.pokemon.crobat.shape
+      female_rate: *gold-silver.pokemon.crobat.female_rate
+      capture_rate: *gold-silver.pokemon.crobat.capture_rate
+      happiness: *ruby-sapphire.pokemon.crobat.happiness
+      baby: *diamond-pearl.pokemon.crobat.baby
+      hatch_steps: *gold-silver.pokemon.crobat.hatch_steps
+      growth_rate: *gold-silver.pokemon.crobat.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.crobat.forms_switchable
+      name: Crobat
+      default: *gold-silver.pokemon.crobat.default
+      height: *gold-silver.pokemon.crobat.height
+      weight: *ruby-sapphire.pokemon.crobat.weight
+      experience: *diamond-pearl.pokemon.crobat.experience
+      types: *gold-silver.pokemon.crobat.types
+      egg_groups: *gold-silver.pokemon.crobat.egg_groups
+      mega: *x-y.pokemon.crobat.mega
+      stats: *diamond-pearl.pokemon.crobat.stats
+      abilities: *black-white.pokemon.crobat.abilities
+      evolution_conditions: *gold-silver.pokemon.crobat.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Its fangs are so sharp, if it bites you in the dark
+          and sucks your blood, you won’t notice any pain
+          or realize you’ve been bitten.
+        ultra-moon: |-
+          It feeds on the blood of living people and
+          Pokémon. If it can’t drink any blood for even a
+          short while, it becomes weak and unable to fly.
+      forms:
+        crobat:
+          name: Crobat
+          form_name: *gold-silver.pokemon.crobat.forms.crobat.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.crobat.forms.crobat.battle_only
+          icon: *x-y.pokemon.crobat.forms.crobat.icon
+          sprites:
+            - ultra-sun-ultra-moon/crobat-default.png
+            - ultra-sun-ultra-moon/shiny/crobat-default.png
+          art: *gold-silver.pokemon.crobat.forms.crobat.art
+          footprint: *ruby-sapphire.pokemon.crobat.forms.crobat.footprint
+          cry: *x-y.pokemon.crobat.forms.crobat.cry

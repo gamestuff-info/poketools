@@ -1,0 +1,251 @@
+red-blue: &red-blue
+  name: &red-blue.name 'BODY SLAM'
+  power: &red-blue.power 85
+  type: &red-blue.type normal
+  accuracy: &red-blue.accuracy 100
+  pp: &red-blue.pp 15
+  effect: 37
+  ailment: &red-blue.ailment paralysis
+  ailment_chance: &red-blue.ailment_chance 30
+  flags: &red-blue.flags
+    - contact
+    - protect
+    - mirror
+    - non-sky-battle
+  categories: &red-blue.categories
+    - damage
+    - ailment
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target selected-pokemon
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: &gold-silver.effect 7
+  effect_chance: &gold-silver.effect_chance 30
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    An attack that may
+    cause paralysis.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *gold-silver.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  effect_chance: *gold-silver.effect_chance
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  contest_type: &ruby-sapphire.contest_type tough
+  contest_effect: 13
+  flavor_text: &ruby-sapphire.flavor_text |
+    A full-body slam that may
+    cause paralysis.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *gold-silver.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  effect_chance: *gold-silver.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+xd:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *gold-silver.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *ruby-sapphire.flavor_text
+  effect_chance: *gold-silver.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+firered-leafgreen:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *gold-silver.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  effect_chance: *gold-silver.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  flavor_text: |
+    The user drops its
+    full body on the
+    foe. It may leave
+    the foe paralyzed.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Body Slam'
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 5
+  flavor_text: &diamond-pearl.flavor_text |
+    The user drops onto
+    the foe with its full
+    body weight.
+    It may leave the foe
+    paralyzed.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: |
+    The user drops onto the target
+    with its full body weight. It may also
+    leave the target with paralysis.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: &x-y.flavor_text |
+    The user drops onto the target
+    with its full body weight. This may also
+    leave the target with paralysis.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 4
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  ailment: *red-blue.ailment
+  ailment_chance: *red-blue.ailment_chance
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *gold-silver.effect
+  effect_chance: *gold-silver.effect_chance
+  flavor_text: |
+    The user drops onto the target with its full body
+    weight. This may also leave the target with paralysis.
+ultra-sun-ultra-moon: *sun-moon

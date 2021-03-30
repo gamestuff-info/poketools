@@ -1,0 +1,50 @@
+black-white: &black-white
+  name: &black-white.name Eviolite
+  category: &black-white.category held-items
+  pocket: &black-white.pocket misc
+  buy: &black-white.buy 4000
+  sell: &black-white.sell 2000
+  fling_effect: damage
+  fling_power: 40
+  short_description: &black-white.short_description 'Held: Holder has 1.5× [Defense]{mechanic:defense} and [Special Defense]{mechanic:special-defense}, as long as it''s not fully evolved.'
+  description: &black-white.description |
+    Held by a Pokémon that is not fully evolved
+    :   Holder has 1.5× [Defense]{mechanic:defense} and [Special Defense]{mechanic:special-defense}.
+  flavor_text: |
+    A mysterious evolutionary lump. When
+    held, it raises the Defense and Sp. Def
+    of a Pokémon that can still evolve.
+  icon: &black-white.icon eviolite.png
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *black-white.name
+  category: *black-white.category
+  pocket: *black-white.pocket
+  buy: *black-white.buy
+  sell: *black-white.sell
+  fling_effect: damage
+  fling_power: 40
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    A mysterious Evolutionary lump. When
+    held by a Pokémon that can still evolve,
+    it raises both Defense and Sp. Def.
+  icon: *black-white.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *black-white.name
+  category: *black-white.category
+  pocket: *black-white.pocket
+  buy: *black-white.buy
+  sell: *black-white.sell
+  fling_effect: damage
+  fling_power: 40
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    A mysterious Evolutionary lump. When held by a
+    Pokémon that can still evolve, it raises both
+    Defense and Sp. Def.
+  icon: *black-white.icon
+ultra-sun-ultra-moon: *sun-moon

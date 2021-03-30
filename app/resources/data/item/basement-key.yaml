@@ -1,0 +1,35 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'BASEMENT KEY'
+  pocket: &gold-silver.pocket key
+  flavor_text: 'Opens doors.'
+  category: &gold-silver.category plot-advancement
+  short_description: &gold-silver.short_description 'Key to the tunnel under []{location:goldenrod-city}.'
+  description: &gold-silver.description |
+    Used by trainer outside of battle
+    :   Opens the door to the basement tunnel under []{location:goldenrod-city}.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: {  }
+  icon: basement-key.png
+  flavor_text: |
+    The key for NEW
+    MAUVILLE beneath
+    MAUVILLE CITY.
+  short_description: 'Key to []{location:new-mauville}.'
+  description: |
+    Used by trainer outside of battle
+    :   Opens the door to []{location:new-mauville}.
+emerald: *ruby-sapphire
+heartgold-soulsilver:
+  name: 'Basement Key'
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A key that opens a door in the
+    Goldenrod Tunnel.
+  icon: basement-key--goldenrod.png

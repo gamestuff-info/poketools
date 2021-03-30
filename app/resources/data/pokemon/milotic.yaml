@@ -1,0 +1,766 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name MILOTIC
+  position: &ruby-sapphire.position 350
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 350
+    hoenn: 141
+  pokemon:
+    milotic:
+      name: MILOTIC
+      default: &ruby-sapphire.pokemon.milotic.default true
+      forms_switchable: &ruby-sapphire.pokemon.milotic.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.milotic.capture_rate 60
+      experience: &ruby-sapphire.pokemon.milotic.experience 213
+      types: &ruby-sapphire.pokemon.milotic.types
+        - water
+      stats: &ruby-sapphire.pokemon.milotic.stats
+        hp:
+          base_value: 95
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 79
+          effort_change: 0
+        speed:
+          base_value: 81
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 2
+        special-defense:
+          base_value: 95
+          effort_change: 2
+      growth_rate: &ruby-sapphire.pokemon.milotic.growth_rate slow-then-very-fast
+      female_rate: &ruby-sapphire.pokemon.milotic.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.milotic.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.milotic.egg_groups
+        - water1
+        - dragon
+      happiness: &ruby-sapphire.pokemon.milotic.happiness 70
+      abilities: &ruby-sapphire.pokemon.milotic.abilities
+        marvel-scale: &ruby-sapphire.pokemon.milotic.abilities.marvel-scale
+          hidden: &ruby-sapphire.pokemon.milotic.abilities.marvel-scale.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.milotic.genus 'TENDER Pokémon'
+      height: &ruby-sapphire.pokemon.milotic.height 62
+      weight: &ruby-sapphire.pokemon.milotic.weight 1620
+      flavor_text:
+        ruby: |
+          MILOTIC is said to be the most
+          beautiful of all the POKéMON.
+          It has the power to becalm such
+          emotions as anger and hostility to quell
+          bitter feuding.
+        sapphire: |
+          MILOTIC live at the bottom of large
+          lakes. When this POKéMON's body glows a
+          vivid pink, it releases a pulsing wave of
+          energy that brings soothing calm to
+          restless spirits.
+      forms:
+        milotic:
+          name: MILOTIC
+          form_name: &ruby-sapphire.pokemon.milotic.forms.milotic.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.milotic.forms.milotic.battle_only false
+          icon: &ruby-sapphire.pokemon.milotic.forms.milotic.icon gen5/milotic-default.png
+          sprites:
+            - ruby-sapphire/milotic-default.png
+            - ruby-sapphire/back/milotic-default.png
+            - ruby-sapphire/shiny/milotic-default.png
+          art: &ruby-sapphire.pokemon.milotic.forms.milotic.art
+            - milotic-default.png
+          footprint: &ruby-sapphire.pokemon.milotic.forms.milotic.footprint milotic.png
+          cry: &ruby-sapphire.pokemon.milotic.forms.milotic.cry gen5/milotic-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.milotic.evolution_parent feebas/feebas
+      evolution_conditions: &ruby-sapphire.pokemon.milotic.evolution_conditions
+        level-up: &ruby-sapphire.pokemon.milotic.evolution_conditions.level-up
+          minimum_beauty: 170
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    milotic:
+      name: MILOTIC
+      default: *ruby-sapphire.pokemon.milotic.default
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      experience: *ruby-sapphire.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      stats: *ruby-sapphire.pokemon.milotic.stats
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      abilities: *ruby-sapphire.pokemon.milotic.abilities
+      genus: *ruby-sapphire.pokemon.milotic.genus
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      flavor_text:
+        emerald: |
+          It is said to live at the bottom of
+          large lakes. Considered to be the most
+          beautiful of all POKéMON, it has been
+          depicted in paintings and statues.
+      forms:
+        milotic:
+          name: MILOTIC
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *ruby-sapphire.pokemon.milotic.forms.milotic.icon
+          sprites:
+            - emerald/milotic-default.png
+            - emerald/shiny/milotic-default.png
+            - emerald/animated/milotic-default.webm
+            - emerald/animated/shiny/milotic-default.webm
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.milotic.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 205
+  pokemon:
+    milotic:
+      name: MILOTIC
+      default: *ruby-sapphire.pokemon.milotic.default
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      experience: *ruby-sapphire.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      stats: *ruby-sapphire.pokemon.milotic.stats
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      abilities: *ruby-sapphire.pokemon.milotic.abilities
+      genus: *ruby-sapphire.pokemon.milotic.genus
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      forms:
+        milotic:
+          name: MILOTIC
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          sprites:
+            - colosseum/milotic-default.png
+            - colosseum/shiny/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.milotic.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    milotic:
+      name: MILOTIC
+      default: *ruby-sapphire.pokemon.milotic.default
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      experience: *ruby-sapphire.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      stats: *ruby-sapphire.pokemon.milotic.stats
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      abilities: *ruby-sapphire.pokemon.milotic.abilities
+      genus: *ruby-sapphire.pokemon.milotic.genus
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      forms:
+        milotic:
+          name: MILOTIC
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          sprites:
+            - xd/milotic-default.png
+            - xd/shiny/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.milotic.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    milotic:
+      name: MILOTIC
+      default: *ruby-sapphire.pokemon.milotic.default
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      experience: *ruby-sapphire.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      stats: *ruby-sapphire.pokemon.milotic.stats
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      abilities: *ruby-sapphire.pokemon.milotic.abilities
+      genus: *ruby-sapphire.pokemon.milotic.genus
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      flavor_text:
+        firered: |
+          MILOTIC is breathtakingly beautiful.
+          Those that see it are said to forget their
+          combative spirits.
+        leafgreen: |
+          MILOTIC is breathtakingly beautiful.
+          Those that see it are said to forget their
+          combative spirits.
+      forms:
+        milotic:
+          name: MILOTIC
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *ruby-sapphire.pokemon.milotic.forms.milotic.icon
+          sprites:
+            - firered-leafgreen/milotic-default.png
+            - firered-leafgreen/back/milotic-default.png
+            - firered-leafgreen/shiny/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.milotic.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Milotic
+  position: &diamond-pearl.position 378
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-sinnoh: 139
+  pokemon:
+    milotic:
+      genus: &diamond-pearl.pokemon.milotic.genus 'Tender Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      shape: &diamond-pearl.pokemon.milotic.shape squiggle
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: &diamond-pearl.pokemon.milotic.baby false
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      pal_park: &diamond-pearl.pokemon.milotic.pal_park
+        area: sea
+        rate: 3
+        score: 90
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: &diamond-pearl.pokemon.milotic.experience 189
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      stats: &diamond-pearl.pokemon.milotic.stats
+        hp:
+          base_value: 95
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 79
+          effort_change: 0
+        speed:
+          base_value: 81
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 125
+          effort_change: 2
+      abilities: &diamond-pearl.pokemon.milotic.abilities
+        marvel-scale: *ruby-sapphire.pokemon.milotic.abilities.marvel-scale
+        cute-charm: &diamond-pearl.pokemon.milotic.abilities.cute-charm
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.milotic.evolution_conditions
+      flavor_text:
+        diamond: |
+          When people bicker, it is said to
+          arise from the depths of lakes to
+          becalm violent hearts.
+        pearl: |
+          It is the world’s most beautiful
+          Pokémon. There are many works of
+          art featuring MILOTIC.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *ruby-sapphire.pokemon.milotic.forms.milotic.icon
+          sprites:
+            - diamond-pearl/back/female/milotic-default.png
+            - diamond-pearl/back/shiny/milotic-default.png
+            - diamond-pearl/back/milotic-default.png
+            - diamond-pearl/female/milotic-default.png
+            - diamond-pearl/shiny/female/milotic-default.png
+            - diamond-pearl/shiny/milotic-default.png
+            - diamond-pearl/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    extended-sinnoh: 139
+  pokemon:
+    milotic:
+      genus: *diamond-pearl.pokemon.milotic.genus
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      shape: *diamond-pearl.pokemon.milotic.shape
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: *diamond-pearl.pokemon.milotic.baby
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      pal_park: *diamond-pearl.pokemon.milotic.pal_park
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: *diamond-pearl.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      stats: *diamond-pearl.pokemon.milotic.stats
+      abilities: *diamond-pearl.pokemon.milotic.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.milotic.evolution_conditions
+      flavor_text:
+        platinum: |
+          Its lovely scales are described as
+          rainbow colored. They change color
+          depending on the viewing angle.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *ruby-sapphire.pokemon.milotic.forms.milotic.icon
+          sprites:
+            - platinum/back/female/milotic-default.png
+            - platinum/back/shiny/milotic-default.png
+            - platinum/back/milotic-default.png
+            - platinum/female/milotic-default.png
+            - platinum/shiny/female/milotic-default.png
+            - platinum/shiny/milotic-default.png
+            - platinum/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    milotic:
+      genus: *diamond-pearl.pokemon.milotic.genus
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      shape: *diamond-pearl.pokemon.milotic.shape
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: *diamond-pearl.pokemon.milotic.baby
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      pal_park: *diamond-pearl.pokemon.milotic.pal_park
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: *diamond-pearl.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      stats: *diamond-pearl.pokemon.milotic.stats
+      abilities: *diamond-pearl.pokemon.milotic.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.milotic.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It’s said that a glimpse of a
+          MILOTIC and its beauty will calm any
+          hostile emotions you’re feeling.
+        soulsilver: |
+          It’s said that a glimpse of a
+          MILOTIC and its beauty will calm any
+          hostile emotions you’re feeling.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 5
+              range: 1-5
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.milotic.forms.milotic.icon
+          sprites:
+            - heartgold-soulsilver/back/female/milotic-default.png
+            - heartgold-soulsilver/back/shiny/milotic-default.png
+            - heartgold-soulsilver/back/milotic-default.png
+            - heartgold-soulsilver/female/milotic-default.png
+            - heartgold-soulsilver/shiny/female/milotic-default.png
+            - heartgold-soulsilver/shiny/milotic-default.png
+            - heartgold-soulsilver/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    milotic:
+      genus: *diamond-pearl.pokemon.milotic.genus
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      color: &black-white.pokemon.milotic.color pink
+      shape: *diamond-pearl.pokemon.milotic.shape
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: *diamond-pearl.pokemon.milotic.baby
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: *diamond-pearl.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      stats: *diamond-pearl.pokemon.milotic.stats
+      abilities: *diamond-pearl.pokemon.milotic.abilities
+      evolution_conditions: &black-white.pokemon.milotic.evolution_conditions
+        level-up: *ruby-sapphire.pokemon.milotic.evolution_conditions.level-up
+        trade:
+          held_item: prism-scale
+      flavor_text:
+        black: |
+          Its lovely scales are described as
+          rainbow colored. They change color
+          depending on the viewing angle.
+        white: |
+          Its lovely scales are described as
+          rainbow colored. They change color
+          depending on the viewing angle.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *ruby-sapphire.pokemon.milotic.forms.milotic.icon
+          sprites:
+            - black-white/back/female/milotic-default.png
+            - black-white/back/shiny/milotic-default.png
+            - black-white/back/milotic-default.png
+            - black-white/female/milotic-default.png
+            - black-white/shiny/female/milotic-default.png
+            - black-white/shiny/milotic-default.png
+            - black-white/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    milotic:
+      genus: *diamond-pearl.pokemon.milotic.genus
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      color: *black-white.pokemon.milotic.color
+      shape: *diamond-pearl.pokemon.milotic.shape
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: *diamond-pearl.pokemon.milotic.baby
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: *diamond-pearl.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      stats: *diamond-pearl.pokemon.milotic.stats
+      abilities: *diamond-pearl.pokemon.milotic.abilities
+      evolution_conditions: *black-white.pokemon.milotic.evolution_conditions
+      flavor_text:
+        black-2: |
+          Its lovely scales are described as
+          rainbow colored. They change color
+          depending on the viewing angle.
+        white-2: |
+          Its lovely scales are described as
+          rainbow colored. They change color
+          depending on the viewing angle.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *ruby-sapphire.pokemon.milotic.forms.milotic.icon
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *ruby-sapphire.pokemon.milotic.forms.milotic.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    milotic:
+      genus: *diamond-pearl.pokemon.milotic.genus
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      color: *black-white.pokemon.milotic.color
+      shape: *diamond-pearl.pokemon.milotic.shape
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: *diamond-pearl.pokemon.milotic.baby
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: *diamond-pearl.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      mega: &x-y.pokemon.milotic.mega false
+      stats: *diamond-pearl.pokemon.milotic.stats
+      abilities: &x-y.pokemon.milotic.abilities
+        marvel-scale: *ruby-sapphire.pokemon.milotic.abilities.marvel-scale
+        competitive:
+          hidden: *ruby-sapphire.pokemon.milotic.abilities.marvel-scale.hidden
+          position: 2
+        cute-charm: *diamond-pearl.pokemon.milotic.abilities.cute-charm
+      evolution_conditions: *black-white.pokemon.milotic.evolution_conditions
+      flavor_text:
+        x: |
+          Milotic is breathtakingly beautiful. Those that see it
+          are said to forget their combative spirits.
+        'y': |
+          It is the world’s most beautiful Pokémon. There are
+          many works of art featuring Milotic.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: &x-y.pokemon.milotic.forms.milotic.icon milotic-default.png
+          sprites:
+            - x-y/female/milotic-default.png
+            - x-y/shiny/female/milotic-default.png
+            - x-y/shiny/milotic-default.png
+            - x-y/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: &x-y.pokemon.milotic.forms.milotic.cry milotic-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 146
+  pokemon:
+    milotic:
+      genus: *diamond-pearl.pokemon.milotic.genus
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      color: *black-white.pokemon.milotic.color
+      shape: *diamond-pearl.pokemon.milotic.shape
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: *diamond-pearl.pokemon.milotic.baby
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: *diamond-pearl.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      mega: *x-y.pokemon.milotic.mega
+      stats: *diamond-pearl.pokemon.milotic.stats
+      abilities: *x-y.pokemon.milotic.abilities
+      evolution_conditions: *black-white.pokemon.milotic.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Milotic is said to be the most beautiful of all the Pokémon.
+          It has the power to becalm such emotions as anger and
+          hostility to quell bitter feuding.
+        alpha-sapphire: |
+          Milotic live at the bottom of large lakes. When this
+          Pokémon’s body glows a vivid pink, it releases a pulsing
+          wave of energy that brings soothing calm to troubled hearts.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *x-y.pokemon.milotic.forms.milotic.icon
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *x-y.pokemon.milotic.forms.milotic.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/milotic-default.png
+            - omega-ruby-alpha-sapphire/shiny/milotic-default.png
+            - omega-ruby-alpha-sapphire/female/milotic-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/milotic-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-alola: 156
+    original-akala: 83
+  pokemon:
+    milotic:
+      genus: *diamond-pearl.pokemon.milotic.genus
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      color: *black-white.pokemon.milotic.color
+      shape: *diamond-pearl.pokemon.milotic.shape
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: *diamond-pearl.pokemon.milotic.baby
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: *diamond-pearl.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      mega: *x-y.pokemon.milotic.mega
+      stats: *diamond-pearl.pokemon.milotic.stats
+      abilities: *x-y.pokemon.milotic.abilities
+      evolution_conditions: *black-white.pokemon.milotic.evolution_conditions
+      flavor_text:
+        sun: |-
+          Milotic has provided inspiration to many artists.
+          It has even been referred to as the most
+          beautiful Pokémon of all.
+        moon: |-
+          It lives at the bottom of clear lakes. In times of
+          war, it shows itself, which soothes people’s
+          minds and hearts.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *x-y.pokemon.milotic.forms.milotic.icon
+          sprites:
+            - sun-moon/female/milotic-default.png
+            - sun-moon/shiny/female/milotic-default.png
+            - sun-moon/shiny/milotic-default.png
+            - sun-moon/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *x-y.pokemon.milotic.forms.milotic.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 190
+    updated-akala: 91
+  pokemon:
+    milotic:
+      genus: *diamond-pearl.pokemon.milotic.genus
+      evolution_parent: *ruby-sapphire.pokemon.milotic.evolution_parent
+      color: *black-white.pokemon.milotic.color
+      shape: *diamond-pearl.pokemon.milotic.shape
+      female_rate: *ruby-sapphire.pokemon.milotic.female_rate
+      capture_rate: *ruby-sapphire.pokemon.milotic.capture_rate
+      happiness: *ruby-sapphire.pokemon.milotic.happiness
+      baby: *diamond-pearl.pokemon.milotic.baby
+      hatch_steps: *ruby-sapphire.pokemon.milotic.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.milotic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.milotic.forms_switchable
+      name: Milotic
+      default: *ruby-sapphire.pokemon.milotic.default
+      height: *ruby-sapphire.pokemon.milotic.height
+      weight: *ruby-sapphire.pokemon.milotic.weight
+      experience: *diamond-pearl.pokemon.milotic.experience
+      types: *ruby-sapphire.pokemon.milotic.types
+      egg_groups: *ruby-sapphire.pokemon.milotic.egg_groups
+      mega: *x-y.pokemon.milotic.mega
+      stats: *diamond-pearl.pokemon.milotic.stats
+      abilities: *x-y.pokemon.milotic.abilities
+      evolution_conditions: *black-white.pokemon.milotic.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          While Milotic is said to be the most beautiful
+          Pokémon, Trainers who like Feebas and have
+          raised it are seemingly disappointed by Milotic.
+        ultra-moon: |-
+          Its dwelling place is the bottom of big lakes.
+          Those who behold its loveliness are said to
+          have their hearts purified.
+      forms:
+        milotic:
+          name: Milotic
+          form_name: *ruby-sapphire.pokemon.milotic.forms.milotic.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.milotic.forms.milotic.battle_only
+          icon: *x-y.pokemon.milotic.forms.milotic.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/milotic-default.png
+            - ultra-sun-ultra-moon/shiny/female/milotic-default.png
+            - ultra-sun-ultra-moon/shiny/milotic-default.png
+            - ultra-sun-ultra-moon/milotic-default.png
+          art: *ruby-sapphire.pokemon.milotic.forms.milotic.art
+          footprint: *ruby-sapphire.pokemon.milotic.forms.milotic.footprint
+          cry: *x-y.pokemon.milotic.forms.milotic.cry

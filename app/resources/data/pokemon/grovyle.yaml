@@ -1,0 +1,710 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name GROVYLE
+  position: &ruby-sapphire.position 253
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 253
+    hoenn: 2
+  pokemon:
+    grovyle:
+      name: GROVYLE
+      default: &ruby-sapphire.pokemon.grovyle.default true
+      forms_switchable: &ruby-sapphire.pokemon.grovyle.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.grovyle.capture_rate 45
+      experience: &ruby-sapphire.pokemon.grovyle.experience 141
+      types: &ruby-sapphire.pokemon.grovyle.types
+        - grass
+      stats: &ruby-sapphire.pokemon.grovyle.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 2
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.grovyle.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.grovyle.female_rate 12
+      hatch_steps: &ruby-sapphire.pokemon.grovyle.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.grovyle.egg_groups
+        - monster
+        - dragon
+      happiness: &ruby-sapphire.pokemon.grovyle.happiness 70
+      abilities: &ruby-sapphire.pokemon.grovyle.abilities
+        overgrow: &ruby-sapphire.pokemon.grovyle.abilities.overgrow
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.grovyle.genus 'WOOD GECKO Pokémon'
+      height: &ruby-sapphire.pokemon.grovyle.height 9
+      weight: &ruby-sapphire.pokemon.grovyle.weight 216
+      flavor_text:
+        ruby: |
+          The leaves growing out of GROVYLE's
+          body are convenient for camouflaging
+           it from enemies in the forest.
+          This POKéMON is a master at climbing
+          trees in jungles.
+        sapphire: |
+          This POKéMON adeptly flies from branch
+          to branch in trees.
+          In a forest, no POKéMON can ever hope
+          to catch a fleeing GROVYLE however
+           fast they may be.
+      forms:
+        grovyle:
+          name: GROVYLE
+          form_name: &ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only false
+          icon: &ruby-sapphire.pokemon.grovyle.forms.grovyle.icon gen5/grovyle-default.png
+          sprites:
+            - ruby-sapphire/grovyle-default.png
+            - ruby-sapphire/back/grovyle-default.png
+            - ruby-sapphire/shiny/grovyle-default.png
+          art: &ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+            - grovyle-default.png
+          footprint: &ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint grovyle.png
+          cry: &ruby-sapphire.pokemon.grovyle.forms.grovyle.cry gen5/grovyle-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.grovyle.evolution_parent treecko/treecko
+      evolution_conditions: &ruby-sapphire.pokemon.grovyle.evolution_conditions
+        level-up:
+          minimum_level: 16
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    grovyle:
+      name: GROVYLE
+      default: *ruby-sapphire.pokemon.grovyle.default
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      experience: *ruby-sapphire.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      stats: *ruby-sapphire.pokemon.grovyle.stats
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      abilities: *ruby-sapphire.pokemon.grovyle.abilities
+      genus: *ruby-sapphire.pokemon.grovyle.genus
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      flavor_text:
+        emerald: |
+          Leaves grow out of this POKéMON's body.
+          They help obscure a GROVYLE from the eyes
+          of its enemies while it is in a thickly
+          overgrown forest.
+      forms:
+        grovyle:
+          name: GROVYLE
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *ruby-sapphire.pokemon.grovyle.forms.grovyle.icon
+          sprites:
+            - emerald/grovyle-default.png
+            - emerald/shiny/grovyle-default.png
+            - emerald/animated/grovyle-default.webm
+            - emerald/animated/shiny/grovyle-default.webm
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 119
+  pokemon:
+    grovyle:
+      name: GROVYLE
+      default: *ruby-sapphire.pokemon.grovyle.default
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      experience: *ruby-sapphire.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      stats: *ruby-sapphire.pokemon.grovyle.stats
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      abilities: *ruby-sapphire.pokemon.grovyle.abilities
+      genus: *ruby-sapphire.pokemon.grovyle.genus
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      forms:
+        grovyle:
+          name: GROVYLE
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          sprites:
+            - colosseum/grovyle-default.png
+            - colosseum/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    grovyle:
+      name: GROVYLE
+      default: *ruby-sapphire.pokemon.grovyle.default
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      experience: *ruby-sapphire.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      stats: *ruby-sapphire.pokemon.grovyle.stats
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      abilities: *ruby-sapphire.pokemon.grovyle.abilities
+      genus: *ruby-sapphire.pokemon.grovyle.genus
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      forms:
+        grovyle:
+          name: GROVYLE
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          sprites:
+            - xd/grovyle-default.png
+            - xd/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    grovyle:
+      name: GROVYLE
+      default: *ruby-sapphire.pokemon.grovyle.default
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      experience: *ruby-sapphire.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      stats: *ruby-sapphire.pokemon.grovyle.stats
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      abilities: *ruby-sapphire.pokemon.grovyle.abilities
+      genus: *ruby-sapphire.pokemon.grovyle.genus
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      flavor_text:
+        firered: |
+          Its strongly developed thigh muscles
+          give it astounding agility and jumping
+          performance.
+        leafgreen: |
+          Its strongly developed thigh muscles
+          give it astounding agility and jumping
+          performance.
+      forms:
+        grovyle:
+          name: GROVYLE
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *ruby-sapphire.pokemon.grovyle.forms.grovyle.icon
+          sprites:
+            - firered-leafgreen/grovyle-default.png
+            - firered-leafgreen/back/grovyle-default.png
+            - firered-leafgreen/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Grovyle
+  position: &diamond-pearl.position 278
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grovyle:
+      genus: &diamond-pearl.pokemon.grovyle.genus 'Wood Gecko Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      shape: &diamond-pearl.pokemon.grovyle.shape upright
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: &diamond-pearl.pokemon.grovyle.baby false
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      pal_park: &diamond-pearl.pokemon.grovyle.pal_park
+        area: forest
+        rate: 10
+        score: 80
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: &diamond-pearl.pokemon.grovyle.experience 142
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      stats: &diamond-pearl.pokemon.grovyle.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 2
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.grovyle.abilities
+        overgrow: *ruby-sapphire.pokemon.grovyle.abilities.overgrow
+        unburden:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      flavor_text:
+        diamond: |
+          It lives in dense jungles. While
+          closing in on its prey, it leaps
+          from branch to branch.
+        pearl: |
+          It lives in dense jungles. While
+          closing in on its prey, it leaps
+          from branch to branch.
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *ruby-sapphire.pokemon.grovyle.forms.grovyle.icon
+          sprites:
+            - diamond-pearl/back/grovyle-default.png
+            - diamond-pearl/back/shiny/grovyle-default.png
+            - diamond-pearl/grovyle-default.png
+            - diamond-pearl/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grovyle:
+      genus: *diamond-pearl.pokemon.grovyle.genus
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      shape: *diamond-pearl.pokemon.grovyle.shape
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: *diamond-pearl.pokemon.grovyle.baby
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      pal_park: *diamond-pearl.pokemon.grovyle.pal_park
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: *diamond-pearl.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      stats: *diamond-pearl.pokemon.grovyle.stats
+      abilities: *diamond-pearl.pokemon.grovyle.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      flavor_text:
+        platinum: |
+          It lives in dense jungles. While
+          closing in on its prey, it leaps
+          from branch to branch.
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *ruby-sapphire.pokemon.grovyle.forms.grovyle.icon
+          sprites:
+            - platinum/back/grovyle-default.png
+            - platinum/back/shiny/grovyle-default.png
+            - platinum/grovyle-default.png
+            - platinum/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grovyle:
+      genus: *diamond-pearl.pokemon.grovyle.genus
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      shape: *diamond-pearl.pokemon.grovyle.shape
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: *diamond-pearl.pokemon.grovyle.baby
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      pal_park: *diamond-pearl.pokemon.grovyle.pal_park
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: *diamond-pearl.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      stats: *diamond-pearl.pokemon.grovyle.stats
+      abilities: *diamond-pearl.pokemon.grovyle.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It leaps from tree branch to tree
+          branch quite swiftly. It shows
+          astounding agility.
+        soulsilver: |
+          It leaps from tree branch to tree
+          branch quite swiftly. It shows
+          astounding agility.
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 3-5
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 1-5
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 4
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.grovyle.forms.grovyle.icon
+          sprites:
+            - heartgold-soulsilver/back/grovyle-default.png
+            - heartgold-soulsilver/back/shiny/grovyle-default.png
+            - heartgold-soulsilver/grovyle-default.png
+            - heartgold-soulsilver/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grovyle:
+      genus: *diamond-pearl.pokemon.grovyle.genus
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      color: &black-white.pokemon.grovyle.color green
+      shape: *diamond-pearl.pokemon.grovyle.shape
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: *diamond-pearl.pokemon.grovyle.baby
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: *diamond-pearl.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      stats: *diamond-pearl.pokemon.grovyle.stats
+      abilities: *diamond-pearl.pokemon.grovyle.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      flavor_text:
+        black: |
+          It lives in dense jungles. While
+          closing in on its prey, it leaps
+          from branch to branch.
+        white: |
+          It lives in dense jungles. While
+          closing in on its prey, it leaps
+          from branch to branch.
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *ruby-sapphire.pokemon.grovyle.forms.grovyle.icon
+          sprites:
+            - black-white/back/grovyle-default.png
+            - black-white/back/shiny/grovyle-default.png
+            - black-white/grovyle-default.png
+            - black-white/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grovyle:
+      genus: *diamond-pearl.pokemon.grovyle.genus
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      color: *black-white.pokemon.grovyle.color
+      shape: *diamond-pearl.pokemon.grovyle.shape
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: *diamond-pearl.pokemon.grovyle.baby
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: *diamond-pearl.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      stats: *diamond-pearl.pokemon.grovyle.stats
+      abilities: *diamond-pearl.pokemon.grovyle.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      flavor_text:
+        black-2: |
+          It lives in dense jungles. While
+          closing in on its prey, it leaps
+          from branch to branch.
+        white-2: |
+          It lives in dense jungles. While
+          closing in on its prey, it leaps
+          from branch to branch.
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *ruby-sapphire.pokemon.grovyle.forms.grovyle.icon
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *ruby-sapphire.pokemon.grovyle.forms.grovyle.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grovyle:
+      genus: *diamond-pearl.pokemon.grovyle.genus
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      color: *black-white.pokemon.grovyle.color
+      shape: *diamond-pearl.pokemon.grovyle.shape
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: *diamond-pearl.pokemon.grovyle.baby
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: *diamond-pearl.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      mega: &x-y.pokemon.grovyle.mega false
+      stats: *diamond-pearl.pokemon.grovyle.stats
+      abilities: *diamond-pearl.pokemon.grovyle.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      flavor_text:
+        x: |
+          Its strongly developed thigh muscles give it
+          astounding agility and jumping performance.
+        'y': |
+          It lives in dense jungles. While closing in on its
+          prey, it leaps from branch to branch.
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: &x-y.pokemon.grovyle.forms.grovyle.icon grovyle-default.png
+          sprites:
+            - x-y/grovyle-default.png
+            - x-y/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: &x-y.pokemon.grovyle.forms.grovyle.cry grovyle-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 2
+  pokemon:
+    grovyle:
+      genus: *diamond-pearl.pokemon.grovyle.genus
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      color: *black-white.pokemon.grovyle.color
+      shape: *diamond-pearl.pokemon.grovyle.shape
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: *diamond-pearl.pokemon.grovyle.baby
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: *diamond-pearl.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      mega: *x-y.pokemon.grovyle.mega
+      stats: *diamond-pearl.pokemon.grovyle.stats
+      abilities: *diamond-pearl.pokemon.grovyle.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          The leaves growing out of Grovyle’s body are convenient for
+          camouflaging it from enemies in the forest. This Pokémon is a
+          master at climbing trees in jungles.
+        alpha-sapphire: |
+          This Pokémon adeptly flies from branch to branch in trees.
+          In a forest, no Pokémon can ever hope to catch a fleeing
+          Grovyle however fast they may be.
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *x-y.pokemon.grovyle.forms.grovyle.icon
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *x-y.pokemon.grovyle.forms.grovyle.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/grovyle-default.png
+            - omega-ruby-alpha-sapphire/shiny/grovyle-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grovyle:
+      genus: *diamond-pearl.pokemon.grovyle.genus
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      color: *black-white.pokemon.grovyle.color
+      shape: *diamond-pearl.pokemon.grovyle.shape
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: *diamond-pearl.pokemon.grovyle.baby
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: *diamond-pearl.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      mega: *x-y.pokemon.grovyle.mega
+      stats: *diamond-pearl.pokemon.grovyle.stats
+      abilities: *diamond-pearl.pokemon.grovyle.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *x-y.pokemon.grovyle.forms.grovyle.icon
+          sprites:
+            - sun-moon/grovyle-default.png
+            - sun-moon/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *x-y.pokemon.grovyle.forms.grovyle.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grovyle:
+      genus: *diamond-pearl.pokemon.grovyle.genus
+      evolution_parent: *ruby-sapphire.pokemon.grovyle.evolution_parent
+      color: *black-white.pokemon.grovyle.color
+      shape: *diamond-pearl.pokemon.grovyle.shape
+      female_rate: *ruby-sapphire.pokemon.grovyle.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grovyle.capture_rate
+      happiness: *ruby-sapphire.pokemon.grovyle.happiness
+      baby: *diamond-pearl.pokemon.grovyle.baby
+      hatch_steps: *ruby-sapphire.pokemon.grovyle.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grovyle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grovyle.forms_switchable
+      name: Grovyle
+      default: *ruby-sapphire.pokemon.grovyle.default
+      height: *ruby-sapphire.pokemon.grovyle.height
+      weight: *ruby-sapphire.pokemon.grovyle.weight
+      experience: *diamond-pearl.pokemon.grovyle.experience
+      types: *ruby-sapphire.pokemon.grovyle.types
+      egg_groups: *ruby-sapphire.pokemon.grovyle.egg_groups
+      mega: *x-y.pokemon.grovyle.mega
+      stats: *diamond-pearl.pokemon.grovyle.stats
+      abilities: *diamond-pearl.pokemon.grovyle.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grovyle.evolution_conditions
+      forms:
+        grovyle:
+          name: Grovyle
+          form_name: *ruby-sapphire.pokemon.grovyle.forms.grovyle.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grovyle.forms.grovyle.battle_only
+          icon: *x-y.pokemon.grovyle.forms.grovyle.icon
+          sprites:
+            - ultra-sun-ultra-moon/grovyle-default.png
+            - ultra-sun-ultra-moon/shiny/grovyle-default.png
+          art: *ruby-sapphire.pokemon.grovyle.forms.grovyle.art
+          footprint: *ruby-sapphire.pokemon.grovyle.forms.grovyle.footprint
+          cry: *x-y.pokemon.grovyle.forms.grovyle.cry

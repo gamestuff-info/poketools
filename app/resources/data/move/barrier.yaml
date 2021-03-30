@@ -1,0 +1,195 @@
+red-blue: &red-blue
+  name: &red-blue.name BARRIER
+  type: &red-blue.type psychic
+  accuracy: &red-blue.accuracy 100
+  pp: &red-blue.pp 30
+  effect: &red-blue.effect 52
+  flags: &red-blue.flags
+    - snatch
+  categories: &red-blue.categories
+    - net-good-stats
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  stat_changes: &red-blue.stat_changes
+    defense: 2
+  priority: &red-blue.priority 0
+  target: &red-blue.target user
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Sharply increases
+    user's DEFENSE.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  type: *red-blue.type
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  contest_type: &ruby-sapphire.contest_type cool
+  contest_effect: 6
+  flavor_text: &ruby-sapphire.flavor_text |
+    Creates a barrier that
+    sharply raises DEFENSE.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  type: *red-blue.type
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+xd:
+  name: *red-blue.name
+  type: *red-blue.type
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: special
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+firered-leafgreen:
+  name: *red-blue.name
+  type: *red-blue.type
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  flavor_text: |
+    The user creates a
+    sturdy wall that
+    sharply raises its
+    DEFENSE stat.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Barrier
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 13
+  flavor_text: &diamond-pearl.flavor_text |
+    The user throws up a
+    sturdy wall that
+    sharply raises its
+    Defense stat.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: &black-white.flavor_text |
+    The user throws up a sturdy wall that
+    sharply raises its Defense stat.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  type: *red-blue.type
+  pp: &x-y.pp 20
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: *black-white.flavor_text
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  type: *red-blue.type
+  pp: *x-y.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 15
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *red-blue.stat_changes
+  type: *red-blue.type
+  pp: *x-y.pp
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user throws up a sturdy wall that sharply raises
+    its Defense stat.
+ultra-sun-ultra-moon: *sun-moon

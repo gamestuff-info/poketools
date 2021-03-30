@@ -1,0 +1,716 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name WALREIN
+  position: &ruby-sapphire.position 365
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 365
+    hoenn: 175
+  pokemon:
+    walrein:
+      name: WALREIN
+      default: &ruby-sapphire.pokemon.walrein.default true
+      forms_switchable: &ruby-sapphire.pokemon.walrein.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.walrein.capture_rate 45
+      experience: &ruby-sapphire.pokemon.walrein.experience 192
+      types: &ruby-sapphire.pokemon.walrein.types
+        - ice
+        - water
+      stats: &ruby-sapphire.pokemon.walrein.stats
+        hp:
+          base_value: 110
+          effort_change: 3
+        attack:
+          base_value: 80
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 110
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.walrein.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.walrein.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.walrein.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.walrein.egg_groups
+        - water1
+        - ground
+      happiness: &ruby-sapphire.pokemon.walrein.happiness 70
+      abilities: &ruby-sapphire.pokemon.walrein.abilities
+        thick-fat: &ruby-sapphire.pokemon.walrein.abilities.thick-fat
+          hidden: &ruby-sapphire.pokemon.walrein.abilities.thick-fat.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.walrein.genus 'ICE BREAK Pokémon'
+      height: &ruby-sapphire.pokemon.walrein.height 14
+      weight: &ruby-sapphire.pokemon.walrein.weight 1506
+      flavor_text:
+        ruby: |
+          WALREIN's two massively developed
+          tusks can totally shatter blocks of
+          ice weighing ten tons with one blow.
+          This POKéMON's thick coat of blubber
+          insulates it from subzero temperatures.
+        sapphire: |
+          WALREIN swims all over in frigid
+          seawater while crushing icebergs with
+          its grand, imposing tusks.
+          Its thick layer of blubber makes enemy
+           attacks bounce off harmlessly.
+      forms:
+        walrein:
+          name: WALREIN
+          form_name: &ruby-sapphire.pokemon.walrein.forms.walrein.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.walrein.forms.walrein.battle_only false
+          icon: &ruby-sapphire.pokemon.walrein.forms.walrein.icon gen5/walrein-default.png
+          sprites:
+            - ruby-sapphire/walrein-default.png
+            - ruby-sapphire/back/walrein-default.png
+            - ruby-sapphire/shiny/walrein-default.png
+          art: &ruby-sapphire.pokemon.walrein.forms.walrein.art
+            - walrein-default.png
+          footprint: &ruby-sapphire.pokemon.walrein.forms.walrein.footprint walrein.png
+          cry: &ruby-sapphire.pokemon.walrein.forms.walrein.cry gen5/walrein-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.walrein.evolution_parent sealeo/sealeo
+      evolution_conditions: &ruby-sapphire.pokemon.walrein.evolution_conditions
+        level-up:
+          minimum_level: 44
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    walrein:
+      name: WALREIN
+      default: *ruby-sapphire.pokemon.walrein.default
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      experience: *ruby-sapphire.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      stats: *ruby-sapphire.pokemon.walrein.stats
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      abilities: *ruby-sapphire.pokemon.walrein.abilities
+      genus: *ruby-sapphire.pokemon.walrein.genus
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      flavor_text:
+        emerald: |
+          To protect its herd, the leader battles
+          anything that invades its territory, even
+          at the cost of its life. Its tusks may snap
+          off in battle.
+      forms:
+        walrein:
+          name: WALREIN
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *ruby-sapphire.pokemon.walrein.forms.walrein.icon
+          sprites:
+            - emerald/walrein-default.png
+            - emerald/shiny/walrein-default.png
+            - emerald/animated/walrein-default.webm
+            - emerald/animated/shiny/walrein-default.webm
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 368
+  pokemon:
+    walrein:
+      name: WALREIN
+      default: *ruby-sapphire.pokemon.walrein.default
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      experience: *ruby-sapphire.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      stats: *ruby-sapphire.pokemon.walrein.stats
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      abilities: *ruby-sapphire.pokemon.walrein.abilities
+      genus: *ruby-sapphire.pokemon.walrein.genus
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      forms:
+        walrein:
+          name: WALREIN
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          sprites:
+            - colosseum/walrein-default.png
+            - colosseum/shiny/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    walrein:
+      name: WALREIN
+      default: *ruby-sapphire.pokemon.walrein.default
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      experience: *ruby-sapphire.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      stats: *ruby-sapphire.pokemon.walrein.stats
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      abilities: *ruby-sapphire.pokemon.walrein.abilities
+      genus: *ruby-sapphire.pokemon.walrein.genus
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      forms:
+        walrein:
+          name: WALREIN
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          sprites:
+            - xd/walrein-default.png
+            - xd/shiny/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    walrein:
+      name: WALREIN
+      default: *ruby-sapphire.pokemon.walrein.default
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      experience: *ruby-sapphire.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      stats: *ruby-sapphire.pokemon.walrein.stats
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      abilities: *ruby-sapphire.pokemon.walrein.abilities
+      genus: *ruby-sapphire.pokemon.walrein.genus
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      flavor_text:
+        firered: |
+          It swims through icy seas while shattering
+          ice floes with its large tusks. It is
+          protected by its thick blubber.
+        leafgreen: |
+          It swims through icy seas while shattering
+          ice floes with its large tusks. It is
+          protected by its thick blubber.
+      forms:
+        walrein:
+          name: WALREIN
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *ruby-sapphire.pokemon.walrein.forms.walrein.icon
+          sprites:
+            - firered-leafgreen/walrein-default.png
+            - firered-leafgreen/back/walrein-default.png
+            - firered-leafgreen/shiny/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Walrein
+  position: &diamond-pearl.position 395
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    walrein:
+      genus: &diamond-pearl.pokemon.walrein.genus 'Ice Break Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      shape: &diamond-pearl.pokemon.walrein.shape quadruped
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: &diamond-pearl.pokemon.walrein.baby false
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      pal_park: &diamond-pearl.pokemon.walrein.pal_park
+        area: sea
+        rate: 10
+        score: 80
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: &diamond-pearl.pokemon.walrein.experience 239
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      stats: &diamond-pearl.pokemon.walrein.stats
+        hp:
+          base_value: 110
+          effort_change: 3
+        attack:
+          base_value: 80
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.walrein.abilities
+        thick-fat: *ruby-sapphire.pokemon.walrein.abilities.thick-fat
+        ice-body:
+          hidden: *ruby-sapphire.pokemon.walrein.abilities.thick-fat.hidden
+          position: 2
+        oblivious:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      flavor_text:
+        diamond: |
+          It shatters ice with its big tusks.
+          Its thick blubber repels not only
+          the cold, but also enemy attacks.
+        pearl: |
+          It shatters ice with its big tusks.
+          Its thick blubber repels not only
+          the cold, but also enemy attacks.
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *ruby-sapphire.pokemon.walrein.forms.walrein.icon
+          sprites:
+            - diamond-pearl/back/shiny/walrein-default.png
+            - diamond-pearl/back/walrein-default.png
+            - diamond-pearl/shiny/walrein-default.png
+            - diamond-pearl/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    walrein:
+      genus: *diamond-pearl.pokemon.walrein.genus
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      shape: *diamond-pearl.pokemon.walrein.shape
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: *diamond-pearl.pokemon.walrein.baby
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      pal_park: *diamond-pearl.pokemon.walrein.pal_park
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: *diamond-pearl.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      stats: *diamond-pearl.pokemon.walrein.stats
+      abilities: *diamond-pearl.pokemon.walrein.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      flavor_text:
+        platinum: |
+          It shatters ice with its big tusks.
+          Its thick blubber repels not only
+          the cold, but also enemy attacks.
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *ruby-sapphire.pokemon.walrein.forms.walrein.icon
+          sprites:
+            - platinum/back/shiny/walrein-default.png
+            - platinum/back/walrein-default.png
+            - platinum/shiny/walrein-default.png
+            - platinum/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    walrein:
+      genus: *diamond-pearl.pokemon.walrein.genus
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      shape: *diamond-pearl.pokemon.walrein.shape
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: *diamond-pearl.pokemon.walrein.baby
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      pal_park: *diamond-pearl.pokemon.walrein.pal_park
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: *diamond-pearl.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      stats: *diamond-pearl.pokemon.walrein.stats
+      abilities: *diamond-pearl.pokemon.walrein.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It shatters drift ice with its
+          strong tusks. Its thick layer of
+          blubber repels enemy attacks.
+        soulsilver: |
+          It shatters drift ice with its
+          strong tusks. Its thick layer of
+          blubber repels enemy attacks.
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-2
+            power:
+              base_value: 5
+              range: 1-5
+            skill:
+              base_value: 1
+              range: 1
+            stamina:
+              base_value: 5
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.walrein.forms.walrein.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/walrein-default.png
+            - heartgold-soulsilver/back/walrein-default.png
+            - heartgold-soulsilver/shiny/walrein-default.png
+            - heartgold-soulsilver/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    walrein:
+      genus: *diamond-pearl.pokemon.walrein.genus
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      color: &black-white.pokemon.walrein.color blue
+      shape: *diamond-pearl.pokemon.walrein.shape
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: *diamond-pearl.pokemon.walrein.baby
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: *diamond-pearl.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      stats: *diamond-pearl.pokemon.walrein.stats
+      abilities: *diamond-pearl.pokemon.walrein.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      flavor_text:
+        black: |
+          It shatters ice with its big tusks.
+          Its thick blubber repels not only
+          the cold, but also enemy attacks.
+        white: |
+          It shatters ice with its big tusks.
+          Its thick blubber repels not only
+          the cold, but also enemy attacks.
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *ruby-sapphire.pokemon.walrein.forms.walrein.icon
+          sprites:
+            - black-white/back/shiny/walrein-default.png
+            - black-white/back/walrein-default.png
+            - black-white/shiny/walrein-default.png
+            - black-white/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 245
+  pokemon:
+    walrein:
+      genus: *diamond-pearl.pokemon.walrein.genus
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      color: *black-white.pokemon.walrein.color
+      shape: *diamond-pearl.pokemon.walrein.shape
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: *diamond-pearl.pokemon.walrein.baby
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: *diamond-pearl.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      stats: *diamond-pearl.pokemon.walrein.stats
+      abilities: *diamond-pearl.pokemon.walrein.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      flavor_text:
+        black-2: |
+          Not only does its thick blubber keep it
+          warm, it also protects it from attacks.
+          It shatters ice with its prized tusks.
+        white-2: |
+          Not only does its thick blubber keep it
+          warm, it also protects it from attacks.
+          It shatters ice with its prized tusks.
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *ruby-sapphire.pokemon.walrein.forms.walrein.icon
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *ruby-sapphire.pokemon.walrein.forms.walrein.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    walrein:
+      genus: *diamond-pearl.pokemon.walrein.genus
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      color: *black-white.pokemon.walrein.color
+      shape: *diamond-pearl.pokemon.walrein.shape
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: *diamond-pearl.pokemon.walrein.baby
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: *diamond-pearl.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      mega: &x-y.pokemon.walrein.mega false
+      stats: *diamond-pearl.pokemon.walrein.stats
+      abilities: *diamond-pearl.pokemon.walrein.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      flavor_text:
+        x: |
+          It shatters ice with its big tusks. Its thick blubber
+          repels not only the cold, but also enemy attacks.
+        'y': |
+          It shatters drift ice with its strong tusks. Its thick
+          layer of blubber repels enemy attacks.
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: &x-y.pokemon.walrein.forms.walrein.icon walrein-default.png
+          sprites:
+            - x-y/shiny/walrein-default.png
+            - x-y/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: &x-y.pokemon.walrein.forms.walrein.cry walrein-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 184
+  pokemon:
+    walrein:
+      genus: *diamond-pearl.pokemon.walrein.genus
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      color: *black-white.pokemon.walrein.color
+      shape: *diamond-pearl.pokemon.walrein.shape
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: *diamond-pearl.pokemon.walrein.baby
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: *diamond-pearl.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      mega: *x-y.pokemon.walrein.mega
+      stats: *diamond-pearl.pokemon.walrein.stats
+      abilities: *diamond-pearl.pokemon.walrein.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Walrein’s two massively developed tusks can totally shatter
+          blocks of ice weighing 10 tons with one blow. This Pokémon’s
+          thick coat of blubber insulates it from subzero temperatures.
+        alpha-sapphire: |
+          Walrein swims all over in frigid seawater while crushing
+          icebergs with its grand, imposing tusks. Its thick layer of
+          blubber makes enemy attacks bounce off harmlessly.
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *x-y.pokemon.walrein.forms.walrein.icon
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *x-y.pokemon.walrein.forms.walrein.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/walrein-default.png
+            - omega-ruby-alpha-sapphire/shiny/walrein-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    walrein:
+      genus: *diamond-pearl.pokemon.walrein.genus
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      color: *black-white.pokemon.walrein.color
+      shape: *diamond-pearl.pokemon.walrein.shape
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: *diamond-pearl.pokemon.walrein.baby
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: *diamond-pearl.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      mega: *x-y.pokemon.walrein.mega
+      stats: *diamond-pearl.pokemon.walrein.stats
+      abilities: *diamond-pearl.pokemon.walrein.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *x-y.pokemon.walrein.forms.walrein.icon
+          sprites:
+            - sun-moon/shiny/walrein-default.png
+            - sun-moon/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *x-y.pokemon.walrein.forms.walrein.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    walrein:
+      genus: *diamond-pearl.pokemon.walrein.genus
+      evolution_parent: *ruby-sapphire.pokemon.walrein.evolution_parent
+      color: *black-white.pokemon.walrein.color
+      shape: *diamond-pearl.pokemon.walrein.shape
+      female_rate: *ruby-sapphire.pokemon.walrein.female_rate
+      capture_rate: *ruby-sapphire.pokemon.walrein.capture_rate
+      happiness: *ruby-sapphire.pokemon.walrein.happiness
+      baby: *diamond-pearl.pokemon.walrein.baby
+      hatch_steps: *ruby-sapphire.pokemon.walrein.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.walrein.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.walrein.forms_switchable
+      name: Walrein
+      default: *ruby-sapphire.pokemon.walrein.default
+      height: *ruby-sapphire.pokemon.walrein.height
+      weight: *ruby-sapphire.pokemon.walrein.weight
+      experience: *diamond-pearl.pokemon.walrein.experience
+      types: *ruby-sapphire.pokemon.walrein.types
+      egg_groups: *ruby-sapphire.pokemon.walrein.egg_groups
+      mega: *x-y.pokemon.walrein.mega
+      stats: *diamond-pearl.pokemon.walrein.stats
+      abilities: *diamond-pearl.pokemon.walrein.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.walrein.evolution_conditions
+      forms:
+        walrein:
+          name: Walrein
+          form_name: *ruby-sapphire.pokemon.walrein.forms.walrein.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.walrein.forms.walrein.battle_only
+          icon: *x-y.pokemon.walrein.forms.walrein.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/walrein-default.png
+            - ultra-sun-ultra-moon/walrein-default.png
+          art: *ruby-sapphire.pokemon.walrein.forms.walrein.art
+          footprint: *ruby-sapphire.pokemon.walrein.forms.walrein.footprint
+          cry: *x-y.pokemon.walrein.forms.walrein.cry

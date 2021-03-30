@@ -1,0 +1,230 @@
+x-y:
+  name: &x-y.name Tyrantrum
+  position: &x-y.position 698
+  numbers:
+    national: &x-y.numbers.national 697
+    kalos-coastal: 65
+  pokemon:
+    tyrantrum:
+      genus: &x-y.pokemon.tyrantrum.genus 'Despot Pokémon'
+      evolution_parent: &x-y.pokemon.tyrantrum.evolution_parent tyrunt/tyrunt
+      color: &x-y.pokemon.tyrantrum.color red
+      shape: &x-y.pokemon.tyrantrum.shape upright
+      female_rate: &x-y.pokemon.tyrantrum.female_rate 12
+      capture_rate: &x-y.pokemon.tyrantrum.capture_rate 45
+      happiness: &x-y.pokemon.tyrantrum.happiness 70
+      baby: &x-y.pokemon.tyrantrum.baby false
+      hatch_steps: &x-y.pokemon.tyrantrum.hatch_steps 30
+      growth_rate: &x-y.pokemon.tyrantrum.growth_rate medium
+      forms_switchable: &x-y.pokemon.tyrantrum.forms_switchable false
+      name: Tyrantrum
+      default: &x-y.pokemon.tyrantrum.default true
+      height: &x-y.pokemon.tyrantrum.height 25
+      weight: &x-y.pokemon.tyrantrum.weight 2700
+      experience: &x-y.pokemon.tyrantrum.experience 182
+      types: &x-y.pokemon.tyrantrum.types
+        - rock
+        - dragon
+      egg_groups: &x-y.pokemon.tyrantrum.egg_groups
+        - monster
+        - dragon
+      mega: &x-y.pokemon.tyrantrum.mega false
+      stats: &x-y.pokemon.tyrantrum.stats
+        hp:
+          base_value: 82
+          effort_change: 0
+        attack:
+          base_value: 121
+          effort_change: 2
+        defense:
+          base_value: 119
+          effort_change: 0
+        speed:
+          base_value: 71
+          effort_change: 0
+        special-attack:
+          base_value: 69
+          effort_change: 0
+        special-defense:
+          base_value: 59
+          effort_change: 0
+      abilities: &x-y.pokemon.tyrantrum.abilities
+        strong-jaw:
+          hidden: false
+          position: 1
+        rock-head:
+          hidden: true
+          position: 3
+      evolution_conditions: &x-y.pokemon.tyrantrum.evolution_conditions
+        level-up:
+          minimum_level: 39
+          time_of_day:
+            - day
+      flavor_text:
+        x: |
+          Thanks to its gargantuan jaws, which could shred
+          thick metal plates as if they were paper, it was
+          invincible in the ancient world it once inhabited.
+        'y': |
+          Nothing could stop this Pokémon
+          100 million years ago,
+          so it behaved like a king.
+      forms:
+        tyrantrum:
+          name: Tyrantrum
+          form_name: &x-y.pokemon.tyrantrum.forms.tyrantrum.form_name 'Default Form'
+          default: true
+          battle_only: &x-y.pokemon.tyrantrum.forms.tyrantrum.battle_only false
+          icon: &x-y.pokemon.tyrantrum.forms.tyrantrum.icon tyrantrum-default.png
+          sprites:
+            - x-y/tyrantrum-default.png
+            - x-y/shiny/tyrantrum-default.png
+          art: &x-y.pokemon.tyrantrum.forms.tyrantrum.art
+            - tyrantrum-default.png
+          footprint: &x-y.pokemon.tyrantrum.forms.tyrantrum.footprint tyrantrum.png
+          cry: &x-y.pokemon.tyrantrum.forms.tyrantrum.cry tyrantrum-default.webm
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *x-y.numbers.national
+  pokemon:
+    tyrantrum:
+      genus: *x-y.pokemon.tyrantrum.genus
+      evolution_parent: *x-y.pokemon.tyrantrum.evolution_parent
+      color: *x-y.pokemon.tyrantrum.color
+      shape: *x-y.pokemon.tyrantrum.shape
+      female_rate: *x-y.pokemon.tyrantrum.female_rate
+      capture_rate: *x-y.pokemon.tyrantrum.capture_rate
+      happiness: *x-y.pokemon.tyrantrum.happiness
+      baby: *x-y.pokemon.tyrantrum.baby
+      hatch_steps: *x-y.pokemon.tyrantrum.hatch_steps
+      growth_rate: *x-y.pokemon.tyrantrum.growth_rate
+      forms_switchable: *x-y.pokemon.tyrantrum.forms_switchable
+      name: Tyrantrum
+      default: *x-y.pokemon.tyrantrum.default
+      height: *x-y.pokemon.tyrantrum.height
+      weight: *x-y.pokemon.tyrantrum.weight
+      experience: *x-y.pokemon.tyrantrum.experience
+      types: *x-y.pokemon.tyrantrum.types
+      egg_groups: *x-y.pokemon.tyrantrum.egg_groups
+      mega: *x-y.pokemon.tyrantrum.mega
+      stats: *x-y.pokemon.tyrantrum.stats
+      abilities: *x-y.pokemon.tyrantrum.abilities
+      evolution_conditions: *x-y.pokemon.tyrantrum.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Thanks to its gargantuan jaws, which could shred
+          thick metal plates as if they were paper, it was
+          invincible in the ancient world it once inhabited.
+        alpha-sapphire: |
+          Nothing could stop this Pokémon
+          100 million years ago,
+          so it behaved like a king.
+      forms:
+        tyrantrum:
+          name: Tyrantrum
+          form_name: *x-y.pokemon.tyrantrum.forms.tyrantrum.form_name
+          default: true
+          battle_only: *x-y.pokemon.tyrantrum.forms.tyrantrum.battle_only
+          icon: *x-y.pokemon.tyrantrum.forms.tyrantrum.icon
+          art: *x-y.pokemon.tyrantrum.forms.tyrantrum.art
+          footprint: *x-y.pokemon.tyrantrum.forms.tyrantrum.footprint
+          cry: *x-y.pokemon.tyrantrum.forms.tyrantrum.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/tyrantrum-default.png
+            - omega-ruby-alpha-sapphire/shiny/tyrantrum-default.png
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    tyrantrum:
+      genus: *x-y.pokemon.tyrantrum.genus
+      evolution_parent: *x-y.pokemon.tyrantrum.evolution_parent
+      color: *x-y.pokemon.tyrantrum.color
+      shape: *x-y.pokemon.tyrantrum.shape
+      female_rate: *x-y.pokemon.tyrantrum.female_rate
+      capture_rate: *x-y.pokemon.tyrantrum.capture_rate
+      happiness: *x-y.pokemon.tyrantrum.happiness
+      baby: *x-y.pokemon.tyrantrum.baby
+      hatch_steps: *x-y.pokemon.tyrantrum.hatch_steps
+      growth_rate: *x-y.pokemon.tyrantrum.growth_rate
+      forms_switchable: *x-y.pokemon.tyrantrum.forms_switchable
+      name: Tyrantrum
+      default: *x-y.pokemon.tyrantrum.default
+      height: *x-y.pokemon.tyrantrum.height
+      weight: *x-y.pokemon.tyrantrum.weight
+      experience: *x-y.pokemon.tyrantrum.experience
+      types: *x-y.pokemon.tyrantrum.types
+      egg_groups: *x-y.pokemon.tyrantrum.egg_groups
+      mega: *x-y.pokemon.tyrantrum.mega
+      stats: *x-y.pokemon.tyrantrum.stats
+      abilities: *x-y.pokemon.tyrantrum.abilities
+      evolution_conditions: *x-y.pokemon.tyrantrum.evolution_conditions
+      forms:
+        tyrantrum:
+          name: Tyrantrum
+          form_name: *x-y.pokemon.tyrantrum.forms.tyrantrum.form_name
+          default: true
+          battle_only: *x-y.pokemon.tyrantrum.forms.tyrantrum.battle_only
+          icon: *x-y.pokemon.tyrantrum.forms.tyrantrum.icon
+          sprites:
+            - sun-moon/tyrantrum-default.png
+            - sun-moon/shiny/tyrantrum-default.png
+          art: *x-y.pokemon.tyrantrum.forms.tyrantrum.art
+          footprint: *x-y.pokemon.tyrantrum.forms.tyrantrum.footprint
+          cry: *x-y.pokemon.tyrantrum.forms.tyrantrum.cry
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+    updated-alola: 244
+    updated-akala: 145
+  pokemon:
+    tyrantrum:
+      genus: *x-y.pokemon.tyrantrum.genus
+      evolution_parent: *x-y.pokemon.tyrantrum.evolution_parent
+      color: *x-y.pokemon.tyrantrum.color
+      shape: *x-y.pokemon.tyrantrum.shape
+      female_rate: *x-y.pokemon.tyrantrum.female_rate
+      capture_rate: *x-y.pokemon.tyrantrum.capture_rate
+      happiness: *x-y.pokemon.tyrantrum.happiness
+      baby: *x-y.pokemon.tyrantrum.baby
+      hatch_steps: *x-y.pokemon.tyrantrum.hatch_steps
+      growth_rate: *x-y.pokemon.tyrantrum.growth_rate
+      forms_switchable: *x-y.pokemon.tyrantrum.forms_switchable
+      name: Tyrantrum
+      default: *x-y.pokemon.tyrantrum.default
+      height: *x-y.pokemon.tyrantrum.height
+      weight: *x-y.pokemon.tyrantrum.weight
+      experience: *x-y.pokemon.tyrantrum.experience
+      types: *x-y.pokemon.tyrantrum.types
+      egg_groups: *x-y.pokemon.tyrantrum.egg_groups
+      mega: *x-y.pokemon.tyrantrum.mega
+      stats: *x-y.pokemon.tyrantrum.stats
+      abilities: *x-y.pokemon.tyrantrum.abilities
+      evolution_conditions: *x-y.pokemon.tyrantrum.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Complete restoration is impossible, allowing
+          room for theories that its entire body was
+          once covered in a feather-like coat.
+        ultra-moon: |-
+          The king of the ancient world, it can easily
+          crunch a car with the devastating strength
+          of its enormous jaws.
+      forms:
+        tyrantrum:
+          name: Tyrantrum
+          form_name: *x-y.pokemon.tyrantrum.forms.tyrantrum.form_name
+          default: true
+          battle_only: *x-y.pokemon.tyrantrum.forms.tyrantrum.battle_only
+          icon: *x-y.pokemon.tyrantrum.forms.tyrantrum.icon
+          sprites:
+            - ultra-sun-ultra-moon/tyrantrum-default.png
+            - ultra-sun-ultra-moon/shiny/tyrantrum-default.png
+          art: *x-y.pokemon.tyrantrum.forms.tyrantrum.art
+          footprint: *x-y.pokemon.tyrantrum.forms.tyrantrum.footprint
+          cry: *x-y.pokemon.tyrantrum.forms.tyrantrum.cry

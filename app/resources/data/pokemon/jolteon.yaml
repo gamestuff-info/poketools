@@ -1,0 +1,959 @@
+red-blue:
+  name: &red-blue.name JOLTEON
+  position: &red-blue.position 135
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 135
+    kanto: 135
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: &red-blue.pokemon.jolteon.default true
+      capture_rate: &red-blue.pokemon.jolteon.capture_rate 45
+      experience: &red-blue.pokemon.jolteon.experience 197
+      types: &red-blue.pokemon.jolteon.types
+        - electric
+      stats: &red-blue.pokemon.jolteon.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 60
+          effort_change: 60
+        speed:
+          base_value: 130
+          effort_change: 130
+        special:
+          base_value: 110
+          effort_change: 110
+      growth_rate: &red-blue.pokemon.jolteon.growth_rate medium
+      genus: &red-blue.pokemon.jolteon.genus 'LIGHTNING Pokémon'
+      height: &red-blue.pokemon.jolteon.height 7
+      weight: &red-blue.pokemon.jolteon.weight 2449
+      flavor_text:
+        red: |
+          It accumulates
+          negative ions in
+          the atmosphere to
+          blast out 10000-
+           volt lightning
+          bolts.
+        blue: |
+          It accumulates
+          negative ions in
+          the atmosphere to
+          blast out 10000-
+           volt lightning
+          bolts.
+      evolution_parent: &red-blue.pokemon.jolteon.evolution_parent eevee/eevee
+      evolution_conditions: &red-blue.pokemon.jolteon.evolution_conditions
+        use-item:
+          trigger_item: thunderstone
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: &red-blue.pokemon.jolteon.forms.jolteon.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.jolteon.forms.jolteon.battle_only false
+          sprites:
+            - red-blue/jolteon-default.png
+            - red-blue/gray/jolteon-default.png
+            - red-blue/back/jolteon-default.png
+          art: &red-blue.pokemon.jolteon.forms.jolteon.art
+            - jolteon-default.png
+          cry: &red-blue.pokemon.jolteon.forms.jolteon.cry gen5/jolteon-default.webm
+          icon: &red-blue.pokemon.jolteon.forms.jolteon.icon gen1/quadruped.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: *red-blue.pokemon.jolteon.default
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      experience: *red-blue.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      stats: *red-blue.pokemon.jolteon.stats
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      genus: *red-blue.pokemon.jolteon.genus
+      height: *red-blue.pokemon.jolteon.height
+      weight: *red-blue.pokemon.jolteon.weight
+      flavor_text:
+        yellow: |
+          A sensitive POKé-
+          MON that easily
+          becomes sad or
+          angry. Every time
+          its mood changes,
+          it charges power.
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.jolteon.evolution_conditions
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          sprites:
+            - yellow/jolteon-default.png
+            - yellow/gray/jolteon-default.png
+            - yellow/back/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+          icon: *red-blue.pokemon.jolteon.forms.jolteon.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 134
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 181
+    original-johto-abc: 83
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: *red-blue.pokemon.jolteon.default
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      experience: *red-blue.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      stats: &gold-silver.pokemon.jolteon.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 60
+          effort_change: 60
+        speed:
+          base_value: 130
+          effort_change: 130
+        special-attack:
+          base_value: 110
+          effort_change: 110
+        special-defense:
+          base_value: 95
+          effort_change: 110
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      female_rate: &gold-silver.pokemon.jolteon.female_rate 12
+      hatch_steps: &gold-silver.pokemon.jolteon.hatch_steps 35
+      egg_groups: &gold-silver.pokemon.jolteon.egg_groups
+        - ground
+      genus: *red-blue.pokemon.jolteon.genus
+      height: *red-blue.pokemon.jolteon.height
+      weight: &gold-silver.pokemon.jolteon.weight 244
+      flavor_text:
+        gold: |
+          It concentrates
+          the weak electric
+          charges emitted
+          by its cells and
+          launches wicked
+          lightning bolts.
+        silver: |
+          Every hair on its
+          body starts to
+          stand sharply on
+          end if it becomes
+          charged with
+          electricity.
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.jolteon.evolution_conditions
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          sprites:
+            - gold-silver/jolteon-default.png
+            - gold-silver/back/jolteon-default.png
+            - gold-silver/shiny/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+          icon: &gold-silver.pokemon.jolteon.forms.jolteon.icon gen2/fox.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: *red-blue.pokemon.jolteon.default
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      experience: *red-blue.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      stats: *gold-silver.pokemon.jolteon.stats
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      genus: *red-blue.pokemon.jolteon.genus
+      height: *red-blue.pokemon.jolteon.height
+      weight: *gold-silver.pokemon.jolteon.weight
+      flavor_text:
+        crystal: |
+          The negatively
+          charged ions
+          generated in its
+          fur create a
+          constant sparking
+          noise.
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.jolteon.evolution_conditions
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          sprites:
+            - crystal/jolteon-default.png
+            - crystal/back/jolteon-default.png
+            - crystal/shiny/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+          icon: *gold-silver.pokemon.jolteon.forms.jolteon.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 290
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: *red-blue.pokemon.jolteon.default
+      forms_switchable: &ruby-sapphire.pokemon.jolteon.forms_switchable false
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      experience: *red-blue.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      stats: &ruby-sapphire.pokemon.jolteon.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 130
+          effort_change: 2
+        special-attack:
+          base_value: 110
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      happiness: &ruby-sapphire.pokemon.jolteon.happiness 70
+      abilities: &ruby-sapphire.pokemon.jolteon.abilities
+        volt-absorb: &ruby-sapphire.pokemon.jolteon.abilities.volt-absorb
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.jolteon.genus
+      height: &ruby-sapphire.pokemon.jolteon.height 8
+      weight: &ruby-sapphire.pokemon.jolteon.weight 245
+      flavor_text:
+        ruby: |
+          JOLTEON's cells generate a low level of
+          electricity. This power is amplified by
+          the static electricity of its fur,
+          enabling the POKéMON to drop
+          thunderbolts. The bristling fur is made
+          of electrically charged needles.
+        sapphire: |
+          JOLTEON's cells generate a low level of
+          electricity. This power is amplified by
+          the static electricity of its fur,
+          enabling the POKéMON to drop
+          thunderbolts. The bristling fur is made
+          of electrically charged needles.
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: &ruby-sapphire.pokemon.jolteon.forms.jolteon.icon gen5/jolteon-default.png
+          sprites:
+            - ruby-sapphire/jolteon-default.png
+            - ruby-sapphire/back/jolteon-default.png
+            - ruby-sapphire/shiny/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: &ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint jolteon.png
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.jolteon.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: *red-blue.pokemon.jolteon.default
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      experience: *red-blue.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      stats: *ruby-sapphire.pokemon.jolteon.stats
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      abilities: *ruby-sapphire.pokemon.jolteon.abilities
+      genus: *red-blue.pokemon.jolteon.genus
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      flavor_text:
+        emerald: |
+          Its cells generate weak power that is
+          amplified by its fur's static electricity
+          to drop thunderbolts. The bristling fur is
+          made of electrically charged needles.
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *ruby-sapphire.pokemon.jolteon.forms.jolteon.icon
+          sprites:
+            - emerald/jolteon-default.png
+            - emerald/shiny/jolteon-default.png
+            - emerald/animated/jolteon-default.webm
+            - emerald/animated/shiny/jolteon-default.webm
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.jolteon.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 143
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: *red-blue.pokemon.jolteon.default
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      experience: *red-blue.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      stats: *ruby-sapphire.pokemon.jolteon.stats
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      abilities: *ruby-sapphire.pokemon.jolteon.abilities
+      genus: *red-blue.pokemon.jolteon.genus
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          sprites:
+            - colosseum/jolteon-default.png
+            - colosseum/shiny/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.jolteon.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: *red-blue.pokemon.jolteon.default
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      experience: *red-blue.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      stats: *ruby-sapphire.pokemon.jolteon.stats
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      abilities: *ruby-sapphire.pokemon.jolteon.abilities
+      genus: *red-blue.pokemon.jolteon.genus
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          sprites:
+            - xd/jolteon-default.png
+            - xd/shiny/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.jolteon.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    jolteon:
+      name: JOLTEON
+      default: *red-blue.pokemon.jolteon.default
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      experience: *red-blue.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      stats: *ruby-sapphire.pokemon.jolteon.stats
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      abilities: *ruby-sapphire.pokemon.jolteon.abilities
+      genus: *red-blue.pokemon.jolteon.genus
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      flavor_text:
+        firered: |
+          If it is angered or startled, the fur all
+          over its body bristles like sharp needles
+          that pierce foes.
+        leafgreen: |
+          It accumulates negative ions in the
+          atmosphere to blast out 10,000-volt
+           lightning bolts.
+      forms:
+        jolteon:
+          name: JOLTEON
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *ruby-sapphire.pokemon.jolteon.forms.jolteon.icon
+          sprites:
+            - firered-leafgreen/jolteon-default.png
+            - firered-leafgreen/back/jolteon-default.png
+            - firered-leafgreen/shiny/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      evolution_conditions: *red-blue.pokemon.jolteon.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Jolteon
+  position: &diamond-pearl.position 159
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    jolteon:
+      genus: &diamond-pearl.pokemon.jolteon.genus 'Lightning Pokémon'
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      shape: &diamond-pearl.pokemon.jolteon.shape quadruped
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: &diamond-pearl.pokemon.jolteon.baby false
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      pal_park: &diamond-pearl.pokemon.jolteon.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: &diamond-pearl.pokemon.jolteon.experience 184
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      stats: &diamond-pearl.pokemon.jolteon.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 130
+          effort_change: 2
+        special-attack:
+          base_value: 110
+          effort_change: 0
+        special-defense:
+          base_value: 95
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.jolteon.abilities
+        volt-absorb: *ruby-sapphire.pokemon.jolteon.abilities.volt-absorb
+        quick-feet:
+          hidden: true
+          position: 3
+      evolution_conditions: &diamond-pearl.pokemon.jolteon.evolution_conditions
+        use-item:
+          trigger_item: thunder-stone
+      flavor_text:
+        diamond: |
+          It controls 10,000-volt power
+          and can raise all the fur on its
+          body as if it were sharp needles.
+        pearl: |
+          It controls 10,000-volt power
+          and can raise all the fur on its
+          body as if it were sharp needles.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *ruby-sapphire.pokemon.jolteon.forms.jolteon.icon
+          sprites:
+            - diamond-pearl/back/shiny/jolteon-default.png
+            - diamond-pearl/back/jolteon-default.png
+            - diamond-pearl/shiny/jolteon-default.png
+            - diamond-pearl/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 165
+  pokemon:
+    jolteon:
+      genus: *diamond-pearl.pokemon.jolteon.genus
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      shape: *diamond-pearl.pokemon.jolteon.shape
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: *diamond-pearl.pokemon.jolteon.baby
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      pal_park: *diamond-pearl.pokemon.jolteon.pal_park
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: *diamond-pearl.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      stats: *diamond-pearl.pokemon.jolteon.stats
+      abilities: *diamond-pearl.pokemon.jolteon.abilities
+      evolution_conditions: *diamond-pearl.pokemon.jolteon.evolution_conditions
+      flavor_text:
+        platinum: |
+          If agitated, it uses electricity to
+          straighten out its fur and launch
+          it in small bunches.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *ruby-sapphire.pokemon.jolteon.forms.jolteon.icon
+          sprites:
+            - platinum/back/shiny/jolteon-default.png
+            - platinum/back/jolteon-default.png
+            - platinum/shiny/jolteon-default.png
+            - platinum/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 186
+  pokemon:
+    jolteon:
+      genus: *diamond-pearl.pokemon.jolteon.genus
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      shape: *diamond-pearl.pokemon.jolteon.shape
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: *diamond-pearl.pokemon.jolteon.baby
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      pal_park: *diamond-pearl.pokemon.jolteon.pal_park
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: *diamond-pearl.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      stats: *diamond-pearl.pokemon.jolteon.stats
+      abilities: *diamond-pearl.pokemon.jolteon.abilities
+      evolution_conditions: *diamond-pearl.pokemon.jolteon.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It concentrates the weak electric
+          charges emitted by its cells and
+          launches wicked lightning bolts.
+        soulsilver: |
+          Every hair on its body starts to
+          stand sharply on end if it becomes
+          charged with electricity.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 2-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 1-5
+            stamina:
+              base_value: 2
+              range: 1-2
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.jolteon.forms.jolteon.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/jolteon-default.png
+            - heartgold-soulsilver/back/jolteon-default.png
+            - heartgold-soulsilver/shiny/jolteon-default.png
+            - heartgold-soulsilver/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    jolteon:
+      genus: *diamond-pearl.pokemon.jolteon.genus
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      color: &black-white.pokemon.jolteon.color yellow
+      shape: *diamond-pearl.pokemon.jolteon.shape
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: *diamond-pearl.pokemon.jolteon.baby
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: *diamond-pearl.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      stats: *diamond-pearl.pokemon.jolteon.stats
+      abilities: *diamond-pearl.pokemon.jolteon.abilities
+      evolution_conditions: *diamond-pearl.pokemon.jolteon.evolution_conditions
+      flavor_text:
+        black: |
+          If agitated, it uses electricity to
+          straighten out its fur and launch
+          it in small bunches.
+        white: |
+          If agitated, it uses electricity to
+          straighten out its fur and launch
+          it in small bunches.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *ruby-sapphire.pokemon.jolteon.forms.jolteon.icon
+          sprites:
+            - black-white/back/shiny/jolteon-default.png
+            - black-white/back/jolteon-default.png
+            - black-white/shiny/jolteon-default.png
+            - black-white/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 93
+  pokemon:
+    jolteon:
+      genus: *diamond-pearl.pokemon.jolteon.genus
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      color: *black-white.pokemon.jolteon.color
+      shape: *diamond-pearl.pokemon.jolteon.shape
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: *diamond-pearl.pokemon.jolteon.baby
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: *diamond-pearl.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      stats: *diamond-pearl.pokemon.jolteon.stats
+      abilities: *diamond-pearl.pokemon.jolteon.abilities
+      evolution_conditions: *diamond-pearl.pokemon.jolteon.evolution_conditions
+      flavor_text:
+        black-2: |
+          By storing electricity in its body,
+          it can shoot its bristlelike fur
+          like a barrage of missiles.
+        white-2: |
+          By storing electricity in its body,
+          it can shoot its bristlelike fur
+          like a barrage of missiles.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *ruby-sapphire.pokemon.jolteon.forms.jolteon.icon
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *red-blue.pokemon.jolteon.forms.jolteon.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 79
+  pokemon:
+    jolteon:
+      genus: *diamond-pearl.pokemon.jolteon.genus
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      color: *black-white.pokemon.jolteon.color
+      shape: *diamond-pearl.pokemon.jolteon.shape
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: *diamond-pearl.pokemon.jolteon.baby
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: *diamond-pearl.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      mega: &x-y.pokemon.jolteon.mega false
+      stats: *diamond-pearl.pokemon.jolteon.stats
+      abilities: *diamond-pearl.pokemon.jolteon.abilities
+      evolution_conditions: *diamond-pearl.pokemon.jolteon.evolution_conditions
+      flavor_text:
+        x: |
+          Every hair on its body starts to stand sharply on
+          end if it becomes charged with electricity.
+        'y': |
+          It accumulates negative ions in the atmosphere to
+          blast out 10,000-volt lightning bolts.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: &x-y.pokemon.jolteon.forms.jolteon.icon jolteon-default.png
+          sprites:
+            - x-y/shiny/jolteon-default.png
+            - x-y/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: &x-y.pokemon.jolteon.forms.jolteon.cry jolteon-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    jolteon:
+      genus: *diamond-pearl.pokemon.jolteon.genus
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      color: *black-white.pokemon.jolteon.color
+      shape: *diamond-pearl.pokemon.jolteon.shape
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: *diamond-pearl.pokemon.jolteon.baby
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: *diamond-pearl.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      mega: *x-y.pokemon.jolteon.mega
+      stats: *diamond-pearl.pokemon.jolteon.stats
+      abilities: *diamond-pearl.pokemon.jolteon.abilities
+      evolution_conditions: *diamond-pearl.pokemon.jolteon.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Jolteon’s cells generate a low level of electricity. This power is
+          amplified by the static electricity of its fur, enabling the
+          Pokémon to drop thunderbolts. The bristling fur is made of
+          electrically charged needles.
+        alpha-sapphire: |
+          Jolteon’s cells generate a low level of electricity. This power
+          is amplified by the static electricity of its fur, enabling the
+          Pokémon to drop thunderbolts. The bristling fur is made of
+          electrically charged needles.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *x-y.pokemon.jolteon.forms.jolteon.icon
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *x-y.pokemon.jolteon.forms.jolteon.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/jolteon-default.png
+            - omega-ruby-alpha-sapphire/shiny/jolteon-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 125
+    original-akala: 52
+  pokemon:
+    jolteon:
+      genus: *diamond-pearl.pokemon.jolteon.genus
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      color: *black-white.pokemon.jolteon.color
+      shape: *diamond-pearl.pokemon.jolteon.shape
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: *diamond-pearl.pokemon.jolteon.baby
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: *diamond-pearl.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      mega: *x-y.pokemon.jolteon.mega
+      stats: *diamond-pearl.pokemon.jolteon.stats
+      abilities: *diamond-pearl.pokemon.jolteon.abilities
+      evolution_conditions: *diamond-pearl.pokemon.jolteon.evolution_conditions
+      flavor_text:
+        sun: |-
+          They send out electrical charges of about
+          10,000 volts. Because they are high-strung,
+          it can be difficult to grow close to them.
+        moon: |-
+          When its fur stands on end, that’s a sign it’s
+          about to give off a jolt of electricity. Take care,
+          as sometimes lightning strikes next to it, too.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *x-y.pokemon.jolteon.forms.jolteon.icon
+          sprites:
+            - sun-moon/shiny/jolteon-default.png
+            - sun-moon/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *x-y.pokemon.jolteon.forms.jolteon.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 155
+    updated-akala: 56
+  pokemon:
+    jolteon:
+      genus: *diamond-pearl.pokemon.jolteon.genus
+      evolution_parent: *red-blue.pokemon.jolteon.evolution_parent
+      color: *black-white.pokemon.jolteon.color
+      shape: *diamond-pearl.pokemon.jolteon.shape
+      female_rate: *gold-silver.pokemon.jolteon.female_rate
+      capture_rate: *red-blue.pokemon.jolteon.capture_rate
+      happiness: *ruby-sapphire.pokemon.jolteon.happiness
+      baby: *diamond-pearl.pokemon.jolteon.baby
+      hatch_steps: *gold-silver.pokemon.jolteon.hatch_steps
+      growth_rate: *red-blue.pokemon.jolteon.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.jolteon.forms_switchable
+      name: Jolteon
+      default: *red-blue.pokemon.jolteon.default
+      height: *ruby-sapphire.pokemon.jolteon.height
+      weight: *ruby-sapphire.pokemon.jolteon.weight
+      experience: *diamond-pearl.pokemon.jolteon.experience
+      types: *red-blue.pokemon.jolteon.types
+      egg_groups: *gold-silver.pokemon.jolteon.egg_groups
+      mega: *x-y.pokemon.jolteon.mega
+      stats: *diamond-pearl.pokemon.jolteon.stats
+      abilities: *diamond-pearl.pokemon.jolteon.abilities
+      evolution_conditions: *diamond-pearl.pokemon.jolteon.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Its lungs contain an organ that creates
+          electricity. The crackling sound of electricity
+          can be heard when it exhales.
+        ultra-moon: |-
+          Its fur stands on end, becoming like needles
+          it fires at enemies. Once they’re weakened, it
+          finishes them off with a 10,000 volt shock.
+      forms:
+        jolteon:
+          name: Jolteon
+          form_name: *red-blue.pokemon.jolteon.forms.jolteon.form_name
+          default: true
+          battle_only: *red-blue.pokemon.jolteon.forms.jolteon.battle_only
+          icon: *x-y.pokemon.jolteon.forms.jolteon.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/jolteon-default.png
+            - ultra-sun-ultra-moon/jolteon-default.png
+          art: *red-blue.pokemon.jolteon.forms.jolteon.art
+          footprint: *ruby-sapphire.pokemon.jolteon.forms.jolteon.footprint
+          cry: *x-y.pokemon.jolteon.forms.jolteon.cry

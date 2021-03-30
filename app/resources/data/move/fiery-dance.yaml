@@ -1,0 +1,90 @@
+black-white: &black-white
+  name: &black-white.name 'Fiery Dance'
+  stat_change_chance: &black-white.stat_change_chance 50
+  flags: &black-white.flags
+    - protect
+    - mirror
+    - dance
+  categories: &black-white.categories
+    - damage
+    - raise
+  hits: &black-white.hits 1
+  turns: &black-white.turns 1
+  stat_changes: &black-white.stat_changes
+    special-attack: 1
+  type: &black-white.type fire
+  power: &black-white.power 80
+  pp: &black-white.pp 10
+  accuracy: &black-white.accuracy 100
+  priority: &black-white.priority 0
+  target: &black-white.target selected-pokemon
+  damage_class: &black-white.damage_class special
+  effect: &black-white.effect 277
+  effect_chance: &black-white.effect_chance 50
+  flavor_text: |
+    Cloaked in flames, the user dances
+    and flaps its wings. It may also
+    raise the user’s Sp. Atk stat.
+black-2-white-2: *black-white
+x-y:
+  name: *black-white.name
+  stat_change_chance: *black-white.stat_change_chance
+  flags: *black-white.flags
+  categories: *black-white.categories
+  hits: *black-white.hits
+  turns: *black-white.turns
+  stat_changes: *black-white.stat_changes
+  type: *black-white.type
+  power: *black-white.power
+  pp: *black-white.pp
+  accuracy: *black-white.accuracy
+  priority: *black-white.priority
+  target: *black-white.target
+  damage_class: *black-white.damage_class
+  effect: *black-white.effect
+  effect_chance: *black-white.effect_chance
+  flavor_text: &x-y.flavor_text |
+    Cloaked in flames, the user dances
+    and flaps its wings. This may also
+    raise the user’s Sp. Atk stat.
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  stat_change_chance: *black-white.stat_change_chance
+  flags: *black-white.flags
+  categories: *black-white.categories
+  hits: *black-white.hits
+  turns: *black-white.turns
+  stat_changes: *black-white.stat_changes
+  type: *black-white.type
+  power: *black-white.power
+  pp: *black-white.pp
+  accuracy: *black-white.accuracy
+  priority: *black-white.priority
+  target: *black-white.target
+  damage_class: *black-white.damage_class
+  effect: *black-white.effect
+  effect_chance: *black-white.effect_chance
+  contest_type: beauty
+  contest_effect: 29
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *black-white.name
+  stat_change_chance: *black-white.stat_change_chance
+  flags: *black-white.flags
+  categories: *black-white.categories
+  hits: *black-white.hits
+  turns: *black-white.turns
+  stat_changes: *black-white.stat_changes
+  type: *black-white.type
+  power: *black-white.power
+  pp: *black-white.pp
+  accuracy: *black-white.accuracy
+  priority: *black-white.priority
+  target: *black-white.target
+  damage_class: *black-white.damage_class
+  effect: *black-white.effect
+  effect_chance: *black-white.effect_chance
+  flavor_text: |
+    Cloaked in flames, the user dances and flaps its
+    wings. This may also raise the user’s Sp. Atk stat.
+ultra-sun-ultra-moon: *sun-moon

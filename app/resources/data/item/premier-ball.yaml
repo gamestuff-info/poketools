@@ -1,0 +1,94 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'PREMIER BALL'
+  category: &ruby-sapphire.category special-balls
+  pocket: &ruby-sapphire.pocket pokeballs
+  flags: &ruby-sapphire.flags
+    - countable
+    - consumable
+    - usable-in-battle
+    - holdable
+  icon: &ruby-sapphire.icon premier-ball.png
+  buy: &ruby-sapphire.buy 200
+  sell: &ruby-sapphire.sell 100
+  flavor_text: &ruby-sapphire.flavor_text |
+    A rare BALL made
+    in commemoration
+    of some event.
+  short_description: &ruby-sapphire.short_description 'Tries to [catch]{mechanic:catch} a wild Pokémon.'
+  description: &ruby-sapphire.description |
+    Used in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon, using a catch rate of 1×, as a []{item:poke-ball} would.  If used in a trainer battle, nothing happens and the ball is lost.
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *ruby-sapphire.name
+  pocket: *ruby-sapphire.pocket
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *ruby-sapphire.category
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+xd: *colosseum
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: |
+    A rare BALL that has been
+    specially made to commemorate an
+    event of some sort.
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Premier Ball'
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: &diamond-pearl.buy 20
+  sell: &diamond-pearl.sell 10
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A somewhat rare Poké Ball that has
+    been specially made to commemorate
+    an event of some sort.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A somewhat rare Poké Ball that was
+    made as a commemorative item used
+    to celebrate an event of some sort.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A somewhat rare Poké Ball that was made as a
+    commemorative item used to celebrate an event of
+    some sort.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

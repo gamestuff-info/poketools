@@ -1,0 +1,215 @@
+x-y:
+  name: &x-y.name Amaura
+  position: &x-y.position 699
+  numbers:
+    national: &x-y.numbers.national 698
+    kalos-coastal: 66
+  pokemon:
+    amaura:
+      genus: &x-y.pokemon.amaura.genus 'Tundra Pokémon'
+      color: &x-y.pokemon.amaura.color blue
+      shape: &x-y.pokemon.amaura.shape quadruped
+      female_rate: &x-y.pokemon.amaura.female_rate 12
+      capture_rate: &x-y.pokemon.amaura.capture_rate 45
+      happiness: &x-y.pokemon.amaura.happiness 70
+      baby: &x-y.pokemon.amaura.baby false
+      hatch_steps: &x-y.pokemon.amaura.hatch_steps 30
+      growth_rate: &x-y.pokemon.amaura.growth_rate medium
+      forms_switchable: &x-y.pokemon.amaura.forms_switchable false
+      name: Amaura
+      default: &x-y.pokemon.amaura.default true
+      height: &x-y.pokemon.amaura.height 13
+      weight: &x-y.pokemon.amaura.weight 252
+      experience: &x-y.pokemon.amaura.experience 72
+      types: &x-y.pokemon.amaura.types
+        - rock
+        - ice
+      egg_groups: &x-y.pokemon.amaura.egg_groups
+        - monster
+      mega: &x-y.pokemon.amaura.mega false
+      stats: &x-y.pokemon.amaura.stats
+        hp:
+          base_value: 77
+          effort_change: 1
+        attack:
+          base_value: 59
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 46
+          effort_change: 0
+        special-attack:
+          base_value: 67
+          effort_change: 0
+        special-defense:
+          base_value: 63
+          effort_change: 0
+      abilities: &x-y.pokemon.amaura.abilities
+        refrigerate:
+          hidden: false
+          position: 1
+        snow-warning:
+          hidden: true
+          position: 3
+      flavor_text:
+        x: |
+          This ancient Pokémon was restored
+          from part of its body that had been
+          frozen in ice for over 100 million years.
+        'y': |
+          This calm Pokémon lived in a cold land where
+          there were no violent predators like Tyrantrum.
+      forms:
+        amaura:
+          name: Amaura
+          form_name: &x-y.pokemon.amaura.forms.amaura.form_name 'Default Form'
+          default: true
+          battle_only: &x-y.pokemon.amaura.forms.amaura.battle_only false
+          icon: &x-y.pokemon.amaura.forms.amaura.icon amaura-default.png
+          sprites:
+            - x-y/shiny/amaura-default.png
+            - x-y/amaura-default.png
+          art: &x-y.pokemon.amaura.forms.amaura.art
+            - amaura-default.png
+          footprint: &x-y.pokemon.amaura.forms.amaura.footprint amaura.png
+          cry: &x-y.pokemon.amaura.forms.amaura.cry amaura-default.webm
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *x-y.numbers.national
+  pokemon:
+    amaura:
+      genus: *x-y.pokemon.amaura.genus
+      color: *x-y.pokemon.amaura.color
+      shape: *x-y.pokemon.amaura.shape
+      female_rate: *x-y.pokemon.amaura.female_rate
+      capture_rate: *x-y.pokemon.amaura.capture_rate
+      happiness: *x-y.pokemon.amaura.happiness
+      baby: *x-y.pokemon.amaura.baby
+      hatch_steps: *x-y.pokemon.amaura.hatch_steps
+      growth_rate: *x-y.pokemon.amaura.growth_rate
+      forms_switchable: *x-y.pokemon.amaura.forms_switchable
+      name: Amaura
+      default: *x-y.pokemon.amaura.default
+      height: *x-y.pokemon.amaura.height
+      weight: *x-y.pokemon.amaura.weight
+      experience: *x-y.pokemon.amaura.experience
+      types: *x-y.pokemon.amaura.types
+      egg_groups: *x-y.pokemon.amaura.egg_groups
+      mega: *x-y.pokemon.amaura.mega
+      stats: *x-y.pokemon.amaura.stats
+      abilities: *x-y.pokemon.amaura.abilities
+      flavor_text:
+        omega-ruby: |
+          This ancient Pokémon was restored
+          from part of its body that had been
+          frozen in ice for over 100 million years.
+        alpha-sapphire: |
+          This calm Pokémon lived in a cold land where
+          there were no violent predators like Tyrantrum.
+      forms:
+        amaura:
+          name: Amaura
+          form_name: *x-y.pokemon.amaura.forms.amaura.form_name
+          default: true
+          battle_only: *x-y.pokemon.amaura.forms.amaura.battle_only
+          icon: *x-y.pokemon.amaura.forms.amaura.icon
+          art: *x-y.pokemon.amaura.forms.amaura.art
+          footprint: *x-y.pokemon.amaura.forms.amaura.footprint
+          cry: *x-y.pokemon.amaura.forms.amaura.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/amaura-default.png
+            - omega-ruby-alpha-sapphire/shiny/amaura-default.png
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    amaura:
+      genus: *x-y.pokemon.amaura.genus
+      color: *x-y.pokemon.amaura.color
+      shape: *x-y.pokemon.amaura.shape
+      female_rate: *x-y.pokemon.amaura.female_rate
+      capture_rate: *x-y.pokemon.amaura.capture_rate
+      happiness: *x-y.pokemon.amaura.happiness
+      baby: *x-y.pokemon.amaura.baby
+      hatch_steps: *x-y.pokemon.amaura.hatch_steps
+      growth_rate: *x-y.pokemon.amaura.growth_rate
+      forms_switchable: *x-y.pokemon.amaura.forms_switchable
+      name: Amaura
+      default: *x-y.pokemon.amaura.default
+      height: *x-y.pokemon.amaura.height
+      weight: *x-y.pokemon.amaura.weight
+      experience: *x-y.pokemon.amaura.experience
+      types: *x-y.pokemon.amaura.types
+      egg_groups: *x-y.pokemon.amaura.egg_groups
+      mega: *x-y.pokemon.amaura.mega
+      stats: *x-y.pokemon.amaura.stats
+      abilities: *x-y.pokemon.amaura.abilities
+      forms:
+        amaura:
+          name: Amaura
+          form_name: *x-y.pokemon.amaura.forms.amaura.form_name
+          default: true
+          battle_only: *x-y.pokemon.amaura.forms.amaura.battle_only
+          icon: *x-y.pokemon.amaura.forms.amaura.icon
+          sprites:
+            - sun-moon/shiny/amaura-default.png
+            - sun-moon/amaura-default.png
+          art: *x-y.pokemon.amaura.forms.amaura.art
+          footprint: *x-y.pokemon.amaura.forms.amaura.footprint
+          cry: *x-y.pokemon.amaura.forms.amaura.cry
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+    updated-alola: 245
+    updated-akala: 146
+  pokemon:
+    amaura:
+      genus: *x-y.pokemon.amaura.genus
+      color: *x-y.pokemon.amaura.color
+      shape: *x-y.pokemon.amaura.shape
+      female_rate: *x-y.pokemon.amaura.female_rate
+      capture_rate: *x-y.pokemon.amaura.capture_rate
+      happiness: *x-y.pokemon.amaura.happiness
+      baby: *x-y.pokemon.amaura.baby
+      hatch_steps: *x-y.pokemon.amaura.hatch_steps
+      growth_rate: *x-y.pokemon.amaura.growth_rate
+      forms_switchable: *x-y.pokemon.amaura.forms_switchable
+      name: Amaura
+      default: *x-y.pokemon.amaura.default
+      height: *x-y.pokemon.amaura.height
+      weight: *x-y.pokemon.amaura.weight
+      experience: *x-y.pokemon.amaura.experience
+      types: *x-y.pokemon.amaura.types
+      egg_groups: *x-y.pokemon.amaura.egg_groups
+      mega: *x-y.pokemon.amaura.mega
+      stats: *x-y.pokemon.amaura.stats
+      abilities: *x-y.pokemon.amaura.abilities
+      flavor_text:
+        ultra-sun: |-
+          It lived in cold areas in ancient times. It’s said
+          that when Amaura whinnies, auroras appear in
+          the night sky.
+        ultra-moon: |-
+          Amaura was restored successfully, but it’s not
+          expected to live long because of the heat of the
+          current environment.
+      forms:
+        amaura:
+          name: Amaura
+          form_name: *x-y.pokemon.amaura.forms.amaura.form_name
+          default: true
+          battle_only: *x-y.pokemon.amaura.forms.amaura.battle_only
+          icon: *x-y.pokemon.amaura.forms.amaura.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/amaura-default.png
+            - ultra-sun-ultra-moon/amaura-default.png
+          art: *x-y.pokemon.amaura.forms.amaura.art
+          footprint: *x-y.pokemon.amaura.forms.amaura.footprint
+          cry: *x-y.pokemon.amaura.forms.amaura.cry

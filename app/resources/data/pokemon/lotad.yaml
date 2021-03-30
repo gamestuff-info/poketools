@@ -1,0 +1,699 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name LOTAD
+  position: &ruby-sapphire.position 270
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 270
+    hoenn: 19
+  pokemon:
+    lotad:
+      name: LOTAD
+      default: &ruby-sapphire.pokemon.lotad.default true
+      forms_switchable: &ruby-sapphire.pokemon.lotad.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.lotad.capture_rate 255
+      experience: &ruby-sapphire.pokemon.lotad.experience 74
+      types: &ruby-sapphire.pokemon.lotad.types
+        - water
+        - grass
+      stats: &ruby-sapphire.pokemon.lotad.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 30
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 1
+        special-defense:
+          base_value: 40
+          effort_change: 1
+      growth_rate: &ruby-sapphire.pokemon.lotad.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.lotad.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.lotad.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.lotad.egg_groups
+        - water1
+        - plant
+      happiness: &ruby-sapphire.pokemon.lotad.happiness 70
+      abilities: &ruby-sapphire.pokemon.lotad.abilities
+        swift-swim: &ruby-sapphire.pokemon.lotad.abilities.swift-swim
+          hidden: &ruby-sapphire.pokemon.lotad.abilities.swift-swim.hidden false
+          position: 1
+        rain-dish: &ruby-sapphire.pokemon.lotad.abilities.rain-dish
+          hidden: *ruby-sapphire.pokemon.lotad.abilities.swift-swim.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.lotad.genus 'WATER WEED Pokémon'
+      height: &ruby-sapphire.pokemon.lotad.height 5
+      weight: &ruby-sapphire.pokemon.lotad.weight 26
+      flavor_text:
+        ruby: |
+          LOTAD live in ponds and lakes, where
+          they float on the surface.
+           It grows weak if its broad leaf dies.
+          On rare occasions, this POKéMON travels
+           on land in search of clean water.
+        sapphire: |
+          LOTAD is said to have dwelled on land
+          before. However, this POKéMON is
+          thought to have returned to water
+          because the leaf on its head grew large
+          and heavy. It now lives by floating
+          atop the water.
+      forms:
+        lotad:
+          name: LOTAD
+          form_name: &ruby-sapphire.pokemon.lotad.forms.lotad.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.lotad.forms.lotad.battle_only false
+          icon: &ruby-sapphire.pokemon.lotad.forms.lotad.icon gen5/lotad-default.png
+          sprites:
+            - ruby-sapphire/lotad-default.png
+            - ruby-sapphire/back/lotad-default.png
+            - ruby-sapphire/shiny/lotad-default.png
+          art: &ruby-sapphire.pokemon.lotad.forms.lotad.art
+            - lotad-default.png
+          footprint: &ruby-sapphire.pokemon.lotad.forms.lotad.footprint lotad.png
+          cry: &ruby-sapphire.pokemon.lotad.forms.lotad.cry gen5/lotad-default.webm
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    lotad:
+      name: LOTAD
+      default: *ruby-sapphire.pokemon.lotad.default
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      experience: *ruby-sapphire.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      stats: *ruby-sapphire.pokemon.lotad.stats
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      abilities: *ruby-sapphire.pokemon.lotad.abilities
+      genus: *ruby-sapphire.pokemon.lotad.genus
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      flavor_text:
+        emerald: |
+          This POKéMON lives in ponds with clean
+          water. It is known to ferry small POKéMON
+          across ponds by carrying them on the
+          broad leaf on its head.
+      forms:
+        lotad:
+          name: LOTAD
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *ruby-sapphire.pokemon.lotad.forms.lotad.icon
+          sprites:
+            - emerald/lotad-default.png
+            - emerald/shiny/lotad-default.png
+            - emerald/animated/lotad-default.webm
+            - emerald/animated/shiny/lotad-default.webm
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 170
+  pokemon:
+    lotad:
+      name: LOTAD
+      default: *ruby-sapphire.pokemon.lotad.default
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      experience: *ruby-sapphire.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      stats: *ruby-sapphire.pokemon.lotad.stats
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      abilities: *ruby-sapphire.pokemon.lotad.abilities
+      genus: *ruby-sapphire.pokemon.lotad.genus
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      forms:
+        lotad:
+          name: LOTAD
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          sprites:
+            - colosseum/lotad-default.png
+            - colosseum/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    lotad:
+      name: LOTAD
+      default: *ruby-sapphire.pokemon.lotad.default
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      experience: *ruby-sapphire.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      stats: *ruby-sapphire.pokemon.lotad.stats
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      abilities: *ruby-sapphire.pokemon.lotad.abilities
+      genus: *ruby-sapphire.pokemon.lotad.genus
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      forms:
+        lotad:
+          name: LOTAD
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          sprites:
+            - xd/lotad-default.png
+            - xd/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    lotad:
+      name: LOTAD
+      default: *ruby-sapphire.pokemon.lotad.default
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      experience: *ruby-sapphire.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      stats: *ruby-sapphire.pokemon.lotad.stats
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      abilities: *ruby-sapphire.pokemon.lotad.abilities
+      genus: *ruby-sapphire.pokemon.lotad.genus
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      flavor_text:
+        firered: |
+          It searches about for clean water. If it
+          does not drink water for too long, the
+          leaf on its head wilts.
+        leafgreen: |
+          It searches about for clean water. If it
+          does not drink water for too long, the
+          leaf on its head wilts.
+      forms:
+        lotad:
+          name: LOTAD
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *ruby-sapphire.pokemon.lotad.forms.lotad.icon
+          sprites:
+            - firered-leafgreen/lotad-default.png
+            - firered-leafgreen/back/lotad-default.png
+            - firered-leafgreen/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+diamond-pearl:
+  name: &diamond-pearl.name Lotad
+  position: &diamond-pearl.position 295
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lotad:
+      genus: &diamond-pearl.pokemon.lotad.genus 'Water Weed Pokémon'
+      shape: &diamond-pearl.pokemon.lotad.shape armor
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: &diamond-pearl.pokemon.lotad.baby false
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      pal_park: &diamond-pearl.pokemon.lotad.pal_park
+        area: pond
+        rate: 50
+        score: 30
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: &diamond-pearl.pokemon.lotad.experience 44
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      stats: &diamond-pearl.pokemon.lotad.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 30
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.lotad.abilities
+        swift-swim: *ruby-sapphire.pokemon.lotad.abilities.swift-swim
+        rain-dish: *ruby-sapphire.pokemon.lotad.abilities.rain-dish
+        own-tempo:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          It looks like an aquatic plant and
+          serves as a ferry to Pokémon
+          that can’t swim.
+        pearl: |
+          It looks like an aquatic plant and
+          serves as a ferry to Pokémon
+          that can’t swim.
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *ruby-sapphire.pokemon.lotad.forms.lotad.icon
+          sprites:
+            - diamond-pearl/lotad-default.png
+            - diamond-pearl/back/lotad-default.png
+            - diamond-pearl/back/shiny/lotad-default.png
+            - diamond-pearl/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lotad:
+      genus: *diamond-pearl.pokemon.lotad.genus
+      shape: *diamond-pearl.pokemon.lotad.shape
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: *diamond-pearl.pokemon.lotad.baby
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lotad.pal_park
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: *diamond-pearl.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      stats: *diamond-pearl.pokemon.lotad.stats
+      abilities: *diamond-pearl.pokemon.lotad.abilities
+      flavor_text:
+        platinum: |
+          It looks like an aquatic plant and
+          serves as a ferry to Pokémon
+          that can’t swim.
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *ruby-sapphire.pokemon.lotad.forms.lotad.icon
+          sprites:
+            - platinum/lotad-default.png
+            - platinum/back/lotad-default.png
+            - platinum/back/shiny/lotad-default.png
+            - platinum/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lotad:
+      genus: *diamond-pearl.pokemon.lotad.genus
+      shape: *diamond-pearl.pokemon.lotad.shape
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: *diamond-pearl.pokemon.lotad.baby
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      pal_park: *diamond-pearl.pokemon.lotad.pal_park
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: *diamond-pearl.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      stats: *diamond-pearl.pokemon.lotad.stats
+      abilities: *diamond-pearl.pokemon.lotad.abilities
+      flavor_text:
+        heartgold: |
+          Its leaf grew too large for it to
+          live on land. That is how it began
+          to live floating in the water.
+        soulsilver: |
+          Its leaf grew too large for it to
+          live on land. That is how it began
+          to live floating in the water.
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.lotad.forms.lotad.icon
+          sprites:
+            - heartgold-soulsilver/lotad-default.png
+            - heartgold-soulsilver/back/lotad-default.png
+            - heartgold-soulsilver/back/shiny/lotad-default.png
+            - heartgold-soulsilver/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lotad:
+      genus: *diamond-pearl.pokemon.lotad.genus
+      color: &black-white.pokemon.lotad.color green
+      shape: *diamond-pearl.pokemon.lotad.shape
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: *diamond-pearl.pokemon.lotad.baby
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: *diamond-pearl.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      stats: *diamond-pearl.pokemon.lotad.stats
+      abilities: *diamond-pearl.pokemon.lotad.abilities
+      flavor_text:
+        black: |
+          It looks like an aquatic plant and
+          serves as a ferry to Pokémon
+          that can’t swim.
+        white: |
+          It looks like an aquatic plant and
+          serves as a ferry to Pokémon
+          that can’t swim.
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *ruby-sapphire.pokemon.lotad.forms.lotad.icon
+          sprites:
+            - black-white/lotad-default.png
+            - black-white/back/lotad-default.png
+            - black-white/back/shiny/lotad-default.png
+            - black-white/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lotad:
+      genus: *diamond-pearl.pokemon.lotad.genus
+      color: *black-white.pokemon.lotad.color
+      shape: *diamond-pearl.pokemon.lotad.shape
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: *diamond-pearl.pokemon.lotad.baby
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: *diamond-pearl.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      stats: *diamond-pearl.pokemon.lotad.stats
+      abilities: *diamond-pearl.pokemon.lotad.abilities
+      flavor_text:
+        black-2: |
+          It looks like an aquatic plant and
+          serves as a ferry to Pokémon
+          that can’t swim.
+        white-2: |
+          It looks like an aquatic plant and
+          serves as a ferry to Pokémon
+          that can’t swim.
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *ruby-sapphire.pokemon.lotad.forms.lotad.icon
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *ruby-sapphire.pokemon.lotad.forms.lotad.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-mountain: 55
+  pokemon:
+    lotad:
+      genus: *diamond-pearl.pokemon.lotad.genus
+      color: *black-white.pokemon.lotad.color
+      shape: *diamond-pearl.pokemon.lotad.shape
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: *diamond-pearl.pokemon.lotad.baby
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: *diamond-pearl.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      mega: &x-y.pokemon.lotad.mega false
+      stats: *diamond-pearl.pokemon.lotad.stats
+      abilities: *diamond-pearl.pokemon.lotad.abilities
+      flavor_text:
+        x: |
+          It looks like an aquatic plant and serves as a ferry
+          to Pokémon that can’t swim.
+        'y': |
+          It searches about for clean water. If it does not
+          drink water for too long, the leaf on its head wilts.
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: &x-y.pokemon.lotad.forms.lotad.icon lotad-default.png
+          sprites:
+            - x-y/lotad-default.png
+            - x-y/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: &x-y.pokemon.lotad.forms.lotad.cry lotad-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 19
+  pokemon:
+    lotad:
+      genus: *diamond-pearl.pokemon.lotad.genus
+      color: *black-white.pokemon.lotad.color
+      shape: *diamond-pearl.pokemon.lotad.shape
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: *diamond-pearl.pokemon.lotad.baby
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: *diamond-pearl.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      mega: *x-y.pokemon.lotad.mega
+      stats: *diamond-pearl.pokemon.lotad.stats
+      abilities: *diamond-pearl.pokemon.lotad.abilities
+      flavor_text:
+        omega-ruby: |
+          Lotad live in ponds and lakes, where they float on the surface.
+          It grows weak if its broad leaf dies. On rare occasions, this
+          Pokémon travels on land in search of clean water.
+        alpha-sapphire: |
+          Lotad is said to have dwelled on land before. However, this
+          Pokémon is thought to have returned to water because the
+          leaf on its head grew large and heavy. It now lives by floating
+          atop the water.
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *x-y.pokemon.lotad.forms.lotad.icon
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *x-y.pokemon.lotad.forms.lotad.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/lotad-default.png
+            - omega-ruby-alpha-sapphire/shiny/lotad-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.lotad.wild_held_items.omega-ruby
+          mental-herb: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.lotad.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lotad:
+      genus: *diamond-pearl.pokemon.lotad.genus
+      color: *black-white.pokemon.lotad.color
+      shape: *diamond-pearl.pokemon.lotad.shape
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: *diamond-pearl.pokemon.lotad.baby
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: *diamond-pearl.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      mega: *x-y.pokemon.lotad.mega
+      stats: *diamond-pearl.pokemon.lotad.stats
+      abilities: *diamond-pearl.pokemon.lotad.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.lotad.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.lotad.wild_held_items.omega-ruby
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *x-y.pokemon.lotad.forms.lotad.icon
+          sprites:
+            - sun-moon/lotad-default.png
+            - sun-moon/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *x-y.pokemon.lotad.forms.lotad.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    lotad:
+      genus: *diamond-pearl.pokemon.lotad.genus
+      color: *black-white.pokemon.lotad.color
+      shape: *diamond-pearl.pokemon.lotad.shape
+      female_rate: *ruby-sapphire.pokemon.lotad.female_rate
+      capture_rate: *ruby-sapphire.pokemon.lotad.capture_rate
+      happiness: *ruby-sapphire.pokemon.lotad.happiness
+      baby: *diamond-pearl.pokemon.lotad.baby
+      hatch_steps: *ruby-sapphire.pokemon.lotad.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.lotad.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.lotad.forms_switchable
+      name: Lotad
+      default: *ruby-sapphire.pokemon.lotad.default
+      height: *ruby-sapphire.pokemon.lotad.height
+      weight: *ruby-sapphire.pokemon.lotad.weight
+      experience: *diamond-pearl.pokemon.lotad.experience
+      types: *ruby-sapphire.pokemon.lotad.types
+      egg_groups: *ruby-sapphire.pokemon.lotad.egg_groups
+      mega: *x-y.pokemon.lotad.mega
+      stats: *diamond-pearl.pokemon.lotad.stats
+      abilities: *diamond-pearl.pokemon.lotad.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.lotad.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.lotad.wild_held_items.omega-ruby
+      forms:
+        lotad:
+          name: Lotad
+          form_name: *ruby-sapphire.pokemon.lotad.forms.lotad.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.lotad.forms.lotad.battle_only
+          icon: *x-y.pokemon.lotad.forms.lotad.icon
+          sprites:
+            - ultra-sun-ultra-moon/lotad-default.png
+            - ultra-sun-ultra-moon/shiny/lotad-default.png
+          art: *ruby-sapphire.pokemon.lotad.forms.lotad.art
+          footprint: *ruby-sapphire.pokemon.lotad.forms.lotad.footprint
+          cry: *x-y.pokemon.lotad.forms.lotad.cry

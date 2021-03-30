@@ -1,0 +1,757 @@
+diamond-pearl:
+  name: &diamond-pearl.name Giratina
+  position: &diamond-pearl.position 488
+  numbers: &diamond-pearl.numbers
+    national: &diamond-pearl.numbers.national 487
+  pokemon:
+    giratina-altered:
+      genus: &diamond-pearl.pokemon.giratina-altered.genus 'Renegade Pokémon'
+      shape: &diamond-pearl.pokemon.giratina-altered.shape tentacles
+      capture_rate: &diamond-pearl.pokemon.giratina-altered.capture_rate 3
+      happiness: &diamond-pearl.pokemon.giratina-altered.happiness 0
+      baby: &diamond-pearl.pokemon.giratina-altered.baby false
+      hatch_steps: &diamond-pearl.pokemon.giratina-altered.hatch_steps 120
+      growth_rate: &diamond-pearl.pokemon.giratina-altered.growth_rate slow
+      forms_switchable: false
+      pal_park: &diamond-pearl.pokemon.giratina-altered.pal_park
+        area: mountain
+        rate: 3
+        score: 90
+      name: Giratina
+      default: &diamond-pearl.pokemon.giratina-altered.default true
+      height: &diamond-pearl.pokemon.giratina-altered.height 45
+      weight: &diamond-pearl.pokemon.giratina-altered.weight 7500
+      experience: &diamond-pearl.pokemon.giratina-altered.experience 306
+      types: &diamond-pearl.pokemon.giratina-altered.types
+        - ghost
+        - dragon
+      egg_groups: &diamond-pearl.pokemon.giratina-altered.egg_groups
+        - no-eggs
+      stats: &diamond-pearl.pokemon.giratina-altered.stats
+        hp:
+          base_value: 150
+          effort_change: 3
+        attack:
+          base_value: 100
+          effort_change: 0
+        defense:
+          base_value: 120
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 120
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.giratina-altered.abilities
+        pressure: &diamond-pearl.pokemon.giratina-altered.abilities.pressure
+          hidden: false
+          position: 1
+      flavor_text:
+        diamond: |
+          A Pokémon that is said to live in a
+          world on the reverse side of ours.
+          It appears in an ancient cemetery.
+        pearl: |
+          A Pokémon that is said to live in a
+          world on the reverse side of ours.
+          It appears in an ancient cemetery.
+      forms:
+        giratina-altered:
+          name: &diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name 'Altered Giratina'
+          form_name: &diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name 'Altered Forme'
+          default: true
+          battle_only: &diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only false
+          icon: &diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.icon gen5/giratina-altered.png
+          sprites:
+            - diamond-pearl/back/shiny/giratina-altered.png
+            - diamond-pearl/back/giratina-altered.png
+            - diamond-pearl/shiny/giratina-altered.png
+            - diamond-pearl/giratina-altered.png
+          art: &diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+            - giratina-altered.png
+          footprint: &diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint giratina.png
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 210
+  pokemon:
+    giratina-altered:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: &platinum.pokemon.giratina-altered.forms_switchable true
+      forms_note: &platinum.pokemon.giratina-altered.forms_note |
+        Forms have different stats and can learn different moves from tutors.  Moves are retained through form changes.  Giratina transforms into Origin Forme in the []{location:distortion-world} or while holding a []{item:griseous-orb}.  Otherwise, it assumes its Altered Forme.
+
+        The Griseous Orb returns to the bag upon entering the Wi-Fi Club or the Union Room.
+      pal_park: *diamond-pearl.pokemon.giratina-altered.pal_park
+      name: Giratina
+      default: *diamond-pearl.pokemon.giratina-altered.default
+      height: *diamond-pearl.pokemon.giratina-altered.height
+      weight: *diamond-pearl.pokemon.giratina-altered.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      stats: *diamond-pearl.pokemon.giratina-altered.stats
+      abilities: *diamond-pearl.pokemon.giratina-altered.abilities
+      flavor_text: &platinum.pokemon.giratina-altered.flavor_text
+        platinum: |
+          It was banished for its violence.
+          It silently gazed upon the old
+          world from the Distortion World.
+      forms:
+        giratina-altered:
+          name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name
+          form_name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.icon
+          sprites:
+            - platinum/back/shiny/giratina-altered.png
+            - platinum/back/giratina-altered.png
+            - platinum/shiny/giratina-altered.png
+            - platinum/giratina-altered.png
+          art: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+    giratina-origin:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      pal_park: *diamond-pearl.pokemon.giratina-altered.pal_park
+      name: &platinum.pokemon.giratina-origin.name 'Origin Giratina'
+      default: &platinum.pokemon.giratina-origin.default false
+      height: &platinum.pokemon.giratina-origin.height 69
+      weight: &platinum.pokemon.giratina-origin.weight 6500
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      stats: &platinum.pokemon.giratina-origin.stats
+        hp:
+          base_value: 150
+          effort_change: 3
+        attack:
+          base_value: 120
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 0
+        special-attack:
+          base_value: 120
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 0
+      abilities: &platinum.pokemon.giratina-origin.abilities
+        levitate: *diamond-pearl.pokemon.giratina-altered.abilities.pressure
+      flavor_text: *platinum.pokemon.giratina-altered.flavor_text
+      forms:
+        giratina-origin:
+          name: 'Origin Giratina'
+          form_name: &platinum.pokemon.giratina-origin.forms.giratina-origin.form_name 'Origin Forme'
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: &platinum.pokemon.giratina-origin.forms.giratina-origin.icon gen5/giratina-origin.png
+          sprites:
+            - platinum/back/shiny/giratina-origin.png
+            - platinum/back/giratina-origin.png
+            - platinum/shiny/giratina-origin.png
+            - platinum/giratina-origin.png
+          art: &platinum.pokemon.giratina-origin.forms.giratina-origin.art
+            - giratina-origin.png
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    giratina-altered:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      pal_park: *diamond-pearl.pokemon.giratina-altered.pal_park
+      name: Giratina
+      default: *diamond-pearl.pokemon.giratina-altered.default
+      height: *diamond-pearl.pokemon.giratina-altered.height
+      weight: *diamond-pearl.pokemon.giratina-altered.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      stats: *diamond-pearl.pokemon.giratina-altered.stats
+      abilities: *diamond-pearl.pokemon.giratina-altered.abilities
+      flavor_text: &heartgold-soulsilver.pokemon.giratina-altered.flavor_text
+        heartgold: |
+          This Pokémon is said to live in a world on
+          the reverse side of ours, where common
+          knowledge is distorted and strange.
+        soulsilver: |
+          This Pokémon is said to live in a world on
+          the reverse side of ours, where common
+          knowledge is distorted and strange.
+      forms:
+        giratina-altered:
+          name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name
+          form_name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 4
+              range: 3-5
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 5
+              range: 4-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/giratina-altered.png
+            - heartgold-soulsilver/back/giratina-altered.png
+            - heartgold-soulsilver/shiny/giratina-altered.png
+            - heartgold-soulsilver/giratina-altered.png
+          art: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+    giratina-origin:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      pal_park: *diamond-pearl.pokemon.giratina-altered.pal_park
+      name: *platinum.pokemon.giratina-origin.name
+      default: *platinum.pokemon.giratina-origin.default
+      height: *platinum.pokemon.giratina-origin.height
+      weight: *platinum.pokemon.giratina-origin.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      stats: *platinum.pokemon.giratina-origin.stats
+      abilities: *platinum.pokemon.giratina-origin.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.giratina-altered.flavor_text
+      forms:
+        giratina-origin:
+          name: 'Origin Giratina'
+          form_name: *platinum.pokemon.giratina-origin.forms.giratina-origin.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-5
+            power:
+              base_value: 3
+              range: 1-5
+            skill:
+              base_value: 3
+              range: 1-5
+            stamina:
+              base_value: 3
+              range: 1-5
+            jump:
+              base_value: 3
+              range: 2-5
+          icon: *platinum.pokemon.giratina-origin.forms.giratina-origin.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/giratina-origin.png
+            - heartgold-soulsilver/back/giratina-origin.png
+            - heartgold-soulsilver/shiny/giratina-origin.png
+            - heartgold-soulsilver/giratina-origin.png
+          art: *platinum.pokemon.giratina-origin.forms.giratina-origin.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    giratina-altered:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: &black-white.pokemon.giratina-altered.color black
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: Giratina
+      default: *diamond-pearl.pokemon.giratina-altered.default
+      height: *diamond-pearl.pokemon.giratina-altered.height
+      weight: *diamond-pearl.pokemon.giratina-altered.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      stats: *diamond-pearl.pokemon.giratina-altered.stats
+      abilities: &black-white.pokemon.giratina-altered.abilities
+        pressure: *diamond-pearl.pokemon.giratina-altered.abilities.pressure
+        telepathy:
+          hidden: true
+          position: 3
+      flavor_text: &black-white.pokemon.giratina-altered.flavor_text
+        black: |
+          It was banished for its violence.
+          It silently gazed upon the old
+          world from the Distortion World.
+        white: |
+          It was banished for its violence.
+          It silently gazed upon the old
+          world from the Distortion World.
+      forms:
+        giratina-altered:
+          name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name
+          form_name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.icon
+          sprites:
+            - black-white/back/shiny/giratina-altered.png
+            - black-white/back/giratina-altered.png
+            - black-white/shiny/giratina-altered.png
+            - black-white/giratina-altered.png
+          art: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+    giratina-origin:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: *platinum.pokemon.giratina-origin.name
+      default: *platinum.pokemon.giratina-origin.default
+      height: *platinum.pokemon.giratina-origin.height
+      weight: *platinum.pokemon.giratina-origin.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      stats: *platinum.pokemon.giratina-origin.stats
+      abilities: *platinum.pokemon.giratina-origin.abilities
+      flavor_text: *black-white.pokemon.giratina-altered.flavor_text
+      forms:
+        giratina-origin:
+          name: 'Origin Giratina'
+          form_name: *platinum.pokemon.giratina-origin.forms.giratina-origin.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *platinum.pokemon.giratina-origin.forms.giratina-origin.icon
+          sprites:
+            - black-white/back/shiny/giratina-origin.png
+            - black-white/back/giratina-origin.png
+            - black-white/shiny/giratina-origin.png
+            - black-white/giratina-origin.png
+          art: *platinum.pokemon.giratina-origin.forms.giratina-origin.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    giratina-altered:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: Giratina
+      default: *diamond-pearl.pokemon.giratina-altered.default
+      height: *diamond-pearl.pokemon.giratina-altered.height
+      weight: *diamond-pearl.pokemon.giratina-altered.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      stats: *diamond-pearl.pokemon.giratina-altered.stats
+      abilities: *black-white.pokemon.giratina-altered.abilities
+      flavor_text: &black-2-white-2.pokemon.giratina-altered.flavor_text
+        black-2: |
+          It was banished for its violence.
+          It silently gazed upon the old
+          world from the Distortion World.
+        white-2: |
+          It was banished for its violence.
+          It silently gazed upon the old
+          world from the Distortion World.
+      forms:
+        giratina-altered:
+          name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name
+          form_name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.icon
+          art: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+    giratina-origin:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: *platinum.pokemon.giratina-origin.name
+      default: *platinum.pokemon.giratina-origin.default
+      height: *platinum.pokemon.giratina-origin.height
+      weight: *platinum.pokemon.giratina-origin.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      stats: *platinum.pokemon.giratina-origin.stats
+      abilities: *platinum.pokemon.giratina-origin.abilities
+      flavor_text: *black-2-white-2.pokemon.giratina-altered.flavor_text
+      forms:
+        giratina-origin:
+          name: 'Origin Giratina'
+          form_name: *platinum.pokemon.giratina-origin.forms.giratina-origin.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *platinum.pokemon.giratina-origin.forms.giratina-origin.icon
+          art: *platinum.pokemon.giratina-origin.forms.giratina-origin.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    giratina-altered:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: Giratina
+      default: *diamond-pearl.pokemon.giratina-altered.default
+      height: *diamond-pearl.pokemon.giratina-altered.height
+      weight: *diamond-pearl.pokemon.giratina-altered.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      mega: &x-y.pokemon.giratina-altered.mega false
+      stats: *diamond-pearl.pokemon.giratina-altered.stats
+      abilities: *black-white.pokemon.giratina-altered.abilities
+      flavor_text: &x-y.pokemon.giratina-altered.flavor_text
+        x: |
+          This Pokémon is said to live in a world on the
+          reverse side of ours, where common knowledge is
+          distorted and strange.
+        'y': |
+          It was banished for its violence. It silently gazed
+          upon the old world from the Distortion World.
+      forms:
+        giratina-altered:
+          name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name
+          form_name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: &x-y.pokemon.giratina-altered.forms.giratina-altered.icon giratina-altered.png
+          sprites:
+            - x-y/shiny/giratina-altered.png
+            - x-y/giratina-altered.png
+          art: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+    giratina-origin:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: *platinum.pokemon.giratina-origin.name
+      default: *platinum.pokemon.giratina-origin.default
+      height: *platinum.pokemon.giratina-origin.height
+      weight: *platinum.pokemon.giratina-origin.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      mega: *x-y.pokemon.giratina-altered.mega
+      stats: *platinum.pokemon.giratina-origin.stats
+      abilities: *platinum.pokemon.giratina-origin.abilities
+      flavor_text: *x-y.pokemon.giratina-altered.flavor_text
+      forms:
+        giratina-origin:
+          name: 'Origin Giratina'
+          form_name: *platinum.pokemon.giratina-origin.forms.giratina-origin.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: &x-y.pokemon.giratina-origin.forms.giratina-origin.icon giratina-origin.png
+          sprites:
+            - x-y/shiny/giratina-origin.png
+            - x-y/giratina-origin.png
+          art: *platinum.pokemon.giratina-origin.forms.giratina-origin.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    giratina-altered:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: Giratina
+      default: *diamond-pearl.pokemon.giratina-altered.default
+      height: *diamond-pearl.pokemon.giratina-altered.height
+      weight: *diamond-pearl.pokemon.giratina-altered.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      mega: *x-y.pokemon.giratina-altered.mega
+      stats: *diamond-pearl.pokemon.giratina-altered.stats
+      abilities: *black-white.pokemon.giratina-altered.abilities
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.giratina-altered.flavor_text
+        omega-ruby: |
+          This Pokémon is said to live in a world on the
+          reverse side of ours, where common knowledge is
+          distorted and strange.
+        alpha-sapphire: |
+          It was banished for its violence. It silently gazed
+          upon the old world from the Distortion World.
+      forms:
+        giratina-altered:
+          name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name
+          form_name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *x-y.pokemon.giratina-altered.forms.giratina-altered.icon
+          art: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/giratina-altered.png
+            - omega-ruby-alpha-sapphire/giratina-altered.png
+    giratina-origin:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: *platinum.pokemon.giratina-origin.name
+      default: *platinum.pokemon.giratina-origin.default
+      height: *platinum.pokemon.giratina-origin.height
+      weight: *platinum.pokemon.giratina-origin.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      mega: *x-y.pokemon.giratina-altered.mega
+      stats: *platinum.pokemon.giratina-origin.stats
+      abilities: *platinum.pokemon.giratina-origin.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.giratina-altered.flavor_text
+      forms:
+        giratina-origin:
+          name: 'Origin Giratina'
+          form_name: *platinum.pokemon.giratina-origin.forms.giratina-origin.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *x-y.pokemon.giratina-origin.forms.giratina-origin.icon
+          art: *platinum.pokemon.giratina-origin.forms.giratina-origin.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/giratina-origin.png
+            - omega-ruby-alpha-sapphire/giratina-origin.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    giratina-altered:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: Giratina
+      default: *diamond-pearl.pokemon.giratina-altered.default
+      height: *diamond-pearl.pokemon.giratina-altered.height
+      weight: *diamond-pearl.pokemon.giratina-altered.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      mega: *x-y.pokemon.giratina-altered.mega
+      stats: *diamond-pearl.pokemon.giratina-altered.stats
+      abilities: *black-white.pokemon.giratina-altered.abilities
+      forms:
+        giratina-altered:
+          name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name
+          form_name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *x-y.pokemon.giratina-altered.forms.giratina-altered.icon
+          sprites:
+            - sun-moon/shiny/giratina-altered.png
+            - sun-moon/giratina-altered.png
+          art: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+    giratina-origin:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: *platinum.pokemon.giratina-origin.name
+      default: *platinum.pokemon.giratina-origin.default
+      height: *platinum.pokemon.giratina-origin.height
+      weight: *platinum.pokemon.giratina-origin.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      mega: *x-y.pokemon.giratina-altered.mega
+      stats: *platinum.pokemon.giratina-origin.stats
+      abilities: *platinum.pokemon.giratina-origin.abilities
+      forms:
+        giratina-origin:
+          name: 'Origin Giratina'
+          form_name: *platinum.pokemon.giratina-origin.forms.giratina-origin.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *x-y.pokemon.giratina-origin.forms.giratina-origin.icon
+          sprites:
+            - sun-moon/shiny/giratina-origin.png
+            - sun-moon/giratina-origin.png
+          art: *platinum.pokemon.giratina-origin.forms.giratina-origin.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    giratina-altered:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: Giratina
+      default: *diamond-pearl.pokemon.giratina-altered.default
+      height: *diamond-pearl.pokemon.giratina-altered.height
+      weight: *diamond-pearl.pokemon.giratina-altered.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      mega: *x-y.pokemon.giratina-altered.mega
+      stats: *diamond-pearl.pokemon.giratina-altered.stats
+      abilities: *black-white.pokemon.giratina-altered.abilities
+      forms:
+        giratina-altered:
+          name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.name
+          form_name: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *x-y.pokemon.giratina-altered.forms.giratina-altered.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/giratina-altered.png
+            - ultra-sun-ultra-moon/giratina-altered.png
+          art: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint
+    giratina-origin:
+      genus: *diamond-pearl.pokemon.giratina-altered.genus
+      color: *black-white.pokemon.giratina-altered.color
+      shape: *diamond-pearl.pokemon.giratina-altered.shape
+      capture_rate: *diamond-pearl.pokemon.giratina-altered.capture_rate
+      happiness: *diamond-pearl.pokemon.giratina-altered.happiness
+      baby: *diamond-pearl.pokemon.giratina-altered.baby
+      hatch_steps: *diamond-pearl.pokemon.giratina-altered.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.giratina-altered.growth_rate
+      forms_switchable: *platinum.pokemon.giratina-altered.forms_switchable
+      forms_note: *platinum.pokemon.giratina-altered.forms_note
+      name: *platinum.pokemon.giratina-origin.name
+      default: *platinum.pokemon.giratina-origin.default
+      height: *platinum.pokemon.giratina-origin.height
+      weight: *platinum.pokemon.giratina-origin.weight
+      experience: *diamond-pearl.pokemon.giratina-altered.experience
+      types: *diamond-pearl.pokemon.giratina-altered.types
+      egg_groups: *diamond-pearl.pokemon.giratina-altered.egg_groups
+      mega: *x-y.pokemon.giratina-altered.mega
+      stats: *platinum.pokemon.giratina-origin.stats
+      abilities: *platinum.pokemon.giratina-origin.abilities
+      forms:
+        giratina-origin:
+          name: 'Origin Giratina'
+          form_name: *platinum.pokemon.giratina-origin.forms.giratina-origin.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.battle_only
+          icon: *x-y.pokemon.giratina-origin.forms.giratina-origin.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/giratina-origin.png
+            - ultra-sun-ultra-moon/giratina-origin.png
+          art: *platinum.pokemon.giratina-origin.forms.giratina-origin.art
+          footprint: *diamond-pearl.pokemon.giratina-altered.forms.giratina-altered.footprint

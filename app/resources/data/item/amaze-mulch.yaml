@@ -1,0 +1,32 @@
+x-y: &x-y
+  name: &x-y.name 'Amaze Mulch'
+  category: &x-y.category mulch
+  pocket: &x-y.pocket misc
+  buy: &x-y.buy 200
+  sell: &x-y.sell 100
+  fling_effect: damage
+  fling_power: 30
+  short_description: &x-y.short_description 'Increases the total number of Berries by 2, increases the chance of Berry mutation, and causes soil to dry out in 4 hours.'
+  description: &x-y.description 'Increases the total number of Berries by 2, increases the chance of Berry mutation, and causes soil to dry out in 4 hours.'
+  flavor_text: |
+    Mulch to be used in a Berry field.
+    An amazing Mulch with the effects
+    of Rich, Surprise, and Boost Mulch.
+  icon: &x-y.icon amaze-mulch.png
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *x-y.name
+  category: *x-y.category
+  pocket: *x-y.pocket
+  buy: *x-y.buy
+  sell: *x-y.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *x-y.short_description
+  description: *x-y.description
+  flavor_text: |
+    A fertilizer for growing Berries. However, it appears
+    to be unsuitable for the soil in the Hoenn region and
+    has no effect.
+  icon: *x-y.icon
+ultra-sun-ultra-moon: *sun-moon

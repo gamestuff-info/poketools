@@ -1,0 +1,1046 @@
+red-blue:
+  name: &red-blue.name EXEGGUTOR
+  position: &red-blue.position 103
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 103
+    kanto: 103
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: &red-blue.pokemon.exeggutor.default true
+      capture_rate: &red-blue.pokemon.exeggutor.capture_rate 45
+      experience: &red-blue.pokemon.exeggutor.experience 212
+      types: &red-blue.pokemon.exeggutor.types
+        - grass
+        - psychic
+      stats: &red-blue.pokemon.exeggutor.stats
+        hp:
+          base_value: 95
+          effort_change: 95
+        attack:
+          base_value: 95
+          effort_change: 95
+        defense:
+          base_value: 85
+          effort_change: 85
+        speed:
+          base_value: 55
+          effort_change: 55
+        special:
+          base_value: 125
+          effort_change: 125
+      growth_rate: &red-blue.pokemon.exeggutor.growth_rate slow
+      genus: &red-blue.pokemon.exeggutor.genus 'COCONUT Pokémon'
+      height: &red-blue.pokemon.exeggutor.height 20
+      weight: &red-blue.pokemon.exeggutor.weight 12020
+      flavor_text:
+        red: |
+          Legend has it that
+          on rare occasions,
+          one of its heads
+          will drop off and
+          continue on as an
+          EXEGGCUTE.
+        blue: |
+          Legend has it that
+          on rare occasions,
+          one of its heads
+          will drop off and
+          continue on as an
+          EXEGGCUTE.
+      evolution_parent: &red-blue.pokemon.exeggutor.evolution_parent exeggcute/exeggcute
+      evolution_conditions: &red-blue.pokemon.exeggutor.evolution_conditions
+        use-item:
+          trigger_item: leaf-stone
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: &red-blue.pokemon.exeggutor.forms.exeggutor.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.exeggutor.forms.exeggutor.battle_only false
+          sprites:
+            - red-blue/exeggutor-default.png
+            - red-blue/gray/exeggutor-default.png
+            - red-blue/back/exeggutor-default.png
+          art: &red-blue.pokemon.exeggutor.forms.exeggutor.art
+            - exeggutor-default.png
+          cry: &red-blue.pokemon.exeggutor.forms.exeggutor.cry gen5/exeggutor-default.webm
+          icon: &red-blue.pokemon.exeggutor.forms.exeggutor.icon gen1/grass.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: *red-blue.pokemon.exeggutor.default
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      experience: *red-blue.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      stats: *red-blue.pokemon.exeggutor.stats
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      genus: *red-blue.pokemon.exeggutor.genus
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *red-blue.pokemon.exeggutor.weight
+      flavor_text:
+        yellow: |
+          Its cries are very
+          noisy. This is
+          because each of
+          the 3 heads thinks
+          about whatever it
+          likes.
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          sprites:
+            - yellow/exeggutor-default.png
+            - yellow/gray/exeggutor-default.png
+            - yellow/back/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+          icon: *red-blue.pokemon.exeggutor.forms.exeggutor.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 102
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 104
+    original-johto-abc: 45
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: *red-blue.pokemon.exeggutor.default
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      experience: *red-blue.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      stats: &gold-silver.pokemon.exeggutor.stats
+        hp:
+          base_value: 95
+          effort_change: 95
+        attack:
+          base_value: 95
+          effort_change: 95
+        defense:
+          base_value: 85
+          effort_change: 85
+        speed:
+          base_value: 55
+          effort_change: 55
+        special-attack:
+          base_value: 125
+          effort_change: 125
+        special-defense:
+          base_value: 65
+          effort_change: 125
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      female_rate: &gold-silver.pokemon.exeggutor.female_rate 50
+      hatch_steps: &gold-silver.pokemon.exeggutor.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.exeggutor.egg_groups
+        - plant
+      genus: *red-blue.pokemon.exeggutor.genus
+      height: *red-blue.pokemon.exeggutor.height
+      weight: &gold-silver.pokemon.exeggutor.weight 1202
+      flavor_text:
+        gold: |
+          Its three heads
+          think independent-
+          ly. However, they
+          are friendly and
+          never appear to
+          squabble.
+        silver: |
+          If a head drops
+          off, it emits a
+          telepathic call in
+          search of others
+          to form an
+          EXEGGCUTE cluster.
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          sprites:
+            - gold-silver/exeggutor-default.png
+            - gold-silver/back/exeggutor-default.png
+            - gold-silver/shiny/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+          icon: &gold-silver.pokemon.exeggutor.forms.exeggutor.icon gen2/oddish.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: *red-blue.pokemon.exeggutor.default
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      experience: *red-blue.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      stats: *gold-silver.pokemon.exeggutor.stats
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      genus: *red-blue.pokemon.exeggutor.genus
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *gold-silver.pokemon.exeggutor.weight
+      flavor_text:
+        crystal: |
+          Living in a good
+          environment makes
+          it grow lots of
+          heads. A head that
+          drops off becomes
+          an EXEGGCUTE.
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          sprites:
+            - crystal/exeggutor-default.png
+            - crystal/back/exeggutor-default.png
+            - crystal/shiny/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+          icon: *gold-silver.pokemon.exeggutor.forms.exeggutor.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 271
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: *red-blue.pokemon.exeggutor.default
+      forms_switchable: &ruby-sapphire.pokemon.exeggutor.forms_switchable false
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      experience: *red-blue.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      stats: &ruby-sapphire.pokemon.exeggutor.stats
+        hp:
+          base_value: 95
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 125
+          effort_change: 0
+        special-defense:
+          base_value: 95
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      happiness: &ruby-sapphire.pokemon.exeggutor.happiness 70
+      abilities: &ruby-sapphire.pokemon.exeggutor.abilities
+        chlorophyll: &ruby-sapphire.pokemon.exeggutor.abilities.chlorophyll
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.exeggutor.genus
+      height: *red-blue.pokemon.exeggutor.height
+      weight: &ruby-sapphire.pokemon.exeggutor.weight 1200
+      flavor_text:
+        ruby: |
+          EXEGGUTOR originally came from the
+          tropics. Its heads steadily grow larger
+          from exposure to strong sunlight.
+          It is said that when the heads fall off,
+          they group together to form EXEGGCUTE.
+        sapphire: |
+          EXEGGUTOR originally came from the
+          tropics. Its heads steadily grow larger
+          from exposure to strong sunlight.
+          It is said that when the heads fall off,
+          they group together to form EXEGGCUTE.
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: &ruby-sapphire.pokemon.exeggutor.forms.exeggutor.icon gen5/exeggutor-default.png
+          sprites:
+            - ruby-sapphire/exeggutor-default.png
+            - ruby-sapphire/back/exeggutor-default.png
+            - ruby-sapphire/shiny/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: &ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint exeggutor.png
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: *red-blue.pokemon.exeggutor.default
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      experience: *red-blue.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      stats: *ruby-sapphire.pokemon.exeggutor.stats
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      abilities: *ruby-sapphire.pokemon.exeggutor.abilities
+      genus: *red-blue.pokemon.exeggutor.genus
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      flavor_text:
+        emerald: |
+          Originally from the tropics, EXEGGUTOR's
+          heads grow larger from exposure to strong
+          sunlight. It is said that when the heads
+          fall, they group to form an EXEGGCUTE.
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.icon
+          sprites:
+            - emerald/exeggutor-default.png
+            - emerald/shiny/exeggutor-default.png
+            - emerald/animated/exeggutor-default.webm
+            - emerald/animated/shiny/exeggutor-default.webm
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 91
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: *red-blue.pokemon.exeggutor.default
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      experience: *red-blue.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      stats: *ruby-sapphire.pokemon.exeggutor.stats
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      abilities: *ruby-sapphire.pokemon.exeggutor.abilities
+      genus: *red-blue.pokemon.exeggutor.genus
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          sprites:
+            - colosseum/exeggutor-default.png
+            - colosseum/shiny/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: *red-blue.pokemon.exeggutor.default
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      experience: *red-blue.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      stats: *ruby-sapphire.pokemon.exeggutor.stats
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      abilities: *ruby-sapphire.pokemon.exeggutor.abilities
+      genus: *red-blue.pokemon.exeggutor.genus
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          sprites:
+            - xd/exeggutor-default.png
+            - xd/shiny/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    exeggutor:
+      name: EXEGGUTOR
+      default: *red-blue.pokemon.exeggutor.default
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      experience: *red-blue.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      stats: *ruby-sapphire.pokemon.exeggutor.stats
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      abilities: *ruby-sapphire.pokemon.exeggutor.abilities
+      genus: *red-blue.pokemon.exeggutor.genus
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      flavor_text:
+        firered: |
+          It is called “The Walking Tropical
+          Rainforest.” Each of the nuts has
+          a face and a will of its own.
+        leafgreen: |
+          It is said that on rare occasions, one
+          of its heads will drop off and continue on
+          as an EXEGGCUTE.
+      forms:
+        exeggutor:
+          name: EXEGGUTOR
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.icon
+          sprites:
+            - firered-leafgreen/exeggutor-default.png
+            - firered-leafgreen/back/exeggutor-default.png
+            - firered-leafgreen/shiny/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Exeggutor
+  position: &diamond-pearl.position 112
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    exeggutor:
+      genus: &diamond-pearl.pokemon.exeggutor.genus 'Coconut Pokémon'
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      shape: &diamond-pearl.pokemon.exeggutor.shape legs
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: &diamond-pearl.pokemon.exeggutor.baby false
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      pal_park: &diamond-pearl.pokemon.exeggutor.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Exeggutor
+      default: *red-blue.pokemon.exeggutor.default
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: &diamond-pearl.pokemon.exeggutor.experience 186
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      stats: &diamond-pearl.pokemon.exeggutor.stats
+        hp:
+          base_value: 95
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 125
+          effort_change: 2
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.exeggutor.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is called “The Walking Jungle.”
+          If a head grows too big, it falls
+          off and becomes an EXEGGCUTE.
+        pearl: |
+          It is called “The Walking Jungle.”
+          If a head grows too big, it falls
+          off and becomes an EXEGGCUTE.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.icon
+          sprites:
+            - diamond-pearl/back/shiny/exeggutor-default.png
+            - diamond-pearl/back/exeggutor-default.png
+            - diamond-pearl/shiny/exeggutor-default.png
+            - diamond-pearl/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    exeggutor:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      pal_park: *diamond-pearl.pokemon.exeggutor.pal_park
+      name: Exeggutor
+      default: *red-blue.pokemon.exeggutor.default
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      stats: *diamond-pearl.pokemon.exeggutor.stats
+      abilities: *ruby-sapphire.pokemon.exeggutor.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is called “The Walking Jungle.”
+          If a head grows too big, it falls
+          off and becomes an EXEGGCUTE.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.icon
+          sprites:
+            - platinum/back/shiny/exeggutor-default.png
+            - platinum/back/exeggutor-default.png
+            - platinum/shiny/exeggutor-default.png
+            - platinum/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 106
+  pokemon:
+    exeggutor:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      pal_park: *diamond-pearl.pokemon.exeggutor.pal_park
+      name: Exeggutor
+      default: *red-blue.pokemon.exeggutor.default
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      stats: *diamond-pearl.pokemon.exeggutor.stats
+      abilities: *ruby-sapphire.pokemon.exeggutor.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Its three heads think independently.
+          However, they are friendly and
+          never appear to squabble.
+        soulsilver: |
+          If a head drops off, it emits a
+          telepathic call in search of others
+          to form an EXEGGCUTE cluster.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 2-3
+            stamina:
+              base_value: 4
+              range: 3-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/exeggutor-default.png
+            - heartgold-soulsilver/back/exeggutor-default.png
+            - heartgold-soulsilver/shiny/exeggutor-default.png
+            - heartgold-soulsilver/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    exeggutor:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      color: &black-white.pokemon.exeggutor.color yellow
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      name: Exeggutor
+      default: *red-blue.pokemon.exeggutor.default
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      stats: *diamond-pearl.pokemon.exeggutor.stats
+      abilities: &black-white.pokemon.exeggutor.abilities
+        chlorophyll: *ruby-sapphire.pokemon.exeggutor.abilities.chlorophyll
+        harvest: &black-white.pokemon.exeggutor.abilities.harvest
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text:
+        black: |
+          It is called “The Walking Jungle.”
+          If a head grows too big, it falls
+          off and becomes an Exeggcute.
+        white: |
+          It is called “The Walking Jungle.”
+          If a head grows too big, it falls
+          off and becomes an Exeggcute.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.icon
+          sprites:
+            - black-white/back/shiny/exeggutor-default.png
+            - black-white/back/exeggutor-default.png
+            - black-white/shiny/exeggutor-default.png
+            - black-white/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    exeggutor:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      color: *black-white.pokemon.exeggutor.color
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      name: Exeggutor
+      default: *red-blue.pokemon.exeggutor.default
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      stats: *diamond-pearl.pokemon.exeggutor.stats
+      abilities: *black-white.pokemon.exeggutor.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text:
+        black-2: |
+          It is called “The Walking Jungle.”
+          If a head grows too big, it falls
+          off and becomes an Exeggcute.
+        white-2: |
+          It is called “The Walking Jungle.”
+          If a head grows too big, it falls
+          off and becomes an Exeggcute.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.icon
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *red-blue.pokemon.exeggutor.forms.exeggutor.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 137
+  pokemon:
+    exeggutor:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      color: *black-white.pokemon.exeggutor.color
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      name: Exeggutor
+      default: *red-blue.pokemon.exeggutor.default
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      mega: &x-y.pokemon.exeggutor.mega false
+      stats: *diamond-pearl.pokemon.exeggutor.stats
+      abilities: *black-white.pokemon.exeggutor.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text:
+        x: |
+          Its three heads think independently. However,
+          they are friendly and never appear to squabble.
+        'y': |
+          It is called “The Walking Jungle.” If a head grows
+          too big, it falls off and becomes an Exeggcute.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: &x-y.pokemon.exeggutor.forms.exeggutor.icon exeggutor-default.png
+          sprites:
+            - x-y/shiny/exeggutor-default.png
+            - x-y/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: &x-y.pokemon.exeggutor.forms.exeggutor.cry exeggutor-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    exeggutor:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      color: *black-white.pokemon.exeggutor.color
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      name: Exeggutor
+      default: *red-blue.pokemon.exeggutor.default
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      mega: *x-y.pokemon.exeggutor.mega
+      stats: *diamond-pearl.pokemon.exeggutor.stats
+      abilities: *black-white.pokemon.exeggutor.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Exeggutor originally came from the tropics. Its heads
+          steadily grow larger from exposure to strong sunlight.
+          It is said that when the heads fall off, they group together
+          to form Exeggcute.
+        alpha-sapphire: |
+          Exeggutor originally came from the tropics. Its heads
+          steadily grow larger from exposure to strong sunlight. It is
+          said that when the heads fall off, they group together to
+          form Exeggcute.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *x-y.pokemon.exeggutor.forms.exeggutor.icon
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *x-y.pokemon.exeggutor.forms.exeggutor.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/exeggutor-default.png
+            - omega-ruby-alpha-sapphire/shiny/exeggutor-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 270
+    original-poni: 85
+  pokemon:
+    exeggutor:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      color: *black-white.pokemon.exeggutor.color
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      name: Exeggutor
+      default: &sun-moon.pokemon.exeggutor.default false
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      mega: *x-y.pokemon.exeggutor.mega
+      stats: *diamond-pearl.pokemon.exeggutor.stats
+      abilities: *black-white.pokemon.exeggutor.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text: &sun-moon.pokemon.exeggutor.flavor_text
+        sun: |-
+          Each of its heads has its own will. They use
+          telepathy to discuss their plans before coming
+          to a joint decision.
+        moon: |-
+          When the time comes, one of its three heads
+          falls off. Before long, the fallen head grows into
+          an Exeggcute.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *x-y.pokemon.exeggutor.forms.exeggutor.icon
+          sprites:
+            - sun-moon/shiny/exeggutor-default.png
+            - sun-moon/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *x-y.pokemon.exeggutor.forms.exeggutor.cry
+    exeggutor-alola:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      color: *black-white.pokemon.exeggutor.color
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      name: &sun-moon.pokemon.exeggutor-alola.name 'Alolan Exeggutor'
+      default: *red-blue.pokemon.exeggutor.default
+      height: &sun-moon.pokemon.exeggutor-alola.height 109
+      weight: &sun-moon.pokemon.exeggutor-alola.weight 4156
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: &sun-moon.pokemon.exeggutor-alola.types
+        - grass
+        - dragon
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      mega: *x-y.pokemon.exeggutor.mega
+      stats: &sun-moon.pokemon.exeggutor-alola.stats
+        hp:
+          base_value: 95
+          effort_change: 0
+        attack:
+          base_value: 105
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 45
+          effort_change: 0
+        special-attack:
+          base_value: 125
+          effort_change: 2
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: &sun-moon.pokemon.exeggutor-alola.abilities
+        frisk: *ruby-sapphire.pokemon.exeggutor.abilities.chlorophyll
+        harvest: *black-white.pokemon.exeggutor.abilities.harvest
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text: *sun-moon.pokemon.exeggutor.flavor_text
+      forms:
+        exeggutor-alola:
+          name: 'Alolan Exeggutor'
+          form_name: &sun-moon.pokemon.exeggutor-alola.forms.exeggutor-alola.form_name 'Alola Form'
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: &sun-moon.pokemon.exeggutor-alola.forms.exeggutor-alola.icon exeggutor-alola.png
+          sprites:
+            - sun-moon/exeggutor-alola.png
+            - sun-moon/shiny/exeggutor-alola.png
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *x-y.pokemon.exeggutor.forms.exeggutor.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 356
+    updated-poni: 103
+  pokemon:
+    exeggutor:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      color: *black-white.pokemon.exeggutor.color
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      name: Exeggutor
+      default: *sun-moon.pokemon.exeggutor.default
+      height: *red-blue.pokemon.exeggutor.height
+      weight: *ruby-sapphire.pokemon.exeggutor.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *red-blue.pokemon.exeggutor.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      mega: *x-y.pokemon.exeggutor.mega
+      stats: *diamond-pearl.pokemon.exeggutor.stats
+      abilities: *black-white.pokemon.exeggutor.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.exeggutor.flavor_text
+        ultra-sun: |-
+          It engages its enemies using psychic powers.
+          Each of its three heads fires off psychokinetic
+          energy, tripling its power.
+        ultra-moon: |-
+          Each of its three heads has its own thoughts.
+          When they want to go in different directions,
+          Exeggutor becomes unable to move.
+      forms:
+        exeggutor:
+          name: Exeggutor
+          form_name: *red-blue.pokemon.exeggutor.forms.exeggutor.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *x-y.pokemon.exeggutor.forms.exeggutor.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/exeggutor-default.png
+            - ultra-sun-ultra-moon/exeggutor-default.png
+          art: *red-blue.pokemon.exeggutor.forms.exeggutor.art
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *x-y.pokemon.exeggutor.forms.exeggutor.cry
+    exeggutor-alola:
+      genus: *diamond-pearl.pokemon.exeggutor.genus
+      evolution_parent: *red-blue.pokemon.exeggutor.evolution_parent
+      color: *black-white.pokemon.exeggutor.color
+      shape: *diamond-pearl.pokemon.exeggutor.shape
+      female_rate: *gold-silver.pokemon.exeggutor.female_rate
+      capture_rate: *red-blue.pokemon.exeggutor.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggutor.happiness
+      baby: *diamond-pearl.pokemon.exeggutor.baby
+      hatch_steps: *gold-silver.pokemon.exeggutor.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggutor.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggutor.forms_switchable
+      name: *sun-moon.pokemon.exeggutor-alola.name
+      default: *red-blue.pokemon.exeggutor.default
+      height: *sun-moon.pokemon.exeggutor-alola.height
+      weight: *sun-moon.pokemon.exeggutor-alola.weight
+      experience: *diamond-pearl.pokemon.exeggutor.experience
+      types: *sun-moon.pokemon.exeggutor-alola.types
+      egg_groups: *gold-silver.pokemon.exeggutor.egg_groups
+      mega: *x-y.pokemon.exeggutor.mega
+      stats: *sun-moon.pokemon.exeggutor-alola.stats
+      abilities: *sun-moon.pokemon.exeggutor-alola.abilities
+      evolution_conditions: *red-blue.pokemon.exeggutor.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.exeggutor.flavor_text
+      forms:
+        exeggutor-alola:
+          name: 'Alolan Exeggutor'
+          form_name: *sun-moon.pokemon.exeggutor-alola.forms.exeggutor-alola.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggutor.forms.exeggutor.battle_only
+          icon: *sun-moon.pokemon.exeggutor-alola.forms.exeggutor-alola.icon
+          sprites:
+            - ultra-sun-ultra-moon/exeggutor-alola.png
+            - ultra-sun-ultra-moon/shiny/exeggutor-alola.png
+          footprint: *ruby-sapphire.pokemon.exeggutor.forms.exeggutor.footprint
+          cry: *x-y.pokemon.exeggutor.forms.exeggutor.cry

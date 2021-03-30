@@ -1,0 +1,695 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name SHEDINJA
+  position: &ruby-sapphire.position 292
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 292
+    hoenn: 44
+  pokemon:
+    shedinja:
+      name: SHEDINJA
+      default: &ruby-sapphire.pokemon.shedinja.default true
+      forms_switchable: &ruby-sapphire.pokemon.shedinja.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.shedinja.capture_rate 45
+      experience: &ruby-sapphire.pokemon.shedinja.experience 95
+      types: &ruby-sapphire.pokemon.shedinja.types
+        - bug
+        - ghost
+      stats: &ruby-sapphire.pokemon.shedinja.stats
+        hp:
+          base_value: 1
+          effort_change: 2
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 1
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.shedinja.growth_rate slow-then-very-fast
+      hatch_steps: &ruby-sapphire.pokemon.shedinja.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.shedinja.egg_groups
+        - mineral
+      happiness: &ruby-sapphire.pokemon.shedinja.happiness 70
+      abilities: &ruby-sapphire.pokemon.shedinja.abilities
+        wonder-guard:
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.shedinja.genus 'SHED Pokémon'
+      height: &ruby-sapphire.pokemon.shedinja.height 8
+      weight: &ruby-sapphire.pokemon.shedinja.weight 12
+      flavor_text:
+        ruby: |
+          SHEDINJA's hard body doesn't move -
+          not even a twitch. In fact, its body
+          appears to be merely a hollow shell.
+          It is believed that this POKéMON will
+          steal the spirit of anyone peering into
+          its hollow body from its back.
+        sapphire: |
+          SHEDINJA is a peculiar POKéMON.
+          It seems to appear unsought in a POKé
+          BALL after a NINCADA evolves.
+          This bizarre POKéMON is entirely
+           immobile - it doesn't even breathe.
+      forms:
+        shedinja:
+          name: SHEDINJA
+          form_name: &ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only false
+          icon: &ruby-sapphire.pokemon.shedinja.forms.shedinja.icon gen5/shedinja-default.png
+          sprites:
+            - ruby-sapphire/shedinja-default.png
+            - ruby-sapphire/back/shedinja-default.png
+            - ruby-sapphire/shiny/shedinja-default.png
+          art: &ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+            - shedinja-default.png
+          footprint: &ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint shedinja.png
+          cry: &ruby-sapphire.pokemon.shedinja.forms.shedinja.cry gen5/shedinja-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.shedinja.evolution_parent nincada/nincada
+      evolution_conditions: &ruby-sapphire.pokemon.shedinja.evolution_conditions
+        shed: {  }
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    shedinja:
+      name: SHEDINJA
+      default: *ruby-sapphire.pokemon.shedinja.default
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      experience: *ruby-sapphire.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      stats: *ruby-sapphire.pokemon.shedinja.stats
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      genus: *ruby-sapphire.pokemon.shedinja.genus
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      flavor_text:
+        emerald: |
+          A peculiar POKéMON that floats in air even
+          though its wings remain completely still.
+          The inside of its body is hollow and
+          utterly dark.
+      forms:
+        shedinja:
+          name: SHEDINJA
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *ruby-sapphire.pokemon.shedinja.forms.shedinja.icon
+          sprites:
+            - emerald/shedinja-default.png
+            - emerald/shiny/shedinja-default.png
+            - emerald/animated/shedinja-default.webm
+            - emerald/animated/shiny/shedinja-default.webm
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 291
+  pokemon:
+    shedinja:
+      name: SHEDINJA
+      default: *ruby-sapphire.pokemon.shedinja.default
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      experience: *ruby-sapphire.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      stats: *ruby-sapphire.pokemon.shedinja.stats
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      genus: *ruby-sapphire.pokemon.shedinja.genus
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      forms:
+        shedinja:
+          name: SHEDINJA
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          sprites:
+            - colosseum/shedinja-default.png
+            - colosseum/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    shedinja:
+      name: SHEDINJA
+      default: *ruby-sapphire.pokemon.shedinja.default
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      experience: *ruby-sapphire.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      stats: *ruby-sapphire.pokemon.shedinja.stats
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      genus: *ruby-sapphire.pokemon.shedinja.genus
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      forms:
+        shedinja:
+          name: SHEDINJA
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          sprites:
+            - xd/shedinja-default.png
+            - xd/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    shedinja:
+      name: SHEDINJA
+      default: *ruby-sapphire.pokemon.shedinja.default
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      experience: *ruby-sapphire.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      stats: *ruby-sapphire.pokemon.shedinja.stats
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      genus: *ruby-sapphire.pokemon.shedinja.genus
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      flavor_text:
+        firered: |
+          A most peculiar POKéMON that somehow
+          appears in a POKé BALL when a NINCADA
+          evolves.
+        leafgreen: |
+          A most peculiar POKéMON that somehow
+          appears in a POKé BALL when a NINCADA
+          evolves.
+      forms:
+        shedinja:
+          name: SHEDINJA
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *ruby-sapphire.pokemon.shedinja.forms.shedinja.icon
+          sprites:
+            - firered-leafgreen/shedinja-default.png
+            - firered-leafgreen/back/shedinja-default.png
+            - firered-leafgreen/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Shedinja
+  position: &diamond-pearl.position 318
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shedinja:
+      genus: &diamond-pearl.pokemon.shedinja.genus 'Shed Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      shape: &diamond-pearl.pokemon.shedinja.shape blob
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: &diamond-pearl.pokemon.shedinja.baby false
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      pal_park: &diamond-pearl.pokemon.shedinja.pal_park
+        area: forest
+        rate: 10
+        score: 80
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: &diamond-pearl.pokemon.shedinja.experience 83
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      stats: &diamond-pearl.pokemon.shedinja.stats
+        hp:
+          base_value: 1
+          effort_change: 2
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 30
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      flavor_text:
+        diamond: |
+          A discarded bug shell that came to
+          life. Peering into the crack on its
+          back is said to steal one’s spirit.
+        pearl: |
+          A discarded bug shell that came to
+          life. Peering into the crack on its
+          back is said to steal one’s spirit.
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *ruby-sapphire.pokemon.shedinja.forms.shedinja.icon
+          sprites:
+            - diamond-pearl/shedinja-default.png
+            - diamond-pearl/back/shedinja-default.png
+            - diamond-pearl/back/shiny/shedinja-default.png
+            - diamond-pearl/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shedinja:
+      genus: *diamond-pearl.pokemon.shedinja.genus
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      shape: *diamond-pearl.pokemon.shedinja.shape
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: *diamond-pearl.pokemon.shedinja.baby
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shedinja.pal_park
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: *diamond-pearl.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      stats: *diamond-pearl.pokemon.shedinja.stats
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      flavor_text:
+        platinum: |
+          A discarded bug shell that came to
+          life. Peering into the crack on its
+          back is said to steal one’s spirit.
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *ruby-sapphire.pokemon.shedinja.forms.shedinja.icon
+          sprites:
+            - platinum/shedinja-default.png
+            - platinum/back/shedinja-default.png
+            - platinum/back/shiny/shedinja-default.png
+            - platinum/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shedinja:
+      genus: *diamond-pearl.pokemon.shedinja.genus
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      shape: *diamond-pearl.pokemon.shedinja.shape
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: *diamond-pearl.pokemon.shedinja.baby
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shedinja.pal_park
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: *diamond-pearl.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      stats: *diamond-pearl.pokemon.shedinja.stats
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      flavor_text:
+        heartgold: |
+          A strange Pokémon--it flies without
+          moving its wings, has a hollow shell
+          for a body, and does not breathe.
+        soulsilver: |
+          A strange Pokémon--it flies without
+          moving its wings, has a hollow shell
+          for a body, and does not breathe.
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 1
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 5
+              range: 4-5
+          icon: *ruby-sapphire.pokemon.shedinja.forms.shedinja.icon
+          sprites:
+            - heartgold-soulsilver/shedinja-default.png
+            - heartgold-soulsilver/back/shedinja-default.png
+            - heartgold-soulsilver/back/shiny/shedinja-default.png
+            - heartgold-soulsilver/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shedinja:
+      genus: *diamond-pearl.pokemon.shedinja.genus
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      color: &black-white.pokemon.shedinja.color brown
+      shape: *diamond-pearl.pokemon.shedinja.shape
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: *diamond-pearl.pokemon.shedinja.baby
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: *diamond-pearl.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      stats: *diamond-pearl.pokemon.shedinja.stats
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      flavor_text:
+        black: |
+          A discarded bug shell that came to
+          life. Peering into the crack on its
+          back is said to steal one’s spirit.
+        white: |
+          A discarded bug shell that came to
+          life. Peering into the crack on its
+          back is said to steal one’s spirit.
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *ruby-sapphire.pokemon.shedinja.forms.shedinja.icon
+          sprites:
+            - black-white/shedinja-default.png
+            - black-white/back/shedinja-default.png
+            - black-white/back/shiny/shedinja-default.png
+            - black-white/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shedinja:
+      genus: *diamond-pearl.pokemon.shedinja.genus
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      color: *black-white.pokemon.shedinja.color
+      shape: *diamond-pearl.pokemon.shedinja.shape
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: *diamond-pearl.pokemon.shedinja.baby
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: *diamond-pearl.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      stats: *diamond-pearl.pokemon.shedinja.stats
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      flavor_text:
+        black-2: |
+          A discarded bug shell that came to
+          life. Peering into the crack on its
+          back is said to steal one’s spirit.
+        white-2: |
+          A discarded bug shell that came to
+          life. Peering into the crack on its
+          back is said to steal one’s spirit.
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *ruby-sapphire.pokemon.shedinja.forms.shedinja.icon
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *ruby-sapphire.pokemon.shedinja.forms.shedinja.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-central: 113
+  pokemon:
+    shedinja:
+      genus: *diamond-pearl.pokemon.shedinja.genus
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      color: *black-white.pokemon.shedinja.color
+      shape: *diamond-pearl.pokemon.shedinja.shape
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: *diamond-pearl.pokemon.shedinja.baby
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: *diamond-pearl.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      mega: &x-y.pokemon.shedinja.mega false
+      stats: *diamond-pearl.pokemon.shedinja.stats
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      flavor_text:
+        x: |
+          A discarded bug shell that came to life. Peering into
+          the crack on its back is said to steal one’s spirit.
+        'y': |
+          A most peculiar Pokémon that somehow appears in
+          a Poké Ball when a Nincada evolves.
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: &x-y.pokemon.shedinja.forms.shedinja.icon shedinja-default.png
+          sprites:
+            - x-y/shedinja-default.png
+            - x-y/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: &x-y.pokemon.shedinja.forms.shedinja.cry shedinja-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 45
+  pokemon:
+    shedinja:
+      genus: *diamond-pearl.pokemon.shedinja.genus
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      color: *black-white.pokemon.shedinja.color
+      shape: *diamond-pearl.pokemon.shedinja.shape
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: *diamond-pearl.pokemon.shedinja.baby
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: *diamond-pearl.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      mega: *x-y.pokemon.shedinja.mega
+      stats: *diamond-pearl.pokemon.shedinja.stats
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Shedinja’s hard body doesn’t move—not even a twitch. In fact,
+          its body appears to be merely a hollow shell. It is believed that
+          this Pokémon will steal the spirit of anyone peering into its
+          hollow body from its back.
+        alpha-sapphire: |
+          Shedinja is a peculiar Pokémon. It seems to appear unsought
+          in a Poké Ball after a Nincada evolves. This bizarre Pokémon
+          is entirely immobile—it doesn’t even breathe.
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *x-y.pokemon.shedinja.forms.shedinja.icon
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *x-y.pokemon.shedinja.forms.shedinja.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shedinja-default.png
+            - omega-ruby-alpha-sapphire/shiny/shedinja-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shedinja:
+      genus: *diamond-pearl.pokemon.shedinja.genus
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      color: *black-white.pokemon.shedinja.color
+      shape: *diamond-pearl.pokemon.shedinja.shape
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: *diamond-pearl.pokemon.shedinja.baby
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: *diamond-pearl.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      mega: *x-y.pokemon.shedinja.mega
+      stats: *diamond-pearl.pokemon.shedinja.stats
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *x-y.pokemon.shedinja.forms.shedinja.icon
+          sprites:
+            - sun-moon/shedinja-default.png
+            - sun-moon/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *x-y.pokemon.shedinja.forms.shedinja.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shedinja:
+      genus: *diamond-pearl.pokemon.shedinja.genus
+      evolution_parent: *ruby-sapphire.pokemon.shedinja.evolution_parent
+      color: *black-white.pokemon.shedinja.color
+      shape: *diamond-pearl.pokemon.shedinja.shape
+      capture_rate: *ruby-sapphire.pokemon.shedinja.capture_rate
+      happiness: *ruby-sapphire.pokemon.shedinja.happiness
+      baby: *diamond-pearl.pokemon.shedinja.baby
+      hatch_steps: *ruby-sapphire.pokemon.shedinja.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.shedinja.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shedinja.forms_switchable
+      name: Shedinja
+      default: *ruby-sapphire.pokemon.shedinja.default
+      height: *ruby-sapphire.pokemon.shedinja.height
+      weight: *ruby-sapphire.pokemon.shedinja.weight
+      experience: *diamond-pearl.pokemon.shedinja.experience
+      types: *ruby-sapphire.pokemon.shedinja.types
+      egg_groups: *ruby-sapphire.pokemon.shedinja.egg_groups
+      mega: *x-y.pokemon.shedinja.mega
+      stats: *diamond-pearl.pokemon.shedinja.stats
+      abilities: *ruby-sapphire.pokemon.shedinja.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.shedinja.evolution_conditions
+      forms:
+        shedinja:
+          name: Shedinja
+          form_name: *ruby-sapphire.pokemon.shedinja.forms.shedinja.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.shedinja.forms.shedinja.battle_only
+          icon: *x-y.pokemon.shedinja.forms.shedinja.icon
+          sprites:
+            - ultra-sun-ultra-moon/shedinja-default.png
+            - ultra-sun-ultra-moon/shiny/shedinja-default.png
+          art: *ruby-sapphire.pokemon.shedinja.forms.shedinja.art
+          footprint: *ruby-sapphire.pokemon.shedinja.forms.shedinja.footprint
+          cry: *x-y.pokemon.shedinja.forms.shedinja.cry

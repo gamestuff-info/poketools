@@ -1,0 +1,159 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name CURSE
+  type: &gold-silver.type unknown
+  accuracy: 100
+  pp: &gold-silver.pp 10
+  effect: &gold-silver.effect 110
+  flags: &gold-silver.flags
+    - authentic
+  categories: &gold-silver.categories
+    - unique
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target specific-move
+  flavor_text: |
+    Works differently
+    for ghost-types.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: &ruby-sapphire.target selected-pokemon
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type tough
+  contest_effect: 42
+  contest_use_before: &ruby-sapphire.contest_use_before
+    - spite
+    - destiny-bond
+    - mean-look
+    - grudge
+  flavor_text: &ruby-sapphire.flavor_text |
+    A move that functions
+    differently for GHOSTS.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  damage_class: special
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    A move that works
+    differently for the
+    GHOST-type and all
+    the other types.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Curse
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 21
+  flavor_text: &diamond-pearl.flavor_text |
+    A move that works
+    differently for the
+    Ghost type than for
+    all the other types.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: &black-white.type ghost
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &black-white.flavor_text |
+    A move that works differently for the
+    Ghost type than for all other types.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *black-white.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 31
+  contest_use_before: *ruby-sapphire.contest_use_before
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *black-white.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    A move that works differently for the Ghost type
+    than for all other types.
+ultra-sun-ultra-moon: *sun-moon

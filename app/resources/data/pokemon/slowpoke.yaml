@@ -1,0 +1,962 @@
+red-blue:
+  name: &red-blue.name SLOWPOKE
+  position: &red-blue.position 79
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 79
+    kanto: 79
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: &red-blue.pokemon.slowpoke.default true
+      capture_rate: &red-blue.pokemon.slowpoke.capture_rate 190
+      experience: &red-blue.pokemon.slowpoke.experience 99
+      types: &red-blue.pokemon.slowpoke.types
+        - water
+        - psychic
+      stats: &red-blue.pokemon.slowpoke.stats
+        hp:
+          base_value: 90
+          effort_change: 90
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 15
+          effort_change: 15
+        special:
+          base_value: 40
+          effort_change: 40
+      growth_rate: &red-blue.pokemon.slowpoke.growth_rate medium
+      genus: &red-blue.pokemon.slowpoke.genus 'DOPEY Pokémon'
+      height: &red-blue.pokemon.slowpoke.height 11
+      weight: &red-blue.pokemon.slowpoke.weight 3583
+      flavor_text:
+        red: |
+          Incredibly slow
+          and dopey. It
+          takes 5 seconds
+          for it to feel
+          pain when under
+          attack.
+        blue: |
+          Incredibly slow
+          and dopey. It
+          takes 5 seconds
+          for it to feel
+          pain when under
+          attack.
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: &red-blue.pokemon.slowpoke.forms.slowpoke.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.slowpoke.forms.slowpoke.battle_only false
+          sprites:
+            - red-blue/slowpoke-default.png
+            - red-blue/gray/slowpoke-default.png
+            - red-blue/back/slowpoke-default.png
+          art: &red-blue.pokemon.slowpoke.forms.slowpoke.art
+            - slowpoke-default.png
+          cry: &red-blue.pokemon.slowpoke.forms.slowpoke.cry gen5/slowpoke-default.webm
+          icon: &red-blue.pokemon.slowpoke.forms.slowpoke.icon gen1/quadruped.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: *red-blue.pokemon.slowpoke.default
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      experience: *red-blue.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      stats: *red-blue.pokemon.slowpoke.stats
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      genus: *red-blue.pokemon.slowpoke.genus
+      height: *red-blue.pokemon.slowpoke.height
+      weight: *red-blue.pokemon.slowpoke.weight
+      flavor_text:
+        yellow: |
+          Incredibly slow
+          and sluggish. It
+          is quite content
+          to loll about
+           without worrying
+          about the time.
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          sprites:
+            - yellow/slowpoke-default.png
+            - yellow/gray/slowpoke-default.png
+            - yellow/back/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+          icon: *red-blue.pokemon.slowpoke.forms.slowpoke.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 78
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 79
+    original-johto-abc: 188
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: *red-blue.pokemon.slowpoke.default
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      experience: *red-blue.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      stats: &gold-silver.pokemon.slowpoke.stats
+        hp:
+          base_value: 90
+          effort_change: 90
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 15
+          effort_change: 15
+        special-attack:
+          base_value: 40
+          effort_change: 40
+        special-defense:
+          base_value: 40
+          effort_change: 40
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      female_rate: &gold-silver.pokemon.slowpoke.female_rate 50
+      hatch_steps: &gold-silver.pokemon.slowpoke.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.slowpoke.egg_groups
+        - monster
+        - water1
+      wild_held_items:
+        gold: &gold-silver.pokemon.slowpoke.wild_held_items.gold
+          kings-rock: 2
+        silver: *gold-silver.pokemon.slowpoke.wild_held_items.gold
+      genus: *red-blue.pokemon.slowpoke.genus
+      height: *red-blue.pokemon.slowpoke.height
+      weight: &gold-silver.pokemon.slowpoke.weight 358
+      flavor_text:
+        gold: |
+          It lazes vacantly
+          near water. If
+          something bites
+          its tail, it won't
+          even notice for a
+          whole day.
+        silver: |
+          A sweet sap leaks
+          from its tail's
+          tip. Although not
+          nutritious, the
+          tail is pleasant
+          to chew on.
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          sprites:
+            - gold-silver/slowpoke-default.png
+            - gold-silver/back/slowpoke-default.png
+            - gold-silver/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+          icon: &gold-silver.pokemon.slowpoke.forms.slowpoke.icon gen2/slowpoke.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: *red-blue.pokemon.slowpoke.default
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      experience: *red-blue.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      stats: *gold-silver.pokemon.slowpoke.stats
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.slowpoke.wild_held_items.gold
+      genus: *red-blue.pokemon.slowpoke.genus
+      height: *red-blue.pokemon.slowpoke.height
+      weight: *gold-silver.pokemon.slowpoke.weight
+      flavor_text:
+        crystal: |
+          It is always so
+          absent-minded that
+          it won't react,
+          even if its
+          flavorful tail is
+          bitten.
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          sprites:
+            - crystal/slowpoke-default.png
+            - crystal/back/slowpoke-default.png
+            - crystal/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+          icon: *gold-silver.pokemon.slowpoke.forms.slowpoke.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 255
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: *red-blue.pokemon.slowpoke.default
+      forms_switchable: &ruby-sapphire.pokemon.slowpoke.forms_switchable false
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      experience: *red-blue.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      stats: &ruby-sapphire.pokemon.slowpoke.stats
+        hp:
+          base_value: 90
+          effort_change: 1
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.slowpoke.wild_held_items.ruby
+          kings-rock: 5
+        sapphire: *ruby-sapphire.pokemon.slowpoke.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.slowpoke.happiness 70
+      abilities: &ruby-sapphire.pokemon.slowpoke.abilities
+        oblivious: &ruby-sapphire.pokemon.slowpoke.abilities.oblivious
+          hidden: &ruby-sapphire.pokemon.slowpoke.abilities.oblivious.hidden false
+          position: 1
+        own-tempo: &ruby-sapphire.pokemon.slowpoke.abilities.own-tempo
+          hidden: *ruby-sapphire.pokemon.slowpoke.abilities.oblivious.hidden
+          position: 2
+      genus: *red-blue.pokemon.slowpoke.genus
+      height: &ruby-sapphire.pokemon.slowpoke.height 12
+      weight: &ruby-sapphire.pokemon.slowpoke.weight 360
+      flavor_text:
+        ruby: |
+          SLOWPOKE uses its tail to catch prey by
+          dipping it in water at the side of a
+          river.
+          However, this POKéMON often forgets
+          what it's doing and often spends entire
+          days just loafing at water's edge.
+        sapphire: |
+          SLOWPOKE uses its tail to catch prey by
+          dipping it in water at the side of a
+          river.
+          However, this POKéMON often forgets
+          what it's doing and often spends entire
+          days just loafing at water's edge.
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: &ruby-sapphire.pokemon.slowpoke.forms.slowpoke.icon gen5/slowpoke-default.png
+          sprites:
+            - ruby-sapphire/slowpoke-default.png
+            - ruby-sapphire/back/slowpoke-default.png
+            - ruby-sapphire/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: &ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint slowpoke.png
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: *red-blue.pokemon.slowpoke.default
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      experience: *red-blue.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      stats: *ruby-sapphire.pokemon.slowpoke.stats
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.slowpoke.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      abilities: *ruby-sapphire.pokemon.slowpoke.abilities
+      genus: *red-blue.pokemon.slowpoke.genus
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      flavor_text:
+        emerald: |
+          It catches prey by dipping its tail in
+          water at the side of a river.  But it often
+          forgets what it is doing and spends entire
+          days just loafing at water's edge.
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.icon
+          sprites:
+            - emerald/slowpoke-default.png
+            - emerald/shiny/slowpoke-default.png
+            - emerald/animated/slowpoke-default.webm
+            - emerald/animated/shiny/slowpoke-default.webm
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 306
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: *red-blue.pokemon.slowpoke.default
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      experience: *red-blue.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      stats: *ruby-sapphire.pokemon.slowpoke.stats
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      abilities: *ruby-sapphire.pokemon.slowpoke.abilities
+      genus: *red-blue.pokemon.slowpoke.genus
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          sprites:
+            - colosseum/slowpoke-default.png
+            - colosseum/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: *red-blue.pokemon.slowpoke.default
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      experience: *red-blue.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      stats: *ruby-sapphire.pokemon.slowpoke.stats
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      abilities: *ruby-sapphire.pokemon.slowpoke.abilities
+      genus: *red-blue.pokemon.slowpoke.genus
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          sprites:
+            - xd/slowpoke-default.png
+            - xd/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    slowpoke:
+      name: SLOWPOKE
+      default: *red-blue.pokemon.slowpoke.default
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      experience: *red-blue.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      stats: *ruby-sapphire.pokemon.slowpoke.stats
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      abilities: *ruby-sapphire.pokemon.slowpoke.abilities
+      genus: *red-blue.pokemon.slowpoke.genus
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      flavor_text:
+        firered: |
+          It is always vacantly lost in thought, but
+          no one knows what it is thinking about.
+          It is good at fishing with its tail.
+        leafgreen: |
+          Incredibly slow and dopey. It takes five
+          seconds for it to feel pain when under
+          attack.
+      forms:
+        slowpoke:
+          name: SLOWPOKE
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.icon
+          sprites:
+            - firered-leafgreen/slowpoke-default.png
+            - firered-leafgreen/back/slowpoke-default.png
+            - firered-leafgreen/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+diamond-pearl:
+  name: &diamond-pearl.name Slowpoke
+  position: &diamond-pearl.position 85
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    slowpoke:
+      genus: &diamond-pearl.pokemon.slowpoke.genus 'Dopey Pokémon'
+      shape: &diamond-pearl.pokemon.slowpoke.shape quadruped
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: &diamond-pearl.pokemon.slowpoke.baby false
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      pal_park: &diamond-pearl.pokemon.slowpoke.pal_park
+        area: pond
+        rate: 30
+        score: 50
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: &diamond-pearl.pokemon.slowpoke.experience 63
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      stats: &diamond-pearl.pokemon.slowpoke.stats
+        hp:
+          base_value: 90
+          effort_change: 1
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.slowpoke.abilities
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+          lagging-tail: 5
+        pearl: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Although slow, it is skilled at
+          fishing with its tail. It does not
+          feel pain if its tail is bitten.
+        pearl: |
+          Although slow, it is skilled at
+          fishing with its tail. It does not
+          feel pain if its tail is bitten.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.icon
+          sprites:
+            - diamond-pearl/slowpoke-default.png
+            - diamond-pearl/back/slowpoke-default.png
+            - diamond-pearl/back/shiny/slowpoke-default.png
+            - diamond-pearl/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    slowpoke:
+      genus: *diamond-pearl.pokemon.slowpoke.genus
+      shape: *diamond-pearl.pokemon.slowpoke.shape
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: *diamond-pearl.pokemon.slowpoke.baby
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      pal_park: *diamond-pearl.pokemon.slowpoke.pal_park
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: *diamond-pearl.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      stats: *diamond-pearl.pokemon.slowpoke.stats
+      abilities: *ruby-sapphire.pokemon.slowpoke.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          Although slow, it is skilled at
+          fishing with its tail. It does not
+          feel pain if its tail is bitten.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.icon
+          sprites:
+            - platinum/slowpoke-default.png
+            - platinum/back/slowpoke-default.png
+            - platinum/back/shiny/slowpoke-default.png
+            - platinum/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 80
+  pokemon:
+    slowpoke:
+      genus: *diamond-pearl.pokemon.slowpoke.genus
+      shape: *diamond-pearl.pokemon.slowpoke.shape
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: *diamond-pearl.pokemon.slowpoke.baby
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      pal_park: *diamond-pearl.pokemon.slowpoke.pal_park
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: *diamond-pearl.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      stats: *diamond-pearl.pokemon.slowpoke.stats
+      abilities: *ruby-sapphire.pokemon.slowpoke.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          It lazes vacantly near water.
+          If something bites its tail, it won’t
+          even notice for a whole day.
+        soulsilver: |
+          A sweet sap leaks from its tail’s
+          tip. Although not nutritious, the
+          tail is pleasant to chew on.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1
+            power:
+              base_value: 2
+              range: 1-2
+            skill:
+              base_value: 2
+              range: 1-5
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.icon
+          sprites:
+            - heartgold-soulsilver/slowpoke-default.png
+            - heartgold-soulsilver/back/slowpoke-default.png
+            - heartgold-soulsilver/back/shiny/slowpoke-default.png
+            - heartgold-soulsilver/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    slowpoke:
+      genus: *diamond-pearl.pokemon.slowpoke.genus
+      color: &black-white.pokemon.slowpoke.color pink
+      shape: *diamond-pearl.pokemon.slowpoke.shape
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: *diamond-pearl.pokemon.slowpoke.baby
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: *diamond-pearl.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      stats: *diamond-pearl.pokemon.slowpoke.stats
+      abilities: &black-white.pokemon.slowpoke.abilities
+        oblivious: *ruby-sapphire.pokemon.slowpoke.abilities.oblivious
+        own-tempo: *ruby-sapphire.pokemon.slowpoke.abilities.own-tempo
+        regenerator:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+      flavor_text:
+        black: |
+          Although slow, it is skilled at
+          fishing with its tail. It does not
+          feel pain if its tail is bitten.
+        white: |
+          Although slow, it is skilled at
+          fishing with its tail. It does not
+          feel pain if its tail is bitten.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.icon
+          sprites:
+            - black-white/slowpoke-default.png
+            - black-white/back/slowpoke-default.png
+            - black-white/back/shiny/slowpoke-default.png
+            - black-white/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    slowpoke:
+      genus: *diamond-pearl.pokemon.slowpoke.genus
+      color: *black-white.pokemon.slowpoke.color
+      shape: *diamond-pearl.pokemon.slowpoke.shape
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: *diamond-pearl.pokemon.slowpoke.baby
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: *diamond-pearl.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      stats: *diamond-pearl.pokemon.slowpoke.stats
+      abilities: *black-white.pokemon.slowpoke.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          Although slow, it is skilled at
+          fishing with its tail. It does not
+          feel pain if its tail is bitten.
+        white-2: |
+          Although slow, it is skilled at
+          fishing with its tail. It does not
+          feel pain if its tail is bitten.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.icon
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *red-blue.pokemon.slowpoke.forms.slowpoke.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 133
+  pokemon:
+    slowpoke:
+      genus: *diamond-pearl.pokemon.slowpoke.genus
+      color: *black-white.pokemon.slowpoke.color
+      shape: *diamond-pearl.pokemon.slowpoke.shape
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: *diamond-pearl.pokemon.slowpoke.baby
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: *diamond-pearl.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      mega: &x-y.pokemon.slowpoke.mega false
+      stats: *diamond-pearl.pokemon.slowpoke.stats
+      abilities: *black-white.pokemon.slowpoke.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+      flavor_text:
+        x: |
+          It is always vacantly lost in thought, but no one
+          knows what it is thinking about. It is good at fishing
+          with its tail.
+        'y': |
+          It lazes vacantly near water. If something bites its
+          tail, it won’t even notice for a whole day.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: &x-y.pokemon.slowpoke.forms.slowpoke.icon slowpoke-default.png
+          sprites:
+            - x-y/slowpoke-default.png
+            - x-y/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: &x-y.pokemon.slowpoke.forms.slowpoke.cry slowpoke-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    slowpoke:
+      genus: *diamond-pearl.pokemon.slowpoke.genus
+      color: *black-white.pokemon.slowpoke.color
+      shape: *diamond-pearl.pokemon.slowpoke.shape
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: *diamond-pearl.pokemon.slowpoke.baby
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: *diamond-pearl.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      mega: *x-y.pokemon.slowpoke.mega
+      stats: *diamond-pearl.pokemon.slowpoke.stats
+      abilities: *black-white.pokemon.slowpoke.abilities
+      flavor_text:
+        omega-ruby: |
+          Slowpoke uses its tail to catch prey by dipping it in water at
+          the side of a river. However, this Pokémon often forgets what
+          it’s doing and often spends entire days just loafing at
+          water’s edge.
+        alpha-sapphire: |
+          Slowpoke uses its tail to catch prey by dipping it in water
+          at the side of a river. However, this Pokémon often forgets
+          what it’s doing and often spends entire days just loafing
+          at water’s edge.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *x-y.pokemon.slowpoke.forms.slowpoke.icon
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *x-y.pokemon.slowpoke.forms.slowpoke.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/slowpoke-default.png
+            - omega-ruby-alpha-sapphire/shiny/slowpoke-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 37
+    original-melemele: 37
+    original-ulaula: 18
+  pokemon:
+    slowpoke:
+      genus: *diamond-pearl.pokemon.slowpoke.genus
+      color: *black-white.pokemon.slowpoke.color
+      shape: *diamond-pearl.pokemon.slowpoke.shape
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: *diamond-pearl.pokemon.slowpoke.baby
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: *diamond-pearl.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      mega: *x-y.pokemon.slowpoke.mega
+      stats: *diamond-pearl.pokemon.slowpoke.stats
+      abilities: *black-white.pokemon.slowpoke.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+      flavor_text:
+        sun: |-
+          Its long tail often breaks off. It doesn’t really
+          feel any pain, though, and the tail grows back,
+          so Slowpoke isn’t particularly bothered.
+        moon: |-
+          Alolan home cooking involves drying Slowpoke
+          tails and then simmering them into a salty stew.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *x-y.pokemon.slowpoke.forms.slowpoke.icon
+          sprites:
+            - sun-moon/slowpoke-default.png
+            - sun-moon/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *x-y.pokemon.slowpoke.forms.slowpoke.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 44
+    updated-melemele: 44
+    updated-ulaula: 18
+  pokemon:
+    slowpoke:
+      genus: *diamond-pearl.pokemon.slowpoke.genus
+      color: *black-white.pokemon.slowpoke.color
+      shape: *diamond-pearl.pokemon.slowpoke.shape
+      female_rate: *gold-silver.pokemon.slowpoke.female_rate
+      capture_rate: *red-blue.pokemon.slowpoke.capture_rate
+      happiness: *ruby-sapphire.pokemon.slowpoke.happiness
+      baby: *diamond-pearl.pokemon.slowpoke.baby
+      hatch_steps: *gold-silver.pokemon.slowpoke.hatch_steps
+      growth_rate: *red-blue.pokemon.slowpoke.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.slowpoke.forms_switchable
+      name: Slowpoke
+      default: *red-blue.pokemon.slowpoke.default
+      height: *ruby-sapphire.pokemon.slowpoke.height
+      weight: *ruby-sapphire.pokemon.slowpoke.weight
+      experience: *diamond-pearl.pokemon.slowpoke.experience
+      types: *red-blue.pokemon.slowpoke.types
+      egg_groups: *gold-silver.pokemon.slowpoke.egg_groups
+      mega: *x-y.pokemon.slowpoke.mega
+      stats: *diamond-pearl.pokemon.slowpoke.stats
+      abilities: *black-white.pokemon.slowpoke.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.slowpoke.wild_held_items.diamond
+      flavor_text:
+        ultra-sun: |-
+          There are some places where Slowpoke is
+          worshiped because of a long-standing belief
+          that whenever Slowpoke yawns, it rains.
+        ultra-moon: |-
+          Although their tails, which fall off naturally, can
+          easily be found lying around, they’re a precious
+          ingredient for cooking.
+      forms:
+        slowpoke:
+          name: Slowpoke
+          form_name: *red-blue.pokemon.slowpoke.forms.slowpoke.form_name
+          default: true
+          battle_only: *red-blue.pokemon.slowpoke.forms.slowpoke.battle_only
+          icon: *x-y.pokemon.slowpoke.forms.slowpoke.icon
+          sprites:
+            - ultra-sun-ultra-moon/slowpoke-default.png
+            - ultra-sun-ultra-moon/shiny/slowpoke-default.png
+          art: *red-blue.pokemon.slowpoke.forms.slowpoke.art
+          footprint: *ruby-sapphire.pokemon.slowpoke.forms.slowpoke.footprint
+          cry: *x-y.pokemon.slowpoke.forms.slowpoke.cry

@@ -1,0 +1,198 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'VITAL THROW'
+  power: &gold-silver.power 70
+  type: &gold-silver.type fighting
+  accuracy: &gold-silver.accuracy 100
+  pp: &gold-silver.pp 10
+  effect: 18
+  flags: &gold-silver.flags
+    - contact
+    - protect
+    - mirror
+  categories: &gold-silver.categories
+    - damage
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority -1
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    A 2nd-strike move
+    that never misses.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: &ruby-sapphire.effect 79
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+    - kings-rock
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type cool
+  contest_effect: 42
+  contest_use_after:
+    - fake-out
+  flavor_text: |
+    Makes the user's move last,
+    but it never misses.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *ruby-sapphire.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: &colosseum.flavor_text |
+    Makes the user go last,
+    but it never misses.
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *ruby-sapphire.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  power: *gold-silver.power
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *ruby-sapphire.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    Makes the user
+    attack after the
+    foe. In return,
+    it will not miss.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Vital Throw'
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 2
+  flavor_text: &diamond-pearl.flavor_text |
+    The user allows the
+    foe to attack first.
+    In return, this throw
+    move is guaranteed
+    not to miss.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user attacks last.
+    In return, this throw move is
+    guaranteed not to miss.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &x-y.flavor_text |
+    The user attacks last. In return, this throw
+    move never misses.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 28
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  power: *gold-silver.power
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user attacks last. In return, this throw move
+    never misses.
+ultra-sun-ultra-moon: *sun-moon

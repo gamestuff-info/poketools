@@ -1,0 +1,45 @@
+ruby-sapphire: &ruby-sapphire
+  name: TRACE
+  flavor_text: 'Copies special ability.'
+  short_description: 'Can copy []{ability:wonder-guard}.'
+  description: 'Can copy []{ability:wonder-guard}.'
+emerald: *ruby-sapphire
+colosseum: *ruby-sapphire
+xd: *ruby-sapphire
+firered-leafgreen: *ruby-sapphire
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Trace
+  short_description: 'Can copy []{ability:flower-gift} and []{ability:wonder-guard}.'
+  description: 'Can copy []{ability:flower-gift} and []{ability:wonder-guard}.'
+  flavor_text: |
+    The Pokémon copies the
+    foe’s ability.
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: &black-white
+  name: *diamond-pearl.name
+  short_description: &black-white.short_description 'Copies an opponent''s ability upon entering battle.'
+  description: &black-white.description |
+    When this Pokémon enters battle, it copies a random opponent's ability.
+
+    This ability cannot copy []{ability:flower-gift}, []{ability:forecast}, []{ability:illusion}, []{ability:imposter}, []{ability:multitype}, []{ability:trace}, []{ability:wonder-guard}, or []{ability:zen-mode}.
+  flavor_text: |
+    The Pokémon copies a
+    foe’s Ability.
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *diamond-pearl.name
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    The Pokémon copies an
+    opposing Pokémon’s Ability.
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    When it enters a battle, the Pokémon copies an
+    opposing Pokémon’s Ability.
+ultra-sun-ultra-moon: *sun-moon

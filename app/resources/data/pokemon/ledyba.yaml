@@ -1,0 +1,841 @@
+gold-silver:
+  name: &gold-silver.name LEDYBA
+  position: &gold-silver.position 164
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 165
+    original-johto: 29
+    original-johto-abc: 99
+  pokemon:
+    ledyba:
+      name: LEDYBA
+      default: &gold-silver.pokemon.ledyba.default true
+      capture_rate: &gold-silver.pokemon.ledyba.capture_rate 255
+      experience: &gold-silver.pokemon.ledyba.experience 54
+      types: &gold-silver.pokemon.ledyba.types
+        - bug
+        - flying
+      stats: &gold-silver.pokemon.ledyba.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 20
+          effort_change: 20
+        defense:
+          base_value: 30
+          effort_change: 30
+        speed:
+          base_value: 55
+          effort_change: 55
+        special-attack:
+          base_value: 40
+          effort_change: 40
+        special-defense:
+          base_value: 80
+          effort_change: 40
+      growth_rate: &gold-silver.pokemon.ledyba.growth_rate fast
+      female_rate: &gold-silver.pokemon.ledyba.female_rate 50
+      hatch_steps: &gold-silver.pokemon.ledyba.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.ledyba.egg_groups
+        - bug
+      genus: &gold-silver.pokemon.ledyba.genus 'FIVE STAR Pokémon'
+      height: &gold-silver.pokemon.ledyba.height 9
+      weight: &gold-silver.pokemon.ledyba.weight 108
+      flavor_text:
+        gold: |
+          It is very timid.
+          It will be afraid
+          to move if it is
+          alone. But it will
+          be active if it is
+          in a group.
+        silver: |
+          When the weather
+          turns cold, lots
+          of LEDYBA gather
+          from everywhere to
+          cluster and keep
+          each other warm.
+      forms:
+        ledyba:
+          name: LEDYBA
+          form_name: &gold-silver.pokemon.ledyba.forms.ledyba.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.ledyba.forms.ledyba.battle_only false
+          sprites:
+            - gold-silver/ledyba-default.png
+            - gold-silver/back/ledyba-default.png
+            - gold-silver/shiny/ledyba-default.png
+          art: &gold-silver.pokemon.ledyba.forms.ledyba.art
+            - ledyba-default.png
+          cry: &gold-silver.pokemon.ledyba.forms.ledyba.cry gen5/ledyba-default.webm
+          icon: &gold-silver.pokemon.ledyba.forms.ledyba.icon gen2/bug.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    ledyba:
+      name: LEDYBA
+      default: *gold-silver.pokemon.ledyba.default
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      experience: *gold-silver.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      stats: *gold-silver.pokemon.ledyba.stats
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      genus: *gold-silver.pokemon.ledyba.genus
+      height: *gold-silver.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      flavor_text:
+        crystal: |
+          It is timid and
+          clusters together
+          with others. The
+          fluid secreted by
+          its feet indicates
+          its location.
+      forms:
+        ledyba:
+          name: LEDYBA
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          sprites:
+            - crystal/ledyba-default.png
+            - crystal/back/ledyba-default.png
+            - crystal/shiny/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+          icon: *gold-silver.pokemon.ledyba.forms.ledyba.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 165
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 320
+  pokemon:
+    ledyba:
+      name: LEDYBA
+      default: *gold-silver.pokemon.ledyba.default
+      forms_switchable: &ruby-sapphire.pokemon.ledyba.forms_switchable false
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      experience: *gold-silver.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      stats: &ruby-sapphire.pokemon.ledyba.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 1
+        special-defense:
+          base_value: 40
+          effort_change: 1
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      happiness: &ruby-sapphire.pokemon.ledyba.happiness 70
+      abilities: &ruby-sapphire.pokemon.ledyba.abilities
+        swarm: &ruby-sapphire.pokemon.ledyba.abilities.swarm
+          hidden: &ruby-sapphire.pokemon.ledyba.abilities.swarm.hidden false
+          position: 1
+        early-bird: &ruby-sapphire.pokemon.ledyba.abilities.early-bird
+          hidden: *ruby-sapphire.pokemon.ledyba.abilities.swarm.hidden
+          position: 2
+      genus: *gold-silver.pokemon.ledyba.genus
+      height: &ruby-sapphire.pokemon.ledyba.height 10
+      weight: *gold-silver.pokemon.ledyba.weight
+      flavor_text:
+        ruby: |
+          LEDYBA secretes an aromatic fluid from
+          where its legs join its body.  This fluid
+          is used for communicating with others.
+          This POKéMON conveys its feelings to
+          others by altering the fluid's scent.
+        sapphire: |
+          LEDYBA secretes an aromatic fluid from
+          where its legs join its body. This fluid
+          is used for communicating with others.
+          This POKéMON conveys its feelings to
+          others by altering the fluid's scent.
+      forms:
+        ledyba:
+          name: LEDYBA
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: &ruby-sapphire.pokemon.ledyba.forms.ledyba.icon gen5/ledyba-default.png
+          sprites:
+            - ruby-sapphire/ledyba-default.png
+            - ruby-sapphire/back/ledyba-default.png
+            - ruby-sapphire/shiny/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: &ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint ledyba.png
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    ledyba:
+      name: LEDYBA
+      default: *gold-silver.pokemon.ledyba.default
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      experience: *gold-silver.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      stats: *ruby-sapphire.pokemon.ledyba.stats
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      abilities: *ruby-sapphire.pokemon.ledyba.abilities
+      genus: *gold-silver.pokemon.ledyba.genus
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      flavor_text:
+        emerald: |
+          LEDYBA communicate using a fluid that
+          they secrete from where the legs join the
+          body. They are said to convey feelings to
+          others by altering the fluid's scent.
+      forms:
+        ledyba:
+          name: LEDYBA
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *ruby-sapphire.pokemon.ledyba.forms.ledyba.icon
+          sprites:
+            - emerald/ledyba-default.png
+            - emerald/shiny/ledyba-default.png
+            - emerald/animated/ledyba-default.webm
+            - emerald/animated/shiny/ledyba-default.webm
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 165
+  pokemon:
+    ledyba:
+      name: LEDYBA
+      default: *gold-silver.pokemon.ledyba.default
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      experience: *gold-silver.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      stats: *ruby-sapphire.pokemon.ledyba.stats
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      abilities: *ruby-sapphire.pokemon.ledyba.abilities
+      genus: *gold-silver.pokemon.ledyba.genus
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      forms:
+        ledyba:
+          name: LEDYBA
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          sprites:
+            - colosseum/ledyba-default.png
+            - colosseum/shiny/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    ledyba:
+      name: LEDYBA
+      default: *gold-silver.pokemon.ledyba.default
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      experience: *gold-silver.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      stats: *ruby-sapphire.pokemon.ledyba.stats
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      abilities: *ruby-sapphire.pokemon.ledyba.abilities
+      genus: *gold-silver.pokemon.ledyba.genus
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      forms:
+        ledyba:
+          name: LEDYBA
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          sprites:
+            - xd/ledyba-default.png
+            - xd/shiny/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    ledyba:
+      name: LEDYBA
+      default: *gold-silver.pokemon.ledyba.default
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      experience: *gold-silver.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      stats: *ruby-sapphire.pokemon.ledyba.stats
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      abilities: *ruby-sapphire.pokemon.ledyba.abilities
+      genus: *gold-silver.pokemon.ledyba.genus
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      flavor_text:
+        firered: |
+          When the weather turns cold, numerous
+          LEDYBA gather from everywhere to cluster
+          and keep each other warm.
+        leafgreen: |
+          It is very timid. It will be afraid to
+          move if it is alone. But it will be active
+          if it is in a group.
+      forms:
+        ledyba:
+          name: LEDYBA
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *ruby-sapphire.pokemon.ledyba.forms.ledyba.icon
+          sprites:
+            - firered-leafgreen/ledyba-default.png
+            - firered-leafgreen/back/ledyba-default.png
+            - firered-leafgreen/shiny/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+diamond-pearl:
+  name: &diamond-pearl.name Ledyba
+  position: &diamond-pearl.position 197
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledyba:
+      genus: &diamond-pearl.pokemon.ledyba.genus 'Five Star Pokémon'
+      shape: &diamond-pearl.pokemon.ledyba.shape wings
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: &diamond-pearl.pokemon.ledyba.baby false
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      pal_park: &diamond-pearl.pokemon.ledyba.pal_park
+        area: field
+        rate: 50
+        score: 30
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: &diamond-pearl.pokemon.ledyba.experience 53
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      stats: &diamond-pearl.pokemon.ledyba.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 20
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 1
+      abilities: *ruby-sapphire.pokemon.ledyba.abilities
+      flavor_text:
+        diamond: |
+          It is so timid, it can’t move if it
+          isn’t with a swarm of others. It
+          conveys its feelings with scent.
+        pearl: |
+          It is so timid, it can’t move if it
+          isn’t with a swarm of others. It
+          conveys its feelings with scent.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *ruby-sapphire.pokemon.ledyba.forms.ledyba.icon
+          sprites:
+            - diamond-pearl/ledyba-default.png
+            - diamond-pearl/back/ledyba-default.png
+            - diamond-pearl/back/female/ledyba-default.png
+            - diamond-pearl/back/shiny/ledyba-default.png
+            - diamond-pearl/female/ledyba-default.png
+            - diamond-pearl/shiny/ledyba-default.png
+            - diamond-pearl/shiny/female/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledyba:
+      genus: *diamond-pearl.pokemon.ledyba.genus
+      shape: *diamond-pearl.pokemon.ledyba.shape
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: *diamond-pearl.pokemon.ledyba.baby
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ledyba.pal_park
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: *diamond-pearl.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      stats: *diamond-pearl.pokemon.ledyba.stats
+      abilities: *ruby-sapphire.pokemon.ledyba.abilities
+      flavor_text:
+        platinum: |
+          It is so timid, it can’t move if it
+          isn’t with a swarm of others. It
+          conveys its feelings with scent.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *ruby-sapphire.pokemon.ledyba.forms.ledyba.icon
+          sprites:
+            - platinum/ledyba-default.png
+            - platinum/back/ledyba-default.png
+            - platinum/back/female/ledyba-default.png
+            - platinum/back/shiny/ledyba-default.png
+            - platinum/female/ledyba-default.png
+            - platinum/shiny/ledyba-default.png
+            - platinum/shiny/female/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 30
+  pokemon:
+    ledyba:
+      genus: *diamond-pearl.pokemon.ledyba.genus
+      shape: *diamond-pearl.pokemon.ledyba.shape
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: *diamond-pearl.pokemon.ledyba.baby
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ledyba.pal_park
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: *diamond-pearl.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      stats: *diamond-pearl.pokemon.ledyba.stats
+      abilities: *ruby-sapphire.pokemon.ledyba.abilities
+      flavor_text:
+        heartgold: |
+          It is very timid. It will be afraid
+          to move if it is alone. But it will
+          be active if it is in a group.
+        soulsilver: |
+          When the weather turns cold, lots
+          of LEDYBA gather from everywhere to
+          cluster and keep each other warm.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 2-5
+            power:
+              base_value: 1
+              range: 1-2
+            skill:
+              base_value: 3
+              range: 1-5
+            stamina:
+              base_value: 1
+              range: 1-3
+            jump:
+              base_value: 4
+              range: 3-5
+          icon: *ruby-sapphire.pokemon.ledyba.forms.ledyba.icon
+          sprites:
+            - heartgold-soulsilver/ledyba-default.png
+            - heartgold-soulsilver/back/ledyba-default.png
+            - heartgold-soulsilver/back/female/ledyba-default.png
+            - heartgold-soulsilver/back/shiny/ledyba-default.png
+            - heartgold-soulsilver/female/ledyba-default.png
+            - heartgold-soulsilver/shiny/ledyba-default.png
+            - heartgold-soulsilver/shiny/female/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledyba:
+      genus: *diamond-pearl.pokemon.ledyba.genus
+      color: &black-white.pokemon.ledyba.color red
+      shape: *diamond-pearl.pokemon.ledyba.shape
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: *diamond-pearl.pokemon.ledyba.baby
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: *diamond-pearl.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      stats: *diamond-pearl.pokemon.ledyba.stats
+      abilities: &black-white.pokemon.ledyba.abilities
+        swarm: *ruby-sapphire.pokemon.ledyba.abilities.swarm
+        early-bird: *ruby-sapphire.pokemon.ledyba.abilities.early-bird
+        rattled:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It is so timid, it can’t move if it
+          isn’t with a swarm of others. It
+          conveys its feelings with scent.
+        white: |
+          It is so timid, it can’t move if it
+          isn’t with a swarm of others. It
+          conveys its feelings with scent.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *ruby-sapphire.pokemon.ledyba.forms.ledyba.icon
+          sprites:
+            - black-white/ledyba-default.png
+            - black-white/back/ledyba-default.png
+            - black-white/back/female/ledyba-default.png
+            - black-white/back/shiny/ledyba-default.png
+            - black-white/female/ledyba-default.png
+            - black-white/shiny/ledyba-default.png
+            - black-white/shiny/female/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledyba:
+      genus: *diamond-pearl.pokemon.ledyba.genus
+      color: *black-white.pokemon.ledyba.color
+      shape: *diamond-pearl.pokemon.ledyba.shape
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: *diamond-pearl.pokemon.ledyba.baby
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: *diamond-pearl.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      stats: *diamond-pearl.pokemon.ledyba.stats
+      abilities: *black-white.pokemon.ledyba.abilities
+      flavor_text:
+        black-2: |
+          It is so timid, it can’t move if it
+          isn’t with a swarm of others. It
+          conveys its feelings with scent.
+        white-2: |
+          It is so timid, it can’t move if it
+          isn’t with a swarm of others. It
+          conveys its feelings with scent.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *ruby-sapphire.pokemon.ledyba.forms.ledyba.icon
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *gold-silver.pokemon.ledyba.forms.ledyba.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-central: 74
+  pokemon:
+    ledyba:
+      genus: *diamond-pearl.pokemon.ledyba.genus
+      color: *black-white.pokemon.ledyba.color
+      shape: *diamond-pearl.pokemon.ledyba.shape
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: *diamond-pearl.pokemon.ledyba.baby
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: *diamond-pearl.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      mega: &x-y.pokemon.ledyba.mega false
+      stats: *diamond-pearl.pokemon.ledyba.stats
+      abilities: *black-white.pokemon.ledyba.abilities
+      flavor_text:
+        x: |
+          When the weather turns cold, lots of Ledyba gather
+          from everywhere to cluster and keep each
+          other warm.
+        'y': |
+          It is timid and clusters together with others.
+          The fluid secreted by its feet indicates its location.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: &x-y.pokemon.ledyba.forms.ledyba.icon ledyba-default.png
+          sprites:
+            - x-y/ledyba-default.png
+            - x-y/female/ledyba-default.png
+            - x-y/shiny/ledyba-default.png
+            - x-y/shiny/female/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: &x-y.pokemon.ledyba.forms.ledyba.cry ledyba-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ledyba:
+      genus: *diamond-pearl.pokemon.ledyba.genus
+      color: *black-white.pokemon.ledyba.color
+      shape: *diamond-pearl.pokemon.ledyba.shape
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: *diamond-pearl.pokemon.ledyba.baby
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: *diamond-pearl.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      mega: *x-y.pokemon.ledyba.mega
+      stats: *diamond-pearl.pokemon.ledyba.stats
+      abilities: *black-white.pokemon.ledyba.abilities
+      flavor_text:
+        omega-ruby: |
+          Ledyba secretes an aromatic fluid from where its legs join its
+          body. This fluid is used for communicating with others.
+          This Pokémon conveys its feelings to others by altering the
+          fluid’s scent.
+        alpha-sapphire: |
+          Ledyba secretes an aromatic fluid from where its legs join its
+          body. This fluid is used for communicating with others.
+          This Pokémon conveys its feelings to others by altering the
+          fluid’s scent.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *x-y.pokemon.ledyba.forms.ledyba.icon
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *x-y.pokemon.ledyba.forms.ledyba.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/ledyba-default.png
+            - omega-ruby-alpha-sapphire/shiny/ledyba-default.png
+            - omega-ruby-alpha-sapphire/female/ledyba-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/ledyba-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 20
+    original-melemele: 20
+    original-ulaula: 8
+  pokemon:
+    ledyba:
+      genus: *diamond-pearl.pokemon.ledyba.genus
+      color: *black-white.pokemon.ledyba.color
+      shape: *diamond-pearl.pokemon.ledyba.shape
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: *diamond-pearl.pokemon.ledyba.baby
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: *diamond-pearl.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      mega: *x-y.pokemon.ledyba.mega
+      stats: *diamond-pearl.pokemon.ledyba.stats
+      abilities: *black-white.pokemon.ledyba.abilities
+      flavor_text:
+        sun: |-
+          They are timid and grow uneasy when not in a
+          swarm with others of their kind. The pattern on
+          their backs differs slightly from one to another.
+        moon: |-
+          They communicate with one another using bodily
+          fluids that give off odors. When they’re angry,
+          their odor smells sour.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *x-y.pokemon.ledyba.forms.ledyba.icon
+          sprites:
+            - sun-moon/ledyba-default.png
+            - sun-moon/female/ledyba-default.png
+            - sun-moon/shiny/ledyba-default.png
+            - sun-moon/shiny/female/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *x-y.pokemon.ledyba.forms.ledyba.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 20
+    updated-melemele: 20
+    updated-ulaula: 8
+  pokemon:
+    ledyba:
+      genus: *diamond-pearl.pokemon.ledyba.genus
+      color: *black-white.pokemon.ledyba.color
+      shape: *diamond-pearl.pokemon.ledyba.shape
+      female_rate: *gold-silver.pokemon.ledyba.female_rate
+      capture_rate: *gold-silver.pokemon.ledyba.capture_rate
+      happiness: *ruby-sapphire.pokemon.ledyba.happiness
+      baby: *diamond-pearl.pokemon.ledyba.baby
+      hatch_steps: *gold-silver.pokemon.ledyba.hatch_steps
+      growth_rate: *gold-silver.pokemon.ledyba.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ledyba.forms_switchable
+      name: Ledyba
+      default: *gold-silver.pokemon.ledyba.default
+      height: *ruby-sapphire.pokemon.ledyba.height
+      weight: *gold-silver.pokemon.ledyba.weight
+      experience: *diamond-pearl.pokemon.ledyba.experience
+      types: *gold-silver.pokemon.ledyba.types
+      egg_groups: *gold-silver.pokemon.ledyba.egg_groups
+      mega: *x-y.pokemon.ledyba.mega
+      stats: *diamond-pearl.pokemon.ledyba.stats
+      abilities: *black-white.pokemon.ledyba.abilities
+      flavor_text:
+        ultra-sun: |-
+          This Pokémon is very sensitive to cold. In the
+          warmth of Alola, it appears quite lively.
+        ultra-moon: |-
+          These very cowardly Pokémon join together and
+          use Reflect to protect their nest.
+      forms:
+        ledyba:
+          name: Ledyba
+          form_name: *gold-silver.pokemon.ledyba.forms.ledyba.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ledyba.forms.ledyba.battle_only
+          icon: *x-y.pokemon.ledyba.forms.ledyba.icon
+          sprites:
+            - ultra-sun-ultra-moon/ledyba-default.png
+            - ultra-sun-ultra-moon/female/ledyba-default.png
+            - ultra-sun-ultra-moon/shiny/ledyba-default.png
+            - ultra-sun-ultra-moon/shiny/female/ledyba-default.png
+          art: *gold-silver.pokemon.ledyba.forms.ledyba.art
+          footprint: *ruby-sapphire.pokemon.ledyba.forms.ledyba.footprint
+          cry: *x-y.pokemon.ledyba.forms.ledyba.cry

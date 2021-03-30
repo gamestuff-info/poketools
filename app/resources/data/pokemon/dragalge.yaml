@@ -1,0 +1,229 @@
+x-y:
+  name: &x-y.name Dragalge
+  position: &x-y.position 692
+  numbers:
+    national: &x-y.numbers.national 691
+    kalos-coastal: 31
+  pokemon:
+    dragalge:
+      genus: &x-y.pokemon.dragalge.genus 'Mock Kelp Pokémon'
+      evolution_parent: &x-y.pokemon.dragalge.evolution_parent skrelp/skrelp
+      color: &x-y.pokemon.dragalge.color brown
+      shape: &x-y.pokemon.dragalge.shape blob
+      female_rate: &x-y.pokemon.dragalge.female_rate 50
+      capture_rate: &x-y.pokemon.dragalge.capture_rate 55
+      happiness: &x-y.pokemon.dragalge.happiness 70
+      baby: &x-y.pokemon.dragalge.baby false
+      hatch_steps: &x-y.pokemon.dragalge.hatch_steps 20
+      growth_rate: &x-y.pokemon.dragalge.growth_rate medium
+      forms_switchable: &x-y.pokemon.dragalge.forms_switchable false
+      name: Dragalge
+      default: &x-y.pokemon.dragalge.default true
+      height: &x-y.pokemon.dragalge.height 18
+      weight: &x-y.pokemon.dragalge.weight 815
+      experience: &x-y.pokemon.dragalge.experience 173
+      types: &x-y.pokemon.dragalge.types
+        - poison
+        - dragon
+      egg_groups: &x-y.pokemon.dragalge.egg_groups
+        - water1
+        - dragon
+      mega: &x-y.pokemon.dragalge.mega false
+      stats: &x-y.pokemon.dragalge.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 75
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 44
+          effort_change: 0
+        special-attack:
+          base_value: 97
+          effort_change: 0
+        special-defense:
+          base_value: 123
+          effort_change: 2
+      abilities: &x-y.pokemon.dragalge.abilities
+        poison-point:
+          hidden: &x-y.pokemon.dragalge.abilities.poison-point.hidden false
+          position: 1
+        poison-touch:
+          hidden: *x-y.pokemon.dragalge.abilities.poison-point.hidden
+          position: 2
+        adaptability:
+          hidden: true
+          position: 3
+      evolution_conditions: &x-y.pokemon.dragalge.evolution_conditions
+        level-up:
+          minimum_level: 48
+      flavor_text:
+        x: |
+          Their poison is strong enough to eat through
+          the hull of a tanker, and they spit it indiscriminately
+          at anything that enters their territory.
+        'y': |
+          Tales are told of ships that wander into
+          seas where Dragalge live, never to return.
+      forms:
+        dragalge:
+          name: Dragalge
+          form_name: &x-y.pokemon.dragalge.forms.dragalge.form_name 'Default Form'
+          default: true
+          battle_only: &x-y.pokemon.dragalge.forms.dragalge.battle_only false
+          icon: &x-y.pokemon.dragalge.forms.dragalge.icon dragalge-default.png
+          sprites:
+            - x-y/dragalge-default.png
+            - x-y/shiny/dragalge-default.png
+          art: &x-y.pokemon.dragalge.forms.dragalge.art
+            - dragalge-default.png
+          footprint: &x-y.pokemon.dragalge.forms.dragalge.footprint dragalge.png
+          cry: &x-y.pokemon.dragalge.forms.dragalge.cry dragalge-default.webm
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *x-y.numbers.national
+  pokemon:
+    dragalge:
+      genus: *x-y.pokemon.dragalge.genus
+      evolution_parent: *x-y.pokemon.dragalge.evolution_parent
+      color: *x-y.pokemon.dragalge.color
+      shape: *x-y.pokemon.dragalge.shape
+      female_rate: *x-y.pokemon.dragalge.female_rate
+      capture_rate: *x-y.pokemon.dragalge.capture_rate
+      happiness: *x-y.pokemon.dragalge.happiness
+      baby: *x-y.pokemon.dragalge.baby
+      hatch_steps: *x-y.pokemon.dragalge.hatch_steps
+      growth_rate: *x-y.pokemon.dragalge.growth_rate
+      forms_switchable: *x-y.pokemon.dragalge.forms_switchable
+      name: Dragalge
+      default: *x-y.pokemon.dragalge.default
+      height: *x-y.pokemon.dragalge.height
+      weight: *x-y.pokemon.dragalge.weight
+      experience: *x-y.pokemon.dragalge.experience
+      types: *x-y.pokemon.dragalge.types
+      egg_groups: *x-y.pokemon.dragalge.egg_groups
+      mega: *x-y.pokemon.dragalge.mega
+      stats: *x-y.pokemon.dragalge.stats
+      abilities: *x-y.pokemon.dragalge.abilities
+      evolution_conditions: *x-y.pokemon.dragalge.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Their poison is strong enough to eat through
+          the hull of a tanker, and they spit it indiscriminately
+          at anything that enters their territory.
+        alpha-sapphire: |
+          Tales are told of ships that wander into
+          seas where Dragalge live, never to return.
+      forms:
+        dragalge:
+          name: Dragalge
+          form_name: *x-y.pokemon.dragalge.forms.dragalge.form_name
+          default: true
+          battle_only: *x-y.pokemon.dragalge.forms.dragalge.battle_only
+          icon: *x-y.pokemon.dragalge.forms.dragalge.icon
+          art: *x-y.pokemon.dragalge.forms.dragalge.art
+          footprint: *x-y.pokemon.dragalge.forms.dragalge.footprint
+          cry: *x-y.pokemon.dragalge.forms.dragalge.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/dragalge-default.png
+            - omega-ruby-alpha-sapphire/shiny/dragalge-default.png
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    dragalge:
+      genus: *x-y.pokemon.dragalge.genus
+      evolution_parent: *x-y.pokemon.dragalge.evolution_parent
+      color: *x-y.pokemon.dragalge.color
+      shape: *x-y.pokemon.dragalge.shape
+      female_rate: *x-y.pokemon.dragalge.female_rate
+      capture_rate: *x-y.pokemon.dragalge.capture_rate
+      happiness: *x-y.pokemon.dragalge.happiness
+      baby: *x-y.pokemon.dragalge.baby
+      hatch_steps: *x-y.pokemon.dragalge.hatch_steps
+      growth_rate: *x-y.pokemon.dragalge.growth_rate
+      forms_switchable: *x-y.pokemon.dragalge.forms_switchable
+      name: Dragalge
+      default: *x-y.pokemon.dragalge.default
+      height: *x-y.pokemon.dragalge.height
+      weight: *x-y.pokemon.dragalge.weight
+      experience: *x-y.pokemon.dragalge.experience
+      types: *x-y.pokemon.dragalge.types
+      egg_groups: *x-y.pokemon.dragalge.egg_groups
+      mega: *x-y.pokemon.dragalge.mega
+      stats: *x-y.pokemon.dragalge.stats
+      abilities: *x-y.pokemon.dragalge.abilities
+      evolution_conditions: *x-y.pokemon.dragalge.evolution_conditions
+      forms:
+        dragalge:
+          name: Dragalge
+          form_name: *x-y.pokemon.dragalge.forms.dragalge.form_name
+          default: true
+          battle_only: *x-y.pokemon.dragalge.forms.dragalge.battle_only
+          icon: *x-y.pokemon.dragalge.forms.dragalge.icon
+          sprites:
+            - sun-moon/dragalge-default.png
+            - sun-moon/shiny/dragalge-default.png
+          art: *x-y.pokemon.dragalge.forms.dragalge.art
+          footprint: *x-y.pokemon.dragalge.forms.dragalge.footprint
+          cry: *x-y.pokemon.dragalge.forms.dragalge.cry
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+    updated-alola: 348
+    updated-poni: 95
+  pokemon:
+    dragalge:
+      genus: *x-y.pokemon.dragalge.genus
+      evolution_parent: *x-y.pokemon.dragalge.evolution_parent
+      color: *x-y.pokemon.dragalge.color
+      shape: *x-y.pokemon.dragalge.shape
+      female_rate: *x-y.pokemon.dragalge.female_rate
+      capture_rate: *x-y.pokemon.dragalge.capture_rate
+      happiness: *x-y.pokemon.dragalge.happiness
+      baby: *x-y.pokemon.dragalge.baby
+      hatch_steps: *x-y.pokemon.dragalge.hatch_steps
+      growth_rate: *x-y.pokemon.dragalge.growth_rate
+      forms_switchable: *x-y.pokemon.dragalge.forms_switchable
+      name: Dragalge
+      default: *x-y.pokemon.dragalge.default
+      height: *x-y.pokemon.dragalge.height
+      weight: *x-y.pokemon.dragalge.weight
+      experience: *x-y.pokemon.dragalge.experience
+      types: *x-y.pokemon.dragalge.types
+      egg_groups: *x-y.pokemon.dragalge.egg_groups
+      mega: *x-y.pokemon.dragalge.mega
+      stats: *x-y.pokemon.dragalge.stats
+      abilities: *x-y.pokemon.dragalge.abilities
+      evolution_conditions: *x-y.pokemon.dragalge.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          This vicious Pokémon sprays a poisonous liquid
+          on opponents that come near. For whatever
+          reason, it gets along really well with Dhelmise.
+        ultra-moon: |-
+          It blends in with seaweed to ambush its prey
+          and then takes them down with a poisonous
+          liquid strong enough to melt metal.
+      forms:
+        dragalge:
+          name: Dragalge
+          form_name: *x-y.pokemon.dragalge.forms.dragalge.form_name
+          default: true
+          battle_only: *x-y.pokemon.dragalge.forms.dragalge.battle_only
+          icon: *x-y.pokemon.dragalge.forms.dragalge.icon
+          sprites:
+            - ultra-sun-ultra-moon/dragalge-default.png
+            - ultra-sun-ultra-moon/shiny/dragalge-default.png
+          art: *x-y.pokemon.dragalge.forms.dragalge.art
+          footprint: *x-y.pokemon.dragalge.forms.dragalge.footprint
+          cry: *x-y.pokemon.dragalge.forms.dragalge.cry

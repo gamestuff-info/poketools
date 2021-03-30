@@ -1,0 +1,216 @@
+red-blue: &red-blue
+  name: &red-blue.name SLAM
+  power: &red-blue.power 80
+  type: &red-blue.type normal
+  accuracy: &red-blue.accuracy 75
+  pp: &red-blue.pp 20
+  effect: &red-blue.effect 1
+  flags: &red-blue.flags
+    - contact
+    - protect
+    - mirror
+    - non-sky-battle
+  categories: &red-blue.categories
+    - damage
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target selected-pokemon
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Slams the foe with
+    a tail, vine, etc.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+    - kings-rock
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  contest_type: &ruby-sapphire.contest_type tough
+  contest_effect: 20
+  contest_use_after:
+    - pound
+  flavor_text: |
+    Slams the foe with a long
+    tail, vine, etc.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: &colosseum.flavor_text |
+    Slams the target with a
+    long tail, vine, etc.
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+xd:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+firered-leafgreen:
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  flavor_text: |
+    The foe is struck
+    with a long tail,
+    vines, etc.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Slam
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 5
+  flavor_text: &diamond-pearl.flavor_text |
+    The foe is slammed
+    with a long tail,
+    vines, etc., to inflict
+    damage.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The target is slammed with a long tail,
+    vines, etc., to inflict damage.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: &x-y.flavor_text |
+    The target is slammed with a long tail,
+    vines, or the like to inflict damage.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 1
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  power: *red-blue.power
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The target is slammed with a long tail, vines, or the
+    like to inflict damage.
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,170 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'ICE BALL'
+  power: &ruby-sapphire.power 30
+  type: &ruby-sapphire.type ice
+  accuracy: &ruby-sapphire.accuracy 90
+  pp: &ruby-sapphire.pp 20
+  effect: &ruby-sapphire.effect 118
+  target: &ruby-sapphire.target selected-pokemon
+  priority: &ruby-sapphire.priority 0
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+    - kings-rock
+  categories: &ruby-sapphire.categories
+    - damage
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  contest_type: &ruby-sapphire.contest_type beauty
+  contest_effect: 48
+  flavor_text: |
+    A 5-turn attack that gains
+    power on successive hits.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: &colosseum.flavor_text |
+    An attack lasting 5 turns
+    with rising intensity.
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: special
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    A 5-turn rolling
+    attack that becomes
+    stronger each time
+    it rolls.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Ice Ball'
+  flags: &diamond-pearl.flags
+    - contact
+    - protect
+    - mirror
+    - ballistics
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: &diamond-pearl.damage_class physical
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 7
+  flavor_text: &diamond-pearl.flavor_text |
+    The user continually
+    rolls into the foe
+    over five turns. It
+    becomes stronger
+    each time it hits.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &black-white.flavor_text |
+    The user continually rolls into the target
+    over five turns. It becomes stronger
+    each time it hits.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 24
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user attacks the target for five turns.
+    The move’s power increases each time it hits.
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,1085 @@
+red-blue:
+  name: &red-blue.name PINSIR
+  position: &red-blue.position 127
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 127
+    kanto: 127
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: &red-blue.pokemon.pinsir.default true
+      capture_rate: &red-blue.pokemon.pinsir.capture_rate 45
+      experience: &red-blue.pokemon.pinsir.experience 200
+      types: &red-blue.pokemon.pinsir.types
+        - bug
+      stats: &red-blue.pokemon.pinsir.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 125
+          effort_change: 125
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 85
+          effort_change: 85
+        special:
+          base_value: 55
+          effort_change: 55
+      growth_rate: &red-blue.pokemon.pinsir.growth_rate slow
+      genus: &red-blue.pokemon.pinsir.genus 'STAGBEETLE Pokémon'
+      height: &red-blue.pokemon.pinsir.height 14
+      weight: &red-blue.pokemon.pinsir.weight 5488
+      flavor_text:
+        red: |
+          If it fails to
+          crush the victim
+          in its pincers,
+          it will swing it
+           around and toss
+          it hard.
+        blue: |
+          If it fails to
+          crush the victim
+          in its pincers,
+          it will swing it
+           around and toss
+          it hard.
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: &red-blue.pokemon.pinsir.forms.pinsir.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.pinsir.forms.pinsir.battle_only false
+          sprites:
+            - red-blue/pinsir-default.png
+            - red-blue/gray/pinsir-default.png
+            - red-blue/back/pinsir-default.png
+          art: &red-blue.pokemon.pinsir.forms.pinsir.art
+            - pinsir-default.png
+          cry: &red-blue.pokemon.pinsir.forms.pinsir.cry gen5/pinsir-default.webm
+          icon: &red-blue.pokemon.pinsir.forms.pinsir.icon gen1/bug.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: *red-blue.pokemon.pinsir.default
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      experience: *red-blue.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      stats: *red-blue.pokemon.pinsir.stats
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      genus: *red-blue.pokemon.pinsir.genus
+      height: *red-blue.pokemon.pinsir.height
+      weight: *red-blue.pokemon.pinsir.weight
+      flavor_text:
+        yellow: |
+          Grips its prey in
+          its pincers and
+          squeezes hard! It
+          can't move if it's
+          cold, so it lives
+          in warm places.
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          sprites:
+            - yellow/pinsir-default.png
+            - yellow/gray/pinsir-default.png
+            - yellow/back/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+          icon: *red-blue.pokemon.pinsir.forms.pinsir.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 126
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 111
+    original-johto-abc: 152
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: *red-blue.pokemon.pinsir.default
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      experience: *red-blue.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      stats: &gold-silver.pokemon.pinsir.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 125
+          effort_change: 125
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 85
+          effort_change: 85
+        special-attack:
+          base_value: 55
+          effort_change: 55
+        special-defense:
+          base_value: 70
+          effort_change: 55
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      female_rate: &gold-silver.pokemon.pinsir.female_rate 50
+      hatch_steps: &gold-silver.pokemon.pinsir.hatch_steps 25
+      egg_groups: *red-blue.pokemon.pinsir.types
+      genus: *red-blue.pokemon.pinsir.genus
+      height: *red-blue.pokemon.pinsir.height
+      weight: &gold-silver.pokemon.pinsir.weight 548
+      flavor_text:
+        gold: |
+          With its horns, it
+          digs burrows to
+          sleep in at night.
+          In the morning,
+          damp soil clings
+          to its body.
+        silver: |
+          Swings its long
+          antlers wildly to
+          attack. During
+          cold periods, it
+          hides deep in
+          forests.
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          sprites:
+            - gold-silver/pinsir-default.png
+            - gold-silver/back/pinsir-default.png
+            - gold-silver/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+          icon: &gold-silver.pokemon.pinsir.forms.pinsir.icon gen2/bug.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: *red-blue.pokemon.pinsir.default
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      experience: *red-blue.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      stats: *gold-silver.pokemon.pinsir.stats
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      egg_groups: *red-blue.pokemon.pinsir.types
+      genus: *red-blue.pokemon.pinsir.genus
+      height: *red-blue.pokemon.pinsir.height
+      weight: *gold-silver.pokemon.pinsir.weight
+      flavor_text:
+        crystal: |
+          When the tempera-
+          ture drops at
+          night, it sleeps
+          on treetops or
+          among roots where
+          it is well hidden.
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          sprites:
+            - crystal/pinsir-default.png
+            - crystal/back/pinsir-default.png
+            - crystal/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+          icon: *gold-silver.pokemon.pinsir.forms.pinsir.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 167
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: *red-blue.pokemon.pinsir.default
+      forms_switchable: &ruby-sapphire.pokemon.pinsir.forms_switchable false
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      experience: *red-blue.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      stats: &ruby-sapphire.pokemon.pinsir.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 125
+          effort_change: 2
+        defense:
+          base_value: 100
+          effort_change: 0
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      egg_groups: *red-blue.pokemon.pinsir.types
+      happiness: &ruby-sapphire.pokemon.pinsir.happiness 70
+      abilities: &ruby-sapphire.pokemon.pinsir.abilities
+        hyper-cutter: &ruby-sapphire.pokemon.pinsir.abilities.hyper-cutter
+          hidden: &ruby-sapphire.pokemon.pinsir.abilities.hyper-cutter.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.pinsir.genus 'STAG BEETLE Pokémon'
+      height: &ruby-sapphire.pokemon.pinsir.height 15
+      weight: &ruby-sapphire.pokemon.pinsir.weight 550
+      flavor_text:
+        ruby: |
+          PINSIR is astoundingly strong. It can
+          grip a foe weighing twice its weight
+          in its horns and easily lift it.
+          This POKéMON's movements turn sluggish
+          in cold places.
+        sapphire: |
+          PINSIR has a pair of massive horns
+          Protruding from the surface of these
+          horns are thorns.
+          These thorns are driven deeply into the
+           foe's body when the pincer closes,
+          making it tough for the foe to escape.
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: &ruby-sapphire.pokemon.pinsir.forms.pinsir.icon gen5/pinsir-default.png
+          sprites:
+            - ruby-sapphire/pinsir-default.png
+            - ruby-sapphire/back/pinsir-default.png
+            - ruby-sapphire/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: &ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint pinsir.png
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: *red-blue.pokemon.pinsir.default
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      experience: *red-blue.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      stats: *ruby-sapphire.pokemon.pinsir.stats
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      egg_groups: *red-blue.pokemon.pinsir.types
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      abilities: *ruby-sapphire.pokemon.pinsir.abilities
+      genus: *ruby-sapphire.pokemon.pinsir.genus
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      flavor_text:
+        emerald: |
+          Their pincers are strong enough to
+          shatter thick logs. Because they dislike
+          cold, PINSIR burrow and sleep under
+          the ground on chilly nights.
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *ruby-sapphire.pokemon.pinsir.forms.pinsir.icon
+          sprites:
+            - emerald/pinsir-default.png
+            - emerald/shiny/pinsir-default.png
+            - emerald/animated/pinsir-default.webm
+            - emerald/animated/shiny/pinsir-default.webm
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 245
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: *red-blue.pokemon.pinsir.default
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      experience: 134217928
+      types: *red-blue.pokemon.pinsir.types
+      stats: *ruby-sapphire.pokemon.pinsir.stats
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      abilities: *ruby-sapphire.pokemon.pinsir.abilities
+      genus: *ruby-sapphire.pokemon.pinsir.genus
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          sprites:
+            - colosseum/pinsir-default.png
+            - colosseum/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: *red-blue.pokemon.pinsir.default
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      experience: *red-blue.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      stats: *ruby-sapphire.pokemon.pinsir.stats
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      abilities: *ruby-sapphire.pokemon.pinsir.abilities
+      genus: *ruby-sapphire.pokemon.pinsir.genus
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          sprites:
+            - xd/pinsir-default.png
+            - xd/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    pinsir:
+      name: PINSIR
+      default: *red-blue.pokemon.pinsir.default
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      experience: *red-blue.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      stats: *ruby-sapphire.pokemon.pinsir.stats
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      egg_groups: *red-blue.pokemon.pinsir.types
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      abilities: *ruby-sapphire.pokemon.pinsir.abilities
+      genus: *ruby-sapphire.pokemon.pinsir.genus
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      flavor_text:
+        firered: |
+          Its two long pincer horns are powerful.
+          Once they grip an enemy,  they won't
+          release until the foe is torn.
+        leafgreen: |
+          If it fails to crush the foe in its
+          pincers, it will swing around and toss
+          the opponent.
+      forms:
+        pinsir:
+          name: PINSIR
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *ruby-sapphire.pokemon.pinsir.forms.pinsir.icon
+          sprites:
+            - firered-leafgreen/pinsir-default.png
+            - firered-leafgreen/back/pinsir-default.png
+            - firered-leafgreen/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+diamond-pearl:
+  name: &diamond-pearl.name Pinsir
+  position: &diamond-pearl.position 151
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    pinsir:
+      genus: &diamond-pearl.pokemon.pinsir.genus 'Stag Beetle Pokémon'
+      shape: &diamond-pearl.pokemon.pinsir.shape humanoid
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: &diamond-pearl.pokemon.pinsir.baby false
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      pal_park: &diamond-pearl.pokemon.pinsir.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: &diamond-pearl.pokemon.pinsir.experience 175
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      stats: &diamond-pearl.pokemon.pinsir.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 125
+          effort_change: 2
+        defense:
+          base_value: 100
+          effort_change: 0
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.pinsir.abilities
+        hyper-cutter: *ruby-sapphire.pokemon.pinsir.abilities.hyper-cutter
+        mold-breaker: &diamond-pearl.pokemon.pinsir.abilities.mold-breaker
+          hidden: *ruby-sapphire.pokemon.pinsir.abilities.hyper-cutter.hidden
+          position: 2
+      flavor_text:
+        diamond: |
+          It grips prey with its pincers
+          until the prey is torn in half.
+          What it can’t tear, it tosses far.
+        pearl: |
+          It grips prey with its pincers
+          until the prey is torn in half.
+          What it can’t tear, it tosses far.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *ruby-sapphire.pokemon.pinsir.forms.pinsir.icon
+          sprites:
+            - diamond-pearl/pinsir-default.png
+            - diamond-pearl/back/pinsir-default.png
+            - diamond-pearl/back/shiny/pinsir-default.png
+            - diamond-pearl/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    pinsir:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      pal_park: *diamond-pearl.pokemon.pinsir.pal_park
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: *diamond-pearl.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      stats: *diamond-pearl.pokemon.pinsir.stats
+      abilities: *diamond-pearl.pokemon.pinsir.abilities
+      flavor_text:
+        platinum: |
+          It grips prey with its pincers
+          until the prey is torn in half.
+          What it can’t tear, it tosses far.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *ruby-sapphire.pokemon.pinsir.forms.pinsir.icon
+          sprites:
+            - platinum/pinsir-default.png
+            - platinum/back/pinsir-default.png
+            - platinum/back/shiny/pinsir-default.png
+            - platinum/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 113
+  pokemon:
+    pinsir:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      pal_park: *diamond-pearl.pokemon.pinsir.pal_park
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: *diamond-pearl.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      stats: *diamond-pearl.pokemon.pinsir.stats
+      abilities: *diamond-pearl.pokemon.pinsir.abilities
+      flavor_text:
+        heartgold: |
+          With its pincer horns, it digs burrows
+          to sleep in at night. In the morning,
+          damp soil clings to its body.
+        soulsilver: |
+          It swings its long pincer horns wildly
+          to attack. During cold periods, it
+          hides deep in forests.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 4
+              range: 3-5
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.pinsir.forms.pinsir.icon
+          sprites:
+            - heartgold-soulsilver/pinsir-default.png
+            - heartgold-soulsilver/back/pinsir-default.png
+            - heartgold-soulsilver/back/shiny/pinsir-default.png
+            - heartgold-soulsilver/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    pinsir:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: &black-white.pokemon.pinsir.color brown
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: *diamond-pearl.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      stats: *diamond-pearl.pokemon.pinsir.stats
+      abilities: &black-white.pokemon.pinsir.abilities
+        hyper-cutter: *ruby-sapphire.pokemon.pinsir.abilities.hyper-cutter
+        mold-breaker: *diamond-pearl.pokemon.pinsir.abilities.mold-breaker
+        moxie:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It grips prey with its pincers
+          until the prey is torn in half.
+          What it can’t tear, it tosses far.
+        white: |
+          It grips prey with its pincers
+          until the prey is torn in half.
+          What it can’t tear, it tosses far.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *ruby-sapphire.pokemon.pinsir.forms.pinsir.icon
+          sprites:
+            - black-white/pinsir-default.png
+            - black-white/back/pinsir-default.png
+            - black-white/back/shiny/pinsir-default.png
+            - black-white/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 146
+  pokemon:
+    pinsir:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pinsir.forms_switchable
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: *diamond-pearl.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      stats: *diamond-pearl.pokemon.pinsir.stats
+      abilities: *black-white.pokemon.pinsir.abilities
+      flavor_text:
+        black-2: |
+          It grips prey with its powerful
+          pincers and will not let go
+          until the prey is torn in half.
+        white-2: |
+          It grips prey with its powerful
+          pincers and will not let go
+          until the prey is torn in half.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *ruby-sapphire.pokemon.pinsir.forms.pinsir.icon
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *red-blue.pokemon.pinsir.forms.pinsir.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 130
+  pokemon:
+    pinsir:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: &x-y.pokemon.pinsir.forms_switchable true
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: *diamond-pearl.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      mega: &x-y.pokemon.pinsir.mega false
+      stats: *diamond-pearl.pokemon.pinsir.stats
+      abilities: *black-white.pokemon.pinsir.abilities
+      flavor_text: &x-y.pokemon.pinsir.flavor_text
+        x: |
+          It grips prey with its pincers until the prey is torn
+          in half. What it can’t tear, it tosses far.
+        'y': |
+          It swings its long pincer horns wildly to attack.
+          During cold periods, it hides deep in forests.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: &x-y.pokemon.pinsir.forms.pinsir.icon pinsir-default.png
+          sprites:
+            - x-y/pinsir-default.png
+            - x-y/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: &x-y.pokemon.pinsir.forms.pinsir.cry pinsir-default.webm
+    pinsir-mega:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *x-y.pokemon.pinsir.forms_switchable
+      name: &x-y.pokemon.pinsir-mega.name 'Mega Pinsir'
+      default: &x-y.pokemon.pinsir-mega.default false
+      height: &x-y.pokemon.pinsir-mega.height 17
+      weight: &x-y.pokemon.pinsir-mega.weight 590
+      experience: &x-y.pokemon.pinsir-mega.experience 210
+      types: &x-y.pokemon.pinsir-mega.types
+        - bug
+        - flying
+      egg_groups: *red-blue.pokemon.pinsir.types
+      mega: &x-y.pokemon.pinsir-mega.mega true
+      stats: &x-y.pokemon.pinsir-mega.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 155
+          effort_change: 2
+        defense:
+          base_value: 120
+          effort_change: 0
+        speed:
+          base_value: 105
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      abilities: &x-y.pokemon.pinsir-mega.abilities
+        aerilate: *ruby-sapphire.pokemon.pinsir.abilities.hyper-cutter
+      flavor_text: *x-y.pokemon.pinsir.flavor_text
+      forms:
+        pinsir-mega:
+          name: 'Mega Pinsir'
+          form_name: &x-y.pokemon.pinsir-mega.forms.pinsir-mega.form_name 'Mega Pinsir'
+          default: true
+          battle_only: &x-y.pokemon.pinsir-mega.forms.pinsir-mega.battle_only true
+          icon: &x-y.pokemon.pinsir-mega.forms.pinsir-mega.icon pinsir-mega.png
+          sprites:
+            - x-y/pinsir-mega.png
+            - x-y/shiny/pinsir-mega.png
+          art: &x-y.pokemon.pinsir-mega.forms.pinsir-mega.art
+            - pinsir-mega.png
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: &x-y.pokemon.pinsir-mega.forms.pinsir-mega.cry pinsir-mega.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 174
+  pokemon:
+    pinsir:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *x-y.pokemon.pinsir.forms_switchable
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: *diamond-pearl.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      mega: *x-y.pokemon.pinsir.mega
+      stats: *diamond-pearl.pokemon.pinsir.stats
+      abilities: *black-white.pokemon.pinsir.abilities
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.pinsir.flavor_text
+        omega-ruby: |
+          Pinsir is astoundingly strong. It can grip a foe weighing twice
+          its weight in its horns and easily lift it. This Pokémon’s
+          movements turn sluggish in cold places.
+        alpha-sapphire: |
+          Pinsir has a pair of massive horns. Protruding from the surface
+          of these horns are thorns. These thorns are driven deeply into
+          the foe’s body when the pincer closes, making it tough for the
+          foe to escape.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *x-y.pokemon.pinsir.forms.pinsir.icon
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *x-y.pokemon.pinsir.forms.pinsir.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/pinsir-default.png
+            - omega-ruby-alpha-sapphire/shiny/pinsir-default.png
+    pinsir-mega:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *x-y.pokemon.pinsir.forms_switchable
+      name: *x-y.pokemon.pinsir-mega.name
+      default: *x-y.pokemon.pinsir-mega.default
+      height: *x-y.pokemon.pinsir-mega.height
+      weight: *x-y.pokemon.pinsir-mega.weight
+      experience: *x-y.pokemon.pinsir-mega.experience
+      types: *x-y.pokemon.pinsir-mega.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      mega: *x-y.pokemon.pinsir-mega.mega
+      stats: *x-y.pokemon.pinsir-mega.stats
+      abilities: *x-y.pokemon.pinsir-mega.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.pinsir.flavor_text
+      forms:
+        pinsir-mega:
+          name: 'Mega Pinsir'
+          form_name: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.battle_only
+          icon: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.icon
+          art: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/pinsir-mega.png
+            - omega-ruby-alpha-sapphire/shiny/pinsir-mega.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 175
+    original-akala: 102
+    original-poni: 65
+  pokemon:
+    pinsir:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *x-y.pokemon.pinsir.forms_switchable
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: *diamond-pearl.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      mega: *x-y.pokemon.pinsir.mega
+      stats: *diamond-pearl.pokemon.pinsir.stats
+      abilities: *black-white.pokemon.pinsir.abilities
+      flavor_text: &sun-moon.pokemon.pinsir.flavor_text
+        sun: |-
+          It grips its prey in its pincers and splits them
+          apart. Although it is a powerful Pokémon, it
+          can’t deal with the cold.
+        moon: |-
+          One solid blow from its horns is enough to split
+          apart a large tree. Its greatest rival in Alola
+          is Vikavolt.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *x-y.pokemon.pinsir.forms.pinsir.icon
+          sprites:
+            - sun-moon/pinsir-default.png
+            - sun-moon/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *x-y.pokemon.pinsir.forms.pinsir.cry
+    pinsir-mega:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *x-y.pokemon.pinsir.forms_switchable
+      name: *x-y.pokemon.pinsir-mega.name
+      default: *x-y.pokemon.pinsir-mega.default
+      height: *x-y.pokemon.pinsir-mega.height
+      weight: *x-y.pokemon.pinsir-mega.weight
+      experience: *x-y.pokemon.pinsir-mega.experience
+      types: *x-y.pokemon.pinsir-mega.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      mega: *x-y.pokemon.pinsir-mega.mega
+      stats: *x-y.pokemon.pinsir-mega.stats
+      abilities: *x-y.pokemon.pinsir-mega.abilities
+      flavor_text: *sun-moon.pokemon.pinsir.flavor_text
+      forms:
+        pinsir-mega:
+          name: 'Mega Pinsir'
+          form_name: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.battle_only
+          icon: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.icon
+          sprites:
+            - sun-moon/pinsir-mega.png
+            - sun-moon/shiny/pinsir-mega.png
+          art: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 211
+    updated-akala: 112
+    updated-poni: 78
+  pokemon:
+    pinsir:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *x-y.pokemon.pinsir.forms_switchable
+      name: Pinsir
+      default: *red-blue.pokemon.pinsir.default
+      height: *ruby-sapphire.pokemon.pinsir.height
+      weight: *ruby-sapphire.pokemon.pinsir.weight
+      experience: *diamond-pearl.pokemon.pinsir.experience
+      types: *red-blue.pokemon.pinsir.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      mega: *x-y.pokemon.pinsir.mega
+      stats: *diamond-pearl.pokemon.pinsir.stats
+      abilities: *black-white.pokemon.pinsir.abilities
+      flavor_text: &ultra-sun-ultra-moon.pokemon.pinsir.flavor_text
+        ultra-sun: |-
+          It gets into territorial disputes with Vikavolt.
+          For some reason, it apparently gets along well
+          with Heracross in Alola.
+        ultra-moon: |-
+          Although it’s tough, it can’t handle cold well.
+          When night falls, it buries itself in leafage
+          and sleeps.
+      forms:
+        pinsir:
+          name: Pinsir
+          form_name: *red-blue.pokemon.pinsir.forms.pinsir.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pinsir.forms.pinsir.battle_only
+          icon: *x-y.pokemon.pinsir.forms.pinsir.icon
+          sprites:
+            - ultra-sun-ultra-moon/pinsir-default.png
+            - ultra-sun-ultra-moon/shiny/pinsir-default.png
+          art: *red-blue.pokemon.pinsir.forms.pinsir.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *x-y.pokemon.pinsir.forms.pinsir.cry
+    pinsir-mega:
+      genus: *diamond-pearl.pokemon.pinsir.genus
+      color: *black-white.pokemon.pinsir.color
+      shape: *diamond-pearl.pokemon.pinsir.shape
+      female_rate: *gold-silver.pokemon.pinsir.female_rate
+      capture_rate: *red-blue.pokemon.pinsir.capture_rate
+      happiness: *ruby-sapphire.pokemon.pinsir.happiness
+      baby: *diamond-pearl.pokemon.pinsir.baby
+      hatch_steps: *gold-silver.pokemon.pinsir.hatch_steps
+      growth_rate: *red-blue.pokemon.pinsir.growth_rate
+      forms_switchable: *x-y.pokemon.pinsir.forms_switchable
+      name: *x-y.pokemon.pinsir-mega.name
+      default: *x-y.pokemon.pinsir-mega.default
+      height: *x-y.pokemon.pinsir-mega.height
+      weight: *x-y.pokemon.pinsir-mega.weight
+      experience: *x-y.pokemon.pinsir-mega.experience
+      types: *x-y.pokemon.pinsir-mega.types
+      egg_groups: *red-blue.pokemon.pinsir.types
+      mega: *x-y.pokemon.pinsir-mega.mega
+      stats: *x-y.pokemon.pinsir-mega.stats
+      abilities: *x-y.pokemon.pinsir-mega.abilities
+      flavor_text: *ultra-sun-ultra-moon.pokemon.pinsir.flavor_text
+      forms:
+        pinsir-mega:
+          name: 'Mega Pinsir'
+          form_name: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.battle_only
+          icon: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/pinsir-mega.png
+            - ultra-sun-ultra-moon/shiny/pinsir-mega.png
+          art: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.art
+          footprint: *ruby-sapphire.pokemon.pinsir.forms.pinsir.footprint
+          cry: *x-y.pokemon.pinsir-mega.forms.pinsir-mega.cry

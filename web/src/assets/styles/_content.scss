@@ -1,0 +1,79 @@
+#root {
+    @extend .h-100;
+
+    .content-wrapper {
+        @extend .h-100;
+        @extend .d-flex;
+        @extend .flex-column;
+    }
+}
+
+.pkt-logo {
+    @extend .p-2;
+
+    max-width: 100%;
+    max-height: 30%;
+
+    @include media-breakpoint-up(md) {
+        max-width: 50%;
+    }
+}
+
+main.container {
+    $padding: $grid-gutter-width / 2;
+    background-color: $white;
+    padding: $padding $padding;
+
+    // Compensate for fixed header and footer
+    $navbar-height: $navbar-brand-height+(2*$navbar-brand-padding-y)+(2*$navbar-padding-y);
+    margin-top: $navbar-height;
+    margin-bottom: $navbar-height;
+}
+
+table.table {
+    th {
+        @extend .text-nowrap;
+
+        .pkt-table-icon {
+            @extend .mx-1;
+        }
+    }
+
+    ul, ol {
+        margin-bottom: 0;
+    }
+
+    p {
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &.pkt-table-map {
+        thead {
+            tr:first-of-type {
+                th:first-of-type {
+                    @extend .pb-0;
+                }
+            }
+
+            tr:last-of-type {
+                th:first-of-type {
+                    @extend .pt-0;
+                }
+            }
+        }
+    }
+}
+
+.pkt-description {
+    @extend .pkt-text;
+}
+
+.tooltip > p:first-of-type {
+    @extend .pb-0;
+}

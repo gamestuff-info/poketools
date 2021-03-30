@@ -1,0 +1,710 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name VIGOROTH
+  position: &ruby-sapphire.position 288
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 288
+    hoenn: 37
+  pokemon:
+    vigoroth:
+      name: VIGOROTH
+      default: &ruby-sapphire.pokemon.vigoroth.default true
+      forms_switchable: &ruby-sapphire.pokemon.vigoroth.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.vigoroth.capture_rate 120
+      experience: &ruby-sapphire.pokemon.vigoroth.experience 126
+      types: &ruby-sapphire.pokemon.vigoroth.types
+        - normal
+      stats: &ruby-sapphire.pokemon.vigoroth.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 2
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.vigoroth.growth_rate slow
+      female_rate: &ruby-sapphire.pokemon.vigoroth.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.vigoroth.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.vigoroth.egg_groups
+        - ground
+      happiness: &ruby-sapphire.pokemon.vigoroth.happiness 70
+      abilities: &ruby-sapphire.pokemon.vigoroth.abilities
+        vital-spirit:
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.vigoroth.genus 'WILD MONKEY Pokémon'
+      height: &ruby-sapphire.pokemon.vigoroth.height 14
+      weight: &ruby-sapphire.pokemon.vigoroth.weight 465
+      flavor_text:
+        ruby: |
+          VIGOROTH is always itching and agitated
+          to go on a wild rampage. It simply can't
+          tolerate sitting still for even a minute.
+          This POKéMON's stress level rises if it
+          can't be moving constantly.
+        sapphire: |
+          VIGOROTH is simply incapable of
+          remaining still. Even when it tries to
+          sleep, the blood in its veins grows
+          agitated, compelling this POKéMON to
+          run wild throughout the jungle before
+          it can settle down.
+      forms:
+        vigoroth:
+          name: VIGOROTH
+          form_name: &ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only false
+          icon: &ruby-sapphire.pokemon.vigoroth.forms.vigoroth.icon gen5/vigoroth-default.png
+          sprites:
+            - ruby-sapphire/vigoroth-default.png
+            - ruby-sapphire/back/vigoroth-default.png
+            - ruby-sapphire/shiny/vigoroth-default.png
+          art: &ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+            - vigoroth-default.png
+          footprint: &ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint vigoroth.png
+          cry: &ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry gen5/vigoroth-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.vigoroth.evolution_parent slakoth/slakoth
+      evolution_conditions: &ruby-sapphire.pokemon.vigoroth.evolution_conditions
+        level-up:
+          minimum_level: 18
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    vigoroth:
+      name: VIGOROTH
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      experience: *ruby-sapphire.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      stats: *ruby-sapphire.pokemon.vigoroth.stats
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      genus: *ruby-sapphire.pokemon.vigoroth.genus
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      flavor_text:
+        emerald: |
+          It can't keep still because its blood boils
+          with energy. It runs through the fields
+          and mountains all day to calm itself. If it
+          doesn't,  it can't sleep at night.
+      forms:
+        vigoroth:
+          name: VIGOROTH
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.icon
+          sprites:
+            - emerald/vigoroth-default.png
+            - emerald/shiny/vigoroth-default.png
+            - emerald/animated/vigoroth-default.webm
+            - emerald/animated/shiny/vigoroth-default.webm
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 361
+  pokemon:
+    vigoroth:
+      name: VIGOROTH
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      experience: *ruby-sapphire.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      stats: *ruby-sapphire.pokemon.vigoroth.stats
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      genus: *ruby-sapphire.pokemon.vigoroth.genus
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      forms:
+        vigoroth:
+          name: VIGOROTH
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          sprites:
+            - colosseum/vigoroth-default.png
+            - colosseum/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    vigoroth:
+      name: VIGOROTH
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      experience: *ruby-sapphire.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      stats: *ruby-sapphire.pokemon.vigoroth.stats
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      genus: *ruby-sapphire.pokemon.vigoroth.genus
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      forms:
+        vigoroth:
+          name: VIGOROTH
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          sprites:
+            - xd/vigoroth-default.png
+            - xd/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    vigoroth:
+      name: VIGOROTH
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      experience: *ruby-sapphire.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      stats: *ruby-sapphire.pokemon.vigoroth.stats
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      genus: *ruby-sapphire.pokemon.vigoroth.genus
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      flavor_text:
+        firered: |
+          It is always hungry because it won't stop
+          rampaging. Even while it is eating, it
+          can't keep still.
+        leafgreen: |
+          It is always hungry because it won't stop
+          rampaging. Even while it is eating, it
+          can't keep still.
+      forms:
+        vigoroth:
+          name: VIGOROTH
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.icon
+          sprites:
+            - firered-leafgreen/vigoroth-default.png
+            - firered-leafgreen/back/vigoroth-default.png
+            - firered-leafgreen/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Vigoroth
+  position: &diamond-pearl.position 314
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    vigoroth:
+      genus: &diamond-pearl.pokemon.vigoroth.genus 'Wild Monkey Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      shape: &diamond-pearl.pokemon.vigoroth.shape upright
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: &diamond-pearl.pokemon.vigoroth.baby false
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      pal_park: &diamond-pearl.pokemon.vigoroth.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: &diamond-pearl.pokemon.vigoroth.experience 154
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      stats: &diamond-pearl.pokemon.vigoroth.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 2
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its heart beats at a tenfold
+          tempo, so it cannot sit still for
+          even a moment.
+        pearl: |
+          Its heart beats at a tenfold
+          tempo, so it cannot sit still for
+          even a moment.
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.icon
+          sprites:
+            - diamond-pearl/vigoroth-default.png
+            - diamond-pearl/back/vigoroth-default.png
+            - diamond-pearl/back/shiny/vigoroth-default.png
+            - diamond-pearl/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    vigoroth:
+      genus: *diamond-pearl.pokemon.vigoroth.genus
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      shape: *diamond-pearl.pokemon.vigoroth.shape
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: *diamond-pearl.pokemon.vigoroth.baby
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      pal_park: *diamond-pearl.pokemon.vigoroth.pal_park
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: *diamond-pearl.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      stats: *diamond-pearl.pokemon.vigoroth.stats
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      flavor_text:
+        platinum: |
+          Its heart beats at a tenfold
+          tempo, so it cannot sit still for
+          even a moment.
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.icon
+          sprites:
+            - platinum/vigoroth-default.png
+            - platinum/back/vigoroth-default.png
+            - platinum/back/shiny/vigoroth-default.png
+            - platinum/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    vigoroth:
+      genus: *diamond-pearl.pokemon.vigoroth.genus
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      shape: *diamond-pearl.pokemon.vigoroth.shape
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: *diamond-pearl.pokemon.vigoroth.baby
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      pal_park: *diamond-pearl.pokemon.vigoroth.pal_park
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: *diamond-pearl.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      stats: *diamond-pearl.pokemon.vigoroth.stats
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Its stress level rises if it
+          cannot keep moving constantly.
+          Too much stress makes it feel sick.
+        soulsilver: |
+          Its stress level rises if it
+          cannot keep moving constantly.
+          Too much stress makes it feel sick.
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 3-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.icon
+          sprites:
+            - heartgold-soulsilver/vigoroth-default.png
+            - heartgold-soulsilver/back/vigoroth-default.png
+            - heartgold-soulsilver/back/shiny/vigoroth-default.png
+            - heartgold-soulsilver/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    vigoroth:
+      genus: *diamond-pearl.pokemon.vigoroth.genus
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      color: &black-white.pokemon.vigoroth.color white
+      shape: *diamond-pearl.pokemon.vigoroth.shape
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: *diamond-pearl.pokemon.vigoroth.baby
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: *diamond-pearl.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      stats: *diamond-pearl.pokemon.vigoroth.stats
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      flavor_text:
+        black: |
+          Its heart beats at a tenfold
+          tempo, so it cannot sit still for
+          even a moment.
+        white: |
+          Its heart beats at a tenfold
+          tempo, so it cannot sit still for
+          even a moment.
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.icon
+          sprites:
+            - black-white/vigoroth-default.png
+            - black-white/back/vigoroth-default.png
+            - black-white/back/shiny/vigoroth-default.png
+            - black-white/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 277
+  pokemon:
+    vigoroth:
+      genus: *diamond-pearl.pokemon.vigoroth.genus
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      color: *black-white.pokemon.vigoroth.color
+      shape: *diamond-pearl.pokemon.vigoroth.shape
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: *diamond-pearl.pokemon.vigoroth.baby
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: *diamond-pearl.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      stats: *diamond-pearl.pokemon.vigoroth.stats
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      flavor_text:
+        black-2: |
+          Its heartbeat is fast and
+          its blood so agitated that
+          it can’t sit still for one second.
+        white-2: |
+          Its heartbeat is fast and
+          its blood so agitated that
+          it can’t sit still for one second.
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.icon
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    vigoroth:
+      genus: *diamond-pearl.pokemon.vigoroth.genus
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      color: *black-white.pokemon.vigoroth.color
+      shape: *diamond-pearl.pokemon.vigoroth.shape
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: *diamond-pearl.pokemon.vigoroth.baby
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: *diamond-pearl.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      mega: &x-y.pokemon.vigoroth.mega false
+      stats: *diamond-pearl.pokemon.vigoroth.stats
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      flavor_text:
+        x: |
+          Its heartbeat is fast and its blood so agitated that
+          it can’t sit still for one second.
+        'y': |
+          Its stress level rises if it cannot keep moving
+          constantly. Too much stress makes it feel sick.
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: &x-y.pokemon.vigoroth.forms.vigoroth.icon vigoroth-default.png
+          sprites:
+            - x-y/vigoroth-default.png
+            - x-y/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: &x-y.pokemon.vigoroth.forms.vigoroth.cry vigoroth-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 38
+  pokemon:
+    vigoroth:
+      genus: *diamond-pearl.pokemon.vigoroth.genus
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      color: *black-white.pokemon.vigoroth.color
+      shape: *diamond-pearl.pokemon.vigoroth.shape
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: *diamond-pearl.pokemon.vigoroth.baby
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: *diamond-pearl.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      mega: *x-y.pokemon.vigoroth.mega
+      stats: *diamond-pearl.pokemon.vigoroth.stats
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Vigoroth is always itching and agitated to go on a wild
+          rampage. It simply can’t tolerate sitting still for even
+          a minute. This Pokémon’s stress level rises if it can’t
+          be moving constantly.
+        alpha-sapphire: |
+          Vigoroth is simply incapable of remaining still. Even when it
+          tries to sleep, the blood in its veins grows agitated, compelling
+          this Pokémon to run wild throughout the jungle before it can
+          settle down.
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *x-y.pokemon.vigoroth.forms.vigoroth.icon
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *x-y.pokemon.vigoroth.forms.vigoroth.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/vigoroth-default.png
+            - omega-ruby-alpha-sapphire/shiny/vigoroth-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    vigoroth:
+      genus: *diamond-pearl.pokemon.vigoroth.genus
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      color: *black-white.pokemon.vigoroth.color
+      shape: *diamond-pearl.pokemon.vigoroth.shape
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: *diamond-pearl.pokemon.vigoroth.baby
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: *diamond-pearl.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      mega: *x-y.pokemon.vigoroth.mega
+      stats: *diamond-pearl.pokemon.vigoroth.stats
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *x-y.pokemon.vigoroth.forms.vigoroth.icon
+          sprites:
+            - sun-moon/vigoroth-default.png
+            - sun-moon/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *x-y.pokemon.vigoroth.forms.vigoroth.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    vigoroth:
+      genus: *diamond-pearl.pokemon.vigoroth.genus
+      evolution_parent: *ruby-sapphire.pokemon.vigoroth.evolution_parent
+      color: *black-white.pokemon.vigoroth.color
+      shape: *diamond-pearl.pokemon.vigoroth.shape
+      female_rate: *ruby-sapphire.pokemon.vigoroth.female_rate
+      capture_rate: *ruby-sapphire.pokemon.vigoroth.capture_rate
+      happiness: *ruby-sapphire.pokemon.vigoroth.happiness
+      baby: *diamond-pearl.pokemon.vigoroth.baby
+      hatch_steps: *ruby-sapphire.pokemon.vigoroth.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.vigoroth.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vigoroth.forms_switchable
+      name: Vigoroth
+      default: *ruby-sapphire.pokemon.vigoroth.default
+      height: *ruby-sapphire.pokemon.vigoroth.height
+      weight: *ruby-sapphire.pokemon.vigoroth.weight
+      experience: *diamond-pearl.pokemon.vigoroth.experience
+      types: *ruby-sapphire.pokemon.vigoroth.types
+      egg_groups: *ruby-sapphire.pokemon.vigoroth.egg_groups
+      mega: *x-y.pokemon.vigoroth.mega
+      stats: *diamond-pearl.pokemon.vigoroth.stats
+      abilities: *ruby-sapphire.pokemon.vigoroth.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.vigoroth.evolution_conditions
+      forms:
+        vigoroth:
+          name: Vigoroth
+          form_name: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.battle_only
+          icon: *x-y.pokemon.vigoroth.forms.vigoroth.icon
+          sprites:
+            - ultra-sun-ultra-moon/vigoroth-default.png
+            - ultra-sun-ultra-moon/shiny/vigoroth-default.png
+          art: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.art
+          footprint: *ruby-sapphire.pokemon.vigoroth.forms.vigoroth.footprint
+          cry: *x-y.pokemon.vigoroth.forms.vigoroth.cry

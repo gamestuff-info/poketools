@@ -1,0 +1,748 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name DUSCLOPS
+  position: &ruby-sapphire.position 356
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 356
+    hoenn: 149
+  pokemon:
+    dusclops:
+      name: DUSCLOPS
+      default: &ruby-sapphire.pokemon.dusclops.default true
+      forms_switchable: &ruby-sapphire.pokemon.dusclops.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.dusclops.capture_rate 90
+      experience: &ruby-sapphire.pokemon.dusclops.experience 179
+      types: &ruby-sapphire.pokemon.dusclops.types
+        - ghost
+      stats: &ruby-sapphire.pokemon.dusclops.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 130
+          effort_change: 1
+        speed:
+          base_value: 25
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 2
+        special-defense:
+          base_value: 40
+          effort_change: 2
+      growth_rate: &ruby-sapphire.pokemon.dusclops.growth_rate fast
+      female_rate: &ruby-sapphire.pokemon.dusclops.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.dusclops.hatch_steps 25
+      egg_groups: &ruby-sapphire.pokemon.dusclops.egg_groups
+        - indeterminate
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+          spell-tag: 5
+        sapphire: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.dusclops.happiness 35
+      abilities: &ruby-sapphire.pokemon.dusclops.abilities
+        pressure: &ruby-sapphire.pokemon.dusclops.abilities.pressure
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.dusclops.genus 'BECKON Pokémon'
+      height: &ruby-sapphire.pokemon.dusclops.height 16
+      weight: &ruby-sapphire.pokemon.dusclops.weight 306
+      flavor_text:
+        ruby: |
+          DUSCLOPS's body is completely hollow -
+          there is nothing at all inside.
+           It is said that its body is like a black
+          hole. This POKéMON will absorb anything
+          into its body, but nothing will ever come
+          back out.
+        sapphire: |
+          DUSCLOPS absorbs anything, however
+          large the object may be. This POKéMON
+          hypnotizes its foe by waving its hands
+          in a macabre manner and by bringing its
+          single eye to bear. The hypnotized foe
+          is made to do DUSCLOPS's bidding.
+      forms:
+        dusclops:
+          name: DUSCLOPS
+          form_name: &ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only false
+          icon: &ruby-sapphire.pokemon.dusclops.forms.dusclops.icon gen5/dusclops-default.png
+          sprites:
+            - ruby-sapphire/dusclops-default.png
+            - ruby-sapphire/back/dusclops-default.png
+            - ruby-sapphire/shiny/dusclops-default.png
+          art: &ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+            - dusclops-default.png
+          footprint: &ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint dusclops.png
+          cry: &ruby-sapphire.pokemon.dusclops.forms.dusclops.cry gen5/dusclops-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.dusclops.evolution_parent duskull/duskull
+      evolution_conditions: &ruby-sapphire.pokemon.dusclops.evolution_conditions
+        level-up:
+          minimum_level: 37
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    dusclops:
+      name: DUSCLOPS
+      default: *ruby-sapphire.pokemon.dusclops.default
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      experience: *ruby-sapphire.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      stats: *ruby-sapphire.pokemon.dusclops.stats
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      abilities: *ruby-sapphire.pokemon.dusclops.abilities
+      genus: *ruby-sapphire.pokemon.dusclops.genus
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      flavor_text:
+        emerald: |
+          It is thought that its body is hollow with
+          only a spectral ball of fire burning inside.
+          However, no one has been able to
+          confirm this theory as fact.
+      forms:
+        dusclops:
+          name: DUSCLOPS
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *ruby-sapphire.pokemon.dusclops.forms.dusclops.icon
+          sprites:
+            - emerald/dusclops-default.png
+            - emerald/shiny/dusclops-default.png
+            - emerald/animated/dusclops-default.webm
+            - emerald/animated/shiny/dusclops-default.webm
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 79
+  pokemon:
+    dusclops:
+      name: DUSCLOPS
+      default: *ruby-sapphire.pokemon.dusclops.default
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      experience: *ruby-sapphire.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      stats: *ruby-sapphire.pokemon.dusclops.stats
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      abilities: *ruby-sapphire.pokemon.dusclops.abilities
+      genus: *ruby-sapphire.pokemon.dusclops.genus
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      forms:
+        dusclops:
+          name: DUSCLOPS
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          sprites:
+            - colosseum/dusclops-default.png
+            - colosseum/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    dusclops:
+      name: DUSCLOPS
+      default: *ruby-sapphire.pokemon.dusclops.default
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      experience: *ruby-sapphire.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      stats: *ruby-sapphire.pokemon.dusclops.stats
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      abilities: *ruby-sapphire.pokemon.dusclops.abilities
+      genus: *ruby-sapphire.pokemon.dusclops.genus
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      forms:
+        dusclops:
+          name: DUSCLOPS
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          sprites:
+            - xd/dusclops-default.png
+            - xd/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    dusclops:
+      name: DUSCLOPS
+      default: *ruby-sapphire.pokemon.dusclops.default
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      experience: *ruby-sapphire.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      stats: *ruby-sapphire.pokemon.dusclops.stats
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      abilities: *ruby-sapphire.pokemon.dusclops.abilities
+      genus: *ruby-sapphire.pokemon.dusclops.genus
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      flavor_text:
+        firered: |
+          Its body is entirely hollow. When it opens
+          its mouth, it sucks everything in as if it
+          were a black hole.
+        leafgreen: |
+          Its body is entirely hollow. When it opens
+          its mouth, it sucks everything in as if it
+          were a black hole.
+      forms:
+        dusclops:
+          name: DUSCLOPS
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *ruby-sapphire.pokemon.dusclops.forms.dusclops.icon
+          sprites:
+            - firered-leafgreen/dusclops-default.png
+            - firered-leafgreen/back/dusclops-default.png
+            - firered-leafgreen/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Dusclops
+  position: &diamond-pearl.position 384
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    dusclops:
+      genus: &diamond-pearl.pokemon.dusclops.genus 'Beckon Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      shape: &diamond-pearl.pokemon.dusclops.shape humanoid
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: &diamond-pearl.pokemon.dusclops.baby false
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      pal_park: &diamond-pearl.pokemon.dusclops.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: &diamond-pearl.pokemon.dusclops.experience 159
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      stats: &diamond-pearl.pokemon.dusclops.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 130
+          effort_change: 1
+        speed:
+          base_value: 25
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 130
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.dusclops.abilities
+        pressure: *ruby-sapphire.pokemon.dusclops.abilities.pressure
+        frisk:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+          kasib-berry: 5
+        pearl: *diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its body is hollow. It is said that
+          those who look into its body are
+          sucked into the void.
+        pearl: |
+          Its body is hollow. It is said that
+          those who look into its body are
+          sucked into the void.
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *ruby-sapphire.pokemon.dusclops.forms.dusclops.icon
+          sprites:
+            - diamond-pearl/dusclops-default.png
+            - diamond-pearl/back/dusclops-default.png
+            - diamond-pearl/back/shiny/dusclops-default.png
+            - diamond-pearl/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    extended-sinnoh: 190
+  pokemon:
+    dusclops:
+      genus: *diamond-pearl.pokemon.dusclops.genus
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      shape: *diamond-pearl.pokemon.dusclops.shape
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: *diamond-pearl.pokemon.dusclops.baby
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      pal_park: *diamond-pearl.pokemon.dusclops.pal_park
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: *diamond-pearl.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      stats: *diamond-pearl.pokemon.dusclops.stats
+      abilities: *diamond-pearl.pokemon.dusclops.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      flavor_text:
+        platinum: |
+          It seeks drifting will-o’-the-wisps
+          and sucks them into its empty body.
+          What happens inside is a mystery.
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *ruby-sapphire.pokemon.dusclops.forms.dusclops.icon
+          sprites:
+            - platinum/dusclops-default.png
+            - platinum/back/dusclops-default.png
+            - platinum/back/shiny/dusclops-default.png
+            - platinum/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    dusclops:
+      genus: *diamond-pearl.pokemon.dusclops.genus
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      shape: *diamond-pearl.pokemon.dusclops.shape
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: *diamond-pearl.pokemon.dusclops.baby
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      pal_park: *diamond-pearl.pokemon.dusclops.pal_park
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: *diamond-pearl.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      stats: *diamond-pearl.pokemon.dusclops.stats
+      abilities: *diamond-pearl.pokemon.dusclops.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Anyone who dares peer into its body
+          to see its spectral ball of fire
+          will have their spirit stolen away.
+        soulsilver: |
+          Anyone who dares peer into its body
+          to see its spectral ball of fire
+          will have their spirit stolen away.
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.dusclops.forms.dusclops.icon
+          sprites:
+            - heartgold-soulsilver/dusclops-default.png
+            - heartgold-soulsilver/back/dusclops-default.png
+            - heartgold-soulsilver/back/shiny/dusclops-default.png
+            - heartgold-soulsilver/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    dusclops:
+      genus: *diamond-pearl.pokemon.dusclops.genus
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      color: &black-white.pokemon.dusclops.color black
+      shape: *diamond-pearl.pokemon.dusclops.shape
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: *diamond-pearl.pokemon.dusclops.baby
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: *diamond-pearl.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      stats: *diamond-pearl.pokemon.dusclops.stats
+      abilities: *diamond-pearl.pokemon.dusclops.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      flavor_text:
+        black: |
+          It seeks drifting will-o’-the-wisps
+          and sucks them into its empty body.
+          What happens inside is a mystery.
+        white: |
+          It seeks drifting will-o’-the-wisps
+          and sucks them into its empty body.
+          What happens inside is a mystery.
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *ruby-sapphire.pokemon.dusclops.forms.dusclops.icon
+          sprites:
+            - black-white/dusclops-default.png
+            - black-white/back/dusclops-default.png
+            - black-white/back/shiny/dusclops-default.png
+            - black-white/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    dusclops:
+      genus: *diamond-pearl.pokemon.dusclops.genus
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      color: *black-white.pokemon.dusclops.color
+      shape: *diamond-pearl.pokemon.dusclops.shape
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: *diamond-pearl.pokemon.dusclops.baby
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: *diamond-pearl.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      stats: *diamond-pearl.pokemon.dusclops.stats
+      abilities: *diamond-pearl.pokemon.dusclops.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.dusclops.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      flavor_text:
+        black-2: |
+          It seeks drifting will-o’-the-wisps
+          and sucks them into its empty body.
+          What happens inside is a mystery.
+        white-2: |
+          It seeks drifting will-o’-the-wisps
+          and sucks them into its empty body.
+          What happens inside is a mystery.
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *ruby-sapphire.pokemon.dusclops.forms.dusclops.icon
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *ruby-sapphire.pokemon.dusclops.forms.dusclops.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    dusclops:
+      genus: *diamond-pearl.pokemon.dusclops.genus
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      color: *black-white.pokemon.dusclops.color
+      shape: *diamond-pearl.pokemon.dusclops.shape
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: *diamond-pearl.pokemon.dusclops.baby
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: *diamond-pearl.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      mega: &x-y.pokemon.dusclops.mega false
+      stats: *diamond-pearl.pokemon.dusclops.stats
+      abilities: *diamond-pearl.pokemon.dusclops.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      flavor_text:
+        x: |
+          Anyone who dares peer into its body to see its
+          spectral ball of fire will have their spirit stolen away.
+        'y': |
+          Its body is hollow. It is said that those who look
+          into its body are sucked into the void.
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: &x-y.pokemon.dusclops.forms.dusclops.icon dusclops-default.png
+          sprites:
+            - x-y/dusclops-default.png
+            - x-y/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: &x-y.pokemon.dusclops.forms.dusclops.cry dusclops-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 154
+  pokemon:
+    dusclops:
+      genus: *diamond-pearl.pokemon.dusclops.genus
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      color: *black-white.pokemon.dusclops.color
+      shape: *diamond-pearl.pokemon.dusclops.shape
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: *diamond-pearl.pokemon.dusclops.baby
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: *diamond-pearl.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      mega: *x-y.pokemon.dusclops.mega
+      stats: *diamond-pearl.pokemon.dusclops.stats
+      abilities: *diamond-pearl.pokemon.dusclops.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Dusclops’s body is completely hollow—there is nothing at all
+          inside. It is said that its body is like a black hole. This
+          Pokémon will absorb anything into its body, but nothing will
+          ever come back out.
+        alpha-sapphire: |
+          Dusclops absorbs anything, however large the object may be.
+          This Pokémon hypnotizes its foe by waving its hands in a
+          macabre manner and by bringing its single eye to bear.
+          The hypnotized foe is made to do Dusclops’s bidding.
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *x-y.pokemon.dusclops.forms.dusclops.icon
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *x-y.pokemon.dusclops.forms.dusclops.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/dusclops-default.png
+            - omega-ruby-alpha-sapphire/shiny/dusclops-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    dusclops:
+      genus: *diamond-pearl.pokemon.dusclops.genus
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      color: *black-white.pokemon.dusclops.color
+      shape: *diamond-pearl.pokemon.dusclops.shape
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: *diamond-pearl.pokemon.dusclops.baby
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: *diamond-pearl.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      mega: *x-y.pokemon.dusclops.mega
+      stats: *diamond-pearl.pokemon.dusclops.stats
+      abilities: *diamond-pearl.pokemon.dusclops.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *x-y.pokemon.dusclops.forms.dusclops.icon
+          sprites:
+            - sun-moon/dusclops-default.png
+            - sun-moon/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *x-y.pokemon.dusclops.forms.dusclops.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    dusclops:
+      genus: *diamond-pearl.pokemon.dusclops.genus
+      evolution_parent: *ruby-sapphire.pokemon.dusclops.evolution_parent
+      color: *black-white.pokemon.dusclops.color
+      shape: *diamond-pearl.pokemon.dusclops.shape
+      female_rate: *ruby-sapphire.pokemon.dusclops.female_rate
+      capture_rate: *ruby-sapphire.pokemon.dusclops.capture_rate
+      happiness: *ruby-sapphire.pokemon.dusclops.happiness
+      baby: *diamond-pearl.pokemon.dusclops.baby
+      hatch_steps: *ruby-sapphire.pokemon.dusclops.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.dusclops.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dusclops.forms_switchable
+      name: Dusclops
+      default: *ruby-sapphire.pokemon.dusclops.default
+      height: *ruby-sapphire.pokemon.dusclops.height
+      weight: *ruby-sapphire.pokemon.dusclops.weight
+      experience: *diamond-pearl.pokemon.dusclops.experience
+      types: *ruby-sapphire.pokemon.dusclops.types
+      egg_groups: *ruby-sapphire.pokemon.dusclops.egg_groups
+      mega: *x-y.pokemon.dusclops.mega
+      stats: *diamond-pearl.pokemon.dusclops.stats
+      abilities: *diamond-pearl.pokemon.dusclops.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.dusclops.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.dusclops.evolution_conditions
+      forms:
+        dusclops:
+          name: Dusclops
+          form_name: *ruby-sapphire.pokemon.dusclops.forms.dusclops.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.dusclops.forms.dusclops.battle_only
+          icon: *x-y.pokemon.dusclops.forms.dusclops.icon
+          sprites:
+            - ultra-sun-ultra-moon/dusclops-default.png
+            - ultra-sun-ultra-moon/shiny/dusclops-default.png
+          art: *ruby-sapphire.pokemon.dusclops.forms.dusclops.art
+          footprint: *ruby-sapphire.pokemon.dusclops.forms.dusclops.footprint
+          cry: *x-y.pokemon.dusclops.forms.dusclops.cry

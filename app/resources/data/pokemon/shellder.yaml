@@ -1,0 +1,961 @@
+red-blue:
+  name: &red-blue.name SHELLDER
+  position: &red-blue.position 90
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 90
+    kanto: 90
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: &red-blue.pokemon.shellder.default true
+      capture_rate: &red-blue.pokemon.shellder.capture_rate 190
+      experience: &red-blue.pokemon.shellder.experience 97
+      types: &red-blue.pokemon.shellder.types
+        - water
+      stats: &red-blue.pokemon.shellder.stats
+        hp:
+          base_value: 30
+          effort_change: 30
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 40
+          effort_change: 40
+        special:
+          base_value: 45
+          effort_change: 45
+      growth_rate: &red-blue.pokemon.shellder.growth_rate slow
+      genus: &red-blue.pokemon.shellder.genus 'BIVALVE Pokémon'
+      height: &red-blue.pokemon.shellder.height 3
+      weight: &red-blue.pokemon.shellder.weight 408
+      flavor_text:
+        red: |
+          Its hard shell
+          repels any kind
+          of attack.
+          It is vulnerable
+          only when its
+          shell is open.
+        blue: |
+          Its hard shell
+          repels any kind
+          of attack.
+          It is vulnerable
+          only when its
+          shell is open.
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: &red-blue.pokemon.shellder.forms.shellder.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.shellder.forms.shellder.battle_only false
+          sprites:
+            - red-blue/shellder-default.png
+            - red-blue/gray/shellder-default.png
+            - red-blue/back/shellder-default.png
+          art: &red-blue.pokemon.shellder.forms.shellder.art
+            - shellder-default.png
+          cry: &red-blue.pokemon.shellder.forms.shellder.cry gen5/shellder-default.webm
+          icon: &red-blue.pokemon.shellder.forms.shellder.icon gen1/helix.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: *red-blue.pokemon.shellder.default
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      experience: *red-blue.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      stats: *red-blue.pokemon.shellder.stats
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      genus: *red-blue.pokemon.shellder.genus
+      height: *red-blue.pokemon.shellder.height
+      weight: *red-blue.pokemon.shellder.weight
+      flavor_text:
+        yellow: |
+          The shell can
+          withstand any
+          attack. However,
+          when it is open,
+           the tender body
+          is exposed.
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          sprites:
+            - yellow/shellder-default.png
+            - yellow/gray/shellder-default.png
+            - yellow/back/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+          icon: *red-blue.pokemon.shellder.forms.shellder.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 89
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 168
+    original-johto-abc: 182
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: *red-blue.pokemon.shellder.default
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      experience: *red-blue.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      stats: &gold-silver.pokemon.shellder.stats
+        hp:
+          base_value: 30
+          effort_change: 30
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 100
+          effort_change: 100
+        speed:
+          base_value: 40
+          effort_change: 40
+        special-attack:
+          base_value: 45
+          effort_change: 45
+        special-defense:
+          base_value: 25
+          effort_change: 45
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      female_rate: &gold-silver.pokemon.shellder.female_rate 50
+      hatch_steps: &gold-silver.pokemon.shellder.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.shellder.egg_groups
+        - water3
+      wild_held_items:
+        gold: &gold-silver.pokemon.shellder.wild_held_items.gold
+          pearl: 23
+          big-pearl: 2
+        silver: *gold-silver.pokemon.shellder.wild_held_items.gold
+      genus: *red-blue.pokemon.shellder.genus
+      height: *red-blue.pokemon.shellder.height
+      weight: &gold-silver.pokemon.shellder.weight 40
+      flavor_text:
+        gold: |
+          It swims facing
+          backward by open-
+          ing and closing
+          its two-piece
+          shell. It is
+          surprisingly fast.
+        silver: |
+          Grains of sand
+          trapped in its
+          shells mix with
+          its body fluids to
+          form beautiful
+          pearls.
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          sprites:
+            - gold-silver/shellder-default.png
+            - gold-silver/back/shellder-default.png
+            - gold-silver/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+          icon: &gold-silver.pokemon.shellder.forms.shellder.icon gen2/shell.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: *red-blue.pokemon.shellder.default
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      experience: *red-blue.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      stats: *gold-silver.pokemon.shellder.stats
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.shellder.wild_held_items.gold
+      genus: *red-blue.pokemon.shellder.genus
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      flavor_text:
+        crystal: |
+          Clamping on to an
+          opponent reveals
+          its vulnerable
+          parts, so it uses
+          this move only as
+          a last resort.
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          sprites:
+            - crystal/shellder-default.png
+            - crystal/back/shellder-default.png
+            - crystal/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+          icon: *gold-silver.pokemon.shellder.forms.shellder.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 260
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: *red-blue.pokemon.shellder.default
+      forms_switchable: &ruby-sapphire.pokemon.shellder.forms_switchable false
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      experience: *red-blue.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      stats: &ruby-sapphire.pokemon.shellder.stats
+        hp:
+          base_value: 30
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 1
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 30
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+          pearl: 50
+          big-pearl: 5
+        sapphire: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.shellder.happiness 70
+      abilities: &ruby-sapphire.pokemon.shellder.abilities
+        shell-armor: &ruby-sapphire.pokemon.shellder.abilities.shell-armor
+          hidden: &ruby-sapphire.pokemon.shellder.abilities.shell-armor.hidden false
+          position: 1
+      genus: *red-blue.pokemon.shellder.genus
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      flavor_text:
+        ruby: |
+          At night, this POKéMON uses its broad
+          tongue to burrow a hole in the seafloor
+          sand and then sleep in it.
+          While it is sleeping, SHELLDER closes its
+          shell, but leaves its tongue hanging
+          out.
+        sapphire: |
+          At night, this POKéMON uses its broad
+          tongue to burrow a hole in the seafloor
+          sand and then sleep in it.
+          While it is sleeping, SHELLDER closes its
+          shell, but leaves its tongue hanging
+          out.
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: &ruby-sapphire.pokemon.shellder.forms.shellder.icon gen5/shellder-default.png
+          sprites:
+            - ruby-sapphire/shellder-default.png
+            - ruby-sapphire/back/shellder-default.png
+            - ruby-sapphire/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: &ruby-sapphire.pokemon.shellder.forms.shellder.footprint shellder.png
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: *red-blue.pokemon.shellder.default
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      experience: *red-blue.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      stats: *ruby-sapphire.pokemon.shellder.stats
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      abilities: *ruby-sapphire.pokemon.shellder.abilities
+      genus: *red-blue.pokemon.shellder.genus
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      flavor_text:
+        emerald: |
+          At night, it burrows a hole in the seafloor
+          with its broad tongue to make a place to
+          sleep. While asleep, it closes its shell,
+          but leaves its tongue hanging out.
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *ruby-sapphire.pokemon.shellder.forms.shellder.icon
+          sprites:
+            - emerald/shellder-default.png
+            - emerald/shiny/shellder-default.png
+            - emerald/animated/shellder-default.webm
+            - emerald/animated/shiny/shellder-default.webm
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 293
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: *red-blue.pokemon.shellder.default
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      experience: *red-blue.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      stats: *ruby-sapphire.pokemon.shellder.stats
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      abilities: *ruby-sapphire.pokemon.shellder.abilities
+      genus: *red-blue.pokemon.shellder.genus
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          sprites:
+            - colosseum/shellder-default.png
+            - colosseum/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: *red-blue.pokemon.shellder.default
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      experience: *red-blue.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      stats: *ruby-sapphire.pokemon.shellder.stats
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      abilities: *ruby-sapphire.pokemon.shellder.abilities
+      genus: *red-blue.pokemon.shellder.genus
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          sprites:
+            - xd/shellder-default.png
+            - xd/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    shellder:
+      name: SHELLDER
+      default: *red-blue.pokemon.shellder.default
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      experience: *red-blue.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      stats: *ruby-sapphire.pokemon.shellder.stats
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      abilities: *ruby-sapphire.pokemon.shellder.abilities
+      genus: *red-blue.pokemon.shellder.genus
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      flavor_text:
+        firered: |
+          It is encased in a shell that is harder
+          than diamond. Inside, however,  it is
+          surprisingly tender.
+        leafgreen: |
+          Its hard shell repels any kind of attack.
+          It is vulnerable only when its shell is
+          open.
+      forms:
+        shellder:
+          name: SHELLDER
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *ruby-sapphire.pokemon.shellder.forms.shellder.icon
+          sprites:
+            - firered-leafgreen/shellder-default.png
+            - firered-leafgreen/back/shellder-default.png
+            - firered-leafgreen/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+diamond-pearl:
+  name: &diamond-pearl.name Shellder
+  position: &diamond-pearl.position 98
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    shellder:
+      genus: &diamond-pearl.pokemon.shellder.genus 'Bivalve Pokémon'
+      shape: &diamond-pearl.pokemon.shellder.shape ball
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: &diamond-pearl.pokemon.shellder.baby false
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      pal_park: &diamond-pearl.pokemon.shellder.pal_park
+        area: sea
+        rate: 30
+        score: 50
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: &diamond-pearl.pokemon.shellder.experience 61
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      stats: &diamond-pearl.pokemon.shellder.stats
+        hp:
+          base_value: 30
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 100
+          effort_change: 1
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 25
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.shellder.abilities
+        shell-armor: *ruby-sapphire.pokemon.shellder.abilities.shell-armor
+        skill-link: &diamond-pearl.pokemon.shellder.abilities.skill-link
+          hidden: *ruby-sapphire.pokemon.shellder.abilities.shell-armor.hidden
+          position: 2
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          It swims backward by opening and
+          closing its two shells. Its large
+          tongue is always kept hanging out.
+        pearl: |
+          It swims backward by opening and
+          closing its two shells. Its large
+          tongue is always kept hanging out.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *ruby-sapphire.pokemon.shellder.forms.shellder.icon
+          sprites:
+            - diamond-pearl/shellder-default.png
+            - diamond-pearl/back/shellder-default.png
+            - diamond-pearl/back/shiny/shellder-default.png
+            - diamond-pearl/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shellder:
+      genus: *diamond-pearl.pokemon.shellder.genus
+      shape: *diamond-pearl.pokemon.shellder.shape
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: *diamond-pearl.pokemon.shellder.baby
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shellder.pal_park
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: *diamond-pearl.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      stats: *diamond-pearl.pokemon.shellder.stats
+      abilities: *diamond-pearl.pokemon.shellder.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          It swims backward by opening and
+          closing its two shells. Its large
+          tongue is always kept hanging out.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *ruby-sapphire.pokemon.shellder.forms.shellder.icon
+          sprites:
+            - platinum/shellder-default.png
+            - platinum/back/shellder-default.png
+            - platinum/back/shiny/shellder-default.png
+            - platinum/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 171
+  pokemon:
+    shellder:
+      genus: *diamond-pearl.pokemon.shellder.genus
+      shape: *diamond-pearl.pokemon.shellder.shape
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: *diamond-pearl.pokemon.shellder.baby
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shellder.pal_park
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: *diamond-pearl.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      stats: *diamond-pearl.pokemon.shellder.stats
+      abilities: *diamond-pearl.pokemon.shellder.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          It swims facing backward by opening
+          and closing its two-piece shell.
+          It is surprisingly fast.
+        soulsilver: |
+          Grains of sand trapped in its
+          shells mix with its body fluids to
+          form beautiful pearls.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 3
+              range: 2-4
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.shellder.forms.shellder.icon
+          sprites:
+            - heartgold-soulsilver/shellder-default.png
+            - heartgold-soulsilver/back/shellder-default.png
+            - heartgold-soulsilver/back/shiny/shellder-default.png
+            - heartgold-soulsilver/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shellder:
+      genus: *diamond-pearl.pokemon.shellder.genus
+      color: &black-white.pokemon.shellder.color purple
+      shape: *diamond-pearl.pokemon.shellder.shape
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: *diamond-pearl.pokemon.shellder.baby
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: *diamond-pearl.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      stats: *diamond-pearl.pokemon.shellder.stats
+      abilities: &black-white.pokemon.shellder.abilities
+        shell-armor: *ruby-sapphire.pokemon.shellder.abilities.shell-armor
+        skill-link: *diamond-pearl.pokemon.shellder.abilities.skill-link
+        overcoat:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      flavor_text:
+        black: |
+          It swims backward by opening and
+          closing its two shells. Its large
+          tongue is always kept hanging out.
+        white: |
+          It swims backward by opening and
+          closing its two shells. Its large
+          tongue is always kept hanging out.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *ruby-sapphire.pokemon.shellder.forms.shellder.icon
+          sprites:
+            - black-white/shellder-default.png
+            - black-white/back/shellder-default.png
+            - black-white/back/shiny/shellder-default.png
+            - black-white/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shellder:
+      genus: *diamond-pearl.pokemon.shellder.genus
+      color: *black-white.pokemon.shellder.color
+      shape: *diamond-pearl.pokemon.shellder.shape
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: *diamond-pearl.pokemon.shellder.baby
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: *diamond-pearl.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      stats: *diamond-pearl.pokemon.shellder.stats
+      abilities: *black-white.pokemon.shellder.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          It swims backward by opening and
+          closing its two shells. Its large
+          tongue is always kept hanging out.
+        white-2: |
+          It swims backward by opening and
+          closing its two shells. Its large
+          tongue is always kept hanging out.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *ruby-sapphire.pokemon.shellder.forms.shellder.icon
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *red-blue.pokemon.shellder.forms.shellder.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 36
+  pokemon:
+    shellder:
+      genus: *diamond-pearl.pokemon.shellder.genus
+      color: *black-white.pokemon.shellder.color
+      shape: *diamond-pearl.pokemon.shellder.shape
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: *diamond-pearl.pokemon.shellder.baby
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: *diamond-pearl.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      mega: &x-y.pokemon.shellder.mega false
+      stats: *diamond-pearl.pokemon.shellder.stats
+      abilities: *black-white.pokemon.shellder.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      flavor_text:
+        x: |
+          Its hard shell repels any kind of attack.
+          It is vulnerable only when its shell is open.
+        'y': |
+          Clamping on to an opponent reveals its vulnerable
+          parts, so it uses this move only as a last resort.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: &x-y.pokemon.shellder.forms.shellder.icon shellder-default.png
+          sprites:
+            - x-y/shellder-default.png
+            - x-y/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: &x-y.pokemon.shellder.forms.shellder.cry shellder-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    shellder:
+      genus: *diamond-pearl.pokemon.shellder.genus
+      color: *black-white.pokemon.shellder.color
+      shape: *diamond-pearl.pokemon.shellder.shape
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: *diamond-pearl.pokemon.shellder.baby
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: *diamond-pearl.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      mega: *x-y.pokemon.shellder.mega
+      stats: *diamond-pearl.pokemon.shellder.stats
+      abilities: *black-white.pokemon.shellder.abilities
+      flavor_text:
+        omega-ruby: |
+          At night, this Pokémon uses its broad tongue to burrow a hole
+          in the seafloor sand and then sleep in it. While it is sleeping,
+          Shellder closes its shell, but leaves its tongue hanging out.
+        alpha-sapphire: |
+          At night, this Pokémon uses its broad tongue to burrow a hole
+          in the seafloor sand and then sleep in it. While it is sleeping,
+          Shellder closes its shell, but leaves its tongue hanging out.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *x-y.pokemon.shellder.forms.shellder.icon
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *x-y.pokemon.shellder.forms.shellder.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shellder-default.png
+            - omega-ruby-alpha-sapphire/shiny/shellder-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 115
+    original-melemele: 115
+  pokemon:
+    shellder:
+      genus: *diamond-pearl.pokemon.shellder.genus
+      color: *black-white.pokemon.shellder.color
+      shape: *diamond-pearl.pokemon.shellder.shape
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: *diamond-pearl.pokemon.shellder.baby
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: *diamond-pearl.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      mega: *x-y.pokemon.shellder.mega
+      stats: *diamond-pearl.pokemon.shellder.stats
+      abilities: *black-white.pokemon.shellder.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      flavor_text:
+        sun: |-
+          The hardness of its shell surpasses the
+          hardness of a diamond. In days gone by,
+          people used the shells to make shields.
+        moon: |-
+          This Pokémon’s tongue is always hanging out.
+          It uses its tongue with great dexterity to dig up
+          sand from the seabed in its search for food.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *x-y.pokemon.shellder.forms.shellder.icon
+          sprites:
+            - sun-moon/shellder-default.png
+            - sun-moon/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *x-y.pokemon.shellder.forms.shellder.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 138
+    updated-melemele: 138
+  pokemon:
+    shellder:
+      genus: *diamond-pearl.pokemon.shellder.genus
+      color: *black-white.pokemon.shellder.color
+      shape: *diamond-pearl.pokemon.shellder.shape
+      female_rate: *gold-silver.pokemon.shellder.female_rate
+      capture_rate: *red-blue.pokemon.shellder.capture_rate
+      happiness: *ruby-sapphire.pokemon.shellder.happiness
+      baby: *diamond-pearl.pokemon.shellder.baby
+      hatch_steps: *gold-silver.pokemon.shellder.hatch_steps
+      growth_rate: *red-blue.pokemon.shellder.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shellder.forms_switchable
+      name: Shellder
+      default: *red-blue.pokemon.shellder.default
+      height: *red-blue.pokemon.shellder.height
+      weight: *gold-silver.pokemon.shellder.weight
+      experience: *diamond-pearl.pokemon.shellder.experience
+      types: *red-blue.pokemon.shellder.types
+      egg_groups: *gold-silver.pokemon.shellder.egg_groups
+      mega: *x-y.pokemon.shellder.mega
+      stats: *diamond-pearl.pokemon.shellder.stats
+      abilities: *black-white.pokemon.shellder.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.shellder.wild_held_items.ruby
+      flavor_text:
+        ultra-sun: |-
+          The sand that accumulates inside its shell
+          eventually becomes a pearl. But the pearl gets
+          in the way, so it spits it out and discards it.
+        ultra-moon: |-
+          Even when its shell is closed, its tongue still
+          hangs out. If you give its tongue a good yank,
+          the shock will cause Shellder to open its shell.
+      forms:
+        shellder:
+          name: Shellder
+          form_name: *red-blue.pokemon.shellder.forms.shellder.form_name
+          default: true
+          battle_only: *red-blue.pokemon.shellder.forms.shellder.battle_only
+          icon: *x-y.pokemon.shellder.forms.shellder.icon
+          sprites:
+            - ultra-sun-ultra-moon/shellder-default.png
+            - ultra-sun-ultra-moon/shiny/shellder-default.png
+          art: *red-blue.pokemon.shellder.forms.shellder.art
+          footprint: *ruby-sapphire.pokemon.shellder.forms.shellder.footprint
+          cry: *x-y.pokemon.shellder.forms.shellder.cry

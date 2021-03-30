@@ -1,0 +1,856 @@
+gold-silver:
+  name: &gold-silver.name PILOSWINE
+  position: &gold-silver.position 220
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 221
+    original-johto: 191
+    original-johto-abc: 150
+  pokemon:
+    piloswine:
+      name: PILOSWINE
+      default: &gold-silver.pokemon.piloswine.default true
+      capture_rate: &gold-silver.pokemon.piloswine.capture_rate 75
+      experience: &gold-silver.pokemon.piloswine.experience 160
+      types: &gold-silver.pokemon.piloswine.types
+        - ice
+        - ground
+      stats: &gold-silver.pokemon.piloswine.stats
+        hp:
+          base_value: 100
+          effort_change: 100
+        attack:
+          base_value: 100
+          effort_change: 100
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 50
+          effort_change: 50
+        special-attack:
+          base_value: 60
+          effort_change: 60
+        special-defense:
+          base_value: 60
+          effort_change: 60
+      growth_rate: &gold-silver.pokemon.piloswine.growth_rate slow
+      female_rate: &gold-silver.pokemon.piloswine.female_rate 50
+      hatch_steps: &gold-silver.pokemon.piloswine.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.piloswine.egg_groups
+        - ground
+      genus: &gold-silver.pokemon.piloswine.genus 'SWINE Pokémon'
+      height: &gold-silver.pokemon.piloswine.height 10
+      weight: &gold-silver.pokemon.piloswine.weight 557
+      flavor_text:
+        gold: |
+          Because the long
+          hair all over its
+          body obscures its
+          sight, it just
+          keeps charging
+          repeatedly.
+        silver: |
+          If it charges at
+          an enemy, the
+          hairs on its back
+          stand up straight.
+          It is very sensi-
+          tive to sound.
+      evolution_parent: &gold-silver.pokemon.piloswine.evolution_parent swinub/swinub
+      evolution_conditions: &gold-silver.pokemon.piloswine.evolution_conditions
+        level-up:
+          minimum_level: 33
+      forms:
+        piloswine:
+          name: PILOSWINE
+          form_name: &gold-silver.pokemon.piloswine.forms.piloswine.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.piloswine.forms.piloswine.battle_only false
+          sprites:
+            - gold-silver/piloswine-default.png
+            - gold-silver/back/piloswine-default.png
+            - gold-silver/shiny/piloswine-default.png
+          art: &gold-silver.pokemon.piloswine.forms.piloswine.art
+            - piloswine-default.png
+          cry: &gold-silver.pokemon.piloswine.forms.piloswine.cry gen5/piloswine-default.webm
+          icon: &gold-silver.pokemon.piloswine.forms.piloswine.icon gen2/equine.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    piloswine:
+      name: PILOSWINE
+      default: *gold-silver.pokemon.piloswine.default
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      experience: *gold-silver.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      stats: *gold-silver.pokemon.piloswine.stats
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      genus: *gold-silver.pokemon.piloswine.genus
+      height: *gold-silver.pokemon.piloswine.height
+      weight: *gold-silver.pokemon.piloswine.weight
+      flavor_text:
+        crystal: |
+          Although its legs
+          are short, its
+          rugged hooves
+          prevent it from
+          slipping, even on
+          icy ground.
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      forms:
+        piloswine:
+          name: PILOSWINE
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          sprites:
+            - crystal/piloswine-default.png
+            - crystal/back/piloswine-default.png
+            - crystal/shiny/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+          icon: *gold-silver.pokemon.piloswine.forms.piloswine.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 221
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 361
+  pokemon:
+    piloswine:
+      name: PILOSWINE
+      default: *gold-silver.pokemon.piloswine.default
+      forms_switchable: &ruby-sapphire.pokemon.piloswine.forms_switchable false
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      experience: *gold-silver.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      stats: &ruby-sapphire.pokemon.piloswine.stats
+        hp:
+          base_value: 100
+          effort_change: 1
+        attack:
+          base_value: 100
+          effort_change: 1
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      happiness: &ruby-sapphire.pokemon.piloswine.happiness 70
+      abilities: &ruby-sapphire.pokemon.piloswine.abilities
+        oblivious: &ruby-sapphire.pokemon.piloswine.abilities.oblivious
+          hidden: &ruby-sapphire.pokemon.piloswine.abilities.oblivious.hidden false
+          position: 1
+      genus: *gold-silver.pokemon.piloswine.genus
+      height: &ruby-sapphire.pokemon.piloswine.height 11
+      weight: &ruby-sapphire.pokemon.piloswine.weight 558
+      flavor_text:
+        ruby: |
+          PILOSWINE is covered by a thick coat
+          of long hair that enables it to endure
+          the freezing cold.
+          This POKéMON uses its tusks to dig up
+           food that has been buried under ice.
+        sapphire: |
+          PILOSWINE is covered by a thick coat
+          of long hair that enables it to endure
+          the freezing cold.
+          This POKéMON uses its tusks to dig up
+           food that has been buried under ice.
+      forms:
+        piloswine:
+          name: PILOSWINE
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: &ruby-sapphire.pokemon.piloswine.forms.piloswine.icon gen5/piloswine-default.png
+          sprites:
+            - ruby-sapphire/piloswine-default.png
+            - ruby-sapphire/back/piloswine-default.png
+            - ruby-sapphire/shiny/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: &ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint piloswine.png
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    piloswine:
+      name: PILOSWINE
+      default: *gold-silver.pokemon.piloswine.default
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      experience: *gold-silver.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      stats: *ruby-sapphire.pokemon.piloswine.stats
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      abilities: *ruby-sapphire.pokemon.piloswine.abilities
+      genus: *gold-silver.pokemon.piloswine.genus
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      flavor_text:
+        emerald: |
+          A PILOSWINE is covered by a thick coat
+          of long hair for enduring freezing cold.
+          It uses its tusks to dig up food that has
+          been buried under ice.
+      forms:
+        piloswine:
+          name: PILOSWINE
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *ruby-sapphire.pokemon.piloswine.forms.piloswine.icon
+          sprites:
+            - emerald/piloswine-default.png
+            - emerald/shiny/piloswine-default.png
+            - emerald/animated/piloswine-default.webm
+            - emerald/animated/shiny/piloswine-default.webm
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 243
+  pokemon:
+    piloswine:
+      name: PILOSWINE
+      default: *gold-silver.pokemon.piloswine.default
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      experience: *gold-silver.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      stats: *ruby-sapphire.pokemon.piloswine.stats
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      abilities: *ruby-sapphire.pokemon.piloswine.abilities
+      genus: *gold-silver.pokemon.piloswine.genus
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      forms:
+        piloswine:
+          name: PILOSWINE
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          sprites:
+            - colosseum/piloswine-default.png
+            - colosseum/shiny/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    piloswine:
+      name: PILOSWINE
+      default: *gold-silver.pokemon.piloswine.default
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      experience: *gold-silver.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      stats: *ruby-sapphire.pokemon.piloswine.stats
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      abilities: *ruby-sapphire.pokemon.piloswine.abilities
+      genus: *gold-silver.pokemon.piloswine.genus
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      forms:
+        piloswine:
+          name: PILOSWINE
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          sprites:
+            - xd/piloswine-default.png
+            - xd/shiny/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    piloswine:
+      name: PILOSWINE
+      default: *gold-silver.pokemon.piloswine.default
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      experience: *gold-silver.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      stats: *ruby-sapphire.pokemon.piloswine.stats
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.piloswine.wild_held_items.firered
+          aspear-berry: 50
+          nevermeltice: 5
+        leafgreen: *firered-leafgreen.pokemon.piloswine.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      abilities: *ruby-sapphire.pokemon.piloswine.abilities
+      genus: *gold-silver.pokemon.piloswine.genus
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      flavor_text:
+        firered: |
+          If it charges at an enemy, the hairs on
+          its back stand up straight.  It is very
+          sensitive to sound.
+        leafgreen: |
+          Because the long hair all over its body
+          obscures its sight, it just keeps charging
+          repeatedly.
+      forms:
+        piloswine:
+          name: PILOSWINE
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *ruby-sapphire.pokemon.piloswine.forms.piloswine.icon
+          sprites:
+            - firered-leafgreen/piloswine-default.png
+            - firered-leafgreen/back/piloswine-default.png
+            - firered-leafgreen/shiny/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Piloswine
+  position: &diamond-pearl.position 252
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    piloswine:
+      genus: &diamond-pearl.pokemon.piloswine.genus 'Swine Pokémon'
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      shape: &diamond-pearl.pokemon.piloswine.shape quadruped
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: &diamond-pearl.pokemon.piloswine.baby false
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      pal_park: &diamond-pearl.pokemon.piloswine.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: &diamond-pearl.pokemon.piloswine.experience 158
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      stats: &diamond-pearl.pokemon.piloswine.stats
+        hp:
+          base_value: 100
+          effort_change: 1
+        attack:
+          base_value: 100
+          effort_change: 1
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.piloswine.abilities
+        oblivious: *ruby-sapphire.pokemon.piloswine.abilities.oblivious
+        snow-cloak:
+          hidden: *ruby-sapphire.pokemon.piloswine.abilities.oblivious.hidden
+          position: 2
+        thick-fat:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its shaggy coat makes it unable
+          to see. It checks surroundings
+          with its sensitive nose instead.
+        pearl: |
+          Its shaggy coat makes it unable
+          to see. It checks surroundings
+          with its sensitive nose instead.
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *ruby-sapphire.pokemon.piloswine.forms.piloswine.icon
+          sprites:
+            - diamond-pearl/piloswine-default.png
+            - diamond-pearl/back/piloswine-default.png
+            - diamond-pearl/back/female/piloswine-default.png
+            - diamond-pearl/back/shiny/piloswine-default.png
+            - diamond-pearl/female/piloswine-default.png
+            - diamond-pearl/shiny/piloswine-default.png
+            - diamond-pearl/shiny/female/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 204
+  pokemon:
+    piloswine:
+      genus: *diamond-pearl.pokemon.piloswine.genus
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      shape: *diamond-pearl.pokemon.piloswine.shape
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: *diamond-pearl.pokemon.piloswine.baby
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      pal_park: *diamond-pearl.pokemon.piloswine.pal_park
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: *diamond-pearl.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      stats: *diamond-pearl.pokemon.piloswine.stats
+      abilities: *diamond-pearl.pokemon.piloswine.abilities
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      flavor_text:
+        platinum: |
+          Covered by a shaggy coat, it is
+          strong against the cold. Its tusks
+          of ice thicken when it snows.
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *ruby-sapphire.pokemon.piloswine.forms.piloswine.icon
+          sprites:
+            - platinum/piloswine-default.png
+            - platinum/back/piloswine-default.png
+            - platinum/back/female/piloswine-default.png
+            - platinum/back/shiny/piloswine-default.png
+            - platinum/female/piloswine-default.png
+            - platinum/shiny/piloswine-default.png
+            - platinum/shiny/female/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 196
+  pokemon:
+    piloswine:
+      genus: *diamond-pearl.pokemon.piloswine.genus
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      shape: *diamond-pearl.pokemon.piloswine.shape
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: *diamond-pearl.pokemon.piloswine.baby
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      pal_park: *diamond-pearl.pokemon.piloswine.pal_park
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: *diamond-pearl.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      stats: *diamond-pearl.pokemon.piloswine.stats
+      abilities: *diamond-pearl.pokemon.piloswine.abilities
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Because the long hair all over its
+          body obscures its sight, it just
+          keeps charging repeatedly.
+        soulsilver: |
+          If it charges at an enemy, the
+          hairs on its back stand up straight.
+          It is very sensitive to sound.
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 1
+              range: 1-2
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.piloswine.forms.piloswine.icon
+          sprites:
+            - heartgold-soulsilver/piloswine-default.png
+            - heartgold-soulsilver/back/piloswine-default.png
+            - heartgold-soulsilver/back/female/piloswine-default.png
+            - heartgold-soulsilver/back/shiny/piloswine-default.png
+            - heartgold-soulsilver/female/piloswine-default.png
+            - heartgold-soulsilver/shiny/piloswine-default.png
+            - heartgold-soulsilver/shiny/female/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    piloswine:
+      genus: *diamond-pearl.pokemon.piloswine.genus
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      color: &black-white.pokemon.piloswine.color brown
+      shape: *diamond-pearl.pokemon.piloswine.shape
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: *diamond-pearl.pokemon.piloswine.baby
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: *diamond-pearl.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      stats: *diamond-pearl.pokemon.piloswine.stats
+      abilities: *diamond-pearl.pokemon.piloswine.abilities
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      flavor_text:
+        black: |
+          Covered by a shaggy coat, it is
+          strong against the cold. Its tusks
+          of ice thicken when it snows.
+        white: |
+          Covered by a shaggy coat, it is
+          strong against the cold. Its tusks
+          of ice thicken when it snows.
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *ruby-sapphire.pokemon.piloswine.forms.piloswine.icon
+          sprites:
+            - black-white/piloswine-default.png
+            - black-white/back/piloswine-default.png
+            - black-white/back/female/piloswine-default.png
+            - black-white/back/shiny/piloswine-default.png
+            - black-white/female/piloswine-default.png
+            - black-white/shiny/piloswine-default.png
+            - black-white/shiny/female/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 259
+  pokemon:
+    piloswine:
+      genus: *diamond-pearl.pokemon.piloswine.genus
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      color: *black-white.pokemon.piloswine.color
+      shape: *diamond-pearl.pokemon.piloswine.shape
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: *diamond-pearl.pokemon.piloswine.baby
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: *diamond-pearl.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      stats: *diamond-pearl.pokemon.piloswine.stats
+      abilities: *diamond-pearl.pokemon.piloswine.abilities
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      flavor_text:
+        black-2: |
+          With its excellent sense of smell,
+          it’s even able to find mushrooms that
+          are buried under frozen ground.
+        white-2: |
+          With its excellent sense of smell,
+          it’s even able to find mushrooms that
+          are buried under frozen ground.
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *ruby-sapphire.pokemon.piloswine.forms.piloswine.icon
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *gold-silver.pokemon.piloswine.forms.piloswine.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 77
+  pokemon:
+    piloswine:
+      genus: *diamond-pearl.pokemon.piloswine.genus
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      color: *black-white.pokemon.piloswine.color
+      shape: *diamond-pearl.pokemon.piloswine.shape
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: *diamond-pearl.pokemon.piloswine.baby
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: *diamond-pearl.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      mega: &x-y.pokemon.piloswine.mega false
+      stats: *diamond-pearl.pokemon.piloswine.stats
+      abilities: *diamond-pearl.pokemon.piloswine.abilities
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      flavor_text:
+        x: |
+          Although its legs are short, its rugged hooves
+          prevent it from slipping, even on icy ground.
+        'y': |
+          Because the long hair all over its body obscures its
+          sight, it just keeps charging repeatedly.
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: &x-y.pokemon.piloswine.forms.piloswine.icon piloswine-default.png
+          sprites:
+            - x-y/piloswine-default.png
+            - x-y/female/piloswine-default.png
+            - x-y/shiny/piloswine-default.png
+            - x-y/shiny/female/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: &x-y.pokemon.piloswine.forms.piloswine.cry piloswine-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    piloswine:
+      genus: *diamond-pearl.pokemon.piloswine.genus
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      color: *black-white.pokemon.piloswine.color
+      shape: *diamond-pearl.pokemon.piloswine.shape
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: *diamond-pearl.pokemon.piloswine.baby
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: *diamond-pearl.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      mega: *x-y.pokemon.piloswine.mega
+      stats: *diamond-pearl.pokemon.piloswine.stats
+      abilities: *diamond-pearl.pokemon.piloswine.abilities
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Piloswine is covered by a thick coat of long hair that enables it
+          to endure the freezing cold. This Pokémon uses its tusks to
+          dig up food that has been buried under ice.
+        alpha-sapphire: |
+          Piloswine is covered by a thick coat of long hair that enables
+          it to endure the freezing cold. This Pokémon uses its tusks to
+          dig up food that has been buried under ice.
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *x-y.pokemon.piloswine.forms.piloswine.icon
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *x-y.pokemon.piloswine.forms.piloswine.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/piloswine-default.png
+            - omega-ruby-alpha-sapphire/shiny/piloswine-default.png
+            - omega-ruby-alpha-sapphire/female/piloswine-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/piloswine-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    piloswine:
+      genus: *diamond-pearl.pokemon.piloswine.genus
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      color: *black-white.pokemon.piloswine.color
+      shape: *diamond-pearl.pokemon.piloswine.shape
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: *diamond-pearl.pokemon.piloswine.baby
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: *diamond-pearl.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      mega: *x-y.pokemon.piloswine.mega
+      stats: *diamond-pearl.pokemon.piloswine.stats
+      abilities: *diamond-pearl.pokemon.piloswine.abilities
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *x-y.pokemon.piloswine.forms.piloswine.icon
+          sprites:
+            - sun-moon/piloswine-default.png
+            - sun-moon/female/piloswine-default.png
+            - sun-moon/shiny/piloswine-default.png
+            - sun-moon/shiny/female/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *x-y.pokemon.piloswine.forms.piloswine.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    piloswine:
+      genus: *diamond-pearl.pokemon.piloswine.genus
+      evolution_parent: *gold-silver.pokemon.piloswine.evolution_parent
+      color: *black-white.pokemon.piloswine.color
+      shape: *diamond-pearl.pokemon.piloswine.shape
+      female_rate: *gold-silver.pokemon.piloswine.female_rate
+      capture_rate: *gold-silver.pokemon.piloswine.capture_rate
+      happiness: *ruby-sapphire.pokemon.piloswine.happiness
+      baby: *diamond-pearl.pokemon.piloswine.baby
+      hatch_steps: *gold-silver.pokemon.piloswine.hatch_steps
+      growth_rate: *gold-silver.pokemon.piloswine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.piloswine.forms_switchable
+      name: Piloswine
+      default: *gold-silver.pokemon.piloswine.default
+      height: *ruby-sapphire.pokemon.piloswine.height
+      weight: *ruby-sapphire.pokemon.piloswine.weight
+      experience: *diamond-pearl.pokemon.piloswine.experience
+      types: *gold-silver.pokemon.piloswine.types
+      egg_groups: *gold-silver.pokemon.piloswine.egg_groups
+      mega: *x-y.pokemon.piloswine.mega
+      stats: *diamond-pearl.pokemon.piloswine.stats
+      abilities: *diamond-pearl.pokemon.piloswine.abilities
+      evolution_conditions: *gold-silver.pokemon.piloswine.evolution_conditions
+      forms:
+        piloswine:
+          name: Piloswine
+          form_name: *gold-silver.pokemon.piloswine.forms.piloswine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.piloswine.forms.piloswine.battle_only
+          icon: *x-y.pokemon.piloswine.forms.piloswine.icon
+          sprites:
+            - ultra-sun-ultra-moon/piloswine-default.png
+            - ultra-sun-ultra-moon/female/piloswine-default.png
+            - ultra-sun-ultra-moon/shiny/piloswine-default.png
+            - ultra-sun-ultra-moon/shiny/female/piloswine-default.png
+          art: *gold-silver.pokemon.piloswine.forms.piloswine.art
+          footprint: *ruby-sapphire.pokemon.piloswine.forms.piloswine.footprint
+          cry: *x-y.pokemon.piloswine.forms.piloswine.cry

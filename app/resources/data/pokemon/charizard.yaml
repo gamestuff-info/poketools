@@ -1,0 +1,1267 @@
+red-blue:
+  name: &red-blue.name CHARIZARD
+  position: &red-blue.position 6
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 6
+    kanto: 6
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: &red-blue.pokemon.charizard.default true
+      capture_rate: &red-blue.pokemon.charizard.capture_rate 45
+      experience: &red-blue.pokemon.charizard.experience 209
+      types: &red-blue.pokemon.charizard.types
+        - fire
+        - flying
+      stats: &red-blue.pokemon.charizard.stats
+        hp:
+          base_value: 78
+          effort_change: 78
+        attack:
+          base_value: 84
+          effort_change: 84
+        defense:
+          base_value: 78
+          effort_change: 78
+        speed:
+          base_value: 100
+          effort_change: 100
+        special:
+          base_value: 85
+          effort_change: 85
+      growth_rate: &red-blue.pokemon.charizard.growth_rate medium-slow
+      genus: &red-blue.pokemon.charizard.genus 'FLAME Pokémon'
+      height: &red-blue.pokemon.charizard.height 17
+      weight: &red-blue.pokemon.charizard.weight 9072
+      flavor_text:
+        red: |
+          Spits fire that
+          is hot enough to
+          melt boulders.
+          Known to cause
+           forest fires
+          unintentionally.
+        blue: |
+          Spits fire that
+          is hot enough to
+          melt boulders.
+          Known to cause
+           forest fires
+          unintentionally.
+      evolution_parent: &red-blue.pokemon.charizard.evolution_parent charmeleon/charmeleon
+      evolution_conditions: &red-blue.pokemon.charizard.evolution_conditions
+        level-up:
+          minimum_level: 36
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: &red-blue.pokemon.charizard.forms.charizard.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.charizard.forms.charizard.battle_only false
+          sprites:
+            - red-blue/charizard-default.png
+            - red-blue/gray/charizard-default.png
+            - red-blue/back/charizard-default.png
+          art: &red-blue.pokemon.charizard.forms.charizard.art
+            - charizard-default.png
+          cry: &red-blue.pokemon.charizard.forms.charizard.cry gen5/charizard-default.webm
+          icon: &red-blue.pokemon.charizard.forms.charizard.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: *red-blue.pokemon.charizard.default
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      experience: *red-blue.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      stats: *red-blue.pokemon.charizard.stats
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      genus: *red-blue.pokemon.charizard.genus
+      height: *red-blue.pokemon.charizard.height
+      weight: *red-blue.pokemon.charizard.weight
+      flavor_text:
+        yellow: |
+          When expelling a
+          blast of super
+          hot fire, the red
+          flame at the tip
+          of its tail burns
+          more intensely.
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          sprites:
+            - yellow/charizard-default.png
+            - yellow/gray/charizard-default.png
+            - yellow/back/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+          icon: *red-blue.pokemon.charizard.forms.charizard.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 5
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 230
+    original-johto-abc: 10
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: *red-blue.pokemon.charizard.default
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      experience: *red-blue.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      stats: &gold-silver.pokemon.charizard.stats
+        hp:
+          base_value: 78
+          effort_change: 78
+        attack:
+          base_value: 84
+          effort_change: 84
+        defense:
+          base_value: 78
+          effort_change: 78
+        speed:
+          base_value: 100
+          effort_change: 100
+        special-attack:
+          base_value: 109
+          effort_change: 109
+        special-defense:
+          base_value: 85
+          effort_change: 109
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      female_rate: &gold-silver.pokemon.charizard.female_rate 12
+      hatch_steps: &gold-silver.pokemon.charizard.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.charizard.egg_groups
+        - monster
+        - dragon
+      genus: *red-blue.pokemon.charizard.genus
+      height: *red-blue.pokemon.charizard.height
+      weight: &gold-silver.pokemon.charizard.weight 907
+      flavor_text:
+        gold: |
+          If CHARIZARD be-
+          comes furious, the
+          flame at the tip
+          of its tail flares
+          up in a whitish-
+          blue color.
+        silver: |
+          Breathing intense,
+          hot flames, it can
+          melt almost any-
+          thing. Its breath
+          inflicts terrible
+          pain on enemies.
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          sprites:
+            - gold-silver/charizard-default.png
+            - gold-silver/back/charizard-default.png
+            - gold-silver/shiny/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+          icon: &gold-silver.pokemon.charizard.forms.charizard.icon gen2/bigmon.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: *red-blue.pokemon.charizard.default
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      experience: *red-blue.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      stats: *gold-silver.pokemon.charizard.stats
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      genus: *red-blue.pokemon.charizard.genus
+      height: *red-blue.pokemon.charizard.height
+      weight: *gold-silver.pokemon.charizard.weight
+      flavor_text:
+        crystal: |
+          It uses its wings
+          to fly high. The
+          temperature of its
+          fire increases as
+          it gains exper-
+          ience in battle.
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          sprites:
+            - crystal/charizard-default.png
+            - crystal/back/charizard-default.png
+            - crystal/shiny/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+          icon: *gold-silver.pokemon.charizard.forms.charizard.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 208
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: *red-blue.pokemon.charizard.default
+      forms_switchable: &ruby-sapphire.pokemon.charizard.forms_switchable false
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      experience: *red-blue.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      stats: &ruby-sapphire.pokemon.charizard.stats
+        hp:
+          base_value: 78
+          effort_change: 0
+        attack:
+          base_value: 84
+          effort_change: 0
+        defense:
+          base_value: 78
+          effort_change: 0
+        speed:
+          base_value: 100
+          effort_change: 0
+        special-attack:
+          base_value: 109
+          effort_change: 0
+        special-defense:
+          base_value: 78
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      happiness: &ruby-sapphire.pokemon.charizard.happiness 70
+      abilities: &ruby-sapphire.pokemon.charizard.abilities
+        blaze: &ruby-sapphire.pokemon.charizard.abilities.blaze
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.charizard.genus
+      height: *red-blue.pokemon.charizard.height
+      weight: &ruby-sapphire.pokemon.charizard.weight 905
+      flavor_text:
+        ruby: |
+          CHARIZARD flies around the sky in
+          search of powerful opponents.
+           It breathes fire of such great heat
+          that it melts anything. However, it
+           never turns its fiery breath on any
+          opponent weaker than itself.
+        sapphire: |
+          CHARIZARD flies around the sky in
+          search of powerful opponents.
+           It breathes fire of such great heat
+          that it melts anything. However, it
+           never turns its fiery breath on any
+          opponent weaker than itself.
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: &ruby-sapphire.pokemon.charizard.forms.charizard.icon gen5/charizard-default.png
+          sprites:
+            - ruby-sapphire/charizard-default.png
+            - ruby-sapphire/back/charizard-default.png
+            - ruby-sapphire/shiny/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: &ruby-sapphire.pokemon.charizard.forms.charizard.footprint charizard.png
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: *red-blue.pokemon.charizard.default
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      experience: *red-blue.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      stats: *ruby-sapphire.pokemon.charizard.stats
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      abilities: *ruby-sapphire.pokemon.charizard.abilities
+      genus: *red-blue.pokemon.charizard.genus
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      flavor_text:
+        emerald: |
+          A CHARIZARD flies about in search of
+          strong opponents. It breathes intense
+          flames that can melt any material. However,
+          it will never torch a weaker foe.
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *ruby-sapphire.pokemon.charizard.forms.charizard.icon
+          sprites:
+            - emerald/charizard-default.png
+            - emerald/shiny/charizard-default.png
+            - emerald/animated/charizard-default.webm
+            - emerald/animated/shiny/charizard-default.webm
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 43
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: *red-blue.pokemon.charizard.default
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      experience: *red-blue.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      stats: *ruby-sapphire.pokemon.charizard.stats
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      abilities: *ruby-sapphire.pokemon.charizard.abilities
+      genus: *red-blue.pokemon.charizard.genus
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          sprites:
+            - colosseum/charizard-default.png
+            - colosseum/shiny/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: *red-blue.pokemon.charizard.default
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      experience: *red-blue.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      stats: *ruby-sapphire.pokemon.charizard.stats
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      abilities: *ruby-sapphire.pokemon.charizard.abilities
+      genus: *red-blue.pokemon.charizard.genus
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          sprites:
+            - xd/charizard-default.png
+            - xd/shiny/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    charizard:
+      name: CHARIZARD
+      default: *red-blue.pokemon.charizard.default
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      experience: *red-blue.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      stats: *ruby-sapphire.pokemon.charizard.stats
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      abilities: *ruby-sapphire.pokemon.charizard.abilities
+      genus: *red-blue.pokemon.charizard.genus
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      flavor_text:
+        firered: |
+          Its wings can carry this POKéMON close to
+          an altitude of 4,600 feet. It blows out
+          fire at very high temperatures.
+        leafgreen: |
+          It spits fire that is hot enough to melt
+          boulders. It may cause forest fires by
+          blowing flames.
+      forms:
+        charizard:
+          name: CHARIZARD
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *ruby-sapphire.pokemon.charizard.forms.charizard.icon
+          sprites:
+            - firered-leafgreen/charizard-default.png
+            - firered-leafgreen/back/charizard-default.png
+            - firered-leafgreen/shiny/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Charizard
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    charizard:
+      genus: &diamond-pearl.pokemon.charizard.genus 'Flame Pokémon'
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      shape: &diamond-pearl.pokemon.charizard.shape upright
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: &diamond-pearl.pokemon.charizard.baby false
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      pal_park: &diamond-pearl.pokemon.charizard.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: &diamond-pearl.pokemon.charizard.experience 240
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      stats: &diamond-pearl.pokemon.charizard.stats
+        hp:
+          base_value: 78
+          effort_change: 0
+        attack:
+          base_value: 84
+          effort_change: 0
+        defense:
+          base_value: 78
+          effort_change: 0
+        speed:
+          base_value: 100
+          effort_change: 0
+        special-attack:
+          base_value: 109
+          effort_change: 3
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.charizard.abilities
+        blaze: *ruby-sapphire.pokemon.charizard.abilities.blaze
+        solar-power:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is said that CHARIZARD’s fire
+          burns hotter if it has
+          experienced harsh battles.
+        pearl: |
+          It is said that CHARIZARD’s fire
+          burns hotter if it has
+          experienced harsh battles.
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *ruby-sapphire.pokemon.charizard.forms.charizard.icon
+          sprites:
+            - diamond-pearl/back/shiny/charizard-default.png
+            - diamond-pearl/back/charizard-default.png
+            - diamond-pearl/shiny/charizard-default.png
+            - diamond-pearl/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    charizard:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      pal_park: *diamond-pearl.pokemon.charizard.pal_park
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: *diamond-pearl.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      stats: *diamond-pearl.pokemon.charizard.stats
+      abilities: *diamond-pearl.pokemon.charizard.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is said that CHARIZARD’s fire
+          burns hotter if it has
+          experienced harsh battles.
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *ruby-sapphire.pokemon.charizard.forms.charizard.icon
+          sprites:
+            - platinum/back/shiny/charizard-default.png
+            - platinum/back/charizard-default.png
+            - platinum/shiny/charizard-default.png
+            - platinum/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 236
+  pokemon:
+    charizard:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      pal_park: *diamond-pearl.pokemon.charizard.pal_park
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: *diamond-pearl.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      stats: *diamond-pearl.pokemon.charizard.stats
+      abilities: *diamond-pearl.pokemon.charizard.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text:
+        heartgold: |
+          If CHARIZARD becomes furious,
+          the flame at the tip of its tail flares
+          up in a light blue shade.
+        soulsilver: |
+          Breathing intense, hot flames, it can
+          melt almost anything. Its breath
+          inflicts terrible pain on enemies.
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-3
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 5
+              range: 4-5
+          icon: *ruby-sapphire.pokemon.charizard.forms.charizard.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/charizard-default.png
+            - heartgold-soulsilver/back/charizard-default.png
+            - heartgold-soulsilver/shiny/charizard-default.png
+            - heartgold-soulsilver/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    charizard:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: &black-white.pokemon.charizard.color red
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: *diamond-pearl.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      stats: *diamond-pearl.pokemon.charizard.stats
+      abilities: *diamond-pearl.pokemon.charizard.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text:
+        black: |
+          It is said that Charizard’s fire
+          burns hotter if it has
+          experienced harsh battles.
+        white: |
+          It is said that Charizard’s fire
+          burns hotter if it has
+          experienced harsh battles.
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *ruby-sapphire.pokemon.charizard.forms.charizard.icon
+          sprites:
+            - black-white/back/shiny/charizard-default.png
+            - black-white/back/charizard-default.png
+            - black-white/shiny/charizard-default.png
+            - black-white/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    charizard:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.charizard.forms_switchable
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: *diamond-pearl.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      stats: *diamond-pearl.pokemon.charizard.stats
+      abilities: *diamond-pearl.pokemon.charizard.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text:
+        black-2: |
+          It is said that Charizard’s fire
+          burns hotter if it has
+          experienced harsh battles.
+        white-2: |
+          It is said that Charizard’s fire
+          burns hotter if it has
+          experienced harsh battles.
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *ruby-sapphire.pokemon.charizard.forms.charizard.icon
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *red-blue.pokemon.charizard.forms.charizard.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 85
+  pokemon:
+    charizard:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: &x-y.pokemon.charizard.forms_switchable true
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: *diamond-pearl.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: &x-y.pokemon.charizard.mega false
+      stats: *diamond-pearl.pokemon.charizard.stats
+      abilities: *diamond-pearl.pokemon.charizard.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text: &x-y.pokemon.charizard.flavor_text
+        x: |
+          When expelling a blast of superhot fire,
+          the red flame at the tip of its tail burns
+          more intensely.
+        'y': |
+          Its wings can carry this Pokémon close to an
+          altitude of 4,600 feet. It blows out fire at very
+          high temperatures.
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: &x-y.pokemon.charizard.forms.charizard.icon charizard-default.png
+          sprites:
+            - x-y/shiny/charizard-default.png
+            - x-y/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: &x-y.pokemon.charizard.forms.charizard.cry charizard-default.webm
+    charizard-mega-x:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: &x-y.pokemon.charizard-mega-x.name 'Mega Charizard X'
+      default: &x-y.pokemon.charizard-mega-x.default false
+      height: *red-blue.pokemon.charizard.height
+      weight: &x-y.pokemon.charizard-mega-x.weight 1105
+      experience: &x-y.pokemon.charizard-mega-x.experience 285
+      types: &x-y.pokemon.charizard-mega-x.types
+        - fire
+        - dragon
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: &x-y.pokemon.charizard-mega-x.mega true
+      stats: &x-y.pokemon.charizard-mega-x.stats
+        hp:
+          base_value: 78
+          effort_change: 0
+        attack:
+          base_value: 130
+          effort_change: 0
+        defense:
+          base_value: 111
+          effort_change: 0
+        speed:
+          base_value: 100
+          effort_change: 0
+        special-attack:
+          base_value: 130
+          effort_change: 3
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      abilities: &x-y.pokemon.charizard-mega-x.abilities
+        tough-claws: *ruby-sapphire.pokemon.charizard.abilities.blaze
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text: *x-y.pokemon.charizard.flavor_text
+      forms:
+        charizard-mega-x:
+          name: 'Mega Charizard X'
+          form_name: &x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.form_name 'Mega Charizard X'
+          default: true
+          battle_only: &x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.battle_only true
+          icon: &x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.icon charizard-mega-x.png
+          sprites:
+            - x-y/charizard-mega-x.png
+            - x-y/shiny/charizard-mega-x.png
+          art: &x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.art
+            - charizard-mega-x.png
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: &x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.cry charizard-mega-x.webm
+    charizard-mega-y:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: &x-y.pokemon.charizard-mega-y.name 'Mega Charizard Y'
+      default: *x-y.pokemon.charizard-mega-x.default
+      height: *red-blue.pokemon.charizard.height
+      weight: &x-y.pokemon.charizard-mega-y.weight 1005
+      experience: *x-y.pokemon.charizard-mega-x.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard-mega-x.mega
+      stats: &x-y.pokemon.charizard-mega-y.stats
+        hp:
+          base_value: 78
+          effort_change: 0
+        attack:
+          base_value: 104
+          effort_change: 0
+        defense:
+          base_value: 78
+          effort_change: 0
+        speed:
+          base_value: 100
+          effort_change: 0
+        special-attack:
+          base_value: 159
+          effort_change: 3
+        special-defense:
+          base_value: 115
+          effort_change: 0
+      abilities: &x-y.pokemon.charizard-mega-y.abilities
+        drought: *ruby-sapphire.pokemon.charizard.abilities.blaze
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text: *x-y.pokemon.charizard.flavor_text
+      forms:
+        charizard-mega-y:
+          name: 'Mega Charizard Y'
+          form_name: &x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.form_name 'Mega Charizard Y'
+          default: true
+          battle_only: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.battle_only
+          icon: &x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.icon charizard-mega-y.png
+          sprites:
+            - x-y/shiny/charizard-mega-y.png
+            - x-y/charizard-mega-y.png
+          art: &x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.art
+            - charizard-mega-y.png
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: &x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.cry charizard-mega-y.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    charizard:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: *diamond-pearl.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard.mega
+      stats: *diamond-pearl.pokemon.charizard.stats
+      abilities: *diamond-pearl.pokemon.charizard.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.charizard.flavor_text
+        omega-ruby: |
+          Charizard flies around the sky in search of powerful opponents.
+          It breathes fire of such great heat that it melts anything.
+          However, it never turns its fiery breath on any opponent
+          weaker than itself.
+        alpha-sapphire: |
+          Charizard flies around the sky in search of powerful opponents.
+          It breathes fire of such great heat that it melts anything.
+          However, it never turns its fiery breath on any opponent
+          weaker than itself.
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *x-y.pokemon.charizard.forms.charizard.icon
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard.forms.charizard.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/charizard-default.png
+            - omega-ruby-alpha-sapphire/shiny/charizard-default.png
+    charizard-mega-x:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: *x-y.pokemon.charizard-mega-x.name
+      default: *x-y.pokemon.charizard-mega-x.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *x-y.pokemon.charizard-mega-x.weight
+      experience: *x-y.pokemon.charizard-mega-x.experience
+      types: *x-y.pokemon.charizard-mega-x.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard-mega-x.mega
+      stats: *x-y.pokemon.charizard-mega-x.stats
+      abilities: *x-y.pokemon.charizard-mega-x.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.charizard.flavor_text
+      forms:
+        charizard-mega-x:
+          name: 'Mega Charizard X'
+          form_name: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.form_name
+          default: true
+          battle_only: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.battle_only
+          icon: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.icon
+          art: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/charizard-mega-x.png
+            - omega-ruby-alpha-sapphire/shiny/charizard-mega-x.png
+    charizard-mega-y:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: *x-y.pokemon.charizard-mega-y.name
+      default: *x-y.pokemon.charizard-mega-x.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *x-y.pokemon.charizard-mega-y.weight
+      experience: *x-y.pokemon.charizard-mega-x.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard-mega-x.mega
+      stats: *x-y.pokemon.charizard-mega-y.stats
+      abilities: *x-y.pokemon.charizard-mega-y.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.charizard.flavor_text
+      forms:
+        charizard-mega-y:
+          name: 'Mega Charizard Y'
+          form_name: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.form_name
+          default: true
+          battle_only: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.battle_only
+          icon: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.icon
+          art: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/charizard-mega-y.png
+            - omega-ruby-alpha-sapphire/charizard-mega-y.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    charizard:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: *diamond-pearl.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard.mega
+      stats: *diamond-pearl.pokemon.charizard.stats
+      abilities: *diamond-pearl.pokemon.charizard.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *x-y.pokemon.charizard.forms.charizard.icon
+          sprites:
+            - sun-moon/shiny/charizard-default.png
+            - sun-moon/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard.forms.charizard.cry
+    charizard-mega-x:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: *x-y.pokemon.charizard-mega-x.name
+      default: *x-y.pokemon.charizard-mega-x.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *x-y.pokemon.charizard-mega-x.weight
+      experience: *x-y.pokemon.charizard-mega-x.experience
+      types: *x-y.pokemon.charizard-mega-x.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard-mega-x.mega
+      stats: *x-y.pokemon.charizard-mega-x.stats
+      abilities: *x-y.pokemon.charizard-mega-x.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard-mega-x:
+          name: 'Mega Charizard X'
+          form_name: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.form_name
+          default: true
+          battle_only: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.battle_only
+          icon: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.icon
+          sprites:
+            - sun-moon/charizard-mega-x.png
+            - sun-moon/shiny/charizard-mega-x.png
+          art: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.cry
+    charizard-mega-y:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: *x-y.pokemon.charizard-mega-y.name
+      default: *x-y.pokemon.charizard-mega-x.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *x-y.pokemon.charizard-mega-y.weight
+      experience: *x-y.pokemon.charizard-mega-x.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard-mega-x.mega
+      stats: *x-y.pokemon.charizard-mega-y.stats
+      abilities: *x-y.pokemon.charizard-mega-y.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard-mega-y:
+          name: 'Mega Charizard Y'
+          form_name: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.form_name
+          default: true
+          battle_only: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.battle_only
+          icon: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.icon
+          sprites:
+            - sun-moon/shiny/charizard-mega-y.png
+            - sun-moon/charizard-mega-y.png
+          art: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    charizard:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: Charizard
+      default: *red-blue.pokemon.charizard.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *ruby-sapphire.pokemon.charizard.weight
+      experience: *diamond-pearl.pokemon.charizard.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard.mega
+      stats: *diamond-pearl.pokemon.charizard.stats
+      abilities: *diamond-pearl.pokemon.charizard.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard:
+          name: Charizard
+          form_name: *red-blue.pokemon.charizard.forms.charizard.form_name
+          default: true
+          battle_only: *red-blue.pokemon.charizard.forms.charizard.battle_only
+          icon: *x-y.pokemon.charizard.forms.charizard.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/charizard-default.png
+            - ultra-sun-ultra-moon/charizard-default.png
+          art: *red-blue.pokemon.charizard.forms.charizard.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard.forms.charizard.cry
+    charizard-mega-x:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: *x-y.pokemon.charizard-mega-x.name
+      default: *x-y.pokemon.charizard-mega-x.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *x-y.pokemon.charizard-mega-x.weight
+      experience: *x-y.pokemon.charizard-mega-x.experience
+      types: *x-y.pokemon.charizard-mega-x.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard-mega-x.mega
+      stats: *x-y.pokemon.charizard-mega-x.stats
+      abilities: *x-y.pokemon.charizard-mega-x.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard-mega-x:
+          name: 'Mega Charizard X'
+          form_name: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.form_name
+          default: true
+          battle_only: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.battle_only
+          icon: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.icon
+          sprites:
+            - ultra-sun-ultra-moon/charizard-mega-x.png
+            - ultra-sun-ultra-moon/shiny/charizard-mega-x.png
+          art: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.cry
+    charizard-mega-y:
+      genus: *diamond-pearl.pokemon.charizard.genus
+      evolution_parent: *red-blue.pokemon.charizard.evolution_parent
+      color: *black-white.pokemon.charizard.color
+      shape: *diamond-pearl.pokemon.charizard.shape
+      female_rate: *gold-silver.pokemon.charizard.female_rate
+      capture_rate: *red-blue.pokemon.charizard.capture_rate
+      happiness: *ruby-sapphire.pokemon.charizard.happiness
+      baby: *diamond-pearl.pokemon.charizard.baby
+      hatch_steps: *gold-silver.pokemon.charizard.hatch_steps
+      growth_rate: *red-blue.pokemon.charizard.growth_rate
+      forms_switchable: *x-y.pokemon.charizard.forms_switchable
+      name: *x-y.pokemon.charizard-mega-y.name
+      default: *x-y.pokemon.charizard-mega-x.default
+      height: *red-blue.pokemon.charizard.height
+      weight: *x-y.pokemon.charizard-mega-y.weight
+      experience: *x-y.pokemon.charizard-mega-x.experience
+      types: *red-blue.pokemon.charizard.types
+      egg_groups: *gold-silver.pokemon.charizard.egg_groups
+      mega: *x-y.pokemon.charizard-mega-x.mega
+      stats: *x-y.pokemon.charizard-mega-y.stats
+      abilities: *x-y.pokemon.charizard-mega-y.abilities
+      evolution_conditions: *red-blue.pokemon.charizard.evolution_conditions
+      forms:
+        charizard-mega-y:
+          name: 'Mega Charizard Y'
+          form_name: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.form_name
+          default: true
+          battle_only: *x-y.pokemon.charizard-mega-x.forms.charizard-mega-x.battle_only
+          icon: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/charizard-mega-y.png
+            - ultra-sun-ultra-moon/charizard-mega-y.png
+          art: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.art
+          footprint: *ruby-sapphire.pokemon.charizard.forms.charizard.footprint
+          cry: *x-y.pokemon.charizard-mega-y.forms.charizard-mega-y.cry

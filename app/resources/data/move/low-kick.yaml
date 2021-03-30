@@ -1,0 +1,214 @@
+red-blue: &red-blue
+  name: &red-blue.name 'LOW KICK'
+  power: &red-blue.power 50
+  type: &red-blue.type fighting
+  accuracy: &red-blue.accuracy 90
+  pp: &red-blue.pp 20
+  effect: 38
+  flags: &red-blue.flags
+    - contact
+    - protect
+    - mirror
+  categories: &red-blue.categories
+    - damage
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target selected-pokemon
+  flinch_chance: 30
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  power: *red-blue.power
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: 32
+  effect_chance: 30
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    An attack that may
+    cause flinching.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  power: &ruby-sapphire.power 1
+  type: *red-blue.type
+  accuracy: &ruby-sapphire.accuracy 100
+  pp: *red-blue.pp
+  effect: &ruby-sapphire.effect 197
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+    - kings-rock
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  contest_type: &ruby-sapphire.contest_type tough
+  contest_effect: 13
+  flavor_text: |
+    A kick that inflicts more
+    damage on heavier foes.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  power: *ruby-sapphire.power
+  type: *red-blue.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *red-blue.pp
+  effect: *ruby-sapphire.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: &colosseum.flavor_text |
+    A kick that inflicts more
+    damage on heavier targets.
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+xd:
+  name: *red-blue.name
+  power: *ruby-sapphire.power
+  type: *red-blue.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *red-blue.pp
+  effect: *ruby-sapphire.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+firered-leafgreen:
+  name: *red-blue.name
+  power: *ruby-sapphire.power
+  type: *red-blue.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *red-blue.pp
+  effect: *ruby-sapphire.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *ruby-sapphire.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  flavor_text: |
+    A low, tripping kick
+    that inflicts more
+    damage on heavier
+    foes.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Low Kick'
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 5
+  flavor_text: &diamond-pearl.flavor_text |
+    A powerful low kick
+    that makes the foe
+    fall over. It inflicts
+    greater damage on
+    heavier foes.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    A powerful low kick that makes the target
+    fall over. It inflicts greater damage on
+    heavier targets.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &x-y.flavor_text |
+    A powerful low kick that makes the target
+    fall over. The heavier the target,
+    the greater the move’s power.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 26
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    A powerful low kick that makes the target fall over.
+    The heavier the target, the greater the
+    move’s power.
+ultra-sun-ultra-moon: *sun-moon

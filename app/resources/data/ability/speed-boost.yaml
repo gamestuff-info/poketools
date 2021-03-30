@@ -1,0 +1,34 @@
+ruby-sapphire: &ruby-sapphire
+  name: 'SPEED BOOST'
+  flavor_text: 'Gradually boosts SPEED.'
+  short_description: &ruby-sapphire.short_description 'Raises [Speed]{mechanic:speed} one [stage]{mechanic:stat-modifier} after each turn.'
+  description: &ruby-sapphire.description 'This Pokémon''s [Speed]{mechanic:speed} rises one [stage]{mechanic:stat-modifier} after each turn.'
+emerald: *ruby-sapphire
+colosseum: *ruby-sapphire
+xd: *ruby-sapphire
+firered-leafgreen: *ruby-sapphire
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Speed Boost'
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    The Pokémon’s Speed stat
+    is gradually boosted.
+platinum: *diamond-pearl
+heartgold-soulsilver: &heartgold-soulsilver
+  name: *diamond-pearl.name
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    Its Speed stat is
+    gradually boosted.
+black-white: *heartgold-soulsilver
+black-2-white-2: *heartgold-soulsilver
+x-y: *heartgold-soulsilver
+omega-ruby-alpha-sapphire: *heartgold-soulsilver
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: 'Its Speed stat is boosted every turn.'
+ultra-sun-ultra-moon: *sun-moon

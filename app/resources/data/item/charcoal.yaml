@@ -1,0 +1,93 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name CHARCOAL
+  pocket: &gold-silver.pocket misc
+  buy: &gold-silver.buy 9800
+  sell: &gold-silver.sell 4900
+  flavor_text: |
+    Powers up fire-
+    type moves. (HOLD)
+  category: &gold-silver.category type-enhancement
+  flags: &gold-silver.flags
+    - holdable
+    - holdable-active
+  short_description: &gold-silver.short_description 'Held: []{type:fire} moves from holder do 20% more damage.'
+  description: &gold-silver.description 'Held: Increases the power of the holder''s []{type:fire} moves by 20%.'
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: &ruby-sapphire.icon charcoal.png
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    A hold item that
+    raises the power of
+    FIRE-type moves.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *gold-silver.name
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *gold-silver.category
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+xd: *colosseum
+firered-leafgreen:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: |
+    An item to be held by a POKéMON.
+    A combustible fuel that boosts the
+     power of FIRE-type moves.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Charcoal
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: &diamond-pearl.buy 1000
+  sell: &diamond-pearl.sell 500
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    An item to be held by a Pokémon.
+    It is a combustible fuel that boosts
+    the power of Fire-type moves.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: *diamond-pearl
+omega-ruby-alpha-sapphire: *diamond-pearl
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    An item to be held by a Pokémon. It’s a combustible
+    fuel that boosts the power of Fire-type moves.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

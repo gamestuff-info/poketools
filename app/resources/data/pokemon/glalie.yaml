@@ -1,0 +1,876 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name GLALIE
+  position: &ruby-sapphire.position 362
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 362
+    hoenn: 172
+  pokemon:
+    glalie:
+      name: GLALIE
+      default: &ruby-sapphire.pokemon.glalie.default true
+      forms_switchable: &ruby-sapphire.pokemon.glalie.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.glalie.capture_rate 75
+      experience: &ruby-sapphire.pokemon.glalie.experience 187
+      types: &ruby-sapphire.pokemon.glalie.types
+        - ice
+      stats: &ruby-sapphire.pokemon.glalie.stats
+        hp:
+          base_value: 80
+          effort_change: 2
+        attack:
+          base_value: 80
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 80
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.glalie.growth_rate medium
+      female_rate: &ruby-sapphire.pokemon.glalie.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.glalie.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.glalie.egg_groups
+        - fairy
+        - mineral
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.glalie.wild_held_items.ruby
+          nevermeltice: 5
+        sapphire: *ruby-sapphire.pokemon.glalie.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.glalie.happiness 70
+      abilities: &ruby-sapphire.pokemon.glalie.abilities
+        inner-focus: &ruby-sapphire.pokemon.glalie.abilities.inner-focus
+          hidden: &ruby-sapphire.pokemon.glalie.abilities.inner-focus.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.glalie.genus 'FACE Pokémon'
+      height: &ruby-sapphire.pokemon.glalie.height 15
+      weight: &ruby-sapphire.pokemon.glalie.weight 2565
+      flavor_text:
+        ruby: |
+          GLALIE has a body made of rock, which it
+          hardens with an armor of ice.
+          This POKéMON has the ability to freeze
+          moisture in the atmosphere into any
+          shape it desires.
+        sapphire: |
+          GLALIE has the ability to freely
+          control ice. For example, it can
+          instantly freeze its foe solid.
+          After immobilizing its foe in ice,  this
+          POKéMON enjoys eating it in leisurely
+          fashion.
+      forms:
+        glalie:
+          name: GLALIE
+          form_name: &ruby-sapphire.pokemon.glalie.forms.glalie.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.glalie.forms.glalie.battle_only false
+          icon: &ruby-sapphire.pokemon.glalie.forms.glalie.icon gen5/glalie-default.png
+          sprites:
+            - ruby-sapphire/glalie-default.png
+            - ruby-sapphire/back/glalie-default.png
+            - ruby-sapphire/shiny/glalie-default.png
+          art: &ruby-sapphire.pokemon.glalie.forms.glalie.art
+            - glalie-default.png
+          footprint: &ruby-sapphire.pokemon.glalie.forms.glalie.footprint glalie.png
+          cry: &ruby-sapphire.pokemon.glalie.forms.glalie.cry gen5/glalie-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.glalie.evolution_parent snorunt/snorunt
+      evolution_conditions: &ruby-sapphire.pokemon.glalie.evolution_conditions
+        level-up:
+          minimum_level: 42
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    glalie:
+      name: GLALIE
+      default: *ruby-sapphire.pokemon.glalie.default
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      experience: *ruby-sapphire.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.glalie.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      abilities: *ruby-sapphire.pokemon.glalie.abilities
+      genus: *ruby-sapphire.pokemon.glalie.genus
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      flavor_text:
+        emerald: |
+          A GLALIE has the power to instantaneously
+          freeze moisture in the atmosphere.
+          A dazzling cloud of diamondlike ice
+          crystals forms around its body.
+      forms:
+        glalie:
+          name: GLALIE
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *ruby-sapphire.pokemon.glalie.forms.glalie.icon
+          sprites:
+            - emerald/glalie-default.png
+            - emerald/shiny/glalie-default.png
+            - emerald/animated/glalie-default.webm
+            - emerald/animated/shiny/glalie-default.webm
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 107
+  pokemon:
+    glalie:
+      name: GLALIE
+      default: *ruby-sapphire.pokemon.glalie.default
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      experience: *ruby-sapphire.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      abilities: *ruby-sapphire.pokemon.glalie.abilities
+      genus: *ruby-sapphire.pokemon.glalie.genus
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      forms:
+        glalie:
+          name: GLALIE
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          sprites:
+            - colosseum/glalie-default.png
+            - colosseum/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    glalie:
+      name: GLALIE
+      default: *ruby-sapphire.pokemon.glalie.default
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      experience: *ruby-sapphire.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      abilities: *ruby-sapphire.pokemon.glalie.abilities
+      genus: *ruby-sapphire.pokemon.glalie.genus
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      forms:
+        glalie:
+          name: GLALIE
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          sprites:
+            - xd/glalie-default.png
+            - xd/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    glalie:
+      name: GLALIE
+      default: *ruby-sapphire.pokemon.glalie.default
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      experience: *ruby-sapphire.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.glalie.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.glalie.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      abilities: *ruby-sapphire.pokemon.glalie.abilities
+      genus: *ruby-sapphire.pokemon.glalie.genus
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      flavor_text:
+        firered: |
+          It has a body of ice that won't melt,
+          even with fire. It can instantly freeze
+          moisture in the atmosphere.
+        leafgreen: |
+          It has a body of ice that won't melt,
+          even with fire. It can instantly freeze
+          moisture in the atmosphere.
+      forms:
+        glalie:
+          name: GLALIE
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *ruby-sapphire.pokemon.glalie.forms.glalie.icon
+          sprites:
+            - firered-leafgreen/glalie-default.png
+            - firered-leafgreen/back/glalie-default.png
+            - firered-leafgreen/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Glalie
+  position: &diamond-pearl.position 391
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    glalie:
+      genus: &diamond-pearl.pokemon.glalie.genus 'Face Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      shape: &diamond-pearl.pokemon.glalie.shape ball
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: &diamond-pearl.pokemon.glalie.baby false
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      pal_park: &diamond-pearl.pokemon.glalie.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: &diamond-pearl.pokemon.glalie.experience 168
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: &diamond-pearl.pokemon.glalie.abilities
+        inner-focus: *ruby-sapphire.pokemon.glalie.abilities.inner-focus
+        ice-body: &diamond-pearl.pokemon.glalie.abilities.ice-body
+          hidden: *ruby-sapphire.pokemon.glalie.abilities.inner-focus.hidden
+          position: 2
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.glalie.wild_held_items.diamond
+          babiri-berry: 5
+        pearl: *diamond-pearl.pokemon.glalie.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text:
+        diamond: |
+          To protect itself, it clads its
+          body in an armor of ice, made
+          by freezing moisture in the air.
+        pearl: |
+          To protect itself, it clads its
+          body in an armor of ice, made
+          by freezing moisture in the air.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *ruby-sapphire.pokemon.glalie.forms.glalie.icon
+          sprites:
+            - diamond-pearl/glalie-default.png
+            - diamond-pearl/back/glalie-default.png
+            - diamond-pearl/back/shiny/glalie-default.png
+            - diamond-pearl/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    extended-sinnoh: 207
+  pokemon:
+    glalie:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      pal_park: *diamond-pearl.pokemon.glalie.pal_park
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: *diamond-pearl.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: *diamond-pearl.pokemon.glalie.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.glalie.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text:
+        platinum: |
+          It prevents prey from escaping by
+          instantaneously freezing moisture
+          in the air.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *ruby-sapphire.pokemon.glalie.forms.glalie.icon
+          sprites:
+            - platinum/glalie-default.png
+            - platinum/back/glalie-default.png
+            - platinum/back/shiny/glalie-default.png
+            - platinum/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    glalie:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      pal_park: *diamond-pearl.pokemon.glalie.pal_park
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: *diamond-pearl.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: *diamond-pearl.pokemon.glalie.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.glalie.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.glalie.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It can instantly freeze moisture in
+          the atmosphere. It uses this power
+          to freeze its foes.
+        soulsilver: |
+          It can instantly freeze moisture in
+          the atmosphere. It uses this power
+          to freeze its foes.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 4
+              range: 2-5
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.glalie.forms.glalie.icon
+          sprites:
+            - heartgold-soulsilver/glalie-default.png
+            - heartgold-soulsilver/back/glalie-default.png
+            - heartgold-soulsilver/back/shiny/glalie-default.png
+            - heartgold-soulsilver/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    glalie:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: &black-white.pokemon.glalie.color gray
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: *diamond-pearl.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: &black-white.pokemon.glalie.abilities
+        inner-focus: *ruby-sapphire.pokemon.glalie.abilities.inner-focus
+        ice-body: *diamond-pearl.pokemon.glalie.abilities.ice-body
+        moody:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *diamond-pearl.pokemon.glalie.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.glalie.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text:
+        black: |
+          It prevents prey from escaping by
+          instantaneously freezing moisture
+          in the air.
+        white: |
+          It prevents prey from escaping by
+          instantaneously freezing moisture
+          in the air.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *ruby-sapphire.pokemon.glalie.forms.glalie.icon
+          sprites:
+            - black-white/glalie-default.png
+            - black-white/back/glalie-default.png
+            - black-white/back/shiny/glalie-default.png
+            - black-white/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    glalie:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: *black-white.pokemon.glalie.color
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: *diamond-pearl.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: *black-white.pokemon.glalie.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.glalie.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.glalie.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text:
+        black-2: |
+          It prevents prey from escaping by
+          instantaneously freezing moisture
+          in the air.
+        white-2: |
+          It prevents prey from escaping by
+          instantaneously freezing moisture
+          in the air.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *ruby-sapphire.pokemon.glalie.forms.glalie.icon
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *ruby-sapphire.pokemon.glalie.forms.glalie.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    glalie:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: *black-white.pokemon.glalie.color
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.glalie.forms_switchable
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: *diamond-pearl.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      mega: &x-y.pokemon.glalie.mega false
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: *black-white.pokemon.glalie.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text:
+        x: |
+          To protect itself, it clad its body in an armor of ice,
+          made by freezing moisture in the air.
+        'y': |
+          It can instantly freeze moisture in the atmosphere.
+          It uses this power to freeze its foes.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: &x-y.pokemon.glalie.forms.glalie.icon glalie-default.png
+          sprites:
+            - x-y/glalie-default.png
+            - x-y/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: &x-y.pokemon.glalie.forms.glalie.cry glalie-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 180
+  pokemon:
+    glalie:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: *black-white.pokemon.glalie.color
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: &omega-ruby-alpha-sapphire.pokemon.glalie.forms_switchable true
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: *diamond-pearl.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      mega: *x-y.pokemon.glalie.mega
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: *black-white.pokemon.glalie.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.glalie.flavor_text
+        omega-ruby: |
+          Glalie has a body made of rock, which it hardens with an armor
+          of ice. This Pokémon has the ability to freeze moisture in the
+          atmosphere into any shape it desires.
+        alpha-sapphire: |
+          Glalie has the ability to freely control ice. For example, it can
+          instantly freeze its prey solid. After immobilizing its prey in ice,
+          this Pokémon enjoys eating it in leisurely fashion.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *x-y.pokemon.glalie.forms.glalie.icon
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *x-y.pokemon.glalie.forms.glalie.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/glalie-default.png
+            - omega-ruby-alpha-sapphire/shiny/glalie-default.png
+    glalie-mega:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: *black-white.pokemon.glalie.color
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.glalie.forms_switchable
+      name: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.name 'Mega Glalie'
+      default: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.default false
+      height: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.height 21
+      weight: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.weight 3502
+      experience: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.experience 203
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      mega: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.mega true
+      stats: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.stats
+        hp:
+          base_value: 80
+          effort_change: 2
+        attack:
+          base_value: 120
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 0
+        speed:
+          base_value: 100
+          effort_change: 0
+        special-attack:
+          base_value: 120
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      abilities: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.abilities
+        refrigerate: *ruby-sapphire.pokemon.glalie.abilities.inner-focus
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.glalie.flavor_text
+      forms:
+        glalie-mega:
+          name: 'Mega Glalie'
+          form_name: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.form_name 'Mega Glalie'
+          default: true
+          battle_only: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.battle_only true
+          icon: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.icon glalie-mega.png
+          art: &omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.art
+            - glalie-mega.png
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *x-y.pokemon.glalie.forms.glalie.cry
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-alola: 247
+    original-ulaula: 119
+  pokemon:
+    glalie:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: *black-white.pokemon.glalie.color
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.glalie.forms_switchable
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: *diamond-pearl.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      mega: *x-y.pokemon.glalie.mega
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: *black-white.pokemon.glalie.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text: &sun-moon.pokemon.glalie.flavor_text
+        sun: |-
+          Legend says a boulder on an icy mountain
+          absorbed the distress and regrets of a
+          stranded mountaineer, giving rise to Glalie.
+        moon: |-
+          Its prey is instantaneously frozen stiff by the
+          cold air it exhales from its huge mouth. While
+          they’re in that frozen state, it gobbles them up.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *x-y.pokemon.glalie.forms.glalie.icon
+          sprites:
+            - sun-moon/glalie-default.png
+            - sun-moon/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *x-y.pokemon.glalie.forms.glalie.cry
+    glalie-mega:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: *black-white.pokemon.glalie.color
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.glalie.forms_switchable
+      name: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.name
+      default: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.default
+      height: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.height
+      weight: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.weight
+      experience: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      mega: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.mega
+      stats: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.stats
+      abilities: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text: *sun-moon.pokemon.glalie.flavor_text
+      forms:
+        glalie-mega:
+          name: 'Mega Glalie'
+          form_name: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.form_name
+          default: true
+          battle_only: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.battle_only
+          icon: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.icon
+          sprites:
+            - sun-moon/shiny/glalie-mega.png
+            - sun-moon/glalie-mega.png
+          art: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *x-y.pokemon.glalie.forms.glalie.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 324
+    updated-ulaula: 145
+  pokemon:
+    glalie:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: *black-white.pokemon.glalie.color
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.glalie.forms_switchable
+      name: Glalie
+      default: *ruby-sapphire.pokemon.glalie.default
+      height: *ruby-sapphire.pokemon.glalie.height
+      weight: *ruby-sapphire.pokemon.glalie.weight
+      experience: *diamond-pearl.pokemon.glalie.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      mega: *x-y.pokemon.glalie.mega
+      stats: *ruby-sapphire.pokemon.glalie.stats
+      abilities: *black-white.pokemon.glalie.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.glalie.flavor_text
+        ultra-sun: |-
+          It freezes its prey and chews them whole.
+          However, it prefers to eat Pokémon like Vanillite
+          that are already frozen.
+        ultra-moon: |-
+          Its actual body is a rock that isn’t particularly
+          hard. Glalie absorbs moisture from the air and
+          drapes itself in an armor of ice.
+      forms:
+        glalie:
+          name: Glalie
+          form_name: *ruby-sapphire.pokemon.glalie.forms.glalie.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.glalie.forms.glalie.battle_only
+          icon: *x-y.pokemon.glalie.forms.glalie.icon
+          sprites:
+            - ultra-sun-ultra-moon/glalie-default.png
+            - ultra-sun-ultra-moon/shiny/glalie-default.png
+          art: *ruby-sapphire.pokemon.glalie.forms.glalie.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *x-y.pokemon.glalie.forms.glalie.cry
+    glalie-mega:
+      genus: *diamond-pearl.pokemon.glalie.genus
+      evolution_parent: *ruby-sapphire.pokemon.glalie.evolution_parent
+      color: *black-white.pokemon.glalie.color
+      shape: *diamond-pearl.pokemon.glalie.shape
+      female_rate: *ruby-sapphire.pokemon.glalie.female_rate
+      capture_rate: *ruby-sapphire.pokemon.glalie.capture_rate
+      happiness: *ruby-sapphire.pokemon.glalie.happiness
+      baby: *diamond-pearl.pokemon.glalie.baby
+      hatch_steps: *ruby-sapphire.pokemon.glalie.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.glalie.growth_rate
+      forms_switchable: *omega-ruby-alpha-sapphire.pokemon.glalie.forms_switchable
+      name: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.name
+      default: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.default
+      height: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.height
+      weight: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.weight
+      experience: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.experience
+      types: *ruby-sapphire.pokemon.glalie.types
+      egg_groups: *ruby-sapphire.pokemon.glalie.egg_groups
+      mega: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.mega
+      stats: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.stats
+      abilities: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.glalie.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.glalie.flavor_text
+      forms:
+        glalie-mega:
+          name: 'Mega Glalie'
+          form_name: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.form_name
+          default: true
+          battle_only: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.battle_only
+          icon: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/glalie-mega.png
+            - ultra-sun-ultra-moon/glalie-mega.png
+          art: *omega-ruby-alpha-sapphire.pokemon.glalie-mega.forms.glalie-mega.art
+          footprint: *ruby-sapphire.pokemon.glalie.forms.glalie.footprint
+          cry: *x-y.pokemon.glalie.forms.glalie.cry

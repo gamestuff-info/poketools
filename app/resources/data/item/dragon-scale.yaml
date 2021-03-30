@@ -1,0 +1,113 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'DRAGON SCALE'
+  pocket: &gold-silver.pocket misc
+  buy: &gold-silver.buy 2100
+  sell: &gold-silver.sell 1050
+  flavor_text: |
+    A rare dragon-type
+    item.
+  category: &gold-silver.category evolution
+  short_description: 'Held (Bugged): []{type:dragon} moves from holder do 20% more damage; Traded: Some Pokémon will evolve.'
+  description: |
+    Held: Increases the power of the holder's []{type:dragon} moves by 20%. (This is a [bug](https://glitchcity.info/wiki/Dragon_Fang/Dragon_Scale_effect_glitch).
+    This item provides the effect intended for the []{item:dragon-fang}.)
+
+    When some Pokémon are traded holding this item, they will evolve.  Below is a list
+    of compatible Pokémon.
+
+    {{App\Controller\ItemController::evolutionPokemon({"itemSlug": "dragon-scale"})}}
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: &ruby-sapphire.flags
+    {  }
+  icon: &ruby-sapphire.icon dragon-scale.png
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    A strange scale
+    held by DRAGON-
+    type POKéMON.
+  short_description: &ruby-sapphire.short_description 'When some Pokémon are traded holding this item, they will evolve.'
+  description: &ruby-sapphire.description |
+    When some Pokémon are traded holding this item, they will evolve.  Below is a list
+    of compatible Pokémon.
+
+    {{App\Controller\ItemController::evolutionPokemon({"itemSlug": "dragon-scale"})}}
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *gold-silver.name
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *gold-silver.category
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+xd: *colosseum
+firered-leafgreen:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: |
+    A thick and tough scale.
+    A DRAGON-type POKéMON may be
+    holding it.
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Dragon Scale'
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: &diamond-pearl.buy 2000
+  sell: &diamond-pearl.sell 1000
+  fling_effect: damage
+  fling_power: 30
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A thick and tough scale.
+    Dragon-type Pokémon may be holding
+    this item when caught.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A very tough and inflexible scale.
+    Dragon-type Pokémon may be
+    holding this item when caught.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A very tough and inflexible scale. Dragon-type
+    Pokémon may be holding this item when caught.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

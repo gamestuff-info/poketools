@@ -1,0 +1,958 @@
+red-blue:
+  name: &red-blue.name HAUNTER
+  position: &red-blue.position 93
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 93
+    kanto: 93
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: &red-blue.pokemon.haunter.default true
+      capture_rate: &red-blue.pokemon.haunter.capture_rate 90
+      experience: &red-blue.pokemon.haunter.experience 126
+      types: &red-blue.pokemon.haunter.types
+        - ghost
+        - poison
+      stats: &red-blue.pokemon.haunter.stats
+        hp:
+          base_value: 45
+          effort_change: 45
+        attack:
+          base_value: 50
+          effort_change: 50
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 95
+          effort_change: 95
+        special:
+          base_value: 115
+          effort_change: 115
+      growth_rate: &red-blue.pokemon.haunter.growth_rate medium-slow
+      genus: &red-blue.pokemon.haunter.genus 'GAS Pokémon'
+      height: &red-blue.pokemon.haunter.height 16
+      weight: &red-blue.pokemon.haunter.weight 9
+      flavor_text:
+        red: |
+          Because of its
+          ability to slip
+          through block
+          walls, it is said
+           to be from an-
+          other dimension.
+        blue: |
+          Because of its
+          ability to slip
+          through block
+          walls, it is said
+           to be from an-
+          other dimension.
+      evolution_parent: &red-blue.pokemon.haunter.evolution_parent gastly/gastly
+      evolution_conditions: &red-blue.pokemon.haunter.evolution_conditions
+        level-up:
+          minimum_level: 25
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: &red-blue.pokemon.haunter.forms.haunter.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.haunter.forms.haunter.battle_only false
+          sprites:
+            - red-blue/haunter-default.png
+            - red-blue/gray/haunter-default.png
+            - red-blue/back/haunter-default.png
+          art: &red-blue.pokemon.haunter.forms.haunter.art
+            - haunter-default.png
+          cry: &red-blue.pokemon.haunter.forms.haunter.cry gen5/haunter-default.webm
+          icon: &red-blue.pokemon.haunter.forms.haunter.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: *red-blue.pokemon.haunter.default
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      experience: *red-blue.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      stats: *red-blue.pokemon.haunter.stats
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      genus: *red-blue.pokemon.haunter.genus
+      height: *red-blue.pokemon.haunter.height
+      weight: *red-blue.pokemon.haunter.weight
+      flavor_text:
+        yellow: |
+          By licking, it
+          saps the victim's
+          life. It causes
+          shaking that won't
+          stop until the
+          victim's demise.
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          sprites:
+            - yellow/haunter-default.png
+            - yellow/gray/haunter-default.png
+            - yellow/back/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+          icon: *red-blue.pokemon.haunter.forms.haunter.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 92
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 58
+    original-johto-abc: 68
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: *red-blue.pokemon.haunter.default
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      experience: *red-blue.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      stats: &gold-silver.pokemon.haunter.stats
+        hp:
+          base_value: 45
+          effort_change: 45
+        attack:
+          base_value: 50
+          effort_change: 50
+        defense:
+          base_value: 45
+          effort_change: 45
+        speed:
+          base_value: 95
+          effort_change: 95
+        special-attack:
+          base_value: 115
+          effort_change: 115
+        special-defense:
+          base_value: 55
+          effort_change: 115
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      female_rate: &gold-silver.pokemon.haunter.female_rate 50
+      hatch_steps: &gold-silver.pokemon.haunter.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.haunter.egg_groups
+        - indeterminate
+      genus: *red-blue.pokemon.haunter.genus
+      height: *red-blue.pokemon.haunter.height
+      weight: &gold-silver.pokemon.haunter.weight 1
+      flavor_text:
+        gold: |
+          In total darkness,
+          where nothing is
+          visible, HAUNTER
+          lurks, silently
+          stalking its next
+          victim.
+        silver: |
+          Its tongue is made
+          of gas. If licked,
+          its victim starts
+          shaking constantly
+          until death even-
+          tually comes.
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          sprites:
+            - gold-silver/haunter-default.png
+            - gold-silver/back/haunter-default.png
+            - gold-silver/shiny/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+          icon: &gold-silver.pokemon.haunter.forms.haunter.icon gen2/ghost.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: *red-blue.pokemon.haunter.default
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      experience: *red-blue.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      stats: *gold-silver.pokemon.haunter.stats
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      genus: *red-blue.pokemon.haunter.genus
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      flavor_text:
+        crystal: |
+          It hides in the
+          dark, planning to
+          take the life of
+          the next living
+          thing that wanders
+          close by.
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          sprites:
+            - crystal/haunter-default.png
+            - crystal/back/haunter-default.png
+            - crystal/shiny/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+          icon: *gold-silver.pokemon.haunter.forms.haunter.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 263
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: *red-blue.pokemon.haunter.default
+      forms_switchable: &ruby-sapphire.pokemon.haunter.forms_switchable false
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      experience: *red-blue.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      stats: &ruby-sapphire.pokemon.haunter.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 115
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      happiness: &ruby-sapphire.pokemon.haunter.happiness 70
+      abilities: &ruby-sapphire.pokemon.haunter.abilities
+        levitate:
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.haunter.genus
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      flavor_text:
+        ruby: |
+          HAUNTER is a dangerous POKéMON.
+          If one beckons you while floating in
+          darkness, you must never approach it.
+          This POKéMON will try to lick you with its
+          tongue and steal your life away.
+        sapphire: |
+          HAUNTER is a dangerous POKéMON.
+          If one beckons you while floating in
+          darkness, you must never approach it.
+          This POKéMON will try to lick you with its
+          tongue and steal your life away.
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: &ruby-sapphire.pokemon.haunter.forms.haunter.icon gen5/haunter-default.png
+          sprites:
+            - ruby-sapphire/haunter-default.png
+            - ruby-sapphire/back/haunter-default.png
+            - ruby-sapphire/shiny/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: &ruby-sapphire.pokemon.haunter.forms.haunter.footprint haunter.png
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: *red-blue.pokemon.haunter.default
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      experience: *red-blue.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      stats: *ruby-sapphire.pokemon.haunter.stats
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      genus: *red-blue.pokemon.haunter.genus
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      flavor_text:
+        emerald: |
+          If a HAUNTER beckons you while it is
+          floating in darkness, don't approach it.
+          This POKéMON will try to lick you with its
+          tongue and steal your life away.
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *ruby-sapphire.pokemon.haunter.forms.haunter.icon
+          sprites:
+            - emerald/haunter-default.png
+            - emerald/shiny/haunter-default.png
+            - emerald/animated/haunter-default.webm
+            - emerald/animated/shiny/haunter-default.webm
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 125
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: *red-blue.pokemon.haunter.default
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      experience: *red-blue.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      stats: *ruby-sapphire.pokemon.haunter.stats
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      genus: *red-blue.pokemon.haunter.genus
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          sprites:
+            - colosseum/haunter-default.png
+            - colosseum/shiny/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: *red-blue.pokemon.haunter.default
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      experience: *red-blue.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      stats: *ruby-sapphire.pokemon.haunter.stats
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      genus: *red-blue.pokemon.haunter.genus
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          sprites:
+            - xd/haunter-default.png
+            - xd/shiny/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    haunter:
+      name: HAUNTER
+      default: *red-blue.pokemon.haunter.default
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      experience: *red-blue.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      stats: *ruby-sapphire.pokemon.haunter.stats
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.haunter.wild_held_items.firered
+          spell-tag: 5
+        leafgreen: *firered-leafgreen.pokemon.haunter.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      genus: *red-blue.pokemon.haunter.genus
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      flavor_text:
+        firered: |
+          If you get the feeling of being watched
+          in darkness when nobody is around,
+          HAUNTER is there.
+        leafgreen: |
+          Because of its ability to slip through
+          block walls, it is said to be from another
+          dimension.
+      forms:
+        haunter:
+          name: HAUNTER
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *ruby-sapphire.pokemon.haunter.forms.haunter.icon
+          sprites:
+            - firered-leafgreen/haunter-default.png
+            - firered-leafgreen/back/haunter-default.png
+            - firered-leafgreen/shiny/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Haunter
+  position: &diamond-pearl.position 101
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 70
+  pokemon:
+    haunter:
+      genus: &diamond-pearl.pokemon.haunter.genus 'Gas Pokémon'
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      shape: &diamond-pearl.pokemon.haunter.shape arms
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: &diamond-pearl.pokemon.haunter.baby false
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      pal_park: &diamond-pearl.pokemon.haunter.pal_park
+        area: forest
+        rate: 10
+        score: 80
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: &diamond-pearl.pokemon.haunter.experience 142
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      stats: &diamond-pearl.pokemon.haunter.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 50
+          effort_change: 0
+        defense:
+          base_value: 45
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 115
+          effort_change: 2
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        diamond: |
+          It can slip through any obstacle.
+          It lurks inside walls to keep an
+          eye on its foes.
+        pearl: |
+          It licks with its gaseous tongue
+          to steal the victim’s life force.
+          It lurks in darkness for prey.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *ruby-sapphire.pokemon.haunter.forms.haunter.icon
+          sprites:
+            - diamond-pearl/back/shiny/haunter-default.png
+            - diamond-pearl/back/haunter-default.png
+            - diamond-pearl/shiny/haunter-default.png
+            - diamond-pearl/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 70
+  pokemon:
+    haunter:
+      genus: *diamond-pearl.pokemon.haunter.genus
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      shape: *diamond-pearl.pokemon.haunter.shape
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: *diamond-pearl.pokemon.haunter.baby
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      pal_park: *diamond-pearl.pokemon.haunter.pal_park
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: *diamond-pearl.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      stats: *diamond-pearl.pokemon.haunter.stats
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        platinum: |
+          It likes to lurk in the dark and tap
+          shoulders with a gaseous hand. Its
+          touch causes endless shuddering.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *ruby-sapphire.pokemon.haunter.forms.haunter.icon
+          sprites:
+            - platinum/back/shiny/haunter-default.png
+            - platinum/back/haunter-default.png
+            - platinum/shiny/haunter-default.png
+            - platinum/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 59
+  pokemon:
+    haunter:
+      genus: *diamond-pearl.pokemon.haunter.genus
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      shape: *diamond-pearl.pokemon.haunter.shape
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: *diamond-pearl.pokemon.haunter.baby
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      pal_park: *diamond-pearl.pokemon.haunter.pal_park
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: *diamond-pearl.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      stats: *diamond-pearl.pokemon.haunter.stats
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        heartgold: |
+          In total darkness, where nothing is
+          visible, HAUNTER lurks, silently
+          stalking its next victim.
+        soulsilver: |
+          Its tongue is made of gas. If licked,
+          its victim starts shaking constantly
+          until death eventually comes.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-4
+            power:
+              base_value: 1
+              range: 1
+            skill:
+              base_value: 4
+              range: 2-5
+            stamina:
+              base_value: 3
+              range: 2-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.haunter.forms.haunter.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/haunter-default.png
+            - heartgold-soulsilver/back/haunter-default.png
+            - heartgold-soulsilver/shiny/haunter-default.png
+            - heartgold-soulsilver/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    haunter:
+      genus: *diamond-pearl.pokemon.haunter.genus
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      color: &black-white.pokemon.haunter.color purple
+      shape: *diamond-pearl.pokemon.haunter.shape
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: *diamond-pearl.pokemon.haunter.baby
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: *diamond-pearl.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      stats: *diamond-pearl.pokemon.haunter.stats
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        black: |
+          It likes to lurk in the dark and tap
+          shoulders with a gaseous hand. Its
+          touch causes endless shuddering.
+        white: |
+          It likes to lurk in the dark and tap
+          shoulders with a gaseous hand. Its
+          touch causes endless shuddering.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *ruby-sapphire.pokemon.haunter.forms.haunter.icon
+          sprites:
+            - black-white/back/shiny/haunter-default.png
+            - black-white/back/haunter-default.png
+            - black-white/shiny/haunter-default.png
+            - black-white/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    haunter:
+      genus: *diamond-pearl.pokemon.haunter.genus
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      color: *black-white.pokemon.haunter.color
+      shape: *diamond-pearl.pokemon.haunter.shape
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: *diamond-pearl.pokemon.haunter.baby
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: *diamond-pearl.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      stats: *diamond-pearl.pokemon.haunter.stats
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        black-2: |
+          It likes to lurk in the dark and tap
+          shoulders with a gaseous hand. Its
+          touch causes endless shuddering.
+        white-2: |
+          It likes to lurk in the dark and tap
+          shoulders with a gaseous hand. Its
+          touch causes endless shuddering.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *ruby-sapphire.pokemon.haunter.forms.haunter.icon
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *red-blue.pokemon.haunter.forms.haunter.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 31
+  pokemon:
+    haunter:
+      genus: *diamond-pearl.pokemon.haunter.genus
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      color: *black-white.pokemon.haunter.color
+      shape: *diamond-pearl.pokemon.haunter.shape
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: *diamond-pearl.pokemon.haunter.baby
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: *diamond-pearl.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      mega: &x-y.pokemon.haunter.mega false
+      stats: *diamond-pearl.pokemon.haunter.stats
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        x: |
+          If you get the feeling of being watched in darkness
+          when nobody is around, Haunter is there.
+        'y': |
+          It licks with its gaseous tongue to steal the victim’s
+          life force. It lurks in darkness for prey.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: &x-y.pokemon.haunter.forms.haunter.icon haunter-default.png
+          sprites:
+            - x-y/shiny/haunter-default.png
+            - x-y/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: &x-y.pokemon.haunter.forms.haunter.cry haunter-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    haunter:
+      genus: *diamond-pearl.pokemon.haunter.genus
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      color: *black-white.pokemon.haunter.color
+      shape: *diamond-pearl.pokemon.haunter.shape
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: *diamond-pearl.pokemon.haunter.baby
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: *diamond-pearl.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      mega: *x-y.pokemon.haunter.mega
+      stats: *diamond-pearl.pokemon.haunter.stats
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Haunter is a dangerous Pokémon. If one beckons you while
+          floating in darkness, you must never approach it. This Pokémon
+          will try to lick you with its tongue and steal your life away.
+        alpha-sapphire: |
+          Haunter is a dangerous Pokémon. If one beckons you while
+          floating in darkness, you must never approach it. This Pokémon
+          will try to lick you with its tongue and steal your life away.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *x-y.pokemon.haunter.forms.haunter.icon
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *x-y.pokemon.haunter.forms.haunter.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/haunter-default.png
+            - omega-ruby-alpha-sapphire/shiny/haunter-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 62
+    original-melemele: 62
+    original-akala: 24
+    original-ulaula: 33
+  pokemon:
+    haunter:
+      genus: *diamond-pearl.pokemon.haunter.genus
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      color: *black-white.pokemon.haunter.color
+      shape: *diamond-pearl.pokemon.haunter.shape
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: *diamond-pearl.pokemon.haunter.baby
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: *diamond-pearl.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      mega: *x-y.pokemon.haunter.mega
+      stats: *diamond-pearl.pokemon.haunter.stats
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        sun: |-
+          It strikes at humans from total darkness.
+          Those licked by its cold tongue grow weaker
+          with each passing day until they die.
+        moon: |-
+          It fears the light and revels in the dark. It may
+          be on the verge of extinction in cities that stay
+          brightly lit at night.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *x-y.pokemon.haunter.forms.haunter.icon
+          sprites:
+            - sun-moon/shiny/haunter-default.png
+            - sun-moon/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *x-y.pokemon.haunter.forms.haunter.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 74
+    updated-melemele: 74
+    updated-akala: 24
+    updated-ulaula: 33
+  pokemon:
+    haunter:
+      genus: *diamond-pearl.pokemon.haunter.genus
+      evolution_parent: *red-blue.pokemon.haunter.evolution_parent
+      color: *black-white.pokemon.haunter.color
+      shape: *diamond-pearl.pokemon.haunter.shape
+      female_rate: *gold-silver.pokemon.haunter.female_rate
+      capture_rate: *red-blue.pokemon.haunter.capture_rate
+      happiness: *ruby-sapphire.pokemon.haunter.happiness
+      baby: *diamond-pearl.pokemon.haunter.baby
+      hatch_steps: *gold-silver.pokemon.haunter.hatch_steps
+      growth_rate: *red-blue.pokemon.haunter.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.haunter.forms_switchable
+      name: Haunter
+      default: *red-blue.pokemon.haunter.default
+      height: *red-blue.pokemon.haunter.height
+      weight: *gold-silver.pokemon.haunter.weight
+      experience: *diamond-pearl.pokemon.haunter.experience
+      types: *red-blue.pokemon.haunter.types
+      egg_groups: *gold-silver.pokemon.haunter.egg_groups
+      mega: *x-y.pokemon.haunter.mega
+      stats: *diamond-pearl.pokemon.haunter.stats
+      abilities: *ruby-sapphire.pokemon.haunter.abilities
+      evolution_conditions: *red-blue.pokemon.haunter.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          On moonless nights, Haunter searches for
+          someone to curse, so it’s best not to go out
+          walking around.
+        ultra-moon: |-
+          It’s dangerous to go outside alone on nights
+          when you’re feeling sad. Haunter will catch you,
+          and you won’t be able to go back home.
+      forms:
+        haunter:
+          name: Haunter
+          form_name: *red-blue.pokemon.haunter.forms.haunter.form_name
+          default: true
+          battle_only: *red-blue.pokemon.haunter.forms.haunter.battle_only
+          icon: *x-y.pokemon.haunter.forms.haunter.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/haunter-default.png
+            - ultra-sun-ultra-moon/haunter-default.png
+          art: *red-blue.pokemon.haunter.forms.haunter.art
+          footprint: *ruby-sapphire.pokemon.haunter.forms.haunter.footprint
+          cry: *x-y.pokemon.haunter.forms.haunter.cry

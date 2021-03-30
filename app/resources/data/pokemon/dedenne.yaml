@@ -1,0 +1,221 @@
+x-y:
+  name: &x-y.name Dedenne
+  position: &x-y.position 702
+  numbers:
+    national: &x-y.numbers.national 702
+    kalos-coastal: 110
+  pokemon:
+    dedenne:
+      genus: &x-y.pokemon.dedenne.genus 'Antenna Pokémon'
+      color: &x-y.pokemon.dedenne.color yellow
+      shape: &x-y.pokemon.dedenne.shape upright
+      female_rate: &x-y.pokemon.dedenne.female_rate 50
+      capture_rate: &x-y.pokemon.dedenne.capture_rate 180
+      happiness: &x-y.pokemon.dedenne.happiness 70
+      baby: &x-y.pokemon.dedenne.baby false
+      hatch_steps: &x-y.pokemon.dedenne.hatch_steps 20
+      growth_rate: &x-y.pokemon.dedenne.growth_rate medium
+      forms_switchable: &x-y.pokemon.dedenne.forms_switchable false
+      name: Dedenne
+      default: &x-y.pokemon.dedenne.default true
+      height: &x-y.pokemon.dedenne.height 2
+      weight: &x-y.pokemon.dedenne.weight 22
+      experience: &x-y.pokemon.dedenne.experience 151
+      types: &x-y.pokemon.dedenne.types
+        - electric
+        - fairy
+      egg_groups: &x-y.pokemon.dedenne.egg_groups
+        - ground
+        - fairy
+      mega: &x-y.pokemon.dedenne.mega false
+      stats: &x-y.pokemon.dedenne.stats
+        hp:
+          base_value: 67
+          effort_change: 0
+        attack:
+          base_value: 58
+          effort_change: 0
+        defense:
+          base_value: 57
+          effort_change: 0
+        speed:
+          base_value: 101
+          effort_change: 2
+        special-attack:
+          base_value: 81
+          effort_change: 0
+        special-defense:
+          base_value: 67
+          effort_change: 0
+      abilities: &x-y.pokemon.dedenne.abilities
+        cheek-pouch:
+          hidden: &x-y.pokemon.dedenne.abilities.cheek-pouch.hidden false
+          position: 1
+        pickup:
+          hidden: *x-y.pokemon.dedenne.abilities.cheek-pouch.hidden
+          position: 2
+        plus:
+          hidden: true
+          position: 3
+      flavor_text:
+        x: |
+          Its whiskers serve as antennas. By sending and
+          receiving electrical waves, it can communicate
+          with others over vast distances.
+        'y': |
+          It uses its tail to absorb electricity from
+          power plants or from outlets in houses,
+          and then it fires the electricity from its whiskers.
+      forms:
+        dedenne:
+          name: Dedenne
+          form_name: &x-y.pokemon.dedenne.forms.dedenne.form_name 'Default Form'
+          default: true
+          battle_only: &x-y.pokemon.dedenne.forms.dedenne.battle_only false
+          icon: &x-y.pokemon.dedenne.forms.dedenne.icon dedenne-default.png
+          sprites:
+            - x-y/dedenne-default.png
+            - x-y/shiny/dedenne-default.png
+          art: &x-y.pokemon.dedenne.forms.dedenne.art
+            - dedenne-default.png
+          footprint: &x-y.pokemon.dedenne.forms.dedenne.footprint dedenne.png
+          cry: &x-y.pokemon.dedenne.forms.dedenne.cry dedenne-default.webm
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *x-y.numbers.national
+  pokemon:
+    dedenne:
+      genus: *x-y.pokemon.dedenne.genus
+      color: *x-y.pokemon.dedenne.color
+      shape: *x-y.pokemon.dedenne.shape
+      female_rate: *x-y.pokemon.dedenne.female_rate
+      capture_rate: *x-y.pokemon.dedenne.capture_rate
+      happiness: *x-y.pokemon.dedenne.happiness
+      baby: *x-y.pokemon.dedenne.baby
+      hatch_steps: *x-y.pokemon.dedenne.hatch_steps
+      growth_rate: *x-y.pokemon.dedenne.growth_rate
+      forms_switchable: *x-y.pokemon.dedenne.forms_switchable
+      name: Dedenne
+      default: *x-y.pokemon.dedenne.default
+      height: *x-y.pokemon.dedenne.height
+      weight: *x-y.pokemon.dedenne.weight
+      experience: *x-y.pokemon.dedenne.experience
+      types: *x-y.pokemon.dedenne.types
+      egg_groups: *x-y.pokemon.dedenne.egg_groups
+      mega: *x-y.pokemon.dedenne.mega
+      stats: *x-y.pokemon.dedenne.stats
+      abilities: *x-y.pokemon.dedenne.abilities
+      flavor_text:
+        omega-ruby: |
+          Its whiskers serve as antennas. By sending and
+          receiving electrical waves, it can communicate
+          with others over vast distances.
+        alpha-sapphire: |
+          It uses its tail to absorb electricity from
+          power plants or from outlets in houses,
+          and then it fires the electricity from its whiskers.
+      forms:
+        dedenne:
+          name: Dedenne
+          form_name: *x-y.pokemon.dedenne.forms.dedenne.form_name
+          default: true
+          battle_only: *x-y.pokemon.dedenne.forms.dedenne.battle_only
+          icon: *x-y.pokemon.dedenne.forms.dedenne.icon
+          art: *x-y.pokemon.dedenne.forms.dedenne.art
+          footprint: *x-y.pokemon.dedenne.forms.dedenne.footprint
+          cry: *x-y.pokemon.dedenne.forms.dedenne.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/dedenne-default.png
+            - omega-ruby-alpha-sapphire/shiny/dedenne-default.png
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    dedenne:
+      genus: *x-y.pokemon.dedenne.genus
+      color: *x-y.pokemon.dedenne.color
+      shape: *x-y.pokemon.dedenne.shape
+      female_rate: *x-y.pokemon.dedenne.female_rate
+      capture_rate: *x-y.pokemon.dedenne.capture_rate
+      happiness: *x-y.pokemon.dedenne.happiness
+      baby: *x-y.pokemon.dedenne.baby
+      hatch_steps: *x-y.pokemon.dedenne.hatch_steps
+      growth_rate: *x-y.pokemon.dedenne.growth_rate
+      forms_switchable: *x-y.pokemon.dedenne.forms_switchable
+      name: Dedenne
+      default: *x-y.pokemon.dedenne.default
+      height: *x-y.pokemon.dedenne.height
+      weight: *x-y.pokemon.dedenne.weight
+      experience: *x-y.pokemon.dedenne.experience
+      types: *x-y.pokemon.dedenne.types
+      egg_groups: *x-y.pokemon.dedenne.egg_groups
+      mega: *x-y.pokemon.dedenne.mega
+      stats: *x-y.pokemon.dedenne.stats
+      abilities: *x-y.pokemon.dedenne.abilities
+      forms:
+        dedenne:
+          name: Dedenne
+          form_name: *x-y.pokemon.dedenne.forms.dedenne.form_name
+          default: true
+          battle_only: *x-y.pokemon.dedenne.forms.dedenne.battle_only
+          icon: *x-y.pokemon.dedenne.forms.dedenne.icon
+          sprites:
+            - sun-moon/dedenne-default.png
+            - sun-moon/shiny/dedenne-default.png
+          art: *x-y.pokemon.dedenne.forms.dedenne.art
+          footprint: *x-y.pokemon.dedenne.forms.dedenne.footprint
+          cry: *x-y.pokemon.dedenne.forms.dedenne.cry
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+    updated-alola: 291
+    updated-ulaula: 112
+  pokemon:
+    dedenne:
+      genus: *x-y.pokemon.dedenne.genus
+      color: *x-y.pokemon.dedenne.color
+      shape: *x-y.pokemon.dedenne.shape
+      female_rate: *x-y.pokemon.dedenne.female_rate
+      capture_rate: *x-y.pokemon.dedenne.capture_rate
+      happiness: *x-y.pokemon.dedenne.happiness
+      baby: *x-y.pokemon.dedenne.baby
+      hatch_steps: *x-y.pokemon.dedenne.hatch_steps
+      growth_rate: *x-y.pokemon.dedenne.growth_rate
+      forms_switchable: *x-y.pokemon.dedenne.forms_switchable
+      name: Dedenne
+      default: *x-y.pokemon.dedenne.default
+      height: *x-y.pokemon.dedenne.height
+      weight: *x-y.pokemon.dedenne.weight
+      experience: *x-y.pokemon.dedenne.experience
+      types: *x-y.pokemon.dedenne.types
+      egg_groups: *x-y.pokemon.dedenne.egg_groups
+      mega: *x-y.pokemon.dedenne.mega
+      stats: *x-y.pokemon.dedenne.stats
+      abilities: *x-y.pokemon.dedenne.abilities
+      flavor_text:
+        ultra-sun: |-
+          It sneaks into people’s homes and steals
+          electricity from their outlets. When your electric
+          bill seems off, it’s the handiwork of this rascal.
+        ultra-moon: |-
+          Its upper whiskers are sensors that survey its
+          surroundings. Its lower whiskers are organs
+          that shoot electricity.
+      forms:
+        dedenne:
+          name: Dedenne
+          form_name: *x-y.pokemon.dedenne.forms.dedenne.form_name
+          default: true
+          battle_only: *x-y.pokemon.dedenne.forms.dedenne.battle_only
+          icon: *x-y.pokemon.dedenne.forms.dedenne.icon
+          sprites:
+            - ultra-sun-ultra-moon/dedenne-default.png
+            - ultra-sun-ultra-moon/shiny/dedenne-default.png
+          art: *x-y.pokemon.dedenne.forms.dedenne.art
+          footprint: *x-y.pokemon.dedenne.forms.dedenne.footprint
+          cry: *x-y.pokemon.dedenne.forms.dedenne.cry

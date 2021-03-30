@@ -1,0 +1,536 @@
+diamond-pearl:
+  name: &diamond-pearl.name Roserade
+  position: &diamond-pearl.position 343
+  numbers:
+    national: &diamond-pearl.numbers.national 407
+    original-sinnoh: 27
+  pokemon:
+    roserade:
+      genus: &diamond-pearl.pokemon.roserade.genus 'Bouquet Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.roserade.evolution_parent roselia/roselia
+      shape: &diamond-pearl.pokemon.roserade.shape humanoid
+      female_rate: &diamond-pearl.pokemon.roserade.female_rate 50
+      capture_rate: &diamond-pearl.pokemon.roserade.capture_rate 75
+      happiness: &diamond-pearl.pokemon.roserade.happiness 70
+      baby: &diamond-pearl.pokemon.roserade.baby false
+      hatch_steps: &diamond-pearl.pokemon.roserade.hatch_steps 20
+      growth_rate: &diamond-pearl.pokemon.roserade.growth_rate medium-slow
+      forms_switchable: &diamond-pearl.pokemon.roserade.forms_switchable false
+      pal_park: &diamond-pearl.pokemon.roserade.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Roserade
+      default: &diamond-pearl.pokemon.roserade.default true
+      height: &diamond-pearl.pokemon.roserade.height 9
+      weight: &diamond-pearl.pokemon.roserade.weight 145
+      experience: &diamond-pearl.pokemon.roserade.experience 232
+      types: &diamond-pearl.pokemon.roserade.types
+        - grass
+        - poison
+      egg_groups: &diamond-pearl.pokemon.roserade.egg_groups
+        - fairy
+        - plant
+      stats: &diamond-pearl.pokemon.roserade.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 0
+        special-attack:
+          base_value: 125
+          effort_change: 3
+        special-defense:
+          base_value: 105
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.roserade.abilities
+        natural-cure:
+          hidden: &diamond-pearl.pokemon.roserade.abilities.natural-cure.hidden false
+          position: 1
+        poison-point:
+          hidden: *diamond-pearl.pokemon.roserade.abilities.natural-cure.hidden
+          position: 2
+        technician:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.roserade.wild_held_items.diamond
+          poison-barb: &diamond-pearl.pokemon.roserade.wild_held_items.diamond.poison-barb 5
+        pearl: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+      evolution_conditions: &diamond-pearl.pokemon.roserade.evolution_conditions
+        use-item:
+          trigger_item: shiny-stone
+      flavor_text:
+        diamond: |
+          It attracts prey with a sweet
+          aroma, then downs it with
+          thorny whips hidden in its arms.
+        pearl: |
+          With the movements of a dancer,
+          it strikes with whips that are
+          densely lined with poison thorns.
+      forms:
+        roserade:
+          name: Roserade
+          form_name: &diamond-pearl.pokemon.roserade.forms.roserade.form_name 'Default Form'
+          default: true
+          battle_only: &diamond-pearl.pokemon.roserade.forms.roserade.battle_only false
+          icon: &diamond-pearl.pokemon.roserade.forms.roserade.icon gen5/roserade-default.png
+          sprites:
+            - diamond-pearl/back/shiny/roserade-default.png
+            - diamond-pearl/back/roserade-default.png
+            - diamond-pearl/female/roserade-default.png
+            - diamond-pearl/shiny/female/roserade-default.png
+            - diamond-pearl/shiny/roserade-default.png
+            - diamond-pearl/roserade-default.png
+          art: &diamond-pearl.pokemon.roserade.forms.roserade.art
+            - roserade-default.png
+          footprint: &diamond-pearl.pokemon.roserade.forms.roserade.footprint roserade.png
+          cry: &diamond-pearl.pokemon.roserade.forms.roserade.cry gen5/roserade-default.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 27
+  pokemon:
+    roserade:
+      genus: *diamond-pearl.pokemon.roserade.genus
+      evolution_parent: *diamond-pearl.pokemon.roserade.evolution_parent
+      shape: *diamond-pearl.pokemon.roserade.shape
+      female_rate: *diamond-pearl.pokemon.roserade.female_rate
+      capture_rate: *diamond-pearl.pokemon.roserade.capture_rate
+      happiness: *diamond-pearl.pokemon.roserade.happiness
+      baby: *diamond-pearl.pokemon.roserade.baby
+      hatch_steps: *diamond-pearl.pokemon.roserade.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.roserade.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.roserade.forms_switchable
+      pal_park: *diamond-pearl.pokemon.roserade.pal_park
+      name: Roserade
+      default: *diamond-pearl.pokemon.roserade.default
+      height: *diamond-pearl.pokemon.roserade.height
+      weight: *diamond-pearl.pokemon.roserade.weight
+      experience: *diamond-pearl.pokemon.roserade.experience
+      types: *diamond-pearl.pokemon.roserade.types
+      egg_groups: *diamond-pearl.pokemon.roserade.egg_groups
+      stats: *diamond-pearl.pokemon.roserade.stats
+      abilities: *diamond-pearl.pokemon.roserade.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.roserade.evolution_conditions
+      flavor_text:
+        platinum: |
+          Each of its hands contains
+          different toxins, but both hands
+          can jab with near-fatal power.
+      forms:
+        roserade:
+          name: Roserade
+          form_name: *diamond-pearl.pokemon.roserade.forms.roserade.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.roserade.forms.roserade.battle_only
+          icon: *diamond-pearl.pokemon.roserade.forms.roserade.icon
+          sprites:
+            - platinum/back/female/roserade-default.png
+            - platinum/back/shiny/roserade-default.png
+            - platinum/back/roserade-default.png
+            - platinum/female/roserade-default.png
+            - platinum/shiny/female/roserade-default.png
+            - platinum/shiny/roserade-default.png
+            - platinum/roserade-default.png
+          art: *diamond-pearl.pokemon.roserade.forms.roserade.art
+          footprint: *diamond-pearl.pokemon.roserade.forms.roserade.footprint
+          cry: *diamond-pearl.pokemon.roserade.forms.roserade.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &heartgold-soulsilver.numbers
+    national: *diamond-pearl.numbers.national
+  pokemon:
+    roserade:
+      genus: *diamond-pearl.pokemon.roserade.genus
+      evolution_parent: *diamond-pearl.pokemon.roserade.evolution_parent
+      shape: *diamond-pearl.pokemon.roserade.shape
+      female_rate: *diamond-pearl.pokemon.roserade.female_rate
+      capture_rate: *diamond-pearl.pokemon.roserade.capture_rate
+      happiness: *diamond-pearl.pokemon.roserade.happiness
+      baby: *diamond-pearl.pokemon.roserade.baby
+      hatch_steps: *diamond-pearl.pokemon.roserade.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.roserade.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.roserade.forms_switchable
+      pal_park: *diamond-pearl.pokemon.roserade.pal_park
+      name: Roserade
+      default: *diamond-pearl.pokemon.roserade.default
+      height: *diamond-pearl.pokemon.roserade.height
+      weight: *diamond-pearl.pokemon.roserade.weight
+      experience: *diamond-pearl.pokemon.roserade.experience
+      types: *diamond-pearl.pokemon.roserade.types
+      egg_groups: *diamond-pearl.pokemon.roserade.egg_groups
+      stats: *diamond-pearl.pokemon.roserade.stats
+      abilities: *diamond-pearl.pokemon.roserade.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.roserade.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Its sweet aroma attracts prey.
+          Then it spews poison. The more
+          toxic it is, the sweeter its aroma.
+        soulsilver: |
+          Its sweet aroma attracts prey.
+          Then it spews poison. The more
+          toxic it is, the sweeter its aroma.
+      forms:
+        roserade:
+          name: Roserade
+          form_name: *diamond-pearl.pokemon.roserade.forms.roserade.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.roserade.forms.roserade.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 5
+              range: 3-5
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *diamond-pearl.pokemon.roserade.forms.roserade.icon
+          sprites:
+            - heartgold-soulsilver/back/female/roserade-default.png
+            - heartgold-soulsilver/back/shiny/roserade-default.png
+            - heartgold-soulsilver/back/roserade-default.png
+            - heartgold-soulsilver/female/roserade-default.png
+            - heartgold-soulsilver/shiny/female/roserade-default.png
+            - heartgold-soulsilver/shiny/roserade-default.png
+            - heartgold-soulsilver/roserade-default.png
+          art: *diamond-pearl.pokemon.roserade.forms.roserade.art
+          footprint: *diamond-pearl.pokemon.roserade.forms.roserade.footprint
+          cry: *diamond-pearl.pokemon.roserade.forms.roserade.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    roserade:
+      genus: *diamond-pearl.pokemon.roserade.genus
+      evolution_parent: *diamond-pearl.pokemon.roserade.evolution_parent
+      color: &black-white.pokemon.roserade.color green
+      shape: *diamond-pearl.pokemon.roserade.shape
+      female_rate: *diamond-pearl.pokemon.roserade.female_rate
+      capture_rate: *diamond-pearl.pokemon.roserade.capture_rate
+      happiness: *diamond-pearl.pokemon.roserade.happiness
+      baby: *diamond-pearl.pokemon.roserade.baby
+      hatch_steps: *diamond-pearl.pokemon.roserade.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.roserade.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.roserade.forms_switchable
+      name: Roserade
+      default: *diamond-pearl.pokemon.roserade.default
+      height: *diamond-pearl.pokemon.roserade.height
+      weight: *diamond-pearl.pokemon.roserade.weight
+      experience: *diamond-pearl.pokemon.roserade.experience
+      types: *diamond-pearl.pokemon.roserade.types
+      egg_groups: *diamond-pearl.pokemon.roserade.egg_groups
+      stats: *diamond-pearl.pokemon.roserade.stats
+      abilities: *diamond-pearl.pokemon.roserade.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.roserade.evolution_conditions
+      flavor_text:
+        black: |
+          Each of its hands contains
+          different toxins, but both hands
+          can jab with near-fatal power.
+        white: |
+          Each of its hands contains
+          different toxins, but both hands
+          can jab with near-fatal power.
+      forms:
+        roserade:
+          name: Roserade
+          form_name: *diamond-pearl.pokemon.roserade.forms.roserade.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.roserade.forms.roserade.battle_only
+          icon: *diamond-pearl.pokemon.roserade.forms.roserade.icon
+          sprites:
+            - black-white/back/female/roserade-default.png
+            - black-white/back/shiny/roserade-default.png
+            - black-white/back/roserade-default.png
+            - black-white/female/roserade-default.png
+            - black-white/shiny/female/roserade-default.png
+            - black-white/shiny/roserade-default.png
+            - black-white/roserade-default.png
+          art: *diamond-pearl.pokemon.roserade.forms.roserade.art
+          footprint: *diamond-pearl.pokemon.roserade.forms.roserade.footprint
+          cry: *diamond-pearl.pokemon.roserade.forms.roserade.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-unova: 135
+  pokemon:
+    roserade:
+      genus: *diamond-pearl.pokemon.roserade.genus
+      evolution_parent: *diamond-pearl.pokemon.roserade.evolution_parent
+      color: *black-white.pokemon.roserade.color
+      shape: *diamond-pearl.pokemon.roserade.shape
+      female_rate: *diamond-pearl.pokemon.roserade.female_rate
+      capture_rate: *diamond-pearl.pokemon.roserade.capture_rate
+      happiness: *diamond-pearl.pokemon.roserade.happiness
+      baby: *diamond-pearl.pokemon.roserade.baby
+      hatch_steps: *diamond-pearl.pokemon.roserade.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.roserade.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.roserade.forms_switchable
+      name: Roserade
+      default: *diamond-pearl.pokemon.roserade.default
+      height: *diamond-pearl.pokemon.roserade.height
+      weight: *diamond-pearl.pokemon.roserade.weight
+      experience: *diamond-pearl.pokemon.roserade.experience
+      types: *diamond-pearl.pokemon.roserade.types
+      egg_groups: *diamond-pearl.pokemon.roserade.egg_groups
+      stats: *diamond-pearl.pokemon.roserade.stats
+      abilities: *diamond-pearl.pokemon.roserade.abilities
+      wild_held_items:
+        black-2: &black-2-white-2.pokemon.roserade.wild_held_items.black-2
+          poison-barb: *diamond-pearl.pokemon.roserade.wild_held_items.diamond.poison-barb
+          absorb-bulb: 1
+        white-2: *black-2-white-2.pokemon.roserade.wild_held_items.black-2
+      evolution_conditions: *diamond-pearl.pokemon.roserade.evolution_conditions
+      flavor_text:
+        black-2: |
+          Luring prey with a sweet scent, it
+          uses poison whips on its arms
+          to poison, bind, and finish off the prey.
+        white-2: |
+          Luring prey with a sweet scent, it
+          uses poison whips on its arms
+          to poison, bind, and finish off the prey.
+      forms:
+        roserade:
+          name: Roserade
+          form_name: *diamond-pearl.pokemon.roserade.forms.roserade.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.roserade.forms.roserade.battle_only
+          icon: *diamond-pearl.pokemon.roserade.forms.roserade.icon
+          art: *diamond-pearl.pokemon.roserade.forms.roserade.art
+          footprint: *diamond-pearl.pokemon.roserade.forms.roserade.footprint
+          cry: *diamond-pearl.pokemon.roserade.forms.roserade.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    kalos-central: 73
+  pokemon:
+    roserade:
+      genus: *diamond-pearl.pokemon.roserade.genus
+      evolution_parent: *diamond-pearl.pokemon.roserade.evolution_parent
+      color: *black-white.pokemon.roserade.color
+      shape: *diamond-pearl.pokemon.roserade.shape
+      female_rate: *diamond-pearl.pokemon.roserade.female_rate
+      capture_rate: *diamond-pearl.pokemon.roserade.capture_rate
+      happiness: *diamond-pearl.pokemon.roserade.happiness
+      baby: *diamond-pearl.pokemon.roserade.baby
+      hatch_steps: *diamond-pearl.pokemon.roserade.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.roserade.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.roserade.forms_switchable
+      name: Roserade
+      default: *diamond-pearl.pokemon.roserade.default
+      height: *diamond-pearl.pokemon.roserade.height
+      weight: *diamond-pearl.pokemon.roserade.weight
+      experience: *diamond-pearl.pokemon.roserade.experience
+      types: *diamond-pearl.pokemon.roserade.types
+      egg_groups: *diamond-pearl.pokemon.roserade.egg_groups
+      mega: &x-y.pokemon.roserade.mega false
+      stats: *diamond-pearl.pokemon.roserade.stats
+      abilities: *diamond-pearl.pokemon.roserade.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.roserade.evolution_conditions
+      flavor_text:
+        x: |
+          Luring prey with a sweet scent, it uses poison whips
+          on its arms to poison, bind, and finish off the prey.
+        'y': |
+          With the movements of a dancer, it strikes with
+          whips that are densely lined with poison thorns.
+      forms:
+        roserade:
+          name: Roserade
+          form_name: *diamond-pearl.pokemon.roserade.forms.roserade.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.roserade.forms.roserade.battle_only
+          icon: &x-y.pokemon.roserade.forms.roserade.icon roserade-default.png
+          sprites:
+            - x-y/female/roserade-default.png
+            - x-y/shiny/female/roserade-default.png
+            - x-y/shiny/roserade-default.png
+            - x-y/roserade-default.png
+          art: *diamond-pearl.pokemon.roserade.forms.roserade.art
+          footprint: *diamond-pearl.pokemon.roserade.forms.roserade.footprint
+          cry: &x-y.pokemon.roserade.forms.roserade.cry roserade-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-hoenn: 99
+  pokemon:
+    roserade:
+      genus: *diamond-pearl.pokemon.roserade.genus
+      evolution_parent: *diamond-pearl.pokemon.roserade.evolution_parent
+      color: *black-white.pokemon.roserade.color
+      shape: *diamond-pearl.pokemon.roserade.shape
+      female_rate: *diamond-pearl.pokemon.roserade.female_rate
+      capture_rate: *diamond-pearl.pokemon.roserade.capture_rate
+      happiness: *diamond-pearl.pokemon.roserade.happiness
+      baby: *diamond-pearl.pokemon.roserade.baby
+      hatch_steps: *diamond-pearl.pokemon.roserade.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.roserade.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.roserade.forms_switchable
+      name: Roserade
+      default: *diamond-pearl.pokemon.roserade.default
+      height: *diamond-pearl.pokemon.roserade.height
+      weight: *diamond-pearl.pokemon.roserade.weight
+      experience: *diamond-pearl.pokemon.roserade.experience
+      types: *diamond-pearl.pokemon.roserade.types
+      egg_groups: *diamond-pearl.pokemon.roserade.egg_groups
+      mega: *x-y.pokemon.roserade.mega
+      stats: *diamond-pearl.pokemon.roserade.stats
+      abilities: *diamond-pearl.pokemon.roserade.abilities
+      evolution_conditions: *diamond-pearl.pokemon.roserade.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Luring prey with a sweet scent, it uses poison whips
+          on its arms to poison, bind, and finish off the prey.
+        alpha-sapphire: |
+          With the movements of a dancer, it strikes with
+          whips that are densely lined with poison thorns.
+      forms:
+        roserade:
+          name: Roserade
+          form_name: *diamond-pearl.pokemon.roserade.forms.roserade.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.roserade.forms.roserade.battle_only
+          icon: *x-y.pokemon.roserade.forms.roserade.icon
+          art: *diamond-pearl.pokemon.roserade.forms.roserade.art
+          footprint: *diamond-pearl.pokemon.roserade.forms.roserade.footprint
+          cry: *x-y.pokemon.roserade.forms.roserade.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/roserade-default.png
+            - omega-ruby-alpha-sapphire/shiny/roserade-default.png
+            - omega-ruby-alpha-sapphire/female/roserade-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/roserade-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    roserade:
+      genus: *diamond-pearl.pokemon.roserade.genus
+      evolution_parent: *diamond-pearl.pokemon.roserade.evolution_parent
+      color: *black-white.pokemon.roserade.color
+      shape: *diamond-pearl.pokemon.roserade.shape
+      female_rate: *diamond-pearl.pokemon.roserade.female_rate
+      capture_rate: *diamond-pearl.pokemon.roserade.capture_rate
+      happiness: *diamond-pearl.pokemon.roserade.happiness
+      baby: *diamond-pearl.pokemon.roserade.baby
+      hatch_steps: *diamond-pearl.pokemon.roserade.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.roserade.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.roserade.forms_switchable
+      name: Roserade
+      default: *diamond-pearl.pokemon.roserade.default
+      height: *diamond-pearl.pokemon.roserade.height
+      weight: *diamond-pearl.pokemon.roserade.weight
+      experience: *diamond-pearl.pokemon.roserade.experience
+      types: *diamond-pearl.pokemon.roserade.types
+      egg_groups: *diamond-pearl.pokemon.roserade.egg_groups
+      mega: *x-y.pokemon.roserade.mega
+      stats: *diamond-pearl.pokemon.roserade.stats
+      abilities: *diamond-pearl.pokemon.roserade.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.roserade.evolution_conditions
+      forms:
+        roserade:
+          name: Roserade
+          form_name: *diamond-pearl.pokemon.roserade.forms.roserade.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.roserade.forms.roserade.battle_only
+          icon: *x-y.pokemon.roserade.forms.roserade.icon
+          sprites:
+            - sun-moon/female/roserade-default.png
+            - sun-moon/shiny/female/roserade-default.png
+            - sun-moon/shiny/roserade-default.png
+            - sun-moon/roserade-default.png
+          art: *diamond-pearl.pokemon.roserade.forms.roserade.art
+          footprint: *diamond-pearl.pokemon.roserade.forms.roserade.footprint
+          cry: *x-y.pokemon.roserade.forms.roserade.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    roserade:
+      genus: *diamond-pearl.pokemon.roserade.genus
+      evolution_parent: *diamond-pearl.pokemon.roserade.evolution_parent
+      color: *black-white.pokemon.roserade.color
+      shape: *diamond-pearl.pokemon.roserade.shape
+      female_rate: *diamond-pearl.pokemon.roserade.female_rate
+      capture_rate: *diamond-pearl.pokemon.roserade.capture_rate
+      happiness: *diamond-pearl.pokemon.roserade.happiness
+      baby: *diamond-pearl.pokemon.roserade.baby
+      hatch_steps: *diamond-pearl.pokemon.roserade.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.roserade.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.roserade.forms_switchable
+      name: Roserade
+      default: *diamond-pearl.pokemon.roserade.default
+      height: *diamond-pearl.pokemon.roserade.height
+      weight: *diamond-pearl.pokemon.roserade.weight
+      experience: *diamond-pearl.pokemon.roserade.experience
+      types: *diamond-pearl.pokemon.roserade.types
+      egg_groups: *diamond-pearl.pokemon.roserade.egg_groups
+      mega: *x-y.pokemon.roserade.mega
+      stats: *diamond-pearl.pokemon.roserade.stats
+      abilities: *diamond-pearl.pokemon.roserade.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.roserade.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.roserade.evolution_conditions
+      forms:
+        roserade:
+          name: Roserade
+          form_name: *diamond-pearl.pokemon.roserade.forms.roserade.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.roserade.forms.roserade.battle_only
+          icon: *x-y.pokemon.roserade.forms.roserade.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/roserade-default.png
+            - ultra-sun-ultra-moon/shiny/female/roserade-default.png
+            - ultra-sun-ultra-moon/shiny/roserade-default.png
+            - ultra-sun-ultra-moon/roserade-default.png
+          art: *diamond-pearl.pokemon.roserade.forms.roserade.art
+          footprint: *diamond-pearl.pokemon.roserade.forms.roserade.footprint
+          cry: *x-y.pokemon.roserade.forms.roserade.cry

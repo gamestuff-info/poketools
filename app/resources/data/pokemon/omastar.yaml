@@ -1,0 +1,926 @@
+red-blue:
+  name: &red-blue.name OMASTAR
+  position: &red-blue.position 139
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 139
+    kanto: 139
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: &red-blue.pokemon.omastar.default true
+      capture_rate: &red-blue.pokemon.omastar.capture_rate 45
+      experience: &red-blue.pokemon.omastar.experience 199
+      types: &red-blue.pokemon.omastar.types
+        - rock
+        - water
+      stats: &red-blue.pokemon.omastar.stats
+        hp:
+          base_value: 70
+          effort_change: 70
+        attack:
+          base_value: 60
+          effort_change: 60
+        defense:
+          base_value: 125
+          effort_change: 125
+        speed:
+          base_value: 55
+          effort_change: 55
+        special:
+          base_value: 115
+          effort_change: 115
+      growth_rate: &red-blue.pokemon.omastar.growth_rate medium
+      genus: &red-blue.pokemon.omastar.genus 'SPIRAL Pokémon'
+      height: &red-blue.pokemon.omastar.height 9
+      weight: &red-blue.pokemon.omastar.weight 3492
+      flavor_text:
+        red: |
+          A prehistoric
+          POKéMON that died
+          out when its
+          heavy shell made
+          it impossible to
+          catch prey.
+        blue: |
+          A prehistoric
+          POKéMON that died
+          out when its
+          heavy shell made
+           it impossible to
+          catch prey.
+      evolution_parent: &red-blue.pokemon.omastar.evolution_parent omanyte/omanyte
+      evolution_conditions: &red-blue.pokemon.omastar.evolution_conditions
+        level-up:
+          minimum_level: 40
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: &red-blue.pokemon.omastar.forms.omastar.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.omastar.forms.omastar.battle_only false
+          sprites:
+            - red-blue/omastar-default.png
+            - red-blue/gray/omastar-default.png
+            - red-blue/back/omastar-default.png
+          art: &red-blue.pokemon.omastar.forms.omastar.art
+            - omastar-default.png
+          cry: &red-blue.pokemon.omastar.forms.omastar.cry gen5/omastar-default.webm
+          icon: &red-blue.pokemon.omastar.forms.omastar.icon gen1/helix.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: *red-blue.pokemon.omastar.default
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      experience: *red-blue.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      stats: *red-blue.pokemon.omastar.stats
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      genus: *red-blue.pokemon.omastar.genus
+      height: *red-blue.pokemon.omastar.height
+      weight: *red-blue.pokemon.omastar.weight
+      flavor_text:
+        yellow: |
+          Sharp beaks ring
+          its mouth. Its
+          shell was too big
+          for it to move
+           freely, so it
+          became extinct.
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          sprites:
+            - yellow/omastar-default.png
+            - yellow/gray/omastar-default.png
+            - yellow/back/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+          icon: *red-blue.pokemon.omastar.forms.omastar.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 138
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 220
+    original-johto-abc: 139
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: *red-blue.pokemon.omastar.default
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      experience: *red-blue.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      stats: &gold-silver.pokemon.omastar.stats
+        hp:
+          base_value: 70
+          effort_change: 70
+        attack:
+          base_value: 60
+          effort_change: 60
+        defense:
+          base_value: 125
+          effort_change: 125
+        speed:
+          base_value: 55
+          effort_change: 55
+        special-attack:
+          base_value: 115
+          effort_change: 115
+        special-defense:
+          base_value: 70
+          effort_change: 115
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      female_rate: &gold-silver.pokemon.omastar.female_rate 12
+      hatch_steps: &gold-silver.pokemon.omastar.hatch_steps 30
+      egg_groups: &gold-silver.pokemon.omastar.egg_groups
+        - water1
+        - water3
+      genus: *red-blue.pokemon.omastar.genus
+      height: *red-blue.pokemon.omastar.height
+      weight: &gold-silver.pokemon.omastar.weight 349
+      flavor_text:
+        gold: |
+          Apparently, it
+          cracked SHELLDER's
+          shell with its
+          sharp fangs and
+          sucked out the
+          insides.
+        silver: |
+          Once wrapped
+          around its prey,
+          it never lets go.
+          It eats the prey
+          by tearing at it
+          with sharp fangs.
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          sprites:
+            - gold-silver/omastar-default.png
+            - gold-silver/back/omastar-default.png
+            - gold-silver/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+          icon: &gold-silver.pokemon.omastar.forms.omastar.icon gen2/shell.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: *red-blue.pokemon.omastar.default
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      experience: *red-blue.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      stats: *gold-silver.pokemon.omastar.stats
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      genus: *red-blue.pokemon.omastar.genus
+      height: *red-blue.pokemon.omastar.height
+      weight: *gold-silver.pokemon.omastar.weight
+      flavor_text:
+        crystal: |
+          Its heavy shell
+          allowed it to
+          reach only nearby
+          food. This could
+          be the reason it
+          is extinct.
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          sprites:
+            - crystal/omastar-default.png
+            - crystal/back/omastar-default.png
+            - crystal/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+          icon: *gold-silver.pokemon.omastar.forms.omastar.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 294
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: *red-blue.pokemon.omastar.default
+      forms_switchable: &ruby-sapphire.pokemon.omastar.forms_switchable false
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      experience: *red-blue.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      stats: &ruby-sapphire.pokemon.omastar.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 125
+          effort_change: 2
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 115
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      happiness: &ruby-sapphire.pokemon.omastar.happiness 70
+      abilities: &ruby-sapphire.pokemon.omastar.abilities
+        swift-swim: &ruby-sapphire.pokemon.omastar.abilities.swift-swim
+          hidden: &ruby-sapphire.pokemon.omastar.abilities.swift-swim.hidden false
+          position: 1
+        shell-armor: &ruby-sapphire.pokemon.omastar.abilities.shell-armor
+          hidden: *ruby-sapphire.pokemon.omastar.abilities.swift-swim.hidden
+          position: 2
+      genus: *red-blue.pokemon.omastar.genus
+      height: &ruby-sapphire.pokemon.omastar.height 10
+      weight: &ruby-sapphire.pokemon.omastar.weight 350
+      flavor_text:
+        ruby: |
+          OMASTAR uses its tentacles to capture
+          its prey. It is believed to have become
+          extinct because its shell grew too large
+          and heavy, causing its movements to
+          become too slow and ponderous.
+        sapphire: |
+          OMASTAR uses its tentacles to capture
+          its prey. It is believed to have become
+          extinct because its shell grew too large
+          and heavy, causing its movements to
+          become too slow and ponderous.
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: &ruby-sapphire.pokemon.omastar.forms.omastar.icon gen5/omastar-default.png
+          sprites:
+            - ruby-sapphire/omastar-default.png
+            - ruby-sapphire/back/omastar-default.png
+            - ruby-sapphire/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: &ruby-sapphire.pokemon.omastar.forms.omastar.footprint omastar.png
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: *red-blue.pokemon.omastar.default
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      experience: *red-blue.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      abilities: *ruby-sapphire.pokemon.omastar.abilities
+      genus: *red-blue.pokemon.omastar.genus
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      flavor_text:
+        emerald: |
+          An OMASTAR uses its tentacles to capture
+          its prey. It is believed to have become
+          extinct because its shell grew too large,
+          making its movements slow and ponderous.
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *ruby-sapphire.pokemon.omastar.forms.omastar.icon
+          sprites:
+            - emerald/omastar-default.png
+            - emerald/shiny/omastar-default.png
+            - emerald/animated/omastar-default.webm
+            - emerald/animated/shiny/omastar-default.webm
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 231
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: *red-blue.pokemon.omastar.default
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      experience: *red-blue.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      abilities: *ruby-sapphire.pokemon.omastar.abilities
+      genus: *red-blue.pokemon.omastar.genus
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          sprites:
+            - colosseum/omastar-default.png
+            - colosseum/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: *red-blue.pokemon.omastar.default
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      experience: *red-blue.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      abilities: *ruby-sapphire.pokemon.omastar.abilities
+      genus: *red-blue.pokemon.omastar.genus
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          sprites:
+            - xd/omastar-default.png
+            - xd/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    omastar:
+      name: OMASTAR
+      default: *red-blue.pokemon.omastar.default
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      experience: *red-blue.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      abilities: *ruby-sapphire.pokemon.omastar.abilities
+      genus: *red-blue.pokemon.omastar.genus
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      flavor_text:
+        firered: |
+          Its tentacles are highly developed as if
+          they are hands and feet.  As soon as it
+          ensnares prey, it bites.
+        leafgreen: |
+          Despite having strong fangs and tentacles,
+          it went extinct when its heavy shell made
+          it unable to catch prey.
+      forms:
+        omastar:
+          name: OMASTAR
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *ruby-sapphire.pokemon.omastar.forms.omastar.icon
+          sprites:
+            - firered-leafgreen/omastar-default.png
+            - firered-leafgreen/back/omastar-default.png
+            - firered-leafgreen/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Omastar
+  position: &diamond-pearl.position 170
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    omastar:
+      genus: &diamond-pearl.pokemon.omastar.genus 'Spiral Pokémon'
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      shape: &diamond-pearl.pokemon.omastar.shape tentacles
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: &diamond-pearl.pokemon.omastar.baby false
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      pal_park: &diamond-pearl.pokemon.omastar.pal_park
+        area: sea
+        rate: 20
+        score: 70
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: &diamond-pearl.pokemon.omastar.experience 173
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: *ruby-sapphire.pokemon.omastar.abilities
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is thought that this Pokémon
+          became extinct because its spiral
+          shell grew too large.
+        pearl: |
+          It is thought that this Pokémon
+          became extinct because its spiral
+          shell grew too large.
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *ruby-sapphire.pokemon.omastar.forms.omastar.icon
+          sprites:
+            - diamond-pearl/omastar-default.png
+            - diamond-pearl/back/omastar-default.png
+            - diamond-pearl/back/shiny/omastar-default.png
+            - diamond-pearl/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    omastar:
+      genus: *diamond-pearl.pokemon.omastar.genus
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      shape: *diamond-pearl.pokemon.omastar.shape
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: *diamond-pearl.pokemon.omastar.baby
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.omastar.pal_park
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: *diamond-pearl.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: *ruby-sapphire.pokemon.omastar.abilities
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is thought that this Pokémon
+          became extinct because its spiral
+          shell grew too large.
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *ruby-sapphire.pokemon.omastar.forms.omastar.icon
+          sprites:
+            - platinum/omastar-default.png
+            - platinum/back/omastar-default.png
+            - platinum/back/shiny/omastar-default.png
+            - platinum/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 226
+  pokemon:
+    omastar:
+      genus: *diamond-pearl.pokemon.omastar.genus
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      shape: *diamond-pearl.pokemon.omastar.shape
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: *diamond-pearl.pokemon.omastar.baby
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.omastar.pal_park
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: *diamond-pearl.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: *ruby-sapphire.pokemon.omastar.abilities
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Apparently, it cracked SHELLDER’s
+          shell with its sharp fangs and
+          sucked out the insides.
+        soulsilver: |
+          Once wrapped around its prey,
+          it never lets go. It eats the prey
+          by tearing at it with sharp fangs.
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 3
+              range: 2-4
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.omastar.forms.omastar.icon
+          sprites:
+            - heartgold-soulsilver/omastar-default.png
+            - heartgold-soulsilver/back/omastar-default.png
+            - heartgold-soulsilver/back/shiny/omastar-default.png
+            - heartgold-soulsilver/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    omastar:
+      genus: *diamond-pearl.pokemon.omastar.genus
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      color: &black-white.pokemon.omastar.color blue
+      shape: *diamond-pearl.pokemon.omastar.shape
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: *diamond-pearl.pokemon.omastar.baby
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: *diamond-pearl.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: &black-white.pokemon.omastar.abilities
+        swift-swim: *ruby-sapphire.pokemon.omastar.abilities.swift-swim
+        shell-armor: *ruby-sapphire.pokemon.omastar.abilities.shell-armor
+        weak-armor:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      flavor_text:
+        black: |
+          It is thought that this Pokémon
+          became extinct because its spiral
+          shell grew too large.
+        white: |
+          It is thought that this Pokémon
+          became extinct because its spiral
+          shell grew too large.
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *ruby-sapphire.pokemon.omastar.forms.omastar.icon
+          sprites:
+            - black-white/omastar-default.png
+            - black-white/back/omastar-default.png
+            - black-white/back/shiny/omastar-default.png
+            - black-white/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    omastar:
+      genus: *diamond-pearl.pokemon.omastar.genus
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      color: *black-white.pokemon.omastar.color
+      shape: *diamond-pearl.pokemon.omastar.shape
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: *diamond-pearl.pokemon.omastar.baby
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: *diamond-pearl.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: *black-white.pokemon.omastar.abilities
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      flavor_text:
+        black-2: |
+          It is thought that this Pokémon
+          became extinct because its spiral
+          shell grew too large.
+        white-2: |
+          It is thought that this Pokémon
+          became extinct because its spiral
+          shell grew too large.
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *ruby-sapphire.pokemon.omastar.forms.omastar.icon
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *red-blue.pokemon.omastar.forms.omastar.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    omastar:
+      genus: *diamond-pearl.pokemon.omastar.genus
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      color: *black-white.pokemon.omastar.color
+      shape: *diamond-pearl.pokemon.omastar.shape
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: *diamond-pearl.pokemon.omastar.baby
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: *diamond-pearl.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      mega: &x-y.pokemon.omastar.mega false
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: *black-white.pokemon.omastar.abilities
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      flavor_text:
+        x: |
+          Its tentacles are highly developed as if they are
+          hands and feet. As soon as it ensnares prey,
+          it bites.
+        'y': |
+          Once wrapped around its prey, it never lets go.
+          It eats the prey by tearing at it with sharp fangs.
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: &x-y.pokemon.omastar.forms.omastar.icon omastar-default.png
+          sprites:
+            - x-y/omastar-default.png
+            - x-y/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: &x-y.pokemon.omastar.forms.omastar.cry omastar-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    omastar:
+      genus: *diamond-pearl.pokemon.omastar.genus
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      color: *black-white.pokemon.omastar.color
+      shape: *diamond-pearl.pokemon.omastar.shape
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: *diamond-pearl.pokemon.omastar.baby
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: *diamond-pearl.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      mega: *x-y.pokemon.omastar.mega
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: *black-white.pokemon.omastar.abilities
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Omastar uses its tentacles to capture its prey. It is believed to
+          have become extinct because its shell grew too large and
+          heavy, causing its movements to become too slow
+          and ponderous.
+        alpha-sapphire: |
+          Omastar uses its tentacles to capture its prey. It is
+          believed to have become extinct because its shell grew too
+          large and heavy, causing its movements to become too slow
+          and ponderous.
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *x-y.pokemon.omastar.forms.omastar.icon
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *x-y.pokemon.omastar.forms.omastar.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/omastar-default.png
+            - omega-ruby-alpha-sapphire/shiny/omastar-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    omastar:
+      genus: *diamond-pearl.pokemon.omastar.genus
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      color: *black-white.pokemon.omastar.color
+      shape: *diamond-pearl.pokemon.omastar.shape
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: *diamond-pearl.pokemon.omastar.baby
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: *diamond-pearl.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      mega: *x-y.pokemon.omastar.mega
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: *black-white.pokemon.omastar.abilities
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *x-y.pokemon.omastar.forms.omastar.icon
+          sprites:
+            - sun-moon/omastar-default.png
+            - sun-moon/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *x-y.pokemon.omastar.forms.omastar.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 228
+    updated-akala: 129
+  pokemon:
+    omastar:
+      genus: *diamond-pearl.pokemon.omastar.genus
+      evolution_parent: *red-blue.pokemon.omastar.evolution_parent
+      color: *black-white.pokemon.omastar.color
+      shape: *diamond-pearl.pokemon.omastar.shape
+      female_rate: *gold-silver.pokemon.omastar.female_rate
+      capture_rate: *red-blue.pokemon.omastar.capture_rate
+      happiness: *ruby-sapphire.pokemon.omastar.happiness
+      baby: *diamond-pearl.pokemon.omastar.baby
+      hatch_steps: *gold-silver.pokemon.omastar.hatch_steps
+      growth_rate: *red-blue.pokemon.omastar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.omastar.forms_switchable
+      name: Omastar
+      default: *red-blue.pokemon.omastar.default
+      height: *ruby-sapphire.pokemon.omastar.height
+      weight: *ruby-sapphire.pokemon.omastar.weight
+      experience: *diamond-pearl.pokemon.omastar.experience
+      types: *red-blue.pokemon.omastar.types
+      egg_groups: *gold-silver.pokemon.omastar.egg_groups
+      mega: *x-y.pokemon.omastar.mega
+      stats: *ruby-sapphire.pokemon.omastar.stats
+      abilities: *black-white.pokemon.omastar.abilities
+      evolution_conditions: *red-blue.pokemon.omastar.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Its heavy shell is thought to be the reason this
+          ancient Pokémon died out. It’s apparently a
+          distant ancestor of Octillery.
+        ultra-moon: |-
+          It wraps its prey in its tentacles to immobilize
+          them and then finishes them off with its
+          sharp fangs.
+      forms:
+        omastar:
+          name: Omastar
+          form_name: *red-blue.pokemon.omastar.forms.omastar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.omastar.forms.omastar.battle_only
+          icon: *x-y.pokemon.omastar.forms.omastar.icon
+          sprites:
+            - ultra-sun-ultra-moon/omastar-default.png
+            - ultra-sun-ultra-moon/shiny/omastar-default.png
+          art: *red-blue.pokemon.omastar.forms.omastar.art
+          footprint: *ruby-sapphire.pokemon.omastar.forms.omastar.footprint
+          cry: *x-y.pokemon.omastar.forms.omastar.cry

@@ -1,0 +1,128 @@
+sun-moon:
+  name: &sun-moon.name Torracat
+  position: &sun-moon.position 726
+  numbers:
+    national: &sun-moon.numbers.national 726
+    original-alola: 5
+    original-melemele: 5
+  pokemon:
+    torracat:
+      genus: &sun-moon.pokemon.torracat.genus 'Fire Cat Pokémon'
+      evolution_parent: &sun-moon.pokemon.torracat.evolution_parent litten/litten
+      color: &sun-moon.pokemon.torracat.color red
+      shape: &sun-moon.pokemon.torracat.shape quadruped
+      female_rate: &sun-moon.pokemon.torracat.female_rate 12
+      capture_rate: &sun-moon.pokemon.torracat.capture_rate 45
+      happiness: &sun-moon.pokemon.torracat.happiness 70
+      baby: &sun-moon.pokemon.torracat.baby false
+      hatch_steps: &sun-moon.pokemon.torracat.hatch_steps 15
+      growth_rate: &sun-moon.pokemon.torracat.growth_rate medium-slow
+      forms_switchable: &sun-moon.pokemon.torracat.forms_switchable false
+      name: Torracat
+      default: &sun-moon.pokemon.torracat.default true
+      height: &sun-moon.pokemon.torracat.height 7
+      weight: &sun-moon.pokemon.torracat.weight 250
+      experience: &sun-moon.pokemon.torracat.experience 147
+      types: &sun-moon.pokemon.torracat.types
+        - fire
+      egg_groups: &sun-moon.pokemon.torracat.egg_groups
+        - ground
+      mega: &sun-moon.pokemon.torracat.mega false
+      stats: &sun-moon.pokemon.torracat.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 2
+        special-attack:
+          base_value: 80
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      abilities: &sun-moon.pokemon.torracat.abilities
+        blaze:
+          hidden: false
+          position: 1
+        intimidate:
+          hidden: true
+          position: 3
+      evolution_conditions: &sun-moon.pokemon.torracat.evolution_conditions
+        level-up:
+          minimum_level: 17
+      flavor_text:
+        sun: |-
+          At its throat, it bears a bell of fire. The bell rings
+          brightly whenever this Pokémon spits fire.
+        moon: |-
+          It boasts powerful front legs. With a single
+          punch, it can bend an iron bar right over.
+      forms:
+        torracat:
+          name: Torracat
+          form_name: &sun-moon.pokemon.torracat.forms.torracat.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.torracat.forms.torracat.battle_only false
+          icon: &sun-moon.pokemon.torracat.forms.torracat.icon torracat-default.png
+          sprites:
+            - sun-moon/shiny/torracat-default.png
+            - sun-moon/torracat-default.png
+          footprint: &sun-moon.pokemon.torracat.forms.torracat.footprint torracat.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 5
+    updated-melemele: 5
+  pokemon:
+    torracat:
+      genus: *sun-moon.pokemon.torracat.genus
+      evolution_parent: *sun-moon.pokemon.torracat.evolution_parent
+      color: *sun-moon.pokemon.torracat.color
+      shape: *sun-moon.pokemon.torracat.shape
+      female_rate: *sun-moon.pokemon.torracat.female_rate
+      capture_rate: *sun-moon.pokemon.torracat.capture_rate
+      happiness: *sun-moon.pokemon.torracat.happiness
+      baby: *sun-moon.pokemon.torracat.baby
+      hatch_steps: *sun-moon.pokemon.torracat.hatch_steps
+      growth_rate: *sun-moon.pokemon.torracat.growth_rate
+      forms_switchable: *sun-moon.pokemon.torracat.forms_switchable
+      name: Torracat
+      default: *sun-moon.pokemon.torracat.default
+      height: *sun-moon.pokemon.torracat.height
+      weight: *sun-moon.pokemon.torracat.weight
+      experience: *sun-moon.pokemon.torracat.experience
+      types: *sun-moon.pokemon.torracat.types
+      egg_groups: *sun-moon.pokemon.torracat.egg_groups
+      mega: *sun-moon.pokemon.torracat.mega
+      stats: *sun-moon.pokemon.torracat.stats
+      abilities: *sun-moon.pokemon.torracat.abilities
+      evolution_conditions: *sun-moon.pokemon.torracat.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It can act spoiled if it grows close to its Trainer.
+          A powerful Pokémon, its sharp claws can leave
+          its Trainer’s whole body covered in scratches.
+        ultra-moon: |-
+          When its mane is standing on end, you can tell
+          it’s feeling good. When it isn’t feeling well, its fur
+          will lie down flat.
+      forms:
+        torracat:
+          name: Torracat
+          form_name: *sun-moon.pokemon.torracat.forms.torracat.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.torracat.forms.torracat.battle_only
+          icon: *sun-moon.pokemon.torracat.forms.torracat.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/torracat-default.png
+            - ultra-sun-ultra-moon/torracat-default.png
+          footprint: *sun-moon.pokemon.torracat.forms.torracat.footprint

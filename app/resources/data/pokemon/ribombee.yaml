@@ -1,0 +1,212 @@
+sun-moon:
+  name: &sun-moon.name Ribombee
+  position: &sun-moon.position 743
+  numbers:
+    national: &sun-moon.numbers.national 743
+    original-alola: 84
+    original-melemele: 84
+    original-ulaula: 44
+    original-poni: 34
+  pokemon:
+    ribombee:
+      genus: &sun-moon.pokemon.ribombee.genus 'Bee Fly Pokémon'
+      evolution_parent: &sun-moon.pokemon.ribombee.evolution_parent cutiefly/cutiefly
+      color: &sun-moon.pokemon.ribombee.color yellow
+      shape: &sun-moon.pokemon.ribombee.shape bug-wings
+      female_rate: &sun-moon.pokemon.ribombee.female_rate 50
+      capture_rate: &sun-moon.pokemon.ribombee.capture_rate 75
+      happiness: &sun-moon.pokemon.ribombee.happiness 70
+      baby: &sun-moon.pokemon.ribombee.baby false
+      hatch_steps: &sun-moon.pokemon.ribombee.hatch_steps 20
+      growth_rate: &sun-moon.pokemon.ribombee.growth_rate medium
+      forms_switchable: &sun-moon.pokemon.ribombee.forms_switchable false
+      name: Ribombee
+      default: &sun-moon.pokemon.ribombee.default true
+      height: &sun-moon.pokemon.ribombee.height 2
+      weight: &sun-moon.pokemon.ribombee.weight 5
+      experience: &sun-moon.pokemon.ribombee.experience 162
+      types: &sun-moon.pokemon.ribombee.types
+        - bug
+        - fairy
+      egg_groups: *sun-moon.pokemon.ribombee.types
+      mega: &sun-moon.pokemon.ribombee.mega false
+      stats: &sun-moon.pokemon.ribombee.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 124
+          effort_change: 2
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: &sun-moon.pokemon.ribombee.abilities
+        honey-gather:
+          hidden: &sun-moon.pokemon.ribombee.abilities.honey-gather.hidden false
+          position: 1
+        shield-dust:
+          hidden: *sun-moon.pokemon.ribombee.abilities.honey-gather.hidden
+          position: 2
+        sweet-veil:
+          hidden: true
+          position: 3
+      wild_held_items:
+        sun: &sun-moon.pokemon.ribombee.wild_held_items.sun
+          honey: 5
+        moon: *sun-moon.pokemon.ribombee.wild_held_items.sun
+      evolution_conditions: &sun-moon.pokemon.ribombee.evolution_conditions
+        level-up:
+          minimum_level: 25
+      flavor_text: &sun-moon.pokemon.ribombee.flavor_text
+        sun: |-
+          It rolls up pollen into puffs. It makes many
+          different varieties, some used as food and
+          others used in battle.
+        moon: |-
+          Some of Ribombee’s pollen puffs are highly
+          nutritious. They are sometimes sold
+          as supplements.
+      forms:
+        ribombee:
+          name: Ribombee
+          form_name: &sun-moon.pokemon.ribombee.forms.ribombee.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.ribombee.forms.ribombee.battle_only false
+          icon: &sun-moon.pokemon.ribombee.forms.ribombee.icon ribombee-default.png
+          sprites:
+            - sun-moon/ribombee-default.png
+            - sun-moon/shiny/ribombee-default.png
+          footprint: &sun-moon.pokemon.ribombee.forms.ribombee.footprint ribombee.png
+    ribombee-totem:
+      genus: *sun-moon.pokemon.ribombee.genus
+      evolution_parent: *sun-moon.pokemon.ribombee.evolution_parent
+      color: *sun-moon.pokemon.ribombee.color
+      shape: *sun-moon.pokemon.ribombee.shape
+      female_rate: *sun-moon.pokemon.ribombee.female_rate
+      capture_rate: *sun-moon.pokemon.ribombee.capture_rate
+      happiness: *sun-moon.pokemon.ribombee.happiness
+      baby: *sun-moon.pokemon.ribombee.baby
+      hatch_steps: *sun-moon.pokemon.ribombee.hatch_steps
+      growth_rate: *sun-moon.pokemon.ribombee.growth_rate
+      forms_switchable: *sun-moon.pokemon.ribombee.forms_switchable
+      name: &sun-moon.pokemon.ribombee-totem.name 'Totem Ribombee'
+      default: &sun-moon.pokemon.ribombee-totem.default false
+      height: &sun-moon.pokemon.ribombee-totem.height 4
+      weight: &sun-moon.pokemon.ribombee-totem.weight 20
+      experience: *sun-moon.pokemon.ribombee.experience
+      types: *sun-moon.pokemon.ribombee.types
+      egg_groups: *sun-moon.pokemon.ribombee.types
+      mega: *sun-moon.pokemon.ribombee.mega
+      stats: *sun-moon.pokemon.ribombee.stats
+      abilities: *sun-moon.pokemon.ribombee.abilities
+      evolution_conditions: *sun-moon.pokemon.ribombee.evolution_conditions
+      flavor_text: *sun-moon.pokemon.ribombee.flavor_text
+      forms:
+        ribombee-totem:
+          name: 'Totem Ribombee'
+          form_name: *sun-moon.pokemon.ribombee.forms.ribombee.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.ribombee.forms.ribombee.battle_only
+          icon: &sun-moon.pokemon.ribombee-totem.forms.ribombee-totem.icon ribombee-totem.png
+          footprint: *sun-moon.pokemon.ribombee.forms.ribombee.footprint
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 99
+    updated-melemele: 99
+    updated-ulaula: 44
+    updated-poni: 43
+  pokemon:
+    ribombee:
+      genus: *sun-moon.pokemon.ribombee.genus
+      evolution_parent: *sun-moon.pokemon.ribombee.evolution_parent
+      color: *sun-moon.pokemon.ribombee.color
+      shape: *sun-moon.pokemon.ribombee.shape
+      female_rate: *sun-moon.pokemon.ribombee.female_rate
+      capture_rate: *sun-moon.pokemon.ribombee.capture_rate
+      happiness: *sun-moon.pokemon.ribombee.happiness
+      baby: *sun-moon.pokemon.ribombee.baby
+      hatch_steps: *sun-moon.pokemon.ribombee.hatch_steps
+      growth_rate: *sun-moon.pokemon.ribombee.growth_rate
+      forms_switchable: *sun-moon.pokemon.ribombee.forms_switchable
+      name: Ribombee
+      default: *sun-moon.pokemon.ribombee.default
+      height: *sun-moon.pokemon.ribombee.height
+      weight: *sun-moon.pokemon.ribombee.weight
+      experience: *sun-moon.pokemon.ribombee.experience
+      types: *sun-moon.pokemon.ribombee.types
+      egg_groups: *sun-moon.pokemon.ribombee.types
+      mega: *sun-moon.pokemon.ribombee.mega
+      stats: *sun-moon.pokemon.ribombee.stats
+      abilities: *sun-moon.pokemon.ribombee.abilities
+      wild_held_items: &ultra-sun-ultra-moon.pokemon.ribombee.wild_held_items
+        ultra-sun: *sun-moon.pokemon.ribombee.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.ribombee.wild_held_items.sun
+      evolution_conditions: *sun-moon.pokemon.ribombee.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.ribombee.flavor_text
+        ultra-sun: |-
+          Rain makes pollen damp, so Ribombee hates
+          rain. When it sees ominous clouds, it finds a
+          hollow in a tree, where it waits stock-still.
+        ultra-moon: |-
+          It can predict the weather from moisture levels
+          and wind direction. Ribombee only reveals itself
+          when there are a few clear days in a row.
+      forms:
+        ribombee:
+          name: Ribombee
+          form_name: *sun-moon.pokemon.ribombee.forms.ribombee.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.ribombee.forms.ribombee.battle_only
+          icon: *sun-moon.pokemon.ribombee.forms.ribombee.icon
+          sprites:
+            - ultra-sun-ultra-moon/ribombee-default.png
+            - ultra-sun-ultra-moon/shiny/ribombee-default.png
+          footprint: *sun-moon.pokemon.ribombee.forms.ribombee.footprint
+    ribombee-totem:
+      genus: *sun-moon.pokemon.ribombee.genus
+      evolution_parent: *sun-moon.pokemon.ribombee.evolution_parent
+      color: *sun-moon.pokemon.ribombee.color
+      shape: *sun-moon.pokemon.ribombee.shape
+      female_rate: *sun-moon.pokemon.ribombee.female_rate
+      capture_rate: *sun-moon.pokemon.ribombee.capture_rate
+      happiness: *sun-moon.pokemon.ribombee.happiness
+      baby: *sun-moon.pokemon.ribombee.baby
+      hatch_steps: *sun-moon.pokemon.ribombee.hatch_steps
+      growth_rate: *sun-moon.pokemon.ribombee.growth_rate
+      forms_switchable: *sun-moon.pokemon.ribombee.forms_switchable
+      name: *sun-moon.pokemon.ribombee-totem.name
+      default: *sun-moon.pokemon.ribombee-totem.default
+      height: *sun-moon.pokemon.ribombee-totem.height
+      weight: *sun-moon.pokemon.ribombee-totem.weight
+      experience: *sun-moon.pokemon.ribombee.experience
+      types: *sun-moon.pokemon.ribombee.types
+      egg_groups: *sun-moon.pokemon.ribombee.types
+      mega: *sun-moon.pokemon.ribombee.mega
+      stats: *sun-moon.pokemon.ribombee.stats
+      abilities: *sun-moon.pokemon.ribombee.abilities
+      wild_held_items: *ultra-sun-ultra-moon.pokemon.ribombee.wild_held_items
+      evolution_conditions: *sun-moon.pokemon.ribombee.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.ribombee.flavor_text
+      forms:
+        ribombee-totem:
+          name: 'Totem Ribombee'
+          form_name: *sun-moon.pokemon.ribombee.forms.ribombee.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.ribombee.forms.ribombee.battle_only
+          icon: *sun-moon.pokemon.ribombee-totem.forms.ribombee-totem.icon
+          sprites:
+            - ultra-sun-ultra-moon/ribombee-totem.png
+            - ultra-sun-ultra-moon/shiny/ribombee-totem.png
+          footprint: *sun-moon.pokemon.ribombee.forms.ribombee.footprint

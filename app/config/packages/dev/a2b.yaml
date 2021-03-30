@@ -1,0 +1,8 @@
+a2b:
+  destinations:
+    - name: pokemon_move
+      uri: "%env(resolve:DATABASE_URL)%#pokemon_move"
+      driver: 'App\A2B\Drivers\Destination\DbalDestinationDriver'
+    - name: encounter
+      uri: "%env(resolve:DATABASE_URL)%#encounter"
+      driver: 'App\A2B\Drivers\Destination\DbalDestinationDriver'

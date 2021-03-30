@@ -1,0 +1,734 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name CLAMPERL
+  position: &ruby-sapphire.position 366
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 366
+    hoenn: 176
+  pokemon:
+    clamperl:
+      name: CLAMPERL
+      default: &ruby-sapphire.pokemon.clamperl.default true
+      forms_switchable: &ruby-sapphire.pokemon.clamperl.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.clamperl.capture_rate 255
+      experience: &ruby-sapphire.pokemon.clamperl.experience 142
+      types: &ruby-sapphire.pokemon.clamperl.types
+        - water
+      stats: &ruby-sapphire.pokemon.clamperl.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 64
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 1
+        speed:
+          base_value: 32
+          effort_change: 0
+        special-attack:
+          base_value: 74
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.clamperl.growth_rate slow-then-very-fast
+      female_rate: &ruby-sapphire.pokemon.clamperl.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.clamperl.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.clamperl.egg_groups
+        - water1
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.clamperl.wild_held_items.ruby
+          blue-shard: 5
+        sapphire: *ruby-sapphire.pokemon.clamperl.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.clamperl.happiness 70
+      abilities: &ruby-sapphire.pokemon.clamperl.abilities
+        shell-armor: &ruby-sapphire.pokemon.clamperl.abilities.shell-armor
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.clamperl.genus 'BIVALVE Pokémon'
+      height: &ruby-sapphire.pokemon.clamperl.height 4
+      weight: &ruby-sapphire.pokemon.clamperl.weight 525
+      flavor_text:
+        ruby: |
+          CLAMPERL's sturdy shell is not only good
+          for protection - it is also used for
+          clamping and catching prey.
+          A fully grown CLAMPERL's shell will be
+          scored with nicks and scratches all
+          over.
+        sapphire: |
+          CLAMPERL grows while being protected
+          by its rock-hard shell. When its body
+          becomes too large to fit inside the
+          shell, it is sure evidence that this
+          POKéMON is getting close to evolution.
+      forms:
+        clamperl:
+          name: CLAMPERL
+          form_name: &ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only false
+          icon: &ruby-sapphire.pokemon.clamperl.forms.clamperl.icon gen5/clamperl-default.png
+          sprites:
+            - ruby-sapphire/clamperl-default.png
+            - ruby-sapphire/back/clamperl-default.png
+            - ruby-sapphire/shiny/clamperl-default.png
+          art: &ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+            - clamperl-default.png
+          footprint: &ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint clamperl.png
+          cry: &ruby-sapphire.pokemon.clamperl.forms.clamperl.cry gen5/clamperl-default.webm
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    clamperl:
+      name: CLAMPERL
+      default: *ruby-sapphire.pokemon.clamperl.default
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      experience: *ruby-sapphire.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      stats: *ruby-sapphire.pokemon.clamperl.stats
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.clamperl.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      abilities: *ruby-sapphire.pokemon.clamperl.abilities
+      genus: *ruby-sapphire.pokemon.clamperl.genus
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      flavor_text:
+        emerald: |
+          A CLAMPERL slams its shell closed on prey
+          to prevent escape. The pearl it creates
+          upon evolution is said to be infused with
+          a mysterious energy.
+      forms:
+        clamperl:
+          name: CLAMPERL
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *ruby-sapphire.pokemon.clamperl.forms.clamperl.icon
+          sprites:
+            - emerald/clamperl-default.png
+            - emerald/shiny/clamperl-default.png
+            - emerald/animated/clamperl-default.webm
+            - emerald/animated/shiny/clamperl-default.webm
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 49
+  pokemon:
+    clamperl:
+      name: CLAMPERL
+      default: *ruby-sapphire.pokemon.clamperl.default
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      experience: *ruby-sapphire.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      stats: *ruby-sapphire.pokemon.clamperl.stats
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      abilities: *ruby-sapphire.pokemon.clamperl.abilities
+      genus: *ruby-sapphire.pokemon.clamperl.genus
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      forms:
+        clamperl:
+          name: CLAMPERL
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          sprites:
+            - colosseum/clamperl-default.png
+            - colosseum/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    clamperl:
+      name: CLAMPERL
+      default: *ruby-sapphire.pokemon.clamperl.default
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      experience: *ruby-sapphire.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      stats: *ruby-sapphire.pokemon.clamperl.stats
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      abilities: *ruby-sapphire.pokemon.clamperl.abilities
+      genus: *ruby-sapphire.pokemon.clamperl.genus
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      forms:
+        clamperl:
+          name: CLAMPERL
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          sprites:
+            - xd/clamperl-default.png
+            - xd/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    clamperl:
+      name: CLAMPERL
+      default: *ruby-sapphire.pokemon.clamperl.default
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      experience: *ruby-sapphire.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      stats: *ruby-sapphire.pokemon.clamperl.stats
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.clamperl.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.clamperl.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      abilities: *ruby-sapphire.pokemon.clamperl.abilities
+      genus: *ruby-sapphire.pokemon.clamperl.genus
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      flavor_text:
+        firered: |
+          It is protected by a sturdy shell.
+          Once in a lifetime, it makes a magnificent
+          pearl.
+        leafgreen: |
+          It is protected by a sturdy shell.
+          Once in a lifetime, it makes a magnificent
+          pearl.
+      forms:
+        clamperl:
+          name: CLAMPERL
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *ruby-sapphire.pokemon.clamperl.forms.clamperl.icon
+          sprites:
+            - firered-leafgreen/clamperl-default.png
+            - firered-leafgreen/back/clamperl-default.png
+            - firered-leafgreen/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+diamond-pearl:
+  name: &diamond-pearl.name Clamperl
+  position: &diamond-pearl.position 396
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    clamperl:
+      genus: &diamond-pearl.pokemon.clamperl.genus 'Bivalve Pokémon'
+      shape: &diamond-pearl.pokemon.clamperl.shape ball
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: &diamond-pearl.pokemon.clamperl.baby false
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      pal_park: &diamond-pearl.pokemon.clamperl.pal_park
+        area: sea
+        rate: 30
+        score: 50
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: &diamond-pearl.pokemon.clamperl.experience 69
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      stats: &diamond-pearl.pokemon.clamperl.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 64
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 1
+        speed:
+          base_value: 32
+          effort_change: 0
+        special-attack:
+          base_value: 74
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.clamperl.abilities
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+          big-pearl: &diamond-pearl.pokemon.clamperl.wild_held_items.diamond.big-pearl 5
+        pearl: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          It makes a single pearl during
+          its lifetime. The pearl is said
+          to amplify psychic power.
+        pearl: |
+          It makes a single pearl during
+          its lifetime. The pearl is said
+          to amplify psychic power.
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *ruby-sapphire.pokemon.clamperl.forms.clamperl.icon
+          sprites:
+            - diamond-pearl/clamperl-default.png
+            - diamond-pearl/back/clamperl-default.png
+            - diamond-pearl/back/shiny/clamperl-default.png
+            - diamond-pearl/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    clamperl:
+      genus: *diamond-pearl.pokemon.clamperl.genus
+      shape: *diamond-pearl.pokemon.clamperl.shape
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: *diamond-pearl.pokemon.clamperl.baby
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      pal_park: *diamond-pearl.pokemon.clamperl.pal_park
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: *diamond-pearl.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      stats: *diamond-pearl.pokemon.clamperl.stats
+      abilities: *ruby-sapphire.pokemon.clamperl.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          It makes a single pearl during
+          its lifetime. The pearl is said
+          to amplify psychic power.
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *ruby-sapphire.pokemon.clamperl.forms.clamperl.icon
+          sprites:
+            - platinum/clamperl-default.png
+            - platinum/back/clamperl-default.png
+            - platinum/back/shiny/clamperl-default.png
+            - platinum/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    clamperl:
+      genus: *diamond-pearl.pokemon.clamperl.genus
+      shape: *diamond-pearl.pokemon.clamperl.shape
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: *diamond-pearl.pokemon.clamperl.baby
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      pal_park: *diamond-pearl.pokemon.clamperl.pal_park
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: *diamond-pearl.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      stats: *diamond-pearl.pokemon.clamperl.stats
+      abilities: *ruby-sapphire.pokemon.clamperl.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          When it evolves, it makes a
+          mysterious pearl that amplifies
+          psychic powers when it’s held.
+        soulsilver: |
+          When it evolves, it makes a
+          mysterious pearl that amplifies
+          psychic powers when it’s held.
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.clamperl.forms.clamperl.icon
+          sprites:
+            - heartgold-soulsilver/clamperl-default.png
+            - heartgold-soulsilver/back/clamperl-default.png
+            - heartgold-soulsilver/back/shiny/clamperl-default.png
+            - heartgold-soulsilver/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    clamperl:
+      genus: *diamond-pearl.pokemon.clamperl.genus
+      color: &black-white.pokemon.clamperl.color blue
+      shape: *diamond-pearl.pokemon.clamperl.shape
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: *diamond-pearl.pokemon.clamperl.baby
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: *diamond-pearl.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      stats: *diamond-pearl.pokemon.clamperl.stats
+      abilities: &black-white.pokemon.clamperl.abilities
+        shell-armor: *ruby-sapphire.pokemon.clamperl.abilities.shell-armor
+        rattled:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+      flavor_text:
+        black: |
+          It makes a single pearl during
+          its lifetime. The pearl is said
+          to amplify psychic power.
+        white: |
+          It makes a single pearl during
+          its lifetime. The pearl is said
+          to amplify psychic power.
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *ruby-sapphire.pokemon.clamperl.forms.clamperl.icon
+          sprites:
+            - black-white/clamperl-default.png
+            - black-white/back/clamperl-default.png
+            - black-white/back/shiny/clamperl-default.png
+            - black-white/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    clamperl:
+      genus: *diamond-pearl.pokemon.clamperl.genus
+      color: *black-white.pokemon.clamperl.color
+      shape: *diamond-pearl.pokemon.clamperl.shape
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: *diamond-pearl.pokemon.clamperl.baby
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: *diamond-pearl.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      stats: *diamond-pearl.pokemon.clamperl.stats
+      abilities: *black-white.pokemon.clamperl.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          It makes a single pearl during
+          its lifetime. The pearl is said
+          to amplify psychic power.
+        white-2: |
+          It makes a single pearl during
+          its lifetime. The pearl is said
+          to amplify psychic power.
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *ruby-sapphire.pokemon.clamperl.forms.clamperl.icon
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *ruby-sapphire.pokemon.clamperl.forms.clamperl.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-coastal: 141
+  pokemon:
+    clamperl:
+      genus: *diamond-pearl.pokemon.clamperl.genus
+      color: *black-white.pokemon.clamperl.color
+      shape: *diamond-pearl.pokemon.clamperl.shape
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: *diamond-pearl.pokemon.clamperl.baby
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: *diamond-pearl.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      mega: &x-y.pokemon.clamperl.mega false
+      stats: *diamond-pearl.pokemon.clamperl.stats
+      abilities: *black-white.pokemon.clamperl.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.clamperl.wild_held_items.diamond
+      flavor_text:
+        x: |
+          When it evolves, it makes a mysterious pearl that
+          amplifies psychic powers when it’s held.
+        'y': |
+          It is protected by a sturdy shell. Once in a lifetime,
+          it makes a magnificent pearl.
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: &x-y.pokemon.clamperl.forms.clamperl.icon clamperl-default.png
+          sprites:
+            - x-y/clamperl-default.png
+            - x-y/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: &x-y.pokemon.clamperl.forms.clamperl.cry clamperl-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 185
+  pokemon:
+    clamperl:
+      genus: *diamond-pearl.pokemon.clamperl.genus
+      color: *black-white.pokemon.clamperl.color
+      shape: *diamond-pearl.pokemon.clamperl.shape
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: *diamond-pearl.pokemon.clamperl.baby
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: *diamond-pearl.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      mega: *x-y.pokemon.clamperl.mega
+      stats: *diamond-pearl.pokemon.clamperl.stats
+      abilities: *black-white.pokemon.clamperl.abilities
+      flavor_text:
+        omega-ruby: |
+          Clamperl’s sturdy shell is not only good for protection—it is
+          also used for clamping and catching prey. A fully grown
+          Clamperl’s shell will be scored with nicks and scratches
+          all over.
+        alpha-sapphire: |
+          Clamperl grows while being protected by its rock-hard shell.
+          When its body becomes too large to fit inside the shell, it is
+          sure evidence that this Pokémon is getting close to evolution.
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *x-y.pokemon.clamperl.forms.clamperl.icon
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *x-y.pokemon.clamperl.forms.clamperl.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/clamperl-default.png
+            - omega-ruby-alpha-sapphire/shiny/clamperl-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.clamperl.wild_held_items.omega-ruby
+          pearl: 50
+          big-pearl: *diamond-pearl.pokemon.clamperl.wild_held_items.diamond.big-pearl
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.clamperl.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    clamperl:
+      genus: *diamond-pearl.pokemon.clamperl.genus
+      color: *black-white.pokemon.clamperl.color
+      shape: *diamond-pearl.pokemon.clamperl.shape
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: *diamond-pearl.pokemon.clamperl.baby
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: *diamond-pearl.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      mega: *x-y.pokemon.clamperl.mega
+      stats: *diamond-pearl.pokemon.clamperl.stats
+      abilities: *black-white.pokemon.clamperl.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.clamperl.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.clamperl.wild_held_items.omega-ruby
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *x-y.pokemon.clamperl.forms.clamperl.icon
+          sprites:
+            - sun-moon/clamperl-default.png
+            - sun-moon/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *x-y.pokemon.clamperl.forms.clamperl.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 140
+    updated-melemele: 140
+    updated-ulaula: 61
+  pokemon:
+    clamperl:
+      genus: *diamond-pearl.pokemon.clamperl.genus
+      color: *black-white.pokemon.clamperl.color
+      shape: *diamond-pearl.pokemon.clamperl.shape
+      female_rate: *ruby-sapphire.pokemon.clamperl.female_rate
+      capture_rate: *ruby-sapphire.pokemon.clamperl.capture_rate
+      happiness: *ruby-sapphire.pokemon.clamperl.happiness
+      baby: *diamond-pearl.pokemon.clamperl.baby
+      hatch_steps: *ruby-sapphire.pokemon.clamperl.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.clamperl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clamperl.forms_switchable
+      name: Clamperl
+      default: *ruby-sapphire.pokemon.clamperl.default
+      height: *ruby-sapphire.pokemon.clamperl.height
+      weight: *ruby-sapphire.pokemon.clamperl.weight
+      experience: *diamond-pearl.pokemon.clamperl.experience
+      types: *ruby-sapphire.pokemon.clamperl.types
+      egg_groups: *ruby-sapphire.pokemon.clamperl.egg_groups
+      mega: *x-y.pokemon.clamperl.mega
+      stats: *diamond-pearl.pokemon.clamperl.stats
+      abilities: *black-white.pokemon.clamperl.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.clamperl.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.clamperl.wild_held_items.omega-ruby
+      flavor_text:
+        ultra-sun: |-
+          Despite its appearance, it’s carnivorous. It
+          clamps down on its prey with both sides of its
+          shell and doesn’t let go until they stop moving.
+        ultra-moon: |-
+          Clamperl’s pearls are exceedingly precious.
+          They can be more than 10 times as costly
+          as Shellder’s pearls.
+      forms:
+        clamperl:
+          name: Clamperl
+          form_name: *ruby-sapphire.pokemon.clamperl.forms.clamperl.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.clamperl.forms.clamperl.battle_only
+          icon: *x-y.pokemon.clamperl.forms.clamperl.icon
+          sprites:
+            - ultra-sun-ultra-moon/clamperl-default.png
+            - ultra-sun-ultra-moon/shiny/clamperl-default.png
+          art: *ruby-sapphire.pokemon.clamperl.forms.clamperl.art
+          footprint: *ruby-sapphire.pokemon.clamperl.forms.clamperl.footprint
+          cry: *x-y.pokemon.clamperl.forms.clamperl.cry

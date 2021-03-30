@@ -1,0 +1,983 @@
+red-blue:
+  name: &red-blue.name SNORLAX
+  position: &red-blue.position 143
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 143
+    kanto: 143
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: &red-blue.pokemon.snorlax.default true
+      capture_rate: &red-blue.pokemon.snorlax.capture_rate 25
+      experience: &red-blue.pokemon.snorlax.experience 154
+      types: &red-blue.pokemon.snorlax.types
+        - normal
+      stats: &red-blue.pokemon.snorlax.stats
+        hp:
+          base_value: 160
+          effort_change: 160
+        attack:
+          base_value: 110
+          effort_change: 110
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 30
+          effort_change: 30
+        special:
+          base_value: 65
+          effort_change: 65
+      growth_rate: &red-blue.pokemon.snorlax.growth_rate slow
+      genus: &red-blue.pokemon.snorlax.genus 'SLEEPING Pokémon'
+      height: &red-blue.pokemon.snorlax.height 21
+      weight: &red-blue.pokemon.snorlax.weight 45995
+      flavor_text:
+        red: |
+          Very lazy. Just
+          eats and sleeps.
+          As its rotund
+          bulk builds, it
+           becomes steadily
+          more slothful.
+        blue: |
+          Very lazy. Just
+          eats and sleeps.
+          As its rotund
+          bulk builds, it
+           becomes steadily
+          more slothful.
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: &red-blue.pokemon.snorlax.forms.snorlax.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.snorlax.forms.snorlax.battle_only false
+          sprites:
+            - red-blue/snorlax-default.png
+            - red-blue/gray/snorlax-default.png
+            - red-blue/back/snorlax-default.png
+          art: &red-blue.pokemon.snorlax.forms.snorlax.art
+            - snorlax-default.png
+          cry: &red-blue.pokemon.snorlax.forms.snorlax.cry gen5/snorlax-default.webm
+          icon: &red-blue.pokemon.snorlax.forms.snorlax.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: *red-blue.pokemon.snorlax.default
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      experience: *red-blue.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      stats: *red-blue.pokemon.snorlax.stats
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      genus: *red-blue.pokemon.snorlax.genus
+      height: *red-blue.pokemon.snorlax.height
+      weight: *red-blue.pokemon.snorlax.weight
+      flavor_text:
+        yellow: |
+          Will eat anything,
+          even if the food
+          happens to be a
+          little moldy.  It
+          never gets an
+          upset stomach.
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          sprites:
+            - yellow/snorlax-default.png
+            - yellow/gray/snorlax-default.png
+            - yellow/back/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+          icon: *red-blue.pokemon.snorlax.forms.snorlax.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 142
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 224
+    original-johto-abc: 193
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: *red-blue.pokemon.snorlax.default
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      experience: *red-blue.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      stats: &gold-silver.pokemon.snorlax.stats
+        hp:
+          base_value: 160
+          effort_change: 160
+        attack:
+          base_value: 110
+          effort_change: 110
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 30
+          effort_change: 30
+        special-attack:
+          base_value: 65
+          effort_change: 65
+        special-defense:
+          base_value: 110
+          effort_change: 65
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      female_rate: &gold-silver.pokemon.snorlax.female_rate 12
+      hatch_steps: &gold-silver.pokemon.snorlax.hatch_steps 40
+      egg_groups: &gold-silver.pokemon.snorlax.egg_groups
+        - monster
+      wild_held_items:
+        gold: &gold-silver.pokemon.snorlax.wild_held_items.gold
+          leftovers: 2
+        silver: *gold-silver.pokemon.snorlax.wild_held_items.gold
+      genus: *red-blue.pokemon.snorlax.genus
+      height: *red-blue.pokemon.snorlax.height
+      weight: &gold-silver.pokemon.snorlax.weight 4599
+      flavor_text:
+        gold: |
+          What sounds like
+          its cry may ac-
+          tually be its
+          snores or the
+          rumblings of its
+          hungry belly.
+        silver: |
+          Its stomach's di-
+          gestive juices can
+          dissolve any kind
+          of poison. It can
+          even eat things
+          off the ground.
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          sprites:
+            - gold-silver/snorlax-default.png
+            - gold-silver/back/snorlax-default.png
+            - gold-silver/shiny/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+          icon: &gold-silver.pokemon.snorlax.forms.snorlax.icon gen2/snorlax.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: *red-blue.pokemon.snorlax.default
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      experience: *red-blue.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      stats: *gold-silver.pokemon.snorlax.stats
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.snorlax.wild_held_items.gold
+      genus: *red-blue.pokemon.snorlax.genus
+      height: *red-blue.pokemon.snorlax.height
+      weight: *gold-silver.pokemon.snorlax.weight
+      flavor_text:
+        crystal: |
+          This #MON's
+          stomach is so
+          strong, even
+          eating moldy or
+          rotten food will
+          not affect it.
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          sprites:
+            - crystal/snorlax-default.png
+            - crystal/back/snorlax-default.png
+            - crystal/shiny/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+          icon: *gold-silver.pokemon.snorlax.forms.snorlax.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 298
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: *red-blue.pokemon.snorlax.default
+      forms_switchable: &ruby-sapphire.pokemon.snorlax.forms_switchable false
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      experience: *red-blue.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      stats: &ruby-sapphire.pokemon.snorlax.stats
+        hp:
+          base_value: 160
+          effort_change: 2
+        attack:
+          base_value: 110
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 160
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+          leftovers: 100
+        sapphire: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.snorlax.happiness 70
+      abilities: &ruby-sapphire.pokemon.snorlax.abilities
+        immunity: &ruby-sapphire.pokemon.snorlax.abilities.immunity
+          hidden: &ruby-sapphire.pokemon.snorlax.abilities.immunity.hidden false
+          position: 1
+        thick-fat: &ruby-sapphire.pokemon.snorlax.abilities.thick-fat
+          hidden: *ruby-sapphire.pokemon.snorlax.abilities.immunity.hidden
+          position: 2
+      genus: *red-blue.pokemon.snorlax.genus
+      height: *red-blue.pokemon.snorlax.height
+      weight: &ruby-sapphire.pokemon.snorlax.weight 4600
+      flavor_text:
+        ruby: |
+          SNORLAX's typical day consists of
+          nothing more than eating and sleeping.
+           It is such a docile POKéMON that there
+          are children who use its expansive belly
+          as a place to play.
+        sapphire: |
+          SNORLAX's typical day consists of
+          nothing more than eating and sleeping.
+          It is such a docile POKéMON that there
+          are children who use its expansive belly
+          as a place to play.
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: &ruby-sapphire.pokemon.snorlax.forms.snorlax.icon gen5/snorlax-default.png
+          sprites:
+            - ruby-sapphire/snorlax-default.png
+            - ruby-sapphire/back/snorlax-default.png
+            - ruby-sapphire/shiny/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: &ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint snorlax.png
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: *red-blue.pokemon.snorlax.default
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      experience: *red-blue.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      stats: *ruby-sapphire.pokemon.snorlax.stats
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      abilities: *ruby-sapphire.pokemon.snorlax.abilities
+      genus: *red-blue.pokemon.snorlax.genus
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      flavor_text:
+        emerald: |
+          SNORLAX's typical day consists of nothing
+          more than eating and sleeping. It is such
+          a docile POKéMON that there are children
+          who use its big belly as a place to play.
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *ruby-sapphire.pokemon.snorlax.forms.snorlax.icon
+          sprites:
+            - emerald/snorlax-default.png
+            - emerald/shiny/snorlax-default.png
+            - emerald/animated/snorlax-default.webm
+            - emerald/animated/shiny/snorlax-default.webm
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 311
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: *red-blue.pokemon.snorlax.default
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      experience: *red-blue.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      stats: *ruby-sapphire.pokemon.snorlax.stats
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      abilities: *ruby-sapphire.pokemon.snorlax.abilities
+      genus: *red-blue.pokemon.snorlax.genus
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          sprites:
+            - colosseum/snorlax-default.png
+            - colosseum/shiny/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: *red-blue.pokemon.snorlax.default
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      experience: *red-blue.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      stats: *ruby-sapphire.pokemon.snorlax.stats
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      abilities: *ruby-sapphire.pokemon.snorlax.abilities
+      genus: *red-blue.pokemon.snorlax.genus
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          sprites:
+            - xd/snorlax-default.png
+            - xd/shiny/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    snorlax:
+      name: SNORLAX
+      default: *red-blue.pokemon.snorlax.default
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      experience: *red-blue.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      stats: *ruby-sapphire.pokemon.snorlax.stats
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.snorlax.wild_held_items.firered
+          chesto-berry: 100
+        leafgreen: *firered-leafgreen.pokemon.snorlax.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      abilities: *ruby-sapphire.pokemon.snorlax.abilities
+      genus: *red-blue.pokemon.snorlax.genus
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      flavor_text:
+        firered: |
+          It is not satisfied unless it eats over 880
+          pounds of food every day. When it is done
+          eating, it goes promptly to sleep.
+        leafgreen: |
+          Very lazy. Just eats and sleeps. As its
+          rotund bulk builds, it becomes steadily
+          more slothful.
+      forms:
+        snorlax:
+          name: SNORLAX
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *ruby-sapphire.pokemon.snorlax.forms.snorlax.icon
+          sprites:
+            - firered-leafgreen/snorlax-default.png
+            - firered-leafgreen/back/snorlax-default.png
+            - firered-leafgreen/shiny/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+diamond-pearl:
+  name: &diamond-pearl.name Snorlax
+  position: &diamond-pearl.position 175
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 113
+  pokemon:
+    snorlax:
+      genus: &diamond-pearl.pokemon.snorlax.genus 'Sleeping Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.snorlax.evolution_parent munchlax/munchlax
+      shape: &diamond-pearl.pokemon.snorlax.shape humanoid
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: &diamond-pearl.pokemon.snorlax.baby false
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      pal_park: &diamond-pearl.pokemon.snorlax.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: &diamond-pearl.pokemon.snorlax.experience 189
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      stats: &diamond-pearl.pokemon.snorlax.stats
+        hp:
+          base_value: 160
+          effort_change: 2
+        attack:
+          base_value: 110
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 110
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.snorlax.abilities
+        immunity: *ruby-sapphire.pokemon.snorlax.abilities.immunity
+        thick-fat: *ruby-sapphire.pokemon.snorlax.abilities.thick-fat
+        gluttony:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+      evolution_conditions: &diamond-pearl.pokemon.snorlax.evolution_conditions
+        level-up:
+          minimum_happiness: 220
+      flavor_text:
+        diamond: |
+          Its stomach can digest any kind
+          of food, even if it happens to be
+          moldy or rotten.
+        pearl: |
+          It stops eating only to sleep.
+          It doesn’t feel full unless it
+          eats nearly 900 pounds a day.
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *ruby-sapphire.pokemon.snorlax.forms.snorlax.icon
+          sprites:
+            - diamond-pearl/back/shiny/snorlax-default.png
+            - diamond-pearl/back/snorlax-default.png
+            - diamond-pearl/shiny/snorlax-default.png
+            - diamond-pearl/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 113
+  pokemon:
+    snorlax:
+      genus: *diamond-pearl.pokemon.snorlax.genus
+      evolution_parent: *diamond-pearl.pokemon.snorlax.evolution_parent
+      shape: *diamond-pearl.pokemon.snorlax.shape
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: *diamond-pearl.pokemon.snorlax.baby
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      pal_park: *diamond-pearl.pokemon.snorlax.pal_park
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: *diamond-pearl.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      stats: *diamond-pearl.pokemon.snorlax.stats
+      abilities: *diamond-pearl.pokemon.snorlax.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+      evolution_conditions: *diamond-pearl.pokemon.snorlax.evolution_conditions
+      flavor_text:
+        platinum: |
+          When its belly is full, it becomes
+          too lethargic to even lift a finger,
+          so it is safe to bounce on its belly.
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *ruby-sapphire.pokemon.snorlax.forms.snorlax.icon
+          sprites:
+            - platinum/back/shiny/snorlax-default.png
+            - platinum/back/snorlax-default.png
+            - platinum/shiny/snorlax-default.png
+            - platinum/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 230
+  pokemon:
+    snorlax:
+      genus: *diamond-pearl.pokemon.snorlax.genus
+      evolution_parent: *diamond-pearl.pokemon.snorlax.evolution_parent
+      shape: *diamond-pearl.pokemon.snorlax.shape
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: *diamond-pearl.pokemon.snorlax.baby
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      pal_park: *diamond-pearl.pokemon.snorlax.pal_park
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: *diamond-pearl.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      stats: *diamond-pearl.pokemon.snorlax.stats
+      abilities: *diamond-pearl.pokemon.snorlax.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+      evolution_conditions: *diamond-pearl.pokemon.snorlax.evolution_conditions
+      flavor_text:
+        heartgold: |
+          What sounds like its cry may
+          actually be its snores or the
+          rumblings of its hungry belly.
+        soulsilver: |
+          Its stomach’s digestive juices can
+          dissolve any kind of poison. It can
+          even eat things off the ground.
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-2
+            power:
+              base_value: 4
+              range: 2-5
+            skill:
+              base_value: 1
+              range: 1-3
+            stamina:
+              base_value: 5
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.snorlax.forms.snorlax.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/snorlax-default.png
+            - heartgold-soulsilver/back/snorlax-default.png
+            - heartgold-soulsilver/shiny/snorlax-default.png
+            - heartgold-soulsilver/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    snorlax:
+      genus: *diamond-pearl.pokemon.snorlax.genus
+      evolution_parent: *diamond-pearl.pokemon.snorlax.evolution_parent
+      color: &black-white.pokemon.snorlax.color black
+      shape: *diamond-pearl.pokemon.snorlax.shape
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: *diamond-pearl.pokemon.snorlax.baby
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: *diamond-pearl.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      stats: *diamond-pearl.pokemon.snorlax.stats
+      abilities: *diamond-pearl.pokemon.snorlax.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+      evolution_conditions: *diamond-pearl.pokemon.snorlax.evolution_conditions
+      flavor_text:
+        black: |
+          When its belly is full, it becomes
+          too lethargic to even lift a finger,
+          so it is safe to bounce on its belly.
+        white: |
+          When its belly is full, it becomes
+          too lethargic to even lift a finger,
+          so it is safe to bounce on its belly.
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *ruby-sapphire.pokemon.snorlax.forms.snorlax.icon
+          sprites:
+            - black-white/back/shiny/snorlax-default.png
+            - black-white/back/snorlax-default.png
+            - black-white/shiny/snorlax-default.png
+            - black-white/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    snorlax:
+      genus: *diamond-pearl.pokemon.snorlax.genus
+      evolution_parent: *diamond-pearl.pokemon.snorlax.evolution_parent
+      color: *black-white.pokemon.snorlax.color
+      shape: *diamond-pearl.pokemon.snorlax.shape
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: *diamond-pearl.pokemon.snorlax.baby
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: *diamond-pearl.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      stats: *diamond-pearl.pokemon.snorlax.stats
+      abilities: *diamond-pearl.pokemon.snorlax.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+      evolution_conditions: *diamond-pearl.pokemon.snorlax.evolution_conditions
+      flavor_text:
+        black-2: |
+          When its belly is full, it becomes
+          too lethargic to even lift a finger,
+          so it is safe to bounce on its belly.
+        white-2: |
+          When its belly is full, it becomes
+          too lethargic to even lift a finger,
+          so it is safe to bounce on its belly.
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *ruby-sapphire.pokemon.snorlax.forms.snorlax.icon
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *red-blue.pokemon.snorlax.forms.snorlax.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 139
+  pokemon:
+    snorlax:
+      genus: *diamond-pearl.pokemon.snorlax.genus
+      evolution_parent: *diamond-pearl.pokemon.snorlax.evolution_parent
+      color: *black-white.pokemon.snorlax.color
+      shape: *diamond-pearl.pokemon.snorlax.shape
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: *diamond-pearl.pokemon.snorlax.baby
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: *diamond-pearl.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      mega: &x-y.pokemon.snorlax.mega false
+      stats: *diamond-pearl.pokemon.snorlax.stats
+      abilities: *diamond-pearl.pokemon.snorlax.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+      evolution_conditions: *diamond-pearl.pokemon.snorlax.evolution_conditions
+      flavor_text:
+        x: |
+          It is not satisfied unless it eats over 880 pounds of
+          food every day. When it is done eating, it goes
+          promptly to sleep.
+        'y': |
+          Its stomach can digest any kind of food,
+          even if it happens to be moldy or rotten.
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: &x-y.pokemon.snorlax.forms.snorlax.icon snorlax-default.png
+          sprites:
+            - x-y/shiny/snorlax-default.png
+            - x-y/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: &x-y.pokemon.snorlax.forms.snorlax.cry snorlax-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    snorlax:
+      genus: *diamond-pearl.pokemon.snorlax.genus
+      evolution_parent: *diamond-pearl.pokemon.snorlax.evolution_parent
+      color: *black-white.pokemon.snorlax.color
+      shape: *diamond-pearl.pokemon.snorlax.shape
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: *diamond-pearl.pokemon.snorlax.baby
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: *diamond-pearl.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      mega: *x-y.pokemon.snorlax.mega
+      stats: *diamond-pearl.pokemon.snorlax.stats
+      abilities: *diamond-pearl.pokemon.snorlax.abilities
+      evolution_conditions: *diamond-pearl.pokemon.snorlax.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Snorlax’s typical day consists of nothing more than eating and
+          sleeping. It is such a docile Pokémon that there are children
+          who use its expansive belly as a place to play.
+        alpha-sapphire: |
+          Snorlax’s typical day consists of nothing more than eating and
+          sleeping. It is such a docile Pokémon that there are children
+          who use its expansive belly as a place to play.
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *x-y.pokemon.snorlax.forms.snorlax.icon
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *x-y.pokemon.snorlax.forms.snorlax.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/snorlax-default.png
+            - omega-ruby-alpha-sapphire/shiny/snorlax-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.snorlax.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 36
+    original-melemele: 36
+  pokemon:
+    snorlax:
+      genus: *diamond-pearl.pokemon.snorlax.genus
+      evolution_parent: *diamond-pearl.pokemon.snorlax.evolution_parent
+      color: *black-white.pokemon.snorlax.color
+      shape: *diamond-pearl.pokemon.snorlax.shape
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: *diamond-pearl.pokemon.snorlax.baby
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: *diamond-pearl.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      mega: *x-y.pokemon.snorlax.mega
+      stats: *diamond-pearl.pokemon.snorlax.stats
+      abilities: *diamond-pearl.pokemon.snorlax.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.snorlax.wild_held_items.sun
+          leftovers: 5
+        moon: *sun-moon.pokemon.snorlax.wild_held_items.sun
+      evolution_conditions: *diamond-pearl.pokemon.snorlax.evolution_conditions
+      flavor_text:
+        sun: |-
+          Its stomach is said to be incomparably strong.
+          Even Muk’s poison is nothing more than a hint of
+          spice on Snorlax’s tongue.
+        moon: |-
+          It eats nearly 900 pounds of food every day.
+          It starts nodding off while eating—and continues
+          to eat even while it’s asleep.
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *x-y.pokemon.snorlax.forms.snorlax.icon
+          sprites:
+            - sun-moon/shiny/snorlax-default.png
+            - sun-moon/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *x-y.pokemon.snorlax.forms.snorlax.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 43
+    updated-melemele: 43
+  pokemon:
+    snorlax:
+      genus: *diamond-pearl.pokemon.snorlax.genus
+      evolution_parent: *diamond-pearl.pokemon.snorlax.evolution_parent
+      color: *black-white.pokemon.snorlax.color
+      shape: *diamond-pearl.pokemon.snorlax.shape
+      female_rate: *gold-silver.pokemon.snorlax.female_rate
+      capture_rate: *red-blue.pokemon.snorlax.capture_rate
+      happiness: *ruby-sapphire.pokemon.snorlax.happiness
+      baby: *diamond-pearl.pokemon.snorlax.baby
+      hatch_steps: *gold-silver.pokemon.snorlax.hatch_steps
+      growth_rate: *red-blue.pokemon.snorlax.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.snorlax.forms_switchable
+      name: Snorlax
+      default: *red-blue.pokemon.snorlax.default
+      height: *red-blue.pokemon.snorlax.height
+      weight: *ruby-sapphire.pokemon.snorlax.weight
+      experience: *diamond-pearl.pokemon.snorlax.experience
+      types: *red-blue.pokemon.snorlax.types
+      egg_groups: *gold-silver.pokemon.snorlax.egg_groups
+      mega: *x-y.pokemon.snorlax.mega
+      stats: *diamond-pearl.pokemon.snorlax.stats
+      abilities: *diamond-pearl.pokemon.snorlax.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.snorlax.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.snorlax.wild_held_items.sun
+      evolution_conditions: *diamond-pearl.pokemon.snorlax.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It doesn’t do anything other than eat and sleep.
+          When prompted to make a serious effort,
+          though, it apparently displays awesome power.
+        ultra-moon: |-
+          It has no interest in anything other than eating.
+          Even if you climb up on its stomach while it’s
+          napping, it doesn’t seem to mind at all!
+      forms:
+        snorlax:
+          name: Snorlax
+          form_name: *red-blue.pokemon.snorlax.forms.snorlax.form_name
+          default: true
+          battle_only: *red-blue.pokemon.snorlax.forms.snorlax.battle_only
+          icon: *x-y.pokemon.snorlax.forms.snorlax.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/snorlax-default.png
+            - ultra-sun-ultra-moon/snorlax-default.png
+          art: *red-blue.pokemon.snorlax.forms.snorlax.art
+          footprint: *ruby-sapphire.pokemon.snorlax.forms.snorlax.footprint
+          cry: *x-y.pokemon.snorlax.forms.snorlax.cry

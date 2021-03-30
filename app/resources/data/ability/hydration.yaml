@@ -1,0 +1,25 @@
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Hydration
+  short_description: &diamond-pearl.short_description 'Cures any [major status ailment]{mechanic:major-status-ailment} after each turn during [rain]{mechanic:rain}.'
+  description: &diamond-pearl.description 'This Pokémon is cured of any [major status ailment]{mechanic:major-status-ailment} after each turn during [rain]{mechanic:rain}.'
+  flavor_text: |
+    Heals status problems if
+    it is raining.
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  short_description: *diamond-pearl.short_description
+  description: *diamond-pearl.description
+  flavor_text: |
+    Heals status conditions if
+    it’s raining.
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  short_description: *diamond-pearl.short_description
+  description: *diamond-pearl.description
+  flavor_text: 'Heals status conditions if it’s raining.'
+ultra-sun-ultra-moon: *sun-moon

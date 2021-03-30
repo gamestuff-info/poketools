@@ -1,0 +1,28 @@
+ruby-sapphire: &ruby-sapphire
+  region: &ruby-sapphire.region hoenn
+  name: &ruby-sapphire.name 'Fallarbor Town'
+  areas:
+    whole-area: &ruby-sapphire.areas.whole-area
+      name: 'Whole area'
+      default: true
+    contest-hall: &ruby-sapphire.areas.contest-hall
+      name: 'Contest hall'
+    mart:
+      name: &ruby-sapphire.areas.mart.name 'Poké Mart'
+      shops:
+        mart:
+          name: *ruby-sapphire.areas.mart.name
+          default: true
+  map:
+    map: &ruby-sapphire.map.map hoenn
+    overlay: '<rect x="32" y="16" width="8" height="8" />'
+emerald: *ruby-sapphire
+omega-ruby-alpha-sapphire:
+  region: *ruby-sapphire.region
+  name: *ruby-sapphire.name
+  areas:
+    whole-area: *ruby-sapphire.areas.whole-area
+    contest-hall: *ruby-sapphire.areas.contest-hall
+  map:
+    map: *ruby-sapphire.map.map
+    overlay: '<rect x="36" y="18" width="13" height="13" />'

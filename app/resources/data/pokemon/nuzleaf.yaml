@@ -1,0 +1,746 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name NUZLEAF
+  position: &ruby-sapphire.position 274
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 274
+    hoenn: 23
+  pokemon:
+    nuzleaf:
+      name: NUZLEAF
+      default: &ruby-sapphire.pokemon.nuzleaf.default true
+      forms_switchable: &ruby-sapphire.pokemon.nuzleaf.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.nuzleaf.capture_rate 120
+      experience: &ruby-sapphire.pokemon.nuzleaf.experience 141
+      types: &ruby-sapphire.pokemon.nuzleaf.types
+        - grass
+        - dark
+      stats: &ruby-sapphire.pokemon.nuzleaf.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 2
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.nuzleaf.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.nuzleaf.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.nuzleaf.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.nuzleaf.egg_groups
+        - ground
+        - plant
+      happiness: &ruby-sapphire.pokemon.nuzleaf.happiness 70
+      abilities: &ruby-sapphire.pokemon.nuzleaf.abilities
+        chlorophyll: &ruby-sapphire.pokemon.nuzleaf.abilities.chlorophyll
+          hidden: &ruby-sapphire.pokemon.nuzleaf.abilities.chlorophyll.hidden false
+          position: 1
+        early-bird: &ruby-sapphire.pokemon.nuzleaf.abilities.early-bird
+          hidden: *ruby-sapphire.pokemon.nuzleaf.abilities.chlorophyll.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.nuzleaf.genus 'WILY Pokémon'
+      height: &ruby-sapphire.pokemon.nuzleaf.height 10
+      weight: &ruby-sapphire.pokemon.nuzleaf.weight 280
+      flavor_text:
+        ruby: |
+          NUZLEAF live in densely overgrown
+          forests. They occasionally venture out
+          of the forest to startle people.
+          This POKéMON dislikes having its long
+          nose pinched.
+        sapphire: |
+          This POKéMON pulls out the leaf on its
+          head and makes a flute with it.
+          The sound of NUZLEAF's flute strikes
+          fear and uncertainty in the hearts of
+          people lost in a forest.
+      forms:
+        nuzleaf:
+          name: NUZLEAF
+          form_name: &ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only false
+          icon: &ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.icon gen5/nuzleaf-default.png
+          sprites:
+            - ruby-sapphire/nuzleaf-default.png
+            - ruby-sapphire/back/nuzleaf-default.png
+            - ruby-sapphire/shiny/nuzleaf-default.png
+          art: &ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+            - nuzleaf-default.png
+          footprint: &ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint nuzleaf.png
+          cry: &ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry gen5/nuzleaf-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.nuzleaf.evolution_parent seedot/seedot
+      evolution_conditions: &ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+        level-up:
+          minimum_level: 14
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    nuzleaf:
+      name: NUZLEAF
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      experience: *ruby-sapphire.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      stats: *ruby-sapphire.pokemon.nuzleaf.stats
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      abilities: *ruby-sapphire.pokemon.nuzleaf.abilities
+      genus: *ruby-sapphire.pokemon.nuzleaf.genus
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      flavor_text:
+        emerald: |
+          A forest-dwelling POKéMON that is skilled
+          at climbing trees. Its long and pointed
+          nose is its weak point. It loses power if
+          the nose is gripped.
+      forms:
+        nuzleaf:
+          name: NUZLEAF
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.icon
+          sprites:
+            - emerald/nuzleaf-default.png
+            - emerald/shiny/nuzleaf-default.png
+            - emerald/animated/nuzleaf-default.webm
+            - emerald/animated/shiny/nuzleaf-default.webm
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 227
+  pokemon:
+    nuzleaf:
+      name: NUZLEAF
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      experience: *ruby-sapphire.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      stats: *ruby-sapphire.pokemon.nuzleaf.stats
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      abilities: *ruby-sapphire.pokemon.nuzleaf.abilities
+      genus: *ruby-sapphire.pokemon.nuzleaf.genus
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      forms:
+        nuzleaf:
+          name: NUZLEAF
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          sprites:
+            - colosseum/nuzleaf-default.png
+            - colosseum/shiny/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    nuzleaf:
+      name: NUZLEAF
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      experience: *ruby-sapphire.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      stats: *ruby-sapphire.pokemon.nuzleaf.stats
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      abilities: *ruby-sapphire.pokemon.nuzleaf.abilities
+      genus: *ruby-sapphire.pokemon.nuzleaf.genus
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      forms:
+        nuzleaf:
+          name: NUZLEAF
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          sprites:
+            - xd/nuzleaf-default.png
+            - xd/shiny/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    nuzleaf:
+      name: NUZLEAF
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      experience: *ruby-sapphire.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      stats: *ruby-sapphire.pokemon.nuzleaf.stats
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      abilities: *ruby-sapphire.pokemon.nuzleaf.abilities
+      genus: *ruby-sapphire.pokemon.nuzleaf.genus
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      flavor_text:
+        firered: |
+          They live in holes bored in large trees.
+          The sound of NUZLEAF's grass flute fills
+          listeners with dread.
+        leafgreen: |
+          They live in holes bored in large trees.
+          The sound of NUZLEAF's grass flute fills
+          listeners with dread.
+      forms:
+        nuzleaf:
+          name: NUZLEAF
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.icon
+          sprites:
+            - firered-leafgreen/nuzleaf-default.png
+            - firered-leafgreen/back/nuzleaf-default.png
+            - firered-leafgreen/shiny/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Nuzleaf
+  position: &diamond-pearl.position 299
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    nuzleaf:
+      genus: &diamond-pearl.pokemon.nuzleaf.genus 'Wily Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      shape: &diamond-pearl.pokemon.nuzleaf.shape humanoid
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: &diamond-pearl.pokemon.nuzleaf.baby false
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      pal_park: &diamond-pearl.pokemon.nuzleaf.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: &diamond-pearl.pokemon.nuzleaf.experience 119
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      stats: &diamond-pearl.pokemon.nuzleaf.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 2
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.nuzleaf.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      flavor_text:
+        diamond: |
+          The sound of its grass flute makes
+          its listeners uneasy. It lives deep
+          in forests.
+        pearl: |
+          The sound of its grass flute makes
+          its listeners uneasy. It lives deep
+          in forests.
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.icon
+          sprites:
+            - diamond-pearl/nuzleaf-default.png
+            - diamond-pearl/back/nuzleaf-default.png
+            - diamond-pearl/back/female/nuzleaf-default.png
+            - diamond-pearl/back/shiny/nuzleaf-default.png
+            - diamond-pearl/female/nuzleaf-default.png
+            - diamond-pearl/shiny/nuzleaf-default.png
+            - diamond-pearl/shiny/female/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    nuzleaf:
+      genus: *diamond-pearl.pokemon.nuzleaf.genus
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      shape: *diamond-pearl.pokemon.nuzleaf.shape
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: *diamond-pearl.pokemon.nuzleaf.baby
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      pal_park: *diamond-pearl.pokemon.nuzleaf.pal_park
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: *diamond-pearl.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      stats: *diamond-pearl.pokemon.nuzleaf.stats
+      abilities: *ruby-sapphire.pokemon.nuzleaf.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      flavor_text:
+        platinum: |
+          The sound of its grass flute makes
+          its listeners uneasy. It lives deep
+          in forests.
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.icon
+          sprites:
+            - platinum/nuzleaf-default.png
+            - platinum/back/nuzleaf-default.png
+            - platinum/back/female/nuzleaf-default.png
+            - platinum/back/shiny/nuzleaf-default.png
+            - platinum/female/nuzleaf-default.png
+            - platinum/shiny/nuzleaf-default.png
+            - platinum/shiny/female/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    nuzleaf:
+      genus: *diamond-pearl.pokemon.nuzleaf.genus
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      shape: *diamond-pearl.pokemon.nuzleaf.shape
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: *diamond-pearl.pokemon.nuzleaf.baby
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      pal_park: *diamond-pearl.pokemon.nuzleaf.pal_park
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: *diamond-pearl.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      stats: *diamond-pearl.pokemon.nuzleaf.stats
+      abilities: *ruby-sapphire.pokemon.nuzleaf.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It lives deep in forests. With the
+          leaf on its head, it makes a flute
+          whose song makes listeners uneasy.
+        soulsilver: |
+          It lives deep in forests. With the
+          leaf on its head, it makes a flute
+          whose song makes listeners uneasy.
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-5
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 2-4
+            stamina:
+              base_value: 2
+              range: 1-2
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.icon
+          sprites:
+            - heartgold-soulsilver/nuzleaf-default.png
+            - heartgold-soulsilver/back/nuzleaf-default.png
+            - heartgold-soulsilver/back/female/nuzleaf-default.png
+            - heartgold-soulsilver/back/shiny/nuzleaf-default.png
+            - heartgold-soulsilver/female/nuzleaf-default.png
+            - heartgold-soulsilver/shiny/nuzleaf-default.png
+            - heartgold-soulsilver/shiny/female/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    nuzleaf:
+      genus: *diamond-pearl.pokemon.nuzleaf.genus
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      color: &black-white.pokemon.nuzleaf.color brown
+      shape: *diamond-pearl.pokemon.nuzleaf.shape
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: *diamond-pearl.pokemon.nuzleaf.baby
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: *diamond-pearl.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      stats: *diamond-pearl.pokemon.nuzleaf.stats
+      abilities: &black-white.pokemon.nuzleaf.abilities
+        chlorophyll: *ruby-sapphire.pokemon.nuzleaf.abilities.chlorophyll
+        early-bird: *ruby-sapphire.pokemon.nuzleaf.abilities.early-bird
+        pickpocket:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      flavor_text:
+        black: |
+          The sound of its grass flute makes
+          its listeners uneasy. It lives deep
+          in forests.
+        white: |
+          The sound of its grass flute makes
+          its listeners uneasy. It lives deep
+          in forests.
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.icon
+          sprites:
+            - black-white/nuzleaf-default.png
+            - black-white/back/nuzleaf-default.png
+            - black-white/back/female/nuzleaf-default.png
+            - black-white/back/shiny/nuzleaf-default.png
+            - black-white/female/nuzleaf-default.png
+            - black-white/shiny/nuzleaf-default.png
+            - black-white/shiny/female/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    nuzleaf:
+      genus: *diamond-pearl.pokemon.nuzleaf.genus
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      color: *black-white.pokemon.nuzleaf.color
+      shape: *diamond-pearl.pokemon.nuzleaf.shape
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: *diamond-pearl.pokemon.nuzleaf.baby
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: *diamond-pearl.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      stats: *diamond-pearl.pokemon.nuzleaf.stats
+      abilities: *black-white.pokemon.nuzleaf.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      flavor_text:
+        black-2: |
+          The sound of its grass flute makes
+          its listeners uneasy. It lives deep
+          in forests.
+        white-2: |
+          The sound of its grass flute makes
+          its listeners uneasy. It lives deep
+          in forests.
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.icon
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    nuzleaf:
+      genus: *diamond-pearl.pokemon.nuzleaf.genus
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      color: *black-white.pokemon.nuzleaf.color
+      shape: *diamond-pearl.pokemon.nuzleaf.shape
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: *diamond-pearl.pokemon.nuzleaf.baby
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: *diamond-pearl.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      mega: &x-y.pokemon.nuzleaf.mega false
+      stats: *diamond-pearl.pokemon.nuzleaf.stats
+      abilities: *black-white.pokemon.nuzleaf.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      flavor_text:
+        x: |
+          The sound of its grass flute makes its listeners
+          uneasy. It lives deep in forests.
+        'y': |
+          It lives deep in forests. With the leaf on its head,
+          it makes a flute whose song makes
+          listeners uneasy.
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: &x-y.pokemon.nuzleaf.forms.nuzleaf.icon nuzleaf-default.png
+          sprites:
+            - x-y/nuzleaf-default.png
+            - x-y/female/nuzleaf-default.png
+            - x-y/shiny/nuzleaf-default.png
+            - x-y/shiny/female/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: &x-y.pokemon.nuzleaf.forms.nuzleaf.cry nuzleaf-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 23
+  pokemon:
+    nuzleaf:
+      genus: *diamond-pearl.pokemon.nuzleaf.genus
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      color: *black-white.pokemon.nuzleaf.color
+      shape: *diamond-pearl.pokemon.nuzleaf.shape
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: *diamond-pearl.pokemon.nuzleaf.baby
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: *diamond-pearl.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      mega: *x-y.pokemon.nuzleaf.mega
+      stats: *diamond-pearl.pokemon.nuzleaf.stats
+      abilities: *black-white.pokemon.nuzleaf.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Nuzleaf live in densely overgrown forests. They occasionally
+          venture out of the forest to startle people. This Pokémon
+          dislikes having its long nose pinched.
+        alpha-sapphire: |
+          This Pokémon pulls out the leaf on its head and makes a flute
+          with it. The sound of Nuzleaf’s flute strikes fear and uncertainty
+          in the hearts of people lost in a forest.
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *x-y.pokemon.nuzleaf.forms.nuzleaf.icon
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *x-y.pokemon.nuzleaf.forms.nuzleaf.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/nuzleaf-default.png
+            - omega-ruby-alpha-sapphire/shiny/nuzleaf-default.png
+            - omega-ruby-alpha-sapphire/female/nuzleaf-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/nuzleaf-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.nuzleaf.wild_held_items.omega-ruby
+          power-herb: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.nuzleaf.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    nuzleaf:
+      genus: *diamond-pearl.pokemon.nuzleaf.genus
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      color: *black-white.pokemon.nuzleaf.color
+      shape: *diamond-pearl.pokemon.nuzleaf.shape
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: *diamond-pearl.pokemon.nuzleaf.baby
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: *diamond-pearl.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      mega: *x-y.pokemon.nuzleaf.mega
+      stats: *diamond-pearl.pokemon.nuzleaf.stats
+      abilities: *black-white.pokemon.nuzleaf.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.nuzleaf.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.nuzleaf.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *x-y.pokemon.nuzleaf.forms.nuzleaf.icon
+          sprites:
+            - sun-moon/nuzleaf-default.png
+            - sun-moon/female/nuzleaf-default.png
+            - sun-moon/shiny/nuzleaf-default.png
+            - sun-moon/shiny/female/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *x-y.pokemon.nuzleaf.forms.nuzleaf.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    nuzleaf:
+      genus: *diamond-pearl.pokemon.nuzleaf.genus
+      evolution_parent: *ruby-sapphire.pokemon.nuzleaf.evolution_parent
+      color: *black-white.pokemon.nuzleaf.color
+      shape: *diamond-pearl.pokemon.nuzleaf.shape
+      female_rate: *ruby-sapphire.pokemon.nuzleaf.female_rate
+      capture_rate: *ruby-sapphire.pokemon.nuzleaf.capture_rate
+      happiness: *ruby-sapphire.pokemon.nuzleaf.happiness
+      baby: *diamond-pearl.pokemon.nuzleaf.baby
+      hatch_steps: *ruby-sapphire.pokemon.nuzleaf.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.nuzleaf.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nuzleaf.forms_switchable
+      name: Nuzleaf
+      default: *ruby-sapphire.pokemon.nuzleaf.default
+      height: *ruby-sapphire.pokemon.nuzleaf.height
+      weight: *ruby-sapphire.pokemon.nuzleaf.weight
+      experience: *diamond-pearl.pokemon.nuzleaf.experience
+      types: *ruby-sapphire.pokemon.nuzleaf.types
+      egg_groups: *ruby-sapphire.pokemon.nuzleaf.egg_groups
+      mega: *x-y.pokemon.nuzleaf.mega
+      stats: *diamond-pearl.pokemon.nuzleaf.stats
+      abilities: *black-white.pokemon.nuzleaf.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.nuzleaf.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.nuzleaf.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.nuzleaf.evolution_conditions
+      forms:
+        nuzleaf:
+          name: Nuzleaf
+          form_name: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.battle_only
+          icon: *x-y.pokemon.nuzleaf.forms.nuzleaf.icon
+          sprites:
+            - ultra-sun-ultra-moon/nuzleaf-default.png
+            - ultra-sun-ultra-moon/female/nuzleaf-default.png
+            - ultra-sun-ultra-moon/shiny/nuzleaf-default.png
+            - ultra-sun-ultra-moon/shiny/female/nuzleaf-default.png
+          art: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.art
+          footprint: *ruby-sapphire.pokemon.nuzleaf.forms.nuzleaf.footprint
+          cry: *x-y.pokemon.nuzleaf.forms.nuzleaf.cry

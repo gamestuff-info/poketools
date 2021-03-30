@@ -1,0 +1,889 @@
+red-blue:
+  name: &red-blue.name BULBASAUR
+  position: &red-blue.position 1
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 1
+    kanto: 1
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: &red-blue.pokemon.bulbasaur.default true
+      capture_rate: &red-blue.pokemon.bulbasaur.capture_rate 45
+      experience: &red-blue.pokemon.bulbasaur.experience 64
+      types: &red-blue.pokemon.bulbasaur.types
+        - grass
+        - poison
+      stats: &red-blue.pokemon.bulbasaur.stats
+        hp:
+          base_value: 45
+          effort_change: 45
+        attack:
+          base_value: 49
+          effort_change: 49
+        defense:
+          base_value: 49
+          effort_change: 49
+        speed:
+          base_value: 45
+          effort_change: 45
+        special:
+          base_value: 65
+          effort_change: 65
+      growth_rate: &red-blue.pokemon.bulbasaur.growth_rate medium-slow
+      genus: &red-blue.pokemon.bulbasaur.genus 'SEED Pokémon'
+      height: &red-blue.pokemon.bulbasaur.height 7
+      weight: &red-blue.pokemon.bulbasaur.weight 680
+      flavor_text:
+        red: |
+          A strange seed was
+          planted on its
+          back at birth.
+          The plant sprouts
+           and grows with
+          this POKéMON.
+        blue: |
+          A strange seed was
+          planted on its
+          back at birth.
+          The plant sprouts
+           and grows with
+          this POKéMON.
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: &red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only false
+          sprites:
+            - red-blue/bulbasaur-default.png
+            - red-blue/gray/bulbasaur-default.png
+            - red-blue/back/bulbasaur-default.png
+          art: &red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+            - bulbasaur-default.png
+          cry: &red-blue.pokemon.bulbasaur.forms.bulbasaur.cry gen5/bulbasaur-default.webm
+          icon: &red-blue.pokemon.bulbasaur.forms.bulbasaur.icon gen1/grass.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: *red-blue.pokemon.bulbasaur.default
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      stats: *red-blue.pokemon.bulbasaur.stats
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      genus: *red-blue.pokemon.bulbasaur.genus
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *red-blue.pokemon.bulbasaur.weight
+      flavor_text:
+        yellow: |
+          It can go for days
+          without eating a
+          single morsel.
+          In the bulb on
+          its back, it
+          stores energy.
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          sprites:
+            - yellow/bulbasaur-default.png
+            - yellow/gray/bulbasaur-default.png
+            - yellow/back/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+          icon: *red-blue.pokemon.bulbasaur.forms.bulbasaur.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 0
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 225
+    original-johto-abc: 5
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: *red-blue.pokemon.bulbasaur.default
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      stats: &gold-silver.pokemon.bulbasaur.stats
+        hp:
+          base_value: 45
+          effort_change: 45
+        attack:
+          base_value: 49
+          effort_change: 49
+        defense:
+          base_value: 49
+          effort_change: 49
+        speed:
+          base_value: 45
+          effort_change: 45
+        special-attack:
+          base_value: 65
+          effort_change: 65
+        special-defense:
+          base_value: 65
+          effort_change: 65
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      female_rate: &gold-silver.pokemon.bulbasaur.female_rate 12
+      hatch_steps: &gold-silver.pokemon.bulbasaur.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.bulbasaur.egg_groups
+        - monster
+        - plant
+      genus: *red-blue.pokemon.bulbasaur.genus
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: &gold-silver.pokemon.bulbasaur.weight 68
+      flavor_text:
+        gold: |
+          The seed on its
+          back is filled
+          with nutrients.
+          The seed grows
+          steadily larger as
+          its body grows.
+        silver: |
+          It carries a seed
+          on its back right
+          from birth. As it
+          grows older, the
+          seed also grows
+          larger.
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          sprites:
+            - gold-silver/bulbasaur-default.png
+            - gold-silver/back/bulbasaur-default.png
+            - gold-silver/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+          icon: &gold-silver.pokemon.bulbasaur.forms.bulbasaur.icon gen2/bulbasaur.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: *red-blue.pokemon.bulbasaur.default
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      stats: *gold-silver.pokemon.bulbasaur.stats
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      genus: *red-blue.pokemon.bulbasaur.genus
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *gold-silver.pokemon.bulbasaur.weight
+      flavor_text:
+        crystal: |
+          While it is young,
+          it uses the
+          nutrients that are
+          stored in the
+          seeds on its back
+          in order to grow.
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          sprites:
+            - crystal/bulbasaur-default.png
+            - crystal/back/bulbasaur-default.png
+            - crystal/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+          icon: *gold-silver.pokemon.bulbasaur.forms.bulbasaur.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 203
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: *red-blue.pokemon.bulbasaur.default
+      forms_switchable: &ruby-sapphire.pokemon.bulbasaur.forms_switchable false
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      stats: &ruby-sapphire.pokemon.bulbasaur.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 49
+          effort_change: 0
+        defense:
+          base_value: 49
+          effort_change: 0
+        speed:
+          base_value: 45
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      happiness: &ruby-sapphire.pokemon.bulbasaur.happiness 70
+      abilities: &ruby-sapphire.pokemon.bulbasaur.abilities
+        overgrow: &ruby-sapphire.pokemon.bulbasaur.abilities.overgrow
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.bulbasaur.genus
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: &ruby-sapphire.pokemon.bulbasaur.weight 69
+      flavor_text:
+        ruby: |
+          BULBASAUR can be seen napping in
+          bright sunlight.
+          There is a seed on its back.
+          By soaking up the sun's rays, the seed
+          grows progressively larger.
+        sapphire: |
+          BULBASAUR can be seen napping in
+          bright sunlight.
+          There is a seed on its back.
+          By soaking up the sun's rays, the seed
+          grows progressively larger.
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: &ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.icon gen5/bulbasaur-default.png
+          sprites:
+            - ruby-sapphire/bulbasaur-default.png
+            - ruby-sapphire/back/bulbasaur-default.png
+            - ruby-sapphire/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: &ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint bulbasaur.png
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: *red-blue.pokemon.bulbasaur.default
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      stats: *ruby-sapphire.pokemon.bulbasaur.stats
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      abilities: *ruby-sapphire.pokemon.bulbasaur.abilities
+      genus: *red-blue.pokemon.bulbasaur.genus
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      flavor_text:
+        emerald: |
+          BULBASAUR can be seen napping in bright
+          sunlight. There is a seed on its back.
+          By soaking up the sun's rays, the seed
+          grows progressively larger.
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.icon
+          sprites:
+            - emerald/bulbasaur-default.png
+            - emerald/shiny/bulbasaur-default.png
+            - emerald/animated/bulbasaur-default.webm
+            - emerald/animated/shiny/bulbasaur-default.webm
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 32
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: *red-blue.pokemon.bulbasaur.default
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      stats: *ruby-sapphire.pokemon.bulbasaur.stats
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      abilities: *ruby-sapphire.pokemon.bulbasaur.abilities
+      genus: *red-blue.pokemon.bulbasaur.genus
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          sprites:
+            - colosseum/bulbasaur-default.png
+            - colosseum/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: *red-blue.pokemon.bulbasaur.default
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      stats: *ruby-sapphire.pokemon.bulbasaur.stats
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      abilities: *ruby-sapphire.pokemon.bulbasaur.abilities
+      genus: *red-blue.pokemon.bulbasaur.genus
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          sprites:
+            - xd/bulbasaur-default.png
+            - xd/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    bulbasaur:
+      name: BULBASAUR
+      default: *red-blue.pokemon.bulbasaur.default
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      stats: *ruby-sapphire.pokemon.bulbasaur.stats
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      abilities: *ruby-sapphire.pokemon.bulbasaur.abilities
+      genus: *red-blue.pokemon.bulbasaur.genus
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      flavor_text:
+        firered: |
+          There is a plant seed on its back right
+          from the day this POKéMON is born.
+          The seed slowly grows larger.
+        leafgreen: |
+          A strange seed was planted on its back at
+          birth. The plant sprouts and grows with
+          this POKéMON.
+      forms:
+        bulbasaur:
+          name: BULBASAUR
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.icon
+          sprites:
+            - firered-leafgreen/bulbasaur-default.png
+            - firered-leafgreen/back/bulbasaur-default.png
+            - firered-leafgreen/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+diamond-pearl:
+  name: &diamond-pearl.name Bulbasaur
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    bulbasaur:
+      genus: &diamond-pearl.pokemon.bulbasaur.genus 'Seed Pokémon'
+      shape: &diamond-pearl.pokemon.bulbasaur.shape quadruped
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: &diamond-pearl.pokemon.bulbasaur.baby false
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      pal_park: &diamond-pearl.pokemon.bulbasaur.pal_park
+        area: field
+        rate: 30
+        score: 50
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      stats: &diamond-pearl.pokemon.bulbasaur.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 49
+          effort_change: 0
+        defense:
+          base_value: 49
+          effort_change: 0
+        speed:
+          base_value: 45
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 1
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.bulbasaur.abilities
+        overgrow: *ruby-sapphire.pokemon.bulbasaur.abilities.overgrow
+        chlorophyll:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          For some time after its birth, it
+          grows by gaining nourishment from
+          the seed on its back.
+        pearl: |
+          For some time after its birth, it
+          grows by gaining nourishment from
+          the seed on its back.
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.icon
+          sprites:
+            - diamond-pearl/bulbasaur-default.png
+            - diamond-pearl/back/bulbasaur-default.png
+            - diamond-pearl/back/shiny/bulbasaur-default.png
+            - diamond-pearl/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    bulbasaur:
+      genus: *diamond-pearl.pokemon.bulbasaur.genus
+      shape: *diamond-pearl.pokemon.bulbasaur.shape
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: *diamond-pearl.pokemon.bulbasaur.baby
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      pal_park: *diamond-pearl.pokemon.bulbasaur.pal_park
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      stats: *diamond-pearl.pokemon.bulbasaur.stats
+      abilities: *diamond-pearl.pokemon.bulbasaur.abilities
+      flavor_text:
+        platinum: |
+          For some time after its birth, it
+          grows by gaining nourishment from
+          the seed on its back.
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.icon
+          sprites:
+            - platinum/bulbasaur-default.png
+            - platinum/back/bulbasaur-default.png
+            - platinum/back/shiny/bulbasaur-default.png
+            - platinum/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 231
+  pokemon:
+    bulbasaur:
+      genus: *diamond-pearl.pokemon.bulbasaur.genus
+      shape: *diamond-pearl.pokemon.bulbasaur.shape
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: *diamond-pearl.pokemon.bulbasaur.baby
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      pal_park: *diamond-pearl.pokemon.bulbasaur.pal_park
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      stats: *diamond-pearl.pokemon.bulbasaur.stats
+      abilities: *diamond-pearl.pokemon.bulbasaur.abilities
+      flavor_text:
+        heartgold: |
+          The seed on its back is filled
+          with nutrients. The seed grows
+          steadily larger as its body grows.
+        soulsilver: |
+          It carries a seed on its back right
+          from birth. As it grows older, the
+          seed also grows larger.
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 2-3
+            power:
+              base_value: 2
+              range: 2-3
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 3
+          icon: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.icon
+          sprites:
+            - heartgold-soulsilver/bulbasaur-default.png
+            - heartgold-soulsilver/back/bulbasaur-default.png
+            - heartgold-soulsilver/back/shiny/bulbasaur-default.png
+            - heartgold-soulsilver/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    bulbasaur:
+      genus: *diamond-pearl.pokemon.bulbasaur.genus
+      color: &black-white.pokemon.bulbasaur.color green
+      shape: *diamond-pearl.pokemon.bulbasaur.shape
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: *diamond-pearl.pokemon.bulbasaur.baby
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      stats: *diamond-pearl.pokemon.bulbasaur.stats
+      abilities: *diamond-pearl.pokemon.bulbasaur.abilities
+      flavor_text:
+        black: |
+          For some time after its birth, it
+          grows by gaining nourishment from
+          the seed on its back.
+        white: |
+          For some time after its birth, it
+          grows by gaining nourishment from
+          the seed on its back.
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.icon
+          sprites:
+            - black-white/bulbasaur-default.png
+            - black-white/back/bulbasaur-default.png
+            - black-white/back/shiny/bulbasaur-default.png
+            - black-white/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    bulbasaur:
+      genus: *diamond-pearl.pokemon.bulbasaur.genus
+      color: *black-white.pokemon.bulbasaur.color
+      shape: *diamond-pearl.pokemon.bulbasaur.shape
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: *diamond-pearl.pokemon.bulbasaur.baby
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      stats: *diamond-pearl.pokemon.bulbasaur.stats
+      abilities: *diamond-pearl.pokemon.bulbasaur.abilities
+      flavor_text:
+        black-2: |
+          For some time after its birth, it
+          grows by gaining nourishment from
+          the seed on its back.
+        white-2: |
+          For some time after its birth, it
+          grows by gaining nourishment from
+          the seed on its back.
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.icon
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *red-blue.pokemon.bulbasaur.forms.bulbasaur.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 80
+  pokemon:
+    bulbasaur:
+      genus: *diamond-pearl.pokemon.bulbasaur.genus
+      color: *black-white.pokemon.bulbasaur.color
+      shape: *diamond-pearl.pokemon.bulbasaur.shape
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: *diamond-pearl.pokemon.bulbasaur.baby
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      mega: &x-y.pokemon.bulbasaur.mega false
+      stats: *diamond-pearl.pokemon.bulbasaur.stats
+      abilities: *diamond-pearl.pokemon.bulbasaur.abilities
+      flavor_text:
+        x: |
+          A strange seed was planted on its back at birth.
+          The plant sprouts and grows with this Pokémon.
+        'y': |
+          For some time after its birth, it grows by gaining
+          nourishment from the seed on its back.
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: &x-y.pokemon.bulbasaur.forms.bulbasaur.icon bulbasaur-default.png
+          sprites:
+            - x-y/bulbasaur-default.png
+            - x-y/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: &x-y.pokemon.bulbasaur.forms.bulbasaur.cry bulbasaur-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    bulbasaur:
+      genus: *diamond-pearl.pokemon.bulbasaur.genus
+      color: *black-white.pokemon.bulbasaur.color
+      shape: *diamond-pearl.pokemon.bulbasaur.shape
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: *diamond-pearl.pokemon.bulbasaur.baby
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      mega: *x-y.pokemon.bulbasaur.mega
+      stats: *diamond-pearl.pokemon.bulbasaur.stats
+      abilities: *diamond-pearl.pokemon.bulbasaur.abilities
+      flavor_text:
+        omega-ruby: |
+          Bulbasaur can be seen napping in bright sunlight.
+          There is a seed on its back. By soaking up the sun’s rays,
+          the seed grows progressively larger.
+        alpha-sapphire: |
+          Bulbasaur can be seen napping in bright sunlight.
+          There is a seed on its back. By soaking up the sun’s rays,
+          the seed grows progressively larger.
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *x-y.pokemon.bulbasaur.forms.bulbasaur.icon
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *x-y.pokemon.bulbasaur.forms.bulbasaur.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/bulbasaur-default.png
+            - omega-ruby-alpha-sapphire/shiny/bulbasaur-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    bulbasaur:
+      genus: *diamond-pearl.pokemon.bulbasaur.genus
+      color: *black-white.pokemon.bulbasaur.color
+      shape: *diamond-pearl.pokemon.bulbasaur.shape
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: *diamond-pearl.pokemon.bulbasaur.baby
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      mega: *x-y.pokemon.bulbasaur.mega
+      stats: *diamond-pearl.pokemon.bulbasaur.stats
+      abilities: *diamond-pearl.pokemon.bulbasaur.abilities
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *x-y.pokemon.bulbasaur.forms.bulbasaur.icon
+          sprites:
+            - sun-moon/bulbasaur-default.png
+            - sun-moon/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *x-y.pokemon.bulbasaur.forms.bulbasaur.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    bulbasaur:
+      genus: *diamond-pearl.pokemon.bulbasaur.genus
+      color: *black-white.pokemon.bulbasaur.color
+      shape: *diamond-pearl.pokemon.bulbasaur.shape
+      female_rate: *gold-silver.pokemon.bulbasaur.female_rate
+      capture_rate: *red-blue.pokemon.bulbasaur.capture_rate
+      happiness: *ruby-sapphire.pokemon.bulbasaur.happiness
+      baby: *diamond-pearl.pokemon.bulbasaur.baby
+      hatch_steps: *gold-silver.pokemon.bulbasaur.hatch_steps
+      growth_rate: *red-blue.pokemon.bulbasaur.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bulbasaur.forms_switchable
+      name: Bulbasaur
+      default: *red-blue.pokemon.bulbasaur.default
+      height: *red-blue.pokemon.bulbasaur.height
+      weight: *ruby-sapphire.pokemon.bulbasaur.weight
+      experience: *red-blue.pokemon.bulbasaur.experience
+      types: *red-blue.pokemon.bulbasaur.types
+      egg_groups: *gold-silver.pokemon.bulbasaur.egg_groups
+      mega: *x-y.pokemon.bulbasaur.mega
+      stats: *diamond-pearl.pokemon.bulbasaur.stats
+      abilities: *diamond-pearl.pokemon.bulbasaur.abilities
+      forms:
+        bulbasaur:
+          name: Bulbasaur
+          form_name: *red-blue.pokemon.bulbasaur.forms.bulbasaur.form_name
+          default: true
+          battle_only: *red-blue.pokemon.bulbasaur.forms.bulbasaur.battle_only
+          icon: *x-y.pokemon.bulbasaur.forms.bulbasaur.icon
+          sprites:
+            - ultra-sun-ultra-moon/bulbasaur-default.png
+            - ultra-sun-ultra-moon/shiny/bulbasaur-default.png
+          art: *red-blue.pokemon.bulbasaur.forms.bulbasaur.art
+          footprint: *ruby-sapphire.pokemon.bulbasaur.forms.bulbasaur.footprint
+          cry: *x-y.pokemon.bulbasaur.forms.bulbasaur.cry

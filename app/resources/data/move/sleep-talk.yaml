@@ -1,0 +1,165 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'SLEEP TALK'
+  type: &gold-silver.type normal
+  accuracy: 100
+  pp: &gold-silver.pp 10
+  effect: &gold-silver.effect 98
+  categories: &gold-silver.categories
+    - unique
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target user
+  flavor_text: |
+    Randomly attacks
+    while asleep.
+crystal: *gold-silver
+ruby-sapphire:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: &ruby-sapphire.target specific-move
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type cute
+  contest_effect: &ruby-sapphire.contest_effect 4
+  contest_use_after: &ruby-sapphire.contest_use_after
+    - rest
+  flavor_text: |
+    Uses an own move randomly
+    while asleep.
+emerald:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: *ruby-sapphire.contest_effect
+  contest_use_after: *ruby-sapphire.contest_use_after
+  flavor_text: |
+    Uses an available move
+    randomly while asleep.
+colosseum:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  flavor_text: &colosseum.flavor_text |
+    Uses its own moves randomly
+    while asleep.
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  damage_class: physical
+  flavor_text: *colosseum.flavor_text
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    While asleep, the
+    user randomly uses
+    one of the moves it
+    knows.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Sleep Talk'
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 5
+  flavor_text: &diamond-pearl.flavor_text |
+    While it is asleep, the
+    user randomly uses
+    one of the moves it
+    knows.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &black-white.flavor_text |
+    While it is asleep, the user randomly uses
+    one of the moves it knows.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 25
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    While it is asleep, the user randomly uses one of the
+    moves it knows.
+ultra-sun-ultra-moon: *sun-moon

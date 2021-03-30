@@ -1,0 +1,950 @@
+red-blue:
+  name: &red-blue.name ARBOK
+  position: &red-blue.position 24
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 24
+    kanto: 24
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: &red-blue.pokemon.arbok.default true
+      capture_rate: &red-blue.pokemon.arbok.capture_rate 90
+      experience: &red-blue.pokemon.arbok.experience 147
+      types: &red-blue.pokemon.arbok.types
+        - poison
+      stats: &red-blue.pokemon.arbok.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 85
+          effort_change: 85
+        defense:
+          base_value: 69
+          effort_change: 69
+        speed:
+          base_value: 80
+          effort_change: 80
+        special:
+          base_value: 65
+          effort_change: 65
+      growth_rate: &red-blue.pokemon.arbok.growth_rate medium
+      genus: &red-blue.pokemon.arbok.genus 'COBRA Pokémon'
+      height: &red-blue.pokemon.arbok.height 35
+      weight: &red-blue.pokemon.arbok.weight 6486
+      flavor_text:
+        red: |
+          It is rumored that
+          the ferocious
+          warning markings
+          on its belly
+           differ from area
+          to area.
+        blue: |
+          It is rumored that
+          the ferocious
+          warning markings
+          on its belly
+           differ from area
+          to area.
+      evolution_parent: &red-blue.pokemon.arbok.evolution_parent ekans/ekans
+      evolution_conditions: &red-blue.pokemon.arbok.evolution_conditions
+        level-up:
+          minimum_level: 22
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: &red-blue.pokemon.arbok.forms.arbok.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.arbok.forms.arbok.battle_only false
+          sprites:
+            - red-blue/arbok-default.png
+            - red-blue/gray/arbok-default.png
+            - red-blue/back/arbok-default.png
+          art: &red-blue.pokemon.arbok.forms.arbok.art
+            - arbok-default.png
+          cry: &red-blue.pokemon.arbok.forms.arbok.cry gen5/arbok-default.webm
+          icon: &red-blue.pokemon.arbok.forms.arbok.icon gen1/snake.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: *red-blue.pokemon.arbok.default
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      experience: *red-blue.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      stats: *red-blue.pokemon.arbok.stats
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      genus: *red-blue.pokemon.arbok.genus
+      height: *red-blue.pokemon.arbok.height
+      weight: *red-blue.pokemon.arbok.weight
+      flavor_text:
+        yellow: |
+          The frightening
+          patterns on its
+          belly have been
+          studied. Six
+           variations have
+          been confirmed.
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          sprites:
+            - yellow/arbok-default.png
+            - yellow/gray/arbok-default.png
+            - yellow/back/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+          icon: *red-blue.pokemon.arbok.forms.arbok.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 23
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 50
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: *red-blue.pokemon.arbok.default
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      experience: *red-blue.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      stats: &gold-silver.pokemon.arbok.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 85
+          effort_change: 85
+        defense:
+          base_value: 69
+          effort_change: 69
+        speed:
+          base_value: 80
+          effort_change: 80
+        special-attack:
+          base_value: 65
+          effort_change: 65
+        special-defense:
+          base_value: 79
+          effort_change: 65
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      female_rate: &gold-silver.pokemon.arbok.female_rate 50
+      hatch_steps: &gold-silver.pokemon.arbok.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.arbok.egg_groups
+        - ground
+        - dragon
+      genus: *red-blue.pokemon.arbok.genus
+      height: *red-blue.pokemon.arbok.height
+      weight: &gold-silver.pokemon.arbok.weight 648
+      flavor_text:
+        gold: |
+          Transfixing prey
+          with the face-like
+          pattern on its
+          belly, it binds
+          and poisons the
+          frightened victim.
+        silver: |
+          With a very venge-
+          ful nature, it
+          won't give up the
+          chase, no matter
+          how far, once it
+          targets its prey.
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          sprites:
+            - gold-silver/arbok-default.png
+            - gold-silver/back/arbok-default.png
+            - gold-silver/shiny/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+          icon: &gold-silver.pokemon.arbok.forms.arbok.icon gen2/serpent.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: *red-blue.pokemon.arbok.default
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      experience: *red-blue.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      stats: *gold-silver.pokemon.arbok.stats
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      genus: *red-blue.pokemon.arbok.genus
+      height: *red-blue.pokemon.arbok.height
+      weight: *gold-silver.pokemon.arbok.weight
+      flavor_text:
+        crystal: |
+          To intimidate
+          foes, it spreads
+          its chest wide and
+          makes eerie sounds
+          by expelling air
+          from its mouth.
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          sprites:
+            - crystal/arbok-default.png
+            - crystal/back/arbok-default.png
+            - crystal/shiny/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+          icon: *gold-silver.pokemon.arbok.forms.arbok.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 226
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: *red-blue.pokemon.arbok.default
+      forms_switchable: &ruby-sapphire.pokemon.arbok.forms_switchable false
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      experience: *red-blue.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      stats: &ruby-sapphire.pokemon.arbok.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 2
+        defense:
+          base_value: 69
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      happiness: &ruby-sapphire.pokemon.arbok.happiness 70
+      abilities: &ruby-sapphire.pokemon.arbok.abilities
+        intimidate: &ruby-sapphire.pokemon.arbok.abilities.intimidate
+          hidden: &ruby-sapphire.pokemon.arbok.abilities.intimidate.hidden false
+          position: 1
+        shed-skin: &ruby-sapphire.pokemon.arbok.abilities.shed-skin
+          hidden: *ruby-sapphire.pokemon.arbok.abilities.intimidate.hidden
+          position: 2
+      genus: *red-blue.pokemon.arbok.genus
+      height: *red-blue.pokemon.arbok.height
+      weight: &ruby-sapphire.pokemon.arbok.weight 650
+      flavor_text:
+        ruby: |
+          This POKéMON is terrifically strong in
+          order to constrict things with its body.
+          It can even flatten steel oil drums.
+          Once ARBOK wraps its body around its
+          foe, escaping its crunching embrace is
+          impossible.
+        sapphire: |
+          This POKéMON is terrifically strong in
+          order to constrict things with its body.
+          It can even flatten steel oil drums.
+          Once ARBOK wraps its body around its
+          foe, escaping its crunching embrace is
+          impossible.
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: &ruby-sapphire.pokemon.arbok.forms.arbok.icon gen5/arbok-default.png
+          sprites:
+            - ruby-sapphire/arbok-default.png
+            - ruby-sapphire/back/arbok-default.png
+            - ruby-sapphire/shiny/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: &ruby-sapphire.pokemon.arbok.forms.arbok.footprint arbok.png
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: *red-blue.pokemon.arbok.default
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      experience: *red-blue.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      stats: *ruby-sapphire.pokemon.arbok.stats
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      abilities: *ruby-sapphire.pokemon.arbok.abilities
+      genus: *red-blue.pokemon.arbok.genus
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      flavor_text:
+        emerald: |
+          This POKéMON has a terrifically strong
+          constricting power. It can even flatten
+          steel oil drums. Once it wraps its body
+          around its foe,  escaping is impossible.
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *ruby-sapphire.pokemon.arbok.forms.arbok.icon
+          sprites:
+            - emerald/arbok-default.png
+            - emerald/shiny/arbok-default.png
+            - emerald/animated/arbok-default.webm
+            - emerald/animated/shiny/arbok-default.webm
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 10
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: *red-blue.pokemon.arbok.default
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      experience: *red-blue.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      stats: *ruby-sapphire.pokemon.arbok.stats
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      abilities: *ruby-sapphire.pokemon.arbok.abilities
+      genus: *red-blue.pokemon.arbok.genus
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          sprites:
+            - colosseum/arbok-default.png
+            - colosseum/shiny/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: *red-blue.pokemon.arbok.default
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      experience: *red-blue.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      stats: *ruby-sapphire.pokemon.arbok.stats
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      abilities: *ruby-sapphire.pokemon.arbok.abilities
+      genus: *red-blue.pokemon.arbok.genus
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          sprites:
+            - xd/arbok-default.png
+            - xd/shiny/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    arbok:
+      name: ARBOK
+      default: *red-blue.pokemon.arbok.default
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      experience: *red-blue.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      stats: *ruby-sapphire.pokemon.arbok.stats
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.arbok.wild_held_items.firered
+          poison-barb: 5
+        leafgreen: *firered-leafgreen.pokemon.arbok.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      abilities: *ruby-sapphire.pokemon.arbok.abilities
+      genus: *red-blue.pokemon.arbok.genus
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      flavor_text:
+        firered: |
+          The pattern on its belly appears to be a
+          frightening face. Weak foes will flee just
+          at the sight of the pattern.
+        leafgreen: |
+          It is rumored that the ferocious warning
+          markings on its belly differ from area to
+          area.
+      forms:
+        arbok:
+          name: ARBOK
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *ruby-sapphire.pokemon.arbok.forms.arbok.icon
+          sprites:
+            - firered-leafgreen/arbok-default.png
+            - firered-leafgreen/back/arbok-default.png
+            - firered-leafgreen/shiny/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Arbok
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    arbok:
+      genus: &diamond-pearl.pokemon.arbok.genus 'Cobra Pokémon'
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      shape: &diamond-pearl.pokemon.arbok.shape squiggle
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: &diamond-pearl.pokemon.arbok.baby false
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      pal_park: &diamond-pearl.pokemon.arbok.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: &diamond-pearl.pokemon.arbok.experience 157
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      stats: &diamond-pearl.pokemon.arbok.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 2
+        defense:
+          base_value: 69
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 79
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.arbok.abilities
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      flavor_text:
+        diamond: |
+          The pattern on its belly is for
+          intimidation. It constricts foes
+          while they are frozen in fear.
+        pearl: |
+          The pattern on its belly is for
+          intimidation. It constricts foes
+          while they are frozen in fear.
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *ruby-sapphire.pokemon.arbok.forms.arbok.icon
+          sprites:
+            - diamond-pearl/back/shiny/arbok-default.png
+            - diamond-pearl/back/arbok-default.png
+            - diamond-pearl/shiny/arbok-default.png
+            - diamond-pearl/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arbok:
+      genus: *diamond-pearl.pokemon.arbok.genus
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      shape: *diamond-pearl.pokemon.arbok.shape
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: *diamond-pearl.pokemon.arbok.baby
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      pal_park: *diamond-pearl.pokemon.arbok.pal_park
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: *diamond-pearl.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      stats: *diamond-pearl.pokemon.arbok.stats
+      abilities: *ruby-sapphire.pokemon.arbok.abilities
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      flavor_text:
+        platinum: |
+          The pattern on its belly is for
+          intimidation. It constricts foes
+          while they are frozen in fear.
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *ruby-sapphire.pokemon.arbok.forms.arbok.icon
+          sprites:
+            - platinum/back/shiny/arbok-default.png
+            - platinum/back/arbok-default.png
+            - platinum/shiny/arbok-default.png
+            - platinum/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 51
+  pokemon:
+    arbok:
+      genus: *diamond-pearl.pokemon.arbok.genus
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      shape: *diamond-pearl.pokemon.arbok.shape
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: *diamond-pearl.pokemon.arbok.baby
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      pal_park: *diamond-pearl.pokemon.arbok.pal_park
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: *diamond-pearl.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      stats: *diamond-pearl.pokemon.arbok.stats
+      abilities: *ruby-sapphire.pokemon.arbok.abilities
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Transfixing prey with the face-like
+          pattern on its belly, it binds
+          and poisons the frightened victim.
+        soulsilver: |
+          With a very vengeful nature, it
+          won’t give up the chase, no matter
+          how far, once it targets its prey.
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 4
+              range: 3-5
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.arbok.forms.arbok.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/arbok-default.png
+            - heartgold-soulsilver/back/arbok-default.png
+            - heartgold-soulsilver/shiny/arbok-default.png
+            - heartgold-soulsilver/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arbok:
+      genus: *diamond-pearl.pokemon.arbok.genus
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      color: &black-white.pokemon.arbok.color purple
+      shape: *diamond-pearl.pokemon.arbok.shape
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: *diamond-pearl.pokemon.arbok.baby
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: *diamond-pearl.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      stats: *diamond-pearl.pokemon.arbok.stats
+      abilities: &black-white.pokemon.arbok.abilities
+        intimidate: *ruby-sapphire.pokemon.arbok.abilities.intimidate
+        shed-skin: *ruby-sapphire.pokemon.arbok.abilities.shed-skin
+        unnerve:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      flavor_text:
+        black: |
+          The pattern on its belly is for
+          intimidation. It constricts foes
+          while they are frozen in fear.
+        white: |
+          The pattern on its belly is for
+          intimidation. It constricts foes
+          while they are frozen in fear.
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *ruby-sapphire.pokemon.arbok.forms.arbok.icon
+          sprites:
+            - black-white/back/shiny/arbok-default.png
+            - black-white/back/arbok-default.png
+            - black-white/shiny/arbok-default.png
+            - black-white/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arbok:
+      genus: *diamond-pearl.pokemon.arbok.genus
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      color: *black-white.pokemon.arbok.color
+      shape: *diamond-pearl.pokemon.arbok.shape
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: *diamond-pearl.pokemon.arbok.baby
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: *diamond-pearl.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      stats: *diamond-pearl.pokemon.arbok.stats
+      abilities: *black-white.pokemon.arbok.abilities
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      flavor_text:
+        black-2: |
+          The pattern on its belly is for
+          intimidation. It constricts foes
+          while they are frozen in fear.
+        white-2: |
+          The pattern on its belly is for
+          intimidation. It constricts foes
+          while they are frozen in fear.
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *ruby-sapphire.pokemon.arbok.forms.arbok.icon
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *red-blue.pokemon.arbok.forms.arbok.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 38
+  pokemon:
+    arbok:
+      genus: *diamond-pearl.pokemon.arbok.genus
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      color: *black-white.pokemon.arbok.color
+      shape: *diamond-pearl.pokemon.arbok.shape
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: *diamond-pearl.pokemon.arbok.baby
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: *diamond-pearl.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      mega: &x-y.pokemon.arbok.mega false
+      stats: *diamond-pearl.pokemon.arbok.stats
+      abilities: *black-white.pokemon.arbok.abilities
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      flavor_text:
+        x: |
+          The pattern on its belly appears to be a frightening
+          face. Weak foes will flee just at the sight of
+          the pattern.
+        'y': |
+          To intimidate foes, it spreads its chest wide and
+          makes eerie sounds by expelling air from its mouth.
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: &x-y.pokemon.arbok.forms.arbok.icon arbok-default.png
+          sprites:
+            - x-y/shiny/arbok-default.png
+            - x-y/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: &x-y.pokemon.arbok.forms.arbok.cry arbok-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arbok:
+      genus: *diamond-pearl.pokemon.arbok.genus
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      color: *black-white.pokemon.arbok.color
+      shape: *diamond-pearl.pokemon.arbok.shape
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: *diamond-pearl.pokemon.arbok.baby
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: *diamond-pearl.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      mega: *x-y.pokemon.arbok.mega
+      stats: *diamond-pearl.pokemon.arbok.stats
+      abilities: *black-white.pokemon.arbok.abilities
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          This Pokémon is terrifically strong in order to constrict things
+          with its body. It can even flatten steel oil drums.
+          Once Arbok wraps its body around its foe, escaping its
+          crunching embrace is impossible.
+        alpha-sapphire: |
+          This Pokémon is terrifically strong in order to constrict things
+          with its body. It can even flatten steel oil drums. Once Arbok
+          wraps its body around its foe, escaping its crunching embrace
+          is impossible.
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *x-y.pokemon.arbok.forms.arbok.icon
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *x-y.pokemon.arbok.forms.arbok.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/arbok-default.png
+            - omega-ruby-alpha-sapphire/shiny/arbok-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    arbok:
+      genus: *diamond-pearl.pokemon.arbok.genus
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      color: *black-white.pokemon.arbok.color
+      shape: *diamond-pearl.pokemon.arbok.shape
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: *diamond-pearl.pokemon.arbok.baby
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: *diamond-pearl.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      mega: *x-y.pokemon.arbok.mega
+      stats: *diamond-pearl.pokemon.arbok.stats
+      abilities: *black-white.pokemon.arbok.abilities
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *x-y.pokemon.arbok.forms.arbok.icon
+          sprites:
+            - sun-moon/shiny/arbok-default.png
+            - sun-moon/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *x-y.pokemon.arbok.forms.arbok.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 62
+    updated-melemele: 62
+  pokemon:
+    arbok:
+      genus: *diamond-pearl.pokemon.arbok.genus
+      evolution_parent: *red-blue.pokemon.arbok.evolution_parent
+      color: *black-white.pokemon.arbok.color
+      shape: *diamond-pearl.pokemon.arbok.shape
+      female_rate: *gold-silver.pokemon.arbok.female_rate
+      capture_rate: *red-blue.pokemon.arbok.capture_rate
+      happiness: *ruby-sapphire.pokemon.arbok.happiness
+      baby: *diamond-pearl.pokemon.arbok.baby
+      hatch_steps: *gold-silver.pokemon.arbok.hatch_steps
+      growth_rate: *red-blue.pokemon.arbok.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.arbok.forms_switchable
+      name: Arbok
+      default: *red-blue.pokemon.arbok.default
+      height: *red-blue.pokemon.arbok.height
+      weight: *ruby-sapphire.pokemon.arbok.weight
+      experience: *diamond-pearl.pokemon.arbok.experience
+      types: *red-blue.pokemon.arbok.types
+      egg_groups: *gold-silver.pokemon.arbok.egg_groups
+      mega: *x-y.pokemon.arbok.mega
+      stats: *diamond-pearl.pokemon.arbok.stats
+      abilities: *black-white.pokemon.arbok.abilities
+      evolution_conditions: *red-blue.pokemon.arbok.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          The latest research has determined that there
+          are over 20 possible arrangements of the
+          patterns on its stomach.
+        ultra-moon: |-
+          After stunning its opponents with the pattern
+          on its stomach, it quickly wraps them up in its
+          body and waits for them to stop moving.
+      forms:
+        arbok:
+          name: Arbok
+          form_name: *red-blue.pokemon.arbok.forms.arbok.form_name
+          default: true
+          battle_only: *red-blue.pokemon.arbok.forms.arbok.battle_only
+          icon: *x-y.pokemon.arbok.forms.arbok.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/arbok-default.png
+            - ultra-sun-ultra-moon/arbok-default.png
+          art: *red-blue.pokemon.arbok.forms.arbok.art
+          footprint: *ruby-sapphire.pokemon.arbok.forms.arbok.footprint
+          cry: *x-y.pokemon.arbok.forms.arbok.cry

@@ -1,0 +1,980 @@
+red-blue:
+  name: &red-blue.name MAGMAR
+  position: &red-blue.position 126
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 126
+    kanto: 126
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: &red-blue.pokemon.magmar.default true
+      capture_rate: &red-blue.pokemon.magmar.capture_rate 45
+      experience: &red-blue.pokemon.magmar.experience 167
+      types: &red-blue.pokemon.magmar.types
+        - fire
+      stats: &red-blue.pokemon.magmar.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 95
+          effort_change: 95
+        defense:
+          base_value: 57
+          effort_change: 57
+        speed:
+          base_value: 93
+          effort_change: 93
+        special:
+          base_value: 85
+          effort_change: 85
+      growth_rate: &red-blue.pokemon.magmar.growth_rate medium
+      genus: &red-blue.pokemon.magmar.genus 'SPITFIRE Pokémon'
+      height: &red-blue.pokemon.magmar.height 12
+      weight: &red-blue.pokemon.magmar.weight 4445
+      flavor_text:
+        red: |
+          Its body always
+          burns with an
+          orange glow that
+          enables it to
+          hide perfectly
+          among flames.
+        blue: |
+          Its body always
+          burns with an
+          orange glow that
+          enables it to
+          hide perfectly
+          among flames.
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: &red-blue.pokemon.magmar.forms.magmar.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.magmar.forms.magmar.battle_only false
+          sprites:
+            - red-blue/magmar-default.png
+            - red-blue/gray/magmar-default.png
+            - red-blue/back/magmar-default.png
+          art: &red-blue.pokemon.magmar.forms.magmar.art
+            - magmar-default.png
+          cry: &red-blue.pokemon.magmar.forms.magmar.cry gen5/magmar-default.webm
+          icon: &red-blue.pokemon.magmar.forms.magmar.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: *red-blue.pokemon.magmar.default
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      experience: *red-blue.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      stats: *red-blue.pokemon.magmar.stats
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      genus: *red-blue.pokemon.magmar.genus
+      height: *red-blue.pokemon.magmar.height
+      weight: *red-blue.pokemon.magmar.weight
+      flavor_text:
+        yellow: |
+          Born in an active
+          volcano. Its body
+          is always cloaked
+          in flames,  so it
+          looks like a big
+          ball of fire.
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          sprites:
+            - yellow/magmar-default.png
+            - yellow/gray/magmar-default.png
+            - yellow/back/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+          icon: *red-blue.pokemon.magmar.forms.magmar.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 125
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 150
+    original-johto-abc: 108
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: *red-blue.pokemon.magmar.default
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      experience: *red-blue.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      stats: &gold-silver.pokemon.magmar.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 95
+          effort_change: 95
+        defense:
+          base_value: 57
+          effort_change: 57
+        speed:
+          base_value: 93
+          effort_change: 93
+        special-attack:
+          base_value: 100
+          effort_change: 100
+        special-defense:
+          base_value: 85
+          effort_change: 100
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      female_rate: &gold-silver.pokemon.magmar.female_rate 25
+      hatch_steps: &gold-silver.pokemon.magmar.hatch_steps 25
+      egg_groups: &gold-silver.pokemon.magmar.egg_groups
+        - humanshape
+      wild_held_items:
+        gold: &gold-silver.pokemon.magmar.wild_held_items.gold
+          burnt-berry: 2
+        silver: *gold-silver.pokemon.magmar.wild_held_items.gold
+      genus: *red-blue.pokemon.magmar.genus
+      height: *red-blue.pokemon.magmar.height
+      weight: &gold-silver.pokemon.magmar.weight 444
+      flavor_text:
+        gold: |
+          It dislikes cold
+          places, so it
+          blows scorching
+          flames to make the
+          environment suit-
+          able for itself.
+        silver: |
+          The fiery surface
+          of its body gives
+          off a wavering,
+          rippling glare
+          that is similar to
+          the sun.
+      evolution_parent: &gold-silver.pokemon.magmar.evolution_parent magby/magby
+      evolution_conditions: &gold-silver.pokemon.magmar.evolution_conditions
+        level-up:
+          minimum_level: 30
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          sprites:
+            - gold-silver/magmar-default.png
+            - gold-silver/back/magmar-default.png
+            - gold-silver/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+          icon: &gold-silver.pokemon.magmar.forms.magmar.icon gen2/humanshape.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: *red-blue.pokemon.magmar.default
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      experience: *red-blue.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      stats: *gold-silver.pokemon.magmar.stats
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.magmar.wild_held_items.gold
+      genus: *red-blue.pokemon.magmar.genus
+      height: *red-blue.pokemon.magmar.height
+      weight: *gold-silver.pokemon.magmar.weight
+      flavor_text:
+        crystal: |
+          It moves more
+          frequently in hot
+          areas. It can heal
+          itself by dipping
+          its wound into
+          lava.
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          sprites:
+            - crystal/magmar-default.png
+            - crystal/back/magmar-default.png
+            - crystal/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+          icon: *gold-silver.pokemon.magmar.forms.magmar.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 284
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: *red-blue.pokemon.magmar.default
+      forms_switchable: &ruby-sapphire.pokemon.magmar.forms_switchable false
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      experience: *red-blue.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      stats: &ruby-sapphire.pokemon.magmar.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 57
+          effort_change: 0
+        speed:
+          base_value: 93
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.magmar.wild_held_items.ruby
+          rawst-berry: 100
+        sapphire: *ruby-sapphire.pokemon.magmar.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.magmar.happiness 70
+      abilities: &ruby-sapphire.pokemon.magmar.abilities
+        flame-body: &ruby-sapphire.pokemon.magmar.abilities.flame-body
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.magmar.genus
+      height: &ruby-sapphire.pokemon.magmar.height 13
+      weight: &ruby-sapphire.pokemon.magmar.weight 445
+      flavor_text:
+        ruby: |
+          In battle, MAGMAR blows out intensely
+          hot flames from all over its body to
+          intimidate its opponent.
+          This POKéMON's fiery bursts create
+           heat waves that ignite grass and trees
+          in its surroundings.
+        sapphire: |
+          In battle, MAGMAR blows out intensely
+          hot flames from all over its body to
+          intimidate its opponent.
+          This POKéMON's fiery bursts create
+           heat waves that ignite grass and trees
+          in its surroundings.
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: &ruby-sapphire.pokemon.magmar.forms.magmar.icon gen5/magmar-default.png
+          sprites:
+            - ruby-sapphire/magmar-default.png
+            - ruby-sapphire/back/magmar-default.png
+            - ruby-sapphire/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: &ruby-sapphire.pokemon.magmar.forms.magmar.footprint magmar.png
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: *red-blue.pokemon.magmar.default
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      experience: *red-blue.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      stats: *ruby-sapphire.pokemon.magmar.stats
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.magmar.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      abilities: *ruby-sapphire.pokemon.magmar.abilities
+      genus: *red-blue.pokemon.magmar.genus
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      flavor_text:
+        emerald: |
+          In battle, it blows out intense flames from
+          all over its body to intimidate its foe.
+          These fiery bursts create heat waves that
+          ignite grass and trees in the area.
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *ruby-sapphire.pokemon.magmar.forms.magmar.icon
+          sprites:
+            - emerald/magmar-default.png
+            - emerald/shiny/magmar-default.png
+            - emerald/animated/magmar-default.webm
+            - emerald/animated/shiny/magmar-default.webm
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 182
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: *red-blue.pokemon.magmar.default
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      experience: *red-blue.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      stats: *ruby-sapphire.pokemon.magmar.stats
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      abilities: *ruby-sapphire.pokemon.magmar.abilities
+      genus: *red-blue.pokemon.magmar.genus
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          sprites:
+            - colosseum/magmar-default.png
+            - colosseum/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: *red-blue.pokemon.magmar.default
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      experience: *red-blue.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      stats: *ruby-sapphire.pokemon.magmar.stats
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      abilities: *ruby-sapphire.pokemon.magmar.abilities
+      genus: *red-blue.pokemon.magmar.genus
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          sprites:
+            - xd/magmar-default.png
+            - xd/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    magmar:
+      name: MAGMAR
+      default: *red-blue.pokemon.magmar.default
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      experience: *red-blue.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      stats: *ruby-sapphire.pokemon.magmar.stats
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      abilities: *ruby-sapphire.pokemon.magmar.abilities
+      genus: *red-blue.pokemon.magmar.genus
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      flavor_text:
+        firered: |
+          Found near the mouth of a volcano.
+          This fire-breather's body temperature is
+          nearly 2,200 degrees Fahrenheit.
+        leafgreen: |
+          Its body always burns with an orange glow
+          that enables it to hide perfectly amidst
+          flames.
+      forms:
+        magmar:
+          name: MAGMAR
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *ruby-sapphire.pokemon.magmar.forms.magmar.icon
+          sprites:
+            - firered-leafgreen/magmar-default.png
+            - firered-leafgreen/back/magmar-default.png
+            - firered-leafgreen/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Magmar
+  position: &diamond-pearl.position 149
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    magmar:
+      genus: &diamond-pearl.pokemon.magmar.genus 'Spitfire Pokémon'
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      shape: &diamond-pearl.pokemon.magmar.shape upright
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: &diamond-pearl.pokemon.magmar.baby false
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      pal_park: &diamond-pearl.pokemon.magmar.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: &diamond-pearl.pokemon.magmar.experience 173
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      stats: &diamond-pearl.pokemon.magmar.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 57
+          effort_change: 0
+        speed:
+          base_value: 93
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 2
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.magmar.abilities
+        flame-body: *ruby-sapphire.pokemon.magmar.abilities.flame-body
+        vital-spirit:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.magmar.wild_held_items.diamond
+          magmarizer: 5
+        pearl: &diamond-pearl.pokemon.magmar.wild_held_items.pearl
+          magmarizer: 50
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        diamond: |
+          Born in the spout of a volcano,
+          its body is covered by flames
+          that shimmer like the sun.
+        pearl: |
+          Born in the spout of a volcano,
+          its body is covered by flames
+          that shimmer like the sun.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *ruby-sapphire.pokemon.magmar.forms.magmar.icon
+          sprites:
+            - diamond-pearl/magmar-default.png
+            - diamond-pearl/back/magmar-default.png
+            - diamond-pearl/back/shiny/magmar-default.png
+            - diamond-pearl/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 201
+  pokemon:
+    magmar:
+      genus: *diamond-pearl.pokemon.magmar.genus
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      shape: *diamond-pearl.pokemon.magmar.shape
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: *diamond-pearl.pokemon.magmar.baby
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.magmar.pal_park
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: *diamond-pearl.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      stats: *diamond-pearl.pokemon.magmar.stats
+      abilities: *diamond-pearl.pokemon.magmar.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.magmar.wild_held_items.pearl
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        platinum: |
+          When it breathes deeply, heat
+          waves form around its body, making
+          it hard to see clearly.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *ruby-sapphire.pokemon.magmar.forms.magmar.icon
+          sprites:
+            - platinum/magmar-default.png
+            - platinum/back/magmar-default.png
+            - platinum/back/shiny/magmar-default.png
+            - platinum/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 153
+  pokemon:
+    magmar:
+      genus: *diamond-pearl.pokemon.magmar.genus
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      shape: *diamond-pearl.pokemon.magmar.shape
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: *diamond-pearl.pokemon.magmar.baby
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.magmar.pal_park
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: *diamond-pearl.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      stats: *diamond-pearl.pokemon.magmar.stats
+      abilities: *diamond-pearl.pokemon.magmar.abilities
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It dislikes cold places, so it blows
+          scorching flames to make the
+          environment suitable for itself.
+        soulsilver: |
+          The fiery surface of its body gives
+          off a wavering, rippling glare
+          that is similar to the sun.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 2-5
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.magmar.forms.magmar.icon
+          sprites:
+            - heartgold-soulsilver/magmar-default.png
+            - heartgold-soulsilver/back/magmar-default.png
+            - heartgold-soulsilver/back/shiny/magmar-default.png
+            - heartgold-soulsilver/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    magmar:
+      genus: *diamond-pearl.pokemon.magmar.genus
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      color: &black-white.pokemon.magmar.color red
+      shape: *diamond-pearl.pokemon.magmar.shape
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: *diamond-pearl.pokemon.magmar.baby
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: *diamond-pearl.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      stats: *diamond-pearl.pokemon.magmar.stats
+      abilities: *diamond-pearl.pokemon.magmar.abilities
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        black: |
+          When it breathes deeply, heat
+          waves form around its body, making
+          it hard to see clearly.
+        white: |
+          When it breathes deeply, heat
+          waves form around its body, making
+          it hard to see clearly.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *ruby-sapphire.pokemon.magmar.forms.magmar.icon
+          sprites:
+            - black-white/magmar-default.png
+            - black-white/back/magmar-default.png
+            - black-white/back/shiny/magmar-default.png
+            - black-white/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 54
+  pokemon:
+    magmar:
+      genus: *diamond-pearl.pokemon.magmar.genus
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      color: *black-white.pokemon.magmar.color
+      shape: *diamond-pearl.pokemon.magmar.shape
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: *diamond-pearl.pokemon.magmar.baby
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: *diamond-pearl.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      stats: *diamond-pearl.pokemon.magmar.stats
+      abilities: *diamond-pearl.pokemon.magmar.abilities
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        black-2: |
+          The scorching fire exhaled by Magmar
+          forms heat waves around its body, making
+          it hard to see the Pokémon clearly.
+        white-2: |
+          The scorching fire exhaled by Magmar
+          forms heat waves around its body, making
+          it hard to see the Pokémon clearly.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *ruby-sapphire.pokemon.magmar.forms.magmar.icon
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *red-blue.pokemon.magmar.forms.magmar.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    magmar:
+      genus: *diamond-pearl.pokemon.magmar.genus
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      color: *black-white.pokemon.magmar.color
+      shape: *diamond-pearl.pokemon.magmar.shape
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: *diamond-pearl.pokemon.magmar.baby
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: *diamond-pearl.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      mega: &x-y.pokemon.magmar.mega false
+      stats: *diamond-pearl.pokemon.magmar.stats
+      abilities: *diamond-pearl.pokemon.magmar.abilities
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        x: |
+          Found near the mouth of a volcano.
+          This fire-breather’s body temperature is
+          nearly 2,200 degrees Fahrenheit.
+        'y': |
+          Born in the spout of a volcano, its body is covered
+          by flames that shimmer like the sun.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: &x-y.pokemon.magmar.forms.magmar.icon magmar-default.png
+          sprites:
+            - x-y/magmar-default.png
+            - x-y/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: &x-y.pokemon.magmar.forms.magmar.cry magmar-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    magmar:
+      genus: *diamond-pearl.pokemon.magmar.genus
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      color: *black-white.pokemon.magmar.color
+      shape: *diamond-pearl.pokemon.magmar.shape
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: *diamond-pearl.pokemon.magmar.baby
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: *diamond-pearl.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      mega: *x-y.pokemon.magmar.mega
+      stats: *diamond-pearl.pokemon.magmar.stats
+      abilities: *diamond-pearl.pokemon.magmar.abilities
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          In battle, Magmar blows out intensely hot flames from all
+          over its body to intimidate its opponent. This Pokémon’s
+          fiery bursts create heat waves that ignite grass and trees
+          in its surroundings.
+        alpha-sapphire: |
+          In battle, Magmar blows out intensely hot flames from
+          all over its body to intimidate its opponent. This Pokémon’s
+          fiery bursts create heat waves that ignite grass and trees in
+          its surroundings.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *x-y.pokemon.magmar.forms.magmar.icon
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *x-y.pokemon.magmar.forms.magmar.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/magmar-default.png
+            - omega-ruby-alpha-sapphire/shiny/magmar-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.magmar.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.magmar.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 167
+    original-akala: 94
+  pokemon:
+    magmar:
+      genus: *diamond-pearl.pokemon.magmar.genus
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      color: *black-white.pokemon.magmar.color
+      shape: *diamond-pearl.pokemon.magmar.shape
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: *diamond-pearl.pokemon.magmar.baby
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: *diamond-pearl.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      mega: *x-y.pokemon.magmar.mega
+      stats: *diamond-pearl.pokemon.magmar.stats
+      abilities: *diamond-pearl.pokemon.magmar.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.magmar.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.magmar.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        sun: |-
+          When it’s tired, it leaps into the mouth of a
+          volcano and soaks its body in magma to ease its
+          weariness. Its body burns at 2,192 degrees F.
+        moon: |-
+          When angered, it spouts brilliant fire from all
+          over its body. It doesn’t calm down until its
+          opponent has burned to ash.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *x-y.pokemon.magmar.forms.magmar.icon
+          sprites:
+            - sun-moon/magmar-default.png
+            - sun-moon/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *x-y.pokemon.magmar.forms.magmar.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 201
+    updated-akala: 102
+  pokemon:
+    magmar:
+      genus: *diamond-pearl.pokemon.magmar.genus
+      evolution_parent: *gold-silver.pokemon.magmar.evolution_parent
+      color: *black-white.pokemon.magmar.color
+      shape: *diamond-pearl.pokemon.magmar.shape
+      female_rate: *gold-silver.pokemon.magmar.female_rate
+      capture_rate: *red-blue.pokemon.magmar.capture_rate
+      happiness: *ruby-sapphire.pokemon.magmar.happiness
+      baby: *diamond-pearl.pokemon.magmar.baby
+      hatch_steps: *gold-silver.pokemon.magmar.hatch_steps
+      growth_rate: *red-blue.pokemon.magmar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.magmar.forms_switchable
+      name: Magmar
+      default: *red-blue.pokemon.magmar.default
+      height: *ruby-sapphire.pokemon.magmar.height
+      weight: *ruby-sapphire.pokemon.magmar.weight
+      experience: *diamond-pearl.pokemon.magmar.experience
+      types: *red-blue.pokemon.magmar.types
+      egg_groups: *gold-silver.pokemon.magmar.egg_groups
+      mega: *x-y.pokemon.magmar.mega
+      stats: *diamond-pearl.pokemon.magmar.stats
+      abilities: *diamond-pearl.pokemon.magmar.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.magmar.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.magmar.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.magmar.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Its entire body is burning. When it breathes,
+          the temperature rises. When it sneezes, flames
+          shoot out!
+        ultra-moon: |-
+          The hotter the place, the better they feel.
+          Magmar in Alola are said to be hardier than
+          those in other areas.
+      forms:
+        magmar:
+          name: Magmar
+          form_name: *red-blue.pokemon.magmar.forms.magmar.form_name
+          default: true
+          battle_only: *red-blue.pokemon.magmar.forms.magmar.battle_only
+          icon: *x-y.pokemon.magmar.forms.magmar.icon
+          sprites:
+            - ultra-sun-ultra-moon/magmar-default.png
+            - ultra-sun-ultra-moon/shiny/magmar-default.png
+          art: *red-blue.pokemon.magmar.forms.magmar.art
+          footprint: *ruby-sapphire.pokemon.magmar.forms.magmar.footprint
+          cry: *x-y.pokemon.magmar.forms.magmar.cry

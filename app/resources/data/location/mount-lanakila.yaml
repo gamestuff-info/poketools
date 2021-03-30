@@ -1,0 +1,35 @@
+sun-moon:
+  region: &sun-moon.region alola
+  name: &sun-moon.name 'Mount Lanakila'
+  areas:
+    entrance:
+      name: Entrance
+      default: true
+    mountainside: &sun-moon.areas.mountainside
+      name: Mountainside
+    cave:
+      name: Cave
+    mid-point: &sun-moon.areas.mid-point
+      name: Mid-point
+    summit: &sun-moon.areas.summit
+      name: Summit
+  map: &sun-moon.map
+    map: ulaula
+    overlay: '<path d="M 947.04297 1315.9766 L 912.52734 1326.7617 L 826.23633 1406.582 L 794.95508 1585.6348 L 759.36133 1644.9609 L 783.08984 1693.498 L 791.7207 1760.375 L 762.59766 1843.4297 L 806.82031 1954.5293 L 807.90039 2048.3711 L 975.08789 2049.4492 L 1002.2031 2051.6953 L 1059.4062 2050.1699 L 1257.6621 1912.9102 L 1251.2188 1648.1953 L 1274.9492 1381.7734 L 1236.1191 1363.4355 L 1130.4121 1393.6367 L 1035.4922 1350.4922 L 947.04297 1315.9766 z " />'
+ultra-sun-ultra-moon:
+  region: *sun-moon.region
+  name: *sun-moon.name
+  areas:
+    base:
+      name: Base
+      default: true
+    mountainside: *sun-moon.areas.mountainside
+    mid-point: *sun-moon.areas.mid-point
+    cave-left:
+      name: 'Cave (left)'
+    crater:
+      name: Crater
+    cave-right:
+      name: 'Cave (right)'
+    summit: *sun-moon.areas.summit
+  map: *sun-moon.map

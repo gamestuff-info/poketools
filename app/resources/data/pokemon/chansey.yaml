@@ -1,0 +1,993 @@
+red-blue:
+  name: &red-blue.name CHANSEY
+  position: &red-blue.position 113
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 113
+    kanto: 113
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: &red-blue.pokemon.chansey.default true
+      capture_rate: &red-blue.pokemon.chansey.capture_rate 30
+      experience: &red-blue.pokemon.chansey.experience 255
+      types: &red-blue.pokemon.chansey.types
+        - normal
+      stats: &red-blue.pokemon.chansey.stats
+        hp:
+          base_value: 250
+          effort_change: 250
+        attack:
+          base_value: 5
+          effort_change: 5
+        defense:
+          base_value: 5
+          effort_change: 5
+        speed:
+          base_value: 50
+          effort_change: 50
+        special:
+          base_value: 105
+          effort_change: 105
+      growth_rate: &red-blue.pokemon.chansey.growth_rate fast
+      genus: &red-blue.pokemon.chansey.genus 'EGG Pokémon'
+      height: &red-blue.pokemon.chansey.height 10
+      weight: &red-blue.pokemon.chansey.weight 3447
+      flavor_text:
+        red: |
+          A rare and elusive
+          POKéMON that is
+          said to bring
+          happiness to those
+           who manage to get
+          it.
+        blue: |
+          A rare and elusive
+          POKéMON that is
+          said to bring
+          happiness to those
+           who manage to get
+          it.
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: &red-blue.pokemon.chansey.forms.chansey.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.chansey.forms.chansey.battle_only false
+          sprites:
+            - red-blue/chansey-default.png
+            - red-blue/gray/chansey-default.png
+            - red-blue/back/chansey-default.png
+          art: &red-blue.pokemon.chansey.forms.chansey.art
+            - chansey-default.png
+          cry: &red-blue.pokemon.chansey.forms.chansey.cry gen5/chansey-default.webm
+          icon: &red-blue.pokemon.chansey.forms.chansey.icon gen1/fairy.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: *red-blue.pokemon.chansey.default
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      experience: *red-blue.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      stats: *red-blue.pokemon.chansey.stats
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      genus: *red-blue.pokemon.chansey.genus
+      height: *red-blue.pokemon.chansey.height
+      weight: *red-blue.pokemon.chansey.weight
+      flavor_text:
+        yellow: |
+          A gentle and kind-
+          hearted POKéMON
+          that shares its
+          nutritious eggs
+          if it sees an
+          injured POKéMON.
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          sprites:
+            - yellow/chansey-default.png
+            - yellow/gray/chansey-default.png
+            - yellow/back/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+          icon: *red-blue.pokemon.chansey.forms.chansey.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 112
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 216
+    original-johto-abc: 9
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: *red-blue.pokemon.chansey.default
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      experience: *red-blue.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      stats: &gold-silver.pokemon.chansey.stats
+        hp:
+          base_value: 250
+          effort_change: 250
+        attack:
+          base_value: 5
+          effort_change: 5
+        defense:
+          base_value: 5
+          effort_change: 5
+        speed:
+          base_value: 50
+          effort_change: 50
+        special-attack:
+          base_value: 35
+          effort_change: 35
+        special-defense:
+          base_value: 105
+          effort_change: 35
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      female_rate: &gold-silver.pokemon.chansey.female_rate 100
+      hatch_steps: &gold-silver.pokemon.chansey.hatch_steps 40
+      egg_groups: &gold-silver.pokemon.chansey.egg_groups
+        - fairy
+      wild_held_items:
+        gold: &gold-silver.pokemon.chansey.wild_held_items.gold
+          lucky-egg: 2
+        silver: *gold-silver.pokemon.chansey.wild_held_items.gold
+      genus: *red-blue.pokemon.chansey.genus
+      height: *red-blue.pokemon.chansey.height
+      weight: &gold-silver.pokemon.chansey.weight 344
+      flavor_text:
+        gold: |
+          It walks carefully
+          to prevent its
+          egg from breaking.
+          However, it is
+          extremely fast at
+          running away.
+        silver: |
+          Few in number and
+          difficult to cap-
+          ture, it is said
+          to bring happiness
+          to the trainer who
+          catches it.
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          sprites:
+            - gold-silver/chansey-default.png
+            - gold-silver/back/chansey-default.png
+            - gold-silver/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+          icon: &gold-silver.pokemon.chansey.forms.chansey.icon gen2/clefairy.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: *red-blue.pokemon.chansey.default
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      experience: *red-blue.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      stats: *gold-silver.pokemon.chansey.stats
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.chansey.wild_held_items.gold
+      genus: *red-blue.pokemon.chansey.genus
+      height: *red-blue.pokemon.chansey.height
+      weight: *gold-silver.pokemon.chansey.weight
+      flavor_text:
+        crystal: |
+          People try to
+          catch it for its
+          extremely
+          nutritious eggs,
+          but it rarely can
+          be found.
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          sprites:
+            - crystal/chansey-default.png
+            - crystal/back/chansey-default.png
+            - crystal/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+          icon: *gold-silver.pokemon.chansey.forms.chansey.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 277
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: *red-blue.pokemon.chansey.default
+      forms_switchable: &ruby-sapphire.pokemon.chansey.forms_switchable false
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      experience: *red-blue.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      stats: &ruby-sapphire.pokemon.chansey.stats
+        hp:
+          base_value: 250
+          effort_change: 2
+        attack:
+          base_value: 5
+          effort_change: 0
+        defense:
+          base_value: 5
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 250
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.chansey.wild_held_items.ruby
+          lucky-egg: &ruby-sapphire.pokemon.chansey.wild_held_items.ruby.lucky-egg 5
+        sapphire: *ruby-sapphire.pokemon.chansey.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.chansey.happiness 140
+      abilities: &ruby-sapphire.pokemon.chansey.abilities
+        natural-cure: &ruby-sapphire.pokemon.chansey.abilities.natural-cure
+          hidden: &ruby-sapphire.pokemon.chansey.abilities.natural-cure.hidden false
+          position: 1
+        serene-grace: &ruby-sapphire.pokemon.chansey.abilities.serene-grace
+          hidden: *ruby-sapphire.pokemon.chansey.abilities.natural-cure.hidden
+          position: 2
+      genus: *red-blue.pokemon.chansey.genus
+      height: &ruby-sapphire.pokemon.chansey.height 11
+      weight: &ruby-sapphire.pokemon.chansey.weight 346
+      flavor_text:
+        ruby: |
+          CHANSEY lays nutritionally excellent
+          eggs on an everyday basis.
+           The eggs are so delicious, they are
+          easily and eagerly devoured by even
+           those people who have lost their
+          appetite.
+        sapphire: |
+          CHANSEY lays nutritionally excellent
+          eggs on an everyday basis.
+           The eggs are so delicious, they are
+          easily and eagerly devoured by even
+           those people who have lost their
+          appetite.
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: &ruby-sapphire.pokemon.chansey.forms.chansey.icon gen5/chansey-default.png
+          sprites:
+            - ruby-sapphire/chansey-default.png
+            - ruby-sapphire/back/chansey-default.png
+            - ruby-sapphire/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: &ruby-sapphire.pokemon.chansey.forms.chansey.footprint chansey.png
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: *red-blue.pokemon.chansey.default
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      experience: *red-blue.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      stats: *ruby-sapphire.pokemon.chansey.stats
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.chansey.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      abilities: *ruby-sapphire.pokemon.chansey.abilities
+      genus: *red-blue.pokemon.chansey.genus
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      flavor_text:
+        emerald: |
+          CHANSEY lay nutritionally excellent eggs
+          every day. The eggs are so delicious, they
+          are eagerly devoured by even those people
+          who have lost their appetite.
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *ruby-sapphire.pokemon.chansey.forms.chansey.icon
+          sprites:
+            - emerald/chansey-default.png
+            - emerald/shiny/chansey-default.png
+            - emerald/animated/chansey-default.webm
+            - emerald/animated/shiny/chansey-default.webm
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 42
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: *red-blue.pokemon.chansey.default
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      experience: *red-blue.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      stats: *ruby-sapphire.pokemon.chansey.stats
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      abilities: *ruby-sapphire.pokemon.chansey.abilities
+      genus: *red-blue.pokemon.chansey.genus
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          sprites:
+            - colosseum/chansey-default.png
+            - colosseum/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: *red-blue.pokemon.chansey.default
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      experience: *red-blue.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      stats: *ruby-sapphire.pokemon.chansey.stats
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      abilities: *ruby-sapphire.pokemon.chansey.abilities
+      genus: *red-blue.pokemon.chansey.genus
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          sprites:
+            - xd/chansey-default.png
+            - xd/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    chansey:
+      name: CHANSEY
+      default: *red-blue.pokemon.chansey.default
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      experience: *red-blue.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      stats: *ruby-sapphire.pokemon.chansey.stats
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.chansey.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.chansey.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      abilities: *ruby-sapphire.pokemon.chansey.abilities
+      genus: *red-blue.pokemon.chansey.genus
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      flavor_text:
+        firered: |
+          It lays several eggs a day. The eggs are
+          apparently rich in nutrients and extremely
+          delicious.
+        leafgreen: |
+          A rare and elusive POKéMON that is said
+          to bring happiness to those who manage to
+          catch one.
+      forms:
+        chansey:
+          name: CHANSEY
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *ruby-sapphire.pokemon.chansey.forms.chansey.icon
+          sprites:
+            - firered-leafgreen/chansey-default.png
+            - firered-leafgreen/back/chansey-default.png
+            - firered-leafgreen/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+diamond-pearl:
+  name: &diamond-pearl.name Chansey
+  position: &diamond-pearl.position 127
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 97
+  pokemon:
+    chansey:
+      genus: &diamond-pearl.pokemon.chansey.genus 'Egg Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.chansey.evolution_parent happiny/happiny
+      shape: &diamond-pearl.pokemon.chansey.shape upright
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: &diamond-pearl.pokemon.chansey.baby false
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      pal_park: &diamond-pearl.pokemon.chansey.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: &diamond-pearl.pokemon.chansey.experience 395
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      stats: &diamond-pearl.pokemon.chansey.stats
+        hp:
+          base_value: 250
+          effort_change: 2
+        attack:
+          base_value: 5
+          effort_change: 0
+        defense:
+          base_value: 5
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 105
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.chansey.abilities
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.chansey.wild_held_items.diamond
+          oval-stone: 50
+          lucky-egg: *ruby-sapphire.pokemon.chansey.wild_held_items.ruby.lucky-egg
+        pearl: *diamond-pearl.pokemon.chansey.wild_held_items.diamond
+      evolution_conditions: &diamond-pearl.pokemon.chansey.evolution_conditions
+        level-up:
+          held_item: oval-stone
+          time_of_day:
+            - day
+      flavor_text:
+        diamond: |
+          It is said to deliver happiness.
+          Being compassionate, it shares its
+          eggs with injured people.
+        pearl: |
+          It lays several eggs a day and
+          won’t share them with those
+          who have evil in their hearts.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *ruby-sapphire.pokemon.chansey.forms.chansey.icon
+          sprites:
+            - diamond-pearl/chansey-default.png
+            - diamond-pearl/back/chansey-default.png
+            - diamond-pearl/back/shiny/chansey-default.png
+            - diamond-pearl/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 97
+  pokemon:
+    chansey:
+      genus: *diamond-pearl.pokemon.chansey.genus
+      evolution_parent: *diamond-pearl.pokemon.chansey.evolution_parent
+      shape: *diamond-pearl.pokemon.chansey.shape
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: *diamond-pearl.pokemon.chansey.baby
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      pal_park: *diamond-pearl.pokemon.chansey.pal_park
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: *diamond-pearl.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      stats: *diamond-pearl.pokemon.chansey.stats
+      abilities: *ruby-sapphire.pokemon.chansey.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.chansey.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.chansey.evolution_conditions
+      flavor_text:
+        platinum: |
+          A kindly Pokémon that lays highly
+          nutritious eggs and shares them
+          with injured Pokémon or people.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *ruby-sapphire.pokemon.chansey.forms.chansey.icon
+          sprites:
+            - platinum/chansey-default.png
+            - platinum/back/chansey-default.png
+            - platinum/back/shiny/chansey-default.png
+            - platinum/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 222
+  pokemon:
+    chansey:
+      genus: *diamond-pearl.pokemon.chansey.genus
+      evolution_parent: *diamond-pearl.pokemon.chansey.evolution_parent
+      shape: *diamond-pearl.pokemon.chansey.shape
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: *diamond-pearl.pokemon.chansey.baby
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      pal_park: *diamond-pearl.pokemon.chansey.pal_park
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: *diamond-pearl.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      stats: *diamond-pearl.pokemon.chansey.stats
+      abilities: *ruby-sapphire.pokemon.chansey.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.chansey.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.chansey.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.chansey.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It walks carefully to prevent its
+          egg from breaking. However,
+          it is extremely fast at running away.
+        soulsilver: |
+          Being few in number and difficult to
+          capture, it is said to bring happiness
+          to the Trainer who catches it.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 1
+              range: 1-4
+            skill:
+              base_value: 1
+              range: 1-4
+            stamina:
+              base_value: 5
+              range: 3-5
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.chansey.forms.chansey.icon
+          sprites:
+            - heartgold-soulsilver/chansey-default.png
+            - heartgold-soulsilver/back/chansey-default.png
+            - heartgold-soulsilver/back/shiny/chansey-default.png
+            - heartgold-soulsilver/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    chansey:
+      genus: *diamond-pearl.pokemon.chansey.genus
+      evolution_parent: *diamond-pearl.pokemon.chansey.evolution_parent
+      color: &black-white.pokemon.chansey.color pink
+      shape: *diamond-pearl.pokemon.chansey.shape
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: *diamond-pearl.pokemon.chansey.baby
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: *diamond-pearl.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      stats: *diamond-pearl.pokemon.chansey.stats
+      abilities: &black-white.pokemon.chansey.abilities
+        natural-cure: *ruby-sapphire.pokemon.chansey.abilities.natural-cure
+        serene-grace: *ruby-sapphire.pokemon.chansey.abilities.serene-grace
+        healer:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.chansey.wild_held_items.black
+          lucky-egg: *ruby-sapphire.pokemon.chansey.wild_held_items.ruby.lucky-egg
+          lucky-punch: &black-white.pokemon.chansey.wild_held_items.black.lucky-punch 50
+        white: *black-white.pokemon.chansey.wild_held_items.black
+      evolution_conditions: *diamond-pearl.pokemon.chansey.evolution_conditions
+      flavor_text:
+        black: |
+          A kindly Pokémon that lays highly
+          nutritious eggs and shares them
+          with injured Pokémon or people.
+        white: |
+          A kindly Pokémon that lays highly
+          nutritious eggs and shares them
+          with injured Pokémon or people.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *ruby-sapphire.pokemon.chansey.forms.chansey.icon
+          sprites:
+            - black-white/chansey-default.png
+            - black-white/back/chansey-default.png
+            - black-white/back/shiny/chansey-default.png
+            - black-white/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    chansey:
+      genus: *diamond-pearl.pokemon.chansey.genus
+      evolution_parent: *diamond-pearl.pokemon.chansey.evolution_parent
+      color: *black-white.pokemon.chansey.color
+      shape: *diamond-pearl.pokemon.chansey.shape
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: *diamond-pearl.pokemon.chansey.baby
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: *diamond-pearl.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      stats: *diamond-pearl.pokemon.chansey.stats
+      abilities: *black-white.pokemon.chansey.abilities
+      wild_held_items:
+        black-2: *black-white.pokemon.chansey.wild_held_items.black
+        white-2: *black-white.pokemon.chansey.wild_held_items.black
+      evolution_conditions: *diamond-pearl.pokemon.chansey.evolution_conditions
+      flavor_text:
+        black-2: |
+          A kindly Pokémon that lays highly
+          nutritious eggs and shares them
+          with injured Pokémon or people.
+        white-2: |
+          A kindly Pokémon that lays highly
+          nutritious eggs and shares them
+          with injured Pokémon or people.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *ruby-sapphire.pokemon.chansey.forms.chansey.icon
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *red-blue.pokemon.chansey.forms.chansey.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    chansey:
+      genus: *diamond-pearl.pokemon.chansey.genus
+      evolution_parent: *diamond-pearl.pokemon.chansey.evolution_parent
+      color: *black-white.pokemon.chansey.color
+      shape: *diamond-pearl.pokemon.chansey.shape
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: *diamond-pearl.pokemon.chansey.baby
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: *diamond-pearl.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      mega: &x-y.pokemon.chansey.mega false
+      stats: *diamond-pearl.pokemon.chansey.stats
+      abilities: *black-white.pokemon.chansey.abilities
+      wild_held_items:
+        x: *black-white.pokemon.chansey.wild_held_items.black
+        'y': *black-white.pokemon.chansey.wild_held_items.black
+      evolution_conditions: *diamond-pearl.pokemon.chansey.evolution_conditions
+      flavor_text:
+        x: |
+          It is said to deliver happiness.
+          Being compassionate, it shares its eggs
+          with injured people.
+        'y': |
+          It lays several eggs a day. The eggs are apparently
+          rich in nutrients and extremely delicious.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: &x-y.pokemon.chansey.forms.chansey.icon chansey-default.png
+          sprites:
+            - x-y/chansey-default.png
+            - x-y/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: &x-y.pokemon.chansey.forms.chansey.cry chansey-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    chansey:
+      genus: *diamond-pearl.pokemon.chansey.genus
+      evolution_parent: *diamond-pearl.pokemon.chansey.evolution_parent
+      color: *black-white.pokemon.chansey.color
+      shape: *diamond-pearl.pokemon.chansey.shape
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: *diamond-pearl.pokemon.chansey.baby
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: *diamond-pearl.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      mega: *x-y.pokemon.chansey.mega
+      stats: *diamond-pearl.pokemon.chansey.stats
+      abilities: *black-white.pokemon.chansey.abilities
+      evolution_conditions: *diamond-pearl.pokemon.chansey.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Chansey lays nutritionally excellent eggs on an everyday basis.
+          The eggs are so delicious, they are easily and eagerly
+          devoured by even those people who have lost their appetite.
+        alpha-sapphire: |
+          Chansey lays nutritionally excellent eggs on an everyday basis.
+          The eggs are so delicious, they are easily and eagerly
+          devoured by even those people who have lost their appetite.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *x-y.pokemon.chansey.forms.chansey.icon
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *x-y.pokemon.chansey.forms.chansey.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/chansey-default.png
+            - omega-ruby-alpha-sapphire/shiny/chansey-default.png
+      wild_held_items:
+        omega-ruby: *black-white.pokemon.chansey.wild_held_items.black
+        alpha-sapphire: *black-white.pokemon.chansey.wild_held_items.black
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 33
+    original-melemele: 33
+    original-akala: 17
+    original-ulaula: 16
+    original-poni: 9
+  pokemon:
+    chansey:
+      genus: *diamond-pearl.pokemon.chansey.genus
+      evolution_parent: *diamond-pearl.pokemon.chansey.evolution_parent
+      color: *black-white.pokemon.chansey.color
+      shape: *diamond-pearl.pokemon.chansey.shape
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: *diamond-pearl.pokemon.chansey.baby
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: *diamond-pearl.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      mega: *x-y.pokemon.chansey.mega
+      stats: *diamond-pearl.pokemon.chansey.stats
+      abilities: *black-white.pokemon.chansey.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.chansey.wild_held_items.sun
+          lucky-punch: *black-white.pokemon.chansey.wild_held_items.black.lucky-punch
+        moon: *sun-moon.pokemon.chansey.wild_held_items.sun
+      evolution_conditions: *diamond-pearl.pokemon.chansey.evolution_conditions
+      flavor_text:
+        sun: |-
+          The eggs laid by Chansey are rich in nutrients
+          and a favorite food of many Pokémon.
+        moon: |-
+          Not only are these Pokémon fast runners,
+          they’re also few in number, so anyone who finds
+          one must be lucky indeed.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *x-y.pokemon.chansey.forms.chansey.icon
+          sprites:
+            - sun-moon/chansey-default.png
+            - sun-moon/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *x-y.pokemon.chansey.forms.chansey.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 40
+    updated-melemele: 40
+    updated-akala: 17
+    updated-ulaula: 16
+    updated-poni: 16
+  pokemon:
+    chansey:
+      genus: *diamond-pearl.pokemon.chansey.genus
+      evolution_parent: *diamond-pearl.pokemon.chansey.evolution_parent
+      color: *black-white.pokemon.chansey.color
+      shape: *diamond-pearl.pokemon.chansey.shape
+      female_rate: *gold-silver.pokemon.chansey.female_rate
+      capture_rate: *red-blue.pokemon.chansey.capture_rate
+      happiness: *ruby-sapphire.pokemon.chansey.happiness
+      baby: *diamond-pearl.pokemon.chansey.baby
+      hatch_steps: *gold-silver.pokemon.chansey.hatch_steps
+      growth_rate: *red-blue.pokemon.chansey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.chansey.forms_switchable
+      name: Chansey
+      default: *red-blue.pokemon.chansey.default
+      height: *ruby-sapphire.pokemon.chansey.height
+      weight: *ruby-sapphire.pokemon.chansey.weight
+      experience: *diamond-pearl.pokemon.chansey.experience
+      types: *red-blue.pokemon.chansey.types
+      egg_groups: *gold-silver.pokemon.chansey.egg_groups
+      mega: *x-y.pokemon.chansey.mega
+      stats: *diamond-pearl.pokemon.chansey.stats
+      abilities: *black-white.pokemon.chansey.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.chansey.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.chansey.wild_held_items.sun
+      evolution_conditions: *diamond-pearl.pokemon.chansey.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It seems that other Pokémon’s efforts to take
+          its delicious, nutritious egg away from it caused
+          Chansey to get faster at fleeing.
+        ultra-moon: |-
+          Because the eggs on their bellies have been
+          overharvested by people in the past, the
+          Chansey population remains very small.
+      forms:
+        chansey:
+          name: Chansey
+          form_name: *red-blue.pokemon.chansey.forms.chansey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.chansey.forms.chansey.battle_only
+          icon: *x-y.pokemon.chansey.forms.chansey.icon
+          sprites:
+            - ultra-sun-ultra-moon/chansey-default.png
+            - ultra-sun-ultra-moon/shiny/chansey-default.png
+          art: *red-blue.pokemon.chansey.forms.chansey.art
+          footprint: *ruby-sapphire.pokemon.chansey.forms.chansey.footprint
+          cry: *x-y.pokemon.chansey.forms.chansey.cry

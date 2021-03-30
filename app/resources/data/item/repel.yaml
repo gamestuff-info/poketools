@@ -1,0 +1,102 @@
+red-blue: &red-blue
+  name: &red-blue.name REPEL
+  pocket: &red-blue.pocket misc
+  buy: &red-blue.buy 350
+  sell: &red-blue.sell 175
+  category: &red-blue.category spelunking
+  short_description: &red-blue.short_description 'For 100 steps, prevents wild encounters of level lower than your party''s lead Pokémon.'
+  description: &red-blue.description |
+    Used outside of battle
+    :   Trainer will skip encounters with wild Pokémon of a lower level than the lead party Pokémon.  This effect wears off after the trainer takes 100 steps.
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  pocket: *red-blue.pocket
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    Repels weak POKé-
+    MON for 100 steps.
+  category: *red-blue.category
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  flags: &ruby-sapphire.flags
+    {  }
+  icon: &ruby-sapphire.icon repel.png
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    Repels weak wild
+    POKéMON for 100
+    steps.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+emerald: *ruby-sapphire
+firered-leafgreen:
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    Prevents weak wild POKéMON from
+    appearing for 100 steps.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Repel
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  buy: &diamond-pearl.buy 400
+  sell: &diamond-pearl.sell 200
+  fling_effect: damage
+  fling_power: 30
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    An item that prevents weak wild
+    Pokémon from appearing for 100 steps
+    after its use.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    An item that prevents any low-level
+    wild Pokémon from jumping out at
+    you for 100 steps after its use.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    An item that prevents any low-level wild Pokémon
+    from jumping out at you for a while.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

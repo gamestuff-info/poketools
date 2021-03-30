@@ -1,0 +1,860 @@
+gold-silver:
+  name: &gold-silver.name XATU
+  position: &gold-silver.position 177
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 178
+    original-johto: 159
+    original-johto-abc: 236
+  pokemon:
+    xatu:
+      name: XATU
+      default: &gold-silver.pokemon.xatu.default true
+      capture_rate: &gold-silver.pokemon.xatu.capture_rate 75
+      experience: &gold-silver.pokemon.xatu.experience 171
+      types: &gold-silver.pokemon.xatu.types
+        - psychic
+        - flying
+      stats: &gold-silver.pokemon.xatu.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 75
+          effort_change: 75
+        defense:
+          base_value: 70
+          effort_change: 70
+        speed:
+          base_value: 95
+          effort_change: 95
+        special-attack:
+          base_value: 95
+          effort_change: 95
+        special-defense:
+          base_value: 70
+          effort_change: 95
+      growth_rate: &gold-silver.pokemon.xatu.growth_rate medium
+      female_rate: &gold-silver.pokemon.xatu.female_rate 50
+      hatch_steps: &gold-silver.pokemon.xatu.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.xatu.egg_groups
+        - flying
+      genus: &gold-silver.pokemon.xatu.genus 'MYSTIC Pokémon'
+      height: &gold-silver.pokemon.xatu.height 14
+      weight: &gold-silver.pokemon.xatu.weight 149
+      flavor_text:
+        gold: |
+          They say that it
+          stays still and
+          quiet because it
+          is seeing both the
+          past and future at
+          the same time.
+        silver: |
+          In South America,
+          it is said that
+          its right eye sees
+          the future and its
+          left eye views the
+          past.
+      evolution_parent: &gold-silver.pokemon.xatu.evolution_parent natu/natu
+      evolution_conditions: &gold-silver.pokemon.xatu.evolution_conditions
+        level-up:
+          minimum_level: 25
+      forms:
+        xatu:
+          name: XATU
+          form_name: &gold-silver.pokemon.xatu.forms.xatu.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.xatu.forms.xatu.battle_only false
+          sprites:
+            - gold-silver/xatu-default.png
+            - gold-silver/back/xatu-default.png
+            - gold-silver/shiny/xatu-default.png
+          art: &gold-silver.pokemon.xatu.forms.xatu.art
+            - xatu-default.png
+          cry: &gold-silver.pokemon.xatu.forms.xatu.cry gen5/xatu-default.webm
+          icon: &gold-silver.pokemon.xatu.forms.xatu.icon gen2/bird.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    xatu:
+      name: XATU
+      default: *gold-silver.pokemon.xatu.default
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      experience: *gold-silver.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      stats: *gold-silver.pokemon.xatu.stats
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      genus: *gold-silver.pokemon.xatu.genus
+      height: *gold-silver.pokemon.xatu.height
+      weight: *gold-silver.pokemon.xatu.weight
+      flavor_text:
+        crystal: |
+          Once it begins to
+          meditate at sun-
+          rise, the entire
+          day will pass
+          before it will
+          move again.
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      forms:
+        xatu:
+          name: XATU
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          sprites:
+            - crystal/xatu-default.png
+            - crystal/back/xatu-default.png
+            - crystal/shiny/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+          icon: *gold-silver.pokemon.xatu.forms.xatu.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 178
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 163
+  pokemon:
+    xatu:
+      name: XATU
+      default: *gold-silver.pokemon.xatu.default
+      forms_switchable: &ruby-sapphire.pokemon.xatu.forms_switchable false
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      experience: *gold-silver.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      stats: &ruby-sapphire.pokemon.xatu.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 75
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 1
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      happiness: &ruby-sapphire.pokemon.xatu.happiness 70
+      abilities: &ruby-sapphire.pokemon.xatu.abilities
+        synchronize: &ruby-sapphire.pokemon.xatu.abilities.synchronize
+          hidden: &ruby-sapphire.pokemon.xatu.abilities.synchronize.hidden false
+          position: 1
+        early-bird: &ruby-sapphire.pokemon.xatu.abilities.early-bird
+          hidden: *ruby-sapphire.pokemon.xatu.abilities.synchronize.hidden
+          position: 2
+      genus: *gold-silver.pokemon.xatu.genus
+      height: &ruby-sapphire.pokemon.xatu.height 15
+      weight: &ruby-sapphire.pokemon.xatu.weight 150
+      flavor_text:
+        ruby: |
+          XATU stands rooted and still in one
+          spot all day long. People believe that
+          this POKéMON does so out of fear of
+          the terrible things it has foreseen in
+          the future.
+        sapphire: |
+          XATU is known to stand motionless while
+          staring at the sun all day long.
+          Some people revere it as a mystical
+          POKéMON out of their belief that XATU
+          is in possession of the power to see
+          into the future.
+      forms:
+        xatu:
+          name: XATU
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: &ruby-sapphire.pokemon.xatu.forms.xatu.icon gen5/xatu-default.png
+          sprites:
+            - ruby-sapphire/xatu-default.png
+            - ruby-sapphire/back/xatu-default.png
+            - ruby-sapphire/shiny/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: &ruby-sapphire.pokemon.xatu.forms.xatu.footprint xatu.png
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    xatu:
+      name: XATU
+      default: *gold-silver.pokemon.xatu.default
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      experience: *gold-silver.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      stats: *ruby-sapphire.pokemon.xatu.stats
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      abilities: *ruby-sapphire.pokemon.xatu.abilities
+      genus: *gold-silver.pokemon.xatu.genus
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      flavor_text:
+        emerald: |
+          It has the enigmatic power of foreseeing
+          the future. Some people in different lands
+          have long believed that XATU are
+          emissaries from another world.
+      forms:
+        xatu:
+          name: XATU
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *ruby-sapphire.pokemon.xatu.forms.xatu.icon
+          sprites:
+            - emerald/xatu-default.png
+            - emerald/shiny/xatu-default.png
+            - emerald/animated/xatu-default.webm
+            - emerald/animated/shiny/xatu-default.webm
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 381
+  pokemon:
+    xatu:
+      name: XATU
+      default: *gold-silver.pokemon.xatu.default
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      experience: 134217899
+      types: *gold-silver.pokemon.xatu.types
+      stats: *ruby-sapphire.pokemon.xatu.stats
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      abilities: *ruby-sapphire.pokemon.xatu.abilities
+      genus: *gold-silver.pokemon.xatu.genus
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      forms:
+        xatu:
+          name: XATU
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          sprites:
+            - colosseum/xatu-default.png
+            - colosseum/shiny/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    xatu:
+      name: XATU
+      default: *gold-silver.pokemon.xatu.default
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      experience: *gold-silver.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      stats: *ruby-sapphire.pokemon.xatu.stats
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      abilities: *ruby-sapphire.pokemon.xatu.abilities
+      genus: *gold-silver.pokemon.xatu.genus
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      forms:
+        xatu:
+          name: XATU
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          sprites:
+            - xd/xatu-default.png
+            - xd/shiny/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    xatu:
+      name: XATU
+      default: *gold-silver.pokemon.xatu.default
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      experience: *gold-silver.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      stats: *ruby-sapphire.pokemon.xatu.stats
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      abilities: *ruby-sapphire.pokemon.xatu.abilities
+      genus: *gold-silver.pokemon.xatu.genus
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      flavor_text:
+        firered: |
+          In South America, it is said that its right
+          eye sees the future and its left eye
+          views the past.
+        leafgreen: |
+          They say that it stays still and quiet
+          because it is seeing both the past and
+          future at the same time.
+      forms:
+        xatu:
+          name: XATU
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *ruby-sapphire.pokemon.xatu.forms.xatu.icon
+          sprites:
+            - firered-leafgreen/xatu-default.png
+            - firered-leafgreen/back/xatu-default.png
+            - firered-leafgreen/shiny/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Xatu
+  position: &diamond-pearl.position 207
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    xatu:
+      genus: &diamond-pearl.pokemon.xatu.genus 'Mystic Pokémon'
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      shape: &diamond-pearl.pokemon.xatu.shape wings
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: &diamond-pearl.pokemon.xatu.baby false
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      pal_park: &diamond-pearl.pokemon.xatu.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: &diamond-pearl.pokemon.xatu.experience 165
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      stats: &diamond-pearl.pokemon.xatu.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 75
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 1
+        special-attack:
+          base_value: 95
+          effort_change: 1
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.xatu.abilities
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      flavor_text:
+        diamond: |
+          This odd Pokémon can see both
+          the past and the future. It eyes
+          the sun’s movement all day.
+        pearl: |
+          This odd Pokémon can see both
+          the past and the future. It eyes
+          the sun’s movement all day.
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *ruby-sapphire.pokemon.xatu.forms.xatu.icon
+          sprites:
+            - diamond-pearl/back/female/xatu-default.png
+            - diamond-pearl/back/shiny/xatu-default.png
+            - diamond-pearl/back/xatu-default.png
+            - diamond-pearl/female/xatu-default.png
+            - diamond-pearl/shiny/female/xatu-default.png
+            - diamond-pearl/shiny/xatu-default.png
+            - diamond-pearl/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    xatu:
+      genus: *diamond-pearl.pokemon.xatu.genus
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      shape: *diamond-pearl.pokemon.xatu.shape
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: *diamond-pearl.pokemon.xatu.baby
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      pal_park: *diamond-pearl.pokemon.xatu.pal_park
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: *diamond-pearl.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      stats: *diamond-pearl.pokemon.xatu.stats
+      abilities: *ruby-sapphire.pokemon.xatu.abilities
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      flavor_text:
+        platinum: |
+          This odd Pokémon can see both
+          the past and the future. It eyes
+          the sun’s movement all day.
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *ruby-sapphire.pokemon.xatu.forms.xatu.icon
+          sprites:
+            - platinum/back/shiny/xatu-default.png
+            - platinum/back/xatu-default.png
+            - platinum/female/xatu-default.png
+            - platinum/shiny/female/xatu-default.png
+            - platinum/shiny/xatu-default.png
+            - platinum/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 162
+  pokemon:
+    xatu:
+      genus: *diamond-pearl.pokemon.xatu.genus
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      shape: *diamond-pearl.pokemon.xatu.shape
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: *diamond-pearl.pokemon.xatu.baby
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      pal_park: *diamond-pearl.pokemon.xatu.pal_park
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: *diamond-pearl.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      stats: *diamond-pearl.pokemon.xatu.stats
+      abilities: *ruby-sapphire.pokemon.xatu.abilities
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      flavor_text:
+        heartgold: |
+          They say that it stays still and
+          quiet because it is seeing both the
+          past and future at the same time.
+        soulsilver: |
+          In South America, it is said that
+          its right eye sees the future and its
+          left eye views the past.
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.xatu.forms.xatu.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/xatu-default.png
+            - heartgold-soulsilver/back/xatu-default.png
+            - heartgold-soulsilver/female/xatu-default.png
+            - heartgold-soulsilver/shiny/female/xatu-default.png
+            - heartgold-soulsilver/shiny/xatu-default.png
+            - heartgold-soulsilver/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    xatu:
+      genus: *diamond-pearl.pokemon.xatu.genus
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      color: &black-white.pokemon.xatu.color green
+      shape: *diamond-pearl.pokemon.xatu.shape
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: *diamond-pearl.pokemon.xatu.baby
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: *diamond-pearl.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      stats: *diamond-pearl.pokemon.xatu.stats
+      abilities: &black-white.pokemon.xatu.abilities
+        synchronize: *ruby-sapphire.pokemon.xatu.abilities.synchronize
+        early-bird: *ruby-sapphire.pokemon.xatu.abilities.early-bird
+        magic-bounce:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      flavor_text:
+        black: |
+          This odd Pokémon can see both
+          the past and the future. It eyes
+          the sun’s movement all day.
+        white: |
+          This odd Pokémon can see both
+          the past and the future. It eyes
+          the sun’s movement all day.
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *ruby-sapphire.pokemon.xatu.forms.xatu.icon
+          sprites:
+            - black-white/back/female/xatu-default.png
+            - black-white/back/shiny/xatu-default.png
+            - black-white/back/xatu-default.png
+            - black-white/female/xatu-default.png
+            - black-white/shiny/female/xatu-default.png
+            - black-white/shiny/xatu-default.png
+            - black-white/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    xatu:
+      genus: *diamond-pearl.pokemon.xatu.genus
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      color: *black-white.pokemon.xatu.color
+      shape: *diamond-pearl.pokemon.xatu.shape
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: *diamond-pearl.pokemon.xatu.baby
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: *diamond-pearl.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      stats: *diamond-pearl.pokemon.xatu.stats
+      abilities: *black-white.pokemon.xatu.abilities
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      flavor_text:
+        black-2: |
+          This odd Pokémon can see both
+          the past and the future. It eyes
+          the sun’s movement all day.
+        white-2: |
+          This odd Pokémon can see both
+          the past and the future. It eyes
+          the sun’s movement all day.
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *ruby-sapphire.pokemon.xatu.forms.xatu.icon
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *gold-silver.pokemon.xatu.forms.xatu.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    xatu:
+      genus: *diamond-pearl.pokemon.xatu.genus
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      color: *black-white.pokemon.xatu.color
+      shape: *diamond-pearl.pokemon.xatu.shape
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: *diamond-pearl.pokemon.xatu.baby
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: *diamond-pearl.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      mega: &x-y.pokemon.xatu.mega false
+      stats: *diamond-pearl.pokemon.xatu.stats
+      abilities: *black-white.pokemon.xatu.abilities
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      flavor_text:
+        x: |
+          Once it begins to meditate at sunrise, the entire day
+          will pass before it will move again.
+        'y': |
+          They say that it stays still and quiet because it is
+          seeing both the past and future at the same time.
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: &x-y.pokemon.xatu.forms.xatu.icon xatu-default.png
+          sprites:
+            - x-y/female/xatu-default.png
+            - x-y/shiny/female/xatu-default.png
+            - x-y/shiny/xatu-default.png
+            - x-y/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: &x-y.pokemon.xatu.forms.xatu.cry xatu-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-hoenn: 170
+  pokemon:
+    xatu:
+      genus: *diamond-pearl.pokemon.xatu.genus
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      color: *black-white.pokemon.xatu.color
+      shape: *diamond-pearl.pokemon.xatu.shape
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: *diamond-pearl.pokemon.xatu.baby
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: *diamond-pearl.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      mega: *x-y.pokemon.xatu.mega
+      stats: *diamond-pearl.pokemon.xatu.stats
+      abilities: *black-white.pokemon.xatu.abilities
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Xatu stands rooted and still in one spot all day long.
+          People believe that this Pokémon does so out of fear of the
+          terrible things it has foreseen in the future.
+        alpha-sapphire: |
+          Xatu is known to stand motionless while staring at the sun all
+          day long. Some people revere it as a mystical Pokémon out of
+          their belief that Xatu is in possession of the power to see into
+          the future.
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *x-y.pokemon.xatu.forms.xatu.icon
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *x-y.pokemon.xatu.forms.xatu.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/xatu-default.png
+            - omega-ruby-alpha-sapphire/shiny/xatu-default.png
+            - omega-ruby-alpha-sapphire/female/xatu-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/xatu-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    xatu:
+      genus: *diamond-pearl.pokemon.xatu.genus
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      color: *black-white.pokemon.xatu.color
+      shape: *diamond-pearl.pokemon.xatu.shape
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: *diamond-pearl.pokemon.xatu.baby
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: *diamond-pearl.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      mega: *x-y.pokemon.xatu.mega
+      stats: *diamond-pearl.pokemon.xatu.stats
+      abilities: *black-white.pokemon.xatu.abilities
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *x-y.pokemon.xatu.forms.xatu.icon
+          sprites:
+            - sun-moon/female/xatu-default.png
+            - sun-moon/shiny/female/xatu-default.png
+            - sun-moon/shiny/xatu-default.png
+            - sun-moon/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *x-y.pokemon.xatu.forms.xatu.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 253
+    updated-akala: 154
+  pokemon:
+    xatu:
+      genus: *diamond-pearl.pokemon.xatu.genus
+      evolution_parent: *gold-silver.pokemon.xatu.evolution_parent
+      color: *black-white.pokemon.xatu.color
+      shape: *diamond-pearl.pokemon.xatu.shape
+      female_rate: *gold-silver.pokemon.xatu.female_rate
+      capture_rate: *gold-silver.pokemon.xatu.capture_rate
+      happiness: *ruby-sapphire.pokemon.xatu.happiness
+      baby: *diamond-pearl.pokemon.xatu.baby
+      hatch_steps: *gold-silver.pokemon.xatu.hatch_steps
+      growth_rate: *gold-silver.pokemon.xatu.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.xatu.forms_switchable
+      name: Xatu
+      default: *gold-silver.pokemon.xatu.default
+      height: *ruby-sapphire.pokemon.xatu.height
+      weight: *ruby-sapphire.pokemon.xatu.weight
+      experience: *diamond-pearl.pokemon.xatu.experience
+      types: *gold-silver.pokemon.xatu.types
+      egg_groups: *gold-silver.pokemon.xatu.egg_groups
+      mega: *x-y.pokemon.xatu.mega
+      stats: *diamond-pearl.pokemon.xatu.stats
+      abilities: *black-white.pokemon.xatu.abilities
+      evolution_conditions: *gold-silver.pokemon.xatu.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It’s said that while this Pokémon has the power
+          to predict the future, it’s not powerful enough
+          to change the future it sees.
+        ultra-moon: |-
+          While it can see the future, it has no desire to
+          change it, which is probably why it remains
+          motionless at all times.
+      forms:
+        xatu:
+          name: Xatu
+          form_name: *gold-silver.pokemon.xatu.forms.xatu.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.xatu.forms.xatu.battle_only
+          icon: *x-y.pokemon.xatu.forms.xatu.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/xatu-default.png
+            - ultra-sun-ultra-moon/shiny/female/xatu-default.png
+            - ultra-sun-ultra-moon/shiny/xatu-default.png
+            - ultra-sun-ultra-moon/xatu-default.png
+          art: *gold-silver.pokemon.xatu.forms.xatu.art
+          footprint: *ruby-sapphire.pokemon.xatu.forms.xatu.footprint
+          cry: *x-y.pokemon.xatu.forms.xatu.cry

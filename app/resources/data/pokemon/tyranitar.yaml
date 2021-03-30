@@ -1,0 +1,988 @@
+gold-silver:
+  name: &gold-silver.name TYRANITAR
+  position: &gold-silver.position 247
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 248
+    original-johto: 245
+    original-johto-abc: 216
+  pokemon:
+    tyranitar:
+      name: TYRANITAR
+      default: &gold-silver.pokemon.tyranitar.default true
+      capture_rate: &gold-silver.pokemon.tyranitar.capture_rate 45
+      experience: &gold-silver.pokemon.tyranitar.experience 218
+      types: &gold-silver.pokemon.tyranitar.types
+        - rock
+        - dark
+      stats: &gold-silver.pokemon.tyranitar.stats
+        hp:
+          base_value: 100
+          effort_change: 100
+        attack:
+          base_value: 134
+          effort_change: 134
+        defense:
+          base_value: 110
+          effort_change: 110
+        speed:
+          base_value: 61
+          effort_change: 61
+        special-attack:
+          base_value: 95
+          effort_change: 95
+        special-defense:
+          base_value: 100
+          effort_change: 95
+      growth_rate: &gold-silver.pokemon.tyranitar.growth_rate slow
+      female_rate: &gold-silver.pokemon.tyranitar.female_rate 50
+      hatch_steps: &gold-silver.pokemon.tyranitar.hatch_steps 40
+      egg_groups: &gold-silver.pokemon.tyranitar.egg_groups
+        - monster
+      genus: &gold-silver.pokemon.tyranitar.genus 'ARMOR Pokémon'
+      height: 21
+      weight: &gold-silver.pokemon.tyranitar.weight 2018
+      flavor_text:
+        gold: |
+          Its body can't be
+          harmed by any sort
+          of attack, so it
+          is very eager to
+          make challenges
+          against enemies.
+        silver: |
+          Extremely strong,
+          it can change the
+          landscape. It has
+          an insolent nature
+          that makes it not
+          care about others.
+      evolution_parent: &gold-silver.pokemon.tyranitar.evolution_parent pupitar/pupitar
+      evolution_conditions: &gold-silver.pokemon.tyranitar.evolution_conditions
+        level-up:
+          minimum_level: 55
+      forms:
+        tyranitar:
+          name: TYRANITAR
+          form_name: &gold-silver.pokemon.tyranitar.forms.tyranitar.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only false
+          sprites:
+            - gold-silver/tyranitar-default.png
+            - gold-silver/back/tyranitar-default.png
+            - gold-silver/shiny/tyranitar-default.png
+          art: &gold-silver.pokemon.tyranitar.forms.tyranitar.art
+            - tyranitar-default.png
+          cry: &gold-silver.pokemon.tyranitar.forms.tyranitar.cry gen5/tyranitar-default.webm
+          icon: &gold-silver.pokemon.tyranitar.forms.tyranitar.icon gen2/monster.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    tyranitar:
+      name: TYRANITAR
+      default: *gold-silver.pokemon.tyranitar.default
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      experience: *gold-silver.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      stats: *gold-silver.pokemon.tyranitar.stats
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      genus: *gold-silver.pokemon.tyranitar.genus
+      height: &crystal.pokemon.tyranitar.height 20
+      weight: *gold-silver.pokemon.tyranitar.weight
+      flavor_text:
+        crystal: |
+          In just one of its
+          mighty hands, it
+          has the power to
+          make the ground
+          shake and moun-
+          tains crumble.
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      forms:
+        tyranitar:
+          name: TYRANITAR
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          sprites:
+            - crystal/tyranitar-default.png
+            - crystal/back/tyranitar-default.png
+            - crystal/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+          icon: *gold-silver.pokemon.tyranitar.forms.tyranitar.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 248
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 383
+  pokemon:
+    tyranitar:
+      name: TYRANITAR
+      default: *gold-silver.pokemon.tyranitar.default
+      forms_switchable: &ruby-sapphire.pokemon.tyranitar.forms_switchable false
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      experience: *gold-silver.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      stats: &ruby-sapphire.pokemon.tyranitar.stats
+        hp:
+          base_value: 100
+          effort_change: 0
+        attack:
+          base_value: 134
+          effort_change: 3
+        defense:
+          base_value: 110
+          effort_change: 0
+        speed:
+          base_value: 61
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      happiness: &ruby-sapphire.pokemon.tyranitar.happiness 35
+      abilities: &ruby-sapphire.pokemon.tyranitar.abilities
+        sand-stream: &ruby-sapphire.pokemon.tyranitar.abilities.sand-stream
+          hidden: false
+          position: 1
+      genus: *gold-silver.pokemon.tyranitar.genus
+      height: *crystal.pokemon.tyranitar.height
+      weight: &ruby-sapphire.pokemon.tyranitar.weight 2020
+      flavor_text:
+        ruby: |
+          TYRANITAR is so overwhelmingly
+          powerful, it can bring down a whole
+           mountain to make its nest.
+          This POKéMON wanders about in
+          mountains seeking new opponents to
+          fight.
+        sapphire: |
+          TYRANITAR is so overwhelmingly
+          powerful, it can bring down a whole
+           mountain to make its nest.
+          This POKéMON wanders about in
+          mountains seeking new opponents to
+          fight.
+      forms:
+        tyranitar:
+          name: TYRANITAR
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: &ruby-sapphire.pokemon.tyranitar.forms.tyranitar.icon gen5/tyranitar-default.png
+          sprites:
+            - ruby-sapphire/tyranitar-default.png
+            - ruby-sapphire/back/tyranitar-default.png
+            - ruby-sapphire/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: &ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint tyranitar.png
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    tyranitar:
+      name: TYRANITAR
+      default: *gold-silver.pokemon.tyranitar.default
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      experience: *gold-silver.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      genus: *gold-silver.pokemon.tyranitar.genus
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      flavor_text:
+        emerald: |
+          A TYRANITAR is so overwhelmingly powerful,
+          it can bring down a whole mountain to make
+          its nest. It roams in mountains seeking
+          new opponents to fight.
+      forms:
+        tyranitar:
+          name: TYRANITAR
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.icon
+          sprites:
+            - emerald/tyranitar-default.png
+            - emerald/shiny/tyranitar-default.png
+            - emerald/animated/tyranitar-default.webm
+            - emerald/animated/shiny/tyranitar-default.webm
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 350
+  pokemon:
+    tyranitar:
+      name: TYRANITAR
+      default: *gold-silver.pokemon.tyranitar.default
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      experience: *gold-silver.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      genus: *gold-silver.pokemon.tyranitar.genus
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      forms:
+        tyranitar:
+          name: TYRANITAR
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          sprites:
+            - colosseum/tyranitar-default.png
+            - colosseum/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    tyranitar:
+      name: TYRANITAR
+      default: *gold-silver.pokemon.tyranitar.default
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      experience: *gold-silver.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      genus: *gold-silver.pokemon.tyranitar.genus
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      forms:
+        tyranitar:
+          name: TYRANITAR
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          sprites:
+            - xd/tyranitar-default.png
+            - xd/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    tyranitar:
+      name: TYRANITAR
+      default: *gold-silver.pokemon.tyranitar.default
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      experience: *gold-silver.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      genus: *gold-silver.pokemon.tyranitar.genus
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      flavor_text:
+        firered: |
+          Its body can't be harmed by any sort of
+          attack, so it is very eager to make
+          challenges against enemies.
+        leafgreen: |
+          Its body can't be harmed by any sort of
+          attack, so it is very eager to make
+          challenges against enemies.
+      forms:
+        tyranitar:
+          name: TYRANITAR
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.icon
+          sprites:
+            - firered-leafgreen/tyranitar-default.png
+            - firered-leafgreen/back/tyranitar-default.png
+            - firered-leafgreen/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Tyranitar
+  position: &diamond-pearl.position 273
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    tyranitar:
+      genus: &diamond-pearl.pokemon.tyranitar.genus 'Armor Pokémon'
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      shape: &diamond-pearl.pokemon.tyranitar.shape upright
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: &diamond-pearl.pokemon.tyranitar.baby false
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      pal_park: &diamond-pearl.pokemon.tyranitar.pal_park
+        area: mountain
+        rate: 3
+        score: 90
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: &diamond-pearl.pokemon.tyranitar.experience 270
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text:
+        diamond: |
+          If it rampages, it knocks down
+          mountains and buries rivers. Maps
+          must be redrawn afterward.
+        pearl: |
+          If it rampages, it knocks down
+          mountains and buries rivers. Maps
+          must be redrawn afterward.
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.icon
+          sprites:
+            - diamond-pearl/tyranitar-default.png
+            - diamond-pearl/back/tyranitar-default.png
+            - diamond-pearl/back/shiny/tyranitar-default.png
+            - diamond-pearl/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    tyranitar:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.tyranitar.pal_park
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: *diamond-pearl.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text:
+        platinum: |
+          If it rampages, it knocks down
+          mountains and buries rivers. Maps
+          must be redrawn afterward.
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.icon
+          sprites:
+            - platinum/tyranitar-default.png
+            - platinum/back/tyranitar-default.png
+            - platinum/back/shiny/tyranitar-default.png
+            - platinum/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 251
+  pokemon:
+    tyranitar:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.tyranitar.pal_park
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: *diamond-pearl.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Its body can’t be harmed by any
+          sort of attack, so it is very eager
+          to make challenges against enemies.
+        soulsilver: |
+          Extremely strong, it can change the
+          landscape. It has an insolent nature
+          that makes it not care about others.
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 5
+              range: 4-5
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.icon
+          sprites:
+            - heartgold-soulsilver/tyranitar-default.png
+            - heartgold-soulsilver/back/tyranitar-default.png
+            - heartgold-soulsilver/back/shiny/tyranitar-default.png
+            - heartgold-soulsilver/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    tyranitar:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: &black-white.pokemon.tyranitar.color green
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: *diamond-pearl.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: &black-white.pokemon.tyranitar.abilities
+        sand-stream: *ruby-sapphire.pokemon.tyranitar.abilities.sand-stream
+        unnerve:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text:
+        black: |
+          If it rampages, it knocks down
+          mountains and buries rivers. Maps
+          must be redrawn afterward.
+        white: |
+          If it rampages, it knocks down
+          mountains and buries rivers. Maps
+          must be redrawn afterward.
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.icon
+          sprites:
+            - black-white/tyranitar-default.png
+            - black-white/back/tyranitar-default.png
+            - black-white/back/shiny/tyranitar-default.png
+            - black-white/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 294
+  pokemon:
+    tyranitar:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tyranitar.forms_switchable
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: *diamond-pearl.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: *black-white.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text:
+        black-2: |
+          The quakes caused when it walks
+          make even great mountains crumble
+          and change the surrounding terrain.
+        white-2: |
+          The quakes caused when it walks
+          make even great mountains crumble
+          and change the surrounding terrain.
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.icon
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *gold-silver.pokemon.tyranitar.forms.tyranitar.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 104
+  pokemon:
+    tyranitar:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: &x-y.pokemon.tyranitar.forms_switchable true
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: *diamond-pearl.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      mega: &x-y.pokemon.tyranitar.mega false
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: *black-white.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text: &x-y.pokemon.tyranitar.flavor_text
+        x: |
+          In just one of its mighty hands, it has the power to
+          make the ground shake and mountains crumble.
+        'y': |
+          If it rampages, it knocks down mountains and buries
+          rivers. Maps must be redrawn afterward.
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: &x-y.pokemon.tyranitar.forms.tyranitar.icon tyranitar-default.png
+          sprites:
+            - x-y/tyranitar-default.png
+            - x-y/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: &x-y.pokemon.tyranitar.forms.tyranitar.cry tyranitar-default.webm
+    tyranitar-mega:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *x-y.pokemon.tyranitar.forms_switchable
+      name: &x-y.pokemon.tyranitar-mega.name 'Mega Tyranitar'
+      default: &x-y.pokemon.tyranitar-mega.default false
+      height: &x-y.pokemon.tyranitar-mega.height 25
+      weight: &x-y.pokemon.tyranitar-mega.weight 2550
+      experience: &x-y.pokemon.tyranitar-mega.experience 315
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      mega: &x-y.pokemon.tyranitar-mega.mega true
+      stats: &x-y.pokemon.tyranitar-mega.stats
+        hp:
+          base_value: 100
+          effort_change: 0
+        attack:
+          base_value: 164
+          effort_change: 3
+        defense:
+          base_value: 150
+          effort_change: 0
+        speed:
+          base_value: 71
+          effort_change: 0
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 120
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text: *x-y.pokemon.tyranitar.flavor_text
+      forms:
+        tyranitar-mega:
+          name: 'Mega Tyranitar'
+          form_name: &x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.form_name 'Mega Tyranitar'
+          default: true
+          battle_only: &x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.battle_only true
+          icon: &x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.icon tyranitar-mega.png
+          sprites:
+            - x-y/shiny/tyranitar-mega.png
+            - x-y/tyranitar-mega.png
+          art: &x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.art
+            - tyranitar-mega.png
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: &x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.cry tyranitar-mega.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    tyranitar:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *x-y.pokemon.tyranitar.forms_switchable
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: *diamond-pearl.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      mega: *x-y.pokemon.tyranitar.mega
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: *black-white.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.tyranitar.flavor_text
+        omega-ruby: |
+          Tyranitar is so overwhelmingly powerful, it can bring down a
+          whole mountain to make its nest. This Pokémon wanders about
+          in mountains seeking new opponents to fight.
+        alpha-sapphire: |
+          Tyranitar is so overwhelmingly powerful, it can bring down a
+          whole mountain to make its nest. This Pokémon wanders about
+          in mountains seeking new opponents to fight.
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *x-y.pokemon.tyranitar.forms.tyranitar.icon
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *x-y.pokemon.tyranitar.forms.tyranitar.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/tyranitar-default.png
+            - omega-ruby-alpha-sapphire/shiny/tyranitar-default.png
+    tyranitar-mega:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *x-y.pokemon.tyranitar.forms_switchable
+      name: *x-y.pokemon.tyranitar-mega.name
+      default: *x-y.pokemon.tyranitar-mega.default
+      height: *x-y.pokemon.tyranitar-mega.height
+      weight: *x-y.pokemon.tyranitar-mega.weight
+      experience: *x-y.pokemon.tyranitar-mega.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      mega: *x-y.pokemon.tyranitar-mega.mega
+      stats: *x-y.pokemon.tyranitar-mega.stats
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.tyranitar.flavor_text
+      forms:
+        tyranitar-mega:
+          name: 'Mega Tyranitar'
+          form_name: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.battle_only
+          icon: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.icon
+          art: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/tyranitar-mega.png
+            - omega-ruby-alpha-sapphire/tyranitar-mega.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    tyranitar:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *x-y.pokemon.tyranitar.forms_switchable
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: *diamond-pearl.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      mega: *x-y.pokemon.tyranitar.mega
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: *black-white.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *x-y.pokemon.tyranitar.forms.tyranitar.icon
+          sprites:
+            - sun-moon/tyranitar-default.png
+            - sun-moon/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *x-y.pokemon.tyranitar.forms.tyranitar.cry
+    tyranitar-mega:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *x-y.pokemon.tyranitar.forms_switchable
+      name: *x-y.pokemon.tyranitar-mega.name
+      default: *x-y.pokemon.tyranitar-mega.default
+      height: *x-y.pokemon.tyranitar-mega.height
+      weight: *x-y.pokemon.tyranitar-mega.weight
+      experience: *x-y.pokemon.tyranitar-mega.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      mega: *x-y.pokemon.tyranitar-mega.mega
+      stats: *x-y.pokemon.tyranitar-mega.stats
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      forms:
+        tyranitar-mega:
+          name: 'Mega Tyranitar'
+          form_name: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.battle_only
+          icon: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.icon
+          sprites:
+            - sun-moon/shiny/tyranitar-mega.png
+            - sun-moon/tyranitar-mega.png
+          art: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 249
+    updated-akala: 150
+  pokemon:
+    tyranitar:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *x-y.pokemon.tyranitar.forms_switchable
+      name: Tyranitar
+      default: *gold-silver.pokemon.tyranitar.default
+      height: *crystal.pokemon.tyranitar.height
+      weight: *ruby-sapphire.pokemon.tyranitar.weight
+      experience: *diamond-pearl.pokemon.tyranitar.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      mega: *x-y.pokemon.tyranitar.mega
+      stats: *ruby-sapphire.pokemon.tyranitar.stats
+      abilities: *black-white.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.tyranitar.flavor_text
+        ultra-sun: |-
+          It wanders through the mountains seeking
+          opponents to fight. If it finds an opponent that’s
+          not worthy, Tyranitar ignores it and wanders on.
+        ultra-moon: |-
+          This Pokémon is a mobile disaster, leaving
+          mountains crumbled and houses destroyed in
+          its wake.
+      forms:
+        tyranitar:
+          name: Tyranitar
+          form_name: *gold-silver.pokemon.tyranitar.forms.tyranitar.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.tyranitar.forms.tyranitar.battle_only
+          icon: *x-y.pokemon.tyranitar.forms.tyranitar.icon
+          sprites:
+            - ultra-sun-ultra-moon/tyranitar-default.png
+            - ultra-sun-ultra-moon/shiny/tyranitar-default.png
+          art: *gold-silver.pokemon.tyranitar.forms.tyranitar.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *x-y.pokemon.tyranitar.forms.tyranitar.cry
+    tyranitar-mega:
+      genus: *diamond-pearl.pokemon.tyranitar.genus
+      evolution_parent: *gold-silver.pokemon.tyranitar.evolution_parent
+      color: *black-white.pokemon.tyranitar.color
+      shape: *diamond-pearl.pokemon.tyranitar.shape
+      female_rate: *gold-silver.pokemon.tyranitar.female_rate
+      capture_rate: *gold-silver.pokemon.tyranitar.capture_rate
+      happiness: *ruby-sapphire.pokemon.tyranitar.happiness
+      baby: *diamond-pearl.pokemon.tyranitar.baby
+      hatch_steps: *gold-silver.pokemon.tyranitar.hatch_steps
+      growth_rate: *gold-silver.pokemon.tyranitar.growth_rate
+      forms_switchable: *x-y.pokemon.tyranitar.forms_switchable
+      name: *x-y.pokemon.tyranitar-mega.name
+      default: *x-y.pokemon.tyranitar-mega.default
+      height: *x-y.pokemon.tyranitar-mega.height
+      weight: *x-y.pokemon.tyranitar-mega.weight
+      experience: *x-y.pokemon.tyranitar-mega.experience
+      types: *gold-silver.pokemon.tyranitar.types
+      egg_groups: *gold-silver.pokemon.tyranitar.egg_groups
+      mega: *x-y.pokemon.tyranitar-mega.mega
+      stats: *x-y.pokemon.tyranitar-mega.stats
+      abilities: *ruby-sapphire.pokemon.tyranitar.abilities
+      evolution_conditions: *gold-silver.pokemon.tyranitar.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.tyranitar.flavor_text
+      forms:
+        tyranitar-mega:
+          name: 'Mega Tyranitar'
+          form_name: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.battle_only
+          icon: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/tyranitar-mega.png
+            - ultra-sun-ultra-moon/tyranitar-mega.png
+          art: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.art
+          footprint: *ruby-sapphire.pokemon.tyranitar.forms.tyranitar.footprint
+          cry: *x-y.pokemon.tyranitar-mega.forms.tyranitar-mega.cry

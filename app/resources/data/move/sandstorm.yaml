@@ -1,0 +1,155 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name SANDSTORM
+  type: &gold-silver.type rock
+  accuracy: 100
+  pp: &gold-silver.pp 10
+  effect: &gold-silver.effect 116
+  categories: &gold-silver.categories
+    - whole-field-effect
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target entire-field
+  flavor_text: |
+    Inflicts damage
+    every turn.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: &ruby-sapphire.target user
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  contest_type: &ruby-sapphire.contest_type tough
+  contest_effect: 44
+  contest_use_before: &ruby-sapphire.contest_use_before
+    - sand-attack
+    - mud-slap
+    - weather-ball
+    - sand-tomb
+  flavor_text: &ruby-sapphire.flavor_text |
+    Causes a sandstorm that
+    rages for several turns.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+xd:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+firered-leafgreen:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *ruby-sapphire.target
+  priority: *gold-silver.priority
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  flavor_text: |
+    A 5-turn sandstorm
+    that damages all
+    types except ROCK,
+    GROUND,  and STEEL.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Sandstorm
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 13
+  flavor_text: &diamond-pearl.flavor_text |
+    A five-turn sand­
+    storm is summoned
+    to hurt all combatant
+    types except Rock,
+    Ground, and Steel.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &black-white.flavor_text |
+    A five-turn sandstorm is summoned
+    to hurt all combatants except the
+    Rock, Ground, and Steel types.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 14
+  contest_use_before: *ruby-sapphire.contest_use_before
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    A five-turn sandstorm is summoned to hurt all
+    combatants except the Rock, Ground, and
+    Steel types. It raises the Sp. Def stat of Rock types.
+ultra-sun-ultra-moon: *sun-moon

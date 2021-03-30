@@ -1,0 +1,136 @@
+sun-moon:
+  name: &sun-moon.name Morelull
+  position: &sun-moon.position 755
+  numbers:
+    national: &sun-moon.numbers.national 755
+    original-alola: 145
+    original-akala: 72
+    original-ulaula: 64
+  pokemon:
+    morelull:
+      genus: &sun-moon.pokemon.morelull.genus 'Illuminating Pokémon'
+      color: &sun-moon.pokemon.morelull.color purple
+      shape: &sun-moon.pokemon.morelull.shape blob
+      female_rate: &sun-moon.pokemon.morelull.female_rate 50
+      capture_rate: &sun-moon.pokemon.morelull.capture_rate 190
+      happiness: &sun-moon.pokemon.morelull.happiness 70
+      baby: &sun-moon.pokemon.morelull.baby false
+      hatch_steps: &sun-moon.pokemon.morelull.hatch_steps 20
+      growth_rate: &sun-moon.pokemon.morelull.growth_rate medium
+      forms_switchable: &sun-moon.pokemon.morelull.forms_switchable false
+      name: Morelull
+      default: &sun-moon.pokemon.morelull.default true
+      height: &sun-moon.pokemon.morelull.height 2
+      weight: &sun-moon.pokemon.morelull.weight 15
+      experience: &sun-moon.pokemon.morelull.experience 57
+      types: &sun-moon.pokemon.morelull.types
+        - grass
+        - fairy
+      egg_groups: &sun-moon.pokemon.morelull.egg_groups
+        - plant
+      mega: &sun-moon.pokemon.morelull.mega false
+      stats: &sun-moon.pokemon.morelull.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 55
+          effort_change: 0
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 1
+      abilities: &sun-moon.pokemon.morelull.abilities
+        illuminate:
+          hidden: &sun-moon.pokemon.morelull.abilities.illuminate.hidden false
+          position: 1
+        effect-spore:
+          hidden: *sun-moon.pokemon.morelull.abilities.illuminate.hidden
+          position: 2
+        rain-dish:
+          hidden: true
+          position: 3
+      wild_held_items:
+        sun: &sun-moon.pokemon.morelull.wild_held_items.sun
+          tiny-mushroom: 50
+          big-mushroom: 5
+        moon: *sun-moon.pokemon.morelull.wild_held_items.sun
+      flavor_text:
+        sun: |-
+          It scatters spores that flicker and glow. Anyone
+          seeing these lights falls into a deep slumber.
+        moon: |-
+          As it drowses the day away, it nourishes itself
+          by sucking from tree roots. It wakens at the fall
+          of night, wandering off in search of a new tree.
+      forms:
+        morelull:
+          name: Morelull
+          form_name: &sun-moon.pokemon.morelull.forms.morelull.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.morelull.forms.morelull.battle_only false
+          icon: &sun-moon.pokemon.morelull.forms.morelull.icon morelull-default.png
+          sprites:
+            - sun-moon/morelull-default.png
+            - sun-moon/shiny/morelull-default.png
+          footprint: &sun-moon.pokemon.morelull.forms.morelull.footprint morelull.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 178
+    updated-akala: 79
+    updated-ulaula: 70
+  pokemon:
+    morelull:
+      genus: *sun-moon.pokemon.morelull.genus
+      color: *sun-moon.pokemon.morelull.color
+      shape: *sun-moon.pokemon.morelull.shape
+      female_rate: *sun-moon.pokemon.morelull.female_rate
+      capture_rate: *sun-moon.pokemon.morelull.capture_rate
+      happiness: *sun-moon.pokemon.morelull.happiness
+      baby: *sun-moon.pokemon.morelull.baby
+      hatch_steps: *sun-moon.pokemon.morelull.hatch_steps
+      growth_rate: *sun-moon.pokemon.morelull.growth_rate
+      forms_switchable: *sun-moon.pokemon.morelull.forms_switchable
+      name: Morelull
+      default: *sun-moon.pokemon.morelull.default
+      height: *sun-moon.pokemon.morelull.height
+      weight: *sun-moon.pokemon.morelull.weight
+      experience: *sun-moon.pokemon.morelull.experience
+      types: *sun-moon.pokemon.morelull.types
+      egg_groups: *sun-moon.pokemon.morelull.egg_groups
+      mega: *sun-moon.pokemon.morelull.mega
+      stats: *sun-moon.pokemon.morelull.stats
+      abilities: *sun-moon.pokemon.morelull.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.morelull.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.morelull.wild_held_items.sun
+      flavor_text:
+        ultra-sun: |-
+          It scatters its shining spores around itself.
+          Even though they’re dangerous, nighttime tours
+          of forests where Morelull live are popular.
+        ultra-moon: |-
+          It likes damp dark places. When night falls, the
+          spores filling the caps of its mushrooms glow.
+      forms:
+        morelull:
+          name: Morelull
+          form_name: *sun-moon.pokemon.morelull.forms.morelull.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.morelull.forms.morelull.battle_only
+          icon: *sun-moon.pokemon.morelull.forms.morelull.icon
+          sprites:
+            - ultra-sun-ultra-moon/morelull-default.png
+            - ultra-sun-ultra-moon/shiny/morelull-default.png
+          footprint: *sun-moon.pokemon.morelull.forms.morelull.footprint

@@ -1,0 +1,334 @@
+x-y:
+  name: &x-y.name Spewpa
+  position: &x-y.position 666
+  numbers:
+    national: &x-y.numbers.national 665
+    kalos-central: 21
+  pokemon:
+    spewpa:
+      genus: &x-y.pokemon.spewpa.genus 'Scatterdust Pokémon'
+      evolution_parent: &x-y.pokemon.spewpa.evolution_parent scatterbug/scatterbug
+      color: &x-y.pokemon.spewpa.color black
+      shape: &x-y.pokemon.spewpa.shape blob
+      female_rate: &x-y.pokemon.spewpa.female_rate 50
+      capture_rate: &x-y.pokemon.spewpa.capture_rate 120
+      happiness: &x-y.pokemon.spewpa.happiness 70
+      baby: &x-y.pokemon.spewpa.baby false
+      hatch_steps: &x-y.pokemon.spewpa.hatch_steps 15
+      growth_rate: &x-y.pokemon.spewpa.growth_rate medium
+      forms_switchable: &x-y.pokemon.spewpa.forms_switchable false
+      name: Spewpa
+      default: &x-y.pokemon.spewpa.default true
+      height: &x-y.pokemon.spewpa.height 3
+      weight: &x-y.pokemon.spewpa.weight 84
+      experience: &x-y.pokemon.spewpa.experience 75
+      types: &x-y.pokemon.spewpa.types
+        - bug
+      egg_groups: *x-y.pokemon.spewpa.types
+      mega: &x-y.pokemon.spewpa.mega false
+      stats: &x-y.pokemon.spewpa.stats
+        hp:
+          base_value: 45
+          effort_change: 0
+        attack:
+          base_value: 22
+          effort_change: 0
+        defense:
+          base_value: 60
+          effort_change: 2
+        speed:
+          base_value: 29
+          effort_change: 0
+        special-attack:
+          base_value: 27
+          effort_change: 0
+        special-defense:
+          base_value: 30
+          effort_change: 0
+      abilities: &x-y.pokemon.spewpa.abilities
+        shed-skin:
+          hidden: false
+          position: 1
+        friend-guard:
+          hidden: true
+          position: 3
+      evolution_conditions: &x-y.pokemon.spewpa.evolution_conditions
+        level-up:
+          minimum_level: 9
+      flavor_text:
+        x: |
+          It lives hidden within thicket shadows.
+          When predators attack, it quickly bristles the fur
+          covering its body in an effort to threaten them.
+        'y': |
+          The beaks of bird Pokémon can’t begin
+          to scratch its stalwart body.
+          To defend itself, it spews powder.
+      forms: &x-y.pokemon.spewpa.forms
+        spewpa-icy-snow: &x-y.pokemon.spewpa.forms.spewpa-icy-snow
+          name: Spewpa
+          form_name: &x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name 'Default Form'
+          default: true
+          battle_only: &x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only false
+          icon: &x-y.pokemon.spewpa.forms.spewpa-icy-snow.icon spewpa-icy-snow.png
+          footprint: &x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint spewpa.png
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *x-y.numbers.national
+  pokemon:
+    spewpa:
+      genus: *x-y.pokemon.spewpa.genus
+      evolution_parent: *x-y.pokemon.spewpa.evolution_parent
+      color: *x-y.pokemon.spewpa.color
+      shape: *x-y.pokemon.spewpa.shape
+      female_rate: *x-y.pokemon.spewpa.female_rate
+      capture_rate: *x-y.pokemon.spewpa.capture_rate
+      happiness: *x-y.pokemon.spewpa.happiness
+      baby: *x-y.pokemon.spewpa.baby
+      hatch_steps: *x-y.pokemon.spewpa.hatch_steps
+      growth_rate: *x-y.pokemon.spewpa.growth_rate
+      forms_switchable: *x-y.pokemon.spewpa.forms_switchable
+      name: Spewpa
+      default: *x-y.pokemon.spewpa.default
+      height: *x-y.pokemon.spewpa.height
+      weight: *x-y.pokemon.spewpa.weight
+      experience: *x-y.pokemon.spewpa.experience
+      types: *x-y.pokemon.spewpa.types
+      egg_groups: *x-y.pokemon.spewpa.types
+      mega: *x-y.pokemon.spewpa.mega
+      stats: *x-y.pokemon.spewpa.stats
+      abilities: *x-y.pokemon.spewpa.abilities
+      evolution_conditions: *x-y.pokemon.spewpa.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It lives hidden within thicket shadows.
+          When predators attack, it quickly bristles the fur
+          covering its body in an effort to threaten them.
+        alpha-sapphire: |
+          The beaks of bird Pokémon can’t begin
+          to scratch its stalwart body.
+          To defend itself, it spews powder.
+      forms: *x-y.pokemon.spewpa.forms
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    spewpa:
+      genus: *x-y.pokemon.spewpa.genus
+      evolution_parent: *x-y.pokemon.spewpa.evolution_parent
+      color: *x-y.pokemon.spewpa.color
+      shape: *x-y.pokemon.spewpa.shape
+      female_rate: *x-y.pokemon.spewpa.female_rate
+      capture_rate: *x-y.pokemon.spewpa.capture_rate
+      happiness: *x-y.pokemon.spewpa.happiness
+      baby: *x-y.pokemon.spewpa.baby
+      hatch_steps: *x-y.pokemon.spewpa.hatch_steps
+      growth_rate: *x-y.pokemon.spewpa.growth_rate
+      forms_switchable: *x-y.pokemon.spewpa.forms_switchable
+      name: Spewpa
+      default: *x-y.pokemon.spewpa.default
+      height: *x-y.pokemon.spewpa.height
+      weight: *x-y.pokemon.spewpa.weight
+      experience: *x-y.pokemon.spewpa.experience
+      types: *x-y.pokemon.spewpa.types
+      egg_groups: *x-y.pokemon.spewpa.types
+      mega: *x-y.pokemon.spewpa.mega
+      stats: *x-y.pokemon.spewpa.stats
+      abilities: *x-y.pokemon.spewpa.abilities
+      evolution_conditions: *x-y.pokemon.spewpa.evolution_conditions
+      forms:
+        spewpa-icy-snow: *x-y.pokemon.spewpa.forms.spewpa-icy-snow
+        spewpa-polar: &sun-moon.pokemon.spewpa.forms.spewpa-polar
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: &sun-moon.pokemon.spewpa.forms.spewpa-polar.default false
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-polar.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-tundra: &sun-moon.pokemon.spewpa.forms.spewpa-tundra
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-tundra.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-continental: &sun-moon.pokemon.spewpa.forms.spewpa-continental
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-continental.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-garden: &sun-moon.pokemon.spewpa.forms.spewpa-garden
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-garden.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-elegant: &sun-moon.pokemon.spewpa.forms.spewpa-elegant
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-elegant.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-meadow: &sun-moon.pokemon.spewpa.forms.spewpa-meadow
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-meadow.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-modern: &sun-moon.pokemon.spewpa.forms.spewpa-modern
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-modern.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-marine: &sun-moon.pokemon.spewpa.forms.spewpa-marine
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-marine.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-archipelago: &sun-moon.pokemon.spewpa.forms.spewpa-archipelago
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-archipelago.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-high-plains: &sun-moon.pokemon.spewpa.forms.spewpa-high-plains
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-high-plains.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-sandstorm: &sun-moon.pokemon.spewpa.forms.spewpa-sandstorm
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-sandstorm.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-river: &sun-moon.pokemon.spewpa.forms.spewpa-river
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-river.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-monsoon: &sun-moon.pokemon.spewpa.forms.spewpa-monsoon
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-monsoon.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-savanna: &sun-moon.pokemon.spewpa.forms.spewpa-savanna
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-savanna.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-sun: &sun-moon.pokemon.spewpa.forms.spewpa-sun
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-sun.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-ocean: &sun-moon.pokemon.spewpa.forms.spewpa-ocean
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-ocean.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-jungle: &sun-moon.pokemon.spewpa.forms.spewpa-jungle
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-jungle.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-fancy: &sun-moon.pokemon.spewpa.forms.spewpa-fancy
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-fancy.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-poke-ball: &sun-moon.pokemon.spewpa.forms.spewpa-poke-ball
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: *sun-moon.pokemon.spewpa.forms.spewpa-polar.default
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: spewpa-poke-ball.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    spewpa:
+      genus: *x-y.pokemon.spewpa.genus
+      evolution_parent: *x-y.pokemon.spewpa.evolution_parent
+      color: *x-y.pokemon.spewpa.color
+      shape: *x-y.pokemon.spewpa.shape
+      female_rate: *x-y.pokemon.spewpa.female_rate
+      capture_rate: *x-y.pokemon.spewpa.capture_rate
+      happiness: *x-y.pokemon.spewpa.happiness
+      baby: *x-y.pokemon.spewpa.baby
+      hatch_steps: *x-y.pokemon.spewpa.hatch_steps
+      growth_rate: *x-y.pokemon.spewpa.growth_rate
+      forms_switchable: *x-y.pokemon.spewpa.forms_switchable
+      name: Spewpa
+      default: *x-y.pokemon.spewpa.default
+      height: *x-y.pokemon.spewpa.height
+      weight: *x-y.pokemon.spewpa.weight
+      experience: *x-y.pokemon.spewpa.experience
+      types: *x-y.pokemon.spewpa.types
+      egg_groups: *x-y.pokemon.spewpa.types
+      mega: *x-y.pokemon.spewpa.mega
+      stats: *x-y.pokemon.spewpa.stats
+      abilities: *x-y.pokemon.spewpa.abilities
+      evolution_conditions: *x-y.pokemon.spewpa.evolution_conditions
+      forms:
+        spewpa-icy-snow:
+          name: Spewpa
+          form_name: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.form_name
+          default: true
+          battle_only: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.battle_only
+          icon: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.icon
+          sprites:
+            - ultra-sun-ultra-moon/spewpa-icy-snow.png
+            - ultra-sun-ultra-moon/shiny/spewpa-icy-snow.png
+          footprint: *x-y.pokemon.spewpa.forms.spewpa-icy-snow.footprint
+        spewpa-polar: *sun-moon.pokemon.spewpa.forms.spewpa-polar
+        spewpa-tundra: *sun-moon.pokemon.spewpa.forms.spewpa-tundra
+        spewpa-continental: *sun-moon.pokemon.spewpa.forms.spewpa-continental
+        spewpa-garden: *sun-moon.pokemon.spewpa.forms.spewpa-garden
+        spewpa-elegant: *sun-moon.pokemon.spewpa.forms.spewpa-elegant
+        spewpa-meadow: *sun-moon.pokemon.spewpa.forms.spewpa-meadow
+        spewpa-modern: *sun-moon.pokemon.spewpa.forms.spewpa-modern
+        spewpa-marine: *sun-moon.pokemon.spewpa.forms.spewpa-marine
+        spewpa-archipelago: *sun-moon.pokemon.spewpa.forms.spewpa-archipelago
+        spewpa-high-plains: *sun-moon.pokemon.spewpa.forms.spewpa-high-plains
+        spewpa-sandstorm: *sun-moon.pokemon.spewpa.forms.spewpa-sandstorm
+        spewpa-river: *sun-moon.pokemon.spewpa.forms.spewpa-river
+        spewpa-monsoon: *sun-moon.pokemon.spewpa.forms.spewpa-monsoon
+        spewpa-savanna: *sun-moon.pokemon.spewpa.forms.spewpa-savanna
+        spewpa-sun: *sun-moon.pokemon.spewpa.forms.spewpa-sun
+        spewpa-ocean: *sun-moon.pokemon.spewpa.forms.spewpa-ocean
+        spewpa-jungle: *sun-moon.pokemon.spewpa.forms.spewpa-jungle
+        spewpa-fancy: *sun-moon.pokemon.spewpa.forms.spewpa-fancy
+        spewpa-poke-ball: *sun-moon.pokemon.spewpa.forms.spewpa-poke-ball

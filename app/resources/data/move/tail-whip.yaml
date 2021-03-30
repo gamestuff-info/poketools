@@ -1,0 +1,198 @@
+red-blue: &red-blue
+  name: &red-blue.name 'TAIL WHIP'
+  type: &red-blue.type normal
+  accuracy: &red-blue.accuracy 100
+  pp: &red-blue.pp 30
+  effect: &red-blue.effect 20
+  flags: &red-blue.flags
+    - protect
+    - reflectable
+    - mirror
+  categories: &red-blue.categories
+    - net-good-stats
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  stat_changes:
+    defense: 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target all-opponents
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: &gold-silver.stat_changes
+    defense: -1
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Lowers the foe's
+    DEFENSE.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  contest_type: &ruby-sapphire.contest_type cute
+  contest_effect: 31
+  contest_use_after:
+    - charm
+  flavor_text: &ruby-sapphire.flavor_text |
+    Wags the tail to lower the
+    foe's DEFENSE.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+xd:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+firered-leafgreen:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  flavor_text: |
+    The user wags its
+    tail cutely, making
+    the foe lower its
+    DEFENSE stat.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Tail Whip'
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 19
+  flavor_text: &diamond-pearl.flavor_text |
+    The user wags its tail
+    cutely, making the
+    foe less wary.
+    The target’s Defense
+    stat is lowered.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: &black-white.flavor_text |
+    The user wags its tail cutely, making
+    opposing Pokémon less wary and
+    lowering their Defense stat.
+black-2-white-2: *black-white
+x-y: *black-white
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 28
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The user wags its tail cutely, making opposing
+    Pokémon less wary and lowering their Defense stat.
+ultra-sun-ultra-moon: *sun-moon

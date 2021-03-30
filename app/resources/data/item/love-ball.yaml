@@ -1,0 +1,51 @@
+gold-silver: &gold-silver
+  name: 'LOVE BALL'
+  pocket: &gold-silver.pocket pokeballs
+  buy: 150
+  sell: 75
+  flavor_text: |
+    For catching the
+    opposite gender.
+  category: &gold-silver.category apricorn-balls
+  short_description: 'Bugged ball with 8× effectiveness on same sex, same species targets of the Active Pokémon. Made from []{item:pnk-apricorn}.'
+  description: |
+    Made from []{item:pnk-apricorn}.
+
+    Used by a trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    If the trainer's Pokémon and wild Pokémon are of the same species and same gender, the wild Pokémon's catch rate is 8× normal.
+    This behavior is because of a [bug](https://github.com/pret/pokegold/blob/a7e3a999ff21ecac0bfbe7f091f9ff901075a323/items/item_effects.asm#L829).
+crystal: *gold-silver
+heartgold-soulsilver:
+  name: &heartgold-soulsilver.name 'Love Ball'
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: '8× effectiveness on opposite sex, same species targets of the Active Pokémon. Made from []{item:pink-apricorn}.'
+  description: |
+    Made from []{item:pink-apricorn}.
+
+    Used by a trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    If the trainer's Pokémon and wild Pokémon are of the same species but opposite genders, the wild Pokémon's catch rate is 8× normal.
+  flavor_text: |
+    Poké Ball for catching Pokémon that are
+    the opposite gender of your Pokémon.
+  icon: &heartgold-soulsilver.icon love-ball.png
+sun-moon: &sun-moon
+  name: *heartgold-soulsilver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: '8× effectiveness on opposite sex, same species targets of the Active Pokémon.'
+  description: |
+    Used by a trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    If the trainer's Pokémon and wild Pokémon are of the same species but opposite genders, the wild Pokémon's catch rate is 8× normal.
+  flavor_text: |
+    A Poké Ball that works best when catching a
+    Pokémon that is of the opposite gender of
+    your Pokémon.
+  icon: *heartgold-soulsilver.icon
+ultra-sun-ultra-moon: *sun-moon

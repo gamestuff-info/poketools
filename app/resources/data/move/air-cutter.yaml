@@ -1,0 +1,192 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'AIR CUTTER'
+  power: &ruby-sapphire.power 55
+  type: &ruby-sapphire.type flying
+  accuracy: &ruby-sapphire.accuracy 95
+  pp: &ruby-sapphire.pp 25
+  effect: &ruby-sapphire.effect 44
+  target: &ruby-sapphire.target all-opponents
+  priority: &ruby-sapphire.priority 0
+  flags: &ruby-sapphire.flags
+    - protect
+    - mirror
+    - kings-rock
+  crit_rate_bonus: &ruby-sapphire.crit_rate_bonus 1
+  categories: &ruby-sapphire.categories
+    - damage
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  contest_type: &ruby-sapphire.contest_type cool
+  contest_effect: 20
+  flavor_text: &ruby-sapphire.flavor_text |
+    Hacks with razorlike wind.
+    High critical-hit ratio.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *ruby-sapphire.flags
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *ruby-sapphire.flags
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flags: *ruby-sapphire.flags
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    The foe is hit with
+    razor-like wind.
+    It has a high
+    critical-hit ratio.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Air Cutter'
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  flags: &diamond-pearl.flags
+    - protect
+    - mirror
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: &diamond-pearl.damage_class special
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 5
+  flavor_text: &diamond-pearl.flavor_text |
+    The user launches
+    razorlike wind to
+    slash the foe.
+    It has a high
+    critical-hit ratio.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user launches razor-like wind to
+    slash the opposing team.
+    Critical hits land more easily.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: &x-y.power 60
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &x-y.flavor_text |
+    The user launches razor-like wind
+    to slash the opposing Pokémon.
+    Critical hits land more easily.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *x-y.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 1
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  crit_rate_bonus: *ruby-sapphire.crit_rate_bonus
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *x-y.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    The user launches razor-like wind to slash the
+    opposing Pokémon. Critical hits land more easily.
+ultra-sun-ultra-moon: *sun-moon

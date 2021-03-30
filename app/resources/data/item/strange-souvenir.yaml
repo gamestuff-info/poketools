@@ -1,0 +1,32 @@
+x-y: &x-y
+  name: &x-y.name 'Strange Souvenir'
+  category: &x-y.category loot
+  pocket: &x-y.pocket misc
+  buy: &x-y.buy 3000
+  sell: &x-y.sell 1500
+  fling_effect: damage
+  fling_power: 30
+  short_description: &x-y.short_description 'No effect.  Sell to shops.'
+  description: &x-y.description 'No effect.  Sell to shops.'
+  flavor_text: |
+    An ornament depicting a Pokémon
+    that is venerated as a protector
+    in some region far from Kalos.
+  icon: &x-y.icon strange-souvenir.png
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *x-y.name
+  category: *x-y.category
+  pocket: *x-y.pocket
+  buy: *x-y.buy
+  sell: *x-y.sell
+  fling_effect: damage
+  fling_power: 30
+  short_description: *x-y.short_description
+  description: *x-y.description
+  flavor_text: |
+    An ornament depicting a mysterious Pokémon
+    that has been venerated as a guardian deity
+    for an extremely long time in the Alola region.
+  icon: *x-y.icon
+ultra-sun-ultra-moon: *sun-moon

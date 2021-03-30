@@ -1,0 +1,208 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name CHARM
+  type: &gold-silver.type normal
+  accuracy: &gold-silver.accuracy 100
+  pp: &gold-silver.pp 20
+  effect: &gold-silver.effect 59
+  flags: &gold-silver.flags
+    - protect
+    - reflectable
+    - mirror
+  categories: &gold-silver.categories
+    - net-good-stats
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  stat_changes: &gold-silver.stat_changes
+    attack: -2
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    Sharply lowers the
+    foe's ATTACK.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  contest_type: &ruby-sapphire.contest_type cute
+  contest_effect: 20
+  contest_use_before: &ruby-sapphire.contest_use_before
+    - tail-whip
+    - growl
+    - rest
+    - sweet-kiss
+    - flatter
+  flavor_text: |
+    Charms the foe and sharply
+    reduces its ATTACK.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: &colosseum.flavor_text |
+    Charms the target, sharply
+    reducing its ATTACK.
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+xd:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: physical
+  flavor_text: *colosseum.flavor_text
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+firered-leafgreen:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  flavor_text: |
+    The foe is charmed
+    by the user's cute
+    appeals, sharply
+    cutting its ATTACK.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Charm
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 19
+  flavor_text: &diamond-pearl.flavor_text |
+    The user charmingly
+    stares at the foe,
+    making it less wary.
+    The target’s Attack
+    is sharply lowered.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user gazes at the target rather
+    charmingly, making it less wary.
+    The target’s Attack is harshly lowered.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: &x-y.type fairy
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &x-y.flavor_text |
+    The user gazes at the target rather
+    charmingly, making it less wary.
+    This harshly lowers its Attack stat.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *x-y.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 10
+  contest_use_before: *ruby-sapphire.contest_use_before
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *x-y.type
+  pp: *gold-silver.pp
+  accuracy: *gold-silver.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user gazes at the target rather charmingly,
+    making it less wary. This harshly lowers its
+    Attack stat.
+ultra-sun-ultra-moon: *sun-moon

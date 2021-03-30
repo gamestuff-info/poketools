@@ -1,0 +1,68 @@
+gold-silver: &gold-silver
+  name: 'HEAVY BALL'
+  pocket: &gold-silver.pocket pokeballs
+  buy: 150
+  sell: 75
+  flavor_text: |
+    A BALL for catch-
+    ing heavy POKéMON.
+  category: &gold-silver.category apricorn-balls
+  short_description: 'Has flat bonus or penalty to catch rate depending on weight class of target. Made from []{item:blk-apricorn}.'
+  description: |
+    Made from []{item:blk-apricorn}.
+
+    Used by a trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  See the list of weight ranges and their
+    catch rate modifiers below.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    | Weight                    | Catch Rate |
+    | ------------------------- | ---------- |
+    | &ge; 409.6 kg (903.0 lbs) | +40        |
+    | 307.2 kg (677.3 lbs)      | +30        |
+    | 204.8 kg (451.5 lbs)      | +20        |
+    | 102.4 kg (225.8 lbs)      | --         |
+    | &le; 102.3 kg (225.5 lbs) | -20        |
+crystal: *gold-silver
+heartgold-soulsilver:
+  name: &heartgold-soulsilver.name 'Heavy Ball'
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: 'Has flat bonus or penalty to catch rate depending on weight class of target. Made from []{item:black-apricorn}.'
+  description: |
+    Made from []{item:black-apricorn}.
+
+    Used by a trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  See the list of weight ranges and their
+    catch rate modifiers below.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    | Weight                    | Catch Rate |
+    | ------------------------- | ---------- |
+    | &ge; 409.6 kg (903.0 lbs) | +40        |
+    | 307.2 kg (677.3 lbs)      | +30        |
+    | 204.8 kg (451.5 lbs)      | +20        |
+    | &le; 204.7 kg (451.3 lbs) | -20        |
+  flavor_text: |
+    A Poké Ball for catching very heavy
+    Pokémon.
+  icon: &heartgold-soulsilver.icon heavy-ball.png
+sun-moon: &sun-moon
+  name: *heartgold-soulsilver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  short_description: 'Has flat bonus or penalty to catch rate depending on weight class of target.'
+  description: |
+    Used by a trainer in battle
+    :   Attempts to [catch]{mechanic:catch} a wild Pokémon.  See the list of weight ranges and their
+    catch rate modifiers below.  If used in a trainer battle, nothing happens and the ball is lost.
+
+    | Weight                    | Catch Rate |
+    | ------------------------- | ---------- |
+    | &ge; 300.0 kg (661.4 lbs) | +30        |
+    | 200.0 kg (440.9 lbs)      | +20        |
+    | 100.0 kg (220.5 lbs)      | --         |
+    | &le; 99.9kg (220.2 lbs)   | -20        |
+  flavor_text: |
+    A Poké Ball that is better than usual at catching
+    very heavy Pokémon.
+  icon: *heartgold-soulsilver.icon
+ultra-sun-ultra-moon: *sun-moon

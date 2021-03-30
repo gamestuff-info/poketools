@@ -1,0 +1,338 @@
+black-white:
+  name: &black-white.name Scolipede
+  position: &black-white.position 546
+  numbers:
+    national: &black-white.numbers.national 545
+    original-unova: 51
+  pokemon:
+    scolipede:
+      genus: &black-white.pokemon.scolipede.genus 'Megapede Pokémon'
+      evolution_parent: &black-white.pokemon.scolipede.evolution_parent whirlipede/whirlipede
+      color: &black-white.pokemon.scolipede.color red
+      shape: &black-white.pokemon.scolipede.shape armor
+      female_rate: &black-white.pokemon.scolipede.female_rate 50
+      capture_rate: &black-white.pokemon.scolipede.capture_rate 45
+      happiness: &black-white.pokemon.scolipede.happiness 70
+      baby: &black-white.pokemon.scolipede.baby false
+      hatch_steps: &black-white.pokemon.scolipede.hatch_steps 20
+      growth_rate: &black-white.pokemon.scolipede.growth_rate medium-slow
+      forms_switchable: &black-white.pokemon.scolipede.forms_switchable false
+      name: Scolipede
+      default: &black-white.pokemon.scolipede.default true
+      height: &black-white.pokemon.scolipede.height 25
+      weight: &black-white.pokemon.scolipede.weight 2005
+      experience: &black-white.pokemon.scolipede.experience 218
+      types: &black-white.pokemon.scolipede.types
+        - bug
+        - poison
+      egg_groups: &black-white.pokemon.scolipede.egg_groups
+        - bug
+      stats: &black-white.pokemon.scolipede.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 100
+          effort_change: 0
+        defense:
+          base_value: 89
+          effort_change: 0
+        speed:
+          base_value: 112
+          effort_change: 3
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 69
+          effort_change: 0
+      abilities: &black-white.pokemon.scolipede.abilities
+        poison-point:
+          hidden: &black-white.pokemon.scolipede.abilities.poison-point.hidden false
+          position: 1
+        swarm:
+          hidden: *black-white.pokemon.scolipede.abilities.poison-point.hidden
+          position: 2
+        speed-boost:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.scolipede.wild_held_items.black
+          pecha-berry: 50
+          poison-barb: &black-white.pokemon.scolipede.wild_held_items.black.poison-barb 5
+        white: *black-white.pokemon.scolipede.wild_held_items.black
+      evolution_conditions: &black-white.pokemon.scolipede.evolution_conditions
+        level-up:
+          minimum_level: 30
+      flavor_text:
+        black: |
+          With quick movements, it chases down
+          its foes, attacking relentlessly with
+          its horns until it prevails.
+        white: |
+          Highly aggressive, it uses the claws
+          near its neck to dig into its opponents
+          and poison them.
+      forms:
+        scolipede:
+          name: Scolipede
+          form_name: &black-white.pokemon.scolipede.forms.scolipede.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.scolipede.forms.scolipede.battle_only false
+          icon: &black-white.pokemon.scolipede.forms.scolipede.icon gen5/scolipede-default.png
+          sprites:
+            - black-white/back/scolipede-default.png
+            - black-white/back/shiny/scolipede-default.png
+            - black-white/scolipede-default.png
+            - black-white/shiny/scolipede-default.png
+          art: &black-white.pokemon.scolipede.forms.scolipede.art
+            - scolipede-default.png
+          footprint: &black-white.pokemon.scolipede.forms.scolipede.footprint scolipede.png
+          cry: &black-white.pokemon.scolipede.forms.scolipede.cry gen5/scolipede-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 45
+  pokemon:
+    scolipede:
+      genus: *black-white.pokemon.scolipede.genus
+      evolution_parent: *black-white.pokemon.scolipede.evolution_parent
+      color: *black-white.pokemon.scolipede.color
+      shape: *black-white.pokemon.scolipede.shape
+      female_rate: *black-white.pokemon.scolipede.female_rate
+      capture_rate: *black-white.pokemon.scolipede.capture_rate
+      happiness: *black-white.pokemon.scolipede.happiness
+      baby: *black-white.pokemon.scolipede.baby
+      hatch_steps: *black-white.pokemon.scolipede.hatch_steps
+      growth_rate: *black-white.pokemon.scolipede.growth_rate
+      forms_switchable: *black-white.pokemon.scolipede.forms_switchable
+      name: Scolipede
+      default: *black-white.pokemon.scolipede.default
+      height: *black-white.pokemon.scolipede.height
+      weight: *black-white.pokemon.scolipede.weight
+      experience: *black-white.pokemon.scolipede.experience
+      types: *black-white.pokemon.scolipede.types
+      egg_groups: *black-white.pokemon.scolipede.egg_groups
+      stats: *black-white.pokemon.scolipede.stats
+      abilities: *black-white.pokemon.scolipede.abilities
+      wild_held_items:
+        black-2: &black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+          poison-barb: *black-white.pokemon.scolipede.wild_held_items.black.poison-barb
+        white-2: *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+      evolution_conditions: *black-white.pokemon.scolipede.evolution_conditions
+      flavor_text:
+        black-2: |
+          It clasps its prey with the claws
+          on its neck until it stops moving.
+          Then it finishes it off with deadly poison.
+        white-2: |
+          It clasps its prey with the claws
+          on its neck until it stops moving.
+          Then it finishes it off with deadly poison.
+      forms:
+        scolipede:
+          name: Scolipede
+          form_name: *black-white.pokemon.scolipede.forms.scolipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.scolipede.forms.scolipede.battle_only
+          icon: *black-white.pokemon.scolipede.forms.scolipede.icon
+          art: *black-white.pokemon.scolipede.forms.scolipede.art
+          footprint: *black-white.pokemon.scolipede.forms.scolipede.footprint
+          cry: *black-white.pokemon.scolipede.forms.scolipede.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    kalos-central: 122
+  pokemon:
+    scolipede:
+      genus: *black-white.pokemon.scolipede.genus
+      evolution_parent: *black-white.pokemon.scolipede.evolution_parent
+      color: *black-white.pokemon.scolipede.color
+      shape: *black-white.pokemon.scolipede.shape
+      female_rate: *black-white.pokemon.scolipede.female_rate
+      capture_rate: *black-white.pokemon.scolipede.capture_rate
+      happiness: *black-white.pokemon.scolipede.happiness
+      baby: *black-white.pokemon.scolipede.baby
+      hatch_steps: *black-white.pokemon.scolipede.hatch_steps
+      growth_rate: *black-white.pokemon.scolipede.growth_rate
+      forms_switchable: *black-white.pokemon.scolipede.forms_switchable
+      name: Scolipede
+      default: *black-white.pokemon.scolipede.default
+      height: *black-white.pokemon.scolipede.height
+      weight: *black-white.pokemon.scolipede.weight
+      experience: *black-white.pokemon.scolipede.experience
+      types: *black-white.pokemon.scolipede.types
+      egg_groups: *black-white.pokemon.scolipede.egg_groups
+      mega: &x-y.pokemon.scolipede.mega false
+      stats: *black-white.pokemon.scolipede.stats
+      abilities: *black-white.pokemon.scolipede.abilities
+      wild_held_items:
+        x: *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+        'y': *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+      evolution_conditions: *black-white.pokemon.scolipede.evolution_conditions
+      flavor_text:
+        x: |
+          It clasps its prey with the claws on its neck until it
+          stops moving. Then it finishes it off with
+          deadly poison.
+        'y': |
+          With quick movements, it chases down its foes,
+          attacking relentlessly with its horns until it prevails.
+      forms:
+        scolipede:
+          name: Scolipede
+          form_name: *black-white.pokemon.scolipede.forms.scolipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.scolipede.forms.scolipede.battle_only
+          icon: &x-y.pokemon.scolipede.forms.scolipede.icon scolipede-default.png
+          sprites:
+            - x-y/scolipede-default.png
+            - x-y/shiny/scolipede-default.png
+          art: *black-white.pokemon.scolipede.forms.scolipede.art
+          footprint: *black-white.pokemon.scolipede.forms.scolipede.footprint
+          cry: &x-y.pokemon.scolipede.forms.scolipede.cry scolipede-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *black-white.numbers.national
+  pokemon:
+    scolipede:
+      genus: *black-white.pokemon.scolipede.genus
+      evolution_parent: *black-white.pokemon.scolipede.evolution_parent
+      color: *black-white.pokemon.scolipede.color
+      shape: *black-white.pokemon.scolipede.shape
+      female_rate: *black-white.pokemon.scolipede.female_rate
+      capture_rate: *black-white.pokemon.scolipede.capture_rate
+      happiness: *black-white.pokemon.scolipede.happiness
+      baby: *black-white.pokemon.scolipede.baby
+      hatch_steps: *black-white.pokemon.scolipede.hatch_steps
+      growth_rate: *black-white.pokemon.scolipede.growth_rate
+      forms_switchable: *black-white.pokemon.scolipede.forms_switchable
+      name: Scolipede
+      default: *black-white.pokemon.scolipede.default
+      height: *black-white.pokemon.scolipede.height
+      weight: *black-white.pokemon.scolipede.weight
+      experience: *black-white.pokemon.scolipede.experience
+      types: *black-white.pokemon.scolipede.types
+      egg_groups: *black-white.pokemon.scolipede.egg_groups
+      mega: *x-y.pokemon.scolipede.mega
+      stats: *black-white.pokemon.scolipede.stats
+      abilities: *black-white.pokemon.scolipede.abilities
+      evolution_conditions: *black-white.pokemon.scolipede.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It clasps its prey with the claws on its neck until it
+          stops moving. Then it finishes it off with
+          deadly poison.
+        alpha-sapphire: |
+          With quick movements, it chases down its foes,
+          attacking relentlessly with its horns until it prevails.
+      forms:
+        scolipede:
+          name: Scolipede
+          form_name: *black-white.pokemon.scolipede.forms.scolipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.scolipede.forms.scolipede.battle_only
+          icon: *x-y.pokemon.scolipede.forms.scolipede.icon
+          art: *black-white.pokemon.scolipede.forms.scolipede.art
+          footprint: *black-white.pokemon.scolipede.forms.scolipede.footprint
+          cry: *x-y.pokemon.scolipede.forms.scolipede.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/scolipede-default.png
+            - omega-ruby-alpha-sapphire/shiny/scolipede-default.png
+      wild_held_items:
+        omega-ruby: *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+        alpha-sapphire: *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    scolipede:
+      genus: *black-white.pokemon.scolipede.genus
+      evolution_parent: *black-white.pokemon.scolipede.evolution_parent
+      color: *black-white.pokemon.scolipede.color
+      shape: *black-white.pokemon.scolipede.shape
+      female_rate: *black-white.pokemon.scolipede.female_rate
+      capture_rate: *black-white.pokemon.scolipede.capture_rate
+      happiness: *black-white.pokemon.scolipede.happiness
+      baby: *black-white.pokemon.scolipede.baby
+      hatch_steps: *black-white.pokemon.scolipede.hatch_steps
+      growth_rate: *black-white.pokemon.scolipede.growth_rate
+      forms_switchable: *black-white.pokemon.scolipede.forms_switchable
+      name: Scolipede
+      default: *black-white.pokemon.scolipede.default
+      height: *black-white.pokemon.scolipede.height
+      weight: *black-white.pokemon.scolipede.weight
+      experience: *black-white.pokemon.scolipede.experience
+      types: *black-white.pokemon.scolipede.types
+      egg_groups: *black-white.pokemon.scolipede.egg_groups
+      mega: *x-y.pokemon.scolipede.mega
+      stats: *black-white.pokemon.scolipede.stats
+      abilities: *black-white.pokemon.scolipede.abilities
+      wild_held_items:
+        sun: *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+        moon: *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+      evolution_conditions: *black-white.pokemon.scolipede.evolution_conditions
+      forms:
+        scolipede:
+          name: Scolipede
+          form_name: *black-white.pokemon.scolipede.forms.scolipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.scolipede.forms.scolipede.battle_only
+          icon: *x-y.pokemon.scolipede.forms.scolipede.icon
+          sprites:
+            - sun-moon/scolipede-default.png
+            - sun-moon/shiny/scolipede-default.png
+          art: *black-white.pokemon.scolipede.forms.scolipede.art
+          footprint: *black-white.pokemon.scolipede.forms.scolipede.footprint
+          cry: *x-y.pokemon.scolipede.forms.scolipede.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    scolipede:
+      genus: *black-white.pokemon.scolipede.genus
+      evolution_parent: *black-white.pokemon.scolipede.evolution_parent
+      color: *black-white.pokemon.scolipede.color
+      shape: *black-white.pokemon.scolipede.shape
+      female_rate: *black-white.pokemon.scolipede.female_rate
+      capture_rate: *black-white.pokemon.scolipede.capture_rate
+      happiness: *black-white.pokemon.scolipede.happiness
+      baby: *black-white.pokemon.scolipede.baby
+      hatch_steps: *black-white.pokemon.scolipede.hatch_steps
+      growth_rate: *black-white.pokemon.scolipede.growth_rate
+      forms_switchable: *black-white.pokemon.scolipede.forms_switchable
+      name: Scolipede
+      default: *black-white.pokemon.scolipede.default
+      height: *black-white.pokemon.scolipede.height
+      weight: *black-white.pokemon.scolipede.weight
+      experience: *black-white.pokemon.scolipede.experience
+      types: *black-white.pokemon.scolipede.types
+      egg_groups: *black-white.pokemon.scolipede.egg_groups
+      mega: *x-y.pokemon.scolipede.mega
+      stats: *black-white.pokemon.scolipede.stats
+      abilities: *black-white.pokemon.scolipede.abilities
+      wild_held_items:
+        ultra-sun: *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+        ultra-moon: *black-2-white-2.pokemon.scolipede.wild_held_items.black-2
+      evolution_conditions: *black-white.pokemon.scolipede.evolution_conditions
+      forms:
+        scolipede:
+          name: Scolipede
+          form_name: *black-white.pokemon.scolipede.forms.scolipede.form_name
+          default: true
+          battle_only: *black-white.pokemon.scolipede.forms.scolipede.battle_only
+          icon: *x-y.pokemon.scolipede.forms.scolipede.icon
+          sprites:
+            - ultra-sun-ultra-moon/scolipede-default.png
+            - ultra-sun-ultra-moon/shiny/scolipede-default.png
+          art: *black-white.pokemon.scolipede.forms.scolipede.art
+          footprint: *black-white.pokemon.scolipede.forms.scolipede.footprint
+          cry: *x-y.pokemon.scolipede.forms.scolipede.cry

@@ -1,0 +1,735 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name LOUDRED
+  position: &ruby-sapphire.position 294
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 294
+    hoenn: 46
+  pokemon:
+    loudred:
+      name: LOUDRED
+      default: &ruby-sapphire.pokemon.loudred.default true
+      forms_switchable: &ruby-sapphire.pokemon.loudred.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.loudred.capture_rate 120
+      experience: &ruby-sapphire.pokemon.loudred.experience 126
+      types: &ruby-sapphire.pokemon.loudred.types
+        - normal
+      stats: &ruby-sapphire.pokemon.loudred.stats
+        hp:
+          base_value: 84
+          effort_change: 2
+        attack:
+          base_value: 71
+          effort_change: 0
+        defense:
+          base_value: 43
+          effort_change: 0
+        speed:
+          base_value: 48
+          effort_change: 0
+        special-attack:
+          base_value: 71
+          effort_change: 0
+        special-defense:
+          base_value: 84
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.loudred.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.loudred.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.loudred.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.loudred.egg_groups
+        - monster
+        - ground
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+          chesto-berry: 5
+        sapphire: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.loudred.happiness 70
+      abilities: &ruby-sapphire.pokemon.loudred.abilities
+        soundproof: &ruby-sapphire.pokemon.loudred.abilities.soundproof
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.loudred.genus 'BIG VOICE Pokémon'
+      height: &ruby-sapphire.pokemon.loudred.height 10
+      weight: &ruby-sapphire.pokemon.loudred.weight 405
+      flavor_text:
+        ruby: |
+          LOUDRED's bellowing can completely
+          decimate a wood-frame house. It uses
+          its voice to punish its foes.
+          This POKéMON's round ears serve as
+           loudspeakers.
+        sapphire: |
+          LOUDRED shouts while stamping its feet.
+          After it finishes shouting,  this
+          POKéMON becomes incapable of hearing
+          anything for a while. This is considered
+          to be a weak point.
+      forms:
+        loudred:
+          name: LOUDRED
+          form_name: &ruby-sapphire.pokemon.loudred.forms.loudred.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.loudred.forms.loudred.battle_only false
+          icon: &ruby-sapphire.pokemon.loudred.forms.loudred.icon gen5/loudred-default.png
+          sprites:
+            - ruby-sapphire/loudred-default.png
+            - ruby-sapphire/back/loudred-default.png
+            - ruby-sapphire/shiny/loudred-default.png
+          art: &ruby-sapphire.pokemon.loudred.forms.loudred.art
+            - loudred-default.png
+          footprint: &ruby-sapphire.pokemon.loudred.forms.loudred.footprint loudred.png
+          cry: &ruby-sapphire.pokemon.loudred.forms.loudred.cry gen5/loudred-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.loudred.evolution_parent whismur/whismur
+      evolution_conditions: &ruby-sapphire.pokemon.loudred.evolution_conditions
+        level-up:
+          minimum_level: 20
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    loudred:
+      name: LOUDRED
+      default: *ruby-sapphire.pokemon.loudred.default
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      stats: *ruby-sapphire.pokemon.loudred.stats
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      abilities: *ruby-sapphire.pokemon.loudred.abilities
+      genus: *ruby-sapphire.pokemon.loudred.genus
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      flavor_text:
+        emerald: |
+          It positions the round speakers on its
+          head to assail foes with ultrasonic waves
+          at massive volume. It builds power by
+          stomping the ground.
+      forms:
+        loudred:
+          name: LOUDRED
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *ruby-sapphire.pokemon.loudred.forms.loudred.icon
+          sprites:
+            - emerald/loudred-default.png
+            - emerald/shiny/loudred-default.png
+            - emerald/animated/loudred-default.webm
+            - emerald/animated/shiny/loudred-default.webm
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 171
+  pokemon:
+    loudred:
+      name: LOUDRED
+      default: *ruby-sapphire.pokemon.loudred.default
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      stats: *ruby-sapphire.pokemon.loudred.stats
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      abilities: *ruby-sapphire.pokemon.loudred.abilities
+      genus: *ruby-sapphire.pokemon.loudred.genus
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      forms:
+        loudred:
+          name: LOUDRED
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          sprites:
+            - colosseum/loudred-default.png
+            - colosseum/shiny/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    loudred:
+      name: LOUDRED
+      default: *ruby-sapphire.pokemon.loudred.default
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      stats: *ruby-sapphire.pokemon.loudred.stats
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      abilities: *ruby-sapphire.pokemon.loudred.abilities
+      genus: *ruby-sapphire.pokemon.loudred.genus
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      forms:
+        loudred:
+          name: LOUDRED
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          sprites:
+            - xd/loudred-default.png
+            - xd/shiny/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    loudred:
+      name: LOUDRED
+      default: *ruby-sapphire.pokemon.loudred.default
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      stats: *ruby-sapphire.pokemon.loudred.stats
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      abilities: *ruby-sapphire.pokemon.loudred.abilities
+      genus: *ruby-sapphire.pokemon.loudred.genus
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      flavor_text:
+        firered: |
+          When it stamps its feet and bellows, it
+          generates ultrasonic waves that can blow
+          apart a house.
+        leafgreen: |
+          When it stamps its feet and bellows, it
+          generates ultrasonic waves that can blow
+          apart a house.
+      forms:
+        loudred:
+          name: LOUDRED
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *ruby-sapphire.pokemon.loudred.forms.loudred.icon
+          sprites:
+            - firered-leafgreen/loudred-default.png
+            - firered-leafgreen/back/loudred-default.png
+            - firered-leafgreen/shiny/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Loudred
+  position: &diamond-pearl.position 320
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    loudred:
+      genus: &diamond-pearl.pokemon.loudred.genus 'Big Voice Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      shape: &diamond-pearl.pokemon.loudred.shape upright
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: &diamond-pearl.pokemon.loudred.baby false
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      pal_park: &diamond-pearl.pokemon.loudred.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      stats: &diamond-pearl.pokemon.loudred.stats
+        hp:
+          base_value: 84
+          effort_change: 2
+        attack:
+          base_value: 71
+          effort_change: 0
+        defense:
+          base_value: 43
+          effort_change: 0
+        speed:
+          base_value: 48
+          effort_change: 0
+        special-attack:
+          base_value: 71
+          effort_change: 0
+        special-defense:
+          base_value: 43
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.loudred.abilities
+        soundproof: *ruby-sapphire.pokemon.loudred.abilities.soundproof
+        scrappy:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      flavor_text:
+        diamond: |
+          The shock waves from its cries can
+          tip over trucks. It stamps its
+          feet to power up.
+        pearl: |
+          The shock waves from its cries can
+          tip over trucks. It stamps its
+          feet to power up.
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *ruby-sapphire.pokemon.loudred.forms.loudred.icon
+          sprites:
+            - diamond-pearl/back/shiny/loudred-default.png
+            - diamond-pearl/back/loudred-default.png
+            - diamond-pearl/shiny/loudred-default.png
+            - diamond-pearl/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    loudred:
+      genus: *diamond-pearl.pokemon.loudred.genus
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      shape: *diamond-pearl.pokemon.loudred.shape
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: *diamond-pearl.pokemon.loudred.baby
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      pal_park: *diamond-pearl.pokemon.loudred.pal_park
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      stats: *diamond-pearl.pokemon.loudred.stats
+      abilities: *diamond-pearl.pokemon.loudred.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      flavor_text:
+        platinum: |
+          The shock waves from its cries can
+          tip over trucks. It stamps its
+          feet to power up.
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *ruby-sapphire.pokemon.loudred.forms.loudred.icon
+          sprites:
+            - platinum/back/shiny/loudred-default.png
+            - platinum/back/loudred-default.png
+            - platinum/shiny/loudred-default.png
+            - platinum/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    loudred:
+      genus: *diamond-pearl.pokemon.loudred.genus
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      shape: *diamond-pearl.pokemon.loudred.shape
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: *diamond-pearl.pokemon.loudred.baby
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      pal_park: *diamond-pearl.pokemon.loudred.pal_park
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      stats: *diamond-pearl.pokemon.loudred.stats
+      abilities: *diamond-pearl.pokemon.loudred.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It shouts loudly by inhaling air, and
+          then uses its well-developed
+          stomach muscles to exhale.
+        soulsilver: |
+          It shouts loudly by inhaling air, and
+          then uses its well-developed
+          stomach muscles to exhale.
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.loudred.forms.loudred.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/loudred-default.png
+            - heartgold-soulsilver/back/loudred-default.png
+            - heartgold-soulsilver/shiny/loudred-default.png
+            - heartgold-soulsilver/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    loudred:
+      genus: *diamond-pearl.pokemon.loudred.genus
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      color: &black-white.pokemon.loudred.color blue
+      shape: *diamond-pearl.pokemon.loudred.shape
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: *diamond-pearl.pokemon.loudred.baby
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      stats: *diamond-pearl.pokemon.loudred.stats
+      abilities: *diamond-pearl.pokemon.loudred.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      flavor_text:
+        black: |
+          The shock waves from its cries can
+          tip over trucks. It stamps its
+          feet to power up.
+        white: |
+          The shock waves from its cries can
+          tip over trucks. It stamps its
+          feet to power up.
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *ruby-sapphire.pokemon.loudred.forms.loudred.icon
+          sprites:
+            - black-white/back/shiny/loudred-default.png
+            - black-white/back/loudred-default.png
+            - black-white/shiny/loudred-default.png
+            - black-white/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    loudred:
+      genus: *diamond-pearl.pokemon.loudred.genus
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      color: *black-white.pokemon.loudred.color
+      shape: *diamond-pearl.pokemon.loudred.shape
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: *diamond-pearl.pokemon.loudred.baby
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      stats: *diamond-pearl.pokemon.loudred.stats
+      abilities: *diamond-pearl.pokemon.loudred.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.loudred.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      flavor_text:
+        black-2: |
+          The shock waves from its cries can
+          tip over trucks. It stamps its
+          feet to power up.
+        white-2: |
+          The shock waves from its cries can
+          tip over trucks. It stamps its
+          feet to power up.
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *ruby-sapphire.pokemon.loudred.forms.loudred.icon
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *ruby-sapphire.pokemon.loudred.forms.loudred.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-central: 141
+  pokemon:
+    loudred:
+      genus: *diamond-pearl.pokemon.loudred.genus
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      color: *black-white.pokemon.loudred.color
+      shape: *diamond-pearl.pokemon.loudred.shape
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: *diamond-pearl.pokemon.loudred.baby
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      mega: &x-y.pokemon.loudred.mega false
+      stats: *diamond-pearl.pokemon.loudred.stats
+      abilities: *diamond-pearl.pokemon.loudred.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      flavor_text:
+        x: |
+          It shouts loudly by inhaling air, and then uses its
+          well-developed stomach muscles to exhale.
+        'y': |
+          The shock waves from its cries can tip over trucks.
+          It stamps its feet to power up.
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: &x-y.pokemon.loudred.forms.loudred.icon loudred-default.png
+          sprites:
+            - x-y/shiny/loudred-default.png
+            - x-y/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: &x-y.pokemon.loudred.forms.loudred.cry loudred-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 47
+  pokemon:
+    loudred:
+      genus: *diamond-pearl.pokemon.loudred.genus
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      color: *black-white.pokemon.loudred.color
+      shape: *diamond-pearl.pokemon.loudred.shape
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: *diamond-pearl.pokemon.loudred.baby
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      mega: *x-y.pokemon.loudred.mega
+      stats: *diamond-pearl.pokemon.loudred.stats
+      abilities: *diamond-pearl.pokemon.loudred.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Loudred’s bellowing can completely decimate a wood-frame
+          house. It uses its voice to punish its foes. This Pokémon’s
+          round ears serve as loudspeakers.
+        alpha-sapphire: |
+          Loudred shouts while stamping its feet. After it finishes
+          shouting, this Pokémon becomes incapable of hearing
+          anything for a while. This is considered to be a weak point.
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *x-y.pokemon.loudred.forms.loudred.icon
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *x-y.pokemon.loudred.forms.loudred.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/loudred-default.png
+            - omega-ruby-alpha-sapphire/shiny/loudred-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    loudred:
+      genus: *diamond-pearl.pokemon.loudred.genus
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      color: *black-white.pokemon.loudred.color
+      shape: *diamond-pearl.pokemon.loudred.shape
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: *diamond-pearl.pokemon.loudred.baby
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      mega: *x-y.pokemon.loudred.mega
+      stats: *diamond-pearl.pokemon.loudred.stats
+      abilities: *diamond-pearl.pokemon.loudred.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *x-y.pokemon.loudred.forms.loudred.icon
+          sprites:
+            - sun-moon/shiny/loudred-default.png
+            - sun-moon/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *x-y.pokemon.loudred.forms.loudred.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    loudred:
+      genus: *diamond-pearl.pokemon.loudred.genus
+      evolution_parent: *ruby-sapphire.pokemon.loudred.evolution_parent
+      color: *black-white.pokemon.loudred.color
+      shape: *diamond-pearl.pokemon.loudred.shape
+      female_rate: *ruby-sapphire.pokemon.loudred.female_rate
+      capture_rate: *ruby-sapphire.pokemon.loudred.capture_rate
+      happiness: *ruby-sapphire.pokemon.loudred.happiness
+      baby: *diamond-pearl.pokemon.loudred.baby
+      hatch_steps: *ruby-sapphire.pokemon.loudred.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.loudred.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.loudred.forms_switchable
+      name: Loudred
+      default: *ruby-sapphire.pokemon.loudred.default
+      height: *ruby-sapphire.pokemon.loudred.height
+      weight: *ruby-sapphire.pokemon.loudred.weight
+      experience: *ruby-sapphire.pokemon.loudred.experience
+      types: *ruby-sapphire.pokemon.loudred.types
+      egg_groups: *ruby-sapphire.pokemon.loudred.egg_groups
+      mega: *x-y.pokemon.loudred.mega
+      stats: *diamond-pearl.pokemon.loudred.stats
+      abilities: *diamond-pearl.pokemon.loudred.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.loudred.evolution_conditions
+      forms:
+        loudred:
+          name: Loudred
+          form_name: *ruby-sapphire.pokemon.loudred.forms.loudred.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.loudred.forms.loudred.battle_only
+          icon: *x-y.pokemon.loudred.forms.loudred.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/loudred-default.png
+            - ultra-sun-ultra-moon/loudred-default.png
+          art: *ruby-sapphire.pokemon.loudred.forms.loudred.art
+          footprint: *ruby-sapphire.pokemon.loudred.forms.loudred.footprint
+          cry: *x-y.pokemon.loudred.forms.loudred.cry

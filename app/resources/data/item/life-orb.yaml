@@ -1,0 +1,58 @@
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Life Orb'
+  category: &diamond-pearl.category held-items
+  pocket: &diamond-pearl.pocket misc
+  buy: &diamond-pearl.buy 4000
+  sell: &diamond-pearl.sell 2000
+  fling_effect: damage
+  fling_power: 30
+  flags: &diamond-pearl.flags
+    - holdable
+    - holdable-active
+  short_description: &diamond-pearl.short_description 'Held: Holder''s moves inflict 30% extra damage, but cost 10% max HP.'
+  description: &diamond-pearl.description |
+    Held
+    :   Damage from the holder's moves is increased by 30%.  On each turn the holder uses a damage-inflicting move, it takes 10% its max HP in damage.
+  flavor_text: |
+    An item to be held by a Pokémon.
+    It boosts the power of moves, but at
+    the cost of some HP on each hit.
+  icon: &diamond-pearl.icon life-orb.png
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *diamond-pearl.flags
+  short_description: *diamond-pearl.short_description
+  description: *diamond-pearl.description
+  flavor_text: |
+    An item to be held by a Pokémon.
+    It boosts the power of moves, but
+    at the cost of some HP on each hit.
+  icon: *diamond-pearl.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *diamond-pearl.flags
+  short_description: *diamond-pearl.short_description
+  description: *diamond-pearl.description
+  flavor_text: |
+    An item to be held by a Pokémon. It boosts the
+    power of moves, but at the cost of some HP on
+    each hit.
+  icon: *diamond-pearl.icon
+ultra-sun-ultra-moon: *sun-moon

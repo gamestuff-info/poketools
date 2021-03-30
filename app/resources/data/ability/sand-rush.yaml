@@ -1,0 +1,22 @@
+black-white: &black-white
+  name: &black-white.name 'Sand Rush'
+  short_description: &black-white.short_description 'Doubles [Speed]{mechanic:speed} during a [sandstorm]{mechanic:sandstorm}.  Protects against sandstorm damage.'
+  description: &black-white.description 'This Pokémon''s [Speed]{mechanic:speed} is doubled during a [sandstorm]{mechanic:sandstorm}, and it does not take sandstorm damage, regardless of type.'
+  flavor_text: |
+    Boosts the Pokémon’s
+    Speed in a sandstorm.
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *black-white.name
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    Boosts the Pokémon’s
+    Speed stat in a sandstorm.
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *black-white.name
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: 'Boosts the Pokémon’s Speed stat in a sandstorm.'
+ultra-sun-ultra-moon: *sun-moon

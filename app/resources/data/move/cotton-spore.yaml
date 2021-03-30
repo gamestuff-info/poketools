@@ -1,0 +1,205 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'COTTON SPORE'
+  type: &gold-silver.type grass
+  accuracy: &gold-silver.accuracy 85
+  pp: &gold-silver.pp 40
+  effect: &gold-silver.effect 61
+  flags: &gold-silver.flags
+    - protect
+    - reflectable
+    - mirror
+    - powder
+  categories: &gold-silver.categories
+    - net-good-stats
+  hits: &gold-silver.hits 1
+  turns: &gold-silver.turns 1
+  stat_changes: &gold-silver.stat_changes
+    speed: -2
+  priority: &gold-silver.priority 0
+  target: &gold-silver.target selected-pokemon
+  flavor_text: |
+    Sharply reduces
+    the foe's SPEED.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: &ruby-sapphire.flags
+    - protect
+    - reflectable
+    - mirror
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  contest_type: &ruby-sapphire.contest_type beauty
+  contest_effect: 18
+  flavor_text: |
+    Spores cling to the foe,
+    sharply reducing SPEED.
+emerald: *ruby-sapphire
+colosseum:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flavor_text: &colosseum.flavor_text |
+    Spores cling to the target,
+    sharply reducing SPEED.
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+xd:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  damage_class: special
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+firered-leafgreen:
+  name: *gold-silver.name
+  type: *gold-silver.type
+  accuracy: *gold-silver.accuracy
+  pp: *gold-silver.pp
+  effect: *gold-silver.effect
+  target: *gold-silver.target
+  priority: *gold-silver.priority
+  flags: *ruby-sapphire.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  flavor_text: |
+    Cotton-like spores
+    cling to the foe,
+    sharply reducing
+    its SPEED stat.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Cotton Spore'
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: &diamond-pearl.accuracy 100
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 1
+  flavor_text: &diamond-pearl.flavor_text |
+    The user releases
+    cottonlike spores
+    that cling to the
+    foe, sharply reducing
+    its Speed stat.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *gold-silver.priority
+  target: *gold-silver.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user releases cotton-like spores
+    that cling to the target,
+    harshly reducing its Speed stat.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *gold-silver.priority
+  target: &x-y.target all-opponents
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: &x-y.flavor_text |
+    The user releases cotton-like spores
+    that cling to the opposing Pokémon,
+    which harshly lowers their Speed stats.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *gold-silver.priority
+  target: *x-y.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 10
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *gold-silver.flags
+  categories: *gold-silver.categories
+  hits: *gold-silver.hits
+  turns: *gold-silver.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *gold-silver.type
+  pp: *gold-silver.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *gold-silver.priority
+  target: *x-y.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user releases cotton-like spores that cling to
+    the opposing Pokémon, which harshly lowers their
+    Speed stat.
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,1035 @@
+red-blue:
+  name: &red-blue.name RATTATA
+  position: &red-blue.position 19
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 19
+    kanto: 19
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: &red-blue.pokemon.rattata.default true
+      capture_rate: &red-blue.pokemon.rattata.capture_rate 255
+      experience: &red-blue.pokemon.rattata.experience 57
+      types: &red-blue.pokemon.rattata.types
+        - normal
+      stats: &red-blue.pokemon.rattata.stats
+        hp:
+          base_value: 30
+          effort_change: 30
+        attack:
+          base_value: 56
+          effort_change: 56
+        defense:
+          base_value: 35
+          effort_change: 35
+        speed:
+          base_value: 72
+          effort_change: 72
+        special:
+          base_value: 25
+          effort_change: 25
+      growth_rate: &red-blue.pokemon.rattata.growth_rate medium
+      genus: &red-blue.pokemon.rattata.genus 'RAT Pokémon'
+      height: &red-blue.pokemon.rattata.height 3
+      weight: &red-blue.pokemon.rattata.weight 362
+      flavor_text:
+        red: |
+          Bites anything
+          when it attacks.
+          Small and very
+          quick, it is a
+          common sight in
+          many places.
+        blue: |
+          Bites anything
+          when it attacks.
+          Small and very
+          quick, it is a
+           common sight in
+          many places.
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: &red-blue.pokemon.rattata.forms.rattata.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.rattata.forms.rattata.battle_only false
+          sprites:
+            - red-blue/rattata-default.png
+            - red-blue/gray/rattata-default.png
+            - red-blue/back/rattata-default.png
+          art: &red-blue.pokemon.rattata.forms.rattata.art
+            - rattata-default.png
+          cry: &red-blue.pokemon.rattata.forms.rattata.cry gen5/rattata-default.webm
+          icon: &red-blue.pokemon.rattata.forms.rattata.icon gen1/quadruped.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: *red-blue.pokemon.rattata.default
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      experience: *red-blue.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      stats: *red-blue.pokemon.rattata.stats
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      genus: *red-blue.pokemon.rattata.genus
+      height: *red-blue.pokemon.rattata.height
+      weight: *red-blue.pokemon.rattata.weight
+      flavor_text:
+        yellow: |
+          Will chew on any-
+          thing with its
+          fangs. If you see
+          one, it is certain
+          that 40 more live
+          in the area.
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          sprites:
+            - yellow/rattata-default.png
+            - yellow/gray/rattata-default.png
+            - yellow/back/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+          icon: *red-blue.pokemon.rattata.forms.rattata.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 18
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 16
+    original-johto-abc: 170
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: *red-blue.pokemon.rattata.default
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      experience: *red-blue.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      stats: &gold-silver.pokemon.rattata.stats
+        hp:
+          base_value: 30
+          effort_change: 30
+        attack:
+          base_value: 56
+          effort_change: 56
+        defense:
+          base_value: 35
+          effort_change: 35
+        speed:
+          base_value: 72
+          effort_change: 72
+        special-attack:
+          base_value: 25
+          effort_change: 25
+        special-defense:
+          base_value: 35
+          effort_change: 25
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      female_rate: &gold-silver.pokemon.rattata.female_rate 50
+      hatch_steps: &gold-silver.pokemon.rattata.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.rattata.egg_groups
+        - ground
+      genus: *red-blue.pokemon.rattata.genus
+      height: *red-blue.pokemon.rattata.height
+      weight: &gold-silver.pokemon.rattata.weight 36
+      flavor_text:
+        gold: |
+          It eats anything.
+          Wherever food is
+          available, it will
+          settle down and
+          produce offspring
+          continuously.
+        silver: |
+          Living wherever
+          there is food
+          available, it
+          ceaselessly scav-
+          enges for edibles
+          the entire day.
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          sprites:
+            - gold-silver/rattata-default.png
+            - gold-silver/back/rattata-default.png
+            - gold-silver/shiny/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+          icon: &gold-silver.pokemon.rattata.forms.rattata.icon gen2/fox.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: *red-blue.pokemon.rattata.default
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      experience: *red-blue.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      stats: *gold-silver.pokemon.rattata.stats
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      genus: *red-blue.pokemon.rattata.genus
+      height: *red-blue.pokemon.rattata.height
+      weight: *gold-silver.pokemon.rattata.weight
+      flavor_text:
+        crystal: |
+          This #MON's
+          impressive vital-
+          ity allows it to
+          live anywhere. It
+          also multiplies
+          very quickly.
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          sprites:
+            - crystal/rattata-default.png
+            - crystal/back/rattata-default.png
+            - crystal/shiny/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+          icon: *gold-silver.pokemon.rattata.forms.rattata.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 221
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: *red-blue.pokemon.rattata.default
+      forms_switchable: &ruby-sapphire.pokemon.rattata.forms_switchable false
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      experience: *red-blue.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      stats: &ruby-sapphire.pokemon.rattata.stats
+        hp:
+          base_value: 30
+          effort_change: 0
+        attack:
+          base_value: 56
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 72
+          effort_change: 1
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 30
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      happiness: &ruby-sapphire.pokemon.rattata.happiness 70
+      abilities: &ruby-sapphire.pokemon.rattata.abilities
+        run-away: &ruby-sapphire.pokemon.rattata.abilities.run-away
+          hidden: &ruby-sapphire.pokemon.rattata.abilities.run-away.hidden false
+          position: 1
+        guts: &ruby-sapphire.pokemon.rattata.abilities.guts
+          hidden: *ruby-sapphire.pokemon.rattata.abilities.run-away.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.rattata.genus 'MOUSE Pokémon'
+      height: *red-blue.pokemon.rattata.height
+      weight: &ruby-sapphire.pokemon.rattata.weight 35
+      flavor_text:
+        ruby: |
+          RATTATA is cautious in the extreme.
+          Even while it is asleep, it constantly
+           listens by moving its ears around.
+          It is not picky about where it lives  -
+          it will make its nest anywhere.
+        sapphire: |
+          RATTATA is cautious in the extreme.
+          Even while it is asleep, it constantly
+          listens by moving its ears around.
+          It is not picky about where it lives -
+          it will make its nest anywhere.
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: &ruby-sapphire.pokemon.rattata.forms.rattata.icon gen5/rattata-default.png
+          sprites:
+            - ruby-sapphire/rattata-default.png
+            - ruby-sapphire/back/rattata-default.png
+            - ruby-sapphire/shiny/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: &ruby-sapphire.pokemon.rattata.forms.rattata.footprint rattata.png
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: *red-blue.pokemon.rattata.default
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      experience: *red-blue.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      stats: *ruby-sapphire.pokemon.rattata.stats
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      abilities: *ruby-sapphire.pokemon.rattata.abilities
+      genus: *ruby-sapphire.pokemon.rattata.genus
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      flavor_text:
+        emerald: |
+          A RATTATA is cautious in the extreme.
+          Even while it is asleep,  it constantly
+          moves its ears and listens for danger.
+          It will make its nest anywhere.
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *ruby-sapphire.pokemon.rattata.forms.rattata.icon
+          sprites:
+            - emerald/rattata-default.png
+            - emerald/shiny/rattata-default.png
+            - emerald/animated/rattata-default.webm
+            - emerald/animated/shiny/rattata-default.webm
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 266
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: *red-blue.pokemon.rattata.default
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      experience: *red-blue.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      stats: *ruby-sapphire.pokemon.rattata.stats
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      abilities: *ruby-sapphire.pokemon.rattata.abilities
+      genus: *ruby-sapphire.pokemon.rattata.genus
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          sprites:
+            - colosseum/rattata-default.png
+            - colosseum/shiny/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: *red-blue.pokemon.rattata.default
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      experience: *red-blue.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      stats: *ruby-sapphire.pokemon.rattata.stats
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      abilities: *ruby-sapphire.pokemon.rattata.abilities
+      genus: *ruby-sapphire.pokemon.rattata.genus
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          sprites:
+            - xd/rattata-default.png
+            - xd/shiny/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    rattata:
+      name: RATTATA
+      default: *red-blue.pokemon.rattata.default
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      experience: *red-blue.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      stats: *ruby-sapphire.pokemon.rattata.stats
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      abilities: *ruby-sapphire.pokemon.rattata.abilities
+      genus: *ruby-sapphire.pokemon.rattata.genus
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      flavor_text:
+        firered: |
+          Its fangs are long and very sharp.
+          They grow continuously, so it gnaws on
+          hard things to whittle them down.
+        leafgreen: |
+          Bites anything when it attacks. Small and
+          very quick, it is a common sight in many
+          places.
+      forms:
+        rattata:
+          name: RATTATA
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *ruby-sapphire.pokemon.rattata.forms.rattata.icon
+          sprites:
+            - firered-leafgreen/rattata-default.png
+            - firered-leafgreen/back/rattata-default.png
+            - firered-leafgreen/shiny/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+diamond-pearl:
+  name: &diamond-pearl.name Rattata
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    rattata:
+      genus: &diamond-pearl.pokemon.rattata.genus 'Mouse Pokémon'
+      shape: &diamond-pearl.pokemon.rattata.shape quadruped
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: &diamond-pearl.pokemon.rattata.baby false
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      pal_park: &diamond-pearl.pokemon.rattata.pal_park
+        area: field
+        rate: 50
+        score: 30
+      name: Rattata
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: &diamond-pearl.pokemon.rattata.experience 51
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      stats: &diamond-pearl.pokemon.rattata.stats
+        hp:
+          base_value: 30
+          effort_change: 0
+        attack:
+          base_value: 56
+          effort_change: 0
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 72
+          effort_change: 1
+        special-attack:
+          base_value: 25
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.rattata.abilities
+        run-away: *ruby-sapphire.pokemon.rattata.abilities.run-away
+        guts: *ruby-sapphire.pokemon.rattata.abilities.guts
+        hustle: &diamond-pearl.pokemon.rattata.abilities.hustle
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.rattata.wild_held_items.diamond
+          chilan-berry: 5
+        pearl: *diamond-pearl.pokemon.rattata.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Cautious in the extreme, its
+          hardy vitality lets it live in
+          any kind of environment.
+        pearl: |
+          Cautious in the extreme, its
+          hardy vitality lets it live in
+          any kind of environment.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *ruby-sapphire.pokemon.rattata.forms.rattata.icon
+          sprites:
+            - diamond-pearl/back/female/rattata-default.png
+            - diamond-pearl/back/shiny/rattata-default.png
+            - diamond-pearl/back/rattata-default.png
+            - diamond-pearl/female/rattata-default.png
+            - diamond-pearl/shiny/female/rattata-default.png
+            - diamond-pearl/shiny/rattata-default.png
+            - diamond-pearl/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rattata:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      pal_park: *diamond-pearl.pokemon.rattata.pal_park
+      name: Rattata
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *diamond-pearl.pokemon.rattata.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.rattata.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          Cautious in the extreme, its
+          hardy vitality lets it live in
+          any kind of environment.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *ruby-sapphire.pokemon.rattata.forms.rattata.icon
+          sprites:
+            - platinum/back/female/rattata-default.png
+            - platinum/back/shiny/rattata-default.png
+            - platinum/back/rattata-default.png
+            - platinum/female/rattata-default.png
+            - platinum/shiny/female/rattata-default.png
+            - platinum/shiny/rattata-default.png
+            - platinum/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 17
+  pokemon:
+    rattata:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      pal_park: *diamond-pearl.pokemon.rattata.pal_park
+      name: Rattata
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *diamond-pearl.pokemon.rattata.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.rattata.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.rattata.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          It eats anything. Wherever food is
+          available, it will settle down and
+          produce offspring continuously.
+        soulsilver: |
+          Living wherever there is food
+          available, it ceaselessly scavenges
+          for edibles the entire day.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 5
+              range: 3-5
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 1
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.rattata.forms.rattata.icon
+          sprites:
+            - heartgold-soulsilver/back/female/rattata-default.png
+            - heartgold-soulsilver/back/shiny/rattata-default.png
+            - heartgold-soulsilver/back/rattata-default.png
+            - heartgold-soulsilver/female/rattata-default.png
+            - heartgold-soulsilver/shiny/female/rattata-default.png
+            - heartgold-soulsilver/shiny/rattata-default.png
+            - heartgold-soulsilver/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rattata:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      color: &black-white.pokemon.rattata.color purple
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      name: Rattata
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *diamond-pearl.pokemon.rattata.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.rattata.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.rattata.wild_held_items.diamond
+      flavor_text:
+        black: |
+          Cautious in the extreme, its
+          hardy vitality lets it live in
+          any kind of environment.
+        white: |
+          Cautious in the extreme, its
+          hardy vitality lets it live in
+          any kind of environment.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *ruby-sapphire.pokemon.rattata.forms.rattata.icon
+          sprites:
+            - black-white/back/female/rattata-default.png
+            - black-white/back/shiny/rattata-default.png
+            - black-white/back/rattata-default.png
+            - black-white/female/rattata-default.png
+            - black-white/shiny/female/rattata-default.png
+            - black-white/shiny/rattata-default.png
+            - black-white/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 59
+  pokemon:
+    rattata:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      color: *black-white.pokemon.rattata.color
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      name: Rattata
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *diamond-pearl.pokemon.rattata.abilities
+      flavor_text:
+        black-2: |
+          It searches for food all day. It gnaws
+          on hard objects to wear down its fangs,
+          which grow constantly during its lifetime.
+        white-2: |
+          It searches for food all day. It gnaws
+          on hard objects to wear down its fangs,
+          which grow constantly during its lifetime.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *ruby-sapphire.pokemon.rattata.forms.rattata.icon
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *red-blue.pokemon.rattata.forms.rattata.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rattata:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      color: *black-white.pokemon.rattata.color
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      name: Rattata
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      mega: &x-y.pokemon.rattata.mega false
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *diamond-pearl.pokemon.rattata.abilities
+      flavor_text:
+        x: |
+          Living wherever there is food available,
+          it ceaselessly scavenges for edibles
+          the entire day.
+        'y': |
+          Its fangs are long and very sharp. They grow
+          continuously, so it gnaws on hard things to whittle
+          them down.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: &x-y.pokemon.rattata.forms.rattata.icon rattata-default.png
+          sprites:
+            - x-y/female/rattata-default.png
+            - x-y/shiny/female/rattata-default.png
+            - x-y/shiny/rattata-default.png
+            - x-y/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: &x-y.pokemon.rattata.forms.rattata.cry rattata-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    rattata:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      color: *black-white.pokemon.rattata.color
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      name: Rattata
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      mega: *x-y.pokemon.rattata.mega
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *diamond-pearl.pokemon.rattata.abilities
+      flavor_text:
+        omega-ruby: |
+          Rattata is cautious in the extreme. Even while it is asleep,
+          it constantly listens by moving its ears around. It is not picky
+          about where it lives—it will make its nest anywhere.
+        alpha-sapphire: |
+          Rattata is cautious in the extreme. Even while it is asleep,
+          it constantly listens by moving its ears around. It is not
+          picky about where it lives—it will make its nest anywhere.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *x-y.pokemon.rattata.forms.rattata.icon
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *x-y.pokemon.rattata.forms.rattata.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/rattata-default.png
+            - omega-ruby-alpha-sapphire/shiny/rattata-default.png
+            - omega-ruby-alpha-sapphire/female/rattata-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/rattata-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 15
+    original-melemele: 15
+    original-akala: 6
+    original-ulaula: 6
+    original-poni: 6
+  pokemon:
+    rattata:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      color: *black-white.pokemon.rattata.color
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      name: Rattata
+      default: &sun-moon.pokemon.rattata.default false
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      mega: *x-y.pokemon.rattata.mega
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *diamond-pearl.pokemon.rattata.abilities
+      flavor_text: &sun-moon.pokemon.rattata.flavor_text
+        sun: |-
+          Its incisors continue growing until its death.
+          If its Trainer doesn’t offer it a file to gnaw on, it
+          will gnaw on door frames, table legs, and so on.
+        moon: |-
+          With their strong capacity for survival, they can
+          live in dirty places without concern. Left
+          unchecked, their numbers multiply rapidly.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *x-y.pokemon.rattata.forms.rattata.icon
+          sprites:
+            - sun-moon/female/rattata-default.png
+            - sun-moon/shiny/female/rattata-default.png
+            - sun-moon/shiny/rattata-default.png
+            - sun-moon/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *x-y.pokemon.rattata.forms.rattata.cry
+    rattata-alola:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      color: *black-white.pokemon.rattata.color
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      name: &sun-moon.pokemon.rattata-alola.name 'Alolan Rattata'
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: &sun-moon.pokemon.rattata-alola.weight 38
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: &sun-moon.pokemon.rattata-alola.types
+        - dark
+        - normal
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      mega: *x-y.pokemon.rattata.mega
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: &sun-moon.pokemon.rattata-alola.abilities
+        gluttony: *ruby-sapphire.pokemon.rattata.abilities.run-away
+        hustle: *ruby-sapphire.pokemon.rattata.abilities.guts
+        thick-fat: *diamond-pearl.pokemon.rattata.abilities.hustle
+      wild_held_items:
+        sun: &sun-moon.pokemon.rattata-alola.wild_held_items.sun
+          pecha-berry: 5
+        moon: *sun-moon.pokemon.rattata-alola.wild_held_items.sun
+      flavor_text: *sun-moon.pokemon.rattata.flavor_text
+      forms:
+        rattata-alola:
+          name: 'Alolan Rattata'
+          form_name: &sun-moon.pokemon.rattata-alola.forms.rattata-alola.form_name 'Alola Form'
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: &sun-moon.pokemon.rattata-alola.forms.rattata-alola.icon rattata-alola.png
+          sprites:
+            - sun-moon/shiny/rattata-alola.png
+            - sun-moon/rattata-alola.png
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *x-y.pokemon.rattata.forms.rattata.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 15
+    updated-melemele: 15
+    updated-akala: 6
+    updated-ulaula: 6
+    updated-poni: 6
+  pokemon:
+    rattata:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      color: *black-white.pokemon.rattata.color
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      name: Rattata
+      default: *sun-moon.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *ruby-sapphire.pokemon.rattata.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *red-blue.pokemon.rattata.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      mega: *x-y.pokemon.rattata.mega
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *diamond-pearl.pokemon.rattata.abilities
+      flavor_text: &ultra-sun-ultra-moon.pokemon.rattata.flavor_text
+        ultra-sun: |-
+          Its incisors grow continuously throughout its life.
+          If its incisors get too long, this Pokémon
+          becomes unable to eat, and it starves to death.
+        ultra-moon: |-
+          This Pokémon is common but hazardous. Its
+          sharp incisors can easily cut right through
+          hard wood.
+      forms:
+        rattata:
+          name: Rattata
+          form_name: *red-blue.pokemon.rattata.forms.rattata.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *x-y.pokemon.rattata.forms.rattata.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/rattata-default.png
+            - ultra-sun-ultra-moon/shiny/female/rattata-default.png
+            - ultra-sun-ultra-moon/shiny/rattata-default.png
+            - ultra-sun-ultra-moon/rattata-default.png
+          art: *red-blue.pokemon.rattata.forms.rattata.art
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *x-y.pokemon.rattata.forms.rattata.cry
+    rattata-alola:
+      genus: *diamond-pearl.pokemon.rattata.genus
+      color: *black-white.pokemon.rattata.color
+      shape: *diamond-pearl.pokemon.rattata.shape
+      female_rate: *gold-silver.pokemon.rattata.female_rate
+      capture_rate: *red-blue.pokemon.rattata.capture_rate
+      happiness: *ruby-sapphire.pokemon.rattata.happiness
+      baby: *diamond-pearl.pokemon.rattata.baby
+      hatch_steps: *gold-silver.pokemon.rattata.hatch_steps
+      growth_rate: *red-blue.pokemon.rattata.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.rattata.forms_switchable
+      name: *sun-moon.pokemon.rattata-alola.name
+      default: *red-blue.pokemon.rattata.default
+      height: *red-blue.pokemon.rattata.height
+      weight: *sun-moon.pokemon.rattata-alola.weight
+      experience: *diamond-pearl.pokemon.rattata.experience
+      types: *sun-moon.pokemon.rattata-alola.types
+      egg_groups: *gold-silver.pokemon.rattata.egg_groups
+      mega: *x-y.pokemon.rattata.mega
+      stats: *diamond-pearl.pokemon.rattata.stats
+      abilities: *sun-moon.pokemon.rattata-alola.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.rattata-alola.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.rattata-alola.wild_held_items.sun
+      flavor_text: *ultra-sun-ultra-moon.pokemon.rattata.flavor_text
+      forms:
+        rattata-alola:
+          name: 'Alolan Rattata'
+          form_name: *sun-moon.pokemon.rattata-alola.forms.rattata-alola.form_name
+          default: true
+          battle_only: *red-blue.pokemon.rattata.forms.rattata.battle_only
+          icon: *sun-moon.pokemon.rattata-alola.forms.rattata-alola.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/rattata-alola.png
+            - ultra-sun-ultra-moon/rattata-alola.png
+          footprint: *ruby-sapphire.pokemon.rattata.forms.rattata.footprint
+          cry: *x-y.pokemon.rattata.forms.rattata.cry

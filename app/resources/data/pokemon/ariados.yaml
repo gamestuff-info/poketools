@@ -1,0 +1,835 @@
+gold-silver:
+  name: &gold-silver.name ARIADOS
+  position: &gold-silver.position 167
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 168
+    original-johto: 32
+  pokemon:
+    ariados:
+      name: ARIADOS
+      default: &gold-silver.pokemon.ariados.default true
+      capture_rate: &gold-silver.pokemon.ariados.capture_rate 90
+      experience: &gold-silver.pokemon.ariados.experience 134
+      types: &gold-silver.pokemon.ariados.types
+        - bug
+        - poison
+      stats: &gold-silver.pokemon.ariados.stats
+        hp:
+          base_value: 70
+          effort_change: 70
+        attack:
+          base_value: 90
+          effort_change: 90
+        defense:
+          base_value: 70
+          effort_change: 70
+        speed:
+          base_value: 40
+          effort_change: 40
+        special-attack:
+          base_value: 60
+          effort_change: 60
+        special-defense:
+          base_value: 60
+          effort_change: 60
+      growth_rate: &gold-silver.pokemon.ariados.growth_rate fast
+      female_rate: &gold-silver.pokemon.ariados.female_rate 50
+      hatch_steps: &gold-silver.pokemon.ariados.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.ariados.egg_groups
+        - bug
+      genus: &gold-silver.pokemon.ariados.genus 'LONG LEG Pokémon'
+      height: &gold-silver.pokemon.ariados.height 10
+      weight: &gold-silver.pokemon.ariados.weight 335
+      flavor_text:
+        gold: |
+          It spins string
+          not only from its
+          rear but also from
+          its mouth. It is
+          hard to tell which
+          end is which.
+        silver: |
+          A single strand of
+          a special string
+          is endlessly spun
+          out of its rear.
+          The string leads
+          back to its nest.
+      evolution_parent: &gold-silver.pokemon.ariados.evolution_parent spinarak/spinarak
+      evolution_conditions: &gold-silver.pokemon.ariados.evolution_conditions
+        level-up:
+          minimum_level: 22
+      forms:
+        ariados:
+          name: ARIADOS
+          form_name: &gold-silver.pokemon.ariados.forms.ariados.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.ariados.forms.ariados.battle_only false
+          sprites:
+            - gold-silver/ariados-default.png
+            - gold-silver/back/ariados-default.png
+            - gold-silver/shiny/ariados-default.png
+          art: &gold-silver.pokemon.ariados.forms.ariados.art
+            - ariados-default.png
+          cry: &gold-silver.pokemon.ariados.forms.ariados.cry gen5/ariados-default.webm
+          icon: &gold-silver.pokemon.ariados.forms.ariados.icon gen2/bug.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    ariados:
+      name: ARIADOS
+      default: *gold-silver.pokemon.ariados.default
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      experience: *gold-silver.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      stats: *gold-silver.pokemon.ariados.stats
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      genus: *gold-silver.pokemon.ariados.genus
+      height: *gold-silver.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      flavor_text:
+        crystal: |
+          Rather than mak-
+          ing a nest in one
+          specific spot, it
+          wanders in search
+          of food after
+          darkness falls.
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      forms:
+        ariados:
+          name: ARIADOS
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          sprites:
+            - crystal/ariados-default.png
+            - crystal/back/ariados-default.png
+            - crystal/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+          icon: *gold-silver.pokemon.ariados.forms.ariados.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 168
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 323
+  pokemon:
+    ariados:
+      name: ARIADOS
+      default: *gold-silver.pokemon.ariados.default
+      forms_switchable: &ruby-sapphire.pokemon.ariados.forms_switchable false
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      experience: *gold-silver.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      stats: &ruby-sapphire.pokemon.ariados.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 2
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      happiness: &ruby-sapphire.pokemon.ariados.happiness 70
+      abilities: &ruby-sapphire.pokemon.ariados.abilities
+        swarm: &ruby-sapphire.pokemon.ariados.abilities.swarm
+          hidden: &ruby-sapphire.pokemon.ariados.abilities.swarm.hidden false
+          position: 1
+        insomnia: &ruby-sapphire.pokemon.ariados.abilities.insomnia
+          hidden: *ruby-sapphire.pokemon.ariados.abilities.swarm.hidden
+          position: 2
+      genus: *gold-silver.pokemon.ariados.genus
+      height: &ruby-sapphire.pokemon.ariados.height 11
+      weight: *gold-silver.pokemon.ariados.weight
+      flavor_text:
+        ruby: |
+          ARIADOS's feet are tipped with tiny
+          hooked claws that enable it to scuttle
+          on ceilings and vertical walls.
+          This POKéMON constricts the foe with
+          thin and strong silk webbing.
+        sapphire: |
+          ARIADOS's feet are tipped with tiny
+          hooked claws that enable it to scuttle
+          on ceilings and vertical walls.
+          This POKéMON constricts the foe with
+          thin and strong silk webbing.
+      forms:
+        ariados:
+          name: ARIADOS
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: &ruby-sapphire.pokemon.ariados.forms.ariados.icon gen5/ariados-default.png
+          sprites:
+            - ruby-sapphire/ariados-default.png
+            - ruby-sapphire/back/ariados-default.png
+            - ruby-sapphire/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: &ruby-sapphire.pokemon.ariados.forms.ariados.footprint ariados.png
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    ariados:
+      name: ARIADOS
+      default: *gold-silver.pokemon.ariados.default
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      experience: *gold-silver.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      abilities: *ruby-sapphire.pokemon.ariados.abilities
+      genus: *gold-silver.pokemon.ariados.genus
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      flavor_text:
+        emerald: |
+          Its feet are tipped with tiny hooked claws
+          that enable it to scuttle on ceilings and
+          vertical walls. It constricts its foe with
+          thin and strong silk webbing.
+      forms:
+        ariados:
+          name: ARIADOS
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *ruby-sapphire.pokemon.ariados.forms.ariados.icon
+          sprites:
+            - emerald/ariados-default.png
+            - emerald/shiny/ariados-default.png
+            - emerald/animated/ariados-default.webm
+            - emerald/animated/shiny/ariados-default.webm
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 12
+  pokemon:
+    ariados:
+      name: ARIADOS
+      default: *gold-silver.pokemon.ariados.default
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      experience: *gold-silver.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      abilities: *ruby-sapphire.pokemon.ariados.abilities
+      genus: *gold-silver.pokemon.ariados.genus
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      forms:
+        ariados:
+          name: ARIADOS
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          sprites:
+            - colosseum/ariados-default.png
+            - colosseum/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    ariados:
+      name: ARIADOS
+      default: *gold-silver.pokemon.ariados.default
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      experience: *gold-silver.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      abilities: *ruby-sapphire.pokemon.ariados.abilities
+      genus: *gold-silver.pokemon.ariados.genus
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      forms:
+        ariados:
+          name: ARIADOS
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          sprites:
+            - xd/ariados-default.png
+            - xd/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    ariados:
+      name: ARIADOS
+      default: *gold-silver.pokemon.ariados.default
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      experience: *gold-silver.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      abilities: *ruby-sapphire.pokemon.ariados.abilities
+      genus: *gold-silver.pokemon.ariados.genus
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      flavor_text:
+        firered: |
+          A single strand of a special string is
+          endlessly spun out of its rear. The string
+          leads back to its nest.
+        leafgreen: |
+          It spins string not only from its rear but
+          also from its mouth.  It is hard to tell
+          which end is which.
+      forms:
+        ariados:
+          name: ARIADOS
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *ruby-sapphire.pokemon.ariados.forms.ariados.icon
+          sprites:
+            - firered-leafgreen/ariados-default.png
+            - firered-leafgreen/back/ariados-default.png
+            - firered-leafgreen/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Ariados
+  position: &diamond-pearl.position 200
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ariados:
+      genus: &diamond-pearl.pokemon.ariados.genus 'Long Leg Pokémon'
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      shape: &diamond-pearl.pokemon.ariados.shape armor
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: &diamond-pearl.pokemon.ariados.baby false
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      pal_park: &diamond-pearl.pokemon.ariados.pal_park
+        area: field
+        rate: 30
+        score: 50
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: &diamond-pearl.pokemon.ariados.experience 140
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: &diamond-pearl.pokemon.ariados.abilities
+        swarm: *ruby-sapphire.pokemon.ariados.abilities.swarm
+        insomnia: *ruby-sapphire.pokemon.ariados.abilities.insomnia
+        sniper:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        diamond: |
+          It attaches silk to its prey and
+          sets it free. Later, it tracks the
+          silk to the prey and its friends.
+        pearl: |
+          It attaches silk to its prey and
+          sets it free. Later, it tracks the
+          silk to the prey and its friends.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *ruby-sapphire.pokemon.ariados.forms.ariados.icon
+          sprites:
+            - diamond-pearl/back/ariados-default.png
+            - diamond-pearl/back/shiny/ariados-default.png
+            - diamond-pearl/ariados-default.png
+            - diamond-pearl/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ariados:
+      genus: *diamond-pearl.pokemon.ariados.genus
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      shape: *diamond-pearl.pokemon.ariados.shape
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: *diamond-pearl.pokemon.ariados.baby
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ariados.pal_park
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: *diamond-pearl.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: *diamond-pearl.pokemon.ariados.abilities
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        platinum: |
+          It attaches silk to its prey and
+          sets it free. Later, it tracks the
+          silk to the prey and its friends.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *ruby-sapphire.pokemon.ariados.forms.ariados.icon
+          sprites:
+            - platinum/back/ariados-default.png
+            - platinum/back/shiny/ariados-default.png
+            - platinum/ariados-default.png
+            - platinum/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 33
+  pokemon:
+    ariados:
+      genus: *diamond-pearl.pokemon.ariados.genus
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      shape: *diamond-pearl.pokemon.ariados.shape
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: *diamond-pearl.pokemon.ariados.baby
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ariados.pal_park
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: *diamond-pearl.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: *diamond-pearl.pokemon.ariados.abilities
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It spins string not only from its
+          rear but also from its mouth. It’s
+          hard to tell which end is which.
+        soulsilver: |
+          A single strand of a special string
+          is endlessly spun out of its rear.
+          The string leads back to its nest.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 2
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.ariados.forms.ariados.icon
+          sprites:
+            - heartgold-soulsilver/back/ariados-default.png
+            - heartgold-soulsilver/back/shiny/ariados-default.png
+            - heartgold-soulsilver/ariados-default.png
+            - heartgold-soulsilver/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ariados:
+      genus: *diamond-pearl.pokemon.ariados.genus
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      color: &black-white.pokemon.ariados.color red
+      shape: *diamond-pearl.pokemon.ariados.shape
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: *diamond-pearl.pokemon.ariados.baby
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: *diamond-pearl.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: *diamond-pearl.pokemon.ariados.abilities
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        black: |
+          It attaches silk to its prey and
+          sets it free. Later, it tracks the
+          silk to the prey and its friends.
+        white: |
+          It attaches silk to its prey and
+          sets it free. Later, it tracks the
+          silk to the prey and its friends.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *ruby-sapphire.pokemon.ariados.forms.ariados.icon
+          sprites:
+            - black-white/back/ariados-default.png
+            - black-white/back/shiny/ariados-default.png
+            - black-white/ariados-default.png
+            - black-white/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ariados:
+      genus: *diamond-pearl.pokemon.ariados.genus
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      color: *black-white.pokemon.ariados.color
+      shape: *diamond-pearl.pokemon.ariados.shape
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: *diamond-pearl.pokemon.ariados.baby
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: *diamond-pearl.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: *diamond-pearl.pokemon.ariados.abilities
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        black-2: |
+          It attaches silk to its prey and
+          sets it free. Later, it tracks the
+          silk to the prey and its friends.
+        white-2: |
+          It attaches silk to its prey and
+          sets it free. Later, it tracks the
+          silk to the prey and its friends.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *ruby-sapphire.pokemon.ariados.forms.ariados.icon
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *gold-silver.pokemon.ariados.forms.ariados.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 108
+  pokemon:
+    ariados:
+      genus: *diamond-pearl.pokemon.ariados.genus
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      color: *black-white.pokemon.ariados.color
+      shape: *diamond-pearl.pokemon.ariados.shape
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: *diamond-pearl.pokemon.ariados.baby
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: *diamond-pearl.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      mega: &x-y.pokemon.ariados.mega false
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: *diamond-pearl.pokemon.ariados.abilities
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        x: |
+          It spins string not only from its rear but also from
+          its mouth. It’s hard to tell which end is which.
+        'y': |
+          It attaches silk to its prey and sets it free. Later,
+          it tracks the silk to the prey and its friends.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: &x-y.pokemon.ariados.forms.ariados.icon ariados-default.png
+          sprites:
+            - x-y/ariados-default.png
+            - x-y/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: &x-y.pokemon.ariados.forms.ariados.cry ariados-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ariados:
+      genus: *diamond-pearl.pokemon.ariados.genus
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      color: *black-white.pokemon.ariados.color
+      shape: *diamond-pearl.pokemon.ariados.shape
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: *diamond-pearl.pokemon.ariados.baby
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: *diamond-pearl.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      mega: *x-y.pokemon.ariados.mega
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: *diamond-pearl.pokemon.ariados.abilities
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Ariados’s feet are tipped with tiny hooked claws that enable it
+          to scuttle on ceilings and vertical walls. This Pokémon
+          constricts the foe with thin and strong silk webbing.
+        alpha-sapphire: |
+          Ariados’s feet are tipped with tiny hooked claws that enable it
+          to scuttle on ceilings and vertical walls. This Pokémon
+          constricts the foe with thin and strong silk webbing.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *x-y.pokemon.ariados.forms.ariados.icon
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *x-y.pokemon.ariados.forms.ariados.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/ariados-default.png
+            - omega-ruby-alpha-sapphire/shiny/ariados-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 23
+    original-melemele: 23
+    original-ulaula: 11
+  pokemon:
+    ariados:
+      genus: *diamond-pearl.pokemon.ariados.genus
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      color: *black-white.pokemon.ariados.color
+      shape: *diamond-pearl.pokemon.ariados.shape
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: *diamond-pearl.pokemon.ariados.baby
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: *diamond-pearl.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      mega: *x-y.pokemon.ariados.mega
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: *diamond-pearl.pokemon.ariados.abilities
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        sun: |-
+          There are some areas where people use the
+          string Ariados spins for their own weaving.
+          The resulting cloth is popular for its strength.
+        moon: |-
+          It spins thread from both its rear and its mouth.
+          Then it wraps its prey up in thread and sips
+          their bodily fluids at its leisure.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *x-y.pokemon.ariados.forms.ariados.icon
+          sprites:
+            - sun-moon/ariados-default.png
+            - sun-moon/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *x-y.pokemon.ariados.forms.ariados.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 23
+    updated-melemele: 23
+    updated-ulaula: 11
+  pokemon:
+    ariados:
+      genus: *diamond-pearl.pokemon.ariados.genus
+      evolution_parent: *gold-silver.pokemon.ariados.evolution_parent
+      color: *black-white.pokemon.ariados.color
+      shape: *diamond-pearl.pokemon.ariados.shape
+      female_rate: *gold-silver.pokemon.ariados.female_rate
+      capture_rate: *gold-silver.pokemon.ariados.capture_rate
+      happiness: *ruby-sapphire.pokemon.ariados.happiness
+      baby: *diamond-pearl.pokemon.ariados.baby
+      hatch_steps: *gold-silver.pokemon.ariados.hatch_steps
+      growth_rate: *gold-silver.pokemon.ariados.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ariados.forms_switchable
+      name: Ariados
+      default: *gold-silver.pokemon.ariados.default
+      height: *ruby-sapphire.pokemon.ariados.height
+      weight: *gold-silver.pokemon.ariados.weight
+      experience: *diamond-pearl.pokemon.ariados.experience
+      types: *gold-silver.pokemon.ariados.types
+      egg_groups: *gold-silver.pokemon.ariados.egg_groups
+      mega: *x-y.pokemon.ariados.mega
+      stats: *ruby-sapphire.pokemon.ariados.stats
+      abilities: *diamond-pearl.pokemon.ariados.abilities
+      evolution_conditions: *gold-silver.pokemon.ariados.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Every night, it wanders around in search of
+          prey, whose movements it restrains by spewing
+          threads before it bites into them with its fangs.
+        ultra-moon: |-
+          It spews threads from its mouth to catch its
+          prey. When night falls, it leaves its web to go
+          hunt aggressively.
+      forms:
+        ariados:
+          name: Ariados
+          form_name: *gold-silver.pokemon.ariados.forms.ariados.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.ariados.forms.ariados.battle_only
+          icon: *x-y.pokemon.ariados.forms.ariados.icon
+          sprites:
+            - ultra-sun-ultra-moon/ariados-default.png
+            - ultra-sun-ultra-moon/shiny/ariados-default.png
+          art: *gold-silver.pokemon.ariados.forms.ariados.art
+          footprint: *ruby-sapphire.pokemon.ariados.forms.ariados.footprint
+          cry: *x-y.pokemon.ariados.forms.ariados.cry

@@ -1,0 +1,43 @@
+@import "bootstrap";
+
+.pkt-pokemon-evolution {
+    @extend .overflow-auto;
+
+    .pkt-pokemon-evolution-card {
+        @extend .mx-1;
+
+        .pkt-pokemon-evolution-condition {
+            text-align: left;
+        }
+
+        &.active {
+            @extend .border;
+            @extend .border-dark;
+        }
+
+        .card-body {
+            @extend .p-1;
+
+            .pkt-text p:last-of-type {
+                @extend .mb-0;
+            }
+        }
+    }
+
+    .reactOrgChart {
+        td {
+            // The react-org-chart CSS overrides the padding on ALL table cells, which is a bit rude.  Force it to be
+            // more specific and only affect org chart parts.
+            padding: $table-cell-padding-sm;
+
+            &.nodeGroupCellLines, &.nodeCell, &.nodeGroupCell {
+                @extend .p-0;
+            }
+        }
+
+        .nodeLineTable td {
+            border-width: $border-width;
+            border-color: $dark;
+        }
+    }
+}

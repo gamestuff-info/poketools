@@ -1,0 +1,802 @@
+gold-silver:
+  name: &gold-silver.name PINECO
+  position: &gold-silver.position 203
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 204
+    original-johto: 92
+    original-johto-abc: 151
+  pokemon:
+    pineco:
+      name: PINECO
+      default: &gold-silver.pokemon.pineco.default true
+      capture_rate: &gold-silver.pokemon.pineco.capture_rate 190
+      experience: &gold-silver.pokemon.pineco.experience 60
+      types: &gold-silver.pokemon.pineco.types
+        - bug
+      stats: &gold-silver.pokemon.pineco.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 90
+          effort_change: 90
+        speed:
+          base_value: 15
+          effort_change: 15
+        special-attack:
+          base_value: 35
+          effort_change: 35
+        special-defense:
+          base_value: 35
+          effort_change: 35
+      growth_rate: &gold-silver.pokemon.pineco.growth_rate medium
+      female_rate: &gold-silver.pokemon.pineco.female_rate 50
+      hatch_steps: &gold-silver.pokemon.pineco.hatch_steps 20
+      egg_groups: *gold-silver.pokemon.pineco.types
+      genus: &gold-silver.pokemon.pineco.genus 'BAGWORM Pokémon'
+      height: &gold-silver.pokemon.pineco.height 6
+      weight: &gold-silver.pokemon.pineco.weight 72
+      flavor_text:
+        gold: |
+          It likes to make
+          its shell thicker
+          by adding layers
+          of tree bark. The
+          additional weight
+          doesn't bother it.
+        silver: |
+          It hangs and waits
+          for flying insect
+          prey to come near.
+          It does not move
+          about much on its
+          own.
+      forms:
+        pineco:
+          name: PINECO
+          form_name: &gold-silver.pokemon.pineco.forms.pineco.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.pineco.forms.pineco.battle_only false
+          sprites:
+            - gold-silver/pineco-default.png
+            - gold-silver/back/pineco-default.png
+            - gold-silver/shiny/pineco-default.png
+          art: &gold-silver.pokemon.pineco.forms.pineco.art
+            - pineco-default.png
+          cry: &gold-silver.pokemon.pineco.forms.pineco.cry gen5/pineco-default.webm
+          icon: &gold-silver.pokemon.pineco.forms.pineco.icon gen2/bug.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    pineco:
+      name: PINECO
+      default: *gold-silver.pokemon.pineco.default
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      experience: *gold-silver.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      stats: *gold-silver.pokemon.pineco.stats
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      egg_groups: *gold-silver.pokemon.pineco.types
+      genus: *gold-silver.pokemon.pineco.genus
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      flavor_text:
+        crystal: |
+          It spits out a
+          fluid that it uses
+          to glue tree bark
+          to its body. The
+          fluid hardens when
+          it touches air.
+      forms:
+        pineco:
+          name: PINECO
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          sprites:
+            - crystal/pineco-default.png
+            - crystal/back/pineco-default.png
+            - crystal/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+          icon: *gold-silver.pokemon.pineco.forms.pineco.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 204
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 347
+  pokemon:
+    pineco:
+      name: PINECO
+      default: *gold-silver.pokemon.pineco.default
+      forms_switchable: &ruby-sapphire.pokemon.pineco.forms_switchable false
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      experience: *gold-silver.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      stats: &ruby-sapphire.pokemon.pineco.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 1
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      egg_groups: *gold-silver.pokemon.pineco.types
+      happiness: &ruby-sapphire.pokemon.pineco.happiness 70
+      abilities: &ruby-sapphire.pokemon.pineco.abilities
+        sturdy: &ruby-sapphire.pokemon.pineco.abilities.sturdy
+          hidden: false
+          position: 1
+      genus: *gold-silver.pokemon.pineco.genus
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      flavor_text:
+        ruby: |
+          PINECO hangs from a tree branch and
+          patiently waits for prey to come along.
+          If the POKéMON is disturbed while
+          eating by someone shaking its tree, it
+          drops down to the ground and explodes
+          with no warning.
+        sapphire: |
+          PINECO hangs from a tree branch and
+          patiently waits for prey to come along.
+          If the POKéMON is disturbed while
+          eating by someone shaking its tree, it
+          drops down to the ground and explodes
+          with no warning.
+      forms:
+        pineco:
+          name: PINECO
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: &ruby-sapphire.pokemon.pineco.forms.pineco.icon gen5/pineco-default.png
+          sprites:
+            - ruby-sapphire/pineco-default.png
+            - ruby-sapphire/back/pineco-default.png
+            - ruby-sapphire/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: &ruby-sapphire.pokemon.pineco.forms.pineco.footprint pineco.png
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    pineco:
+      name: PINECO
+      default: *gold-silver.pokemon.pineco.default
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      experience: *gold-silver.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      stats: *ruby-sapphire.pokemon.pineco.stats
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      egg_groups: *gold-silver.pokemon.pineco.types
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      abilities: *ruby-sapphire.pokemon.pineco.abilities
+      genus: *gold-silver.pokemon.pineco.genus
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      flavor_text:
+        emerald: |
+          A PINECO hangs from a tree branch and
+          waits for prey. While eating,  if it is
+          disturbed by someone shaking its tree, it
+          falls on the ground and suddenly explodes.
+      forms:
+        pineco:
+          name: PINECO
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *ruby-sapphire.pokemon.pineco.forms.pineco.icon
+          sprites:
+            - emerald/pineco-default.png
+            - emerald/shiny/pineco-default.png
+            - emerald/animated/pineco-default.webm
+            - emerald/animated/shiny/pineco-default.webm
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 244
+  pokemon:
+    pineco:
+      name: PINECO
+      default: *gold-silver.pokemon.pineco.default
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      experience: *gold-silver.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      stats: *ruby-sapphire.pokemon.pineco.stats
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      abilities: *ruby-sapphire.pokemon.pineco.abilities
+      genus: *gold-silver.pokemon.pineco.genus
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      forms:
+        pineco:
+          name: PINECO
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          sprites:
+            - colosseum/pineco-default.png
+            - colosseum/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    pineco:
+      name: PINECO
+      default: *gold-silver.pokemon.pineco.default
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      experience: *gold-silver.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      stats: *ruby-sapphire.pokemon.pineco.stats
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      abilities: *ruby-sapphire.pokemon.pineco.abilities
+      genus: *gold-silver.pokemon.pineco.genus
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      forms:
+        pineco:
+          name: PINECO
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          sprites:
+            - xd/pineco-default.png
+            - xd/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    pineco:
+      name: PINECO
+      default: *gold-silver.pokemon.pineco.default
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      experience: *gold-silver.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      stats: *ruby-sapphire.pokemon.pineco.stats
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      egg_groups: *gold-silver.pokemon.pineco.types
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      abilities: *ruby-sapphire.pokemon.pineco.abilities
+      genus: *gold-silver.pokemon.pineco.genus
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      flavor_text:
+        firered: |
+          It hangs and waits for flying-insect prey
+          to come near. It does not move about
+          much on its own.
+        leafgreen: |
+          It likes to make its shell thicker by
+          adding layers of tree bark.  The extra
+          weight doesn't bother it.
+      forms:
+        pineco:
+          name: PINECO
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *ruby-sapphire.pokemon.pineco.forms.pineco.icon
+          sprites:
+            - firered-leafgreen/pineco-default.png
+            - firered-leafgreen/back/pineco-default.png
+            - firered-leafgreen/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+diamond-pearl:
+  name: &diamond-pearl.name Pineco
+  position: &diamond-pearl.position 235
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pineco:
+      genus: &diamond-pearl.pokemon.pineco.genus 'Bagworm Pokémon'
+      shape: &diamond-pearl.pokemon.pineco.shape ball
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: &diamond-pearl.pokemon.pineco.baby false
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      pal_park: &diamond-pearl.pokemon.pineco.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: &diamond-pearl.pokemon.pineco.experience 58
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      stats: &diamond-pearl.pokemon.pineco.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 1
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.pineco.abilities
+      flavor_text:
+        diamond: |
+          It looks just like a pinecone.
+          Its shell protects it from bird
+          Pokémon that peck it by mistake.
+        pearl: |
+          It looks just like a pinecone.
+          Its shell protects it from bird
+          Pokémon that peck it by mistake.
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *ruby-sapphire.pokemon.pineco.forms.pineco.icon
+          sprites:
+            - diamond-pearl/pineco-default.png
+            - diamond-pearl/back/pineco-default.png
+            - diamond-pearl/back/shiny/pineco-default.png
+            - diamond-pearl/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pineco:
+      genus: *diamond-pearl.pokemon.pineco.genus
+      shape: *diamond-pearl.pokemon.pineco.shape
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: *diamond-pearl.pokemon.pineco.baby
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      pal_park: *diamond-pearl.pokemon.pineco.pal_park
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: *diamond-pearl.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      stats: *diamond-pearl.pokemon.pineco.stats
+      abilities: *ruby-sapphire.pokemon.pineco.abilities
+      flavor_text:
+        platinum: |
+          It looks just like a pinecone.
+          Its shell protects it from bird
+          Pokémon that peck it by mistake.
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *ruby-sapphire.pokemon.pineco.forms.pineco.icon
+          sprites:
+            - platinum/pineco-default.png
+            - platinum/back/pineco-default.png
+            - platinum/back/shiny/pineco-default.png
+            - platinum/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 93
+  pokemon:
+    pineco:
+      genus: *diamond-pearl.pokemon.pineco.genus
+      shape: *diamond-pearl.pokemon.pineco.shape
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: *diamond-pearl.pokemon.pineco.baby
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      pal_park: *diamond-pearl.pokemon.pineco.pal_park
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: *diamond-pearl.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      stats: *diamond-pearl.pokemon.pineco.stats
+      abilities: *ruby-sapphire.pokemon.pineco.abilities
+      flavor_text:
+        heartgold: |
+          It likes to make its shell thicker
+          by adding layers of tree bark. The
+          additional weight doesn’t bother it.
+        soulsilver: |
+          It hangs and waits for flying insect
+          prey to come near. It does not move
+          about much on its own.
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-5
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-5
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.pineco.forms.pineco.icon
+          sprites:
+            - heartgold-soulsilver/pineco-default.png
+            - heartgold-soulsilver/back/pineco-default.png
+            - heartgold-soulsilver/back/shiny/pineco-default.png
+            - heartgold-soulsilver/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pineco:
+      genus: *diamond-pearl.pokemon.pineco.genus
+      color: &black-white.pokemon.pineco.color gray
+      shape: *diamond-pearl.pokemon.pineco.shape
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: *diamond-pearl.pokemon.pineco.baby
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: *diamond-pearl.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      stats: *diamond-pearl.pokemon.pineco.stats
+      abilities: &black-white.pokemon.pineco.abilities
+        sturdy: *ruby-sapphire.pokemon.pineco.abilities.sturdy
+        overcoat:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It looks just like a pinecone.
+          Its shell protects it from bird
+          Pokémon that peck it by mistake.
+        white: |
+          It looks just like a pinecone.
+          Its shell protects it from bird
+          Pokémon that peck it by mistake.
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *ruby-sapphire.pokemon.pineco.forms.pineco.icon
+          sprites:
+            - black-white/pineco-default.png
+            - black-white/back/pineco-default.png
+            - black-white/back/shiny/pineco-default.png
+            - black-white/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pineco:
+      genus: *diamond-pearl.pokemon.pineco.genus
+      color: *black-white.pokemon.pineco.color
+      shape: *diamond-pearl.pokemon.pineco.shape
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: *diamond-pearl.pokemon.pineco.baby
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: *diamond-pearl.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      stats: *diamond-pearl.pokemon.pineco.stats
+      abilities: *black-white.pokemon.pineco.abilities
+      flavor_text:
+        black-2: |
+          It looks just like a pinecone.
+          Its shell protects it from bird
+          Pokémon that peck it by mistake.
+        white-2: |
+          It looks just like a pinecone.
+          Its shell protects it from bird
+          Pokémon that peck it by mistake.
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *ruby-sapphire.pokemon.pineco.forms.pineco.icon
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *gold-silver.pokemon.pineco.forms.pineco.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pineco:
+      genus: *diamond-pearl.pokemon.pineco.genus
+      color: *black-white.pokemon.pineco.color
+      shape: *diamond-pearl.pokemon.pineco.shape
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: *diamond-pearl.pokemon.pineco.baby
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: *diamond-pearl.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      mega: &x-y.pokemon.pineco.mega false
+      stats: *diamond-pearl.pokemon.pineco.stats
+      abilities: *black-white.pokemon.pineco.abilities
+      flavor_text:
+        x: |
+          It likes to make its shell thicker by adding layers of
+          tree bark. The additional weight doesn’t bother it.
+        'y': |
+          It looks just like a pinecone. Its shell protects it
+          from bird Pokémon that peck it by mistake.
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: &x-y.pokemon.pineco.forms.pineco.icon pineco-default.png
+          sprites:
+            - x-y/pineco-default.png
+            - x-y/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: &x-y.pokemon.pineco.forms.pineco.cry pineco-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pineco:
+      genus: *diamond-pearl.pokemon.pineco.genus
+      color: *black-white.pokemon.pineco.color
+      shape: *diamond-pearl.pokemon.pineco.shape
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: *diamond-pearl.pokemon.pineco.baby
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: *diamond-pearl.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      mega: *x-y.pokemon.pineco.mega
+      stats: *diamond-pearl.pokemon.pineco.stats
+      abilities: *black-white.pokemon.pineco.abilities
+      flavor_text:
+        omega-ruby: |
+          Pineco hangs from a tree branch and patiently waits for prey to
+          come along. If the Pokémon is disturbed while eating by
+          someone shaking its tree, it drops down to the ground and
+          explodes with no warning.
+        alpha-sapphire: |
+          Pineco hangs from a tree branch and patiently waits for prey to
+          come along. If the Pokémon is disturbed while eating by
+          someone shaking its tree, it drops down to the ground and
+          explodes with no warning.
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *x-y.pokemon.pineco.forms.pineco.icon
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *x-y.pokemon.pineco.forms.pineco.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/pineco-default.png
+            - omega-ruby-alpha-sapphire/shiny/pineco-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    pineco:
+      genus: *diamond-pearl.pokemon.pineco.genus
+      color: *black-white.pokemon.pineco.color
+      shape: *diamond-pearl.pokemon.pineco.shape
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: *diamond-pearl.pokemon.pineco.baby
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: *diamond-pearl.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      mega: *x-y.pokemon.pineco.mega
+      stats: *diamond-pearl.pokemon.pineco.stats
+      abilities: *black-white.pokemon.pineco.abilities
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *x-y.pokemon.pineco.forms.pineco.icon
+          sprites:
+            - sun-moon/pineco-default.png
+            - sun-moon/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *x-y.pokemon.pineco.forms.pineco.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 268
+    updated-ulaula: 89
+  pokemon:
+    pineco:
+      genus: *diamond-pearl.pokemon.pineco.genus
+      color: *black-white.pokemon.pineco.color
+      shape: *diamond-pearl.pokemon.pineco.shape
+      female_rate: *gold-silver.pokemon.pineco.female_rate
+      capture_rate: *gold-silver.pokemon.pineco.capture_rate
+      happiness: *ruby-sapphire.pokemon.pineco.happiness
+      baby: *diamond-pearl.pokemon.pineco.baby
+      hatch_steps: *gold-silver.pokemon.pineco.hatch_steps
+      growth_rate: *gold-silver.pokemon.pineco.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pineco.forms_switchable
+      name: Pineco
+      default: *gold-silver.pokemon.pineco.default
+      height: *gold-silver.pokemon.pineco.height
+      weight: *gold-silver.pokemon.pineco.weight
+      experience: *diamond-pearl.pokemon.pineco.experience
+      types: *gold-silver.pokemon.pineco.types
+      egg_groups: *gold-silver.pokemon.pineco.types
+      mega: *x-y.pokemon.pineco.mega
+      stats: *diamond-pearl.pokemon.pineco.stats
+      abilities: *black-white.pokemon.pineco.abilities
+      flavor_text:
+        ultra-sun: |-
+          Motionless, it hangs from trees, waiting for
+          its bug Pokémon prey to come to it. Its favorite
+          in Alola is Cutiefly.
+        ultra-moon: |-
+          It sticks tree bark to itself with its saliva,
+          making itself thicker and larger. Elderly Pineco
+          are ridiculously huge.
+      forms:
+        pineco:
+          name: Pineco
+          form_name: *gold-silver.pokemon.pineco.forms.pineco.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.pineco.forms.pineco.battle_only
+          icon: *x-y.pokemon.pineco.forms.pineco.icon
+          sprites:
+            - ultra-sun-ultra-moon/pineco-default.png
+            - ultra-sun-ultra-moon/shiny/pineco-default.png
+          art: *gold-silver.pokemon.pineco.forms.pineco.art
+          footprint: *ruby-sapphire.pokemon.pineco.forms.pineco.footprint
+          cry: *x-y.pokemon.pineco.forms.pineco.cry

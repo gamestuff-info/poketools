@@ -1,0 +1,991 @@
+red-blue:
+  name: &red-blue.name POLIWHIRL
+  position: &red-blue.position 61
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 61
+    kanto: 61
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: &red-blue.pokemon.poliwhirl.default true
+      capture_rate: &red-blue.pokemon.poliwhirl.capture_rate 120
+      experience: &red-blue.pokemon.poliwhirl.experience 131
+      types: &red-blue.pokemon.poliwhirl.types
+        - water
+      stats: &red-blue.pokemon.poliwhirl.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 90
+          effort_change: 90
+        special:
+          base_value: 50
+          effort_change: 50
+      growth_rate: &red-blue.pokemon.poliwhirl.growth_rate medium-slow
+      genus: &red-blue.pokemon.poliwhirl.genus 'TADPOLE Pokémon'
+      height: &red-blue.pokemon.poliwhirl.height 9
+      weight: &red-blue.pokemon.poliwhirl.weight 1995
+      flavor_text:
+        red: |
+          Capable of living
+          in or out of
+          water. When out
+          of water, it
+          sweats to keep
+          its body slimy.
+        blue: |
+          Capable of living
+          in or out of
+          water. When out
+          of water, it
+          sweats to keep
+          its body slimy.
+      evolution_parent: &red-blue.pokemon.poliwhirl.evolution_parent poliwag/poliwag
+      evolution_conditions: &red-blue.pokemon.poliwhirl.evolution_conditions
+        level-up:
+          minimum_level: 25
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: &red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only false
+          sprites:
+            - red-blue/poliwhirl-default.png
+            - red-blue/gray/poliwhirl-default.png
+            - red-blue/back/poliwhirl-default.png
+          art: &red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+            - poliwhirl-default.png
+          cry: &red-blue.pokemon.poliwhirl.forms.poliwhirl.cry gen5/poliwhirl-default.webm
+          icon: &red-blue.pokemon.poliwhirl.forms.poliwhirl.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: *red-blue.pokemon.poliwhirl.default
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      experience: *red-blue.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      stats: *red-blue.pokemon.poliwhirl.stats
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      genus: *red-blue.pokemon.poliwhirl.genus
+      height: *red-blue.pokemon.poliwhirl.height
+      weight: *red-blue.pokemon.poliwhirl.weight
+      flavor_text:
+        yellow: |
+          Under attack, it
+          uses its belly
+          spiral to put the
+          foe to sleep.  It
+          then makes its
+          escape.
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          sprites:
+            - yellow/poliwhirl-default.png
+            - yellow/gray/poliwhirl-default.png
+            - yellow/back/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+          icon: *red-blue.pokemon.poliwhirl.forms.poliwhirl.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 60
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 72
+    original-johto-abc: 155
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: *red-blue.pokemon.poliwhirl.default
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      experience: *red-blue.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      stats: &gold-silver.pokemon.poliwhirl.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 65
+          effort_change: 65
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 90
+          effort_change: 90
+        special-attack:
+          base_value: 50
+          effort_change: 50
+        special-defense:
+          base_value: 50
+          effort_change: 50
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      female_rate: &gold-silver.pokemon.poliwhirl.female_rate 50
+      hatch_steps: &gold-silver.pokemon.poliwhirl.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.poliwhirl.egg_groups
+        - water1
+      wild_held_items:
+        gold: &gold-silver.pokemon.poliwhirl.wild_held_items.gold
+          kings-rock: 2
+        silver: *gold-silver.pokemon.poliwhirl.wild_held_items.gold
+      genus: *red-blue.pokemon.poliwhirl.genus
+      height: *red-blue.pokemon.poliwhirl.height
+      weight: &gold-silver.pokemon.poliwhirl.weight 199
+      flavor_text:
+        gold: |
+          The swirl on its
+          belly subtly un-
+          dulates. Staring
+          at it may gradual-
+          ly cause drowsi-
+          ness.
+        silver: |
+          The skin on most
+          of its body is
+          moist. However,
+          the skin on its
+          belly spiral feels
+          smooth.
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          sprites:
+            - gold-silver/poliwhirl-default.png
+            - gold-silver/back/poliwhirl-default.png
+            - gold-silver/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+          icon: &gold-silver.pokemon.poliwhirl.forms.poliwhirl.icon gen2/poliwag.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: *red-blue.pokemon.poliwhirl.default
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      experience: *red-blue.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      stats: *gold-silver.pokemon.poliwhirl.stats
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.poliwhirl.wild_held_items.gold
+      genus: *red-blue.pokemon.poliwhirl.genus
+      height: *red-blue.pokemon.poliwhirl.height
+      weight: *gold-silver.pokemon.poliwhirl.weight
+      flavor_text:
+        crystal: |
+          Though it is
+          skilled at walk-
+          ing, it prefers to
+          live underwater
+          where there is
+          less danger.
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          sprites:
+            - crystal/poliwhirl-default.png
+            - crystal/back/poliwhirl-default.png
+            - crystal/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+          icon: *gold-silver.pokemon.poliwhirl.forms.poliwhirl.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 248
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: *red-blue.pokemon.poliwhirl.default
+      forms_switchable: &ruby-sapphire.pokemon.poliwhirl.forms_switchable false
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      experience: *red-blue.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      stats: &ruby-sapphire.pokemon.poliwhirl.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 2
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+          kings-rock: 5
+        sapphire: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.poliwhirl.happiness 70
+      abilities: &ruby-sapphire.pokemon.poliwhirl.abilities
+        water-absorb: &ruby-sapphire.pokemon.poliwhirl.abilities.water-absorb
+          hidden: &ruby-sapphire.pokemon.poliwhirl.abilities.water-absorb.hidden false
+          position: 1
+        damp: &ruby-sapphire.pokemon.poliwhirl.abilities.damp
+          hidden: *ruby-sapphire.pokemon.poliwhirl.abilities.water-absorb.hidden
+          position: 2
+      genus: *red-blue.pokemon.poliwhirl.genus
+      height: &ruby-sapphire.pokemon.poliwhirl.height 10
+      weight: &ruby-sapphire.pokemon.poliwhirl.weight 200
+      flavor_text:
+        ruby: |
+          The surface of POLIWHIRL's body is
+          always wet and slick with an oily fluid.
+          Because of this greasy covering, it can
+          easily slip and slide out of the clutches
+          of any enemy in battle.
+        sapphire: |
+          The surface of POLIWHIRL's body is
+          always wet and slick with an oily fluid.
+          Because of this greasy covering, it can
+          easily slip and slide out of the clutches
+          of any enemy in battle.
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: &ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.icon gen5/poliwhirl-default.png
+          sprites:
+            - ruby-sapphire/poliwhirl-default.png
+            - ruby-sapphire/back/poliwhirl-default.png
+            - ruby-sapphire/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: &ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint poliwhirl.png
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: *red-blue.pokemon.poliwhirl.default
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      experience: *red-blue.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      stats: *ruby-sapphire.pokemon.poliwhirl.stats
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      abilities: *ruby-sapphire.pokemon.poliwhirl.abilities
+      genus: *red-blue.pokemon.poliwhirl.genus
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      flavor_text:
+        emerald: |
+          Its body surface is always wet and slick
+          with an oily fluid. Because of this greasy
+          covering, it can easily slip and slide out
+          of the clutches of any enemy in battle.
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.icon
+          sprites:
+            - emerald/poliwhirl-default.png
+            - emerald/shiny/poliwhirl-default.png
+            - emerald/animated/poliwhirl-default.webm
+            - emerald/animated/shiny/poliwhirl-default.webm
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 249
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: *red-blue.pokemon.poliwhirl.default
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      experience: *red-blue.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      stats: *ruby-sapphire.pokemon.poliwhirl.stats
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      abilities: *ruby-sapphire.pokemon.poliwhirl.abilities
+      genus: *red-blue.pokemon.poliwhirl.genus
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          sprites:
+            - colosseum/poliwhirl-default.png
+            - colosseum/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: *red-blue.pokemon.poliwhirl.default
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      experience: *red-blue.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      stats: *ruby-sapphire.pokemon.poliwhirl.stats
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      abilities: *ruby-sapphire.pokemon.poliwhirl.abilities
+      genus: *red-blue.pokemon.poliwhirl.genus
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          sprites:
+            - xd/poliwhirl-default.png
+            - xd/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    poliwhirl:
+      name: POLIWHIRL
+      default: *red-blue.pokemon.poliwhirl.default
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      experience: *red-blue.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      stats: *ruby-sapphire.pokemon.poliwhirl.stats
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      abilities: *ruby-sapphire.pokemon.poliwhirl.abilities
+      genus: *red-blue.pokemon.poliwhirl.genus
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      flavor_text:
+        firered: |
+          Its two legs are well developed.
+          Even though it can live on the ground,
+          it prefers living in water.
+        leafgreen: |
+          It can live in or out of water. When out
+          of water, it constantly sweats to keep its
+          body slimy.
+      forms:
+        poliwhirl:
+          name: POLIWHIRL
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.icon
+          sprites:
+            - firered-leafgreen/poliwhirl-default.png
+            - firered-leafgreen/back/poliwhirl-default.png
+            - firered-leafgreen/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Poliwhirl
+  position: &diamond-pearl.position 66
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    poliwhirl:
+      genus: &diamond-pearl.pokemon.poliwhirl.genus 'Tadpole Pokémon'
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      shape: &diamond-pearl.pokemon.poliwhirl.shape humanoid
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: &diamond-pearl.pokemon.poliwhirl.baby false
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      pal_park: &diamond-pearl.pokemon.poliwhirl.pal_park
+        area: pond
+        rate: 10
+        score: 80
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: &diamond-pearl.pokemon.poliwhirl.experience 135
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      stats: &diamond-pearl.pokemon.poliwhirl.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 2
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.poliwhirl.abilities
+        water-absorb: *ruby-sapphire.pokemon.poliwhirl.abilities.water-absorb
+        damp: *ruby-sapphire.pokemon.poliwhirl.abilities.damp
+        swift-swim:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        diamond: |
+          The spiral pattern on its belly
+          subtly undulates. Staring at it
+          gradually causes drowsiness.
+        pearl: |
+          The spiral pattern on its belly
+          subtly undulates. Staring at it
+          gradually causes drowsiness.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.icon
+          sprites:
+            - diamond-pearl/poliwhirl-default.png
+            - diamond-pearl/back/poliwhirl-default.png
+            - diamond-pearl/back/shiny/poliwhirl-default.png
+            - diamond-pearl/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    poliwhirl:
+      genus: *diamond-pearl.pokemon.poliwhirl.genus
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      shape: *diamond-pearl.pokemon.poliwhirl.shape
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: *diamond-pearl.pokemon.poliwhirl.baby
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      pal_park: *diamond-pearl.pokemon.poliwhirl.pal_park
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: *diamond-pearl.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      stats: *diamond-pearl.pokemon.poliwhirl.stats
+      abilities: *diamond-pearl.pokemon.poliwhirl.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        platinum: |
+          The spiral pattern on its belly
+          subtly undulates. Staring at it
+          gradually causes drowsiness.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.icon
+          sprites:
+            - platinum/poliwhirl-default.png
+            - platinum/back/poliwhirl-default.png
+            - platinum/back/shiny/poliwhirl-default.png
+            - platinum/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 73
+  pokemon:
+    poliwhirl:
+      genus: *diamond-pearl.pokemon.poliwhirl.genus
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      shape: *diamond-pearl.pokemon.poliwhirl.shape
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: *diamond-pearl.pokemon.poliwhirl.baby
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      pal_park: *diamond-pearl.pokemon.poliwhirl.pal_park
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: *diamond-pearl.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      stats: *diamond-pearl.pokemon.poliwhirl.stats
+      abilities: *diamond-pearl.pokemon.poliwhirl.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        heartgold: |
+          The swirl on its belly subtly undulates.
+          Staring at it may gradually
+          cause drowsiness.
+        soulsilver: |
+          The skin on most of its body is
+          moist. However, the skin on its
+          belly spiral feels smooth.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 2-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 2-4
+            stamina:
+              base_value: 3
+              range: 3-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.icon
+          sprites:
+            - heartgold-soulsilver/poliwhirl-default.png
+            - heartgold-soulsilver/back/poliwhirl-default.png
+            - heartgold-soulsilver/back/shiny/poliwhirl-default.png
+            - heartgold-soulsilver/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    poliwhirl:
+      genus: *diamond-pearl.pokemon.poliwhirl.genus
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      color: &black-white.pokemon.poliwhirl.color blue
+      shape: *diamond-pearl.pokemon.poliwhirl.shape
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: *diamond-pearl.pokemon.poliwhirl.baby
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: *diamond-pearl.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      stats: *diamond-pearl.pokemon.poliwhirl.stats
+      abilities: *diamond-pearl.pokemon.poliwhirl.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        black: |
+          The spiral pattern on its belly
+          subtly undulates. Staring at it
+          gradually causes drowsiness.
+        white: |
+          The spiral pattern on its belly
+          subtly undulates. Staring at it
+          gradually causes drowsiness.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.icon
+          sprites:
+            - black-white/poliwhirl-default.png
+            - black-white/back/poliwhirl-default.png
+            - black-white/back/shiny/poliwhirl-default.png
+            - black-white/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    poliwhirl:
+      genus: *diamond-pearl.pokemon.poliwhirl.genus
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      color: *black-white.pokemon.poliwhirl.color
+      shape: *diamond-pearl.pokemon.poliwhirl.shape
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: *diamond-pearl.pokemon.poliwhirl.baby
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: *diamond-pearl.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      stats: *diamond-pearl.pokemon.poliwhirl.stats
+      abilities: *diamond-pearl.pokemon.poliwhirl.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        black-2: |
+          The spiral pattern on its belly
+          subtly undulates. Staring at it
+          gradually causes drowsiness.
+        white-2: |
+          The spiral pattern on its belly
+          subtly undulates. Staring at it
+          gradually causes drowsiness.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.icon
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *red-blue.pokemon.poliwhirl.forms.poliwhirl.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 34
+  pokemon:
+    poliwhirl:
+      genus: *diamond-pearl.pokemon.poliwhirl.genus
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      color: *black-white.pokemon.poliwhirl.color
+      shape: *diamond-pearl.pokemon.poliwhirl.shape
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: *diamond-pearl.pokemon.poliwhirl.baby
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: *diamond-pearl.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      mega: &x-y.pokemon.poliwhirl.mega false
+      stats: *diamond-pearl.pokemon.poliwhirl.stats
+      abilities: *diamond-pearl.pokemon.poliwhirl.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        x: |
+          It can live in or out of water. When out of water,
+          it constantly sweats to keep its body slimy.
+        'y': |
+          Its two legs are well developed. Even though it can
+          live on the ground, it prefers living in water.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: &x-y.pokemon.poliwhirl.forms.poliwhirl.icon poliwhirl-default.png
+          sprites:
+            - x-y/poliwhirl-default.png
+            - x-y/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: &x-y.pokemon.poliwhirl.forms.poliwhirl.cry poliwhirl-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    poliwhirl:
+      genus: *diamond-pearl.pokemon.poliwhirl.genus
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      color: *black-white.pokemon.poliwhirl.color
+      shape: *diamond-pearl.pokemon.poliwhirl.shape
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: *diamond-pearl.pokemon.poliwhirl.baby
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: *diamond-pearl.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      mega: *x-y.pokemon.poliwhirl.mega
+      stats: *diamond-pearl.pokemon.poliwhirl.stats
+      abilities: *diamond-pearl.pokemon.poliwhirl.abilities
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          The surface of Poliwhirl’s body is always wet and slick with
+          a slimy fluid. Because of this slippery covering, it can easily
+          slip and slide out of the clutches of any enemy in battle.
+        alpha-sapphire: |
+          The surface of Poliwhirl’s body is always wet and slick with
+          a slimy fluid. Because of this slippery covering, it can easily
+          slip and slide out of the clutches of any enemy in battle.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *x-y.pokemon.poliwhirl.forms.poliwhirl.icon
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *x-y.pokemon.poliwhirl.forms.poliwhirl.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/poliwhirl-default.png
+            - omega-ruby-alpha-sapphire/shiny/poliwhirl-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 150
+    original-akala: 77
+    original-ulaula: 69
+  pokemon:
+    poliwhirl:
+      genus: *diamond-pearl.pokemon.poliwhirl.genus
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      color: *black-white.pokemon.poliwhirl.color
+      shape: *diamond-pearl.pokemon.poliwhirl.shape
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: *diamond-pearl.pokemon.poliwhirl.baby
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: *diamond-pearl.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      mega: *x-y.pokemon.poliwhirl.mega
+      stats: *diamond-pearl.pokemon.poliwhirl.stats
+      abilities: *diamond-pearl.pokemon.poliwhirl.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        sun: |-
+          Although it can live on land, it prefers to stay in
+          the water, where it has fewer natural enemies.
+        moon: |-
+          It marches over the land in search of bug
+          Pokémon to eat. Then it takes them underwater
+          so it can dine on them where it’s safe.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *x-y.pokemon.poliwhirl.forms.poliwhirl.icon
+          sprites:
+            - sun-moon/poliwhirl-default.png
+            - sun-moon/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *x-y.pokemon.poliwhirl.forms.poliwhirl.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 183
+    updated-akala: 84
+    updated-ulaula: 75
+  pokemon:
+    poliwhirl:
+      genus: *diamond-pearl.pokemon.poliwhirl.genus
+      evolution_parent: *red-blue.pokemon.poliwhirl.evolution_parent
+      color: *black-white.pokemon.poliwhirl.color
+      shape: *diamond-pearl.pokemon.poliwhirl.shape
+      female_rate: *gold-silver.pokemon.poliwhirl.female_rate
+      capture_rate: *red-blue.pokemon.poliwhirl.capture_rate
+      happiness: *ruby-sapphire.pokemon.poliwhirl.happiness
+      baby: *diamond-pearl.pokemon.poliwhirl.baby
+      hatch_steps: *gold-silver.pokemon.poliwhirl.hatch_steps
+      growth_rate: *red-blue.pokemon.poliwhirl.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poliwhirl.forms_switchable
+      name: Poliwhirl
+      default: *red-blue.pokemon.poliwhirl.default
+      height: *ruby-sapphire.pokemon.poliwhirl.height
+      weight: *ruby-sapphire.pokemon.poliwhirl.weight
+      experience: *diamond-pearl.pokemon.poliwhirl.experience
+      types: *red-blue.pokemon.poliwhirl.types
+      egg_groups: *gold-silver.pokemon.poliwhirl.egg_groups
+      mega: *x-y.pokemon.poliwhirl.mega
+      stats: *diamond-pearl.pokemon.poliwhirl.stats
+      abilities: *diamond-pearl.pokemon.poliwhirl.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.poliwhirl.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.poliwhirl.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Although it has become capable of living on
+          land, it spends its time in the water, where
+          its prey, fish Pokémon, are plentiful.
+        ultra-moon: |-
+          Its health suffers when its skin dries out, so be
+          sure to moisturize it diligently.
+      forms:
+        poliwhirl:
+          name: Poliwhirl
+          form_name: *red-blue.pokemon.poliwhirl.forms.poliwhirl.form_name
+          default: true
+          battle_only: *red-blue.pokemon.poliwhirl.forms.poliwhirl.battle_only
+          icon: *x-y.pokemon.poliwhirl.forms.poliwhirl.icon
+          sprites:
+            - ultra-sun-ultra-moon/poliwhirl-default.png
+            - ultra-sun-ultra-moon/shiny/poliwhirl-default.png
+          art: *red-blue.pokemon.poliwhirl.forms.poliwhirl.art
+          footprint: *ruby-sapphire.pokemon.poliwhirl.forms.poliwhirl.footprint
+          cry: *x-y.pokemon.poliwhirl.forms.poliwhirl.cry

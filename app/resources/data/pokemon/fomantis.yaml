@@ -1,0 +1,131 @@
+sun-moon:
+  name: &sun-moon.name Fomantis
+  position: &sun-moon.position 753
+  numbers:
+    national: &sun-moon.numbers.national 753
+    original-alola: 143
+    original-akala: 70
+  pokemon:
+    fomantis:
+      genus: &sun-moon.pokemon.fomantis.genus 'Sickle Grass Pokémon'
+      color: &sun-moon.pokemon.fomantis.color pink
+      shape: &sun-moon.pokemon.fomantis.shape upright
+      female_rate: &sun-moon.pokemon.fomantis.female_rate 50
+      capture_rate: &sun-moon.pokemon.fomantis.capture_rate 190
+      happiness: &sun-moon.pokemon.fomantis.happiness 70
+      baby: &sun-moon.pokemon.fomantis.baby false
+      hatch_steps: &sun-moon.pokemon.fomantis.hatch_steps 20
+      growth_rate: &sun-moon.pokemon.fomantis.growth_rate medium
+      forms_switchable: &sun-moon.pokemon.fomantis.forms_switchable false
+      name: Fomantis
+      default: &sun-moon.pokemon.fomantis.default true
+      height: &sun-moon.pokemon.fomantis.height 3
+      weight: &sun-moon.pokemon.fomantis.weight 15
+      experience: &sun-moon.pokemon.fomantis.experience 50
+      types: &sun-moon.pokemon.fomantis.types
+        - grass
+      egg_groups: &sun-moon.pokemon.fomantis.egg_groups
+        - plant
+      mega: &sun-moon.pokemon.fomantis.mega false
+      stats: &sun-moon.pokemon.fomantis.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 1
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      abilities: &sun-moon.pokemon.fomantis.abilities
+        leaf-guard:
+          hidden: false
+          position: 1
+        contrary:
+          hidden: true
+          position: 3
+      wild_held_items:
+        sun: &sun-moon.pokemon.fomantis.wild_held_items.sun
+          miracle-seed: 5
+        moon: *sun-moon.pokemon.fomantis.wild_held_items.sun
+      flavor_text:
+        sun: |-
+          During the day, it sleeps and soaks up light.
+          When night falls, it walks around looking
+          for a safer place to sleep.
+        moon: |-
+          They give off a sweet and refreshing scent.
+          Cutiefly often gather near the tall grass where
+          Fomantis are hiding.
+      forms:
+        fomantis:
+          name: Fomantis
+          form_name: &sun-moon.pokemon.fomantis.forms.fomantis.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.fomantis.forms.fomantis.battle_only false
+          icon: &sun-moon.pokemon.fomantis.forms.fomantis.icon fomantis-default.png
+          sprites:
+            - sun-moon/fomantis-default.png
+            - sun-moon/shiny/fomantis-default.png
+          footprint: &sun-moon.pokemon.fomantis.forms.fomantis.footprint fomantis.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 176
+    updated-akala: 77
+  pokemon:
+    fomantis:
+      genus: *sun-moon.pokemon.fomantis.genus
+      color: *sun-moon.pokemon.fomantis.color
+      shape: *sun-moon.pokemon.fomantis.shape
+      female_rate: *sun-moon.pokemon.fomantis.female_rate
+      capture_rate: *sun-moon.pokemon.fomantis.capture_rate
+      happiness: *sun-moon.pokemon.fomantis.happiness
+      baby: *sun-moon.pokemon.fomantis.baby
+      hatch_steps: *sun-moon.pokemon.fomantis.hatch_steps
+      growth_rate: *sun-moon.pokemon.fomantis.growth_rate
+      forms_switchable: *sun-moon.pokemon.fomantis.forms_switchable
+      name: Fomantis
+      default: *sun-moon.pokemon.fomantis.default
+      height: *sun-moon.pokemon.fomantis.height
+      weight: *sun-moon.pokemon.fomantis.weight
+      experience: *sun-moon.pokemon.fomantis.experience
+      types: *sun-moon.pokemon.fomantis.types
+      egg_groups: *sun-moon.pokemon.fomantis.egg_groups
+      mega: *sun-moon.pokemon.fomantis.mega
+      stats: *sun-moon.pokemon.fomantis.stats
+      abilities: *sun-moon.pokemon.fomantis.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.fomantis.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.fomantis.wild_held_items.sun
+      flavor_text:
+        ultra-sun: |-
+          When the sun rises, Fomantis spreads its four
+          leaves and bathes in the sunlight. The tip of its
+          head has a pleasant aroma.
+        ultra-moon: |-
+          It loves the sunshine. When it basks in the
+          sunlight regularly, it grows up with
+          vivid coloration.
+      forms:
+        fomantis:
+          name: Fomantis
+          form_name: *sun-moon.pokemon.fomantis.forms.fomantis.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.fomantis.forms.fomantis.battle_only
+          icon: *sun-moon.pokemon.fomantis.forms.fomantis.icon
+          sprites:
+            - ultra-sun-ultra-moon/fomantis-default.png
+            - ultra-sun-ultra-moon/shiny/fomantis-default.png
+          footprint: *sun-moon.pokemon.fomantis.forms.fomantis.footprint

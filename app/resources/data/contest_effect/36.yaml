@@ -1,0 +1,20 @@
+ruby-sapphire: &ruby-sapphire
+  category: special
+  appeal: 2
+  jam: &ruby-sapphire.jam 0
+  flavor_text: |
+    Works well if it's the same
+    type as the one before.
+  description: |
+    The user's appeal points are double those normally given by the move if the move is the same contest type (not
+    battle type) as the move used by the Pokémon before the user.  This calculation is done before considering bonuses,
+    such as combos.
+
+    This move will fail if the Pokémon before it did not move for some reason, such as being nervous or having its turn
+    skipped.
+emerald: *ruby-sapphire
+omega-ruby-alpha-sapphire:
+  appeal: 3
+  jam: *ruby-sapphire.jam
+  flavor_text: 'Excites the audience a lot if used last.'
+  description: 'The audience will become excited if performed at the end.'

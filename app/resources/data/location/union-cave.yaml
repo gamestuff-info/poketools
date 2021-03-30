@@ -1,0 +1,22 @@
+gold-silver: &gold-silver
+  region: &gold-silver.region johto
+  name: &gold-silver.name 'Union Cave'
+  areas: &gold-silver.areas
+    1f:
+      name: 1F
+      default: true
+    b1f:
+      name: B1F
+    b2f:
+      name: B2F
+  map:
+    map: &gold-silver.map.map johto
+    overlay: '<rect width="8" height="8" x="72" y="104" />'
+crystal: *gold-silver
+heartgold-soulsilver:
+  region: *gold-silver.region
+  name: *gold-silver.name
+  areas: *gold-silver.areas
+  map:
+    map: *gold-silver.map.map
+    overlay: '<circle cx="109" cy="117" r="3" />'

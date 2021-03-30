@@ -1,0 +1,844 @@
+gold-silver:
+  name: &gold-silver.name SHUCKLE
+  position: &gold-silver.position 212
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 213
+    original-johto: 165
+    original-johto-abc: 183
+  pokemon:
+    shuckle:
+      name: SHUCKLE
+      default: &gold-silver.pokemon.shuckle.default true
+      capture_rate: &gold-silver.pokemon.shuckle.capture_rate 190
+      experience: &gold-silver.pokemon.shuckle.experience 80
+      types: &gold-silver.pokemon.shuckle.types
+        - bug
+        - rock
+      stats: &gold-silver.pokemon.shuckle.stats
+        hp:
+          base_value: 20
+          effort_change: 20
+        attack:
+          base_value: 10
+          effort_change: 10
+        defense:
+          base_value: 230
+          effort_change: 230
+        speed:
+          base_value: 5
+          effort_change: 5
+        special-attack:
+          base_value: 10
+          effort_change: 10
+        special-defense:
+          base_value: 230
+          effort_change: 10
+      growth_rate: &gold-silver.pokemon.shuckle.growth_rate medium-slow
+      female_rate: &gold-silver.pokemon.shuckle.female_rate 50
+      hatch_steps: &gold-silver.pokemon.shuckle.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.shuckle.egg_groups
+        - bug
+      wild_held_items:
+        gold: &gold-silver.pokemon.shuckle.wild_held_items.gold
+          berry: 2
+        silver: *gold-silver.pokemon.shuckle.wild_held_items.gold
+      genus: &gold-silver.pokemon.shuckle.genus 'MOLD Pokémon'
+      height: &gold-silver.pokemon.shuckle.height 6
+      weight: &gold-silver.pokemon.shuckle.weight 204
+      flavor_text:
+        gold: |
+          The BERRIES it
+          stores in its
+          vase-like shell
+          decompose and
+          become a gooey
+          liquid.
+        silver: |
+          It stores BERRIES
+          inside its shell.
+          To avoid attacks,
+          it hides beneath
+          rocks and remains
+          completely still.
+      forms:
+        shuckle:
+          name: SHUCKLE
+          form_name: &gold-silver.pokemon.shuckle.forms.shuckle.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.shuckle.forms.shuckle.battle_only false
+          sprites:
+            - gold-silver/shuckle-default.png
+            - gold-silver/back/shuckle-default.png
+            - gold-silver/shiny/shuckle-default.png
+          art: &gold-silver.pokemon.shuckle.forms.shuckle.art
+            - shuckle-default.png
+          cry: &gold-silver.pokemon.shuckle.forms.shuckle.cry gen5/shuckle-default.webm
+          icon: &gold-silver.pokemon.shuckle.forms.shuckle.icon gen2/bug.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    shuckle:
+      name: SHUCKLE
+      default: *gold-silver.pokemon.shuckle.default
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      experience: *gold-silver.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      stats: *gold-silver.pokemon.shuckle.stats
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.shuckle.wild_held_items.gold
+      genus: *gold-silver.pokemon.shuckle.genus
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *gold-silver.pokemon.shuckle.weight
+      flavor_text:
+        crystal: |
+          The fluid secreted
+          by its toes carves
+          holes in rocks for
+          nesting and can be
+          mixed with BERRIES
+          to make a drink.
+      forms:
+        shuckle:
+          name: SHUCKLE
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          sprites:
+            - crystal/shuckle-default.png
+            - crystal/back/shuckle-default.png
+            - crystal/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+          icon: *gold-silver.pokemon.shuckle.forms.shuckle.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 213
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 356
+  pokemon:
+    shuckle:
+      name: SHUCKLE
+      default: *gold-silver.pokemon.shuckle.default
+      forms_switchable: &ruby-sapphire.pokemon.shuckle.forms_switchable false
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      experience: *gold-silver.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      stats: &ruby-sapphire.pokemon.shuckle.stats
+        hp:
+          base_value: 20
+          effort_change: 0
+        attack:
+          base_value: 10
+          effort_change: 0
+        defense:
+          base_value: 230
+          effort_change: 1
+        speed:
+          base_value: 5
+          effort_change: 0
+        special-attack:
+          base_value: 10
+          effort_change: 1
+        special-defense:
+          base_value: 20
+          effort_change: 1
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.shuckle.wild_held_items.ruby
+          oran-berry: 100
+        sapphire: *ruby-sapphire.pokemon.shuckle.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.shuckle.happiness 70
+      abilities: &ruby-sapphire.pokemon.shuckle.abilities
+        sturdy: &ruby-sapphire.pokemon.shuckle.abilities.sturdy
+          hidden: &ruby-sapphire.pokemon.shuckle.abilities.sturdy.hidden false
+          position: 1
+      genus: *gold-silver.pokemon.shuckle.genus
+      height: *gold-silver.pokemon.shuckle.height
+      weight: &ruby-sapphire.pokemon.shuckle.weight 205
+      flavor_text:
+        ruby: |
+          SHUCKLE quietly hides itself under
+          rocks, keeping its body concealed
+           inside its hard shell while eating
+          berries it has stored away.
+          The berries mix with its body fluids to
+          become a juice.
+        sapphire: |
+          SHUCKLE quietly hides itself under
+          rocks, keeping its body concealed
+           inside its hard shell while eating
+          berries it has stored away.
+          The berries mix with its body fluids to
+          become a juice.
+      forms:
+        shuckle:
+          name: SHUCKLE
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: &ruby-sapphire.pokemon.shuckle.forms.shuckle.icon gen5/shuckle-default.png
+          sprites:
+            - ruby-sapphire/shuckle-default.png
+            - ruby-sapphire/back/shuckle-default.png
+            - ruby-sapphire/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: &ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint shuckle.png
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    shuckle:
+      name: SHUCKLE
+      default: *gold-silver.pokemon.shuckle.default
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      experience: *gold-silver.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      stats: *ruby-sapphire.pokemon.shuckle.stats
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.shuckle.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      abilities: *ruby-sapphire.pokemon.shuckle.abilities
+      genus: *gold-silver.pokemon.shuckle.genus
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      flavor_text:
+        emerald: |
+          A SHUCKLE hides under rocks, keeping its
+          body concealed inside its shell while
+          eating stored berries. The berries mix with
+          its body fluids to become a juice.
+      forms:
+        shuckle:
+          name: SHUCKLE
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *ruby-sapphire.pokemon.shuckle.forms.shuckle.icon
+          sprites:
+            - emerald/shuckle-default.png
+            - emerald/shiny/shuckle-default.png
+            - emerald/animated/shuckle-default.webm
+            - emerald/animated/shiny/shuckle-default.webm
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 296
+  pokemon:
+    shuckle:
+      name: SHUCKLE
+      default: *gold-silver.pokemon.shuckle.default
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      experience: *gold-silver.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      stats: *ruby-sapphire.pokemon.shuckle.stats
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      abilities: *ruby-sapphire.pokemon.shuckle.abilities
+      genus: *gold-silver.pokemon.shuckle.genus
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      forms:
+        shuckle:
+          name: SHUCKLE
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          sprites:
+            - colosseum/shuckle-default.png
+            - colosseum/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    shuckle:
+      name: SHUCKLE
+      default: *gold-silver.pokemon.shuckle.default
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      experience: *gold-silver.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      stats: *ruby-sapphire.pokemon.shuckle.stats
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      abilities: *ruby-sapphire.pokemon.shuckle.abilities
+      genus: *gold-silver.pokemon.shuckle.genus
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      forms:
+        shuckle:
+          name: SHUCKLE
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          sprites:
+            - xd/shuckle-default.png
+            - xd/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    shuckle:
+      name: SHUCKLE
+      default: *gold-silver.pokemon.shuckle.default
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      experience: *gold-silver.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      stats: *ruby-sapphire.pokemon.shuckle.stats
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+          berry-juice: 100
+        leafgreen: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      abilities: *ruby-sapphire.pokemon.shuckle.abilities
+      genus: *gold-silver.pokemon.shuckle.genus
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      flavor_text:
+        firered: |
+          It stores BERRIES inside its shell.
+          To avoid attacks, it hides beneath rocks
+          and remains completely still.
+        leafgreen: |
+          The BERRIES it stores in its vaselike
+          shell decompose and become a gooey
+          liquid.
+      forms:
+        shuckle:
+          name: SHUCKLE
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *ruby-sapphire.pokemon.shuckle.forms.shuckle.icon
+          sprites:
+            - firered-leafgreen/shuckle-default.png
+            - firered-leafgreen/back/shuckle-default.png
+            - firered-leafgreen/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+diamond-pearl:
+  name: &diamond-pearl.name Shuckle
+  position: &diamond-pearl.position 243
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shuckle:
+      genus: &diamond-pearl.pokemon.shuckle.genus 'Mold Pokémon'
+      shape: &diamond-pearl.pokemon.shuckle.shape armor
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: &diamond-pearl.pokemon.shuckle.baby false
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      pal_park: &diamond-pearl.pokemon.shuckle.pal_park
+        area: sea
+        rate: 10
+        score: 80
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: &diamond-pearl.pokemon.shuckle.experience 177
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      stats: &diamond-pearl.pokemon.shuckle.stats
+        hp:
+          base_value: 20
+          effort_change: 0
+        attack:
+          base_value: 10
+          effort_change: 0
+        defense:
+          base_value: 230
+          effort_change: 1
+        speed:
+          base_value: 5
+          effort_change: 0
+        special-attack:
+          base_value: 10
+          effort_change: 0
+        special-defense:
+          base_value: 230
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.shuckle.abilities
+        sturdy: *ruby-sapphire.pokemon.shuckle.abilities.sturdy
+        gluttony: &diamond-pearl.pokemon.shuckle.abilities.gluttony
+          hidden: *ruby-sapphire.pokemon.shuckle.abilities.sturdy.hidden
+          position: 2
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.shuckle.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.shuckle.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          It stores berries in its shell.
+          The berries eventually ferment to
+          become delicious juices.
+        pearl: |
+          It stores berries in its shell.
+          The berries eventually ferment to
+          become delicious juices.
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *ruby-sapphire.pokemon.shuckle.forms.shuckle.icon
+          sprites:
+            - diamond-pearl/shuckle-default.png
+            - diamond-pearl/back/shuckle-default.png
+            - diamond-pearl/back/shiny/shuckle-default.png
+            - diamond-pearl/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shuckle:
+      genus: *diamond-pearl.pokemon.shuckle.genus
+      shape: *diamond-pearl.pokemon.shuckle.shape
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: *diamond-pearl.pokemon.shuckle.baby
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shuckle.pal_park
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: *diamond-pearl.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      stats: *diamond-pearl.pokemon.shuckle.stats
+      abilities: *diamond-pearl.pokemon.shuckle.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.shuckle.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          It stores berries in its shell.
+          The berries eventually ferment to
+          become delicious juices.
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *ruby-sapphire.pokemon.shuckle.forms.shuckle.icon
+          sprites:
+            - platinum/shuckle-default.png
+            - platinum/back/shuckle-default.png
+            - platinum/back/shiny/shuckle-default.png
+            - platinum/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 168
+  pokemon:
+    shuckle:
+      genus: *diamond-pearl.pokemon.shuckle.genus
+      shape: *diamond-pearl.pokemon.shuckle.shape
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: *diamond-pearl.pokemon.shuckle.baby
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      pal_park: *diamond-pearl.pokemon.shuckle.pal_park
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: *diamond-pearl.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      stats: *diamond-pearl.pokemon.shuckle.stats
+      abilities: *diamond-pearl.pokemon.shuckle.abilities
+      wild_held_items:
+        heartgold: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+        soulsilver: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+      flavor_text:
+        heartgold: |
+          The berries it stores in its
+          vase-like shell decompose and
+          become a gooey liquid.
+        soulsilver: |
+          It stores berries inside its shell.
+          To avoid attacks, it hides beneath
+          rocks and remains completely still.
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-2
+            power:
+              base_value: 1
+              range: 1-4
+            skill:
+              base_value: 1
+              range: 1-2
+            stamina:
+              base_value: 5
+              range: 5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.shuckle.forms.shuckle.icon
+          sprites:
+            - heartgold-soulsilver/shuckle-default.png
+            - heartgold-soulsilver/back/shuckle-default.png
+            - heartgold-soulsilver/back/shiny/shuckle-default.png
+            - heartgold-soulsilver/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shuckle:
+      genus: *diamond-pearl.pokemon.shuckle.genus
+      color: &black-white.pokemon.shuckle.color yellow
+      shape: *diamond-pearl.pokemon.shuckle.shape
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: *diamond-pearl.pokemon.shuckle.baby
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: *diamond-pearl.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      stats: *diamond-pearl.pokemon.shuckle.stats
+      abilities: &black-white.pokemon.shuckle.abilities
+        sturdy: *ruby-sapphire.pokemon.shuckle.abilities.sturdy
+        gluttony: *diamond-pearl.pokemon.shuckle.abilities.gluttony
+        contrary:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+        white: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+      flavor_text:
+        black: |
+          It stores berries in its shell.
+          The berries eventually ferment to
+          become delicious juices.
+        white: |
+          It stores berries in its shell.
+          The berries eventually ferment to
+          become delicious juices.
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *ruby-sapphire.pokemon.shuckle.forms.shuckle.icon
+          sprites:
+            - black-white/shuckle-default.png
+            - black-white/back/shuckle-default.png
+            - black-white/back/shiny/shuckle-default.png
+            - black-white/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 232
+  pokemon:
+    shuckle:
+      genus: *diamond-pearl.pokemon.shuckle.genus
+      color: *black-white.pokemon.shuckle.color
+      shape: *diamond-pearl.pokemon.shuckle.shape
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: *diamond-pearl.pokemon.shuckle.baby
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: *diamond-pearl.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      stats: *diamond-pearl.pokemon.shuckle.stats
+      abilities: *black-white.pokemon.shuckle.abilities
+      wild_held_items:
+        black-2: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+        white-2: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+      flavor_text:
+        black-2: |
+          The berries stored in its
+          vaselike shell eventually
+          become a thick, pulpy juice.
+        white-2: |
+          The berries stored in its
+          vaselike shell eventually
+          become a thick, pulpy juice.
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *ruby-sapphire.pokemon.shuckle.forms.shuckle.icon
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *gold-silver.pokemon.shuckle.forms.shuckle.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 14
+  pokemon:
+    shuckle:
+      genus: *diamond-pearl.pokemon.shuckle.genus
+      color: *black-white.pokemon.shuckle.color
+      shape: *diamond-pearl.pokemon.shuckle.shape
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: *diamond-pearl.pokemon.shuckle.baby
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: *diamond-pearl.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      mega: &x-y.pokemon.shuckle.mega false
+      stats: *diamond-pearl.pokemon.shuckle.stats
+      abilities: *black-white.pokemon.shuckle.abilities
+      wild_held_items:
+        x: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+        'y': *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+      flavor_text:
+        x: |
+          The berries stored in its jar-like shell eventually
+          become a thick, pulpy juice.
+        'y': |
+          It stores berries inside its shell. To avoid attacks,
+          it hides beneath rocks and remains completely still.
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: &x-y.pokemon.shuckle.forms.shuckle.icon shuckle-default.png
+          sprites:
+            - x-y/shuckle-default.png
+            - x-y/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: &x-y.pokemon.shuckle.forms.shuckle.cry shuckle-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shuckle:
+      genus: *diamond-pearl.pokemon.shuckle.genus
+      color: *black-white.pokemon.shuckle.color
+      shape: *diamond-pearl.pokemon.shuckle.shape
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: *diamond-pearl.pokemon.shuckle.baby
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: *diamond-pearl.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      mega: *x-y.pokemon.shuckle.mega
+      stats: *diamond-pearl.pokemon.shuckle.stats
+      abilities: *black-white.pokemon.shuckle.abilities
+      flavor_text:
+        omega-ruby: |
+          Shuckle quietly hides itself under rocks, keeping its body
+          concealed inside its hard shell while eating berries it has
+          stored away. The berries mix with its body fluids to become
+          a juice.
+        alpha-sapphire: |
+          Shuckle quietly hides itself under rocks, keeping its body
+          concealed inside its hard shell while eating berries it has
+          stored away. The berries mix with its body fluids to become
+          a juice.
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *x-y.pokemon.shuckle.forms.shuckle.icon
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *x-y.pokemon.shuckle.forms.shuckle.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shuckle-default.png
+            - omega-ruby-alpha-sapphire/shiny/shuckle-default.png
+      wild_held_items:
+        omega-ruby: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+        alpha-sapphire: *firered-leafgreen.pokemon.shuckle.wild_held_items.firered
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shuckle:
+      genus: *diamond-pearl.pokemon.shuckle.genus
+      color: *black-white.pokemon.shuckle.color
+      shape: *diamond-pearl.pokemon.shuckle.shape
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: *diamond-pearl.pokemon.shuckle.baby
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: *diamond-pearl.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      mega: *x-y.pokemon.shuckle.mega
+      stats: *diamond-pearl.pokemon.shuckle.stats
+      abilities: *black-white.pokemon.shuckle.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.shuckle.wild_held_items.sun
+          berry-juice: 5
+        moon: *sun-moon.pokemon.shuckle.wild_held_items.sun
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *x-y.pokemon.shuckle.forms.shuckle.icon
+          sprites:
+            - sun-moon/shuckle-default.png
+            - sun-moon/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *x-y.pokemon.shuckle.forms.shuckle.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    shuckle:
+      genus: *diamond-pearl.pokemon.shuckle.genus
+      color: *black-white.pokemon.shuckle.color
+      shape: *diamond-pearl.pokemon.shuckle.shape
+      female_rate: *gold-silver.pokemon.shuckle.female_rate
+      capture_rate: *gold-silver.pokemon.shuckle.capture_rate
+      happiness: *ruby-sapphire.pokemon.shuckle.happiness
+      baby: *diamond-pearl.pokemon.shuckle.baby
+      hatch_steps: *gold-silver.pokemon.shuckle.hatch_steps
+      growth_rate: *gold-silver.pokemon.shuckle.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.shuckle.forms_switchable
+      name: Shuckle
+      default: *gold-silver.pokemon.shuckle.default
+      height: *gold-silver.pokemon.shuckle.height
+      weight: *ruby-sapphire.pokemon.shuckle.weight
+      experience: *diamond-pearl.pokemon.shuckle.experience
+      types: *gold-silver.pokemon.shuckle.types
+      egg_groups: *gold-silver.pokemon.shuckle.egg_groups
+      mega: *x-y.pokemon.shuckle.mega
+      stats: *diamond-pearl.pokemon.shuckle.stats
+      abilities: *black-white.pokemon.shuckle.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.shuckle.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.shuckle.wild_held_items.sun
+      forms:
+        shuckle:
+          name: Shuckle
+          form_name: *gold-silver.pokemon.shuckle.forms.shuckle.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.shuckle.forms.shuckle.battle_only
+          icon: *x-y.pokemon.shuckle.forms.shuckle.icon
+          sprites:
+            - ultra-sun-ultra-moon/shuckle-default.png
+            - ultra-sun-ultra-moon/shiny/shuckle-default.png
+          art: *gold-silver.pokemon.shuckle.forms.shuckle.art
+          footprint: *ruby-sapphire.pokemon.shuckle.forms.shuckle.footprint
+          cry: *x-y.pokemon.shuckle.forms.shuckle.cry

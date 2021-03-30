@@ -1,0 +1,531 @@
+diamond-pearl:
+  name: &diamond-pearl.name Magmortar
+  position: &diamond-pearl.position 150
+  numbers: &diamond-pearl.numbers
+    national: &diamond-pearl.numbers.national 467
+  pokemon:
+    magmortar:
+      genus: &diamond-pearl.pokemon.magmortar.genus 'Blast Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.magmortar.evolution_parent magmar/magmar
+      shape: &diamond-pearl.pokemon.magmortar.shape upright
+      female_rate: &diamond-pearl.pokemon.magmortar.female_rate 25
+      capture_rate: &diamond-pearl.pokemon.magmortar.capture_rate 30
+      happiness: &diamond-pearl.pokemon.magmortar.happiness 70
+      baby: &diamond-pearl.pokemon.magmortar.baby false
+      hatch_steps: &diamond-pearl.pokemon.magmortar.hatch_steps 25
+      growth_rate: &diamond-pearl.pokemon.magmortar.growth_rate medium
+      forms_switchable: &diamond-pearl.pokemon.magmortar.forms_switchable false
+      pal_park: &diamond-pearl.pokemon.magmortar.pal_park
+        area: mountain
+        rate: 10
+        score: 80
+      name: Magmortar
+      default: &diamond-pearl.pokemon.magmortar.default true
+      height: &diamond-pearl.pokemon.magmortar.height 16
+      weight: &diamond-pearl.pokemon.magmortar.weight 680
+      experience: &diamond-pearl.pokemon.magmortar.experience 243
+      types: &diamond-pearl.pokemon.magmortar.types
+        - fire
+      egg_groups: &diamond-pearl.pokemon.magmortar.egg_groups
+        - humanshape
+      stats: &diamond-pearl.pokemon.magmortar.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 67
+          effort_change: 0
+        speed:
+          base_value: 83
+          effort_change: 0
+        special-attack:
+          base_value: 125
+          effort_change: 3
+        special-defense:
+          base_value: 95
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.magmortar.abilities
+        flame-body:
+          hidden: false
+          position: 1
+        vital-spirit:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+          magmarizer: 5
+        pearl: &diamond-pearl.pokemon.magmortar.wild_held_items.pearl
+          magmarizer: 50
+      evolution_conditions: &diamond-pearl.pokemon.magmortar.evolution_conditions
+        trade:
+          held_item: magmarizer
+      flavor_text:
+        diamond: |
+          It blasts fireballs of over 3,600
+          degrees F from the ends of its
+          arms. It lives in volcanic craters.
+        pearl: |
+          It blasts fireballs of over 3,600
+          degrees F from the ends of its
+          arms. It lives in volcanic craters.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: &diamond-pearl.pokemon.magmortar.forms.magmortar.form_name 'Default Form'
+          default: true
+          battle_only: &diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only false
+          icon: &diamond-pearl.pokemon.magmortar.forms.magmortar.icon gen5/magmortar-default.png
+          sprites:
+            - diamond-pearl/back/shiny/magmortar-default.png
+            - diamond-pearl/back/magmortar-default.png
+            - diamond-pearl/shiny/magmortar-default.png
+            - diamond-pearl/magmortar-default.png
+          art: &diamond-pearl.pokemon.magmortar.forms.magmortar.art
+            - magmortar-default.png
+          footprint: &diamond-pearl.pokemon.magmortar.forms.magmortar.footprint magmortar.png
+          cry: &diamond-pearl.pokemon.magmortar.forms.magmortar.cry gen5/magmortar-default.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 202
+  pokemon:
+    magmortar:
+      genus: *diamond-pearl.pokemon.magmortar.genus
+      evolution_parent: *diamond-pearl.pokemon.magmortar.evolution_parent
+      shape: *diamond-pearl.pokemon.magmortar.shape
+      female_rate: *diamond-pearl.pokemon.magmortar.female_rate
+      capture_rate: *diamond-pearl.pokemon.magmortar.capture_rate
+      happiness: *diamond-pearl.pokemon.magmortar.happiness
+      baby: *diamond-pearl.pokemon.magmortar.baby
+      hatch_steps: *diamond-pearl.pokemon.magmortar.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.magmortar.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.magmortar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.magmortar.pal_park
+      name: Magmortar
+      default: *diamond-pearl.pokemon.magmortar.default
+      height: *diamond-pearl.pokemon.magmortar.height
+      weight: *diamond-pearl.pokemon.magmortar.weight
+      experience: *diamond-pearl.pokemon.magmortar.experience
+      types: *diamond-pearl.pokemon.magmortar.types
+      egg_groups: *diamond-pearl.pokemon.magmortar.egg_groups
+      stats: *diamond-pearl.pokemon.magmortar.stats
+      abilities: *diamond-pearl.pokemon.magmortar.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.magmortar.wild_held_items.pearl
+      evolution_conditions: *diamond-pearl.pokemon.magmortar.evolution_conditions
+      flavor_text:
+        platinum: |
+          When launching 3,600 degrees F
+          fireballs, its body takes on a
+          whitish hue from the intense heat.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: *diamond-pearl.pokemon.magmortar.forms.magmortar.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only
+          icon: *diamond-pearl.pokemon.magmortar.forms.magmortar.icon
+          sprites:
+            - platinum/back/shiny/magmortar-default.png
+            - platinum/back/magmortar-default.png
+            - platinum/shiny/magmortar-default.png
+            - platinum/magmortar-default.png
+          art: *diamond-pearl.pokemon.magmortar.forms.magmortar.art
+          footprint: *diamond-pearl.pokemon.magmortar.forms.magmortar.footprint
+          cry: *diamond-pearl.pokemon.magmortar.forms.magmortar.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    magmortar:
+      genus: *diamond-pearl.pokemon.magmortar.genus
+      evolution_parent: *diamond-pearl.pokemon.magmortar.evolution_parent
+      shape: *diamond-pearl.pokemon.magmortar.shape
+      female_rate: *diamond-pearl.pokemon.magmortar.female_rate
+      capture_rate: *diamond-pearl.pokemon.magmortar.capture_rate
+      happiness: *diamond-pearl.pokemon.magmortar.happiness
+      baby: *diamond-pearl.pokemon.magmortar.baby
+      hatch_steps: *diamond-pearl.pokemon.magmortar.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.magmortar.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.magmortar.forms_switchable
+      pal_park: *diamond-pearl.pokemon.magmortar.pal_park
+      name: Magmortar
+      default: *diamond-pearl.pokemon.magmortar.default
+      height: *diamond-pearl.pokemon.magmortar.height
+      weight: *diamond-pearl.pokemon.magmortar.weight
+      experience: *diamond-pearl.pokemon.magmortar.experience
+      types: *diamond-pearl.pokemon.magmortar.types
+      egg_groups: *diamond-pearl.pokemon.magmortar.egg_groups
+      stats: *diamond-pearl.pokemon.magmortar.stats
+      abilities: *diamond-pearl.pokemon.magmortar.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.magmortar.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It blasts fireballs of over
+          3,600 degrees Fahrenheit out of its
+          arms. Its breath also sears and sizzles.
+        soulsilver: |
+          It blasts fireballs of over
+          3,600 degrees Fahrenheit out of its
+          arms. Its breath also sears and sizzles.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: *diamond-pearl.pokemon.magmortar.forms.magmortar.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 4
+              range: 1-5
+            skill:
+              base_value: 4
+              range: 3-5
+            stamina:
+              base_value: 4
+              range: 3-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *diamond-pearl.pokemon.magmortar.forms.magmortar.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/magmortar-default.png
+            - heartgold-soulsilver/back/magmortar-default.png
+            - heartgold-soulsilver/shiny/magmortar-default.png
+            - heartgold-soulsilver/magmortar-default.png
+          art: *diamond-pearl.pokemon.magmortar.forms.magmortar.art
+          footprint: *diamond-pearl.pokemon.magmortar.forms.magmortar.footprint
+          cry: *diamond-pearl.pokemon.magmortar.forms.magmortar.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    magmortar:
+      genus: *diamond-pearl.pokemon.magmortar.genus
+      evolution_parent: *diamond-pearl.pokemon.magmortar.evolution_parent
+      color: &black-white.pokemon.magmortar.color red
+      shape: *diamond-pearl.pokemon.magmortar.shape
+      female_rate: *diamond-pearl.pokemon.magmortar.female_rate
+      capture_rate: *diamond-pearl.pokemon.magmortar.capture_rate
+      happiness: *diamond-pearl.pokemon.magmortar.happiness
+      baby: *diamond-pearl.pokemon.magmortar.baby
+      hatch_steps: *diamond-pearl.pokemon.magmortar.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.magmortar.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.magmortar.forms_switchable
+      name: Magmortar
+      default: *diamond-pearl.pokemon.magmortar.default
+      height: *diamond-pearl.pokemon.magmortar.height
+      weight: *diamond-pearl.pokemon.magmortar.weight
+      experience: *diamond-pearl.pokemon.magmortar.experience
+      types: *diamond-pearl.pokemon.magmortar.types
+      egg_groups: *diamond-pearl.pokemon.magmortar.egg_groups
+      stats: *diamond-pearl.pokemon.magmortar.stats
+      abilities: *diamond-pearl.pokemon.magmortar.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.magmortar.evolution_conditions
+      flavor_text:
+        black: |
+          When launching 3,600 degrees F
+          fireballs, its body takes on a
+          whitish hue from the intense heat.
+        white: |
+          When launching 3,600 degrees F
+          fireballs, its body takes on a
+          whitish hue from the intense heat.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: *diamond-pearl.pokemon.magmortar.forms.magmortar.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only
+          icon: *diamond-pearl.pokemon.magmortar.forms.magmortar.icon
+          sprites:
+            - black-white/back/shiny/magmortar-default.png
+            - black-white/back/magmortar-default.png
+            - black-white/shiny/magmortar-default.png
+            - black-white/magmortar-default.png
+          art: *diamond-pearl.pokemon.magmortar.forms.magmortar.art
+          footprint: *diamond-pearl.pokemon.magmortar.forms.magmortar.footprint
+          cry: *diamond-pearl.pokemon.magmortar.forms.magmortar.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-unova: 55
+  pokemon:
+    magmortar:
+      genus: *diamond-pearl.pokemon.magmortar.genus
+      evolution_parent: *diamond-pearl.pokemon.magmortar.evolution_parent
+      color: *black-white.pokemon.magmortar.color
+      shape: *diamond-pearl.pokemon.magmortar.shape
+      female_rate: *diamond-pearl.pokemon.magmortar.female_rate
+      capture_rate: *diamond-pearl.pokemon.magmortar.capture_rate
+      happiness: *diamond-pearl.pokemon.magmortar.happiness
+      baby: *diamond-pearl.pokemon.magmortar.baby
+      hatch_steps: *diamond-pearl.pokemon.magmortar.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.magmortar.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.magmortar.forms_switchable
+      name: Magmortar
+      default: *diamond-pearl.pokemon.magmortar.default
+      height: *diamond-pearl.pokemon.magmortar.height
+      weight: *diamond-pearl.pokemon.magmortar.weight
+      experience: *diamond-pearl.pokemon.magmortar.experience
+      types: *diamond-pearl.pokemon.magmortar.types
+      egg_groups: *diamond-pearl.pokemon.magmortar.egg_groups
+      stats: *diamond-pearl.pokemon.magmortar.stats
+      abilities: *diamond-pearl.pokemon.magmortar.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.magmortar.evolution_conditions
+      flavor_text:
+        black-2: |
+          When shooting 3,600 degree F fireballs
+          from its arms, its body takes on a
+          whitish hue from the intense heat.
+        white-2: |
+          When shooting 3,600 degree F fireballs
+          from its arms, its body takes on a
+          whitish hue from the intense heat.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: *diamond-pearl.pokemon.magmortar.forms.magmortar.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only
+          icon: *diamond-pearl.pokemon.magmortar.forms.magmortar.icon
+          art: *diamond-pearl.pokemon.magmortar.forms.magmortar.art
+          footprint: *diamond-pearl.pokemon.magmortar.forms.magmortar.footprint
+          cry: *diamond-pearl.pokemon.magmortar.forms.magmortar.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    magmortar:
+      genus: *diamond-pearl.pokemon.magmortar.genus
+      evolution_parent: *diamond-pearl.pokemon.magmortar.evolution_parent
+      color: *black-white.pokemon.magmortar.color
+      shape: *diamond-pearl.pokemon.magmortar.shape
+      female_rate: *diamond-pearl.pokemon.magmortar.female_rate
+      capture_rate: *diamond-pearl.pokemon.magmortar.capture_rate
+      happiness: *diamond-pearl.pokemon.magmortar.happiness
+      baby: *diamond-pearl.pokemon.magmortar.baby
+      hatch_steps: *diamond-pearl.pokemon.magmortar.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.magmortar.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.magmortar.forms_switchable
+      name: Magmortar
+      default: *diamond-pearl.pokemon.magmortar.default
+      height: *diamond-pearl.pokemon.magmortar.height
+      weight: *diamond-pearl.pokemon.magmortar.weight
+      experience: *diamond-pearl.pokemon.magmortar.experience
+      types: *diamond-pearl.pokemon.magmortar.types
+      egg_groups: *diamond-pearl.pokemon.magmortar.egg_groups
+      mega: &x-y.pokemon.magmortar.mega false
+      stats: *diamond-pearl.pokemon.magmortar.stats
+      abilities: *diamond-pearl.pokemon.magmortar.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.magmortar.evolution_conditions
+      flavor_text:
+        x: |
+          It blasts fireballs of over 3,600 degrees Fahrenheit
+          from the ends of its arms. It lives in
+          volcanic craters.
+        'y': |
+          It blasts fireballs of over 3,600 degrees Fahrenheit
+          out of its arms. Its breath also sears and sizzles.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: *diamond-pearl.pokemon.magmortar.forms.magmortar.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only
+          icon: &x-y.pokemon.magmortar.forms.magmortar.icon magmortar-default.png
+          sprites:
+            - x-y/shiny/magmortar-default.png
+            - x-y/magmortar-default.png
+          art: *diamond-pearl.pokemon.magmortar.forms.magmortar.art
+          footprint: *diamond-pearl.pokemon.magmortar.forms.magmortar.footprint
+          cry: &x-y.pokemon.magmortar.forms.magmortar.cry magmortar-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    magmortar:
+      genus: *diamond-pearl.pokemon.magmortar.genus
+      evolution_parent: *diamond-pearl.pokemon.magmortar.evolution_parent
+      color: *black-white.pokemon.magmortar.color
+      shape: *diamond-pearl.pokemon.magmortar.shape
+      female_rate: *diamond-pearl.pokemon.magmortar.female_rate
+      capture_rate: *diamond-pearl.pokemon.magmortar.capture_rate
+      happiness: *diamond-pearl.pokemon.magmortar.happiness
+      baby: *diamond-pearl.pokemon.magmortar.baby
+      hatch_steps: *diamond-pearl.pokemon.magmortar.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.magmortar.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.magmortar.forms_switchable
+      name: Magmortar
+      default: *diamond-pearl.pokemon.magmortar.default
+      height: *diamond-pearl.pokemon.magmortar.height
+      weight: *diamond-pearl.pokemon.magmortar.weight
+      experience: *diamond-pearl.pokemon.magmortar.experience
+      types: *diamond-pearl.pokemon.magmortar.types
+      egg_groups: *diamond-pearl.pokemon.magmortar.egg_groups
+      mega: *x-y.pokemon.magmortar.mega
+      stats: *diamond-pearl.pokemon.magmortar.stats
+      abilities: *diamond-pearl.pokemon.magmortar.abilities
+      evolution_conditions: *diamond-pearl.pokemon.magmortar.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It blasts fireballs of over 3,600 degrees Fahrenheit
+          from the ends of its arms. It lives in
+          volcanic craters.
+        alpha-sapphire: |
+          It blasts fireballs of over 3,600 degrees Fahrenheit
+          out of its arms. Its breath also sears and sizzles.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: *diamond-pearl.pokemon.magmortar.forms.magmortar.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only
+          icon: *x-y.pokemon.magmortar.forms.magmortar.icon
+          art: *diamond-pearl.pokemon.magmortar.forms.magmortar.art
+          footprint: *diamond-pearl.pokemon.magmortar.forms.magmortar.footprint
+          cry: *x-y.pokemon.magmortar.forms.magmortar.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/magmortar-default.png
+            - omega-ruby-alpha-sapphire/shiny/magmortar-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    original-alola: 168
+    original-akala: 95
+  pokemon:
+    magmortar:
+      genus: *diamond-pearl.pokemon.magmortar.genus
+      evolution_parent: *diamond-pearl.pokemon.magmortar.evolution_parent
+      color: *black-white.pokemon.magmortar.color
+      shape: *diamond-pearl.pokemon.magmortar.shape
+      female_rate: *diamond-pearl.pokemon.magmortar.female_rate
+      capture_rate: *diamond-pearl.pokemon.magmortar.capture_rate
+      happiness: *diamond-pearl.pokemon.magmortar.happiness
+      baby: *diamond-pearl.pokemon.magmortar.baby
+      hatch_steps: *diamond-pearl.pokemon.magmortar.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.magmortar.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.magmortar.forms_switchable
+      name: Magmortar
+      default: *diamond-pearl.pokemon.magmortar.default
+      height: *diamond-pearl.pokemon.magmortar.height
+      weight: *diamond-pearl.pokemon.magmortar.weight
+      experience: *diamond-pearl.pokemon.magmortar.experience
+      types: *diamond-pearl.pokemon.magmortar.types
+      egg_groups: *diamond-pearl.pokemon.magmortar.egg_groups
+      mega: *x-y.pokemon.magmortar.mega
+      stats: *diamond-pearl.pokemon.magmortar.stats
+      abilities: *diamond-pearl.pokemon.magmortar.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.magmortar.evolution_conditions
+      flavor_text:
+        sun: |-
+          They dwell in volcanic craters. According to
+          what is known, a single pair of male and female
+          Magmortar lives in one volcano.
+        moon: |-
+          From its arm, it launches fireballs hotter than
+          3,500 degrees Fahrenheit. Its arm starts to
+          melt when it fires a whole barrage.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: *diamond-pearl.pokemon.magmortar.forms.magmortar.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only
+          icon: *x-y.pokemon.magmortar.forms.magmortar.icon
+          sprites:
+            - sun-moon/shiny/magmortar-default.png
+            - sun-moon/magmortar-default.png
+          art: *diamond-pearl.pokemon.magmortar.forms.magmortar.art
+          footprint: *diamond-pearl.pokemon.magmortar.forms.magmortar.footprint
+          cry: *x-y.pokemon.magmortar.forms.magmortar.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-alola: 202
+    updated-akala: 103
+  pokemon:
+    magmortar:
+      genus: *diamond-pearl.pokemon.magmortar.genus
+      evolution_parent: *diamond-pearl.pokemon.magmortar.evolution_parent
+      color: *black-white.pokemon.magmortar.color
+      shape: *diamond-pearl.pokemon.magmortar.shape
+      female_rate: *diamond-pearl.pokemon.magmortar.female_rate
+      capture_rate: *diamond-pearl.pokemon.magmortar.capture_rate
+      happiness: *diamond-pearl.pokemon.magmortar.happiness
+      baby: *diamond-pearl.pokemon.magmortar.baby
+      hatch_steps: *diamond-pearl.pokemon.magmortar.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.magmortar.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.magmortar.forms_switchable
+      name: Magmortar
+      default: *diamond-pearl.pokemon.magmortar.default
+      height: *diamond-pearl.pokemon.magmortar.height
+      weight: *diamond-pearl.pokemon.magmortar.weight
+      experience: *diamond-pearl.pokemon.magmortar.experience
+      types: *diamond-pearl.pokemon.magmortar.types
+      egg_groups: *diamond-pearl.pokemon.magmortar.egg_groups
+      mega: *x-y.pokemon.magmortar.mega
+      stats: *diamond-pearl.pokemon.magmortar.stats
+      abilities: *diamond-pearl.pokemon.magmortar.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.magmortar.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.magmortar.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          There are still quite a few factories that rely on
+          the flames provided by Magmortar to
+          process metals.
+        ultra-moon: |-
+          Magmortar takes down its enemies by shooting
+          fireballs, which burn them to a blackened crisp.
+          It avoids this method when hunting prey.
+      forms:
+        magmortar:
+          name: Magmortar
+          form_name: *diamond-pearl.pokemon.magmortar.forms.magmortar.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.magmortar.forms.magmortar.battle_only
+          icon: *x-y.pokemon.magmortar.forms.magmortar.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/magmortar-default.png
+            - ultra-sun-ultra-moon/magmortar-default.png
+          art: *diamond-pearl.pokemon.magmortar.forms.magmortar.art
+          footprint: *diamond-pearl.pokemon.magmortar.forms.magmortar.footprint
+          cry: *x-y.pokemon.magmortar.forms.magmortar.cry

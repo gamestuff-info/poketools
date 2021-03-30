@@ -1,0 +1,1017 @@
+red-blue:
+  name: &red-blue.name BUTTERFREE
+  position: &red-blue.position 12
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 12
+    kanto: 12
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: &red-blue.pokemon.butterfree.default true
+      capture_rate: &red-blue.pokemon.butterfree.capture_rate 45
+      experience: &red-blue.pokemon.butterfree.experience 160
+      types: &red-blue.pokemon.butterfree.types
+        - bug
+        - flying
+      stats: &red-blue.pokemon.butterfree.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 70
+          effort_change: 70
+        special:
+          base_value: 80
+          effort_change: 80
+      growth_rate: &red-blue.pokemon.butterfree.growth_rate medium
+      genus: &red-blue.pokemon.butterfree.genus 'BUTTERFLY Pokémon'
+      height: &red-blue.pokemon.butterfree.height 10
+      weight: &red-blue.pokemon.butterfree.weight 3220
+      flavor_text:
+        red: |
+          In battle, it
+          flaps its wings
+          at high speed to
+          release highly
+          toxic dust into
+          the air.
+        blue: |
+          In battle, it
+          flaps its wings
+          at high speed to
+          release highly
+           toxic dust into
+          the air.
+      evolution_parent: &red-blue.pokemon.butterfree.evolution_parent metapod/metapod
+      evolution_conditions: &red-blue.pokemon.butterfree.evolution_conditions
+        level-up:
+          minimum_level: 10
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: &red-blue.pokemon.butterfree.forms.butterfree.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.butterfree.forms.butterfree.battle_only false
+          sprites:
+            - red-blue/butterfree-default.png
+            - red-blue/gray/butterfree-default.png
+            - red-blue/back/butterfree-default.png
+          art: &red-blue.pokemon.butterfree.forms.butterfree.art
+            - butterfree-default.png
+          cry: &red-blue.pokemon.butterfree.forms.butterfree.cry gen5/butterfree-default.webm
+          icon: &red-blue.pokemon.butterfree.forms.butterfree.icon gen1/bug.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: *red-blue.pokemon.butterfree.default
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      experience: *red-blue.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      stats: *red-blue.pokemon.butterfree.stats
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      genus: *red-blue.pokemon.butterfree.genus
+      height: *red-blue.pokemon.butterfree.height
+      weight: *red-blue.pokemon.butterfree.weight
+      flavor_text:
+        yellow: |
+          Its wings, covered
+          with poisonous
+          powders, repel
+          water. This
+           allows it to fly
+          in the rain.
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          sprites:
+            - yellow/butterfree-default.png
+            - yellow/gray/butterfree-default.png
+            - yellow/back/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+          icon: *red-blue.pokemon.butterfree.forms.butterfree.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 11
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 25
+    original-johto-abc: 6
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: *red-blue.pokemon.butterfree.default
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      experience: *red-blue.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      stats: &gold-silver.pokemon.butterfree.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 70
+          effort_change: 70
+        special-attack:
+          base_value: 80
+          effort_change: 80
+        special-defense:
+          base_value: 80
+          effort_change: 80
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      female_rate: &gold-silver.pokemon.butterfree.female_rate 50
+      hatch_steps: &gold-silver.pokemon.butterfree.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.butterfree.egg_groups
+        - bug
+      wild_held_items:
+        gold: &gold-silver.pokemon.butterfree.wild_held_items.gold
+          silverpowder: 2
+        silver: *gold-silver.pokemon.butterfree.wild_held_items.gold
+      genus: *red-blue.pokemon.butterfree.genus
+      height: *red-blue.pokemon.butterfree.height
+      weight: &gold-silver.pokemon.butterfree.weight 322
+      flavor_text:
+        gold: |
+          It collects honey
+          every day. It rubs
+          honey onto the
+          hairs on its legs
+          to carry it back
+          to its nest.
+        silver: |
+          Water-repellent
+          powder on its
+          wings enables it
+          to collect honey,
+          even in the heav-
+          iest of rains.
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          sprites:
+            - gold-silver/butterfree-default.png
+            - gold-silver/back/butterfree-default.png
+            - gold-silver/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+          icon: &gold-silver.pokemon.butterfree.forms.butterfree.icon gen2/moth.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: *red-blue.pokemon.butterfree.default
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      experience: *red-blue.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      stats: *gold-silver.pokemon.butterfree.stats
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.butterfree.wild_held_items.gold
+      genus: *red-blue.pokemon.butterfree.genus
+      height: *red-blue.pokemon.butterfree.height
+      weight: *gold-silver.pokemon.butterfree.weight
+      flavor_text:
+        crystal: |
+          It flits from
+          flower to flower,
+          collecting honey.
+          It can even
+          identify distant
+          flowers in bloom.
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          sprites:
+            - crystal/butterfree-default.png
+            - crystal/back/butterfree-default.png
+            - crystal/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+          icon: *gold-silver.pokemon.butterfree.forms.butterfree.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 214
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: *red-blue.pokemon.butterfree.default
+      forms_switchable: &ruby-sapphire.pokemon.butterfree.forms_switchable false
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      experience: *red-blue.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      stats: &ruby-sapphire.pokemon.butterfree.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 80
+          effort_change: 1
+        special-defense:
+          base_value: 60
+          effort_change: 1
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.butterfree.wild_held_items.ruby
+          silverpowder: 5
+        sapphire: *ruby-sapphire.pokemon.butterfree.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.butterfree.happiness 70
+      abilities: &ruby-sapphire.pokemon.butterfree.abilities
+        compoundeyes: &ruby-sapphire.pokemon.butterfree.abilities.compoundeyes
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.butterfree.genus
+      height: &ruby-sapphire.pokemon.butterfree.height 11
+      weight: &ruby-sapphire.pokemon.butterfree.weight 320
+      flavor_text:
+        ruby: |
+          BUTTERFREE has a superior ability to
+          search for delicious honey from
+           flowers.
+          It can even search out, extract, and
+          carry honey from flowers that are
+          blooming over six miles from its nest.
+        sapphire: |
+          BUTTERFREE has a superior ability to
+          search for delicious honey from
+          flowers.
+          It can even search out, extract, and
+          carry honey from flowers that are
+          blooming over six miles from its nest.
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: &ruby-sapphire.pokemon.butterfree.forms.butterfree.icon gen5/butterfree-default.png
+          sprites:
+            - ruby-sapphire/butterfree-default.png
+            - ruby-sapphire/back/butterfree-default.png
+            - ruby-sapphire/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: &ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint butterfree.png
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: *red-blue.pokemon.butterfree.default
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      experience: *red-blue.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      stats: *ruby-sapphire.pokemon.butterfree.stats
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.butterfree.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      abilities: *ruby-sapphire.pokemon.butterfree.abilities
+      genus: *red-blue.pokemon.butterfree.genus
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      flavor_text:
+        emerald: |
+          It has a superior ability to search for
+          delicious honey from flowers.  It can seek,
+          extract, and carry honey from flowers
+          blooming over six miles away.
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *ruby-sapphire.pokemon.butterfree.forms.butterfree.icon
+          sprites:
+            - emerald/butterfree-default.png
+            - emerald/shiny/butterfree-default.png
+            - emerald/animated/butterfree-default.webm
+            - emerald/animated/shiny/butterfree-default.webm
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 33
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: *red-blue.pokemon.butterfree.default
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      experience: *red-blue.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      stats: *ruby-sapphire.pokemon.butterfree.stats
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      abilities: *ruby-sapphire.pokemon.butterfree.abilities
+      genus: *red-blue.pokemon.butterfree.genus
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          sprites:
+            - colosseum/butterfree-default.png
+            - colosseum/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: *red-blue.pokemon.butterfree.default
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      experience: *red-blue.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      stats: *ruby-sapphire.pokemon.butterfree.stats
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      abilities: *ruby-sapphire.pokemon.butterfree.abilities
+      genus: *red-blue.pokemon.butterfree.genus
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          sprites:
+            - xd/butterfree-default.png
+            - xd/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    butterfree:
+      name: BUTTERFREE
+      default: *red-blue.pokemon.butterfree.default
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      experience: *red-blue.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      stats: *ruby-sapphire.pokemon.butterfree.stats
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.butterfree.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.butterfree.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      abilities: *ruby-sapphire.pokemon.butterfree.abilities
+      genus: *red-blue.pokemon.butterfree.genus
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      flavor_text:
+        firered: |
+          The wings are protected by rain-repellent
+          dust. As a result, this POKéMON can fly
+          about even in rain.
+        leafgreen: |
+          In battle, it flaps its wings at great
+          speed to release highly toxic dust into
+          the air.
+      forms:
+        butterfree:
+          name: BUTTERFREE
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *ruby-sapphire.pokemon.butterfree.forms.butterfree.icon
+          sprites:
+            - firered-leafgreen/butterfree-default.png
+            - firered-leafgreen/back/butterfree-default.png
+            - firered-leafgreen/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Butterfree
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    butterfree:
+      genus: &diamond-pearl.pokemon.butterfree.genus 'Butterfly Pokémon'
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      shape: &diamond-pearl.pokemon.butterfree.shape bug-wings
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: &diamond-pearl.pokemon.butterfree.baby false
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      pal_park: &diamond-pearl.pokemon.butterfree.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: &diamond-pearl.pokemon.butterfree.experience 178
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      stats: &diamond-pearl.pokemon.butterfree.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 2
+        special-defense:
+          base_value: 80
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.butterfree.abilities
+        compound-eyes: *ruby-sapphire.pokemon.butterfree.abilities.compoundeyes
+        tinted-lens:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+          silver-powder: 5
+        pearl: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        diamond: |
+          It loves the honey of flowers and
+          can locate flower patches that
+          have even tiny amounts of pollen.
+        pearl: |
+          It loves the honey of flowers and
+          can locate flower patches that
+          have even tiny amounts of pollen.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *ruby-sapphire.pokemon.butterfree.forms.butterfree.icon
+          sprites:
+            - diamond-pearl/back/female/butterfree-default.png
+            - diamond-pearl/back/butterfree-default.png
+            - diamond-pearl/back/shiny/butterfree-default.png
+            - diamond-pearl/female/butterfree-default.png
+            - diamond-pearl/butterfree-default.png
+            - diamond-pearl/shiny/female/butterfree-default.png
+            - diamond-pearl/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    butterfree:
+      genus: *diamond-pearl.pokemon.butterfree.genus
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      shape: *diamond-pearl.pokemon.butterfree.shape
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: *diamond-pearl.pokemon.butterfree.baby
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      pal_park: *diamond-pearl.pokemon.butterfree.pal_park
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: *diamond-pearl.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      stats: *diamond-pearl.pokemon.butterfree.stats
+      abilities: *diamond-pearl.pokemon.butterfree.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        platinum: |
+          It loves the honey of flowers and
+          can locate flower patches that
+          have even tiny amounts of pollen.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *ruby-sapphire.pokemon.butterfree.forms.butterfree.icon
+          sprites:
+            - platinum/back/female/butterfree-default.png
+            - platinum/back/butterfree-default.png
+            - platinum/back/shiny/butterfree-default.png
+            - platinum/female/butterfree-default.png
+            - platinum/butterfree-default.png
+            - platinum/shiny/female/butterfree-default.png
+            - platinum/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 26
+  pokemon:
+    butterfree:
+      genus: *diamond-pearl.pokemon.butterfree.genus
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      shape: *diamond-pearl.pokemon.butterfree.shape
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: *diamond-pearl.pokemon.butterfree.baby
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      pal_park: *diamond-pearl.pokemon.butterfree.pal_park
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: *diamond-pearl.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      stats: *diamond-pearl.pokemon.butterfree.stats
+      abilities: *diamond-pearl.pokemon.butterfree.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It collects honey every day. It rubs
+          honey onto the hairs on its legs
+          to carry it back to its nest.
+        soulsilver: |
+          Water-repellent powder on its
+          wings enables it to collect honey,
+          even in the heaviest of rains.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 5
+              range: 4-5
+          icon: *ruby-sapphire.pokemon.butterfree.forms.butterfree.icon
+          sprites:
+            - heartgold-soulsilver/back/female/butterfree-default.png
+            - heartgold-soulsilver/back/butterfree-default.png
+            - heartgold-soulsilver/back/shiny/butterfree-default.png
+            - heartgold-soulsilver/female/butterfree-default.png
+            - heartgold-soulsilver/butterfree-default.png
+            - heartgold-soulsilver/shiny/female/butterfree-default.png
+            - heartgold-soulsilver/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    butterfree:
+      genus: *diamond-pearl.pokemon.butterfree.genus
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      color: &black-white.pokemon.butterfree.color white
+      shape: *diamond-pearl.pokemon.butterfree.shape
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: *diamond-pearl.pokemon.butterfree.baby
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: *diamond-pearl.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      stats: *diamond-pearl.pokemon.butterfree.stats
+      abilities: *diamond-pearl.pokemon.butterfree.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        black: |
+          It loves the honey of flowers and
+          can locate flower patches that
+          have even tiny amounts of pollen.
+        white: |
+          It loves the honey of flowers and
+          can locate flower patches that
+          have even tiny amounts of pollen.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *ruby-sapphire.pokemon.butterfree.forms.butterfree.icon
+          sprites:
+            - black-white/back/female/butterfree-default.png
+            - black-white/back/butterfree-default.png
+            - black-white/back/shiny/butterfree-default.png
+            - black-white/female/butterfree-default.png
+            - black-white/butterfree-default.png
+            - black-white/shiny/female/butterfree-default.png
+            - black-white/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    butterfree:
+      genus: *diamond-pearl.pokemon.butterfree.genus
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      color: *black-white.pokemon.butterfree.color
+      shape: *diamond-pearl.pokemon.butterfree.shape
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: *diamond-pearl.pokemon.butterfree.baby
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: *diamond-pearl.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      stats: *diamond-pearl.pokemon.butterfree.stats
+      abilities: *diamond-pearl.pokemon.butterfree.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        black-2: |
+          It loves the honey of flowers and
+          can locate flower patches that
+          have even tiny amounts of pollen.
+        white-2: |
+          It loves the honey of flowers and
+          can locate flower patches that
+          have even tiny amounts of pollen.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *ruby-sapphire.pokemon.butterfree.forms.butterfree.icon
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *red-blue.pokemon.butterfree.forms.butterfree.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 25
+  pokemon:
+    butterfree:
+      genus: *diamond-pearl.pokemon.butterfree.genus
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      color: *black-white.pokemon.butterfree.color
+      shape: *diamond-pearl.pokemon.butterfree.shape
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: *diamond-pearl.pokemon.butterfree.baby
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: *diamond-pearl.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      mega: &x-y.pokemon.butterfree.mega false
+      stats: *diamond-pearl.pokemon.butterfree.stats
+      abilities: *diamond-pearl.pokemon.butterfree.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        x: |
+          It loves the honey of flowers and can locate
+          flower patches that have even tiny amounts
+          of pollen.
+        'y': |
+          The wings are protected by rain-repellent dust.
+          As a result, this Pokémon can fly about even
+          in rain.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: &x-y.pokemon.butterfree.forms.butterfree.icon butterfree-default.png
+          sprites:
+            - x-y/female/butterfree-default.png
+            - x-y/butterfree-default.png
+            - x-y/shiny/female/butterfree-default.png
+            - x-y/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: &x-y.pokemon.butterfree.forms.butterfree.cry butterfree-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    butterfree:
+      genus: *diamond-pearl.pokemon.butterfree.genus
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      color: *black-white.pokemon.butterfree.color
+      shape: *diamond-pearl.pokemon.butterfree.shape
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: *diamond-pearl.pokemon.butterfree.baby
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: *diamond-pearl.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      mega: *x-y.pokemon.butterfree.mega
+      stats: *diamond-pearl.pokemon.butterfree.stats
+      abilities: *diamond-pearl.pokemon.butterfree.abilities
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Butterfree has a superior ability to search for delicious honey
+          from flowers. It can even search out, extract, and carry honey
+          from flowers that are blooming over six miles from its nest.
+        alpha-sapphire: |
+          Butterfree has a superior ability to search for delicious honey
+          from flowers. It can even search out, extract, and carry honey
+          from flowers that are blooming over six miles from its nest.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *x-y.pokemon.butterfree.forms.butterfree.icon
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *x-y.pokemon.butterfree.forms.butterfree.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/butterfree-default.png
+            - omega-ruby-alpha-sapphire/shiny/butterfree-default.png
+            - omega-ruby-alpha-sapphire/female/butterfree-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/butterfree-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 19
+    original-melemele: 19
+    original-akala: 10
+  pokemon:
+    butterfree:
+      genus: *diamond-pearl.pokemon.butterfree.genus
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      color: *black-white.pokemon.butterfree.color
+      shape: *diamond-pearl.pokemon.butterfree.shape
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: *diamond-pearl.pokemon.butterfree.baby
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: *diamond-pearl.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      mega: *x-y.pokemon.butterfree.mega
+      stats: *diamond-pearl.pokemon.butterfree.stats
+      abilities: *diamond-pearl.pokemon.butterfree.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        sun: |-
+          Close examination of its large eyes reveals that
+          each eye is composed of a myriad of tiny eyes.
+        moon: |-
+          When attacked by other Pokémon, it defends
+          itself by scattering its poisonous scales and
+          fluttering its wings.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *x-y.pokemon.butterfree.forms.butterfree.icon
+          sprites:
+            - sun-moon/female/butterfree-default.png
+            - sun-moon/butterfree-default.png
+            - sun-moon/shiny/female/butterfree-default.png
+            - sun-moon/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *x-y.pokemon.butterfree.forms.butterfree.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 19
+    updated-melemele: 19
+    updated-akala: 10
+  pokemon:
+    butterfree:
+      genus: *diamond-pearl.pokemon.butterfree.genus
+      evolution_parent: *red-blue.pokemon.butterfree.evolution_parent
+      color: *black-white.pokemon.butterfree.color
+      shape: *diamond-pearl.pokemon.butterfree.shape
+      female_rate: *gold-silver.pokemon.butterfree.female_rate
+      capture_rate: *red-blue.pokemon.butterfree.capture_rate
+      happiness: *ruby-sapphire.pokemon.butterfree.happiness
+      baby: *diamond-pearl.pokemon.butterfree.baby
+      hatch_steps: *gold-silver.pokemon.butterfree.hatch_steps
+      growth_rate: *red-blue.pokemon.butterfree.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.butterfree.forms_switchable
+      name: Butterfree
+      default: *red-blue.pokemon.butterfree.default
+      height: *ruby-sapphire.pokemon.butterfree.height
+      weight: *ruby-sapphire.pokemon.butterfree.weight
+      experience: *diamond-pearl.pokemon.butterfree.experience
+      types: *red-blue.pokemon.butterfree.types
+      egg_groups: *gold-silver.pokemon.butterfree.egg_groups
+      mega: *x-y.pokemon.butterfree.mega
+      stats: *diamond-pearl.pokemon.butterfree.stats
+      abilities: *diamond-pearl.pokemon.butterfree.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.butterfree.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.butterfree.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Its wings are covered in toxic scales. If it finds
+          bird Pokémon going after Caterpie, Butterfree
+          sprinkles its scales on them to drive them off.
+        ultra-moon: |-
+          Nectar from pretty flowers is its favorite food.
+          In fields of flowers, it has heated battles with
+          Cutiefly for territory.
+      forms:
+        butterfree:
+          name: Butterfree
+          form_name: *red-blue.pokemon.butterfree.forms.butterfree.form_name
+          default: true
+          battle_only: *red-blue.pokemon.butterfree.forms.butterfree.battle_only
+          icon: *x-y.pokemon.butterfree.forms.butterfree.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/butterfree-default.png
+            - ultra-sun-ultra-moon/butterfree-default.png
+            - ultra-sun-ultra-moon/shiny/female/butterfree-default.png
+            - ultra-sun-ultra-moon/shiny/butterfree-default.png
+          art: *red-blue.pokemon.butterfree.forms.butterfree.art
+          footprint: *ruby-sapphire.pokemon.butterfree.forms.butterfree.footprint
+          cry: *x-y.pokemon.butterfree.forms.butterfree.cry

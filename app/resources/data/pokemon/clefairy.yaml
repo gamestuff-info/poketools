@@ -1,0 +1,1007 @@
+red-blue:
+  name: &red-blue.name CLEFAIRY
+  position: &red-blue.position 35
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 35
+    kanto: 35
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: &red-blue.pokemon.clefairy.default true
+      capture_rate: &red-blue.pokemon.clefairy.capture_rate 150
+      experience: &red-blue.pokemon.clefairy.experience 68
+      types: &red-blue.pokemon.clefairy.types
+        - normal
+      stats: &red-blue.pokemon.clefairy.stats
+        hp:
+          base_value: 70
+          effort_change: 70
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 48
+          effort_change: 48
+        speed:
+          base_value: 35
+          effort_change: 35
+        special:
+          base_value: 60
+          effort_change: 60
+      growth_rate: &red-blue.pokemon.clefairy.growth_rate fast
+      genus: &red-blue.pokemon.clefairy.genus 'FAIRY Pokémon'
+      height: &red-blue.pokemon.clefairy.height 6
+      weight: &red-blue.pokemon.clefairy.weight 771
+      flavor_text:
+        red: |
+          Its magical and
+          cute appeal has
+          many admirers.
+          It is rare and
+          found only in
+          certain areas.
+        blue: |
+          Its magical and
+          cute appeal has
+          many admirers.
+          It is rare and
+           found only in
+          certain areas.
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: &red-blue.pokemon.clefairy.forms.clefairy.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.clefairy.forms.clefairy.battle_only false
+          sprites:
+            - red-blue/clefairy-default.png
+            - red-blue/gray/clefairy-default.png
+            - red-blue/back/clefairy-default.png
+          art: &red-blue.pokemon.clefairy.forms.clefairy.art
+            - clefairy-default.png
+          cry: &red-blue.pokemon.clefairy.forms.clefairy.cry gen5/clefairy-default.webm
+          icon: &red-blue.pokemon.clefairy.forms.clefairy.icon gen1/fairy.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: *red-blue.pokemon.clefairy.default
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      experience: *red-blue.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      stats: *red-blue.pokemon.clefairy.stats
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      genus: *red-blue.pokemon.clefairy.genus
+      height: *red-blue.pokemon.clefairy.height
+      weight: *red-blue.pokemon.clefairy.weight
+      flavor_text:
+        yellow: |
+          Adored for their
+          cute looks and
+          playfulness. They
+          are thought to be
+          rare, as they do
+          not appear often.
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          sprites:
+            - yellow/clefairy-default.png
+            - yellow/gray/clefairy-default.png
+            - yellow/back/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+          icon: *red-blue.pokemon.clefairy.forms.clefairy.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 34
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 40
+    original-johto-abc: 16
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: *red-blue.pokemon.clefairy.default
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      experience: *red-blue.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      stats: &gold-silver.pokemon.clefairy.stats
+        hp:
+          base_value: 70
+          effort_change: 70
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 48
+          effort_change: 48
+        speed:
+          base_value: 35
+          effort_change: 35
+        special-attack:
+          base_value: 60
+          effort_change: 60
+        special-defense:
+          base_value: 65
+          effort_change: 60
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      female_rate: &gold-silver.pokemon.clefairy.female_rate 75
+      hatch_steps: &gold-silver.pokemon.clefairy.hatch_steps 10
+      egg_groups: &gold-silver.pokemon.clefairy.egg_groups
+        - fairy
+      wild_held_items:
+        gold: &gold-silver.pokemon.clefairy.wild_held_items.gold
+          mysteryberry: 23
+          moon-stone: 2
+        silver: *gold-silver.pokemon.clefairy.wild_held_items.gold
+      genus: *red-blue.pokemon.clefairy.genus
+      height: *red-blue.pokemon.clefairy.height
+      weight: &gold-silver.pokemon.clefairy.weight 77
+      flavor_text:
+        gold: |
+          The moonlight that
+          it stores in the
+          wings on its back
+          apparently gives
+          it the ability to
+          float in midair.
+        silver: |
+          Its adorable be-
+          havior and cry
+          make it highly
+          popular. However,
+          this cute #MON
+          is rarely found.
+      evolution_parent: &gold-silver.pokemon.clefairy.evolution_parent cleffa/cleffa
+      evolution_conditions: &gold-silver.pokemon.clefairy.evolution_conditions
+        level-up:
+          minimum_happiness: 220
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          sprites:
+            - gold-silver/clefairy-default.png
+            - gold-silver/back/clefairy-default.png
+            - gold-silver/shiny/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+          icon: &gold-silver.pokemon.clefairy.forms.clefairy.icon gen2/clefairy.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: *red-blue.pokemon.clefairy.default
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      experience: *red-blue.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      stats: *gold-silver.pokemon.clefairy.stats
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.clefairy.wild_held_items.gold
+      genus: *red-blue.pokemon.clefairy.genus
+      height: *red-blue.pokemon.clefairy.height
+      weight: *gold-silver.pokemon.clefairy.weight
+      flavor_text:
+        crystal: |
+          Though rarely
+          seen, it becomes
+          easier to spot,
+          for some reason,
+          on the night of a
+          full moon.
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          sprites:
+            - crystal/clefairy-default.png
+            - crystal/back/clefairy-default.png
+            - crystal/shiny/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+          icon: *gold-silver.pokemon.clefairy.forms.clefairy.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 233
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: *red-blue.pokemon.clefairy.default
+      forms_switchable: &ruby-sapphire.pokemon.clefairy.forms_switchable false
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      experience: *red-blue.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      stats: &ruby-sapphire.pokemon.clefairy.stats
+        hp:
+          base_value: 70
+          effort_change: 2
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 48
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.clefairy.wild_held_items.ruby
+          leppa-berry: &ruby-sapphire.pokemon.clefairy.wild_held_items.ruby.leppa-berry 50
+          moon-stone: &ruby-sapphire.pokemon.clefairy.wild_held_items.ruby.moon-stone 5
+        sapphire: *ruby-sapphire.pokemon.clefairy.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.clefairy.happiness 140
+      abilities: &ruby-sapphire.pokemon.clefairy.abilities
+        cute-charm: &ruby-sapphire.pokemon.clefairy.abilities.cute-charm
+          hidden: &ruby-sapphire.pokemon.clefairy.abilities.cute-charm.hidden false
+          position: 1
+      genus: *red-blue.pokemon.clefairy.genus
+      height: *red-blue.pokemon.clefairy.height
+      weight: &ruby-sapphire.pokemon.clefairy.weight 75
+      flavor_text:
+        ruby: |
+          On every night of a full moon, groups of
+          this POKéMON come out to play.
+          When dawn arrives, the tired CLEFAIRY
+          return to their quiet mountain retreats
+          and go to sleep nestled up against each
+          other.
+        sapphire: |
+          On every night of a full moon, groups of
+          this POKéMON come out to play.
+          When dawn arrives, the tired CLEFAIRY
+          return to their quiet mountain retreats
+          and go to sleep nestled up against each
+          other.
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: &ruby-sapphire.pokemon.clefairy.forms.clefairy.icon gen5/clefairy-default.png
+          sprites:
+            - ruby-sapphire/clefairy-default.png
+            - ruby-sapphire/back/clefairy-default.png
+            - ruby-sapphire/shiny/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: &ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint clefairy.png
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: *red-blue.pokemon.clefairy.default
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      experience: *red-blue.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      stats: *ruby-sapphire.pokemon.clefairy.stats
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.clefairy.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      abilities: *ruby-sapphire.pokemon.clefairy.abilities
+      genus: *red-blue.pokemon.clefairy.genus
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      flavor_text:
+        emerald: |
+          On every night of a full moon, they come
+          out to play. When dawn arrives, the tired
+          CLEFAIRY go to sleep nestled up against
+          each other in deep and quiet mountains.
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *ruby-sapphire.pokemon.clefairy.forms.clefairy.icon
+          sprites:
+            - emerald/clefairy-default.png
+            - emerald/shiny/clefairy-default.png
+            - emerald/animated/clefairy-default.webm
+            - emerald/animated/shiny/clefairy-default.webm
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 52
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: *red-blue.pokemon.clefairy.default
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      experience: *red-blue.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      stats: *ruby-sapphire.pokemon.clefairy.stats
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      abilities: *ruby-sapphire.pokemon.clefairy.abilities
+      genus: *red-blue.pokemon.clefairy.genus
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          sprites:
+            - colosseum/clefairy-default.png
+            - colosseum/shiny/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: *red-blue.pokemon.clefairy.default
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      experience: *red-blue.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      stats: *ruby-sapphire.pokemon.clefairy.stats
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      abilities: *ruby-sapphire.pokemon.clefairy.abilities
+      genus: *red-blue.pokemon.clefairy.genus
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          sprites:
+            - xd/clefairy-default.png
+            - xd/shiny/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    clefairy:
+      name: CLEFAIRY
+      default: *red-blue.pokemon.clefairy.default
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      experience: *red-blue.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      stats: *ruby-sapphire.pokemon.clefairy.stats
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+          moon-stone: *ruby-sapphire.pokemon.clefairy.wild_held_items.ruby.moon-stone
+        leafgreen: *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      abilities: *ruby-sapphire.pokemon.clefairy.abilities
+      genus: *red-blue.pokemon.clefairy.genus
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      flavor_text:
+        firered: |
+          Its adorable appearance makes it popular
+          as a pet. However, it is rare and
+          difficult to find.
+        leafgreen: |
+          With its magical and cute appeal, it has
+          many admirers. It is rare and found only
+          in certain areas.
+      forms:
+        clefairy:
+          name: CLEFAIRY
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *ruby-sapphire.pokemon.clefairy.forms.clefairy.icon
+          sprites:
+            - firered-leafgreen/clefairy-default.png
+            - firered-leafgreen/back/clefairy-default.png
+            - firered-leafgreen/shiny/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Clefairy
+  position: &diamond-pearl.position 37
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 100
+  pokemon:
+    clefairy:
+      genus: &diamond-pearl.pokemon.clefairy.genus 'Fairy Pokémon'
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      shape: &diamond-pearl.pokemon.clefairy.shape upright
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: &diamond-pearl.pokemon.clefairy.baby false
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      pal_park: &diamond-pearl.pokemon.clefairy.pal_park
+        area: mountain
+        rate: 10
+        score: 80
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: &diamond-pearl.pokemon.clefairy.experience 113
+      types: *red-blue.pokemon.clefairy.types
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      stats: &diamond-pearl.pokemon.clefairy.stats
+        hp:
+          base_value: 70
+          effort_change: 2
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 48
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.clefairy.abilities
+        cute-charm: *ruby-sapphire.pokemon.clefairy.abilities.cute-charm
+        magic-guard: &diamond-pearl.pokemon.clefairy.abilities.magic-guard
+          hidden: *ruby-sapphire.pokemon.clefairy.abilities.cute-charm.hidden
+          position: 2
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.clefairy.wild_held_items.diamond
+          moon-stone: *ruby-sapphire.pokemon.clefairy.wild_held_items.ruby.moon-stone
+          leppa-berry: *ruby-sapphire.pokemon.clefairy.wild_held_items.ruby.leppa-berry
+        pearl: *diamond-pearl.pokemon.clefairy.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        diamond: |
+          Thought to live with others on
+          quiet mountains, it is popular
+          for its adorable nature.
+        pearl: |
+          It flies using the wings on its
+          back to collect moonlight. This
+          Pokémon is difficult to find.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *ruby-sapphire.pokemon.clefairy.forms.clefairy.icon
+          sprites:
+            - diamond-pearl/back/shiny/clefairy-default.png
+            - diamond-pearl/back/clefairy-default.png
+            - diamond-pearl/shiny/clefairy-default.png
+            - diamond-pearl/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 100
+  pokemon:
+    clefairy:
+      genus: *diamond-pearl.pokemon.clefairy.genus
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      shape: *diamond-pearl.pokemon.clefairy.shape
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: *diamond-pearl.pokemon.clefairy.baby
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      pal_park: *diamond-pearl.pokemon.clefairy.pal_park
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: *diamond-pearl.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      stats: *diamond-pearl.pokemon.clefairy.stats
+      abilities: *diamond-pearl.pokemon.clefairy.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.clefairy.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is said that happiness will come
+          to those who see a gathering of
+          CLEFAIRY dancing under a full moon.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *ruby-sapphire.pokemon.clefairy.forms.clefairy.icon
+          sprites:
+            - platinum/back/shiny/clefairy-default.png
+            - platinum/back/clefairy-default.png
+            - platinum/shiny/clefairy-default.png
+            - platinum/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 41
+  pokemon:
+    clefairy:
+      genus: *diamond-pearl.pokemon.clefairy.genus
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      shape: *diamond-pearl.pokemon.clefairy.shape
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: *diamond-pearl.pokemon.clefairy.baby
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      pal_park: *diamond-pearl.pokemon.clefairy.pal_park
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: *diamond-pearl.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      stats: *diamond-pearl.pokemon.clefairy.stats
+      abilities: *diamond-pearl.pokemon.clefairy.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.clefairy.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.clefairy.wild_held_items.diamond
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        heartgold: |
+          The moonlight that it stores in the
+          wings on its back apparently gives
+          it the ability to float in midair.
+        soulsilver: |
+          Its adorable behavior and cry
+          make it highly popular. However,
+          this cute Pokémon is rarely found.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-5
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 2-5
+            stamina:
+              base_value: 2
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.clefairy.forms.clefairy.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/clefairy-default.png
+            - heartgold-soulsilver/back/clefairy-default.png
+            - heartgold-soulsilver/shiny/clefairy-default.png
+            - heartgold-soulsilver/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    clefairy:
+      genus: *diamond-pearl.pokemon.clefairy.genus
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      color: &black-white.pokemon.clefairy.color pink
+      shape: *diamond-pearl.pokemon.clefairy.shape
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: *diamond-pearl.pokemon.clefairy.baby
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: *diamond-pearl.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      stats: *diamond-pearl.pokemon.clefairy.stats
+      abilities: &black-white.pokemon.clefairy.abilities
+        cute-charm: *ruby-sapphire.pokemon.clefairy.abilities.cute-charm
+        magic-guard: *diamond-pearl.pokemon.clefairy.abilities.magic-guard
+        friend-guard:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: &black-white.pokemon.clefairy.wild_held_items.black
+          moon-stone: *ruby-sapphire.pokemon.clefairy.wild_held_items.ruby.moon-stone
+          leppa-berry: *ruby-sapphire.pokemon.clefairy.wild_held_items.ruby.leppa-berry
+          comet-shard: 1
+        white: *black-white.pokemon.clefairy.wild_held_items.black
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        black: |
+          It is said that happiness will come
+          to those who see a gathering of
+          Clefairy dancing under a full moon.
+        white: |
+          It is said that happiness will come
+          to those who see a gathering of
+          Clefairy dancing under a full moon.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *ruby-sapphire.pokemon.clefairy.forms.clefairy.icon
+          sprites:
+            - black-white/back/shiny/clefairy-default.png
+            - black-white/back/clefairy-default.png
+            - black-white/shiny/clefairy-default.png
+            - black-white/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 89
+  pokemon:
+    clefairy:
+      genus: *diamond-pearl.pokemon.clefairy.genus
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      color: *black-white.pokemon.clefairy.color
+      shape: *diamond-pearl.pokemon.clefairy.shape
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: *diamond-pearl.pokemon.clefairy.baby
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: *diamond-pearl.pokemon.clefairy.experience
+      types: *red-blue.pokemon.clefairy.types
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      stats: *diamond-pearl.pokemon.clefairy.stats
+      abilities: *black-white.pokemon.clefairy.abilities
+      wild_held_items:
+        black-2: *black-white.pokemon.clefairy.wild_held_items.black
+        white-2: *black-white.pokemon.clefairy.wild_held_items.black
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        black-2: |
+          On nights with a full moon, Clefairy
+          gather from all over and dance.
+          Bathing in moonlight makes them float.
+        white-2: |
+          On nights with a full moon, Clefairy
+          gather from all over and dance.
+          Bathing in moonlight makes them float.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *ruby-sapphire.pokemon.clefairy.forms.clefairy.icon
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *red-blue.pokemon.clefairy.forms.clefairy.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    clefairy:
+      genus: *diamond-pearl.pokemon.clefairy.genus
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      color: *black-white.pokemon.clefairy.color
+      shape: *diamond-pearl.pokemon.clefairy.shape
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: *diamond-pearl.pokemon.clefairy.baby
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: *diamond-pearl.pokemon.clefairy.experience
+      types: *gold-silver.pokemon.clefairy.egg_groups
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      mega: &x-y.pokemon.clefairy.mega false
+      stats: *diamond-pearl.pokemon.clefairy.stats
+      abilities: *black-white.pokemon.clefairy.abilities
+      wild_held_items:
+        x: *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+        'y': *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        x: |
+          It is said that happiness will come to those who see
+          a gathering of Clefairy dancing under a full moon.
+        'y': |
+          The moonlight that it stores in the wings on its back
+          apparently gives it the ability to float in midair.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: &x-y.pokemon.clefairy.forms.clefairy.icon clefairy-default.png
+          sprites:
+            - x-y/shiny/clefairy-default.png
+            - x-y/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: &x-y.pokemon.clefairy.forms.clefairy.cry clefairy-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    clefairy:
+      genus: *diamond-pearl.pokemon.clefairy.genus
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      color: *black-white.pokemon.clefairy.color
+      shape: *diamond-pearl.pokemon.clefairy.shape
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: *diamond-pearl.pokemon.clefairy.baby
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: *diamond-pearl.pokemon.clefairy.experience
+      types: *gold-silver.pokemon.clefairy.egg_groups
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      mega: *x-y.pokemon.clefairy.mega
+      stats: *diamond-pearl.pokemon.clefairy.stats
+      abilities: *black-white.pokemon.clefairy.abilities
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          On every night of a full moon, groups of this Pokémon come
+          out to play. When dawn arrives, the tired Clefairy return to their
+          quiet mountain retreats and go to sleep nestled up against
+          each other.
+        alpha-sapphire: |
+          On every night of a full moon, groups of this Pokémon
+          come out to play. When dawn arrives, the tired Clefairy
+          return to their quiet mountain retreats and go to sleep
+          nestled up against each other.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *x-y.pokemon.clefairy.forms.clefairy.icon
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *x-y.pokemon.clefairy.forms.clefairy.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/clefairy-default.png
+            - omega-ruby-alpha-sapphire/shiny/clefairy-default.png
+      wild_held_items:
+        omega-ruby: *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+        alpha-sapphire: *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 211
+    original-ulaula: 83
+  pokemon:
+    clefairy:
+      genus: *diamond-pearl.pokemon.clefairy.genus
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      color: *black-white.pokemon.clefairy.color
+      shape: *diamond-pearl.pokemon.clefairy.shape
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: *diamond-pearl.pokemon.clefairy.baby
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: *diamond-pearl.pokemon.clefairy.experience
+      types: *gold-silver.pokemon.clefairy.egg_groups
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      mega: *x-y.pokemon.clefairy.mega
+      stats: *diamond-pearl.pokemon.clefairy.stats
+      abilities: *black-white.pokemon.clefairy.abilities
+      wild_held_items:
+        sun: *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+        moon: *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        sun: |-
+          Its adorable behavior and appearance make it
+          popular with men and women, young and old.
+          Its numbers are few, however.
+        moon: |-
+          On nights with a full moon, they gather together
+          and dance. The surrounding area is enveloped
+          in an abnormal magnetic field.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *x-y.pokemon.clefairy.forms.clefairy.icon
+          sprites:
+            - sun-moon/shiny/clefairy-default.png
+            - sun-moon/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *x-y.pokemon.clefairy.forms.clefairy.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 273
+    updated-ulaula: 94
+  pokemon:
+    clefairy:
+      genus: *diamond-pearl.pokemon.clefairy.genus
+      evolution_parent: *gold-silver.pokemon.clefairy.evolution_parent
+      color: *black-white.pokemon.clefairy.color
+      shape: *diamond-pearl.pokemon.clefairy.shape
+      female_rate: *gold-silver.pokemon.clefairy.female_rate
+      capture_rate: *red-blue.pokemon.clefairy.capture_rate
+      happiness: *ruby-sapphire.pokemon.clefairy.happiness
+      baby: *diamond-pearl.pokemon.clefairy.baby
+      hatch_steps: *gold-silver.pokemon.clefairy.hatch_steps
+      growth_rate: *red-blue.pokemon.clefairy.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.clefairy.forms_switchable
+      name: Clefairy
+      default: *red-blue.pokemon.clefairy.default
+      height: *red-blue.pokemon.clefairy.height
+      weight: *ruby-sapphire.pokemon.clefairy.weight
+      experience: *diamond-pearl.pokemon.clefairy.experience
+      types: *gold-silver.pokemon.clefairy.egg_groups
+      egg_groups: *gold-silver.pokemon.clefairy.egg_groups
+      mega: *x-y.pokemon.clefairy.mega
+      stats: *diamond-pearl.pokemon.clefairy.stats
+      abilities: *black-white.pokemon.clefairy.abilities
+      wild_held_items:
+        ultra-sun: *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+        ultra-moon: *firered-leafgreen.pokemon.clefairy.wild_held_items.firered
+      evolution_conditions: *gold-silver.pokemon.clefairy.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          They’re popular, but they’re rare. Trainers who
+          show them off recklessly may be targeted
+          by thieves.
+        ultra-moon: |-
+          Bathed in moonlight, its wings glow faintly.
+          Without even flapping, Clefairy rises into the air,
+          where it dances around.
+      forms:
+        clefairy:
+          name: Clefairy
+          form_name: *red-blue.pokemon.clefairy.forms.clefairy.form_name
+          default: true
+          battle_only: *red-blue.pokemon.clefairy.forms.clefairy.battle_only
+          icon: *x-y.pokemon.clefairy.forms.clefairy.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/clefairy-default.png
+            - ultra-sun-ultra-moon/clefairy-default.png
+          art: *red-blue.pokemon.clefairy.forms.clefairy.art
+          footprint: *ruby-sapphire.pokemon.clefairy.forms.clefairy.footprint
+          cry: *x-y.pokemon.clefairy.forms.clefairy.cry

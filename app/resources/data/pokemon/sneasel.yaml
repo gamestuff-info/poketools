@@ -1,0 +1,885 @@
+gold-silver:
+  name: &gold-silver.name SNEASEL
+  position: &gold-silver.position 214
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 215
+    original-johto: 212
+    original-johto-abc: 192
+  pokemon:
+    sneasel:
+      name: SNEASEL
+      default: &gold-silver.pokemon.sneasel.default true
+      capture_rate: &gold-silver.pokemon.sneasel.capture_rate 60
+      experience: &gold-silver.pokemon.sneasel.experience 132
+      types: &gold-silver.pokemon.sneasel.types
+        - dark
+        - ice
+      stats: &gold-silver.pokemon.sneasel.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 95
+          effort_change: 95
+        defense:
+          base_value: 55
+          effort_change: 55
+        speed:
+          base_value: 115
+          effort_change: 115
+        special-attack:
+          base_value: 35
+          effort_change: 35
+        special-defense:
+          base_value: 75
+          effort_change: 35
+      growth_rate: &gold-silver.pokemon.sneasel.growth_rate medium-slow
+      female_rate: &gold-silver.pokemon.sneasel.female_rate 50
+      hatch_steps: &gold-silver.pokemon.sneasel.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.sneasel.egg_groups
+        - ground
+      wild_held_items:
+        gold: &gold-silver.pokemon.sneasel.wild_held_items.gold
+          quick-claw: 2
+        silver: *gold-silver.pokemon.sneasel.wild_held_items.gold
+      genus: &gold-silver.pokemon.sneasel.genus 'SHARP CLAW Pokémon'
+      height: &gold-silver.pokemon.sneasel.height 8
+      weight: &gold-silver.pokemon.sneasel.weight 281
+      flavor_text:
+        gold: |
+          Its paws conceal
+          sharp claws. If
+          attacked, it sud-
+          denly extends the
+          claws and startles
+          its enemy.
+        silver: |
+          Vicious in nature,
+          it drives PIDGEY
+          from their nests
+          and feasts on the
+          eggs that are left
+          behind.
+      forms:
+        sneasel:
+          name: SNEASEL
+          form_name: &gold-silver.pokemon.sneasel.forms.sneasel.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.sneasel.forms.sneasel.battle_only false
+          sprites:
+            - gold-silver/sneasel-default.png
+            - gold-silver/back/sneasel-default.png
+            - gold-silver/shiny/sneasel-default.png
+          art: &gold-silver.pokemon.sneasel.forms.sneasel.art
+            - sneasel-default.png
+          cry: &gold-silver.pokemon.sneasel.forms.sneasel.cry gen5/sneasel-default.webm
+          icon: &gold-silver.pokemon.sneasel.forms.sneasel.icon gen2/fox.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    sneasel:
+      name: SNEASEL
+      default: *gold-silver.pokemon.sneasel.default
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      experience: *gold-silver.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      stats: *gold-silver.pokemon.sneasel.stats
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.sneasel.wild_held_items.gold
+      genus: *gold-silver.pokemon.sneasel.genus
+      height: *gold-silver.pokemon.sneasel.height
+      weight: *gold-silver.pokemon.sneasel.weight
+      flavor_text:
+        crystal: |
+          This cunning
+          #MON hides
+          under the cover
+          of darkness,
+          waiting to attack
+          its prey.
+      forms:
+        sneasel:
+          name: SNEASEL
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          sprites:
+            - crystal/sneasel-default.png
+            - crystal/back/sneasel-default.png
+            - crystal/shiny/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+          icon: *gold-silver.pokemon.sneasel.forms.sneasel.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 215
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 357
+  pokemon:
+    sneasel:
+      name: SNEASEL
+      default: *gold-silver.pokemon.sneasel.default
+      forms_switchable: &ruby-sapphire.pokemon.sneasel.forms_switchable false
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      experience: *gold-silver.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      stats: &ruby-sapphire.pokemon.sneasel.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 55
+          effort_change: 0
+        speed:
+          base_value: 115
+          effort_change: 1
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+          quick-claw: &ruby-sapphire.pokemon.sneasel.wild_held_items.ruby.quick-claw 5
+        sapphire: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.sneasel.happiness 35
+      abilities: &ruby-sapphire.pokemon.sneasel.abilities
+        inner-focus: &ruby-sapphire.pokemon.sneasel.abilities.inner-focus
+          hidden: &ruby-sapphire.pokemon.sneasel.abilities.inner-focus.hidden false
+          position: 1
+        keen-eye: &ruby-sapphire.pokemon.sneasel.abilities.keen-eye
+          hidden: *ruby-sapphire.pokemon.sneasel.abilities.inner-focus.hidden
+          position: 2
+      genus: *gold-silver.pokemon.sneasel.genus
+      height: &ruby-sapphire.pokemon.sneasel.height 9
+      weight: &ruby-sapphire.pokemon.sneasel.weight 280
+      flavor_text:
+        ruby: |
+          SNEASEL scales trees by punching its
+          hooked claws into the bark.
+           This POKéMON seeks out unguarded
+          nests and steals eggs for food while
+           the parents are away.
+        sapphire: |
+          SNEASEL scales trees by punching its
+          hooked claws into the bark.
+           This POKéMON seeks out unguarded
+          nests and steals eggs for food while
+           the parents are away.
+      forms:
+        sneasel:
+          name: SNEASEL
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: &ruby-sapphire.pokemon.sneasel.forms.sneasel.icon gen5/sneasel-default.png
+          sprites:
+            - ruby-sapphire/sneasel-default.png
+            - ruby-sapphire/back/sneasel-default.png
+            - ruby-sapphire/shiny/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: &ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint sneasel.png
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    sneasel:
+      name: SNEASEL
+      default: *gold-silver.pokemon.sneasel.default
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      experience: *gold-silver.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      stats: *ruby-sapphire.pokemon.sneasel.stats
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      abilities: *ruby-sapphire.pokemon.sneasel.abilities
+      genus: *gold-silver.pokemon.sneasel.genus
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      flavor_text:
+        emerald: |
+          A SNEASEL scales trees by punching its
+          hooked claws into the bark.  It seeks out
+          unguarded nests and steals eggs for food
+          while the parents are away.
+      forms:
+        sneasel:
+          name: SNEASEL
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *ruby-sapphire.pokemon.sneasel.forms.sneasel.icon
+          sprites:
+            - emerald/sneasel-default.png
+            - emerald/shiny/sneasel-default.png
+            - emerald/animated/sneasel-default.webm
+            - emerald/animated/shiny/sneasel-default.webm
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 310
+  pokemon:
+    sneasel:
+      name: SNEASEL
+      default: *gold-silver.pokemon.sneasel.default
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      experience: *gold-silver.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      stats: *ruby-sapphire.pokemon.sneasel.stats
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      abilities: *ruby-sapphire.pokemon.sneasel.abilities
+      genus: *gold-silver.pokemon.sneasel.genus
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      forms:
+        sneasel:
+          name: SNEASEL
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          sprites:
+            - colosseum/sneasel-default.png
+            - colosseum/shiny/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    sneasel:
+      name: SNEASEL
+      default: *gold-silver.pokemon.sneasel.default
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      experience: *gold-silver.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      stats: *ruby-sapphire.pokemon.sneasel.stats
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      abilities: *ruby-sapphire.pokemon.sneasel.abilities
+      genus: *gold-silver.pokemon.sneasel.genus
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      forms:
+        sneasel:
+          name: SNEASEL
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          sprites:
+            - xd/sneasel-default.png
+            - xd/shiny/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    sneasel:
+      name: SNEASEL
+      default: *gold-silver.pokemon.sneasel.default
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      experience: *gold-silver.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      stats: *ruby-sapphire.pokemon.sneasel.stats
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      abilities: *ruby-sapphire.pokemon.sneasel.abilities
+      genus: *gold-silver.pokemon.sneasel.genus
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      flavor_text:
+        firered: |
+          Vicious in nature, it drives PIDGEY from
+          their nests and feasts on the eggs that
+          are left behind.
+        leafgreen: |
+          Its paws conceal sharp claws.
+          If attacked, it suddenly extends the
+          claws and startles its enemy.
+      forms:
+        sneasel:
+          name: SNEASEL
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *ruby-sapphire.pokemon.sneasel.forms.sneasel.icon
+          sprites:
+            - firered-leafgreen/sneasel-default.png
+            - firered-leafgreen/back/sneasel-default.png
+            - firered-leafgreen/shiny/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+diamond-pearl:
+  name: &diamond-pearl.name Sneasel
+  position: &diamond-pearl.position 245
+  numbers:
+    national: *gold-silver.numbers.national
+    original-sinnoh: 144
+  pokemon:
+    sneasel:
+      genus: &diamond-pearl.pokemon.sneasel.genus 'Sharp Claw Pokémon'
+      shape: &diamond-pearl.pokemon.sneasel.shape upright
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: &diamond-pearl.pokemon.sneasel.baby false
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      pal_park: &diamond-pearl.pokemon.sneasel.pal_park
+        area: mountain
+        rate: 30
+        score: 50
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: &diamond-pearl.pokemon.sneasel.experience 86
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      stats: &diamond-pearl.pokemon.sneasel.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 55
+          effort_change: 0
+        speed:
+          base_value: 115
+          effort_change: 1
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.sneasel.abilities
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+          quick-claw: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby.quick-claw
+          grip-claw: 50
+        pearl: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          It feeds on eggs stolen from
+          nests. Its sharply hooked claws
+          rip vulnerable spots on prey.
+        pearl: |
+          It is extremely vicious and will not
+          stop attacking until its foe is
+          incapable of moving.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *ruby-sapphire.pokemon.sneasel.forms.sneasel.icon
+          sprites:
+            - diamond-pearl/sneasel-default.png
+            - diamond-pearl/back/sneasel-default.png
+            - diamond-pearl/back/female/sneasel-default.png
+            - diamond-pearl/back/shiny/sneasel-default.png
+            - diamond-pearl/female/sneasel-default.png
+            - diamond-pearl/shiny/sneasel-default.png
+            - diamond-pearl/shiny/female/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 144
+  pokemon:
+    sneasel:
+      genus: *diamond-pearl.pokemon.sneasel.genus
+      shape: *diamond-pearl.pokemon.sneasel.shape
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: *diamond-pearl.pokemon.sneasel.baby
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      pal_park: *diamond-pearl.pokemon.sneasel.pal_park
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: *diamond-pearl.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      stats: *diamond-pearl.pokemon.sneasel.stats
+      abilities: *ruby-sapphire.pokemon.sneasel.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          A smart and sneaky Pokémon. A pair
+          may work together to steal eggs by
+          having one lure the parents away.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *ruby-sapphire.pokemon.sneasel.forms.sneasel.icon
+          sprites:
+            - platinum/sneasel-default.png
+            - platinum/back/sneasel-default.png
+            - platinum/back/female/sneasel-default.png
+            - platinum/back/shiny/sneasel-default.png
+            - platinum/female/sneasel-default.png
+            - platinum/shiny/sneasel-default.png
+            - platinum/shiny/female/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 218
+  pokemon:
+    sneasel:
+      genus: *diamond-pearl.pokemon.sneasel.genus
+      shape: *diamond-pearl.pokemon.sneasel.shape
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: *diamond-pearl.pokemon.sneasel.baby
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      pal_park: *diamond-pearl.pokemon.sneasel.pal_park
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: *diamond-pearl.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      stats: *diamond-pearl.pokemon.sneasel.stats
+      abilities: *ruby-sapphire.pokemon.sneasel.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          Its paws conceal sharp claws. If
+          attacked, it suddenly extends the
+          claws and startles its enemy.
+        soulsilver: |
+          Vicious in nature, it drives PIDGEY
+          from their nests and scavenges any
+          leftovers it can find.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 5
+              range: 4-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 2-5
+            stamina:
+              base_value: 1
+              range: 1
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.sneasel.forms.sneasel.icon
+          sprites:
+            - heartgold-soulsilver/sneasel-default.png
+            - heartgold-soulsilver/back/sneasel-default.png
+            - heartgold-soulsilver/back/female/sneasel-default.png
+            - heartgold-soulsilver/back/shiny/sneasel-default.png
+            - heartgold-soulsilver/female/sneasel-default.png
+            - heartgold-soulsilver/shiny/sneasel-default.png
+            - heartgold-soulsilver/shiny/female/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sneasel:
+      genus: *diamond-pearl.pokemon.sneasel.genus
+      color: &black-white.pokemon.sneasel.color black
+      shape: *diamond-pearl.pokemon.sneasel.shape
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: *diamond-pearl.pokemon.sneasel.baby
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: *diamond-pearl.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      stats: *diamond-pearl.pokemon.sneasel.stats
+      abilities: &black-white.pokemon.sneasel.abilities
+        inner-focus: *ruby-sapphire.pokemon.sneasel.abilities.inner-focus
+        keen-eye: *ruby-sapphire.pokemon.sneasel.abilities.keen-eye
+        pickpocket:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+      flavor_text:
+        black: |
+          A smart and sneaky Pokémon. A pair
+          may work together to steal eggs by
+          having one lure the parents away.
+        white: |
+          A smart and sneaky Pokémon. A pair
+          may work together to steal eggs by
+          having one lure the parents away.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *ruby-sapphire.pokemon.sneasel.forms.sneasel.icon
+          sprites:
+            - black-white/sneasel-default.png
+            - black-white/back/sneasel-default.png
+            - black-white/back/female/sneasel-default.png
+            - black-white/back/shiny/sneasel-default.png
+            - black-white/female/sneasel-default.png
+            - black-white/shiny/sneasel-default.png
+            - black-white/shiny/female/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 252
+  pokemon:
+    sneasel:
+      genus: *diamond-pearl.pokemon.sneasel.genus
+      color: *black-white.pokemon.sneasel.color
+      shape: *diamond-pearl.pokemon.sneasel.shape
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: *diamond-pearl.pokemon.sneasel.baby
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: *diamond-pearl.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      stats: *diamond-pearl.pokemon.sneasel.stats
+      abilities: *black-white.pokemon.sneasel.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          A smart and sneaky Pokémon,
+          it makes its opponents flinch by suddenly
+          showing the claws hidden in its paws.
+        white-2: |
+          A smart and sneaky Pokémon,
+          it makes its opponents flinch by suddenly
+          showing the claws hidden in its paws.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *ruby-sapphire.pokemon.sneasel.forms.sneasel.icon
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *gold-silver.pokemon.sneasel.forms.sneasel.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-mountain: 91
+  pokemon:
+    sneasel:
+      genus: *diamond-pearl.pokemon.sneasel.genus
+      color: *black-white.pokemon.sneasel.color
+      shape: *diamond-pearl.pokemon.sneasel.shape
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: *diamond-pearl.pokemon.sneasel.baby
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: *diamond-pearl.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      mega: &x-y.pokemon.sneasel.mega false
+      stats: *diamond-pearl.pokemon.sneasel.stats
+      abilities: *black-white.pokemon.sneasel.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.sneasel.wild_held_items.diamond
+      flavor_text:
+        x: |
+          It feeds on eggs stolen from nests. Its sharply
+          hooked claws rip vulnerable spots on prey.
+        'y': |
+          Its paws conceal sharp claws. If attacked,
+          it suddenly extends the claws and startles
+          its enemy.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: &x-y.pokemon.sneasel.forms.sneasel.icon sneasel-default.png
+          sprites:
+            - x-y/sneasel-default.png
+            - x-y/female/sneasel-default.png
+            - x-y/shiny/sneasel-default.png
+            - x-y/shiny/female/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: &x-y.pokemon.sneasel.forms.sneasel.cry sneasel-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sneasel:
+      genus: *diamond-pearl.pokemon.sneasel.genus
+      color: *black-white.pokemon.sneasel.color
+      shape: *diamond-pearl.pokemon.sneasel.shape
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: *diamond-pearl.pokemon.sneasel.baby
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: *diamond-pearl.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      mega: *x-y.pokemon.sneasel.mega
+      stats: *diamond-pearl.pokemon.sneasel.stats
+      abilities: *black-white.pokemon.sneasel.abilities
+      flavor_text:
+        omega-ruby: |
+          Sneasel scales trees by punching its hooked claws into the
+          bark. This Pokémon seeks out unguarded nests and steals
+          eggs for food while the parents are away.
+        alpha-sapphire: |
+          Sneasel scales trees by punching its hooked claws into the
+          bark. This Pokémon seeks out unguarded nests and steals
+          eggs for food while the parents are away.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *x-y.pokemon.sneasel.forms.sneasel.icon
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *x-y.pokemon.sneasel.forms.sneasel.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/sneasel-default.png
+            - omega-ruby-alpha-sapphire/shiny/sneasel-default.png
+            - omega-ruby-alpha-sapphire/female/sneasel-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/sneasel-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 249
+    original-ulaula: 121
+  pokemon:
+    sneasel:
+      genus: *diamond-pearl.pokemon.sneasel.genus
+      color: *black-white.pokemon.sneasel.color
+      shape: *diamond-pearl.pokemon.sneasel.shape
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: *diamond-pearl.pokemon.sneasel.baby
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: *diamond-pearl.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      mega: *x-y.pokemon.sneasel.mega
+      stats: *diamond-pearl.pokemon.sneasel.stats
+      abilities: *black-white.pokemon.sneasel.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+      flavor_text:
+        sun: |-
+          It has a cunning yet savage disposition.
+          It waits for parents to leave their nests,
+          and then it sneaks in to steal their eggs.
+        moon: |-
+          It uses its claws to poke holes in eggs so it can
+          slurp out the insides. Breeders consider it a
+          scourge and will drive it away or eradicate it.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *x-y.pokemon.sneasel.forms.sneasel.icon
+          sprites:
+            - sun-moon/sneasel-default.png
+            - sun-moon/female/sneasel-default.png
+            - sun-moon/shiny/sneasel-default.png
+            - sun-moon/shiny/female/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *x-y.pokemon.sneasel.forms.sneasel.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 326
+    updated-ulaula: 147
+  pokemon:
+    sneasel:
+      genus: *diamond-pearl.pokemon.sneasel.genus
+      color: *black-white.pokemon.sneasel.color
+      shape: *diamond-pearl.pokemon.sneasel.shape
+      female_rate: *gold-silver.pokemon.sneasel.female_rate
+      capture_rate: *gold-silver.pokemon.sneasel.capture_rate
+      happiness: *ruby-sapphire.pokemon.sneasel.happiness
+      baby: *diamond-pearl.pokemon.sneasel.baby
+      hatch_steps: *gold-silver.pokemon.sneasel.hatch_steps
+      growth_rate: *gold-silver.pokemon.sneasel.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sneasel.forms_switchable
+      name: Sneasel
+      default: *gold-silver.pokemon.sneasel.default
+      height: *ruby-sapphire.pokemon.sneasel.height
+      weight: *ruby-sapphire.pokemon.sneasel.weight
+      experience: *diamond-pearl.pokemon.sneasel.experience
+      types: *gold-silver.pokemon.sneasel.types
+      egg_groups: *gold-silver.pokemon.sneasel.egg_groups
+      mega: *x-y.pokemon.sneasel.mega
+      stats: *diamond-pearl.pokemon.sneasel.stats
+      abilities: *black-white.pokemon.sneasel.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.sneasel.wild_held_items.ruby
+      flavor_text:
+        ultra-sun: |-
+          They will cooperate to steal eggs from the nests
+          of bird Pokémon, but fights break out to
+          determine which one gets to eat the eggs.
+        ultra-moon: |-
+          It blends into the dark of night to ambush its
+          prey. Sneasel will attack Sandshrew, but its
+          hard skin can cause Sneasel’s claws to snap off.
+      forms:
+        sneasel:
+          name: Sneasel
+          form_name: *gold-silver.pokemon.sneasel.forms.sneasel.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sneasel.forms.sneasel.battle_only
+          icon: *x-y.pokemon.sneasel.forms.sneasel.icon
+          sprites:
+            - ultra-sun-ultra-moon/sneasel-default.png
+            - ultra-sun-ultra-moon/female/sneasel-default.png
+            - ultra-sun-ultra-moon/shiny/sneasel-default.png
+            - ultra-sun-ultra-moon/shiny/female/sneasel-default.png
+          art: *gold-silver.pokemon.sneasel.forms.sneasel.art
+          footprint: *ruby-sapphire.pokemon.sneasel.forms.sneasel.footprint
+          cry: *x-y.pokemon.sneasel.forms.sneasel.cry

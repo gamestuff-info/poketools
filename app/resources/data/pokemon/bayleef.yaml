@@ -1,0 +1,822 @@
+gold-silver:
+  name: &gold-silver.name BAYLEEF
+  position: &gold-silver.position 152
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 153
+    original-johto: 1
+    original-johto-abc: 241
+  pokemon:
+    bayleef:
+      name: BAYLEEF
+      default: &gold-silver.pokemon.bayleef.default true
+      capture_rate: &gold-silver.pokemon.bayleef.capture_rate 45
+      experience: &gold-silver.pokemon.bayleef.experience 141
+      types: &gold-silver.pokemon.bayleef.types
+        - grass
+      stats: &gold-silver.pokemon.bayleef.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 62
+          effort_change: 62
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 60
+          effort_change: 60
+        special-attack:
+          base_value: 63
+          effort_change: 63
+        special-defense:
+          base_value: 80
+          effort_change: 63
+      growth_rate: &gold-silver.pokemon.bayleef.growth_rate medium-slow
+      female_rate: &gold-silver.pokemon.bayleef.female_rate 12
+      hatch_steps: &gold-silver.pokemon.bayleef.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.bayleef.egg_groups
+        - monster
+        - plant
+      genus: &gold-silver.pokemon.bayleef.genus 'LEAF Pokémon'
+      height: &gold-silver.pokemon.bayleef.height 11
+      weight: &gold-silver.pokemon.bayleef.weight 158
+      flavor_text:
+        gold: |
+          The scent of
+          spices comes from
+          around its neck.
+          Somehow, sniffing
+          it makes you want
+          to fight.
+        silver: |
+          A spicy aroma ema-
+          nates from around
+          its neck. The
+          aroma acts as a
+          stimulant to re-
+          store health.
+      evolution_parent: &gold-silver.pokemon.bayleef.evolution_parent chikorita/chikorita
+      evolution_conditions: &gold-silver.pokemon.bayleef.evolution_conditions
+        level-up:
+          minimum_level: 16
+      forms:
+        bayleef:
+          name: BAYLEEF
+          form_name: &gold-silver.pokemon.bayleef.forms.bayleef.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.bayleef.forms.bayleef.battle_only false
+          sprites:
+            - gold-silver/bayleef-default.png
+            - gold-silver/back/bayleef-default.png
+            - gold-silver/shiny/bayleef-default.png
+          art: &gold-silver.pokemon.bayleef.forms.bayleef.art
+            - bayleef-default.png
+          cry: &gold-silver.pokemon.bayleef.forms.bayleef.cry gen5/bayleef-default.webm
+          icon: &gold-silver.pokemon.bayleef.forms.bayleef.icon gen2/oddish.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    bayleef:
+      name: BAYLEEF
+      default: *gold-silver.pokemon.bayleef.default
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      experience: *gold-silver.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      stats: *gold-silver.pokemon.bayleef.stats
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      genus: *gold-silver.pokemon.bayleef.genus
+      height: *gold-silver.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      flavor_text:
+        crystal: |
+          The scent that
+          wafts from the
+          leaves on its neck
+          causes anyone who
+          smells it to
+          become energetic.
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      forms:
+        bayleef:
+          name: BAYLEEF
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          sprites:
+            - crystal/bayleef-default.png
+            - crystal/back/bayleef-default.png
+            - crystal/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+          icon: *gold-silver.pokemon.bayleef.forms.bayleef.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 153
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 308
+  pokemon:
+    bayleef:
+      name: BAYLEEF
+      default: *gold-silver.pokemon.bayleef.default
+      forms_switchable: &ruby-sapphire.pokemon.bayleef.forms_switchable false
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      experience: *gold-silver.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      stats: &ruby-sapphire.pokemon.bayleef.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 62
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 63
+          effort_change: 1
+        special-defense:
+          base_value: 60
+          effort_change: 1
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      happiness: &ruby-sapphire.pokemon.bayleef.happiness 70
+      abilities: &ruby-sapphire.pokemon.bayleef.abilities
+        overgrow: &ruby-sapphire.pokemon.bayleef.abilities.overgrow
+          hidden: false
+          position: 1
+      genus: *gold-silver.pokemon.bayleef.genus
+      height: &ruby-sapphire.pokemon.bayleef.height 12
+      weight: *gold-silver.pokemon.bayleef.weight
+      flavor_text:
+        ruby: |
+          BAYLEEF's neck is ringed by curled-up
+          leaves. Inside each tubular leaf is a
+          small shoot of a tree.
+          The fragrance of this shoot makes
+           people peppy.
+        sapphire: |
+          BAYLEEF's neck is ringed by curled-up
+          leaves. Inside each tubular leaf is a
+          small shoot of a tree.
+          The fragrance of this shoot makes
+           people peppy.
+      forms:
+        bayleef:
+          name: BAYLEEF
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: &ruby-sapphire.pokemon.bayleef.forms.bayleef.icon gen5/bayleef-default.png
+          sprites:
+            - ruby-sapphire/bayleef-default.png
+            - ruby-sapphire/back/bayleef-default.png
+            - ruby-sapphire/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: &ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint bayleef.png
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    bayleef:
+      name: BAYLEEF
+      default: *gold-silver.pokemon.bayleef.default
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      experience: *gold-silver.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      stats: *ruby-sapphire.pokemon.bayleef.stats
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      abilities: *ruby-sapphire.pokemon.bayleef.abilities
+      genus: *gold-silver.pokemon.bayleef.genus
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      flavor_text:
+        emerald: |
+          A BAYLEEF's neck is ringed by curled-up
+          leaves. Inside each leaf is a small tree
+          shoot. The fragrance of this shoot
+          makes people peppy.
+      forms:
+        bayleef:
+          name: BAYLEEF
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *ruby-sapphire.pokemon.bayleef.forms.bayleef.icon
+          sprites:
+            - emerald/bayleef-default.png
+            - emerald/shiny/bayleef-default.png
+            - emerald/animated/bayleef-default.webm
+            - emerald/animated/shiny/bayleef-default.webm
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 22
+  pokemon:
+    bayleef:
+      name: BAYLEEF
+      default: *gold-silver.pokemon.bayleef.default
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      experience: *gold-silver.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      stats: *ruby-sapphire.pokemon.bayleef.stats
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      abilities: *ruby-sapphire.pokemon.bayleef.abilities
+      genus: *gold-silver.pokemon.bayleef.genus
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      forms:
+        bayleef:
+          name: BAYLEEF
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          sprites:
+            - colosseum/bayleef-default.png
+            - colosseum/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    bayleef:
+      name: BAYLEEF
+      default: *gold-silver.pokemon.bayleef.default
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      experience: *gold-silver.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      stats: *ruby-sapphire.pokemon.bayleef.stats
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      abilities: *ruby-sapphire.pokemon.bayleef.abilities
+      genus: *gold-silver.pokemon.bayleef.genus
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      forms:
+        bayleef:
+          name: BAYLEEF
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          sprites:
+            - xd/bayleef-default.png
+            - xd/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    bayleef:
+      name: BAYLEEF
+      default: *gold-silver.pokemon.bayleef.default
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      experience: *gold-silver.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      stats: *ruby-sapphire.pokemon.bayleef.stats
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      abilities: *ruby-sapphire.pokemon.bayleef.abilities
+      genus: *gold-silver.pokemon.bayleef.genus
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      flavor_text:
+        firered: |
+          A spicy aroma emanates from around its
+          neck. The aroma acts as a stimulant to
+          restore health.
+        leafgreen: |
+          The scent of spices comes from around
+          its neck. Somehow, sniffing it makes you
+          want to fight.
+      forms:
+        bayleef:
+          name: BAYLEEF
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *ruby-sapphire.pokemon.bayleef.forms.bayleef.icon
+          sprites:
+            - firered-leafgreen/bayleef-default.png
+            - firered-leafgreen/back/bayleef-default.png
+            - firered-leafgreen/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Bayleef
+  position: &diamond-pearl.position 185
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    bayleef:
+      genus: &diamond-pearl.pokemon.bayleef.genus 'Leaf Pokémon'
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      shape: &diamond-pearl.pokemon.bayleef.shape quadruped
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: &diamond-pearl.pokemon.bayleef.baby false
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      pal_park: &diamond-pearl.pokemon.bayleef.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: &diamond-pearl.pokemon.bayleef.experience 142
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      stats: &diamond-pearl.pokemon.bayleef.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 62
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 63
+          effort_change: 0
+        special-defense:
+          base_value: 80
+          effort_change: 1
+      abilities: &diamond-pearl.pokemon.bayleef.abilities
+        overgrow: *ruby-sapphire.pokemon.bayleef.abilities.overgrow
+        leaf-guard:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      flavor_text:
+        diamond: |
+          The buds that ring its neck give
+          off a spicy aroma that perks
+          people up.
+        pearl: |
+          The buds that ring its neck give
+          off a spicy aroma that perks
+          people up.
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *ruby-sapphire.pokemon.bayleef.forms.bayleef.icon
+          sprites:
+            - diamond-pearl/bayleef-default.png
+            - diamond-pearl/back/bayleef-default.png
+            - diamond-pearl/back/shiny/bayleef-default.png
+            - diamond-pearl/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    bayleef:
+      genus: *diamond-pearl.pokemon.bayleef.genus
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      shape: *diamond-pearl.pokemon.bayleef.shape
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: *diamond-pearl.pokemon.bayleef.baby
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      pal_park: *diamond-pearl.pokemon.bayleef.pal_park
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: *diamond-pearl.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      stats: *diamond-pearl.pokemon.bayleef.stats
+      abilities: *diamond-pearl.pokemon.bayleef.abilities
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      flavor_text:
+        platinum: |
+          The buds that ring its neck give
+          off a spicy aroma that perks
+          people up.
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *ruby-sapphire.pokemon.bayleef.forms.bayleef.icon
+          sprites:
+            - platinum/bayleef-default.png
+            - platinum/back/bayleef-default.png
+            - platinum/back/shiny/bayleef-default.png
+            - platinum/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 2
+  pokemon:
+    bayleef:
+      genus: *diamond-pearl.pokemon.bayleef.genus
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      shape: *diamond-pearl.pokemon.bayleef.shape
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: *diamond-pearl.pokemon.bayleef.baby
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      pal_park: *diamond-pearl.pokemon.bayleef.pal_park
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: *diamond-pearl.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      stats: *diamond-pearl.pokemon.bayleef.stats
+      abilities: *diamond-pearl.pokemon.bayleef.abilities
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      flavor_text:
+        heartgold: |
+          The scent of spices comes from
+          around its neck. Somehow,
+          sniffing it makes you want to fight.
+        soulsilver: |
+          A spicy aroma emanates from around
+          its neck. The aroma acts as a
+          stimulant to restore health.
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 1-5
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.bayleef.forms.bayleef.icon
+          sprites:
+            - heartgold-soulsilver/bayleef-default.png
+            - heartgold-soulsilver/back/bayleef-default.png
+            - heartgold-soulsilver/back/shiny/bayleef-default.png
+            - heartgold-soulsilver/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    bayleef:
+      genus: *diamond-pearl.pokemon.bayleef.genus
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      color: &black-white.pokemon.bayleef.color green
+      shape: *diamond-pearl.pokemon.bayleef.shape
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: *diamond-pearl.pokemon.bayleef.baby
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: *diamond-pearl.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      stats: *diamond-pearl.pokemon.bayleef.stats
+      abilities: *diamond-pearl.pokemon.bayleef.abilities
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      flavor_text:
+        black: |
+          The buds that ring its neck give
+          off a spicy aroma that perks
+          people up.
+        white: |
+          The buds that ring its neck give
+          off a spicy aroma that perks
+          people up.
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *ruby-sapphire.pokemon.bayleef.forms.bayleef.icon
+          sprites:
+            - black-white/bayleef-default.png
+            - black-white/back/bayleef-default.png
+            - black-white/back/shiny/bayleef-default.png
+            - black-white/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    bayleef:
+      genus: *diamond-pearl.pokemon.bayleef.genus
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      color: *black-white.pokemon.bayleef.color
+      shape: *diamond-pearl.pokemon.bayleef.shape
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: *diamond-pearl.pokemon.bayleef.baby
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: *diamond-pearl.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      stats: *diamond-pearl.pokemon.bayleef.stats
+      abilities: *diamond-pearl.pokemon.bayleef.abilities
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      flavor_text:
+        black-2: |
+          The buds that ring its neck give
+          off a spicy aroma that perks
+          people up.
+        white-2: |
+          The buds that ring its neck give
+          off a spicy aroma that perks
+          people up.
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *ruby-sapphire.pokemon.bayleef.forms.bayleef.icon
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *gold-silver.pokemon.bayleef.forms.bayleef.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    bayleef:
+      genus: *diamond-pearl.pokemon.bayleef.genus
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      color: *black-white.pokemon.bayleef.color
+      shape: *diamond-pearl.pokemon.bayleef.shape
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: *diamond-pearl.pokemon.bayleef.baby
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: *diamond-pearl.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      mega: &x-y.pokemon.bayleef.mega false
+      stats: *diamond-pearl.pokemon.bayleef.stats
+      abilities: *diamond-pearl.pokemon.bayleef.abilities
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      flavor_text:
+        x: |
+          A spicy aroma emanates from around its neck.
+          The aroma acts as a stimulant to restore health.
+        'y': |
+          The buds that ring its neck give off a spicy aroma
+          that perks people up.
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: &x-y.pokemon.bayleef.forms.bayleef.icon bayleef-default.png
+          sprites:
+            - x-y/bayleef-default.png
+            - x-y/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: &x-y.pokemon.bayleef.forms.bayleef.cry bayleef-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    bayleef:
+      genus: *diamond-pearl.pokemon.bayleef.genus
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      color: *black-white.pokemon.bayleef.color
+      shape: *diamond-pearl.pokemon.bayleef.shape
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: *diamond-pearl.pokemon.bayleef.baby
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: *diamond-pearl.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      mega: *x-y.pokemon.bayleef.mega
+      stats: *diamond-pearl.pokemon.bayleef.stats
+      abilities: *diamond-pearl.pokemon.bayleef.abilities
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Bayleef’s neck is ringed by curled-up leaves. Inside each
+          tubular leaf is a small shoot of a tree. The fragrance of this
+          shoot makes people peppy.
+        alpha-sapphire: |
+          Bayleef’s neck is ringed by curled-up leaves. Inside each
+          tubular leaf is a small shoot of a tree. The fragrance of this
+          shoot makes people peppy.
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *x-y.pokemon.bayleef.forms.bayleef.icon
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *x-y.pokemon.bayleef.forms.bayleef.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/bayleef-default.png
+            - omega-ruby-alpha-sapphire/shiny/bayleef-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    bayleef:
+      genus: *diamond-pearl.pokemon.bayleef.genus
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      color: *black-white.pokemon.bayleef.color
+      shape: *diamond-pearl.pokemon.bayleef.shape
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: *diamond-pearl.pokemon.bayleef.baby
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: *diamond-pearl.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      mega: *x-y.pokemon.bayleef.mega
+      stats: *diamond-pearl.pokemon.bayleef.stats
+      abilities: *diamond-pearl.pokemon.bayleef.abilities
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *x-y.pokemon.bayleef.forms.bayleef.icon
+          sprites:
+            - sun-moon/bayleef-default.png
+            - sun-moon/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *x-y.pokemon.bayleef.forms.bayleef.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    bayleef:
+      genus: *diamond-pearl.pokemon.bayleef.genus
+      evolution_parent: *gold-silver.pokemon.bayleef.evolution_parent
+      color: *black-white.pokemon.bayleef.color
+      shape: *diamond-pearl.pokemon.bayleef.shape
+      female_rate: *gold-silver.pokemon.bayleef.female_rate
+      capture_rate: *gold-silver.pokemon.bayleef.capture_rate
+      happiness: *ruby-sapphire.pokemon.bayleef.happiness
+      baby: *diamond-pearl.pokemon.bayleef.baby
+      hatch_steps: *gold-silver.pokemon.bayleef.hatch_steps
+      growth_rate: *gold-silver.pokemon.bayleef.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.bayleef.forms_switchable
+      name: Bayleef
+      default: *gold-silver.pokemon.bayleef.default
+      height: *ruby-sapphire.pokemon.bayleef.height
+      weight: *gold-silver.pokemon.bayleef.weight
+      experience: *diamond-pearl.pokemon.bayleef.experience
+      types: *gold-silver.pokemon.bayleef.types
+      egg_groups: *gold-silver.pokemon.bayleef.egg_groups
+      mega: *x-y.pokemon.bayleef.mega
+      stats: *diamond-pearl.pokemon.bayleef.stats
+      abilities: *diamond-pearl.pokemon.bayleef.abilities
+      evolution_conditions: *gold-silver.pokemon.bayleef.evolution_conditions
+      forms:
+        bayleef:
+          name: Bayleef
+          form_name: *gold-silver.pokemon.bayleef.forms.bayleef.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.bayleef.forms.bayleef.battle_only
+          icon: *x-y.pokemon.bayleef.forms.bayleef.icon
+          sprites:
+            - ultra-sun-ultra-moon/bayleef-default.png
+            - ultra-sun-ultra-moon/shiny/bayleef-default.png
+          art: *gold-silver.pokemon.bayleef.forms.bayleef.art
+          footprint: *ruby-sapphire.pokemon.bayleef.forms.bayleef.footprint
+          cry: *x-y.pokemon.bayleef.forms.bayleef.cry

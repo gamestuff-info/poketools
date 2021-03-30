@@ -1,0 +1,217 @@
+red-blue: &red-blue
+  name: &red-blue.name 'STRING SHOT'
+  type: &red-blue.type bug
+  accuracy: &red-blue.accuracy 95
+  pp: &red-blue.pp 40
+  effect: &red-blue.effect 21
+  flags: &red-blue.flags
+    - protect
+    - reflectable
+    - mirror
+  categories: &red-blue.categories
+    - net-good-stats
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  stat_changes:
+    speed: 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target all-opponents
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: &gold-silver.stat_changes
+    speed: -2
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    A move that lowers
+    the foe's SPEED.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 11
+  contest_use_before: &ruby-sapphire.contest_use_before
+    - spider-web
+  flavor_text: &ruby-sapphire.flavor_text |
+    Binds the foe with string
+    to reduce its SPEED.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+xd:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+firered-leafgreen:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *red-blue.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  flavor_text: |
+    The foe is bound
+    with strings shot
+    from the mouth to
+    reduce its SPEED.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'String Shot'
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 19
+  flavor_text: &diamond-pearl.flavor_text |
+    The foe is bound with
+    silk blown from the
+    user’s mouth.
+    It reduces the
+    target’s Speed stat.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: |
+    The targets are bound with silk blown
+    from the user’s mouth. This silk reduces
+    the targets’ Speed stat.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  flavor_text: &x-y.flavor_text |
+    The opposing Pokémon are bound
+    with silk blown from the user’s mouth
+    that harshly lowers the Speed stat.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *red-blue.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 9
+  contest_use_before: *ruby-sapphire.contest_use_before
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *red-blue.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: 61
+  flavor_text: |
+    The opposing Pokémon are bound with silk blown
+    from the user’s mouth that harshly lowers the
+    Speed stat.
+ultra-sun-ultra-moon: *sun-moon

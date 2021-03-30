@@ -1,0 +1,958 @@
+red-blue:
+  name: &red-blue.name VILEPLUME
+  position: &red-blue.position 45
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 45
+    kanto: 45
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: &red-blue.pokemon.vileplume.default true
+      capture_rate: &red-blue.pokemon.vileplume.capture_rate 45
+      experience: &red-blue.pokemon.vileplume.experience 184
+      types: &red-blue.pokemon.vileplume.types
+        - grass
+        - poison
+      stats: &red-blue.pokemon.vileplume.stats
+        hp:
+          base_value: 75
+          effort_change: 75
+        attack:
+          base_value: 80
+          effort_change: 80
+        defense:
+          base_value: 85
+          effort_change: 85
+        speed:
+          base_value: 50
+          effort_change: 50
+        special:
+          base_value: 100
+          effort_change: 100
+      growth_rate: &red-blue.pokemon.vileplume.growth_rate medium-slow
+      genus: &red-blue.pokemon.vileplume.genus 'FLOWER Pokémon'
+      height: &red-blue.pokemon.vileplume.height 11
+      weight: &red-blue.pokemon.vileplume.weight 1859
+      flavor_text:
+        red: |
+          The larger its
+          petals, the more
+          toxic pollen it
+          contains. Its big
+           head is heavy and
+          hard to hold up.
+        blue: |
+          The larger its
+          petals, the more
+          toxic pollen it
+          contains. Its big
+           head is heavy and
+          hard to hold up.
+      evolution_parent: &red-blue.pokemon.vileplume.evolution_parent gloom/gloom
+      evolution_conditions: &red-blue.pokemon.vileplume.evolution_conditions
+        use-item:
+          trigger_item: leaf-stone
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: &red-blue.pokemon.vileplume.forms.vileplume.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.vileplume.forms.vileplume.battle_only false
+          sprites:
+            - red-blue/vileplume-default.png
+            - red-blue/gray/vileplume-default.png
+            - red-blue/back/vileplume-default.png
+          art: &red-blue.pokemon.vileplume.forms.vileplume.art
+            - vileplume-default.png
+          cry: &red-blue.pokemon.vileplume.forms.vileplume.cry gen5/vileplume-default.webm
+          icon: &red-blue.pokemon.vileplume.forms.vileplume.icon gen1/grass.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: *red-blue.pokemon.vileplume.default
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      experience: *red-blue.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      stats: *red-blue.pokemon.vileplume.stats
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      genus: *red-blue.pokemon.vileplume.genus
+      height: *red-blue.pokemon.vileplume.height
+      weight: *red-blue.pokemon.vileplume.weight
+      flavor_text:
+        yellow: |
+          Flaps its broad
+          flower petals to
+          scatter its
+          poisonous pollen.
+           The flapping sound
+          is very loud.
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          sprites:
+            - yellow/vileplume-default.png
+            - yellow/gray/vileplume-default.png
+            - yellow/back/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+          icon: *red-blue.pokemon.vileplume.forms.vileplume.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 44
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 84
+    original-johto-abc: 226
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: *red-blue.pokemon.vileplume.default
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      experience: *red-blue.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      stats: &gold-silver.pokemon.vileplume.stats
+        hp:
+          base_value: 75
+          effort_change: 75
+        attack:
+          base_value: 80
+          effort_change: 80
+        defense:
+          base_value: 85
+          effort_change: 85
+        speed:
+          base_value: 50
+          effort_change: 50
+        special-attack:
+          base_value: 100
+          effort_change: 100
+        special-defense:
+          base_value: 90
+          effort_change: 100
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      female_rate: &gold-silver.pokemon.vileplume.female_rate 50
+      hatch_steps: &gold-silver.pokemon.vileplume.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.vileplume.egg_groups
+        - plant
+      genus: *red-blue.pokemon.vileplume.genus
+      height: *red-blue.pokemon.vileplume.height
+      weight: &gold-silver.pokemon.vileplume.weight 185
+      flavor_text:
+        gold: |
+          It has the world's
+          largest petals.
+          With every step,
+          the petals shake
+          out heavy clouds
+          of toxic pollen.
+        silver: |
+          The bud bursts
+          into bloom with a
+          bang. It then
+          starts scattering
+          allergenic, poi-
+          sonous pollen.
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          sprites:
+            - gold-silver/vileplume-default.png
+            - gold-silver/back/vileplume-default.png
+            - gold-silver/shiny/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+          icon: &gold-silver.pokemon.vileplume.forms.vileplume.icon gen2/oddish.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: *red-blue.pokemon.vileplume.default
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      experience: *red-blue.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      stats: *gold-silver.pokemon.vileplume.stats
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      genus: *red-blue.pokemon.vileplume.genus
+      height: *red-blue.pokemon.vileplume.height
+      weight: *gold-silver.pokemon.vileplume.weight
+      flavor_text:
+        crystal: |
+          By shaking its big
+          petals, it scat-
+          ters toxic pollen
+          into the air,
+          turning the air
+          yellow.
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          sprites:
+            - crystal/vileplume-default.png
+            - crystal/back/vileplume-default.png
+            - crystal/shiny/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+          icon: *gold-silver.pokemon.vileplume.forms.vileplume.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 90
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: *red-blue.pokemon.vileplume.default
+      forms_switchable: &ruby-sapphire.pokemon.vileplume.forms_switchable false
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      experience: *red-blue.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      stats: &ruby-sapphire.pokemon.vileplume.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      happiness: &ruby-sapphire.pokemon.vileplume.happiness 70
+      abilities: &ruby-sapphire.pokemon.vileplume.abilities
+        chlorophyll: &ruby-sapphire.pokemon.vileplume.abilities.chlorophyll
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.vileplume.genus
+      height: &ruby-sapphire.pokemon.vileplume.height 12
+      weight: &ruby-sapphire.pokemon.vileplume.weight 186
+      flavor_text:
+        ruby: |
+          VILEPLUME's toxic pollen triggers
+          atrocious allergy attacks. That's why
+          it is advisable never to approach any
+          attractive flowers in a jungle,  however
+          pretty they may be.
+        sapphire: |
+          VILEPLUME has the world's largest
+          petals. They are used to attract prey
+          that are then doused with toxic spores.
+          Once the prey are immobilized,  this
+          POKéMON catches and devours them.
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: &ruby-sapphire.pokemon.vileplume.forms.vileplume.icon gen5/vileplume-default.png
+          sprites:
+            - ruby-sapphire/vileplume-default.png
+            - ruby-sapphire/back/vileplume-default.png
+            - ruby-sapphire/shiny/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: &ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint vileplume.png
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: *red-blue.pokemon.vileplume.default
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      experience: *red-blue.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      stats: *ruby-sapphire.pokemon.vileplume.stats
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      abilities: *ruby-sapphire.pokemon.vileplume.abilities
+      genus: *red-blue.pokemon.vileplume.genus
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      flavor_text:
+        emerald: |
+          In seasons when it produces more pollen,
+          the air around a VILEPLUME turns yellow
+          with the powder as it walks. The pollen is
+          highly toxic and causes paralysis.
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *ruby-sapphire.pokemon.vileplume.forms.vileplume.icon
+          sprites:
+            - emerald/vileplume-default.png
+            - emerald/shiny/vileplume-default.png
+            - emerald/animated/vileplume-default.webm
+            - emerald/animated/shiny/vileplume-default.webm
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 362
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: *red-blue.pokemon.vileplume.default
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      experience: *red-blue.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      stats: *ruby-sapphire.pokemon.vileplume.stats
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      abilities: *ruby-sapphire.pokemon.vileplume.abilities
+      genus: *red-blue.pokemon.vileplume.genus
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          sprites:
+            - colosseum/vileplume-default.png
+            - colosseum/shiny/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: *red-blue.pokemon.vileplume.default
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      experience: *red-blue.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      stats: *ruby-sapphire.pokemon.vileplume.stats
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      abilities: *ruby-sapphire.pokemon.vileplume.abilities
+      genus: *red-blue.pokemon.vileplume.genus
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          sprites:
+            - xd/vileplume-default.png
+            - xd/shiny/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    vileplume:
+      name: VILEPLUME
+      default: *red-blue.pokemon.vileplume.default
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      experience: *red-blue.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      stats: *ruby-sapphire.pokemon.vileplume.stats
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      abilities: *ruby-sapphire.pokemon.vileplume.abilities
+      genus: *red-blue.pokemon.vileplume.genus
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      flavor_text:
+        firered: |
+          Its petals are the largest in the world.
+          It fiendishly scatters allergy-causing
+          pollen from its petals.
+        leafgreen: |
+          The larger its petals, the more toxic
+          pollen it contains. Its big head is heavy
+          and hard to hold up.
+      forms:
+        vileplume:
+          name: VILEPLUME
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *ruby-sapphire.pokemon.vileplume.forms.vileplume.icon
+          sprites:
+            - firered-leafgreen/vileplume-default.png
+            - firered-leafgreen/back/vileplume-default.png
+            - firered-leafgreen/shiny/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Vileplume
+  position: &diamond-pearl.position 49
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    vileplume:
+      genus: &diamond-pearl.pokemon.vileplume.genus 'Flower Pokémon'
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      shape: &diamond-pearl.pokemon.vileplume.shape humanoid
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: &diamond-pearl.pokemon.vileplume.baby false
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      pal_park: &diamond-pearl.pokemon.vileplume.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: &diamond-pearl.pokemon.vileplume.experience 221
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      stats: &diamond-pearl.pokemon.vileplume.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 110
+          effort_change: 3
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.vileplume.abilities
+        chlorophyll: *ruby-sapphire.pokemon.vileplume.abilities.chlorophyll
+        effect-spore:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      flavor_text:
+        diamond: |
+          Its petals are the largest in the
+          world. As it walks, it scatters
+          extremely allergenic pollen.
+        pearl: |
+          Its petals are the largest in the
+          world. As it walks, it scatters
+          extremely allergenic pollen.
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *ruby-sapphire.pokemon.vileplume.forms.vileplume.icon
+          sprites:
+            - diamond-pearl/vileplume-default.png
+            - diamond-pearl/back/vileplume-default.png
+            - diamond-pearl/back/female/vileplume-default.png
+            - diamond-pearl/back/shiny/vileplume-default.png
+            - diamond-pearl/female/vileplume-default.png
+            - diamond-pearl/shiny/vileplume-default.png
+            - diamond-pearl/shiny/female/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    vileplume:
+      genus: *diamond-pearl.pokemon.vileplume.genus
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      shape: *diamond-pearl.pokemon.vileplume.shape
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: *diamond-pearl.pokemon.vileplume.baby
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      pal_park: *diamond-pearl.pokemon.vileplume.pal_park
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: *diamond-pearl.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      stats: *diamond-pearl.pokemon.vileplume.stats
+      abilities: *diamond-pearl.pokemon.vileplume.abilities
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      flavor_text:
+        platinum: |
+          Its petals are the largest in the
+          world. As it walks, it scatters
+          extremely allergenic pollen.
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *ruby-sapphire.pokemon.vileplume.forms.vileplume.icon
+          sprites:
+            - platinum/vileplume-default.png
+            - platinum/back/vileplume-default.png
+            - platinum/back/female/vileplume-default.png
+            - platinum/back/shiny/vileplume-default.png
+            - platinum/female/vileplume-default.png
+            - platinum/shiny/vileplume-default.png
+            - platinum/shiny/female/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 85
+  pokemon:
+    vileplume:
+      genus: *diamond-pearl.pokemon.vileplume.genus
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      shape: *diamond-pearl.pokemon.vileplume.shape
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: *diamond-pearl.pokemon.vileplume.baby
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      pal_park: *diamond-pearl.pokemon.vileplume.pal_park
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: *diamond-pearl.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      stats: *diamond-pearl.pokemon.vileplume.stats
+      abilities: *diamond-pearl.pokemon.vileplume.abilities
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It has the world’s largest petals.
+          With every step, the petals shake
+          out heavy clouds of toxic pollen.
+        soulsilver: |
+          The bud bursts into bloom with a
+          bang. It then starts scattering
+          allergenic, poisonous pollen.
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 5
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.vileplume.forms.vileplume.icon
+          sprites:
+            - heartgold-soulsilver/vileplume-default.png
+            - heartgold-soulsilver/back/vileplume-default.png
+            - heartgold-soulsilver/back/female/vileplume-default.png
+            - heartgold-soulsilver/back/shiny/vileplume-default.png
+            - heartgold-soulsilver/female/vileplume-default.png
+            - heartgold-soulsilver/shiny/vileplume-default.png
+            - heartgold-soulsilver/shiny/female/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    vileplume:
+      genus: *diamond-pearl.pokemon.vileplume.genus
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      color: &black-white.pokemon.vileplume.color red
+      shape: *diamond-pearl.pokemon.vileplume.shape
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: *diamond-pearl.pokemon.vileplume.baby
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: *diamond-pearl.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      stats: *diamond-pearl.pokemon.vileplume.stats
+      abilities: *diamond-pearl.pokemon.vileplume.abilities
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      flavor_text:
+        black: |
+          Its petals are the largest in the
+          world. As it walks, it scatters
+          extremely allergenic pollen.
+        white: |
+          Its petals are the largest in the
+          world. As it walks, it scatters
+          extremely allergenic pollen.
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *ruby-sapphire.pokemon.vileplume.forms.vileplume.icon
+          sprites:
+            - black-white/vileplume-default.png
+            - black-white/back/vileplume-default.png
+            - black-white/back/female/vileplume-default.png
+            - black-white/back/shiny/vileplume-default.png
+            - black-white/female/vileplume-default.png
+            - black-white/shiny/vileplume-default.png
+            - black-white/shiny/female/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    vileplume:
+      genus: *diamond-pearl.pokemon.vileplume.genus
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      color: *black-white.pokemon.vileplume.color
+      shape: *diamond-pearl.pokemon.vileplume.shape
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: *diamond-pearl.pokemon.vileplume.baby
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: *diamond-pearl.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      stats: *diamond-pearl.pokemon.vileplume.stats
+      abilities: *diamond-pearl.pokemon.vileplume.abilities
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      flavor_text:
+        black-2: |
+          Its petals are the largest in the
+          world. As it walks, it scatters
+          extremely allergenic pollen.
+        white-2: |
+          Its petals are the largest in the
+          world. As it walks, it scatters
+          extremely allergenic pollen.
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *ruby-sapphire.pokemon.vileplume.forms.vileplume.icon
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *red-blue.pokemon.vileplume.forms.vileplume.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 107
+  pokemon:
+    vileplume:
+      genus: *diamond-pearl.pokemon.vileplume.genus
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      color: *black-white.pokemon.vileplume.color
+      shape: *diamond-pearl.pokemon.vileplume.shape
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: *diamond-pearl.pokemon.vileplume.baby
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: *diamond-pearl.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      mega: &x-y.pokemon.vileplume.mega false
+      stats: *diamond-pearl.pokemon.vileplume.stats
+      abilities: *diamond-pearl.pokemon.vileplume.abilities
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      flavor_text:
+        x: |
+          The larger its petals, the more toxic pollen it
+          contains. Its big head is heavy and hard to hold up.
+        'y': |
+          It has the world’s largest petals. With every step,
+          the petals shake out heavy clouds of toxic pollen.
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: &x-y.pokemon.vileplume.forms.vileplume.icon vileplume-default.png
+          sprites:
+            - x-y/vileplume-default.png
+            - x-y/female/vileplume-default.png
+            - x-y/shiny/vileplume-default.png
+            - x-y/shiny/female/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: &x-y.pokemon.vileplume.forms.vileplume.cry vileplume-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 93
+  pokemon:
+    vileplume:
+      genus: *diamond-pearl.pokemon.vileplume.genus
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      color: *black-white.pokemon.vileplume.color
+      shape: *diamond-pearl.pokemon.vileplume.shape
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: *diamond-pearl.pokemon.vileplume.baby
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: *diamond-pearl.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      mega: *x-y.pokemon.vileplume.mega
+      stats: *diamond-pearl.pokemon.vileplume.stats
+      abilities: *diamond-pearl.pokemon.vileplume.abilities
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Vileplume’s toxic pollen triggers atrocious allergy attacks.
+          That’s why it is advisable never to approach any attractive
+          flowers in a jungle, however pretty they may be.
+        alpha-sapphire: |
+          Vileplume has the world’s largest petals. They are used to
+          attract prey that are then doused with toxic spores. Once the
+          prey are immobilized, this Pokémon catches and devours them.
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *x-y.pokemon.vileplume.forms.vileplume.icon
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *x-y.pokemon.vileplume.forms.vileplume.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/vileplume-default.png
+            - omega-ruby-alpha-sapphire/shiny/vileplume-default.png
+            - omega-ruby-alpha-sapphire/female/vileplume-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/vileplume-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.vileplume.wild_held_items.omega-ruby
+          absorb-bulb: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.vileplume.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    vileplume:
+      genus: *diamond-pearl.pokemon.vileplume.genus
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      color: *black-white.pokemon.vileplume.color
+      shape: *diamond-pearl.pokemon.vileplume.shape
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: *diamond-pearl.pokemon.vileplume.baby
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: *diamond-pearl.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      mega: *x-y.pokemon.vileplume.mega
+      stats: *diamond-pearl.pokemon.vileplume.stats
+      abilities: *diamond-pearl.pokemon.vileplume.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.vileplume.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.vileplume.wild_held_items.omega-ruby
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *x-y.pokemon.vileplume.forms.vileplume.icon
+          sprites:
+            - sun-moon/vileplume-default.png
+            - sun-moon/female/vileplume-default.png
+            - sun-moon/shiny/vileplume-default.png
+            - sun-moon/shiny/female/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *x-y.pokemon.vileplume.forms.vileplume.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    vileplume:
+      genus: *diamond-pearl.pokemon.vileplume.genus
+      evolution_parent: *red-blue.pokemon.vileplume.evolution_parent
+      color: *black-white.pokemon.vileplume.color
+      shape: *diamond-pearl.pokemon.vileplume.shape
+      female_rate: *gold-silver.pokemon.vileplume.female_rate
+      capture_rate: *red-blue.pokemon.vileplume.capture_rate
+      happiness: *ruby-sapphire.pokemon.vileplume.happiness
+      baby: *diamond-pearl.pokemon.vileplume.baby
+      hatch_steps: *gold-silver.pokemon.vileplume.hatch_steps
+      growth_rate: *red-blue.pokemon.vileplume.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.vileplume.forms_switchable
+      name: Vileplume
+      default: *red-blue.pokemon.vileplume.default
+      height: *ruby-sapphire.pokemon.vileplume.height
+      weight: *ruby-sapphire.pokemon.vileplume.weight
+      experience: *diamond-pearl.pokemon.vileplume.experience
+      types: *red-blue.pokemon.vileplume.types
+      egg_groups: *gold-silver.pokemon.vileplume.egg_groups
+      mega: *x-y.pokemon.vileplume.mega
+      stats: *diamond-pearl.pokemon.vileplume.stats
+      abilities: *diamond-pearl.pokemon.vileplume.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.vileplume.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.vileplume.wild_held_items.omega-ruby
+      evolution_conditions: *red-blue.pokemon.vileplume.evolution_conditions
+      forms:
+        vileplume:
+          name: Vileplume
+          form_name: *red-blue.pokemon.vileplume.forms.vileplume.form_name
+          default: true
+          battle_only: *red-blue.pokemon.vileplume.forms.vileplume.battle_only
+          icon: *x-y.pokemon.vileplume.forms.vileplume.icon
+          sprites:
+            - ultra-sun-ultra-moon/vileplume-default.png
+            - ultra-sun-ultra-moon/female/vileplume-default.png
+            - ultra-sun-ultra-moon/shiny/vileplume-default.png
+            - ultra-sun-ultra-moon/shiny/female/vileplume-default.png
+          art: *red-blue.pokemon.vileplume.forms.vileplume.art
+          footprint: *ruby-sapphire.pokemon.vileplume.forms.vileplume.footprint
+          cry: *x-y.pokemon.vileplume.forms.vileplume.cry

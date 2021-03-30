@@ -1,0 +1,113 @@
+gold-silver: &gold-silver
+  name: &gold-silver.name 'ENERGY ROOT'
+  pocket: &gold-silver.pocket misc
+  buy: &gold-silver.buy 800
+  sell: &gold-silver.sell 400
+  flavor_text: |
+    Restores POKéMON
+    HP by 200. Bitter.
+  category: &gold-silver.category healing
+  flags: &gold-silver.flags
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  short_description: &gold-silver.short_description 'Restores 200 [HP]{mechanic:hp}, but lowers [happiness]{mechanic:happiness}.'
+  description: &gold-silver.description |
+    Used on a party Pokémon
+    :   Restores 200 [HP]{mechanic:hp}.  Decreases [happiness]{mechanic:happiness} by 10/10/15.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: &ruby-sapphire.icon energy-root.png
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    A bitter root
+    that restores HP
+    by 200 points.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+emerald: *ruby-sapphire
+colosseum: &colosseum
+  name: *gold-silver.name
+  pocket: *gold-silver.pocket
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *gold-silver.category
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+xd: *colosseum
+firered-leafgreen:
+  name: *gold-silver.name
+  category: *gold-silver.category
+  pocket: *gold-silver.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *gold-silver.buy
+  sell: *gold-silver.sell
+  flavor_text: |
+    A very bitter root.
+    It restores the HP of one POKéMON
+    by 200 points.
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Energy Root'
+  category: *gold-silver.category
+  pocket: &diamond-pearl.pocket medicine
+  buy: &diamond-pearl.buy 1200
+  sell: &diamond-pearl.sell 600
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    A very bitter root.
+    It restores the HP of one Pokémon by
+    200 points.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *gold-silver.short_description
+  description: *gold-silver.description
+  flavor_text: |
+    An extremely bitter medicinal root.
+    When consumed, it restores
+    200 HP to an injured Pokémon.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *gold-silver.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: 'Restores 120 [HP]{mechanic:hp}, but lowers [happiness]{mechanic:happiness}.'
+  description: *gold-silver.description
+  flavor_text: |
+    An extremely bitter medicinal root. When consumed,
+    it restores up to 120 HP to an injured Pokémon.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

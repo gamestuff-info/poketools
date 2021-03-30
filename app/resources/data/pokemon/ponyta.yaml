@@ -1,0 +1,909 @@
+red-blue:
+  name: &red-blue.name PONYTA
+  position: &red-blue.position 77
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 77
+    kanto: 77
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: &red-blue.pokemon.ponyta.default true
+      capture_rate: &red-blue.pokemon.ponyta.capture_rate 190
+      experience: &red-blue.pokemon.ponyta.experience 152
+      types: &red-blue.pokemon.ponyta.types
+        - fire
+      stats: &red-blue.pokemon.ponyta.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 85
+          effort_change: 85
+        defense:
+          base_value: 55
+          effort_change: 55
+        speed:
+          base_value: 90
+          effort_change: 90
+        special:
+          base_value: 65
+          effort_change: 65
+      growth_rate: &red-blue.pokemon.ponyta.growth_rate medium
+      genus: &red-blue.pokemon.ponyta.genus 'FIRE HORSE Pokémon'
+      height: &red-blue.pokemon.ponyta.height 9
+      weight: &red-blue.pokemon.ponyta.weight 2993
+      flavor_text:
+        red: |
+          Its hooves are 10
+          times harder than
+          diamonds. It can
+          trample anything
+           completely flat
+          in little time.
+        blue: |
+          Its hooves are 10
+          times harder than
+          diamonds. It can
+          trample anything
+           completely flat
+          in little time.
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: &red-blue.pokemon.ponyta.forms.ponyta.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.ponyta.forms.ponyta.battle_only false
+          sprites:
+            - red-blue/ponyta-default.png
+            - red-blue/gray/ponyta-default.png
+            - red-blue/back/ponyta-default.png
+          art: &red-blue.pokemon.ponyta.forms.ponyta.art
+            - ponyta-default.png
+          cry: &red-blue.pokemon.ponyta.forms.ponyta.cry gen5/ponyta-default.webm
+          icon: &red-blue.pokemon.ponyta.forms.ponyta.icon gen1/quadruped.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: *red-blue.pokemon.ponyta.default
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      experience: *red-blue.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      stats: *red-blue.pokemon.ponyta.stats
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      genus: *red-blue.pokemon.ponyta.genus
+      height: *red-blue.pokemon.ponyta.height
+      weight: *red-blue.pokemon.ponyta.weight
+      flavor_text:
+        yellow: |
+          Capable of jumping
+          incredibly high.
+          Its hooves and
+          sturdy legs absorb
+          the impact of a
+          hard landing.
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          sprites:
+            - yellow/ponyta-default.png
+            - yellow/gray/ponyta-default.png
+            - yellow/back/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+          icon: *red-blue.pokemon.ponyta.forms.ponyta.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 76
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 200
+    original-johto-abc: 157
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: *red-blue.pokemon.ponyta.default
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      experience: *red-blue.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      stats: &gold-silver.pokemon.ponyta.stats
+        hp:
+          base_value: 50
+          effort_change: 50
+        attack:
+          base_value: 85
+          effort_change: 85
+        defense:
+          base_value: 55
+          effort_change: 55
+        speed:
+          base_value: 90
+          effort_change: 90
+        special-attack:
+          base_value: 65
+          effort_change: 65
+        special-defense:
+          base_value: 65
+          effort_change: 65
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      female_rate: &gold-silver.pokemon.ponyta.female_rate 50
+      hatch_steps: &gold-silver.pokemon.ponyta.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.ponyta.egg_groups
+        - ground
+      genus: *red-blue.pokemon.ponyta.genus
+      height: *red-blue.pokemon.ponyta.height
+      weight: &gold-silver.pokemon.ponyta.weight 299
+      flavor_text:
+        gold: |
+          It is a weak run-
+          ner immediately
+          after birth. It
+          gradually becomes
+          faster by chasing
+          after its parents.
+        silver: |
+          Its hind legs,
+          which have hard-
+          er-than-diamond
+          hooves, kick back
+          at any presence it
+          senses behind it.
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          sprites:
+            - gold-silver/ponyta-default.png
+            - gold-silver/back/ponyta-default.png
+            - gold-silver/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+          icon: &gold-silver.pokemon.ponyta.forms.ponyta.icon gen2/equine.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: *red-blue.pokemon.ponyta.default
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      experience: *red-blue.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      stats: *gold-silver.pokemon.ponyta.stats
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      genus: *red-blue.pokemon.ponyta.genus
+      height: *red-blue.pokemon.ponyta.height
+      weight: *gold-silver.pokemon.ponyta.weight
+      flavor_text:
+        crystal: |
+          Training by
+          jumping over grass
+          that grows longer
+          every day has made
+          it a world-class
+          jumper.
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          sprites:
+            - crystal/ponyta-default.png
+            - crystal/back/ponyta-default.png
+            - crystal/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+          icon: *gold-silver.pokemon.ponyta.forms.ponyta.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 253
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: *red-blue.pokemon.ponyta.default
+      forms_switchable: &ruby-sapphire.pokemon.ponyta.forms_switchable false
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      experience: *red-blue.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      stats: &ruby-sapphire.pokemon.ponyta.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 0
+        defense:
+          base_value: 55
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 1
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      happiness: &ruby-sapphire.pokemon.ponyta.happiness 70
+      abilities: &ruby-sapphire.pokemon.ponyta.abilities
+        run-away: &ruby-sapphire.pokemon.ponyta.abilities.run-away
+          hidden: &ruby-sapphire.pokemon.ponyta.abilities.run-away.hidden false
+          position: 1
+        flash-fire: &ruby-sapphire.pokemon.ponyta.abilities.flash-fire
+          hidden: *ruby-sapphire.pokemon.ponyta.abilities.run-away.hidden
+          position: 2
+      genus: *red-blue.pokemon.ponyta.genus
+      height: &ruby-sapphire.pokemon.ponyta.height 10
+      weight: &ruby-sapphire.pokemon.ponyta.weight 300
+      flavor_text:
+        ruby: |
+          PONYTA is very weak at birth.
+          It can barely stand up.
+          This POKéMON becomes stronger by
+          stumbling and falling to keep up with
+          its parent.
+        sapphire: |
+          PONYTA is very weak at birth.
+          It can barely stand up.
+          This POKéMON becomes stronger by
+          stumbling and falling to keep up with
+          its parent.
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: &ruby-sapphire.pokemon.ponyta.forms.ponyta.icon gen5/ponyta-default.png
+          sprites:
+            - ruby-sapphire/ponyta-default.png
+            - ruby-sapphire/back/ponyta-default.png
+            - ruby-sapphire/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: &ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint ponyta.png
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: *red-blue.pokemon.ponyta.default
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      experience: *red-blue.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      stats: *ruby-sapphire.pokemon.ponyta.stats
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      abilities: *ruby-sapphire.pokemon.ponyta.abilities
+      genus: *red-blue.pokemon.ponyta.genus
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      flavor_text:
+        emerald: |
+          A PONYTA is very weak at birth. It can
+          barely stand up. Its legs become stronger
+          as it stumbles and falls while trying to
+          keep up with its parent.
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *ruby-sapphire.pokemon.ponyta.forms.ponyta.icon
+          sprites:
+            - emerald/ponyta-default.png
+            - emerald/shiny/ponyta-default.png
+            - emerald/animated/ponyta-default.webm
+            - emerald/animated/shiny/ponyta-default.webm
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 251
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: *red-blue.pokemon.ponyta.default
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      experience: *red-blue.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      stats: *ruby-sapphire.pokemon.ponyta.stats
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      abilities: *ruby-sapphire.pokemon.ponyta.abilities
+      genus: *red-blue.pokemon.ponyta.genus
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          sprites:
+            - colosseum/ponyta-default.png
+            - colosseum/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: *red-blue.pokemon.ponyta.default
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      experience: *red-blue.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      stats: *ruby-sapphire.pokemon.ponyta.stats
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      abilities: *ruby-sapphire.pokemon.ponyta.abilities
+      genus: *red-blue.pokemon.ponyta.genus
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          sprites:
+            - xd/ponyta-default.png
+            - xd/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    ponyta:
+      name: PONYTA
+      default: *red-blue.pokemon.ponyta.default
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      experience: *red-blue.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      stats: *ruby-sapphire.pokemon.ponyta.stats
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      abilities: *ruby-sapphire.pokemon.ponyta.abilities
+      genus: *red-blue.pokemon.ponyta.genus
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      flavor_text:
+        firered: |
+          Its body is light, and its legs are
+          incredibly powerful. It can clear
+          Ayers Rock in one leap.
+        leafgreen: |
+          Its hooves are ten times harder than
+          diamond. It can trample anything
+          completely flat in little time.
+      forms:
+        ponyta:
+          name: PONYTA
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *ruby-sapphire.pokemon.ponyta.forms.ponyta.icon
+          sprites:
+            - firered-leafgreen/ponyta-default.png
+            - firered-leafgreen/back/ponyta-default.png
+            - firered-leafgreen/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+diamond-pearl:
+  name: &diamond-pearl.name Ponyta
+  position: &diamond-pearl.position 83
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 90
+  pokemon:
+    ponyta:
+      genus: &diamond-pearl.pokemon.ponyta.genus 'Fire Horse Pokémon'
+      shape: &diamond-pearl.pokemon.ponyta.shape quadruped
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: &diamond-pearl.pokemon.ponyta.baby false
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      pal_park: &diamond-pearl.pokemon.ponyta.pal_park
+        area: field
+        rate: 30
+        score: 50
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: &diamond-pearl.pokemon.ponyta.experience 82
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      stats: &diamond-pearl.pokemon.ponyta.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 0
+        defense:
+          base_value: 55
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 1
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.ponyta.abilities
+        run-away: *ruby-sapphire.pokemon.ponyta.abilities.run-away
+        flash-fire: *ruby-sapphire.pokemon.ponyta.abilities.flash-fire
+        flame-body:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+          shuca-berry: 5
+        pearl: *diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          About an hour after birth, its
+          fiery mane and tail grow out,
+          giving it an impressive appearance.
+        pearl: |
+          Its legs grow strong while it
+          chases after its parent. It runs
+          in fields and mountains all day.
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *ruby-sapphire.pokemon.ponyta.forms.ponyta.icon
+          sprites:
+            - diamond-pearl/back/ponyta-default.png
+            - diamond-pearl/back/shiny/ponyta-default.png
+            - diamond-pearl/ponyta-default.png
+            - diamond-pearl/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 90
+  pokemon:
+    ponyta:
+      genus: *diamond-pearl.pokemon.ponyta.genus
+      shape: *diamond-pearl.pokemon.ponyta.shape
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: *diamond-pearl.pokemon.ponyta.baby
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ponyta.pal_park
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: *diamond-pearl.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      stats: *diamond-pearl.pokemon.ponyta.stats
+      abilities: *diamond-pearl.pokemon.ponyta.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          As a newborn, it can barely stand.
+          However, through galloping, its
+          legs are made tougher and faster.
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *ruby-sapphire.pokemon.ponyta.forms.ponyta.icon
+          sprites:
+            - platinum/back/ponyta-default.png
+            - platinum/back/shiny/ponyta-default.png
+            - platinum/ponyta-default.png
+            - platinum/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 206
+  pokemon:
+    ponyta:
+      genus: *diamond-pearl.pokemon.ponyta.genus
+      shape: *diamond-pearl.pokemon.ponyta.shape
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: *diamond-pearl.pokemon.ponyta.baby
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ponyta.pal_park
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: *diamond-pearl.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      stats: *diamond-pearl.pokemon.ponyta.stats
+      abilities: *diamond-pearl.pokemon.ponyta.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          It is a weak runner immediately
+          after birth. It gradually becomes
+          faster by chasing after its parents.
+        soulsilver: |
+          Its hind legs, which have hooves that
+          are harder than diamond, kick back
+          at any presence it senses behind it.
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-5
+            power:
+              base_value: 2
+              range: 1-2
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 3
+              range: 2-3
+            jump:
+              base_value: 4
+              range: 4
+          icon: *ruby-sapphire.pokemon.ponyta.forms.ponyta.icon
+          sprites:
+            - heartgold-soulsilver/back/ponyta-default.png
+            - heartgold-soulsilver/back/shiny/ponyta-default.png
+            - heartgold-soulsilver/ponyta-default.png
+            - heartgold-soulsilver/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    ponyta:
+      genus: *diamond-pearl.pokemon.ponyta.genus
+      color: &black-white.pokemon.ponyta.color yellow
+      shape: *diamond-pearl.pokemon.ponyta.shape
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: *diamond-pearl.pokemon.ponyta.baby
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: *diamond-pearl.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      stats: *diamond-pearl.pokemon.ponyta.stats
+      abilities: *diamond-pearl.pokemon.ponyta.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+      flavor_text:
+        black: |
+          As a newborn, it can barely stand.
+          However, through galloping, its
+          legs are made tougher and faster.
+        white: |
+          As a newborn, it can barely stand.
+          However, through galloping, its
+          legs are made tougher and faster.
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *ruby-sapphire.pokemon.ponyta.forms.ponyta.icon
+          sprites:
+            - black-white/back/ponyta-default.png
+            - black-white/back/shiny/ponyta-default.png
+            - black-white/ponyta-default.png
+            - black-white/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    ponyta:
+      genus: *diamond-pearl.pokemon.ponyta.genus
+      color: *black-white.pokemon.ponyta.color
+      shape: *diamond-pearl.pokemon.ponyta.shape
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: *diamond-pearl.pokemon.ponyta.baby
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: *diamond-pearl.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      stats: *diamond-pearl.pokemon.ponyta.stats
+      abilities: *diamond-pearl.pokemon.ponyta.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.ponyta.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          As a newborn, it can barely stand.
+          However, through galloping, its
+          legs are made tougher and faster.
+        white-2: |
+          As a newborn, it can barely stand.
+          However, through galloping, its
+          legs are made tougher and faster.
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *ruby-sapphire.pokemon.ponyta.forms.ponyta.icon
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *red-blue.pokemon.ponyta.forms.ponyta.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    ponyta:
+      genus: *diamond-pearl.pokemon.ponyta.genus
+      color: *black-white.pokemon.ponyta.color
+      shape: *diamond-pearl.pokemon.ponyta.shape
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: *diamond-pearl.pokemon.ponyta.baby
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: *diamond-pearl.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      mega: &x-y.pokemon.ponyta.mega false
+      stats: *diamond-pearl.pokemon.ponyta.stats
+      abilities: *diamond-pearl.pokemon.ponyta.abilities
+      flavor_text:
+        x: |
+          As a newborn, it can barely stand.
+          However, through galloping, its
+          legs are made tougher and faster.
+        'y': |
+          Its legs grow strong while it chases after its parent.
+          It runs in fields and mountains all day.
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: &x-y.pokemon.ponyta.forms.ponyta.icon ponyta-default.png
+          sprites:
+            - x-y/ponyta-default.png
+            - x-y/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: &x-y.pokemon.ponyta.forms.ponyta.cry ponyta-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    ponyta:
+      genus: *diamond-pearl.pokemon.ponyta.genus
+      color: *black-white.pokemon.ponyta.color
+      shape: *diamond-pearl.pokemon.ponyta.shape
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: *diamond-pearl.pokemon.ponyta.baby
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: *diamond-pearl.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      mega: *x-y.pokemon.ponyta.mega
+      stats: *diamond-pearl.pokemon.ponyta.stats
+      abilities: *diamond-pearl.pokemon.ponyta.abilities
+      flavor_text:
+        omega-ruby: |
+          Ponyta is very weak at birth. It can barely stand up.
+          This Pokémon becomes stronger by stumbling and falling to
+          keep up with its parent.
+        alpha-sapphire: |
+          Ponyta is very weak at birth. It can barely stand up.
+          This Pokémon becomes stronger by stumbling and
+          falling to keep up with its parent.
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *x-y.pokemon.ponyta.forms.ponyta.icon
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *x-y.pokemon.ponyta.forms.ponyta.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/ponyta-default.png
+            - omega-ruby-alpha-sapphire/shiny/ponyta-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    ponyta:
+      genus: *diamond-pearl.pokemon.ponyta.genus
+      color: *black-white.pokemon.ponyta.color
+      shape: *diamond-pearl.pokemon.ponyta.shape
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: *diamond-pearl.pokemon.ponyta.baby
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: *diamond-pearl.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      mega: *x-y.pokemon.ponyta.mega
+      stats: *diamond-pearl.pokemon.ponyta.stats
+      abilities: *diamond-pearl.pokemon.ponyta.abilities
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *x-y.pokemon.ponyta.forms.ponyta.icon
+          sprites:
+            - sun-moon/ponyta-default.png
+            - sun-moon/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *x-y.pokemon.ponyta.forms.ponyta.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    ponyta:
+      genus: *diamond-pearl.pokemon.ponyta.genus
+      color: *black-white.pokemon.ponyta.color
+      shape: *diamond-pearl.pokemon.ponyta.shape
+      female_rate: *gold-silver.pokemon.ponyta.female_rate
+      capture_rate: *red-blue.pokemon.ponyta.capture_rate
+      happiness: *ruby-sapphire.pokemon.ponyta.happiness
+      baby: *diamond-pearl.pokemon.ponyta.baby
+      hatch_steps: *gold-silver.pokemon.ponyta.hatch_steps
+      growth_rate: *red-blue.pokemon.ponyta.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ponyta.forms_switchable
+      name: Ponyta
+      default: *red-blue.pokemon.ponyta.default
+      height: *ruby-sapphire.pokemon.ponyta.height
+      weight: *ruby-sapphire.pokemon.ponyta.weight
+      experience: *diamond-pearl.pokemon.ponyta.experience
+      types: *red-blue.pokemon.ponyta.types
+      egg_groups: *gold-silver.pokemon.ponyta.egg_groups
+      mega: *x-y.pokemon.ponyta.mega
+      stats: *diamond-pearl.pokemon.ponyta.stats
+      abilities: *diamond-pearl.pokemon.ponyta.abilities
+      forms:
+        ponyta:
+          name: Ponyta
+          form_name: *red-blue.pokemon.ponyta.forms.ponyta.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ponyta.forms.ponyta.battle_only
+          icon: *x-y.pokemon.ponyta.forms.ponyta.icon
+          sprites:
+            - ultra-sun-ultra-moon/ponyta-default.png
+            - ultra-sun-ultra-moon/shiny/ponyta-default.png
+          art: *red-blue.pokemon.ponyta.forms.ponyta.art
+          footprint: *ruby-sapphire.pokemon.ponyta.forms.ponyta.footprint
+          cry: *x-y.pokemon.ponyta.forms.ponyta.cry

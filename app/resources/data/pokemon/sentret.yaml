@@ -1,0 +1,826 @@
+gold-silver:
+  name: &gold-silver.name SENTRET
+  position: &gold-silver.position 160
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 161
+    original-johto: 18
+    original-johto-abc: 181
+  pokemon:
+    sentret:
+      name: SENTRET
+      default: &gold-silver.pokemon.sentret.default true
+      capture_rate: &gold-silver.pokemon.sentret.capture_rate 255
+      experience: &gold-silver.pokemon.sentret.experience 57
+      types: &gold-silver.pokemon.sentret.types
+        - normal
+      stats: &gold-silver.pokemon.sentret.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 46
+          effort_change: 46
+        defense:
+          base_value: 34
+          effort_change: 34
+        speed:
+          base_value: 20
+          effort_change: 20
+        special-attack:
+          base_value: 35
+          effort_change: 35
+        special-defense:
+          base_value: 45
+          effort_change: 35
+      growth_rate: &gold-silver.pokemon.sentret.growth_rate medium
+      female_rate: &gold-silver.pokemon.sentret.female_rate 50
+      hatch_steps: &gold-silver.pokemon.sentret.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.sentret.egg_groups
+        - ground
+      wild_held_items:
+        gold: &gold-silver.pokemon.sentret.wild_held_items.gold
+          berry: 2
+        silver: *gold-silver.pokemon.sentret.wild_held_items.gold
+      genus: &gold-silver.pokemon.sentret.genus 'SCOUT Pokémon'
+      height: &gold-silver.pokemon.sentret.height 7
+      weight: &gold-silver.pokemon.sentret.weight 58
+      flavor_text:
+        gold: |
+          A very cautious
+          #MON, it raises
+          itself up using
+          its tail to get a
+          better view of its
+          surroundings.
+        silver: |
+          It stands on its
+          tail so it can see
+          a long way. If it
+          spots an enemy, it
+          cries loudly to
+          warn its kind.
+      forms:
+        sentret:
+          name: SENTRET
+          form_name: &gold-silver.pokemon.sentret.forms.sentret.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.sentret.forms.sentret.battle_only false
+          sprites:
+            - gold-silver/sentret-default.png
+            - gold-silver/back/sentret-default.png
+            - gold-silver/shiny/sentret-default.png
+          art: &gold-silver.pokemon.sentret.forms.sentret.art
+            - sentret-default.png
+          cry: &gold-silver.pokemon.sentret.forms.sentret.cry gen5/sentret-default.webm
+          icon: &gold-silver.pokemon.sentret.forms.sentret.icon gen2/fox.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    sentret:
+      name: SENTRET
+      default: *gold-silver.pokemon.sentret.default
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      experience: *gold-silver.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      stats: *gold-silver.pokemon.sentret.stats
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.sentret.wild_held_items.gold
+      genus: *gold-silver.pokemon.sentret.genus
+      height: *gold-silver.pokemon.sentret.height
+      weight: *gold-silver.pokemon.sentret.weight
+      flavor_text:
+        crystal: |
+          When acting as a
+          lookout, it warns
+          others of danger
+          by screeching and
+          hitting the ground
+          with its tail.
+      forms:
+        sentret:
+          name: SENTRET
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          sprites:
+            - crystal/sentret-default.png
+            - crystal/back/sentret-default.png
+            - crystal/shiny/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+          icon: *gold-silver.pokemon.sentret.forms.sentret.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 161
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 316
+  pokemon:
+    sentret:
+      name: SENTRET
+      default: *gold-silver.pokemon.sentret.default
+      forms_switchable: &ruby-sapphire.pokemon.sentret.forms_switchable false
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      experience: *gold-silver.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      stats: &ruby-sapphire.pokemon.sentret.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 46
+          effort_change: 1
+        defense:
+          base_value: 34
+          effort_change: 0
+        speed:
+          base_value: 20
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+          oran-berry: 5
+        sapphire: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.sentret.happiness 70
+      abilities: &ruby-sapphire.pokemon.sentret.abilities
+        run-away: &ruby-sapphire.pokemon.sentret.abilities.run-away
+          hidden: &ruby-sapphire.pokemon.sentret.abilities.run-away.hidden false
+          position: 1
+        keen-eye: &ruby-sapphire.pokemon.sentret.abilities.keen-eye
+          hidden: *ruby-sapphire.pokemon.sentret.abilities.run-away.hidden
+          position: 2
+      genus: *gold-silver.pokemon.sentret.genus
+      height: &ruby-sapphire.pokemon.sentret.height 8
+      weight: &ruby-sapphire.pokemon.sentret.weight 60
+      flavor_text:
+        ruby: |
+          When SENTRET sleeps, it does so while
+          another stands guard. The sentry wakes
+          the others at the first sign of danger.
+          When this POKéMON becomes separated
+          from its pack, it becomes incapable of
+          sleep due to fear.
+        sapphire: |
+          When SENTRET sleeps, it does so while
+          another stands guard. The sentry wakes
+          the others at the first sign of danger.
+          When this POKéMON becomes separated
+          from its pack, it becomes incapable of
+          sleep due to fear.
+      forms:
+        sentret:
+          name: SENTRET
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: &ruby-sapphire.pokemon.sentret.forms.sentret.icon gen5/sentret-default.png
+          sprites:
+            - ruby-sapphire/sentret-default.png
+            - ruby-sapphire/back/sentret-default.png
+            - ruby-sapphire/shiny/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: &ruby-sapphire.pokemon.sentret.forms.sentret.footprint sentret.png
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    sentret:
+      name: SENTRET
+      default: *gold-silver.pokemon.sentret.default
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      experience: *gold-silver.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      stats: *ruby-sapphire.pokemon.sentret.stats
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      abilities: *ruby-sapphire.pokemon.sentret.abilities
+      genus: *gold-silver.pokemon.sentret.genus
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      flavor_text:
+        emerald: |
+          They take turns standing guard when it
+          is time to sleep. The sentry awakens the
+          others if it senses danger. If one becomes
+          separated, it turns sleepless with fear.
+      forms:
+        sentret:
+          name: SENTRET
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *ruby-sapphire.pokemon.sentret.forms.sentret.icon
+          sprites:
+            - emerald/sentret-default.png
+            - emerald/shiny/sentret-default.png
+            - emerald/animated/sentret-default.webm
+            - emerald/animated/shiny/sentret-default.webm
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 288
+  pokemon:
+    sentret:
+      name: SENTRET
+      default: *gold-silver.pokemon.sentret.default
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      experience: *gold-silver.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      stats: *ruby-sapphire.pokemon.sentret.stats
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      abilities: *ruby-sapphire.pokemon.sentret.abilities
+      genus: *gold-silver.pokemon.sentret.genus
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      forms:
+        sentret:
+          name: SENTRET
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          sprites:
+            - colosseum/sentret-default.png
+            - colosseum/shiny/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    sentret:
+      name: SENTRET
+      default: *gold-silver.pokemon.sentret.default
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      experience: *gold-silver.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      stats: *ruby-sapphire.pokemon.sentret.stats
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      abilities: *ruby-sapphire.pokemon.sentret.abilities
+      genus: *gold-silver.pokemon.sentret.genus
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      forms:
+        sentret:
+          name: SENTRET
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          sprites:
+            - xd/sentret-default.png
+            - xd/shiny/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    sentret:
+      name: SENTRET
+      default: *gold-silver.pokemon.sentret.default
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      experience: *gold-silver.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      stats: *ruby-sapphire.pokemon.sentret.stats
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      abilities: *ruby-sapphire.pokemon.sentret.abilities
+      genus: *gold-silver.pokemon.sentret.genus
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      flavor_text:
+        firered: |
+          It stands on its tail so it can see a long
+          way. If it spots an enemy, it cries loudly
+          to warn its kind.
+        leafgreen: |
+          A very cautious POKéMON, it raises itself
+          up using its tail to get a better view of
+          its surroundings.
+      forms:
+        sentret:
+          name: SENTRET
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *ruby-sapphire.pokemon.sentret.forms.sentret.icon
+          sprites:
+            - firered-leafgreen/sentret-default.png
+            - firered-leafgreen/back/sentret-default.png
+            - firered-leafgreen/shiny/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+diamond-pearl:
+  name: &diamond-pearl.name Sentret
+  position: &diamond-pearl.position 193
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sentret:
+      genus: &diamond-pearl.pokemon.sentret.genus 'Scout Pokémon'
+      shape: &diamond-pearl.pokemon.sentret.shape quadruped
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: &diamond-pearl.pokemon.sentret.baby false
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      pal_park: &diamond-pearl.pokemon.sentret.pal_park
+        area: field
+        rate: 50
+        score: 30
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: &diamond-pearl.pokemon.sentret.experience 43
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      stats: &diamond-pearl.pokemon.sentret.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 46
+          effort_change: 1
+        defense:
+          base_value: 34
+          effort_change: 0
+        speed:
+          base_value: 20
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.sentret.abilities
+        run-away: *ruby-sapphire.pokemon.sentret.abilities.run-away
+        keen-eye: *ruby-sapphire.pokemon.sentret.abilities.keen-eye
+        frisk:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          It has a very nervous nature.
+          It stands up high on its tail so it
+          can scan wide areas.
+        pearl: |
+          It has a very nervous nature.
+          It stands up high on its tail so it
+          can scan wide areas.
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *ruby-sapphire.pokemon.sentret.forms.sentret.icon
+          sprites:
+            - diamond-pearl/back/shiny/sentret-default.png
+            - diamond-pearl/back/sentret-default.png
+            - diamond-pearl/shiny/sentret-default.png
+            - diamond-pearl/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sentret:
+      genus: *diamond-pearl.pokemon.sentret.genus
+      shape: *diamond-pearl.pokemon.sentret.shape
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: *diamond-pearl.pokemon.sentret.baby
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      pal_park: *diamond-pearl.pokemon.sentret.pal_park
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: *diamond-pearl.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      stats: *diamond-pearl.pokemon.sentret.stats
+      abilities: *diamond-pearl.pokemon.sentret.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          It has a very nervous nature.
+          It stands up high on its tail so it
+          can scan wide areas.
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *ruby-sapphire.pokemon.sentret.forms.sentret.icon
+          sprites:
+            - platinum/back/shiny/sentret-default.png
+            - platinum/back/sentret-default.png
+            - platinum/shiny/sentret-default.png
+            - platinum/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 19
+  pokemon:
+    sentret:
+      genus: *diamond-pearl.pokemon.sentret.genus
+      shape: *diamond-pearl.pokemon.sentret.shape
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: *diamond-pearl.pokemon.sentret.baby
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      pal_park: *diamond-pearl.pokemon.sentret.pal_park
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: *diamond-pearl.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      stats: *diamond-pearl.pokemon.sentret.stats
+      abilities: *diamond-pearl.pokemon.sentret.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          A very cautious Pokémon, it raises
+          itself up using its tail to get a
+          better view of its surroundings.
+        soulsilver: |
+          It stands on its tail so it can see
+          a long way. If it spots an enemy, it
+          cries loudly to warn its kind.
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 2-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-4
+            stamina:
+              base_value: 2
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.sentret.forms.sentret.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/sentret-default.png
+            - heartgold-soulsilver/back/sentret-default.png
+            - heartgold-soulsilver/shiny/sentret-default.png
+            - heartgold-soulsilver/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sentret:
+      genus: *diamond-pearl.pokemon.sentret.genus
+      color: &black-white.pokemon.sentret.color brown
+      shape: *diamond-pearl.pokemon.sentret.shape
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: *diamond-pearl.pokemon.sentret.baby
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: *diamond-pearl.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      stats: *diamond-pearl.pokemon.sentret.stats
+      abilities: *diamond-pearl.pokemon.sentret.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+      flavor_text:
+        black: |
+          It has a very nervous nature.
+          It stands up high on its tail so it
+          can scan wide areas.
+        white: |
+          It has a very nervous nature.
+          It stands up high on its tail so it
+          can scan wide areas.
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *ruby-sapphire.pokemon.sentret.forms.sentret.icon
+          sprites:
+            - black-white/back/shiny/sentret-default.png
+            - black-white/back/sentret-default.png
+            - black-white/shiny/sentret-default.png
+            - black-white/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sentret:
+      genus: *diamond-pearl.pokemon.sentret.genus
+      color: *black-white.pokemon.sentret.color
+      shape: *diamond-pearl.pokemon.sentret.shape
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: *diamond-pearl.pokemon.sentret.baby
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: *diamond-pearl.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      stats: *diamond-pearl.pokemon.sentret.stats
+      abilities: *diamond-pearl.pokemon.sentret.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.sentret.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          It has a very nervous nature.
+          It stands up high on its tail so it
+          can scan wide areas.
+        white-2: |
+          It has a very nervous nature.
+          It stands up high on its tail so it
+          can scan wide areas.
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *ruby-sapphire.pokemon.sentret.forms.sentret.icon
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *gold-silver.pokemon.sentret.forms.sentret.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-central: 109
+  pokemon:
+    sentret:
+      genus: *diamond-pearl.pokemon.sentret.genus
+      color: *black-white.pokemon.sentret.color
+      shape: *diamond-pearl.pokemon.sentret.shape
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: *diamond-pearl.pokemon.sentret.baby
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: *diamond-pearl.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      mega: &x-y.pokemon.sentret.mega false
+      stats: *diamond-pearl.pokemon.sentret.stats
+      abilities: *diamond-pearl.pokemon.sentret.abilities
+      flavor_text:
+        x: |
+          When acting as a lookout, it warns others of danger
+          by screeching and hitting the ground with its tail.
+        'y': |
+          It stands on its tail so it can see a long way.
+          If it spots an enemy, it cries loudly to warn its kind.
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: &x-y.pokemon.sentret.forms.sentret.icon sentret-default.png
+          sprites:
+            - x-y/shiny/sentret-default.png
+            - x-y/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: &x-y.pokemon.sentret.forms.sentret.cry sentret-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sentret:
+      genus: *diamond-pearl.pokemon.sentret.genus
+      color: *black-white.pokemon.sentret.color
+      shape: *diamond-pearl.pokemon.sentret.shape
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: *diamond-pearl.pokemon.sentret.baby
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: *diamond-pearl.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      mega: *x-y.pokemon.sentret.mega
+      stats: *diamond-pearl.pokemon.sentret.stats
+      abilities: *diamond-pearl.pokemon.sentret.abilities
+      flavor_text:
+        omega-ruby: |
+          When Sentret sleeps, it does so while another stands guard.
+          The sentry wakes the others at the first sign of danger.
+          When this Pokémon becomes separated from its pack,
+          it becomes incapable of sleep due to fear.
+        alpha-sapphire: |
+          When Sentret sleeps, it does so while another stands guard.
+          The sentry wakes the others at the first sign of danger. When
+          this Pokémon becomes separated from its pack, it becomes
+          incapable of sleep due to fear.
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *x-y.pokemon.sentret.forms.sentret.icon
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *x-y.pokemon.sentret.forms.sentret.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/sentret-default.png
+            - omega-ruby-alpha-sapphire/shiny/sentret-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sentret:
+      genus: *diamond-pearl.pokemon.sentret.genus
+      color: *black-white.pokemon.sentret.color
+      shape: *diamond-pearl.pokemon.sentret.shape
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: *diamond-pearl.pokemon.sentret.baby
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: *diamond-pearl.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      mega: *x-y.pokemon.sentret.mega
+      stats: *diamond-pearl.pokemon.sentret.stats
+      abilities: *diamond-pearl.pokemon.sentret.abilities
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *x-y.pokemon.sentret.forms.sentret.icon
+          sprites:
+            - sun-moon/shiny/sentret-default.png
+            - sun-moon/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *x-y.pokemon.sentret.forms.sentret.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    sentret:
+      genus: *diamond-pearl.pokemon.sentret.genus
+      color: *black-white.pokemon.sentret.color
+      shape: *diamond-pearl.pokemon.sentret.shape
+      female_rate: *gold-silver.pokemon.sentret.female_rate
+      capture_rate: *gold-silver.pokemon.sentret.capture_rate
+      happiness: *ruby-sapphire.pokemon.sentret.happiness
+      baby: *diamond-pearl.pokemon.sentret.baby
+      hatch_steps: *gold-silver.pokemon.sentret.hatch_steps
+      growth_rate: *gold-silver.pokemon.sentret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.sentret.forms_switchable
+      name: Sentret
+      default: *gold-silver.pokemon.sentret.default
+      height: *ruby-sapphire.pokemon.sentret.height
+      weight: *ruby-sapphire.pokemon.sentret.weight
+      experience: *diamond-pearl.pokemon.sentret.experience
+      types: *gold-silver.pokemon.sentret.types
+      egg_groups: *gold-silver.pokemon.sentret.egg_groups
+      mega: *x-y.pokemon.sentret.mega
+      stats: *diamond-pearl.pokemon.sentret.stats
+      abilities: *diamond-pearl.pokemon.sentret.abilities
+      forms:
+        sentret:
+          name: Sentret
+          form_name: *gold-silver.pokemon.sentret.forms.sentret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.sentret.forms.sentret.battle_only
+          icon: *x-y.pokemon.sentret.forms.sentret.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/sentret-default.png
+            - ultra-sun-ultra-moon/sentret-default.png
+          art: *gold-silver.pokemon.sentret.forms.sentret.art
+          footprint: *ruby-sapphire.pokemon.sentret.forms.sentret.footprint
+          cry: *x-y.pokemon.sentret.forms.sentret.cry

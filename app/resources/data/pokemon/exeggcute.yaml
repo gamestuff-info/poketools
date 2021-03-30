@@ -1,0 +1,922 @@
+red-blue:
+  name: &red-blue.name EXEGGCUTE
+  position: &red-blue.position 102
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 102
+    kanto: 102
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: &red-blue.pokemon.exeggcute.default true
+      capture_rate: &red-blue.pokemon.exeggcute.capture_rate 90
+      experience: &red-blue.pokemon.exeggcute.experience 98
+      types: &red-blue.pokemon.exeggcute.types
+        - grass
+        - psychic
+      stats: &red-blue.pokemon.exeggcute.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 40
+          effort_change: 40
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 40
+          effort_change: 40
+        special:
+          base_value: 60
+          effort_change: 60
+      growth_rate: &red-blue.pokemon.exeggcute.growth_rate slow
+      genus: &red-blue.pokemon.exeggcute.genus 'EGG Pokémon'
+      height: &red-blue.pokemon.exeggcute.height 4
+      weight: &red-blue.pokemon.exeggcute.weight 272
+      flavor_text:
+        red: |
+          Often mistaken
+          for eggs.
+          When disturbed,
+          they quickly
+          gather and attack
+          in swarms.
+        blue: |
+          Often mistaken
+          for eggs.
+          When disturbed,
+          they quickly
+          gather and attack
+          in swarms.
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: &red-blue.pokemon.exeggcute.forms.exeggcute.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.exeggcute.forms.exeggcute.battle_only false
+          sprites:
+            - red-blue/exeggcute-default.png
+            - red-blue/gray/exeggcute-default.png
+            - red-blue/back/exeggcute-default.png
+          art: &red-blue.pokemon.exeggcute.forms.exeggcute.art
+            - exeggcute-default.png
+          cry: &red-blue.pokemon.exeggcute.forms.exeggcute.cry gen5/exeggcute-default.webm
+          icon: &red-blue.pokemon.exeggcute.forms.exeggcute.icon gen1/grass.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: *red-blue.pokemon.exeggcute.default
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      experience: *red-blue.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      stats: *red-blue.pokemon.exeggcute.stats
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      genus: *red-blue.pokemon.exeggcute.genus
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *red-blue.pokemon.exeggcute.weight
+      flavor_text:
+        yellow: |
+          The heads attract
+          each other and
+          spin around.
+          There must be 6
+           heads for it to
+          maintain balance.
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          sprites:
+            - yellow/exeggcute-default.png
+            - yellow/gray/exeggcute-default.png
+            - yellow/back/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+          icon: *red-blue.pokemon.exeggcute.forms.exeggcute.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 101
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 103
+    original-johto-abc: 44
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: *red-blue.pokemon.exeggcute.default
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      experience: *red-blue.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      stats: &gold-silver.pokemon.exeggcute.stats
+        hp:
+          base_value: 60
+          effort_change: 60
+        attack:
+          base_value: 40
+          effort_change: 40
+        defense:
+          base_value: 80
+          effort_change: 80
+        speed:
+          base_value: 40
+          effort_change: 40
+        special-attack:
+          base_value: 60
+          effort_change: 60
+        special-defense:
+          base_value: 45
+          effort_change: 60
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      female_rate: &gold-silver.pokemon.exeggcute.female_rate 50
+      hatch_steps: &gold-silver.pokemon.exeggcute.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.exeggcute.egg_groups
+        - plant
+      genus: *red-blue.pokemon.exeggcute.genus
+      height: *red-blue.pokemon.exeggcute.height
+      weight: &gold-silver.pokemon.exeggcute.weight 27
+      flavor_text:
+        gold: |
+          The shell is very
+          durable. Even if
+          it cracks, it can
+          survive without
+          spilling the
+          contents.
+        silver: |
+          Using telepathy
+          only they can
+          receive, they
+          always form a
+          cluster of six
+          EXEGGCUTE.
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          sprites:
+            - gold-silver/exeggcute-default.png
+            - gold-silver/back/exeggcute-default.png
+            - gold-silver/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+          icon: &gold-silver.pokemon.exeggcute.forms.exeggcute.icon gen2/oddish.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: *red-blue.pokemon.exeggcute.default
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      experience: *red-blue.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      stats: *gold-silver.pokemon.exeggcute.stats
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      genus: *red-blue.pokemon.exeggcute.genus
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *gold-silver.pokemon.exeggcute.weight
+      flavor_text:
+        crystal: |
+          If even one is
+          separated from the
+          group, the energy
+          bond between the
+          six will make them
+          rejoin instantly.
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          sprites:
+            - crystal/exeggcute-default.png
+            - crystal/back/exeggcute-default.png
+            - crystal/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+          icon: *gold-silver.pokemon.exeggcute.forms.exeggcute.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 270
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: *red-blue.pokemon.exeggcute.default
+      forms_switchable: &ruby-sapphire.pokemon.exeggcute.forms_switchable false
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      experience: *red-blue.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      stats: &ruby-sapphire.pokemon.exeggcute.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 40
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      happiness: &ruby-sapphire.pokemon.exeggcute.happiness 70
+      abilities: &ruby-sapphire.pokemon.exeggcute.abilities
+        chlorophyll: &ruby-sapphire.pokemon.exeggcute.abilities.chlorophyll
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.exeggcute.genus
+      height: *red-blue.pokemon.exeggcute.height
+      weight: &ruby-sapphire.pokemon.exeggcute.weight 25
+      flavor_text:
+        ruby: |
+          This POKéMON consists of six eggs that
+          form a closely knit cluster.  The six eggs
+          attract each other and spin around.
+          When cracks increasingly appear on the
+          eggs, EXEGGCUTE is close to evolution.
+        sapphire: |
+          This POKéMON consists of six eggs that
+          form a closely knit cluster.  The six eggs
+          attract each other and spin around.
+          When cracks increasingly appear on the
+          eggs, EXEGGCUTE is close to evolution.
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: &ruby-sapphire.pokemon.exeggcute.forms.exeggcute.icon gen5/exeggcute-default.png
+          sprites:
+            - ruby-sapphire/exeggcute-default.png
+            - ruby-sapphire/back/exeggcute-default.png
+            - ruby-sapphire/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: &ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint exeggcute.png
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: *red-blue.pokemon.exeggcute.default
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      experience: *red-blue.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      stats: *ruby-sapphire.pokemon.exeggcute.stats
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      abilities: *ruby-sapphire.pokemon.exeggcute.abilities
+      genus: *red-blue.pokemon.exeggcute.genus
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      flavor_text:
+        emerald: |
+          It consists of six eggs that care for each
+          other. The eggs attract each other and
+          spin around. When cracks increasingly
+          appear, it is close to evolution.
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.icon
+          sprites:
+            - emerald/exeggcute-default.png
+            - emerald/shiny/exeggcute-default.png
+            - emerald/animated/exeggcute-default.webm
+            - emerald/animated/shiny/exeggcute-default.webm
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 90
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: *red-blue.pokemon.exeggcute.default
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      experience: *red-blue.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      stats: *ruby-sapphire.pokemon.exeggcute.stats
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      abilities: *ruby-sapphire.pokemon.exeggcute.abilities
+      genus: *red-blue.pokemon.exeggcute.genus
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          sprites:
+            - colosseum/exeggcute-default.png
+            - colosseum/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: *red-blue.pokemon.exeggcute.default
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      experience: *red-blue.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      stats: *ruby-sapphire.pokemon.exeggcute.stats
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      abilities: *ruby-sapphire.pokemon.exeggcute.abilities
+      genus: *red-blue.pokemon.exeggcute.genus
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          sprites:
+            - xd/exeggcute-default.png
+            - xd/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    exeggcute:
+      name: EXEGGCUTE
+      default: *red-blue.pokemon.exeggcute.default
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      experience: *red-blue.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      stats: *ruby-sapphire.pokemon.exeggcute.stats
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      abilities: *ruby-sapphire.pokemon.exeggcute.abilities
+      genus: *red-blue.pokemon.exeggcute.genus
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      flavor_text:
+        firered: |
+          Even though it appears to be eggs of
+          some sort, it was discovered to be a life-
+          form more like plant seeds.
+        leafgreen: |
+          It is often mistaken for eggs. When
+          disturbed, they quickly gather and attack
+          in swarms.
+      forms:
+        exeggcute:
+          name: EXEGGCUTE
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.icon
+          sprites:
+            - firered-leafgreen/exeggcute-default.png
+            - firered-leafgreen/back/exeggcute-default.png
+            - firered-leafgreen/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+diamond-pearl:
+  name: &diamond-pearl.name Exeggcute
+  position: &diamond-pearl.position 111
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    exeggcute:
+      genus: &diamond-pearl.pokemon.exeggcute.genus 'Egg Pokémon'
+      shape: &diamond-pearl.pokemon.exeggcute.shape heads
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: &diamond-pearl.pokemon.exeggcute.baby false
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      pal_park: &diamond-pearl.pokemon.exeggcute.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: &diamond-pearl.pokemon.exeggcute.experience 65
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      stats: &diamond-pearl.pokemon.exeggcute.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 40
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.exeggcute.abilities
+      flavor_text:
+        diamond: |
+          Its six eggs converse using
+          telepathy. They can quickly gather
+          if they become separated.
+        pearl: |
+          Its six eggs converse using
+          telepathy. They can quickly gather
+          if they become separated.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.icon
+          sprites:
+            - diamond-pearl/exeggcute-default.png
+            - diamond-pearl/back/exeggcute-default.png
+            - diamond-pearl/back/shiny/exeggcute-default.png
+            - diamond-pearl/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    exeggcute:
+      genus: *diamond-pearl.pokemon.exeggcute.genus
+      shape: *diamond-pearl.pokemon.exeggcute.shape
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: *diamond-pearl.pokemon.exeggcute.baby
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      pal_park: *diamond-pearl.pokemon.exeggcute.pal_park
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: *diamond-pearl.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      stats: *diamond-pearl.pokemon.exeggcute.stats
+      abilities: *ruby-sapphire.pokemon.exeggcute.abilities
+      flavor_text:
+        platinum: |
+          Its six eggs converse using
+          telepathy. They can quickly gather
+          if they become separated.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.icon
+          sprites:
+            - platinum/exeggcute-default.png
+            - platinum/back/exeggcute-default.png
+            - platinum/back/shiny/exeggcute-default.png
+            - platinum/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 105
+  pokemon:
+    exeggcute:
+      genus: *diamond-pearl.pokemon.exeggcute.genus
+      shape: *diamond-pearl.pokemon.exeggcute.shape
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: *diamond-pearl.pokemon.exeggcute.baby
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      pal_park: *diamond-pearl.pokemon.exeggcute.pal_park
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: *diamond-pearl.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      stats: *diamond-pearl.pokemon.exeggcute.stats
+      abilities: *ruby-sapphire.pokemon.exeggcute.abilities
+      flavor_text:
+        heartgold: |
+          Their shells are very durable. Even if
+          they crack, they can survive without
+          spilling their contents.
+        soulsilver: |
+          Using telepathy only they can
+          employ, they always form a
+          cluster of six EXEGGCUTE.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 3-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.icon
+          sprites:
+            - heartgold-soulsilver/exeggcute-default.png
+            - heartgold-soulsilver/back/exeggcute-default.png
+            - heartgold-soulsilver/back/shiny/exeggcute-default.png
+            - heartgold-soulsilver/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    exeggcute:
+      genus: *diamond-pearl.pokemon.exeggcute.genus
+      color: &black-white.pokemon.exeggcute.color pink
+      shape: *diamond-pearl.pokemon.exeggcute.shape
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: *diamond-pearl.pokemon.exeggcute.baby
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: *diamond-pearl.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      stats: *diamond-pearl.pokemon.exeggcute.stats
+      abilities: &black-white.pokemon.exeggcute.abilities
+        chlorophyll: *ruby-sapphire.pokemon.exeggcute.abilities.chlorophyll
+        harvest:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          Its six eggs converse using
+          telepathy. They can quickly gather
+          if they become separated.
+        white: |
+          Its six eggs converse using
+          telepathy. They can quickly gather
+          if they become separated.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.icon
+          sprites:
+            - black-white/exeggcute-default.png
+            - black-white/back/exeggcute-default.png
+            - black-white/back/shiny/exeggcute-default.png
+            - black-white/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    exeggcute:
+      genus: *diamond-pearl.pokemon.exeggcute.genus
+      color: *black-white.pokemon.exeggcute.color
+      shape: *diamond-pearl.pokemon.exeggcute.shape
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: *diamond-pearl.pokemon.exeggcute.baby
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: *diamond-pearl.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      stats: *diamond-pearl.pokemon.exeggcute.stats
+      abilities: *black-white.pokemon.exeggcute.abilities
+      flavor_text:
+        black-2: |
+          Its six eggs converse using
+          telepathy. They can quickly gather
+          if they become separated.
+        white-2: |
+          Its six eggs converse using
+          telepathy. They can quickly gather
+          if they become separated.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.icon
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *red-blue.pokemon.exeggcute.forms.exeggcute.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 136
+  pokemon:
+    exeggcute:
+      genus: *diamond-pearl.pokemon.exeggcute.genus
+      color: *black-white.pokemon.exeggcute.color
+      shape: *diamond-pearl.pokemon.exeggcute.shape
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: *diamond-pearl.pokemon.exeggcute.baby
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: *diamond-pearl.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      mega: &x-y.pokemon.exeggcute.mega false
+      stats: *diamond-pearl.pokemon.exeggcute.stats
+      abilities: *black-white.pokemon.exeggcute.abilities
+      flavor_text:
+        x: |
+          Its six eggs converse using telepathy. They can
+          quickly gather if they become separated.
+        'y': |
+          Even though it appears to be eggs of some sort,
+          it was discovered to be a life-form more like
+          plant seeds.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: &x-y.pokemon.exeggcute.forms.exeggcute.icon exeggcute-default.png
+          sprites:
+            - x-y/exeggcute-default.png
+            - x-y/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: &x-y.pokemon.exeggcute.forms.exeggcute.cry exeggcute-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    exeggcute:
+      genus: *diamond-pearl.pokemon.exeggcute.genus
+      color: *black-white.pokemon.exeggcute.color
+      shape: *diamond-pearl.pokemon.exeggcute.shape
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: *diamond-pearl.pokemon.exeggcute.baby
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: *diamond-pearl.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      mega: *x-y.pokemon.exeggcute.mega
+      stats: *diamond-pearl.pokemon.exeggcute.stats
+      abilities: *black-white.pokemon.exeggcute.abilities
+      flavor_text:
+        omega-ruby: |
+          This Pokémon consists of six eggs that form a closely knit
+          cluster. The six eggs attract each other and spin around.
+          When cracks increasingly appear on the eggs, Exeggcute is
+          close to evolution.
+        alpha-sapphire: |
+          This Pokémon consists of six eggs that form a closely knit
+          cluster. The six eggs attract each other and spin around.
+          When cracks increasingly appear on the eggs, Exeggcute is
+          close to evolution.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *x-y.pokemon.exeggcute.forms.exeggcute.icon
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *x-y.pokemon.exeggcute.forms.exeggcute.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/exeggcute-default.png
+            - omega-ruby-alpha-sapphire/shiny/exeggcute-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 269
+    original-poni: 84
+  pokemon:
+    exeggcute:
+      genus: *diamond-pearl.pokemon.exeggcute.genus
+      color: *black-white.pokemon.exeggcute.color
+      shape: *diamond-pearl.pokemon.exeggcute.shape
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: *diamond-pearl.pokemon.exeggcute.baby
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: *diamond-pearl.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      mega: *x-y.pokemon.exeggcute.mega
+      stats: *diamond-pearl.pokemon.exeggcute.stats
+      abilities: *black-white.pokemon.exeggcute.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.exeggcute.wild_held_items.sun
+          psychic-seed: 5
+        moon: *sun-moon.pokemon.exeggcute.wild_held_items.sun
+      flavor_text:
+        sun: |-
+          Its six eggs use telepathy to communicate
+          among themselves. It is believed to carry
+          plant genes and the genes of other species.
+        moon: |-
+          Six of them together form a full-fledged
+          Pokémon. It’s often hunted by Crabrawler,
+          but uses psychokinesis to drive it off.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *x-y.pokemon.exeggcute.forms.exeggcute.icon
+          sprites:
+            - sun-moon/exeggcute-default.png
+            - sun-moon/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *x-y.pokemon.exeggcute.forms.exeggcute.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 355
+    updated-poni: 102
+  pokemon:
+    exeggcute:
+      genus: *diamond-pearl.pokemon.exeggcute.genus
+      color: *black-white.pokemon.exeggcute.color
+      shape: *diamond-pearl.pokemon.exeggcute.shape
+      female_rate: *gold-silver.pokemon.exeggcute.female_rate
+      capture_rate: *red-blue.pokemon.exeggcute.capture_rate
+      happiness: *ruby-sapphire.pokemon.exeggcute.happiness
+      baby: *diamond-pearl.pokemon.exeggcute.baby
+      hatch_steps: *gold-silver.pokemon.exeggcute.hatch_steps
+      growth_rate: *red-blue.pokemon.exeggcute.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.exeggcute.forms_switchable
+      name: Exeggcute
+      default: *red-blue.pokemon.exeggcute.default
+      height: *red-blue.pokemon.exeggcute.height
+      weight: *ruby-sapphire.pokemon.exeggcute.weight
+      experience: *diamond-pearl.pokemon.exeggcute.experience
+      types: *red-blue.pokemon.exeggcute.types
+      egg_groups: *gold-silver.pokemon.exeggcute.egg_groups
+      mega: *x-y.pokemon.exeggcute.mega
+      stats: *diamond-pearl.pokemon.exeggcute.stats
+      abilities: *black-white.pokemon.exeggcute.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.exeggcute.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.exeggcute.wild_held_items.sun
+      flavor_text:
+        ultra-sun: |-
+          Six of them form a single Pokémon. Should one
+          of the six be lost, the next morning there will
+          once more be six.
+        ultra-moon: |-
+          Although they are the same size as other
+          Exeggcute, the ones produced in Alola are quite
+          heavy. Their shells are packed full.
+      forms:
+        exeggcute:
+          name: Exeggcute
+          form_name: *red-blue.pokemon.exeggcute.forms.exeggcute.form_name
+          default: true
+          battle_only: *red-blue.pokemon.exeggcute.forms.exeggcute.battle_only
+          icon: *x-y.pokemon.exeggcute.forms.exeggcute.icon
+          sprites:
+            - ultra-sun-ultra-moon/exeggcute-default.png
+            - ultra-sun-ultra-moon/shiny/exeggcute-default.png
+          art: *red-blue.pokemon.exeggcute.forms.exeggcute.art
+          footprint: *ruby-sapphire.pokemon.exeggcute.forms.exeggcute.footprint
+          cry: *x-y.pokemon.exeggcute.forms.exeggcute.cry

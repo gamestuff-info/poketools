@@ -1,0 +1,906 @@
+red-blue:
+  name: &red-blue.name EKANS
+  position: &red-blue.position 23
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 23
+    kanto: 23
+  pokemon:
+    ekans:
+      name: EKANS
+      default: &red-blue.pokemon.ekans.default true
+      capture_rate: &red-blue.pokemon.ekans.capture_rate 255
+      experience: &red-blue.pokemon.ekans.experience 62
+      types: &red-blue.pokemon.ekans.types
+        - poison
+      stats: &red-blue.pokemon.ekans.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 60
+          effort_change: 60
+        defense:
+          base_value: 44
+          effort_change: 44
+        speed:
+          base_value: 55
+          effort_change: 55
+        special:
+          base_value: 40
+          effort_change: 40
+      growth_rate: &red-blue.pokemon.ekans.growth_rate medium
+      genus: &red-blue.pokemon.ekans.genus 'SNAKE Pokémon'
+      height: &red-blue.pokemon.ekans.height 20
+      weight: &red-blue.pokemon.ekans.weight 680
+      flavor_text:
+        red: |
+          Moves silently
+          and stealthily.
+          Eats the eggs of
+          birds, such as
+           PIDGEY and
+          SPEAROW, whole.
+        blue: |
+          Moves silently
+          and stealthily.
+          Eats the eggs of
+          birds, such as
+           PIDGEY and
+          SPEAROW, whole.
+      forms:
+        ekans:
+          name: EKANS
+          form_name: &red-blue.pokemon.ekans.forms.ekans.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.ekans.forms.ekans.battle_only false
+          sprites:
+            - red-blue/ekans-default.png
+            - red-blue/gray/ekans-default.png
+            - red-blue/back/ekans-default.png
+          art: &red-blue.pokemon.ekans.forms.ekans.art
+            - ekans-default.png
+          cry: &red-blue.pokemon.ekans.forms.ekans.cry gen5/ekans-default.webm
+          icon: &red-blue.pokemon.ekans.forms.ekans.icon gen1/snake.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    ekans:
+      name: EKANS
+      default: *red-blue.pokemon.ekans.default
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      experience: *red-blue.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      stats: *red-blue.pokemon.ekans.stats
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      genus: *red-blue.pokemon.ekans.genus
+      height: *red-blue.pokemon.ekans.height
+      weight: *red-blue.pokemon.ekans.weight
+      flavor_text:
+        yellow: |
+          The older it gets,
+          the longer it
+          grows. At night,
+          it wraps its long
+          body around tree
+          branches to rest.
+      forms:
+        ekans:
+          name: EKANS
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          sprites:
+            - yellow/ekans-default.png
+            - yellow/gray/ekans-default.png
+            - yellow/back/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+          icon: *red-blue.pokemon.ekans.forms.ekans.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 22
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 49
+    original-johto-abc: 38
+  pokemon:
+    ekans:
+      name: EKANS
+      default: *red-blue.pokemon.ekans.default
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      experience: *red-blue.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      stats: &gold-silver.pokemon.ekans.stats
+        hp:
+          base_value: 35
+          effort_change: 35
+        attack:
+          base_value: 60
+          effort_change: 60
+        defense:
+          base_value: 44
+          effort_change: 44
+        speed:
+          base_value: 55
+          effort_change: 55
+        special-attack:
+          base_value: 40
+          effort_change: 40
+        special-defense:
+          base_value: 54
+          effort_change: 40
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      female_rate: &gold-silver.pokemon.ekans.female_rate 50
+      hatch_steps: &gold-silver.pokemon.ekans.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.ekans.egg_groups
+        - ground
+        - dragon
+      genus: *red-blue.pokemon.ekans.genus
+      height: *red-blue.pokemon.ekans.height
+      weight: &gold-silver.pokemon.ekans.weight 68
+      flavor_text:
+        gold: |
+          It can freely de-
+          tach its jaw to
+          swallow large prey
+          whole. It can be-
+          come too heavy to
+          move, however.
+        silver: |
+          It always hides in
+          grass. When first
+          born, it has no
+          poison, so its
+          bite is painful,
+          but harmless.
+      forms:
+        ekans:
+          name: EKANS
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          sprites:
+            - gold-silver/ekans-default.png
+            - gold-silver/back/ekans-default.png
+            - gold-silver/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+          icon: &gold-silver.pokemon.ekans.forms.ekans.icon gen2/serpent.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    ekans:
+      name: EKANS
+      default: *red-blue.pokemon.ekans.default
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      experience: *red-blue.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      stats: *gold-silver.pokemon.ekans.stats
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      genus: *red-blue.pokemon.ekans.genus
+      height: *red-blue.pokemon.ekans.height
+      weight: *gold-silver.pokemon.ekans.weight
+      flavor_text:
+        crystal: |
+          It flutters the
+          tip of its tongue
+          to seek out the
+          scent of prey,
+          then swallows the
+          prey whole.
+      forms:
+        ekans:
+          name: EKANS
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          sprites:
+            - crystal/ekans-default.png
+            - crystal/back/ekans-default.png
+            - crystal/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+          icon: *gold-silver.pokemon.ekans.forms.ekans.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 225
+  pokemon:
+    ekans:
+      name: EKANS
+      default: *red-blue.pokemon.ekans.default
+      forms_switchable: &ruby-sapphire.pokemon.ekans.forms_switchable false
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      experience: *red-blue.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      stats: &ruby-sapphire.pokemon.ekans.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 1
+        defense:
+          base_value: 44
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      happiness: &ruby-sapphire.pokemon.ekans.happiness 70
+      abilities: &ruby-sapphire.pokemon.ekans.abilities
+        intimidate: &ruby-sapphire.pokemon.ekans.abilities.intimidate
+          hidden: &ruby-sapphire.pokemon.ekans.abilities.intimidate.hidden false
+          position: 1
+        shed-skin: &ruby-sapphire.pokemon.ekans.abilities.shed-skin
+          hidden: *ruby-sapphire.pokemon.ekans.abilities.intimidate.hidden
+          position: 2
+      genus: *red-blue.pokemon.ekans.genus
+      height: *red-blue.pokemon.ekans.height
+      weight: &ruby-sapphire.pokemon.ekans.weight 69
+      flavor_text:
+        ruby: |
+          EKANS curls itself up in a spiral while
+          it rests.
+          Assuming this position allows it to
+          quickly respond to a threat from any
+          direction with a glare from its upraised
+          head.
+        sapphire: |
+          EKANS curls itself up in a spiral while
+          it rests.
+          Assuming this position allows it to
+          quickly respond to a threat from any
+          direction with a glare from its upraised
+          head.
+      forms:
+        ekans:
+          name: EKANS
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: &ruby-sapphire.pokemon.ekans.forms.ekans.icon gen5/ekans-default.png
+          sprites:
+            - ruby-sapphire/ekans-default.png
+            - ruby-sapphire/back/ekans-default.png
+            - ruby-sapphire/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: &ruby-sapphire.pokemon.ekans.forms.ekans.footprint ekans.png
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    ekans:
+      name: EKANS
+      default: *red-blue.pokemon.ekans.default
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      experience: *red-blue.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      stats: *ruby-sapphire.pokemon.ekans.stats
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      abilities: *ruby-sapphire.pokemon.ekans.abilities
+      genus: *red-blue.pokemon.ekans.genus
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      flavor_text:
+        emerald: |
+          An EKANS curls itself up in a spiral while
+          it rests. This position allows it to quickly
+          respond to an enemy from any direction
+          with a threat from its upraised head.
+      forms:
+        ekans:
+          name: EKANS
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *ruby-sapphire.pokemon.ekans.forms.ekans.icon
+          sprites:
+            - emerald/ekans-default.png
+            - emerald/shiny/ekans-default.png
+            - emerald/animated/ekans-default.webm
+            - emerald/animated/shiny/ekans-default.webm
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 83
+  pokemon:
+    ekans:
+      name: EKANS
+      default: *red-blue.pokemon.ekans.default
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      experience: *red-blue.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      stats: *ruby-sapphire.pokemon.ekans.stats
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      abilities: *ruby-sapphire.pokemon.ekans.abilities
+      genus: *red-blue.pokemon.ekans.genus
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      forms:
+        ekans:
+          name: EKANS
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          sprites:
+            - colosseum/ekans-default.png
+            - colosseum/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    ekans:
+      name: EKANS
+      default: *red-blue.pokemon.ekans.default
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      experience: *red-blue.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      stats: *ruby-sapphire.pokemon.ekans.stats
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      abilities: *ruby-sapphire.pokemon.ekans.abilities
+      genus: *red-blue.pokemon.ekans.genus
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      forms:
+        ekans:
+          name: EKANS
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          sprites:
+            - xd/ekans-default.png
+            - xd/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    ekans:
+      name: EKANS
+      default: *red-blue.pokemon.ekans.default
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      experience: *red-blue.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      stats: *ruby-sapphire.pokemon.ekans.stats
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      abilities: *ruby-sapphire.pokemon.ekans.abilities
+      genus: *red-blue.pokemon.ekans.genus
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      flavor_text:
+        firered: |
+          A very common sight in grassland, etc.
+          It flicks its tongue in and out to sense
+          danger in its surroundings.
+        leafgreen: |
+          Moving silently and stealthily, it eats
+          the eggs of birds, such as PIDGEY
+          and SPEAROW, whole.
+      forms:
+        ekans:
+          name: EKANS
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *ruby-sapphire.pokemon.ekans.forms.ekans.icon
+          sprites:
+            - firered-leafgreen/ekans-default.png
+            - firered-leafgreen/back/ekans-default.png
+            - firered-leafgreen/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+diamond-pearl:
+  name: &diamond-pearl.name Ekans
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    ekans:
+      genus: &diamond-pearl.pokemon.ekans.genus 'Snake Pokémon'
+      shape: &diamond-pearl.pokemon.ekans.shape squiggle
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: &diamond-pearl.pokemon.ekans.baby false
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      pal_park: &diamond-pearl.pokemon.ekans.pal_park
+        area: forest
+        rate: 50
+        score: 30
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: &diamond-pearl.pokemon.ekans.experience 58
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      stats: &diamond-pearl.pokemon.ekans.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 1
+        defense:
+          base_value: 44
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 40
+          effort_change: 0
+        special-defense:
+          base_value: 54
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.ekans.abilities
+      flavor_text:
+        diamond: |
+          It sneaks through grass without
+          making a sound and strikes
+          unsuspecting prey from behind.
+        pearl: |
+          It sneaks through grass without
+          making a sound and strikes
+          unsuspecting prey from behind.
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *ruby-sapphire.pokemon.ekans.forms.ekans.icon
+          sprites:
+            - diamond-pearl/ekans-default.png
+            - diamond-pearl/back/ekans-default.png
+            - diamond-pearl/back/shiny/ekans-default.png
+            - diamond-pearl/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    ekans:
+      genus: *diamond-pearl.pokemon.ekans.genus
+      shape: *diamond-pearl.pokemon.ekans.shape
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: *diamond-pearl.pokemon.ekans.baby
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ekans.pal_park
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: *diamond-pearl.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      stats: *diamond-pearl.pokemon.ekans.stats
+      abilities: *ruby-sapphire.pokemon.ekans.abilities
+      flavor_text:
+        platinum: |
+          It sneaks through grass without
+          making a sound and strikes
+          unsuspecting prey from behind.
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *ruby-sapphire.pokemon.ekans.forms.ekans.icon
+          sprites:
+            - platinum/ekans-default.png
+            - platinum/back/ekans-default.png
+            - platinum/back/shiny/ekans-default.png
+            - platinum/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 50
+  pokemon:
+    ekans:
+      genus: *diamond-pearl.pokemon.ekans.genus
+      shape: *diamond-pearl.pokemon.ekans.shape
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: *diamond-pearl.pokemon.ekans.baby
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ekans.pal_park
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: *diamond-pearl.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      stats: *diamond-pearl.pokemon.ekans.stats
+      abilities: *ruby-sapphire.pokemon.ekans.abilities
+      flavor_text:
+        heartgold: |
+          It can freely detach its jaw to
+          swallow large prey whole. It can
+          become too heavy to move, however.
+        soulsilver: |
+          It always hides in grass. When first
+          born, it has no poison, so its
+          bite is painful, but harmless.
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-5
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.ekans.forms.ekans.icon
+          sprites:
+            - heartgold-soulsilver/ekans-default.png
+            - heartgold-soulsilver/back/ekans-default.png
+            - heartgold-soulsilver/back/shiny/ekans-default.png
+            - heartgold-soulsilver/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    ekans:
+      genus: *diamond-pearl.pokemon.ekans.genus
+      color: &black-white.pokemon.ekans.color purple
+      shape: *diamond-pearl.pokemon.ekans.shape
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: *diamond-pearl.pokemon.ekans.baby
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: *diamond-pearl.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      stats: *diamond-pearl.pokemon.ekans.stats
+      abilities: &black-white.pokemon.ekans.abilities
+        intimidate: *ruby-sapphire.pokemon.ekans.abilities.intimidate
+        shed-skin: *ruby-sapphire.pokemon.ekans.abilities.shed-skin
+        unnerve:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It sneaks through grass without
+          making a sound and strikes
+          unsuspecting prey from behind.
+        white: |
+          It sneaks through grass without
+          making a sound and strikes
+          unsuspecting prey from behind.
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *ruby-sapphire.pokemon.ekans.forms.ekans.icon
+          sprites:
+            - black-white/ekans-default.png
+            - black-white/back/ekans-default.png
+            - black-white/back/shiny/ekans-default.png
+            - black-white/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    ekans:
+      genus: *diamond-pearl.pokemon.ekans.genus
+      color: *black-white.pokemon.ekans.color
+      shape: *diamond-pearl.pokemon.ekans.shape
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: *diamond-pearl.pokemon.ekans.baby
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: *diamond-pearl.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      stats: *diamond-pearl.pokemon.ekans.stats
+      abilities: *black-white.pokemon.ekans.abilities
+      flavor_text:
+        black-2: |
+          It sneaks through grass without
+          making a sound and strikes
+          unsuspecting prey from behind.
+        white-2: |
+          It sneaks through grass without
+          making a sound and strikes
+          unsuspecting prey from behind.
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *ruby-sapphire.pokemon.ekans.forms.ekans.icon
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *red-blue.pokemon.ekans.forms.ekans.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 37
+  pokemon:
+    ekans:
+      genus: *diamond-pearl.pokemon.ekans.genus
+      color: *black-white.pokemon.ekans.color
+      shape: *diamond-pearl.pokemon.ekans.shape
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: *diamond-pearl.pokemon.ekans.baby
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: *diamond-pearl.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      mega: &x-y.pokemon.ekans.mega false
+      stats: *diamond-pearl.pokemon.ekans.stats
+      abilities: *black-white.pokemon.ekans.abilities
+      flavor_text:
+        x: |
+          The older it gets, the longer it grows.
+          At night, it wraps its long body around
+          tree branches to rest.
+        'y': |
+          Moving silently and stealthily, it eats the eggs of
+          birds, such as Pidgey and Spearow, whole.
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: &x-y.pokemon.ekans.forms.ekans.icon ekans-default.png
+          sprites:
+            - x-y/ekans-default.png
+            - x-y/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: &x-y.pokemon.ekans.forms.ekans.cry ekans-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    ekans:
+      genus: *diamond-pearl.pokemon.ekans.genus
+      color: *black-white.pokemon.ekans.color
+      shape: *diamond-pearl.pokemon.ekans.shape
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: *diamond-pearl.pokemon.ekans.baby
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: *diamond-pearl.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      mega: *x-y.pokemon.ekans.mega
+      stats: *diamond-pearl.pokemon.ekans.stats
+      abilities: *black-white.pokemon.ekans.abilities
+      flavor_text:
+        omega-ruby: |
+          Ekans curls itself up in a spiral while it rests. Assuming this
+          position allows it to quickly respond to a threat from any
+          direction with a glare from its upraised head.
+        alpha-sapphire: |
+          Ekans curls itself up in a spiral while it rests. Assuming this
+          position allows it to quickly respond to a threat from any
+          direction with a glare from its upraised head.
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *x-y.pokemon.ekans.forms.ekans.icon
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *x-y.pokemon.ekans.forms.ekans.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/ekans-default.png
+            - omega-ruby-alpha-sapphire/shiny/ekans-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    ekans:
+      genus: *diamond-pearl.pokemon.ekans.genus
+      color: *black-white.pokemon.ekans.color
+      shape: *diamond-pearl.pokemon.ekans.shape
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: *diamond-pearl.pokemon.ekans.baby
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: *diamond-pearl.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      mega: *x-y.pokemon.ekans.mega
+      stats: *diamond-pearl.pokemon.ekans.stats
+      abilities: *black-white.pokemon.ekans.abilities
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *x-y.pokemon.ekans.forms.ekans.icon
+          sprites:
+            - sun-moon/ekans-default.png
+            - sun-moon/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *x-y.pokemon.ekans.forms.ekans.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 61
+    updated-melemele: 61
+  pokemon:
+    ekans:
+      genus: *diamond-pearl.pokemon.ekans.genus
+      color: *black-white.pokemon.ekans.color
+      shape: *diamond-pearl.pokemon.ekans.shape
+      female_rate: *gold-silver.pokemon.ekans.female_rate
+      capture_rate: *red-blue.pokemon.ekans.capture_rate
+      happiness: *ruby-sapphire.pokemon.ekans.happiness
+      baby: *diamond-pearl.pokemon.ekans.baby
+      hatch_steps: *gold-silver.pokemon.ekans.hatch_steps
+      growth_rate: *red-blue.pokemon.ekans.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ekans.forms_switchable
+      name: Ekans
+      default: *red-blue.pokemon.ekans.default
+      height: *red-blue.pokemon.ekans.height
+      weight: *ruby-sapphire.pokemon.ekans.weight
+      experience: *diamond-pearl.pokemon.ekans.experience
+      types: *red-blue.pokemon.ekans.types
+      egg_groups: *gold-silver.pokemon.ekans.egg_groups
+      mega: *x-y.pokemon.ekans.mega
+      stats: *diamond-pearl.pokemon.ekans.stats
+      abilities: *black-white.pokemon.ekans.abilities
+      flavor_text:
+        ultra-sun: |-
+          By dislocating its jaw, it can swallow prey larger
+          than itself. After a meal, it curls up and rests.
+        ultra-moon: |-
+          The eggs of bird Pokémon are its favorite food.
+          It swallows eggs whole, so sometimes an egg
+          gets stuck, and Ekans faints.
+      forms:
+        ekans:
+          name: Ekans
+          form_name: *red-blue.pokemon.ekans.forms.ekans.form_name
+          default: true
+          battle_only: *red-blue.pokemon.ekans.forms.ekans.battle_only
+          icon: *x-y.pokemon.ekans.forms.ekans.icon
+          sprites:
+            - ultra-sun-ultra-moon/ekans-default.png
+            - ultra-sun-ultra-moon/shiny/ekans-default.png
+          art: *red-blue.pokemon.ekans.forms.ekans.art
+          footprint: *ruby-sapphire.pokemon.ekans.forms.ekans.footprint
+          cry: *x-y.pokemon.ekans.forms.ekans.cry

@@ -1,0 +1,825 @@
+gold-silver:
+  name: &gold-silver.name QWILFISH
+  position: &gold-silver.position 210
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 211
+    original-johto: 160
+    original-johto-abc: 165
+  pokemon:
+    qwilfish:
+      name: QWILFISH
+      default: &gold-silver.pokemon.qwilfish.default true
+      capture_rate: &gold-silver.pokemon.qwilfish.capture_rate 45
+      experience: &gold-silver.pokemon.qwilfish.experience 100
+      types: &gold-silver.pokemon.qwilfish.types
+        - water
+        - poison
+      stats: &gold-silver.pokemon.qwilfish.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 95
+          effort_change: 95
+        defense:
+          base_value: 75
+          effort_change: 75
+        speed:
+          base_value: 85
+          effort_change: 85
+        special-attack:
+          base_value: 55
+          effort_change: 55
+        special-defense:
+          base_value: 55
+          effort_change: 55
+      growth_rate: &gold-silver.pokemon.qwilfish.growth_rate medium
+      female_rate: &gold-silver.pokemon.qwilfish.female_rate 50
+      hatch_steps: &gold-silver.pokemon.qwilfish.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.qwilfish.egg_groups
+        - water2
+      genus: &gold-silver.pokemon.qwilfish.genus 'BALLOON Pokémon'
+      height: &gold-silver.pokemon.qwilfish.height 5
+      weight: &gold-silver.pokemon.qwilfish.weight 40
+      flavor_text:
+        gold: |
+          To fire its poison
+          spikes, it must
+          inflate its body
+          by drinking over
+          2.6 gallons of
+          water all at once.
+        silver: |
+          The small spikes
+          covering its body
+          developed from
+          scales. They in-
+          ject a toxin that
+          causes fainting.
+      forms:
+        qwilfish:
+          name: QWILFISH
+          form_name: &gold-silver.pokemon.qwilfish.forms.qwilfish.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only false
+          sprites:
+            - gold-silver/qwilfish-default.png
+            - gold-silver/back/qwilfish-default.png
+            - gold-silver/shiny/qwilfish-default.png
+          art: &gold-silver.pokemon.qwilfish.forms.qwilfish.art
+            - qwilfish-default.png
+          cry: &gold-silver.pokemon.qwilfish.forms.qwilfish.cry gen5/qwilfish-default.webm
+          icon: &gold-silver.pokemon.qwilfish.forms.qwilfish.icon gen2/fish.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    qwilfish:
+      name: QWILFISH
+      default: *gold-silver.pokemon.qwilfish.default
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      experience: *gold-silver.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      stats: *gold-silver.pokemon.qwilfish.stats
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      genus: *gold-silver.pokemon.qwilfish.genus
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *gold-silver.pokemon.qwilfish.weight
+      flavor_text:
+        crystal: |
+          When faced with a
+          larger opponent,
+          it swallows as
+          much water as it
+          can to match the
+          opponent's size.
+      forms:
+        qwilfish:
+          name: QWILFISH
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          sprites:
+            - crystal/qwilfish-default.png
+            - crystal/back/qwilfish-default.png
+            - crystal/shiny/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+          icon: *gold-silver.pokemon.qwilfish.forms.qwilfish.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 211
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 354
+  pokemon:
+    qwilfish:
+      name: QWILFISH
+      default: *gold-silver.pokemon.qwilfish.default
+      forms_switchable: &ruby-sapphire.pokemon.qwilfish.forms_switchable false
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      experience: *gold-silver.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      stats: &ruby-sapphire.pokemon.qwilfish.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 1
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      happiness: &ruby-sapphire.pokemon.qwilfish.happiness 70
+      abilities: &ruby-sapphire.pokemon.qwilfish.abilities
+        poison-point: &ruby-sapphire.pokemon.qwilfish.abilities.poison-point
+          hidden: &ruby-sapphire.pokemon.qwilfish.abilities.poison-point.hidden false
+          position: 1
+        swift-swim: &ruby-sapphire.pokemon.qwilfish.abilities.swift-swim
+          hidden: *ruby-sapphire.pokemon.qwilfish.abilities.poison-point.hidden
+          position: 2
+      genus: *gold-silver.pokemon.qwilfish.genus
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: &ruby-sapphire.pokemon.qwilfish.weight 39
+      flavor_text:
+        ruby: |
+          QWILFISH sucks in water, inflating
+          itself. This POKéMON uses the pressure
+           of the water it swallowed to shoot
+          toxic quills all at once from all over
+           its body. It finds swimming somewhat
+          challenging.
+        sapphire: |
+          QWILFISH sucks in water, inflating
+          itself. This POKéMON uses the pressure
+          of the water it swallowed to shoot
+          toxic quills all at once from all over
+          its body. It finds swimming somewhat
+          challenging.
+      forms:
+        qwilfish:
+          name: QWILFISH
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: &ruby-sapphire.pokemon.qwilfish.forms.qwilfish.icon gen5/qwilfish-default.png
+          sprites:
+            - ruby-sapphire/qwilfish-default.png
+            - ruby-sapphire/back/qwilfish-default.png
+            - ruby-sapphire/shiny/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: &ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint qwilfish.png
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    qwilfish:
+      name: QWILFISH
+      default: *gold-silver.pokemon.qwilfish.default
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      experience: *gold-silver.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      stats: *ruby-sapphire.pokemon.qwilfish.stats
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      abilities: *ruby-sapphire.pokemon.qwilfish.abilities
+      genus: *gold-silver.pokemon.qwilfish.genus
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      flavor_text:
+        emerald: |
+          A QWILFISH uses the pressure of water
+          it swallows to shoot toxic quills all at
+          once from all over its body. It finds
+          swimming to be somewhat challenging.
+      forms:
+        qwilfish:
+          name: QWILFISH
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.icon
+          sprites:
+            - emerald/qwilfish-default.png
+            - emerald/shiny/qwilfish-default.png
+            - emerald/animated/qwilfish-default.webm
+            - emerald/animated/shiny/qwilfish-default.webm
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 260
+  pokemon:
+    qwilfish:
+      name: QWILFISH
+      default: *gold-silver.pokemon.qwilfish.default
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      experience: *gold-silver.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      stats: *ruby-sapphire.pokemon.qwilfish.stats
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      abilities: *ruby-sapphire.pokemon.qwilfish.abilities
+      genus: *gold-silver.pokemon.qwilfish.genus
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      forms:
+        qwilfish:
+          name: QWILFISH
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          sprites:
+            - colosseum/qwilfish-default.png
+            - colosseum/shiny/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    qwilfish:
+      name: QWILFISH
+      default: *gold-silver.pokemon.qwilfish.default
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      experience: *gold-silver.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      stats: *ruby-sapphire.pokemon.qwilfish.stats
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      abilities: *ruby-sapphire.pokemon.qwilfish.abilities
+      genus: *gold-silver.pokemon.qwilfish.genus
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      forms:
+        qwilfish:
+          name: QWILFISH
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          sprites:
+            - xd/qwilfish-default.png
+            - xd/shiny/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    qwilfish:
+      name: QWILFISH
+      default: *gold-silver.pokemon.qwilfish.default
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      experience: *gold-silver.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      stats: *ruby-sapphire.pokemon.qwilfish.stats
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      abilities: *ruby-sapphire.pokemon.qwilfish.abilities
+      genus: *gold-silver.pokemon.qwilfish.genus
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      flavor_text:
+        firered: |
+          The small spikes covering its body
+          developed from scales. They inject a
+          toxin that causes fainting.
+        leafgreen: |
+          To fire its poison spikes, it must inflate
+          its body by drinking over 2.6 gallons of
+          water all at once.
+      forms:
+        qwilfish:
+          name: QWILFISH
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.icon
+          sprites:
+            - firered-leafgreen/qwilfish-default.png
+            - firered-leafgreen/back/qwilfish-default.png
+            - firered-leafgreen/shiny/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+diamond-pearl:
+  name: &diamond-pearl.name Qwilfish
+  position: &diamond-pearl.position 242
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    qwilfish:
+      genus: &diamond-pearl.pokemon.qwilfish.genus 'Balloon Pokémon'
+      shape: &diamond-pearl.pokemon.qwilfish.shape fish
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: &diamond-pearl.pokemon.qwilfish.baby false
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      pal_park: &diamond-pearl.pokemon.qwilfish.pal_park
+        area: sea
+        rate: 10
+        score: 80
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: &diamond-pearl.pokemon.qwilfish.experience 88
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      stats: &diamond-pearl.pokemon.qwilfish.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 1
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.qwilfish.abilities
+        poison-point: *ruby-sapphire.pokemon.qwilfish.abilities.poison-point
+        swift-swim: *ruby-sapphire.pokemon.qwilfish.abilities.swift-swim
+        intimidate:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+          poison-barb: 5
+        pearl: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          It shoots the poison spines on its
+          body in all directions. Its round
+          form makes it a poor swimmer.
+        pearl: |
+          It shoots the poison spines on its
+          body in all directions. Its round
+          form makes it a poor swimmer.
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.icon
+          sprites:
+            - diamond-pearl/back/shiny/qwilfish-default.png
+            - diamond-pearl/back/qwilfish-default.png
+            - diamond-pearl/shiny/qwilfish-default.png
+            - diamond-pearl/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    qwilfish:
+      genus: *diamond-pearl.pokemon.qwilfish.genus
+      shape: *diamond-pearl.pokemon.qwilfish.shape
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: *diamond-pearl.pokemon.qwilfish.baby
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      pal_park: *diamond-pearl.pokemon.qwilfish.pal_park
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: *diamond-pearl.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      stats: *diamond-pearl.pokemon.qwilfish.stats
+      abilities: *diamond-pearl.pokemon.qwilfish.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          It shoots the poison spines on its
+          body in all directions. Its round
+          form makes it a poor swimmer.
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.icon
+          sprites:
+            - platinum/back/shiny/qwilfish-default.png
+            - platinum/back/qwilfish-default.png
+            - platinum/shiny/qwilfish-default.png
+            - platinum/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 163
+  pokemon:
+    qwilfish:
+      genus: *diamond-pearl.pokemon.qwilfish.genus
+      shape: *diamond-pearl.pokemon.qwilfish.shape
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: *diamond-pearl.pokemon.qwilfish.baby
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      pal_park: *diamond-pearl.pokemon.qwilfish.pal_park
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: *diamond-pearl.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      stats: *diamond-pearl.pokemon.qwilfish.stats
+      abilities: *diamond-pearl.pokemon.qwilfish.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          To fire its poison spikes, it must
+          inflate its body by drinking over
+          2.6 gallons of water all at once.
+        soulsilver: |
+          The small spikes covering its body
+          developed from scales. They inject
+          a toxin that causes fainting.
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/qwilfish-default.png
+            - heartgold-soulsilver/back/qwilfish-default.png
+            - heartgold-soulsilver/shiny/qwilfish-default.png
+            - heartgold-soulsilver/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    qwilfish:
+      genus: *diamond-pearl.pokemon.qwilfish.genus
+      color: &black-white.pokemon.qwilfish.color gray
+      shape: *diamond-pearl.pokemon.qwilfish.shape
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: *diamond-pearl.pokemon.qwilfish.baby
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: *diamond-pearl.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      stats: *diamond-pearl.pokemon.qwilfish.stats
+      abilities: *diamond-pearl.pokemon.qwilfish.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+      flavor_text:
+        black: |
+          It shoots the poison spines on its
+          body in all directions. Its round
+          form makes it a poor swimmer.
+        white: |
+          It shoots the poison spines on its
+          body in all directions. Its round
+          form makes it a poor swimmer.
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.icon
+          sprites:
+            - black-white/back/shiny/qwilfish-default.png
+            - black-white/back/qwilfish-default.png
+            - black-white/shiny/qwilfish-default.png
+            - black-white/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    qwilfish:
+      genus: *diamond-pearl.pokemon.qwilfish.genus
+      color: *black-white.pokemon.qwilfish.color
+      shape: *diamond-pearl.pokemon.qwilfish.shape
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: *diamond-pearl.pokemon.qwilfish.baby
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: *diamond-pearl.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      stats: *diamond-pearl.pokemon.qwilfish.stats
+      abilities: *diamond-pearl.pokemon.qwilfish.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          It shoots the poison spines on its
+          body in all directions. Its round
+          form makes it a poor swimmer.
+        white-2: |
+          It shoots the poison spines on its
+          body in all directions. Its round
+          form makes it a poor swimmer.
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.icon
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *gold-silver.pokemon.qwilfish.forms.qwilfish.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-coastal: 38
+  pokemon:
+    qwilfish:
+      genus: *diamond-pearl.pokemon.qwilfish.genus
+      color: *black-white.pokemon.qwilfish.color
+      shape: *diamond-pearl.pokemon.qwilfish.shape
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: *diamond-pearl.pokemon.qwilfish.baby
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: *diamond-pearl.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      mega: &x-y.pokemon.qwilfish.mega false
+      stats: *diamond-pearl.pokemon.qwilfish.stats
+      abilities: *diamond-pearl.pokemon.qwilfish.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+      flavor_text:
+        x: |
+          To fire its poison spikes, it must inflate its body by
+          drinking over 2.6 gallons of water all at once.
+        'y': |
+          The small spikes covering its body developed from
+          scales. They inject a toxin that causes fainting.
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: &x-y.pokemon.qwilfish.forms.qwilfish.icon qwilfish-default.png
+          sprites:
+            - x-y/shiny/qwilfish-default.png
+            - x-y/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: &x-y.pokemon.qwilfish.forms.qwilfish.cry qwilfish-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    qwilfish:
+      genus: *diamond-pearl.pokemon.qwilfish.genus
+      color: *black-white.pokemon.qwilfish.color
+      shape: *diamond-pearl.pokemon.qwilfish.shape
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: *diamond-pearl.pokemon.qwilfish.baby
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: *diamond-pearl.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      mega: *x-y.pokemon.qwilfish.mega
+      stats: *diamond-pearl.pokemon.qwilfish.stats
+      abilities: *diamond-pearl.pokemon.qwilfish.abilities
+      flavor_text:
+        omega-ruby: |
+          Qwilfish sucks in water, inflating itself. This Pokémon
+          uses the pressure of the water it swallowed to shoot toxic
+          quills all at once from all over its body. It finds swimming
+          somewhat challenging.
+        alpha-sapphire: |
+          Qwilfish sucks in water, inflating itself. This Pokémon
+          uses the pressure of the water it swallowed to shoot toxic
+          quills all at once from all over its body. It finds swimming
+          somewhat challenging.
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *x-y.pokemon.qwilfish.forms.qwilfish.icon
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *x-y.pokemon.qwilfish.forms.qwilfish.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/qwilfish-default.png
+            - omega-ruby-alpha-sapphire/shiny/qwilfish-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    qwilfish:
+      genus: *diamond-pearl.pokemon.qwilfish.genus
+      color: *black-white.pokemon.qwilfish.color
+      shape: *diamond-pearl.pokemon.qwilfish.shape
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: *diamond-pearl.pokemon.qwilfish.baby
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: *diamond-pearl.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      mega: *x-y.pokemon.qwilfish.mega
+      stats: *diamond-pearl.pokemon.qwilfish.stats
+      abilities: *diamond-pearl.pokemon.qwilfish.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *x-y.pokemon.qwilfish.forms.qwilfish.icon
+          sprites:
+            - sun-moon/shiny/qwilfish-default.png
+            - sun-moon/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *x-y.pokemon.qwilfish.forms.qwilfish.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    qwilfish:
+      genus: *diamond-pearl.pokemon.qwilfish.genus
+      color: *black-white.pokemon.qwilfish.color
+      shape: *diamond-pearl.pokemon.qwilfish.shape
+      female_rate: *gold-silver.pokemon.qwilfish.female_rate
+      capture_rate: *gold-silver.pokemon.qwilfish.capture_rate
+      happiness: *ruby-sapphire.pokemon.qwilfish.happiness
+      baby: *diamond-pearl.pokemon.qwilfish.baby
+      hatch_steps: *gold-silver.pokemon.qwilfish.hatch_steps
+      growth_rate: *gold-silver.pokemon.qwilfish.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.qwilfish.forms_switchable
+      name: Qwilfish
+      default: *gold-silver.pokemon.qwilfish.default
+      height: *gold-silver.pokemon.qwilfish.height
+      weight: *ruby-sapphire.pokemon.qwilfish.weight
+      experience: *diamond-pearl.pokemon.qwilfish.experience
+      types: *gold-silver.pokemon.qwilfish.types
+      egg_groups: *gold-silver.pokemon.qwilfish.egg_groups
+      mega: *x-y.pokemon.qwilfish.mega
+      stats: *diamond-pearl.pokemon.qwilfish.stats
+      abilities: *diamond-pearl.pokemon.qwilfish.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.qwilfish.wild_held_items.diamond
+      forms:
+        qwilfish:
+          name: Qwilfish
+          form_name: *gold-silver.pokemon.qwilfish.forms.qwilfish.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.qwilfish.forms.qwilfish.battle_only
+          icon: *x-y.pokemon.qwilfish.forms.qwilfish.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/qwilfish-default.png
+            - ultra-sun-ultra-moon/qwilfish-default.png
+          art: *gold-silver.pokemon.qwilfish.forms.qwilfish.art
+          footprint: *ruby-sapphire.pokemon.qwilfish.forms.qwilfish.footprint
+          cry: *x-y.pokemon.qwilfish.forms.qwilfish.cry

@@ -1,0 +1,233 @@
+x-y:
+  name: &x-y.name Hawlucha
+  position: &x-y.position 701
+  numbers:
+    national: &x-y.numbers.national 701
+    kalos-coastal: 89
+  pokemon:
+    hawlucha:
+      genus: &x-y.pokemon.hawlucha.genus 'Wrestling Pokémon'
+      color: &x-y.pokemon.hawlucha.color green
+      shape: &x-y.pokemon.hawlucha.shape humanoid
+      female_rate: &x-y.pokemon.hawlucha.female_rate 50
+      capture_rate: &x-y.pokemon.hawlucha.capture_rate 100
+      happiness: &x-y.pokemon.hawlucha.happiness 70
+      baby: &x-y.pokemon.hawlucha.baby false
+      hatch_steps: &x-y.pokemon.hawlucha.hatch_steps 20
+      growth_rate: &x-y.pokemon.hawlucha.growth_rate medium
+      forms_switchable: &x-y.pokemon.hawlucha.forms_switchable false
+      name: Hawlucha
+      default: &x-y.pokemon.hawlucha.default true
+      height: &x-y.pokemon.hawlucha.height 8
+      weight: &x-y.pokemon.hawlucha.weight 215
+      experience: &x-y.pokemon.hawlucha.experience 175
+      types: &x-y.pokemon.hawlucha.types
+        - fighting
+        - flying
+      egg_groups: &x-y.pokemon.hawlucha.egg_groups
+        - humanshape
+      mega: &x-y.pokemon.hawlucha.mega false
+      stats: &x-y.pokemon.hawlucha.stats
+        hp:
+          base_value: 78
+          effort_change: 0
+        attack:
+          base_value: 92
+          effort_change: 2
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 118
+          effort_change: 0
+        special-attack:
+          base_value: 74
+          effort_change: 0
+        special-defense:
+          base_value: 63
+          effort_change: 0
+      abilities: &x-y.pokemon.hawlucha.abilities
+        limber:
+          hidden: &x-y.pokemon.hawlucha.abilities.limber.hidden false
+          position: 1
+        unburden:
+          hidden: *x-y.pokemon.hawlucha.abilities.limber.hidden
+          position: 2
+        mold-breaker:
+          hidden: true
+          position: 3
+      wild_held_items:
+        x: &x-y.pokemon.hawlucha.wild_held_items.x
+          kings-rock: 5
+        'y': *x-y.pokemon.hawlucha.wild_held_items.x
+      flavor_text:
+        x: |
+          Although its body is small, its proficient
+          fighting skills enable it to keep up with
+          big bruisers like Machamp and Hariyama.
+        'y': |
+          With its wings, it controls its position in the air.
+          It likes to attack from above, a maneuver that
+          is difficult to defend against.
+      forms:
+        hawlucha:
+          name: Hawlucha
+          form_name: &x-y.pokemon.hawlucha.forms.hawlucha.form_name 'Default Form'
+          default: true
+          battle_only: &x-y.pokemon.hawlucha.forms.hawlucha.battle_only false
+          icon: &x-y.pokemon.hawlucha.forms.hawlucha.icon hawlucha-default.png
+          sprites:
+            - x-y/hawlucha-default.png
+            - x-y/shiny/hawlucha-default.png
+          art: &x-y.pokemon.hawlucha.forms.hawlucha.art
+            - hawlucha-default.png
+          footprint: &x-y.pokemon.hawlucha.forms.hawlucha.footprint hawlucha.png
+          cry: &x-y.pokemon.hawlucha.forms.hawlucha.cry hawlucha-default.webm
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *x-y.numbers.national
+  pokemon:
+    hawlucha:
+      genus: *x-y.pokemon.hawlucha.genus
+      color: *x-y.pokemon.hawlucha.color
+      shape: *x-y.pokemon.hawlucha.shape
+      female_rate: *x-y.pokemon.hawlucha.female_rate
+      capture_rate: *x-y.pokemon.hawlucha.capture_rate
+      happiness: *x-y.pokemon.hawlucha.happiness
+      baby: *x-y.pokemon.hawlucha.baby
+      hatch_steps: *x-y.pokemon.hawlucha.hatch_steps
+      growth_rate: *x-y.pokemon.hawlucha.growth_rate
+      forms_switchable: *x-y.pokemon.hawlucha.forms_switchable
+      name: Hawlucha
+      default: *x-y.pokemon.hawlucha.default
+      height: *x-y.pokemon.hawlucha.height
+      weight: *x-y.pokemon.hawlucha.weight
+      experience: *x-y.pokemon.hawlucha.experience
+      types: *x-y.pokemon.hawlucha.types
+      egg_groups: *x-y.pokemon.hawlucha.egg_groups
+      mega: *x-y.pokemon.hawlucha.mega
+      stats: *x-y.pokemon.hawlucha.stats
+      abilities: *x-y.pokemon.hawlucha.abilities
+      flavor_text:
+        omega-ruby: |
+          Although its body is small, its proficient
+          fighting skills enable it to keep up with
+          big bruisers like Machamp and Hariyama.
+        alpha-sapphire: |
+          With its wings, it controls its position in the air.
+          It likes to attack from above, a maneuver that
+          is difficult to defend against.
+      forms:
+        hawlucha:
+          name: Hawlucha
+          form_name: *x-y.pokemon.hawlucha.forms.hawlucha.form_name
+          default: true
+          battle_only: *x-y.pokemon.hawlucha.forms.hawlucha.battle_only
+          icon: *x-y.pokemon.hawlucha.forms.hawlucha.icon
+          art: *x-y.pokemon.hawlucha.forms.hawlucha.art
+          footprint: *x-y.pokemon.hawlucha.forms.hawlucha.footprint
+          cry: *x-y.pokemon.hawlucha.forms.hawlucha.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/hawlucha-default.png
+            - omega-ruby-alpha-sapphire/shiny/hawlucha-default.png
+      wild_held_items:
+        omega-ruby: *x-y.pokemon.hawlucha.wild_held_items.x
+        alpha-sapphire: *x-y.pokemon.hawlucha.wild_held_items.x
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    hawlucha:
+      genus: *x-y.pokemon.hawlucha.genus
+      color: *x-y.pokemon.hawlucha.color
+      shape: *x-y.pokemon.hawlucha.shape
+      female_rate: *x-y.pokemon.hawlucha.female_rate
+      capture_rate: *x-y.pokemon.hawlucha.capture_rate
+      happiness: *x-y.pokemon.hawlucha.happiness
+      baby: *x-y.pokemon.hawlucha.baby
+      hatch_steps: *x-y.pokemon.hawlucha.hatch_steps
+      growth_rate: *x-y.pokemon.hawlucha.growth_rate
+      forms_switchable: *x-y.pokemon.hawlucha.forms_switchable
+      name: Hawlucha
+      default: *x-y.pokemon.hawlucha.default
+      height: *x-y.pokemon.hawlucha.height
+      weight: *x-y.pokemon.hawlucha.weight
+      experience: *x-y.pokemon.hawlucha.experience
+      types: *x-y.pokemon.hawlucha.types
+      egg_groups: *x-y.pokemon.hawlucha.egg_groups
+      mega: *x-y.pokemon.hawlucha.mega
+      stats: *x-y.pokemon.hawlucha.stats
+      abilities: *x-y.pokemon.hawlucha.abilities
+      wild_held_items:
+        sun: *x-y.pokemon.hawlucha.wild_held_items.x
+        moon: *x-y.pokemon.hawlucha.wild_held_items.x
+      forms:
+        hawlucha:
+          name: Hawlucha
+          form_name: *x-y.pokemon.hawlucha.forms.hawlucha.form_name
+          default: true
+          battle_only: *x-y.pokemon.hawlucha.forms.hawlucha.battle_only
+          icon: *x-y.pokemon.hawlucha.forms.hawlucha.icon
+          sprites:
+            - sun-moon/hawlucha-default.png
+            - sun-moon/shiny/hawlucha-default.png
+          art: *x-y.pokemon.hawlucha.forms.hawlucha.art
+          footprint: *x-y.pokemon.hawlucha.forms.hawlucha.footprint
+          cry: *x-y.pokemon.hawlucha.forms.hawlucha.cry
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+    updated-alola: 96
+    updated-melemele: 96
+  pokemon:
+    hawlucha:
+      genus: *x-y.pokemon.hawlucha.genus
+      color: *x-y.pokemon.hawlucha.color
+      shape: *x-y.pokemon.hawlucha.shape
+      female_rate: *x-y.pokemon.hawlucha.female_rate
+      capture_rate: *x-y.pokemon.hawlucha.capture_rate
+      happiness: *x-y.pokemon.hawlucha.happiness
+      baby: *x-y.pokemon.hawlucha.baby
+      hatch_steps: *x-y.pokemon.hawlucha.hatch_steps
+      growth_rate: *x-y.pokemon.hawlucha.growth_rate
+      forms_switchable: *x-y.pokemon.hawlucha.forms_switchable
+      name: Hawlucha
+      default: *x-y.pokemon.hawlucha.default
+      height: *x-y.pokemon.hawlucha.height
+      weight: *x-y.pokemon.hawlucha.weight
+      experience: *x-y.pokemon.hawlucha.experience
+      types: *x-y.pokemon.hawlucha.types
+      egg_groups: *x-y.pokemon.hawlucha.egg_groups
+      mega: *x-y.pokemon.hawlucha.mega
+      stats: *x-y.pokemon.hawlucha.stats
+      abilities: *x-y.pokemon.hawlucha.abilities
+      wild_held_items:
+        ultra-sun: *x-y.pokemon.hawlucha.wild_held_items.x
+        ultra-moon: *x-y.pokemon.hawlucha.wild_held_items.x
+      flavor_text:
+        ultra-sun: |-
+          It overwhelms opponents with quick moves, but
+          sometimes it showboats for too long when it’s
+          using a special move and gets itself into a pinch.
+        ultra-moon: |-
+          In combat, Hawlucha leaps nimbly about, taking
+          advantage of its opponents’ blind spots. It’s
+          also skilled at using superb submission holds.
+      forms:
+        hawlucha:
+          name: Hawlucha
+          form_name: *x-y.pokemon.hawlucha.forms.hawlucha.form_name
+          default: true
+          battle_only: *x-y.pokemon.hawlucha.forms.hawlucha.battle_only
+          icon: *x-y.pokemon.hawlucha.forms.hawlucha.icon
+          sprites:
+            - ultra-sun-ultra-moon/hawlucha-default.png
+            - ultra-sun-ultra-moon/shiny/hawlucha-default.png
+          art: *x-y.pokemon.hawlucha.forms.hawlucha.art
+          footprint: *x-y.pokemon.hawlucha.forms.hawlucha.footprint
+          cry: *x-y.pokemon.hawlucha.forms.hawlucha.cry

@@ -1,0 +1,216 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'CRUSH CLAW'
+  power: &ruby-sapphire.power 75
+  type: &ruby-sapphire.type normal
+  accuracy: &ruby-sapphire.accuracy 95
+  pp: &ruby-sapphire.pp 10
+  effect: &ruby-sapphire.effect 70
+  target: &ruby-sapphire.target selected-pokemon
+  priority: &ruby-sapphire.priority 0
+  effect_chance: &ruby-sapphire.effect_chance 50
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+  categories: &ruby-sapphire.categories
+    - damage
+    - lower
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  stat_changes: &ruby-sapphire.stat_changes
+    defense: -1
+  stat_change_chance: &ruby-sapphire.stat_change_chance 50
+  contest_type: &ruby-sapphire.contest_type cool
+  contest_effect: 13
+  contest_use_after:
+    - swords-dance
+  flavor_text: |
+    Tears at the foe with sharp
+    claws. May lower DEFENSE.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: &colosseum.flavor_text |
+    Slices target with sharp
+    claws. May lower DEFENSE.
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+xd:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *colosseum.flavor_text
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+  flavor_text: |
+    The foe is attacked
+    with sharp claws.
+    It may also lower
+    the foe's DEFENSE.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Crush Claw'
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 5
+  flavor_text: &diamond-pearl.flavor_text |
+    The user slashes the
+    foe with hard and
+    sharp claws.
+    It may also lower the
+    target’s Defense.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: |
+    The user slashes the target with hard
+    and sharp claws.
+    It may also lower the target’s Defense.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: &x-y.flavor_text |
+    The user slashes the target with hard
+    and sharp claws. This may also lower
+    the target’s Defense stat.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 4
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  stat_change_chance: *ruby-sapphire.stat_change_chance
+  flags: *ruby-sapphire.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  stat_changes: *ruby-sapphire.stat_changes
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: |
+    The user slashes the target with hard and sharp
+    claws. This may also lower the target’s Defense stat.
+ultra-sun-ultra-moon: *sun-moon

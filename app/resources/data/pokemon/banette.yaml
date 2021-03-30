@@ -1,0 +1,938 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name BANETTE
+  position: &ruby-sapphire.position 354
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 354
+    hoenn: 147
+  pokemon:
+    banette:
+      name: BANETTE
+      default: &ruby-sapphire.pokemon.banette.default true
+      forms_switchable: &ruby-sapphire.pokemon.banette.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.banette.capture_rate 45
+      experience: &ruby-sapphire.pokemon.banette.experience 179
+      types: &ruby-sapphire.pokemon.banette.types
+        - ghost
+      stats: &ruby-sapphire.pokemon.banette.stats
+        hp:
+          base_value: 64
+          effort_change: 0
+        attack:
+          base_value: 115
+          effort_change: 2
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 83
+          effort_change: 0
+        special-defense:
+          base_value: 64
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.banette.growth_rate fast
+      female_rate: &ruby-sapphire.pokemon.banette.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.banette.hatch_steps 25
+      egg_groups: &ruby-sapphire.pokemon.banette.egg_groups
+        - indeterminate
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.banette.wild_held_items.ruby
+          spell-tag: 5
+        sapphire: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.banette.happiness 35
+      abilities: &ruby-sapphire.pokemon.banette.abilities
+        insomnia: &ruby-sapphire.pokemon.banette.abilities.insomnia
+          hidden: &ruby-sapphire.pokemon.banette.abilities.insomnia.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.banette.genus 'MARIONETTE Pokémon'
+      height: &ruby-sapphire.pokemon.banette.height 11
+      weight: &ruby-sapphire.pokemon.banette.weight 125
+      flavor_text:
+        ruby: |
+          BANETTE generates energy for laying
+          strong curses by sticking pins into its
+          own body.
+          This POKéMON was originally a pitiful
+          plush doll that was thrown away.
+        sapphire: |
+          A cursed energy permeated the stuffing
+          of a discarded and forgotten plush doll,
+          giving it new life as BANETTE.
+          The POKéMON's energy would escape if it
+          were to ever open its mouth.
+      forms:
+        banette:
+          name: BANETTE
+          form_name: &ruby-sapphire.pokemon.banette.forms.banette.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.banette.forms.banette.battle_only false
+          icon: &ruby-sapphire.pokemon.banette.forms.banette.icon gen5/banette-default.png
+          sprites:
+            - ruby-sapphire/banette-default.png
+            - ruby-sapphire/back/banette-default.png
+            - ruby-sapphire/shiny/banette-default.png
+          art: &ruby-sapphire.pokemon.banette.forms.banette.art
+            - banette-default.png
+          footprint: &ruby-sapphire.pokemon.banette.forms.banette.footprint banette.png
+          cry: &ruby-sapphire.pokemon.banette.forms.banette.cry gen5/banette-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.banette.evolution_parent shuppet/shuppet
+      evolution_conditions: &ruby-sapphire.pokemon.banette.evolution_conditions
+        level-up:
+          minimum_level: 37
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    banette:
+      name: BANETTE
+      default: *ruby-sapphire.pokemon.banette.default
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      experience: *ruby-sapphire.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      stats: *ruby-sapphire.pokemon.banette.stats
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      abilities: *ruby-sapphire.pokemon.banette.abilities
+      genus: *ruby-sapphire.pokemon.banette.genus
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      flavor_text:
+        emerald: |
+          An abandoned plush doll became this
+          POKéMON. They are said to live in garbage
+          dumps and wander about in search of the
+          children that threw them away.
+      forms:
+        banette:
+          name: BANETTE
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *ruby-sapphire.pokemon.banette.forms.banette.icon
+          sprites:
+            - emerald/banette-default.png
+            - emerald/shiny/banette-default.png
+            - emerald/animated/banette-default.webm
+            - emerald/animated/shiny/banette-default.webm
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 20
+  pokemon:
+    banette:
+      name: BANETTE
+      default: *ruby-sapphire.pokemon.banette.default
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      experience: *ruby-sapphire.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      stats: *ruby-sapphire.pokemon.banette.stats
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      abilities: *ruby-sapphire.pokemon.banette.abilities
+      genus: *ruby-sapphire.pokemon.banette.genus
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      forms:
+        banette:
+          name: BANETTE
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          sprites:
+            - colosseum/banette-default.png
+            - colosseum/shiny/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    banette:
+      name: BANETTE
+      default: *ruby-sapphire.pokemon.banette.default
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      experience: *ruby-sapphire.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      stats: *ruby-sapphire.pokemon.banette.stats
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      abilities: *ruby-sapphire.pokemon.banette.abilities
+      genus: *ruby-sapphire.pokemon.banette.genus
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      forms:
+        banette:
+          name: BANETTE
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          sprites:
+            - xd/banette-default.png
+            - xd/shiny/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    banette:
+      name: BANETTE
+      default: *ruby-sapphire.pokemon.banette.default
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      experience: *ruby-sapphire.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      stats: *ruby-sapphire.pokemon.banette.stats
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      abilities: *ruby-sapphire.pokemon.banette.abilities
+      genus: *ruby-sapphire.pokemon.banette.genus
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      flavor_text:
+        firered: |
+          Strong feelings of hatred turned a puppet
+          into a POKéMON. If it opens its mouth,
+          its cursed energy escapes.
+        leafgreen: |
+          Strong feelings of hatred turned a puppet
+          into a POKéMON. If it opens its mouth,
+          its cursed energy escapes.
+      forms:
+        banette:
+          name: BANETTE
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *ruby-sapphire.pokemon.banette.forms.banette.icon
+          sprites:
+            - firered-leafgreen/banette-default.png
+            - firered-leafgreen/back/banette-default.png
+            - firered-leafgreen/shiny/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Banette
+  position: &diamond-pearl.position 382
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    banette:
+      genus: &diamond-pearl.pokemon.banette.genus 'Marionette Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      shape: &diamond-pearl.pokemon.banette.shape upright
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: &diamond-pearl.pokemon.banette.baby false
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      pal_park: &diamond-pearl.pokemon.banette.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: &diamond-pearl.pokemon.banette.experience 159
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      stats: &diamond-pearl.pokemon.banette.stats
+        hp:
+          base_value: 64
+          effort_change: 0
+        attack:
+          base_value: 115
+          effort_change: 2
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 83
+          effort_change: 0
+        special-defense:
+          base_value: 63
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.banette.abilities
+        insomnia: *ruby-sapphire.pokemon.banette.abilities.insomnia
+        frisk: &diamond-pearl.pokemon.banette.abilities.frisk
+          hidden: *ruby-sapphire.pokemon.banette.abilities.insomnia.hidden
+          position: 2
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text:
+        diamond: |
+          A doll that became a Pokémon over
+          its grudge from being junked. It
+          seeks the child that disowned it.
+        pearl: |
+          A doll that became a Pokémon over
+          its grudge from being junked. It
+          seeks the child that disowned it.
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *ruby-sapphire.pokemon.banette.forms.banette.icon
+          sprites:
+            - diamond-pearl/back/shiny/banette-default.png
+            - diamond-pearl/back/banette-default.png
+            - diamond-pearl/shiny/banette-default.png
+            - diamond-pearl/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    banette:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      pal_park: *diamond-pearl.pokemon.banette.pal_park
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: *diamond-pearl.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      stats: *diamond-pearl.pokemon.banette.stats
+      abilities: *diamond-pearl.pokemon.banette.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text:
+        platinum: |
+          A doll that became a Pokémon over
+          its grudge from being junked. It
+          seeks the child that disowned it.
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *ruby-sapphire.pokemon.banette.forms.banette.icon
+          sprites:
+            - platinum/back/shiny/banette-default.png
+            - platinum/back/banette-default.png
+            - platinum/shiny/banette-default.png
+            - platinum/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    banette:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      pal_park: *diamond-pearl.pokemon.banette.pal_park
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: *diamond-pearl.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      stats: *diamond-pearl.pokemon.banette.stats
+      abilities: *diamond-pearl.pokemon.banette.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text:
+        heartgold: |
+          This Pokémon developed from an
+          abandoned doll that amassed a
+          grudge. It is seen in dark alleys.
+        soulsilver: |
+          This Pokémon developed from an
+          abandoned doll that amassed a
+          grudge. It is seen in dark alleys.
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 3
+            power:
+              base_value: 4
+              range: 3-4
+            skill:
+              base_value: 4
+              range: 3-4
+            stamina:
+              base_value: 3
+              range: 3
+            jump:
+              base_value: 3
+              range: 3
+          icon: *ruby-sapphire.pokemon.banette.forms.banette.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/banette-default.png
+            - heartgold-soulsilver/back/banette-default.png
+            - heartgold-soulsilver/shiny/banette-default.png
+            - heartgold-soulsilver/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    banette:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: &black-white.pokemon.banette.color black
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: *diamond-pearl.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      stats: *diamond-pearl.pokemon.banette.stats
+      abilities: &black-white.pokemon.banette.abilities
+        insomnia: *ruby-sapphire.pokemon.banette.abilities.insomnia
+        frisk: *diamond-pearl.pokemon.banette.abilities.frisk
+        cursed-body:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text:
+        black: |
+          A doll that became a Pokémon over
+          its grudge from being junked. It
+          seeks the child that disowned it.
+        white: |
+          A doll that became a Pokémon over
+          its grudge from being junked. It
+          seeks the child that disowned it.
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *ruby-sapphire.pokemon.banette.forms.banette.icon
+          sprites:
+            - black-white/back/shiny/banette-default.png
+            - black-white/back/banette-default.png
+            - black-white/shiny/banette-default.png
+            - black-white/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 211
+  pokemon:
+    banette:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.banette.forms_switchable
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: *diamond-pearl.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      stats: *diamond-pearl.pokemon.banette.stats
+      abilities: *black-white.pokemon.banette.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text:
+        black-2: |
+          A doll that became a Pokémon over
+          its grudge of being thrown away. It
+          seeks the child who disowned it.
+        white-2: |
+          A doll that became a Pokémon over
+          its grudge of being thrown away. It
+          seeks the child who disowned it.
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *ruby-sapphire.pokemon.banette.forms.banette.icon
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *ruby-sapphire.pokemon.banette.forms.banette.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-mountain: 123
+  pokemon:
+    banette:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: &x-y.pokemon.banette.forms_switchable true
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: *diamond-pearl.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      mega: &x-y.pokemon.banette.mega false
+      stats: *diamond-pearl.pokemon.banette.stats
+      abilities: *black-white.pokemon.banette.abilities
+      wild_held_items: &x-y.pokemon.banette.wild_held_items
+        x: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text: &x-y.pokemon.banette.flavor_text
+        x: |
+          A doll that became a Pokémon over its grudge from
+          being junked. It seeks the child that disowned it.
+        'y': |
+          Strong feelings of hatred turned a puppet into a
+          Pokémon. If it opens its mouth, its cursed
+          energy escapes.
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: &x-y.pokemon.banette.forms.banette.icon banette-default.png
+          sprites:
+            - x-y/shiny/banette-default.png
+            - x-y/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: &x-y.pokemon.banette.forms.banette.cry banette-default.webm
+    banette-mega:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *x-y.pokemon.banette.forms_switchable
+      name: &x-y.pokemon.banette-mega.name 'Mega Banette'
+      default: &x-y.pokemon.banette-mega.default false
+      height: &x-y.pokemon.banette-mega.height 12
+      weight: &x-y.pokemon.banette-mega.weight 130
+      experience: &x-y.pokemon.banette-mega.experience 194
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      mega: &x-y.pokemon.banette-mega.mega true
+      stats: &x-y.pokemon.banette-mega.stats
+        hp:
+          base_value: 64
+          effort_change: 0
+        attack:
+          base_value: 165
+          effort_change: 2
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 75
+          effort_change: 0
+        special-attack:
+          base_value: 93
+          effort_change: 0
+        special-defense:
+          base_value: 83
+          effort_change: 0
+      abilities: &x-y.pokemon.banette-mega.abilities
+        prankster: *ruby-sapphire.pokemon.banette.abilities.insomnia
+      wild_held_items: *x-y.pokemon.banette.wild_held_items
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text: *x-y.pokemon.banette.flavor_text
+      forms:
+        banette-mega:
+          name: 'Mega Banette'
+          form_name: &x-y.pokemon.banette-mega.forms.banette-mega.form_name 'Mega Banette'
+          default: true
+          battle_only: &x-y.pokemon.banette-mega.forms.banette-mega.battle_only true
+          icon: &x-y.pokemon.banette-mega.forms.banette-mega.icon banette-mega.png
+          sprites:
+            - x-y/shiny/banette-mega.png
+            - x-y/banette-mega.png
+          art: &x-y.pokemon.banette-mega.forms.banette-mega.art
+            - banette-mega.png
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: &x-y.pokemon.banette-mega.forms.banette-mega.cry banette-mega.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 152
+  pokemon:
+    banette:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *x-y.pokemon.banette.forms_switchable
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: *diamond-pearl.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      mega: *x-y.pokemon.banette.mega
+      stats: *diamond-pearl.pokemon.banette.stats
+      abilities: *black-white.pokemon.banette.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.banette.flavor_text
+        omega-ruby: |
+          Banette generates energy for laying strong curses by sticking
+          pins into its own body. This Pokémon was originally a pitiful
+          plush doll that was thrown away.
+        alpha-sapphire: |
+          A cursed energy permeated the stuffing of a discarded and
+          forgotten plush doll, giving it new life as Banette.
+          The Pokémon’s energy would escape if it were to ever open
+          its mouth.
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *x-y.pokemon.banette.forms.banette.icon
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *x-y.pokemon.banette.forms.banette.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/banette-default.png
+            - omega-ruby-alpha-sapphire/shiny/banette-default.png
+      wild_held_items: &omega-ruby-alpha-sapphire.pokemon.banette.wild_held_items
+        omega-ruby: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+    banette-mega:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *x-y.pokemon.banette.forms_switchable
+      name: *x-y.pokemon.banette-mega.name
+      default: *x-y.pokemon.banette-mega.default
+      height: *x-y.pokemon.banette-mega.height
+      weight: *x-y.pokemon.banette-mega.weight
+      experience: *x-y.pokemon.banette-mega.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      mega: *x-y.pokemon.banette-mega.mega
+      stats: *x-y.pokemon.banette-mega.stats
+      abilities: *x-y.pokemon.banette-mega.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.banette.flavor_text
+      forms:
+        banette-mega:
+          name: 'Mega Banette'
+          form_name: *x-y.pokemon.banette-mega.forms.banette-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.banette-mega.forms.banette-mega.battle_only
+          icon: *x-y.pokemon.banette-mega.forms.banette-mega.icon
+          art: *x-y.pokemon.banette-mega.forms.banette-mega.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *x-y.pokemon.banette-mega.forms.banette-mega.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/banette-mega.png
+            - omega-ruby-alpha-sapphire/banette-mega.png
+      wild_held_items: *omega-ruby-alpha-sapphire.pokemon.banette.wild_held_items
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    banette:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *x-y.pokemon.banette.forms_switchable
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: *diamond-pearl.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      mega: *x-y.pokemon.banette.mega
+      stats: *diamond-pearl.pokemon.banette.stats
+      abilities: *black-white.pokemon.banette.abilities
+      wild_held_items: &sun-moon.pokemon.banette.wild_held_items
+        sun: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *x-y.pokemon.banette.forms.banette.icon
+          sprites:
+            - sun-moon/shiny/banette-default.png
+            - sun-moon/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *x-y.pokemon.banette.forms.banette.cry
+    banette-mega:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *x-y.pokemon.banette.forms_switchable
+      name: *x-y.pokemon.banette-mega.name
+      default: *x-y.pokemon.banette-mega.default
+      height: *x-y.pokemon.banette-mega.height
+      weight: *x-y.pokemon.banette-mega.weight
+      experience: *x-y.pokemon.banette-mega.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      mega: *x-y.pokemon.banette-mega.mega
+      stats: *x-y.pokemon.banette-mega.stats
+      abilities: *x-y.pokemon.banette-mega.abilities
+      wild_held_items: *sun-moon.pokemon.banette.wild_held_items
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      forms:
+        banette-mega:
+          name: 'Mega Banette'
+          form_name: *x-y.pokemon.banette-mega.forms.banette-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.banette-mega.forms.banette-mega.battle_only
+          icon: *x-y.pokemon.banette-mega.forms.banette-mega.icon
+          sprites:
+            - sun-moon/shiny/banette-mega.png
+            - sun-moon/banette-mega.png
+          art: *x-y.pokemon.banette-mega.forms.banette-mega.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *x-y.pokemon.banette-mega.forms.banette-mega.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 317
+    updated-ulaula: 138
+  pokemon:
+    banette:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *x-y.pokemon.banette.forms_switchable
+      name: Banette
+      default: *ruby-sapphire.pokemon.banette.default
+      height: *ruby-sapphire.pokemon.banette.height
+      weight: *ruby-sapphire.pokemon.banette.weight
+      experience: *diamond-pearl.pokemon.banette.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      mega: *x-y.pokemon.banette.mega
+      stats: *diamond-pearl.pokemon.banette.stats
+      abilities: *black-white.pokemon.banette.abilities
+      wild_held_items: &ultra-sun-ultra-moon.pokemon.banette.wild_held_items
+        ultra-sun: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.banette.wild_held_items.ruby
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.banette.flavor_text
+        ultra-sun: |-
+          It’s a stuffed toy that was thrown away and
+          became possessed, ever searching for the one
+          who threw it away so it can exact its revenge.
+        ultra-moon: |-
+          Resentment at being cast off made it spring into
+          being. Some say that treating it well will satisfy
+          it, and it will once more become a stuffed toy.
+      forms:
+        banette:
+          name: Banette
+          form_name: *ruby-sapphire.pokemon.banette.forms.banette.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.banette.forms.banette.battle_only
+          icon: *x-y.pokemon.banette.forms.banette.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/banette-default.png
+            - ultra-sun-ultra-moon/banette-default.png
+          art: *ruby-sapphire.pokemon.banette.forms.banette.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *x-y.pokemon.banette.forms.banette.cry
+    banette-mega:
+      genus: *diamond-pearl.pokemon.banette.genus
+      evolution_parent: *ruby-sapphire.pokemon.banette.evolution_parent
+      color: *black-white.pokemon.banette.color
+      shape: *diamond-pearl.pokemon.banette.shape
+      female_rate: *ruby-sapphire.pokemon.banette.female_rate
+      capture_rate: *ruby-sapphire.pokemon.banette.capture_rate
+      happiness: *ruby-sapphire.pokemon.banette.happiness
+      baby: *diamond-pearl.pokemon.banette.baby
+      hatch_steps: *ruby-sapphire.pokemon.banette.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.banette.growth_rate
+      forms_switchable: *x-y.pokemon.banette.forms_switchable
+      name: *x-y.pokemon.banette-mega.name
+      default: *x-y.pokemon.banette-mega.default
+      height: *x-y.pokemon.banette-mega.height
+      weight: *x-y.pokemon.banette-mega.weight
+      experience: *x-y.pokemon.banette-mega.experience
+      types: *ruby-sapphire.pokemon.banette.types
+      egg_groups: *ruby-sapphire.pokemon.banette.egg_groups
+      mega: *x-y.pokemon.banette-mega.mega
+      stats: *x-y.pokemon.banette-mega.stats
+      abilities: *x-y.pokemon.banette-mega.abilities
+      wild_held_items: *ultra-sun-ultra-moon.pokemon.banette.wild_held_items
+      evolution_conditions: *ruby-sapphire.pokemon.banette.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.banette.flavor_text
+      forms:
+        banette-mega:
+          name: 'Mega Banette'
+          form_name: *x-y.pokemon.banette-mega.forms.banette-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.banette-mega.forms.banette-mega.battle_only
+          icon: *x-y.pokemon.banette-mega.forms.banette-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/banette-mega.png
+            - ultra-sun-ultra-moon/banette-mega.png
+          art: *x-y.pokemon.banette-mega.forms.banette-mega.art
+          footprint: *ruby-sapphire.pokemon.banette.forms.banette.footprint
+          cry: *x-y.pokemon.banette-mega.forms.banette-mega.cry

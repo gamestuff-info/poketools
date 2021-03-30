@@ -1,0 +1,893 @@
+red-blue:
+  name: &red-blue.name PIDGEY
+  position: &red-blue.position 16
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 16
+    kanto: 16
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: &red-blue.pokemon.pidgey.default true
+      capture_rate: &red-blue.pokemon.pidgey.capture_rate 255
+      experience: &red-blue.pokemon.pidgey.experience 55
+      types: &red-blue.pokemon.pidgey.types
+        - normal
+        - flying
+      stats: &red-blue.pokemon.pidgey.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 40
+          effort_change: 40
+        speed:
+          base_value: 56
+          effort_change: 56
+        special:
+          base_value: 35
+          effort_change: 35
+      growth_rate: &red-blue.pokemon.pidgey.growth_rate medium-slow
+      genus: &red-blue.pokemon.pidgey.genus 'TINY BIRD Pokémon'
+      height: &red-blue.pokemon.pidgey.height 3
+      weight: &red-blue.pokemon.pidgey.weight 181
+      flavor_text:
+        red: |
+          A common sight in
+          forests and woods.
+          It flaps its
+          wings at ground
+           level to kick up
+          blinding sand.
+        blue: |
+          A common sight in
+          forests and woods.
+          It flaps its
+          wings at ground
+           level to kick up
+          blinding sand.
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: &red-blue.pokemon.pidgey.forms.pidgey.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.pidgey.forms.pidgey.battle_only false
+          sprites:
+            - red-blue/pidgey-default.png
+            - red-blue/gray/pidgey-default.png
+            - red-blue/back/pidgey-default.png
+          art: &red-blue.pokemon.pidgey.forms.pidgey.art
+            - pidgey-default.png
+          cry: &red-blue.pokemon.pidgey.forms.pidgey.cry gen5/pidgey-default.webm
+          icon: &red-blue.pokemon.pidgey.forms.pidgey.icon gen1/bird_m.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: *red-blue.pokemon.pidgey.default
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      experience: *red-blue.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      stats: *red-blue.pokemon.pidgey.stats
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      genus: *red-blue.pokemon.pidgey.genus
+      height: *red-blue.pokemon.pidgey.height
+      weight: *red-blue.pokemon.pidgey.weight
+      flavor_text:
+        yellow: |
+          Very docile. If
+          attacked, it will
+          often kick up
+          sand to protect
+           itself rather
+          than fight back.
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          sprites:
+            - yellow/pidgey-default.png
+            - yellow/gray/pidgey-default.png
+            - yellow/back/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+          icon: *red-blue.pokemon.pidgey.forms.pidgey.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 15
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 9
+    original-johto-abc: 249
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: *red-blue.pokemon.pidgey.default
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      experience: *red-blue.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      stats: &gold-silver.pokemon.pidgey.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 45
+          effort_change: 45
+        defense:
+          base_value: 40
+          effort_change: 40
+        speed:
+          base_value: 56
+          effort_change: 56
+        special-attack:
+          base_value: 35
+          effort_change: 35
+        special-defense:
+          base_value: 35
+          effort_change: 35
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      female_rate: &gold-silver.pokemon.pidgey.female_rate 50
+      hatch_steps: &gold-silver.pokemon.pidgey.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.pidgey.egg_groups
+        - flying
+      genus: *red-blue.pokemon.pidgey.genus
+      height: *red-blue.pokemon.pidgey.height
+      weight: &gold-silver.pokemon.pidgey.weight 18
+      flavor_text:
+        gold: |
+          It usually hides
+          in tall grass. Be-
+          cause it dislikes
+          fighting, it pro-
+          tects itself by
+          kicking up sand.
+        silver: |
+          Common in grassy
+          areas and forests,
+          it is very docile
+          and will chase off
+          enemies by flap-
+          ping up sand.
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          sprites:
+            - gold-silver/pidgey-default.png
+            - gold-silver/back/pidgey-default.png
+            - gold-silver/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+          icon: &gold-silver.pokemon.pidgey.forms.pidgey.icon gen2/bird.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: *red-blue.pokemon.pidgey.default
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      experience: *red-blue.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      stats: *gold-silver.pokemon.pidgey.stats
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      genus: *red-blue.pokemon.pidgey.genus
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      flavor_text:
+        crystal: |
+          It rapidly flaps
+          its wings in the
+          grass, stirring up
+          a dust cloud that
+          drives insect prey
+          out into the open.
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          sprites:
+            - crystal/pidgey-default.png
+            - crystal/back/pidgey-default.png
+            - crystal/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+          icon: *gold-silver.pokemon.pidgey.forms.pidgey.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 218
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: *red-blue.pokemon.pidgey.default
+      forms_switchable: &ruby-sapphire.pokemon.pidgey.forms_switchable false
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      experience: *red-blue.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      stats: &ruby-sapphire.pokemon.pidgey.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 56
+          effort_change: 1
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      happiness: &ruby-sapphire.pokemon.pidgey.happiness 70
+      abilities: &ruby-sapphire.pokemon.pidgey.abilities
+        keen-eye: &ruby-sapphire.pokemon.pidgey.abilities.keen-eye
+          hidden: &ruby-sapphire.pokemon.pidgey.abilities.keen-eye.hidden false
+          position: 1
+      genus: *red-blue.pokemon.pidgey.genus
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      flavor_text:
+        ruby: |
+          PIDGEY has an extremely sharp sense
+          of direction.
+          It is capable of unerringly returning
+          home to its nest, however far it may be
+          removed from its familiar surroundings.
+        sapphire: |
+          PIDGEY has an extremely sharp sense
+          of direction.
+          It is capable of unerringly returning
+          home to its nest, however far it may be
+          removed from its familiar surroundings.
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: &ruby-sapphire.pokemon.pidgey.forms.pidgey.icon gen5/pidgey-default.png
+          sprites:
+            - ruby-sapphire/pidgey-default.png
+            - ruby-sapphire/back/pidgey-default.png
+            - ruby-sapphire/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: &ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint pidgey.png
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: *red-blue.pokemon.pidgey.default
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      experience: *red-blue.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      stats: *ruby-sapphire.pokemon.pidgey.stats
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      abilities: *ruby-sapphire.pokemon.pidgey.abilities
+      genus: *red-blue.pokemon.pidgey.genus
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      flavor_text:
+        emerald: |
+          It has an extremely sharp sense of
+          direction. It can unerringly return home to
+          its nest, however far it may be removed
+          from its familiar surroundings.
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *ruby-sapphire.pokemon.pidgey.forms.pidgey.icon
+          sprites:
+            - emerald/pidgey-default.png
+            - emerald/shiny/pidgey-default.png
+            - emerald/animated/pidgey-default.webm
+            - emerald/animated/shiny/pidgey-default.webm
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 241
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: *red-blue.pokemon.pidgey.default
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      experience: *red-blue.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      stats: *ruby-sapphire.pokemon.pidgey.stats
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      abilities: *ruby-sapphire.pokemon.pidgey.abilities
+      genus: *red-blue.pokemon.pidgey.genus
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          sprites:
+            - colosseum/pidgey-default.png
+            - colosseum/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: *red-blue.pokemon.pidgey.default
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      experience: *red-blue.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      stats: *ruby-sapphire.pokemon.pidgey.stats
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      abilities: *ruby-sapphire.pokemon.pidgey.abilities
+      genus: *red-blue.pokemon.pidgey.genus
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          sprites:
+            - xd/pidgey-default.png
+            - xd/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    pidgey:
+      name: PIDGEY
+      default: *red-blue.pokemon.pidgey.default
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      experience: *red-blue.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      stats: *ruby-sapphire.pokemon.pidgey.stats
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      abilities: *ruby-sapphire.pokemon.pidgey.abilities
+      genus: *red-blue.pokemon.pidgey.genus
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      flavor_text:
+        firered: |
+          Does not like to fight. It hides in
+          tall grass and so on, foraging for food
+          such as small bugs.
+        leafgreen: |
+          A common sight in forests and woods.
+          It flaps its wings at ground level to kick
+          up blinding sand.
+      forms:
+        pidgey:
+          name: PIDGEY
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *ruby-sapphire.pokemon.pidgey.forms.pidgey.icon
+          sprites:
+            - firered-leafgreen/pidgey-default.png
+            - firered-leafgreen/back/pidgey-default.png
+            - firered-leafgreen/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+diamond-pearl:
+  name: &diamond-pearl.name Pidgey
+  position: *red-blue.position
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    pidgey:
+      genus: &diamond-pearl.pokemon.pidgey.genus 'Tiny Bird Pokémon'
+      shape: &diamond-pearl.pokemon.pidgey.shape wings
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: &diamond-pearl.pokemon.pidgey.baby false
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      pal_park: &diamond-pearl.pokemon.pidgey.pal_park
+        area: field
+        rate: 50
+        score: 30
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: &diamond-pearl.pokemon.pidgey.experience 50
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      stats: &diamond-pearl.pokemon.pidgey.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 56
+          effort_change: 1
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.pidgey.abilities
+        keen-eye: *ruby-sapphire.pokemon.pidgey.abilities.keen-eye
+        tangled-feet: &diamond-pearl.pokemon.pidgey.abilities.tangled-feet
+          hidden: *ruby-sapphire.pokemon.pidgey.abilities.keen-eye.hidden
+          position: 2
+      flavor_text:
+        diamond: |
+          It is docile and prefers to avoid
+          conflict. If disturbed, however,
+          it can ferociously strike back.
+        pearl: |
+          It is docile and prefers to avoid
+          conflict. If disturbed, however,
+          it can ferociously strike back.
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *ruby-sapphire.pokemon.pidgey.forms.pidgey.icon
+          sprites:
+            - diamond-pearl/back/pidgey-default.png
+            - diamond-pearl/back/shiny/pidgey-default.png
+            - diamond-pearl/pidgey-default.png
+            - diamond-pearl/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    pidgey:
+      genus: *diamond-pearl.pokemon.pidgey.genus
+      shape: *diamond-pearl.pokemon.pidgey.shape
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: *diamond-pearl.pokemon.pidgey.baby
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      pal_park: *diamond-pearl.pokemon.pidgey.pal_park
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: *diamond-pearl.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      stats: *diamond-pearl.pokemon.pidgey.stats
+      abilities: *diamond-pearl.pokemon.pidgey.abilities
+      flavor_text:
+        platinum: |
+          It is docile and prefers to avoid
+          conflict. If disturbed, however,
+          it can ferociously strike back.
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *ruby-sapphire.pokemon.pidgey.forms.pidgey.icon
+          sprites:
+            - platinum/back/pidgey-default.png
+            - platinum/back/shiny/pidgey-default.png
+            - platinum/pidgey-default.png
+            - platinum/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 10
+  pokemon:
+    pidgey:
+      genus: *diamond-pearl.pokemon.pidgey.genus
+      shape: *diamond-pearl.pokemon.pidgey.shape
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: *diamond-pearl.pokemon.pidgey.baby
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      pal_park: *diamond-pearl.pokemon.pidgey.pal_park
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: *diamond-pearl.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      stats: *diamond-pearl.pokemon.pidgey.stats
+      abilities: *diamond-pearl.pokemon.pidgey.abilities
+      flavor_text:
+        heartgold: |
+          It usually hides in tall grass.
+          Because it dislikes fighting,
+          it protects itself by kicking up sand.
+        soulsilver: |
+          Common in grassy areas and forests,
+          it is very docile and will chase off
+          enemies by flapping up sand.
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 3-5
+          icon: *ruby-sapphire.pokemon.pidgey.forms.pidgey.icon
+          sprites:
+            - heartgold-soulsilver/back/pidgey-default.png
+            - heartgold-soulsilver/back/shiny/pidgey-default.png
+            - heartgold-soulsilver/pidgey-default.png
+            - heartgold-soulsilver/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    pidgey:
+      genus: *diamond-pearl.pokemon.pidgey.genus
+      color: &black-white.pokemon.pidgey.color brown
+      shape: *diamond-pearl.pokemon.pidgey.shape
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: *diamond-pearl.pokemon.pidgey.baby
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: *diamond-pearl.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      stats: *diamond-pearl.pokemon.pidgey.stats
+      abilities: &black-white.pokemon.pidgey.abilities
+        keen-eye: *ruby-sapphire.pokemon.pidgey.abilities.keen-eye
+        tangled-feet: *diamond-pearl.pokemon.pidgey.abilities.tangled-feet
+        big-pecks:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          It is docile and prefers to avoid
+          conflict. If disturbed, however,
+          it can ferociously strike back.
+        white: |
+          It is docile and prefers to avoid
+          conflict. If disturbed, however,
+          it can ferociously strike back.
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *ruby-sapphire.pokemon.pidgey.forms.pidgey.icon
+          sprites:
+            - black-white/back/pidgey-default.png
+            - black-white/back/shiny/pidgey-default.png
+            - black-white/pidgey-default.png
+            - black-white/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    pidgey:
+      genus: *diamond-pearl.pokemon.pidgey.genus
+      color: *black-white.pokemon.pidgey.color
+      shape: *diamond-pearl.pokemon.pidgey.shape
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: *diamond-pearl.pokemon.pidgey.baby
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: *diamond-pearl.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      stats: *diamond-pearl.pokemon.pidgey.stats
+      abilities: *black-white.pokemon.pidgey.abilities
+      flavor_text:
+        black-2: |
+          It is docile and prefers to avoid
+          conflict. If disturbed, however,
+          it can ferociously strike back.
+        white-2: |
+          It is docile and prefers to avoid
+          conflict. If disturbed, however,
+          it can ferociously strike back.
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *ruby-sapphire.pokemon.pidgey.forms.pidgey.icon
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *red-blue.pokemon.pidgey.forms.pidgey.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 17
+  pokemon:
+    pidgey:
+      genus: *diamond-pearl.pokemon.pidgey.genus
+      color: *black-white.pokemon.pidgey.color
+      shape: *diamond-pearl.pokemon.pidgey.shape
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: *diamond-pearl.pokemon.pidgey.baby
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: *diamond-pearl.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      mega: &x-y.pokemon.pidgey.mega false
+      stats: *diamond-pearl.pokemon.pidgey.stats
+      abilities: *black-white.pokemon.pidgey.abilities
+      flavor_text:
+        x: |
+          A common sight in forests and woods. It flaps
+          its wings at ground level to kick up blinding sand.
+        'y': |
+          It is docile and prefers to avoid conflict.
+          If disturbed, however, it can ferociously strike back.
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: &x-y.pokemon.pidgey.forms.pidgey.icon pidgey-default.png
+          sprites:
+            - x-y/pidgey-default.png
+            - x-y/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: &x-y.pokemon.pidgey.forms.pidgey.cry pidgey-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    pidgey:
+      genus: *diamond-pearl.pokemon.pidgey.genus
+      color: *black-white.pokemon.pidgey.color
+      shape: *diamond-pearl.pokemon.pidgey.shape
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: *diamond-pearl.pokemon.pidgey.baby
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: *diamond-pearl.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      mega: *x-y.pokemon.pidgey.mega
+      stats: *diamond-pearl.pokemon.pidgey.stats
+      abilities: *black-white.pokemon.pidgey.abilities
+      flavor_text:
+        omega-ruby: |
+          Pidgey has an extremely sharp sense of direction. It is capable
+          of unerringly returning home to its nest, however far it may be
+          removed from its familiar surroundings.
+        alpha-sapphire: |
+          Pidgey has an extremely sharp sense of direction.
+          It is capable of unerringly returning home to its nest,
+          however far it may be removed from its familiar surroundings.
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *x-y.pokemon.pidgey.forms.pidgey.icon
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *x-y.pokemon.pidgey.forms.pidgey.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/pidgey-default.png
+            - omega-ruby-alpha-sapphire/shiny/pidgey-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    pidgey:
+      genus: *diamond-pearl.pokemon.pidgey.genus
+      color: *black-white.pokemon.pidgey.color
+      shape: *diamond-pearl.pokemon.pidgey.shape
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: *diamond-pearl.pokemon.pidgey.baby
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: *diamond-pearl.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      mega: *x-y.pokemon.pidgey.mega
+      stats: *diamond-pearl.pokemon.pidgey.stats
+      abilities: *black-white.pokemon.pidgey.abilities
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *x-y.pokemon.pidgey.forms.pidgey.icon
+          sprites:
+            - sun-moon/pidgey-default.png
+            - sun-moon/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *x-y.pokemon.pidgey.forms.pidgey.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *red-blue.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    pidgey:
+      genus: *diamond-pearl.pokemon.pidgey.genus
+      color: *black-white.pokemon.pidgey.color
+      shape: *diamond-pearl.pokemon.pidgey.shape
+      female_rate: *gold-silver.pokemon.pidgey.female_rate
+      capture_rate: *red-blue.pokemon.pidgey.capture_rate
+      happiness: *ruby-sapphire.pokemon.pidgey.happiness
+      baby: *diamond-pearl.pokemon.pidgey.baby
+      hatch_steps: *gold-silver.pokemon.pidgey.hatch_steps
+      growth_rate: *red-blue.pokemon.pidgey.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.pidgey.forms_switchable
+      name: Pidgey
+      default: *red-blue.pokemon.pidgey.default
+      height: *red-blue.pokemon.pidgey.height
+      weight: *gold-silver.pokemon.pidgey.weight
+      experience: *diamond-pearl.pokemon.pidgey.experience
+      types: *red-blue.pokemon.pidgey.types
+      egg_groups: *gold-silver.pokemon.pidgey.egg_groups
+      mega: *x-y.pokemon.pidgey.mega
+      stats: *diamond-pearl.pokemon.pidgey.stats
+      abilities: *black-white.pokemon.pidgey.abilities
+      forms:
+        pidgey:
+          name: Pidgey
+          form_name: *red-blue.pokemon.pidgey.forms.pidgey.form_name
+          default: true
+          battle_only: *red-blue.pokemon.pidgey.forms.pidgey.battle_only
+          icon: *x-y.pokemon.pidgey.forms.pidgey.icon
+          sprites:
+            - ultra-sun-ultra-moon/pidgey-default.png
+            - ultra-sun-ultra-moon/shiny/pidgey-default.png
+          art: *red-blue.pokemon.pidgey.forms.pidgey.art
+          footprint: *ruby-sapphire.pokemon.pidgey.forms.pidgey.footprint
+          cry: *x-y.pokemon.pidgey.forms.pidgey.cry

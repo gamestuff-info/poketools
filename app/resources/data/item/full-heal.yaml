@@ -1,0 +1,141 @@
+red-blue: &red-blue
+  name: &red-blue.name 'FULL HEAL'
+  pocket: &red-blue.pocket misc
+  buy: &red-blue.buy 600
+  sell: &red-blue.sell 300
+  category: &red-blue.category status-cures
+  flags:
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+  short_description: &red-blue.short_description 'Cures any [status ailment]{mechanic:status-ailment} and [confusion]{mechanic:confusion}.'
+  description: &red-blue.description |
+    Used on a party Pokémon
+    :   Cures any [status ailment]{mechanic:status-ailment} and [confusion]{mechanic:confusion}.
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  pocket: *red-blue.pocket
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    Eliminates all
+    status problems.
+  category: *red-blue.category
+  flags: &gold-silver.flags
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+crystal: *gold-silver
+ruby-sapphire:
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  flags: *gold-silver.flags
+  icon: &ruby-sapphire.icon full-heal.png
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: &ruby-sapphire.flavor_text |
+    Heals all the status
+    problems of one
+    POKéMON.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+emerald:
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    Heals all the
+    status problems of
+    one POKéMON.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+colosseum: &colosseum
+  name: *red-blue.name
+  pocket: *red-blue.pocket
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: *ruby-sapphire.flavor_text
+  category: *red-blue.category
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+xd: *colosseum
+firered-leafgreen:
+  name: *red-blue.name
+  category: *red-blue.category
+  pocket: *red-blue.pocket
+  flags: *gold-silver.flags
+  icon: *ruby-sapphire.icon
+  buy: *red-blue.buy
+  sell: *red-blue.sell
+  flavor_text: |
+    A spray-type medicine.
+    It heals all the status problems of
+    one POKéMON.
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Full Heal'
+  category: *red-blue.category
+  pocket: &diamond-pearl.pocket medicine
+  buy: &diamond-pearl.buy 400
+  sell: &diamond-pearl.sell 200
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    A spray-type medicine.
+    It heals all the status problems of a
+    single Pokémon.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *red-blue.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    A spray-type medicine that is broadly
+    effective. It can be used once to heal
+    all the status conditions of a Pokémon.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *red-blue.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *gold-silver.flags
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+  flavor_text: |
+    A spray-type medicine that is broadly effective.
+    It can be used once to heal all the status conditions
+    of a Pokémon.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

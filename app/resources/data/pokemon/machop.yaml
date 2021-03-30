@@ -1,0 +1,932 @@
+red-blue:
+  name: &red-blue.name MACHOP
+  position: &red-blue.position 66
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 66
+    kanto: 66
+  pokemon:
+    machop:
+      name: MACHOP
+      default: &red-blue.pokemon.machop.default true
+      capture_rate: &red-blue.pokemon.machop.capture_rate 180
+      experience: &red-blue.pokemon.machop.experience 88
+      types: &red-blue.pokemon.machop.types
+        - fighting
+      stats: &red-blue.pokemon.machop.stats
+        hp:
+          base_value: 70
+          effort_change: 70
+        attack:
+          base_value: 80
+          effort_change: 80
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 35
+          effort_change: 35
+        special:
+          base_value: 35
+          effort_change: 35
+      growth_rate: &red-blue.pokemon.machop.growth_rate medium-slow
+      genus: &red-blue.pokemon.machop.genus 'SUPERPOWER Pokémon'
+      height: &red-blue.pokemon.machop.height 7
+      weight: &red-blue.pokemon.machop.weight 1950
+      flavor_text:
+        red: |
+          Loves to build
+          its muscles.
+          It trains in all
+          styles of martial
+           arts to become
+          even stronger.
+        blue: |
+          Loves to build
+          its muscles.
+          It trains in all
+          styles of martial
+           arts to become
+          even stronger.
+      forms:
+        machop:
+          name: MACHOP
+          form_name: &red-blue.pokemon.machop.forms.machop.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.machop.forms.machop.battle_only false
+          sprites:
+            - red-blue/machop-default.png
+            - red-blue/gray/machop-default.png
+            - red-blue/back/machop-default.png
+          art: &red-blue.pokemon.machop.forms.machop.art
+            - machop-default.png
+          cry: &red-blue.pokemon.machop.forms.machop.cry gen5/machop-default.webm
+          icon: &red-blue.pokemon.machop.forms.machop.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    machop:
+      name: MACHOP
+      default: *red-blue.pokemon.machop.default
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      experience: *red-blue.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      stats: *red-blue.pokemon.machop.stats
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      genus: *red-blue.pokemon.machop.genus
+      height: *red-blue.pokemon.machop.height
+      weight: *red-blue.pokemon.machop.weight
+      flavor_text:
+        yellow: |
+          Very powerful in
+          spite of its small
+          size. Its mastery
+          of many types of
+          martial arts makes
+          it very tough.
+      forms:
+        machop:
+          name: MACHOP
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          sprites:
+            - yellow/machop-default.png
+            - yellow/gray/machop-default.png
+            - yellow/back/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+          icon: *red-blue.pokemon.machop.forms.machop.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 65
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 139
+    original-johto-abc: 104
+  pokemon:
+    machop:
+      name: MACHOP
+      default: *red-blue.pokemon.machop.default
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      experience: *red-blue.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      stats: &gold-silver.pokemon.machop.stats
+        hp:
+          base_value: 70
+          effort_change: 70
+        attack:
+          base_value: 80
+          effort_change: 80
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 35
+          effort_change: 35
+        special-attack:
+          base_value: 35
+          effort_change: 35
+        special-defense:
+          base_value: 35
+          effort_change: 35
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      female_rate: &gold-silver.pokemon.machop.female_rate 25
+      hatch_steps: &gold-silver.pokemon.machop.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.machop.egg_groups
+        - humanshape
+      genus: *red-blue.pokemon.machop.genus
+      height: *red-blue.pokemon.machop.height
+      weight: &gold-silver.pokemon.machop.weight 195
+      flavor_text:
+        gold: |
+          Always brimming
+          with power, it
+          passes time by
+          lifting boulders.
+          Doing so makes it
+          even stronger.
+        silver: |
+          It loves to work
+          out and build its
+          muscles. It is
+          never satisfied,
+          even if it trains
+          hard all day long.
+      forms:
+        machop:
+          name: MACHOP
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          sprites:
+            - gold-silver/machop-default.png
+            - gold-silver/back/machop-default.png
+            - gold-silver/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+          icon: &gold-silver.pokemon.machop.forms.machop.icon gen2/fighter.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    machop:
+      name: MACHOP
+      default: *red-blue.pokemon.machop.default
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      experience: *red-blue.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      stats: *gold-silver.pokemon.machop.stats
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      genus: *red-blue.pokemon.machop.genus
+      height: *red-blue.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      flavor_text:
+        crystal: |
+          It trains by
+          lifting rocks in
+          the mountains. It
+          can even pick up a
+          GRAVELER with
+          ease.
+      forms:
+        machop:
+          name: MACHOP
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          sprites:
+            - crystal/machop-default.png
+            - crystal/back/machop-default.png
+            - crystal/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+          icon: *gold-silver.pokemon.machop.forms.machop.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 73
+  pokemon:
+    machop:
+      name: MACHOP
+      default: *red-blue.pokemon.machop.default
+      forms_switchable: &ruby-sapphire.pokemon.machop.forms_switchable false
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      experience: *red-blue.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      stats: &ruby-sapphire.pokemon.machop.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 1
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      happiness: &ruby-sapphire.pokemon.machop.happiness 70
+      abilities: &ruby-sapphire.pokemon.machop.abilities
+        guts: &ruby-sapphire.pokemon.machop.abilities.guts
+          hidden: &ruby-sapphire.pokemon.machop.abilities.guts.hidden false
+          position: 1
+      genus: *red-blue.pokemon.machop.genus
+      height: &ruby-sapphire.pokemon.machop.height 8
+      weight: *gold-silver.pokemon.machop.weight
+      flavor_text:
+        ruby: |
+          MACHOP's muscles are special - they
+          never get sore no matter how much they
+          are used in exercise.
+          This POKéMON has sufficient power to
+          hurl a hundred adult humans.
+        sapphire: |
+          MACHOP exercises by hefting around
+          a GRAVELER as if it were a barbell.
+          There are some MACHOP that travel
+          the world in a quest to master all
+          kinds of martial arts.
+      forms:
+        machop:
+          name: MACHOP
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: &ruby-sapphire.pokemon.machop.forms.machop.icon gen5/machop-default.png
+          sprites:
+            - ruby-sapphire/machop-default.png
+            - ruby-sapphire/back/machop-default.png
+            - ruby-sapphire/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: &ruby-sapphire.pokemon.machop.forms.machop.footprint machop.png
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    machop:
+      name: MACHOP
+      default: *red-blue.pokemon.machop.default
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      experience: *red-blue.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      stats: *ruby-sapphire.pokemon.machop.stats
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      abilities: *ruby-sapphire.pokemon.machop.abilities
+      genus: *red-blue.pokemon.machop.genus
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      flavor_text:
+        emerald: |
+          It continually undertakes strenuous
+          training to master all forms of martial
+          arts. Its strength lets it easily hoist
+          a sumo wrestler onto its shoulders.
+      forms:
+        machop:
+          name: MACHOP
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *ruby-sapphire.pokemon.machop.forms.machop.icon
+          sprites:
+            - emerald/machop-default.png
+            - emerald/shiny/machop-default.png
+            - emerald/animated/machop-default.webm
+            - emerald/animated/shiny/machop-default.webm
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 178
+  pokemon:
+    machop:
+      name: MACHOP
+      default: *red-blue.pokemon.machop.default
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      experience: *red-blue.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      stats: *ruby-sapphire.pokemon.machop.stats
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      abilities: *ruby-sapphire.pokemon.machop.abilities
+      genus: *red-blue.pokemon.machop.genus
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      forms:
+        machop:
+          name: MACHOP
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          sprites:
+            - colosseum/machop-default.png
+            - colosseum/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    machop:
+      name: MACHOP
+      default: *red-blue.pokemon.machop.default
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      experience: *red-blue.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      stats: *ruby-sapphire.pokemon.machop.stats
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      abilities: *ruby-sapphire.pokemon.machop.abilities
+      genus: *red-blue.pokemon.machop.genus
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      forms:
+        machop:
+          name: MACHOP
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          sprites:
+            - xd/machop-default.png
+            - xd/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    machop:
+      name: MACHOP
+      default: *red-blue.pokemon.machop.default
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      experience: *red-blue.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      stats: *ruby-sapphire.pokemon.machop.stats
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      abilities: *ruby-sapphire.pokemon.machop.abilities
+      genus: *red-blue.pokemon.machop.genus
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      flavor_text:
+        firered: |
+          Its whole body is composed of muscles.
+          Even though it's the size of a human
+          child, it can hurl 100 grown-ups.
+        leafgreen: |
+          Loves to build its muscles. It trains in
+          all styles of martial arts to become even
+          stronger.
+      forms:
+        machop:
+          name: MACHOP
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *ruby-sapphire.pokemon.machop.forms.machop.icon
+          sprites:
+            - firered-leafgreen/machop-default.png
+            - firered-leafgreen/back/machop-default.png
+            - firered-leafgreen/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+diamond-pearl:
+  name: &diamond-pearl.name Machop
+  position: &diamond-pearl.position 72
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 40
+  pokemon:
+    machop:
+      genus: &diamond-pearl.pokemon.machop.genus 'Superpower Pokémon'
+      shape: &diamond-pearl.pokemon.machop.shape upright
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: &diamond-pearl.pokemon.machop.baby false
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      pal_park: &diamond-pearl.pokemon.machop.pal_park
+        area: mountain
+        rate: 30
+        score: 50
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: &diamond-pearl.pokemon.machop.experience 61
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      stats: &diamond-pearl.pokemon.machop.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 80
+          effort_change: 1
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.machop.abilities
+        guts: *ruby-sapphire.pokemon.machop.abilities.guts
+        no-guard:
+          hidden: *ruby-sapphire.pokemon.machop.abilities.guts.hidden
+          position: 2
+        steadfast:
+          hidden: true
+          position: 3
+      flavor_text:
+        diamond: |
+          It hefts a GRAVELER repeatedly to
+          strengthen its entire body. It
+          uses every type of martial arts.
+        pearl: |
+          Its muscles never cramp however
+          much it trains. It lives in the
+          mountains away from humans.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *ruby-sapphire.pokemon.machop.forms.machop.icon
+          sprites:
+            - diamond-pearl/back/machop-default.png
+            - diamond-pearl/back/shiny/machop-default.png
+            - diamond-pearl/machop-default.png
+            - diamond-pearl/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 40
+  pokemon:
+    machop:
+      genus: *diamond-pearl.pokemon.machop.genus
+      shape: *diamond-pearl.pokemon.machop.shape
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: *diamond-pearl.pokemon.machop.baby
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      pal_park: *diamond-pearl.pokemon.machop.pal_park
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: *diamond-pearl.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      stats: *diamond-pearl.pokemon.machop.stats
+      abilities: *diamond-pearl.pokemon.machop.abilities
+      flavor_text:
+        platinum: |
+          Though small in stature, it is
+          powerful enough to easily heft and
+          throw a number of GEODUDE at once.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *ruby-sapphire.pokemon.machop.forms.machop.icon
+          sprites:
+            - platinum/back/machop-default.png
+            - platinum/back/shiny/machop-default.png
+            - platinum/machop-default.png
+            - platinum/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 142
+  pokemon:
+    machop:
+      genus: *diamond-pearl.pokemon.machop.genus
+      shape: *diamond-pearl.pokemon.machop.shape
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: *diamond-pearl.pokemon.machop.baby
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      pal_park: *diamond-pearl.pokemon.machop.pal_park
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: *diamond-pearl.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      stats: *diamond-pearl.pokemon.machop.stats
+      abilities: *diamond-pearl.pokemon.machop.abilities
+      flavor_text:
+        heartgold: |
+          Always brimming with power,
+          it passes time by lifting boulders.
+          Doing so makes it even stronger.
+        soulsilver: |
+          It loves to work out and build its
+          muscles. It is never satisfied,
+          even if it trains hard all day long.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-4
+            power:
+              base_value: 3
+              range: 2-4
+            skill:
+              base_value: 1
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.machop.forms.machop.icon
+          sprites:
+            - heartgold-soulsilver/back/machop-default.png
+            - heartgold-soulsilver/back/shiny/machop-default.png
+            - heartgold-soulsilver/machop-default.png
+            - heartgold-soulsilver/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    machop:
+      genus: *diamond-pearl.pokemon.machop.genus
+      color: &black-white.pokemon.machop.color gray
+      shape: *diamond-pearl.pokemon.machop.shape
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: *diamond-pearl.pokemon.machop.baby
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: *diamond-pearl.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      stats: *diamond-pearl.pokemon.machop.stats
+      abilities: *diamond-pearl.pokemon.machop.abilities
+      flavor_text:
+        black: |
+          Though small in stature, it is
+          powerful enough to easily heft and
+          throw a number of Geodude at once.
+        white: |
+          Though small in stature, it is
+          powerful enough to easily heft and
+          throw a number of Geodude at once.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *ruby-sapphire.pokemon.machop.forms.machop.icon
+          sprites:
+            - black-white/back/machop-default.png
+            - black-white/back/shiny/machop-default.png
+            - black-white/machop-default.png
+            - black-white/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    machop:
+      genus: *diamond-pearl.pokemon.machop.genus
+      color: *black-white.pokemon.machop.color
+      shape: *diamond-pearl.pokemon.machop.shape
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: *diamond-pearl.pokemon.machop.baby
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: *diamond-pearl.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      stats: *diamond-pearl.pokemon.machop.stats
+      abilities: *diamond-pearl.pokemon.machop.abilities
+      flavor_text:
+        black-2: |
+          Though small in stature, it is
+          powerful enough to easily heft and
+          throw a number of Geodude at once.
+        white-2: |
+          Though small in stature, it is
+          powerful enough to easily heft and
+          throw a number of Geodude at once.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *ruby-sapphire.pokemon.machop.forms.machop.icon
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *red-blue.pokemon.machop.forms.machop.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 57
+  pokemon:
+    machop:
+      genus: *diamond-pearl.pokemon.machop.genus
+      color: *black-white.pokemon.machop.color
+      shape: *diamond-pearl.pokemon.machop.shape
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: *diamond-pearl.pokemon.machop.baby
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: *diamond-pearl.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      mega: &x-y.pokemon.machop.mega false
+      stats: *diamond-pearl.pokemon.machop.stats
+      abilities: *diamond-pearl.pokemon.machop.abilities
+      flavor_text:
+        x: |
+          It hefts a Graveler repeatedly to strengthen
+          its entire body. It uses every type of martial arts.
+        'y': |
+          Its whole body is composed of muscles.
+          Even though it’s the size of a human child,
+          it can hurl 100 grown-ups.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: &x-y.pokemon.machop.forms.machop.icon machop-default.png
+          sprites:
+            - x-y/machop-default.png
+            - x-y/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: &x-y.pokemon.machop.forms.machop.cry machop-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 75
+  pokemon:
+    machop:
+      genus: *diamond-pearl.pokemon.machop.genus
+      color: *black-white.pokemon.machop.color
+      shape: *diamond-pearl.pokemon.machop.shape
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: *diamond-pearl.pokemon.machop.baby
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: *diamond-pearl.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      mega: *x-y.pokemon.machop.mega
+      stats: *diamond-pearl.pokemon.machop.stats
+      abilities: *diamond-pearl.pokemon.machop.abilities
+      flavor_text:
+        omega-ruby: |
+          Machop’s muscles are special—they never get sore no matter
+          how much they are used in exercise. This Pokémon has
+          sufficient power to hurl a hundred adult humans.
+        alpha-sapphire: |
+          Machop exercises by hefting around a Graveler as if it were
+          a barbell. There are some Machop that travel the world in a
+          quest to master all kinds of martial arts.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *x-y.pokemon.machop.forms.machop.icon
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *x-y.pokemon.machop.forms.machop.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/machop-default.png
+            - omega-ruby-alpha-sapphire/shiny/machop-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.machop.wild_held_items.omega-ruby
+          focus-band: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.machop.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 95
+    original-melemele: 95
+    original-poni: 45
+  pokemon:
+    machop:
+      genus: *diamond-pearl.pokemon.machop.genus
+      color: *black-white.pokemon.machop.color
+      shape: *diamond-pearl.pokemon.machop.shape
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: *diamond-pearl.pokemon.machop.baby
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: *diamond-pearl.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      mega: *x-y.pokemon.machop.mega
+      stats: *diamond-pearl.pokemon.machop.stats
+      abilities: *diamond-pearl.pokemon.machop.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.machop.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.machop.wild_held_items.omega-ruby
+      flavor_text:
+        sun: |-
+          It loves working out. As it gazes at its muscles,
+          which continue to swell day by day, it becomes
+          more and more dedicated to its training.
+        moon: |-
+          With its superhuman strength, it’s able to throw
+          a hundred people all at the same time. Its
+          strength comes from lifting Graveler every day.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *x-y.pokemon.machop.forms.machop.icon
+          sprites:
+            - sun-moon/machop-default.png
+            - sun-moon/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *x-y.pokemon.machop.forms.machop.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 117
+    updated-melemele: 117
+    updated-poni: 57
+  pokemon:
+    machop:
+      genus: *diamond-pearl.pokemon.machop.genus
+      color: *black-white.pokemon.machop.color
+      shape: *diamond-pearl.pokemon.machop.shape
+      female_rate: *gold-silver.pokemon.machop.female_rate
+      capture_rate: *red-blue.pokemon.machop.capture_rate
+      happiness: *ruby-sapphire.pokemon.machop.happiness
+      baby: *diamond-pearl.pokemon.machop.baby
+      hatch_steps: *gold-silver.pokemon.machop.hatch_steps
+      growth_rate: *red-blue.pokemon.machop.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.machop.forms_switchable
+      name: Machop
+      default: *red-blue.pokemon.machop.default
+      height: *ruby-sapphire.pokemon.machop.height
+      weight: *gold-silver.pokemon.machop.weight
+      experience: *diamond-pearl.pokemon.machop.experience
+      types: *red-blue.pokemon.machop.types
+      egg_groups: *gold-silver.pokemon.machop.egg_groups
+      mega: *x-y.pokemon.machop.mega
+      stats: *diamond-pearl.pokemon.machop.stats
+      abilities: *diamond-pearl.pokemon.machop.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.machop.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.machop.wild_held_items.omega-ruby
+      flavor_text:
+        ultra-sun: |-
+          Once this Pokémon has gained enough
+          confidence and muscle from training with its
+          friends, it challenges Makuhita to a battle.
+        ultra-moon: |-
+          It likes food that’s highly nutritious because its
+          instincts drive it to build muscle efficiently.
+      forms:
+        machop:
+          name: Machop
+          form_name: *red-blue.pokemon.machop.forms.machop.form_name
+          default: true
+          battle_only: *red-blue.pokemon.machop.forms.machop.battle_only
+          icon: *x-y.pokemon.machop.forms.machop.icon
+          sprites:
+            - ultra-sun-ultra-moon/machop-default.png
+            - ultra-sun-ultra-moon/shiny/machop-default.png
+          art: *red-blue.pokemon.machop.forms.machop.art
+          footprint: *ruby-sapphire.pokemon.machop.forms.machop.footprint
+          cry: *x-y.pokemon.machop.forms.machop.cry

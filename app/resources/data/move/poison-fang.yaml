@@ -1,0 +1,216 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'POISON FANG'
+  power: &ruby-sapphire.power 50
+  type: &ruby-sapphire.type poison
+  accuracy: &ruby-sapphire.accuracy 100
+  pp: &ruby-sapphire.pp 15
+  effect: &ruby-sapphire.effect 203
+  target: &ruby-sapphire.target selected-pokemon
+  priority: &ruby-sapphire.priority 0
+  effect_chance: &ruby-sapphire.effect_chance 30
+  flags: &ruby-sapphire.flags
+    - contact
+    - protect
+    - mirror
+  ailment: &ruby-sapphire.ailment poison
+  ailment_chance: &ruby-sapphire.ailment_chance 50
+  categories: &ruby-sapphire.categories
+    - damage
+    - ailment
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 15
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 28
+  flavor_text: |
+    A sharp-fanged attack.
+    May badly poison the foe.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: &colosseum.flavor_text |
+    A sharp-fanged attack.
+    May badly poison target.
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: &xd.damage_class physical
+  flavor_text: *colosseum.flavor_text
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  power: *ruby-sapphire.power
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  effect_chance: *ruby-sapphire.effect_chance
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    The foe is bitten
+    with toxic fangs.
+    It may also badly
+    poison the foe.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Poison Fang'
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: &diamond-pearl.flags
+    - contact
+    - protect
+    - mirror
+    - bite
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 4
+  flavor_text: &diamond-pearl.flavor_text |
+    The user bites the
+    foe with toxic fangs.
+    It may also leave the
+    foe badly poisoned.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *ruby-sapphire.effect_chance
+  flavor_text: |
+    The user bites the target with toxic
+    fangs. It may also leave the target
+    badly poisoned.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: &x-y.effect_chance 50
+  flavor_text: &x-y.flavor_text |
+    The user bites the target with toxic
+    fangs. This may also leave the target
+    badly poisoned.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *x-y.effect_chance
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 1
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  ailment_chance: *ruby-sapphire.ailment_chance
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  power: *ruby-sapphire.power
+  pp: *ruby-sapphire.pp
+  accuracy: *ruby-sapphire.accuracy
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *xd.damage_class
+  effect: *ruby-sapphire.effect
+  effect_chance: *x-y.effect_chance
+  flavor_text: |
+    The user bites the target with toxic fangs. This may
+    also leave the target badly poisoned.
+ultra-sun-ultra-moon: *sun-moon

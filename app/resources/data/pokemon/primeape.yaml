@@ -1,0 +1,971 @@
+red-blue:
+  name: &red-blue.name PRIMEAPE
+  position: &red-blue.position 57
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 57
+    kanto: 57
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: &red-blue.pokemon.primeape.default true
+      capture_rate: &red-blue.pokemon.primeape.capture_rate 75
+      experience: &red-blue.pokemon.primeape.experience 149
+      types: &red-blue.pokemon.primeape.types
+        - fighting
+      stats: &red-blue.pokemon.primeape.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 105
+          effort_change: 105
+        defense:
+          base_value: 60
+          effort_change: 60
+        speed:
+          base_value: 95
+          effort_change: 95
+        special:
+          base_value: 60
+          effort_change: 60
+      growth_rate: &red-blue.pokemon.primeape.growth_rate medium
+      genus: &red-blue.pokemon.primeape.genus 'PIG MONKEY Pokémon'
+      height: &red-blue.pokemon.primeape.height 9
+      weight: &red-blue.pokemon.primeape.weight 3220
+      flavor_text:
+        red: |
+          Always furious
+          and tenacious to
+          boot. It will not
+          abandon chasing
+           its quarry until
+          it is caught.
+        blue: |
+          Always furious
+          and tenacious to
+          boot. It will not
+          abandon chasing
+           its quarry until
+          it is caught.
+      evolution_parent: &red-blue.pokemon.primeape.evolution_parent mankey/mankey
+      evolution_conditions: &red-blue.pokemon.primeape.evolution_conditions
+        level-up:
+          minimum_level: 28
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: &red-blue.pokemon.primeape.forms.primeape.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.primeape.forms.primeape.battle_only false
+          sprites:
+            - red-blue/primeape-default.png
+            - red-blue/gray/primeape-default.png
+            - red-blue/back/primeape-default.png
+          art: &red-blue.pokemon.primeape.forms.primeape.art
+            - primeape-default.png
+          cry: &red-blue.pokemon.primeape.forms.primeape.cry gen5/primeape-default.webm
+          icon: &red-blue.pokemon.primeape.forms.primeape.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: *red-blue.pokemon.primeape.default
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      experience: *red-blue.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      stats: *red-blue.pokemon.primeape.stats
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      genus: *red-blue.pokemon.primeape.genus
+      height: *red-blue.pokemon.primeape.height
+      weight: *red-blue.pokemon.primeape.weight
+      flavor_text:
+        yellow: |
+          It stops being
+          angry only when
+          nobody else is
+          around. To view
+           this moment is
+          very difficult.
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          sprites:
+            - yellow/primeape-default.png
+            - yellow/gray/primeape-default.png
+            - yellow/back/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+          icon: *red-blue.pokemon.primeape.forms.primeape.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 56
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 134
+    original-johto-abc: 160
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: *red-blue.pokemon.primeape.default
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      experience: *red-blue.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      stats: &gold-silver.pokemon.primeape.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 105
+          effort_change: 105
+        defense:
+          base_value: 60
+          effort_change: 60
+        speed:
+          base_value: 95
+          effort_change: 95
+        special-attack:
+          base_value: 60
+          effort_change: 60
+        special-defense:
+          base_value: 70
+          effort_change: 60
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      female_rate: &gold-silver.pokemon.primeape.female_rate 50
+      hatch_steps: &gold-silver.pokemon.primeape.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.primeape.egg_groups
+        - ground
+      genus: *red-blue.pokemon.primeape.genus
+      height: *red-blue.pokemon.primeape.height
+      weight: &gold-silver.pokemon.primeape.weight 322
+      flavor_text:
+        gold: |
+          If approached
+          while asleep, it
+          may awaken and
+          angrily give chase
+          in a groggy state
+          of semi-sleep.
+        silver: |
+          It becomes wildly
+          furious if it even
+          senses someone
+          looking at it. It
+          chases anyone that
+          meets its glare.
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          sprites:
+            - gold-silver/primeape-default.png
+            - gold-silver/back/primeape-default.png
+            - gold-silver/shiny/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+          icon: &gold-silver.pokemon.primeape.forms.primeape.icon gen2/fighter.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: *red-blue.pokemon.primeape.default
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      experience: *red-blue.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      stats: *gold-silver.pokemon.primeape.stats
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      genus: *red-blue.pokemon.primeape.genus
+      height: *red-blue.pokemon.primeape.height
+      weight: *gold-silver.pokemon.primeape.weight
+      flavor_text:
+        crystal: |
+          It will beat up
+          anyone who makes
+          it mad, even if it
+          has to chase them
+          until the end of
+          the world.
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          sprites:
+            - crystal/primeape-default.png
+            - crystal/back/primeape-default.png
+            - crystal/shiny/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+          icon: *gold-silver.pokemon.primeape.forms.primeape.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 244
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: *red-blue.pokemon.primeape.default
+      forms_switchable: &ruby-sapphire.pokemon.primeape.forms_switchable false
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      experience: *red-blue.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      stats: &ruby-sapphire.pokemon.primeape.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 105
+          effort_change: 2
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      happiness: &ruby-sapphire.pokemon.primeape.happiness 70
+      abilities: &ruby-sapphire.pokemon.primeape.abilities
+        vital-spirit: &ruby-sapphire.pokemon.primeape.abilities.vital-spirit
+          hidden: &ruby-sapphire.pokemon.primeape.abilities.vital-spirit.hidden false
+          position: 1
+      genus: *red-blue.pokemon.primeape.genus
+      height: &ruby-sapphire.pokemon.primeape.height 10
+      weight: &ruby-sapphire.pokemon.primeape.weight 320
+      flavor_text:
+        ruby: |
+          When PRIMEAPE becomes furious, its
+          blood circulation is boosted. In turn,
+          its muscles are made even stronger.
+          However, it also becomes much less
+          intelligent at the same time.
+        sapphire: |
+          When PRIMEAPE becomes furious, its
+          blood circulation is boosted.  In turn,
+          its muscles are made even stronger.
+          However, it also becomes much less
+          intelligent at the same time.
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: &ruby-sapphire.pokemon.primeape.forms.primeape.icon gen5/primeape-default.png
+          sprites:
+            - ruby-sapphire/primeape-default.png
+            - ruby-sapphire/back/primeape-default.png
+            - ruby-sapphire/shiny/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: &ruby-sapphire.pokemon.primeape.forms.primeape.footprint primeape.png
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: *red-blue.pokemon.primeape.default
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      experience: *red-blue.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      stats: *ruby-sapphire.pokemon.primeape.stats
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      abilities: *ruby-sapphire.pokemon.primeape.abilities
+      genus: *red-blue.pokemon.primeape.genus
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      flavor_text:
+        emerald: |
+          When it becomes furious, its blood
+          circulation becomes more robust,  and
+          its muscles are made stronger. But it
+          also becomes much less intelligent.
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *ruby-sapphire.pokemon.primeape.forms.primeape.icon
+          sprites:
+            - emerald/primeape-default.png
+            - emerald/shiny/primeape-default.png
+            - emerald/animated/primeape-default.webm
+            - emerald/animated/shiny/primeape-default.webm
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 255
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: *red-blue.pokemon.primeape.default
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      experience: *red-blue.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      stats: *ruby-sapphire.pokemon.primeape.stats
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      abilities: *ruby-sapphire.pokemon.primeape.abilities
+      genus: *red-blue.pokemon.primeape.genus
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          sprites:
+            - colosseum/primeape-default.png
+            - colosseum/shiny/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: *red-blue.pokemon.primeape.default
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      experience: *red-blue.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      stats: *ruby-sapphire.pokemon.primeape.stats
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      abilities: *ruby-sapphire.pokemon.primeape.abilities
+      genus: *red-blue.pokemon.primeape.genus
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          sprites:
+            - xd/primeape-default.png
+            - xd/shiny/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    primeape:
+      name: PRIMEAPE
+      default: *red-blue.pokemon.primeape.default
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      experience: *red-blue.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      stats: *ruby-sapphire.pokemon.primeape.stats
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      abilities: *ruby-sapphire.pokemon.primeape.abilities
+      genus: *red-blue.pokemon.primeape.genus
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      flavor_text:
+        firered: |
+          It is always outrageously furious. If it
+          gives chase, it will tenaciously track the
+          target no matter how far.
+        leafgreen: |
+          Always furious and tenacious to boot.
+          It will not abandon chasing its quarry
+          until it catches up.
+      forms:
+        primeape:
+          name: PRIMEAPE
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *ruby-sapphire.pokemon.primeape.forms.primeape.icon
+          sprites:
+            - firered-leafgreen/primeape-default.png
+            - firered-leafgreen/back/primeape-default.png
+            - firered-leafgreen/shiny/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Primeape
+  position: &diamond-pearl.position 62
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    primeape:
+      genus: &diamond-pearl.pokemon.primeape.genus 'Pig Monkey Pokémon'
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      shape: &diamond-pearl.pokemon.primeape.shape upright
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: &diamond-pearl.pokemon.primeape.baby false
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      pal_park: &diamond-pearl.pokemon.primeape.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: &diamond-pearl.pokemon.primeape.experience 159
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      stats: &diamond-pearl.pokemon.primeape.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 105
+          effort_change: 2
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.primeape.abilities
+        vital-spirit: *ruby-sapphire.pokemon.primeape.abilities.vital-spirit
+        anger-point: &diamond-pearl.pokemon.primeape.abilities.anger-point
+          hidden: *ruby-sapphire.pokemon.primeape.abilities.vital-spirit.hidden
+          position: 2
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.primeape.wild_held_items.diamond
+          payapa-berry: 5
+        pearl: *diamond-pearl.pokemon.primeape.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        diamond: |
+          It grows angry if you see its eyes
+          and gets angrier if you run. If you
+          beat it, it gets even madder.
+        pearl: |
+          It grows angry if you see its eyes
+          and gets angrier if you run. If you
+          beat it, it gets even madder.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *ruby-sapphire.pokemon.primeape.forms.primeape.icon
+          sprites:
+            - diamond-pearl/back/shiny/primeape-default.png
+            - diamond-pearl/back/primeape-default.png
+            - diamond-pearl/shiny/primeape-default.png
+            - diamond-pearl/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    primeape:
+      genus: *diamond-pearl.pokemon.primeape.genus
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      shape: *diamond-pearl.pokemon.primeape.shape
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: *diamond-pearl.pokemon.primeape.baby
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      pal_park: *diamond-pearl.pokemon.primeape.pal_park
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: *diamond-pearl.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      stats: *diamond-pearl.pokemon.primeape.stats
+      abilities: *diamond-pearl.pokemon.primeape.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.primeape.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        platinum: |
+          It grows angry if you see its eyes
+          and gets angrier if you run. If you
+          beat it, it gets even madder.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *ruby-sapphire.pokemon.primeape.forms.primeape.icon
+          sprites:
+            - platinum/back/shiny/primeape-default.png
+            - platinum/back/primeape-default.png
+            - platinum/shiny/primeape-default.png
+            - platinum/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 137
+  pokemon:
+    primeape:
+      genus: *diamond-pearl.pokemon.primeape.genus
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      shape: *diamond-pearl.pokemon.primeape.shape
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: *diamond-pearl.pokemon.primeape.baby
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      pal_park: *diamond-pearl.pokemon.primeape.pal_park
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: *diamond-pearl.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      stats: *diamond-pearl.pokemon.primeape.stats
+      abilities: *diamond-pearl.pokemon.primeape.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.primeape.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.primeape.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        heartgold: |
+          If approached while asleep,
+          it may awaken and angrily give chase
+          in a groggy state of semi-sleep.
+        soulsilver: |
+          It becomes wildly furious if it even
+          senses someone looking at it. It
+          chases anyone that meets its glare.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 4
+              range: 3-5
+            skill:
+              base_value: 1
+              range: 1
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.primeape.forms.primeape.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/primeape-default.png
+            - heartgold-soulsilver/back/primeape-default.png
+            - heartgold-soulsilver/shiny/primeape-default.png
+            - heartgold-soulsilver/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    primeape:
+      genus: *diamond-pearl.pokemon.primeape.genus
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      color: &black-white.pokemon.primeape.color brown
+      shape: *diamond-pearl.pokemon.primeape.shape
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: *diamond-pearl.pokemon.primeape.baby
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: *diamond-pearl.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      stats: *diamond-pearl.pokemon.primeape.stats
+      abilities: &black-white.pokemon.primeape.abilities
+        vital-spirit: *ruby-sapphire.pokemon.primeape.abilities.vital-spirit
+        anger-point: *diamond-pearl.pokemon.primeape.abilities.anger-point
+        defiant:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *diamond-pearl.pokemon.primeape.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.primeape.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        black: |
+          It grows angry if you see its eyes
+          and gets angrier if you run. If you
+          beat it, it gets even madder.
+        white: |
+          It grows angry if you see its eyes
+          and gets angrier if you run. If you
+          beat it, it gets even madder.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *ruby-sapphire.pokemon.primeape.forms.primeape.icon
+          sprites:
+            - black-white/back/shiny/primeape-default.png
+            - black-white/back/primeape-default.png
+            - black-white/shiny/primeape-default.png
+            - black-white/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    primeape:
+      genus: *diamond-pearl.pokemon.primeape.genus
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      color: *black-white.pokemon.primeape.color
+      shape: *diamond-pearl.pokemon.primeape.shape
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: *diamond-pearl.pokemon.primeape.baby
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: *diamond-pearl.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      stats: *diamond-pearl.pokemon.primeape.stats
+      abilities: *black-white.pokemon.primeape.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.primeape.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.primeape.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        black-2: |
+          It grows angry if you see its eyes
+          and gets angrier if you run. If you
+          beat it, it gets even madder.
+        white-2: |
+          It grows angry if you see its eyes
+          and gets angrier if you run. If you
+          beat it, it gets even madder.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *ruby-sapphire.pokemon.primeape.forms.primeape.icon
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *red-blue.pokemon.primeape.forms.primeape.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    primeape:
+      genus: *diamond-pearl.pokemon.primeape.genus
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      color: *black-white.pokemon.primeape.color
+      shape: *diamond-pearl.pokemon.primeape.shape
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: *diamond-pearl.pokemon.primeape.baby
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: *diamond-pearl.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      mega: &x-y.pokemon.primeape.mega false
+      stats: *diamond-pearl.pokemon.primeape.stats
+      abilities: *black-white.pokemon.primeape.abilities
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        x: |
+          It stops being angry only when nobody else is
+          around. To view this moment is very difficult.
+        'y': |
+          It is always outrageously furious. If it gives chase,
+          it will tenaciously track the target no matter
+          how far.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: &x-y.pokemon.primeape.forms.primeape.icon primeape-default.png
+          sprites:
+            - x-y/shiny/primeape-default.png
+            - x-y/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: &x-y.pokemon.primeape.forms.primeape.cry primeape-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    primeape:
+      genus: *diamond-pearl.pokemon.primeape.genus
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      color: *black-white.pokemon.primeape.color
+      shape: *diamond-pearl.pokemon.primeape.shape
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: *diamond-pearl.pokemon.primeape.baby
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: *diamond-pearl.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      mega: *x-y.pokemon.primeape.mega
+      stats: *diamond-pearl.pokemon.primeape.stats
+      abilities: *black-white.pokemon.primeape.abilities
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          When Primeape becomes furious, its blood circulation is
+          boosted. In turn, its muscles are made even stronger.
+          However, it also becomes much less intelligent at the
+          same time.
+        alpha-sapphire: |
+          When Primeape becomes furious, its blood circulation
+          is boosted. In turn, its muscles are made even stronger.
+          However, it also becomes much less intelligent at the
+          same time.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *x-y.pokemon.primeape.forms.primeape.icon
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *x-y.pokemon.primeape.forms.primeape.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/primeape-default.png
+            - omega-ruby-alpha-sapphire/shiny/primeape-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 80
+    original-melemele: 80
+    original-poni: 31
+  pokemon:
+    primeape:
+      genus: *diamond-pearl.pokemon.primeape.genus
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      color: *black-white.pokemon.primeape.color
+      shape: *diamond-pearl.pokemon.primeape.shape
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: *diamond-pearl.pokemon.primeape.baby
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: *diamond-pearl.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      mega: *x-y.pokemon.primeape.mega
+      stats: *diamond-pearl.pokemon.primeape.stats
+      abilities: *black-white.pokemon.primeape.abilities
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        sun: |-
+          It has been known to become so angry that
+          it dies as a result. Its face looks peaceful in
+          death, however.
+        moon: |-
+          Some researchers theorize that Primeape
+          remains angry even when inside a Poké Ball.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *x-y.pokemon.primeape.forms.primeape.icon
+          sprites:
+            - sun-moon/shiny/primeape-default.png
+            - sun-moon/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *x-y.pokemon.primeape.forms.primeape.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 94
+    updated-melemele: 94
+    updated-poni: 40
+  pokemon:
+    primeape:
+      genus: *diamond-pearl.pokemon.primeape.genus
+      evolution_parent: *red-blue.pokemon.primeape.evolution_parent
+      color: *black-white.pokemon.primeape.color
+      shape: *diamond-pearl.pokemon.primeape.shape
+      female_rate: *gold-silver.pokemon.primeape.female_rate
+      capture_rate: *red-blue.pokemon.primeape.capture_rate
+      happiness: *ruby-sapphire.pokemon.primeape.happiness
+      baby: *diamond-pearl.pokemon.primeape.baby
+      hatch_steps: *gold-silver.pokemon.primeape.hatch_steps
+      growth_rate: *red-blue.pokemon.primeape.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.primeape.forms_switchable
+      name: Primeape
+      default: *red-blue.pokemon.primeape.default
+      height: *ruby-sapphire.pokemon.primeape.height
+      weight: *ruby-sapphire.pokemon.primeape.weight
+      experience: *diamond-pearl.pokemon.primeape.experience
+      types: *red-blue.pokemon.primeape.types
+      egg_groups: *gold-silver.pokemon.primeape.egg_groups
+      mega: *x-y.pokemon.primeape.mega
+      stats: *diamond-pearl.pokemon.primeape.stats
+      abilities: *black-white.pokemon.primeape.abilities
+      evolution_conditions: *red-blue.pokemon.primeape.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It will never forgive opponents who have
+          angered it. Even after it has beaten them down
+          until they can’t move, it never ever forgives.
+        ultra-moon: |-
+          The blood vessels in its brain are sturdier than
+          those of other Pokémon, so it can stay healthy
+          despite its constant raging.
+      forms:
+        primeape:
+          name: Primeape
+          form_name: *red-blue.pokemon.primeape.forms.primeape.form_name
+          default: true
+          battle_only: *red-blue.pokemon.primeape.forms.primeape.battle_only
+          icon: *x-y.pokemon.primeape.forms.primeape.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/primeape-default.png
+            - ultra-sun-ultra-moon/primeape-default.png
+          art: *red-blue.pokemon.primeape.forms.primeape.art
+          footprint: *ruby-sapphire.pokemon.primeape.forms.primeape.footprint
+          cry: *x-y.pokemon.primeape.forms.primeape.cry

@@ -1,0 +1,54 @@
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Dawn Stone'
+  category: &diamond-pearl.category evolution
+  pocket: &diamond-pearl.pocket misc
+  buy: &diamond-pearl.buy 3000
+  sell: &diamond-pearl.sell 1500
+  fling_effect: damage
+  fling_power: 80
+  short_description: &diamond-pearl.short_description 'Evolves certain Pokémon.'
+  description: &diamond-pearl.description |
+    When this item is used on some Pokémon, the Pokémon will evolve.  Below is a list
+    of compatible Pokémon.
+
+    {{App\Controller\ItemController::evolutionPokemon({"itemSlug": "dawn-stone"})}}
+  flavor_text: |
+    A peculiar stone that makes certain
+    species of Pokémon evolve.
+    It sparkles like eyes.
+  icon: &diamond-pearl.icon dawn-stone.png
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 80
+  short_description: *diamond-pearl.short_description
+  description: *diamond-pearl.description
+  flavor_text: |
+    A peculiar stone that can make
+    certain species of Pokémon evolve.
+    It sparkles like a glittering eye.
+  icon: *diamond-pearl.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *diamond-pearl.category
+  pocket: *diamond-pearl.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 80
+  short_description: *diamond-pearl.short_description
+  description: *diamond-pearl.description
+  flavor_text: |
+    A peculiar stone that can make certain species of
+    Pokémon evolve. It sparkles like a glittering eye.
+  icon: *diamond-pearl.icon
+ultra-sun-ultra-moon: *sun-moon

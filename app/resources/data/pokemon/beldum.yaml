@@ -1,0 +1,727 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name BELDUM
+  position: &ruby-sapphire.position 374
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 374
+    hoenn: 190
+  pokemon:
+    beldum:
+      name: BELDUM
+      default: &ruby-sapphire.pokemon.beldum.default true
+      forms_switchable: &ruby-sapphire.pokemon.beldum.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.beldum.capture_rate 3
+      experience: &ruby-sapphire.pokemon.beldum.experience 103
+      types: &ruby-sapphire.pokemon.beldum.types
+        - steel
+        - psychic
+      stats: &ruby-sapphire.pokemon.beldum.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.beldum.growth_rate slow
+      hatch_steps: &ruby-sapphire.pokemon.beldum.hatch_steps 40
+      egg_groups: &ruby-sapphire.pokemon.beldum.egg_groups
+        - mineral
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+          metal-coat: 5
+        sapphire: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.beldum.happiness 35
+      abilities: &ruby-sapphire.pokemon.beldum.abilities
+        clear-body: &ruby-sapphire.pokemon.beldum.abilities.clear-body
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.beldum.genus 'IRON BALL Pokémon'
+      height: &ruby-sapphire.pokemon.beldum.height 6
+      weight: &ruby-sapphire.pokemon.beldum.weight 952
+      flavor_text:
+        ruby: |
+          Instead of blood, a powerful magnetic
+          force courses throughout BELDUM's
+           body. This POKéMON communicates with
+          others by sending controlled pulses of
+          magnetism.
+        sapphire: |
+          BELDUM keeps itself floating by
+          generating a magnetic force that
+           repels earth's natural magnetism.
+          When it sleeps, this POKéMON anchors
+           itself to a cliff using the hooks on
+          its rear.
+      forms:
+        beldum:
+          name: BELDUM
+          form_name: &ruby-sapphire.pokemon.beldum.forms.beldum.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.beldum.forms.beldum.battle_only false
+          icon: &ruby-sapphire.pokemon.beldum.forms.beldum.icon gen5/beldum-default.png
+          sprites:
+            - ruby-sapphire/beldum-default.png
+            - ruby-sapphire/back/beldum-default.png
+            - ruby-sapphire/shiny/beldum-default.png
+          art: &ruby-sapphire.pokemon.beldum.forms.beldum.art
+            - beldum-default.png
+          footprint: &ruby-sapphire.pokemon.beldum.forms.beldum.footprint beldum.png
+          cry: &ruby-sapphire.pokemon.beldum.forms.beldum.cry gen5/beldum-default.webm
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    beldum:
+      name: BELDUM
+      default: *ruby-sapphire.pokemon.beldum.default
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      experience: *ruby-sapphire.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      stats: *ruby-sapphire.pokemon.beldum.stats
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      abilities: *ruby-sapphire.pokemon.beldum.abilities
+      genus: *ruby-sapphire.pokemon.beldum.genus
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      flavor_text:
+        emerald: |
+          When BELDUM gather in a swarm, they move
+          in perfect unison as if they were but one
+          POKéMON. They communicate with each other
+          using brain waves.
+      forms:
+        beldum:
+          name: BELDUM
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *ruby-sapphire.pokemon.beldum.forms.beldum.icon
+          sprites:
+            - emerald/beldum-default.png
+            - emerald/shiny/beldum-default.png
+            - emerald/animated/beldum-default.webm
+            - emerald/animated/shiny/beldum-default.webm
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 25
+  pokemon:
+    beldum:
+      name: BELDUM
+      default: *ruby-sapphire.pokemon.beldum.default
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      experience: *ruby-sapphire.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      stats: *ruby-sapphire.pokemon.beldum.stats
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      abilities: *ruby-sapphire.pokemon.beldum.abilities
+      genus: *ruby-sapphire.pokemon.beldum.genus
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      forms:
+        beldum:
+          name: BELDUM
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          sprites:
+            - colosseum/beldum-default.png
+            - colosseum/shiny/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    beldum:
+      name: BELDUM
+      default: *ruby-sapphire.pokemon.beldum.default
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      experience: *ruby-sapphire.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      stats: *ruby-sapphire.pokemon.beldum.stats
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      abilities: *ruby-sapphire.pokemon.beldum.abilities
+      genus: *ruby-sapphire.pokemon.beldum.genus
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      forms:
+        beldum:
+          name: BELDUM
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          sprites:
+            - xd/beldum-default.png
+            - xd/shiny/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    beldum:
+      name: BELDUM
+      default: *ruby-sapphire.pokemon.beldum.default
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      experience: *ruby-sapphire.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      stats: *ruby-sapphire.pokemon.beldum.stats
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      abilities: *ruby-sapphire.pokemon.beldum.abilities
+      genus: *ruby-sapphire.pokemon.beldum.genus
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      flavor_text:
+        firered: |
+          It uses magnetic waves to converse with
+          its kind. All the cells in its body are
+          magnetic.
+        leafgreen: |
+          It uses magnetic waves to converse with
+          its kind. All the cells in its body are
+          magnetic.
+      forms:
+        beldum:
+          name: BELDUM
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *ruby-sapphire.pokemon.beldum.forms.beldum.icon
+          sprites:
+            - firered-leafgreen/beldum-default.png
+            - firered-leafgreen/back/beldum-default.png
+            - firered-leafgreen/shiny/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+diamond-pearl:
+  name: &diamond-pearl.name Beldum
+  position: &diamond-pearl.position 404
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beldum:
+      genus: &diamond-pearl.pokemon.beldum.genus 'Iron Ball Pokémon'
+      shape: &diamond-pearl.pokemon.beldum.shape blob
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: &diamond-pearl.pokemon.beldum.baby false
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      pal_park: &diamond-pearl.pokemon.beldum.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: &diamond-pearl.pokemon.beldum.experience 60
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      stats: &diamond-pearl.pokemon.beldum.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 35
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.beldum.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          It converses with others by using
+          magnetic pulses. In a swarm, they
+          move in perfect unison.
+        pearl: |
+          It converses with others by using
+          magnetic pulses. In a swarm, they
+          move in perfect unison.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *ruby-sapphire.pokemon.beldum.forms.beldum.icon
+          sprites:
+            - diamond-pearl/back/shiny/beldum-default.png
+            - diamond-pearl/back/beldum-default.png
+            - diamond-pearl/shiny/beldum-default.png
+            - diamond-pearl/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beldum:
+      genus: *diamond-pearl.pokemon.beldum.genus
+      shape: *diamond-pearl.pokemon.beldum.shape
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: *diamond-pearl.pokemon.beldum.baby
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      pal_park: *diamond-pearl.pokemon.beldum.pal_park
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: *diamond-pearl.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      stats: *diamond-pearl.pokemon.beldum.stats
+      abilities: *ruby-sapphire.pokemon.beldum.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          It converses with others by using
+          magnetic pulses. In a swarm, they
+          move in perfect unison.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *ruby-sapphire.pokemon.beldum.forms.beldum.icon
+          sprites:
+            - platinum/back/shiny/beldum-default.png
+            - platinum/back/beldum-default.png
+            - platinum/shiny/beldum-default.png
+            - platinum/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beldum:
+      genus: *diamond-pearl.pokemon.beldum.genus
+      shape: *diamond-pearl.pokemon.beldum.shape
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: *diamond-pearl.pokemon.beldum.baby
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      pal_park: *diamond-pearl.pokemon.beldum.pal_park
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: *diamond-pearl.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      stats: *diamond-pearl.pokemon.beldum.stats
+      abilities: *ruby-sapphire.pokemon.beldum.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          The magnetic force generated by
+          its body repels the ground’s
+          natural magnetism, letting it float.
+        soulsilver: |
+          The magnetic force generated by
+          its body repels the ground’s
+          natural magnetism, letting it float.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 1
+              range: 1
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.beldum.forms.beldum.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/beldum-default.png
+            - heartgold-soulsilver/back/beldum-default.png
+            - heartgold-soulsilver/shiny/beldum-default.png
+            - heartgold-soulsilver/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beldum:
+      genus: *diamond-pearl.pokemon.beldum.genus
+      color: &black-white.pokemon.beldum.color blue
+      shape: *diamond-pearl.pokemon.beldum.shape
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: *diamond-pearl.pokemon.beldum.baby
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: *diamond-pearl.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      stats: *diamond-pearl.pokemon.beldum.stats
+      abilities: &black-white.pokemon.beldum.abilities
+        clear-body: *ruby-sapphire.pokemon.beldum.abilities.clear-body
+        light-metal:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      flavor_text:
+        black: |
+          It converses with others by using
+          magnetic pulses. In a swarm, they
+          move in perfect unison.
+        white: |
+          It converses with others by using
+          magnetic pulses. In a swarm, they
+          move in perfect unison.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *ruby-sapphire.pokemon.beldum.forms.beldum.icon
+          sprites:
+            - black-white/back/shiny/beldum-default.png
+            - black-white/back/beldum-default.png
+            - black-white/shiny/beldum-default.png
+            - black-white/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 262
+  pokemon:
+    beldum:
+      genus: *diamond-pearl.pokemon.beldum.genus
+      color: *black-white.pokemon.beldum.color
+      shape: *diamond-pearl.pokemon.beldum.shape
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: *diamond-pearl.pokemon.beldum.baby
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: *diamond-pearl.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      stats: *diamond-pearl.pokemon.beldum.stats
+      abilities: *black-white.pokemon.beldum.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          Its cells are all magnetic,
+          and it communicates with others
+          by using magnetic pulses.
+        white-2: |
+          Its cells are all magnetic,
+          and it communicates with others
+          by using magnetic pulses.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *ruby-sapphire.pokemon.beldum.forms.beldum.icon
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *ruby-sapphire.pokemon.beldum.forms.beldum.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beldum:
+      genus: *diamond-pearl.pokemon.beldum.genus
+      color: *black-white.pokemon.beldum.color
+      shape: *diamond-pearl.pokemon.beldum.shape
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: *diamond-pearl.pokemon.beldum.baby
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: *diamond-pearl.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      mega: &x-y.pokemon.beldum.mega false
+      stats: *diamond-pearl.pokemon.beldum.stats
+      abilities: *black-white.pokemon.beldum.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      flavor_text:
+        x: |
+          The magnetic force generated by its body repels
+          the ground’s natural magnetism, letting it float.
+        'y': |
+          It converses with others by using magnetic pulses.
+          In a swarm, they move in perfect unison.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: &x-y.pokemon.beldum.forms.beldum.icon beldum-default.png
+          sprites:
+            - x-y/shiny/beldum-default.png
+            - x-y/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: &x-y.pokemon.beldum.forms.beldum.cry beldum-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 199
+  pokemon:
+    beldum:
+      genus: *diamond-pearl.pokemon.beldum.genus
+      color: *black-white.pokemon.beldum.color
+      shape: *diamond-pearl.pokemon.beldum.shape
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: *diamond-pearl.pokemon.beldum.baby
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: *diamond-pearl.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      mega: *x-y.pokemon.beldum.mega
+      stats: *diamond-pearl.pokemon.beldum.stats
+      abilities: *black-white.pokemon.beldum.abilities
+      flavor_text:
+        omega-ruby: |
+          Instead of blood, a powerful magnetic force courses
+          throughout Beldum’s body. This Pokémon communicates
+          with others by sending controlled pulses of magnetism.
+        alpha-sapphire: |
+          Beldum keeps itself floating by generating a magnetic force
+          that repels earth’s natural magnetism. When it sleeps, this
+          Pokémon anchors itself to a cliff using the hooks on its rear.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *x-y.pokemon.beldum.forms.beldum.icon
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *x-y.pokemon.beldum.forms.beldum.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/beldum-default.png
+            - omega-ruby-alpha-sapphire/shiny/beldum-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-alola: 214
+    original-ulaula: 86
+  pokemon:
+    beldum:
+      genus: *diamond-pearl.pokemon.beldum.genus
+      color: *black-white.pokemon.beldum.color
+      shape: *diamond-pearl.pokemon.beldum.shape
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: *diamond-pearl.pokemon.beldum.baby
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: *diamond-pearl.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      mega: *x-y.pokemon.beldum.mega
+      stats: *diamond-pearl.pokemon.beldum.stats
+      abilities: *black-white.pokemon.beldum.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      flavor_text:
+        sun: |-
+          Its cells are all magnets. It uses magnetism
+          to communicate with others of its kind.
+        moon: |-
+          With magnetic traction, it pulls its opponents in
+          close. When they’re in range, it slashes them
+          with its rear claws.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *x-y.pokemon.beldum.forms.beldum.icon
+          sprites:
+            - sun-moon/shiny/beldum-default.png
+            - sun-moon/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *x-y.pokemon.beldum.forms.beldum.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 278
+    updated-ulaula: 99
+  pokemon:
+    beldum:
+      genus: *diamond-pearl.pokemon.beldum.genus
+      color: *black-white.pokemon.beldum.color
+      shape: *diamond-pearl.pokemon.beldum.shape
+      capture_rate: *ruby-sapphire.pokemon.beldum.capture_rate
+      happiness: *ruby-sapphire.pokemon.beldum.happiness
+      baby: *diamond-pearl.pokemon.beldum.baby
+      hatch_steps: *ruby-sapphire.pokemon.beldum.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beldum.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beldum.forms_switchable
+      name: Beldum
+      default: *ruby-sapphire.pokemon.beldum.default
+      height: *ruby-sapphire.pokemon.beldum.height
+      weight: *ruby-sapphire.pokemon.beldum.weight
+      experience: *diamond-pearl.pokemon.beldum.experience
+      types: *ruby-sapphire.pokemon.beldum.types
+      egg_groups: *ruby-sapphire.pokemon.beldum.egg_groups
+      mega: *x-y.pokemon.beldum.mega
+      stats: *diamond-pearl.pokemon.beldum.stats
+      abilities: *black-white.pokemon.beldum.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.beldum.wild_held_items.ruby
+      flavor_text:
+        ultra-sun: |-
+          Instead of blood, magnetism flows through its
+          body. When it’s feeling bad, try giving it
+          a magnet.
+        ultra-moon: |-
+          If you anger it, it will do more than rampage. It
+          will also burst out strong magnetism, causing
+          nearby machines to break.
+      forms:
+        beldum:
+          name: Beldum
+          form_name: *ruby-sapphire.pokemon.beldum.forms.beldum.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beldum.forms.beldum.battle_only
+          icon: *x-y.pokemon.beldum.forms.beldum.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/beldum-default.png
+            - ultra-sun-ultra-moon/beldum-default.png
+          art: *ruby-sapphire.pokemon.beldum.forms.beldum.art
+          footprint: *ruby-sapphire.pokemon.beldum.forms.beldum.footprint
+          cry: *x-y.pokemon.beldum.forms.beldum.cry

@@ -1,0 +1,897 @@
+red-blue:
+  name: &red-blue.name TANGELA
+  position: &red-blue.position 114
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 114
+    kanto: 114
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: &red-blue.pokemon.tangela.default true
+      capture_rate: &red-blue.pokemon.tangela.capture_rate 45
+      experience: &red-blue.pokemon.tangela.experience 166
+      types: &red-blue.pokemon.tangela.types
+        - grass
+      stats: &red-blue.pokemon.tangela.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 55
+          effort_change: 55
+        defense:
+          base_value: 115
+          effort_change: 115
+        speed:
+          base_value: 60
+          effort_change: 60
+        special:
+          base_value: 100
+          effort_change: 100
+      growth_rate: &red-blue.pokemon.tangela.growth_rate medium
+      genus: &red-blue.pokemon.tangela.genus 'VINE Pokémon'
+      height: &red-blue.pokemon.tangela.height 9
+      weight: &red-blue.pokemon.tangela.weight 3492
+      flavor_text:
+        red: |
+          The whole body is
+          swathed with wide
+          vines that are
+          similar to sea-
+           weed. Its vines
+          shake as it walks.
+        blue: |
+          The whole body is
+          swathed with wide
+          vines that are
+          similar to sea-
+           weed. Its vines
+          shake as it walks.
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: &red-blue.pokemon.tangela.forms.tangela.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.tangela.forms.tangela.battle_only false
+          sprites:
+            - red-blue/tangela-default.png
+            - red-blue/gray/tangela-default.png
+            - red-blue/back/tangela-default.png
+          art: &red-blue.pokemon.tangela.forms.tangela.art
+            - tangela-default.png
+          cry: &red-blue.pokemon.tangela.forms.tangela.cry gen5/tangela-default.webm
+          icon: &red-blue.pokemon.tangela.forms.tangela.icon gen1/grass.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: *red-blue.pokemon.tangela.default
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      experience: *red-blue.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      stats: *red-blue.pokemon.tangela.stats
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      genus: *red-blue.pokemon.tangela.genus
+      height: *red-blue.pokemon.tangela.height
+      weight: *red-blue.pokemon.tangela.weight
+      flavor_text:
+        yellow: |
+          Its identity is
+          obscured by masses
+          of thick, blue
+          vines. The vines
+           are said to never
+          stop growing.
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          sprites:
+            - yellow/tangela-default.png
+            - yellow/gray/tangela-default.png
+            - yellow/back/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+          icon: *red-blue.pokemon.tangela.forms.tangela.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 113
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 178
+    original-johto-abc: 207
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: *red-blue.pokemon.tangela.default
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      experience: *red-blue.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      stats: &gold-silver.pokemon.tangela.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 55
+          effort_change: 55
+        defense:
+          base_value: 115
+          effort_change: 115
+        speed:
+          base_value: 60
+          effort_change: 60
+        special-attack:
+          base_value: 100
+          effort_change: 100
+        special-defense:
+          base_value: 40
+          effort_change: 100
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      female_rate: &gold-silver.pokemon.tangela.female_rate 50
+      hatch_steps: &gold-silver.pokemon.tangela.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.tangela.egg_groups
+        - plant
+      genus: *red-blue.pokemon.tangela.genus
+      height: *red-blue.pokemon.tangela.height
+      weight: &gold-silver.pokemon.tangela.weight 349
+      flavor_text:
+        gold: |
+          The vines that
+          cloak its entire
+          body are always
+          jiggling. They
+          effectively un-
+          nerve its foes.
+        silver: |
+          It tangles any
+          moving thing with
+          its vines. Their
+          subtle shaking
+          is ticklish if you
+          get ensnared.
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          sprites:
+            - gold-silver/tangela-default.png
+            - gold-silver/back/tangela-default.png
+            - gold-silver/shiny/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+          icon: &gold-silver.pokemon.tangela.forms.tangela.icon gen2/oddish.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: *red-blue.pokemon.tangela.default
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      experience: *red-blue.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      stats: *gold-silver.pokemon.tangela.stats
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      genus: *red-blue.pokemon.tangela.genus
+      height: *red-blue.pokemon.tangela.height
+      weight: *gold-silver.pokemon.tangela.weight
+      flavor_text:
+        crystal: |
+          During battle, it
+          constantly moves
+          the vines that
+          cover its body in
+          order to annoy its
+          opponent.
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          sprites:
+            - crystal/tangela-default.png
+            - crystal/back/tangela-default.png
+            - crystal/shiny/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+          icon: *gold-silver.pokemon.tangela.forms.tangela.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 278
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: *red-blue.pokemon.tangela.default
+      forms_switchable: &ruby-sapphire.pokemon.tangela.forms_switchable false
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      experience: *red-blue.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      stats: &ruby-sapphire.pokemon.tangela.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 115
+          effort_change: 1
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 65
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      happiness: &ruby-sapphire.pokemon.tangela.happiness 70
+      abilities: &ruby-sapphire.pokemon.tangela.abilities
+        chlorophyll: &ruby-sapphire.pokemon.tangela.abilities.chlorophyll
+          hidden: &ruby-sapphire.pokemon.tangela.abilities.chlorophyll.hidden false
+          position: 1
+      genus: *red-blue.pokemon.tangela.genus
+      height: &ruby-sapphire.pokemon.tangela.height 10
+      weight: &ruby-sapphire.pokemon.tangela.weight 350
+      flavor_text:
+        ruby: |
+          TANGELA's vines snap off easily if they
+          are grabbed. This happens without pain,
+          allowing it to make a quick getaway.
+          The lost vines are replaced by newly
+          grown vines the very next day.
+        sapphire: |
+          TANGELA's vines snap off easily if they
+          are grabbed. This happens without pain,
+          allowing it to make a quick getaway.
+          The lost vines are replaced by newly
+          grown vines the very next day.
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: &ruby-sapphire.pokemon.tangela.forms.tangela.icon gen5/tangela-default.png
+          sprites:
+            - ruby-sapphire/tangela-default.png
+            - ruby-sapphire/back/tangela-default.png
+            - ruby-sapphire/shiny/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: &ruby-sapphire.pokemon.tangela.forms.tangela.footprint tangela.png
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: *red-blue.pokemon.tangela.default
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      experience: *red-blue.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      stats: *ruby-sapphire.pokemon.tangela.stats
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      abilities: *ruby-sapphire.pokemon.tangela.abilities
+      genus: *red-blue.pokemon.tangela.genus
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      flavor_text:
+        emerald: |
+          Its vines snap off easily and painlessly
+          if they are grabbed, allowing it to make a
+          quick getaway. The lost vines are replaced
+          by new growth the very next day.
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *ruby-sapphire.pokemon.tangela.forms.tangela.icon
+          sprites:
+            - emerald/tangela-default.png
+            - emerald/shiny/tangela-default.png
+            - emerald/animated/tangela-default.webm
+            - emerald/animated/shiny/tangela-default.webm
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 336
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: *red-blue.pokemon.tangela.default
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      experience: *red-blue.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      stats: *ruby-sapphire.pokemon.tangela.stats
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      abilities: *ruby-sapphire.pokemon.tangela.abilities
+      genus: *red-blue.pokemon.tangela.genus
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          sprites:
+            - colosseum/tangela-default.png
+            - colosseum/shiny/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: *red-blue.pokemon.tangela.default
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      experience: *red-blue.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      stats: *ruby-sapphire.pokemon.tangela.stats
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      abilities: *ruby-sapphire.pokemon.tangela.abilities
+      genus: *red-blue.pokemon.tangela.genus
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          sprites:
+            - xd/tangela-default.png
+            - xd/shiny/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    tangela:
+      name: TANGELA
+      default: *red-blue.pokemon.tangela.default
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      experience: *red-blue.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      stats: *ruby-sapphire.pokemon.tangela.stats
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      abilities: *ruby-sapphire.pokemon.tangela.abilities
+      genus: *red-blue.pokemon.tangela.genus
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      flavor_text:
+        firered: |
+          Blue plant vines cloak the POKéMON's
+          identity in a tangled mass.  It entangles
+          anything that gets close.
+        leafgreen: |
+          The whole body is swathed with wide vines
+          that are similar to seaweed. The vines
+          sway as it walks.
+      forms:
+        tangela:
+          name: TANGELA
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *ruby-sapphire.pokemon.tangela.forms.tangela.icon
+          sprites:
+            - firered-leafgreen/tangela-default.png
+            - firered-leafgreen/back/tangela-default.png
+            - firered-leafgreen/shiny/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+diamond-pearl:
+  name: &diamond-pearl.name Tangela
+  position: &diamond-pearl.position 129
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    tangela:
+      genus: &diamond-pearl.pokemon.tangela.genus 'Vine Pokémon'
+      shape: &diamond-pearl.pokemon.tangela.shape legs
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: &diamond-pearl.pokemon.tangela.baby false
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      pal_park: &diamond-pearl.pokemon.tangela.pal_park
+        area: forest
+        rate: 30
+        score: 50
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: &diamond-pearl.pokemon.tangela.experience 87
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      stats: &diamond-pearl.pokemon.tangela.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 115
+          effort_change: 1
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.tangela.abilities
+        chlorophyll: *ruby-sapphire.pokemon.tangela.abilities.chlorophyll
+        leaf-guard: &diamond-pearl.pokemon.tangela.abilities.leaf-guard
+          hidden: *ruby-sapphire.pokemon.tangela.abilities.chlorophyll.hidden
+          position: 2
+      flavor_text:
+        diamond: |
+          It is shrouded by blue vines.
+          No one has seen the face hidden
+          behind this growth of vines.
+        pearl: |
+          It is shrouded by blue vines.
+          No one has seen the face hidden
+          behind this growth of vines.
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *ruby-sapphire.pokemon.tangela.forms.tangela.icon
+          sprites:
+            - diamond-pearl/back/shiny/tangela-default.png
+            - diamond-pearl/back/tangela-default.png
+            - diamond-pearl/shiny/tangela-default.png
+            - diamond-pearl/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 181
+  pokemon:
+    tangela:
+      genus: *diamond-pearl.pokemon.tangela.genus
+      shape: *diamond-pearl.pokemon.tangela.shape
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: *diamond-pearl.pokemon.tangela.baby
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      pal_park: *diamond-pearl.pokemon.tangela.pal_park
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: *diamond-pearl.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      stats: *diamond-pearl.pokemon.tangela.stats
+      abilities: *diamond-pearl.pokemon.tangela.abilities
+      flavor_text:
+        platinum: |
+          The blue vines shrouding its body
+          are covered in a growth of fine
+          hair. It is known to be ticklish.
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *ruby-sapphire.pokemon.tangela.forms.tangela.icon
+          sprites:
+            - platinum/back/shiny/tangela-default.png
+            - platinum/back/tangela-default.png
+            - platinum/shiny/tangela-default.png
+            - platinum/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 182
+  pokemon:
+    tangela:
+      genus: *diamond-pearl.pokemon.tangela.genus
+      shape: *diamond-pearl.pokemon.tangela.shape
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: *diamond-pearl.pokemon.tangela.baby
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      pal_park: *diamond-pearl.pokemon.tangela.pal_park
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: *diamond-pearl.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      stats: *diamond-pearl.pokemon.tangela.stats
+      abilities: *diamond-pearl.pokemon.tangela.abilities
+      flavor_text:
+        heartgold: |
+          The vines that cloak its entire
+          body are always jiggling.
+          They effectively unnerve its foes.
+        soulsilver: |
+          It tangles any moving thing with
+          its vines. Their subtle shaking
+          is ticklish if you get ensnared.
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.tangela.forms.tangela.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/tangela-default.png
+            - heartgold-soulsilver/back/tangela-default.png
+            - heartgold-soulsilver/shiny/tangela-default.png
+            - heartgold-soulsilver/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    tangela:
+      genus: *diamond-pearl.pokemon.tangela.genus
+      color: &black-white.pokemon.tangela.color blue
+      shape: *diamond-pearl.pokemon.tangela.shape
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: *diamond-pearl.pokemon.tangela.baby
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: *diamond-pearl.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      stats: *diamond-pearl.pokemon.tangela.stats
+      abilities: &black-white.pokemon.tangela.abilities
+        chlorophyll: *ruby-sapphire.pokemon.tangela.abilities.chlorophyll
+        leaf-guard: *diamond-pearl.pokemon.tangela.abilities.leaf-guard
+        regenerator:
+          hidden: true
+          position: 3
+      flavor_text:
+        black: |
+          The blue vines shrouding its body
+          are covered in a growth of fine
+          hair. It is known to be ticklish.
+        white: |
+          The blue vines shrouding its body
+          are covered in a growth of fine
+          hair. It is known to be ticklish.
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *ruby-sapphire.pokemon.tangela.forms.tangela.icon
+          sprites:
+            - black-white/back/shiny/tangela-default.png
+            - black-white/back/tangela-default.png
+            - black-white/shiny/tangela-default.png
+            - black-white/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 217
+  pokemon:
+    tangela:
+      genus: *diamond-pearl.pokemon.tangela.genus
+      color: *black-white.pokemon.tangela.color
+      shape: *diamond-pearl.pokemon.tangela.shape
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: *diamond-pearl.pokemon.tangela.baby
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: *diamond-pearl.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      stats: *diamond-pearl.pokemon.tangela.stats
+      abilities: *black-white.pokemon.tangela.abilities
+      flavor_text:
+        black-2: |
+          Many writhing vines cover it,
+          so its true identity remains unknown.
+          The blue vines grow its whole life long.
+        white-2: |
+          Many writhing vines cover it,
+          so its true identity remains unknown.
+          The blue vines grow its whole life long.
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *ruby-sapphire.pokemon.tangela.forms.tangela.icon
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *red-blue.pokemon.tangela.forms.tangela.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    tangela:
+      genus: *diamond-pearl.pokemon.tangela.genus
+      color: *black-white.pokemon.tangela.color
+      shape: *diamond-pearl.pokemon.tangela.shape
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: *diamond-pearl.pokemon.tangela.baby
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: *diamond-pearl.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      mega: &x-y.pokemon.tangela.mega false
+      stats: *diamond-pearl.pokemon.tangela.stats
+      abilities: *black-white.pokemon.tangela.abilities
+      flavor_text:
+        x: |
+          Many writhing vines cover it, so its true identity
+          remains unknown. The blue vines grow its whole
+          life long.
+        'y': |
+          It tangles any moving thing with its vines. Their
+          subtle shaking is ticklish if you get ensnared.
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: &x-y.pokemon.tangela.forms.tangela.icon tangela-default.png
+          sprites:
+            - x-y/shiny/tangela-default.png
+            - x-y/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: &x-y.pokemon.tangela.forms.tangela.cry tangela-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    tangela:
+      genus: *diamond-pearl.pokemon.tangela.genus
+      color: *black-white.pokemon.tangela.color
+      shape: *diamond-pearl.pokemon.tangela.shape
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: *diamond-pearl.pokemon.tangela.baby
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: *diamond-pearl.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      mega: *x-y.pokemon.tangela.mega
+      stats: *diamond-pearl.pokemon.tangela.stats
+      abilities: *black-white.pokemon.tangela.abilities
+      flavor_text:
+        omega-ruby: |
+          Tangela’s vines snap off easily if they are grabbed.
+          This happens without pain, allowing it to make a quick
+          getaway. The lost vines are replaced by newly grown vines the
+          very next day.
+        alpha-sapphire: |
+          Tangela’s vines snap off easily if they are grabbed. This
+          happens without pain, allowing it to make a quick getaway.
+          The lost vines are replaced by newly grown vines the very
+          next day.
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *x-y.pokemon.tangela.forms.tangela.icon
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *x-y.pokemon.tangela.forms.tangela.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/tangela-default.png
+            - omega-ruby-alpha-sapphire/shiny/tangela-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    tangela:
+      genus: *diamond-pearl.pokemon.tangela.genus
+      color: *black-white.pokemon.tangela.color
+      shape: *diamond-pearl.pokemon.tangela.shape
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: *diamond-pearl.pokemon.tangela.baby
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: *diamond-pearl.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      mega: *x-y.pokemon.tangela.mega
+      stats: *diamond-pearl.pokemon.tangela.stats
+      abilities: *black-white.pokemon.tangela.abilities
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *x-y.pokemon.tangela.forms.tangela.icon
+          sprites:
+            - sun-moon/shiny/tangela-default.png
+            - sun-moon/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *x-y.pokemon.tangela.forms.tangela.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    tangela:
+      genus: *diamond-pearl.pokemon.tangela.genus
+      color: *black-white.pokemon.tangela.color
+      shape: *diamond-pearl.pokemon.tangela.shape
+      female_rate: *gold-silver.pokemon.tangela.female_rate
+      capture_rate: *red-blue.pokemon.tangela.capture_rate
+      happiness: *ruby-sapphire.pokemon.tangela.happiness
+      baby: *diamond-pearl.pokemon.tangela.baby
+      hatch_steps: *gold-silver.pokemon.tangela.hatch_steps
+      growth_rate: *red-blue.pokemon.tangela.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.tangela.forms_switchable
+      name: Tangela
+      default: *red-blue.pokemon.tangela.default
+      height: *ruby-sapphire.pokemon.tangela.height
+      weight: *ruby-sapphire.pokemon.tangela.weight
+      experience: *diamond-pearl.pokemon.tangela.experience
+      types: *red-blue.pokemon.tangela.types
+      egg_groups: *gold-silver.pokemon.tangela.egg_groups
+      mega: *x-y.pokemon.tangela.mega
+      stats: *diamond-pearl.pokemon.tangela.stats
+      abilities: *black-white.pokemon.tangela.abilities
+      forms:
+        tangela:
+          name: Tangela
+          form_name: *red-blue.pokemon.tangela.forms.tangela.form_name
+          default: true
+          battle_only: *red-blue.pokemon.tangela.forms.tangela.battle_only
+          icon: *x-y.pokemon.tangela.forms.tangela.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/tangela-default.png
+            - ultra-sun-ultra-moon/tangela-default.png
+          art: *red-blue.pokemon.tangela.forms.tangela.art
+          footprint: *ruby-sapphire.pokemon.tangela.forms.tangela.footprint
+          cry: *x-y.pokemon.tangela.forms.tangela.cry

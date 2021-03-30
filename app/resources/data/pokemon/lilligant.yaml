@@ -1,0 +1,351 @@
+black-white:
+  name: &black-white.name Lilligant
+  position: &black-white.position 550
+  numbers:
+    national: &black-white.numbers.national 549
+    original-unova: 55
+  pokemon:
+    lilligant:
+      genus: &black-white.pokemon.lilligant.genus 'Flowering Pokémon'
+      evolution_parent: &black-white.pokemon.lilligant.evolution_parent petilil/petilil
+      color: &black-white.pokemon.lilligant.color green
+      shape: &black-white.pokemon.lilligant.shape blob
+      female_rate: &black-white.pokemon.lilligant.female_rate 100
+      capture_rate: &black-white.pokemon.lilligant.capture_rate 75
+      happiness: &black-white.pokemon.lilligant.happiness 70
+      baby: &black-white.pokemon.lilligant.baby false
+      hatch_steps: &black-white.pokemon.lilligant.hatch_steps 20
+      growth_rate: &black-white.pokemon.lilligant.growth_rate medium
+      forms_switchable: &black-white.pokemon.lilligant.forms_switchable false
+      name: Lilligant
+      default: &black-white.pokemon.lilligant.default true
+      height: &black-white.pokemon.lilligant.height 11
+      weight: &black-white.pokemon.lilligant.weight 163
+      experience: &black-white.pokemon.lilligant.experience 168
+      types: &black-white.pokemon.lilligant.types
+        - grass
+      egg_groups: &black-white.pokemon.lilligant.egg_groups
+        - plant
+      stats: &black-white.pokemon.lilligant.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 0
+        special-attack:
+          base_value: 110
+          effort_change: 2
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: &black-white.pokemon.lilligant.abilities
+        chlorophyll:
+          hidden: &black-white.pokemon.lilligant.abilities.chlorophyll.hidden false
+          position: 1
+        own-tempo:
+          hidden: *black-white.pokemon.lilligant.abilities.chlorophyll.hidden
+          position: 2
+        leaf-guard:
+          hidden: true
+          position: 3
+      evolution_conditions: &black-white.pokemon.lilligant.evolution_conditions
+        use-item:
+          trigger_item: sun-stone
+      flavor_text:
+        black: |
+          Even veteran Trainers face a challenge
+          in getting its beautiful flower to bloom.
+          This Pokémon is popular with celebrities.
+        white: |
+          The fragrance of the garland on its head
+          has a relaxing effect. It withers if a
+          Trainer does not take good care of it.
+      forms:
+        lilligant:
+          name: Lilligant
+          form_name: &black-white.pokemon.lilligant.forms.lilligant.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.lilligant.forms.lilligant.battle_only false
+          icon: &black-white.pokemon.lilligant.forms.lilligant.icon gen5/lilligant-default.png
+          sprites:
+            - black-white/lilligant-default.png
+            - black-white/back/lilligant-default.png
+            - black-white/back/shiny/lilligant-default.png
+            - black-white/shiny/lilligant-default.png
+          art: &black-white.pokemon.lilligant.forms.lilligant.art
+            - lilligant-default.png
+          footprint: &black-white.pokemon.lilligant.forms.lilligant.footprint lilligant.png
+          cry: &black-white.pokemon.lilligant.forms.lilligant.cry gen5/lilligant-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 85
+  pokemon:
+    lilligant:
+      genus: *black-white.pokemon.lilligant.genus
+      evolution_parent: *black-white.pokemon.lilligant.evolution_parent
+      color: *black-white.pokemon.lilligant.color
+      shape: *black-white.pokemon.lilligant.shape
+      female_rate: *black-white.pokemon.lilligant.female_rate
+      capture_rate: *black-white.pokemon.lilligant.capture_rate
+      happiness: *black-white.pokemon.lilligant.happiness
+      baby: *black-white.pokemon.lilligant.baby
+      hatch_steps: *black-white.pokemon.lilligant.hatch_steps
+      growth_rate: *black-white.pokemon.lilligant.growth_rate
+      forms_switchable: *black-white.pokemon.lilligant.forms_switchable
+      name: Lilligant
+      default: *black-white.pokemon.lilligant.default
+      height: *black-white.pokemon.lilligant.height
+      weight: *black-white.pokemon.lilligant.weight
+      experience: *black-white.pokemon.lilligant.experience
+      types: *black-white.pokemon.lilligant.types
+      egg_groups: *black-white.pokemon.lilligant.egg_groups
+      stats: *black-white.pokemon.lilligant.stats
+      abilities: *black-white.pokemon.lilligant.abilities
+      evolution_conditions: *black-white.pokemon.lilligant.evolution_conditions
+      flavor_text:
+        black-2: |
+          The fragrance of the garland on its head
+          has a relaxing effect, but taking
+          care of it is very difficult.
+        white-2: |
+          The fragrance of the garland on its head
+          has a relaxing effect, but taking
+          care of it is very difficult.
+      forms:
+        lilligant:
+          name: Lilligant
+          form_name: *black-white.pokemon.lilligant.forms.lilligant.form_name
+          default: true
+          battle_only: *black-white.pokemon.lilligant.forms.lilligant.battle_only
+          icon: *black-white.pokemon.lilligant.forms.lilligant.icon
+          art: *black-white.pokemon.lilligant.forms.lilligant.art
+          footprint: *black-white.pokemon.lilligant.forms.lilligant.footprint
+          cry: *black-white.pokemon.lilligant.forms.lilligant.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: &x-y.numbers
+    national: *black-white.numbers.national
+  pokemon:
+    lilligant:
+      genus: *black-white.pokemon.lilligant.genus
+      evolution_parent: *black-white.pokemon.lilligant.evolution_parent
+      color: *black-white.pokemon.lilligant.color
+      shape: *black-white.pokemon.lilligant.shape
+      female_rate: *black-white.pokemon.lilligant.female_rate
+      capture_rate: *black-white.pokemon.lilligant.capture_rate
+      happiness: *black-white.pokemon.lilligant.happiness
+      baby: *black-white.pokemon.lilligant.baby
+      hatch_steps: *black-white.pokemon.lilligant.hatch_steps
+      growth_rate: *black-white.pokemon.lilligant.growth_rate
+      forms_switchable: *black-white.pokemon.lilligant.forms_switchable
+      name: Lilligant
+      default: *black-white.pokemon.lilligant.default
+      height: *black-white.pokemon.lilligant.height
+      weight: *black-white.pokemon.lilligant.weight
+      experience: *black-white.pokemon.lilligant.experience
+      types: *black-white.pokemon.lilligant.types
+      egg_groups: *black-white.pokemon.lilligant.egg_groups
+      mega: &x-y.pokemon.lilligant.mega false
+      stats: *black-white.pokemon.lilligant.stats
+      abilities: *black-white.pokemon.lilligant.abilities
+      evolution_conditions: *black-white.pokemon.lilligant.evolution_conditions
+      flavor_text:
+        x: |
+          The fragrance of the garland on its head has a
+          relaxing effect. It withers if a Trainer does not take
+          good care of it.
+        'y': |
+          Even veteran Trainers face a challenge in getting its
+          beautiful flower to bloom. This Pokémon is popular
+          with celebrities.
+      forms:
+        lilligant:
+          name: Lilligant
+          form_name: *black-white.pokemon.lilligant.forms.lilligant.form_name
+          default: true
+          battle_only: *black-white.pokemon.lilligant.forms.lilligant.battle_only
+          icon: &x-y.pokemon.lilligant.forms.lilligant.icon lilligant-default.png
+          sprites:
+            - x-y/lilligant-default.png
+            - x-y/shiny/lilligant-default.png
+          art: *black-white.pokemon.lilligant.forms.lilligant.art
+          footprint: *black-white.pokemon.lilligant.forms.lilligant.footprint
+          cry: &x-y.pokemon.lilligant.forms.lilligant.cry lilligant-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *x-y.numbers
+  pokemon:
+    lilligant:
+      genus: *black-white.pokemon.lilligant.genus
+      evolution_parent: *black-white.pokemon.lilligant.evolution_parent
+      color: *black-white.pokemon.lilligant.color
+      shape: *black-white.pokemon.lilligant.shape
+      female_rate: *black-white.pokemon.lilligant.female_rate
+      capture_rate: *black-white.pokemon.lilligant.capture_rate
+      happiness: *black-white.pokemon.lilligant.happiness
+      baby: *black-white.pokemon.lilligant.baby
+      hatch_steps: *black-white.pokemon.lilligant.hatch_steps
+      growth_rate: *black-white.pokemon.lilligant.growth_rate
+      forms_switchable: *black-white.pokemon.lilligant.forms_switchable
+      name: Lilligant
+      default: *black-white.pokemon.lilligant.default
+      height: *black-white.pokemon.lilligant.height
+      weight: *black-white.pokemon.lilligant.weight
+      experience: *black-white.pokemon.lilligant.experience
+      types: *black-white.pokemon.lilligant.types
+      egg_groups: *black-white.pokemon.lilligant.egg_groups
+      mega: *x-y.pokemon.lilligant.mega
+      stats: *black-white.pokemon.lilligant.stats
+      abilities: *black-white.pokemon.lilligant.abilities
+      evolution_conditions: *black-white.pokemon.lilligant.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          The fragrance of the garland on its head has a
+          relaxing effect. It withers if a Trainer does not take
+          good care of it.
+        alpha-sapphire: |
+          Even veteran Trainers face a challenge in getting its
+          beautiful flower to bloom. This Pokémon is popular
+          with celebrities.
+      forms:
+        lilligant:
+          name: Lilligant
+          form_name: *black-white.pokemon.lilligant.forms.lilligant.form_name
+          default: true
+          battle_only: *black-white.pokemon.lilligant.forms.lilligant.battle_only
+          icon: *x-y.pokemon.lilligant.forms.lilligant.icon
+          art: *black-white.pokemon.lilligant.forms.lilligant.art
+          footprint: *black-white.pokemon.lilligant.forms.lilligant.footprint
+          cry: *x-y.pokemon.lilligant.forms.lilligant.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/lilligant-default.png
+            - omega-ruby-alpha-sapphire/shiny/lilligant-default.png
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    original-alola: 86
+    original-melemele: 86
+    original-ulaula: 46
+    original-poni: 36
+  pokemon:
+    lilligant:
+      genus: *black-white.pokemon.lilligant.genus
+      evolution_parent: *black-white.pokemon.lilligant.evolution_parent
+      color: *black-white.pokemon.lilligant.color
+      shape: *black-white.pokemon.lilligant.shape
+      female_rate: *black-white.pokemon.lilligant.female_rate
+      capture_rate: *black-white.pokemon.lilligant.capture_rate
+      happiness: *black-white.pokemon.lilligant.happiness
+      baby: *black-white.pokemon.lilligant.baby
+      hatch_steps: *black-white.pokemon.lilligant.hatch_steps
+      growth_rate: *black-white.pokemon.lilligant.growth_rate
+      forms_switchable: *black-white.pokemon.lilligant.forms_switchable
+      name: Lilligant
+      default: *black-white.pokemon.lilligant.default
+      height: *black-white.pokemon.lilligant.height
+      weight: *black-white.pokemon.lilligant.weight
+      experience: *black-white.pokemon.lilligant.experience
+      types: *black-white.pokemon.lilligant.types
+      egg_groups: *black-white.pokemon.lilligant.egg_groups
+      mega: *x-y.pokemon.lilligant.mega
+      stats: *black-white.pokemon.lilligant.stats
+      abilities: *black-white.pokemon.lilligant.abilities
+      wild_held_items:
+        sun: &sun-moon.pokemon.lilligant.wild_held_items.sun
+          absorb-bulb: 5
+        moon: *sun-moon.pokemon.lilligant.wild_held_items.sun
+      evolution_conditions: *black-white.pokemon.lilligant.evolution_conditions
+      flavor_text:
+        sun: |-
+          No matter how much time and money is spent
+          raising it, its flowers are the most beautiful
+          when they bloom in the wild.
+        moon: |-
+          As soon as it finds a male to be its partner,
+          the beautiful flower on its head darkens,
+          droops, and withers away.
+      forms:
+        lilligant:
+          name: Lilligant
+          form_name: *black-white.pokemon.lilligant.forms.lilligant.form_name
+          default: true
+          battle_only: *black-white.pokemon.lilligant.forms.lilligant.battle_only
+          icon: *x-y.pokemon.lilligant.forms.lilligant.icon
+          sprites:
+            - sun-moon/lilligant-default.png
+            - sun-moon/shiny/lilligant-default.png
+          art: *black-white.pokemon.lilligant.forms.lilligant.art
+          footprint: *black-white.pokemon.lilligant.forms.lilligant.footprint
+          cry: *x-y.pokemon.lilligant.forms.lilligant.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 104
+    updated-melemele: 104
+    updated-ulaula: 49
+    updated-poni: 48
+  pokemon:
+    lilligant:
+      genus: *black-white.pokemon.lilligant.genus
+      evolution_parent: *black-white.pokemon.lilligant.evolution_parent
+      color: *black-white.pokemon.lilligant.color
+      shape: *black-white.pokemon.lilligant.shape
+      female_rate: *black-white.pokemon.lilligant.female_rate
+      capture_rate: *black-white.pokemon.lilligant.capture_rate
+      happiness: *black-white.pokemon.lilligant.happiness
+      baby: *black-white.pokemon.lilligant.baby
+      hatch_steps: *black-white.pokemon.lilligant.hatch_steps
+      growth_rate: *black-white.pokemon.lilligant.growth_rate
+      forms_switchable: *black-white.pokemon.lilligant.forms_switchable
+      name: Lilligant
+      default: *black-white.pokemon.lilligant.default
+      height: *black-white.pokemon.lilligant.height
+      weight: *black-white.pokemon.lilligant.weight
+      experience: *black-white.pokemon.lilligant.experience
+      types: *black-white.pokemon.lilligant.types
+      egg_groups: *black-white.pokemon.lilligant.egg_groups
+      mega: *x-y.pokemon.lilligant.mega
+      stats: *black-white.pokemon.lilligant.stats
+      abilities: *black-white.pokemon.lilligant.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.lilligant.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.lilligant.wild_held_items.sun
+      evolution_conditions: *black-white.pokemon.lilligant.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          The fragrance of its flower differs slightly
+          depending on the soil where it grew up.
+          Sniffing the aroma calms your heart and mind.
+        ultra-moon: |-
+          It’s well liked by other Pokémon because of its
+          beauty. The flower on its head needs constant
+          care, or it will soon wither and rot.
+      forms:
+        lilligant:
+          name: Lilligant
+          form_name: *black-white.pokemon.lilligant.forms.lilligant.form_name
+          default: true
+          battle_only: *black-white.pokemon.lilligant.forms.lilligant.battle_only
+          icon: *x-y.pokemon.lilligant.forms.lilligant.icon
+          sprites:
+            - ultra-sun-ultra-moon/lilligant-default.png
+            - ultra-sun-ultra-moon/shiny/lilligant-default.png
+          art: *black-white.pokemon.lilligant.forms.lilligant.art
+          footprint: *black-white.pokemon.lilligant.forms.lilligant.footprint
+          cry: *x-y.pokemon.lilligant.forms.lilligant.cry

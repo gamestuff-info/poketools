@@ -1,0 +1,858 @@
+gold-silver:
+  name: &gold-silver.name GRANBULL
+  position: &gold-silver.position 209
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 210
+    original-johto: 123
+    original-johto-abc: 63
+  pokemon:
+    granbull:
+      name: GRANBULL
+      default: &gold-silver.pokemon.granbull.default true
+      capture_rate: &gold-silver.pokemon.granbull.capture_rate 75
+      experience: &gold-silver.pokemon.granbull.experience 178
+      types: &gold-silver.pokemon.granbull.types
+        - normal
+      stats: &gold-silver.pokemon.granbull.stats
+        hp:
+          base_value: 90
+          effort_change: 90
+        attack:
+          base_value: 120
+          effort_change: 120
+        defense:
+          base_value: 75
+          effort_change: 75
+        speed:
+          base_value: 45
+          effort_change: 45
+        special-attack:
+          base_value: 60
+          effort_change: 60
+        special-defense:
+          base_value: 60
+          effort_change: 60
+      growth_rate: &gold-silver.pokemon.granbull.growth_rate fast
+      female_rate: &gold-silver.pokemon.granbull.female_rate 75
+      hatch_steps: &gold-silver.pokemon.granbull.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.granbull.egg_groups
+        - ground
+        - fairy
+      genus: &gold-silver.pokemon.granbull.genus 'FAIRY Pokémon'
+      height: &gold-silver.pokemon.granbull.height 13
+      weight: &gold-silver.pokemon.granbull.weight 485
+      flavor_text:
+        gold: |
+          It is actually
+          timid and easily
+          spooked. If at-
+          tacked, it flails
+          about to fend off
+          its attacker.
+        silver: |
+          Because its fangs
+          are too heavy, it
+          always keeps its
+          head tilted down.
+          However, its BITE
+          is powerful.
+      evolution_parent: &gold-silver.pokemon.granbull.evolution_parent snubbull/snubbull
+      evolution_conditions: &gold-silver.pokemon.granbull.evolution_conditions
+        level-up:
+          minimum_level: 23
+      forms:
+        granbull:
+          name: GRANBULL
+          form_name: &gold-silver.pokemon.granbull.forms.granbull.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.granbull.forms.granbull.battle_only false
+          sprites:
+            - gold-silver/granbull-default.png
+            - gold-silver/back/granbull-default.png
+            - gold-silver/shiny/granbull-default.png
+          art: &gold-silver.pokemon.granbull.forms.granbull.art
+            - granbull-default.png
+          cry: &gold-silver.pokemon.granbull.forms.granbull.cry gen5/granbull-default.webm
+          icon: &gold-silver.pokemon.granbull.forms.granbull.icon gen2/monster.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    granbull:
+      name: GRANBULL
+      default: *gold-silver.pokemon.granbull.default
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      experience: *gold-silver.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      stats: *gold-silver.pokemon.granbull.stats
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      genus: *gold-silver.pokemon.granbull.genus
+      height: *gold-silver.pokemon.granbull.height
+      weight: *gold-silver.pokemon.granbull.weight
+      flavor_text:
+        crystal: |
+          It can make most
+          any #MON run
+          away simply by
+          opening its mouth
+          wide to reveal its
+          big fangs.
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      forms:
+        granbull:
+          name: GRANBULL
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          sprites:
+            - crystal/granbull-default.png
+            - crystal/back/granbull-default.png
+            - crystal/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+          icon: *gold-silver.pokemon.granbull.forms.granbull.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 210
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 353
+  pokemon:
+    granbull:
+      name: GRANBULL
+      default: *gold-silver.pokemon.granbull.default
+      forms_switchable: &ruby-sapphire.pokemon.granbull.forms_switchable false
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      experience: *gold-silver.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      stats: &ruby-sapphire.pokemon.granbull.stats
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 120
+          effort_change: 2
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 45
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      happiness: &ruby-sapphire.pokemon.granbull.happiness 70
+      abilities: &ruby-sapphire.pokemon.granbull.abilities
+        intimidate: &ruby-sapphire.pokemon.granbull.abilities.intimidate
+          hidden: &ruby-sapphire.pokemon.granbull.abilities.intimidate.hidden false
+          position: 2
+      genus: *gold-silver.pokemon.granbull.genus
+      height: &ruby-sapphire.pokemon.granbull.height 14
+      weight: &ruby-sapphire.pokemon.granbull.weight 487
+      flavor_text:
+        ruby: |
+          GRANBULL has a particularly well-
+          developed lower jaw. The enormous fangs
+          are heavy, causing the POKéMON to tip
+          its head back for balance.
+           Unless it is startled, it will not try to
+          bite indiscriminately.
+        sapphire: |
+          GRANBULL has a particularly well-
+          developed lower jaw. The enormous fangs
+          are heavy, causing the POKéMON to tip
+          its head back for balance.
+           Unless it is startled, it will not try to
+          bite indiscriminately.
+      forms:
+        granbull:
+          name: GRANBULL
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: &ruby-sapphire.pokemon.granbull.forms.granbull.icon gen5/granbull-default.png
+          sprites:
+            - ruby-sapphire/granbull-default.png
+            - ruby-sapphire/back/granbull-default.png
+            - ruby-sapphire/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: &ruby-sapphire.pokemon.granbull.forms.granbull.footprint granbull.png
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    granbull:
+      name: GRANBULL
+      default: *gold-silver.pokemon.granbull.default
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      experience: *gold-silver.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      stats: *ruby-sapphire.pokemon.granbull.stats
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      abilities: *ruby-sapphire.pokemon.granbull.abilities
+      genus: *gold-silver.pokemon.granbull.genus
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      flavor_text:
+        emerald: |
+          It has a particularly well-developed lower
+          jaw. The huge fangs are heavy, causing
+          it to tilt its head. Unless it is startled, it
+          will not try to bite.
+      forms:
+        granbull:
+          name: GRANBULL
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *ruby-sapphire.pokemon.granbull.forms.granbull.icon
+          sprites:
+            - emerald/granbull-default.png
+            - emerald/shiny/granbull-default.png
+            - emerald/animated/granbull-default.webm
+            - emerald/animated/shiny/granbull-default.webm
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 115
+  pokemon:
+    granbull:
+      name: GRANBULL
+      default: *gold-silver.pokemon.granbull.default
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      experience: *gold-silver.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      stats: *ruby-sapphire.pokemon.granbull.stats
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      abilities: *ruby-sapphire.pokemon.granbull.abilities
+      genus: *gold-silver.pokemon.granbull.genus
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      forms:
+        granbull:
+          name: GRANBULL
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          sprites:
+            - colosseum/granbull-default.png
+            - colosseum/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    granbull:
+      name: GRANBULL
+      default: *gold-silver.pokemon.granbull.default
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      experience: *gold-silver.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      stats: *ruby-sapphire.pokemon.granbull.stats
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      abilities: *ruby-sapphire.pokemon.granbull.abilities
+      genus: *gold-silver.pokemon.granbull.genus
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      forms:
+        granbull:
+          name: GRANBULL
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          sprites:
+            - xd/granbull-default.png
+            - xd/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    granbull:
+      name: GRANBULL
+      default: *gold-silver.pokemon.granbull.default
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      experience: *gold-silver.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      stats: *ruby-sapphire.pokemon.granbull.stats
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      abilities: *ruby-sapphire.pokemon.granbull.abilities
+      genus: *gold-silver.pokemon.granbull.genus
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      flavor_text:
+        firered: |
+          Because its fangs are too heavy, it
+          always keeps its head tilted down.
+          However, its BITE is powerful.
+        leafgreen: |
+          It is actually timid and easily spooked.
+          If attacked, it flails about to fend off
+          its attacker.
+      forms:
+        granbull:
+          name: GRANBULL
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *ruby-sapphire.pokemon.granbull.forms.granbull.icon
+          sprites:
+            - firered-leafgreen/granbull-default.png
+            - firered-leafgreen/back/granbull-default.png
+            - firered-leafgreen/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Granbull
+  position: &diamond-pearl.position 241
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    granbull:
+      genus: &diamond-pearl.pokemon.granbull.genus 'Fairy Pokémon'
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      shape: &diamond-pearl.pokemon.granbull.shape upright
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: &diamond-pearl.pokemon.granbull.baby false
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      pal_park: &diamond-pearl.pokemon.granbull.pal_park
+        area: field
+        rate: 20
+        score: 70
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: &diamond-pearl.pokemon.granbull.experience 158
+      types: *gold-silver.pokemon.granbull.types
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      stats: &diamond-pearl.pokemon.granbull.stats
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 120
+          effort_change: 2
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 45
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.granbull.abilities
+        intimidate: &diamond-pearl.pokemon.granbull.abilities.intimidate
+          hidden: *ruby-sapphire.pokemon.granbull.abilities.intimidate.hidden
+          position: 1
+        quick-feet: *ruby-sapphire.pokemon.granbull.abilities.intimidate
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is timid in spite of its looks.
+          If it becomes enraged, however,
+          it will strike with its huge fangs.
+        pearl: |
+          It is timid in spite of its looks.
+          If it becomes enraged, however,
+          it will strike with its huge fangs.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *ruby-sapphire.pokemon.granbull.forms.granbull.icon
+          sprites:
+            - diamond-pearl/granbull-default.png
+            - diamond-pearl/back/granbull-default.png
+            - diamond-pearl/back/shiny/granbull-default.png
+            - diamond-pearl/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    granbull:
+      genus: *diamond-pearl.pokemon.granbull.genus
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      shape: *diamond-pearl.pokemon.granbull.shape
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: *diamond-pearl.pokemon.granbull.baby
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      pal_park: *diamond-pearl.pokemon.granbull.pal_park
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: *diamond-pearl.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      stats: *diamond-pearl.pokemon.granbull.stats
+      abilities: *diamond-pearl.pokemon.granbull.abilities
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        platinum: |
+          It is timid in spite of its looks.
+          If it becomes enraged, however,
+          it will strike with its huge fangs.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *ruby-sapphire.pokemon.granbull.forms.granbull.icon
+          sprites:
+            - platinum/granbull-default.png
+            - platinum/back/granbull-default.png
+            - platinum/back/shiny/granbull-default.png
+            - platinum/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 126
+  pokemon:
+    granbull:
+      genus: *diamond-pearl.pokemon.granbull.genus
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      shape: *diamond-pearl.pokemon.granbull.shape
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: *diamond-pearl.pokemon.granbull.baby
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      pal_park: *diamond-pearl.pokemon.granbull.pal_park
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: *diamond-pearl.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      stats: *diamond-pearl.pokemon.granbull.stats
+      abilities: *diamond-pearl.pokemon.granbull.abilities
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It is actually timid and easily
+          spooked. If attacked, it flails
+          about to fend off its attacker.
+        soulsilver: |
+          Because its fangs are too heavy, it
+          always keeps its head tilted down.
+          However, its bite is powerful.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 4
+              range: 1-5
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.granbull.forms.granbull.icon
+          sprites:
+            - heartgold-soulsilver/granbull-default.png
+            - heartgold-soulsilver/back/granbull-default.png
+            - heartgold-soulsilver/back/shiny/granbull-default.png
+            - heartgold-soulsilver/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    granbull:
+      genus: *diamond-pearl.pokemon.granbull.genus
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      color: &black-white.pokemon.granbull.color purple
+      shape: *diamond-pearl.pokemon.granbull.shape
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: *diamond-pearl.pokemon.granbull.baby
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: *diamond-pearl.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      stats: *diamond-pearl.pokemon.granbull.stats
+      abilities: &black-white.pokemon.granbull.abilities
+        intimidate: *diamond-pearl.pokemon.granbull.abilities.intimidate
+        quick-feet: *ruby-sapphire.pokemon.granbull.abilities.intimidate
+        rattled:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        black: |
+          It is timid in spite of its looks.
+          If it becomes enraged, however,
+          it will strike with its huge fangs.
+        white: |
+          It is timid in spite of its looks.
+          If it becomes enraged, however,
+          it will strike with its huge fangs.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *ruby-sapphire.pokemon.granbull.forms.granbull.icon
+          sprites:
+            - black-white/granbull-default.png
+            - black-white/back/granbull-default.png
+            - black-white/back/shiny/granbull-default.png
+            - black-white/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    granbull:
+      genus: *diamond-pearl.pokemon.granbull.genus
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      color: *black-white.pokemon.granbull.color
+      shape: *diamond-pearl.pokemon.granbull.shape
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: *diamond-pearl.pokemon.granbull.baby
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: *diamond-pearl.pokemon.granbull.experience
+      types: *gold-silver.pokemon.granbull.types
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      stats: *diamond-pearl.pokemon.granbull.stats
+      abilities: *black-white.pokemon.granbull.abilities
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        black-2: |
+          It is timid in spite of its looks.
+          If it becomes enraged, however,
+          it will strike with its huge fangs.
+        white-2: |
+          It is timid in spite of its looks.
+          If it becomes enraged, however,
+          it will strike with its huge fangs.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *ruby-sapphire.pokemon.granbull.forms.granbull.icon
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *gold-silver.pokemon.granbull.forms.granbull.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-coastal: 72
+  pokemon:
+    granbull:
+      genus: *diamond-pearl.pokemon.granbull.genus
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      color: *black-white.pokemon.granbull.color
+      shape: *diamond-pearl.pokemon.granbull.shape
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: *diamond-pearl.pokemon.granbull.baby
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: *diamond-pearl.pokemon.granbull.experience
+      types: &x-y.pokemon.granbull.types
+        - fairy
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      mega: &x-y.pokemon.granbull.mega false
+      stats: *diamond-pearl.pokemon.granbull.stats
+      abilities: *black-white.pokemon.granbull.abilities
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        x: |
+          It is timid in spite of its looks. If it becomes
+          enraged, however, it will strike with its huge fangs.
+        'y': |
+          It can make most any Pokémon run away simply by
+          opening its mouth wide to reveal its big fangs.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: &x-y.pokemon.granbull.forms.granbull.icon granbull-default.png
+          sprites:
+            - x-y/granbull-default.png
+            - x-y/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: &x-y.pokemon.granbull.forms.granbull.cry granbull-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    granbull:
+      genus: *diamond-pearl.pokemon.granbull.genus
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      color: *black-white.pokemon.granbull.color
+      shape: *diamond-pearl.pokemon.granbull.shape
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: *diamond-pearl.pokemon.granbull.baby
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: *diamond-pearl.pokemon.granbull.experience
+      types: *x-y.pokemon.granbull.types
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      mega: *x-y.pokemon.granbull.mega
+      stats: *diamond-pearl.pokemon.granbull.stats
+      abilities: *black-white.pokemon.granbull.abilities
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Granbull has a particularly well-developed lower jaw.
+          The enormous fangs are heavy, causing the Pokémon to tip its
+          head back for balance. Unless it is startled, it will not try to
+          bite indiscriminately.
+        alpha-sapphire: |
+          Granbull has a particularly well-developed lower jaw.
+          The enormous fangs are heavy, causing the Pokémon to tip
+          its head back for balance. Unless it is startled, it will not try to
+          bite indiscriminately.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *x-y.pokemon.granbull.forms.granbull.icon
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *x-y.pokemon.granbull.forms.granbull.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/granbull-default.png
+            - omega-ruby-alpha-sapphire/shiny/granbull-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    original-alola: 259
+    original-poni: 74
+  pokemon:
+    granbull:
+      genus: *diamond-pearl.pokemon.granbull.genus
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      color: *black-white.pokemon.granbull.color
+      shape: *diamond-pearl.pokemon.granbull.shape
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: *diamond-pearl.pokemon.granbull.baby
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: *diamond-pearl.pokemon.granbull.experience
+      types: *x-y.pokemon.granbull.types
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      mega: *x-y.pokemon.granbull.mega
+      stats: *diamond-pearl.pokemon.granbull.stats
+      abilities: *black-white.pokemon.granbull.abilities
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        sun: |-
+          Its well-developed lower jaw and heavy fangs
+          are its weapons. As long as it’s not provoked,
+          it rarely bites.
+        moon: |-
+          More timid than Snubbull, this Pokémon is doted
+          on by young people amused at the contrast
+          between its looks and its attitude.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *x-y.pokemon.granbull.forms.granbull.icon
+          sprites:
+            - sun-moon/granbull-default.png
+            - sun-moon/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *x-y.pokemon.granbull.forms.granbull.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 340
+    updated-poni: 87
+  pokemon:
+    granbull:
+      genus: *diamond-pearl.pokemon.granbull.genus
+      evolution_parent: *gold-silver.pokemon.granbull.evolution_parent
+      color: *black-white.pokemon.granbull.color
+      shape: *diamond-pearl.pokemon.granbull.shape
+      female_rate: *gold-silver.pokemon.granbull.female_rate
+      capture_rate: *gold-silver.pokemon.granbull.capture_rate
+      happiness: *ruby-sapphire.pokemon.granbull.happiness
+      baby: *diamond-pearl.pokemon.granbull.baby
+      hatch_steps: *gold-silver.pokemon.granbull.hatch_steps
+      growth_rate: *gold-silver.pokemon.granbull.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.granbull.forms_switchable
+      name: Granbull
+      default: *gold-silver.pokemon.granbull.default
+      height: *ruby-sapphire.pokemon.granbull.height
+      weight: *ruby-sapphire.pokemon.granbull.weight
+      experience: *diamond-pearl.pokemon.granbull.experience
+      types: *x-y.pokemon.granbull.types
+      egg_groups: *gold-silver.pokemon.granbull.egg_groups
+      mega: *x-y.pokemon.granbull.mega
+      stats: *diamond-pearl.pokemon.granbull.stats
+      abilities: *black-white.pokemon.granbull.abilities
+      evolution_conditions: *gold-silver.pokemon.granbull.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          While it has powerful jaws, it doesn’t care for
+          disputes, so it rarely has a chance to display
+          their might.
+        ultra-moon: |-
+          Although it’s popular with young people,
+          Granbull is timid and sensitive, so it’s totally
+          incompetent as a watchdog.
+      forms:
+        granbull:
+          name: Granbull
+          form_name: *gold-silver.pokemon.granbull.forms.granbull.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.granbull.forms.granbull.battle_only
+          icon: *x-y.pokemon.granbull.forms.granbull.icon
+          sprites:
+            - ultra-sun-ultra-moon/granbull-default.png
+            - ultra-sun-ultra-moon/shiny/granbull-default.png
+          art: *gold-silver.pokemon.granbull.forms.granbull.art
+          footprint: *ruby-sapphire.pokemon.granbull.forms.granbull.footprint
+          cry: *x-y.pokemon.granbull.forms.granbull.cry

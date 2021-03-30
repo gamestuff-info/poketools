@@ -1,0 +1,336 @@
+black-white:
+  name: &black-white.name Jellicent
+  position: &black-white.position 594
+  numbers:
+    national: &black-white.numbers.national 593
+    original-unova: 99
+  pokemon:
+    jellicent:
+      genus: &black-white.pokemon.jellicent.genus 'Floating Pokémon'
+      evolution_parent: &black-white.pokemon.jellicent.evolution_parent frillish/frillish
+      color: &black-white.pokemon.jellicent.color white
+      shape: &black-white.pokemon.jellicent.shape tentacles
+      female_rate: &black-white.pokemon.jellicent.female_rate 50
+      capture_rate: &black-white.pokemon.jellicent.capture_rate 60
+      happiness: &black-white.pokemon.jellicent.happiness 70
+      baby: &black-white.pokemon.jellicent.baby false
+      hatch_steps: &black-white.pokemon.jellicent.hatch_steps 20
+      growth_rate: &black-white.pokemon.jellicent.growth_rate medium
+      forms_switchable: &black-white.pokemon.jellicent.forms_switchable false
+      name: Jellicent
+      default: &black-white.pokemon.jellicent.default true
+      height: &black-white.pokemon.jellicent.height 22
+      weight: &black-white.pokemon.jellicent.weight 1350
+      experience: &black-white.pokemon.jellicent.experience 168
+      types: &black-white.pokemon.jellicent.types
+        - water
+        - ghost
+      egg_groups: &black-white.pokemon.jellicent.egg_groups
+        - indeterminate
+      stats: &black-white.pokemon.jellicent.stats
+        hp:
+          base_value: 100
+          effort_change: 0
+        attack:
+          base_value: 60
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 105
+          effort_change: 2
+      abilities: &black-white.pokemon.jellicent.abilities
+        water-absorb:
+          hidden: &black-white.pokemon.jellicent.abilities.water-absorb.hidden false
+          position: 1
+        cursed-body:
+          hidden: *black-white.pokemon.jellicent.abilities.water-absorb.hidden
+          position: 2
+        damp:
+          hidden: true
+          position: 3
+      evolution_conditions: &black-white.pokemon.jellicent.evolution_conditions
+        level-up:
+          minimum_level: 40
+      flavor_text:
+        black: |
+          The fate of the ships and crew that
+          wander into Jellicent’s habitat:
+          all sunken, all lost, all vanished.
+        white: |
+          They propel themselves by expelling
+          absorbed seawater from their bodies.
+          Their favorite food is life energy.
+      forms:
+        jellicent:
+          name: Jellicent
+          form_name: &black-white.pokemon.jellicent.forms.jellicent.form_name 'Default Form'
+          default: true
+          battle_only: &black-white.pokemon.jellicent.forms.jellicent.battle_only false
+          icon: &black-white.pokemon.jellicent.forms.jellicent.icon gen5/jellicent-default.png
+          sprites:
+            - black-white/back/female/jellicent-default.png
+            - black-white/back/shiny/jellicent-default.png
+            - black-white/back/jellicent-default.png
+            - black-white/female/jellicent-default.png
+            - black-white/shiny/female/jellicent-default.png
+            - black-white/shiny/jellicent-default.png
+            - black-white/jellicent-default.png
+          art: &black-white.pokemon.jellicent.forms.jellicent.art
+            - female/jellicent-default.png
+            - jellicent-default.png
+          footprint: &black-white.pokemon.jellicent.forms.jellicent.footprint jellicent.png
+          cry: &black-white.pokemon.jellicent.forms.jellicent.cry gen5/jellicent-default.webm
+black-2-white-2:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-unova: 181
+  pokemon:
+    jellicent:
+      genus: *black-white.pokemon.jellicent.genus
+      evolution_parent: *black-white.pokemon.jellicent.evolution_parent
+      color: *black-white.pokemon.jellicent.color
+      shape: *black-white.pokemon.jellicent.shape
+      female_rate: *black-white.pokemon.jellicent.female_rate
+      capture_rate: *black-white.pokemon.jellicent.capture_rate
+      happiness: *black-white.pokemon.jellicent.happiness
+      baby: *black-white.pokemon.jellicent.baby
+      hatch_steps: *black-white.pokemon.jellicent.hatch_steps
+      growth_rate: *black-white.pokemon.jellicent.growth_rate
+      forms_switchable: *black-white.pokemon.jellicent.forms_switchable
+      name: Jellicent
+      default: *black-white.pokemon.jellicent.default
+      height: *black-white.pokemon.jellicent.height
+      weight: *black-white.pokemon.jellicent.weight
+      experience: *black-white.pokemon.jellicent.experience
+      types: *black-white.pokemon.jellicent.types
+      egg_groups: *black-white.pokemon.jellicent.egg_groups
+      stats: *black-white.pokemon.jellicent.stats
+      abilities: *black-white.pokemon.jellicent.abilities
+      evolution_conditions: *black-white.pokemon.jellicent.evolution_conditions
+      flavor_text:
+        black-2: |
+          Its body is mostly seawater.
+          It’s said there’s a castle of ships
+          Jellicent have sunk on the seafloor.
+        white-2: |
+          Its body is mostly seawater.
+          It’s said there’s a castle of ships
+          Jellicent have sunk on the seafloor.
+      forms:
+        jellicent:
+          name: Jellicent
+          form_name: *black-white.pokemon.jellicent.forms.jellicent.form_name
+          default: true
+          battle_only: *black-white.pokemon.jellicent.forms.jellicent.battle_only
+          icon: *black-white.pokemon.jellicent.forms.jellicent.icon
+          art: *black-white.pokemon.jellicent.forms.jellicent.art
+          footprint: *black-white.pokemon.jellicent.forms.jellicent.footprint
+          cry: *black-white.pokemon.jellicent.forms.jellicent.cry
+x-y:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: &x-y.numbers
+    national: *black-white.numbers.national
+  pokemon:
+    jellicent:
+      genus: *black-white.pokemon.jellicent.genus
+      evolution_parent: *black-white.pokemon.jellicent.evolution_parent
+      color: *black-white.pokemon.jellicent.color
+      shape: *black-white.pokemon.jellicent.shape
+      female_rate: *black-white.pokemon.jellicent.female_rate
+      capture_rate: *black-white.pokemon.jellicent.capture_rate
+      happiness: *black-white.pokemon.jellicent.happiness
+      baby: *black-white.pokemon.jellicent.baby
+      hatch_steps: *black-white.pokemon.jellicent.hatch_steps
+      growth_rate: *black-white.pokemon.jellicent.growth_rate
+      forms_switchable: *black-white.pokemon.jellicent.forms_switchable
+      name: Jellicent
+      default: *black-white.pokemon.jellicent.default
+      height: *black-white.pokemon.jellicent.height
+      weight: *black-white.pokemon.jellicent.weight
+      experience: *black-white.pokemon.jellicent.experience
+      types: *black-white.pokemon.jellicent.types
+      egg_groups: *black-white.pokemon.jellicent.egg_groups
+      mega: &x-y.pokemon.jellicent.mega false
+      stats: *black-white.pokemon.jellicent.stats
+      abilities: *black-white.pokemon.jellicent.abilities
+      evolution_conditions: *black-white.pokemon.jellicent.evolution_conditions
+      flavor_text:
+        x: |
+          Its body is mostly seawater. It’s said there’s a
+          castle of ships Jellicent have sunk on the seafloor.
+        'y': |
+          The fate of the ships and crew that wander into
+          Jellicent’s habitat: all sunken, all lost, all vanished.
+      forms:
+        jellicent:
+          name: Jellicent
+          form_name: *black-white.pokemon.jellicent.forms.jellicent.form_name
+          default: true
+          battle_only: *black-white.pokemon.jellicent.forms.jellicent.battle_only
+          icon: &x-y.pokemon.jellicent.forms.jellicent.icon jellicent-default.png
+          sprites:
+            - x-y/female/jellicent-default.png
+            - x-y/shiny/female/jellicent-default.png
+            - x-y/shiny/jellicent-default.png
+            - x-y/jellicent-default.png
+          art: *black-white.pokemon.jellicent.forms.jellicent.art
+          footprint: *black-white.pokemon.jellicent.forms.jellicent.footprint
+          cry: &x-y.pokemon.jellicent.forms.jellicent.cry jellicent-default.webm
+omega-ruby-alpha-sapphire:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *x-y.numbers
+  pokemon:
+    jellicent:
+      genus: *black-white.pokemon.jellicent.genus
+      evolution_parent: *black-white.pokemon.jellicent.evolution_parent
+      color: *black-white.pokemon.jellicent.color
+      shape: *black-white.pokemon.jellicent.shape
+      female_rate: *black-white.pokemon.jellicent.female_rate
+      capture_rate: *black-white.pokemon.jellicent.capture_rate
+      happiness: *black-white.pokemon.jellicent.happiness
+      baby: *black-white.pokemon.jellicent.baby
+      hatch_steps: *black-white.pokemon.jellicent.hatch_steps
+      growth_rate: *black-white.pokemon.jellicent.growth_rate
+      forms_switchable: *black-white.pokemon.jellicent.forms_switchable
+      name: Jellicent
+      default: *black-white.pokemon.jellicent.default
+      height: *black-white.pokemon.jellicent.height
+      weight: *black-white.pokemon.jellicent.weight
+      experience: *black-white.pokemon.jellicent.experience
+      types: *black-white.pokemon.jellicent.types
+      egg_groups: *black-white.pokemon.jellicent.egg_groups
+      mega: *x-y.pokemon.jellicent.mega
+      stats: *black-white.pokemon.jellicent.stats
+      abilities: *black-white.pokemon.jellicent.abilities
+      evolution_conditions: *black-white.pokemon.jellicent.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Its body is mostly seawater. It’s said there’s a
+          castle of ships Jellicent have sunk on the seafloor.
+        alpha-sapphire: |
+          The fate of the ships and crew that wander into
+          Jellicent’s habitat: all sunken, all lost, all vanished.
+      forms:
+        jellicent:
+          name: Jellicent
+          form_name: *black-white.pokemon.jellicent.forms.jellicent.form_name
+          default: true
+          battle_only: *black-white.pokemon.jellicent.forms.jellicent.battle_only
+          icon: *x-y.pokemon.jellicent.forms.jellicent.icon
+          art: *black-white.pokemon.jellicent.forms.jellicent.art
+          footprint: *black-white.pokemon.jellicent.forms.jellicent.footprint
+          cry: *x-y.pokemon.jellicent.forms.jellicent.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/jellicent-default.png
+            - omega-ruby-alpha-sapphire/shiny/jellicent-default.png
+            - omega-ruby-alpha-sapphire/female/jellicent-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/jellicent-default.png
+sun-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers: *x-y.numbers
+  pokemon:
+    jellicent:
+      genus: *black-white.pokemon.jellicent.genus
+      evolution_parent: *black-white.pokemon.jellicent.evolution_parent
+      color: *black-white.pokemon.jellicent.color
+      shape: *black-white.pokemon.jellicent.shape
+      female_rate: *black-white.pokemon.jellicent.female_rate
+      capture_rate: *black-white.pokemon.jellicent.capture_rate
+      happiness: *black-white.pokemon.jellicent.happiness
+      baby: *black-white.pokemon.jellicent.baby
+      hatch_steps: *black-white.pokemon.jellicent.hatch_steps
+      growth_rate: *black-white.pokemon.jellicent.growth_rate
+      forms_switchable: *black-white.pokemon.jellicent.forms_switchable
+      name: Jellicent
+      default: *black-white.pokemon.jellicent.default
+      height: *black-white.pokemon.jellicent.height
+      weight: *black-white.pokemon.jellicent.weight
+      experience: *black-white.pokemon.jellicent.experience
+      types: *black-white.pokemon.jellicent.types
+      egg_groups: *black-white.pokemon.jellicent.egg_groups
+      mega: *x-y.pokemon.jellicent.mega
+      stats: *black-white.pokemon.jellicent.stats
+      abilities: *black-white.pokemon.jellicent.abilities
+      evolution_conditions: *black-white.pokemon.jellicent.evolution_conditions
+      forms:
+        jellicent:
+          name: Jellicent
+          form_name: *black-white.pokemon.jellicent.forms.jellicent.form_name
+          default: true
+          battle_only: *black-white.pokemon.jellicent.forms.jellicent.battle_only
+          icon: *x-y.pokemon.jellicent.forms.jellicent.icon
+          sprites:
+            - sun-moon/female/jellicent-default.png
+            - sun-moon/shiny/female/jellicent-default.png
+            - sun-moon/shiny/jellicent-default.png
+            - sun-moon/jellicent-default.png
+          art: *black-white.pokemon.jellicent.forms.jellicent.art
+          footprint: *black-white.pokemon.jellicent.forms.jellicent.footprint
+          cry: *x-y.pokemon.jellicent.forms.jellicent.cry
+ultra-sun-ultra-moon:
+  name: *black-white.name
+  position: *black-white.position
+  numbers:
+    national: *black-white.numbers.national
+    updated-alola: 319
+    updated-ulaula: 140
+  pokemon:
+    jellicent:
+      genus: *black-white.pokemon.jellicent.genus
+      evolution_parent: *black-white.pokemon.jellicent.evolution_parent
+      color: *black-white.pokemon.jellicent.color
+      shape: *black-white.pokemon.jellicent.shape
+      female_rate: *black-white.pokemon.jellicent.female_rate
+      capture_rate: *black-white.pokemon.jellicent.capture_rate
+      happiness: *black-white.pokemon.jellicent.happiness
+      baby: *black-white.pokemon.jellicent.baby
+      hatch_steps: *black-white.pokemon.jellicent.hatch_steps
+      growth_rate: *black-white.pokemon.jellicent.growth_rate
+      forms_switchable: *black-white.pokemon.jellicent.forms_switchable
+      name: Jellicent
+      default: *black-white.pokemon.jellicent.default
+      height: *black-white.pokemon.jellicent.height
+      weight: *black-white.pokemon.jellicent.weight
+      experience: *black-white.pokemon.jellicent.experience
+      types: *black-white.pokemon.jellicent.types
+      egg_groups: *black-white.pokemon.jellicent.egg_groups
+      mega: *x-y.pokemon.jellicent.mega
+      stats: *black-white.pokemon.jellicent.stats
+      abilities: *black-white.pokemon.jellicent.abilities
+      evolution_conditions: *black-white.pokemon.jellicent.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Jellicent is always hanging around fancy cruise
+          ships and tankers, hoping to drag away its prey.
+        ultra-moon: |-
+          Fishermen are terrified of Jellicent.
+          It’s rumored to drag them into the sea
+          and steal their lives away.
+      forms:
+        jellicent:
+          name: Jellicent
+          form_name: *black-white.pokemon.jellicent.forms.jellicent.form_name
+          default: true
+          battle_only: *black-white.pokemon.jellicent.forms.jellicent.battle_only
+          icon: *x-y.pokemon.jellicent.forms.jellicent.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/jellicent-default.png
+            - ultra-sun-ultra-moon/shiny/female/jellicent-default.png
+            - ultra-sun-ultra-moon/shiny/jellicent-default.png
+            - ultra-sun-ultra-moon/jellicent-default.png
+          art: *black-white.pokemon.jellicent.forms.jellicent.art
+          footprint: *black-white.pokemon.jellicent.forms.jellicent.footprint
+          cry: *x-y.pokemon.jellicent.forms.jellicent.cry

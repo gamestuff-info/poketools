@@ -1,0 +1,381 @@
+x-y:
+  name: &x-y.name Florges
+  position: &x-y.position 672
+  numbers:
+    national: &x-y.numbers.national 671
+    kalos-central: 70
+  pokemon:
+    florges:
+      genus: &x-y.pokemon.florges.genus 'Garden Pokémon'
+      evolution_parent: &x-y.pokemon.florges.evolution_parent floette/floette
+      color: &x-y.pokemon.florges.color white
+      shape: &x-y.pokemon.florges.shape arms
+      female_rate: &x-y.pokemon.florges.female_rate 100
+      capture_rate: &x-y.pokemon.florges.capture_rate 45
+      happiness: &x-y.pokemon.florges.happiness 70
+      baby: &x-y.pokemon.florges.baby false
+      hatch_steps: &x-y.pokemon.florges.hatch_steps 20
+      growth_rate: &x-y.pokemon.florges.growth_rate medium
+      forms_switchable: &x-y.pokemon.florges.forms_switchable false
+      forms_note: &x-y.pokemon.florges.forms_note 'Forms only differ in appearance.  Florges''s flower is set as a Flabébé or Floette, and cannot be changed.'
+      name: Florges
+      default: &x-y.pokemon.florges.default true
+      height: &x-y.pokemon.florges.height 11
+      weight: &x-y.pokemon.florges.weight 100
+      experience: &x-y.pokemon.florges.experience 248
+      types: &x-y.pokemon.florges.types
+        - fairy
+      egg_groups: *x-y.pokemon.florges.types
+      mega: &x-y.pokemon.florges.mega false
+      stats: &x-y.pokemon.florges.stats
+        hp:
+          base_value: 78
+          effort_change: 0
+        attack:
+          base_value: 65
+          effort_change: 0
+        defense:
+          base_value: 68
+          effort_change: 0
+        speed:
+          base_value: 75
+          effort_change: 0
+        special-attack:
+          base_value: 112
+          effort_change: 0
+        special-defense:
+          base_value: 154
+          effort_change: 3
+      abilities: &x-y.pokemon.florges.abilities
+        flower-veil:
+          hidden: false
+          position: 1
+        symbiosis:
+          hidden: true
+          position: 3
+      evolution_conditions: &x-y.pokemon.florges.evolution_conditions
+        use-item:
+          trigger_item: shiny-stone
+      flavor_text:
+        x: |
+          It claims exquisite flower gardens as its territory,
+          and it obtains power from basking in the energy
+          emitted by flowering plants.
+        'y': |
+          In times long past, governors of castles
+          would invite Florges to create flower gardens
+          to embellish the castle domains.
+      forms:
+        florges-red:
+          name: &x-y.pokemon.florges.forms.florges-red.name 'Red Florges'
+          form_name: &x-y.pokemon.florges.forms.florges-red.form_name 'Red Flower'
+          default: true
+          battle_only: &x-y.pokemon.florges.forms.florges-red.battle_only false
+          icon: &x-y.pokemon.florges.forms.florges-red.icon florges-red.png
+          sprites:
+            - x-y/florges-red.png
+            - x-y/shiny/florges-red.png
+          footprint: &x-y.pokemon.florges.forms.florges-red.footprint florges.png
+        florges-yellow:
+          name: &x-y.pokemon.florges.forms.florges-yellow.name 'Yellow Florges'
+          form_name: &x-y.pokemon.florges.forms.florges-yellow.form_name 'Yellow Flower'
+          default: &x-y.pokemon.florges.forms.florges-yellow.default false
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: &x-y.pokemon.florges.forms.florges-yellow.icon florges-yellow.png
+          sprites:
+            - x-y/shiny/florges-yellow.png
+            - x-y/florges-yellow.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-orange:
+          name: &x-y.pokemon.florges.forms.florges-orange.name 'Orange Florges'
+          form_name: &x-y.pokemon.florges.forms.florges-orange.form_name 'Orange Flower'
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: &x-y.pokemon.florges.forms.florges-orange.icon florges-orange.png
+          sprites:
+            - x-y/florges-orange.png
+            - x-y/shiny/florges-orange.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-blue:
+          name: &x-y.pokemon.florges.forms.florges-blue.name 'Blue Florges'
+          form_name: &x-y.pokemon.florges.forms.florges-blue.form_name 'Blue Flower'
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: &x-y.pokemon.florges.forms.florges-blue.icon florges-blue.png
+          sprites:
+            - x-y/florges-blue.png
+            - x-y/shiny/florges-blue.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-white:
+          name: &x-y.pokemon.florges.forms.florges-white.name 'White Florges'
+          form_name: &x-y.pokemon.florges.forms.florges-white.form_name 'White Flower'
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: &x-y.pokemon.florges.forms.florges-white.icon florges-white.png
+          sprites:
+            - x-y/shiny/florges-white.png
+            - x-y/florges-white.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: &omega-ruby-alpha-sapphire.numbers
+    national: *x-y.numbers.national
+  pokemon:
+    florges:
+      genus: *x-y.pokemon.florges.genus
+      evolution_parent: *x-y.pokemon.florges.evolution_parent
+      color: *x-y.pokemon.florges.color
+      shape: *x-y.pokemon.florges.shape
+      female_rate: *x-y.pokemon.florges.female_rate
+      capture_rate: *x-y.pokemon.florges.capture_rate
+      happiness: *x-y.pokemon.florges.happiness
+      baby: *x-y.pokemon.florges.baby
+      hatch_steps: *x-y.pokemon.florges.hatch_steps
+      growth_rate: *x-y.pokemon.florges.growth_rate
+      forms_switchable: *x-y.pokemon.florges.forms_switchable
+      forms_note: *x-y.pokemon.florges.forms_note
+      name: Florges
+      default: *x-y.pokemon.florges.default
+      height: *x-y.pokemon.florges.height
+      weight: *x-y.pokemon.florges.weight
+      experience: *x-y.pokemon.florges.experience
+      types: *x-y.pokemon.florges.types
+      egg_groups: *x-y.pokemon.florges.types
+      mega: *x-y.pokemon.florges.mega
+      stats: *x-y.pokemon.florges.stats
+      abilities: *x-y.pokemon.florges.abilities
+      evolution_conditions: *x-y.pokemon.florges.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It claims exquisite flower gardens as its territory,
+          and it obtains power from basking in the energy
+          emitted by flowering plants.
+        alpha-sapphire: |
+          In times long past, governors of castles
+          would invite Florges to create flower gardens
+          to embellish the castle domains.
+      forms:
+        florges-red:
+          name: *x-y.pokemon.florges.forms.florges-red.name
+          form_name: *x-y.pokemon.florges.forms.florges-red.form_name
+          default: true
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-red.icon
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/florges-red.png
+            - omega-ruby-alpha-sapphire/shiny/florges-red.png
+        florges-yellow:
+          name: *x-y.pokemon.florges.forms.florges-yellow.name
+          form_name: *x-y.pokemon.florges.forms.florges-yellow.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-yellow.icon
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/florges-yellow.png
+            - omega-ruby-alpha-sapphire/shiny/florges-yellow.png
+        florges-orange:
+          name: *x-y.pokemon.florges.forms.florges-orange.name
+          form_name: *x-y.pokemon.florges.forms.florges-orange.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-orange.icon
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/florges-orange.png
+            - omega-ruby-alpha-sapphire/shiny/florges-orange.png
+        florges-blue:
+          name: *x-y.pokemon.florges.forms.florges-blue.name
+          form_name: *x-y.pokemon.florges.forms.florges-blue.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-blue.icon
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/florges-blue.png
+            - omega-ruby-alpha-sapphire/shiny/florges-blue.png
+        florges-white:
+          name: *x-y.pokemon.florges.forms.florges-white.name
+          form_name: *x-y.pokemon.florges.forms.florges-white.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-white.icon
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/florges-white.png
+            - omega-ruby-alpha-sapphire/shiny/florges-white.png
+sun-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers: *omega-ruby-alpha-sapphire.numbers
+  pokemon:
+    florges:
+      genus: *x-y.pokemon.florges.genus
+      evolution_parent: *x-y.pokemon.florges.evolution_parent
+      color: *x-y.pokemon.florges.color
+      shape: *x-y.pokemon.florges.shape
+      female_rate: *x-y.pokemon.florges.female_rate
+      capture_rate: *x-y.pokemon.florges.capture_rate
+      happiness: *x-y.pokemon.florges.happiness
+      baby: *x-y.pokemon.florges.baby
+      hatch_steps: *x-y.pokemon.florges.hatch_steps
+      growth_rate: *x-y.pokemon.florges.growth_rate
+      forms_switchable: *x-y.pokemon.florges.forms_switchable
+      forms_note: *x-y.pokemon.florges.forms_note
+      name: Florges
+      default: *x-y.pokemon.florges.default
+      height: *x-y.pokemon.florges.height
+      weight: *x-y.pokemon.florges.weight
+      experience: *x-y.pokemon.florges.experience
+      types: *x-y.pokemon.florges.types
+      egg_groups: *x-y.pokemon.florges.types
+      mega: *x-y.pokemon.florges.mega
+      stats: *x-y.pokemon.florges.stats
+      abilities: *x-y.pokemon.florges.abilities
+      evolution_conditions: *x-y.pokemon.florges.evolution_conditions
+      forms:
+        florges-red:
+          name: *x-y.pokemon.florges.forms.florges-red.name
+          form_name: *x-y.pokemon.florges.forms.florges-red.form_name
+          default: true
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-red.icon
+          sprites:
+            - sun-moon/florges-red.png
+            - sun-moon/shiny/florges-red.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-yellow:
+          name: *x-y.pokemon.florges.forms.florges-yellow.name
+          form_name: *x-y.pokemon.florges.forms.florges-yellow.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-yellow.icon
+          sprites:
+            - sun-moon/shiny/florges-yellow.png
+            - sun-moon/florges-yellow.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-orange:
+          name: *x-y.pokemon.florges.forms.florges-orange.name
+          form_name: *x-y.pokemon.florges.forms.florges-orange.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-orange.icon
+          sprites:
+            - sun-moon/florges-orange.png
+            - sun-moon/shiny/florges-orange.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-blue:
+          name: *x-y.pokemon.florges.forms.florges-blue.name
+          form_name: *x-y.pokemon.florges.forms.florges-blue.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-blue.icon
+          sprites:
+            - sun-moon/florges-blue.png
+            - sun-moon/shiny/florges-blue.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-white:
+          name: *x-y.pokemon.florges.forms.florges-white.name
+          form_name: *x-y.pokemon.florges.forms.florges-white.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-white.icon
+          sprites:
+            - sun-moon/shiny/florges-white.png
+            - sun-moon/florges-white.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+ultra-sun-ultra-moon:
+  name: *x-y.name
+  position: *x-y.position
+  numbers:
+    national: *x-y.numbers.national
+    updated-alola: 102
+    updated-melemele: 102
+    updated-ulaula: 47
+    updated-poni: 46
+  pokemon:
+    florges:
+      genus: *x-y.pokemon.florges.genus
+      evolution_parent: *x-y.pokemon.florges.evolution_parent
+      color: *x-y.pokemon.florges.color
+      shape: *x-y.pokemon.florges.shape
+      female_rate: *x-y.pokemon.florges.female_rate
+      capture_rate: *x-y.pokemon.florges.capture_rate
+      happiness: *x-y.pokemon.florges.happiness
+      baby: *x-y.pokemon.florges.baby
+      hatch_steps: *x-y.pokemon.florges.hatch_steps
+      growth_rate: *x-y.pokemon.florges.growth_rate
+      forms_switchable: *x-y.pokemon.florges.forms_switchable
+      forms_note: *x-y.pokemon.florges.forms_note
+      name: Florges
+      default: *x-y.pokemon.florges.default
+      height: *x-y.pokemon.florges.height
+      weight: *x-y.pokemon.florges.weight
+      experience: *x-y.pokemon.florges.experience
+      types: *x-y.pokemon.florges.types
+      egg_groups: *x-y.pokemon.florges.types
+      mega: *x-y.pokemon.florges.mega
+      stats: *x-y.pokemon.florges.stats
+      abilities: *x-y.pokemon.florges.abilities
+      evolution_conditions: *x-y.pokemon.florges.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It controls the flowers it grows. The petal
+          blizzards that Florges triggers are overwhelming
+          in their beauty and power.
+        ultra-moon: |-
+          Its life can span several hundred years. It’s said
+          to devote its entire life to protecting gardens.
+      forms:
+        florges-red:
+          name: *x-y.pokemon.florges.forms.florges-red.name
+          form_name: *x-y.pokemon.florges.forms.florges-red.form_name
+          default: true
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-red.icon
+          sprites:
+            - ultra-sun-ultra-moon/florges-red.png
+            - ultra-sun-ultra-moon/shiny/florges-red.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-yellow:
+          name: *x-y.pokemon.florges.forms.florges-yellow.name
+          form_name: *x-y.pokemon.florges.forms.florges-yellow.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-yellow.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/florges-yellow.png
+            - ultra-sun-ultra-moon/florges-yellow.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-orange:
+          name: *x-y.pokemon.florges.forms.florges-orange.name
+          form_name: *x-y.pokemon.florges.forms.florges-orange.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-orange.icon
+          sprites:
+            - ultra-sun-ultra-moon/florges-orange.png
+            - ultra-sun-ultra-moon/shiny/florges-orange.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-blue:
+          name: *x-y.pokemon.florges.forms.florges-blue.name
+          form_name: *x-y.pokemon.florges.forms.florges-blue.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-blue.icon
+          sprites:
+            - ultra-sun-ultra-moon/florges-blue.png
+            - ultra-sun-ultra-moon/shiny/florges-blue.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint
+        florges-white:
+          name: *x-y.pokemon.florges.forms.florges-white.name
+          form_name: *x-y.pokemon.florges.forms.florges-white.form_name
+          default: *x-y.pokemon.florges.forms.florges-yellow.default
+          battle_only: *x-y.pokemon.florges.forms.florges-red.battle_only
+          icon: *x-y.pokemon.florges.forms.florges-white.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/florges-white.png
+            - ultra-sun-ultra-moon/florges-white.png
+          footprint: *x-y.pokemon.florges.forms.florges-red.footprint

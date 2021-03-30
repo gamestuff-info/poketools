@@ -1,0 +1,215 @@
+red-blue: &red-blue
+  name: &red-blue.name FLASH
+  type: &red-blue.type normal
+  accuracy: &red-blue.accuracy 70
+  pp: &red-blue.pp 20
+  effect: 23
+  flags: &red-blue.flags
+    - protect
+    - reflectable
+    - mirror
+  categories: &red-blue.categories
+    - net-good-stats
+  hits: &red-blue.hits 1
+  turns: &red-blue.turns 1
+  stat_changes:
+    accuracy: 1
+  priority: &red-blue.priority 0
+  target: &red-blue.target selected-pokemon
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: &gold-silver.effect 24
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: &gold-silver.stat_changes
+    accuracy: -1
+  priority: *red-blue.priority
+  target: *red-blue.target
+  flavor_text: |
+    Blinds the foe to
+    reduce accuracy.
+crystal: *gold-silver
+ruby-sapphire: &ruby-sapphire
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *gold-silver.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  contest_type: &ruby-sapphire.contest_type beauty
+  contest_effect: 17
+  flavor_text: &ruby-sapphire.flavor_text |
+    Looses a powerful blast of
+    light that cuts accuracy.
+emerald: *ruby-sapphire
+colosseum:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *gold-silver.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+xd:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *gold-silver.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+firered-leafgreen:
+  name: *red-blue.name
+  type: *red-blue.type
+  accuracy: *red-blue.accuracy
+  pp: *red-blue.pp
+  effect: *gold-silver.effect
+  target: *red-blue.target
+  priority: *red-blue.priority
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  flavor_text: |
+    A blast of light
+    that cuts the foe's
+    accuracy. It also
+    illuminates caves.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name Flash
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: &diamond-pearl.accuracy 100
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 10
+  flavor_text: &diamond-pearl.flavor_text |
+    The user flashes a
+    light that cuts the
+    foe’s accuracy.
+    It can also be used
+    to illuminate caves.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user flashes a bright light that cuts
+    the target’s accuracy.
+    It can also be used to illuminate caves.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user flashes a bright light that cuts
+    the target’s accuracy.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 22
+  flavor_text: |
+    The user flashes a bright light that cuts the
+    target’s accuracy.
+    It can also be used to illuminate dark caves.
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  flags: *red-blue.flags
+  categories: *red-blue.categories
+  hits: *red-blue.hits
+  turns: *red-blue.turns
+  stat_changes: *gold-silver.stat_changes
+  type: *red-blue.type
+  pp: *red-blue.pp
+  accuracy: *diamond-pearl.accuracy
+  priority: *red-blue.priority
+  target: *red-blue.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *gold-silver.effect
+  flavor_text: |
+    The user flashes a bright light that cuts the
+    target’s accuracy.
+ultra-sun-ultra-moon: *sun-moon

@@ -1,0 +1,770 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name BEAUTIFLY
+  position: &ruby-sapphire.position 267
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 267
+    hoenn: 16
+  pokemon:
+    beautifly:
+      name: BEAUTIFLY
+      default: &ruby-sapphire.pokemon.beautifly.default true
+      forms_switchable: &ruby-sapphire.pokemon.beautifly.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.beautifly.capture_rate 45
+      experience: &ruby-sapphire.pokemon.beautifly.experience 161
+      types: &ruby-sapphire.pokemon.beautifly.types
+        - bug
+        - flying
+      stats: &ruby-sapphire.pokemon.beautifly.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.beautifly.growth_rate medium
+      female_rate: &ruby-sapphire.pokemon.beautifly.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.beautifly.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.beautifly.egg_groups
+        - bug
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.beautifly.wild_held_items.ruby
+          silverpowder: 5
+        sapphire: *ruby-sapphire.pokemon.beautifly.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.beautifly.happiness 70
+      abilities: &ruby-sapphire.pokemon.beautifly.abilities
+        swarm: &ruby-sapphire.pokemon.beautifly.abilities.swarm
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.beautifly.genus 'BUTTERFLY Pokémon'
+      height: &ruby-sapphire.pokemon.beautifly.height 10
+      weight: &ruby-sapphire.pokemon.beautifly.weight 284
+      flavor_text:
+        ruby: |
+          BEAUTIFLY's favorite food is the sweet
+          pollen of flowers. If you want to see
+          this POKéMON, just leave a potted
+          flower by an open window. BEAUTIFLY
+           is sure to come looking for pollen.
+        sapphire: |
+          BEAUTIFLY has a long mouth like a coiled
+          needle, which is very convenient for
+          collecting pollen from flowers.
+          This POKéMON rides the spring winds as
+          it flits around gathering pollen.
+      forms:
+        beautifly:
+          name: BEAUTIFLY
+          form_name: &ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only false
+          icon: &ruby-sapphire.pokemon.beautifly.forms.beautifly.icon gen5/beautifly-default.png
+          sprites:
+            - ruby-sapphire/beautifly-default.png
+            - ruby-sapphire/back/beautifly-default.png
+            - ruby-sapphire/shiny/beautifly-default.png
+          art: &ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+            - beautifly-default.png
+          footprint: &ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint beautifly.png
+          cry: &ruby-sapphire.pokemon.beautifly.forms.beautifly.cry gen5/beautifly-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.beautifly.evolution_parent silcoon/silcoon
+      evolution_conditions: &ruby-sapphire.pokemon.beautifly.evolution_conditions
+        level-up:
+          minimum_level: 10
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    beautifly:
+      name: BEAUTIFLY
+      default: *ruby-sapphire.pokemon.beautifly.default
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      experience: *ruby-sapphire.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      stats: *ruby-sapphire.pokemon.beautifly.stats
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.beautifly.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      abilities: *ruby-sapphire.pokemon.beautifly.abilities
+      genus: *ruby-sapphire.pokemon.beautifly.genus
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      flavor_text:
+        emerald: |
+          Its colorfully patterned wings are its
+          most prominent feature.  It flies through
+          flower-covered fields collecting pollen.
+          It attacks ferociously when angered.
+      forms:
+        beautifly:
+          name: BEAUTIFLY
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *ruby-sapphire.pokemon.beautifly.forms.beautifly.icon
+          sprites:
+            - emerald/beautifly-default.png
+            - emerald/shiny/beautifly-default.png
+            - emerald/animated/beautifly-default.webm
+            - emerald/animated/shiny/beautifly-default.webm
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 23
+  pokemon:
+    beautifly:
+      name: BEAUTIFLY
+      default: *ruby-sapphire.pokemon.beautifly.default
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      experience: *ruby-sapphire.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      stats: *ruby-sapphire.pokemon.beautifly.stats
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      abilities: *ruby-sapphire.pokemon.beautifly.abilities
+      genus: *ruby-sapphire.pokemon.beautifly.genus
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      forms:
+        beautifly:
+          name: BEAUTIFLY
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          sprites:
+            - colosseum/beautifly-default.png
+            - colosseum/shiny/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    beautifly:
+      name: BEAUTIFLY
+      default: *ruby-sapphire.pokemon.beautifly.default
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      experience: *ruby-sapphire.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      stats: *ruby-sapphire.pokemon.beautifly.stats
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      abilities: *ruby-sapphire.pokemon.beautifly.abilities
+      genus: *ruby-sapphire.pokemon.beautifly.genus
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      forms:
+        beautifly:
+          name: BEAUTIFLY
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          sprites:
+            - xd/beautifly-default.png
+            - xd/shiny/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    beautifly:
+      name: BEAUTIFLY
+      default: *ruby-sapphire.pokemon.beautifly.default
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      experience: *ruby-sapphire.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      stats: *ruby-sapphire.pokemon.beautifly.stats
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.beautifly.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.beautifly.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      abilities: *ruby-sapphire.pokemon.beautifly.abilities
+      genus: *ruby-sapphire.pokemon.beautifly.genus
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      flavor_text:
+        firered: |
+          Despite its appearance, it has an
+          aggressive nature. It attacks by jabbing
+          with its long, thin mouth.
+        leafgreen: |
+          Despite its appearance, it has an
+          aggressive nature. It attacks by jabbing
+          with its long, thin mouth.
+      forms:
+        beautifly:
+          name: BEAUTIFLY
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *ruby-sapphire.pokemon.beautifly.forms.beautifly.icon
+          sprites:
+            - firered-leafgreen/beautifly-default.png
+            - firered-leafgreen/back/beautifly-default.png
+            - firered-leafgreen/shiny/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Beautifly
+  position: &diamond-pearl.position 292
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    original-sinnoh: 50
+  pokemon:
+    beautifly:
+      genus: &diamond-pearl.pokemon.beautifly.genus 'Butterfly Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      shape: &diamond-pearl.pokemon.beautifly.shape bug-wings
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: &diamond-pearl.pokemon.beautifly.baby false
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      pal_park: &diamond-pearl.pokemon.beautifly.pal_park
+        area: forest
+        rate: 20
+        score: 70
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: &diamond-pearl.pokemon.beautifly.experience 178
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      stats: &diamond-pearl.pokemon.beautifly.stats
+        hp:
+          base_value: 60
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 65
+          effort_change: 0
+        special-attack:
+          base_value: 100
+          effort_change: 3
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.beautifly.abilities
+        swarm: *ruby-sapphire.pokemon.beautifly.abilities.swarm
+        rivalry:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+          shed-shell: 5
+        pearl: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      flavor_text:
+        diamond: |
+          It has an aggressive nature. It
+          stabs prey with its long, narrow
+          mouth to drain the prey’s fluids.
+        pearl: |
+          When flower fields bloom, it flits
+          around, collecting pollen. Despite
+          its appearance, it is savage.
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *ruby-sapphire.pokemon.beautifly.forms.beautifly.icon
+          sprites:
+            - diamond-pearl/back/female/beautifly-default.png
+            - diamond-pearl/back/shiny/beautifly-default.png
+            - diamond-pearl/back/beautifly-default.png
+            - diamond-pearl/female/beautifly-default.png
+            - diamond-pearl/shiny/female/beautifly-default.png
+            - diamond-pearl/shiny/beautifly-default.png
+            - diamond-pearl/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    extended-sinnoh: 50
+  pokemon:
+    beautifly:
+      genus: *diamond-pearl.pokemon.beautifly.genus
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      shape: *diamond-pearl.pokemon.beautifly.shape
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: *diamond-pearl.pokemon.beautifly.baby
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      pal_park: *diamond-pearl.pokemon.beautifly.pal_park
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: *diamond-pearl.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      stats: *diamond-pearl.pokemon.beautifly.stats
+      abilities: *diamond-pearl.pokemon.beautifly.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      flavor_text:
+        platinum: |
+          Despite its looks, it is aggressive.
+          It jabs with its long, thin mouth if
+          disturbed while collecting pollen.
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *ruby-sapphire.pokemon.beautifly.forms.beautifly.icon
+          sprites:
+            - platinum/back/female/beautifly-default.png
+            - platinum/back/shiny/beautifly-default.png
+            - platinum/back/beautifly-default.png
+            - platinum/female/beautifly-default.png
+            - platinum/shiny/female/beautifly-default.png
+            - platinum/shiny/beautifly-default.png
+            - platinum/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beautifly:
+      genus: *diamond-pearl.pokemon.beautifly.genus
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      shape: *diamond-pearl.pokemon.beautifly.shape
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: *diamond-pearl.pokemon.beautifly.baby
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      pal_park: *diamond-pearl.pokemon.beautifly.pal_park
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: *diamond-pearl.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      stats: *diamond-pearl.pokemon.beautifly.stats
+      abilities: *diamond-pearl.pokemon.beautifly.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Vibrantly patterned wings are its
+          prominent feature. It sucks sweet
+          flower nectar with its long mouth.
+        soulsilver: |
+          Vibrantly patterned wings are its
+          prominent feature. It sucks sweet
+          flower nectar with its long mouth.
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 2
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 5
+              range: 4-5
+          icon: *ruby-sapphire.pokemon.beautifly.forms.beautifly.icon
+          sprites:
+            - heartgold-soulsilver/back/female/beautifly-default.png
+            - heartgold-soulsilver/back/shiny/beautifly-default.png
+            - heartgold-soulsilver/back/beautifly-default.png
+            - heartgold-soulsilver/female/beautifly-default.png
+            - heartgold-soulsilver/shiny/female/beautifly-default.png
+            - heartgold-soulsilver/shiny/beautifly-default.png
+            - heartgold-soulsilver/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beautifly:
+      genus: *diamond-pearl.pokemon.beautifly.genus
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      color: &black-white.pokemon.beautifly.color yellow
+      shape: *diamond-pearl.pokemon.beautifly.shape
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: *diamond-pearl.pokemon.beautifly.baby
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: *diamond-pearl.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      stats: *diamond-pearl.pokemon.beautifly.stats
+      abilities: *diamond-pearl.pokemon.beautifly.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      flavor_text:
+        black: |
+          Despite its looks, it is aggressive.
+          It jabs with its long, thin mouth if
+          disturbed while collecting pollen.
+        white: |
+          Despite its looks, it is aggressive.
+          It jabs with its long, thin mouth if
+          disturbed while collecting pollen.
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *ruby-sapphire.pokemon.beautifly.forms.beautifly.icon
+          sprites:
+            - black-white/back/female/beautifly-default.png
+            - black-white/back/shiny/beautifly-default.png
+            - black-white/back/beautifly-default.png
+            - black-white/female/beautifly-default.png
+            - black-white/shiny/female/beautifly-default.png
+            - black-white/shiny/beautifly-default.png
+            - black-white/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beautifly:
+      genus: *diamond-pearl.pokemon.beautifly.genus
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      color: *black-white.pokemon.beautifly.color
+      shape: *diamond-pearl.pokemon.beautifly.shape
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: *diamond-pearl.pokemon.beautifly.baby
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: *diamond-pearl.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      stats: *diamond-pearl.pokemon.beautifly.stats
+      abilities: *diamond-pearl.pokemon.beautifly.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      flavor_text:
+        black-2: |
+          Despite its looks, it is aggressive.
+          It jabs with its long, thin mouth if
+          disturbed while collecting pollen.
+        white-2: |
+          Despite its looks, it is aggressive.
+          It jabs with its long, thin mouth if
+          disturbed while collecting pollen.
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *ruby-sapphire.pokemon.beautifly.forms.beautifly.icon
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *ruby-sapphire.pokemon.beautifly.forms.beautifly.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beautifly:
+      genus: *diamond-pearl.pokemon.beautifly.genus
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      color: *black-white.pokemon.beautifly.color
+      shape: *diamond-pearl.pokemon.beautifly.shape
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: *diamond-pearl.pokemon.beautifly.baby
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: *diamond-pearl.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      mega: &x-y.pokemon.beautifly.mega false
+      stats: *diamond-pearl.pokemon.beautifly.stats
+      abilities: *diamond-pearl.pokemon.beautifly.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      flavor_text:
+        x: |
+          Vibrantly patterned wings are its prominent feature.
+          It sucks sweet flower nectar with its long mouth.
+        'y': |
+          It has an aggressive nature. It stabs prey with its
+          long, narrow mouth to drain the prey’s fluids.
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: &x-y.pokemon.beautifly.forms.beautifly.icon beautifly-default.png
+          sprites:
+            - x-y/female/beautifly-default.png
+            - x-y/shiny/female/beautifly-default.png
+            - x-y/shiny/beautifly-default.png
+            - x-y/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: &x-y.pokemon.beautifly.forms.beautifly.cry beautifly-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 16
+  pokemon:
+    beautifly:
+      genus: *diamond-pearl.pokemon.beautifly.genus
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      color: *black-white.pokemon.beautifly.color
+      shape: *diamond-pearl.pokemon.beautifly.shape
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: *diamond-pearl.pokemon.beautifly.baby
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: *diamond-pearl.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      mega: *x-y.pokemon.beautifly.mega
+      stats: *diamond-pearl.pokemon.beautifly.stats
+      abilities: *diamond-pearl.pokemon.beautifly.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Beautifly’s favorite food is the sweet pollen of flowers. If you
+          want to see this Pokémon, just leave a potted flower by an
+          open window. Beautifly is sure to come looking for pollen.
+        alpha-sapphire: |
+          Beautifly has a long mouth like a coiled needle, which is very
+          convenient for collecting pollen from flowers. This Pokémon
+          rides the spring winds as it flits around gathering pollen.
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *x-y.pokemon.beautifly.forms.beautifly.icon
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *x-y.pokemon.beautifly.forms.beautifly.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/beautifly-default.png
+            - omega-ruby-alpha-sapphire/shiny/beautifly-default.png
+            - omega-ruby-alpha-sapphire/female/beautifly-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/beautifly-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beautifly:
+      genus: *diamond-pearl.pokemon.beautifly.genus
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      color: *black-white.pokemon.beautifly.color
+      shape: *diamond-pearl.pokemon.beautifly.shape
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: *diamond-pearl.pokemon.beautifly.baby
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: *diamond-pearl.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      mega: *x-y.pokemon.beautifly.mega
+      stats: *diamond-pearl.pokemon.beautifly.stats
+      abilities: *diamond-pearl.pokemon.beautifly.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *x-y.pokemon.beautifly.forms.beautifly.icon
+          sprites:
+            - sun-moon/female/beautifly-default.png
+            - sun-moon/shiny/female/beautifly-default.png
+            - sun-moon/shiny/beautifly-default.png
+            - sun-moon/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *x-y.pokemon.beautifly.forms.beautifly.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    beautifly:
+      genus: *diamond-pearl.pokemon.beautifly.genus
+      evolution_parent: *ruby-sapphire.pokemon.beautifly.evolution_parent
+      color: *black-white.pokemon.beautifly.color
+      shape: *diamond-pearl.pokemon.beautifly.shape
+      female_rate: *ruby-sapphire.pokemon.beautifly.female_rate
+      capture_rate: *ruby-sapphire.pokemon.beautifly.capture_rate
+      happiness: *ruby-sapphire.pokemon.beautifly.happiness
+      baby: *diamond-pearl.pokemon.beautifly.baby
+      hatch_steps: *ruby-sapphire.pokemon.beautifly.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.beautifly.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.beautifly.forms_switchable
+      name: Beautifly
+      default: *ruby-sapphire.pokemon.beautifly.default
+      height: *ruby-sapphire.pokemon.beautifly.height
+      weight: *ruby-sapphire.pokemon.beautifly.weight
+      experience: *diamond-pearl.pokemon.beautifly.experience
+      types: *ruby-sapphire.pokemon.beautifly.types
+      egg_groups: *ruby-sapphire.pokemon.beautifly.egg_groups
+      mega: *x-y.pokemon.beautifly.mega
+      stats: *diamond-pearl.pokemon.beautifly.stats
+      abilities: *diamond-pearl.pokemon.beautifly.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.beautifly.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.beautifly.evolution_conditions
+      forms:
+        beautifly:
+          name: Beautifly
+          form_name: *ruby-sapphire.pokemon.beautifly.forms.beautifly.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.beautifly.forms.beautifly.battle_only
+          icon: *x-y.pokemon.beautifly.forms.beautifly.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/beautifly-default.png
+            - ultra-sun-ultra-moon/shiny/female/beautifly-default.png
+            - ultra-sun-ultra-moon/shiny/beautifly-default.png
+            - ultra-sun-ultra-moon/beautifly-default.png
+          art: *ruby-sapphire.pokemon.beautifly.forms.beautifly.art
+          footprint: *ruby-sapphire.pokemon.beautifly.forms.beautifly.footprint
+          cry: *x-y.pokemon.beautifly.forms.beautifly.cry

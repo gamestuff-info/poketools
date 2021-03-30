@@ -1,0 +1,32 @@
+x-y: &x-y
+  name: &x-y.name 'King’s Shield'
+  categories: &x-y.categories
+    - unique
+  hits: &x-y.hits 1
+  turns: &x-y.turns 1
+  type: &x-y.type steel
+  pp: &x-y.pp 10
+  priority: &x-y.priority 4
+  target: &x-y.target user
+  damage_class: &x-y.damage_class status
+  effect: &x-y.effect 356
+  flavor_text: &x-y.flavor_text |
+    The user takes a defensive stance while it protects
+    itself from damage. It also harshly lowers the Attack
+    stat of any attacker who makes direct contact.
+omega-ruby-alpha-sapphire:
+  name: *x-y.name
+  categories: *x-y.categories
+  hits: *x-y.hits
+  turns: *x-y.turns
+  type: *x-y.type
+  pp: *x-y.pp
+  priority: *x-y.priority
+  target: *x-y.target
+  damage_class: *x-y.damage_class
+  effect: *x-y.effect
+  flavor_text: *x-y.flavor_text
+  contest_type: cool
+  contest_effect: 15
+sun-moon: *x-y
+ultra-sun-ultra-moon: *x-y

@@ -1,0 +1,992 @@
+red-blue:
+  name: &red-blue.name DRAGONAIR
+  position: &red-blue.position 148
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 148
+    kanto: 148
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: &red-blue.pokemon.dragonair.default true
+      capture_rate: &red-blue.pokemon.dragonair.capture_rate 45
+      experience: &red-blue.pokemon.dragonair.experience 144
+      types: &red-blue.pokemon.dragonair.types
+        - dragon
+      stats: &red-blue.pokemon.dragonair.stats
+        hp:
+          base_value: 61
+          effort_change: 61
+        attack:
+          base_value: 84
+          effort_change: 84
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 70
+          effort_change: 70
+        special:
+          base_value: 70
+          effort_change: 70
+      growth_rate: &red-blue.pokemon.dragonair.growth_rate slow
+      genus: &red-blue.pokemon.dragonair.genus 'DRAGON Pokémon'
+      height: &red-blue.pokemon.dragonair.height 39
+      weight: &red-blue.pokemon.dragonair.weight 1632
+      flavor_text:
+        red: |
+          A mystical POKéMON
+          that exudes a
+          gentle aura.
+          Has the ability
+          to change climate
+          conditions.
+        blue: |
+          A mystical POKéMON
+          that exudes a
+          gentle aura.
+          Has the ability
+           to change climate
+          conditions.
+      evolution_parent: &red-blue.pokemon.dragonair.evolution_parent dratini/dratini
+      evolution_conditions: &red-blue.pokemon.dragonair.evolution_conditions
+        level-up:
+          minimum_level: 30
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: &red-blue.pokemon.dragonair.forms.dragonair.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.dragonair.forms.dragonair.battle_only false
+          sprites:
+            - red-blue/dragonair-default.png
+            - red-blue/gray/dragonair-default.png
+            - red-blue/back/dragonair-default.png
+          art: &red-blue.pokemon.dragonair.forms.dragonair.art
+            - dragonair-default.png
+          cry: &red-blue.pokemon.dragonair.forms.dragonair.cry gen5/dragonair-default.webm
+          icon: &red-blue.pokemon.dragonair.forms.dragonair.icon gen1/snake.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: *red-blue.pokemon.dragonair.default
+      capture_rate: 27
+      experience: *red-blue.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      stats: *red-blue.pokemon.dragonair.stats
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      genus: *red-blue.pokemon.dragonair.genus
+      height: *red-blue.pokemon.dragonair.height
+      weight: *red-blue.pokemon.dragonair.weight
+      flavor_text:
+        yellow: |
+          According to a
+          witness, its body
+          was surrounded by
+          a strange aura
+           that gave it a
+          mystical look.
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          sprites:
+            - yellow/dragonair-default.png
+            - yellow/gray/dragonair-default.png
+            - yellow/back/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+          icon: *red-blue.pokemon.dragonair.forms.dragonair.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 147
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 241
+    original-johto-abc: 31
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: *red-blue.pokemon.dragonair.default
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      experience: *red-blue.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      stats: &gold-silver.pokemon.dragonair.stats
+        hp:
+          base_value: 61
+          effort_change: 61
+        attack:
+          base_value: 84
+          effort_change: 84
+        defense:
+          base_value: 65
+          effort_change: 65
+        speed:
+          base_value: 70
+          effort_change: 70
+        special-attack:
+          base_value: 70
+          effort_change: 70
+        special-defense:
+          base_value: 70
+          effort_change: 70
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      female_rate: &gold-silver.pokemon.dragonair.female_rate 50
+      hatch_steps: &gold-silver.pokemon.dragonair.hatch_steps 40
+      egg_groups: &gold-silver.pokemon.dragonair.egg_groups
+        - water1
+        - dragon
+      wild_held_items:
+        gold: &gold-silver.pokemon.dragonair.wild_held_items.gold
+          dragon-scale: 2
+        silver: *gold-silver.pokemon.dragonair.wild_held_items.gold
+      genus: *red-blue.pokemon.dragonair.genus
+      height: *red-blue.pokemon.dragonair.height
+      weight: &gold-silver.pokemon.dragonair.weight 163
+      flavor_text:
+        gold: |
+          They say that if
+          it emits an aura
+          from its whole
+          body, the weather
+          will begin to
+          change instantly.
+        silver: |
+          Its crystalline
+          orbs appear to
+          give this #MON
+          the power to
+          freely control the
+          weather.
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          sprites:
+            - gold-silver/dragonair-default.png
+            - gold-silver/back/dragonair-default.png
+            - gold-silver/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+          icon: &gold-silver.pokemon.dragonair.forms.dragonair.icon gen2/serpent.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: *red-blue.pokemon.dragonair.default
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      experience: *red-blue.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      stats: *gold-silver.pokemon.dragonair.stats
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.dragonair.wild_held_items.gold
+      genus: *red-blue.pokemon.dragonair.genus
+      height: *red-blue.pokemon.dragonair.height
+      weight: *gold-silver.pokemon.dragonair.weight
+      flavor_text:
+        crystal: |
+          It is called the
+          divine #MON.
+          When its entire
+          body brightens
+          slightly, the
+          weather changes.
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          sprites:
+            - crystal/dragonair-default.png
+            - crystal/back/dragonair-default.png
+            - crystal/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+          icon: *gold-silver.pokemon.dragonair.forms.dragonair.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 303
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: *red-blue.pokemon.dragonair.default
+      forms_switchable: &ruby-sapphire.pokemon.dragonair.forms_switchable false
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      experience: *red-blue.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      stats: &ruby-sapphire.pokemon.dragonair.stats
+        hp:
+          base_value: 61
+          effort_change: 0
+        attack:
+          base_value: 84
+          effort_change: 2
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 70
+          effort_change: 0
+        special-defense:
+          base_value: 61
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+          dragon-scale: 5
+        sapphire: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.dragonair.happiness 35
+      abilities: &ruby-sapphire.pokemon.dragonair.abilities
+        shed-skin: &ruby-sapphire.pokemon.dragonair.abilities.shed-skin
+          hidden: false
+          position: 1
+      genus: *red-blue.pokemon.dragonair.genus
+      height: &ruby-sapphire.pokemon.dragonair.height 40
+      weight: &ruby-sapphire.pokemon.dragonair.weight 165
+      flavor_text:
+        ruby: |
+          DRAGONAIR stores an enormous amount
+          of energy inside its body.
+          It is said to alter weather conditions
+          in its vicinity by discharging energy
+           from the crystals on its neck and tail.
+        sapphire: |
+          DRAGONAIR stores an enormous amount
+          of energy inside its body.
+           It is said to alter weather conditions
+          in its vicinity by discharging energy
+           from the crystals on its neck and tail.
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: &ruby-sapphire.pokemon.dragonair.forms.dragonair.icon gen5/dragonair-default.png
+          sprites:
+            - ruby-sapphire/dragonair-default.png
+            - ruby-sapphire/back/dragonair-default.png
+            - ruby-sapphire/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: &ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint dragonair.png
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: *red-blue.pokemon.dragonair.default
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      experience: *red-blue.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      stats: *ruby-sapphire.pokemon.dragonair.stats
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      abilities: *ruby-sapphire.pokemon.dragonair.abilities
+      genus: *red-blue.pokemon.dragonair.genus
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      flavor_text:
+        emerald: |
+          A DRAGONAIR stores an enormous amount of
+          energy inside its body.  It is said to alter
+          the weather around it by loosing energy
+          from the crystals on its neck and tail.
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *ruby-sapphire.pokemon.dragonair.forms.dragonair.icon
+          sprites:
+            - emerald/dragonair-default.png
+            - emerald/shiny/dragonair-default.png
+            - emerald/animated/dragonair-default.webm
+            - emerald/animated/shiny/dragonair-default.webm
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 73
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: *red-blue.pokemon.dragonair.default
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      experience: *red-blue.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      stats: *ruby-sapphire.pokemon.dragonair.stats
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      abilities: *ruby-sapphire.pokemon.dragonair.abilities
+      genus: *red-blue.pokemon.dragonair.genus
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          sprites:
+            - colosseum/dragonair-default.png
+            - colosseum/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: *red-blue.pokemon.dragonair.default
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      experience: *red-blue.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      stats: *ruby-sapphire.pokemon.dragonair.stats
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      abilities: *ruby-sapphire.pokemon.dragonair.abilities
+      genus: *red-blue.pokemon.dragonair.genus
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          sprites:
+            - xd/dragonair-default.png
+            - xd/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    dragonair:
+      name: DRAGONAIR
+      default: *red-blue.pokemon.dragonair.default
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      experience: *red-blue.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      stats: *ruby-sapphire.pokemon.dragonair.stats
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      wild_held_items:
+        firered: &firered-leafgreen.pokemon.dragonair.wild_held_items.firered
+          dragon-fang: 5
+        leafgreen: *firered-leafgreen.pokemon.dragonair.wild_held_items.firered
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      abilities: *ruby-sapphire.pokemon.dragonair.abilities
+      genus: *red-blue.pokemon.dragonair.genus
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      flavor_text:
+        firered: |
+          It is said to live in seas and lakes.
+          Even though it has no wings,  it has been
+          seen flying occasionally.
+        leafgreen: |
+          A mystical POKéMON that exudes a gentle
+          aura. It is said to have the ability to
+          change the weather.
+      forms:
+        dragonair:
+          name: DRAGONAIR
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *ruby-sapphire.pokemon.dragonair.forms.dragonair.icon
+          sprites:
+            - firered-leafgreen/dragonair-default.png
+            - firered-leafgreen/back/dragonair-default.png
+            - firered-leafgreen/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Dragonair
+  position: &diamond-pearl.position 180
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    dragonair:
+      genus: &diamond-pearl.pokemon.dragonair.genus 'Dragon Pokémon'
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      shape: &diamond-pearl.pokemon.dragonair.shape squiggle
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: &diamond-pearl.pokemon.dragonair.baby false
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      pal_park: &diamond-pearl.pokemon.dragonair.pal_park
+        area: pond
+        rate: 10
+        score: 80
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: &diamond-pearl.pokemon.dragonair.experience 147
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      stats: &diamond-pearl.pokemon.dragonair.stats
+        hp:
+          base_value: 61
+          effort_change: 0
+        attack:
+          base_value: 84
+          effort_change: 2
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 70
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.dragonair.abilities
+        shed-skin: *ruby-sapphire.pokemon.dragonair.abilities.shed-skin
+        marvel-scale:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        diamond: |
+          If its body takes on an aura, the
+          weather changes instantly. It is
+          said to live in seas and lakes.
+        pearl: |
+          If its body takes on an aura, the
+          weather changes instantly. It is
+          said to live in seas and lakes.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *ruby-sapphire.pokemon.dragonair.forms.dragonair.icon
+          sprites:
+            - diamond-pearl/back/dragonair-default.png
+            - diamond-pearl/back/shiny/dragonair-default.png
+            - diamond-pearl/dragonair-default.png
+            - diamond-pearl/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    dragonair:
+      genus: *diamond-pearl.pokemon.dragonair.genus
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      shape: *diamond-pearl.pokemon.dragonair.shape
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: *diamond-pearl.pokemon.dragonair.baby
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      pal_park: *diamond-pearl.pokemon.dragonair.pal_park
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: *diamond-pearl.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      stats: *diamond-pearl.pokemon.dragonair.stats
+      abilities: *diamond-pearl.pokemon.dragonair.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        platinum: |
+          If its body takes on an aura, the
+          weather changes instantly. It is
+          said to live in seas and lakes.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *ruby-sapphire.pokemon.dragonair.forms.dragonair.icon
+          sprites:
+            - platinum/back/dragonair-default.png
+            - platinum/back/shiny/dragonair-default.png
+            - platinum/dragonair-default.png
+            - platinum/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 247
+  pokemon:
+    dragonair:
+      genus: *diamond-pearl.pokemon.dragonair.genus
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      shape: *diamond-pearl.pokemon.dragonair.shape
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: *diamond-pearl.pokemon.dragonair.baby
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      pal_park: *diamond-pearl.pokemon.dragonair.pal_park
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: *diamond-pearl.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      stats: *diamond-pearl.pokemon.dragonair.stats
+      abilities: *diamond-pearl.pokemon.dragonair.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        heartgold: |
+          They say that if it emits an aura
+          from its whole body, the weather
+          will begin to change instantly.
+        soulsilver: |
+          Its crystalline orbs appear to
+          give this Pokémon the power to
+          freely control the weather.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-3
+            jump:
+              base_value: 4
+              range: 2-5
+          icon: *ruby-sapphire.pokemon.dragonair.forms.dragonair.icon
+          sprites:
+            - heartgold-soulsilver/back/dragonair-default.png
+            - heartgold-soulsilver/back/shiny/dragonair-default.png
+            - heartgold-soulsilver/dragonair-default.png
+            - heartgold-soulsilver/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    dragonair:
+      genus: *diamond-pearl.pokemon.dragonair.genus
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      color: &black-white.pokemon.dragonair.color blue
+      shape: *diamond-pearl.pokemon.dragonair.shape
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: *diamond-pearl.pokemon.dragonair.baby
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: *diamond-pearl.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      stats: *diamond-pearl.pokemon.dragonair.stats
+      abilities: *diamond-pearl.pokemon.dragonair.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        black: |
+          If its body takes on an aura, the
+          weather changes instantly. It is
+          said to live in seas and lakes.
+        white: |
+          If its body takes on an aura, the
+          weather changes instantly. It is
+          said to live in seas and lakes.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *ruby-sapphire.pokemon.dragonair.forms.dragonair.icon
+          sprites:
+            - black-white/back/dragonair-default.png
+            - black-white/back/shiny/dragonair-default.png
+            - black-white/dragonair-default.png
+            - black-white/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    dragonair:
+      genus: *diamond-pearl.pokemon.dragonair.genus
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      color: *black-white.pokemon.dragonair.color
+      shape: *diamond-pearl.pokemon.dragonair.shape
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: *diamond-pearl.pokemon.dragonair.baby
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: *diamond-pearl.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      stats: *diamond-pearl.pokemon.dragonair.stats
+      abilities: *diamond-pearl.pokemon.dragonair.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        black-2: |
+          If its body takes on an aura, the
+          weather changes instantly. It is
+          said to live in seas and lakes.
+        white-2: |
+          If its body takes on an aura, the
+          weather changes instantly. It is
+          said to live in seas and lakes.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *ruby-sapphire.pokemon.dragonair.forms.dragonair.icon
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *red-blue.pokemon.dragonair.forms.dragonair.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-mountain: 146
+  pokemon:
+    dragonair:
+      genus: *diamond-pearl.pokemon.dragonair.genus
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      color: *black-white.pokemon.dragonair.color
+      shape: *diamond-pearl.pokemon.dragonair.shape
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: *diamond-pearl.pokemon.dragonair.baby
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: *diamond-pearl.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      mega: &x-y.pokemon.dragonair.mega false
+      stats: *diamond-pearl.pokemon.dragonair.stats
+      abilities: *diamond-pearl.pokemon.dragonair.abilities
+      wild_held_items:
+        x: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+        'y': *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        x: |
+          Its crystalline orbs appear to give this Pokémon
+          the power to freely control the weather.
+        'y': |
+          A mystical Pokémon that exudes a gentle aura.
+          It is said to have the ability to change the weather.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: &x-y.pokemon.dragonair.forms.dragonair.icon dragonair-default.png
+          sprites:
+            - x-y/dragonair-default.png
+            - x-y/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: &x-y.pokemon.dragonair.forms.dragonair.cry dragonair-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    dragonair:
+      genus: *diamond-pearl.pokemon.dragonair.genus
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      color: *black-white.pokemon.dragonair.color
+      shape: *diamond-pearl.pokemon.dragonair.shape
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: *diamond-pearl.pokemon.dragonair.baby
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: *diamond-pearl.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      mega: *x-y.pokemon.dragonair.mega
+      stats: *diamond-pearl.pokemon.dragonair.stats
+      abilities: *diamond-pearl.pokemon.dragonair.abilities
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Dragonair stores an enormous amount of energy inside its
+          body. It is said to alter weather conditions in its vicinity by
+          discharging energy from the crystals on its neck and tail.
+        alpha-sapphire: |
+          Dragonair stores an enormous amount of energy inside
+          its body. It is said to alter weather conditions in its vicinity
+          by discharging energy from the crystals on its neck and tail.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *x-y.pokemon.dragonair.forms.dragonair.icon
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *x-y.pokemon.dragonair.forms.dragonair.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/dragonair-default.png
+            - omega-ruby-alpha-sapphire/shiny/dragonair-default.png
+      wild_held_items:
+        omega-ruby: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+        alpha-sapphire: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 282
+    original-poni: 97
+  pokemon:
+    dragonair:
+      genus: *diamond-pearl.pokemon.dragonair.genus
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      color: *black-white.pokemon.dragonair.color
+      shape: *diamond-pearl.pokemon.dragonair.shape
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: *diamond-pearl.pokemon.dragonair.baby
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: *diamond-pearl.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      mega: *x-y.pokemon.dragonair.mega
+      stats: *diamond-pearl.pokemon.dragonair.stats
+      abilities: *diamond-pearl.pokemon.dragonair.abilities
+      wild_held_items:
+        sun: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+        moon: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        sun: |-
+          It has long been thought that its crystalline
+          orbs are imbued with the power to control
+          the weather.
+        moon: |-
+          From time immemorial, it has been venerated by
+          agricultural peoples as an entity able to control
+          the weather.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *x-y.pokemon.dragonair.forms.dragonair.icon
+          sprites:
+            - sun-moon/dragonair-default.png
+            - sun-moon/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *x-y.pokemon.dragonair.forms.dragonair.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 380
+    updated-poni: 127
+  pokemon:
+    dragonair:
+      genus: *diamond-pearl.pokemon.dragonair.genus
+      evolution_parent: *red-blue.pokemon.dragonair.evolution_parent
+      color: *black-white.pokemon.dragonair.color
+      shape: *diamond-pearl.pokemon.dragonair.shape
+      female_rate: *gold-silver.pokemon.dragonair.female_rate
+      capture_rate: *red-blue.pokemon.dragonair.capture_rate
+      happiness: *ruby-sapphire.pokemon.dragonair.happiness
+      baby: *diamond-pearl.pokemon.dragonair.baby
+      hatch_steps: *gold-silver.pokemon.dragonair.hatch_steps
+      growth_rate: *red-blue.pokemon.dragonair.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.dragonair.forms_switchable
+      name: Dragonair
+      default: *red-blue.pokemon.dragonair.default
+      height: *ruby-sapphire.pokemon.dragonair.height
+      weight: *ruby-sapphire.pokemon.dragonair.weight
+      experience: *diamond-pearl.pokemon.dragonair.experience
+      types: *red-blue.pokemon.dragonair.types
+      egg_groups: *gold-silver.pokemon.dragonair.egg_groups
+      mega: *x-y.pokemon.dragonair.mega
+      stats: *diamond-pearl.pokemon.dragonair.stats
+      abilities: *diamond-pearl.pokemon.dragonair.abilities
+      wild_held_items:
+        ultra-sun: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+        ultra-moon: *ruby-sapphire.pokemon.dragonair.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.dragonair.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Lakes where Dragonair live are filled with
+          offerings from people, because they believe this
+          Pokémon is able to control the weather.
+        ultra-moon: |-
+          Some say that if you see it at the start of the
+          year, flying through the sky and twisting its
+          body, you’ll be healthy all year long.
+      forms:
+        dragonair:
+          name: Dragonair
+          form_name: *red-blue.pokemon.dragonair.forms.dragonair.form_name
+          default: true
+          battle_only: *red-blue.pokemon.dragonair.forms.dragonair.battle_only
+          icon: *x-y.pokemon.dragonair.forms.dragonair.icon
+          sprites:
+            - ultra-sun-ultra-moon/dragonair-default.png
+            - ultra-sun-ultra-moon/shiny/dragonair-default.png
+          art: *red-blue.pokemon.dragonair.forms.dragonair.art
+          footprint: *ruby-sapphire.pokemon.dragonair.forms.dragonair.footprint
+          cry: *x-y.pokemon.dragonair.forms.dragonair.cry

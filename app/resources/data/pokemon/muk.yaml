@@ -1,0 +1,1079 @@
+red-blue:
+  name: &red-blue.name MUK
+  position: &red-blue.position 89
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 89
+    kanto: 89
+  pokemon:
+    muk:
+      name: MUK
+      default: &red-blue.pokemon.muk.default true
+      capture_rate: &red-blue.pokemon.muk.capture_rate 75
+      experience: &red-blue.pokemon.muk.experience 157
+      types: &red-blue.pokemon.muk.types
+        - poison
+      stats: &red-blue.pokemon.muk.stats
+        hp:
+          base_value: 105
+          effort_change: 105
+        attack:
+          base_value: 105
+          effort_change: 105
+        defense:
+          base_value: 75
+          effort_change: 75
+        speed:
+          base_value: 50
+          effort_change: 50
+        special:
+          base_value: 65
+          effort_change: 65
+      growth_rate: &red-blue.pokemon.muk.growth_rate medium
+      genus: &red-blue.pokemon.muk.genus 'SLUDGE Pokémon'
+      height: &red-blue.pokemon.muk.height 11
+      weight: &red-blue.pokemon.muk.weight 2993
+      flavor_text:
+        red: |
+          Thickly covered
+          with a filthy,
+          vile sludge. It
+          is so toxic, even
+           its footprints
+          contain poison.
+        blue: |
+          Thickly covered
+          with a filthy,
+          vile sludge. It
+          is so toxic, even
+           its footprints
+          contain poison.
+      evolution_parent: &red-blue.pokemon.muk.evolution_parent grimer/grimer
+      evolution_conditions: &red-blue.pokemon.muk.evolution_conditions
+        level-up:
+          minimum_level: 38
+      forms:
+        muk:
+          name: MUK
+          form_name: &red-blue.pokemon.muk.forms.muk.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.muk.forms.muk.battle_only false
+          sprites:
+            - red-blue/muk-default.png
+            - red-blue/gray/muk-default.png
+            - red-blue/back/muk-default.png
+          art: &red-blue.pokemon.muk.forms.muk.art
+            - muk-default.png
+          cry: &red-blue.pokemon.muk.forms.muk.cry gen5/muk-default.webm
+          icon: &red-blue.pokemon.muk.forms.muk.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    muk:
+      name: MUK
+      default: *red-blue.pokemon.muk.default
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      experience: *red-blue.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      stats: *red-blue.pokemon.muk.stats
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      genus: *red-blue.pokemon.muk.genus
+      height: *red-blue.pokemon.muk.height
+      weight: *red-blue.pokemon.muk.weight
+      flavor_text:
+        yellow: |
+          Smells so awful,
+          it can cause
+          fainting. Through
+          degeneration,  it
+          lost its sense of
+          smell.
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      forms:
+        muk:
+          name: MUK
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          sprites:
+            - yellow/muk-default.png
+            - yellow/gray/muk-default.png
+            - yellow/back/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+          icon: *red-blue.pokemon.muk.forms.muk.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 88
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 116
+    original-johto-abc: 125
+  pokemon:
+    muk:
+      name: MUK
+      default: *red-blue.pokemon.muk.default
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      experience: *red-blue.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      stats: &gold-silver.pokemon.muk.stats
+        hp:
+          base_value: 105
+          effort_change: 105
+        attack:
+          base_value: 105
+          effort_change: 105
+        defense:
+          base_value: 75
+          effort_change: 75
+        speed:
+          base_value: 50
+          effort_change: 50
+        special-attack:
+          base_value: 65
+          effort_change: 65
+        special-defense:
+          base_value: 100
+          effort_change: 65
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      female_rate: &gold-silver.pokemon.muk.female_rate 50
+      hatch_steps: &gold-silver.pokemon.muk.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.muk.egg_groups
+        - indeterminate
+      wild_held_items:
+        gold: &gold-silver.pokemon.muk.wild_held_items.gold
+          nugget: 2
+        silver: *gold-silver.pokemon.muk.wild_held_items.gold
+      genus: *red-blue.pokemon.muk.genus
+      height: *red-blue.pokemon.muk.height
+      weight: &gold-silver.pokemon.muk.weight 299
+      flavor_text:
+        gold: |
+          They love to gath-
+          er in smelly areas
+          where sludge ac-
+          cumulates, making
+          the stench around
+          them worse.
+        silver: |
+          Its body is made
+          of a powerful poi-
+          son. Touching it
+          accidentally will
+          cause a fever that
+          requires bed rest.
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      forms:
+        muk:
+          name: MUK
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          sprites:
+            - gold-silver/muk-default.png
+            - gold-silver/back/muk-default.png
+            - gold-silver/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+          icon: &gold-silver.pokemon.muk.forms.muk.icon gen2/blob.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    muk:
+      name: MUK
+      default: *red-blue.pokemon.muk.default
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      experience: *red-blue.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      stats: *gold-silver.pokemon.muk.stats
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.muk.wild_held_items.gold
+      genus: *red-blue.pokemon.muk.genus
+      height: *red-blue.pokemon.muk.height
+      weight: *gold-silver.pokemon.muk.weight
+      flavor_text:
+        crystal: |
+          As it moves, a
+          very strong poison
+          leaks from it,
+          making the ground
+          there barren for
+          three years.
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      forms:
+        muk:
+          name: MUK
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          sprites:
+            - crystal/muk-default.png
+            - crystal/back/muk-default.png
+            - crystal/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+          icon: *gold-silver.pokemon.muk.forms.muk.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 107
+  pokemon:
+    muk:
+      name: MUK
+      default: *red-blue.pokemon.muk.default
+      forms_switchable: &ruby-sapphire.pokemon.muk.forms_switchable false
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      experience: *red-blue.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      stats: &ruby-sapphire.pokemon.muk.stats
+        hp:
+          base_value: 105
+          effort_change: 1
+        attack:
+          base_value: 105
+          effort_change: 1
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 105
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.muk.wild_held_items.ruby
+          nugget: 5
+        sapphire: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.muk.happiness 70
+      abilities: &ruby-sapphire.pokemon.muk.abilities
+        stench: &ruby-sapphire.pokemon.muk.abilities.stench
+          hidden: &ruby-sapphire.pokemon.muk.abilities.stench.hidden false
+          position: 1
+        sticky-hold: &ruby-sapphire.pokemon.muk.abilities.sticky-hold
+          hidden: *ruby-sapphire.pokemon.muk.abilities.stench.hidden
+          position: 2
+      genus: *red-blue.pokemon.muk.genus
+      height: &ruby-sapphire.pokemon.muk.height 12
+      weight: &ruby-sapphire.pokemon.muk.weight 300
+      flavor_text:
+        ruby: |
+          From MUK's body seeps a foul fluid that
+          gives off a nose-bendingly horrible
+          stench.
+          Just one drop of this POKéMON's body
+          fluid can turn a pool stagnant and
+          rancid.
+        sapphire: |
+          This POKéMON's favorite food is
+          anything that is repugnantly filthy.
+           In dirty towns where people think
+          nothing of throwing away litter on the
+           streets, MUK are certain to gather.
+      forms:
+        muk:
+          name: MUK
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: &ruby-sapphire.pokemon.muk.forms.muk.icon gen5/muk-default.png
+          sprites:
+            - ruby-sapphire/muk-default.png
+            - ruby-sapphire/back/muk-default.png
+            - ruby-sapphire/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: &ruby-sapphire.pokemon.muk.forms.muk.footprint muk.png
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    muk:
+      name: MUK
+      default: *red-blue.pokemon.muk.default
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      experience: *red-blue.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      stats: *ruby-sapphire.pokemon.muk.stats
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      abilities: *ruby-sapphire.pokemon.muk.abilities
+      genus: *red-blue.pokemon.muk.genus
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      flavor_text:
+        emerald: |
+          It prefers warm and humid habitats.
+          In the summertime, the toxic substances
+          in its body intensify, making MUK reek like
+          putrid kitchen garbage.
+      forms:
+        muk:
+          name: MUK
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *ruby-sapphire.pokemon.muk.forms.muk.icon
+          sprites:
+            - emerald/muk-default.png
+            - emerald/shiny/muk-default.png
+            - emerald/animated/muk-default.webm
+            - emerald/animated/shiny/muk-default.webm
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 212
+  pokemon:
+    muk:
+      name: MUK
+      default: *red-blue.pokemon.muk.default
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      experience: *red-blue.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      stats: *ruby-sapphire.pokemon.muk.stats
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      abilities: *ruby-sapphire.pokemon.muk.abilities
+      genus: *red-blue.pokemon.muk.genus
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      forms:
+        muk:
+          name: MUK
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          sprites:
+            - colosseum/muk-default.png
+            - colosseum/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    muk:
+      name: MUK
+      default: *red-blue.pokemon.muk.default
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      experience: *red-blue.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      stats: *ruby-sapphire.pokemon.muk.stats
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      abilities: *ruby-sapphire.pokemon.muk.abilities
+      genus: *red-blue.pokemon.muk.genus
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      forms:
+        muk:
+          name: MUK
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          sprites:
+            - xd/muk-default.png
+            - xd/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    muk:
+      name: MUK
+      default: *red-blue.pokemon.muk.default
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      experience: *red-blue.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      stats: *ruby-sapphire.pokemon.muk.stats
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      abilities: *ruby-sapphire.pokemon.muk.abilities
+      genus: *red-blue.pokemon.muk.genus
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      flavor_text:
+        firered: |
+          It is usually undetectable because it
+          blends in with the ground.  Touching it can
+          cause terrible poisoning.
+        leafgreen: |
+          Thickly covered with a filthy, vile
+          sludge. It is so toxic, even its footprints
+          contain poison.
+      forms:
+        muk:
+          name: MUK
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *ruby-sapphire.pokemon.muk.forms.muk.icon
+          sprites:
+            - firered-leafgreen/muk-default.png
+            - firered-leafgreen/back/muk-default.png
+            - firered-leafgreen/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Muk
+  position: &diamond-pearl.position 97
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    muk:
+      genus: &diamond-pearl.pokemon.muk.genus 'Sludge Pokémon'
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      shape: &diamond-pearl.pokemon.muk.shape arms
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: &diamond-pearl.pokemon.muk.baby false
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      pal_park: &diamond-pearl.pokemon.muk.pal_park
+        area: field
+        rate: 20
+        score: 70
+      name: Muk
+      default: *red-blue.pokemon.muk.default
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: &diamond-pearl.pokemon.muk.experience 175
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      stats: &diamond-pearl.pokemon.muk.stats
+        hp:
+          base_value: 105
+          effort_change: 1
+        attack:
+          base_value: 105
+          effort_change: 1
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 65
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.muk.abilities
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text:
+        diamond: |
+          A toxic fluid seeps from its body.
+          The fluid instantly kills plants and
+          trees on contact.
+        pearl: |
+          A toxic fluid seeps from its body.
+          The fluid instantly kills plants and
+          trees on contact.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *ruby-sapphire.pokemon.muk.forms.muk.icon
+          sprites:
+            - diamond-pearl/muk-default.png
+            - diamond-pearl/back/muk-default.png
+            - diamond-pearl/back/shiny/muk-default.png
+            - diamond-pearl/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    muk:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      pal_park: *diamond-pearl.pokemon.muk.pal_park
+      name: Muk
+      default: *red-blue.pokemon.muk.default
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: *ruby-sapphire.pokemon.muk.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text:
+        platinum: |
+          A toxic fluid seeps from its body.
+          The fluid instantly kills plants and
+          trees on contact.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *ruby-sapphire.pokemon.muk.forms.muk.icon
+          sprites:
+            - platinum/muk-default.png
+            - platinum/back/muk-default.png
+            - platinum/back/shiny/muk-default.png
+            - platinum/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 118
+  pokemon:
+    muk:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      pal_park: *diamond-pearl.pokemon.muk.pal_park
+      name: Muk
+      default: *red-blue.pokemon.muk.default
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: *ruby-sapphire.pokemon.muk.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text:
+        heartgold: |
+          They love to gather in smelly areas
+          where sludge accumulates, making
+          the stench around them worse.
+        soulsilver: |
+          Its body is made of a powerful poison.
+          Touching it accidentally will
+          cause a fever that requires bed rest.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-5
+            power:
+              base_value: 4
+              range: 1-4
+            skill:
+              base_value: 1
+              range: 1-5
+            stamina:
+              base_value: 5
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2-5
+          icon: *ruby-sapphire.pokemon.muk.forms.muk.icon
+          sprites:
+            - heartgold-soulsilver/muk-default.png
+            - heartgold-soulsilver/back/muk-default.png
+            - heartgold-soulsilver/back/shiny/muk-default.png
+            - heartgold-soulsilver/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    muk:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      color: &black-white.pokemon.muk.color purple
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      name: Muk
+      default: *red-blue.pokemon.muk.default
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: &black-white.pokemon.muk.abilities
+        stench: *ruby-sapphire.pokemon.muk.abilities.stench
+        sticky-hold: *ruby-sapphire.pokemon.muk.abilities.sticky-hold
+        poison-touch: &black-white.pokemon.muk.abilities.poison-touch
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.muk.wild_held_items.ruby
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text:
+        black: |
+          A toxic fluid seeps from its body.
+          The fluid instantly kills plants and
+          trees on contact.
+        white: |
+          A toxic fluid seeps from its body.
+          The fluid instantly kills plants and
+          trees on contact.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *ruby-sapphire.pokemon.muk.forms.muk.icon
+          sprites:
+            - black-white/muk-default.png
+            - black-white/back/muk-default.png
+            - black-white/back/shiny/muk-default.png
+            - black-white/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-unova: 65
+  pokemon:
+    muk:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      color: *black-white.pokemon.muk.color
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      name: Muk
+      default: *red-blue.pokemon.muk.default
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: *black-white.pokemon.muk.abilities
+      wild_held_items:
+        black-2: &black-2-white-2.pokemon.muk.wild_held_items.black-2
+          toxic-orb: 1
+          black-sludge: &black-2-white-2.pokemon.muk.wild_held_items.black-2.black-sludge 50
+        white-2: *black-2-white-2.pokemon.muk.wild_held_items.black-2
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text:
+        black-2: |
+          It’s so stinky! Muk’s body contains
+          toxic elements, and any plant will
+          wilt when it passes by.
+        white-2: |
+          It’s so stinky! Muk’s body contains
+          toxic elements, and any plant will
+          wilt when it passes by.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *ruby-sapphire.pokemon.muk.forms.muk.icon
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *red-blue.pokemon.muk.forms.muk.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    muk:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      color: *black-white.pokemon.muk.color
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      name: Muk
+      default: *red-blue.pokemon.muk.default
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      mega: &x-y.pokemon.muk.mega false
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: *black-white.pokemon.muk.abilities
+      wild_held_items:
+        x: &x-y.pokemon.muk.wild_held_items.x
+          black-sludge: *black-2-white-2.pokemon.muk.wild_held_items.black-2.black-sludge
+        'y': *x-y.pokemon.muk.wild_held_items.x
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text:
+        x: |
+          They love to gather in smelly areas where sludge
+          accumulates, making the stench around
+          them worse.
+        'y': |
+          A toxic fluid seeps from its body. The fluid instantly
+          kills plants and trees on contact.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: &x-y.pokemon.muk.forms.muk.icon muk-default.png
+          sprites:
+            - x-y/muk-default.png
+            - x-y/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: &x-y.pokemon.muk.forms.muk.cry muk-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 112
+  pokemon:
+    muk:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      color: *black-white.pokemon.muk.color
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      name: Muk
+      default: *red-blue.pokemon.muk.default
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      mega: *x-y.pokemon.muk.mega
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: *black-white.pokemon.muk.abilities
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          From Muk’s body seeps a foul fluid that gives off a
+          nose-bendingly horrible stench. Just one drop of this
+          Pokémon’s body fluid can turn a pool stagnant and rancid.
+        alpha-sapphire: |
+          This Pokémon’s favorite food is anything that is repugnantly
+          filthy. In dirty towns where people think nothing of throwing
+          away litter on the streets, Muk are certain to gather.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *x-y.pokemon.muk.forms.muk.icon
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *x-y.pokemon.muk.forms.muk.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/muk-default.png
+            - omega-ruby-alpha-sapphire/shiny/muk-default.png
+      wild_held_items:
+        omega-ruby: *x-y.pokemon.muk.wild_held_items.x
+        alpha-sapphire: *x-y.pokemon.muk.wild_held_items.x
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 51
+    original-melemele: 51
+    original-ulaula: 29
+  pokemon:
+    muk:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      color: *black-white.pokemon.muk.color
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      name: Muk
+      default: &sun-moon.pokemon.muk.default false
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      mega: *x-y.pokemon.muk.mega
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: *black-white.pokemon.muk.abilities
+      wild_held_items: &sun-moon.pokemon.muk.wild_held_items
+        sun: *x-y.pokemon.muk.wild_held_items.x
+        moon: *x-y.pokemon.muk.wild_held_items.x
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text: &sun-moon.pokemon.muk.flavor_text
+        sun: |-
+          The stench it gives off will make your nose
+          scrunch up. Still, there are Muk fans who think
+          that’s a good thing.
+        moon: |-
+          After recent environmental improvements, this
+          Pokémon is now hardly seen at all. People
+          speculate that it may go extinct at some point.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *x-y.pokemon.muk.forms.muk.icon
+          sprites:
+            - sun-moon/muk-default.png
+            - sun-moon/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *x-y.pokemon.muk.forms.muk.cry
+    muk-alola:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      color: *black-white.pokemon.muk.color
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      name: &sun-moon.pokemon.muk-alola.name 'Alolan Muk'
+      default: *red-blue.pokemon.muk.default
+      height: &sun-moon.pokemon.muk-alola.height 10
+      weight: &sun-moon.pokemon.muk-alola.weight 520
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: &sun-moon.pokemon.muk-alola.types
+        - poison
+        - dark
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      mega: *x-y.pokemon.muk.mega
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: &sun-moon.pokemon.muk-alola.abilities
+        poison-touch: *ruby-sapphire.pokemon.muk.abilities.stench
+        gluttony: *ruby-sapphire.pokemon.muk.abilities.sticky-hold
+        power-of-alchemy: *black-white.pokemon.muk.abilities.poison-touch
+      wild_held_items: *sun-moon.pokemon.muk.wild_held_items
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text: *sun-moon.pokemon.muk.flavor_text
+      forms:
+        muk-alola:
+          name: 'Alolan Muk'
+          form_name: &sun-moon.pokemon.muk-alola.forms.muk-alola.form_name 'Alola Form'
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: &sun-moon.pokemon.muk-alola.forms.muk-alola.icon muk-alola.png
+          sprites:
+            - sun-moon/muk-alola.png
+            - sun-moon/shiny/muk-alola.png
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *x-y.pokemon.muk.forms.muk.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 58
+    updated-melemele: 58
+    updated-ulaula: 29
+  pokemon:
+    muk:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      color: *black-white.pokemon.muk.color
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      name: Muk
+      default: *sun-moon.pokemon.muk.default
+      height: *ruby-sapphire.pokemon.muk.height
+      weight: *ruby-sapphire.pokemon.muk.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *red-blue.pokemon.muk.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      mega: *x-y.pokemon.muk.mega
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: *black-white.pokemon.muk.abilities
+      wild_held_items: &ultra-sun-ultra-moon.pokemon.muk.wild_held_items
+        ultra-sun: *x-y.pokemon.muk.wild_held_items.x
+        ultra-moon: *x-y.pokemon.muk.wild_held_items.x
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.muk.flavor_text
+        ultra-sun: |-
+          Their food sources have decreased, and their
+          numbers have declined sharply. Sludge ponds
+          are being built to prevent their extinction.
+        ultra-moon: |-
+          Because they scatter germs everywhere,
+          they’ve long been targeted for extermination,
+          leading to a steep decline in their population.
+      forms:
+        muk:
+          name: Muk
+          form_name: *red-blue.pokemon.muk.forms.muk.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *x-y.pokemon.muk.forms.muk.icon
+          sprites:
+            - ultra-sun-ultra-moon/muk-default.png
+            - ultra-sun-ultra-moon/shiny/muk-default.png
+          art: *red-blue.pokemon.muk.forms.muk.art
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *x-y.pokemon.muk.forms.muk.cry
+    muk-alola:
+      genus: *diamond-pearl.pokemon.muk.genus
+      evolution_parent: *red-blue.pokemon.muk.evolution_parent
+      color: *black-white.pokemon.muk.color
+      shape: *diamond-pearl.pokemon.muk.shape
+      female_rate: *gold-silver.pokemon.muk.female_rate
+      capture_rate: *red-blue.pokemon.muk.capture_rate
+      happiness: *ruby-sapphire.pokemon.muk.happiness
+      baby: *diamond-pearl.pokemon.muk.baby
+      hatch_steps: *gold-silver.pokemon.muk.hatch_steps
+      growth_rate: *red-blue.pokemon.muk.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.muk.forms_switchable
+      name: *sun-moon.pokemon.muk-alola.name
+      default: *red-blue.pokemon.muk.default
+      height: *sun-moon.pokemon.muk-alola.height
+      weight: *sun-moon.pokemon.muk-alola.weight
+      experience: *diamond-pearl.pokemon.muk.experience
+      types: *sun-moon.pokemon.muk-alola.types
+      egg_groups: *gold-silver.pokemon.muk.egg_groups
+      mega: *x-y.pokemon.muk.mega
+      stats: *diamond-pearl.pokemon.muk.stats
+      abilities: *sun-moon.pokemon.muk-alola.abilities
+      wild_held_items: *ultra-sun-ultra-moon.pokemon.muk.wild_held_items
+      evolution_conditions: *red-blue.pokemon.muk.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.muk.flavor_text
+      forms:
+        muk-alola:
+          name: 'Alolan Muk'
+          form_name: *sun-moon.pokemon.muk-alola.forms.muk-alola.form_name
+          default: true
+          battle_only: *red-blue.pokemon.muk.forms.muk.battle_only
+          icon: *sun-moon.pokemon.muk-alola.forms.muk-alola.icon
+          sprites:
+            - ultra-sun-ultra-moon/muk-alola.png
+            - ultra-sun-ultra-moon/shiny/muk-alola.png
+          footprint: *ruby-sapphire.pokemon.muk.forms.muk.footprint
+          cry: *x-y.pokemon.muk.forms.muk.cry

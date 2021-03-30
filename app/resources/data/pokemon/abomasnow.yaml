@@ -1,0 +1,696 @@
+diamond-pearl:
+  name: &diamond-pearl.name Abomasnow
+  position: &diamond-pearl.position 479
+  numbers:
+    national: &diamond-pearl.numbers.national 460
+    original-sinnoh: 143
+  pokemon:
+    abomasnow:
+      genus: &diamond-pearl.pokemon.abomasnow.genus 'Frost Tree Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.abomasnow.evolution_parent snover/snover
+      shape: &diamond-pearl.pokemon.abomasnow.shape upright
+      female_rate: &diamond-pearl.pokemon.abomasnow.female_rate 50
+      capture_rate: &diamond-pearl.pokemon.abomasnow.capture_rate 60
+      happiness: &diamond-pearl.pokemon.abomasnow.happiness 70
+      baby: &diamond-pearl.pokemon.abomasnow.baby false
+      hatch_steps: &diamond-pearl.pokemon.abomasnow.hatch_steps 20
+      growth_rate: &diamond-pearl.pokemon.abomasnow.growth_rate slow
+      forms_switchable: &diamond-pearl.pokemon.abomasnow.forms_switchable false
+      pal_park: &diamond-pearl.pokemon.abomasnow.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Abomasnow
+      default: &diamond-pearl.pokemon.abomasnow.default true
+      height: &diamond-pearl.pokemon.abomasnow.height 22
+      weight: &diamond-pearl.pokemon.abomasnow.weight 1355
+      experience: &diamond-pearl.pokemon.abomasnow.experience 173
+      types: &diamond-pearl.pokemon.abomasnow.types
+        - grass
+        - ice
+      egg_groups: &diamond-pearl.pokemon.abomasnow.egg_groups
+        - monster
+        - plant
+      stats: &diamond-pearl.pokemon.abomasnow.stats
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 92
+          effort_change: 1
+        defense:
+          base_value: 75
+          effort_change: 0
+        speed:
+          base_value: 60
+          effort_change: 0
+        special-attack:
+          base_value: 92
+          effort_change: 1
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.abomasnow.abilities
+        snow-warning: &diamond-pearl.pokemon.abomasnow.abilities.snow-warning
+          hidden: false
+          position: 1
+        soundproof:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+          never-melt-ice: 5
+        pearl: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+      evolution_conditions: &diamond-pearl.pokemon.abomasnow.evolution_conditions
+        level-up:
+          minimum_level: 40
+      flavor_text:
+        diamond: |
+          It whips up blizzards in mountains
+          that are always buried in snow.
+          It is the abominable snowman.
+        pearl: |
+          It blankets wide areas in snow by
+          whipping up blizzards. It is also
+          known as “The Ice Monster.”
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: &diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name 'Default Form'
+          default: true
+          battle_only: &diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only false
+          icon: &diamond-pearl.pokemon.abomasnow.forms.abomasnow.icon gen5/abomasnow-default.png
+          sprites:
+            - diamond-pearl/abomasnow-default.png
+            - diamond-pearl/back/abomasnow-default.png
+            - diamond-pearl/back/shiny/abomasnow-default.png
+            - diamond-pearl/female/abomasnow-default.png
+            - diamond-pearl/shiny/abomasnow-default.png
+            - diamond-pearl/shiny/female/abomasnow-default.png
+          art: &diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+            - abomasnow-default.png
+          footprint: &diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint abomasnow.png
+          cry: &diamond-pearl.pokemon.abomasnow.forms.abomasnow.cry gen5/abomasnow-default.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 143
+  pokemon:
+    abomasnow:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.abomasnow.forms_switchable
+      pal_park: *diamond-pearl.pokemon.abomasnow.pal_park
+      name: Abomasnow
+      default: *diamond-pearl.pokemon.abomasnow.default
+      height: *diamond-pearl.pokemon.abomasnow.height
+      weight: *diamond-pearl.pokemon.abomasnow.weight
+      experience: *diamond-pearl.pokemon.abomasnow.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      stats: *diamond-pearl.pokemon.abomasnow.stats
+      abilities: *diamond-pearl.pokemon.abomasnow.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      flavor_text:
+        platinum: |
+          They appear when the snow flowers
+          bloom. When the petals fall, they
+          retreat to places unknown again.
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only
+          icon: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.icon
+          sprites:
+            - platinum/abomasnow-default.png
+            - platinum/back/abomasnow-default.png
+            - platinum/back/shiny/abomasnow-default.png
+            - platinum/female/abomasnow-default.png
+            - platinum/shiny/abomasnow-default.png
+            - platinum/shiny/female/abomasnow-default.png
+          art: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &heartgold-soulsilver.numbers
+    national: *diamond-pearl.numbers.national
+  pokemon:
+    abomasnow:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.abomasnow.forms_switchable
+      pal_park: *diamond-pearl.pokemon.abomasnow.pal_park
+      name: Abomasnow
+      default: *diamond-pearl.pokemon.abomasnow.default
+      height: *diamond-pearl.pokemon.abomasnow.height
+      weight: *diamond-pearl.pokemon.abomasnow.weight
+      experience: *diamond-pearl.pokemon.abomasnow.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      stats: *diamond-pearl.pokemon.abomasnow.stats
+      abilities: *diamond-pearl.pokemon.abomasnow.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It lives a quiet life on mountains that
+          are perpetually covered in snow.
+          It hides itself by whipping up blizzards.
+        soulsilver: |
+          It lives a quiet life on mountains that
+          are perpetually covered in snow.
+          It hides itself by whipping up blizzards.
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 3
+              range: 1-5
+            skill:
+              base_value: 4
+              range: 2-5
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2
+          icon: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.icon
+          sprites:
+            - heartgold-soulsilver/abomasnow-default.png
+            - heartgold-soulsilver/back/abomasnow-default.png
+            - heartgold-soulsilver/back/shiny/abomasnow-default.png
+            - heartgold-soulsilver/female/abomasnow-default.png
+            - heartgold-soulsilver/shiny/abomasnow-default.png
+            - heartgold-soulsilver/shiny/female/abomasnow-default.png
+          art: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    abomasnow:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: &black-white.pokemon.abomasnow.color white
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.abomasnow.forms_switchable
+      name: Abomasnow
+      default: *diamond-pearl.pokemon.abomasnow.default
+      height: *diamond-pearl.pokemon.abomasnow.height
+      weight: *diamond-pearl.pokemon.abomasnow.weight
+      experience: *diamond-pearl.pokemon.abomasnow.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      stats: *diamond-pearl.pokemon.abomasnow.stats
+      abilities: *diamond-pearl.pokemon.abomasnow.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      flavor_text:
+        black: |
+          They appear when the snow flowers
+          bloom. When the petals fall, they
+          retreat to places unknown again.
+        white: |
+          They appear when the snow flowers
+          bloom. When the petals fall, they
+          retreat to places unknown again.
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only
+          icon: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.icon
+          sprites:
+            - black-white/abomasnow-default.png
+            - black-white/back/abomasnow-default.png
+            - black-white/back/shiny/abomasnow-default.png
+            - black-white/female/abomasnow-default.png
+            - black-white/shiny/abomasnow-default.png
+            - black-white/shiny/female/abomasnow-default.png
+          art: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    abomasnow:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.abomasnow.forms_switchable
+      name: Abomasnow
+      default: *diamond-pearl.pokemon.abomasnow.default
+      height: *diamond-pearl.pokemon.abomasnow.height
+      weight: *diamond-pearl.pokemon.abomasnow.weight
+      experience: *diamond-pearl.pokemon.abomasnow.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      stats: *diamond-pearl.pokemon.abomasnow.stats
+      abilities: *diamond-pearl.pokemon.abomasnow.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      flavor_text:
+        black-2: |
+          They appear when the snow flowers
+          bloom. When the petals fall, they
+          retreat to places unknown again.
+        white-2: |
+          They appear when the snow flowers
+          bloom. When the petals fall, they
+          retreat to places unknown again.
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only
+          icon: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.icon
+          art: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    kalos-mountain: 89
+  pokemon:
+    abomasnow:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: &x-y.pokemon.abomasnow.forms_switchable true
+      name: Abomasnow
+      default: *diamond-pearl.pokemon.abomasnow.default
+      height: *diamond-pearl.pokemon.abomasnow.height
+      weight: *diamond-pearl.pokemon.abomasnow.weight
+      experience: *diamond-pearl.pokemon.abomasnow.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      mega: &x-y.pokemon.abomasnow.mega false
+      stats: *diamond-pearl.pokemon.abomasnow.stats
+      abilities: *diamond-pearl.pokemon.abomasnow.abilities
+      wild_held_items: &x-y.pokemon.abomasnow.wild_held_items
+        x: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      flavor_text: &x-y.pokemon.abomasnow.flavor_text
+        x: |
+          It blankets wide areas in snow by whipping up
+          blizzards. It is also known as “The Ice Monster.”
+        'y': |
+          It lives a quiet life on mountains that are perpetually
+          covered in snow. It hides itself by whipping
+          up blizzards.
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only
+          icon: &x-y.pokemon.abomasnow.forms.abomasnow.icon abomasnow-default.png
+          sprites:
+            - x-y/abomasnow-default.png
+            - x-y/female/abomasnow-default.png
+            - x-y/shiny/abomasnow-default.png
+            - x-y/shiny/female/abomasnow-default.png
+          art: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: &x-y.pokemon.abomasnow.forms.abomasnow.cry abomasnow-default.webm
+    abomasnow-mega:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *x-y.pokemon.abomasnow.forms_switchable
+      name: &x-y.pokemon.abomasnow-mega.name 'Mega Abomasnow'
+      default: &x-y.pokemon.abomasnow-mega.default false
+      height: &x-y.pokemon.abomasnow-mega.height 27
+      weight: &x-y.pokemon.abomasnow-mega.weight 1850
+      experience: &x-y.pokemon.abomasnow-mega.experience 208
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      mega: &x-y.pokemon.abomasnow-mega.mega true
+      stats: &x-y.pokemon.abomasnow-mega.stats
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 132
+          effort_change: 1
+        defense:
+          base_value: 105
+          effort_change: 0
+        speed:
+          base_value: 30
+          effort_change: 0
+        special-attack:
+          base_value: 132
+          effort_change: 1
+        special-defense:
+          base_value: 105
+          effort_change: 0
+      abilities: &x-y.pokemon.abomasnow-mega.abilities
+        snow-warning: *diamond-pearl.pokemon.abomasnow.abilities.snow-warning
+      wild_held_items: *x-y.pokemon.abomasnow.wild_held_items
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      flavor_text: *x-y.pokemon.abomasnow.flavor_text
+      forms:
+        abomasnow-mega:
+          name: 'Mega Abomasnow'
+          form_name: &x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.form_name 'Mega Abomasnow'
+          default: true
+          battle_only: &x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.battle_only true
+          icon: &x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.icon abomasnow-mega.png
+          sprites:
+            - x-y/shiny/abomasnow-mega.png
+            - x-y/abomasnow-mega.png
+          art: &x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.art
+            - abomasnow-mega.png
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: &x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.cry abomasnow-mega.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    abomasnow:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *x-y.pokemon.abomasnow.forms_switchable
+      name: Abomasnow
+      default: *diamond-pearl.pokemon.abomasnow.default
+      height: *diamond-pearl.pokemon.abomasnow.height
+      weight: *diamond-pearl.pokemon.abomasnow.weight
+      experience: *diamond-pearl.pokemon.abomasnow.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      mega: *x-y.pokemon.abomasnow.mega
+      stats: *diamond-pearl.pokemon.abomasnow.stats
+      abilities: *diamond-pearl.pokemon.abomasnow.abilities
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.abomasnow.flavor_text
+        omega-ruby: |
+          It blankets wide areas in snow by whipping up
+          blizzards. It is also known as “The Ice Monster.”
+        alpha-sapphire: |
+          It lives a quiet life on mountains that are perpetually
+          covered in snow. It hides itself by whipping
+          up blizzards.
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only
+          icon: *x-y.pokemon.abomasnow.forms.abomasnow.icon
+          art: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *x-y.pokemon.abomasnow.forms.abomasnow.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/abomasnow-default.png
+            - omega-ruby-alpha-sapphire/shiny/abomasnow-default.png
+            - omega-ruby-alpha-sapphire/female/abomasnow-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/abomasnow-default.png
+      wild_held_items: &omega-ruby-alpha-sapphire.pokemon.abomasnow.wild_held_items
+        omega-ruby: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+    abomasnow-mega:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *x-y.pokemon.abomasnow.forms_switchable
+      name: *x-y.pokemon.abomasnow-mega.name
+      default: *x-y.pokemon.abomasnow-mega.default
+      height: *x-y.pokemon.abomasnow-mega.height
+      weight: *x-y.pokemon.abomasnow-mega.weight
+      experience: *x-y.pokemon.abomasnow-mega.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      mega: *x-y.pokemon.abomasnow-mega.mega
+      stats: *x-y.pokemon.abomasnow-mega.stats
+      abilities: *x-y.pokemon.abomasnow-mega.abilities
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.abomasnow.flavor_text
+      forms:
+        abomasnow-mega:
+          name: 'Mega Abomasnow'
+          form_name: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.battle_only
+          icon: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.icon
+          art: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/abomasnow-mega.png
+            - omega-ruby-alpha-sapphire/abomasnow-mega.png
+      wild_held_items: *omega-ruby-alpha-sapphire.pokemon.abomasnow.wild_held_items
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    abomasnow:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *x-y.pokemon.abomasnow.forms_switchable
+      name: Abomasnow
+      default: *diamond-pearl.pokemon.abomasnow.default
+      height: *diamond-pearl.pokemon.abomasnow.height
+      weight: *diamond-pearl.pokemon.abomasnow.weight
+      experience: *diamond-pearl.pokemon.abomasnow.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      mega: *x-y.pokemon.abomasnow.mega
+      stats: *diamond-pearl.pokemon.abomasnow.stats
+      abilities: *diamond-pearl.pokemon.abomasnow.abilities
+      wild_held_items: &sun-moon.pokemon.abomasnow.wild_held_items
+        sun: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only
+          icon: *x-y.pokemon.abomasnow.forms.abomasnow.icon
+          sprites:
+            - sun-moon/abomasnow-default.png
+            - sun-moon/female/abomasnow-default.png
+            - sun-moon/shiny/abomasnow-default.png
+            - sun-moon/shiny/female/abomasnow-default.png
+          art: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *x-y.pokemon.abomasnow.forms.abomasnow.cry
+    abomasnow-mega:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *x-y.pokemon.abomasnow.forms_switchable
+      name: *x-y.pokemon.abomasnow-mega.name
+      default: *x-y.pokemon.abomasnow-mega.default
+      height: *x-y.pokemon.abomasnow-mega.height
+      weight: *x-y.pokemon.abomasnow-mega.weight
+      experience: *x-y.pokemon.abomasnow-mega.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      mega: *x-y.pokemon.abomasnow-mega.mega
+      stats: *x-y.pokemon.abomasnow-mega.stats
+      abilities: *x-y.pokemon.abomasnow-mega.abilities
+      wild_held_items: *sun-moon.pokemon.abomasnow.wild_held_items
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      forms:
+        abomasnow-mega:
+          name: 'Mega Abomasnow'
+          form_name: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.battle_only
+          icon: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.icon
+          sprites:
+            - sun-moon/shiny/abomasnow-mega.png
+            - sun-moon/abomasnow-mega.png
+          art: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    abomasnow:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *x-y.pokemon.abomasnow.forms_switchable
+      name: Abomasnow
+      default: *diamond-pearl.pokemon.abomasnow.default
+      height: *diamond-pearl.pokemon.abomasnow.height
+      weight: *diamond-pearl.pokemon.abomasnow.weight
+      experience: *diamond-pearl.pokemon.abomasnow.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      mega: *x-y.pokemon.abomasnow.mega
+      stats: *diamond-pearl.pokemon.abomasnow.stats
+      abilities: *diamond-pearl.pokemon.abomasnow.abilities
+      wild_held_items: &ultra-sun-ultra-moon.pokemon.abomasnow.wild_held_items
+        ultra-sun: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.abomasnow.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      forms:
+        abomasnow:
+          name: Abomasnow
+          form_name: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.battle_only
+          icon: *x-y.pokemon.abomasnow.forms.abomasnow.icon
+          sprites:
+            - ultra-sun-ultra-moon/abomasnow-default.png
+            - ultra-sun-ultra-moon/female/abomasnow-default.png
+            - ultra-sun-ultra-moon/shiny/abomasnow-default.png
+            - ultra-sun-ultra-moon/shiny/female/abomasnow-default.png
+          art: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *x-y.pokemon.abomasnow.forms.abomasnow.cry
+    abomasnow-mega:
+      genus: *diamond-pearl.pokemon.abomasnow.genus
+      evolution_parent: *diamond-pearl.pokemon.abomasnow.evolution_parent
+      color: *black-white.pokemon.abomasnow.color
+      shape: *diamond-pearl.pokemon.abomasnow.shape
+      female_rate: *diamond-pearl.pokemon.abomasnow.female_rate
+      capture_rate: *diamond-pearl.pokemon.abomasnow.capture_rate
+      happiness: *diamond-pearl.pokemon.abomasnow.happiness
+      baby: *diamond-pearl.pokemon.abomasnow.baby
+      hatch_steps: *diamond-pearl.pokemon.abomasnow.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.abomasnow.growth_rate
+      forms_switchable: *x-y.pokemon.abomasnow.forms_switchable
+      name: *x-y.pokemon.abomasnow-mega.name
+      default: *x-y.pokemon.abomasnow-mega.default
+      height: *x-y.pokemon.abomasnow-mega.height
+      weight: *x-y.pokemon.abomasnow-mega.weight
+      experience: *x-y.pokemon.abomasnow-mega.experience
+      types: *diamond-pearl.pokemon.abomasnow.types
+      egg_groups: *diamond-pearl.pokemon.abomasnow.egg_groups
+      mega: *x-y.pokemon.abomasnow-mega.mega
+      stats: *x-y.pokemon.abomasnow-mega.stats
+      abilities: *x-y.pokemon.abomasnow-mega.abilities
+      wild_held_items: *ultra-sun-ultra-moon.pokemon.abomasnow.wild_held_items
+      evolution_conditions: *diamond-pearl.pokemon.abomasnow.evolution_conditions
+      forms:
+        abomasnow-mega:
+          name: 'Mega Abomasnow'
+          form_name: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.battle_only
+          icon: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/abomasnow-mega.png
+            - ultra-sun-ultra-moon/abomasnow-mega.png
+          art: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.art
+          footprint: *diamond-pearl.pokemon.abomasnow.forms.abomasnow.footprint
+          cry: *x-y.pokemon.abomasnow-mega.forms.abomasnow-mega.cry

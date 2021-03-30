@@ -1,0 +1,180 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'ODOR SLEUTH'
+  type: &ruby-sapphire.type normal
+  accuracy: &ruby-sapphire.accuracy 100
+  pp: &ruby-sapphire.pp 40
+  effect: &ruby-sapphire.effect 114
+  target: &ruby-sapphire.target selected-pokemon
+  priority: &ruby-sapphire.priority 0
+  flags: &ruby-sapphire.flags
+    - protect
+    - mirror
+  ailment: &ruby-sapphire.ailment no-type-immunity
+  categories: &ruby-sapphire.categories
+    - ailment
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  contest_type: &ruby-sapphire.contest_type smart
+  contest_effect: 28
+  flavor_text: |
+    Negates the foe's efforts
+    to heighten evasiveness.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: &colosseum.flavor_text |
+    Foils the target's efforts
+    to heighten evasiveness.
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: physical
+  flavor_text: *colosseum.flavor_text
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flags: *ruby-sapphire.flags
+  ailment: *ruby-sapphire.ailment
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    Completely negates
+    the foe's efforts to
+    heighten its ability
+    to evade.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Odor Sleuth'
+  ailment: *ruby-sapphire.ailment
+  flags: &diamond-pearl.flags
+    - protect
+    - reflectable
+    - mirror
+    - authentic
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 20
+  flavor_text: &diamond-pearl.flavor_text |
+    Enables the user to
+    hit a Ghost type with
+    any type of move. It
+    also enables the user
+    to hit an evasive foe.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    Enables a Ghost-type target to be hit with
+    Normal- and Fighting-type attacks. It also
+    enables an evasive target to be hit.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &x-y.flavor_text |
+    Enables a Ghost-type target to be hit by
+    Normal- and Fighting-type attacks. This also
+    enables an evasive target to be hit.
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 16
+  flavor_text: *x-y.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  ailment: *ruby-sapphire.ailment
+  flags: *diamond-pearl.flags
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    Enables a Ghost-type target to be hit by Normal-
+    and Fighting-type attacks. This also enables an
+    evasive target to be hit.
+ultra-sun-ultra-moon: *sun-moon

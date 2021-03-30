@@ -1,0 +1,1797 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name DEOXYS
+  position: &ruby-sapphire.position 386
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 386
+    hoenn: 202
+  pokemon:
+    deoxys-normal:
+      name: &ruby-sapphire.pokemon.deoxys-normal.name 'Normal DEOXYS'
+      default: &ruby-sapphire.pokemon.deoxys-normal.default true
+      forms_switchable: &ruby-sapphire.pokemon.deoxys-normal.forms_switchable false
+      forms_note: &ruby-sapphire.pokemon.deoxys-normal.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.
+
+        The form is determined by the version it is in and cannot be changed without trading.
+      capture_rate: &ruby-sapphire.pokemon.deoxys-normal.capture_rate 3
+      experience: &ruby-sapphire.pokemon.deoxys-normal.experience 215
+      types: &ruby-sapphire.pokemon.deoxys-normal.types
+        - psychic
+      stats: &ruby-sapphire.pokemon.deoxys-normal.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 150
+          effort_change: 1
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 150
+          effort_change: 1
+        special-attack:
+          base_value: 150
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.deoxys-normal.growth_rate slow
+      hatch_steps: &ruby-sapphire.pokemon.deoxys-normal.hatch_steps 120
+      egg_groups: &ruby-sapphire.pokemon.deoxys-normal.egg_groups
+        - no-eggs
+      happiness: &ruby-sapphire.pokemon.deoxys-normal.happiness 0
+      abilities: &ruby-sapphire.pokemon.deoxys-normal.abilities
+        pressure:
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.deoxys-normal.genus 'DNA Pokémon'
+      height: &ruby-sapphire.pokemon.deoxys-normal.height 17
+      weight: &ruby-sapphire.pokemon.deoxys-normal.weight 608
+      flavor_text:
+        ruby: |
+          The DNA of a space virus underwent a
+          sudden mutation upon exposure to a
+          laser beam and resulted in DEOXYS.
+          The crystalline organ on this POKéMON's
+          chest appears to be its brain.
+        sapphire: |
+          DEOXYS emerged from a virus that came
+          from space. It is highly intelligent and
+          wields psychokinetic powers.
+          This POKéMON shoots lasers from the
+          crystalline organ on its chest.
+      forms:
+        deoxys-normal:
+          name: 'Normal DEOXYS'
+          form_name: &ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name 'Normal Forme'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only false
+          icon: &ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.icon gen5/deoxys-normal.png
+          sprites:
+            - ruby-sapphire/deoxys-normal.png
+            - ruby-sapphire/back/deoxys-normal.png
+            - ruby-sapphire/shiny/deoxys-normal.png
+          art: &ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+            - deoxys-normal.png
+          footprint: &ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint deoxys.png
+          cry: &ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.cry gen5/deoxys-normal.webm
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    deoxys-speed:
+      name: &emerald.pokemon.deoxys-speed.name 'Speed DEOXYS'
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      forms_switchable: *ruby-sapphire.pokemon.deoxys-normal.forms_switchable
+      forms_note: *ruby-sapphire.pokemon.deoxys-normal.forms_note
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      experience: *ruby-sapphire.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      stats:
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 1
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 180
+          effort_change: 1
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      flavor_text:
+        emerald: |
+          A POKéMON that mutated from an
+          extraterrestrial virus exposed to a laser
+          beam. Its body is configured for superior
+          agility and speed.
+      forms:
+        deoxys-speed:
+          name: 'Speed DEOXYS'
+          form_name: &emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name 'Speed Forme'
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: &emerald.pokemon.deoxys-speed.forms.deoxys-speed.icon gen5/deoxys-speed.png
+          sprites:
+            - emerald/deoxys-speed.png
+            - emerald/shiny/deoxys-speed.png
+            - emerald/animated/deoxys-speed.webm
+            - emerald/animated/shiny/deoxys-speed.webm
+          art: &emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+            - deoxys-speed.png
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+          cry: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.cry
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 66
+  pokemon:
+    deoxys-normal:
+      name: *ruby-sapphire.pokemon.deoxys-normal.name
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      forms_switchable: *ruby-sapphire.pokemon.deoxys-normal.forms_switchable
+      forms_note: *ruby-sapphire.pokemon.deoxys-normal.forms_note
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      experience: *ruby-sapphire.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      stats: *ruby-sapphire.pokemon.deoxys-normal.stats
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      forms:
+        deoxys-normal:
+          name: 'Normal DEOXYS'
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          sprites:
+            - colosseum/deoxys-normal.png
+            - colosseum/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          cry: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.cry
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    deoxys-normal:
+      name: *ruby-sapphire.pokemon.deoxys-normal.name
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      forms_switchable: *ruby-sapphire.pokemon.deoxys-normal.forms_switchable
+      forms_note: *ruby-sapphire.pokemon.deoxys-normal.forms_note
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      experience: *ruby-sapphire.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      stats: *ruby-sapphire.pokemon.deoxys-normal.stats
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      forms:
+        deoxys-normal:
+          name: 'Normal DEOXYS'
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          sprites:
+            - xd/deoxys-normal.png
+            - xd/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          cry: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.cry
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    deoxys-defense:
+      name: &firered-leafgreen.pokemon.deoxys-defense.name 'Defense DEOXYS'
+      default: &firered-leafgreen.pokemon.deoxys-defense.default false
+      forms_switchable: *ruby-sapphire.pokemon.deoxys-normal.forms_switchable
+      forms_note: &firered-leafgreen.pokemon.deoxys-defense.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.
+
+        The form is determined by the version it is in and cannot be changed without trading:
+        - FireRed has []{pokemon:deoxys/deoxys-attack}
+        - LeafGreen has []{pokemon:deoxys/deoxys-defense}
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      experience: *ruby-sapphire.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      stats:
+        hp:
+          base_value: 90
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 1
+        defense:
+          base_value: 160
+          effort_change: 0
+        speed:
+          base_value: 116
+          effort_change: 1
+        special-attack:
+          base_value: 111
+          effort_change: 0
+        special-defense:
+          base_value: 92
+          effort_change: 0
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      flavor_text:
+        leafgreen: |
+          When it changes form, an aurora appears.
+          It absorbs attacks by altering its
+          cellular structure.
+      forms:
+        deoxys-defense:
+          name: 'Defense DEOXYS'
+          form_name: &firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name 'Defense Forme'
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: &firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.icon gen5/deoxys-defense.png
+          sprites:
+            - firered-leafgreen/deoxys-defense
+            - firered-leafgreen/back/deoxys-defense
+            - firered-leafgreen/shiny/deoxys-defense
+          art: &firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+            - deoxys-defense.png
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+          cry: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.cry
+    deoxys-attack:
+      name: &firered-leafgreen.pokemon.deoxys-attack.name 'Attack DEOXYS'
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      forms_switchable: *ruby-sapphire.pokemon.deoxys-normal.forms_switchable
+      forms_note: *firered-leafgreen.pokemon.deoxys-defense.forms_note
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      experience: *ruby-sapphire.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      stats:
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 180
+          effort_change: 1
+        defense:
+          base_value: 20
+          effort_change: 0
+        speed:
+          base_value: 150
+          effort_change: 1
+        special-attack:
+          base_value: 180
+          effort_change: 0
+        special-defense:
+          base_value: 20
+          effort_change: 0
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      flavor_text:
+        firered: |
+          This DEOXYS has transformed into its
+          aggressive guise. It can fool enemies by
+          altering its appearance.
+      forms:
+        deoxys-attack:
+          name: 'Attack DEOXYS'
+          form_name: &firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name 'Attack Forme'
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: &firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.icon gen5/deoxys-attack.png
+          sprites:
+            - firered-leafgreen/deoxys-attack
+            - firered-leafgreen/back/deoxys-attack
+            - firered-leafgreen/shiny/deoxys-attack
+          art: &firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+            - deoxys-attack.png
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+          cry: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.cry
+diamond-pearl:
+  name: &diamond-pearl.name Deoxys
+  position: &diamond-pearl.position 416
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: &diamond-pearl.pokemon.deoxys-normal.shape humanoid
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: &diamond-pearl.pokemon.deoxys-normal.baby false
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: &diamond-pearl.pokemon.deoxys-normal.forms_switchable true
+      forms_note: &diamond-pearl.pokemon.deoxys-normal.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.
+
+        The form can be changed in the southwest corner of []{location:veilstone-city}.
+      pal_park: &diamond-pearl.pokemon.deoxys-normal.pal_park
+        area: mountain
+        rate: 1
+        score: 100
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: &diamond-pearl.pokemon.deoxys-normal.experience 270
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: &diamond-pearl.pokemon.deoxys-normal.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 150
+          effort_change: 1
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 150
+          effort_change: 1
+        special-attack:
+          base_value: 150
+          effort_change: 1
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: &diamond-pearl.pokemon.deoxys-normal.flavor_text
+        diamond: |
+          An alien virus that fell to earth
+          on a meteor underwent a DNA
+          mutation to become this Pokémon.
+        pearl: |
+          An alien virus that fell to earth
+          on a meteor underwent a DNA
+          mutation to become this Pokémon.
+      forms:
+        deoxys-normal:
+          name: &diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name 'Normal Deoxys'
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.icon
+          sprites:
+            - diamond-pearl/deoxys-normal.png
+            - diamond-pearl/back/deoxys-normal.png
+            - diamond-pearl/back/shiny/deoxys-normal.png
+            - diamond-pearl/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *diamond-pearl.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: &diamond-pearl.pokemon.deoxys-attack.name 'Attack Deoxys'
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: &diamond-pearl.pokemon.deoxys-attack.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 180
+          effort_change: 2
+        defense:
+          base_value: 20
+          effort_change: 0
+        speed:
+          base_value: 150
+          effort_change: 0
+        special-attack:
+          base_value: 180
+          effort_change: 1
+        special-defense:
+          base_value: 20
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *diamond-pearl.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.icon
+          sprites:
+            - diamond-pearl/deoxys-attack.png
+            - diamond-pearl/back/deoxys-attack.png
+            - diamond-pearl/back/shiny/deoxys-attack.png
+            - diamond-pearl/shiny/deoxys-attack.png
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *diamond-pearl.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: &diamond-pearl.pokemon.deoxys-defense.name 'Defense Deoxys'
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: &diamond-pearl.pokemon.deoxys-defense.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 160
+          effort_change: 2
+        speed:
+          base_value: 90
+          effort_change: 0
+        special-attack:
+          base_value: 70
+          effort_change: 0
+        special-defense:
+          base_value: 160
+          effort_change: 1
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *diamond-pearl.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.icon
+          sprites:
+            - diamond-pearl/deoxys-defense.png
+            - diamond-pearl/back/deoxys-defense.png
+            - diamond-pearl/back/shiny/deoxys-defense.png
+            - diamond-pearl/shiny/deoxys-defense.png
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *diamond-pearl.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: &diamond-pearl.pokemon.deoxys-speed.name 'Speed Deoxys'
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: &diamond-pearl.pokemon.deoxys-speed.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 95
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 180
+          effort_change: 3
+        special-attack:
+          base_value: 95
+          effort_change: 0
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *diamond-pearl.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.icon
+          sprites:
+            - diamond-pearl/back/shiny/deoxys-speed.png
+            - diamond-pearl/back/deoxys-speed.png
+            - diamond-pearl/shiny/deoxys-speed.png
+            - diamond-pearl/deoxys-speed.png
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *diamond-pearl.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-normal.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: &platinum.pokemon.deoxys-normal.flavor_text
+        platinum: |
+          An alien virus that fell to earth
+          on a meteor underwent a DNA
+          mutation to become this Pokémon.
+      forms:
+        deoxys-normal:
+          name: *diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.icon
+          sprites:
+            - platinum/deoxys-normal.png
+            - platinum/back/deoxys-normal.png
+            - platinum/back/shiny/deoxys-normal.png
+            - platinum/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *diamond-pearl.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: *diamond-pearl.pokemon.deoxys-attack.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-attack.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *platinum.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.icon
+          sprites:
+            - platinum/deoxys-attack.png
+            - platinum/back/deoxys-attack.png
+            - platinum/back/shiny/deoxys-attack.png
+            - platinum/shiny/deoxys-attack.png
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *diamond-pearl.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: *diamond-pearl.pokemon.deoxys-defense.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-defense.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *platinum.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.icon
+          sprites:
+            - platinum/deoxys-defense.png
+            - platinum/back/deoxys-defense.png
+            - platinum/back/shiny/deoxys-defense.png
+            - platinum/shiny/deoxys-defense.png
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *diamond-pearl.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: *diamond-pearl.pokemon.deoxys-speed.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-speed.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *platinum.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.icon
+          sprites:
+            - platinum/back/shiny/deoxys-speed.png
+            - platinum/back/deoxys-speed.png
+            - platinum/shiny/deoxys-speed.png
+            - platinum/deoxys-speed.png
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: &heartgold-soulsilver.pokemon.deoxys-normal.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.
+
+        The form can be changed at the west end of []{location:kanto-route-3}, near []{location:pewter-city}.
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-normal.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: &heartgold-soulsilver.pokemon.deoxys-normal.flavor_text
+        heartgold: |
+          DNA from a space virus mutated and
+          became a Pokémon. It appears
+          where auroras are seen.
+        soulsilver: |
+          DNA from a space virus mutated and
+          became a Pokémon. It appears
+          where auroras are seen.
+      forms:
+        deoxys-normal:
+          name: *diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-4
+            power:
+              base_value: 4
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 1-4
+            stamina:
+              base_value: 4
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.icon
+          sprites:
+            - heartgold-soulsilver/deoxys-normal.png
+            - heartgold-soulsilver/back/deoxys-normal.png
+            - heartgold-soulsilver/back/shiny/deoxys-normal.png
+            - heartgold-soulsilver/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: *diamond-pearl.pokemon.deoxys-attack.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-attack.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 2-5
+            power:
+              base_value: 5
+              range: 4-5
+            skill:
+              base_value: 4
+              range: 1-5
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.icon
+          sprites:
+            - heartgold-soulsilver/deoxys-attack.png
+            - heartgold-soulsilver/back/deoxys-attack.png
+            - heartgold-soulsilver/back/shiny/deoxys-attack.png
+            - heartgold-soulsilver/shiny/deoxys-attack.png
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: *diamond-pearl.pokemon.deoxys-defense.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-defense.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 2-5
+            stamina:
+              base_value: 5
+              range: 4-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.icon
+          sprites:
+            - heartgold-soulsilver/deoxys-defense.png
+            - heartgold-soulsilver/back/deoxys-defense.png
+            - heartgold-soulsilver/back/shiny/deoxys-defense.png
+            - heartgold-soulsilver/shiny/deoxys-defense.png
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *heartgold-soulsilver.pokemon.deoxys-normal.forms_note
+      pal_park: *diamond-pearl.pokemon.deoxys-normal.pal_park
+      name: *diamond-pearl.pokemon.deoxys-speed.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-speed.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *heartgold-soulsilver.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 5
+              range: 4-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 2-5
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 4
+              range: 2-4
+          icon: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/deoxys-speed.png
+            - heartgold-soulsilver/back/deoxys-speed.png
+            - heartgold-soulsilver/shiny/deoxys-speed.png
+            - heartgold-soulsilver/deoxys-speed.png
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: &black-white.pokemon.deoxys-normal.color red
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: &black-white.pokemon.deoxys-normal.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.
+
+        The form can be changed in the museum in []{location:nacrene-city}; there is a single meteorite on display which cycles between all forms.
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-normal.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: &black-white.pokemon.deoxys-normal.flavor_text
+        black: |
+          An alien virus that fell to earth
+          on a meteor underwent a DNA
+          mutation to become this Pokémon.
+        white: |
+          An alien virus that fell to earth
+          on a meteor underwent a DNA
+          mutation to become this Pokémon.
+      forms:
+        deoxys-normal:
+          name: *diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.icon
+          sprites:
+            - black-white/deoxys-normal.png
+            - black-white/back/deoxys-normal.png
+            - black-white/back/shiny/deoxys-normal.png
+            - black-white/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *black-white.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-attack.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-attack.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *black-white.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.icon
+          sprites:
+            - black-white/deoxys-attack.png
+            - black-white/back/deoxys-attack.png
+            - black-white/back/shiny/deoxys-attack.png
+            - black-white/shiny/deoxys-attack.png
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *black-white.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-defense.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-defense.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *black-white.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.icon
+          sprites:
+            - black-white/deoxys-defense.png
+            - black-white/back/deoxys-defense.png
+            - black-white/back/shiny/deoxys-defense.png
+            - black-white/shiny/deoxys-defense.png
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *black-white.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-speed.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-speed.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *black-white.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.icon
+          sprites:
+            - black-white/back/shiny/deoxys-speed.png
+            - black-white/back/deoxys-speed.png
+            - black-white/shiny/deoxys-speed.png
+            - black-white/deoxys-speed.png
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *black-white.pokemon.deoxys-normal.forms_note
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-normal.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: &black-2-white-2.pokemon.deoxys-normal.flavor_text
+        black-2: |
+          An alien virus that fell to earth
+          on a meteor underwent a DNA
+          mutation to become this Pokémon.
+        white-2: |
+          An alien virus that fell to earth
+          on a meteor underwent a DNA
+          mutation to become this Pokémon.
+      forms:
+        deoxys-normal:
+          name: *diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.icon
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *black-white.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-attack.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-attack.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *black-2-white-2.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.icon
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *black-white.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-defense.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-defense.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *black-2-white-2.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.icon
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *black-white.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-speed.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      stats: *diamond-pearl.pokemon.deoxys-speed.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *black-2-white-2.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.icon
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: &x-y.pokemon.deoxys-normal.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.
+
+        The form can be changed in the Fossil Lab in []{location:ambrette-town}.  Use the meteorites at the back of the lab.
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: &x-y.pokemon.deoxys-normal.mega false
+      stats: *diamond-pearl.pokemon.deoxys-normal.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: &x-y.pokemon.deoxys-normal.flavor_text
+        x: |
+          An alien virus that fell to earth on a meteor
+          underwent a DNA mutation to become
+          this Pokémon.
+        'y': |
+          DNA from a space virus mutated and became a
+          Pokémon. It appears where auroras are seen.
+      forms:
+        deoxys-normal:
+          name: *diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: &x-y.pokemon.deoxys-normal.forms.deoxys-normal.icon deoxys-normal.png
+          sprites:
+            - x-y/deoxys-normal.png
+            - x-y/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *x-y.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-attack.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-attack.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *x-y.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: &x-y.pokemon.deoxys-attack.forms.deoxys-attack.icon deoxys-attack.png
+          sprites:
+            - x-y/deoxys-attack.png
+            - x-y/shiny/deoxys-attack.png
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *x-y.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-defense.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-defense.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *x-y.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: &x-y.pokemon.deoxys-defense.forms.deoxys-defense.icon deoxys-defense.png
+          sprites:
+            - x-y/deoxys-defense.png
+            - x-y/shiny/deoxys-defense.png
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *x-y.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-speed.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-speed.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *x-y.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: &x-y.pokemon.deoxys-speed.forms.deoxys-speed.icon deoxys-speed.png
+          sprites:
+            - x-y/shiny/deoxys-speed.png
+            - x-y/deoxys-speed.png
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 211
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: &omega-ruby-alpha-sapphire.pokemon.deoxys-normal.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.
+
+        The form can be changed in Professor Cozmo's house in []{location:fallarbor-town}.
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-normal.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.deoxys-normal.flavor_text
+        omega-ruby: |
+          The DNA of a space virus underwent a sudden mutation upon
+          exposure to a laser beam and resulted in Deoxys.
+          The crystalline organ on this Pokémon’s chest appears to be
+          its brain.
+        alpha-sapphire: |
+          Deoxys emerged from a virus that came from space. It is highly
+          intelligent and wields psychokinetic powers. This Pokémon
+          shoots lasers from the crystalline organ on its chest.
+      forms:
+        deoxys-normal:
+          name: *diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-normal.forms.deoxys-normal.icon
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/deoxys-normal.png
+            - omega-ruby-alpha-sapphire/shiny/deoxys-normal.png
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-attack.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-attack.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-attack.forms.deoxys-attack.icon
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/deoxys-attack.png
+            - omega-ruby-alpha-sapphire/shiny/deoxys-attack.png
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-defense.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-defense.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-defense.forms.deoxys-defense.icon
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/deoxys-defense.png
+            - omega-ruby-alpha-sapphire/shiny/deoxys-defense.png
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *omega-ruby-alpha-sapphire.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-speed.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-speed.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.deoxys-normal.flavor_text
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-speed.forms.deoxys-speed.icon
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/deoxys-speed.png
+            - omega-ruby-alpha-sapphire/deoxys-speed.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: &sun-moon.pokemon.deoxys-normal.forms_note |
+        Forms have different stats and can learn different moves.  Moves are retained through form changes.
+
+        The form can be changed in []{location:hokulani-observatory}.
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-normal.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      forms:
+        deoxys-normal:
+          name: *diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-normal.forms.deoxys-normal.icon
+          sprites:
+            - sun-moon/deoxys-normal.png
+            - sun-moon/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *sun-moon.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-attack.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-attack.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-attack.forms.deoxys-attack.icon
+          sprites:
+            - sun-moon/deoxys-attack.png
+            - sun-moon/shiny/deoxys-attack.png
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *sun-moon.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-defense.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-defense.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-defense.forms.deoxys-defense.icon
+          sprites:
+            - sun-moon/deoxys-defense.png
+            - sun-moon/shiny/deoxys-defense.png
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *sun-moon.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-speed.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-speed.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-speed.forms.deoxys-speed.icon
+          sprites:
+            - sun-moon/shiny/deoxys-speed.png
+            - sun-moon/deoxys-speed.png
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    deoxys-normal:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *sun-moon.pokemon.deoxys-normal.forms_note
+      name: Deoxys
+      default: *ruby-sapphire.pokemon.deoxys-normal.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-normal.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      forms:
+        deoxys-normal:
+          name: *diamond-pearl.pokemon.deoxys-normal.forms.deoxys-normal.name
+          form_name: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-normal.forms.deoxys-normal.icon
+          sprites:
+            - ultra-sun-ultra-moon/deoxys-normal.png
+            - ultra-sun-ultra-moon/shiny/deoxys-normal.png
+          art: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-attack:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *sun-moon.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-attack.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-attack.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      forms:
+        deoxys-attack:
+          name: 'Attack Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-attack.forms.deoxys-attack.icon
+          sprites:
+            - ultra-sun-ultra-moon/deoxys-attack.png
+            - ultra-sun-ultra-moon/shiny/deoxys-attack.png
+          art: *firered-leafgreen.pokemon.deoxys-attack.forms.deoxys-attack.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-defense:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *sun-moon.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-defense.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-defense.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      forms:
+        deoxys-defense:
+          name: 'Defense Deoxys'
+          form_name: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-defense.forms.deoxys-defense.icon
+          sprites:
+            - ultra-sun-ultra-moon/deoxys-defense.png
+            - ultra-sun-ultra-moon/shiny/deoxys-defense.png
+          art: *firered-leafgreen.pokemon.deoxys-defense.forms.deoxys-defense.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint
+    deoxys-speed:
+      genus: *ruby-sapphire.pokemon.deoxys-normal.genus
+      color: *black-white.pokemon.deoxys-normal.color
+      shape: *diamond-pearl.pokemon.deoxys-normal.shape
+      capture_rate: *ruby-sapphire.pokemon.deoxys-normal.capture_rate
+      happiness: *ruby-sapphire.pokemon.deoxys-normal.happiness
+      baby: *diamond-pearl.pokemon.deoxys-normal.baby
+      hatch_steps: *ruby-sapphire.pokemon.deoxys-normal.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.deoxys-normal.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.deoxys-normal.forms_switchable
+      forms_note: *sun-moon.pokemon.deoxys-normal.forms_note
+      name: *diamond-pearl.pokemon.deoxys-speed.name
+      default: *firered-leafgreen.pokemon.deoxys-defense.default
+      height: *ruby-sapphire.pokemon.deoxys-normal.height
+      weight: *ruby-sapphire.pokemon.deoxys-normal.weight
+      experience: *diamond-pearl.pokemon.deoxys-normal.experience
+      types: *ruby-sapphire.pokemon.deoxys-normal.types
+      egg_groups: *ruby-sapphire.pokemon.deoxys-normal.egg_groups
+      mega: *x-y.pokemon.deoxys-normal.mega
+      stats: *diamond-pearl.pokemon.deoxys-speed.stats
+      abilities: *ruby-sapphire.pokemon.deoxys-normal.abilities
+      forms:
+        deoxys-speed:
+          name: 'Speed Deoxys'
+          form_name: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.battle_only
+          icon: *x-y.pokemon.deoxys-speed.forms.deoxys-speed.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/deoxys-speed.png
+            - ultra-sun-ultra-moon/deoxys-speed.png
+          art: *emerald.pokemon.deoxys-speed.forms.deoxys-speed.art
+          footprint: *ruby-sapphire.pokemon.deoxys-normal.forms.deoxys-normal.footprint

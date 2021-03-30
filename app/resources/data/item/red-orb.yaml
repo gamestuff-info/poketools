@@ -1,0 +1,47 @@
+ruby-sapphire: &ruby-sapphire
+  name: 'RED ORB'
+  category: &ruby-sapphire.category plot-advancement
+  pocket: &ruby-sapphire.pocket key
+  flags: {  }
+  icon: &ruby-sapphire.icon red-orb.png
+  flavor_text: |
+    A red, glowing orb
+    said to contain an
+    ancient power.
+  short_description: 'Item stolen by Team Aqua'
+  description: 'Item stolen by Team Aqua'
+emerald: *ruby-sapphire
+heartgold-soulsilver:
+  name: &heartgold-soulsilver.name 'Red Orb'
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  short_description: 'Summons []{pokemon:groudon} to the []{location:embedded-tower}.'
+  description: 'Causes []{pokemon:groudon} to appear in the []{location:embedded-tower}.'
+  flavor_text: |
+    A shiny red orb that is said to have
+    a legend and has a deep connection with
+    the Hoenn region.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire:
+  name: *heartgold-soulsilver.name
+  category: &omega-ruby-alpha-sapphire.category species-specific
+  pocket: &omega-ruby-alpha-sapphire.pocket misc
+  short_description: &omega-ruby-alpha-sapphire.short_description 'Causes []{pokemon:groudon} to undergo [Primal Reversion]{mechanic:primal-reversion}.'
+  description: &omega-ruby-alpha-sapphire.description 'Causes []{pokemon:groudon} to undergo [Primal Reversion]{mechanic:primal-reversion}.'
+  flavor_text: |
+    A shiny red orb that is said to have
+    a legend tied to it. It’s known to have a
+    deep connection with the Hoenn region.
+  icon: *ruby-sapphire.icon
+sun-moon: &sun-moon
+  name: *heartgold-soulsilver.name
+  category: *omega-ruby-alpha-sapphire.category
+  pocket: *omega-ruby-alpha-sapphire.pocket
+  short_description: *omega-ruby-alpha-sapphire.short_description
+  description: *omega-ruby-alpha-sapphire.description
+  flavor_text: |
+    A shiny red orb that is said to have a legend tied
+    to it. It’s known to have a deep connection with the
+    Hoenn region.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

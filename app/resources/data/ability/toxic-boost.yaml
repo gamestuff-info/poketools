@@ -1,0 +1,24 @@
+black-white: &black-white
+  name: &black-white.name 'Toxic Boost'
+  short_description: &black-white.short_description 'Increases [Attack]{mechanic:attack} to 1.5× when [poisoned]{mechanic:poison}.'
+  description: &black-white.description 'This Pokémon has 1.5× its [Attack]{mechanic:attack} when [poisoned]{mechanic:poison}.'
+  flavor_text: |
+    Powers up physical
+    attacks when poisoned.
+black-2-white-2: *black-white
+x-y: &x-y
+  name: *black-white.name
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    Powers up physical attacks when
+    the Pokémon is poisoned.
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *black-white.name
+  short_description: *black-white.short_description
+  description: *black-white.description
+  flavor_text: |
+    Powers up physical attacks when the Pokémon
+    is poisoned.
+ultra-sun-ultra-moon: *sun-moon

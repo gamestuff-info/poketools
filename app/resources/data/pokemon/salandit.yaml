@@ -1,0 +1,133 @@
+sun-moon:
+  name: &sun-moon.name Salandit
+  position: &sun-moon.position 757
+  numbers:
+    national: &sun-moon.numbers.national 757
+    original-alola: 161
+    original-akala: 88
+  pokemon:
+    salandit:
+      genus: &sun-moon.pokemon.salandit.genus 'Toxic Lizard Pokémon'
+      color: &sun-moon.pokemon.salandit.color black
+      shape: &sun-moon.pokemon.salandit.shape quadruped
+      female_rate: &sun-moon.pokemon.salandit.female_rate 12
+      capture_rate: &sun-moon.pokemon.salandit.capture_rate 120
+      happiness: &sun-moon.pokemon.salandit.happiness 70
+      baby: &sun-moon.pokemon.salandit.baby false
+      hatch_steps: &sun-moon.pokemon.salandit.hatch_steps 20
+      growth_rate: &sun-moon.pokemon.salandit.growth_rate medium
+      forms_switchable: &sun-moon.pokemon.salandit.forms_switchable false
+      name: Salandit
+      default: &sun-moon.pokemon.salandit.default true
+      height: &sun-moon.pokemon.salandit.height 6
+      weight: &sun-moon.pokemon.salandit.weight 48
+      experience: &sun-moon.pokemon.salandit.experience 64
+      types: &sun-moon.pokemon.salandit.types
+        - poison
+        - fire
+      egg_groups: &sun-moon.pokemon.salandit.egg_groups
+        - monster
+        - dragon
+      mega: &sun-moon.pokemon.salandit.mega false
+      stats: &sun-moon.pokemon.salandit.stats
+        hp:
+          base_value: 48
+          effort_change: 0
+        attack:
+          base_value: 44
+          effort_change: 0
+        defense:
+          base_value: 40
+          effort_change: 0
+        speed:
+          base_value: 77
+          effort_change: 1
+        special-attack:
+          base_value: 71
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      abilities: &sun-moon.pokemon.salandit.abilities
+        corrosion:
+          hidden: false
+          position: 1
+        oblivious:
+          hidden: true
+          position: 3
+      wild_held_items:
+        sun: &sun-moon.pokemon.salandit.wild_held_items.sun
+          smoke-ball: 5
+        moon: *sun-moon.pokemon.salandit.wild_held_items.sun
+      flavor_text:
+        sun: |-
+          It burns its bodily fluids to create a poisonous
+          gas. When its enemies become disoriented from
+          inhaling the gas, it attacks them.
+        moon: |-
+          Volcanoes or dry, craggy places are its home.
+          It emanates a sweet-smelling poisonous gas
+          that attracts bug Pokémon, then attacks them.
+      forms:
+        salandit:
+          name: Salandit
+          form_name: &sun-moon.pokemon.salandit.forms.salandit.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.salandit.forms.salandit.battle_only false
+          icon: &sun-moon.pokemon.salandit.forms.salandit.icon salandit-default.png
+          sprites:
+            - sun-moon/salandit-default.png
+            - sun-moon/shiny/salandit-default.png
+          footprint: &sun-moon.pokemon.salandit.forms.salandit.footprint salandit.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 195
+    updated-akala: 96
+  pokemon:
+    salandit:
+      genus: *sun-moon.pokemon.salandit.genus
+      color: *sun-moon.pokemon.salandit.color
+      shape: *sun-moon.pokemon.salandit.shape
+      female_rate: *sun-moon.pokemon.salandit.female_rate
+      capture_rate: *sun-moon.pokemon.salandit.capture_rate
+      happiness: *sun-moon.pokemon.salandit.happiness
+      baby: *sun-moon.pokemon.salandit.baby
+      hatch_steps: *sun-moon.pokemon.salandit.hatch_steps
+      growth_rate: *sun-moon.pokemon.salandit.growth_rate
+      forms_switchable: *sun-moon.pokemon.salandit.forms_switchable
+      name: Salandit
+      default: *sun-moon.pokemon.salandit.default
+      height: *sun-moon.pokemon.salandit.height
+      weight: *sun-moon.pokemon.salandit.weight
+      experience: *sun-moon.pokemon.salandit.experience
+      types: *sun-moon.pokemon.salandit.types
+      egg_groups: *sun-moon.pokemon.salandit.egg_groups
+      mega: *sun-moon.pokemon.salandit.mega
+      stats: *sun-moon.pokemon.salandit.stats
+      abilities: *sun-moon.pokemon.salandit.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.salandit.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.salandit.wild_held_items.sun
+      flavor_text:
+        ultra-sun: |-
+          The males will do whatever the females tell
+          them. They give the females most of their food.
+          Due to malnutrition, the males can’t evolve.
+        ultra-moon: |-
+          It weakens opponents and sends them
+          reeling with its poisonous gas. Salandit doesn’t
+          deal well with Spinda, since it’s always reeling.
+      forms:
+        salandit:
+          name: Salandit
+          form_name: *sun-moon.pokemon.salandit.forms.salandit.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.salandit.forms.salandit.battle_only
+          icon: *sun-moon.pokemon.salandit.forms.salandit.icon
+          sprites:
+            - ultra-sun-ultra-moon/salandit-default.png
+            - ultra-sun-ultra-moon/shiny/salandit-default.png
+          footprint: *sun-moon.pokemon.salandit.forms.salandit.footprint

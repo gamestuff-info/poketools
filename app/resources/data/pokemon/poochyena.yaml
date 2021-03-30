@@ -1,0 +1,713 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name POOCHYENA
+  position: &ruby-sapphire.position 261
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 261
+    hoenn: 10
+  pokemon:
+    poochyena:
+      name: POOCHYENA
+      default: &ruby-sapphire.pokemon.poochyena.default true
+      forms_switchable: &ruby-sapphire.pokemon.poochyena.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.poochyena.capture_rate 255
+      experience: &ruby-sapphire.pokemon.poochyena.experience 55
+      types: &ruby-sapphire.pokemon.poochyena.types
+        - dark
+      stats: &ruby-sapphire.pokemon.poochyena.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 1
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 35
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.poochyena.growth_rate medium
+      female_rate: &ruby-sapphire.pokemon.poochyena.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.poochyena.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.poochyena.egg_groups
+        - ground
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+          pecha-berry: 5
+        sapphire: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.poochyena.happiness 70
+      abilities: &ruby-sapphire.pokemon.poochyena.abilities
+        run-away: &ruby-sapphire.pokemon.poochyena.abilities.run-away
+          hidden: &ruby-sapphire.pokemon.poochyena.abilities.run-away.hidden false
+          position: 1
+      genus: &ruby-sapphire.pokemon.poochyena.genus 'BITE Pokémon'
+      height: &ruby-sapphire.pokemon.poochyena.height 5
+      weight: &ruby-sapphire.pokemon.poochyena.weight 136
+      flavor_text:
+        ruby: |
+          At first sight, POOCHYENA takes a bite
+          at anything that moves.
+          This POKéMON chases after prey until
+          the victim becomes exhausted.
+          However,  it may turn tail if the prey
+          strikes back.
+        sapphire: |
+          POOCHYENA is an omnivore - it will eat
+          anything. A distinguishing feature is
+          how large its fangs are compared to
+          its body. This POKéMON tries to
+          intimidate its foes by making the hair
+          on its tail bristle out.
+      forms:
+        poochyena:
+          name: POOCHYENA
+          form_name: &ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only false
+          icon: &ruby-sapphire.pokemon.poochyena.forms.poochyena.icon gen5/poochyena-default.png
+          sprites:
+            - ruby-sapphire/poochyena-default.png
+            - ruby-sapphire/back/poochyena-default.png
+            - ruby-sapphire/shiny/poochyena-default.png
+          art: &ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+            - poochyena-default.png
+          footprint: &ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint poochyena.png
+          cry: &ruby-sapphire.pokemon.poochyena.forms.poochyena.cry gen5/poochyena-default.webm
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    poochyena:
+      name: POOCHYENA
+      default: *ruby-sapphire.pokemon.poochyena.default
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      experience: *ruby-sapphire.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      stats: *ruby-sapphire.pokemon.poochyena.stats
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      abilities: *ruby-sapphire.pokemon.poochyena.abilities
+      genus: *ruby-sapphire.pokemon.poochyena.genus
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      flavor_text:
+        emerald: |
+          It savagely threatens foes with bared
+          fangs. It chases after fleeing targets
+          tenaciously. It turns tail and runs,
+          however, if the foe strikes back.
+      forms:
+        poochyena:
+          name: POOCHYENA
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *ruby-sapphire.pokemon.poochyena.forms.poochyena.icon
+          sprites:
+            - emerald/poochyena-default.png
+            - emerald/shiny/poochyena-default.png
+            - emerald/animated/poochyena-default.webm
+            - emerald/animated/shiny/poochyena-default.webm
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 252
+  pokemon:
+    poochyena:
+      name: POOCHYENA
+      default: *ruby-sapphire.pokemon.poochyena.default
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      experience: *ruby-sapphire.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      stats: *ruby-sapphire.pokemon.poochyena.stats
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      abilities: *ruby-sapphire.pokemon.poochyena.abilities
+      genus: *ruby-sapphire.pokemon.poochyena.genus
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      forms:
+        poochyena:
+          name: POOCHYENA
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          sprites:
+            - colosseum/poochyena-default.png
+            - colosseum/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    poochyena:
+      name: POOCHYENA
+      default: *ruby-sapphire.pokemon.poochyena.default
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      experience: *ruby-sapphire.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      stats: *ruby-sapphire.pokemon.poochyena.stats
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      abilities: *ruby-sapphire.pokemon.poochyena.abilities
+      genus: *ruby-sapphire.pokemon.poochyena.genus
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      forms:
+        poochyena:
+          name: POOCHYENA
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          sprites:
+            - xd/poochyena-default.png
+            - xd/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    poochyena:
+      name: POOCHYENA
+      default: *ruby-sapphire.pokemon.poochyena.default
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      experience: *ruby-sapphire.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      stats: *ruby-sapphire.pokemon.poochyena.stats
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      abilities: *ruby-sapphire.pokemon.poochyena.abilities
+      genus: *ruby-sapphire.pokemon.poochyena.genus
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      flavor_text:
+        firered: |
+          It has a very tenacious nature. Its acute
+          sense of smell lets it chase a chosen
+          prey without ever losing track.
+        leafgreen: |
+          It has a very tenacious nature. Its acute
+          sense of smell lets it chase a chosen
+          prey without ever losing track.
+      forms:
+        poochyena:
+          name: POOCHYENA
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *ruby-sapphire.pokemon.poochyena.forms.poochyena.icon
+          sprites:
+            - firered-leafgreen/poochyena-default.png
+            - firered-leafgreen/back/poochyena-default.png
+            - firered-leafgreen/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+diamond-pearl:
+  name: &diamond-pearl.name Poochyena
+  position: &diamond-pearl.position 286
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    poochyena:
+      genus: &diamond-pearl.pokemon.poochyena.genus 'Bite Pokémon'
+      shape: &diamond-pearl.pokemon.poochyena.shape quadruped
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: &diamond-pearl.pokemon.poochyena.baby false
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      pal_park: &diamond-pearl.pokemon.poochyena.pal_park
+        area: field
+        rate: 50
+        score: 30
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: &diamond-pearl.pokemon.poochyena.experience 56
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      stats: &diamond-pearl.pokemon.poochyena.stats
+        hp:
+          base_value: 35
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 1
+        defense:
+          base_value: 35
+          effort_change: 0
+        speed:
+          base_value: 35
+          effort_change: 0
+        special-attack:
+          base_value: 30
+          effort_change: 0
+        special-defense:
+          base_value: 30
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.poochyena.abilities
+        run-away: *ruby-sapphire.pokemon.poochyena.abilities.run-away
+        quick-feet: &diamond-pearl.pokemon.poochyena.abilities.quick-feet
+          hidden: *ruby-sapphire.pokemon.poochyena.abilities.run-away.hidden
+          position: 2
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+      flavor_text:
+        diamond: |
+          A Pokémon with a persistent
+          nature, it chases its chosen prey
+          until the prey becomes exhausted.
+        pearl: |
+          A Pokémon with a persistent
+          nature, it chases its chosen prey
+          until the prey becomes exhausted.
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *ruby-sapphire.pokemon.poochyena.forms.poochyena.icon
+          sprites:
+            - diamond-pearl/poochyena-default.png
+            - diamond-pearl/back/poochyena-default.png
+            - diamond-pearl/back/shiny/poochyena-default.png
+            - diamond-pearl/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    poochyena:
+      genus: *diamond-pearl.pokemon.poochyena.genus
+      shape: *diamond-pearl.pokemon.poochyena.shape
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: *diamond-pearl.pokemon.poochyena.baby
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      pal_park: *diamond-pearl.pokemon.poochyena.pal_park
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: *diamond-pearl.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      stats: *diamond-pearl.pokemon.poochyena.stats
+      abilities: *diamond-pearl.pokemon.poochyena.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+      flavor_text:
+        platinum: |
+          A Pokémon with a persistent
+          nature, it chases its chosen prey
+          until the prey becomes exhausted.
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *ruby-sapphire.pokemon.poochyena.forms.poochyena.icon
+          sprites:
+            - platinum/poochyena-default.png
+            - platinum/back/poochyena-default.png
+            - platinum/back/shiny/poochyena-default.png
+            - platinum/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    poochyena:
+      genus: *diamond-pearl.pokemon.poochyena.genus
+      shape: *diamond-pearl.pokemon.poochyena.shape
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: *diamond-pearl.pokemon.poochyena.baby
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      pal_park: *diamond-pearl.pokemon.poochyena.pal_park
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: *diamond-pearl.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      stats: *diamond-pearl.pokemon.poochyena.stats
+      abilities: *diamond-pearl.pokemon.poochyena.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+      flavor_text:
+        heartgold: |
+          It chases its prey until the victim
+          becomes exhausted. However, it
+          turns tail if the prey strikes back.
+        soulsilver: |
+          It chases its prey until the victim
+          becomes exhausted. However, it
+          turns tail if the prey strikes back.
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 2
+              range: 1-4
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.poochyena.forms.poochyena.icon
+          sprites:
+            - heartgold-soulsilver/poochyena-default.png
+            - heartgold-soulsilver/back/poochyena-default.png
+            - heartgold-soulsilver/back/shiny/poochyena-default.png
+            - heartgold-soulsilver/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    poochyena:
+      genus: *diamond-pearl.pokemon.poochyena.genus
+      color: &black-white.pokemon.poochyena.color gray
+      shape: *diamond-pearl.pokemon.poochyena.shape
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: *diamond-pearl.pokemon.poochyena.baby
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: *diamond-pearl.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      stats: *diamond-pearl.pokemon.poochyena.stats
+      abilities: &black-white.pokemon.poochyena.abilities
+        run-away: *ruby-sapphire.pokemon.poochyena.abilities.run-away
+        quick-feet: *diamond-pearl.pokemon.poochyena.abilities.quick-feet
+        rattled:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+      flavor_text:
+        black: |
+          A Pokémon with a persistent
+          nature, it chases its chosen prey
+          until the prey becomes exhausted.
+        white: |
+          A Pokémon with a persistent
+          nature, it chases its chosen prey
+          until the prey becomes exhausted.
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *ruby-sapphire.pokemon.poochyena.forms.poochyena.icon
+          sprites:
+            - black-white/poochyena-default.png
+            - black-white/back/poochyena-default.png
+            - black-white/back/shiny/poochyena-default.png
+            - black-white/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    poochyena:
+      genus: *diamond-pearl.pokemon.poochyena.genus
+      color: *black-white.pokemon.poochyena.color
+      shape: *diamond-pearl.pokemon.poochyena.shape
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: *diamond-pearl.pokemon.poochyena.baby
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: *diamond-pearl.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      stats: *diamond-pearl.pokemon.poochyena.stats
+      abilities: *black-white.pokemon.poochyena.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.poochyena.wild_held_items.ruby
+      flavor_text:
+        black-2: |
+          A Pokémon with a persistent
+          nature, it chases its chosen prey
+          until the prey becomes exhausted.
+        white-2: |
+          A Pokémon with a persistent
+          nature, it chases its chosen prey
+          until the prey becomes exhausted.
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *ruby-sapphire.pokemon.poochyena.forms.poochyena.icon
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *ruby-sapphire.pokemon.poochyena.forms.poochyena.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-mountain: 44
+  pokemon:
+    poochyena:
+      genus: *diamond-pearl.pokemon.poochyena.genus
+      color: *black-white.pokemon.poochyena.color
+      shape: *diamond-pearl.pokemon.poochyena.shape
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: *diamond-pearl.pokemon.poochyena.baby
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: *diamond-pearl.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      mega: &x-y.pokemon.poochyena.mega false
+      stats: *diamond-pearl.pokemon.poochyena.stats
+      abilities: *black-white.pokemon.poochyena.abilities
+      flavor_text:
+        x: |
+          A Pokémon with a persistent nature, it chases its
+          chosen prey until the prey becomes exhausted.
+        'y': |
+          It has a very tenacious nature. Its acute sense of
+          smell lets it chase a chosen prey without ever
+          losing track.
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: &x-y.pokemon.poochyena.forms.poochyena.icon poochyena-default.png
+          sprites:
+            - x-y/poochyena-default.png
+            - x-y/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: &x-y.pokemon.poochyena.forms.poochyena.cry poochyena-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 10
+  pokemon:
+    poochyena:
+      genus: *diamond-pearl.pokemon.poochyena.genus
+      color: *black-white.pokemon.poochyena.color
+      shape: *diamond-pearl.pokemon.poochyena.shape
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: *diamond-pearl.pokemon.poochyena.baby
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: *diamond-pearl.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      mega: *x-y.pokemon.poochyena.mega
+      stats: *diamond-pearl.pokemon.poochyena.stats
+      abilities: *black-white.pokemon.poochyena.abilities
+      flavor_text:
+        omega-ruby: |
+          At first sight, Poochyena takes a bite at anything that moves.
+          This Pokémon chases after prey until the victim becomes
+          exhausted. However, it may turn tail if the prey strikes back.
+        alpha-sapphire: |
+          Poochyena is an omnivore—it will eat anything. A distinguishing
+          feature is how large its fangs are compared to its body. This
+          Pokémon tries to intimidate its foes by making the hair on its
+          tail bristle out.
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *x-y.pokemon.poochyena.forms.poochyena.icon
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *x-y.pokemon.poochyena.forms.poochyena.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/poochyena-default.png
+            - omega-ruby-alpha-sapphire/shiny/poochyena-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    poochyena:
+      genus: *diamond-pearl.pokemon.poochyena.genus
+      color: *black-white.pokemon.poochyena.color
+      shape: *diamond-pearl.pokemon.poochyena.shape
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: *diamond-pearl.pokemon.poochyena.baby
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: *diamond-pearl.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      mega: *x-y.pokemon.poochyena.mega
+      stats: *diamond-pearl.pokemon.poochyena.stats
+      abilities: *black-white.pokemon.poochyena.abilities
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *x-y.pokemon.poochyena.forms.poochyena.icon
+          sprites:
+            - sun-moon/poochyena-default.png
+            - sun-moon/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *x-y.pokemon.poochyena.forms.poochyena.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    poochyena:
+      genus: *diamond-pearl.pokemon.poochyena.genus
+      color: *black-white.pokemon.poochyena.color
+      shape: *diamond-pearl.pokemon.poochyena.shape
+      female_rate: *ruby-sapphire.pokemon.poochyena.female_rate
+      capture_rate: *ruby-sapphire.pokemon.poochyena.capture_rate
+      happiness: *ruby-sapphire.pokemon.poochyena.happiness
+      baby: *diamond-pearl.pokemon.poochyena.baby
+      hatch_steps: *ruby-sapphire.pokemon.poochyena.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.poochyena.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.poochyena.forms_switchable
+      name: Poochyena
+      default: *ruby-sapphire.pokemon.poochyena.default
+      height: *ruby-sapphire.pokemon.poochyena.height
+      weight: *ruby-sapphire.pokemon.poochyena.weight
+      experience: *diamond-pearl.pokemon.poochyena.experience
+      types: *ruby-sapphire.pokemon.poochyena.types
+      egg_groups: *ruby-sapphire.pokemon.poochyena.egg_groups
+      mega: *x-y.pokemon.poochyena.mega
+      stats: *diamond-pearl.pokemon.poochyena.stats
+      abilities: *black-white.pokemon.poochyena.abilities
+      forms:
+        poochyena:
+          name: Poochyena
+          form_name: *ruby-sapphire.pokemon.poochyena.forms.poochyena.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.poochyena.forms.poochyena.battle_only
+          icon: *x-y.pokemon.poochyena.forms.poochyena.icon
+          sprites:
+            - ultra-sun-ultra-moon/poochyena-default.png
+            - ultra-sun-ultra-moon/shiny/poochyena-default.png
+          art: *ruby-sapphire.pokemon.poochyena.forms.poochyena.art
+          footprint: *ruby-sapphire.pokemon.poochyena.forms.poochyena.footprint
+          cry: *x-y.pokemon.poochyena.forms.poochyena.cry

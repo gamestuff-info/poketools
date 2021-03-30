@@ -1,0 +1,1017 @@
+red-blue:
+  name: &red-blue.name KADABRA
+  position: &red-blue.position 64
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 64
+    kanto: 64
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: &red-blue.pokemon.kadabra.default true
+      capture_rate: &red-blue.pokemon.kadabra.capture_rate 100
+      experience: &red-blue.pokemon.kadabra.experience 145
+      types: &red-blue.pokemon.kadabra.types
+        - psychic
+      stats: &red-blue.pokemon.kadabra.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 35
+          effort_change: 35
+        defense:
+          base_value: 30
+          effort_change: 30
+        speed:
+          base_value: 105
+          effort_change: 105
+        special:
+          base_value: 120
+          effort_change: 120
+      growth_rate: &red-blue.pokemon.kadabra.growth_rate medium-slow
+      genus: &red-blue.pokemon.kadabra.genus 'PSI Pokémon'
+      height: &red-blue.pokemon.kadabra.height 12
+      weight: &red-blue.pokemon.kadabra.weight 5669
+      flavor_text:
+        red: |
+          It emits special
+          alpha waves from
+          its body that
+          induce headaches
+           just by being
+          close by.
+        blue: |
+          It emits special
+          alpha waves from
+          its body that
+          induce headaches
+           just by being
+          close by.
+      evolution_parent: &red-blue.pokemon.kadabra.evolution_parent abra/abra
+      evolution_conditions: &red-blue.pokemon.kadabra.evolution_conditions
+        level-up:
+          minimum_level: 16
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: &red-blue.pokemon.kadabra.forms.kadabra.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.kadabra.forms.kadabra.battle_only false
+          sprites:
+            - red-blue/kadabra-default.png
+            - red-blue/gray/kadabra-default.png
+            - red-blue/back/kadabra-default.png
+          art: &red-blue.pokemon.kadabra.forms.kadabra.art
+            - kadabra-default.png
+          cry: &red-blue.pokemon.kadabra.forms.kadabra.cry gen5/kadabra-default.webm
+          icon: &red-blue.pokemon.kadabra.forms.kadabra.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: *red-blue.pokemon.kadabra.default
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      experience: *red-blue.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      stats: *red-blue.pokemon.kadabra.stats
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      genus: *red-blue.pokemon.kadabra.genus
+      height: *red-blue.pokemon.kadabra.height
+      weight: *red-blue.pokemon.kadabra.weight
+      flavor_text:
+        yellow: |
+          Many odd things
+          happen if this
+          POKéMON is close
+          by. For example,
+           it makes clocks
+          run backwards.
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          sprites:
+            - yellow/kadabra-default.png
+            - yellow/gray/kadabra-default.png
+            - yellow/back/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+          icon: *red-blue.pokemon.kadabra.forms.kadabra.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 63
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 89
+    original-johto-abc: 88
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: *red-blue.pokemon.kadabra.default
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      experience: *red-blue.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      stats: &gold-silver.pokemon.kadabra.stats
+        hp:
+          base_value: 40
+          effort_change: 40
+        attack:
+          base_value: 35
+          effort_change: 35
+        defense:
+          base_value: 30
+          effort_change: 30
+        speed:
+          base_value: 105
+          effort_change: 105
+        special-attack:
+          base_value: 120
+          effort_change: 120
+        special-defense:
+          base_value: 70
+          effort_change: 120
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      female_rate: &gold-silver.pokemon.kadabra.female_rate 25
+      hatch_steps: &gold-silver.pokemon.kadabra.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.kadabra.egg_groups
+        - humanshape
+      genus: *red-blue.pokemon.kadabra.genus
+      height: *red-blue.pokemon.kadabra.height
+      weight: &gold-silver.pokemon.kadabra.weight 567
+      flavor_text:
+        gold: |
+          It possesses
+          strong spiritual
+          power. The more
+          danger it faces,
+          the stronger its
+          psychic power.
+        silver: |
+          If it uses its
+          abilities, it
+          emits special
+          alpha waves that
+          cause machines to
+          malfunction.
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          sprites:
+            - gold-silver/kadabra-default.png
+            - gold-silver/back/kadabra-default.png
+            - gold-silver/shiny/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+          icon: &gold-silver.pokemon.kadabra.forms.kadabra.icon gen2/humanshape.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: *red-blue.pokemon.kadabra.default
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      experience: *red-blue.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      stats: *gold-silver.pokemon.kadabra.stats
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      genus: *red-blue.pokemon.kadabra.genus
+      height: *red-blue.pokemon.kadabra.height
+      weight: *gold-silver.pokemon.kadabra.weight
+      flavor_text:
+        crystal: |
+          When it closes its
+          eyes, twice as
+          many alpha parti-
+          cles come out of
+          the surface of its
+          body.
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          sprites:
+            - crystal/kadabra-default.png
+            - crystal/back/kadabra-default.png
+            - crystal/shiny/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+          icon: *gold-silver.pokemon.kadabra.forms.kadabra.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 40
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: *red-blue.pokemon.kadabra.default
+      forms_switchable: &ruby-sapphire.pokemon.kadabra.forms_switchable false
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      experience: *red-blue.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      stats: &ruby-sapphire.pokemon.kadabra.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 105
+          effort_change: 0
+        special-attack:
+          base_value: 120
+          effort_change: 0
+        special-defense:
+          base_value: 40
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.kadabra.wild_held_items.ruby
+          twistedspoon: 5
+        sapphire: *ruby-sapphire.pokemon.kadabra.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.kadabra.happiness 70
+      abilities: &ruby-sapphire.pokemon.kadabra.abilities
+        synchronize: &ruby-sapphire.pokemon.kadabra.abilities.synchronize
+          hidden: &ruby-sapphire.pokemon.kadabra.abilities.synchronize.hidden false
+          position: 1
+        inner-focus: &ruby-sapphire.pokemon.kadabra.abilities.inner-focus
+          hidden: *ruby-sapphire.pokemon.kadabra.abilities.synchronize.hidden
+          position: 2
+      genus: *red-blue.pokemon.kadabra.genus
+      height: &ruby-sapphire.pokemon.kadabra.height 13
+      weight: &ruby-sapphire.pokemon.kadabra.weight 565
+      flavor_text:
+        ruby: |
+          KADABRA emits a peculiar alpha wave
+          if it develops a headache. Only those
+          people with a particularly strong
+          psyche can hope to become a TRAINER
+          of this POKéMON.
+        sapphire: |
+          KADABRA holds a silver spoon in its
+          hand. The spoon is used to amplify the
+          alpha waves in its brain.
+          Without the spoon, the POKéMON is said
+          to be limited to half the usual amount
+          of its telekinetic powers.
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: &ruby-sapphire.pokemon.kadabra.forms.kadabra.icon gen5/kadabra-default.png
+          sprites:
+            - ruby-sapphire/kadabra-default.png
+            - ruby-sapphire/back/kadabra-default.png
+            - ruby-sapphire/shiny/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: &ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint kadabra.png
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: *red-blue.pokemon.kadabra.default
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      experience: *red-blue.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      stats: *ruby-sapphire.pokemon.kadabra.stats
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.kadabra.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      abilities: *ruby-sapphire.pokemon.kadabra.abilities
+      genus: *red-blue.pokemon.kadabra.genus
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      flavor_text:
+        emerald: |
+          It is rumored that a boy with psychic
+          abilities suddenly transformed into
+          KADABRA while he was assisting research
+          into extrasensory powers.
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *ruby-sapphire.pokemon.kadabra.forms.kadabra.icon
+          sprites:
+            - emerald/kadabra-default.png
+            - emerald/shiny/kadabra-default.png
+            - emerald/animated/kadabra-default.webm
+            - emerald/animated/shiny/kadabra-default.webm
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 148
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: *red-blue.pokemon.kadabra.default
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      experience: *red-blue.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      stats: *ruby-sapphire.pokemon.kadabra.stats
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      abilities: *ruby-sapphire.pokemon.kadabra.abilities
+      genus: *red-blue.pokemon.kadabra.genus
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          sprites:
+            - colosseum/kadabra-default.png
+            - colosseum/shiny/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: *red-blue.pokemon.kadabra.default
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      experience: *red-blue.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      stats: *ruby-sapphire.pokemon.kadabra.stats
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      abilities: *ruby-sapphire.pokemon.kadabra.abilities
+      genus: *red-blue.pokemon.kadabra.genus
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          sprites:
+            - xd/kadabra-default.png
+            - xd/shiny/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    kadabra:
+      name: KADABRA
+      default: *red-blue.pokemon.kadabra.default
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      experience: *red-blue.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      stats: *ruby-sapphire.pokemon.kadabra.stats
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.kadabra.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.kadabra.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      abilities: *ruby-sapphire.pokemon.kadabra.abilities
+      genus: *red-blue.pokemon.kadabra.genus
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      flavor_text:
+        firered: |
+          It happened one morning - a boy with
+          extrasensory powers awoke in bed
+          transformed into KADABRA.
+        leafgreen: |
+          It emits special alpha waves from its
+          body that induce headaches just by being
+          close.
+      forms:
+        kadabra:
+          name: KADABRA
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *ruby-sapphire.pokemon.kadabra.forms.kadabra.icon
+          sprites:
+            - firered-leafgreen/kadabra-default.png
+            - firered-leafgreen/back/kadabra-default.png
+            - firered-leafgreen/shiny/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Kadabra
+  position: &diamond-pearl.position 70
+  numbers:
+    national: *red-blue.numbers.national
+    original-sinnoh: 21
+  pokemon:
+    kadabra:
+      genus: &diamond-pearl.pokemon.kadabra.genus 'Psi Pokémon'
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      shape: &diamond-pearl.pokemon.kadabra.shape upright
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: &diamond-pearl.pokemon.kadabra.baby false
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      pal_park: &diamond-pearl.pokemon.kadabra.pal_park
+        area: field
+        rate: 10
+        score: 80
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: &diamond-pearl.pokemon.kadabra.experience 140
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      stats: &diamond-pearl.pokemon.kadabra.stats
+        hp:
+          base_value: 40
+          effort_change: 0
+        attack:
+          base_value: 35
+          effort_change: 0
+        defense:
+          base_value: 30
+          effort_change: 0
+        speed:
+          base_value: 105
+          effort_change: 0
+        special-attack:
+          base_value: 120
+          effort_change: 2
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.kadabra.abilities
+        synchronize: *ruby-sapphire.pokemon.kadabra.abilities.synchronize
+        inner-focus: *ruby-sapphire.pokemon.kadabra.abilities.inner-focus
+        magic-guard:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+          twisted-spoon: 5
+        pearl: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        diamond: |
+          If one is nearby, an eerie shadow
+          appears on TV screens. Seeing the
+          shadow is said to bring bad luck.
+        pearl: |
+          When it uses its psychic power, it
+          emits strong ha waves that can
+          ruin precision devices.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *ruby-sapphire.pokemon.kadabra.forms.kadabra.icon
+          sprites:
+            - diamond-pearl/kadabra-default.png
+            - diamond-pearl/back/kadabra-default.png
+            - diamond-pearl/back/female/kadabra-default.png
+            - diamond-pearl/back/shiny/kadabra-default.png
+            - diamond-pearl/female/kadabra-default.png
+            - diamond-pearl/shiny/kadabra-default.png
+            - diamond-pearl/shiny/female/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    extended-sinnoh: 21
+  pokemon:
+    kadabra:
+      genus: *diamond-pearl.pokemon.kadabra.genus
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      shape: *diamond-pearl.pokemon.kadabra.shape
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: *diamond-pearl.pokemon.kadabra.baby
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      pal_park: *diamond-pearl.pokemon.kadabra.pal_park
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: *diamond-pearl.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      stats: *diamond-pearl.pokemon.kadabra.stats
+      abilities: *diamond-pearl.pokemon.kadabra.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        platinum: |
+          It stares at its silver spoon to
+          focus its mind. It emits more alpha
+          waves while doing so.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *ruby-sapphire.pokemon.kadabra.forms.kadabra.icon
+          sprites:
+            - platinum/kadabra-default.png
+            - platinum/back/kadabra-default.png
+            - platinum/back/female/kadabra-default.png
+            - platinum/back/shiny/kadabra-default.png
+            - platinum/female/kadabra-default.png
+            - platinum/shiny/kadabra-default.png
+            - platinum/shiny/female/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 90
+  pokemon:
+    kadabra:
+      genus: *diamond-pearl.pokemon.kadabra.genus
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      shape: *diamond-pearl.pokemon.kadabra.shape
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: *diamond-pearl.pokemon.kadabra.baby
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      pal_park: *diamond-pearl.pokemon.kadabra.pal_park
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: *diamond-pearl.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      stats: *diamond-pearl.pokemon.kadabra.stats
+      abilities: *diamond-pearl.pokemon.kadabra.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It possesses strong spiritual power.
+          The more danger it faces,
+          the stronger its psychic power.
+        soulsilver: |
+          If it uses its abilities, it
+          emits special alpha waves that
+          cause machines to malfunction.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 2-4
+            power:
+              base_value: 1
+              range: 1-3
+            skill:
+              base_value: 4
+              range: 3-5
+            stamina:
+              base_value: 2
+              range: 2-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.kadabra.forms.kadabra.icon
+          sprites:
+            - heartgold-soulsilver/kadabra-default.png
+            - heartgold-soulsilver/back/kadabra-default.png
+            - heartgold-soulsilver/back/female/kadabra-default.png
+            - heartgold-soulsilver/back/shiny/kadabra-default.png
+            - heartgold-soulsilver/female/kadabra-default.png
+            - heartgold-soulsilver/shiny/kadabra-default.png
+            - heartgold-soulsilver/shiny/female/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &black-white.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    kadabra:
+      genus: *diamond-pearl.pokemon.kadabra.genus
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      color: &black-white.pokemon.kadabra.color brown
+      shape: *diamond-pearl.pokemon.kadabra.shape
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: *diamond-pearl.pokemon.kadabra.baby
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: *diamond-pearl.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      stats: *diamond-pearl.pokemon.kadabra.stats
+      abilities: *diamond-pearl.pokemon.kadabra.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        black: |
+          It stares at its silver spoon to
+          focus its mind. It emits more alpha
+          waves while doing so.
+        white: |
+          It stares at its silver spoon to
+          focus its mind. It emits more alpha
+          waves while doing so.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *ruby-sapphire.pokemon.kadabra.forms.kadabra.icon
+          sprites:
+            - black-white/kadabra-default.png
+            - black-white/back/kadabra-default.png
+            - black-white/back/female/kadabra-default.png
+            - black-white/back/shiny/kadabra-default.png
+            - black-white/female/kadabra-default.png
+            - black-white/shiny/kadabra-default.png
+            - black-white/shiny/female/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *black-white.numbers
+  pokemon:
+    kadabra:
+      genus: *diamond-pearl.pokemon.kadabra.genus
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      color: *black-white.pokemon.kadabra.color
+      shape: *diamond-pearl.pokemon.kadabra.shape
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: *diamond-pearl.pokemon.kadabra.baby
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: *diamond-pearl.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      stats: *diamond-pearl.pokemon.kadabra.stats
+      abilities: *diamond-pearl.pokemon.kadabra.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        black-2: |
+          It stares at its silver spoon to
+          focus its mind. It emits more alpha
+          waves while doing so.
+        white-2: |
+          It stares at its silver spoon to
+          focus its mind. It emits more alpha
+          waves while doing so.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *ruby-sapphire.pokemon.kadabra.forms.kadabra.icon
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *red-blue.pokemon.kadabra.forms.kadabra.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-central: 103
+  pokemon:
+    kadabra:
+      genus: *diamond-pearl.pokemon.kadabra.genus
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      color: *black-white.pokemon.kadabra.color
+      shape: *diamond-pearl.pokemon.kadabra.shape
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: *diamond-pearl.pokemon.kadabra.baby
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: *diamond-pearl.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      mega: &x-y.pokemon.kadabra.mega false
+      stats: *diamond-pearl.pokemon.kadabra.stats
+      abilities: *diamond-pearl.pokemon.kadabra.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        x: |
+          When it uses its psychic power, it emits strong
+          alpha waves that can ruin precision devices.
+        'y': |
+          If it uses its abilities, it emits special alpha waves
+          that cause machines to malfunction.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: &x-y.pokemon.kadabra.forms.kadabra.icon kadabra-default.png
+          sprites:
+            - x-y/kadabra-default.png
+            - x-y/female/kadabra-default.png
+            - x-y/shiny/kadabra-default.png
+            - x-y/shiny/female/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: &x-y.pokemon.kadabra.forms.kadabra.cry kadabra-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-hoenn: 41
+  pokemon:
+    kadabra:
+      genus: *diamond-pearl.pokemon.kadabra.genus
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      color: *black-white.pokemon.kadabra.color
+      shape: *diamond-pearl.pokemon.kadabra.shape
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: *diamond-pearl.pokemon.kadabra.baby
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: *diamond-pearl.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      mega: *x-y.pokemon.kadabra.mega
+      stats: *diamond-pearl.pokemon.kadabra.stats
+      abilities: *diamond-pearl.pokemon.kadabra.abilities
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Kadabra emits a peculiar alpha wave if it develops a headache.
+          Only those people with a particularly strong psyche can hope
+          to become a Trainer of this Pokémon.
+        alpha-sapphire: |
+          Kadabra holds a silver spoon in its hand. The spoon is used
+          to amplify the alpha waves in its brain. Without the spoon, the
+          Pokémon is said to be limited to half the usual amount of its
+          telekinetic powers.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *x-y.pokemon.kadabra.forms.kadabra.icon
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *x-y.pokemon.kadabra.forms.kadabra.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/kadabra-default.png
+            - omega-ruby-alpha-sapphire/shiny/kadabra-default.png
+            - omega-ruby-alpha-sapphire/female/kadabra-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/kadabra-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    original-alola: 43
+    original-melemele: 43
+  pokemon:
+    kadabra:
+      genus: *diamond-pearl.pokemon.kadabra.genus
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      color: *black-white.pokemon.kadabra.color
+      shape: *diamond-pearl.pokemon.kadabra.shape
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: *diamond-pearl.pokemon.kadabra.baby
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: *diamond-pearl.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      mega: *x-y.pokemon.kadabra.mega
+      stats: *diamond-pearl.pokemon.kadabra.stats
+      abilities: *diamond-pearl.pokemon.kadabra.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        sun: |-
+          A theory exists that this Pokémon was a young
+          boy who couldn’t control his psychic powers
+          and ended up transformed into this Pokémon.
+        moon: |-
+          Kadabra’s presence infests televisions and
+          monitors with creepy shadows that bring
+          bad luck.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *x-y.pokemon.kadabra.forms.kadabra.icon
+          sprites:
+            - sun-moon/kadabra-default.png
+            - sun-moon/female/kadabra-default.png
+            - sun-moon/shiny/kadabra-default.png
+            - sun-moon/shiny/female/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *x-y.pokemon.kadabra.forms.kadabra.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-alola: 50
+    updated-melemele: 50
+  pokemon:
+    kadabra:
+      genus: *diamond-pearl.pokemon.kadabra.genus
+      evolution_parent: *red-blue.pokemon.kadabra.evolution_parent
+      color: *black-white.pokemon.kadabra.color
+      shape: *diamond-pearl.pokemon.kadabra.shape
+      female_rate: *gold-silver.pokemon.kadabra.female_rate
+      capture_rate: *red-blue.pokemon.kadabra.capture_rate
+      happiness: *ruby-sapphire.pokemon.kadabra.happiness
+      baby: *diamond-pearl.pokemon.kadabra.baby
+      hatch_steps: *gold-silver.pokemon.kadabra.hatch_steps
+      growth_rate: *red-blue.pokemon.kadabra.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.kadabra.forms_switchable
+      name: Kadabra
+      default: *red-blue.pokemon.kadabra.default
+      height: *ruby-sapphire.pokemon.kadabra.height
+      weight: *ruby-sapphire.pokemon.kadabra.weight
+      experience: *diamond-pearl.pokemon.kadabra.experience
+      types: *red-blue.pokemon.kadabra.types
+      egg_groups: *gold-silver.pokemon.kadabra.egg_groups
+      mega: *x-y.pokemon.kadabra.mega
+      stats: *diamond-pearl.pokemon.kadabra.stats
+      abilities: *diamond-pearl.pokemon.kadabra.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.kadabra.wild_held_items.diamond
+      evolution_conditions: *red-blue.pokemon.kadabra.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It stares at a silver spoon to amplify its psychic
+          powers before it lets loose. Apparently, gold
+          spoons are no good.
+        ultra-moon: |-
+          It possesses strong mental capabilities, but its
+          psychic powers are halved when it’s not
+          holding a silver spoon.
+      forms:
+        kadabra:
+          name: Kadabra
+          form_name: *red-blue.pokemon.kadabra.forms.kadabra.form_name
+          default: true
+          battle_only: *red-blue.pokemon.kadabra.forms.kadabra.battle_only
+          icon: *x-y.pokemon.kadabra.forms.kadabra.icon
+          sprites:
+            - ultra-sun-ultra-moon/kadabra-default.png
+            - ultra-sun-ultra-moon/female/kadabra-default.png
+            - ultra-sun-ultra-moon/shiny/kadabra-default.png
+            - ultra-sun-ultra-moon/shiny/female/kadabra-default.png
+          art: *red-blue.pokemon.kadabra.forms.kadabra.art
+          footprint: *ruby-sapphire.pokemon.kadabra.forms.kadabra.footprint
+          cry: *x-y.pokemon.kadabra.forms.kadabra.cry

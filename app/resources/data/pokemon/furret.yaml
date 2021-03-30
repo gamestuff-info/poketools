@@ -1,0 +1,858 @@
+gold-silver:
+  name: &gold-silver.name FURRET
+  position: &gold-silver.position 161
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 162
+    original-johto: 19
+    original-johto-abc: 52
+  pokemon:
+    furret:
+      name: FURRET
+      default: &gold-silver.pokemon.furret.default true
+      capture_rate: &gold-silver.pokemon.furret.capture_rate 90
+      experience: &gold-silver.pokemon.furret.experience 116
+      types: &gold-silver.pokemon.furret.types
+        - normal
+      stats: &gold-silver.pokemon.furret.stats
+        hp:
+          base_value: 85
+          effort_change: 85
+        attack:
+          base_value: 76
+          effort_change: 76
+        defense:
+          base_value: 64
+          effort_change: 64
+        speed:
+          base_value: 90
+          effort_change: 90
+        special-attack:
+          base_value: 45
+          effort_change: 45
+        special-defense:
+          base_value: 55
+          effort_change: 45
+      growth_rate: &gold-silver.pokemon.furret.growth_rate medium
+      female_rate: &gold-silver.pokemon.furret.female_rate 50
+      hatch_steps: &gold-silver.pokemon.furret.hatch_steps 15
+      egg_groups: &gold-silver.pokemon.furret.egg_groups
+        - ground
+      wild_held_items:
+        gold: &gold-silver.pokemon.furret.wild_held_items.gold
+          berry: 23
+          gold-berry: 2
+        silver: *gold-silver.pokemon.furret.wild_held_items.gold
+      genus: &gold-silver.pokemon.furret.genus 'LONG BODY Pokémon'
+      height: &gold-silver.pokemon.furret.height 18
+      weight: &gold-silver.pokemon.furret.weight 326
+      flavor_text:
+        gold: |
+          It makes a nest to
+          suit its long and
+          skinny body. The
+          nest is impossible
+          for other #MON
+          to enter.
+        silver: |
+          There is no tell-
+          ing where the tail
+          begins. Despite
+          its short legs, it
+          is quick at hunt-
+          ing RATTATA.
+      evolution_parent: &gold-silver.pokemon.furret.evolution_parent sentret/sentret
+      evolution_conditions: &gold-silver.pokemon.furret.evolution_conditions
+        level-up:
+          minimum_level: 15
+      forms:
+        furret:
+          name: FURRET
+          form_name: &gold-silver.pokemon.furret.forms.furret.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.furret.forms.furret.battle_only false
+          sprites:
+            - gold-silver/furret-default.png
+            - gold-silver/back/furret-default.png
+            - gold-silver/shiny/furret-default.png
+          art: &gold-silver.pokemon.furret.forms.furret.art
+            - furret-default.png
+          cry: &gold-silver.pokemon.furret.forms.furret.cry gen5/furret-default.webm
+          icon: &gold-silver.pokemon.furret.forms.furret.icon gen2/fox.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    furret:
+      name: FURRET
+      default: *gold-silver.pokemon.furret.default
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      experience: *gold-silver.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      stats: *gold-silver.pokemon.furret.stats
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      wild_held_items:
+        crystal: *gold-silver.pokemon.furret.wild_held_items.gold
+      genus: *gold-silver.pokemon.furret.genus
+      height: *gold-silver.pokemon.furret.height
+      weight: *gold-silver.pokemon.furret.weight
+      flavor_text:
+        crystal: |
+          It lives in narrow
+          burrows that fit
+          its slim body. The
+          deeper the nests
+          go, the more maze-
+          like they become.
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      forms:
+        furret:
+          name: FURRET
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          sprites:
+            - crystal/furret-default.png
+            - crystal/back/furret-default.png
+            - crystal/shiny/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+          icon: *gold-silver.pokemon.furret.forms.furret.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 162
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 317
+  pokemon:
+    furret:
+      name: FURRET
+      default: *gold-silver.pokemon.furret.default
+      forms_switchable: &ruby-sapphire.pokemon.furret.forms_switchable false
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      experience: *gold-silver.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      stats: &ruby-sapphire.pokemon.furret.stats
+        hp:
+          base_value: 85
+          effort_change: 0
+        attack:
+          base_value: 76
+          effort_change: 0
+        defense:
+          base_value: 64
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 2
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 85
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.furret.wild_held_items.ruby
+          oran-berry: 50
+          sitrus-berry: 5
+        sapphire: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.furret.happiness 70
+      abilities: &ruby-sapphire.pokemon.furret.abilities
+        run-away: &ruby-sapphire.pokemon.furret.abilities.run-away
+          hidden: &ruby-sapphire.pokemon.furret.abilities.run-away.hidden false
+          position: 1
+        keen-eye: &ruby-sapphire.pokemon.furret.abilities.keen-eye
+          hidden: *ruby-sapphire.pokemon.furret.abilities.run-away.hidden
+          position: 2
+      genus: *gold-silver.pokemon.furret.genus
+      height: *gold-silver.pokemon.furret.height
+      weight: &ruby-sapphire.pokemon.furret.weight 325
+      flavor_text:
+        ruby: |
+          FURRET has a very slim build.
+          When under attack, it can slickly squirm
+           through narrow spaces and get away.
+          In spite of its short limbs, this
+           POKéMON is very nimble and fleet.
+        sapphire: |
+          FURRET has a very slim build.
+          When under attack, it can slickly squirm
+          through narrow spaces and get away.
+          In spite of its short limbs,  this
+          POKéMON is very nimble and fleet.
+      forms:
+        furret:
+          name: FURRET
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: &ruby-sapphire.pokemon.furret.forms.furret.icon gen5/furret-default.png
+          sprites:
+            - ruby-sapphire/furret-default.png
+            - ruby-sapphire/back/furret-default.png
+            - ruby-sapphire/shiny/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: &ruby-sapphire.pokemon.furret.forms.furret.footprint furret.png
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    furret:
+      name: FURRET
+      default: *gold-silver.pokemon.furret.default
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      experience: *gold-silver.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      stats: *ruby-sapphire.pokemon.furret.stats
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      abilities: *ruby-sapphire.pokemon.furret.abilities
+      genus: *gold-silver.pokemon.furret.genus
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      flavor_text:
+        emerald: |
+          A FURRET has a very slim build. When under
+          attack, it can squirm through narrow
+          spaces and get away. In spite of its short
+          limbs, it is very nimble and fleet.
+      forms:
+        furret:
+          name: FURRET
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *ruby-sapphire.pokemon.furret.forms.furret.icon
+          sprites:
+            - emerald/furret-default.png
+            - emerald/shiny/furret-default.png
+            - emerald/animated/furret-default.webm
+            - emerald/animated/shiny/furret-default.webm
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 101
+  pokemon:
+    furret:
+      name: FURRET
+      default: *gold-silver.pokemon.furret.default
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      experience: *gold-silver.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      stats: *ruby-sapphire.pokemon.furret.stats
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      abilities: *ruby-sapphire.pokemon.furret.abilities
+      genus: *gold-silver.pokemon.furret.genus
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      forms:
+        furret:
+          name: FURRET
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          sprites:
+            - colosseum/furret-default.png
+            - colosseum/shiny/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    furret:
+      name: FURRET
+      default: *gold-silver.pokemon.furret.default
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      experience: *gold-silver.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      stats: *ruby-sapphire.pokemon.furret.stats
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      abilities: *ruby-sapphire.pokemon.furret.abilities
+      genus: *gold-silver.pokemon.furret.genus
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      forms:
+        furret:
+          name: FURRET
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          sprites:
+            - xd/furret-default.png
+            - xd/shiny/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    furret:
+      name: FURRET
+      default: *gold-silver.pokemon.furret.default
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      experience: *gold-silver.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      stats: *ruby-sapphire.pokemon.furret.stats
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      abilities: *ruby-sapphire.pokemon.furret.abilities
+      genus: *gold-silver.pokemon.furret.genus
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      flavor_text:
+        firered: |
+          There is no telling where its tail begins.
+          Despite its short legs,  it is quick at
+          hunting RATTATA.
+        leafgreen: |
+          It makes a nest to suit its long and skinny
+          body. The nest is impossible for other
+          POKéMON to enter.
+      forms:
+        furret:
+          name: FURRET
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *ruby-sapphire.pokemon.furret.forms.furret.icon
+          sprites:
+            - firered-leafgreen/furret-default.png
+            - firered-leafgreen/back/furret-default.png
+            - firered-leafgreen/shiny/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Furret
+  position: &diamond-pearl.position 194
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    furret:
+      genus: &diamond-pearl.pokemon.furret.genus 'Long Body Pokémon'
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      shape: &diamond-pearl.pokemon.furret.shape quadruped
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: &diamond-pearl.pokemon.furret.baby false
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      pal_park: &diamond-pearl.pokemon.furret.pal_park
+        area: field
+        rate: 30
+        score: 50
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: &diamond-pearl.pokemon.furret.experience 145
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      stats: &diamond-pearl.pokemon.furret.stats
+        hp:
+          base_value: 85
+          effort_change: 0
+        attack:
+          base_value: 76
+          effort_change: 0
+        defense:
+          base_value: 64
+          effort_change: 0
+        speed:
+          base_value: 90
+          effort_change: 2
+        special-attack:
+          base_value: 45
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.furret.abilities
+        run-away: *ruby-sapphire.pokemon.furret.abilities.run-away
+        keen-eye: *ruby-sapphire.pokemon.furret.abilities.keen-eye
+        frisk:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+        pearl: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      flavor_text:
+        diamond: |
+          The mother puts its offspring to
+          sleep by curling up around them.
+          It corners foes with speed.
+        pearl: |
+          The mother puts its offspring to
+          sleep by curling up around them.
+          It corners foes with speed.
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *ruby-sapphire.pokemon.furret.forms.furret.icon
+          sprites:
+            - diamond-pearl/back/shiny/furret-default.png
+            - diamond-pearl/back/furret-default.png
+            - diamond-pearl/shiny/furret-default.png
+            - diamond-pearl/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    furret:
+      genus: *diamond-pearl.pokemon.furret.genus
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      shape: *diamond-pearl.pokemon.furret.shape
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: *diamond-pearl.pokemon.furret.baby
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      pal_park: *diamond-pearl.pokemon.furret.pal_park
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: *diamond-pearl.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      stats: *diamond-pearl.pokemon.furret.stats
+      abilities: *diamond-pearl.pokemon.furret.abilities
+      wild_held_items:
+        platinum: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      flavor_text:
+        platinum: |
+          The mother puts its offspring to
+          sleep by curling up around them.
+          It corners foes with speed.
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *ruby-sapphire.pokemon.furret.forms.furret.icon
+          sprites:
+            - platinum/back/shiny/furret-default.png
+            - platinum/back/furret-default.png
+            - platinum/shiny/furret-default.png
+            - platinum/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 20
+  pokemon:
+    furret:
+      genus: *diamond-pearl.pokemon.furret.genus
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      shape: *diamond-pearl.pokemon.furret.shape
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: *diamond-pearl.pokemon.furret.baby
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      pal_park: *diamond-pearl.pokemon.furret.pal_park
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: *diamond-pearl.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      stats: *diamond-pearl.pokemon.furret.stats
+      abilities: *diamond-pearl.pokemon.furret.abilities
+      wild_held_items:
+        heartgold: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+        soulsilver: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It makes a nest to suit its long and
+          skinny body. The nest is impossible
+          for other Pokémon to enter.
+        soulsilver: |
+          There is no telling where the tail
+          begins. Despite its short legs, it is
+          quick and likes to chase RATTATA.
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 5
+              range: 3-5
+            power:
+              base_value: 2
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-3
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.furret.forms.furret.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/furret-default.png
+            - heartgold-soulsilver/back/furret-default.png
+            - heartgold-soulsilver/shiny/furret-default.png
+            - heartgold-soulsilver/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    furret:
+      genus: *diamond-pearl.pokemon.furret.genus
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      color: &black-white.pokemon.furret.color brown
+      shape: *diamond-pearl.pokemon.furret.shape
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: *diamond-pearl.pokemon.furret.baby
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: *diamond-pearl.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      stats: *diamond-pearl.pokemon.furret.stats
+      abilities: *diamond-pearl.pokemon.furret.abilities
+      wild_held_items:
+        black: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+        white: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      flavor_text:
+        black: |
+          The mother puts its offspring to
+          sleep by curling up around them.
+          It corners foes with speed.
+        white: |
+          The mother puts its offspring to
+          sleep by curling up around them.
+          It corners foes with speed.
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *ruby-sapphire.pokemon.furret.forms.furret.icon
+          sprites:
+            - black-white/back/shiny/furret-default.png
+            - black-white/back/furret-default.png
+            - black-white/shiny/furret-default.png
+            - black-white/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    furret:
+      genus: *diamond-pearl.pokemon.furret.genus
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      color: *black-white.pokemon.furret.color
+      shape: *diamond-pearl.pokemon.furret.shape
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: *diamond-pearl.pokemon.furret.baby
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: *diamond-pearl.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      stats: *diamond-pearl.pokemon.furret.stats
+      abilities: *diamond-pearl.pokemon.furret.abilities
+      wild_held_items:
+        black-2: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+        white-2: *ruby-sapphire.pokemon.furret.wild_held_items.ruby
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      flavor_text:
+        black-2: |
+          The mother puts its offspring to
+          sleep by curling up around them.
+          It corners foes with speed.
+        white-2: |
+          The mother puts its offspring to
+          sleep by curling up around them.
+          It corners foes with speed.
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *ruby-sapphire.pokemon.furret.forms.furret.icon
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *gold-silver.pokemon.furret.forms.furret.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-central: 110
+  pokemon:
+    furret:
+      genus: *diamond-pearl.pokemon.furret.genus
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      color: *black-white.pokemon.furret.color
+      shape: *diamond-pearl.pokemon.furret.shape
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: *diamond-pearl.pokemon.furret.baby
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: *diamond-pearl.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      mega: &x-y.pokemon.furret.mega false
+      stats: *diamond-pearl.pokemon.furret.stats
+      abilities: *diamond-pearl.pokemon.furret.abilities
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      flavor_text:
+        x: |
+          The mother puts its offspring to sleep by curling up
+          around them. It corners foes with speed.
+        'y': |
+          It makes a nest to suit its long and skinny body.
+          The nest is impossible for other Pokémon to enter.
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: &x-y.pokemon.furret.forms.furret.icon furret-default.png
+          sprites:
+            - x-y/shiny/furret-default.png
+            - x-y/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: &x-y.pokemon.furret.forms.furret.cry furret-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    furret:
+      genus: *diamond-pearl.pokemon.furret.genus
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      color: *black-white.pokemon.furret.color
+      shape: *diamond-pearl.pokemon.furret.shape
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: *diamond-pearl.pokemon.furret.baby
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: *diamond-pearl.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      mega: *x-y.pokemon.furret.mega
+      stats: *diamond-pearl.pokemon.furret.stats
+      abilities: *diamond-pearl.pokemon.furret.abilities
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Furret has a very slim build. When under attack, it can slickly
+          squirm through narrow spaces and get away. In spite of its
+          short limbs, this Pokémon is very nimble and fleet.
+        alpha-sapphire: |
+          Furret has a very slim build. When under attack, it can slickly
+          squirm through narrow spaces and get away. In spite of its
+          short limbs, this Pokémon is very nimble and fleet.
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *x-y.pokemon.furret.forms.furret.icon
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *x-y.pokemon.furret.forms.furret.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/furret-default.png
+            - omega-ruby-alpha-sapphire/shiny/furret-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    furret:
+      genus: *diamond-pearl.pokemon.furret.genus
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      color: *black-white.pokemon.furret.color
+      shape: *diamond-pearl.pokemon.furret.shape
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: *diamond-pearl.pokemon.furret.baby
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: *diamond-pearl.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      mega: *x-y.pokemon.furret.mega
+      stats: *diamond-pearl.pokemon.furret.stats
+      abilities: *diamond-pearl.pokemon.furret.abilities
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *x-y.pokemon.furret.forms.furret.icon
+          sprites:
+            - sun-moon/shiny/furret-default.png
+            - sun-moon/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *x-y.pokemon.furret.forms.furret.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    furret:
+      genus: *diamond-pearl.pokemon.furret.genus
+      evolution_parent: *gold-silver.pokemon.furret.evolution_parent
+      color: *black-white.pokemon.furret.color
+      shape: *diamond-pearl.pokemon.furret.shape
+      female_rate: *gold-silver.pokemon.furret.female_rate
+      capture_rate: *gold-silver.pokemon.furret.capture_rate
+      happiness: *ruby-sapphire.pokemon.furret.happiness
+      baby: *diamond-pearl.pokemon.furret.baby
+      hatch_steps: *gold-silver.pokemon.furret.hatch_steps
+      growth_rate: *gold-silver.pokemon.furret.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.furret.forms_switchable
+      name: Furret
+      default: *gold-silver.pokemon.furret.default
+      height: *gold-silver.pokemon.furret.height
+      weight: *ruby-sapphire.pokemon.furret.weight
+      experience: *diamond-pearl.pokemon.furret.experience
+      types: *gold-silver.pokemon.furret.types
+      egg_groups: *gold-silver.pokemon.furret.egg_groups
+      mega: *x-y.pokemon.furret.mega
+      stats: *diamond-pearl.pokemon.furret.stats
+      abilities: *diamond-pearl.pokemon.furret.abilities
+      evolution_conditions: *gold-silver.pokemon.furret.evolution_conditions
+      forms:
+        furret:
+          name: Furret
+          form_name: *gold-silver.pokemon.furret.forms.furret.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.furret.forms.furret.battle_only
+          icon: *x-y.pokemon.furret.forms.furret.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/furret-default.png
+            - ultra-sun-ultra-moon/furret-default.png
+          art: *gold-silver.pokemon.furret.forms.furret.art
+          footprint: *ruby-sapphire.pokemon.furret.forms.furret.footprint
+          cry: *x-y.pokemon.furret.forms.furret.cry

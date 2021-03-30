@@ -1,0 +1,540 @@
+diamond-pearl:
+  name: &diamond-pearl.name Gabite
+  position: &diamond-pearl.position 465
+  numbers:
+    national: &diamond-pearl.numbers.national 444
+    original-sinnoh: 110
+  pokemon:
+    gabite:
+      genus: &diamond-pearl.pokemon.gabite.genus 'Cave Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.gabite.evolution_parent gible/gible
+      shape: &diamond-pearl.pokemon.gabite.shape upright
+      female_rate: &diamond-pearl.pokemon.gabite.female_rate 50
+      capture_rate: &diamond-pearl.pokemon.gabite.capture_rate 45
+      happiness: &diamond-pearl.pokemon.gabite.happiness 70
+      baby: &diamond-pearl.pokemon.gabite.baby false
+      hatch_steps: &diamond-pearl.pokemon.gabite.hatch_steps 40
+      growth_rate: &diamond-pearl.pokemon.gabite.growth_rate slow
+      forms_switchable: &diamond-pearl.pokemon.gabite.forms_switchable false
+      pal_park: &diamond-pearl.pokemon.gabite.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Gabite
+      default: &diamond-pearl.pokemon.gabite.default true
+      height: &diamond-pearl.pokemon.gabite.height 14
+      weight: &diamond-pearl.pokemon.gabite.weight 560
+      experience: &diamond-pearl.pokemon.gabite.experience 144
+      types: &diamond-pearl.pokemon.gabite.types
+        - dragon
+        - ground
+      egg_groups: &diamond-pearl.pokemon.gabite.egg_groups
+        - monster
+        - dragon
+      stats: &diamond-pearl.pokemon.gabite.stats
+        hp:
+          base_value: 68
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 2
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 82
+          effort_change: 0
+        special-attack:
+          base_value: 50
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.gabite.abilities
+        sand-veil:
+          hidden: false
+          position: 1
+        rough-skin:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.gabite.wild_held_items.diamond
+          haban-berry: 5
+        pearl: *diamond-pearl.pokemon.gabite.wild_held_items.diamond
+      evolution_conditions: &diamond-pearl.pokemon.gabite.evolution_conditions
+        level-up:
+          minimum_level: 24
+      flavor_text:
+        diamond: |
+          There is a long-held belief that
+          medicine made from its scales will
+          heal even incurable illnesses.
+        pearl: |
+          It habitually digs up and hoards
+          gems in its nest. Its loot is
+          constantly targeted by thieves.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: &diamond-pearl.pokemon.gabite.forms.gabite.form_name 'Default Form'
+          default: true
+          battle_only: &diamond-pearl.pokemon.gabite.forms.gabite.battle_only false
+          icon: &diamond-pearl.pokemon.gabite.forms.gabite.icon gen5/gabite-default.png
+          sprites:
+            - diamond-pearl/back/gabite-default.png
+            - diamond-pearl/back/female/gabite-default.png
+            - diamond-pearl/back/shiny/gabite-default.png
+            - diamond-pearl/gabite-default.png
+            - diamond-pearl/female/gabite-default.png
+            - diamond-pearl/shiny/gabite-default.png
+            - diamond-pearl/shiny/female/gabite-default.png
+          art: &diamond-pearl.pokemon.gabite.forms.gabite.art
+            - gabite-default.png
+          footprint: &diamond-pearl.pokemon.gabite.forms.gabite.footprint gabite.png
+          cry: &diamond-pearl.pokemon.gabite.forms.gabite.cry gen5/gabite-default.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 110
+  pokemon:
+    gabite:
+      genus: *diamond-pearl.pokemon.gabite.genus
+      evolution_parent: *diamond-pearl.pokemon.gabite.evolution_parent
+      shape: *diamond-pearl.pokemon.gabite.shape
+      female_rate: *diamond-pearl.pokemon.gabite.female_rate
+      capture_rate: *diamond-pearl.pokemon.gabite.capture_rate
+      happiness: *diamond-pearl.pokemon.gabite.happiness
+      baby: *diamond-pearl.pokemon.gabite.baby
+      hatch_steps: *diamond-pearl.pokemon.gabite.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.gabite.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.gabite.forms_switchable
+      pal_park: *diamond-pearl.pokemon.gabite.pal_park
+      name: Gabite
+      default: *diamond-pearl.pokemon.gabite.default
+      height: *diamond-pearl.pokemon.gabite.height
+      weight: *diamond-pearl.pokemon.gabite.weight
+      experience: *diamond-pearl.pokemon.gabite.experience
+      types: *diamond-pearl.pokemon.gabite.types
+      egg_groups: *diamond-pearl.pokemon.gabite.egg_groups
+      stats: *diamond-pearl.pokemon.gabite.stats
+      abilities: *diamond-pearl.pokemon.gabite.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.gabite.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.gabite.evolution_conditions
+      flavor_text:
+        platinum: |
+          It loves sparkly things. It seeks
+          treasures in caves and hoards the
+          loot in its nest.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: *diamond-pearl.pokemon.gabite.forms.gabite.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.gabite.forms.gabite.battle_only
+          icon: *diamond-pearl.pokemon.gabite.forms.gabite.icon
+          sprites:
+            - platinum/back/gabite-default.png
+            - platinum/back/female/gabite-default.png
+            - platinum/back/shiny/gabite-default.png
+            - platinum/gabite-default.png
+            - platinum/female/gabite-default.png
+            - platinum/shiny/gabite-default.png
+            - platinum/shiny/female/gabite-default.png
+          art: *diamond-pearl.pokemon.gabite.forms.gabite.art
+          footprint: *diamond-pearl.pokemon.gabite.forms.gabite.footprint
+          cry: *diamond-pearl.pokemon.gabite.forms.gabite.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &heartgold-soulsilver.numbers
+    national: *diamond-pearl.numbers.national
+  pokemon:
+    gabite:
+      genus: *diamond-pearl.pokemon.gabite.genus
+      evolution_parent: *diamond-pearl.pokemon.gabite.evolution_parent
+      shape: *diamond-pearl.pokemon.gabite.shape
+      female_rate: *diamond-pearl.pokemon.gabite.female_rate
+      capture_rate: *diamond-pearl.pokemon.gabite.capture_rate
+      happiness: *diamond-pearl.pokemon.gabite.happiness
+      baby: *diamond-pearl.pokemon.gabite.baby
+      hatch_steps: *diamond-pearl.pokemon.gabite.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.gabite.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.gabite.forms_switchable
+      pal_park: *diamond-pearl.pokemon.gabite.pal_park
+      name: Gabite
+      default: *diamond-pearl.pokemon.gabite.default
+      height: *diamond-pearl.pokemon.gabite.height
+      weight: *diamond-pearl.pokemon.gabite.weight
+      experience: *diamond-pearl.pokemon.gabite.experience
+      types: *diamond-pearl.pokemon.gabite.types
+      egg_groups: *diamond-pearl.pokemon.gabite.egg_groups
+      stats: *diamond-pearl.pokemon.gabite.stats
+      abilities: *diamond-pearl.pokemon.gabite.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.gabite.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.gabite.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.gabite.evolution_conditions
+      flavor_text:
+        heartgold: |
+          As it digs to expand its nest, it
+          habitually digs up gems that it
+          then hoards in its nest.
+        soulsilver: |
+          As it digs to expand its nest, it
+          habitually digs up gems that it
+          then hoards in its nest.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: *diamond-pearl.pokemon.gabite.forms.gabite.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.gabite.forms.gabite.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-3
+            power:
+              base_value: 4
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *diamond-pearl.pokemon.gabite.forms.gabite.icon
+          sprites:
+            - heartgold-soulsilver/back/gabite-default.png
+            - heartgold-soulsilver/back/female/gabite-default.png
+            - heartgold-soulsilver/back/shiny/gabite-default.png
+            - heartgold-soulsilver/gabite-default.png
+            - heartgold-soulsilver/female/gabite-default.png
+            - heartgold-soulsilver/shiny/gabite-default.png
+            - heartgold-soulsilver/shiny/female/gabite-default.png
+          art: *diamond-pearl.pokemon.gabite.forms.gabite.art
+          footprint: *diamond-pearl.pokemon.gabite.forms.gabite.footprint
+          cry: *diamond-pearl.pokemon.gabite.forms.gabite.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    gabite:
+      genus: *diamond-pearl.pokemon.gabite.genus
+      evolution_parent: *diamond-pearl.pokemon.gabite.evolution_parent
+      color: &black-white.pokemon.gabite.color blue
+      shape: *diamond-pearl.pokemon.gabite.shape
+      female_rate: *diamond-pearl.pokemon.gabite.female_rate
+      capture_rate: *diamond-pearl.pokemon.gabite.capture_rate
+      happiness: *diamond-pearl.pokemon.gabite.happiness
+      baby: *diamond-pearl.pokemon.gabite.baby
+      hatch_steps: *diamond-pearl.pokemon.gabite.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.gabite.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.gabite.forms_switchable
+      name: Gabite
+      default: *diamond-pearl.pokemon.gabite.default
+      height: *diamond-pearl.pokemon.gabite.height
+      weight: *diamond-pearl.pokemon.gabite.weight
+      experience: *diamond-pearl.pokemon.gabite.experience
+      types: *diamond-pearl.pokemon.gabite.types
+      egg_groups: *diamond-pearl.pokemon.gabite.egg_groups
+      stats: *diamond-pearl.pokemon.gabite.stats
+      abilities: *diamond-pearl.pokemon.gabite.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.gabite.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.gabite.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.gabite.evolution_conditions
+      flavor_text:
+        black: |
+          It loves sparkly things. It seeks
+          treasures in caves and hoards the
+          loot in its nest.
+        white: |
+          It loves sparkly things. It seeks
+          treasures in caves and hoards the
+          loot in its nest.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: *diamond-pearl.pokemon.gabite.forms.gabite.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.gabite.forms.gabite.battle_only
+          icon: *diamond-pearl.pokemon.gabite.forms.gabite.icon
+          sprites:
+            - black-white/back/gabite-default.png
+            - black-white/back/female/gabite-default.png
+            - black-white/back/shiny/gabite-default.png
+            - black-white/gabite-default.png
+            - black-white/female/gabite-default.png
+            - black-white/shiny/gabite-default.png
+            - black-white/shiny/female/gabite-default.png
+          art: *diamond-pearl.pokemon.gabite.forms.gabite.art
+          footprint: *diamond-pearl.pokemon.gabite.forms.gabite.footprint
+          cry: *diamond-pearl.pokemon.gabite.forms.gabite.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    gabite:
+      genus: *diamond-pearl.pokemon.gabite.genus
+      evolution_parent: *diamond-pearl.pokemon.gabite.evolution_parent
+      color: *black-white.pokemon.gabite.color
+      shape: *diamond-pearl.pokemon.gabite.shape
+      female_rate: *diamond-pearl.pokemon.gabite.female_rate
+      capture_rate: *diamond-pearl.pokemon.gabite.capture_rate
+      happiness: *diamond-pearl.pokemon.gabite.happiness
+      baby: *diamond-pearl.pokemon.gabite.baby
+      hatch_steps: *diamond-pearl.pokemon.gabite.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.gabite.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.gabite.forms_switchable
+      name: Gabite
+      default: *diamond-pearl.pokemon.gabite.default
+      height: *diamond-pearl.pokemon.gabite.height
+      weight: *diamond-pearl.pokemon.gabite.weight
+      experience: *diamond-pearl.pokemon.gabite.experience
+      types: *diamond-pearl.pokemon.gabite.types
+      egg_groups: *diamond-pearl.pokemon.gabite.egg_groups
+      stats: *diamond-pearl.pokemon.gabite.stats
+      abilities: *diamond-pearl.pokemon.gabite.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.gabite.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.gabite.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.gabite.evolution_conditions
+      flavor_text:
+        black-2: |
+          It loves sparkly things. It seeks
+          treasures in caves and hoards the
+          loot in its nest.
+        white-2: |
+          It loves sparkly things. It seeks
+          treasures in caves and hoards the
+          loot in its nest.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: *diamond-pearl.pokemon.gabite.forms.gabite.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.gabite.forms.gabite.battle_only
+          icon: *diamond-pearl.pokemon.gabite.forms.gabite.icon
+          art: *diamond-pearl.pokemon.gabite.forms.gabite.art
+          footprint: *diamond-pearl.pokemon.gabite.forms.gabite.footprint
+          cry: *diamond-pearl.pokemon.gabite.forms.gabite.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    kalos-mountain: 7
+  pokemon:
+    gabite:
+      genus: *diamond-pearl.pokemon.gabite.genus
+      evolution_parent: *diamond-pearl.pokemon.gabite.evolution_parent
+      color: *black-white.pokemon.gabite.color
+      shape: *diamond-pearl.pokemon.gabite.shape
+      female_rate: *diamond-pearl.pokemon.gabite.female_rate
+      capture_rate: *diamond-pearl.pokemon.gabite.capture_rate
+      happiness: *diamond-pearl.pokemon.gabite.happiness
+      baby: *diamond-pearl.pokemon.gabite.baby
+      hatch_steps: *diamond-pearl.pokemon.gabite.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.gabite.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.gabite.forms_switchable
+      name: Gabite
+      default: *diamond-pearl.pokemon.gabite.default
+      height: *diamond-pearl.pokemon.gabite.height
+      weight: *diamond-pearl.pokemon.gabite.weight
+      experience: *diamond-pearl.pokemon.gabite.experience
+      types: *diamond-pearl.pokemon.gabite.types
+      egg_groups: *diamond-pearl.pokemon.gabite.egg_groups
+      mega: &x-y.pokemon.gabite.mega false
+      stats: *diamond-pearl.pokemon.gabite.stats
+      abilities: *diamond-pearl.pokemon.gabite.abilities
+      evolution_conditions: *diamond-pearl.pokemon.gabite.evolution_conditions
+      flavor_text:
+        x: |
+          It loves sparkly things. It seeks treasures in caves
+          and hoards the loot in its nest.
+        'y': |
+          As it digs to expand its nest, it habitually digs up
+          gems that it then hoards in its nest.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: *diamond-pearl.pokemon.gabite.forms.gabite.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.gabite.forms.gabite.battle_only
+          icon: &x-y.pokemon.gabite.forms.gabite.icon gabite-default.png
+          sprites:
+            - x-y/gabite-default.png
+            - x-y/female/gabite-default.png
+            - x-y/shiny/gabite-default.png
+            - x-y/shiny/female/gabite-default.png
+          art: *diamond-pearl.pokemon.gabite.forms.gabite.art
+          footprint: *diamond-pearl.pokemon.gabite.forms.gabite.footprint
+          cry: &x-y.pokemon.gabite.forms.gabite.cry gabite-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    gabite:
+      genus: *diamond-pearl.pokemon.gabite.genus
+      evolution_parent: *diamond-pearl.pokemon.gabite.evolution_parent
+      color: *black-white.pokemon.gabite.color
+      shape: *diamond-pearl.pokemon.gabite.shape
+      female_rate: *diamond-pearl.pokemon.gabite.female_rate
+      capture_rate: *diamond-pearl.pokemon.gabite.capture_rate
+      happiness: *diamond-pearl.pokemon.gabite.happiness
+      baby: *diamond-pearl.pokemon.gabite.baby
+      hatch_steps: *diamond-pearl.pokemon.gabite.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.gabite.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.gabite.forms_switchable
+      name: Gabite
+      default: *diamond-pearl.pokemon.gabite.default
+      height: *diamond-pearl.pokemon.gabite.height
+      weight: *diamond-pearl.pokemon.gabite.weight
+      experience: *diamond-pearl.pokemon.gabite.experience
+      types: *diamond-pearl.pokemon.gabite.types
+      egg_groups: *diamond-pearl.pokemon.gabite.egg_groups
+      mega: *x-y.pokemon.gabite.mega
+      stats: *diamond-pearl.pokemon.gabite.stats
+      abilities: *diamond-pearl.pokemon.gabite.abilities
+      evolution_conditions: *diamond-pearl.pokemon.gabite.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It loves sparkly things. It seeks treasures in caves
+          and hoards the loot in its nest.
+        alpha-sapphire: |
+          As it digs to expand its nest, it habitually digs up
+          gems that it then hoards in its nest.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: *diamond-pearl.pokemon.gabite.forms.gabite.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.gabite.forms.gabite.battle_only
+          icon: *x-y.pokemon.gabite.forms.gabite.icon
+          art: *diamond-pearl.pokemon.gabite.forms.gabite.art
+          footprint: *diamond-pearl.pokemon.gabite.forms.gabite.footprint
+          cry: *x-y.pokemon.gabite.forms.gabite.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/gabite-default.png
+            - omega-ruby-alpha-sapphire/shiny/gabite-default.png
+            - omega-ruby-alpha-sapphire/female/gabite-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/gabite-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    original-alola: 239
+    original-ulaula: 111
+  pokemon:
+    gabite:
+      genus: *diamond-pearl.pokemon.gabite.genus
+      evolution_parent: *diamond-pearl.pokemon.gabite.evolution_parent
+      color: *black-white.pokemon.gabite.color
+      shape: *diamond-pearl.pokemon.gabite.shape
+      female_rate: *diamond-pearl.pokemon.gabite.female_rate
+      capture_rate: *diamond-pearl.pokemon.gabite.capture_rate
+      happiness: *diamond-pearl.pokemon.gabite.happiness
+      baby: *diamond-pearl.pokemon.gabite.baby
+      hatch_steps: *diamond-pearl.pokemon.gabite.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.gabite.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.gabite.forms_switchable
+      name: Gabite
+      default: *diamond-pearl.pokemon.gabite.default
+      height: *diamond-pearl.pokemon.gabite.height
+      weight: *diamond-pearl.pokemon.gabite.weight
+      experience: *diamond-pearl.pokemon.gabite.experience
+      types: *diamond-pearl.pokemon.gabite.types
+      egg_groups: *diamond-pearl.pokemon.gabite.egg_groups
+      mega: *x-y.pokemon.gabite.mega
+      stats: *diamond-pearl.pokemon.gabite.stats
+      abilities: *diamond-pearl.pokemon.gabite.abilities
+      evolution_conditions: *diamond-pearl.pokemon.gabite.evolution_conditions
+      flavor_text:
+        sun: |-
+          In rare cases, it molts and sheds its scales.
+          Medicine containing its scales as an ingredient
+          will make a weary body feel invigorated.
+        moon: |-
+          Shiny objects are its passion. It can be found in
+          its cave, scarcely moving, its gaze fixed on the
+          jewels it’s amassed or Carbink it has caught.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: *diamond-pearl.pokemon.gabite.forms.gabite.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.gabite.forms.gabite.battle_only
+          icon: *x-y.pokemon.gabite.forms.gabite.icon
+          sprites:
+            - sun-moon/gabite-default.png
+            - sun-moon/female/gabite-default.png
+            - sun-moon/shiny/gabite-default.png
+            - sun-moon/shiny/female/gabite-default.png
+          art: *diamond-pearl.pokemon.gabite.forms.gabite.art
+          footprint: *diamond-pearl.pokemon.gabite.forms.gabite.footprint
+          cry: *x-y.pokemon.gabite.forms.gabite.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-alola: 308
+    updated-ulaula: 129
+  pokemon:
+    gabite:
+      genus: *diamond-pearl.pokemon.gabite.genus
+      evolution_parent: *diamond-pearl.pokemon.gabite.evolution_parent
+      color: *black-white.pokemon.gabite.color
+      shape: *diamond-pearl.pokemon.gabite.shape
+      female_rate: *diamond-pearl.pokemon.gabite.female_rate
+      capture_rate: *diamond-pearl.pokemon.gabite.capture_rate
+      happiness: *diamond-pearl.pokemon.gabite.happiness
+      baby: *diamond-pearl.pokemon.gabite.baby
+      hatch_steps: *diamond-pearl.pokemon.gabite.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.gabite.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.gabite.forms_switchable
+      name: Gabite
+      default: *diamond-pearl.pokemon.gabite.default
+      height: *diamond-pearl.pokemon.gabite.height
+      weight: *diamond-pearl.pokemon.gabite.weight
+      experience: *diamond-pearl.pokemon.gabite.experience
+      types: *diamond-pearl.pokemon.gabite.types
+      egg_groups: *diamond-pearl.pokemon.gabite.egg_groups
+      mega: *x-y.pokemon.gabite.mega
+      stats: *diamond-pearl.pokemon.gabite.stats
+      abilities: *diamond-pearl.pokemon.gabite.abilities
+      evolution_conditions: *diamond-pearl.pokemon.gabite.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          It loves shiny things. When it finds a Sableye
+          trying to catch a Carbink, Gabite becomes
+          furiously angry and attacks the Sableye.
+        ultra-moon: |-
+          It sheds its skin and gradually grows larger. Its
+          scales can be ground into a powder and used
+          as raw materials for traditional medicine.
+      forms:
+        gabite:
+          name: Gabite
+          form_name: *diamond-pearl.pokemon.gabite.forms.gabite.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.gabite.forms.gabite.battle_only
+          icon: *x-y.pokemon.gabite.forms.gabite.icon
+          sprites:
+            - ultra-sun-ultra-moon/gabite-default.png
+            - ultra-sun-ultra-moon/female/gabite-default.png
+            - ultra-sun-ultra-moon/shiny/gabite-default.png
+            - ultra-sun-ultra-moon/shiny/female/gabite-default.png
+          art: *diamond-pearl.pokemon.gabite.forms.gabite.art
+          footprint: *diamond-pearl.pokemon.gabite.forms.gabite.footprint
+          cry: *x-y.pokemon.gabite.forms.gabite.cry

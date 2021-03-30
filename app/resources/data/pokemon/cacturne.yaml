@@ -1,0 +1,765 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name CACTURNE
+  position: &ruby-sapphire.position 332
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 332
+    hoenn: 120
+  pokemon:
+    cacturne:
+      name: CACTURNE
+      default: &ruby-sapphire.pokemon.cacturne.default true
+      forms_switchable: &ruby-sapphire.pokemon.cacturne.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.cacturne.capture_rate 60
+      experience: &ruby-sapphire.pokemon.cacturne.experience 177
+      types: &ruby-sapphire.pokemon.cacturne.types
+        - grass
+        - dark
+      stats: &ruby-sapphire.pokemon.cacturne.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 115
+          effort_change: 1
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 115
+          effort_change: 0
+        special-defense:
+          base_value: 70
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.cacturne.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.cacturne.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.cacturne.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.cacturne.egg_groups
+        - plant
+        - humanshape
+      wild_held_items:
+        ruby: &ruby-sapphire.pokemon.cacturne.wild_held_items.ruby
+          poison-barb: 5
+        sapphire: *ruby-sapphire.pokemon.cacturne.wild_held_items.ruby
+      happiness: &ruby-sapphire.pokemon.cacturne.happiness 35
+      abilities: &ruby-sapphire.pokemon.cacturne.abilities
+        sand-veil: &ruby-sapphire.pokemon.cacturne.abilities.sand-veil
+          hidden: false
+          position: 1
+      genus: &ruby-sapphire.pokemon.cacturne.genus 'SCARECROW Pokémon'
+      height: &ruby-sapphire.pokemon.cacturne.height 13
+      weight: &ruby-sapphire.pokemon.cacturne.weight 774
+      flavor_text:
+        ruby: |
+          During the daytime, CACTURNE remains
+          unmoving so that it does not lose any
+          moisture to the harsh desert sun.
+          This POKéMON becomes active at night
+          when the temperature drops.
+        sapphire: |
+          If a traveler is going through a desert
+          in the thick of night,  CACTURNE
+          will follow in a ragtag group.
+          The POKéMON are biding their time,
+          waiting for the traveler to tire and
+          become incapable of moving.
+      forms:
+        cacturne:
+          name: CACTURNE
+          form_name: &ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only false
+          icon: &ruby-sapphire.pokemon.cacturne.forms.cacturne.icon gen5/cacturne-default.png
+          sprites:
+            - ruby-sapphire/cacturne-default.png
+            - ruby-sapphire/back/cacturne-default.png
+            - ruby-sapphire/shiny/cacturne-default.png
+          art: &ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+            - cacturne-default.png
+          footprint: &ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint cacturne.png
+          cry: &ruby-sapphire.pokemon.cacturne.forms.cacturne.cry gen5/cacturne-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.cacturne.evolution_parent cacnea/cacnea
+      evolution_conditions: &ruby-sapphire.pokemon.cacturne.evolution_conditions
+        level-up:
+          minimum_level: 32
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    cacturne:
+      name: CACTURNE
+      default: *ruby-sapphire.pokemon.cacturne.default
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      experience: *ruby-sapphire.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      stats: *ruby-sapphire.pokemon.cacturne.stats
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      wild_held_items:
+        emerald: *ruby-sapphire.pokemon.cacturne.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      abilities: *ruby-sapphire.pokemon.cacturne.abilities
+      genus: *ruby-sapphire.pokemon.cacturne.genus
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      flavor_text:
+        emerald: |
+          After spending thousands of years in
+          harsh deserts, its blood transformed into
+          the same substances as sand. It is
+          nocturnal, so it hunts at night.
+      forms:
+        cacturne:
+          name: CACTURNE
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *ruby-sapphire.pokemon.cacturne.forms.cacturne.icon
+          sprites:
+            - emerald/cacturne-default.png
+            - emerald/shiny/cacturne-default.png
+            - emerald/animated/cacturne-default.webm
+            - emerald/animated/shiny/cacturne-default.webm
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 35
+  pokemon:
+    cacturne:
+      name: CACTURNE
+      default: *ruby-sapphire.pokemon.cacturne.default
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      experience: *ruby-sapphire.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      stats: *ruby-sapphire.pokemon.cacturne.stats
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      abilities: *ruby-sapphire.pokemon.cacturne.abilities
+      genus: *ruby-sapphire.pokemon.cacturne.genus
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      forms:
+        cacturne:
+          name: CACTURNE
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          sprites:
+            - colosseum/cacturne-default.png
+            - colosseum/shiny/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    cacturne:
+      name: CACTURNE
+      default: *ruby-sapphire.pokemon.cacturne.default
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      experience: *ruby-sapphire.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      stats: *ruby-sapphire.pokemon.cacturne.stats
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      abilities: *ruby-sapphire.pokemon.cacturne.abilities
+      genus: *ruby-sapphire.pokemon.cacturne.genus
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      forms:
+        cacturne:
+          name: CACTURNE
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          sprites:
+            - xd/cacturne-default.png
+            - xd/shiny/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    cacturne:
+      name: CACTURNE
+      default: *ruby-sapphire.pokemon.cacturne.default
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      experience: *ruby-sapphire.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      stats: *ruby-sapphire.pokemon.cacturne.stats
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      wild_held_items:
+        firered: *ruby-sapphire.pokemon.cacturne.wild_held_items.ruby
+        leafgreen: *ruby-sapphire.pokemon.cacturne.wild_held_items.ruby
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      abilities: *ruby-sapphire.pokemon.cacturne.abilities
+      genus: *ruby-sapphire.pokemon.cacturne.genus
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      flavor_text:
+        firered: |
+          It lives in deserts. It becomes active at
+          night when it hunts for prey exhausted
+          from the desert's heat.
+        leafgreen: |
+          It lives in deserts. It becomes active at
+          night when it hunts for prey exhausted
+          from the desert's heat.
+      forms:
+        cacturne:
+          name: CACTURNE
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *ruby-sapphire.pokemon.cacturne.forms.cacturne.icon
+          sprites:
+            - firered-leafgreen/cacturne-default.png
+            - firered-leafgreen/back/cacturne-default.png
+            - firered-leafgreen/shiny/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Cacturne
+  position: &diamond-pearl.position 360
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cacturne:
+      genus: &diamond-pearl.pokemon.cacturne.genus 'Scarecrow Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      shape: &diamond-pearl.pokemon.cacturne.shape humanoid
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: &diamond-pearl.pokemon.cacturne.baby false
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      pal_park: &diamond-pearl.pokemon.cacturne.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: &diamond-pearl.pokemon.cacturne.experience 166
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      stats: &diamond-pearl.pokemon.cacturne.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 115
+          effort_change: 1
+        defense:
+          base_value: 60
+          effort_change: 0
+        speed:
+          base_value: 55
+          effort_change: 0
+        special-attack:
+          base_value: 115
+          effort_change: 1
+        special-defense:
+          base_value: 60
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.cacturne.abilities
+        sand-veil: *ruby-sapphire.pokemon.cacturne.abilities.sand-veil
+        water-absorb:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+          sticky-barb: 5
+        pearl: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      flavor_text:
+        diamond: |
+          It becomes active at night,
+          seeking prey that is exhausted
+          from the day’s desert heat.
+        pearl: |
+          It becomes active at night,
+          seeking prey that is exhausted
+          from the day’s desert heat.
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *ruby-sapphire.pokemon.cacturne.forms.cacturne.icon
+          sprites:
+            - diamond-pearl/back/shiny/cacturne-default.png
+            - diamond-pearl/back/cacturne-default.png
+            - diamond-pearl/female/cacturne-default.png
+            - diamond-pearl/shiny/female/cacturne-default.png
+            - diamond-pearl/shiny/cacturne-default.png
+            - diamond-pearl/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cacturne:
+      genus: *diamond-pearl.pokemon.cacturne.genus
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      shape: *diamond-pearl.pokemon.cacturne.shape
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: *diamond-pearl.pokemon.cacturne.baby
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      pal_park: *diamond-pearl.pokemon.cacturne.pal_park
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: *diamond-pearl.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      stats: *diamond-pearl.pokemon.cacturne.stats
+      abilities: *diamond-pearl.pokemon.cacturne.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      flavor_text:
+        platinum: |
+          It becomes active at night,
+          seeking prey that is exhausted
+          from the day’s desert heat.
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *ruby-sapphire.pokemon.cacturne.forms.cacturne.icon
+          sprites:
+            - platinum/back/shiny/cacturne-default.png
+            - platinum/back/cacturne-default.png
+            - platinum/female/cacturne-default.png
+            - platinum/shiny/female/cacturne-default.png
+            - platinum/shiny/cacturne-default.png
+            - platinum/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cacturne:
+      genus: *diamond-pearl.pokemon.cacturne.genus
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      shape: *diamond-pearl.pokemon.cacturne.shape
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: *diamond-pearl.pokemon.cacturne.baby
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      pal_park: *diamond-pearl.pokemon.cacturne.pal_park
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: *diamond-pearl.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      stats: *diamond-pearl.pokemon.cacturne.stats
+      abilities: *diamond-pearl.pokemon.cacturne.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      flavor_text:
+        heartgold: |
+          Packs of them follow travelers
+          through the desert until
+          the travelers can no longer move.
+        soulsilver: |
+          Packs of them follow travelers
+          through the desert until
+          the travelers can no longer move.
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 4
+              range: 1-5
+            stamina:
+              base_value: 2
+              range: 1-3
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.cacturne.forms.cacturne.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/cacturne-default.png
+            - heartgold-soulsilver/back/cacturne-default.png
+            - heartgold-soulsilver/female/cacturne-default.png
+            - heartgold-soulsilver/shiny/female/cacturne-default.png
+            - heartgold-soulsilver/shiny/cacturne-default.png
+            - heartgold-soulsilver/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cacturne:
+      genus: *diamond-pearl.pokemon.cacturne.genus
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      color: &black-white.pokemon.cacturne.color green
+      shape: *diamond-pearl.pokemon.cacturne.shape
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: *diamond-pearl.pokemon.cacturne.baby
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: *diamond-pearl.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      stats: *diamond-pearl.pokemon.cacturne.stats
+      abilities: *diamond-pearl.pokemon.cacturne.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      flavor_text:
+        black: |
+          It becomes active at night,
+          seeking prey that is exhausted
+          from the day’s desert heat.
+        white: |
+          It becomes active at night,
+          seeking prey that is exhausted
+          from the day’s desert heat.
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *ruby-sapphire.pokemon.cacturne.forms.cacturne.icon
+          sprites:
+            - black-white/back/shiny/cacturne-default.png
+            - black-white/back/cacturne-default.png
+            - black-white/female/cacturne-default.png
+            - black-white/shiny/female/cacturne-default.png
+            - black-white/shiny/cacturne-default.png
+            - black-white/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cacturne:
+      genus: *diamond-pearl.pokemon.cacturne.genus
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      color: *black-white.pokemon.cacturne.color
+      shape: *diamond-pearl.pokemon.cacturne.shape
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: *diamond-pearl.pokemon.cacturne.baby
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: *diamond-pearl.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      stats: *diamond-pearl.pokemon.cacturne.stats
+      abilities: *diamond-pearl.pokemon.cacturne.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      flavor_text:
+        black-2: |
+          It becomes active at night,
+          seeking prey that is exhausted
+          from the day’s desert heat.
+        white-2: |
+          It becomes active at night,
+          seeking prey that is exhausted
+          from the day’s desert heat.
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *ruby-sapphire.pokemon.cacturne.forms.cacturne.icon
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *ruby-sapphire.pokemon.cacturne.forms.cacturne.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cacturne:
+      genus: *diamond-pearl.pokemon.cacturne.genus
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      color: *black-white.pokemon.cacturne.color
+      shape: *diamond-pearl.pokemon.cacturne.shape
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: *diamond-pearl.pokemon.cacturne.baby
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: *diamond-pearl.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      mega: &x-y.pokemon.cacturne.mega false
+      stats: *diamond-pearl.pokemon.cacturne.stats
+      abilities: *diamond-pearl.pokemon.cacturne.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      flavor_text:
+        x: |
+          It becomes active at night, seeking prey that is
+          exhausted from the day’s desert heat.
+        'y': |
+          Packs of them follow travelers through the desert
+          until the travelers can no longer move.
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: &x-y.pokemon.cacturne.forms.cacturne.icon cacturne-default.png
+          sprites:
+            - x-y/female/cacturne-default.png
+            - x-y/shiny/female/cacturne-default.png
+            - x-y/shiny/cacturne-default.png
+            - x-y/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: &x-y.pokemon.cacturne.forms.cacturne.cry cacturne-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 125
+  pokemon:
+    cacturne:
+      genus: *diamond-pearl.pokemon.cacturne.genus
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      color: *black-white.pokemon.cacturne.color
+      shape: *diamond-pearl.pokemon.cacturne.shape
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: *diamond-pearl.pokemon.cacturne.baby
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: *diamond-pearl.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      mega: *x-y.pokemon.cacturne.mega
+      stats: *diamond-pearl.pokemon.cacturne.stats
+      abilities: *diamond-pearl.pokemon.cacturne.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          During the daytime, Cacturne remains unmoving so that it does
+          not lose any moisture to the harsh desert sun. This Pokémon
+          becomes active at night when the temperature drops.
+        alpha-sapphire: |
+          If a traveler is going through a desert in the thick of night,
+          Cacturne will follow in a ragtag group. The Pokémon are
+          biding their time, waiting for the traveler to tire and become
+          incapable of moving.
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *x-y.pokemon.cacturne.forms.cacturne.icon
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *x-y.pokemon.cacturne.forms.cacturne.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/cacturne-default.png
+            - omega-ruby-alpha-sapphire/shiny/cacturne-default.png
+            - omega-ruby-alpha-sapphire/female/cacturne-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/cacturne-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cacturne:
+      genus: *diamond-pearl.pokemon.cacturne.genus
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      color: *black-white.pokemon.cacturne.color
+      shape: *diamond-pearl.pokemon.cacturne.shape
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: *diamond-pearl.pokemon.cacturne.baby
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: *diamond-pearl.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      mega: *x-y.pokemon.cacturne.mega
+      stats: *diamond-pearl.pokemon.cacturne.stats
+      abilities: *diamond-pearl.pokemon.cacturne.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *x-y.pokemon.cacturne.forms.cacturne.icon
+          sprites:
+            - sun-moon/female/cacturne-default.png
+            - sun-moon/shiny/female/cacturne-default.png
+            - sun-moon/shiny/cacturne-default.png
+            - sun-moon/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *x-y.pokemon.cacturne.forms.cacturne.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    cacturne:
+      genus: *diamond-pearl.pokemon.cacturne.genus
+      evolution_parent: *ruby-sapphire.pokemon.cacturne.evolution_parent
+      color: *black-white.pokemon.cacturne.color
+      shape: *diamond-pearl.pokemon.cacturne.shape
+      female_rate: *ruby-sapphire.pokemon.cacturne.female_rate
+      capture_rate: *ruby-sapphire.pokemon.cacturne.capture_rate
+      happiness: *ruby-sapphire.pokemon.cacturne.happiness
+      baby: *diamond-pearl.pokemon.cacturne.baby
+      hatch_steps: *ruby-sapphire.pokemon.cacturne.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.cacturne.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.cacturne.forms_switchable
+      name: Cacturne
+      default: *ruby-sapphire.pokemon.cacturne.default
+      height: *ruby-sapphire.pokemon.cacturne.height
+      weight: *ruby-sapphire.pokemon.cacturne.weight
+      experience: *diamond-pearl.pokemon.cacturne.experience
+      types: *ruby-sapphire.pokemon.cacturne.types
+      egg_groups: *ruby-sapphire.pokemon.cacturne.egg_groups
+      mega: *x-y.pokemon.cacturne.mega
+      stats: *diamond-pearl.pokemon.cacturne.stats
+      abilities: *diamond-pearl.pokemon.cacturne.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.cacturne.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.cacturne.evolution_conditions
+      forms:
+        cacturne:
+          name: Cacturne
+          form_name: *ruby-sapphire.pokemon.cacturne.forms.cacturne.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.cacturne.forms.cacturne.battle_only
+          icon: *x-y.pokemon.cacturne.forms.cacturne.icon
+          sprites:
+            - ultra-sun-ultra-moon/female/cacturne-default.png
+            - ultra-sun-ultra-moon/shiny/female/cacturne-default.png
+            - ultra-sun-ultra-moon/shiny/cacturne-default.png
+            - ultra-sun-ultra-moon/cacturne-default.png
+          art: *ruby-sapphire.pokemon.cacturne.forms.cacturne.art
+          footprint: *ruby-sapphire.pokemon.cacturne.forms.cacturne.footprint
+          cry: *x-y.pokemon.cacturne.forms.cacturne.cry

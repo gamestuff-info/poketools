@@ -1,0 +1,132 @@
+sun-moon:
+  name: &sun-moon.name Sandygast
+  position: &sun-moon.position 769
+  numbers:
+    national: &sun-moon.numbers.national 769
+    original-alola: 186
+    original-akala: 113
+  pokemon:
+    sandygast:
+      genus: &sun-moon.pokemon.sandygast.genus 'Sand Heap Pokémon'
+      color: &sun-moon.pokemon.sandygast.color brown
+      shape: &sun-moon.pokemon.sandygast.shape squiggle
+      female_rate: &sun-moon.pokemon.sandygast.female_rate 50
+      capture_rate: &sun-moon.pokemon.sandygast.capture_rate 140
+      happiness: &sun-moon.pokemon.sandygast.happiness 70
+      baby: &sun-moon.pokemon.sandygast.baby false
+      hatch_steps: &sun-moon.pokemon.sandygast.hatch_steps 15
+      growth_rate: &sun-moon.pokemon.sandygast.growth_rate medium
+      forms_switchable: &sun-moon.pokemon.sandygast.forms_switchable false
+      name: Sandygast
+      default: &sun-moon.pokemon.sandygast.default true
+      height: &sun-moon.pokemon.sandygast.height 5
+      weight: &sun-moon.pokemon.sandygast.weight 700
+      experience: &sun-moon.pokemon.sandygast.experience 64
+      types: &sun-moon.pokemon.sandygast.types
+        - ghost
+        - ground
+      egg_groups: &sun-moon.pokemon.sandygast.egg_groups
+        - indeterminate
+      mega: &sun-moon.pokemon.sandygast.mega false
+      stats: &sun-moon.pokemon.sandygast.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 55
+          effort_change: 0
+        defense:
+          base_value: 80
+          effort_change: 1
+        speed:
+          base_value: 15
+          effort_change: 0
+        special-attack:
+          base_value: 70
+          effort_change: 0
+        special-defense:
+          base_value: 45
+          effort_change: 0
+      abilities: &sun-moon.pokemon.sandygast.abilities
+        water-compaction:
+          hidden: false
+          position: 1
+        sand-veil:
+          hidden: true
+          position: 3
+      wild_held_items:
+        sun: &sun-moon.pokemon.sandygast.wild_held_items.sun
+          spell-tag: 5
+        moon: *sun-moon.pokemon.sandygast.wild_held_items.sun
+      flavor_text:
+        sun: |-
+          Born from a sand mound playfully built by a
+          child, this Pokémon embodies the grudges of
+          the departed.
+        moon: |-
+          It takes control of anyone who puts a hand in its
+          mouth. And so it adds to the accumulation of
+          its sand-mound body.
+      forms:
+        sandygast:
+          name: Sandygast
+          form_name: &sun-moon.pokemon.sandygast.forms.sandygast.form_name 'Default Form'
+          default: true
+          battle_only: &sun-moon.pokemon.sandygast.forms.sandygast.battle_only false
+          icon: &sun-moon.pokemon.sandygast.forms.sandygast.icon sandygast-default.png
+          sprites:
+            - sun-moon/shiny/sandygast-default.png
+            - sun-moon/sandygast-default.png
+          footprint: &sun-moon.pokemon.sandygast.forms.sandygast.footprint sandygast.png
+ultra-sun-ultra-moon:
+  name: *sun-moon.name
+  position: *sun-moon.position
+  numbers:
+    national: *sun-moon.numbers.national
+    updated-alola: 225
+    updated-akala: 126
+  pokemon:
+    sandygast:
+      genus: *sun-moon.pokemon.sandygast.genus
+      color: *sun-moon.pokemon.sandygast.color
+      shape: *sun-moon.pokemon.sandygast.shape
+      female_rate: *sun-moon.pokemon.sandygast.female_rate
+      capture_rate: *sun-moon.pokemon.sandygast.capture_rate
+      happiness: *sun-moon.pokemon.sandygast.happiness
+      baby: *sun-moon.pokemon.sandygast.baby
+      hatch_steps: *sun-moon.pokemon.sandygast.hatch_steps
+      growth_rate: *sun-moon.pokemon.sandygast.growth_rate
+      forms_switchable: *sun-moon.pokemon.sandygast.forms_switchable
+      name: Sandygast
+      default: *sun-moon.pokemon.sandygast.default
+      height: *sun-moon.pokemon.sandygast.height
+      weight: *sun-moon.pokemon.sandygast.weight
+      experience: *sun-moon.pokemon.sandygast.experience
+      types: *sun-moon.pokemon.sandygast.types
+      egg_groups: *sun-moon.pokemon.sandygast.egg_groups
+      mega: *sun-moon.pokemon.sandygast.mega
+      stats: *sun-moon.pokemon.sandygast.stats
+      abilities: *sun-moon.pokemon.sandygast.abilities
+      wild_held_items:
+        ultra-sun: *sun-moon.pokemon.sandygast.wild_held_items.sun
+        ultra-moon: *sun-moon.pokemon.sandygast.wild_held_items.sun
+      flavor_text:
+        ultra-sun: |-
+          It likes the shovel on its head, so Sandygast
+          will get serious and fight any children who come
+          to take it back.
+        ultra-moon: |-
+          If you build sand mounds when you’re playing,
+          destroy them before you go home, or they
+          may get possessed and become Sandygast.
+      forms:
+        sandygast:
+          name: Sandygast
+          form_name: *sun-moon.pokemon.sandygast.forms.sandygast.form_name
+          default: true
+          battle_only: *sun-moon.pokemon.sandygast.forms.sandygast.battle_only
+          icon: *sun-moon.pokemon.sandygast.forms.sandygast.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/sandygast-default.png
+            - ultra-sun-ultra-moon/sandygast-default.png
+          footprint: *sun-moon.pokemon.sandygast.forms.sandygast.footprint

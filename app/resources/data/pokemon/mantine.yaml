@@ -1,0 +1,833 @@
+gold-silver:
+  name: &gold-silver.name MANTINE
+  position: &gold-silver.position 225
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 226
+    original-johto: 196
+    original-johto-abc: 112
+  pokemon:
+    mantine:
+      name: MANTINE
+      default: &gold-silver.pokemon.mantine.default true
+      capture_rate: &gold-silver.pokemon.mantine.capture_rate 25
+      experience: &gold-silver.pokemon.mantine.experience 168
+      types: &gold-silver.pokemon.mantine.types
+        - water
+        - flying
+      stats: &gold-silver.pokemon.mantine.stats
+        hp:
+          base_value: 65
+          effort_change: 65
+        attack:
+          base_value: 40
+          effort_change: 40
+        defense:
+          base_value: 70
+          effort_change: 70
+        speed:
+          base_value: 70
+          effort_change: 70
+        special-attack:
+          base_value: 80
+          effort_change: 80
+        special-defense:
+          base_value: 140
+          effort_change: 80
+      growth_rate: &gold-silver.pokemon.mantine.growth_rate slow
+      female_rate: &gold-silver.pokemon.mantine.female_rate 50
+      hatch_steps: &gold-silver.pokemon.mantine.hatch_steps 25
+      egg_groups: &gold-silver.pokemon.mantine.egg_groups
+        - water1
+      genus: &gold-silver.pokemon.mantine.genus 'KITE Pokémon'
+      height: &gold-silver.pokemon.mantine.height 21
+      weight: &gold-silver.pokemon.mantine.weight 2199
+      flavor_text:
+        gold: |
+          As it majestically
+          swims, it doesn't
+          care if REMORAID
+          attach to it for
+          scavenging its
+          leftovers.
+        silver: |
+          Swimming freely in
+          open seas, it may
+          fly out of the
+          water and over the
+          waves if it builds
+          up enough speed.
+      forms:
+        mantine:
+          name: MANTINE
+          form_name: &gold-silver.pokemon.mantine.forms.mantine.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.mantine.forms.mantine.battle_only false
+          sprites:
+            - gold-silver/mantine-default.png
+            - gold-silver/back/mantine-default.png
+            - gold-silver/shiny/mantine-default.png
+          art: &gold-silver.pokemon.mantine.forms.mantine.art
+            - mantine-default.png
+          cry: &gold-silver.pokemon.mantine.forms.mantine.cry gen5/mantine-default.webm
+          icon: &gold-silver.pokemon.mantine.forms.mantine.icon gen2/fish.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    mantine:
+      name: MANTINE
+      default: *gold-silver.pokemon.mantine.default
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      experience: *gold-silver.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      stats: *gold-silver.pokemon.mantine.stats
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      genus: *gold-silver.pokemon.mantine.genus
+      height: *gold-silver.pokemon.mantine.height
+      weight: *gold-silver.pokemon.mantine.weight
+      flavor_text:
+        crystal: |
+          It swims along
+          freely, eating
+          things that swim
+          into its mouth.
+          Its whole body is
+          very coarse.
+      forms:
+        mantine:
+          name: MANTINE
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          sprites:
+            - crystal/mantine-default.png
+            - crystal/back/mantine-default.png
+            - crystal/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+          icon: *gold-silver.pokemon.mantine.forms.mantine.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 226
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 365
+  pokemon:
+    mantine:
+      name: MANTINE
+      default: *gold-silver.pokemon.mantine.default
+      forms_switchable: &ruby-sapphire.pokemon.mantine.forms_switchable false
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      experience: *gold-silver.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      stats: &ruby-sapphire.pokemon.mantine.stats
+        hp:
+          base_value: 65
+          effort_change: 0
+        attack:
+          base_value: 40
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 80
+          effort_change: 2
+        special-defense:
+          base_value: 65
+          effort_change: 2
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      happiness: &ruby-sapphire.pokemon.mantine.happiness 70
+      abilities: &ruby-sapphire.pokemon.mantine.abilities
+        swift-swim: &ruby-sapphire.pokemon.mantine.abilities.swift-swim
+          hidden: &ruby-sapphire.pokemon.mantine.abilities.swift-swim.hidden false
+          position: 1
+        water-absorb: &ruby-sapphire.pokemon.mantine.abilities.water-absorb
+          hidden: *ruby-sapphire.pokemon.mantine.abilities.swift-swim.hidden
+          position: 2
+      genus: *gold-silver.pokemon.mantine.genus
+      height: *gold-silver.pokemon.mantine.height
+      weight: &ruby-sapphire.pokemon.mantine.weight 2200
+      flavor_text:
+        ruby: |
+          On sunny days, schools of MANTINE can
+          be seen elegantly leaping over the
+          sea's waves.
+          This POKéMON is not bothered by the
+          REMORAID that hitches rides.
+        sapphire: |
+          On sunny days, schools of MANTINE can
+          be seen elegantly leaping over the
+          sea's waves.
+          This POKéMON is not bothered by the
+          REMORAID that hitches rides.
+      forms:
+        mantine:
+          name: MANTINE
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: &ruby-sapphire.pokemon.mantine.forms.mantine.icon gen5/mantine-default.png
+          sprites:
+            - ruby-sapphire/mantine-default.png
+            - ruby-sapphire/back/mantine-default.png
+            - ruby-sapphire/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: &ruby-sapphire.pokemon.mantine.forms.mantine.footprint mantine.png
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    mantine:
+      name: MANTINE
+      default: *gold-silver.pokemon.mantine.default
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      experience: *gold-silver.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      stats: *ruby-sapphire.pokemon.mantine.stats
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      abilities: *ruby-sapphire.pokemon.mantine.abilities
+      genus: *gold-silver.pokemon.mantine.genus
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      flavor_text:
+        emerald: |
+          On sunny days, schools of MANTINE can be
+          seen elegantly leaping over the waves.
+          It is not bothered by the REMORAID that
+          hitches rides.
+      forms:
+        mantine:
+          name: MANTINE
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *ruby-sapphire.pokemon.mantine.forms.mantine.icon
+          sprites:
+            - emerald/mantine-default.png
+            - emerald/shiny/mantine-default.png
+            - emerald/animated/mantine-default.webm
+            - emerald/animated/shiny/mantine-default.webm
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 188
+  pokemon:
+    mantine:
+      name: MANTINE
+      default: *gold-silver.pokemon.mantine.default
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      experience: *gold-silver.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      stats: *ruby-sapphire.pokemon.mantine.stats
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      abilities: *ruby-sapphire.pokemon.mantine.abilities
+      genus: *gold-silver.pokemon.mantine.genus
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      forms:
+        mantine:
+          name: MANTINE
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          sprites:
+            - colosseum/mantine-default.png
+            - colosseum/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    mantine:
+      name: MANTINE
+      default: *gold-silver.pokemon.mantine.default
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      experience: *gold-silver.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      stats: *ruby-sapphire.pokemon.mantine.stats
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      abilities: *ruby-sapphire.pokemon.mantine.abilities
+      genus: *gold-silver.pokemon.mantine.genus
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      forms:
+        mantine:
+          name: MANTINE
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          sprites:
+            - xd/mantine-default.png
+            - xd/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    mantine:
+      name: MANTINE
+      default: *gold-silver.pokemon.mantine.default
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      experience: *gold-silver.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      stats: *ruby-sapphire.pokemon.mantine.stats
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      abilities: *ruby-sapphire.pokemon.mantine.abilities
+      genus: *gold-silver.pokemon.mantine.genus
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      flavor_text:
+        firered: |
+          Swimming freely in open seas, it may fly
+          out of the water and over the waves if it
+          builds up enough speed.
+        leafgreen: |
+          As it majestically swims, it doesn't care
+          if REMORAID attach to it to scavenge
+          for its leftovers.
+      forms:
+        mantine:
+          name: MANTINE
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *ruby-sapphire.pokemon.mantine.forms.mantine.icon
+          sprites:
+            - firered-leafgreen/mantine-default.png
+            - firered-leafgreen/back/mantine-default.png
+            - firered-leafgreen/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+diamond-pearl:
+  name: &diamond-pearl.name Mantine
+  position: &diamond-pearl.position 259
+  numbers:
+    national: *gold-silver.numbers.national
+    original-sinnoh: 141
+  pokemon:
+    mantine:
+      genus: &diamond-pearl.pokemon.mantine.genus 'Kite Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.mantine.evolution_parent mantyke/mantyke
+      shape: &diamond-pearl.pokemon.mantine.shape wings
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: &diamond-pearl.pokemon.mantine.baby false
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      pal_park: &diamond-pearl.pokemon.mantine.pal_park
+        area: sea
+        rate: 20
+        score: 70
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: &diamond-pearl.pokemon.mantine.experience 170
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      stats: &diamond-pearl.pokemon.mantine.stats
+        hp:
+          base_value: 85
+          effort_change: 0
+        attack:
+          base_value: 40
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 80
+          effort_change: 0
+        special-defense:
+          base_value: 140
+          effort_change: 2
+      abilities: &diamond-pearl.pokemon.mantine.abilities
+        swift-swim: *ruby-sapphire.pokemon.mantine.abilities.swift-swim
+        water-absorb: *ruby-sapphire.pokemon.mantine.abilities.water-absorb
+        water-veil:
+          hidden: true
+          position: 3
+      evolution_conditions: &diamond-pearl.pokemon.mantine.evolution_conditions
+        level-up:
+          party_species: remoraid
+      flavor_text:
+        diamond: |
+          When the waves are calm, one may
+          encounter a swarm of MANTINE
+          swimming as if they are in flight.
+        pearl: |
+          It swims elegantly, mindless of
+          REMORAID hitching on to its broad
+          fins. It has a docile nature.
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *ruby-sapphire.pokemon.mantine.forms.mantine.icon
+          sprites:
+            - diamond-pearl/mantine-default.png
+            - diamond-pearl/back/mantine-default.png
+            - diamond-pearl/back/shiny/mantine-default.png
+            - diamond-pearl/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 141
+  pokemon:
+    mantine:
+      genus: *diamond-pearl.pokemon.mantine.genus
+      evolution_parent: *diamond-pearl.pokemon.mantine.evolution_parent
+      shape: *diamond-pearl.pokemon.mantine.shape
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: *diamond-pearl.pokemon.mantine.baby
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      pal_park: *diamond-pearl.pokemon.mantine.pal_park
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: *diamond-pearl.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      stats: *diamond-pearl.pokemon.mantine.stats
+      abilities: *diamond-pearl.pokemon.mantine.abilities
+      evolution_conditions: *diamond-pearl.pokemon.mantine.evolution_conditions
+      flavor_text:
+        platinum: |
+          While elegantly swimming in the sea,
+          it ignores REMORAID that cling to
+          its fins seeking food scraps.
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *ruby-sapphire.pokemon.mantine.forms.mantine.icon
+          sprites:
+            - platinum/mantine-default.png
+            - platinum/back/mantine-default.png
+            - platinum/back/shiny/mantine-default.png
+            - platinum/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 202
+  pokemon:
+    mantine:
+      genus: *diamond-pearl.pokemon.mantine.genus
+      evolution_parent: *diamond-pearl.pokemon.mantine.evolution_parent
+      shape: *diamond-pearl.pokemon.mantine.shape
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: *diamond-pearl.pokemon.mantine.baby
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      pal_park: *diamond-pearl.pokemon.mantine.pal_park
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: *diamond-pearl.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      stats: *diamond-pearl.pokemon.mantine.stats
+      abilities: *diamond-pearl.pokemon.mantine.abilities
+      evolution_conditions: *diamond-pearl.pokemon.mantine.evolution_conditions
+      flavor_text:
+        heartgold: |
+          As it majestically swims, it doesn’t
+          care if REMORAID attach to it for
+          scavenging its leftovers.
+        soulsilver: |
+          Swimming freely in open seas, it may
+          fly out of the water and over the
+          waves if it builds up enough speed.
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 2-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.mantine.forms.mantine.icon
+          sprites:
+            - heartgold-soulsilver/mantine-default.png
+            - heartgold-soulsilver/back/mantine-default.png
+            - heartgold-soulsilver/back/shiny/mantine-default.png
+            - heartgold-soulsilver/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mantine:
+      genus: *diamond-pearl.pokemon.mantine.genus
+      evolution_parent: *diamond-pearl.pokemon.mantine.evolution_parent
+      color: &black-white.pokemon.mantine.color purple
+      shape: *diamond-pearl.pokemon.mantine.shape
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: *diamond-pearl.pokemon.mantine.baby
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: *diamond-pearl.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      stats: *diamond-pearl.pokemon.mantine.stats
+      abilities: *diamond-pearl.pokemon.mantine.abilities
+      evolution_conditions: *diamond-pearl.pokemon.mantine.evolution_conditions
+      flavor_text:
+        black: |
+          While elegantly swimming in the sea,
+          it ignores Remoraid that cling to
+          its fins seeking food scraps.
+        white: |
+          While elegantly swimming in the sea,
+          it ignores Remoraid that cling to
+          its fins seeking food scraps.
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *ruby-sapphire.pokemon.mantine.forms.mantine.icon
+          sprites:
+            - black-white/mantine-default.png
+            - black-white/back/mantine-default.png
+            - black-white/back/shiny/mantine-default.png
+            - black-white/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-unova: 234
+  pokemon:
+    mantine:
+      genus: *diamond-pearl.pokemon.mantine.genus
+      evolution_parent: *diamond-pearl.pokemon.mantine.evolution_parent
+      color: *black-white.pokemon.mantine.color
+      shape: *diamond-pearl.pokemon.mantine.shape
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: *diamond-pearl.pokemon.mantine.baby
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: *diamond-pearl.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      stats: *diamond-pearl.pokemon.mantine.stats
+      abilities: *diamond-pearl.pokemon.mantine.abilities
+      evolution_conditions: *diamond-pearl.pokemon.mantine.evolution_conditions
+      flavor_text:
+        black-2: |
+          If it builds up enough speed swimming, it
+          can fly over 300 feet out of the water
+          from the surface of the ocean.
+        white-2: |
+          If it builds up enough speed swimming, it
+          can fly over 300 feet out of the water
+          from the surface of the ocean.
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *ruby-sapphire.pokemon.mantine.forms.mantine.icon
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *gold-silver.pokemon.mantine.forms.mantine.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-coastal: 140
+  pokemon:
+    mantine:
+      genus: *diamond-pearl.pokemon.mantine.genus
+      evolution_parent: *diamond-pearl.pokemon.mantine.evolution_parent
+      color: *black-white.pokemon.mantine.color
+      shape: *diamond-pearl.pokemon.mantine.shape
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: *diamond-pearl.pokemon.mantine.baby
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: *diamond-pearl.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      mega: &x-y.pokemon.mantine.mega false
+      stats: *diamond-pearl.pokemon.mantine.stats
+      abilities: *diamond-pearl.pokemon.mantine.abilities
+      evolution_conditions: *diamond-pearl.pokemon.mantine.evolution_conditions
+      flavor_text:
+        x: |
+          If it builds up enough speed swimming, it can fly
+          over 300 feet out of the water from the surface of
+          the ocean.
+        'y': |
+          While elegantly swimming in the sea, it ignores
+          Remoraid that cling to its fins seeking food scraps.
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: &x-y.pokemon.mantine.forms.mantine.icon mantine-default.png
+          sprites:
+            - x-y/mantine-default.png
+            - x-y/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: &x-y.pokemon.mantine.forms.mantine.cry mantine-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mantine:
+      genus: *diamond-pearl.pokemon.mantine.genus
+      evolution_parent: *diamond-pearl.pokemon.mantine.evolution_parent
+      color: *black-white.pokemon.mantine.color
+      shape: *diamond-pearl.pokemon.mantine.shape
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: *diamond-pearl.pokemon.mantine.baby
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: *diamond-pearl.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      mega: *x-y.pokemon.mantine.mega
+      stats: *diamond-pearl.pokemon.mantine.stats
+      abilities: *diamond-pearl.pokemon.mantine.abilities
+      evolution_conditions: *diamond-pearl.pokemon.mantine.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          On sunny days, schools of Mantine can be seen elegantly
+          leaping over the sea’s waves. This Pokémon is not bothered
+          by the Remoraid that hitches rides.
+        alpha-sapphire: |
+          On sunny days, schools of Mantine can be seen elegantly
+          leaping over the sea’s waves. This Pokémon is not bothered
+          by the Remoraid that hitches rides.
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *x-y.pokemon.mantine.forms.mantine.icon
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *x-y.pokemon.mantine.forms.mantine.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/mantine-default.png
+            - omega-ruby-alpha-sapphire/shiny/mantine-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mantine:
+      genus: *diamond-pearl.pokemon.mantine.genus
+      evolution_parent: *diamond-pearl.pokemon.mantine.evolution_parent
+      color: *black-white.pokemon.mantine.color
+      shape: *diamond-pearl.pokemon.mantine.shape
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: *diamond-pearl.pokemon.mantine.baby
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: *diamond-pearl.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      mega: *x-y.pokemon.mantine.mega
+      stats: *diamond-pearl.pokemon.mantine.stats
+      abilities: *diamond-pearl.pokemon.mantine.abilities
+      evolution_conditions: *diamond-pearl.pokemon.mantine.evolution_conditions
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *x-y.pokemon.mantine.forms.mantine.icon
+          sprites:
+            - sun-moon/mantine-default.png
+            - sun-moon/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *x-y.pokemon.mantine.forms.mantine.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 146
+    updated-melemele: 146
+    updated-akala: 50
+  pokemon:
+    mantine:
+      genus: *diamond-pearl.pokemon.mantine.genus
+      evolution_parent: *diamond-pearl.pokemon.mantine.evolution_parent
+      color: *black-white.pokemon.mantine.color
+      shape: *diamond-pearl.pokemon.mantine.shape
+      female_rate: *gold-silver.pokemon.mantine.female_rate
+      capture_rate: *gold-silver.pokemon.mantine.capture_rate
+      happiness: *ruby-sapphire.pokemon.mantine.happiness
+      baby: *diamond-pearl.pokemon.mantine.baby
+      hatch_steps: *gold-silver.pokemon.mantine.hatch_steps
+      growth_rate: *gold-silver.pokemon.mantine.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mantine.forms_switchable
+      name: Mantine
+      default: *gold-silver.pokemon.mantine.default
+      height: *gold-silver.pokemon.mantine.height
+      weight: *ruby-sapphire.pokemon.mantine.weight
+      experience: *diamond-pearl.pokemon.mantine.experience
+      types: *gold-silver.pokemon.mantine.types
+      egg_groups: *gold-silver.pokemon.mantine.egg_groups
+      mega: *x-y.pokemon.mantine.mega
+      stats: *diamond-pearl.pokemon.mantine.stats
+      abilities: *diamond-pearl.pokemon.mantine.abilities
+      evolution_conditions: *diamond-pearl.pokemon.mantine.evolution_conditions
+      flavor_text:
+        ultra-sun: |-
+          Postcards and posters featuring Mantine
+          leaping elegantly above the waves are popular
+          souvenirs of Alola.
+        ultra-moon: |-
+          Many people have taken up surfing because
+          they admire how magnificently Mantine swims.
+      forms:
+        mantine:
+          name: Mantine
+          form_name: *gold-silver.pokemon.mantine.forms.mantine.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.mantine.forms.mantine.battle_only
+          icon: *x-y.pokemon.mantine.forms.mantine.icon
+          sprites:
+            - ultra-sun-ultra-moon/mantine-default.png
+            - ultra-sun-ultra-moon/shiny/mantine-default.png
+          art: *gold-silver.pokemon.mantine.forms.mantine.art
+          footprint: *ruby-sapphire.pokemon.mantine.forms.mantine.footprint
+          cry: *x-y.pokemon.mantine.forms.mantine.cry

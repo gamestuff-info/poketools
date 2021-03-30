@@ -1,0 +1,89 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'FLUFFY TAIL'
+  category: &ruby-sapphire.category spelunking
+  pocket: &ruby-sapphire.pocket misc
+  flags: &ruby-sapphire.flags
+    - countable
+    - consumable
+    - usable-in-battle
+    - holdable
+  icon: &ruby-sapphire.icon fluffy-tail.png
+  buy: &ruby-sapphire.buy 1000
+  sell: &ruby-sapphire.sell 500
+  flavor_text: |
+    Use to flee from
+    any battle with
+    a wild POKéMON.
+  short_description: &ruby-sapphire.short_description 'Ends a wild battle.'
+  description: &ruby-sapphire.description |
+    Used in battle
+    :   Ends a wild battle.  Cannot be used in trainer battles.
+emerald: *ruby-sapphire
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  flags: *ruby-sapphire.flags
+  icon: *ruby-sapphire.icon
+  buy: *ruby-sapphire.buy
+  sell: *ruby-sapphire.sell
+  flavor_text: |
+    An attractive item.
+    Use it to flee from any battle with
+    a wild POKéMON.
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Fluffy Tail'
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: &diamond-pearl.buy 100
+  sell: &diamond-pearl.sell 50
+  fling_effect: damage
+  fling_power: 30
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    An item that attracts Pokémon.
+    Use it to flee from any battle with a
+    wild Pokémon.
+  icon: *ruby-sapphire.icon
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: *diamond-pearl
+black-2-white-2: *diamond-pearl
+x-y: &x-y
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A toy that attracts the attention of a
+    Pokémon. It guarantees escape from
+    any battle with wild Pokémon.
+  icon: *ruby-sapphire.icon
+omega-ruby-alpha-sapphire: *x-y
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  category: *ruby-sapphire.category
+  pocket: *ruby-sapphire.pocket
+  buy: *diamond-pearl.buy
+  sell: *diamond-pearl.sell
+  fling_effect: damage
+  fling_power: 30
+  flags: *ruby-sapphire.flags
+  short_description: *ruby-sapphire.short_description
+  description: *ruby-sapphire.description
+  flavor_text: |
+    A toy that attracts the attention of a Pokémon.
+    It guarantees escape from any battle with
+    wild Pokémon.
+  icon: *ruby-sapphire.icon
+ultra-sun-ultra-moon: *sun-moon

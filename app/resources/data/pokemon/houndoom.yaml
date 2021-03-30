@@ -1,0 +1,1029 @@
+gold-silver:
+  name: &gold-silver.name HOUNDOOM
+  position: &gold-silver.position 228
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 229
+    original-johto: 209
+    original-johto-abc: 77
+  pokemon:
+    houndoom:
+      name: HOUNDOOM
+      default: &gold-silver.pokemon.houndoom.default true
+      capture_rate: &gold-silver.pokemon.houndoom.capture_rate 45
+      experience: &gold-silver.pokemon.houndoom.experience 204
+      types: &gold-silver.pokemon.houndoom.types
+        - dark
+        - fire
+      stats: &gold-silver.pokemon.houndoom.stats
+        hp:
+          base_value: 75
+          effort_change: 75
+        attack:
+          base_value: 90
+          effort_change: 90
+        defense:
+          base_value: 50
+          effort_change: 50
+        speed:
+          base_value: 95
+          effort_change: 95
+        special-attack:
+          base_value: 110
+          effort_change: 110
+        special-defense:
+          base_value: 80
+          effort_change: 110
+      growth_rate: &gold-silver.pokemon.houndoom.growth_rate slow
+      female_rate: &gold-silver.pokemon.houndoom.female_rate 50
+      hatch_steps: &gold-silver.pokemon.houndoom.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.houndoom.egg_groups
+        - ground
+      genus: &gold-silver.pokemon.houndoom.genus 'DARK Pokémon'
+      height: &gold-silver.pokemon.houndoom.height 13
+      weight: &gold-silver.pokemon.houndoom.weight 349
+      flavor_text:
+        gold: |
+          If you are burned
+          by the flames it
+          shoots from its
+          mouth, the pain
+          will never go
+          away.
+        silver: |
+          Upon hearing its
+          eerie howls, other
+          #MON get the
+          shivers and head
+          straight back to
+          their nests.
+      evolution_parent: &gold-silver.pokemon.houndoom.evolution_parent houndour/houndour
+      evolution_conditions: &gold-silver.pokemon.houndoom.evolution_conditions
+        level-up:
+          minimum_level: 24
+      forms:
+        houndoom:
+          name: HOUNDOOM
+          form_name: &gold-silver.pokemon.houndoom.forms.houndoom.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.houndoom.forms.houndoom.battle_only false
+          sprites:
+            - gold-silver/houndoom-default.png
+            - gold-silver/back/houndoom-default.png
+            - gold-silver/shiny/houndoom-default.png
+          art: &gold-silver.pokemon.houndoom.forms.houndoom.art
+            - houndoom-default.png
+          cry: &gold-silver.pokemon.houndoom.forms.houndoom.cry gen5/houndoom-default.webm
+          icon: &gold-silver.pokemon.houndoom.forms.houndoom.icon gen2/fox.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    houndoom:
+      name: HOUNDOOM
+      default: *gold-silver.pokemon.houndoom.default
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      experience: *gold-silver.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      stats: *gold-silver.pokemon.houndoom.stats
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      genus: *gold-silver.pokemon.houndoom.genus
+      height: *gold-silver.pokemon.houndoom.height
+      weight: *gold-silver.pokemon.houndoom.weight
+      flavor_text:
+        crystal: |
+          The pungent-
+          smelling flame
+          that shoots from
+          its mouth results
+          from toxins burn-
+          ing in its body.
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      forms:
+        houndoom:
+          name: HOUNDOOM
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          sprites:
+            - crystal/houndoom-default.png
+            - crystal/back/houndoom-default.png
+            - crystal/shiny/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+          icon: *gold-silver.pokemon.houndoom.forms.houndoom.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 229
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 367
+  pokemon:
+    houndoom:
+      name: HOUNDOOM
+      default: *gold-silver.pokemon.houndoom.default
+      forms_switchable: &ruby-sapphire.pokemon.houndoom.forms_switchable false
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      experience: *gold-silver.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      stats: &ruby-sapphire.pokemon.houndoom.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 110
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      happiness: &ruby-sapphire.pokemon.houndoom.happiness 35
+      abilities: &ruby-sapphire.pokemon.houndoom.abilities
+        early-bird: &ruby-sapphire.pokemon.houndoom.abilities.early-bird
+          hidden: &ruby-sapphire.pokemon.houndoom.abilities.early-bird.hidden false
+          position: 1
+        flash-fire: &ruby-sapphire.pokemon.houndoom.abilities.flash-fire
+          hidden: *ruby-sapphire.pokemon.houndoom.abilities.early-bird.hidden
+          position: 2
+      genus: *gold-silver.pokemon.houndoom.genus
+      height: &ruby-sapphire.pokemon.houndoom.height 14
+      weight: &ruby-sapphire.pokemon.houndoom.weight 350
+      flavor_text:
+        ruby: |
+          In a HOUNDOOM pack, the one with its
+          horns raked sharply towards the back
+          serves a leadership role.
+          These POKéMON choose their leader by
+           fighting amongst themselves.
+        sapphire: |
+          In a HOUNDOOM pack, the one with its
+          horns raked sharply towards the back
+          serves a leadership role.
+          These POKéMON choose their leader by
+          fighting amongst themselves.
+      forms:
+        houndoom:
+          name: HOUNDOOM
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: &ruby-sapphire.pokemon.houndoom.forms.houndoom.icon gen5/houndoom-default.png
+          sprites:
+            - ruby-sapphire/houndoom-default.png
+            - ruby-sapphire/back/houndoom-default.png
+            - ruby-sapphire/shiny/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: &ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint houndoom.png
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    houndoom:
+      name: HOUNDOOM
+      default: *gold-silver.pokemon.houndoom.default
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      experience: *gold-silver.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      stats: *ruby-sapphire.pokemon.houndoom.stats
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      abilities: *ruby-sapphire.pokemon.houndoom.abilities
+      genus: *gold-silver.pokemon.houndoom.genus
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      flavor_text:
+        emerald: |
+          In a HOUNDOOM pack, the one with its horns
+          raked sharply back serves a leadership
+          role. They choose their leader by fighting
+          among themselves.
+      forms:
+        houndoom:
+          name: HOUNDOOM
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *ruby-sapphire.pokemon.houndoom.forms.houndoom.icon
+          sprites:
+            - emerald/houndoom-default.png
+            - emerald/shiny/houndoom-default.png
+            - emerald/animated/houndoom-default.webm
+            - emerald/animated/shiny/houndoom-default.webm
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 134
+  pokemon:
+    houndoom:
+      name: HOUNDOOM
+      default: *gold-silver.pokemon.houndoom.default
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      experience: *gold-silver.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      stats: *ruby-sapphire.pokemon.houndoom.stats
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      abilities: *ruby-sapphire.pokemon.houndoom.abilities
+      genus: *gold-silver.pokemon.houndoom.genus
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      forms:
+        houndoom:
+          name: HOUNDOOM
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          sprites:
+            - colosseum/houndoom-default.png
+            - colosseum/shiny/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    houndoom:
+      name: HOUNDOOM
+      default: *gold-silver.pokemon.houndoom.default
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      experience: *gold-silver.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      stats: *ruby-sapphire.pokemon.houndoom.stats
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      abilities: *ruby-sapphire.pokemon.houndoom.abilities
+      genus: *gold-silver.pokemon.houndoom.genus
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      forms:
+        houndoom:
+          name: HOUNDOOM
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          sprites:
+            - xd/houndoom-default.png
+            - xd/shiny/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    houndoom:
+      name: HOUNDOOM
+      default: *gold-silver.pokemon.houndoom.default
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      experience: *gold-silver.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      stats: *ruby-sapphire.pokemon.houndoom.stats
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      abilities: *ruby-sapphire.pokemon.houndoom.abilities
+      genus: *gold-silver.pokemon.houndoom.genus
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      flavor_text:
+        firered: |
+          Upon hearing its eerie howls, other
+          POKéMON get the shivers and head straight
+          back to their nests.
+        leafgreen: |
+          If you are burned by the flames it shoots
+          from its mouth, the pain will never go
+          away.
+      forms:
+        houndoom:
+          name: HOUNDOOM
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *ruby-sapphire.pokemon.houndoom.forms.houndoom.icon
+          sprites:
+            - firered-leafgreen/houndoom-default.png
+            - firered-leafgreen/back/houndoom-default.png
+            - firered-leafgreen/shiny/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Houndoom
+  position: &diamond-pearl.position 262
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    houndoom:
+      genus: &diamond-pearl.pokemon.houndoom.genus 'Dark Pokémon'
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      shape: &diamond-pearl.pokemon.houndoom.shape quadruped
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: &diamond-pearl.pokemon.houndoom.baby false
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      pal_park: &diamond-pearl.pokemon.houndoom.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: &diamond-pearl.pokemon.houndoom.experience 175
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      stats: &diamond-pearl.pokemon.houndoom.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 50
+          effort_change: 0
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 110
+          effort_change: 2
+        special-defense:
+          base_value: 80
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.houndoom.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text:
+        diamond: |
+          Long ago, people imagined
+          its eerie howls to be the call
+          of the grim reaper.
+        pearl: |
+          Long ago, people imagined
+          its eerie howls to be the call
+          of the grim reaper.
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *ruby-sapphire.pokemon.houndoom.forms.houndoom.icon
+          sprites:
+            - diamond-pearl/houndoom-default.png
+            - diamond-pearl/back/houndoom-default.png
+            - diamond-pearl/back/female/houndoom-default.png
+            - diamond-pearl/back/shiny/houndoom-default.png
+            - diamond-pearl/female/houndoom-default.png
+            - diamond-pearl/shiny/houndoom-default.png
+            - diamond-pearl/shiny/female/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 177
+  pokemon:
+    houndoom:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      pal_park: *diamond-pearl.pokemon.houndoom.pal_park
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: *diamond-pearl.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      stats: *diamond-pearl.pokemon.houndoom.stats
+      abilities: *ruby-sapphire.pokemon.houndoom.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text:
+        platinum: |
+          The flames it breathes when angry
+          contain toxins. If they cause a
+          burn, it will hurt forever.
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *ruby-sapphire.pokemon.houndoom.forms.houndoom.icon
+          sprites:
+            - platinum/houndoom-default.png
+            - platinum/back/houndoom-default.png
+            - platinum/back/female/houndoom-default.png
+            - platinum/back/shiny/houndoom-default.png
+            - platinum/female/houndoom-default.png
+            - platinum/shiny/houndoom-default.png
+            - platinum/shiny/female/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 215
+  pokemon:
+    houndoom:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      pal_park: *diamond-pearl.pokemon.houndoom.pal_park
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: *diamond-pearl.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      stats: *diamond-pearl.pokemon.houndoom.stats
+      abilities: *ruby-sapphire.pokemon.houndoom.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text:
+        heartgold: |
+          If you are burned by the flames
+          it shoots from its mouth,
+          the pain will never go away.
+        soulsilver: |
+          Upon hearing its eerie howls, other
+          Pokémon get the shivers and head
+          straight back to their nests.
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-3
+            skill:
+              base_value: 2
+              range: 1-2
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 3
+              range: 2-4
+          icon: *ruby-sapphire.pokemon.houndoom.forms.houndoom.icon
+          sprites:
+            - heartgold-soulsilver/houndoom-default.png
+            - heartgold-soulsilver/back/houndoom-default.png
+            - heartgold-soulsilver/back/female/houndoom-default.png
+            - heartgold-soulsilver/back/shiny/houndoom-default.png
+            - heartgold-soulsilver/female/houndoom-default.png
+            - heartgold-soulsilver/shiny/houndoom-default.png
+            - heartgold-soulsilver/shiny/female/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    houndoom:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: &black-white.pokemon.houndoom.color black
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: *diamond-pearl.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      stats: *diamond-pearl.pokemon.houndoom.stats
+      abilities: &black-white.pokemon.houndoom.abilities
+        early-bird: *ruby-sapphire.pokemon.houndoom.abilities.early-bird
+        flash-fire: *ruby-sapphire.pokemon.houndoom.abilities.flash-fire
+        unnerve:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text:
+        black: |
+          The flames it breathes when angry
+          contain toxins. If they cause a
+          burn, it will hurt forever.
+        white: |
+          The flames it breathes when angry
+          contain toxins. If they cause a
+          burn, it will hurt forever.
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *ruby-sapphire.pokemon.houndoom.forms.houndoom.icon
+          sprites:
+            - black-white/houndoom-default.png
+            - black-white/back/houndoom-default.png
+            - black-white/back/female/houndoom-default.png
+            - black-white/back/shiny/houndoom-default.png
+            - black-white/female/houndoom-default.png
+            - black-white/shiny/houndoom-default.png
+            - black-white/shiny/female/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    houndoom:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.houndoom.forms_switchable
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: *diamond-pearl.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      stats: *diamond-pearl.pokemon.houndoom.stats
+      abilities: *black-white.pokemon.houndoom.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text:
+        black-2: |
+          The flames it breathes when angry
+          contain toxins. If they cause a
+          burn, it will hurt forever.
+        white-2: |
+          The flames it breathes when angry
+          contain toxins. If they cause a
+          burn, it will hurt forever.
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *ruby-sapphire.pokemon.houndoom.forms.houndoom.icon
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *gold-silver.pokemon.houndoom.forms.houndoom.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    kalos-coastal: 76
+  pokemon:
+    houndoom:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: &x-y.pokemon.houndoom.forms_switchable true
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: *diamond-pearl.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      mega: &x-y.pokemon.houndoom.mega false
+      stats: *diamond-pearl.pokemon.houndoom.stats
+      abilities: *black-white.pokemon.houndoom.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text: &x-y.pokemon.houndoom.flavor_text
+        x: |
+          Long ago, people imagined its eerie howls to be
+          the call of the grim reaper.
+        'y': |
+          The flames it breathes when angry contain toxins.
+          If they cause a burn, it will hurt forever.
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: &x-y.pokemon.houndoom.forms.houndoom.icon houndoom-default.png
+          sprites:
+            - x-y/houndoom-default.png
+            - x-y/female/houndoom-default.png
+            - x-y/shiny/houndoom-default.png
+            - x-y/shiny/female/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: &x-y.pokemon.houndoom.forms.houndoom.cry houndoom-default.webm
+    houndoom-mega:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *x-y.pokemon.houndoom.forms_switchable
+      name: &x-y.pokemon.houndoom-mega.name 'Mega Houndoom'
+      default: &x-y.pokemon.houndoom-mega.default false
+      height: &x-y.pokemon.houndoom-mega.height 19
+      weight: &x-y.pokemon.houndoom-mega.weight 495
+      experience: &x-y.pokemon.houndoom-mega.experience 210
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      mega: &x-y.pokemon.houndoom-mega.mega true
+      stats: &x-y.pokemon.houndoom-mega.stats
+        hp:
+          base_value: 75
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 90
+          effort_change: 0
+        speed:
+          base_value: 115
+          effort_change: 0
+        special-attack:
+          base_value: 140
+          effort_change: 2
+        special-defense:
+          base_value: 90
+          effort_change: 0
+      abilities: &x-y.pokemon.houndoom-mega.abilities
+        solar-power: *ruby-sapphire.pokemon.houndoom.abilities.early-bird
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text: *x-y.pokemon.houndoom.flavor_text
+      forms:
+        houndoom-mega:
+          name: 'Mega Houndoom'
+          form_name: &x-y.pokemon.houndoom-mega.forms.houndoom-mega.form_name 'Mega Houndoom'
+          default: true
+          battle_only: &x-y.pokemon.houndoom-mega.forms.houndoom-mega.battle_only true
+          icon: &x-y.pokemon.houndoom-mega.forms.houndoom-mega.icon houndoom-mega.png
+          sprites:
+            - x-y/shiny/houndoom-mega.png
+            - x-y/houndoom-mega.png
+          art: &x-y.pokemon.houndoom-mega.forms.houndoom-mega.art
+            - houndoom-mega.png
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: &x-y.pokemon.houndoom-mega.forms.houndoom-mega.cry houndoom-mega.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    houndoom:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *x-y.pokemon.houndoom.forms_switchable
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: *diamond-pearl.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      mega: *x-y.pokemon.houndoom.mega
+      stats: *diamond-pearl.pokemon.houndoom.stats
+      abilities: *black-white.pokemon.houndoom.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.houndoom.flavor_text
+        omega-ruby: |
+          In a Houndoom pack, the one with its horns raked sharply
+          toward the back serves a leadership role. These Pokémon
+          choose their leader by fighting among themselves.
+        alpha-sapphire: |
+          In a Houndoom pack, the one with its horns raked sharply
+          toward the back serves a leadership role. These Pokémon
+          choose their leader by fighting among themselves.
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *x-y.pokemon.houndoom.forms.houndoom.icon
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *x-y.pokemon.houndoom.forms.houndoom.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/houndoom-default.png
+            - omega-ruby-alpha-sapphire/shiny/houndoom-default.png
+            - omega-ruby-alpha-sapphire/female/houndoom-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/houndoom-default.png
+    houndoom-mega:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *x-y.pokemon.houndoom.forms_switchable
+      name: *x-y.pokemon.houndoom-mega.name
+      default: *x-y.pokemon.houndoom-mega.default
+      height: *x-y.pokemon.houndoom-mega.height
+      weight: *x-y.pokemon.houndoom-mega.weight
+      experience: *x-y.pokemon.houndoom-mega.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      mega: *x-y.pokemon.houndoom-mega.mega
+      stats: *x-y.pokemon.houndoom-mega.stats
+      abilities: *x-y.pokemon.houndoom-mega.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.houndoom.flavor_text
+      forms:
+        houndoom-mega:
+          name: 'Mega Houndoom'
+          form_name: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.battle_only
+          icon: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.icon
+          art: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/houndoom-mega.png
+            - omega-ruby-alpha-sapphire/houndoom-mega.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    houndoom:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *x-y.pokemon.houndoom.forms_switchable
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: *diamond-pearl.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      mega: *x-y.pokemon.houndoom.mega
+      stats: *diamond-pearl.pokemon.houndoom.stats
+      abilities: *black-white.pokemon.houndoom.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *x-y.pokemon.houndoom.forms.houndoom.icon
+          sprites:
+            - sun-moon/houndoom-default.png
+            - sun-moon/female/houndoom-default.png
+            - sun-moon/shiny/houndoom-default.png
+            - sun-moon/shiny/female/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *x-y.pokemon.houndoom.forms.houndoom.cry
+    houndoom-mega:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *x-y.pokemon.houndoom.forms_switchable
+      name: *x-y.pokemon.houndoom-mega.name
+      default: *x-y.pokemon.houndoom-mega.default
+      height: *x-y.pokemon.houndoom-mega.height
+      weight: *x-y.pokemon.houndoom-mega.weight
+      experience: *x-y.pokemon.houndoom-mega.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      mega: *x-y.pokemon.houndoom-mega.mega
+      stats: *x-y.pokemon.houndoom-mega.stats
+      abilities: *x-y.pokemon.houndoom-mega.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      forms:
+        houndoom-mega:
+          name: 'Mega Houndoom'
+          form_name: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.battle_only
+          icon: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.icon
+          sprites:
+            - sun-moon/shiny/houndoom-mega.png
+            - sun-moon/houndoom-mega.png
+          art: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-alola: 290
+    updated-ulaula: 111
+  pokemon:
+    houndoom:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *x-y.pokemon.houndoom.forms_switchable
+      name: Houndoom
+      default: *gold-silver.pokemon.houndoom.default
+      height: *ruby-sapphire.pokemon.houndoom.height
+      weight: *ruby-sapphire.pokemon.houndoom.weight
+      experience: *diamond-pearl.pokemon.houndoom.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      mega: *x-y.pokemon.houndoom.mega
+      stats: *diamond-pearl.pokemon.houndoom.stats
+      abilities: *black-white.pokemon.houndoom.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text: &ultra-sun-ultra-moon.pokemon.houndoom.flavor_text
+        ultra-sun: |-
+          They spew flames mixed with poison to finish
+          off their opponents. They divvy up their prey
+          evenly among the members of their pack.
+        ultra-moon: |-
+          Identifiable by its eerie howls, people a long
+          time ago thought it was the grim reaper and
+          feared it.
+      forms:
+        houndoom:
+          name: Houndoom
+          form_name: *gold-silver.pokemon.houndoom.forms.houndoom.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.houndoom.forms.houndoom.battle_only
+          icon: *x-y.pokemon.houndoom.forms.houndoom.icon
+          sprites:
+            - ultra-sun-ultra-moon/houndoom-default.png
+            - ultra-sun-ultra-moon/female/houndoom-default.png
+            - ultra-sun-ultra-moon/shiny/houndoom-default.png
+            - ultra-sun-ultra-moon/shiny/female/houndoom-default.png
+          art: *gold-silver.pokemon.houndoom.forms.houndoom.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *x-y.pokemon.houndoom.forms.houndoom.cry
+    houndoom-mega:
+      genus: *diamond-pearl.pokemon.houndoom.genus
+      evolution_parent: *gold-silver.pokemon.houndoom.evolution_parent
+      color: *black-white.pokemon.houndoom.color
+      shape: *diamond-pearl.pokemon.houndoom.shape
+      female_rate: *gold-silver.pokemon.houndoom.female_rate
+      capture_rate: *gold-silver.pokemon.houndoom.capture_rate
+      happiness: *ruby-sapphire.pokemon.houndoom.happiness
+      baby: *diamond-pearl.pokemon.houndoom.baby
+      hatch_steps: *gold-silver.pokemon.houndoom.hatch_steps
+      growth_rate: *gold-silver.pokemon.houndoom.growth_rate
+      forms_switchable: *x-y.pokemon.houndoom.forms_switchable
+      name: *x-y.pokemon.houndoom-mega.name
+      default: *x-y.pokemon.houndoom-mega.default
+      height: *x-y.pokemon.houndoom-mega.height
+      weight: *x-y.pokemon.houndoom-mega.weight
+      experience: *x-y.pokemon.houndoom-mega.experience
+      types: *gold-silver.pokemon.houndoom.types
+      egg_groups: *gold-silver.pokemon.houndoom.egg_groups
+      mega: *x-y.pokemon.houndoom-mega.mega
+      stats: *x-y.pokemon.houndoom-mega.stats
+      abilities: *x-y.pokemon.houndoom-mega.abilities
+      evolution_conditions: *gold-silver.pokemon.houndoom.evolution_conditions
+      flavor_text: *ultra-sun-ultra-moon.pokemon.houndoom.flavor_text
+      forms:
+        houndoom-mega:
+          name: 'Mega Houndoom'
+          form_name: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.battle_only
+          icon: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/houndoom-mega.png
+            - ultra-sun-ultra-moon/houndoom-mega.png
+          art: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.art
+          footprint: *ruby-sapphire.pokemon.houndoom.forms.houndoom.footprint
+          cry: *x-y.pokemon.houndoom-mega.forms.houndoom-mega.cry

@@ -1,0 +1,32 @@
+red-blue: &red-blue
+  name: &red-blue.name ELIXER
+  pocket: &red-blue.pocket misc
+  category: &red-blue.category pp-recovery
+  flags:
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+  short_description: &red-blue.short_description 'Restores 10 [PP]{mechanic:pp} for each move.'
+  description: &red-blue.description |
+    Used on a party Pokémon
+    :   Restores 10 [PP]{mechanic:pp} for each move.
+yellow: *red-blue
+gold-silver: &gold-silver
+  name: *red-blue.name
+  pocket: *red-blue.pocket
+  buy: 3000
+  sell: 1500
+  flavor_text: |
+    Restores PP of all
+    moves by 10.
+  category: *red-blue.category
+  flags:
+    - countable
+    - consumable
+    - usable-overworld
+    - usable-in-battle
+    - holdable
+  short_description: *red-blue.short_description
+  description: *red-blue.description
+crystal: *gold-silver

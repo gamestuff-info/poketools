@@ -1,0 +1,748 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name LUDICOLO
+  position: &ruby-sapphire.position 272
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 272
+    hoenn: 21
+  pokemon:
+    ludicolo:
+      name: LUDICOLO
+      default: &ruby-sapphire.pokemon.ludicolo.default true
+      forms_switchable: &ruby-sapphire.pokemon.ludicolo.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.ludicolo.capture_rate 45
+      experience: &ruby-sapphire.pokemon.ludicolo.experience 181
+      types: &ruby-sapphire.pokemon.ludicolo.types
+        - water
+        - grass
+      stats: &ruby-sapphire.pokemon.ludicolo.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 3
+        special-defense:
+          base_value: 80
+          effort_change: 3
+      growth_rate: &ruby-sapphire.pokemon.ludicolo.growth_rate medium-slow
+      female_rate: &ruby-sapphire.pokemon.ludicolo.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.ludicolo.hatch_steps 15
+      egg_groups: &ruby-sapphire.pokemon.ludicolo.egg_groups
+        - water1
+        - plant
+      happiness: &ruby-sapphire.pokemon.ludicolo.happiness 70
+      abilities: &ruby-sapphire.pokemon.ludicolo.abilities
+        swift-swim: &ruby-sapphire.pokemon.ludicolo.abilities.swift-swim
+          hidden: &ruby-sapphire.pokemon.ludicolo.abilities.swift-swim.hidden false
+          position: 1
+        rain-dish: &ruby-sapphire.pokemon.ludicolo.abilities.rain-dish
+          hidden: *ruby-sapphire.pokemon.ludicolo.abilities.swift-swim.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.ludicolo.genus 'CAREFREE Pokémon'
+      height: &ruby-sapphire.pokemon.ludicolo.height 15
+      weight: &ruby-sapphire.pokemon.ludicolo.weight 550
+      flavor_text:
+        ruby: |
+          LUDICOLO begins dancing as soon as
+          it hears cheerful, festive music.
+           This POKéMON is said to appear when it
+          hears the singing of children on hiking
+          outings.
+        sapphire: |
+          Upon hearing an upbeat and cheerful
+          rhythm, the cells in LUDICOLO's body
+          become very energetic and active.
+          Even in battle, this POKéMON will
+          exhibit an amazing amount of power.
+      forms:
+        ludicolo:
+          name: LUDICOLO
+          form_name: &ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only false
+          icon: &ruby-sapphire.pokemon.ludicolo.forms.ludicolo.icon gen5/ludicolo-default.png
+          sprites:
+            - ruby-sapphire/ludicolo-default.png
+            - ruby-sapphire/back/ludicolo-default.png
+            - ruby-sapphire/shiny/ludicolo-default.png
+          art: &ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+            - ludicolo-default.png
+          footprint: &ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint ludicolo.png
+          cry: &ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry gen5/ludicolo-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.ludicolo.evolution_parent lombre/lombre
+      evolution_conditions: &ruby-sapphire.pokemon.ludicolo.evolution_conditions
+        use-item:
+          trigger_item: water-stone
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    ludicolo:
+      name: LUDICOLO
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      experience: *ruby-sapphire.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      stats: *ruby-sapphire.pokemon.ludicolo.stats
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      abilities: *ruby-sapphire.pokemon.ludicolo.abilities
+      genus: *ruby-sapphire.pokemon.ludicolo.genus
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      flavor_text:
+        emerald: |
+          When it hears festive music, all the cells
+          in its body become stimulated,  and it
+          begins moving in rhythm. It does not
+          quail even when it faces a tough opponent.
+      forms:
+        ludicolo:
+          name: LUDICOLO
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.icon
+          sprites:
+            - emerald/ludicolo-default.png
+            - emerald/shiny/ludicolo-default.png
+            - emerald/animated/ludicolo-default.webm
+            - emerald/animated/shiny/ludicolo-default.webm
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 172
+  pokemon:
+    ludicolo:
+      name: LUDICOLO
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      experience: *ruby-sapphire.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      stats: *ruby-sapphire.pokemon.ludicolo.stats
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      abilities: *ruby-sapphire.pokemon.ludicolo.abilities
+      genus: *ruby-sapphire.pokemon.ludicolo.genus
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      forms:
+        ludicolo:
+          name: LUDICOLO
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          sprites:
+            - colosseum/ludicolo-default.png
+            - colosseum/shiny/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    ludicolo:
+      name: LUDICOLO
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      experience: *ruby-sapphire.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      stats: *ruby-sapphire.pokemon.ludicolo.stats
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      abilities: *ruby-sapphire.pokemon.ludicolo.abilities
+      genus: *ruby-sapphire.pokemon.ludicolo.genus
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      forms:
+        ludicolo:
+          name: LUDICOLO
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          sprites:
+            - xd/ludicolo-default.png
+            - xd/shiny/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    ludicolo:
+      name: LUDICOLO
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      experience: *ruby-sapphire.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      stats: *ruby-sapphire.pokemon.ludicolo.stats
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      abilities: *ruby-sapphire.pokemon.ludicolo.abilities
+      genus: *ruby-sapphire.pokemon.ludicolo.genus
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      flavor_text:
+        firered: |
+          The rhythm of bright, festive music
+          activates LUDICOLO's cells,  making it more
+          powerful.
+        leafgreen: |
+          The rhythm of bright, festive music
+          activates LUDICOLO's cells,  making it more
+          powerful.
+      forms:
+        ludicolo:
+          name: LUDICOLO
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.icon
+          sprites:
+            - firered-leafgreen/ludicolo-default.png
+            - firered-leafgreen/back/ludicolo-default.png
+            - firered-leafgreen/shiny/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Ludicolo
+  position: &diamond-pearl.position 297
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ludicolo:
+      genus: &diamond-pearl.pokemon.ludicolo.genus 'Carefree Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      shape: &diamond-pearl.pokemon.ludicolo.shape humanoid
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: &diamond-pearl.pokemon.ludicolo.baby false
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      pal_park: &diamond-pearl.pokemon.ludicolo.pal_park
+        area: pond
+        rate: 10
+        score: 80
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: &diamond-pearl.pokemon.ludicolo.experience 216
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      stats: &diamond-pearl.pokemon.ludicolo.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 70
+          effort_change: 0
+        defense:
+          base_value: 70
+          effort_change: 0
+        speed:
+          base_value: 70
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 100
+          effort_change: 3
+      abilities: &diamond-pearl.pokemon.ludicolo.abilities
+        swift-swim: *ruby-sapphire.pokemon.ludicolo.abilities.swift-swim
+        rain-dish: *ruby-sapphire.pokemon.ludicolo.abilities.rain-dish
+        own-tempo:
+          hidden: true
+          position: 3
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      flavor_text:
+        diamond: |
+          If it hears festive music, all its
+          muscles fill with energy. It can’t
+          help breaking out into a dance.
+        pearl: |
+          If it hears festive music, all its
+          muscles fill with energy. It can’t
+          help breaking out into a dance.
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.icon
+          sprites:
+            - diamond-pearl/ludicolo-default.png
+            - diamond-pearl/back/ludicolo-default.png
+            - diamond-pearl/back/female/ludicolo-default.png
+            - diamond-pearl/back/shiny/ludicolo-default.png
+            - diamond-pearl/female/ludicolo-default.png
+            - diamond-pearl/shiny/ludicolo-default.png
+            - diamond-pearl/shiny/female/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ludicolo:
+      genus: *diamond-pearl.pokemon.ludicolo.genus
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      shape: *diamond-pearl.pokemon.ludicolo.shape
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: *diamond-pearl.pokemon.ludicolo.baby
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ludicolo.pal_park
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: *diamond-pearl.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      stats: *diamond-pearl.pokemon.ludicolo.stats
+      abilities: *diamond-pearl.pokemon.ludicolo.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      flavor_text:
+        platinum: |
+          If it hears festive music, all its
+          muscles fill with energy. It can’t
+          help breaking out into a dance.
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.icon
+          sprites:
+            - platinum/ludicolo-default.png
+            - platinum/back/ludicolo-default.png
+            - platinum/back/female/ludicolo-default.png
+            - platinum/back/shiny/ludicolo-default.png
+            - platinum/female/ludicolo-default.png
+            - platinum/shiny/ludicolo-default.png
+            - platinum/shiny/female/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ludicolo:
+      genus: *diamond-pearl.pokemon.ludicolo.genus
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      shape: *diamond-pearl.pokemon.ludicolo.shape
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: *diamond-pearl.pokemon.ludicolo.baby
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      pal_park: *diamond-pearl.pokemon.ludicolo.pal_park
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: *diamond-pearl.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      stats: *diamond-pearl.pokemon.ludicolo.stats
+      abilities: *diamond-pearl.pokemon.ludicolo.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      flavor_text:
+        heartgold: |
+          If it hears festive music, it begins
+          moving in rhythm in order to
+          amplify its power.
+        soulsilver: |
+          If it hears festive music, it begins
+          moving in rhythm in order to
+          amplify its power.
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-4
+            power:
+              base_value: 3
+              range: 1-4
+            skill:
+              base_value: 3
+              range: 2-5
+            stamina:
+              base_value: 3
+              range: 1-5
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.icon
+          sprites:
+            - heartgold-soulsilver/ludicolo-default.png
+            - heartgold-soulsilver/back/ludicolo-default.png
+            - heartgold-soulsilver/back/female/ludicolo-default.png
+            - heartgold-soulsilver/back/shiny/ludicolo-default.png
+            - heartgold-soulsilver/female/ludicolo-default.png
+            - heartgold-soulsilver/shiny/ludicolo-default.png
+            - heartgold-soulsilver/shiny/female/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ludicolo:
+      genus: *diamond-pearl.pokemon.ludicolo.genus
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      color: &black-white.pokemon.ludicolo.color green
+      shape: *diamond-pearl.pokemon.ludicolo.shape
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: *diamond-pearl.pokemon.ludicolo.baby
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: *diamond-pearl.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      stats: *diamond-pearl.pokemon.ludicolo.stats
+      abilities: *diamond-pearl.pokemon.ludicolo.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      flavor_text:
+        black: |
+          If it hears festive music, all its
+          muscles fill with energy. It can’t
+          help breaking out into a dance.
+        white: |
+          If it hears festive music, all its
+          muscles fill with energy. It can’t
+          help breaking out into a dance.
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.icon
+          sprites:
+            - black-white/ludicolo-default.png
+            - black-white/back/ludicolo-default.png
+            - black-white/back/female/ludicolo-default.png
+            - black-white/back/shiny/ludicolo-default.png
+            - black-white/female/ludicolo-default.png
+            - black-white/shiny/ludicolo-default.png
+            - black-white/shiny/female/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ludicolo:
+      genus: *diamond-pearl.pokemon.ludicolo.genus
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      color: *black-white.pokemon.ludicolo.color
+      shape: *diamond-pearl.pokemon.ludicolo.shape
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: *diamond-pearl.pokemon.ludicolo.baby
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: *diamond-pearl.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      stats: *diamond-pearl.pokemon.ludicolo.stats
+      abilities: *diamond-pearl.pokemon.ludicolo.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      flavor_text:
+        black-2: |
+          If it hears festive music, all its
+          muscles fill with energy. It can’t
+          help breaking out into a dance.
+        white-2: |
+          If it hears festive music, all its
+          muscles fill with energy. It can’t
+          help breaking out into a dance.
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.icon
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-mountain: 57
+  pokemon:
+    ludicolo:
+      genus: *diamond-pearl.pokemon.ludicolo.genus
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      color: *black-white.pokemon.ludicolo.color
+      shape: *diamond-pearl.pokemon.ludicolo.shape
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: *diamond-pearl.pokemon.ludicolo.baby
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: *diamond-pearl.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      mega: &x-y.pokemon.ludicolo.mega false
+      stats: *diamond-pearl.pokemon.ludicolo.stats
+      abilities: *diamond-pearl.pokemon.ludicolo.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      flavor_text:
+        x: |
+          If it hears festive music, all its muscles fill with
+          energy. It can’t help breaking out into a dance.
+        'y': |
+          The rhythm of bright, festive music activates
+          Ludicolo’s cells, making it more powerful.
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: &x-y.pokemon.ludicolo.forms.ludicolo.icon ludicolo-default.png
+          sprites:
+            - x-y/ludicolo-default.png
+            - x-y/female/ludicolo-default.png
+            - x-y/shiny/ludicolo-default.png
+            - x-y/shiny/female/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: &x-y.pokemon.ludicolo.forms.ludicolo.cry ludicolo-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 21
+  pokemon:
+    ludicolo:
+      genus: *diamond-pearl.pokemon.ludicolo.genus
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      color: *black-white.pokemon.ludicolo.color
+      shape: *diamond-pearl.pokemon.ludicolo.shape
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: *diamond-pearl.pokemon.ludicolo.baby
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: *diamond-pearl.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      mega: *x-y.pokemon.ludicolo.mega
+      stats: *diamond-pearl.pokemon.ludicolo.stats
+      abilities: *diamond-pearl.pokemon.ludicolo.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Ludicolo begins dancing as soon as it hears cheerful,
+          festive music. This Pokémon is said to appear when it
+          hears the singing of children on hiking outings.
+        alpha-sapphire: |
+          Upon hearing an upbeat and cheerful rhythm, the cells in
+          Ludicolo’s body become very energetic and active. Even
+          in battle, this Pokémon will exhibit an amazing amount
+          of power.
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *x-y.pokemon.ludicolo.forms.ludicolo.icon
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *x-y.pokemon.ludicolo.forms.ludicolo.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/ludicolo-default.png
+            - omega-ruby-alpha-sapphire/shiny/ludicolo-default.png
+            - omega-ruby-alpha-sapphire/female/ludicolo-default.png
+            - omega-ruby-alpha-sapphire/shiny/female/ludicolo-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.ludicolo.wild_held_items.omega-ruby
+          mental-herb: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.ludicolo.wild_held_items.omega-ruby
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ludicolo:
+      genus: *diamond-pearl.pokemon.ludicolo.genus
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      color: *black-white.pokemon.ludicolo.color
+      shape: *diamond-pearl.pokemon.ludicolo.shape
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: *diamond-pearl.pokemon.ludicolo.baby
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: *diamond-pearl.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      mega: *x-y.pokemon.ludicolo.mega
+      stats: *diamond-pearl.pokemon.ludicolo.stats
+      abilities: *diamond-pearl.pokemon.ludicolo.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.ludicolo.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.ludicolo.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *x-y.pokemon.ludicolo.forms.ludicolo.icon
+          sprites:
+            - sun-moon/ludicolo-default.png
+            - sun-moon/female/ludicolo-default.png
+            - sun-moon/shiny/ludicolo-default.png
+            - sun-moon/shiny/female/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *x-y.pokemon.ludicolo.forms.ludicolo.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    ludicolo:
+      genus: *diamond-pearl.pokemon.ludicolo.genus
+      evolution_parent: *ruby-sapphire.pokemon.ludicolo.evolution_parent
+      color: *black-white.pokemon.ludicolo.color
+      shape: *diamond-pearl.pokemon.ludicolo.shape
+      female_rate: *ruby-sapphire.pokemon.ludicolo.female_rate
+      capture_rate: *ruby-sapphire.pokemon.ludicolo.capture_rate
+      happiness: *ruby-sapphire.pokemon.ludicolo.happiness
+      baby: *diamond-pearl.pokemon.ludicolo.baby
+      hatch_steps: *ruby-sapphire.pokemon.ludicolo.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.ludicolo.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.ludicolo.forms_switchable
+      name: Ludicolo
+      default: *ruby-sapphire.pokemon.ludicolo.default
+      height: *ruby-sapphire.pokemon.ludicolo.height
+      weight: *ruby-sapphire.pokemon.ludicolo.weight
+      experience: *diamond-pearl.pokemon.ludicolo.experience
+      types: *ruby-sapphire.pokemon.ludicolo.types
+      egg_groups: *ruby-sapphire.pokemon.ludicolo.egg_groups
+      mega: *x-y.pokemon.ludicolo.mega
+      stats: *diamond-pearl.pokemon.ludicolo.stats
+      abilities: *diamond-pearl.pokemon.ludicolo.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.ludicolo.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.ludicolo.wild_held_items.omega-ruby
+      evolution_conditions: *ruby-sapphire.pokemon.ludicolo.evolution_conditions
+      forms:
+        ludicolo:
+          name: Ludicolo
+          form_name: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.battle_only
+          icon: *x-y.pokemon.ludicolo.forms.ludicolo.icon
+          sprites:
+            - ultra-sun-ultra-moon/ludicolo-default.png
+            - ultra-sun-ultra-moon/female/ludicolo-default.png
+            - ultra-sun-ultra-moon/shiny/ludicolo-default.png
+            - ultra-sun-ultra-moon/shiny/female/ludicolo-default.png
+          art: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.art
+          footprint: *ruby-sapphire.pokemon.ludicolo.forms.ludicolo.footprint
+          cry: *x-y.pokemon.ludicolo.forms.ludicolo.cry

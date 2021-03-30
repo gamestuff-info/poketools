@@ -1,0 +1,933 @@
+red-blue:
+  name: &red-blue.name NIDOKING
+  position: &red-blue.position 34
+  numbers: &red-blue.numbers
+    national: &red-blue.numbers.national 34
+    kanto: 34
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: &red-blue.pokemon.nidoking.default true
+      capture_rate: &red-blue.pokemon.nidoking.capture_rate 45
+      experience: &red-blue.pokemon.nidoking.experience 195
+      types: &red-blue.pokemon.nidoking.types
+        - poison
+        - ground
+      stats: &red-blue.pokemon.nidoking.stats
+        hp:
+          base_value: 81
+          effort_change: 81
+        attack:
+          base_value: 92
+          effort_change: 92
+        defense:
+          base_value: 77
+          effort_change: 77
+        speed:
+          base_value: 85
+          effort_change: 85
+        special:
+          base_value: 75
+          effort_change: 75
+      growth_rate: &red-blue.pokemon.nidoking.growth_rate medium-slow
+      genus: &red-blue.pokemon.nidoking.genus 'DRILL Pokémon'
+      height: &red-blue.pokemon.nidoking.height 13
+      weight: &red-blue.pokemon.nidoking.weight 6214
+      flavor_text:
+        red: |
+          It uses its
+          powerful tail in
+          battle to smash,
+          constrict, then
+          break the prey's
+          bones.
+        blue: |
+          It uses its
+          powerful tail in
+          battle to smash,
+          constrict, then
+           break the prey's
+          bones.
+      evolution_parent: &red-blue.pokemon.nidoking.evolution_parent nidorino/nidorino
+      evolution_conditions: &red-blue.pokemon.nidoking.evolution_conditions
+        use-item:
+          trigger_item: moon-stone
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: &red-blue.pokemon.nidoking.forms.nidoking.form_name 'Default Form'
+          default: true
+          battle_only: &red-blue.pokemon.nidoking.forms.nidoking.battle_only false
+          sprites:
+            - red-blue/nidoking-default.png
+            - red-blue/gray/nidoking-default.png
+            - red-blue/back/nidoking-default.png
+          art: &red-blue.pokemon.nidoking.forms.nidoking.art
+            - nidoking-default.png
+          cry: &red-blue.pokemon.nidoking.forms.nidoking.cry gen5/nidoking-default.webm
+          icon: &red-blue.pokemon.nidoking.forms.nidoking.icon gen1/mon.png
+yellow:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: *red-blue.pokemon.nidoking.default
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      experience: *red-blue.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      stats: *red-blue.pokemon.nidoking.stats
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      genus: *red-blue.pokemon.nidoking.genus
+      height: *red-blue.pokemon.nidoking.height
+      weight: *red-blue.pokemon.nidoking.weight
+      flavor_text:
+        yellow: |
+          Its steel-like
+          hide adds to its
+          powerful tackle.
+          Its horns are so
+          hard, they can
+          pierce a diamond.
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          sprites:
+            - yellow/nidoking-default.png
+            - yellow/gray/nidoking-default.png
+            - yellow/back/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+          icon: *red-blue.pokemon.nidoking.forms.nidoking.icon
+gold-silver:
+  name: *red-blue.name
+  position: &gold-silver.position 33
+  numbers: &gold-silver.numbers
+    national: *red-blue.numbers.national
+    original-johto: 99
+    original-johto-abc: 128
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: *red-blue.pokemon.nidoking.default
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      experience: *red-blue.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      stats: &gold-silver.pokemon.nidoking.stats
+        hp:
+          base_value: 81
+          effort_change: 81
+        attack:
+          base_value: 92
+          effort_change: 92
+        defense:
+          base_value: 77
+          effort_change: 77
+        speed:
+          base_value: 85
+          effort_change: 85
+        special-attack:
+          base_value: 85
+          effort_change: 85
+        special-defense:
+          base_value: 75
+          effort_change: 85
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      female_rate: &gold-silver.pokemon.nidoking.female_rate 0
+      hatch_steps: &gold-silver.pokemon.nidoking.hatch_steps 20
+      egg_groups: &gold-silver.pokemon.nidoking.egg_groups
+        - monster
+        - ground
+      genus: *red-blue.pokemon.nidoking.genus
+      height: *red-blue.pokemon.nidoking.height
+      weight: &gold-silver.pokemon.nidoking.weight 621
+      flavor_text:
+        gold: |
+          It swings its big
+          tail around during
+          battle. If its foe
+          flinches, it will
+          charge with its
+          sturdy body.
+        silver: |
+          Its tail is thick
+          and powerful. If
+          it binds an enemy,
+          it can snap the
+          victim's spine
+          quite easily.
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          sprites:
+            - gold-silver/nidoking-default.png
+            - gold-silver/back/nidoking-default.png
+            - gold-silver/shiny/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+          icon: &gold-silver.pokemon.nidoking.forms.nidoking.icon gen2/monster.png
+crystal:
+  name: *red-blue.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: *red-blue.pokemon.nidoking.default
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      experience: *red-blue.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      stats: *gold-silver.pokemon.nidoking.stats
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      genus: *red-blue.pokemon.nidoking.genus
+      height: *red-blue.pokemon.nidoking.height
+      weight: *gold-silver.pokemon.nidoking.weight
+      flavor_text:
+        crystal: |
+          It uses its thick
+          arms, legs and
+          tail to attack
+          forcefully. Melee
+          combat is its
+          specialty.
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          sprites:
+            - crystal/nidoking-default.png
+            - crystal/back/nidoking-default.png
+            - crystal/shiny/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+          icon: *gold-silver.pokemon.nidoking.forms.nidoking.icon
+ruby-sapphire:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &ruby-sapphire.numbers
+    national: *red-blue.numbers.national
+    hoenn: 232
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: *red-blue.pokemon.nidoking.default
+      forms_switchable: &ruby-sapphire.pokemon.nidoking.forms_switchable false
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      experience: *red-blue.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      stats: &ruby-sapphire.pokemon.nidoking.stats
+        hp:
+          base_value: 81
+          effort_change: 0
+        attack:
+          base_value: 92
+          effort_change: 3
+        defense:
+          base_value: 77
+          effort_change: 0
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 81
+          effort_change: 0
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      happiness: &ruby-sapphire.pokemon.nidoking.happiness 70
+      abilities: &ruby-sapphire.pokemon.nidoking.abilities
+        poison-point: &ruby-sapphire.pokemon.nidoking.abilities.poison-point
+          hidden: &ruby-sapphire.pokemon.nidoking.abilities.poison-point.hidden false
+          position: 1
+      genus: *red-blue.pokemon.nidoking.genus
+      height: &ruby-sapphire.pokemon.nidoking.height 14
+      weight: &ruby-sapphire.pokemon.nidoking.weight 620
+      flavor_text:
+        ruby: |
+          NIDOKING's thick tail packs enormously
+          destructive power. With one swing, it
+          can topple a metal transmission tower.
+          Once this POKéMON goes on a rampage,
+          there is no stopping it.
+        sapphire: |
+          NIDOKING's thick tail packs enormously
+          destructive power. With one swing, it
+          can topple a metal transmission tower.
+          Once this POKéMON goes on a rampage,
+          there is no stopping it.
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: &ruby-sapphire.pokemon.nidoking.forms.nidoking.icon gen5/nidoking-default.png
+          sprites:
+            - ruby-sapphire/nidoking-default.png
+            - ruby-sapphire/back/nidoking-default.png
+            - ruby-sapphire/shiny/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: &ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint nidoking.png
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+emerald:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: *red-blue.pokemon.nidoking.default
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      experience: *red-blue.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      stats: *ruby-sapphire.pokemon.nidoking.stats
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      abilities: *ruby-sapphire.pokemon.nidoking.abilities
+      genus: *red-blue.pokemon.nidoking.genus
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      flavor_text:
+        emerald: |
+          A NIDOKING's thick tail packs enormously
+          destructive power capable of toppling
+          a metal transmission tower. Once it goes
+          on a rampage, there is no stopping it.
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *ruby-sapphire.pokemon.nidoking.forms.nidoking.icon
+          sprites:
+            - emerald/nidoking-default.png
+            - emerald/shiny/nidoking-default.png
+            - emerald/animated/nidoking-default.webm
+            - emerald/animated/shiny/nidoking-default.webm
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+colosseum:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: &colosseum.numbers
+    national: *red-blue.numbers.national
+    orre-strategy-memo: 215
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: *red-blue.pokemon.nidoking.default
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      experience: *red-blue.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      stats: *ruby-sapphire.pokemon.nidoking.stats
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      abilities: *ruby-sapphire.pokemon.nidoking.abilities
+      genus: *red-blue.pokemon.nidoking.genus
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          sprites:
+            - colosseum/nidoking-default.png
+            - colosseum/shiny/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+xd:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *colosseum.numbers
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: *red-blue.pokemon.nidoking.default
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      experience: *red-blue.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      stats: *ruby-sapphire.pokemon.nidoking.stats
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      abilities: *ruby-sapphire.pokemon.nidoking.abilities
+      genus: *red-blue.pokemon.nidoking.genus
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          sprites:
+            - xd/nidoking-default.png
+            - xd/shiny/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+firered-leafgreen:
+  name: *red-blue.name
+  position: *red-blue.position
+  numbers: *red-blue.numbers
+  pokemon:
+    nidoking:
+      name: NIDOKING
+      default: *red-blue.pokemon.nidoking.default
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      experience: *red-blue.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      stats: *ruby-sapphire.pokemon.nidoking.stats
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      abilities: *ruby-sapphire.pokemon.nidoking.abilities
+      genus: *red-blue.pokemon.nidoking.genus
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      flavor_text:
+        firered: |
+          It is recognized by its rock-hard hide
+          and its extended horn. Be careful with
+          the horn as it contains venom.
+        leafgreen: |
+          It uses its powerful tail in battle to
+          smash, constrict, then break the prey's
+          bones.
+      forms:
+        nidoking:
+          name: NIDOKING
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *ruby-sapphire.pokemon.nidoking.forms.nidoking.icon
+          sprites:
+            - firered-leafgreen/nidoking-default.png
+            - firered-leafgreen/back/nidoking-default.png
+            - firered-leafgreen/shiny/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Nidoking
+  position: &diamond-pearl.position 35
+  numbers: &diamond-pearl.numbers
+    national: *red-blue.numbers.national
+  pokemon:
+    nidoking:
+      genus: &diamond-pearl.pokemon.nidoking.genus 'Drill Pokémon'
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      shape: &diamond-pearl.pokemon.nidoking.shape upright
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: &diamond-pearl.pokemon.nidoking.baby false
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      pal_park: &diamond-pearl.pokemon.nidoking.pal_park
+        area: field
+        rate: 20
+        score: 70
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: &diamond-pearl.pokemon.nidoking.experience 227
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      stats: &diamond-pearl.pokemon.nidoking.stats
+        hp:
+          base_value: 81
+          effort_change: 0
+        attack:
+          base_value: 102
+          effort_change: 3
+        defense:
+          base_value: 77
+          effort_change: 0
+        speed:
+          base_value: 85
+          effort_change: 0
+        special-attack:
+          base_value: 85
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.nidoking.abilities
+        poison-point: *ruby-sapphire.pokemon.nidoking.abilities.poison-point
+        rivalry: &diamond-pearl.pokemon.nidoking.abilities.rivalry
+          hidden: *ruby-sapphire.pokemon.nidoking.abilities.poison-point.hidden
+          position: 2
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      flavor_text:
+        diamond: |
+          One swing of its mighty tail can
+          snap a telephone pole as if it were
+          a matchstick.
+        pearl: |
+          One swing of its mighty tail can
+          snap a telephone pole as if it were
+          a matchstick.
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *ruby-sapphire.pokemon.nidoking.forms.nidoking.icon
+          sprites:
+            - diamond-pearl/back/shiny/nidoking-default.png
+            - diamond-pearl/back/nidoking-default.png
+            - diamond-pearl/shiny/nidoking-default.png
+            - diamond-pearl/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    nidoking:
+      genus: *diamond-pearl.pokemon.nidoking.genus
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      shape: *diamond-pearl.pokemon.nidoking.shape
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: *diamond-pearl.pokemon.nidoking.baby
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      pal_park: *diamond-pearl.pokemon.nidoking.pal_park
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: *diamond-pearl.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      stats: *diamond-pearl.pokemon.nidoking.stats
+      abilities: *diamond-pearl.pokemon.nidoking.abilities
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      flavor_text:
+        platinum: |
+          One swing of its mighty tail can
+          snap a telephone pole as if it were
+          a matchstick.
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *ruby-sapphire.pokemon.nidoking.forms.nidoking.icon
+          sprites:
+            - platinum/back/shiny/nidoking-default.png
+            - platinum/back/nidoking-default.png
+            - platinum/shiny/nidoking-default.png
+            - platinum/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    updated-johto: 100
+  pokemon:
+    nidoking:
+      genus: *diamond-pearl.pokemon.nidoking.genus
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      shape: *diamond-pearl.pokemon.nidoking.shape
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: *diamond-pearl.pokemon.nidoking.baby
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      pal_park: *diamond-pearl.pokemon.nidoking.pal_park
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: *diamond-pearl.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      stats: *diamond-pearl.pokemon.nidoking.stats
+      abilities: *diamond-pearl.pokemon.nidoking.abilities
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It swings its big tail around during
+          battle. If its foe flinches, it will
+          charge with its sturdy body.
+        soulsilver: |
+          Its tail is thick and powerful. If
+          it binds an enemy, it can render the
+          victim helpless quite easily.
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-3
+            power:
+              base_value: 5
+              range: 3-5
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 3
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2
+          icon: *ruby-sapphire.pokemon.nidoking.forms.nidoking.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/nidoking-default.png
+            - heartgold-soulsilver/back/nidoking-default.png
+            - heartgold-soulsilver/shiny/nidoking-default.png
+            - heartgold-soulsilver/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    nidoking:
+      genus: *diamond-pearl.pokemon.nidoking.genus
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      color: &black-white.pokemon.nidoking.color purple
+      shape: *diamond-pearl.pokemon.nidoking.shape
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: *diamond-pearl.pokemon.nidoking.baby
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: *diamond-pearl.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      stats: *diamond-pearl.pokemon.nidoking.stats
+      abilities: &black-white.pokemon.nidoking.abilities
+        poison-point: *ruby-sapphire.pokemon.nidoking.abilities.poison-point
+        rivalry: *diamond-pearl.pokemon.nidoking.abilities.rivalry
+        sheer-force:
+          hidden: true
+          position: 3
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      flavor_text:
+        black: |
+          One swing of its mighty tail can
+          snap a telephone pole as if it were
+          a matchstick.
+        white: |
+          One swing of its mighty tail can
+          snap a telephone pole as if it were
+          a matchstick.
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *ruby-sapphire.pokemon.nidoking.forms.nidoking.icon
+          sprites:
+            - black-white/back/shiny/nidoking-default.png
+            - black-white/back/nidoking-default.png
+            - black-white/shiny/nidoking-default.png
+            - black-white/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    nidoking:
+      genus: *diamond-pearl.pokemon.nidoking.genus
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      color: *black-white.pokemon.nidoking.color
+      shape: *diamond-pearl.pokemon.nidoking.shape
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: *diamond-pearl.pokemon.nidoking.baby
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: *diamond-pearl.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      stats: *diamond-pearl.pokemon.nidoking.stats
+      abilities: *black-white.pokemon.nidoking.abilities
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      flavor_text:
+        black-2: |
+          One swing of its mighty tail can
+          snap a telephone pole as if it were
+          a matchstick.
+        white-2: |
+          One swing of its mighty tail can
+          snap a telephone pole as if it were
+          a matchstick.
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *ruby-sapphire.pokemon.nidoking.forms.nidoking.icon
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *red-blue.pokemon.nidoking.forms.nidoking.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *red-blue.numbers.national
+    kalos-coastal: 109
+  pokemon:
+    nidoking:
+      genus: *diamond-pearl.pokemon.nidoking.genus
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      color: *black-white.pokemon.nidoking.color
+      shape: *diamond-pearl.pokemon.nidoking.shape
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: *diamond-pearl.pokemon.nidoking.baby
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: *diamond-pearl.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      mega: &x-y.pokemon.nidoking.mega false
+      stats: *diamond-pearl.pokemon.nidoking.stats
+      abilities: *black-white.pokemon.nidoking.abilities
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      flavor_text:
+        x: |
+          It is recognized by its rock-hard hide and
+          its extended horn. Be careful with the horn,
+          as it contains venom.
+        'y': |
+          One swing of its mighty tail can snap a telephone
+          pole as if it were a matchstick.
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: &x-y.pokemon.nidoking.forms.nidoking.icon nidoking-default.png
+          sprites:
+            - x-y/shiny/nidoking-default.png
+            - x-y/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: &x-y.pokemon.nidoking.forms.nidoking.cry nidoking-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    nidoking:
+      genus: *diamond-pearl.pokemon.nidoking.genus
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      color: *black-white.pokemon.nidoking.color
+      shape: *diamond-pearl.pokemon.nidoking.shape
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: *diamond-pearl.pokemon.nidoking.baby
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: *diamond-pearl.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      mega: *x-y.pokemon.nidoking.mega
+      stats: *diamond-pearl.pokemon.nidoking.stats
+      abilities: *black-white.pokemon.nidoking.abilities
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Nidoking’s thick tail packs enormously destructive power.
+          With one swing, it can topple a metal transmission tower.
+          Once this Pokémon goes on a rampage, there is no stopping it.
+        alpha-sapphire: |
+          Nidoking’s thick tail packs enormously destructive power.
+          With one swing, it can topple a metal transmission tower. Once
+          this Pokémon goes on a rampage, there is no stopping it.
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *x-y.pokemon.nidoking.forms.nidoking.icon
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *x-y.pokemon.nidoking.forms.nidoking.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/nidoking-default.png
+            - omega-ruby-alpha-sapphire/shiny/nidoking-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    nidoking:
+      genus: *diamond-pearl.pokemon.nidoking.genus
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      color: *black-white.pokemon.nidoking.color
+      shape: *diamond-pearl.pokemon.nidoking.shape
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: *diamond-pearl.pokemon.nidoking.baby
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: *diamond-pearl.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      mega: *x-y.pokemon.nidoking.mega
+      stats: *diamond-pearl.pokemon.nidoking.stats
+      abilities: *black-white.pokemon.nidoking.abilities
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *x-y.pokemon.nidoking.forms.nidoking.icon
+          sprites:
+            - sun-moon/shiny/nidoking-default.png
+            - sun-moon/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *x-y.pokemon.nidoking.forms.nidoking.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *diamond-pearl.numbers
+  pokemon:
+    nidoking:
+      genus: *diamond-pearl.pokemon.nidoking.genus
+      evolution_parent: *red-blue.pokemon.nidoking.evolution_parent
+      color: *black-white.pokemon.nidoking.color
+      shape: *diamond-pearl.pokemon.nidoking.shape
+      female_rate: *gold-silver.pokemon.nidoking.female_rate
+      capture_rate: *red-blue.pokemon.nidoking.capture_rate
+      happiness: *ruby-sapphire.pokemon.nidoking.happiness
+      baby: *diamond-pearl.pokemon.nidoking.baby
+      hatch_steps: *gold-silver.pokemon.nidoking.hatch_steps
+      growth_rate: *red-blue.pokemon.nidoking.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.nidoking.forms_switchable
+      name: Nidoking
+      default: *red-blue.pokemon.nidoking.default
+      height: *ruby-sapphire.pokemon.nidoking.height
+      weight: *ruby-sapphire.pokemon.nidoking.weight
+      experience: *diamond-pearl.pokemon.nidoking.experience
+      types: *red-blue.pokemon.nidoking.types
+      egg_groups: *gold-silver.pokemon.nidoking.egg_groups
+      mega: *x-y.pokemon.nidoking.mega
+      stats: *diamond-pearl.pokemon.nidoking.stats
+      abilities: *black-white.pokemon.nidoking.abilities
+      evolution_conditions: *red-blue.pokemon.nidoking.evolution_conditions
+      forms:
+        nidoking:
+          name: Nidoking
+          form_name: *red-blue.pokemon.nidoking.forms.nidoking.form_name
+          default: true
+          battle_only: *red-blue.pokemon.nidoking.forms.nidoking.battle_only
+          icon: *x-y.pokemon.nidoking.forms.nidoking.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/nidoking-default.png
+            - ultra-sun-ultra-moon/nidoking-default.png
+          art: *red-blue.pokemon.nidoking.forms.nidoking.art
+          footprint: *ruby-sapphire.pokemon.nidoking.forms.nidoking.footprint
+          cry: *x-y.pokemon.nidoking.forms.nidoking.cry

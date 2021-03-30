@@ -1,0 +1,147 @@
+ruby-sapphire: &ruby-sapphire
+  name: &ruby-sapphire.name 'NATURE POWER'
+  type: &ruby-sapphire.type normal
+  accuracy: &ruby-sapphire.accuracy 95
+  pp: &ruby-sapphire.pp 20
+  effect: &ruby-sapphire.effect 174
+  target: &ruby-sapphire.target specific-move
+  priority: &ruby-sapphire.priority 0
+  categories: &ruby-sapphire.categories
+    - unique
+  hits: &ruby-sapphire.hits 1
+  turns: &ruby-sapphire.turns 1
+  contest_type: &ruby-sapphire.contest_type beauty
+  contest_effect: 47
+  flavor_text: &ruby-sapphire.flavor_text |
+    The type of attack varies
+    depending on the location.
+emerald: *ruby-sapphire
+colosseum:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+xd:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  accuracy: *ruby-sapphire.accuracy
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  damage_class: physical
+  flavor_text: *ruby-sapphire.flavor_text
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  effect: *ruby-sapphire.effect
+  target: *ruby-sapphire.target
+  priority: *ruby-sapphire.priority
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  flavor_text: |
+    An attack that
+    changes type
+    depending on the
+    user's location.
+diamond-pearl: &diamond-pearl
+  name: &diamond-pearl.name 'Nature Power'
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: &diamond-pearl.damage_class status
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  super_contest_effect: 14
+  flavor_text: &diamond-pearl.flavor_text |
+    An attack that makes
+    use of nature’s
+    power. Its effects
+    vary depending on the
+    user’s environment.
+platinum: *diamond-pearl
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *diamond-pearl.flavor_text
+black-white: &black-white
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *ruby-sapphire.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: &black-white.flavor_text |
+    An attack that makes use of nature’s
+    power. Its effects vary depending on the
+    user’s environment.
+black-2-white-2: *black-white
+x-y:
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: &x-y.target selected-pokemon
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: *black-white.flavor_text
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *x-y.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  contest_type: *ruby-sapphire.contest_type
+  contest_effect: 11
+  flavor_text: *black-white.flavor_text
+sun-moon: &sun-moon
+  name: *diamond-pearl.name
+  categories: *ruby-sapphire.categories
+  hits: *ruby-sapphire.hits
+  turns: *ruby-sapphire.turns
+  type: *ruby-sapphire.type
+  pp: *ruby-sapphire.pp
+  priority: *ruby-sapphire.priority
+  target: *x-y.target
+  damage_class: *diamond-pearl.damage_class
+  effect: *ruby-sapphire.effect
+  flavor_text: |
+    This attack makes use of nature’s power. Its
+    effects vary depending on the user’s environment.
+ultra-sun-ultra-moon: *sun-moon

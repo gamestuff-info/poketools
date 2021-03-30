@@ -1,0 +1,735 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name GRUMPIG
+  position: &ruby-sapphire.position 326
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 326
+    hoenn: 111
+  pokemon:
+    grumpig:
+      name: GRUMPIG
+      default: &ruby-sapphire.pokemon.grumpig.default true
+      forms_switchable: &ruby-sapphire.pokemon.grumpig.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.grumpig.capture_rate 60
+      experience: &ruby-sapphire.pokemon.grumpig.experience 164
+      types: &ruby-sapphire.pokemon.grumpig.types
+        - psychic
+      stats: &ruby-sapphire.pokemon.grumpig.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 2
+        special-defense:
+          base_value: 80
+          effort_change: 2
+      growth_rate: &ruby-sapphire.pokemon.grumpig.growth_rate fast
+      female_rate: &ruby-sapphire.pokemon.grumpig.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.grumpig.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.grumpig.egg_groups
+        - ground
+      happiness: &ruby-sapphire.pokemon.grumpig.happiness 70
+      abilities: &ruby-sapphire.pokemon.grumpig.abilities
+        thick-fat: &ruby-sapphire.pokemon.grumpig.abilities.thick-fat
+          hidden: &ruby-sapphire.pokemon.grumpig.abilities.thick-fat.hidden false
+          position: 1
+        own-tempo: &ruby-sapphire.pokemon.grumpig.abilities.own-tempo
+          hidden: *ruby-sapphire.pokemon.grumpig.abilities.thick-fat.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.grumpig.genus 'MANIPULATE Pokémon'
+      height: &ruby-sapphire.pokemon.grumpig.height 9
+      weight: &ruby-sapphire.pokemon.grumpig.weight 715
+      flavor_text:
+        ruby: |
+          GRUMPIG uses the black pearls on its
+          body to amplify its psychic power waves
+          for gaining total control over its foe.
+          When this POKéMON uses its special
+          power, its snorting breath grows
+          labored.
+        sapphire: |
+          GRUMPIG uses the black pearls on its
+          body to wield its fantastic powers.
+          When it is doing so, it dances bizarrely.
+          This POKéMON's black pearls are valuable
+          as works of art.
+      forms:
+        grumpig:
+          name: GRUMPIG
+          form_name: &ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only false
+          icon: &ruby-sapphire.pokemon.grumpig.forms.grumpig.icon gen5/grumpig-default.png
+          sprites:
+            - ruby-sapphire/grumpig-default.png
+            - ruby-sapphire/back/grumpig-default.png
+            - ruby-sapphire/shiny/grumpig-default.png
+          art: &ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+            - grumpig-default.png
+          footprint: &ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint grumpig.png
+          cry: &ruby-sapphire.pokemon.grumpig.forms.grumpig.cry gen5/grumpig-default.webm
+      evolution_parent: &ruby-sapphire.pokemon.grumpig.evolution_parent spoink/spoink
+      evolution_conditions: &ruby-sapphire.pokemon.grumpig.evolution_conditions
+        level-up:
+          minimum_level: 32
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    grumpig:
+      name: GRUMPIG
+      default: *ruby-sapphire.pokemon.grumpig.default
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      experience: *ruby-sapphire.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      stats: *ruby-sapphire.pokemon.grumpig.stats
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      abilities: *ruby-sapphire.pokemon.grumpig.abilities
+      genus: *ruby-sapphire.pokemon.grumpig.genus
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      flavor_text:
+        emerald: |
+          It stores power in the black pearls on its
+          forehead. When it uses psychic power, it
+          performs an odd dance step. Its style of
+          dancing became hugely popular overseas.
+      forms:
+        grumpig:
+          name: GRUMPIG
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *ruby-sapphire.pokemon.grumpig.forms.grumpig.icon
+          sprites:
+            - emerald/grumpig-default.png
+            - emerald/shiny/grumpig-default.png
+            - emerald/animated/grumpig-default.webm
+            - emerald/animated/shiny/grumpig-default.webm
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 121
+  pokemon:
+    grumpig:
+      name: GRUMPIG
+      default: *ruby-sapphire.pokemon.grumpig.default
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      experience: *ruby-sapphire.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      stats: *ruby-sapphire.pokemon.grumpig.stats
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      abilities: *ruby-sapphire.pokemon.grumpig.abilities
+      genus: *ruby-sapphire.pokemon.grumpig.genus
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      forms:
+        grumpig:
+          name: GRUMPIG
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          sprites:
+            - colosseum/grumpig-default.png
+            - colosseum/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    grumpig:
+      name: GRUMPIG
+      default: *ruby-sapphire.pokemon.grumpig.default
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      experience: *ruby-sapphire.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      stats: *ruby-sapphire.pokemon.grumpig.stats
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      abilities: *ruby-sapphire.pokemon.grumpig.abilities
+      genus: *ruby-sapphire.pokemon.grumpig.genus
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      forms:
+        grumpig:
+          name: GRUMPIG
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          sprites:
+            - xd/grumpig-default.png
+            - xd/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    grumpig:
+      name: GRUMPIG
+      default: *ruby-sapphire.pokemon.grumpig.default
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      experience: *ruby-sapphire.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      stats: *ruby-sapphire.pokemon.grumpig.stats
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      abilities: *ruby-sapphire.pokemon.grumpig.abilities
+      genus: *ruby-sapphire.pokemon.grumpig.genus
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      flavor_text:
+        firered: |
+          It can gain control over foes by doing
+          odd dance steps. The black pearls on its
+          forehead are precious gems.
+        leafgreen: |
+          It can gain control over foes by doing
+          odd dance steps. The black pearls on its
+          forehead are precious gems.
+      forms:
+        grumpig:
+          name: GRUMPIG
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *ruby-sapphire.pokemon.grumpig.forms.grumpig.icon
+          sprites:
+            - firered-leafgreen/grumpig-default.png
+            - firered-leafgreen/back/grumpig-default.png
+            - firered-leafgreen/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Grumpig
+  position: &diamond-pearl.position 354
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grumpig:
+      genus: &diamond-pearl.pokemon.grumpig.genus 'Manipulate Pokémon'
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      shape: &diamond-pearl.pokemon.grumpig.shape upright
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: &diamond-pearl.pokemon.grumpig.baby false
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      pal_park: &diamond-pearl.pokemon.grumpig.pal_park
+        area: field
+        rate: 20
+        score: 70
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: &diamond-pearl.pokemon.grumpig.experience 165
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      stats: &diamond-pearl.pokemon.grumpig.stats
+        hp:
+          base_value: 80
+          effort_change: 0
+        attack:
+          base_value: 45
+          effort_change: 0
+        defense:
+          base_value: 65
+          effort_change: 0
+        speed:
+          base_value: 80
+          effort_change: 0
+        special-attack:
+          base_value: 90
+          effort_change: 0
+        special-defense:
+          base_value: 110
+          effort_change: 2
+      abilities: &diamond-pearl.pokemon.grumpig.abilities
+        thick-fat: *ruby-sapphire.pokemon.grumpig.abilities.thick-fat
+        own-tempo: *ruby-sapphire.pokemon.grumpig.abilities.own-tempo
+        gluttony:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.grumpig.wild_held_items.diamond
+          tanga-berry: 5
+        pearl: *diamond-pearl.pokemon.grumpig.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      flavor_text:
+        diamond: |
+          It uses black pearls to amplify its
+          psycho-power. It does an odd
+          dance to gain control over foes.
+        pearl: |
+          It uses black pearls to amplify its
+          psycho-power. It does an odd
+          dance to gain control over foes.
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *ruby-sapphire.pokemon.grumpig.forms.grumpig.icon
+          sprites:
+            - diamond-pearl/grumpig-default.png
+            - diamond-pearl/back/grumpig-default.png
+            - diamond-pearl/back/shiny/grumpig-default.png
+            - diamond-pearl/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grumpig:
+      genus: *diamond-pearl.pokemon.grumpig.genus
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      shape: *diamond-pearl.pokemon.grumpig.shape
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: *diamond-pearl.pokemon.grumpig.baby
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      pal_park: *diamond-pearl.pokemon.grumpig.pal_park
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: *diamond-pearl.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      stats: *diamond-pearl.pokemon.grumpig.stats
+      abilities: *diamond-pearl.pokemon.grumpig.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.grumpig.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      flavor_text:
+        platinum: |
+          It uses black pearls to amplify its
+          psycho-power. It does an odd
+          dance to gain control over foes.
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *ruby-sapphire.pokemon.grumpig.forms.grumpig.icon
+          sprites:
+            - platinum/grumpig-default.png
+            - platinum/back/grumpig-default.png
+            - platinum/back/shiny/grumpig-default.png
+            - platinum/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grumpig:
+      genus: *diamond-pearl.pokemon.grumpig.genus
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      shape: *diamond-pearl.pokemon.grumpig.shape
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: *diamond-pearl.pokemon.grumpig.baby
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      pal_park: *diamond-pearl.pokemon.grumpig.pal_park
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: *diamond-pearl.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      stats: *diamond-pearl.pokemon.grumpig.stats
+      abilities: *diamond-pearl.pokemon.grumpig.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.grumpig.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.grumpig.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It can perform odd dance steps to
+          influence foes. Its style of dancing
+          became hugely popular overseas.
+        soulsilver: |
+          It can perform odd dance steps to
+          influence foes. Its style of dancing
+          became hugely popular overseas.
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 2
+              range: 1-2
+            power:
+              base_value: 3
+              range: 1-5
+            skill:
+              base_value: 3
+              range: 1-5
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 3
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.grumpig.forms.grumpig.icon
+          sprites:
+            - heartgold-soulsilver/grumpig-default.png
+            - heartgold-soulsilver/back/grumpig-default.png
+            - heartgold-soulsilver/back/shiny/grumpig-default.png
+            - heartgold-soulsilver/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grumpig:
+      genus: *diamond-pearl.pokemon.grumpig.genus
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      color: &black-white.pokemon.grumpig.color purple
+      shape: *diamond-pearl.pokemon.grumpig.shape
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: *diamond-pearl.pokemon.grumpig.baby
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: *diamond-pearl.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      stats: *diamond-pearl.pokemon.grumpig.stats
+      abilities: *diamond-pearl.pokemon.grumpig.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.grumpig.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.grumpig.wild_held_items.diamond
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      flavor_text:
+        black: |
+          It uses black pearls to amplify its
+          psycho-power. It does an odd
+          dance to gain control over foes.
+        white: |
+          It uses black pearls to amplify its
+          psycho-power. It does an odd
+          dance to gain control over foes.
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *ruby-sapphire.pokemon.grumpig.forms.grumpig.icon
+          sprites:
+            - black-white/grumpig-default.png
+            - black-white/back/grumpig-default.png
+            - black-white/back/shiny/grumpig-default.png
+            - black-white/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-unova: 207
+  pokemon:
+    grumpig:
+      genus: *diamond-pearl.pokemon.grumpig.genus
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      color: *black-white.pokemon.grumpig.color
+      shape: *diamond-pearl.pokemon.grumpig.shape
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: *diamond-pearl.pokemon.grumpig.baby
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: *diamond-pearl.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      stats: *diamond-pearl.pokemon.grumpig.stats
+      abilities: *diamond-pearl.pokemon.grumpig.abilities
+      wild_held_items:
+        black-2: &black-2-white-2.pokemon.grumpig.wild_held_items.black-2
+          persim-berry: 50
+        white-2: *black-2-white-2.pokemon.grumpig.wild_held_items.black-2
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      flavor_text:
+        black-2: |
+          It uses black pearls to amplify its
+          psychic power. It does a strange
+          dance to control foes’ minds.
+        white-2: |
+          It uses black pearls to amplify its
+          psychic power. It does a strange
+          dance to control foes’ minds.
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *ruby-sapphire.pokemon.grumpig.forms.grumpig.icon
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *ruby-sapphire.pokemon.grumpig.forms.grumpig.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-coastal: 8
+  pokemon:
+    grumpig:
+      genus: *diamond-pearl.pokemon.grumpig.genus
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      color: *black-white.pokemon.grumpig.color
+      shape: *diamond-pearl.pokemon.grumpig.shape
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: *diamond-pearl.pokemon.grumpig.baby
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: *diamond-pearl.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      mega: &x-y.pokemon.grumpig.mega false
+      stats: *diamond-pearl.pokemon.grumpig.stats
+      abilities: *diamond-pearl.pokemon.grumpig.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      flavor_text:
+        x: |
+          It uses black pearls to amplify its psychic power.
+          It does a strange dance to control foes’ minds.
+        'y': |
+          It uses black pearls to amplify its psychic power.
+          It does an odd dance to gain control over foes.
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: &x-y.pokemon.grumpig.forms.grumpig.icon grumpig-default.png
+          sprites:
+            - x-y/grumpig-default.png
+            - x-y/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: &x-y.pokemon.grumpig.forms.grumpig.cry grumpig-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 116
+  pokemon:
+    grumpig:
+      genus: *diamond-pearl.pokemon.grumpig.genus
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      color: *black-white.pokemon.grumpig.color
+      shape: *diamond-pearl.pokemon.grumpig.shape
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: *diamond-pearl.pokemon.grumpig.baby
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: *diamond-pearl.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      mega: *x-y.pokemon.grumpig.mega
+      stats: *diamond-pearl.pokemon.grumpig.stats
+      abilities: *diamond-pearl.pokemon.grumpig.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Grumpig uses the black pearls on its body to amplify its
+          psychic power waves for gaining total control over its foe.
+          When this Pokémon uses its special power, its snorting breath
+          grows labored.
+        alpha-sapphire: |
+          Grumpig uses the black pearls on its body to wield
+          its fantastic powers. When it is doing so, it dances bizarrely.
+          This Pokémon’s black pearls are valuable as works of art.
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *x-y.pokemon.grumpig.forms.grumpig.icon
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *x-y.pokemon.grumpig.forms.grumpig.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/grumpig-default.png
+            - omega-ruby-alpha-sapphire/shiny/grumpig-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grumpig:
+      genus: *diamond-pearl.pokemon.grumpig.genus
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      color: *black-white.pokemon.grumpig.color
+      shape: *diamond-pearl.pokemon.grumpig.shape
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: *diamond-pearl.pokemon.grumpig.baby
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: *diamond-pearl.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      mega: *x-y.pokemon.grumpig.mega
+      stats: *diamond-pearl.pokemon.grumpig.stats
+      abilities: *diamond-pearl.pokemon.grumpig.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *x-y.pokemon.grumpig.forms.grumpig.icon
+          sprites:
+            - sun-moon/grumpig-default.png
+            - sun-moon/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *x-y.pokemon.grumpig.forms.grumpig.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    grumpig:
+      genus: *diamond-pearl.pokemon.grumpig.genus
+      evolution_parent: *ruby-sapphire.pokemon.grumpig.evolution_parent
+      color: *black-white.pokemon.grumpig.color
+      shape: *diamond-pearl.pokemon.grumpig.shape
+      female_rate: *ruby-sapphire.pokemon.grumpig.female_rate
+      capture_rate: *ruby-sapphire.pokemon.grumpig.capture_rate
+      happiness: *ruby-sapphire.pokemon.grumpig.happiness
+      baby: *diamond-pearl.pokemon.grumpig.baby
+      hatch_steps: *ruby-sapphire.pokemon.grumpig.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.grumpig.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.grumpig.forms_switchable
+      name: Grumpig
+      default: *ruby-sapphire.pokemon.grumpig.default
+      height: *ruby-sapphire.pokemon.grumpig.height
+      weight: *ruby-sapphire.pokemon.grumpig.weight
+      experience: *diamond-pearl.pokemon.grumpig.experience
+      types: *ruby-sapphire.pokemon.grumpig.types
+      egg_groups: *ruby-sapphire.pokemon.grumpig.egg_groups
+      mega: *x-y.pokemon.grumpig.mega
+      stats: *diamond-pearl.pokemon.grumpig.stats
+      abilities: *diamond-pearl.pokemon.grumpig.abilities
+      evolution_conditions: *ruby-sapphire.pokemon.grumpig.evolution_conditions
+      forms:
+        grumpig:
+          name: Grumpig
+          form_name: *ruby-sapphire.pokemon.grumpig.forms.grumpig.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.grumpig.forms.grumpig.battle_only
+          icon: *x-y.pokemon.grumpig.forms.grumpig.icon
+          sprites:
+            - ultra-sun-ultra-moon/grumpig-default.png
+            - ultra-sun-ultra-moon/shiny/grumpig-default.png
+          art: *ruby-sapphire.pokemon.grumpig.forms.grumpig.art
+          footprint: *ruby-sapphire.pokemon.grumpig.forms.grumpig.footprint
+          cry: *x-y.pokemon.grumpig.forms.grumpig.cry

@@ -1,0 +1,39 @@
+red-blue: &red-blue
+  region: &red-blue.region kanto
+  name: &red-blue.name 'Victory Road'
+  areas: &red-blue.areas
+    1f:
+      name: 1F
+      default: true
+    2f:
+      name: 2F
+    3f:
+      name: 3F
+  map:
+    map: &red-blue.map.map kanto
+    z: &red-blue.map.z 10
+    overlay: '<circle cx="20" cy="36" r="4" />'
+yellow: *red-blue
+gold-silver: &gold-silver
+  region: *red-blue.region
+  name: *red-blue.name
+  areas: *red-blue.areas
+  map:
+    map: *red-blue.map.map
+    overlay: '<rect width="8" height="8" x="16" y="32" />'
+crystal: *gold-silver
+firered-leafgreen:
+  region: *red-blue.region
+  name: *red-blue.name
+  areas: *red-blue.areas
+  map:
+    map: *red-blue.map.map
+    z: *red-blue.map.z
+    overlay: '<circle cx="28" cy="52" r="4" />'
+heartgold-soulsilver:
+  region: *red-blue.region
+  name: *red-blue.name
+  areas: *red-blue.areas
+  map:
+    map: *red-blue.map.map
+    overlay: '<rect width="6" height="14" x="48" y="66" rx="3" ry="3" />'

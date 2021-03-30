@@ -1,0 +1,515 @@
+diamond-pearl:
+  name: &diamond-pearl.name Drapion
+  position: &diamond-pearl.position 472
+  numbers:
+    national: &diamond-pearl.numbers.national 452
+    original-sinnoh: 128
+  pokemon:
+    drapion:
+      genus: &diamond-pearl.pokemon.drapion.genus 'Ogre Scorpion Pokémon'
+      evolution_parent: &diamond-pearl.pokemon.drapion.evolution_parent skorupi/skorupi
+      shape: &diamond-pearl.pokemon.drapion.shape armor
+      female_rate: &diamond-pearl.pokemon.drapion.female_rate 50
+      capture_rate: &diamond-pearl.pokemon.drapion.capture_rate 45
+      happiness: &diamond-pearl.pokemon.drapion.happiness 70
+      baby: &diamond-pearl.pokemon.drapion.baby false
+      hatch_steps: &diamond-pearl.pokemon.drapion.hatch_steps 20
+      growth_rate: &diamond-pearl.pokemon.drapion.growth_rate slow
+      forms_switchable: &diamond-pearl.pokemon.drapion.forms_switchable false
+      pal_park: &diamond-pearl.pokemon.drapion.pal_park
+        area: sea
+        rate: 20
+        score: 70
+      name: Drapion
+      default: &diamond-pearl.pokemon.drapion.default true
+      height: &diamond-pearl.pokemon.drapion.height 13
+      weight: &diamond-pearl.pokemon.drapion.weight 615
+      experience: &diamond-pearl.pokemon.drapion.experience 175
+      types: &diamond-pearl.pokemon.drapion.types
+        - poison
+        - dark
+      egg_groups: &diamond-pearl.pokemon.drapion.egg_groups
+        - bug
+        - water3
+      stats: &diamond-pearl.pokemon.drapion.stats
+        hp:
+          base_value: 70
+          effort_change: 0
+        attack:
+          base_value: 90
+          effort_change: 0
+        defense:
+          base_value: 110
+          effort_change: 2
+        speed:
+          base_value: 95
+          effort_change: 0
+        special-attack:
+          base_value: 60
+          effort_change: 0
+        special-defense:
+          base_value: 75
+          effort_change: 0
+      abilities: &diamond-pearl.pokemon.drapion.abilities
+        battle-armor:
+          hidden: &diamond-pearl.pokemon.drapion.abilities.battle-armor.hidden false
+          position: 1
+        sniper:
+          hidden: *diamond-pearl.pokemon.drapion.abilities.battle-armor.hidden
+          position: 2
+        keen-eye:
+          hidden: true
+          position: 3
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.drapion.wild_held_items.diamond
+          poison-barb: 5
+        pearl: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+      evolution_conditions: &diamond-pearl.pokemon.drapion.evolution_conditions
+        level-up:
+          minimum_level: 40
+      flavor_text:
+        diamond: |
+          It has the power in its clawed
+          arms to make scrap of a car. The
+          tips of its claws release poison.
+        pearl: |
+          Its body is encased in a sturdy
+          shell. Its head rotates 180
+          degrees, eliminating blind spots.
+      forms:
+        drapion:
+          name: Drapion
+          form_name: &diamond-pearl.pokemon.drapion.forms.drapion.form_name 'Default Form'
+          default: true
+          battle_only: &diamond-pearl.pokemon.drapion.forms.drapion.battle_only false
+          icon: &diamond-pearl.pokemon.drapion.forms.drapion.icon gen5/drapion-default.png
+          sprites:
+            - diamond-pearl/back/drapion-default.png
+            - diamond-pearl/back/shiny/drapion-default.png
+            - diamond-pearl/drapion-default.png
+            - diamond-pearl/shiny/drapion-default.png
+          art: &diamond-pearl.pokemon.drapion.forms.drapion.art
+            - drapion-default.png
+          footprint: &diamond-pearl.pokemon.drapion.forms.drapion.footprint drapion.png
+          cry: &diamond-pearl.pokemon.drapion.forms.drapion.cry gen5/drapion-default.webm
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    extended-sinnoh: 128
+  pokemon:
+    drapion:
+      genus: *diamond-pearl.pokemon.drapion.genus
+      evolution_parent: *diamond-pearl.pokemon.drapion.evolution_parent
+      shape: *diamond-pearl.pokemon.drapion.shape
+      female_rate: *diamond-pearl.pokemon.drapion.female_rate
+      capture_rate: *diamond-pearl.pokemon.drapion.capture_rate
+      happiness: *diamond-pearl.pokemon.drapion.happiness
+      baby: *diamond-pearl.pokemon.drapion.baby
+      hatch_steps: *diamond-pearl.pokemon.drapion.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.drapion.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.drapion.forms_switchable
+      pal_park: *diamond-pearl.pokemon.drapion.pal_park
+      name: Drapion
+      default: *diamond-pearl.pokemon.drapion.default
+      height: *diamond-pearl.pokemon.drapion.height
+      weight: *diamond-pearl.pokemon.drapion.weight
+      experience: *diamond-pearl.pokemon.drapion.experience
+      types: *diamond-pearl.pokemon.drapion.types
+      egg_groups: *diamond-pearl.pokemon.drapion.egg_groups
+      stats: *diamond-pearl.pokemon.drapion.stats
+      abilities: *diamond-pearl.pokemon.drapion.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.drapion.evolution_conditions
+      flavor_text:
+        platinum: |
+          Possessing a sturdy build, it takes
+          pride in its strength, taking down
+          foes without using toxins.
+      forms:
+        drapion:
+          name: Drapion
+          form_name: *diamond-pearl.pokemon.drapion.forms.drapion.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.drapion.forms.drapion.battle_only
+          icon: *diamond-pearl.pokemon.drapion.forms.drapion.icon
+          sprites:
+            - platinum/back/drapion-default.png
+            - platinum/back/shiny/drapion-default.png
+            - platinum/drapion-default.png
+            - platinum/shiny/drapion-default.png
+          art: *diamond-pearl.pokemon.drapion.forms.drapion.art
+          footprint: *diamond-pearl.pokemon.drapion.forms.drapion.footprint
+          cry: *diamond-pearl.pokemon.drapion.forms.drapion.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: &heartgold-soulsilver.numbers
+    national: *diamond-pearl.numbers.national
+  pokemon:
+    drapion:
+      genus: *diamond-pearl.pokemon.drapion.genus
+      evolution_parent: *diamond-pearl.pokemon.drapion.evolution_parent
+      shape: *diamond-pearl.pokemon.drapion.shape
+      female_rate: *diamond-pearl.pokemon.drapion.female_rate
+      capture_rate: *diamond-pearl.pokemon.drapion.capture_rate
+      happiness: *diamond-pearl.pokemon.drapion.happiness
+      baby: *diamond-pearl.pokemon.drapion.baby
+      hatch_steps: *diamond-pearl.pokemon.drapion.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.drapion.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.drapion.forms_switchable
+      pal_park: *diamond-pearl.pokemon.drapion.pal_park
+      name: Drapion
+      default: *diamond-pearl.pokemon.drapion.default
+      height: *diamond-pearl.pokemon.drapion.height
+      weight: *diamond-pearl.pokemon.drapion.weight
+      experience: *diamond-pearl.pokemon.drapion.experience
+      types: *diamond-pearl.pokemon.drapion.types
+      egg_groups: *diamond-pearl.pokemon.drapion.egg_groups
+      stats: *diamond-pearl.pokemon.drapion.stats
+      abilities: *diamond-pearl.pokemon.drapion.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.drapion.evolution_conditions
+      flavor_text:
+        heartgold: |
+          It attacks people and Pokémon that
+          cross the desert. This has only
+          furthered its bad reputation.
+        soulsilver: |
+          It attacks people and Pokémon that
+          cross the desert. This has only
+          furthered its bad reputation.
+      forms:
+        drapion:
+          name: Drapion
+          form_name: *diamond-pearl.pokemon.drapion.forms.drapion.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.drapion.forms.drapion.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 1
+              range: 1-2
+            power:
+              base_value: 4
+              range: 2-5
+            skill:
+              base_value: 4
+              range: 2-5
+            stamina:
+              base_value: 4
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2
+          icon: *diamond-pearl.pokemon.drapion.forms.drapion.icon
+          sprites:
+            - heartgold-soulsilver/back/drapion-default.png
+            - heartgold-soulsilver/back/shiny/drapion-default.png
+            - heartgold-soulsilver/drapion-default.png
+            - heartgold-soulsilver/shiny/drapion-default.png
+          art: *diamond-pearl.pokemon.drapion.forms.drapion.art
+          footprint: *diamond-pearl.pokemon.drapion.forms.drapion.footprint
+          cry: *diamond-pearl.pokemon.drapion.forms.drapion.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    drapion:
+      genus: *diamond-pearl.pokemon.drapion.genus
+      evolution_parent: *diamond-pearl.pokemon.drapion.evolution_parent
+      color: &black-white.pokemon.drapion.color purple
+      shape: *diamond-pearl.pokemon.drapion.shape
+      female_rate: *diamond-pearl.pokemon.drapion.female_rate
+      capture_rate: *diamond-pearl.pokemon.drapion.capture_rate
+      happiness: *diamond-pearl.pokemon.drapion.happiness
+      baby: *diamond-pearl.pokemon.drapion.baby
+      hatch_steps: *diamond-pearl.pokemon.drapion.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.drapion.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.drapion.forms_switchable
+      name: Drapion
+      default: *diamond-pearl.pokemon.drapion.default
+      height: *diamond-pearl.pokemon.drapion.height
+      weight: *diamond-pearl.pokemon.drapion.weight
+      experience: *diamond-pearl.pokemon.drapion.experience
+      types: *diamond-pearl.pokemon.drapion.types
+      egg_groups: *diamond-pearl.pokemon.drapion.egg_groups
+      stats: *diamond-pearl.pokemon.drapion.stats
+      abilities: *diamond-pearl.pokemon.drapion.abilities
+      wild_held_items:
+        black: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.drapion.evolution_conditions
+      flavor_text:
+        black: |
+          Possessing a sturdy build, it takes
+          pride in its strength, taking down
+          foes without using toxins.
+        white: |
+          Possessing a sturdy build, it takes
+          pride in its strength, taking down
+          foes without using toxins.
+      forms:
+        drapion:
+          name: Drapion
+          form_name: *diamond-pearl.pokemon.drapion.forms.drapion.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.drapion.forms.drapion.battle_only
+          icon: *diamond-pearl.pokemon.drapion.forms.drapion.icon
+          sprites:
+            - black-white/back/drapion-default.png
+            - black-white/back/shiny/drapion-default.png
+            - black-white/drapion-default.png
+            - black-white/shiny/drapion-default.png
+          art: *diamond-pearl.pokemon.drapion.forms.drapion.art
+          footprint: *diamond-pearl.pokemon.drapion.forms.drapion.footprint
+          cry: *diamond-pearl.pokemon.drapion.forms.drapion.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    updated-unova: 202
+  pokemon:
+    drapion:
+      genus: *diamond-pearl.pokemon.drapion.genus
+      evolution_parent: *diamond-pearl.pokemon.drapion.evolution_parent
+      color: *black-white.pokemon.drapion.color
+      shape: *diamond-pearl.pokemon.drapion.shape
+      female_rate: *diamond-pearl.pokemon.drapion.female_rate
+      capture_rate: *diamond-pearl.pokemon.drapion.capture_rate
+      happiness: *diamond-pearl.pokemon.drapion.happiness
+      baby: *diamond-pearl.pokemon.drapion.baby
+      hatch_steps: *diamond-pearl.pokemon.drapion.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.drapion.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.drapion.forms_switchable
+      name: Drapion
+      default: *diamond-pearl.pokemon.drapion.default
+      height: *diamond-pearl.pokemon.drapion.height
+      weight: *diamond-pearl.pokemon.drapion.weight
+      experience: *diamond-pearl.pokemon.drapion.experience
+      types: *diamond-pearl.pokemon.drapion.types
+      egg_groups: *diamond-pearl.pokemon.drapion.egg_groups
+      stats: *diamond-pearl.pokemon.drapion.stats
+      abilities: *diamond-pearl.pokemon.drapion.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.drapion.evolution_conditions
+      flavor_text:
+        black-2: |
+          It takes pride in its strength.
+          Even though it can tear foes apart,
+          it finishes them off with powerful poison.
+        white-2: |
+          It takes pride in its strength.
+          Even though it can tear foes apart,
+          it finishes them off with powerful poison.
+      forms:
+        drapion:
+          name: Drapion
+          form_name: *diamond-pearl.pokemon.drapion.forms.drapion.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.drapion.forms.drapion.battle_only
+          icon: *diamond-pearl.pokemon.drapion.forms.drapion.icon
+          art: *diamond-pearl.pokemon.drapion.forms.drapion.art
+          footprint: *diamond-pearl.pokemon.drapion.forms.drapion.footprint
+          cry: *diamond-pearl.pokemon.drapion.forms.drapion.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *diamond-pearl.numbers.national
+    kalos-mountain: 16
+  pokemon:
+    drapion:
+      genus: *diamond-pearl.pokemon.drapion.genus
+      evolution_parent: *diamond-pearl.pokemon.drapion.evolution_parent
+      color: *black-white.pokemon.drapion.color
+      shape: *diamond-pearl.pokemon.drapion.shape
+      female_rate: *diamond-pearl.pokemon.drapion.female_rate
+      capture_rate: *diamond-pearl.pokemon.drapion.capture_rate
+      happiness: *diamond-pearl.pokemon.drapion.happiness
+      baby: *diamond-pearl.pokemon.drapion.baby
+      hatch_steps: *diamond-pearl.pokemon.drapion.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.drapion.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.drapion.forms_switchable
+      name: Drapion
+      default: *diamond-pearl.pokemon.drapion.default
+      height: *diamond-pearl.pokemon.drapion.height
+      weight: *diamond-pearl.pokemon.drapion.weight
+      experience: *diamond-pearl.pokemon.drapion.experience
+      types: *diamond-pearl.pokemon.drapion.types
+      egg_groups: *diamond-pearl.pokemon.drapion.egg_groups
+      mega: &x-y.pokemon.drapion.mega false
+      stats: *diamond-pearl.pokemon.drapion.stats
+      abilities: *diamond-pearl.pokemon.drapion.abilities
+      wild_held_items:
+        x: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+        'y': *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.drapion.evolution_conditions
+      flavor_text:
+        x: |
+          It takes pride in its strength. Even though it can
+          tear foes apart, it finishes them off with
+          powerful poison.
+        'y': |
+          It has the power in its clawed arms to make scrap
+          of a car. The tips of its claws release poison.
+      forms:
+        drapion:
+          name: Drapion
+          form_name: *diamond-pearl.pokemon.drapion.forms.drapion.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.drapion.forms.drapion.battle_only
+          icon: &x-y.pokemon.drapion.forms.drapion.icon drapion-default.png
+          sprites:
+            - x-y/drapion-default.png
+            - x-y/shiny/drapion-default.png
+          art: *diamond-pearl.pokemon.drapion.forms.drapion.art
+          footprint: *diamond-pearl.pokemon.drapion.forms.drapion.footprint
+          cry: &x-y.pokemon.drapion.forms.drapion.cry drapion-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    drapion:
+      genus: *diamond-pearl.pokemon.drapion.genus
+      evolution_parent: *diamond-pearl.pokemon.drapion.evolution_parent
+      color: *black-white.pokemon.drapion.color
+      shape: *diamond-pearl.pokemon.drapion.shape
+      female_rate: *diamond-pearl.pokemon.drapion.female_rate
+      capture_rate: *diamond-pearl.pokemon.drapion.capture_rate
+      happiness: *diamond-pearl.pokemon.drapion.happiness
+      baby: *diamond-pearl.pokemon.drapion.baby
+      hatch_steps: *diamond-pearl.pokemon.drapion.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.drapion.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.drapion.forms_switchable
+      name: Drapion
+      default: *diamond-pearl.pokemon.drapion.default
+      height: *diamond-pearl.pokemon.drapion.height
+      weight: *diamond-pearl.pokemon.drapion.weight
+      experience: *diamond-pearl.pokemon.drapion.experience
+      types: *diamond-pearl.pokemon.drapion.types
+      egg_groups: *diamond-pearl.pokemon.drapion.egg_groups
+      mega: *x-y.pokemon.drapion.mega
+      stats: *diamond-pearl.pokemon.drapion.stats
+      abilities: *diamond-pearl.pokemon.drapion.abilities
+      evolution_conditions: *diamond-pearl.pokemon.drapion.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          It takes pride in its strength. Even though it can
+          tear foes apart, it finishes them off with
+          powerful poison.
+        alpha-sapphire: |
+          It has the power in its clawed arms to make scrap
+          of a car. The tips of its claws release poison.
+      forms:
+        drapion:
+          name: Drapion
+          form_name: *diamond-pearl.pokemon.drapion.forms.drapion.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.drapion.forms.drapion.battle_only
+          icon: *x-y.pokemon.drapion.forms.drapion.icon
+          art: *diamond-pearl.pokemon.drapion.forms.drapion.art
+          footprint: *diamond-pearl.pokemon.drapion.forms.drapion.footprint
+          cry: *x-y.pokemon.drapion.forms.drapion.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/drapion-default.png
+            - omega-ruby-alpha-sapphire/shiny/drapion-default.png
+      wild_held_items:
+        omega-ruby: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+        alpha-sapphire: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    drapion:
+      genus: *diamond-pearl.pokemon.drapion.genus
+      evolution_parent: *diamond-pearl.pokemon.drapion.evolution_parent
+      color: *black-white.pokemon.drapion.color
+      shape: *diamond-pearl.pokemon.drapion.shape
+      female_rate: *diamond-pearl.pokemon.drapion.female_rate
+      capture_rate: *diamond-pearl.pokemon.drapion.capture_rate
+      happiness: *diamond-pearl.pokemon.drapion.happiness
+      baby: *diamond-pearl.pokemon.drapion.baby
+      hatch_steps: *diamond-pearl.pokemon.drapion.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.drapion.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.drapion.forms_switchable
+      name: Drapion
+      default: *diamond-pearl.pokemon.drapion.default
+      height: *diamond-pearl.pokemon.drapion.height
+      weight: *diamond-pearl.pokemon.drapion.weight
+      experience: *diamond-pearl.pokemon.drapion.experience
+      types: *diamond-pearl.pokemon.drapion.types
+      egg_groups: *diamond-pearl.pokemon.drapion.egg_groups
+      mega: *x-y.pokemon.drapion.mega
+      stats: *diamond-pearl.pokemon.drapion.stats
+      abilities: *diamond-pearl.pokemon.drapion.abilities
+      wild_held_items:
+        sun: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+        moon: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.drapion.evolution_conditions
+      forms:
+        drapion:
+          name: Drapion
+          form_name: *diamond-pearl.pokemon.drapion.forms.drapion.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.drapion.forms.drapion.battle_only
+          icon: *x-y.pokemon.drapion.forms.drapion.icon
+          sprites:
+            - sun-moon/drapion-default.png
+            - sun-moon/shiny/drapion-default.png
+          art: *diamond-pearl.pokemon.drapion.forms.drapion.art
+          footprint: *diamond-pearl.pokemon.drapion.forms.drapion.footprint
+          cry: *x-y.pokemon.drapion.forms.drapion.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *heartgold-soulsilver.numbers
+  pokemon:
+    drapion:
+      genus: *diamond-pearl.pokemon.drapion.genus
+      evolution_parent: *diamond-pearl.pokemon.drapion.evolution_parent
+      color: *black-white.pokemon.drapion.color
+      shape: *diamond-pearl.pokemon.drapion.shape
+      female_rate: *diamond-pearl.pokemon.drapion.female_rate
+      capture_rate: *diamond-pearl.pokemon.drapion.capture_rate
+      happiness: *diamond-pearl.pokemon.drapion.happiness
+      baby: *diamond-pearl.pokemon.drapion.baby
+      hatch_steps: *diamond-pearl.pokemon.drapion.hatch_steps
+      growth_rate: *diamond-pearl.pokemon.drapion.growth_rate
+      forms_switchable: *diamond-pearl.pokemon.drapion.forms_switchable
+      name: Drapion
+      default: *diamond-pearl.pokemon.drapion.default
+      height: *diamond-pearl.pokemon.drapion.height
+      weight: *diamond-pearl.pokemon.drapion.weight
+      experience: *diamond-pearl.pokemon.drapion.experience
+      types: *diamond-pearl.pokemon.drapion.types
+      egg_groups: *diamond-pearl.pokemon.drapion.egg_groups
+      mega: *x-y.pokemon.drapion.mega
+      stats: *diamond-pearl.pokemon.drapion.stats
+      abilities: *diamond-pearl.pokemon.drapion.abilities
+      wild_held_items:
+        ultra-sun: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+        ultra-moon: *diamond-pearl.pokemon.drapion.wild_held_items.diamond
+      evolution_conditions: *diamond-pearl.pokemon.drapion.evolution_conditions
+      forms:
+        drapion:
+          name: Drapion
+          form_name: *diamond-pearl.pokemon.drapion.forms.drapion.form_name
+          default: true
+          battle_only: *diamond-pearl.pokemon.drapion.forms.drapion.battle_only
+          icon: *x-y.pokemon.drapion.forms.drapion.icon
+          sprites:
+            - ultra-sun-ultra-moon/drapion-default.png
+            - ultra-sun-ultra-moon/shiny/drapion-default.png
+          art: *diamond-pearl.pokemon.drapion.forms.drapion.art
+          footprint: *diamond-pearl.pokemon.drapion.forms.drapion.footprint
+          cry: *x-y.pokemon.drapion.forms.drapion.cry

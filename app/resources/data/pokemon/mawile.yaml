@@ -1,0 +1,889 @@
+ruby-sapphire:
+  name: &ruby-sapphire.name MAWILE
+  position: &ruby-sapphire.position 303
+  numbers: &ruby-sapphire.numbers
+    national: &ruby-sapphire.numbers.national 303
+    hoenn: 69
+  pokemon:
+    mawile:
+      name: MAWILE
+      default: &ruby-sapphire.pokemon.mawile.default true
+      forms_switchable: &ruby-sapphire.pokemon.mawile.forms_switchable false
+      capture_rate: &ruby-sapphire.pokemon.mawile.capture_rate 45
+      experience: &ruby-sapphire.pokemon.mawile.experience 98
+      types: &ruby-sapphire.pokemon.mawile.types
+        - steel
+      stats: &ruby-sapphire.pokemon.mawile.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 1
+        defense:
+          base_value: 85
+          effort_change: 1
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 50
+          effort_change: 0
+      growth_rate: &ruby-sapphire.pokemon.mawile.growth_rate fast
+      female_rate: &ruby-sapphire.pokemon.mawile.female_rate 50
+      hatch_steps: &ruby-sapphire.pokemon.mawile.hatch_steps 20
+      egg_groups: &ruby-sapphire.pokemon.mawile.egg_groups
+        - ground
+        - fairy
+      happiness: &ruby-sapphire.pokemon.mawile.happiness 70
+      abilities: &ruby-sapphire.pokemon.mawile.abilities
+        hyper-cutter: &ruby-sapphire.pokemon.mawile.abilities.hyper-cutter
+          hidden: &ruby-sapphire.pokemon.mawile.abilities.hyper-cutter.hidden false
+          position: 1
+        intimidate: &ruby-sapphire.pokemon.mawile.abilities.intimidate
+          hidden: *ruby-sapphire.pokemon.mawile.abilities.hyper-cutter.hidden
+          position: 2
+      genus: &ruby-sapphire.pokemon.mawile.genus 'DECEIVER Pokémon'
+      height: &ruby-sapphire.pokemon.mawile.height 6
+      weight: &ruby-sapphire.pokemon.mawile.weight 115
+      flavor_text:
+        ruby: |
+          MAWILE's huge jaws are actually steel
+          horns that have been transformed.
+           Its docile-looking face serves to lull
+          its foe into letting down its guard.
+           When the foe least expects it, MAWILE
+          chomps it with its gaping jaws.
+        sapphire: |
+          Don't be taken in by this POKéMON's
+          cute face - it's very dangerous.  MAWILE
+          fools the foe into letting down its
+          guard, then chomps down with its
+          massive jaws. The steel jaws are really
+          horns that have been transformed.
+      forms:
+        mawile:
+          name: MAWILE
+          form_name: &ruby-sapphire.pokemon.mawile.forms.mawile.form_name 'Default Form'
+          default: true
+          battle_only: &ruby-sapphire.pokemon.mawile.forms.mawile.battle_only false
+          icon: &ruby-sapphire.pokemon.mawile.forms.mawile.icon gen5/mawile-default.png
+          sprites:
+            - ruby-sapphire/mawile-default.png
+            - ruby-sapphire/back/mawile-default.png
+            - ruby-sapphire/shiny/mawile-default.png
+          art: &ruby-sapphire.pokemon.mawile.forms.mawile.art
+            - mawile-default.png
+          footprint: &ruby-sapphire.pokemon.mawile.forms.mawile.footprint mawile.png
+          cry: &ruby-sapphire.pokemon.mawile.forms.mawile.cry gen5/mawile-default.webm
+emerald:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    mawile:
+      name: MAWILE
+      default: *ruby-sapphire.pokemon.mawile.default
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      experience: *ruby-sapphire.pokemon.mawile.experience
+      types: *ruby-sapphire.pokemon.mawile.types
+      stats: *ruby-sapphire.pokemon.mawile.stats
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      abilities: *ruby-sapphire.pokemon.mawile.abilities
+      genus: *ruby-sapphire.pokemon.mawile.genus
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      flavor_text:
+        emerald: |
+          Its giant jaws are actually steel horns
+          that transformed. It fools foes into
+          complacency with its adorable gestures,
+          then chomps them with its huge jaws.
+      forms:
+        mawile:
+          name: MAWILE
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *ruby-sapphire.pokemon.mawile.forms.mawile.icon
+          sprites:
+            - emerald/mawile-default.png
+            - emerald/shiny/mawile-default.png
+            - emerald/animated/mawile-default.webm
+            - emerald/animated/shiny/mawile-default.webm
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+colosseum:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *ruby-sapphire.numbers.national
+    orre-strategy-memo: 194
+  pokemon:
+    mawile:
+      name: MAWILE
+      default: *ruby-sapphire.pokemon.mawile.default
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      experience: *ruby-sapphire.pokemon.mawile.experience
+      types: *ruby-sapphire.pokemon.mawile.types
+      stats: *ruby-sapphire.pokemon.mawile.stats
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      abilities: *ruby-sapphire.pokemon.mawile.abilities
+      genus: *ruby-sapphire.pokemon.mawile.genus
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      forms:
+        mawile:
+          name: MAWILE
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          sprites:
+            - colosseum/mawile-default.png
+            - colosseum/shiny/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+xd:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    mawile:
+      name: MAWILE
+      default: *ruby-sapphire.pokemon.mawile.default
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      experience: *ruby-sapphire.pokemon.mawile.experience
+      types: *ruby-sapphire.pokemon.mawile.types
+      stats: *ruby-sapphire.pokemon.mawile.stats
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      abilities: *ruby-sapphire.pokemon.mawile.abilities
+      genus: *ruby-sapphire.pokemon.mawile.genus
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      forms:
+        mawile:
+          name: MAWILE
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          sprites:
+            - xd/mawile-default.png
+            - xd/shiny/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+firered-leafgreen:
+  name: *ruby-sapphire.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *ruby-sapphire.numbers.national
+  pokemon:
+    mawile:
+      name: MAWILE
+      default: *ruby-sapphire.pokemon.mawile.default
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      experience: *ruby-sapphire.pokemon.mawile.experience
+      types: *ruby-sapphire.pokemon.mawile.types
+      stats: *ruby-sapphire.pokemon.mawile.stats
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      abilities: *ruby-sapphire.pokemon.mawile.abilities
+      genus: *ruby-sapphire.pokemon.mawile.genus
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      flavor_text:
+        firered: |
+          It uses its docile-looking face to lull
+          foes into complacency,  then bites with its
+          huge, relentless jaws.
+        leafgreen: |
+          It uses its docile-looking face to lull
+          foes into complacency,  then bites with its
+          huge, relentless jaws.
+      forms:
+        mawile:
+          name: MAWILE
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *ruby-sapphire.pokemon.mawile.forms.mawile.icon
+          sprites:
+            - firered-leafgreen/mawile-default.png
+            - firered-leafgreen/back/mawile-default.png
+            - firered-leafgreen/shiny/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+diamond-pearl:
+  name: &diamond-pearl.name Mawile
+  position: &diamond-pearl.position 329
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mawile:
+      genus: &diamond-pearl.pokemon.mawile.genus 'Deceiver Pokémon'
+      shape: &diamond-pearl.pokemon.mawile.shape humanoid
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: &diamond-pearl.pokemon.mawile.baby false
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      pal_park: &diamond-pearl.pokemon.mawile.pal_park
+        area: mountain
+        rate: 20
+        score: 70
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: &diamond-pearl.pokemon.mawile.experience 133
+      types: *ruby-sapphire.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      stats: &diamond-pearl.pokemon.mawile.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 85
+          effort_change: 1
+        defense:
+          base_value: 85
+          effort_change: 1
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 55
+          effort_change: 0
+      abilities: *ruby-sapphire.pokemon.mawile.abilities
+      wild_held_items:
+        diamond: &diamond-pearl.pokemon.mawile.wild_held_items.diamond
+          occa-berry: 5
+        pearl: *diamond-pearl.pokemon.mawile.wild_held_items.diamond
+      flavor_text:
+        diamond: |
+          Attached to its head is a huge
+          set of jaws formed by horns.
+          It can chew through iron beams.
+        pearl: |
+          Attached to its head is a huge
+          set of jaws formed by horns.
+          It can chew through iron beams.
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *ruby-sapphire.pokemon.mawile.forms.mawile.icon
+          sprites:
+            - diamond-pearl/back/shiny/mawile-default.png
+            - diamond-pearl/back/mawile-default.png
+            - diamond-pearl/shiny/mawile-default.png
+            - diamond-pearl/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mawile:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      pal_park: *diamond-pearl.pokemon.mawile.pal_park
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: *diamond-pearl.pokemon.mawile.experience
+      types: *ruby-sapphire.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      stats: *diamond-pearl.pokemon.mawile.stats
+      abilities: *ruby-sapphire.pokemon.mawile.abilities
+      wild_held_items:
+        platinum: *diamond-pearl.pokemon.mawile.wild_held_items.diamond
+      flavor_text:
+        platinum: |
+          Attached to its head is a huge
+          set of jaws formed by horns.
+          It can chew through iron beams.
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *ruby-sapphire.pokemon.mawile.forms.mawile.icon
+          sprites:
+            - platinum/back/shiny/mawile-default.png
+            - platinum/back/mawile-default.png
+            - platinum/shiny/mawile-default.png
+            - platinum/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mawile:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      pal_park: *diamond-pearl.pokemon.mawile.pal_park
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: *diamond-pearl.pokemon.mawile.experience
+      types: *ruby-sapphire.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      stats: *diamond-pearl.pokemon.mawile.stats
+      abilities: *ruby-sapphire.pokemon.mawile.abilities
+      wild_held_items:
+        heartgold: *diamond-pearl.pokemon.mawile.wild_held_items.diamond
+        soulsilver: *diamond-pearl.pokemon.mawile.wild_held_items.diamond
+      flavor_text:
+        heartgold: |
+          It chomps with its gaping mouth.
+          Its huge jaws are actually steel
+          horns that have been transformed.
+        soulsilver: |
+          It chomps with its gaping mouth.
+          Its huge jaws are actually steel
+          horns that have been transformed.
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 4
+              range: 1-4
+            power:
+              base_value: 3
+              range: 2-5
+            skill:
+              base_value: 3
+              range: 1-4
+            stamina:
+              base_value: 4
+              range: 1-4
+            jump:
+              base_value: 2
+              range: 2-3
+          icon: *ruby-sapphire.pokemon.mawile.forms.mawile.icon
+          sprites:
+            - heartgold-soulsilver/back/shiny/mawile-default.png
+            - heartgold-soulsilver/back/mawile-default.png
+            - heartgold-soulsilver/shiny/mawile-default.png
+            - heartgold-soulsilver/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mawile:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: &black-white.pokemon.mawile.color black
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: *diamond-pearl.pokemon.mawile.experience
+      types: *ruby-sapphire.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      stats: *diamond-pearl.pokemon.mawile.stats
+      abilities: &black-white.pokemon.mawile.abilities
+        hyper-cutter: *ruby-sapphire.pokemon.mawile.abilities.hyper-cutter
+        intimidate: *ruby-sapphire.pokemon.mawile.abilities.intimidate
+        sheer-force:
+          hidden: true
+          position: 3
+      wild_held_items:
+        black: *diamond-pearl.pokemon.mawile.wild_held_items.diamond
+        white: *diamond-pearl.pokemon.mawile.wild_held_items.diamond
+      flavor_text:
+        black: |
+          Attached to its head is a huge
+          set of jaws formed by horns.
+          It can chew through iron beams.
+        white: |
+          Attached to its head is a huge
+          set of jaws formed by horns.
+          It can chew through iron beams.
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *ruby-sapphire.pokemon.mawile.forms.mawile.icon
+          sprites:
+            - black-white/back/shiny/mawile-default.png
+            - black-white/back/mawile-default.png
+            - black-white/shiny/mawile-default.png
+            - black-white/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mawile:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.mawile.forms_switchable
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: *diamond-pearl.pokemon.mawile.experience
+      types: *ruby-sapphire.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      stats: *diamond-pearl.pokemon.mawile.stats
+      abilities: *black-white.pokemon.mawile.abilities
+      wild_held_items:
+        black-2: *diamond-pearl.pokemon.mawile.wild_held_items.diamond
+        white-2: *diamond-pearl.pokemon.mawile.wild_held_items.diamond
+      flavor_text:
+        black-2: |
+          Attached to its head is a huge
+          set of jaws formed by horns.
+          It can chew through iron beams.
+        white-2: |
+          Attached to its head is a huge
+          set of jaws formed by horns.
+          It can chew through iron beams.
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *ruby-sapphire.pokemon.mawile.forms.mawile.icon
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *ruby-sapphire.pokemon.mawile.forms.mawile.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    kalos-coastal: 63
+  pokemon:
+    mawile:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: &x-y.pokemon.mawile.forms_switchable true
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: *diamond-pearl.pokemon.mawile.experience
+      types: &x-y.pokemon.mawile.types
+        - steel
+        - fairy
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      mega: &x-y.pokemon.mawile.mega false
+      stats: *diamond-pearl.pokemon.mawile.stats
+      abilities: *black-white.pokemon.mawile.abilities
+      flavor_text: &x-y.pokemon.mawile.flavor_text
+        x: |
+          It uses its docile-looking face to lull foes into
+          complacency, then bites with its huge,
+          relentless jaws.
+        'y': |
+          Attached to its head is a huge set of jaws formed
+          by horns. It can chew through iron beams.
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: &x-y.pokemon.mawile.forms.mawile.icon mawile-default.png
+          sprites:
+            - x-y/shiny/mawile-default.png
+            - x-y/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: &x-y.pokemon.mawile.forms.mawile.cry mawile-default.webm
+    mawile-mega:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *x-y.pokemon.mawile.forms_switchable
+      name: &x-y.pokemon.mawile-mega.name 'Mega Mawile'
+      default: &x-y.pokemon.mawile-mega.default false
+      height: &x-y.pokemon.mawile-mega.height 10
+      weight: &x-y.pokemon.mawile-mega.weight 235
+      experience: &x-y.pokemon.mawile-mega.experience 168
+      types: *x-y.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      mega: &x-y.pokemon.mawile-mega.mega true
+      stats: &x-y.pokemon.mawile-mega.stats
+        hp:
+          base_value: 50
+          effort_change: 0
+        attack:
+          base_value: 105
+          effort_change: 1
+        defense:
+          base_value: 125
+          effort_change: 1
+        speed:
+          base_value: 50
+          effort_change: 0
+        special-attack:
+          base_value: 55
+          effort_change: 0
+        special-defense:
+          base_value: 95
+          effort_change: 0
+      abilities: &x-y.pokemon.mawile-mega.abilities
+        huge-power: *ruby-sapphire.pokemon.mawile.abilities.hyper-cutter
+      flavor_text: *x-y.pokemon.mawile.flavor_text
+      forms:
+        mawile-mega:
+          name: 'Mega Mawile'
+          form_name: &x-y.pokemon.mawile-mega.forms.mawile-mega.form_name 'Mega Mawile'
+          default: true
+          battle_only: &x-y.pokemon.mawile-mega.forms.mawile-mega.battle_only true
+          icon: &x-y.pokemon.mawile-mega.forms.mawile-mega.icon mawile-mega.png
+          sprites:
+            - x-y/shiny/mawile-mega.png
+            - x-y/mawile-mega.png
+          art: &x-y.pokemon.mawile-mega.forms.mawile-mega.art
+            - mawile-mega.png
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: &x-y.pokemon.mawile-mega.forms.mawile-mega.cry mawile-mega.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-hoenn: 71
+  pokemon:
+    mawile:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *x-y.pokemon.mawile.forms_switchable
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: *diamond-pearl.pokemon.mawile.experience
+      types: *x-y.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      mega: *x-y.pokemon.mawile.mega
+      stats: *diamond-pearl.pokemon.mawile.stats
+      abilities: *black-white.pokemon.mawile.abilities
+      flavor_text: &omega-ruby-alpha-sapphire.pokemon.mawile.flavor_text
+        omega-ruby: |
+          Mawile’s huge jaws are actually steel horns that have been
+          transformed. Its docile-looking face serves to lull its foe into
+          letting down its guard. When the foe least expects it, Mawile
+          chomps it with its gaping jaws.
+        alpha-sapphire: |
+          Don’t be taken in by this Pokémon’s cute face—it’s very
+          dangerous. Mawile fools the foe into letting down its guard,
+          then chomps down with its massive jaws. The steel jaws are
+          really horns that have been transformed.
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *x-y.pokemon.mawile.forms.mawile.icon
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *x-y.pokemon.mawile.forms.mawile.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/mawile-default.png
+            - omega-ruby-alpha-sapphire/shiny/mawile-default.png
+      wild_held_items:
+        omega-ruby: &omega-ruby-alpha-sapphire.pokemon.mawile.wild_held_items.omega-ruby
+          iron-ball: 5
+        alpha-sapphire: *omega-ruby-alpha-sapphire.pokemon.mawile.wild_held_items.omega-ruby
+    mawile-mega:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *x-y.pokemon.mawile.forms_switchable
+      name: *x-y.pokemon.mawile-mega.name
+      default: *x-y.pokemon.mawile-mega.default
+      height: *x-y.pokemon.mawile-mega.height
+      weight: *x-y.pokemon.mawile-mega.weight
+      experience: *x-y.pokemon.mawile-mega.experience
+      types: *x-y.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      mega: *x-y.pokemon.mawile-mega.mega
+      stats: *x-y.pokemon.mawile-mega.stats
+      abilities: *x-y.pokemon.mawile-mega.abilities
+      flavor_text: *omega-ruby-alpha-sapphire.pokemon.mawile.flavor_text
+      forms:
+        mawile-mega:
+          name: 'Mega Mawile'
+          form_name: *x-y.pokemon.mawile-mega.forms.mawile-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.mawile-mega.forms.mawile-mega.battle_only
+          icon: *x-y.pokemon.mawile-mega.forms.mawile-mega.icon
+          art: *x-y.pokemon.mawile-mega.forms.mawile-mega.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *x-y.pokemon.mawile-mega.forms.mawile-mega.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/shiny/mawile-mega.png
+            - omega-ruby-alpha-sapphire/mawile-mega.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    mawile:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *x-y.pokemon.mawile.forms_switchable
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: *diamond-pearl.pokemon.mawile.experience
+      types: *x-y.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      mega: *x-y.pokemon.mawile.mega
+      stats: *diamond-pearl.pokemon.mawile.stats
+      abilities: *black-white.pokemon.mawile.abilities
+      wild_held_items:
+        sun: *omega-ruby-alpha-sapphire.pokemon.mawile.wild_held_items.omega-ruby
+        moon: *omega-ruby-alpha-sapphire.pokemon.mawile.wild_held_items.omega-ruby
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *x-y.pokemon.mawile.forms.mawile.icon
+          sprites:
+            - sun-moon/shiny/mawile-default.png
+            - sun-moon/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *x-y.pokemon.mawile.forms.mawile.cry
+    mawile-mega:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *x-y.pokemon.mawile.forms_switchable
+      name: *x-y.pokemon.mawile-mega.name
+      default: *x-y.pokemon.mawile-mega.default
+      height: *x-y.pokemon.mawile-mega.height
+      weight: *x-y.pokemon.mawile-mega.weight
+      experience: *x-y.pokemon.mawile-mega.experience
+      types: *x-y.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      mega: *x-y.pokemon.mawile-mega.mega
+      stats: *x-y.pokemon.mawile-mega.stats
+      abilities: *x-y.pokemon.mawile-mega.abilities
+      forms:
+        mawile-mega:
+          name: 'Mega Mawile'
+          form_name: *x-y.pokemon.mawile-mega.forms.mawile-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.mawile-mega.forms.mawile-mega.battle_only
+          icon: *x-y.pokemon.mawile-mega.forms.mawile-mega.icon
+          sprites:
+            - sun-moon/shiny/mawile-mega.png
+            - sun-moon/mawile-mega.png
+          art: *x-y.pokemon.mawile-mega.forms.mawile-mega.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *x-y.pokemon.mawile-mega.forms.mawile-mega.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *ruby-sapphire.numbers.national
+    updated-alola: 125
+    updated-melemele: 125
+  pokemon:
+    mawile:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *x-y.pokemon.mawile.forms_switchable
+      name: Mawile
+      default: *ruby-sapphire.pokemon.mawile.default
+      height: *ruby-sapphire.pokemon.mawile.height
+      weight: *ruby-sapphire.pokemon.mawile.weight
+      experience: *diamond-pearl.pokemon.mawile.experience
+      types: *x-y.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      mega: *x-y.pokemon.mawile.mega
+      stats: *diamond-pearl.pokemon.mawile.stats
+      abilities: *black-white.pokemon.mawile.abilities
+      wild_held_items:
+        ultra-sun: *omega-ruby-alpha-sapphire.pokemon.mawile.wild_held_items.omega-ruby
+        ultra-moon: *omega-ruby-alpha-sapphire.pokemon.mawile.wild_held_items.omega-ruby
+      flavor_text: &ultra-sun-ultra-moon.pokemon.mawile.flavor_text
+        ultra-sun: |-
+          A cunning and terrifying Pokémon, its cuteness
+          makes opponents let down their guard—and
+          then it swallows them whole with its huge jaws.
+        ultra-moon: |-
+          It has two mouths. The big jaws on the back of
+          its head can’t taste anything, so that’s the
+          mouth it uses to eat foods it doesn’t like.
+      forms:
+        mawile:
+          name: Mawile
+          form_name: *ruby-sapphire.pokemon.mawile.forms.mawile.form_name
+          default: true
+          battle_only: *ruby-sapphire.pokemon.mawile.forms.mawile.battle_only
+          icon: *x-y.pokemon.mawile.forms.mawile.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/mawile-default.png
+            - ultra-sun-ultra-moon/mawile-default.png
+          art: *ruby-sapphire.pokemon.mawile.forms.mawile.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *x-y.pokemon.mawile.forms.mawile.cry
+    mawile-mega:
+      genus: *diamond-pearl.pokemon.mawile.genus
+      color: *black-white.pokemon.mawile.color
+      shape: *diamond-pearl.pokemon.mawile.shape
+      female_rate: *ruby-sapphire.pokemon.mawile.female_rate
+      capture_rate: *ruby-sapphire.pokemon.mawile.capture_rate
+      happiness: *ruby-sapphire.pokemon.mawile.happiness
+      baby: *diamond-pearl.pokemon.mawile.baby
+      hatch_steps: *ruby-sapphire.pokemon.mawile.hatch_steps
+      growth_rate: *ruby-sapphire.pokemon.mawile.growth_rate
+      forms_switchable: *x-y.pokemon.mawile.forms_switchable
+      name: *x-y.pokemon.mawile-mega.name
+      default: *x-y.pokemon.mawile-mega.default
+      height: *x-y.pokemon.mawile-mega.height
+      weight: *x-y.pokemon.mawile-mega.weight
+      experience: *x-y.pokemon.mawile-mega.experience
+      types: *x-y.pokemon.mawile.types
+      egg_groups: *ruby-sapphire.pokemon.mawile.egg_groups
+      mega: *x-y.pokemon.mawile-mega.mega
+      stats: *x-y.pokemon.mawile-mega.stats
+      abilities: *x-y.pokemon.mawile-mega.abilities
+      flavor_text: *ultra-sun-ultra-moon.pokemon.mawile.flavor_text
+      forms:
+        mawile-mega:
+          name: 'Mega Mawile'
+          form_name: *x-y.pokemon.mawile-mega.forms.mawile-mega.form_name
+          default: true
+          battle_only: *x-y.pokemon.mawile-mega.forms.mawile-mega.battle_only
+          icon: *x-y.pokemon.mawile-mega.forms.mawile-mega.icon
+          sprites:
+            - ultra-sun-ultra-moon/shiny/mawile-mega.png
+            - ultra-sun-ultra-moon/mawile-mega.png
+          art: *x-y.pokemon.mawile-mega.forms.mawile-mega.art
+          footprint: *ruby-sapphire.pokemon.mawile.forms.mawile.footprint
+          cry: *x-y.pokemon.mawile-mega.forms.mawile-mega.cry

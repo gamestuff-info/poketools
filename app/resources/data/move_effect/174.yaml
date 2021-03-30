@@ -1,0 +1,125 @@
+ruby-sapphire: &ruby-sapphire
+  short_description: 'Uses a move which depends upon the terrain.'
+  description: |
+    Uses another move chosen according to the terrain.
+
+    Terrain       | Selected move
+    ------------- | ------------------
+    Grass         | []{move:stun-spore}
+    Tall grass    | []{move:razor-leaf}
+    Sand          | []{move:earthquake}
+    Underwater    | []{move:hydro-pump}
+    Water         | []{move:surf}
+    Pond          | []{move:bubblebeam}
+    Mountain      | []{move:rock-slide}
+    Cave          | []{move:shadow-ball}
+    Other         | []{move:swift}
+
+    This move cannot be copied by []{move:mirror-move}.
+emerald: *ruby-sapphire
+colosseum: *ruby-sapphire
+xd: *ruby-sapphire
+firered-leafgreen: *ruby-sapphire
+diamond-pearl: &diamond-pearl
+  short_description: 'Uses a move which depends upon the terrain.'
+  description: |
+    Uses another move chosen according to the terrain.
+
+    Terrain       | Selected move
+    ------------- | ------------------
+    Building      | []{move:tri-attack}
+    Water         | []{move:hydro-pump}
+    Sand/Puddles  | []{move:earthquake}
+    Grass         | []{move:seed-bomb}
+    Cave/Mountain | []{move:rock-slide}
+    Snow          | []{move:blizzard}
+
+    This move cannot be copied by []{move:mirror-move}.
+platinum: *diamond-pearl
+heartgold-soulsilver: *diamond-pearl
+black-white: &black-white
+  short_description: 'Uses a move which depends upon the terrain.'
+  description: |
+    Uses another move chosen according to the terrain.
+
+    Terrain       | Selected move
+    ------------- | ------------------
+    Building      | []{move:tri-attack}
+    Cave          | []{move:rock-slide}
+    Deep water    | []{move:hydro-pump}
+    Desert        | []{move:earthquake}
+    Grass         | []{move:seed-bomb}
+    Shallow water | []{move:mud-bomb}
+    Snow          | []{move:ice-beam}
+
+    This move cannot be copied by []{move:mirror-move}.
+black-2-white-2: *black-white
+x-y:
+  short_description: 'Uses a move which depends upon the terrain.'
+  description: |
+    Uses another move chosen according to the terrain.
+
+    Terrain                   | Selected move
+    ------------------------- | ------------------
+    Building                  | []{move:tri-attack}
+    Burial Ground             | []{move:shadow-ball}
+    Cave                      | []{move:power-gem}
+    Water                     | []{move:hydro-pump}
+    Desert                    | []{move:earth-power}
+    Grass                     | []{move:energy-ball}
+    Ice                       | []{move:ice-beam}
+    Snow                      | []{move:frost-breath}
+    Swamp                     | []{move:mud-bomb}
+    Underwater                | []{move:hydro-pump}
+    []{move:electric-terrain} | []{move:thunderbolt}
+    []{move:grassy-terrain}   | []{move:energy-ball}
+    []{move:misty-terrain}    | []{move:moonblast}
+
+    This move cannot be copied by []{move:mirror-move}.
+omega-ruby-alpha-sapphire:
+  short_description: 'Uses a move which depends upon the terrain.'
+  description: |
+    Uses another move chosen according to the terrain.
+
+    Terrain                   | Selected move
+    ------------------------- | ------------------
+    Building                  | []{move:tri-attack}
+    Burial Ground             | []{move:shadow-ball}
+    Cave                      | []{move:power-gem}
+    Water                     | []{move:hydro-pump}
+    Desert                    | []{move:earth-power}
+    Grass                     | []{move:energy-ball}
+    Ice                       | []{move:ice-beam}
+    Snow                      | []{move:frost-breath}
+    Sky Pillar                | []{move:air-slash}
+    Soaring in the Sky        | []{move:air-slash}
+    Space                     | []{move:draco-meteor}
+    Underwater                | []{move:hydro-pump}
+    Volcano                   | []{move:lava-plume}
+    []{move:electric-terrain} | []{move:thunderbolt}
+    []{move:grassy-terrain}   | []{move:energy-ball}
+    []{move:misty-terrain}    | []{move:moonblast}
+
+    This move cannot be copied by []{move:mirror-move}.
+sun-moon: &sun-moon
+  short_description: 'Uses a move which depends upon the terrain.'
+  description: |
+    Uses another move chosen according to the terrain.
+
+    Terrain                   | Selected move
+    ------------------------- | ------------------
+    Building                  | []{move:tri-attack}
+    Cave                      | []{move:power-gem}
+    Water                     | []{move:hydro-pump}
+    Desert                    | []{move:earth-power}
+    Grass                     | []{move:energy-ball}
+    Snow/Ice                  | []{move:ice-beam}
+    Ultra Space               | []{move:psyshock}
+    Volcano                   | []{move:lava-plume}
+    []{move:electric-terrain} | []{move:thunderbolt}
+    []{move:grassy-terrain}   | []{move:energy-ball}
+    []{move:misty-terrain}    | []{move:moonblast}
+    []{move:psychic-terrain}  | []{move:psychic}
+
+    This move cannot be copied by []{move:mirror-move}.
+ultra-sun-ultra-moon: *sun-moon

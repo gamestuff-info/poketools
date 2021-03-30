@@ -1,0 +1,831 @@
+gold-silver:
+  name: &gold-silver.name TOGETIC
+  position: &gold-silver.position 175
+  numbers: &gold-silver.numbers
+    national: &gold-silver.numbers.national 176
+    original-johto: 46
+    original-johto-abc: 213
+  pokemon:
+    togetic:
+      name: TOGETIC
+      default: &gold-silver.pokemon.togetic.default true
+      capture_rate: &gold-silver.pokemon.togetic.capture_rate 75
+      experience: &gold-silver.pokemon.togetic.experience 114
+      types: &gold-silver.pokemon.togetic.types
+        - normal
+        - flying
+      stats: &gold-silver.pokemon.togetic.stats
+        hp:
+          base_value: 55
+          effort_change: 55
+        attack:
+          base_value: 40
+          effort_change: 40
+        defense:
+          base_value: 85
+          effort_change: 85
+        speed:
+          base_value: 40
+          effort_change: 40
+        special-attack:
+          base_value: 80
+          effort_change: 80
+        special-defense:
+          base_value: 105
+          effort_change: 80
+      growth_rate: &gold-silver.pokemon.togetic.growth_rate fast
+      female_rate: &gold-silver.pokemon.togetic.female_rate 12
+      hatch_steps: &gold-silver.pokemon.togetic.hatch_steps 10
+      egg_groups: &gold-silver.pokemon.togetic.egg_groups
+        - flying
+        - fairy
+      genus: &gold-silver.pokemon.togetic.genus 'HAPPINESS Pokémon'
+      height: &gold-silver.pokemon.togetic.height 6
+      weight: &gold-silver.pokemon.togetic.weight 31
+      flavor_text:
+        gold: |
+          They say that it
+          will appear before
+          kindhearted, car-
+          ing people and
+          shower them with
+          happiness.
+        silver: |
+          It grows dispirit-
+          ed if it is not
+          with kind people.
+          It can float in
+          midair without
+          moving its wings.
+      evolution_parent: &gold-silver.pokemon.togetic.evolution_parent togepi/togepi
+      evolution_conditions: &gold-silver.pokemon.togetic.evolution_conditions
+        level-up:
+          minimum_happiness: 220
+      forms:
+        togetic:
+          name: TOGETIC
+          form_name: &gold-silver.pokemon.togetic.forms.togetic.form_name 'Default Form'
+          default: true
+          battle_only: &gold-silver.pokemon.togetic.forms.togetic.battle_only false
+          sprites:
+            - gold-silver/togetic-default.png
+            - gold-silver/back/togetic-default.png
+            - gold-silver/shiny/togetic-default.png
+          art: &gold-silver.pokemon.togetic.forms.togetic.art
+            - togetic-default.png
+          cry: &gold-silver.pokemon.togetic.forms.togetic.cry gen5/togetic-default.webm
+          icon: &gold-silver.pokemon.togetic.forms.togetic.icon gen2/bird.png
+crystal:
+  name: *gold-silver.name
+  position: *gold-silver.position
+  numbers: *gold-silver.numbers
+  pokemon:
+    togetic:
+      name: TOGETIC
+      default: *gold-silver.pokemon.togetic.default
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      experience: *gold-silver.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      stats: *gold-silver.pokemon.togetic.stats
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      genus: *gold-silver.pokemon.togetic.genus
+      height: *gold-silver.pokemon.togetic.height
+      weight: *gold-silver.pokemon.togetic.weight
+      flavor_text:
+        crystal: |
+          Although it does
+          not flap its wings
+          very much, it can
+          stay up in the air
+          as it tags along
+          after its trainer.
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      forms:
+        togetic:
+          name: TOGETIC
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          sprites:
+            - crystal/togetic-default.png
+            - crystal/back/togetic-default.png
+            - crystal/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+          icon: *gold-silver.pokemon.togetic.forms.togetic.icon
+ruby-sapphire:
+  name: *gold-silver.name
+  position: &ruby-sapphire.position 176
+  numbers: &ruby-sapphire.numbers
+    national: *gold-silver.numbers.national
+    hoenn: 326
+  pokemon:
+    togetic:
+      name: TOGETIC
+      default: *gold-silver.pokemon.togetic.default
+      forms_switchable: &ruby-sapphire.pokemon.togetic.forms_switchable false
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      experience: *gold-silver.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      stats: &ruby-sapphire.pokemon.togetic.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 40
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 80
+          effort_change: 2
+        special-defense:
+          base_value: 55
+          effort_change: 2
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      happiness: &ruby-sapphire.pokemon.togetic.happiness 70
+      abilities: &ruby-sapphire.pokemon.togetic.abilities
+        hustle: &ruby-sapphire.pokemon.togetic.abilities.hustle
+          hidden: &ruby-sapphire.pokemon.togetic.abilities.hustle.hidden false
+          position: 1
+        serene-grace: &ruby-sapphire.pokemon.togetic.abilities.serene-grace
+          hidden: *ruby-sapphire.pokemon.togetic.abilities.hustle.hidden
+          position: 2
+      genus: *gold-silver.pokemon.togetic.genus
+      height: *gold-silver.pokemon.togetic.height
+      weight: &ruby-sapphire.pokemon.togetic.weight 32
+      flavor_text:
+        ruby: |
+          TOGETIC is said to be a POKéMON that
+          brings good fortune. When the POKéMON
+          spots someone who is pure of heart,
+          it is said to appear and share its
+          happiness with that person.
+        sapphire: |
+          TOGETIC is said to be a POKéMON that
+          brings good fortune. When the POKéMON
+          spots someone who is pure of heart,
+          it is said to appear and share its
+          happiness with that person.
+      forms:
+        togetic:
+          name: TOGETIC
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: &ruby-sapphire.pokemon.togetic.forms.togetic.icon gen5/togetic-default.png
+          sprites:
+            - ruby-sapphire/togetic-default.png
+            - ruby-sapphire/back/togetic-default.png
+            - ruby-sapphire/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: &ruby-sapphire.pokemon.togetic.forms.togetic.footprint togetic.png
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+emerald:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *ruby-sapphire.numbers
+  pokemon:
+    togetic:
+      name: TOGETIC
+      default: *gold-silver.pokemon.togetic.default
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      experience: *gold-silver.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      stats: *ruby-sapphire.pokemon.togetic.stats
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      abilities: *ruby-sapphire.pokemon.togetic.abilities
+      genus: *gold-silver.pokemon.togetic.genus
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      flavor_text:
+        emerald: |
+          It is said to be a POKéMON that brings good
+          fortune. When it spots someone who is pure
+          of heart, a TOGETIC appears and shares its
+          happiness with that person.
+      forms:
+        togetic:
+          name: TOGETIC
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *ruby-sapphire.pokemon.togetic.forms.togetic.icon
+          sprites:
+            - emerald/togetic-default.png
+            - emerald/shiny/togetic-default.png
+            - emerald/animated/togetic-default.webm
+            - emerald/animated/shiny/togetic-default.webm
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+colosseum:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &colosseum.numbers
+    national: *gold-silver.numbers.national
+    orre-strategy-memo: 342
+  pokemon:
+    togetic:
+      name: TOGETIC
+      default: *gold-silver.pokemon.togetic.default
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      experience: *gold-silver.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      stats: *ruby-sapphire.pokemon.togetic.stats
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      abilities: *ruby-sapphire.pokemon.togetic.abilities
+      genus: *gold-silver.pokemon.togetic.genus
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      forms:
+        togetic:
+          name: TOGETIC
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          sprites:
+            - colosseum/togetic-default.png
+            - colosseum/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+xd:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: *colosseum.numbers
+  pokemon:
+    togetic:
+      name: TOGETIC
+      default: *gold-silver.pokemon.togetic.default
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      experience: *gold-silver.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      stats: *ruby-sapphire.pokemon.togetic.stats
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      abilities: *ruby-sapphire.pokemon.togetic.abilities
+      genus: *gold-silver.pokemon.togetic.genus
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      forms:
+        togetic:
+          name: TOGETIC
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          sprites:
+            - xd/togetic-default.png
+            - xd/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+firered-leafgreen:
+  name: *gold-silver.name
+  position: *ruby-sapphire.position
+  numbers: &firered-leafgreen.numbers
+    national: *gold-silver.numbers.national
+  pokemon:
+    togetic:
+      name: TOGETIC
+      default: *gold-silver.pokemon.togetic.default
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      experience: *gold-silver.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      stats: *ruby-sapphire.pokemon.togetic.stats
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      abilities: *ruby-sapphire.pokemon.togetic.abilities
+      genus: *gold-silver.pokemon.togetic.genus
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      flavor_text:
+        firered: |
+          It grows dispirited if it is not with kind
+          people. It can float in midair without
+          moving its wings.
+        leafgreen: |
+          They say that it will appear before
+          kindhearted, caring people and shower
+          them with happiness.
+      forms:
+        togetic:
+          name: TOGETIC
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *ruby-sapphire.pokemon.togetic.forms.togetic.icon
+          sprites:
+            - firered-leafgreen/togetic-default.png
+            - firered-leafgreen/back/togetic-default.png
+            - firered-leafgreen/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+diamond-pearl:
+  name: &diamond-pearl.name Togetic
+  position: &diamond-pearl.position 204
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togetic:
+      genus: &diamond-pearl.pokemon.togetic.genus 'Happiness Pokémon'
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      shape: &diamond-pearl.pokemon.togetic.shape humanoid
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: &diamond-pearl.pokemon.togetic.baby false
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      pal_park: &diamond-pearl.pokemon.togetic.pal_park
+        area: field
+        rate: 3
+        score: 90
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: &diamond-pearl.pokemon.togetic.experience 142
+      types: *gold-silver.pokemon.togetic.types
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      stats: &diamond-pearl.pokemon.togetic.stats
+        hp:
+          base_value: 55
+          effort_change: 0
+        attack:
+          base_value: 40
+          effort_change: 0
+        defense:
+          base_value: 85
+          effort_change: 0
+        speed:
+          base_value: 40
+          effort_change: 0
+        special-attack:
+          base_value: 80
+          effort_change: 0
+        special-defense:
+          base_value: 105
+          effort_change: 2
+      abilities: &diamond-pearl.pokemon.togetic.abilities
+        hustle: *ruby-sapphire.pokemon.togetic.abilities.hustle
+        serene-grace: *ruby-sapphire.pokemon.togetic.abilities.serene-grace
+        super-luck:
+          hidden: true
+          position: 3
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      flavor_text:
+        diamond: |
+          It is said to appear in front of
+          kindly people to scatter a glowing
+          down called “joy dust.”
+        pearl: |
+          It is said to appear in front of
+          kindly people to scatter a glowing
+          down called “joy dust.”
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *ruby-sapphire.pokemon.togetic.forms.togetic.icon
+          sprites:
+            - diamond-pearl/togetic-default.png
+            - diamond-pearl/back/togetic-default.png
+            - diamond-pearl/back/shiny/togetic-default.png
+            - diamond-pearl/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+platinum:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    extended-sinnoh: 174
+  pokemon:
+    togetic:
+      genus: *diamond-pearl.pokemon.togetic.genus
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      shape: *diamond-pearl.pokemon.togetic.shape
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: *diamond-pearl.pokemon.togetic.baby
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      pal_park: *diamond-pearl.pokemon.togetic.pal_park
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: *diamond-pearl.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      stats: *diamond-pearl.pokemon.togetic.stats
+      abilities: *diamond-pearl.pokemon.togetic.abilities
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      flavor_text:
+        platinum: |
+          To share its happiness, it flies
+          around the world seeking kind­
+          hearted people.
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *ruby-sapphire.pokemon.togetic.forms.togetic.icon
+          sprites:
+            - platinum/togetic-default.png
+            - platinum/back/togetic-default.png
+            - platinum/back/shiny/togetic-default.png
+            - platinum/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+heartgold-soulsilver:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers:
+    national: *gold-silver.numbers.national
+    updated-johto: 47
+  pokemon:
+    togetic:
+      genus: *diamond-pearl.pokemon.togetic.genus
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      shape: *diamond-pearl.pokemon.togetic.shape
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: *diamond-pearl.pokemon.togetic.baby
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      pal_park: *diamond-pearl.pokemon.togetic.pal_park
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: *diamond-pearl.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      stats: *diamond-pearl.pokemon.togetic.stats
+      abilities: *diamond-pearl.pokemon.togetic.abilities
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      flavor_text:
+        heartgold: |
+          They say that it will appear before
+          kindhearted, caring people and
+          shower them with happiness.
+        soulsilver: |
+          It grows dispirited if it is not
+          with kind people. It can float in
+          midair without moving its wings.
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          pokeathlon_stats:
+            speed:
+              base_value: 3
+              range: 1-4
+            power:
+              base_value: 2
+              range: 1-5
+            skill:
+              base_value: 3
+              range: 1-3
+            stamina:
+              base_value: 4
+              range: 1-5
+            jump:
+              base_value: 4
+              range: 3-5
+          icon: *ruby-sapphire.pokemon.togetic.forms.togetic.icon
+          sprites:
+            - heartgold-soulsilver/togetic-default.png
+            - heartgold-soulsilver/back/togetic-default.png
+            - heartgold-soulsilver/back/shiny/togetic-default.png
+            - heartgold-soulsilver/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+black-white:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togetic:
+      genus: *diamond-pearl.pokemon.togetic.genus
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      color: &black-white.pokemon.togetic.color white
+      shape: *diamond-pearl.pokemon.togetic.shape
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: *diamond-pearl.pokemon.togetic.baby
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: *diamond-pearl.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      stats: *diamond-pearl.pokemon.togetic.stats
+      abilities: *diamond-pearl.pokemon.togetic.abilities
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      flavor_text:
+        black: |
+          To share its happiness, it flies
+          around the world seeking kind-
+          hearted people.
+        white: |
+          To share its happiness, it flies
+          around the world seeking kind-
+          hearted people.
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *ruby-sapphire.pokemon.togetic.forms.togetic.icon
+          sprites:
+            - black-white/togetic-default.png
+            - black-white/back/togetic-default.png
+            - black-white/back/shiny/togetic-default.png
+            - black-white/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+black-2-white-2:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togetic:
+      genus: *diamond-pearl.pokemon.togetic.genus
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      color: *black-white.pokemon.togetic.color
+      shape: *diamond-pearl.pokemon.togetic.shape
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: *diamond-pearl.pokemon.togetic.baby
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: *diamond-pearl.pokemon.togetic.experience
+      types: *gold-silver.pokemon.togetic.types
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      stats: *diamond-pearl.pokemon.togetic.stats
+      abilities: *diamond-pearl.pokemon.togetic.abilities
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      flavor_text:
+        black-2: |
+          To share its happiness, it flies
+          around the world seeking kind-
+          hearted people.
+        white-2: |
+          To share its happiness, it flies
+          around the world seeking kind-
+          hearted people.
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *ruby-sapphire.pokemon.togetic.forms.togetic.icon
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *gold-silver.pokemon.togetic.forms.togetic.cry
+x-y:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togetic:
+      genus: *diamond-pearl.pokemon.togetic.genus
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      color: *black-white.pokemon.togetic.color
+      shape: *diamond-pearl.pokemon.togetic.shape
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: *diamond-pearl.pokemon.togetic.baby
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: *diamond-pearl.pokemon.togetic.experience
+      types: &x-y.pokemon.togetic.types
+        - fairy
+        - flying
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      mega: &x-y.pokemon.togetic.mega false
+      stats: *diamond-pearl.pokemon.togetic.stats
+      abilities: *diamond-pearl.pokemon.togetic.abilities
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      flavor_text:
+        x: |
+          It grows dispirited if it is not with kind people.
+          It can float in midair without moving its wings.
+        'y': |
+          They say that it will appear before kindhearted,
+          caring people and shower them with happiness.
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: &x-y.pokemon.togetic.forms.togetic.icon togetic-default.png
+          sprites:
+            - x-y/togetic-default.png
+            - x-y/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: &x-y.pokemon.togetic.forms.togetic.cry togetic-default.webm
+omega-ruby-alpha-sapphire:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togetic:
+      genus: *diamond-pearl.pokemon.togetic.genus
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      color: *black-white.pokemon.togetic.color
+      shape: *diamond-pearl.pokemon.togetic.shape
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: *diamond-pearl.pokemon.togetic.baby
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: *diamond-pearl.pokemon.togetic.experience
+      types: *x-y.pokemon.togetic.types
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      mega: *x-y.pokemon.togetic.mega
+      stats: *diamond-pearl.pokemon.togetic.stats
+      abilities: *diamond-pearl.pokemon.togetic.abilities
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      flavor_text:
+        omega-ruby: |
+          Togetic is said to be a Pokémon that brings good fortune.
+          When the Pokémon spots someone who is pure of heart, it is
+          said to appear and share its happiness with that person.
+        alpha-sapphire: |
+          Togetic is said to be a Pokémon that brings good fortune.
+          When the Pokémon spots someone who is pure of heart,
+          it is said to appear and share its happiness with that person.
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *x-y.pokemon.togetic.forms.togetic.icon
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *x-y.pokemon.togetic.forms.togetic.cry
+          sprites:
+            - omega-ruby-alpha-sapphire/togetic-default.png
+            - omega-ruby-alpha-sapphire/shiny/togetic-default.png
+sun-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togetic:
+      genus: *diamond-pearl.pokemon.togetic.genus
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      color: *black-white.pokemon.togetic.color
+      shape: *diamond-pearl.pokemon.togetic.shape
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: *diamond-pearl.pokemon.togetic.baby
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: *diamond-pearl.pokemon.togetic.experience
+      types: *x-y.pokemon.togetic.types
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      mega: *x-y.pokemon.togetic.mega
+      stats: *diamond-pearl.pokemon.togetic.stats
+      abilities: *diamond-pearl.pokemon.togetic.abilities
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *x-y.pokemon.togetic.forms.togetic.icon
+          sprites:
+            - sun-moon/togetic-default.png
+            - sun-moon/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *x-y.pokemon.togetic.forms.togetic.cry
+ultra-sun-ultra-moon:
+  name: *diamond-pearl.name
+  position: *diamond-pearl.position
+  numbers: *firered-leafgreen.numbers
+  pokemon:
+    togetic:
+      genus: *diamond-pearl.pokemon.togetic.genus
+      evolution_parent: *gold-silver.pokemon.togetic.evolution_parent
+      color: *black-white.pokemon.togetic.color
+      shape: *diamond-pearl.pokemon.togetic.shape
+      female_rate: *gold-silver.pokemon.togetic.female_rate
+      capture_rate: *gold-silver.pokemon.togetic.capture_rate
+      happiness: *ruby-sapphire.pokemon.togetic.happiness
+      baby: *diamond-pearl.pokemon.togetic.baby
+      hatch_steps: *gold-silver.pokemon.togetic.hatch_steps
+      growth_rate: *gold-silver.pokemon.togetic.growth_rate
+      forms_switchable: *ruby-sapphire.pokemon.togetic.forms_switchable
+      name: Togetic
+      default: *gold-silver.pokemon.togetic.default
+      height: *gold-silver.pokemon.togetic.height
+      weight: *ruby-sapphire.pokemon.togetic.weight
+      experience: *diamond-pearl.pokemon.togetic.experience
+      types: *x-y.pokemon.togetic.types
+      egg_groups: *gold-silver.pokemon.togetic.egg_groups
+      mega: *x-y.pokemon.togetic.mega
+      stats: *diamond-pearl.pokemon.togetic.stats
+      abilities: *diamond-pearl.pokemon.togetic.abilities
+      evolution_conditions: *gold-silver.pokemon.togetic.evolution_conditions
+      forms:
+        togetic:
+          name: Togetic
+          form_name: *gold-silver.pokemon.togetic.forms.togetic.form_name
+          default: true
+          battle_only: *gold-silver.pokemon.togetic.forms.togetic.battle_only
+          icon: *x-y.pokemon.togetic.forms.togetic.icon
+          sprites:
+            - ultra-sun-ultra-moon/togetic-default.png
+            - ultra-sun-ultra-moon/shiny/togetic-default.png
+          art: *gold-silver.pokemon.togetic.forms.togetic.art
+          footprint: *ruby-sapphire.pokemon.togetic.forms.togetic.footprint
+          cry: *x-y.pokemon.togetic.forms.togetic.cry
