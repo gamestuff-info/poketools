@@ -21,7 +21,7 @@ const client = axios.create({
  */
 function makeAbsolute(endpoint: string) {
     const url = new URL(apiHost);
-    url.pathname = endpoint;
+    url.pathname = url.pathname + endpoint;
     return url.toString();
 }
 
