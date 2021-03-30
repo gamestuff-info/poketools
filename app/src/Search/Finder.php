@@ -142,7 +142,7 @@ class Finder
      * @param string $term
      * @param Version|null $version
      *
-     * @return array
+     * @return AbstractDexEntity[]
      */
     public function search(string $term, ?Version $version): array
     {
@@ -164,7 +164,7 @@ class Finder
      * @param array $options
      *  An map of TNT_* constants to values
      *
-     * @return array
+     * @return AbstractDexEntity[]
      */
     private function doSearch(string $index, string $term, ?Version $version, array $options = []): array
     {
@@ -191,7 +191,7 @@ class Finder
      * @param array $ids
      * @param Version|null $version
      *
-     * @return array
+     * @return AbstractDexEntity[]
      */
     private function hydrateResults(array $ids, ?Version $version): array
     {

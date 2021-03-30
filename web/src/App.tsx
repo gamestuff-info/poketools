@@ -7,7 +7,7 @@ import Flashes, {Flash, FlashSeverity} from './common/components/Flashes';
 import Footer from './main/Footer';
 import loadComponent from './common/loadComponent';
 import {AxiosError} from 'axios';
-import {ControllerRouteBases, dexRouteBase} from './routes';
+import {ControllerRouteBases, dexRouteBase, Routes} from './routes';
 import Loading from './common/components/Loading';
 import appConfig from './config.json';
 import AppContext from './common/Context';
@@ -22,6 +22,7 @@ const NatureController = loadComponent(() => import('./nature/NatureController')
 const PokemonController = loadComponent(() => import('./pokemon/PokemonController'));
 const TypeController = loadComponent(() => import('./type/TypeController'));
 const ToolsController = loadComponent(() => import('./tools/ToolsController'));
+const SearchController = loadComponent(() => import('./search/Search'));
 
 interface AppState {
     currentVersionId?: number,
@@ -143,6 +144,11 @@ export default function App(props: {}) {
                                 {!isReady && <Loading/>}
                                 {isReady && <ToolsController/>}
                             </Route>
+
+                            <Route exact path={Routes.SEARCH}>
+                                <SearchController/>
+                            </Route>
+
                             <Route path="/">
                                 {/* This controller, as the default controller, also handles NotFound. */}
                                 <FrontController/>

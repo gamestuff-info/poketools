@@ -135,7 +135,7 @@ function LearnMethodMoveTable(props: { pokemon: ApiRecord.Pokemon.Pokemon, metho
 
             return {};
         },
-    }), []);
+    }), [physicalStat, specialStat, pokemon]);
 
     const cellRender: CellRenderMap<ApiRecord.Pokemon.PokemonMove.PokemonView> = useMemo(() => ({
         machine: cell => <ItemLabel item={cell.value}/>,

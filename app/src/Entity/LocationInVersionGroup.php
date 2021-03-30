@@ -8,6 +8,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\OrderFilter;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use ApiPlatform\Core\Serializer\Filter\GroupFilter;
+use App\Entity\Media\RegionMap;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -193,7 +194,7 @@ class LocationInVersionGroup extends AbstractDexEntity implements EntityHasParen
 
     /**
      * @return LocationMap|null
-     * @Groups({"location_index", "location_view", "pokemon_view"})
+     * @Groups({"location_index", "location_view", "pokemon_view", "search_result"})
      */
     public function getEffectiveMap(): ?LocationMap
     {
@@ -214,6 +215,14 @@ class LocationInVersionGroup extends AbstractDexEntity implements EntityHasParen
         }
 
         return $this;
+    }
+
+    /**
+     * @Groups({"search_result"})
+     */
+    public function getRegionMap(): ?RegionMap
+    {
+        return $this->map?->getMap();
     }
 
     public function getTreePath(): ?string

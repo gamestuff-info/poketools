@@ -4,6 +4,7 @@ import {AssetPackage, getAssetUrl} from '../common/getAssetUrl';
 import Loading from '../common/components/Loading';
 import React from 'react';
 import {Routes} from '../routes';
+import QuickSearch from '../search/QuickSearch';
 
 type VersionSelectorProps = {
     versions: Map<number, ApiRecord.Version>,
@@ -97,6 +98,7 @@ export default function Navbar(props: NavbarProps) {
                     </Dropdown>
                 </Nav>}
                 {!ready && <BsNavbar.Text><Loading uncontained/></BsNavbar.Text>}
+                <QuickSearch/>
             </BsNavbar.Collapse>
         </BsNavbar>
     );

@@ -56,10 +56,18 @@ export default function LocationMap(props: LocationMapProps) {
                                 version: currentVersion.slug,
                                 location: location.slug,
                             })}>
-                                <MapOverlay map={location.effectiveMap} title={location.name}/>
+                                <MapOverlay map={location.effectiveMap}
+                                            title={location.name}
+                                            tooltip={locations.length > 1}
+                                />
                             </a>
                         )}
-                        {!link && <MapOverlay map={location.effectiveMap} title={location.name}/>}
+                        {!link && (
+                            <MapOverlay map={location.effectiveMap}
+                                        title={location.name}
+                                        tooltip={locations.length > 1}
+                            />
+                        )}
                     </g>
                 ))
             ))}
@@ -67,19 +75,24 @@ export default function LocationMap(props: LocationMapProps) {
     );
 }
 
-function MapOverlay(props: { map: ApiRecord.Location.LocationMap, title: string }) {
+function MapOverlay(props: { map: ApiRecord.Location.LocationMap, title: string, tooltip?: boolean }) {
     const {map, title} = props;
+    const tooltip = props.tooltip ?? true;
     if (!map.overlay) {
         return null;
     }
-    return (
-        <OverlayTrigger overlay={
-            <Tooltip id="map-location">{title}</Tooltip>
-        } placement="auto">
-            <g>
-                {/* Not really inner HTML (actually an SVG fragment), but same idea */}
-                <g className="pkt-map-overlay" dangerouslySetInnerHTML={{__html: map.overlay}}/>
-            </g>
-        </OverlayTrigger>
-    );
+    //  Not really inner HTML (actually an SVG fragment), but same idea
+    const overlay = (<g className="pkt-map-overlay" dangerouslySetInnerHTML={{__html: map.overlay}}/>);
+
+    if (tooltip) {
+        return (
+            <OverlayTrigger overlay={
+                <Tooltip id="map-location">{title}</Tooltip>
+            } placement="auto">
+                {overlay}
+            </OverlayTrigger>
+        );
+    }
+
+    return overlay;
 }

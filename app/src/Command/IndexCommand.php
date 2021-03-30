@@ -12,16 +12,15 @@ final class IndexCommand extends Command
 {
     protected static $defaultName = 'app:index';
 
-    private Indexer $indexer;
     private SymfonyStyle $io;
 
     /**
      * @inheritDoc
      */
-    public function __construct(Indexer $indexer)
-    {
+    public function __construct(
+        private Indexer $indexer
+    ) {
         parent::__construct();
-        $this->indexer = $indexer;
     }
 
     protected function configure()

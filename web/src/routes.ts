@@ -39,6 +39,8 @@ export const Routes = {
     TYPE_VIEW: `${ControllerRouteBases.TYPE}/:type`,
 
     TOOLS_CAPTURE_RATE: `${ControllerRouteBases.TOOLS}/capture_rate`,
+
+    SEARCH: `${dexRouteBase}/search/:query?`,
 };
 
 export namespace RouteParams {
@@ -114,6 +116,14 @@ export namespace RouteParams {
         export interface View extends DexRouteBase {
             type: string
         }
+    }
+
+    export namespace Tools {
+        export type CaptureRate = DexRouteBase;
+    }
+
+    export interface Search {
+        query?: string
     }
 }
 
