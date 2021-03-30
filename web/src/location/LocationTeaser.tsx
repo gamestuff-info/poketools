@@ -1,4 +1,4 @@
-import {useContext} from 'react';
+import React, {useContext} from 'react';
 import AppContext, {AppContextProps} from '../common/Context';
 import Teaser from '../search/Teaser';
 import {generatePath} from 'react-router-dom';
@@ -11,7 +11,7 @@ export default function LocationTeaser(props: { location: ApiRecord.Location.Loc
     const {location} = props;
     const {currentVersion} = useContext(AppContext) as Required<AppContextProps>;
     const image = location.effectiveMap && location.regionMap ? (
-        <LocationMap map={location.regionMap} locations={[location]}/>) : undefined;
+        <LocationMap map={location.regionMap} locations={[location]} tooltip={false}/>) : undefined;
 
     return (
         <Teaser label={location.name}

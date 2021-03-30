@@ -10,8 +10,10 @@ interface LocationMapProps extends Record<string, any> {
     map: ApiRecord.Location.RegionMap
     /** All locations must use the map from `map` */
     locations: Array<ApiRecord.Location.LocationInVersionGroup & ApiRecord.Location.LocationInVersionGroup.WithLocationMap>
-    /** Link to location */
+    /** Link to location? */
     link?: boolean
+    /** Show tooltips on map? */
+    tooltip?: boolean
 }
 
 /**
@@ -21,6 +23,7 @@ interface LocationMapProps extends Record<string, any> {
 export default function LocationMap(props: LocationMapProps) {
     const {map, locations} = props;
     const link = props.link ?? false;
+    const tooltip = props.tooltip ?? true;
     const {currentVersion} = useContext(AppContext) as Required<AppContextProps>;
     const classes = props.className ? props.className.split(' ') : [];
     classes.unshift('pkt-map');
@@ -58,14 +61,14 @@ export default function LocationMap(props: LocationMapProps) {
                             })}>
                                 <MapOverlay map={location.effectiveMap}
                                             title={location.name}
-                                            tooltip={locations.length > 1}
+                                            tooltip={tooltip}
                                 />
                             </a>
                         )}
                         {!link && (
                             <MapOverlay map={location.effectiveMap}
                                         title={location.name}
-                                        tooltip={locations.length > 1}
+                                        tooltip={tooltip}
                             />
                         )}
                     </g>

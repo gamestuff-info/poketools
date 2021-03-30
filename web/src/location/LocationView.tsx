@@ -149,6 +149,7 @@ function LocationRegionMap(props: { location: ApiRecord.Location.LocationInVersi
                                   variant="top"
                                   map={regionMap}
                                   locations={[location]}
+                                  tooltip={false}
                         />
                         <Card.Footer>
                             {regionMap.name}
