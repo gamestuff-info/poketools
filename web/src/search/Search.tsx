@@ -65,6 +65,10 @@ function Results(props: { query: string }) {
     const {results} = state;
 
     const fetchResults = useCallback(debounce((query: string, useVersion: ApiRecord.Version) => {
+        if (query.length === 0) {
+            setState({results: []});
+            return;
+        }
         setState({loading: true});
         pktQuery<ApiRecord.HydraCollection<ApiRecord.Search.SearchResult>>('search_results', {
             q: query,

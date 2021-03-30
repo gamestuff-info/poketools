@@ -1,14 +1,19 @@
-import {Jumbotron} from 'react-bootstrap';
+import {Button, Jumbotron} from 'react-bootstrap';
 import {AssetPackage, getAssetUrl} from '../common/getAssetUrl';
-import {Route, Switch} from 'react-router-dom';
+import {generatePath, Link, Route, Switch} from 'react-router-dom';
 import loadComponent from '../common/loadComponent';
 import {Routes} from '../routes';
 import NotFound from '../common/components/NotFound';
-import React from 'react';
+import React, {useContext} from 'react';
+import AppContext, {AppContextProps} from '../common/Context';
+import Loading from '../common/components/Loading';
+import appConfig from '../config.json';
 
 const CreditsPage = loadComponent(() => import('./CreditsPage'));
 
 function FrontPage(props: {}) {
+    const {currentVersion} = useContext(AppContext) as AppContextProps;
+
     return (
         <div>
             <Jumbotron>
@@ -22,6 +27,16 @@ function FrontPage(props: {}) {
                         </p>
                     </div>
                 </div>
+
+                <Button variant="primary"
+                        size="lg"
+                        disabled={!currentVersion}
+                        as={Link}
+                        to={generatePath(Routes.SEARCH, {version: currentVersion ? currentVersion.slug : appConfig.defaultVersionSlug})}
+                >
+                    {!currentVersion && <Loading uncontained label=""/>}
+                    Search
+                </Button>
             </Jumbotron>
 
             <h1>What?</h1>
