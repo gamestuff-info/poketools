@@ -8,11 +8,11 @@ import {FlashSeverity} from '../../common/components/Flashes';
 import {Button, Modal, Table} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faChartLine} from '@fortawesome/free-solid-svg-icons';
-import PktMarkdown from '../../common/components/PktMarkdown';
 import Loading from '../../common/components/Loading';
 import {CartesianGrid, Line, LineChart, XAxis, YAxis} from 'recharts';
 import {Link} from 'react-router-dom';
 import generateCaptureRateCalcUrl from '../../tools/generateCaptureRateCalcUrl';
+import MathJax from 'mathjax3-react';
 
 const pokemonStatProperties = [
     ['hp', 'HP'],
@@ -125,7 +125,7 @@ function PokemonGrowthRate(props: { growthRate: ApiRecord.Pokemon.GrowthRate }) 
                     <Modal.Title>{growthRate.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <PktMarkdown>{growthRate.formula}</PktMarkdown>
+                    <MathJax.Html html={growthRate.formula}/>
                     {state.loadingExperience && <Loading/>}
                     {experience && (
                         <>

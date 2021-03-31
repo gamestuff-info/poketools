@@ -77,3 +77,8 @@ table.table {
 .tooltip > p:first-of-type {
     @extend .pb-0;
 }
+
+// Correct the sins created by combining mathjax3-react and react-jsx-parser
+.pkt-text > p > div {
+    display: inline-block;
+}
