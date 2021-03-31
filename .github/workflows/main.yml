@@ -14,8 +14,6 @@ jobs:
   deploy_media:
     runs-on: ubuntu-20.04
     if: ${{github.ref == 'refs/heads/master'}}
-    needs:
-      - test
     steps:
       - uses: actions/checkout@master
       - name: Install s3cmd
