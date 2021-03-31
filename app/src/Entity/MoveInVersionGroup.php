@@ -46,6 +46,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 #[ApiFilter(SearchFilter::class, properties: [
     'contestType' => 'exact',
     'effect' => 'exact',
+    'flags.slug' => 'exact',
     'slug' => 'exact',
     'type' => 'exact',
     'versionGroup' => 'exact',

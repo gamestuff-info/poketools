@@ -8,7 +8,7 @@ red-blue: &red-blue
     This move cannot be selected by []{move:metronome}.
 
     Assist moves, time-delayed moves, “meta” moves that operate on other moves/Pokémon, and some other special moves cannot be copied and are ignored; if the last move to hit the user was such a move, the previous move will be used instead.  The full list of eligible moves is:
-    {{App\Controller\MoveController::flagMoves({"flag": "mirror"})}}
+    <FlaggedMoveTable flagSlug="mirror"/>
 yellow: *red-blue
 gold-silver: &gold-silver
   short_description: 'Uses the target''s last used move, with some exceptions.'
@@ -20,7 +20,7 @@ gold-silver: &gold-silver
     This move cannot be selected by []{move:metronome} or []{move:sleep-talk}, nor forced by []{move:encore}.
 
     Assist moves, time-delayed moves, “meta” moves that operate on other moves/Pokémon, and some other special moves cannot be copied and are ignored; if the last move to hit the user was such a move, the previous move will be used instead.  The full list of eligible moves is:
-    {{App\Controller\MoveController::flagMoves({"flag": "mirror"})}}
+    <FlaggedMoveTable flagSlug="mirror"/>
 crystal: *gold-silver
 ruby-sapphire: &ruby-sapphire
   short_description: 'Uses the target''s last used move, with some exceptions.'
@@ -32,7 +32,7 @@ ruby-sapphire: &ruby-sapphire
     This move cannot be selected by []{move:assist}, []{move:metronome}, or []{move:sleep-talk}, nor forced by []{move:encore}.
 
     Assist moves, time-delayed moves, “meta” moves that operate on other moves/Pokémon, and some other special moves cannot be copied and are ignored; if the last move to hit the user was such a move, the previous move will be used instead.  The full list of eligible moves is:
-    {{App\Controller\MoveController::flagMoves({"flag": "mirror"})}}
+    <FlaggedMoveTable flagSlug="mirror"/>
 emerald: *ruby-sapphire
 colosseum: *ruby-sapphire
 xd: *ruby-sapphire
