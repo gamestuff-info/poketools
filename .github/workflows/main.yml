@@ -1,0 +1,82 @@
+name: CI
+on:
+  push: ~
+  pull_request: ~
+  workflow_dispatch: ~
+
+env:
+  BUILD_NUMBER: ${{ github.sha }}
+  APP_VERSION: ${{ github.sha }}
+  APP_ENV: dev
+  IDE: ''
+
+jobs:
+  deploy_media:
+    runs-on: ubuntu-20.04
+    if: ${{github.ref == 'refs/heads/master'}}
+    needs:
+      - test
+    steps:
+      - uses: actions/checkout@master
+      - name: Install s3cmd
+        run: sudo apt-get install -y s3cmd
+      - name: Sync media assets
+        run: |
+          s3cmd sync \
+          --access_key='${{ secrets.S3_ACCESS_KEY }}' \
+          --secret_key='${{ secrets.S3_SECRET }}' \
+          --host='nyc3.digitaloceanspaces.com' \
+          --host-bucket='%(bucket)s.nyc3.digitaloceanspaces.com' \
+          -r --acl-public --delete-removed \
+          'media/' \
+          's3://poketools/media/'
+
+  deploy:
+    runs-on: ubuntu-20.04
+    if: ${{github.ref == 'refs/heads/master'}}
+    needs:
+      - deploy_media
+    steps:
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DO_ACCESS_TOKEN }}
+      - name: Create deployment
+        run: doctl app create-deployment ${DO_APP_UUID}
+
+  docs:
+    name: Build data docs
+    if: ${{github.ref == 'refs/heads/master'}}
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: './doc'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2 #https://github.com/shivammathur/setup-php
+        with:
+          php-version: '8.0'
+          ini-values: display_errors=On
+          extensions: mbstring, xml
+      - name: Get cache directories
+        id: cache_dirs
+        run: |
+          echo "::set-output name=composer::$(composer config cache-files-dir)"
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ${{ steps.cache_dirs.outputs.composer }}
+          key: ${{ runner.os }}-docs-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-docs-
+      - name: Install PHP dependencies
+        run: composer install --no-dev --prefer-dist --optimize-autoloader
+      - name: Build docs
+        run: vendor/bin/daux generate --destination public
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ github.workspace }}/doc/public
