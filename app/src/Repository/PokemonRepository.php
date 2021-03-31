@@ -2,8 +2,10 @@
 
 namespace App\Repository;
 
+use App\Entity\ItemInVersionGroup;
 use App\Entity\Nature;
 use App\Entity\Pokemon;
+use App\Entity\PokemonEvolutionCondition\HeldItemEvolutionCondition;
 use App\Entity\PokemonEvolutionCondition\TriggerItemEvolutionCondition;
 use App\Entity\PokemonSpeciesInVersionGroup;
 use App\Entity\Version;
@@ -453,5 +455,43 @@ class PokemonRepository extends MaterializedPathRepository implements ServiceEnt
         $statValueCounts['total'] = $q->getSingleScalarResult();
 
         return $statValueCounts;
+    }
+
+    /**
+     * Find Pokemon that evolve with the given item
+     *
+     * @param ItemInVersionGroup|int $item
+     *
+     * @return QueryBuilder
+     */
+    public function evolvesWithItemSlugQb(string $itemSlug): QueryBuilder
+    {
+        $triggerItemQb = $this->getEntityManager()->createQueryBuilder();
+        $triggerItemQb->from(TriggerItemEvolutionCondition::class, 'trigger_item_evolution_condition')
+            ->select('trigger_item_evolution_condition.id')
+            ->join('trigger_item_evolution_condition.evolutionTrigger', 'trigger_item_evolution_trigger')
+            ->join('trigger_item_evolution_condition.triggerItem', 'trigger_item')
+            ->where("trigger_item_evolution_trigger.slug = 'use-item'")
+            ->andWhere('trigger_item.slug = :itemSlug');
+
+        $heldItemQb = $this->getEntityManager()->createQueryBuilder();
+        $heldItemQb->from(HeldItemEvolutionCondition::class, 'held_item_evolution_condition')
+            ->select('held_item_evolution_condition.id')
+            ->join('held_item_evolution_condition.evolutionTrigger', 'held_item_evolution_trigger')
+            ->join('held_item_evolution_condition.heldItem', 'held_item')
+            ->andWhere('held_item.slug = :itemSlug');
+
+        $qb = $this->createQueryBuilder('pokemon');
+        $qb->join('pokemon.evolutionConditions', 'evolution_conditions')
+            ->andWhere(
+                $qb->expr()->orX(
+                    $qb->expr()->in('evolution_conditions.id', $triggerItemQb->getDQL()),
+                    $qb->expr()->in('evolution_conditions.id', $heldItemQb->getDQL())
+                )
+            )
+            ->andWhere('pokemon.mega = false')
+            ->setParameter('itemSlug', $itemSlug);
+
+        return $qb;
     }
 }

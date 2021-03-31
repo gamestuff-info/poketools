@@ -63,6 +63,9 @@ class PokemonDataProvider implements ContextAwareCollectionDataProviderInterface
                     return [];
                 }
             }
+        } elseif (isset($filters['evolvesWithItemSlug'])) {
+            $itemSlug = $filters['evolvesWithItemSlug'];
+            $qb = $this->pokemonRepo->evolvesWithItemSlugQb($itemSlug);
         }
         if (!$qb) {
             $qb = $this->pokemonRepo->createQueryBuilder('pokemon');

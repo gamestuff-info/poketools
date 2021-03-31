@@ -15,7 +15,7 @@ gold-silver: &gold-silver
     When some Pokémon are traded holding this item, they will evolve.  Below is a list
     of compatible Pokémon.
 
-    {{App\Controller\ItemController::evolutionPokemon({"itemSlug": "dragon-scale"})}}
+    <PokemonEvolvesWithItemTable itemSlug="dragon-scale"/>
 crystal: *gold-silver
 ruby-sapphire: &ruby-sapphire
   name: *gold-silver.name
@@ -35,7 +35,7 @@ ruby-sapphire: &ruby-sapphire
     When some Pokémon are traded holding this item, they will evolve.  Below is a list
     of compatible Pokémon.
 
-    {{App\Controller\ItemController::evolutionPokemon({"itemSlug": "dragon-scale"})}}
+    <PokemonEvolvesWithItemTable itemSlug="dragon-scale"/>
 emerald: *ruby-sapphire
 colosseum: &colosseum
   name: *gold-silver.name
