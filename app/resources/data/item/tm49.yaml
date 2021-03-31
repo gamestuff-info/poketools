@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: |
     Teaches []{move:tri-attack} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm49"})}}
+    <MachinePokemonTable itemSlug="tm49"/>
   machine:
     type: &red-blue.machine.type TM
     number: &red-blue.machine.number 49
@@ -23,7 +23,7 @@ gold-silver: &gold-silver
   description: |
     Teaches []{move:fury-cutter} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm49"})}}
+    <MachinePokemonTable itemSlug="tm49"/>
   machine:
     type: *red-blue.machine.type
     number: *red-blue.machine.number
@@ -47,7 +47,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:snatch} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm49"})}}
+    <MachinePokemonTable itemSlug="tm49"/>
   machine: &ruby-sapphire.machine
     type: *red-blue.machine.type
     number: *red-blue.machine.number
@@ -109,7 +109,7 @@ black-white: &black-white
   description: |
     Teaches []{move:echoed-voice} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm49"})}}
+    <MachinePokemonTable itemSlug="tm49"/>
   icon: tm-normal.png
 black-2-white-2: *black-white
 x-y: *black-white

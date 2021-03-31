@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: |
     Teaches []{move:mega-punch} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm01"})}}
+    <MachinePokemonTable itemSlug="tm01"/>
   machine:
     type: &red-blue.machine.type TM
     number: &red-blue.machine.number 1
@@ -23,7 +23,7 @@ gold-silver: &gold-silver
   description: |
     Teaches []{move:dynamicpunch} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm01"})}}
+    <MachinePokemonTable itemSlug="tm01"/>
   machine:
     type: *red-blue.machine.type
     number: *red-blue.machine.number
@@ -47,7 +47,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:focus-punch} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm01"})}}
+    <MachinePokemonTable itemSlug="tm01"/>
   machine: &ruby-sapphire.machine
     type: *red-blue.machine.type
     number: *red-blue.machine.number
@@ -109,7 +109,7 @@ black-white: &black-white
   description: |
     Teaches []{move:hone-claws} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm01"})}}
+    <MachinePokemonTable itemSlug="tm01"/>
   icon: tm-dark.png
 black-2-white-2: *black-white
 x-y: *black-white
@@ -128,6 +128,6 @@ sun-moon: &sun-moon
   description: |
     Teaches []{move:work-up} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm01"})}}
+    <MachinePokemonTable itemSlug="tm01"/>
   icon: tm-normal.png
 ultra-sun-ultra-moon: *sun-moon

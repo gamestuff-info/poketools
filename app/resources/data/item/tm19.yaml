@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: |
     Teaches []{move:seismic-toss} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm19"})}}
+    <MachinePokemonTable itemSlug="tm19"/>
   machine:
     type: &red-blue.machine.type TM
     number: &red-blue.machine.number 19
@@ -23,7 +23,7 @@ gold-silver: &gold-silver
   description: |
     Teaches []{move:giga-drain} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm19"})}}
+    <MachinePokemonTable itemSlug="tm19"/>
   machine: &gold-silver.machine
     type: *red-blue.machine.type
     number: *red-blue.machine.number
@@ -47,7 +47,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:giga-drain} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm19"})}}
+    <MachinePokemonTable itemSlug="tm19"/>
   machine: *gold-silver.machine
 emerald: *ruby-sapphire
 colosseum: &colosseum
@@ -106,7 +106,7 @@ black-white: &black-white
   description: |
     Teaches []{move:telekinesis} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm19"})}}
+    <MachinePokemonTable itemSlug="tm19"/>
   icon: tm-psychic.png
 black-2-white-2: *black-white
 x-y: &x-y
@@ -123,7 +123,7 @@ x-y: &x-y
   description: |
     Teaches []{move:roost} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm19"})}}
+    <MachinePokemonTable itemSlug="tm19"/>
   icon: tm-flying.png
 omega-ruby-alpha-sapphire: *x-y
 sun-moon: *x-y

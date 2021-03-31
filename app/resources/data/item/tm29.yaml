@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: &red-blue.description |
     Teaches []{move:psychic} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm29"})}}
+    <MachinePokemonTable itemSlug="tm29"/>
   machine: &red-blue.machine
     type: TM
     number: 29
@@ -41,7 +41,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:psychic} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm29"})}}
+    <MachinePokemonTable itemSlug="tm29"/>
   machine: *red-blue.machine
 emerald: *ruby-sapphire
 colosseum: &colosseum

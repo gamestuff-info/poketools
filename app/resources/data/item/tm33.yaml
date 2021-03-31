@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: |
     Teaches []{move:reflect} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm33"})}}
+    <MachinePokemonTable itemSlug="tm33"/>
   machine: &red-blue.machine
     type: &red-blue.machine.type TM
     number: &red-blue.machine.number 33
@@ -23,7 +23,7 @@ gold-silver: &gold-silver
   description: |
     Teaches []{move:ice-punch} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm33"})}}
+    <MachinePokemonTable itemSlug="tm33"/>
   machine:
     type: *red-blue.machine.type
     number: *red-blue.machine.number
@@ -47,7 +47,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:reflect} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm33"})}}
+    <MachinePokemonTable itemSlug="tm33"/>
   machine: *red-blue.machine
 emerald: *ruby-sapphire
 colosseum: &colosseum

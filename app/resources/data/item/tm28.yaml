@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: &red-blue.description |
     Teaches []{move:dig} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm28"})}}
+    <MachinePokemonTable itemSlug="tm28"/>
   machine: &red-blue.machine
     type: &red-blue.machine.type TM
     number: &red-blue.machine.number 28
@@ -41,7 +41,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:dig} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm28"})}}
+    <MachinePokemonTable itemSlug="tm28"/>
   machine: *red-blue.machine
 emerald: *ruby-sapphire
 colosseum: &colosseum
@@ -101,6 +101,6 @@ sun-moon: &sun-moon
   description: |
     Teaches []{move:leech-life} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm28"})}}
+    <MachinePokemonTable itemSlug="tm28"/>
   icon: tm-bug.png
 ultra-sun-ultra-moon: *sun-moon

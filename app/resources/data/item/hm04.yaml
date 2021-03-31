@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: &red-blue.description |
     Teaches []{move:strength} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm04"})}}
+    <MachinePokemonTable itemSlug="hm04"/>
   machine: &red-blue.machine
     type: HM
     number: 4
@@ -37,7 +37,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:strength} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm04"})}}
+    <MachinePokemonTable itemSlug="hm04"/>
   machine: *red-blue.machine
 emerald: *ruby-sapphire
 firered-leafgreen:

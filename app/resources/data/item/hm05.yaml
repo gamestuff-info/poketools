@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: &red-blue.description |
     Teaches []{move:flash} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm05"})}}
+    <MachinePokemonTable itemSlug="hm05"/>
   machine: &red-blue.machine
     type: &red-blue.machine.type HM
     number: &red-blue.machine.number 5
@@ -37,7 +37,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:flash} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm05"})}}
+    <MachinePokemonTable itemSlug="hm05"/>
   machine: *red-blue.machine
 emerald: *ruby-sapphire
 firered-leafgreen:
@@ -66,7 +66,7 @@ diamond-pearl: &diamond-pearl
   description: |
     Teaches []{move:defog} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm05"})}}
+    <MachinePokemonTable itemSlug="hm05"/>
   icon: hm-flying.png
 platinum: *diamond-pearl
 heartgold-soulsilver:
@@ -81,7 +81,7 @@ heartgold-soulsilver:
   description: |
     Teaches []{move:whirlpool} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm05"})}}
+    <MachinePokemonTable itemSlug="hm05"/>
   icon: &heartgold-soulsilver.icon hm-water.png
 black-white: &black-white
   name: *red-blue.name
@@ -95,7 +95,7 @@ black-white: &black-white
   description: |
     Teaches []{move:waterfall} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm05"})}}
+    <MachinePokemonTable itemSlug="hm05"/>
   icon: *heartgold-soulsilver.icon
 black-2-white-2: *black-white
 x-y: *black-white

@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: &red-blue.description |
     Teaches []{move:double-team} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm32"})}}
+    <MachinePokemonTable itemSlug="tm32"/>
   machine: &red-blue.machine
     type: TM
     number: 32
@@ -41,7 +41,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:double-team} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm32"})}}
+    <MachinePokemonTable itemSlug="tm32"/>
   machine: *red-blue.machine
 emerald: *ruby-sapphire
 colosseum: &colosseum

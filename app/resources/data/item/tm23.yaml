@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: |
     Teaches []{move:dragon-rage} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm23"})}}
+    <MachinePokemonTable itemSlug="tm23"/>
   machine:
     type: &red-blue.machine.type TM
     number: &red-blue.machine.number 23
@@ -23,7 +23,7 @@ gold-silver: &gold-silver
   description: |
     Teaches []{move:iron-tail} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm23"})}}
+    <MachinePokemonTable itemSlug="tm23"/>
   machine: &gold-silver.machine
     type: *red-blue.machine.type
     number: *red-blue.machine.number
@@ -47,7 +47,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:iron-tail} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm23"})}}
+    <MachinePokemonTable itemSlug="tm23"/>
   machine: *gold-silver.machine
 emerald: *ruby-sapphire
 colosseum: &colosseum
@@ -106,7 +106,7 @@ black-white: &black-white
   description: |
     Teaches []{move:smack-down} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm23"})}}
+    <MachinePokemonTable itemSlug="tm23"/>
   icon: tm-rock.png
 black-2-white-2: *black-white
 x-y: *black-white

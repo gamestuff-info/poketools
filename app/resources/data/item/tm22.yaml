@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: &red-blue.description |
     Teaches []{move:solarbeam} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm22"})}}
+    <MachinePokemonTable itemSlug="tm22"/>
   machine: &red-blue.machine
     type: &red-blue.machine.type TM
     number: &red-blue.machine.number 22
@@ -41,7 +41,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:solarbeam} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm22"})}}
+    <MachinePokemonTable itemSlug="tm22"/>
   machine: *red-blue.machine
 emerald: *ruby-sapphire
 colosseum: &colosseum
@@ -85,7 +85,7 @@ diamond-pearl: &diamond-pearl
   description: |
     Teaches []{move:solar-beam} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm22"})}}
+    <MachinePokemonTable itemSlug="tm22"/>
   icon: *ruby-sapphire.icon
 platinum: *diamond-pearl
 heartgold-soulsilver: *diamond-pearl

@@ -20,9 +20,12 @@ use Symfony\Component\Validator\Constraints as Assert;
 )]
 #[ApiFilter(SearchFilter::class, properties: [
     'learnMethod' => 'exact',
-    'pokemon' => 'exact',
-    'move' => 'exact',
+    'learnMethod.slug' => 'exact',
     'machine' => 'exact',
+    'machine.slug' => 'exact',
+    'move' => 'exact',
+    'pokemon' => 'exact',
+    'pokemon.species.versionGroup' => 'exact',
 ])]
 #[ApiFilter(GroupFilter::class)]
 #[ApiFilter(OrderFilter::class, properties: [

@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: &red-blue.description |
     Teaches []{move:blizzard} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm14"})}}
+    <MachinePokemonTable itemSlug="tm14"/>
   machine: &red-blue.machine
     type: TM
     number: 14
@@ -41,7 +41,7 @@ ruby-sapphire:
   description: &ruby-sapphire.description |
     Teaches []{move:blizzard} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm14"})}}
+    <MachinePokemonTable itemSlug="tm14"/>
   machine: *red-blue.machine
 emerald:
   name: *red-blue.name

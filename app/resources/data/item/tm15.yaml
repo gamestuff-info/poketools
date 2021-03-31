@@ -7,7 +7,7 @@ red-blue: &red-blue
   description: &red-blue.description |
     Teaches []{move:hyper-beam} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm15"})}}
+    <MachinePokemonTable itemSlug="tm15"/>
   machine: &red-blue.machine
     type: TM
     number: 15
@@ -41,7 +41,7 @@ ruby-sapphire: &ruby-sapphire
   description: &ruby-sapphire.description |
     Teaches []{move:hyper-beam} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "tm15"})}}
+    <MachinePokemonTable itemSlug="tm15"/>
   machine: *red-blue.machine
 emerald: *ruby-sapphire
 colosseum: &colosseum

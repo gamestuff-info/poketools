@@ -16,6 +16,9 @@ interface MovePokemonTableState {
     loadingLearnMethods: boolean
 }
 
+/**
+ * Pokemon that can learn a move
+ */
 export default function MovePokemonTable(props: { move: ApiRecord.Move.MoveInVersionGroup }) {
     const {move} = props;
     const {currentVersion, setFlashes} = useContext(AppContext) as Required<AppContextProps>;
@@ -51,7 +54,7 @@ export default function MovePokemonTable(props: { move: ApiRecord.Move.MoveInVer
             {learnMethods.map(learnMethod => (
                 <Tab key={learnMethod['@id']} eventKey={learnMethod['@id']} title={learnMethod.name}>
                     <PktMarkdown>{learnMethod.description}</PktMarkdown>
-                    <LearnMethodPokemonTable move={move} method={learnMethod}/>
+                    <LearnMethodMovePokemonTable move={move} method={learnMethod}/>
                 </Tab>
             ))}
         </Tabs>
@@ -73,7 +76,10 @@ const sortFieldMap = {
     statTotal: 'pokemon.statTotal',
 };
 
-function LearnMethodPokemonTable(props: { move: ApiRecord.Move.MoveInVersionGroup, method: ApiRecord.Move.MoveLearnMethod }) {
+/**
+ * Pokemon that can learn a move via a method
+ */
+export function LearnMethodMovePokemonTable(props: { move: ApiRecord.Move.MoveInVersionGroup, method: ApiRecord.Move.MoveLearnMethod }) {
     const {move, method} = props;
     const {id: moveId} = move;
     const {id: methodId, slug: methodSlug} = method;

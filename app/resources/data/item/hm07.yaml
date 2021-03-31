@@ -5,7 +5,7 @@ gold-silver: &gold-silver
   description: &gold-silver.description |
     Teaches []{move:waterfall} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm07"})}}
+    <MachinePokemonTable itemSlug="hm07"/>
   machine: &gold-silver.machine
     type: &gold-silver.machine.type HM
     number: &gold-silver.machine.number 7
@@ -65,7 +65,7 @@ omega-ruby-alpha-sapphire:
   description: |
     Teaches []{move:dive} to a compatible Pokémon.
 
-    {{App\Controller\ItemController::tmPokemon({"itemSlug": "hm07"})}}
+    <MachinePokemonTable itemSlug="hm07"/>
   machine:
     type: *gold-silver.machine.type
     number: *gold-silver.machine.number
