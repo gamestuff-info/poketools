@@ -40,7 +40,7 @@ jobs:
         with:
           token: ${{ secrets.DO_ACCESS_TOKEN }}
       - name: Create deployment
-        run: doctl app create-deployment ${DO_APP_UUID}
+        run: doctl app create-deployment ${{ secrets.DO_APP_UUID }}
 
   docs:
     name: Build data docs
