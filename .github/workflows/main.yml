@@ -13,7 +13,7 @@ env:
 jobs:
   deploy_media:
     runs-on: ubuntu-20.04
-    if: ${{github.ref == 'refs/heads/master'}}
+    if: ${{github.ref == 'refs/heads/main'}}
     steps:
       - uses: actions/checkout@master
       - name: Install s3cmd
@@ -31,7 +31,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-20.04
-    if: ${{github.ref == 'refs/heads/master'}}
+    if: ${{github.ref == 'refs/heads/main'}}
     needs:
       - deploy_media
     steps:
@@ -44,7 +44,7 @@ jobs:
 
   docs:
     name: Build data docs
-    if: ${{github.ref == 'refs/heads/master'}}
+    if: ${{github.ref == 'refs/heads/main'}}
     runs-on: ubuntu-20.04
     defaults:
       run:
