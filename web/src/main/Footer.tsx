@@ -9,7 +9,7 @@ export default function Footer(props: {}) {
                 <Nav.Link href="https://github.com/gamestuff-info/poketools">Contribute</Nav.Link>
                 <Nav.Link href="https://gamestuff.info/">gamestuff.info</Nav.Link>
             </Nav>
-            <BsNavbar.Text>Release: {process.env.REACT_APP_RELEASE ?? 'dev'}</BsNavbar.Text>
+            <BsNavbar.Text>Release: {process.env.REACT_APP_VERSION ?? 'dev'}</BsNavbar.Text>
         </BsNavbar>
     );
 }
