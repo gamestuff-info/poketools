@@ -21,7 +21,7 @@ const client = axios.create({
  */
 function makeAbsolute(endpoint: string) {
     const url = new URL(apiHost);
-    url.pathname = url.pathname + endpoint;
+    url.pathname = (url.pathname + endpoint).replaceAll('//', '');
     return url.toString();
 }
 
@@ -42,6 +42,8 @@ export function pktQuery<DataT>(endpoint: string, params: Record<string, any> = 
     if (endpoint.startsWith('/')) {
         // Likely an entity IRI
         endpoint = makeAbsolute(endpoint);
+    } else {
+        endpoint = '/api/' + endpoint;
     }
     return client.request<DataT>(Object.assign({}, {
         method: 'get',
