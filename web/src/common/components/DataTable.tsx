@@ -23,7 +23,7 @@ import {
 } from 'react-table';
 import '../../assets/styles/DataTable.scss';
 import Loading from './Loading';
-import {Button, ButtonGroup, Form} from 'react-bootstrap';
+import {Button, ButtonGroup, Col as BsCol, Form, Table} from 'react-bootstrap';
 import {
     faAngleDoubleLeft,
     faAngleDoubleRight,
@@ -158,15 +158,14 @@ export default function DataTable<T extends object = ApiRecord.Record>(props: Da
 
     function Controls(props: {}) {
         return (
-            <div>
-                <Form inline className="pkt-datatable-controls">
+            <Form className="pkt-datatable-controls">
+                <Form.Row className="align-items-center">
                     {/* Page size selector */}
-                    <div className="pkt-datatable-controls-section">
-                        <Form.Label htmlFor="rows_per_page">Rows per page</Form.Label>
+                    <Form.Group as={BsCol} sm>
+                        <Form.Label htmlFor="rowsPerPage">Rows per page</Form.Label>
                         <Form.Control
                             as="select"
-                            className="ml-2"
-                            name="rows_per_page"
+                            name="rowsPerPage"
                             value={pageSize}
                             onChange={e => setPageSize(parseInt(e.target.value))}
                         >
@@ -174,10 +173,23 @@ export default function DataTable<T extends object = ApiRecord.Record>(props: Da
                                 <option key={page_size}
                                         value={page_size}>{page_size}</option>)}
                         </Form.Control>
-                    </div>
+                    </Form.Group>
+
+                    {/* Page selector */}
+                    <Form.Group as={BsCol} sm>
+                        <Form.Label htmlFor="page">Go to page</Form.Label>
+                        <Form.Control
+                            as="select"
+                            value={pageIndex}
+                            onChange={e => gotoPage(parseInt(e.target.value))}
+                        >
+                            {pageOptions.map(pageNum =>
+                                <option key={pageNum} value={pageNum}>{pageNum + 1}</option>)}
+                        </Form.Control>
+                    </Form.Group>
 
                     {/* Next/previous buttons */}
-                    <div className="pkt-datatable-controls-section">
+                    <Form.Group as={BsCol} md>
                         <ButtonGroup>
                             {/* First page */}
                             <Button
@@ -223,21 +235,9 @@ export default function DataTable<T extends object = ApiRecord.Record>(props: Da
                                 <FontAwesomeIcon icon={faAngleDoubleRight}/>
                             </Button>
                         </ButtonGroup>
-                        <div className="pkt-datatable-controls-section ml-2">
-                            <Form.Label htmlFor="page">Go to page</Form.Label>
-                            <Form.Control
-                                as="select"
-                                className="ml-2"
-                                value={pageIndex}
-                                onChange={e => gotoPage(parseInt(e.target.value))}
-                            >
-                                {pageOptions.map(pageNum =>
-                                    <option key={pageNum} value={pageNum}>{pageNum + 1}</option>)}
-                            </Form.Control>
-                        </div>
-                    </div>
-                </Form>
-            </div>
+                    </Form.Group>
+                </Form.Row>
+            </Form>
         );
     }
 
@@ -246,7 +246,7 @@ export default function DataTable<T extends object = ApiRecord.Record>(props: Da
             <Controls/>
             {(props.fetchingNewData || props.data === null) && (<Loading/>)}
             {props.data !== null &&
-            <table {...getTableProps()} className="table pkt-datatable">
+            <Table {...getTableProps()} responsive className="pkt-datatable">
                 <thead>
                 {headerGroups.map(headerGroup => (
                     <tr {...headerGroup.getHeaderGroupProps()}>
@@ -286,7 +286,7 @@ export default function DataTable<T extends object = ApiRecord.Record>(props: Da
                     );
                 })}
                 </tbody>
-            </table>}
+            </Table>}
             <Controls/>
         </div>
     );
