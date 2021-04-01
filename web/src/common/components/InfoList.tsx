@@ -1,4 +1,4 @@
-import '../../assets/styles/InfoList.scss';
+import './InfoList.scss';
 import {ReactNode} from 'react';
 import resolveElementClasses from '../resolveElementClasses';
 

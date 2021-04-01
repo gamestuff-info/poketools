@@ -1,6 +1,5 @@
-@import "bootstrap";
+@import "src/assets/styles/bootstrap";
 
-// Colors
 $color-type: (
     normal: #9B9B6B,
     fighting: #903028,
@@ -27,15 +26,6 @@ $color-type: (
     cute: #F85888,
     smart: #78C850,
     tough: #F8D030,
-);
-
-$color-efficacy: (
-    0: $black,
-    25: $pink,
-    50: $red,
-    100: $gray-500,
-    200: $green,
-    400: $teal,
 );
 
 // If the background lightness is beyond this threshold, the text color will be dark instead of light.
@@ -76,15 +66,5 @@ $darkTextThreshold: 80%;
             background-color: scale_color($background, $saturation: -50%, $lightness: 50%);
             color: scale_color($text, $lightness: 50%) !important;
         }
-    }
-}
-
-.pkt-type-efficacy {
-    font-weight: bold;
-}
-
-@each $efficacy in map_keys($color-efficacy) {
-    .pkt-type-efficacy.pkt-type-efficacy-#{$efficacy} {
-        color: map_get($color-efficacy, $efficacy);
     }
 }

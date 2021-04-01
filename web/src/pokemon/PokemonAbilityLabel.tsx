@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import AppContext, {AppContextProps} from '../common/Context';
 import {generatePath, Link} from 'react-router-dom';
 import {Routes} from '../routes';
-import '../assets/styles/PokemonAbilityLabel.scss';
+import './PokemonAbilityLabel.scss';
 import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 
 function HiddenAbilityTooltip(props: {}) {

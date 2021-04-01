@@ -7,7 +7,7 @@ import Loading from '../common/components/Loading';
 import {Card, Table} from 'react-bootstrap';
 import {generatePath, Link} from 'react-router-dom';
 import {Routes} from '../routes';
-import '../assets/styles/PokemonLocationTable.scss';
+import './PokemonLocationTable.scss';
 import RadialGauge from '../common/components/gauge/RadialGauge';
 import EncounterConditionList from './EncounterConditionList';
 import LocationMap from '../location/LocationMap';

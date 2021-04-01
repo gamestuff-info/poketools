@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import AppContext, {AppContextProps} from '../common/Context';
-import '../assets/styles/LocationMap.scss';
+import './LocationMap.scss';
 import {AssetPackage, getAssetUrl} from '../common/getAssetUrl';
 import {generatePath} from 'react-router-dom';
 import {Routes} from '../routes';

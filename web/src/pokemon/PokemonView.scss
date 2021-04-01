@@ -1,0 +1,23 @@
+@import "src/assets/styles/bootstrap";
+
+.pkt-pokemon-view-numbers {
+    @extend .list-inline;
+
+    li {
+        @extend .list-inline-item;
+
+        .pkt-pokemon-view-numbers-dex {
+            font-weight: bold;
+
+            &::after {
+                content: ':';
+            }
+        }
+
+        .pkt-pokemon-view-numbers-number {
+            &::before {
+                content: '#';
+            }
+        }
+    }
+}

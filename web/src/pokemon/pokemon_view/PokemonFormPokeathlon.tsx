@@ -3,6 +3,7 @@ import {faStar} from '@fortawesome/free-regular-svg-icons';
 import {faStar as fasStar} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import InfoList from '../../common/components/InfoList';
+import './PokemonFormPokeathlon.scss';
 
 export default function PokemonFormPokeathlonStats(props: { pokemonForm: ApiRecord.Pokemon.PokemonForm.PokemonView }) {
     const {pokemonForm: {pokeathlonStats}} = props;

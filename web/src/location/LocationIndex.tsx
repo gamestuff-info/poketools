@@ -7,7 +7,7 @@ import {AxiosError} from 'axios';
 import {FlashSeverity} from '../common/components/Flashes';
 import {Breadcrumb, Card, Modal, Tab, Tabs} from 'react-bootstrap';
 import Loading from '../common/components/Loading';
-import '../assets/styles/LocationIndex.scss';
+import './LocationIndex.scss';
 import {AssetPackage, getAssetUrl} from '../common/getAssetUrl';
 import LocationMap from './LocationMap';
 import {generatePath, Link} from 'react-router-dom';

@@ -1,7 +1,7 @@
 import React, {useCallback, useContext, useReducer} from 'react';
 import {Button, Form} from 'react-bootstrap';
 import {AsyncTypeahead, TypeaheadResult} from 'react-bootstrap-typeahead';
-import '../assets/styles/QuickSearch.scss';
+import './QuickSearch.scss';
 import AppContext, {AppContextProps} from '../common/Context';
 import {pktQuery} from '../common/client';
 import {AxiosError} from 'axios';
@@ -55,6 +55,7 @@ export default function QuickSearch(props: {}) {
                     query: state.query.length > 0 ? state.query : undefined,
                 })}>
                     <AsyncTypeahead id="pkt-quicksearch-input"
+                                    className="pkt-quicksearch-input"
                                     isLoading={state.loading}
                                     options={state.options}
                                     onSearch={fetchOptions}

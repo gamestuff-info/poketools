@@ -3,6 +3,7 @@ import PktMarkdown from '../../common/components/PktMarkdown';
 import React from 'react';
 import PokemonFlavorText from './PokemonFlavorText';
 import PokemonFormsList from './PokemonFormsList';
+import './Pokemon.scss';
 
 interface PokemonProps {
     species: ApiRecord.Pokemon.PokemonSpeciesInVersionGroup

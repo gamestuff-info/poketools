@@ -1,4 +1,4 @@
-import './assets/styles/App.scss';
+import './App.scss';
 import React, {useReducer} from 'react';
 import {matchPath, Route, Switch} from 'react-router-dom';
 import {pktQuery} from './common/client';

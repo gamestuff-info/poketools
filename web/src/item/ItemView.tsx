@@ -11,7 +11,7 @@ import {Breadcrumb, Col, Row, Table} from 'react-bootstrap';
 import {Routes} from '../routes';
 import Loading from '../common/components/Loading';
 import PktMarkdown from '../common/components/PktMarkdown';
-import '../assets/styles/ItemView.scss';
+import './ItemView.scss';
 import InfoList from '../common/components/InfoList';
 import FlagList from '../common/components/FlagList';
 import ItemLabel from './ItemLabel';

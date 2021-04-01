@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/Type.scss';
+import './TypeEfficacy.scss';
 
 interface TypeEfficacyProps {
     efficacy: number

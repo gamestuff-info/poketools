@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Col, Row} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import '../assets/styles/SearchTeaser.scss';
+import './Teaser.scss';
 
 interface TeaserProps {
     label: string

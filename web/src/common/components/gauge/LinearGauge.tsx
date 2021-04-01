@@ -1,4 +1,4 @@
-import '../../../assets/styles/Gauge.scss';
+import './LinearGauge.scss';
 import {sum} from 'mathjs';
 
 interface LinearGaugeParams extends Record<string, any> {

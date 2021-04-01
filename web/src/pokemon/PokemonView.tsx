@@ -1,4 +1,4 @@
-import '../assets/styles/PokemonView.scss';
+import './PokemonView.scss';
 import AppContext, {AppContextProps} from '../common/Context';
 import Loading from '../common/components/Loading';
 import NotFound from '../common/components/NotFound';

@@ -1,4 +1,4 @@
-import '../assets/styles/PokemonEvolutionTree.scss';
+import './PokemonEvolutionTree.scss';
 import 'react-orgchart/index.css';
 import AppContext, {AppContextProps} from '../common/Context';
 import InfoList from '../common/components/InfoList';

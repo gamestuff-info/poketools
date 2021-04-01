@@ -14,7 +14,7 @@ import InfoList from '../common/components/InfoList';
 import versionHasContests from '../common/versionHasContests';
 import TypeLabel from '../type/TypeLabel';
 import LinearGauge from '../common/components/gauge/LinearGauge';
-import '../assets/styles/NatureView.scss';
+import './NatureView.scss';
 import NaturePokemonTable from './NaturePokemonTable';
 
 interface NatureViewState {

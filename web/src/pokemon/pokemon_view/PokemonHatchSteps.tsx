@@ -5,7 +5,7 @@ import {Routes} from '../../routes';
 import RepeatedIcon from '../../common/components/RepeatedIcon';
 import {faArrowUp} from '@fortawesome/free-solid-svg-icons';
 import {Table} from 'react-bootstrap';
-import '../../assets/styles/PokemonHatchSteps.scss';
+import '../PokemonHatchSteps.scss';
 
 export default function PokemonHatchSteps(props: { pokemon: ApiRecord.Pokemon.Pokemon.PokemonView }) {
     const {pokemon: {hatchSteps}} = props;

@@ -21,7 +21,7 @@ import {
     UseSortByState,
     useTable,
 } from 'react-table';
-import '../../assets/styles/DataTable.scss';
+import './DataTable.scss';
 import Loading from './Loading';
 import {Button, ButtonGroup, Col as BsCol, Form, Table} from 'react-bootstrap';
 import {

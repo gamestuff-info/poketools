@@ -9,7 +9,7 @@ import setPageTitle from '../common/setPageTitle';
 import {Breadcrumb, Col, Row} from 'react-bootstrap';
 import {Routes} from '../routes';
 import Loading from '../common/components/Loading';
-import '../assets/styles/MoveView.scss';
+import './MoveView.scss';
 import InfoList from '../common/components/InfoList';
 import TypeLabel from '../type/TypeLabel';
 import DamageClassLabel from './DamageClassLabel';

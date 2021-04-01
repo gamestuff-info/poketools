@@ -6,7 +6,7 @@ import {Table} from 'react-bootstrap';
 import Loading from '../common/components/Loading';
 import TypeLabel from './TypeLabel';
 import TypeEfficacy from './TypeEfficacy';
-import '../assets/styles/TypeMatchups.scss';
+import './TypeChart.scss';
 import {FlashSeverity} from '../common/components/Flashes';
 
 type EntityId = string | number;

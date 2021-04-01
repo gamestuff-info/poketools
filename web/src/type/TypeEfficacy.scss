@@ -1,0 +1,20 @@
+@import "src/assets/styles/bootstrap";
+
+$color-efficacy: (
+    0: $black,
+    25: $pink,
+    50: $red,
+    100: $gray-500,
+    200: $green,
+    400: $teal,
+);
+
+.pkt-type-efficacy {
+    font-weight: bold;
+}
+
+@each $efficacy in map_keys($color-efficacy) {
+    .pkt-type-efficacy.pkt-type-efficacy-#{$efficacy} {
+        color: map_get($color-efficacy, $efficacy);
+    }
+}

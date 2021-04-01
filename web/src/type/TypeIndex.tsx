@@ -6,7 +6,7 @@ import {pktQuery} from '../common/client';
 import {AxiosError} from 'axios';
 import Loading from '../common/components/Loading';
 import TypeLabel from './TypeLabel';
-import '../assets/styles/TypeIndex.scss';
+import './TypeIndex.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowDown, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import TypeEfficacy from './TypeEfficacy';

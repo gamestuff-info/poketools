@@ -1,4 +1,4 @@
-import '../../assets/styles/FlagList.scss';
+import './FlagList.scss';
 import PktMarkdown from './PktMarkdown';
 
 interface FlagListProps extends Record<string, any> {

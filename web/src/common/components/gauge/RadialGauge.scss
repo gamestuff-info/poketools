@@ -1,0 +1,22 @@
+@import "gauge";
+
+svg.pkt-gauge-radial {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    circle, path {
+        fill: none;
+        stroke-width: 90;
+
+        @for $index from 1 through length($gauge-colors) {
+            &.pkt-gauge-value-#{$index - 1} {
+                $color: nth($gauge-colors, $index);
+                stroke: $color;
+            }
+        }
+
+        &.pkt-gauge-empty {
+            stroke: $gray-300;
+        }
+    }
+}

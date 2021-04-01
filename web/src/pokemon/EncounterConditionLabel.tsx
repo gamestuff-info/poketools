@@ -2,7 +2,7 @@ import {OverlayTrigger, Tooltip} from 'react-bootstrap';
 import React from 'react';
 import {AssetPackage, getAssetUrl} from '../common/getAssetUrl';
 import EntityLabel from '../common/components/EntityLabel';
-import '../assets/styles/EncounterConditionLabel.scss';
+import './EncounterConditionLabel.scss';
 
 export default function EncounterConditionLabel(props: { condition: ApiRecord.Pokemon.EncounterConditionState }) {
     const {condition} = props;

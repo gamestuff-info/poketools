@@ -1,4 +1,4 @@
-import '../assets/styles/PokemonTypeList.scss';
+import './PokemonTypeList.scss';
 import TypeLabel from '../type/TypeLabel';
 
 export default function PokemonTypeList(props: { types: Array<ApiRecord.Pokemon.PokemonType> }) {

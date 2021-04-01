@@ -5,6 +5,7 @@ import Loading from '../common/components/Loading';
 import React from 'react';
 import {Routes} from '../routes';
 import QuickSearch from '../search/QuickSearch';
+import './Navbar.scss';
 
 type VersionSelectorProps = {
     versions: Map<number, ApiRecord.Version>,

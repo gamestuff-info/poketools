@@ -1,0 +1,31 @@
+@import "src/assets/styles/bootstrap";
+
+.pkt-pokemon-view-stats {
+    .pkt-infolist-value {
+        display: flex;
+        justify-content: space-between;
+
+        & > * {
+            @extend .mx-1;
+        }
+
+        .pkt-pokemon-view-stats-basevalue {
+            @extend .ml-0;
+            // Setting a width here allows the values to all line up.
+            min-width: 2rem;
+        }
+
+        .pkt-pokemon-view-stats-percentile-gauge {
+            .pkt-gauge-value-0 {
+                fill: $secondary
+            }
+        }
+
+        .pkt-pokemon-view-stats-percentile-value {
+            @extend .mr-0;
+
+            white-space: nowrap;
+            min-width: 4rem;
+        }
+    }
+}

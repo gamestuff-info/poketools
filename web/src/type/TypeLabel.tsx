@@ -1,4 +1,4 @@
-import '../assets/styles/Type.scss';
+import './TypeLabel.scss';
 import {useContext} from 'react';
 import {generatePath, Link} from 'react-router-dom';
 import {Routes} from '../routes';

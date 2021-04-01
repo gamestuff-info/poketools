@@ -1,5 +1,5 @@
 import {ReactNode} from 'react';
-import '../../assets/styles/EntityLabel.scss';
+import './EntityLabel.scss';
 
 interface EntityLabelProps extends Record<string, any> {
     children: ReactNode

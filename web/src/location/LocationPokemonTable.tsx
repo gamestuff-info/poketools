@@ -8,7 +8,7 @@ import {Tab, Tabs} from 'react-bootstrap';
 import PokemonTable, {PokemonTableRecord} from '../pokemon/PokemonTable';
 import {buildOrderParams, CellRenderMap, ColumnPropsMap, DataTableColumnOptions} from '../common/components/DataTable';
 import RadialGauge from '../common/components/gauge/RadialGauge';
-import '../assets/styles/LocationPokemonTable.scss';
+import './LocationPokemonTable.scss';
 import EncounterConditionList from '../pokemon/EncounterConditionList';
 
 interface LocationPokemonTableState {

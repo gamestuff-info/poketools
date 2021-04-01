@@ -1,4 +1,4 @@
-import '../../../assets/styles/Gauge.scss';
+import './RadialGauge.scss';
 import {sum} from 'mathjs';
 
 // From the css; used to calculate the geometry of the circle and arcs.

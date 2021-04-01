@@ -15,6 +15,7 @@ import {
 } from '../../common/components/DataTable';
 import ItemLabel from '../../item/ItemLabel';
 import MoveTable, {MoveTableRecord} from '../../move/MoveTable';
+import './PokemonMoveTable.scss';
 
 interface PokemonMoveTableTableState {
     forPokemon?: number
@@ -22,6 +23,9 @@ interface PokemonMoveTableTableState {
     loadingLearnMethods: boolean
 }
 
+/**
+ * Moves a Pokemon can learn
+ */
 export default function PokemonMoveTable(props: { pokemon: ApiRecord.Pokemon.Pokemon }) {
     const {pokemon} = props;
     const {currentVersion, setFlashes} = useContext(AppContext) as Required<AppContextProps>;

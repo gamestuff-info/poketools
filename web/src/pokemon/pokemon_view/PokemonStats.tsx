@@ -6,6 +6,7 @@ import {FlashSeverity} from '../../common/components/Flashes';
 import Loading from '../../common/components/Loading';
 import InfoList from '../../common/components/InfoList';
 import LinearGauge from '../../common/components/gauge/LinearGauge';
+import './PokemonStats.scss';
 
 interface PokemonStatsState {
     loadedForPokemon?: number

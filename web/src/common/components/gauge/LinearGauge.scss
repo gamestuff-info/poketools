@@ -1,0 +1,22 @@
+@import "gauge";
+
+svg.pkt-gauge-linear {
+    $height: 1em;
+
+    height: $height;
+
+    rect {
+        height: $height;
+
+        @for $index from 1 through length($gauge-colors) {
+            &.pkt-gauge-value-#{$index - 1} {
+                $color: nth($gauge-colors, $index);
+                fill: $color;
+            }
+        }
+
+        &.pkt-gauge-empty {
+            fill: $gray-300;
+        }
+    }
+}

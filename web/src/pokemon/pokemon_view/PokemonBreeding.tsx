@@ -4,6 +4,7 @@ import LinearGauge from '../../common/components/gauge/LinearGauge';
 import {Button, Modal} from 'react-bootstrap';
 import PokemonBreedingTable from '../PokemonBreedingTable';
 import PokemonHatchSteps from './PokemonHatchSteps';
+import './PokemonBreeding.scss';
 
 export default function PokemonBreeding(props: { pokemon: ApiRecord.Pokemon.Pokemon.PokemonView }) {
     const {pokemon} = props;
