@@ -13,6 +13,8 @@ import RepeatedIcon from '../common/components/RepeatedIcon';
 import {faArrowUp} from '@fortawesome/free-solid-svg-icons';
 import ItemLabel from '../item/ItemLabel';
 import PktMarkdown from '../common/components/PktMarkdown';
+import {DateTime, Interval} from 'luxon';
+import setPageTitle from '../common/setPageTitle';
 
 interface CaptureRateCalcDataState {
     loadedForVersion?: number
@@ -72,6 +74,7 @@ export default function CaptureRateCalc(props: {}) {
         loadingTimesOfDay: false,
     }, defaultUserState) as CaptureRateCalcState);
     const {balls, allPokemon, methods, genders, timesOfDay} = state;
+    setPageTitle('Capture Rate Calculator');
 
     // Reset
     if (state.loadedForVersion !== undefined && state.loadedForVersion !== currentVersion.id) {
@@ -265,11 +268,26 @@ export default function CaptureRateCalc(props: {}) {
     if (!state.loadingTimesOfDay && timesOfDay === undefined) {
         if (currentVersion.featureSlugs.includes('time')) {
             fetchTimesOfDay(currentVersion).then(newTimesOfDay => {
-                setState({
+                const newState: Partial<CaptureRateCalcState> = {
                     timesOfDay: newTimesOfDay,
                     loadingTimesOfDay: false,
                     loadedForVersion: currentVersion.id,
-                });
+                };
+                if (state.timeOfDay === null) {
+                    // Set the selected time of day to the current time.
+                    const now = DateTime.now();
+                    for (const checkTimeOfDay of newTimesOfDay) {
+                        const checkInterval = Interval.fromDateTimes(
+                            DateTime.fromISO(checkTimeOfDay.startsIso8601),
+                            DateTime.fromISO(checkTimeOfDay.endsIso8601)
+                        );
+                        if (checkInterval.contains(now)) {
+                            newState.timeOfDay = checkTimeOfDay;
+                            break;
+                        }
+                    }
+                }
+                setState(newState);
             }).catch((error: AxiosError) => {
                 console.log(error.message);
                 setFlashes([{severity: FlashSeverity.DANGER, message: 'Error loading times of day.'}]);

@@ -7,6 +7,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use Cake\Chronos\Chronos;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -45,9 +46,12 @@ class TimeOfDay extends AbstractDexEntity implements EntityGroupedByGenerationIn
         return $this->starts;
     }
 
+    /**
+     * @Groups({"read"})
+     */
     public function getStartsIso8601(): ?string
     {
-        return $this->starts?->toIso8601String();
+        return $this->starts?->toTimeString();
     }
 
     public function setStarts(Chronos $starts): self
@@ -62,9 +66,12 @@ class TimeOfDay extends AbstractDexEntity implements EntityGroupedByGenerationIn
         return $this->ends;
     }
 
+    /**
+     * @Groups({"read"})
+     */
     public function getEndsIso8601(): ?string
     {
-        return $this->ends?->toIso8601String();
+        return $this->ends?->toTimeString();
     }
 
     public function setEnds(Chronos $ends): self
