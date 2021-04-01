@@ -8,11 +8,13 @@ import React, {useContext} from 'react';
 import AppContext, {AppContextProps} from '../common/Context';
 import Loading from '../common/components/Loading';
 import appConfig from '../config.json';
+import setPageTitle from '../common/setPageTitle';
 
 const CreditsPage = loadComponent(() => import('./CreditsPage'));
 
 function FrontPage(props: {}) {
     const {currentVersion} = useContext(AppContext) as AppContextProps;
+    setPageTitle('About');
 
     return (
         <div>

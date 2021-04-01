@@ -1,6 +1,9 @@
 import {AssetPackage, getAssetUrl} from '../common/getAssetUrl';
+import setPageTitle from '../common/setPageTitle';
 
 export default function CreditsPage(props: {}) {
+    setPageTitle('Credits');
+
     return (
         <div>
             <div className="d-flex justify-content-center">
