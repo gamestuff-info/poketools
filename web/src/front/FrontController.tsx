@@ -45,10 +45,8 @@ function FrontPage(props: {}) {
             <h1>Why?</h1>
             <p>
                 There are certainly many sites around dedicated to this purpose. However many of them are only accurate
-                to the
-                latest version, or aren't organized in a clear manner. This site's goal is to present each game's data
-                as a
-                "snapshot" - guaranteed to be accurate to that game when it was released.
+                to the latest version, or aren't organized in a clear manner. This site's goal is to present each game's
+                data as a "snapshot" &ndash; guaranteed to be accurate to that game when it was released.
             </p>
 
             <h1>How?</h1>
