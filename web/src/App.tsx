@@ -161,6 +161,7 @@ export default function App(props: {}) {
                     </footer>
                 </MathJax.Provider>
             </AppContext.Provider>
+            <span className="d-none">Release: {process.env.REACT_APP_VERSION ?? 'dev'}</span>
         </div>
     );
 }
