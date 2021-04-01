@@ -18,7 +18,7 @@ type FlashesProps = {
 
 export default function Flashes(props: FlashesProps) {
     const flashes = props.flashes.map((flash: Flash, ix: number) =>
-        <Alert key={ix} variant={flash.severity.valueOf()}>flash.message</Alert>,
+        <Alert key={ix} variant={flash.severity.valueOf()}>{flash.message}</Alert>,
     );
 
     return (

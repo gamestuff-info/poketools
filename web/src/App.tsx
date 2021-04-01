@@ -107,9 +107,9 @@ export default function App(props: {}) {
                             onVersionChange={setVersion}
                     />
 
-                    <Flashes flashes={state.flashes}/>
-
                     <main className="container">
+                        <Flashes flashes={state.flashes}/>
+
                         <Switch>
                             <Route path={ControllerRouteBases.ABILITY}>
                                 {!isReady && <Loading/>}
