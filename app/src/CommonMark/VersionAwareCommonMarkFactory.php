@@ -4,12 +4,12 @@
 namespace App\CommonMark;
 
 
-use ApiPlatform\Core\Api\IriConverterInterface;
 use App\Entity\Version;
 use Ds\Map;
-use League\CommonMark\CommonMarkConverter;
 use League\CommonMark\Environment;
 use League\CommonMark\Extension\ExtensionInterface as CommonMarkExtensionInterface;
+use League\CommonMark\MarkdownConverter;
+use League\CommonMark\MarkdownConverterInterface;
 
 /**
  * Create CommonMark environments that are aware of the current game version.
@@ -17,7 +17,7 @@ use League\CommonMark\Extension\ExtensionInterface as CommonMarkExtensionInterfa
 class VersionAwareCommonMarkFactory
 {
     /**
-     * @var Map<int, CommonMarkConverter>
+     * @var Map<int, MarkdownConverterInterface>
      */
     private Map $converters;
 
@@ -34,7 +34,7 @@ class VersionAwareCommonMarkFactory
         $this->converters = new Map();
     }
 
-    public function getForVersion(?Version $version): CommonMarkConverter
+    public function getForVersion(?Version $version): MarkdownConverterInterface
     {
         $versionKey = $version?->getId() ?? 0;
         if (!$this->converters->hasKey($versionKey)) {
@@ -44,19 +44,16 @@ class VersionAwareCommonMarkFactory
         return $this->converters->get($versionKey);
     }
 
-    private function create(?Version $version): CommonMarkConverter
+    private function create(?Version $version): MarkdownConverterInterface
     {
+        $environment = new Environment($this->commonMarkConfig);
         if ($version) {
-            $environmentConfig = ['currentVersion' => $version] + $this->commonMarkConfig;
-        } else {
-            $environmentConfig = $this->commonMarkConfig;
+            $environment->mergeConfig(['currentVersion' => $version]);
         }
-
-        $environment = new Environment($environmentConfig);
         foreach ($this->extensions as $extension) {
             $environment->addExtension($extension);
         }
 
-        return new CommonMarkConverter($this->commonMarkConfig, $environment);
+        return new MarkdownConverter($environment);
     }
 }

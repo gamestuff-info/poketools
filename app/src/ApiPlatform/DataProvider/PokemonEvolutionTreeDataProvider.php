@@ -12,7 +12,7 @@ use App\Entity\Pokemon;
 use App\Entity\PokemonEvolutionCondition;
 use App\Entity\Version;
 use App\Repository\PokemonRepository;
-use League\CommonMark\CommonMarkConverter;
+use League\CommonMark\MarkdownConverterInterface;
 
 /**
  * PokemonEvolutionTree Data Provider
@@ -47,7 +47,7 @@ class PokemonEvolutionTreeDataProvider implements ItemDataProviderInterface, Res
     private function buildEvolutionTree(
         Pokemon $pokemon,
         Version $version,
-        CommonMarkConverter $commonMarkConverter
+        MarkdownConverterInterface $commonMarkConverter
     ): PokemonEvolutionTree {
         $tree = new PokemonEvolutionTree();
         $tree->setPokemon($pokemon);
