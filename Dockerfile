@@ -12,9 +12,7 @@ RUN cp ${PHP_INI_DIR}/php.ini-production ${PHP_INI_DIR}/php.ini
 RUN apt-get update; \
     apt-get install -y --no-install-recommends unzip
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
-RUN install-php-extensions gd intl opcache pcntl pdo_sqlite zip; \
-    pecl install ds; \
-    docker-php-ext-enable ds
+RUN install-php-extensions ds gd intl opcache pcntl pdo_sqlite zip
 
 # PHP configuration
 COPY docker/app/entrypoint.sh /usr/local/bin/php-entrypoint
