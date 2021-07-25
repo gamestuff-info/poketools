@@ -6,8 +6,8 @@
 namespace App\CommonMark\Extension;
 
 
-use App\CommonMark\Block\Renderer\TableRenderer;
-use League\CommonMark\ConfigurableEnvironmentInterface;
+use App\CommonMark\Renderer\TableRenderer;
+use League\CommonMark\Environment\EnvironmentBuilderInterface;
 use League\CommonMark\Extension\ExtensionInterface;
 use League\CommonMark\Extension\Table\Table;
 
@@ -18,26 +18,20 @@ class PoketoolsTableExtension implements ExtensionInterface
 {
 
     /**
-     * @var TableRenderer
-     */
-    private $tableRenderer;
-
-    /**
      * PoketoolsTableExtension constructor.
      *
      * @param TableRenderer $tableRenderer
      */
-    public function __construct(TableRenderer $tableRenderer)
-    {
-        $this->tableRenderer = $tableRenderer;
+    public function __construct(
+        private TableRenderer $tableRenderer
+    ) {
     }
 
     /**
      * @inheritDoc
      */
-    public function register(ConfigurableEnvironmentInterface $environment)
+    public function register(EnvironmentBuilderInterface $environment): void
     {
-        $environment
-            ->addBlockRenderer(Table::class, $this->tableRenderer, 200);
+        $environment->addRenderer(Table::class, $this->tableRenderer, 200);
     }
 }

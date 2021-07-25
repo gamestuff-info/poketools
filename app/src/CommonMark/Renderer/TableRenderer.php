@@ -3,17 +3,19 @@
  * @file TableRenderer.php
  */
 
-namespace App\CommonMark\Block\Renderer;
+namespace App\CommonMark\Renderer;
 
-use League\CommonMark\Block\Element\AbstractBlock;
-use League\CommonMark\Block\Renderer\BlockRendererInterface;
-use League\CommonMark\ElementRendererInterface;
+use League\CommonMark\Extension\Table\Table;
 use League\CommonMark\Extension\Table\TableRenderer as ParentTableRenderer;
+use League\CommonMark\Node\Node;
+use League\CommonMark\Renderer\ChildNodeRendererInterface;
+use League\CommonMark\Renderer\NodeRendererInterface;
+use League\CommonMark\Util\HtmlElement;
 
 /**
  * Add required styling to all tables
  */
-class TableRenderer implements BlockRendererInterface
+class TableRenderer implements NodeRendererInterface
 {
     /**
      * @var ParentTableRenderer
@@ -32,10 +34,13 @@ class TableRenderer implements BlockRendererInterface
 
     /**
      * @inheritDoc
+     *
+     * @param Table $node
      */
-    public function render(AbstractBlock $block, ElementRendererInterface $htmlRenderer, $inTightList = false)
+    public function render(Node $node, ChildNodeRendererInterface $childRenderer): \Stringable
     {
-        $element = $this->tableRenderer->render($block, $htmlRenderer, $inTightList);
+        /** @var HtmlElement $element */
+        $element = $this->tableRenderer->render($node, $childRenderer);
         $element->setAttribute('class', 'table table-sm');
 
         return $element;

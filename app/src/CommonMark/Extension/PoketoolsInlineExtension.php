@@ -4,34 +4,42 @@
 namespace App\CommonMark\Extension;
 
 
+use App\CommonMark\CommonMarkConfig;
 use App\CommonMark\Inline\Parser\CloseBracketInternalLinkParser;
-use League\CommonMark\ConfigurableEnvironmentInterface;
-use League\CommonMark\Extension\ExtensionInterface;
+use App\Entity\Version;
+use League\CommonMark\Environment\EnvironmentBuilderInterface;
+use League\CommonMark\Extension\ConfigurableExtensionInterface;
+use League\Config\ConfigurationBuilderInterface;
+use Nette\Schema\Expect;
 
 /**
  * CommonMark Extension to manage special app-specific pieces (inlines only).
  */
-class PoketoolsInlineExtension implements ExtensionInterface
+class PoketoolsInlineExtension implements ConfigurableExtensionInterface
 {
-    /**
-     * @var CloseBracketInternalLinkParser
-     */
-    private $closeBrackerInternalLinkParser;
-
     /**
      * PoketoolsCommonMarkExtension constructor.
      *
      * @param CloseBracketInternalLinkParser $closeBracketInternalLinkParser
      */
     public function __construct(
-        CloseBracketInternalLinkParser $closeBracketInternalLinkParser
+        private CloseBracketInternalLinkParser $closeBracketInternalLinkParser
     ) {
-        $this->closeBrackerInternalLinkParser = $closeBracketInternalLinkParser;
     }
 
-    public function register(ConfigurableEnvironmentInterface $environment)
+    public function register(EnvironmentBuilderInterface $environment): void
     {
         $environment
-            ->addInlineParser($this->closeBrackerInternalLinkParser, 200);
+            ->addInlineParser($this->closeBracketInternalLinkParser, 200);
+    }
+
+    public function configureSchema(ConfigurationBuilderInterface $builder): void
+    {
+        $builder->addSchema(
+            CommonMarkConfig::CONFIG_NAMESPACE,
+            Expect::structure([
+                CommonMarkConfig::UNQUALIFIED_CURRENT_VERSION => Expect::anyOf(null, Expect::type(Version::class)),
+            ])
+        );
     }
 }

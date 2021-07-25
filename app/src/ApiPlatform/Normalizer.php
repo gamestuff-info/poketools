@@ -6,7 +6,6 @@ namespace App\ApiPlatform;
 
 use App\CommonMark\VersionAwareCommonMarkFactory;
 use App\Entity\MarkdownProperty;
-use App\Entity\MoveEffectInVersionGroup;
 use Ds\Map;
 use Ds\Vector;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
@@ -65,7 +64,7 @@ class Normalizer implements NormalizerInterface, SerializerAwareInterface
             if (!is_string($markdown)) {
                 continue;
             }
-            $html = trim($commonMarkConverter->convertToHtml($markdown));
+            $html = trim($commonMarkConverter->convertToHtml($markdown)->getContent());
             $property->setValue($object, $html);
         }
     }

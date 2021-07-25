@@ -6,7 +6,7 @@ namespace App\CommonMark;
 
 use App\Entity\Version;
 use Ds\Map;
-use League\CommonMark\Environment;
+use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\ExtensionInterface as CommonMarkExtensionInterface;
 use League\CommonMark\MarkdownConverter;
 use League\CommonMark\MarkdownConverterInterface;
@@ -46,9 +46,14 @@ class VersionAwareCommonMarkFactory
 
     private function create(?Version $version): MarkdownConverterInterface
     {
-        $environment = new Environment($this->commonMarkConfig);
         if ($version) {
-            $environment->mergeConfig(['currentVersion' => $version]);
+            $config = $this->commonMarkConfig;
+            $config[CommonMarkConfig::CONFIG_NAMESPACE] = [
+                CommonMarkConfig::UNQUALIFIED_CURRENT_VERSION => $version,
+            ];
+            $environment = new Environment($config);
+        } else {
+            $environment = new Environment($this->commonMarkConfig);
         }
         foreach ($this->extensions as $extension) {
             $environment->addExtension($extension);

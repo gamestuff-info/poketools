@@ -7,7 +7,7 @@ parameters:
   default_version: ultra-sun
   data_path: '%kernel.project_dir%/resources/data'
   commonmark_config:
-    html_input: allow
+    html_input: !php/const League\CommonMark\Util\HtmlFilter::ALLOW
     allow_unsafe_links: false
 
 services:
@@ -67,7 +67,7 @@ services:
     lazy: true
 
   # Markdown
-  League\CommonMark\Extension\CommonMarkCoreExtension:
+  League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension:
   League\CommonMark\Extension\InlinesOnly\InlinesOnlyExtension:
   League\CommonMark\Extension\Table\TableExtension:
   League\CommonMark\Extension\DisallowedRawHtml\DisallowedRawHtmlExtension:
@@ -76,7 +76,7 @@ services:
     arguments:
       $commonMarkConfig: '%commonmark_config%'
       $extensions:
-        - '@League\CommonMark\Extension\CommonMarkCoreExtension'
+        - '@League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension'
         - '@League\CommonMark\Extension\Table\TableExtension'
         - '@League\CommonMark\Extension\DisallowedRawHtml\DisallowedRawHtmlExtension'
         - '@App\CommonMark\Extension\PoketoolsTableExtension'

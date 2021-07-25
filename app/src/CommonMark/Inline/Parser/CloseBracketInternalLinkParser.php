@@ -3,18 +3,21 @@
 namespace App\CommonMark\Inline\Parser;
 
 
+use App\CommonMark\CommonMarkConfig;
 use App\Entity\EntityHasNameInterface;
 use App\Entity\Version;
 use App\Helpers\InternalLinkResolver;
-use League\CommonMark\Cursor;
-use League\CommonMark\EnvironmentAwareInterface;
-use League\CommonMark\EnvironmentInterface;
-use League\CommonMark\Inline\Element\AbstractWebResource;
-use League\CommonMark\Inline\Element\Image;
-use League\CommonMark\Inline\Element\Link;
-use League\CommonMark\Inline\Element\Text;
-use League\CommonMark\Inline\Parser\InlineParserInterface;
-use League\CommonMark\InlineParserContext;
+use League\CommonMark\Environment\EnvironmentAwareInterface;
+use League\CommonMark\Environment\EnvironmentInterface;
+use League\CommonMark\Extension\CommonMark\Node\Inline\AbstractWebResource;
+use League\CommonMark\Extension\CommonMark\Node\Inline\Image;
+use League\CommonMark\Extension\CommonMark\Node\Inline\Link;
+use League\CommonMark\Extension\Mention\Mention;
+use League\CommonMark\Node\Inline\Text;
+use League\CommonMark\Parser\Cursor;
+use League\CommonMark\Parser\Inline\InlineParserInterface;
+use League\CommonMark\Parser\Inline\InlineParserMatch;
+use League\CommonMark\Parser\InlineParserContext;
 use League\CommonMark\Util\RegexHelper;
 use ProxyManager\Proxy\LazyLoadingInterface;
 use ProxyManager\Proxy\ValueHolderInterface;
@@ -25,6 +28,8 @@ use Psr\Log\LoggerInterface;
  *
  * Links should be in the format `[optional label]{category:slug}`.  If no label is specified (i.e.
  * `[]{category:slug}`), the label will be taken from the referenced entity's name.
+ *
+ * Because this parser operates just as the default CloseBracketParser, much of the code is the same.
  */
 class CloseBracketInternalLinkParser implements InlineParserInterface, EnvironmentAwareInterface
 {
@@ -51,6 +56,11 @@ class CloseBracketInternalLinkParser implements InlineParserInterface, Environme
     ) {
     }
 
+    public function getMatchDefinition(): InlineParserMatch
+    {
+        return InlineParserMatch::string(']');
+    }
+
     /**
      * @inheritDoc
      */
@@ -75,9 +85,12 @@ class CloseBracketInternalLinkParser implements InlineParserInterface, Environme
         $cursor->advance();
 
         // Check to see if we have a link/image
-        $link = $this->tryParseInlineLinkAndTitle($cursor);
-        if (!$link) {
+        // Inline link?
+        if ($result = $this->tryParseInlineLinkAndTitle($cursor)) {
+            $link = $result;
+        } else {
             // No match
+            $inlineContext->getDelimiterStack()->removeDelimiter($opener); // Remove this opener from stack
             $cursor->restoreState($previousState);
 
             return false;
@@ -85,7 +98,7 @@ class CloseBracketInternalLinkParser implements InlineParserInterface, Environme
 
         $isImage = ($opener->getChar() === '!');
 
-        $inline = $this->createInline($link['url'], $link['title'], $isImage);
+        $inline = $this->createInline($link['url'], $link['title'], $isImage, $reference ?? null);
 
         $opener->getInlineNode()->replaceWith($inline);
         while (($label = $inline->next()) !== null) {
@@ -101,6 +114,16 @@ class CloseBracketInternalLinkParser implements InlineParserInterface, Environme
                 $inline->appendChild(new Text('NO LINK TEXT'));
             }
         }
+        while (($label = $inline->next()) !== null) {
+            // Is there a Mention contained within this link?
+            // CommonMark does not allow nested links, so we'll restore the original text.
+            if ($label instanceof Mention) {
+                $label->replaceWith($replacement = new Text($label->getPrefix().$label->getIdentifier()));
+                $label = $replacement;
+            }
+
+            $inline->appendChild($label);
+        }
 
         // Process delimiters such as emphasis inside link/image
         $delimiterStack = $inlineContext->getDelimiterStack();
@@ -108,16 +131,22 @@ class CloseBracketInternalLinkParser implements InlineParserInterface, Environme
         $delimiterStack->processDelimiters($stackBottom, $this->environment->getDelimiterProcessors());
         $delimiterStack->removeAll($stackBottom);
 
+        // processEmphasis will remove this and later delimiters.
+        // Now, for a link, we also remove earlier link openers (no links in links)
+        if (!$isImage) {
+            $inlineContext->getDelimiterStack()->removeEarlierMatches('[');
+        }
+
         return true;
     }
 
-    private function tryParseInlineLinkAndTitle(Cursor $cursor): bool|array
+    private function tryParseInlineLinkAndTitle(Cursor $cursor): ?array
     {
         if ($cursor->getCharacter() === self::BRACKET_OPEN) {
             return $this->tryParseInternalLink($cursor);
         }
 
-        return false;
+        return null;
     }
 
     /**
@@ -141,7 +170,6 @@ class CloseBracketInternalLinkParser implements InlineParserInterface, Environme
         $cursor->advance();
 
         // Don't support title text here.
-
         return ['url' => $dest, 'title' => null];
     }
 
@@ -236,7 +264,10 @@ class CloseBracketInternalLinkParser implements InlineParserInterface, Environme
      */
     private function resolveVersion(): Version
     {
-        $version = $this->environment->getConfig('currentVersion', $this->defaultVersion);
+        $envConfig = $this->environment->getConfiguration();
+        $version = $envConfig->exists(CommonMarkConfig::CURRENT_VERSION)
+            ? $envConfig->get(CommonMarkConfig::CURRENT_VERSION)
+            : $this->defaultVersion;
         if ($version instanceof LazyLoadingInterface && $version instanceof ValueHolderInterface) {
             $version->initializeProxy();
             $version = $version->getWrappedValueHolderValue();
@@ -261,19 +292,9 @@ class CloseBracketInternalLinkParser implements InlineParserInterface, Environme
         return new Link($url, null, $title);
     }
 
-    /**
-     * @inheritDoc
-     */
-    public function getCharacters(): array
-    {
-        return [']'];
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function setEnvironment(EnvironmentInterface $environment)
+    public function setEnvironment(EnvironmentInterface $environment): void
     {
         $this->environment = $environment;
     }
+
 }
