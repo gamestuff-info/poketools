@@ -28,7 +28,6 @@ class VersionAwareCommonMarkFactory
      * @param iterable<CommonMarkExtensionInterface> $extensions
      */
     public function __construct(
-        private array $commonMarkConfig,
         private iterable $extensions,
     ) {
         $this->converters = new Map();
@@ -46,15 +45,13 @@ class VersionAwareCommonMarkFactory
 
     private function create(?Version $version): MarkdownConverterInterface
     {
+        $config = CommonMarkConfig::get();
         if ($version) {
-            $config = $this->commonMarkConfig;
             $config[CommonMarkConfig::CONFIG_NAMESPACE] = [
                 CommonMarkConfig::UNQUALIFIED_CURRENT_VERSION => $version,
             ];
-            $environment = new Environment($config);
-        } else {
-            $environment = new Environment($this->commonMarkConfig);
         }
+        $environment = new Environment($config);
         foreach ($this->extensions as $extension) {
             $environment->addExtension($extension);
         }

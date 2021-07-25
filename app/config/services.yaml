@@ -6,9 +6,6 @@ imports:
 parameters:
   default_version: ultra-sun
   data_path: '%kernel.project_dir%/resources/data'
-  commonmark_config:
-    html_input: !php/const League\CommonMark\Util\HtmlFilter::ALLOW
-    allow_unsafe_links: false
 
 services:
   # default configuration for services in *this* file
@@ -68,18 +65,18 @@ services:
 
   # Markdown
   League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension:
-  League\CommonMark\Extension\InlinesOnly\InlinesOnlyExtension:
-  League\CommonMark\Extension\Table\TableExtension:
+  League\CommonMark\Extension\DefaultAttributes\DefaultAttributesExtension:
+  League\CommonMark\Extension\DescriptionList\DescriptionListExtension:
   League\CommonMark\Extension\DisallowedRawHtml\DisallowedRawHtmlExtension:
-  League\CommonMark\Extension\Table\TableRenderer:
+  League\CommonMark\Extension\Table\TableExtension:
   App\CommonMark\VersionAwareCommonMarkFactory:
     arguments:
-      $commonMarkConfig: '%commonmark_config%'
       $extensions:
         - '@League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension'
-        - '@League\CommonMark\Extension\Table\TableExtension'
+        - '@League\CommonMark\Extension\DefaultAttributes\DefaultAttributesExtension'
+        - '@League\CommonMark\Extension\DescriptionList\DescriptionListExtension'
         - '@League\CommonMark\Extension\DisallowedRawHtml\DisallowedRawHtmlExtension'
-        - '@App\CommonMark\Extension\PoketoolsTableExtension'
+        - '@League\CommonMark\Extension\Table\TableExtension'
         - '@App\CommonMark\Extension\PoketoolsInlineExtension'
 
   # VENDORS
